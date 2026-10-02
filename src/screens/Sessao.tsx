@@ -95,7 +95,11 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     return () => window.removeEventListener('keydown', tecla)
   }, [verificada, verificar, continuar, confirmarSaida, semVidas])
 
-  const sair = () => navegar(modo === 'revisao' ? '/revisao' : '/', { replace: true })
+  const sair = () => {
+    // Quem sai do teste de nível começa no fácil
+    if (modo === 'nivelamento') useJogo.getState().definirNivel('facil')
+    navegar(modo === 'revisao' ? '/revisao' : '/', { replace: true })
+  }
 
   return (
     <div className="flex h-dvh flex-col bg-fundo">

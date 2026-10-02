@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
+import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom'
 import { useJogo } from './store/useJogo'
 import { Layout } from './components/Layout'
 import { BoasVindas } from './screens/BoasVindas'
@@ -73,7 +73,12 @@ export function App() {
 /** Sem cadastro, todas as telas mandam para as boas-vindas */
 function ExigeUsuario() {
   const temUsuario = useJogo((s) => !!s.usuario)
-  return temUsuario ? <Outlet /> : <Navigate to="/boas-vindas" replace />
+  const testePendente = useJogo((s) => s.testeNivelPendente)
+  const { pathname } = useLocation()
+  if (!temUsuario) return <Navigate to="/boas-vindas" replace />
+  // Logo após o cadastro, a pessoa passa pelo teste de nível (pode pular)
+  if (testePendente && pathname !== '/nivelamento') return <Navigate to="/nivelamento" replace />
+  return <Outlet />
 }
 
 function SoSemUsuario() {

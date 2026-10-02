@@ -48,6 +48,8 @@ interface DadosJogo {
   modo: ModoEstudo
   /** Trilha fácil ou difícil, escolhida pelo teste de nível ou pelo usuário */
   nivel: NivelDificuldade
+  /** true logo após o cadastro, até a pessoa fazer ou pular o teste de nível */
+  testeNivelPendente: boolean
   materiaAtual: string
   tema: Tema
 }
@@ -90,6 +92,7 @@ const estadoInicial = (): DadosJogo => ({
   conquistas: {},
   modo: 'graduacao',
   nivel: 'facil',
+  testeNivelPendente: false,
   materiaAtual: 'anatomia',
   tema: 'sistema',
 })
@@ -105,6 +108,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           usuario: { nome: nome.trim(), semestre, metaDiaria, criadoEm: Date.now() },
           modo,
           materiaAtual: primeiraMateriaDoModo(modo).id,
+          testeNivelPendente: true,
         }),
 
       atualizarUsuario: (dados) => {
@@ -114,7 +118,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
       definirTema: (tema) => set({ tema }),
 
-      definirNivel: (nivel) => set({ nivel }),
+      definirNivel: (nivel) => set({ nivel, testeNivelPendente: false }),
 
       // Escolher uma matéria também troca o modo, se ela for do outro modo
       escolherMateria: (materiaAtual) =>

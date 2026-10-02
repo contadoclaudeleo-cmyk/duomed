@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, GraduationCap, Stethoscope, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
-import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, ModoEstudo } from '../types'
 import { useJogo } from '../store/useJogo'
 import { Logo } from '../components/Logo'
@@ -34,7 +33,6 @@ type Passo = 'inicio' | 'nome' | 'modo' | 'semestre' | 'meta'
 
 /** Cadastro: apresentação, nome, modo de estudo, semestre (só graduação) e meta diária */
 export function BoasVindas() {
-  const navegar = useNavigate()
   const criarUsuario = useJogo((s) => s.criarUsuario)
   const [indice, setIndice] = useState(0)
   const [nome, setNome] = useState('')
@@ -57,9 +55,8 @@ export function BoasVindas() {
   function avancar() {
     if (!podeAvancar) return
     if (!ultimo) return setIndice(indice + 1)
+    // Depois do cadastro, o app leva para o teste de nível (ver ExigeUsuario em App.tsx)
     criarUsuario(nome, modo === 'residencia' ? null : semestre, meta!, modo!)
-    // Logo depois do cadastro vem o teste de nível (dá para pular)
-    navegar('/nivelamento', { replace: true })
   }
 
   if (passo === 'inicio') {
