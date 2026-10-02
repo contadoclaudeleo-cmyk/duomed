@@ -30,9 +30,15 @@ Abra no navegador o endereço que aparecer (normalmente http://localhost:5173).
 | `npm run build` | Gera a versão final otimizada na pasta `dist/` |
 | `npm run preview` | Abre a versão final, onde dá para testar a instalação como app (PWA) |
 
+### Versão publicada
+
+O app está no ar em **https://contadoclaudeleo-cmyk.github.io/duomed/**
+
+Toda vez que um commit é enviado (push) para a branch `main` do repositório no GitHub, o site se atualiza sozinho em cerca de 1 minuto (veja `.github/workflows/publicar.yml`).
+
 ### Instalar no celular (PWA)
 
-O app é instalável. Depois de publicado em um endereço com `https` (por exemplo Vercel ou Netlify, apontando para a pasta `dist`), abra no celular:
+Abra o link da versão publicada no celular:
 
 - **Android (Chrome):** menu de três pontos, "Instalar app" ou "Adicionar à tela inicial".
 - **iPhone (Safari):** botão de compartilhar, "Adicionar à Tela de Início".
