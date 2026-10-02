@@ -2188,6 +2188,2340 @@
           ]
         }
       ]
+    },
+    {
+      "id": "prev-d1",
+      "titulo": "Epidemiologia de prova",
+      "descricao": "Medidas, testes diagnósticos e cálculos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d1-l1",
+          "titulo": "Medidas de frequência em casos",
+          "questoes": [
+            {
+              "id": "prev-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Uma cidade de 100 mil habitantes tem 500 pessoas com diabetes e, no ano, surgem 50 casos novos.",
+              "enunciado": "Qual é a incidência anual?",
+              "opcoes": [
+                "50 por 100 mil habitantes, ou cerca de 0,05%",
+                "500 por 100 mil",
+                "5%",
+                "550 por 100 mil"
+              ],
+              "resposta": "50 por 100 mil habitantes, ou cerca de 0,05%",
+              "explicacao": "A rigor, o denominador é a população em risco, sem os 500 que já têm a doença.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação ao efeito na prevalência.",
+              "pares": [
+                {
+                  "esquerda": "Novo remédio que cura rápido",
+                  "direita": "Prevalência cai porque a doença dura menos"
+                },
+                {
+                  "esquerda": "Remédio que evita a morte sem curar",
+                  "direita": "Prevalência sobe porque a doença dura mais"
+                },
+                {
+                  "esquerda": "Campanha que reduz casos novos",
+                  "direita": "Prevalência cai aos poucos pela menor incidência"
+                },
+                {
+                  "esquerda": "Chegada de doentes de outras cidades",
+                  "direita": "Prevalência sobe por imigração"
+                }
+              ],
+              "explicacao": "Prevalência é aproximadamente incidência vezes duração.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em uma doença com incidência estável, a duração média aumentou. O que acontece com a prevalência?",
+              "opcoes": [
+                "Aumenta",
+                "Diminui",
+                "Não muda",
+                "Zera"
+              ],
+              "resposta": "Aumenta",
+              "explicacao": "É o que ocorreu com o HIV após o tratamento antirretroviral.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Em um surto, 30 de 120 pessoas que comeram em uma festa adoeceram.",
+              "enunciado": "Qual é a taxa de ataque?",
+              "opcoes": [
+                "25%",
+                "30%",
+                "4%",
+                "12%"
+              ],
+              "resposta": "25%",
+              "explicacao": "A taxa de ataque é a incidência em um período curto, como em surtos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A taxa de mortalidade infantil é calculada com os óbitos de menores de 1 ano divididos pelos nascidos vivos no mesmo ano.",
+              "resposta": true,
+              "explicacao": "É expressa por mil nascidos vivos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "A letalidade de uma doença é de 10%, e a mortalidade é de 2 por 100 mil.",
+              "enunciado": "O que a letalidade mede?",
+              "opcoes": [
+                "A proporção de doentes que morrem pela doença",
+                "A proporção da população que morre pela doença",
+                "A proporção de casos novos",
+                "A duração da doença"
+              ],
+              "resposta": "A proporção de doentes que morrem pela doença",
+              "explicacao": "A mortalidade usa a população toda como denominador.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A razão de mortalidade ___ é o número de mortes maternas por 100 mil nascidos vivos.",
+              "opcoes": [
+                "materna",
+                "infantil",
+                "perinatal",
+                "neonatal"
+              ],
+              "resposta": "materna",
+              "explicacao": "Ela inclui mortes durante a gestação e até 42 dias após o parto.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um indicador mostra que 70% das mortes no país são em pessoas com 50 anos ou mais.",
+              "enunciado": "Qual é esse indicador?",
+              "opcoes": [
+                "Índice de Swaroop-Uemura",
+                "Taxa de mortalidade infantil",
+                "Coeficiente de letalidade",
+                "Razão de mortalidade materna"
+              ],
+              "resposta": "Índice de Swaroop-Uemura",
+              "explicacao": "Quanto maior, melhor o nível de saúde da população.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d1-l2",
+          "titulo": "Testes diagnósticos em casos",
+          "questoes": [
+            {
+              "id": "prev-d1-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Um teste foi aplicado em 100 doentes e 100 não doentes. Deu positivo em 90 doentes e em 20 não doentes.",
+              "enunciado": "Qual é a sensibilidade e a especificidade?",
+              "opcoes": [
+                "Sensibilidade de 90% e especificidade de 80%",
+                "Sensibilidade de 80% e especificidade de 90%",
+                "Ambas de 90%",
+                "Ambas de 80%"
+              ],
+              "resposta": "Sensibilidade de 90% e especificidade de 80%",
+              "explicacao": "Sensibilidade = 90/100; especificidade = 80/100.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medida à fórmula.",
+              "pares": [
+                {
+                  "esquerda": "Sensibilidade",
+                  "direita": "Verdadeiros positivos sobre todos os doentes"
+                },
+                {
+                  "esquerda": "Especificidade",
+                  "direita": "Verdadeiros negativos sobre todos os não doentes"
+                },
+                {
+                  "esquerda": "Valor preditivo positivo",
+                  "direita": "Verdadeiros positivos sobre todos os positivos"
+                },
+                {
+                  "esquerda": "Valor preditivo negativo",
+                  "direita": "Verdadeiros negativos sobre todos os negativos"
+                }
+              ],
+              "explicacao": "Os valores preditivos dependem da prevalência.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que acontece com o valor preditivo positivo quando o teste é usado em população com prevalência mais baixa?",
+              "opcoes": [
+                "Diminui",
+                "Aumenta",
+                "Não muda",
+                "Fica 100%"
+              ],
+              "resposta": "Diminui",
+              "explicacao": "Por isso, rastrear doenças raras gera muitos falsos positivos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Usando o mesmo teste (sensibilidade de 90% e especificidade de 80%), a prevalência é de 50% em 200 pessoas.",
+              "enunciado": "Qual é o valor preditivo positivo?",
+              "opcoes": [
+                "Cerca de 82%",
+                "90%",
+                "50%",
+                "20%"
+              ],
+              "resposta": "Cerca de 82%",
+              "explicacao": "VPP = 90 / (90 + 20) = 0,82.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A razão de verossimilhança positiva é a sensibilidade dividida por (1 menos a especificidade).",
+              "resposta": true,
+              "explicacao": "Valores acima de 10 aumentam muito a probabilidade da doença.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Dois testes são feitos em série, e o paciente só é considerado doente se ambos forem positivos.",
+              "enunciado": "O que acontece?",
+              "opcoes": [
+                "A especificidade aumenta, e a sensibilidade diminui",
+                "A sensibilidade aumenta",
+                "Ambas aumentam",
+                "Nada muda"
+              ],
+              "resposta": "A especificidade aumenta, e a sensibilidade diminui",
+              "explicacao": "Em paralelo, ocorre o contrário.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A curva ___ mostra a sensibilidade contra (1 menos a especificidade) para vários pontos de corte.",
+              "opcoes": [
+                "ROC",
+                "de Kaplan-Meier",
+                "de Gauss",
+                "de Lorenz"
+              ],
+              "resposta": "ROC",
+              "explicacao": "Quanto maior a área sob a curva, melhor o teste.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um rastreamento de câncer mostra maior sobrevida nos casos detectados, mas sem reduzir a mortalidade.",
+              "enunciado": "Qual viés pode explicar isso?",
+              "opcoes": [
+                "Viés de tempo de antecipação (lead time)",
+                "Viés de memória",
+                "Viés de seleção de controles",
+                "Viés de aferição"
+              ],
+              "resposta": "Viés de tempo de antecipação (lead time)",
+              "explicacao": "O diagnóstico mais cedo aumenta a sobrevida aparente sem mudar a data da morte.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d1-l3",
+          "titulo": "Medidas de associação e efeito",
+          "questoes": [
+            {
+              "id": "prev-d1-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Num estudo, 20% dos fumantes e 5% dos não fumantes tiveram infarto.",
+              "enunciado": "Qual é o risco relativo?",
+              "opcoes": [
+                "4",
+                "15",
+                "0,25",
+                "1,5"
+              ],
+              "resposta": "4",
+              "explicacao": "RR = 20% / 5% = 4.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medida ao cálculo.",
+              "pares": [
+                {
+                  "esquerda": "Risco relativo",
+                  "direita": "Risco nos expostos dividido pelo risco nos não expostos"
+                },
+                {
+                  "esquerda": "Risco atribuível",
+                  "direita": "Risco nos expostos menos o risco nos não expostos"
+                },
+                {
+                  "esquerda": "Razão de chances",
+                  "direita": "Chance de exposição em casos sobre a chance em controles"
+                },
+                {
+                  "esquerda": "Número necessário para tratar",
+                  "direita": "Um dividido pela redução absoluta do risco"
+                }
+              ],
+              "explicacao": "A razão de chances é a medida típica do estudo de caso-controle.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em um ensaio clínico, o evento ocorreu em 10% no grupo placebo e em 6% no grupo do remédio. Qual é o número necessário para tratar?",
+              "opcoes": [
+                "25",
+                "4",
+                "10",
+                "40"
+              ],
+              "resposta": "25",
+              "explicacao": "A redução absoluta é de 4%, e 1/0,04 = 25.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Em um ensaio clínico, o evento ocorreu em 10% do grupo placebo e em 6% do grupo tratado.",
+              "enunciado": "Qual é a redução relativa do risco?",
+              "opcoes": [
+                "40%",
+                "4%",
+                "60%",
+                "25%"
+              ],
+              "resposta": "40%",
+              "explicacao": "RRR = (10 - 6) / 10 = 40%.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um intervalo de confiança de 95% do risco relativo que inclui o valor 1 indica ausência de significância estatística.",
+              "resposta": true,
+              "explicacao": "Para diferenças de médias, o valor nulo é o zero.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "O risco atribuível populacional de um fator é alto.",
+              "enunciado": "O que significa?",
+              "opcoes": [
+                "Eliminar o fator reduziria muitos casos na população",
+                "O fator não importa",
+                "O fator é raro",
+                "Não há associação"
+              ],
+              "resposta": "Eliminar o fator reduziria muitos casos na população",
+              "explicacao": "Ele depende da força da associação e da frequência da exposição.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O erro do tipo ___ é concluir que existe diferença quando ela não existe, e sua probabilidade é o alfa.",
+              "opcoes": [
+                "I",
+                "II",
+                "III",
+                "zero"
+              ],
+              "resposta": "I",
+              "explicacao": "O erro do tipo II é não detectar uma diferença que existe.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um estudo tem poder de 80%.",
+              "enunciado": "O que isso significa?",
+              "opcoes": [
+                "80% de chance de detectar uma diferença real, se ela existir",
+                "80% de chance de erro",
+                "80% dos pacientes melhoraram",
+                "O valor de p é 0,8"
+              ],
+              "resposta": "80% de chance de detectar uma diferença real, se ela existir",
+              "explicacao": "O poder é 1 menos beta.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev-d2",
+      "titulo": "Estudos e vieses",
+      "descricao": "Desenhos, vieses e medicina baseada em evidências",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d2-l1",
+          "titulo": "Desenhos de estudo em casos",
+          "questoes": [
+            {
+              "id": "prev-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisadores escolhem 200 pacientes com câncer de pulmão e 400 sem a doença e perguntam sobre exposição ao amianto.",
+              "enunciado": "Qual é o desenho?",
+              "opcoes": [
+                "Caso-controle",
+                "Coorte",
+                "Ensaio clínico",
+                "Transversal"
+              ],
+              "resposta": "Caso-controle",
+              "explicacao": "Esse desenho é ótimo para doenças raras.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada desenho de estudo à característica.",
+              "pares": [
+                {
+                  "esquerda": "Coorte",
+                  "direita": "Parte da exposição e acompanha para ver a doença"
+                },
+                {
+                  "esquerda": "Caso-controle",
+                  "direita": "Parte da doença e investiga a exposição no passado"
+                },
+                {
+                  "esquerda": "Transversal",
+                  "direita": "Exposição e doença medidas ao mesmo tempo"
+                },
+                {
+                  "esquerda": "Ecológico",
+                  "direita": "A unidade de análise é a população"
+                }
+              ],
+              "explicacao": "O ecológico está sujeito à falácia ecológica.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estudo é mais adequado para estudar uma exposição rara?",
+              "opcoes": [
+                "Coorte",
+                "Caso-controle",
+                "Série de casos",
+                "Ecológico"
+              ],
+              "resposta": "Coorte",
+              "explicacao": "Na coorte, seleciona-se o grupo exposto.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Um estudo usa registros de 1990 para acompanhar trabalhadores expostos e não expostos até hoje.",
+              "enunciado": "Qual é o desenho?",
+              "opcoes": [
+                "Coorte histórica (retrospectiva)",
+                "Caso-controle",
+                "Ensaio clínico",
+                "Transversal"
+              ],
+              "resposta": "Coorte histórica (retrospectiva)",
+              "explicacao": "A direção é da exposição para a doença, mesmo usando dados do passado.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ensaio clínico randomizado é o melhor desenho para avaliar a eficácia de um tratamento.",
+              "resposta": true,
+              "explicacao": "A randomização distribui igualmente os fatores de confusão.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Um ensaio compara um novo remédio ao padrão e quer mostrar que ele não é muito pior.",
+              "enunciado": "Qual é o tipo de ensaio?",
+              "opcoes": [
+                "De não inferioridade",
+                "De superioridade",
+                "De equivalência estrita",
+                "Observacional"
+              ],
+              "resposta": "De não inferioridade",
+              "explicacao": "Ele exige uma margem definida antes do estudo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A análise por ___ de tratar mantém cada paciente no grupo para o qual foi sorteado, mesmo que não tenha seguido o tratamento.",
+              "opcoes": [
+                "intenção",
+                "protocolo",
+                "adesão",
+                "escolha"
+              ],
+              "resposta": "intenção",
+              "explicacao": "Ela preserva os benefícios da randomização.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Uma revisão junta resultados de vários ensaios clínicos com métodos estatísticos.",
+              "enunciado": "Qual é o nome?",
+              "opcoes": [
+                "Metanálise",
+                "Coorte",
+                "Série de casos",
+                "Estudo ecológico"
+              ],
+              "resposta": "Metanálise",
+              "explicacao": "O gráfico de floresta (forest plot) mostra os resultados.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d2-l2",
+          "titulo": "Vieses e confusão",
+          "questoes": [
+            {
+              "id": "prev-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Num estudo caso-controle, mães de bebês com malformação lembram mais de remédios usados na gestação que mães de bebês saudáveis.",
+              "enunciado": "Qual é o viés?",
+              "opcoes": [
+                "Viés de memória",
+                "Viés de seleção",
+                "Viés de publicação",
+                "Confusão"
+              ],
+              "resposta": "Viés de memória",
+              "explicacao": "É comum em estudos de caso-controle.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada viés à situação.",
+              "pares": [
+                {
+                  "esquerda": "Viés de seleção",
+                  "direita": "Grupos diferentes desde o início"
+                },
+                {
+                  "esquerda": "Viés de aferição",
+                  "direita": "Medida feita de forma diferente nos grupos"
+                },
+                {
+                  "esquerda": "Viés do trabalhador sadio",
+                  "direita": "Trabalhadores parecem mais saudáveis que a população"
+                },
+                {
+                  "esquerda": "Viés de publicação",
+                  "direita": "Estudos negativos não são publicados"
+                }
+              ],
+              "explicacao": "O funnel plot ajuda a detectar viés de publicação.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um estudo mostra associação entre café e câncer de pulmão, mas os bebedores de café fumam mais. Qual é o problema?",
+              "opcoes": [
+                "Confusão pelo tabagismo",
+                "Viés de memória",
+                "Viés de publicação",
+                "Acaso puro"
+              ],
+              "resposta": "Confusão pelo tabagismo",
+              "explicacao": "O fator de confusão se associa à exposição e ao desfecho.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Um estudo quer controlar a confusão pela idade.",
+              "enunciado": "Quais são as formas de controle?",
+              "opcoes": [
+                "Randomização, pareamento, restrição, estratificação e análise multivariada",
+                "Aumentar o tamanho apenas",
+                "Nada pode ser feito",
+                "Mudar o desfecho"
+              ],
+              "resposta": "Randomização, pareamento, restrição, estratificação e análise multivariada",
+              "explicacao": "Na fase de análise, usam-se estratificação e regressão.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O cegamento reduz o viés de aferição nos ensaios clínicos.",
+              "resposta": true,
+              "explicacao": "No duplo-cego, nem o paciente nem o pesquisador sabem o grupo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Em um estudo, o efeito do remédio é diferente em homens e mulheres.",
+              "enunciado": "Qual é o nome desse fenômeno?",
+              "opcoes": [
+                "Modificação de efeito (interação)",
+                "Confusão",
+                "Viés de seleção",
+                "Acaso"
+              ],
+              "resposta": "Modificação de efeito (interação)",
+              "explicacao": "Na modificação de efeito, os resultados devem ser apresentados separados.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O viés de ___ ocorre quando os pacientes que abandonam o estudo são diferentes dos que ficam.",
+              "opcoes": [
+                "perda de seguimento",
+                "memória",
+                "publicação",
+                "aferição"
+              ],
+              "resposta": "perda de seguimento",
+              "explicacao": "É uma forma de viés de seleção.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Uma doença parece mais grave no hospital do que na comunidade.",
+              "enunciado": "Qual é o viés?",
+              "opcoes": [
+                "Viés de Berkson (de admissão)",
+                "Viés de memória",
+                "Viés de tempo",
+                "Confusão"
+              ],
+              "resposta": "Viés de Berkson (de admissão)",
+              "explicacao": "Pacientes hospitalizados não representam a população geral.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d2-l3",
+          "titulo": "Níveis de prevenção e rastreamento",
+          "questoes": [
+            {
+              "id": "prev-d2-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Médico decide não pedir exames desnecessários para paciente ansioso sem sintomas preocupantes.",
+              "enunciado": "Qual nível de prevenção é esse?",
+              "opcoes": [
+                "Prevenção quaternária",
+                "Prevenção primária",
+                "Prevenção secundária",
+                "Prevenção terciária"
+              ],
+              "resposta": "Prevenção quaternária",
+              "explicacao": "Ela evita danos causados pelo excesso de intervenção.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exemplo ao seu nível de prevenção.",
+              "pares": [
+                {
+                  "esquerda": "Uso de capacete",
+                  "direita": "Primária"
+                },
+                {
+                  "esquerda": "Teste do pezinho",
+                  "direita": "Secundária"
+                },
+                {
+                  "esquerda": "Fisioterapia após amputação",
+                  "direita": "Terciária"
+                },
+                {
+                  "esquerda": "Não pedir PSA sem decisão compartilhada",
+                  "direita": "Quaternária"
+                }
+              ],
+              "explicacao": "A prevenção quaternária foi proposta por Jamoulle.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um critério de Wilson e Jungner para um bom programa de rastreamento?",
+              "opcoes": [
+                "A doença deve ser importante e ter fase sem sintomas detectável",
+                "A doença deve ser rara e sem tratamento",
+                "O teste deve ser caro",
+                "A doença deve ter cura espontânea"
+              ],
+              "resposta": "A doença deve ser importante e ter fase sem sintomas detectável",
+              "explicacao": "Também deve existir tratamento eficaz para a fase precoce.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Um rastreamento detecta tumores que nunca causariam sintomas na vida da pessoa.",
+              "enunciado": "Qual é o problema?",
+              "opcoes": [
+                "Sobrediagnóstico",
+                "Viés de memória",
+                "Falso negativo",
+                "Confusão"
+              ],
+              "resposta": "Sobrediagnóstico",
+              "explicacao": "O sobrediagnóstico leva a tratamentos desnecessários.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O rastreamento do câncer de próstata com PSA não é recomendado de rotina pelo Ministério da Saúde para a população geral.",
+              "resposta": true,
+              "explicacao": "A decisão deve ser compartilhada entre médico e paciente.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Os tumores de crescimento lento são mais detectados em rastreamentos do que os agressivos.",
+              "enunciado": "Qual é o viés?",
+              "opcoes": [
+                "Viés de duração (length bias)",
+                "Viés de memória",
+                "Viés de antecipação",
+                "Confusão"
+              ],
+              "resposta": "Viés de duração (length bias)",
+              "explicacao": "Ele faz o rastreamento parecer melhor do que é.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A estratégia de alto ___ foca em pessoas com maior risco, enquanto a estratégia populacional busca reduzir um pouco o risco de todos.",
+              "opcoes": [
+                "risco",
+                "valor",
+                "custo",
+                "grau"
+              ],
+              "resposta": "risco",
+              "explicacao": "Esse conceito foi descrito por Geoffrey Rose.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Programa de rastreamento de câncer de mama no Brasil.",
+              "enunciado": "Qual é a recomendação do Ministério da Saúde?",
+              "opcoes": [
+                "Mamografia a cada 2 anos dos 50 aos 69 anos",
+                "Mamografia anual a partir dos 30",
+                "Ultrassom anual para todas",
+                "Nada"
+              ],
+              "resposta": "Mamografia a cada 2 anos dos 50 aos 69 anos",
+              "explicacao": "Outras sociedades recomendam começar aos 40 anos.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev-d3",
+      "titulo": "Vigilância e saúde do trabalhador",
+      "descricao": "Notificação, surtos e doenças do trabalho",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d3-l1",
+          "titulo": "Vigilância epidemiológica em casos",
+          "questoes": [
+            {
+              "id": "prev-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Um município registra 3 casos de sarampo em uma semana.",
+              "enunciado": "Qual é a conduta de vigilância?",
+              "opcoes": [
+                "Notificação imediata (em até 24 horas) e bloqueio vacinal",
+                "Notificação semanal",
+                "Nada",
+                "Esperar mais casos"
+              ],
+              "resposta": "Notificação imediata (em até 24 horas) e bloqueio vacinal",
+              "explicacao": "O sarampo é de notificação imediata.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada conceito à definição.",
+              "pares": [
+                {
+                  "esquerda": "Surto",
+                  "direita": "Aumento de casos em local restrito"
+                },
+                {
+                  "esquerda": "Epidemia",
+                  "direita": "Aumento acima do esperado em uma região"
+                },
+                {
+                  "esquerda": "Pandemia",
+                  "direita": "Epidemia em vários continentes"
+                },
+                {
+                  "esquerda": "Endemia",
+                  "direita": "Presença constante e esperada"
+                }
+              ],
+              "explicacao": "O diagrama de controle ajuda a identificar epidemias.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença é de notificação compulsória imediata?",
+              "opcoes": [
+                "Raiva humana",
+                "Hanseníase",
+                "Tuberculose",
+                "Hipertensão"
+              ],
+              "resposta": "Raiva humana",
+              "explicacao": "A tuberculose e a hanseníase são de notificação semanal.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Uma doença tem 50 casos por semana, quando o esperado é 20, e o limite superior do diagrama de controle é 35.",
+              "enunciado": "O que isso indica?",
+              "opcoes": [
+                "Epidemia",
+                "Endemia",
+                "Situação normal",
+                "Erro"
+              ],
+              "resposta": "Epidemia",
+              "explicacao": "Casos acima do limite superior indicam epidemia.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vigilância sentinela usa unidades selecionadas para monitorar doenças, como a síndrome gripal.",
+              "resposta": true,
+              "explicacao": "Ela é mais rápida e detalhada que a notificação de todos os casos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "A curva de um surto mostra um pico único e rápido de casos após uma festa.",
+              "enunciado": "Qual é o tipo de surto?",
+              "opcoes": [
+                "Fonte comum pontual",
+                "Propagado",
+                "Contínuo",
+                "Sem fonte"
+              ],
+              "resposta": "Fonte comum pontual",
+              "explicacao": "No propagado, há vários picos por transmissão de pessoa para pessoa.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o sistema de informação para notificação de doenças no Brasil.",
+              "opcoes": [
+                "SINAN",
+                "SIM",
+                "SINASC",
+                "SIH"
+              ],
+              "resposta": "SINAN",
+              "explicacao": "O SIM registra os óbitos e o SINASC os nascidos vivos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Uma criança tem paralisia flácida aguda.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Notificação imediata e coleta de fezes para pesquisa de poliovírus",
+                "Nada",
+                "Notificação semanal",
+                "Esperar"
+              ],
+              "resposta": "Notificação imediata e coleta de fezes para pesquisa de poliovírus",
+              "explicacao": "Toda paralisia flácida aguda em menores de 15 anos deve ser notificada.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d3-l2",
+          "titulo": "Saúde do trabalhador",
+          "questoes": [
+            {
+              "id": "prev-d3-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador de mineração com 20 anos de exposição tem falta de ar e radiografia com nódulos no alto do pulmão.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Silicose",
+                "Asbestose",
+                "Asma ocupacional",
+                "Tuberculose"
+              ],
+              "resposta": "Silicose",
+              "explicacao": "A silicose aumenta o risco de tuberculose.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exposição à doença ocupacional.",
+              "pares": [
+                {
+                  "esquerda": "Amianto",
+                  "direita": "Mesotelioma e placas pleurais"
+                },
+                {
+                  "esquerda": "Benzeno",
+                  "direita": "Leucemia e falta de células do sangue"
+                },
+                {
+                  "esquerda": "Chumbo",
+                  "direita": "Anemia, dor abdominal e neuropatia"
+                },
+                {
+                  "esquerda": "Ruído",
+                  "direita": "Perda auditiva nas frequências altas"
+                }
+              ],
+              "explicacao": "A perda auditiva induzida por ruído afeta a frequência de 4.000 Hz primeiro.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual documento deve ser emitido em caso de acidente de trabalho?",
+              "opcoes": [
+                "Comunicação de Acidente de Trabalho (CAT)",
+                "Atestado simples",
+                "Receita",
+                "Nenhum"
+              ],
+              "resposta": "Comunicação de Acidente de Trabalho (CAT)",
+              "explicacao": "A CAT pode ser emitida pelo médico, pela empresa ou pelo sindicato.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Enfermeira se fere com agulha de paciente com HIV.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Lavar o local e iniciar a profilaxia pós-exposição em até 72 horas, de preferência nas primeiras 2 horas",
+                "Nada",
+                "Esperar exames",
+                "Usar álcool e esperar"
+              ],
+              "resposta": "Lavar o local e iniciar a profilaxia pós-exposição em até 72 horas, de preferência nas primeiras 2 horas",
+              "explicacao": "A profilaxia dura 28 dias.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As lesões por esforço repetitivo (LER/DORT) são doenças relacionadas ao trabalho e devem ser notificadas.",
+              "resposta": true,
+              "explicacao": "Entram no SINAN como agravos de notificação.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador rural tem miose, salivação, suor e diarreia após aplicar agrotóxico.",
+              "enunciado": "Qual é a intoxicação?",
+              "opcoes": [
+                "Organofosforado",
+                "Glifosato",
+                "Paraquat",
+                "Piretroide"
+              ],
+              "resposta": "Organofosforado",
+              "explicacao": "O tratamento é feito com atropina e oximas.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o órgão do SUS que oferece apoio especializado em saúde do trabalhador.",
+              "opcoes": [
+                "CEREST",
+                "CAPS",
+                "NASF",
+                "CTA"
+              ],
+              "resposta": "CEREST",
+              "explicacao": "Ele faz parte da RENAST.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador tem dor no punho após anos de digitação e teste de Phalen positivo.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome do túnel do carpo",
+                "Tendinite de De Quervain",
+                "Epicondilite",
+                "Artrose"
+              ],
+              "resposta": "Síndrome do túnel do carpo",
+              "explicacao": "É uma LER/DORT comum.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d3-l3",
+          "titulo": "Imunização e vigilância de doenças",
+          "questoes": [
+            {
+              "id": "prev-d3-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 meses vai tomar as vacinas do calendário.",
+              "enunciado": "Quais vacinas recebe aos 2 meses?",
+              "opcoes": [
+                "Pentavalente, poliomielite inativada, pneumocócica e rotavírus",
+                "BCG e hepatite B",
+                "Febre amarela",
+                "Tríplice viral"
+              ],
+              "resposta": "Pentavalente, poliomielite inativada, pneumocócica e rotavírus",
+              "explicacao": "A BCG e a hepatite B são dadas ao nascer.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vacina à idade no calendário.",
+              "pares": [
+                {
+                  "esquerda": "BCG",
+                  "direita": "Ao nascer"
+                },
+                {
+                  "esquerda": "Tríplice viral",
+                  "direita": "12 meses"
+                },
+                {
+                  "esquerda": "Febre amarela",
+                  "direita": "9 meses"
+                },
+                {
+                  "esquerda": "Meningocócica C",
+                  "direita": "3 meses"
+                }
+              ],
+              "explicacao": "O calendário pode mudar, então sempre conferir o atual.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vacina é contraindicada em pessoas com imunossupressão grave?",
+              "opcoes": [
+                "Vacinas vivas atenuadas, como tríplice viral e febre amarela",
+                "Vacina de influenza inativada",
+                "Vacina de hepatite B",
+                "Toxóide tetânico"
+              ],
+              "resposta": "Vacinas vivas atenuadas, como tríplice viral e febre amarela",
+              "explicacao": "Vacinas inativadas são seguras, embora possam funcionar menos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com ferimento sujo tem vacinação antitetânica incompleta.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Vacina e imunoglobulina antitetânica",
+                "Apenas vacina",
+                "Nada",
+                "Apenas antibiótico"
+              ],
+              "resposta": "Vacina e imunoglobulina antitetânica",
+              "explicacao": "Ferimentos sujos com vacinação incompleta exigem ambos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A imunidade de rebanho protege pessoas não vacinadas quando grande parte da população está imunizada.",
+              "resposta": true,
+              "explicacao": "O nível necessário varia conforme a doença.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança teve reação febril leve após vacina.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Orientar, dar antitérmico se necessário e manter o calendário",
+                "Suspender todas as vacinas",
+                "Notificar como grave",
+                "Nada"
+              ],
+              "resposta": "Orientar, dar antitérmico se necessário e manter o calendário",
+              "explicacao": "Eventos graves devem ser notificados como eventos adversos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O número básico de ___ (R0) é a média de casos novos gerados por um caso em população suscetível.",
+              "opcoes": [
+                "reprodução",
+                "contágio",
+                "mortalidade",
+                "prevalência"
+              ],
+              "resposta": "reprodução",
+              "explicacao": "Se for maior que 1, a doença se espalha.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Cão saudável, que pode ser observado, deu uma mordida superficial na perna de uma pessoa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Observar o animal por 10 dias e só vacinar se ele adoecer ou morrer",
+                "Vacina e soro imediatos",
+                "Nada",
+                "Sacrificar o cão"
+              ],
+              "resposta": "Observar o animal por 10 dias e só vacinar se ele adoecer ou morrer",
+              "explicacao": "Se o animal ficar saudável, não há risco de raiva.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev-d4",
+      "titulo": "SUS e políticas de saúde",
+      "descricao": "Princípios, financiamento e redes",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d4-l1",
+          "titulo": "SUS em casos",
+          "questoes": [
+            {
+              "id": "prev-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Uma unidade decide atender mais as pessoas com maior necessidade, mesmo que demore para as outras.",
+              "enunciado": "Qual princípio do SUS é esse?",
+              "opcoes": [
+                "Equidade",
+                "Universalidade",
+                "Integralidade",
+                "Hierarquização"
+              ],
+              "resposta": "Equidade",
+              "explicacao": "Equidade é tratar de forma desigual os desiguais.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada princípio do SUS ao significado.",
+              "pares": [
+                {
+                  "esquerda": "Universalidade",
+                  "direita": "Acesso a todos"
+                },
+                {
+                  "esquerda": "Integralidade",
+                  "direita": "Cuidado em todos os níveis"
+                },
+                {
+                  "esquerda": "Equidade",
+                  "direita": "Mais para quem mais precisa"
+                },
+                {
+                  "esquerda": "Participação social",
+                  "direita": "Conselhos e conferências de saúde"
+                }
+              ],
+              "explicacao": "Universalidade, integralidade e equidade são os princípios doutrinários.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual lei regulamenta a participação da comunidade e o financiamento do SUS?",
+              "opcoes": [
+                "Lei 8.142 de 1990",
+                "Lei 8.080 de 1990",
+                "Constituição de 1988",
+                "Lei 12.871"
+              ],
+              "resposta": "Lei 8.142 de 1990",
+              "explicacao": "A Lei 8.080 regula a organização e o funcionamento.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Conselho de saúde tem 20 membros.",
+              "enunciado": "Quantos devem ser usuários?",
+              "opcoes": [
+                "10, ou 50%",
+                "5",
+                "15",
+                "20"
+              ],
+              "resposta": "10, ou 50%",
+              "explicacao": "Os outros 50% se dividem entre trabalhadores (25%) e gestores e prestadores (25%).",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As conferências de saúde se reúnem a cada 4 anos para avaliar a situação e propor diretrizes.",
+              "resposta": true,
+              "explicacao": "Os conselhos são permanentes e deliberativos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Uma unidade de saúde encaminha paciente para especialista e recebe o retorno da avaliação.",
+              "enunciado": "Qual princípio organizativo é esse?",
+              "opcoes": [
+                "Hierarquização com referência e contrarreferência",
+                "Universalidade",
+                "Equidade",
+                "Participação"
+              ],
+              "resposta": "Hierarquização com referência e contrarreferência",
+              "explicacao": "A hierarquização organiza os níveis de atenção.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A Emenda Constitucional ___ de 2000 definiu percentuais mínimos de gastos com saúde por União, estados e municípios.",
+              "opcoes": [
+                "29",
+                "95",
+                "1",
+                "50"
+              ],
+              "resposta": "29",
+              "explicacao": "A Lei Complementar 141 de 2012 a regulamentou.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "O município quer contratar um hospital privado para atender o SUS.",
+              "enunciado": "Qual é a regra?",
+              "opcoes": [
+                "A participação privada é complementar, com preferência para entidades filantrópicas",
+                "Proibido",
+                "Sem regras",
+                "Somente com fins lucrativos"
+              ],
+              "resposta": "A participação privada é complementar, com preferência para entidades filantrópicas",
+              "explicacao": "Isso está na Constituição e na Lei 8.080.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d4-l2",
+          "titulo": "Atenção primária e redes",
+          "questoes": [
+            {
+              "id": "prev-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Uma equipe de saúde da família acompanha a mesma família por anos.",
+              "enunciado": "Qual atributo da atenção primária é esse?",
+              "opcoes": [
+                "Longitudinalidade",
+                "Acesso de primeiro contato",
+                "Coordenação",
+                "Orientação comunitária"
+              ],
+              "resposta": "Longitudinalidade",
+              "explicacao": "Os atributos foram descritos por Barbara Starfield.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada atributo da atenção primária ao significado.",
+              "pares": [
+                {
+                  "esquerda": "Acesso de primeiro contato",
+                  "direita": "Porta de entrada do sistema"
+                },
+                {
+                  "esquerda": "Longitudinalidade",
+                  "direita": "Vínculo ao longo do tempo"
+                },
+                {
+                  "esquerda": "Integralidade",
+                  "direita": "Atender a maioria das necessidades"
+                },
+                {
+                  "esquerda": "Coordenação",
+                  "direita": "Organizar o cuidado em outros serviços"
+                }
+              ],
+              "explicacao": "Também há atributos derivados: orientação familiar e comunitária e competência cultural.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a população recomendada para cada equipe de saúde da família?",
+              "opcoes": [
+                "2.000 a 3.500 pessoas",
+                "10.000 pessoas",
+                "500 pessoas",
+                "50.000 pessoas"
+              ],
+              "resposta": "2.000 a 3.500 pessoas",
+              "explicacao": "A PNAB de 2017 define esses números.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Uma equipe percebe que muitos casos de diarreia vêm de uma rua sem saneamento.",
+              "enunciado": "Qual atributo usa?",
+              "opcoes": [
+                "Orientação comunitária",
+                "Longitudinalidade",
+                "Primeiro contato",
+                "Coordenação"
+              ],
+              "resposta": "Orientação comunitária",
+              "explicacao": "Ela olha para a comunidade e não só para o indivíduo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Política Nacional de Atenção Básica de 2017 permitiu equipes de atenção básica sem agentes comunitários fixos em quantidade definida.",
+              "resposta": true,
+              "explicacao": "Essa mudança foi criticada por enfraquecer a estratégia de saúde da família.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com transtorno mental grave precisa de cuidado intensivo na comunidade.",
+              "enunciado": "Qual é o serviço indicado?",
+              "opcoes": [
+                "Centro de Atenção Psicossocial (CAPS)",
+                "Hospital psiquiátrico",
+                "Pronto-socorro",
+                "UBS apenas"
+              ],
+              "resposta": "Centro de Atenção Psicossocial (CAPS)",
+              "explicacao": "O CAPS faz parte da Rede de Atenção Psicossocial.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de atenção à saúde organiza os serviços de forma integrada, com a atenção primária como centro de comunicação.",
+              "opcoes": [
+                "rede",
+                "pirâmide",
+                "fila",
+                "central"
+              ],
+              "resposta": "rede",
+              "explicacao": "As redes foram propostas por Eugênio Vilaça Mendes.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um município cria uma central para organizar o acesso a consultas especializadas.",
+              "enunciado": "Como se chama?",
+              "opcoes": [
+                "Regulação",
+                "Vigilância",
+                "Auditoria",
+                "Controle social"
+              ],
+              "resposta": "Regulação",
+              "explicacao": "A regulação ordena o acesso conforme prioridade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d4-l3",
+          "titulo": "Bioética e medicina legal",
+          "questoes": [
+            {
+              "id": "prev-d4-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente adulto e capaz recusa transfusão por motivo religioso, em situação sem risco imediato de morte.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Respeitar a recusa, registrar e buscar alternativas",
+                "Transfundir à força",
+                "Chamar a polícia",
+                "Dar alta"
+              ],
+              "resposta": "Respeitar a recusa, registrar e buscar alternativas",
+              "explicacao": "A autonomia do paciente capaz deve ser respeitada.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada princípio bioético ao significado.",
+              "pares": [
+                {
+                  "esquerda": "Autonomia",
+                  "direita": "Respeitar a decisão do paciente capaz"
+                },
+                {
+                  "esquerda": "Beneficência",
+                  "direita": "Fazer o bem"
+                },
+                {
+                  "esquerda": "Não maleficência",
+                  "direita": "Não causar dano"
+                },
+                {
+                  "esquerda": "Justiça",
+                  "direita": "Distribuir recursos de forma justa"
+                }
+              ],
+              "explicacao": "Esses princípios foram descritos por Beauchamp e Childress.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando o médico pode quebrar o sigilo?",
+              "opcoes": [
+                "Por dever legal, justa causa ou autorização do paciente",
+                "Sempre que a família pedir",
+                "Nunca",
+                "Se o empregador pedir"
+              ],
+              "resposta": "Por dever legal, justa causa ou autorização do paciente",
+              "explicacao": "Notificação de doenças é dever legal.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 15 anos pede anticoncepcional e não quer que os pais saibam.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Manter o sigilo se não houver risco, e orientar",
+                "Contar aos pais",
+                "Negar atendimento",
+                "Chamar o Conselho Tutelar"
+              ],
+              "resposta": "Manter o sigilo se não houver risco, e orientar",
+              "explicacao": "O sigilo pode ser quebrado se houver risco à vida ou abuso.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A declaração de óbito por morte violenta deve ser preenchida pelo Instituto Médico Legal.",
+              "resposta": true,
+              "explicacao": "Em mortes naturais sem médico, o Serviço de Verificação de Óbito é acionado.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Médico preenche a declaração de óbito de paciente que morreu de pneumonia após AVC.",
+              "enunciado": "Qual é a causa básica?",
+              "opcoes": [
+                "AVC",
+                "Pneumonia",
+                "Parada cardíaca",
+                "Insuficiência respiratória"
+              ],
+              "resposta": "AVC",
+              "explicacao": "A causa básica é a doença que iniciou a cadeia de eventos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o processo em que o paciente decide junto com o médico após receber informações claras.",
+              "opcoes": [
+                "decisão compartilhada",
+                "ordem médica",
+                "prescrição",
+                "triagem"
+              ],
+              "resposta": "decisão compartilhada",
+              "explicacao": "Ela é um dos pilares da medicina centrada na pessoa.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer terminal pede para não ser reanimado.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Registrar a diretiva antecipada de vontade e respeitá-la",
+                "Ignorar",
+                "Reanimar sempre",
+                "Pedir autorização judicial"
+              ],
+              "resposta": "Registrar a diretiva antecipada de vontade e respeitá-la",
+              "explicacao": "O Conselho Federal de Medicina reconhece as diretivas antecipadas.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev-d5",
+      "titulo": "Doenças transmissíveis de prova",
+      "descricao": "Tuberculose, hanseníase, arboviroses e zoonoses",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d5-l1",
+          "titulo": "Tuberculose em casos",
+          "questoes": [
+            {
+              "id": "prev-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem tosse há 3 semanas, perda de peso e suor noturno.",
+              "enunciado": "Qual é o exame inicial?",
+              "opcoes": [
+                "Teste rápido molecular para tuberculose no escarro",
+                "Radiografia apenas",
+                "Tomografia",
+                "Nenhum"
+              ],
+              "resposta": "Teste rápido molecular para tuberculose no escarro",
+              "explicacao": "O teste rápido também detecta resistência à rifampicina.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fase do tratamento da tuberculose ao esquema.",
+              "pares": [
+                {
+                  "esquerda": "Fase intensiva",
+                  "direita": "Rifampicina, isoniazida, pirazinamida e etambutol por 2 meses"
+                },
+                {
+                  "esquerda": "Fase de manutenção",
+                  "direita": "Rifampicina e isoniazida por 4 meses"
+                },
+                {
+                  "esquerda": "Meningoencefalite",
+                  "direita": "Manutenção prolongada por 10 meses"
+                },
+                {
+                  "esquerda": "Infecção latente",
+                  "direita": "Isoniazida ou rifapentina com isoniazida"
+                }
+              ],
+              "explicacao": "O tratamento diretamente observado aumenta a adesão.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a indicação de tratamento da infecção latente da tuberculose?",
+              "opcoes": [
+                "Contato com teste positivo, após excluir doença ativa",
+                "Todos os contatos sem exame",
+                "Apenas quem tem tosse",
+                "Ninguém"
+              ],
+              "resposta": "Contato com teste positivo, após excluir doença ativa",
+              "explicacao": "Pessoas com HIV têm indicação mesmo com teste negativo em alguns casos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em tratamento de tuberculose tem icterícia e enzimas do fígado 5 vezes acima do normal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suspender o esquema e reintroduzir os remédios aos poucos",
+                "Manter tudo",
+                "Aumentar a dose",
+                "Trocar por antibiótico comum"
+              ],
+              "resposta": "Suspender o esquema e reintroduzir os remédios aos poucos",
+              "explicacao": "A pirazinamida e a isoniazida são as mais tóxicas ao fígado.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tuberculose é de notificação compulsória, e os contatos devem ser avaliados.",
+              "resposta": true,
+              "explicacao": "A busca ativa é parte do controle da doença.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e tuberculose vai iniciar o tratamento.",
+              "enunciado": "Quando iniciar o antirretroviral?",
+              "opcoes": [
+                "Em até 2 semanas após o início do tratamento da tuberculose (ou até 8 semanas em alguns casos)",
+                "Após terminar a tuberculose",
+                "Ao mesmo tempo, no primeiro dia",
+                "Nunca"
+              ],
+              "resposta": "Em até 2 semanas após o início do tratamento da tuberculose (ou até 8 semanas em alguns casos)",
+              "explicacao": "Na meningite tuberculosa, espera-se mais pelo risco de reação inflamatória.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome inflamatória de ___ imune é a piora após iniciar o antirretroviral, pela recuperação do sistema de defesa.",
+              "opcoes": [
+                "reconstituição",
+                "supressão",
+                "ativação",
+                "rejeição"
+              ],
+              "resposta": "reconstituição",
+              "explicacao": "Ela pode ser tratada com corticoide.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Contato de tuberculose, criança de 3 anos, sem sintomas e com radiografia normal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratar infecção latente após avaliação, conforme a prova tuberculínica",
+                "Nada",
+                "Tratar como doença ativa",
+                "BCG de novo"
+              ],
+              "resposta": "Tratar infecção latente após avaliação, conforme a prova tuberculínica",
+              "explicacao": "Crianças pequenas têm maior risco de formas graves.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d5-l2",
+          "titulo": "Hanseníase e arboviroses",
+          "questoes": [
+            {
+              "id": "prev-d5-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem 7 manchas com perda de sensibilidade e nervo engrossado.",
+              "enunciado": "Qual é a classificação e o tratamento?",
+              "opcoes": [
+                "Multibacilar; poliquimioterapia por 12 meses",
+                "Paucibacilar; 6 meses",
+                "Não é hanseníase",
+                "Apenas corticoide"
+              ],
+              "resposta": "Multibacilar; poliquimioterapia por 12 meses",
+              "explicacao": "Mais de 5 lesões indica multibacilar.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada reação hansênica ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Reação tipo 1 (reversa)",
+                  "direita": "Corticoide"
+                },
+                {
+                  "esquerda": "Reação tipo 2 (eritema nodoso)",
+                  "direita": "Talidomida"
+                },
+                {
+                  "esquerda": "Reação tipo 2 em mulher em idade fértil",
+                  "direita": "Corticoide, pois a talidomida causa malformações"
+                },
+                {
+                  "esquerda": "Pessoa que convive com o doente",
+                  "direita": "Exame da pele e dos nervos e BCG"
+                }
+              ],
+              "explicacao": "As reações não são motivo para suspender o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sinal de alarme na dengue?",
+              "opcoes": [
+                "Dor abdominal intensa, vômitos persistentes e sangramento de mucosas",
+                "Febre de 39 °C",
+                "Dor no corpo",
+                "Manchas vermelhas"
+              ],
+              "resposta": "Dor abdominal intensa, vômitos persistentes e sangramento de mucosas",
+              "explicacao": "O alarme indica risco de choque.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dengue tem hematócrito subindo, plaquetas caindo e dor abdominal.",
+              "enunciado": "Qual é o grupo e a conduta?",
+              "opcoes": [
+                "Grupo C; internar e hidratação venosa",
+                "Grupo A; casa",
+                "Grupo B; observação",
+                "Grupo D; UTI direta"
+              ],
+              "resposta": "Grupo C; internar e hidratação venosa",
+              "explicacao": "O grupo D é o de choque.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na chikungunya, a dor nas articulações pode durar meses.",
+              "resposta": true,
+              "explicacao": "Na fase crônica, podem ser usados outros remédios.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tem manchas com coceira, conjuntivite e febre baixa.",
+              "enunciado": "Qual arbovirose é mais preocupante?",
+              "opcoes": [
+                "Zika, pelo risco de microcefalia",
+                "Dengue",
+                "Chikungunya",
+                "Febre amarela"
+              ],
+              "resposta": "Zika, pelo risco de microcefalia",
+              "explicacao": "A gestante deve ser acompanhada com ultrassonografias.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A prova do ___ é feita na dengue para avaliar fragilidade dos vasos.",
+              "opcoes": [
+                "laço",
+                "Mantoux",
+                "Romberg",
+                "Lasègue"
+              ],
+              "resposta": "laço",
+              "explicacao": "A prova positiva sugere maior risco de sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com febre amarela tem icterícia, sangramento e insuficiência renal.",
+              "enunciado": "Qual é a fase?",
+              "opcoes": [
+                "Fase toxêmica",
+                "Fase de remissão",
+                "Fase inicial",
+                "Fase crônica"
+              ],
+              "resposta": "Fase toxêmica",
+              "explicacao": "A fase toxêmica tem alta mortalidade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d5-l3",
+          "titulo": "Zoonoses e acidentes por animais",
+          "questoes": [
+            {
+              "id": "prev-d5-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve contato com água de enchente e agora tem febre, dor na panturrilha, olhos vermelhos e icterícia.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Leptospirose (síndrome de Weil)",
+                "Hepatite A",
+                "Dengue",
+                "Malária"
+              ],
+              "resposta": "Leptospirose (síndrome de Weil)",
+              "explicacao": "A forma grave tem icterícia, insuficiência renal e sangramento pulmonar.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada zoonose ao transmissor.",
+              "pares": [
+                {
+                  "esquerda": "Leptospirose",
+                  "direita": "Urina de rato"
+                },
+                {
+                  "esquerda": "Raiva",
+                  "direita": "Mordedura de mamífero"
+                },
+                {
+                  "esquerda": "Leishmaniose",
+                  "direita": "Mosquito-palha"
+                },
+                {
+                  "esquerda": "Doença de Chagas",
+                  "direita": "Barbeiro"
+                }
+              ],
+              "explicacao": "A leishmaniose visceral tem o cão como reservatório urbano.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da leishmaniose visceral em gestantes?",
+              "opcoes": [
+                "Anfotericina B lipossomal",
+                "Antimoniato",
+                "Miltefosina",
+                "Nada"
+              ],
+              "resposta": "Anfotericina B lipossomal",
+              "explicacao": "O antimoniato e a miltefosina são contraindicados na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente picado por cobra tem dor e inchaço local, sangramento na gengiva e sangue que não coagula.",
+              "enunciado": "Qual é o gênero e o tratamento?",
+              "opcoes": [
+                "Bothrops (jararaca); soro antibotrópico",
+                "Crotalus; soro anticrotálico",
+                "Micrurus; soro antielapídico",
+                "Não peçonhenta; nada"
+              ],
+              "resposta": "Bothrops (jararaca); soro antibotrópico",
+              "explicacao": "O tempo de coagulação ajuda a avaliar a gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na picada de cascavel, há pouca dor local, visão dupla, pálpebras caídas e urina escura.",
+              "resposta": true,
+              "explicacao": "O veneno causa paralisia e lesão muscular.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente mordido por morcego no rosto.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Lavar o ferimento, soro e vacina antirrábica",
+                "Apenas vacina",
+                "Nada",
+                "Observar o morcego"
+              ],
+              "resposta": "Lavar o ferimento, soro e vacina antirrábica",
+              "explicacao": "Toda agressão por morcego é considerada grave.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A malária por Plasmodium ___ é a mais grave e pode causar malária cerebral.",
+              "opcoes": [
+                "falciparum",
+                "vivax",
+                "malariae",
+                "ovale"
+              ],
+              "resposta": "falciparum",
+              "explicacao": "O P. vivax pode recair por formas latentes no fígado.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Morador de área rural tem febre, baço muito grande, pancitopenia e emagrecimento.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Leishmaniose visceral (calazar)",
+                "Leucemia",
+                "Malária",
+                "Esquistossomose"
+              ],
+              "resposta": "Leishmaniose visceral (calazar)",
+              "explicacao": "O diagnóstico pode ser feito com teste rápido ou medula óssea.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prev-d6",
+      "titulo": "Estatística e saúde global",
+      "descricao": "Bioestatística, transição e indicadores",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "prev-d6-l1",
+          "titulo": "Bioestatística em casos",
+          "questoes": [
+            {
+              "id": "prev-d6-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Um estudo compara a pressão média de dois grupos independentes com distribuição normal.",
+              "enunciado": "Qual teste estatístico usar?",
+              "opcoes": [
+                "Teste t de Student",
+                "Qui-quadrado",
+                "Mann-Whitney obrigatório",
+                "Correlação"
+              ],
+              "resposta": "Teste t de Student",
+              "explicacao": "O Mann-Whitney é usado quando a distribuição não é normal.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada teste ao tipo de dado.",
+              "pares": [
+                {
+                  "esquerda": "Qui-quadrado",
+                  "direita": "Comparar proporções"
+                },
+                {
+                  "esquerda": "Teste t",
+                  "direita": "Comparar médias de dois grupos"
+                },
+                {
+                  "esquerda": "ANOVA",
+                  "direita": "Comparar médias de três ou mais grupos"
+                },
+                {
+                  "esquerda": "Correlação de Pearson",
+                  "direita": "Relação entre duas variáveis contínuas"
+                }
+              ],
+              "explicacao": "A correlação não prova causalidade.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em uma distribuição normal, quantos por cento dos valores ficam entre a média e 2 desvios-padrão para cada lado?",
+              "opcoes": [
+                "Cerca de 95%",
+                "68%",
+                "99,7%",
+                "50%"
+              ],
+              "resposta": "Cerca de 95%",
+              "explicacao": "Um desvio-padrão para cada lado inclui cerca de 68%.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Em uma distribuição com cauda longa à direita, como renda.",
+              "enunciado": "Qual medida representa melhor o centro?",
+              "opcoes": [
+                "Mediana",
+                "Média",
+                "Moda",
+                "Desvio-padrão"
+              ],
+              "resposta": "Mediana",
+              "explicacao": "A média é puxada pelos valores extremos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um valor de p menor que 0,05 indica que a probabilidade de o resultado ser devido ao acaso é menor que 5%, se a hipótese nula for verdadeira.",
+              "resposta": true,
+              "explicacao": "O valor de p não mede o tamanho do efeito.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Um estudo de sobrevida mostra a proporção de pacientes vivos ao longo do tempo.",
+              "enunciado": "Qual método é usado?",
+              "opcoes": [
+                "Curva de Kaplan-Meier",
+                "Curva ROC",
+                "Gráfico de barras",
+                "Regressão linear"
+              ],
+              "resposta": "Curva de Kaplan-Meier",
+              "explicacao": "A comparação entre curvas usa o teste log-rank.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A medida de ___ mostra o quanto os valores se espalham ao redor da média.",
+              "opcoes": [
+                "dispersão",
+                "tendência central",
+                "posição",
+                "associação"
+              ],
+              "resposta": "dispersão",
+              "explicacao": "O desvio-padrão e a variância são exemplos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Num ensaio, a razão de riscos (hazard ratio) é de 0,7 com intervalo de 0,6 a 0,8.",
+              "enunciado": "Como interpretar?",
+              "opcoes": [
+                "Redução de cerca de 30% no risco do evento ao longo do tempo, com significância",
+                "Aumento de 70%",
+                "Sem efeito",
+                "Resultado inválido"
+              ],
+              "resposta": "Redução de cerca de 30% no risco do evento ao longo do tempo, com significância",
+              "explicacao": "O intervalo não inclui 1.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d6-l2",
+          "titulo": "Transições e indicadores de saúde",
+          "questoes": [
+            {
+              "id": "prev-d6-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Um país passou de alta natalidade e mortalidade para baixas taxas, com envelhecimento.",
+              "enunciado": "Qual é o fenômeno?",
+              "opcoes": [
+                "Transição demográfica",
+                "Transição epidemiológica",
+                "Explosão populacional",
+                "Êxodo rural"
+              ],
+              "resposta": "Transição demográfica",
+              "explicacao": "A pirâmide etária fica com base estreita e topo largo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada indicador ao que avalia.",
+              "pares": [
+                {
+                  "esquerda": "Esperança de vida ao nascer",
+                  "direita": "Média de anos que se espera viver"
+                },
+                {
+                  "esquerda": "DALY",
+                  "direita": "Anos de vida perdidos por morte ou incapacidade"
+                },
+                {
+                  "esquerda": "Índice de Gini",
+                  "direita": "Desigualdade de renda"
+                },
+                {
+                  "esquerda": "IDH",
+                  "direita": "Renda, educação e longevidade"
+                }
+              ],
+              "explicacao": "O DALY é usado em estudos de carga global de doenças.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica da transição epidemiológica no Brasil?",
+              "opcoes": [
+                "Tripla carga de doenças, com crônicas, infecciosas e causas externas",
+                "Apenas doenças crônicas",
+                "Apenas doenças infecciosas",
+                "Nenhuma mudança"
+              ],
+              "resposta": "Tripla carga de doenças, com crônicas, infecciosas e causas externas",
+              "explicacao": "Por isso é chamada de transição prolongada ou polarizada.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "A mortalidade infantil caiu, mas a mortalidade neonatal precoce passou a ser a maior parte.",
+              "enunciado": "O que isso indica?",
+              "opcoes": [
+                "As mortes dependem mais da atenção ao pré-natal e ao parto",
+                "As mortes são por diarreia",
+                "Não há mudança",
+                "O saneamento piorou"
+              ],
+              "resposta": "As mortes dependem mais da atenção ao pré-natal e ao parto",
+              "explicacao": "A mortalidade pós-neonatal depende mais do ambiente.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pirâmide etária do Brasil está se estreitando na base e alargando no topo.",
+              "resposta": true,
+              "explicacao": "O envelhecimento aumenta a demanda por cuidados crônicos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mortes de jovens homens por violência e acidentes no Brasil.",
+              "enunciado": "Qual é o grupo de causas?",
+              "opcoes": [
+                "Causas externas",
+                "Doenças crônicas",
+                "Doenças infecciosas",
+                "Doenças congênitas"
+              ],
+              "resposta": "Causas externas",
+              "explicacao": "São a principal causa de morte entre jovens.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os anos potenciais de vida ___ medem as mortes precoces, dando mais peso a quem morre mais jovem.",
+              "opcoes": [
+                "perdidos",
+                "ganhos",
+                "vividos",
+                "esperados"
+              ],
+              "resposta": "perdidos",
+              "explicacao": "Causas externas pesam muito nesse indicador.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um indicador mostra que os 10% mais ricos têm 40% da renda.",
+              "enunciado": "Qual índice mede essa desigualdade?",
+              "opcoes": [
+                "Índice de Gini",
+                "IDH",
+                "Mortalidade infantil",
+                "Esperança de vida"
+              ],
+              "resposta": "Índice de Gini",
+              "explicacao": "O Gini vai de 0 (igualdade) a 1 (desigualdade máxima).",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-d6-l3",
+          "titulo": "Saúde global e ambiental",
+          "questoes": [
+            {
+              "id": "prev-d6-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Uma cidade tem muitos casos de diarreia em crianças após falta de saneamento.",
+              "enunciado": "Qual é a medida mais eficaz?",
+              "opcoes": [
+                "Saneamento básico e água tratada",
+                "Antibiótico para todos",
+                "Vacina de hepatite B",
+                "Nada"
+              ],
+              "resposta": "Saneamento básico e água tratada",
+              "explicacao": "O saneamento é uma das intervenções mais custo-efetivas.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada objetivo de saúde global à meta.",
+              "pares": [
+                {
+                  "esquerda": "Mortalidade materna",
+                  "direita": "Reduzir a menos de 70 por 100 mil nascidos vivos"
+                },
+                {
+                  "esquerda": "Mortalidade neonatal",
+                  "direita": "Reduzir a 12 por mil ou menos"
+                },
+                {
+                  "esquerda": "Mortalidade em menores de 5 anos",
+                  "direita": "Reduzir a 25 por mil ou menos"
+                },
+                {
+                  "esquerda": "Epidemias de AIDS, tuberculose e malária",
+                  "direita": "Acabar até 2030"
+                }
+              ],
+              "explicacao": "Fazem parte dos Objetivos de Desenvolvimento Sustentável.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal objetivo do Regulamento Sanitário Internacional?",
+              "opcoes": [
+                "Prevenir e responder à propagação internacional de doenças",
+                "Controlar preços de remédios",
+                "Definir salários",
+                "Proibir viagens"
+              ],
+              "resposta": "Prevenir e responder à propagação internacional de doenças",
+              "explicacao": "Ele define as emergências de saúde pública de importância internacional.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Comunidade perto de mineradora tem crianças com tremores, alterações de comportamento e peixes contaminados.",
+              "enunciado": "Qual é o metal?",
+              "opcoes": [
+                "Mercúrio",
+                "Chumbo",
+                "Ferro",
+                "Zinco"
+              ],
+              "resposta": "Mercúrio",
+              "explicacao": "O mercúrio se acumula nos peixes.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A poluição do ar está ligada a doenças respiratórias e cardiovasculares.",
+              "resposta": true,
+              "explicacao": "As partículas finas são as mais perigosas.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Um país tem aumento de obesidade, diabetes e hipertensão com mudanças de alimentação.",
+              "enunciado": "Qual é o fenômeno?",
+              "opcoes": [
+                "Transição nutricional",
+                "Transição demográfica",
+                "Desnutrição",
+                "Fome"
+              ],
+              "resposta": "Transição nutricional",
+              "explicacao": "O consumo de ultraprocessados é um fator importante.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ Única é a abordagem que integra a saúde humana, animal e ambiental.",
+              "opcoes": [
+                "Saúde",
+                "Medicina",
+                "Vigilância",
+                "Atenção"
+              ],
+              "resposta": "Saúde",
+              "explicacao": "Ela é importante para prevenir novas pandemias.",
+              "revisado": false
+            },
+            {
+              "id": "prev-d6-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Um país tem muitas mortes por calor e enchentes cada vez mais frequentes.",
+              "enunciado": "Qual é a causa global ligada a isso?",
+              "opcoes": [
+                "Mudanças climáticas",
+                "Envelhecimento",
+                "Vacinação",
+                "Urbanização apenas"
+              ],
+              "resposta": "Mudanças climáticas",
+              "explicacao": "As mudanças do clima afetam a saúde de várias formas.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
