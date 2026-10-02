@@ -1,21 +1,30 @@
 import { motion } from 'framer-motion'
 import { ArrowLeft, Check } from 'lucide-react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { MATERIAS, materiaDisponivel } from '../data'
+import { materiaDisponivel, materiasDoModo } from '../data'
 import { useJogo } from '../store/useJogo'
 import { contarConcluidas } from '../lib/progresso'
 import { BarraProgresso } from '../components/BarraProgresso'
 import { IconeMateria } from '../components/IconeMateria'
+import { AbasModo } from '../components/AbasModo'
+
+const SUBTITULOS = {
+  graduacao: 'Matérias do curso de medicina, do básico ao clínico.',
+  residencia: 'As cinco grandes áreas cobradas nas provas de residência, com foco em casos clínicos.',
+}
 
 export function Materias() {
   const navegar = useNavigate()
   const atual = useJogo((s) => s.materiaAtual)
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const escolher = useJogo((s) => s.escolherMateria)
+  // A aba começa no modo atual, mas dá para espiar o outro antes de escolher
+  const [aba, setAba] = useState(useJogo.getState().modo)
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-5">
-      <div className="mb-6 flex items-center gap-3">
+      <div className="mb-5 flex items-center gap-3">
         <button
           type="button"
           onClick={() => navegar(-1)}
@@ -27,14 +36,17 @@ export function Materias() {
         <h1 className="text-2xl font-extrabold">Matérias</h1>
       </div>
 
+      <AbasModo valor={aba} aoMudar={setAba} />
+      <p className="mb-5 mt-3 text-sm text-texto-suave">{SUBTITULOS[aba]}</p>
+
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {MATERIAS.map((m, i) => {
+        {materiasDoModo(aba).map((m, i) => {
           const disponivel = materiaDisponivel(m)
           const { feitas, total } = contarConcluidas(m, concluidas)
           const selecionada = m.id === atual
           return (
             <motion.button
-              key={m.id}
+              key={`${aba}-${m.id}`}
               type="button"
               disabled={!disponivel}
               initial={{ opacity: 0, y: 10 }}

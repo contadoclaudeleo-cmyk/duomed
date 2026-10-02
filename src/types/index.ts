@@ -59,6 +59,8 @@ export interface QuestaoIdentificarImagem extends QuestaoBase {
   tipo: 'identificar_imagem'
   /** Caminho dentro de public/. Se não existir, aparece um placeholder */
   imagem?: string
+  /** Autor e licença da imagem, aparece embaixo dela (obrigatório em imagens CC BY-SA) */
+  creditoImagem?: string
   opcoes: string[]
   resposta: string
 }
@@ -84,7 +86,11 @@ export interface Unidade {
   licoes: Licao[]
 }
 
-export interface Materia {
+/** Graduação (matérias do curso) ou Residência (grandes áreas das provas) */
+export type ModoEstudo = 'graduacao' | 'residencia'
+
+/** Matéria como está escrita no arquivo JSON */
+export interface MateriaJson {
   id: string
   nome: string
   descricao: string
@@ -93,6 +99,11 @@ export interface Materia {
   ordem: number
   /** Matéria sem unidades aparece como "em breve" */
   unidades: Unidade[]
+}
+
+/** Matéria já carregada no app. O modo vem da pasta onde está o arquivo. */
+export interface Materia extends MateriaJson {
+  modo: ModoEstudo
 }
 
 // ============================================================
@@ -111,7 +122,8 @@ export type Tema = 'claro' | 'escuro' | 'sistema'
 
 export interface Usuario {
   nome: string
-  semestre: number
+  /** null para quem escolheu o modo residência no cadastro */
+  semestre: number | null
   metaDiaria: MetaDiaria
   criadoEm: number
 }

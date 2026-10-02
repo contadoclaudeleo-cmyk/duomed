@@ -14,14 +14,20 @@ export function IdentificarImagem({ questao, resposta, aoResponder, verificada }
   return (
     <div className="flex flex-col gap-5">
       <p className="text-sm font-bold uppercase tracking-wide text-texto-suave">Identifique a estrutura</p>
-      <div className="overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
-        <img
-          src={src}
-          onError={() => setFalhou(true)}
-          alt="Imagem anatômica da questão"
-          className="mx-auto max-h-60 w-full object-contain"
-        />
-      </div>
+      <figure>
+        {/* Fundo sempre branco: as imagens anatômicas são feitas para fundo claro */}
+        <div className="overflow-hidden rounded-2xl border-2 border-borda bg-white p-2">
+          <img
+            src={src}
+            onError={() => setFalhou(true)}
+            alt="Imagem anatômica da questão"
+            className="mx-auto max-h-64 w-full object-contain"
+          />
+        </div>
+        {questao.creditoImagem && src !== PLACEHOLDER && (
+          <figcaption className="mt-1.5 text-right text-[11px] text-texto-suave">{questao.creditoImagem}</figcaption>
+        )}
+      </figure>
       <h2 className="text-lg font-bold leading-snug sm:text-xl">{questao.enunciado}</h2>
       <ListaOpcoes
         idQuestao={questao.id}

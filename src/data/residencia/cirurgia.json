@@ -1,0 +1,294 @@
+{
+  "id": "cirurgia",
+  "nome": "Cirurgia Geral",
+  "descricao": "Trauma, abdome agudo e obstrução intestinal",
+  "icone": "bisturi",
+  "ordem": 2,
+  "unidades": [
+    {
+      "id": "cir-u1",
+      "titulo": "Trauma e abdome agudo",
+      "descricao": "Atendimento inicial ao trauma, abdome agudo inflamatório e obstrutivo",
+      "licoes": [
+        {
+          "id": "cir-u1-l1",
+          "titulo": "Atendimento inicial ao trauma",
+          "questoes": [
+            {
+              "id": "cir-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "No atendimento primário ao politraumatizado (xABCDE), qual é a primeira prioridade?",
+              "opcoes": [
+                "Controlar hemorragia externa grave",
+                "Avaliar o nível de consciência",
+                "Expor o paciente",
+                "Avaliar a respiração"
+              ],
+              "resposta": "Controlar hemorragia externa grave",
+              "explicacao": "O \"x\" vem antes da via aérea: sangramento exsanguinante externo é contido primeiro, com compressão direta ou torniquete.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada letra do ABCDE ao que é avaliado.",
+              "pares": [
+                { "esquerda": "A", "direita": "Via aérea com proteção da coluna cervical" },
+                { "esquerda": "B", "direita": "Respiração e ventilação" },
+                { "esquerda": "C", "direita": "Circulação e controle de hemorragia" },
+                { "esquerda": "D", "direita": "Avaliação neurológica" },
+                { "esquerda": "E", "direita": "Exposição e prevenção de hipotermia" }
+              ],
+              "explicacao": "Cada problema encontrado é tratado na hora, antes de seguir para a próxima letra.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q3",
+              "tipo": "caso_clinico",
+              "caso": "Motociclista após colisão chega com dispneia intensa, desvio da traqueia para a esquerda, murmúrio vesicular abolido e hipertimpanismo à direita, hipotensão e turgência jugular.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Descompressão torácica imediata à direita",
+                "Radiografia de tórax antes de qualquer conduta",
+                "Pericardiocentese",
+                "Intubação e ventilação com pressão positiva"
+              ],
+              "resposta": "Descompressão torácica imediata à direita",
+              "explicacao": "É um pneumotórax hipertensivo, diagnóstico clínico. Faz-se punção ou toracostomia digital e depois drenagem torácica em selo d'água.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O pneumotórax hipertensivo deve ser confirmado com radiografia antes da descompressão.",
+              "resposta": false,
+              "explicacao": "Esperar a radiografia pode ser fatal. O diagnóstico é clínico e a descompressão é imediata.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O paciente abre os olhos à dor, fala palavras inapropriadas e localiza o estímulo doloroso. Qual é a pontuação na escala de coma de Glasgow?",
+              "opcoes": ["10", "9", "11", "8"],
+              "resposta": "10",
+              "explicacao": "Abertura ocular à dor = 2, resposta verbal com palavras inapropriadas = 3, resposta motora que localiza a dor = 5. Total: 10.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "No trauma, Glasgow menor ou igual a ___ indica via aérea definitiva.",
+              "opcoes": ["8", "12", "10", "14"],
+              "resposta": "8",
+              "explicacao": "Com Glasgow ≤ 8 o paciente não protege a via aérea. A intubação orotraqueal é feita com proteção da coluna cervical.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de colisão automobilística está ansiosa e confusa, com PA 80/50 mmHg, FC 135 bpm e extremidades frias. Não há sangramento externo visível.",
+              "enunciado": "Qual é o tipo de choque mais provável?",
+              "opcoes": ["Hemorrágico", "Neurogênico", "Cardiogênico", "Séptico"],
+              "resposta": "Hemorrágico",
+              "explicacao": "No trauma, choque é hemorrágico até prova em contrário. Procure sangue no tórax, abdome, pelve, ossos longos e no chão. O neurogênico cursa com bradicardia e pele quente.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a reposição volêmica inicial recomendada para o adulto politraumatizado em choque?",
+              "opcoes": [
+                "1 litro de cristaloide aquecido, com hemoderivados precoces",
+                "3 litros de soro fisiológico em temperatura ambiente",
+                "Albumina 20% em bolus",
+                "Apenas vasopressor, sem volume"
+              ],
+              "resposta": "1 litro de cristaloide aquecido, com hemoderivados precoces",
+              "explicacao": "Excesso de cristaloide piora a coagulopatia e a hipotermia. Em sangramento importante, inicia-se transfusão cedo e busca-se o controle cirúrgico da hemorragia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cir-u1-l2",
+          "titulo": "Abdome agudo inflamatório",
+          "questoes": [
+            {
+              "id": "cir-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a sequência clássica de sintomas da apendicite aguda?",
+              "opcoes": [
+                "Dor periumbilical que migra para a fossa ilíaca direita, depois náuseas e febre",
+                "Febre alta, depois dor difusa e por último náuseas",
+                "Diarreia, depois dor em fossa ilíaca esquerda",
+                "Vômitos, depois dor epigástrica que irradia para o dorso"
+              ],
+              "resposta": "Dor periumbilical que migra para a fossa ilíaca direita, depois náuseas e febre",
+              "explicacao": "A dor visceral inicial é periumbilical. Quando o peritônio parietal é irritado, ela se localiza na fossa ilíaca direita.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal ao achado do exame físico.",
+              "pares": [
+                { "esquerda": "Blumberg", "direita": "Dor à descompressão brusca no ponto de McBurney" },
+                { "esquerda": "Rovsing", "direita": "Dor na fossa ilíaca direita ao comprimir a esquerda" },
+                { "esquerda": "Murphy", "direita": "Interrupção da inspiração ao palpar o hipocôndrio direito" },
+                { "esquerda": "Psoas", "direita": "Dor à extensão passiva do quadril direito" }
+              ],
+              "explicacao": "O sinal do psoas sugere apêndice retrocecal. O sinal de Murphy é típico da colecistite aguda.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q3",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos, obesa, com dor no hipocôndrio direito há 24 horas, febre e sinal de Murphy positivo. O hemograma mostra leucocitose.",
+              "enunciado": "Qual é o exame de imagem inicial de escolha?",
+              "opcoes": ["Ultrassonografia de abdome", "Tomografia de abdome", "Colangiopancreatografia endoscópica (CPRE)", "Radiografia simples de abdome"],
+              "resposta": "Ultrassonografia de abdome",
+              "explicacao": "A ultrassonografia mostra cálculos, espessamento da parede e líquido pericolecístico. O tratamento é a colecistectomia, de preferência precoce.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tríade de Charcot da colangite aguda é febre, icterícia e dor no hipocôndrio direito.",
+              "resposta": true,
+              "explicacao": "Somando hipotensão e confusão mental, forma-se a pêntade de Reynolds, que indica colangite grave e drenagem biliar urgente.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "As causas mais comuns de pancreatite aguda são a litíase biliar e o ___.",
+              "opcoes": ["álcool", "tabagismo", "trauma", "uso de corticoide"],
+              "resposta": "álcool",
+              "explicacao": "Juntas, as duas respondem pela maioria dos casos. Hipertrigliceridemia e pós-CPRE são outras causas importantes.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 anos com dor em fossa ilíaca esquerda há 3 dias, febre e alteração do hábito intestinal. A tomografia mostra espessamento do sigmoide com abscesso pericólico de 2 cm.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": ["Diverticulite aguda complicada", "Apendicite aguda", "Volvo de sigmoide", "Colite isquêmica"],
+              "resposta": "Diverticulite aguda complicada",
+              "explicacao": "Abscesso pericólico pequeno é Hinchey I, tratado em geral com antibiótico. Abscessos maiores costumam ser drenados por punção guiada.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Junto com a dor típica, qual achado laboratorial faz o diagnóstico de pancreatite aguda?",
+              "opcoes": [
+                "Amilase ou lipase acima de 3 vezes o limite superior",
+                "PCR acima de 150 mg/L",
+                "Leucocitose acima de 15.000",
+                "Glicemia acima de 200 mg/dL"
+              ],
+              "resposta": "Amilase ou lipase acima de 3 vezes o limite superior",
+              "explicacao": "São necessários 2 de 3 critérios: dor típica, enzimas acima de 3 vezes o normal e imagem compatível.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na gestante, a apendicite pode causar dor mais alta no abdome, porque o útero desloca o apêndice.",
+              "resposta": true,
+              "explicacao": "No terceiro trimestre a dor pode estar no flanco ou até no hipocôndrio direito, o que atrasa o diagnóstico.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cir-u1-l3",
+          "titulo": "Obstrução intestinal e hérnias",
+          "questoes": [
+            {
+              "id": "cir-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de obstrução do intestino delgado em adultos?",
+              "opcoes": ["Bridas pós-operatórias", "Hérnias", "Tumores", "Volvo"],
+              "resposta": "Bridas pós-operatórias",
+              "explicacao": "Aderências de cirurgias abdominais prévias são a causa principal. No intestino grosso, a causa mais comum é o câncer colorretal.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Hérnia encarcerada é a que não reduz; estrangulada é quando há comprometimento vascular.",
+              "resposta": true,
+              "explicacao": "A hérnia estrangulada é emergência cirúrgica pelo risco de necrose da alça.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q3",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hérnia à sua característica.",
+              "pares": [
+                { "esquerda": "Inguinal indireta", "direita": "Lateral aos vasos epigástricos inferiores" },
+                { "esquerda": "Inguinal direta", "direita": "No triângulo de Hesselbach, medial aos vasos epigástricos" },
+                { "esquerda": "Femoral", "direita": "Abaixo do ligamento inguinal, mais comum em mulheres" },
+                { "esquerda": "Umbilical", "direita": "Frequente em cirróticos com ascite" }
+              ],
+              "explicacao": "A hérnia femoral tem alto risco de encarceramento e deve ser operada mesmo sem sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Idoso acamado com constipação crônica apresenta distensão abdominal importante e parada de eliminação de gases. A radiografia mostra uma alça muito dilatada em forma de U invertido, como um grão de café.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": ["Volvo de sigmoide", "Volvo de ceco", "Íleo paralítico", "Diverticulite"],
+              "resposta": "Volvo de sigmoide",
+              "explicacao": "Sem sinais de isquemia, a conduta inicial é a descompressão por retossigmoidoscopia. Como recidiva com frequência, costuma-se programar sigmoidectomia.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "Em ambos os sexos, a hérnia inguinal mais comum é a ___.",
+              "opcoes": ["indireta", "direta", "femoral", "obturadora"],
+              "resposta": "indireta",
+              "explicacao": "Mesmo nas mulheres a inguinal indireta é a mais comum, embora a femoral seja mais frequente nelas do que nos homens.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 72 anos com vômitos, distensão e parada de eliminação de gases e fezes. A radiografia mostra ar nas vias biliares, alças de delgado distendidas e uma imagem cálcica na fossa ilíaca direita.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": ["Íleo biliar", "Obstrução por bridas", "Volvo de sigmoide", "Intussuscepção"],
+              "resposta": "Íleo biliar",
+              "explicacao": "É a tríade de Rigler: aerobilia, obstrução de delgado e cálculo ectópico. O cálculo passa por uma fístula colecistoentérica e impacta no íleo terminal.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na obstrução intestinal, qual achado sugere sofrimento de alça?",
+              "opcoes": [
+                "Dor contínua com febre, taquicardia e leucocitose",
+                "Ruídos hidroaéreos aumentados",
+                "Distensão abdominal leve",
+                "Cólicas intermitentes"
+              ],
+              "resposta": "Dor contínua com febre, taquicardia e leucocitose",
+              "explicacao": "Quando a dor deixa de ser em cólica e passa a ser contínua, com sinais sistêmicos ou peritonite, a cirurgia é urgente.",
+              "revisado": false
+            },
+            {
+              "id": "cir-u1-l3-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na obstrução de delgado por bridas, sem sinais de sofrimento de alça, pode-se iniciar tratamento conservador com jejum, hidratação e sonda nasogástrica.",
+              "resposta": true,
+              "explicacao": "Grande parte resolve sem cirurgia. O paciente é reavaliado com frequência e operado se piorar ou não melhorar.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

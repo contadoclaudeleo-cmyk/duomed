@@ -27,7 +27,7 @@ export function BarraStatus() {
           <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-agua text-white">
             <IconeMateria nome={materia?.icone ?? ''} className="h-4 w-4" />
           </span>
-          <span className="text-sm">{materia?.nome}</span>
+          <span className="max-w-32 truncate text-sm sm:max-w-none">{materia?.nome}</span>
         </Link>
 
         <div className="flex items-center gap-4">

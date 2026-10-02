@@ -6,6 +6,7 @@ import type {
   ItemRevisao,
   LicaoConcluida,
   MetaDiaria,
+  ModoEstudo,
   ModoSessao,
   Ofensiva,
   Questao,
@@ -14,6 +15,7 @@ import type {
   Usuario,
 } from '../types'
 import { armazenamento } from '../lib/armazenamento'
+import { buscarMateria, primeiraMateriaDoModo } from '../data'
 import { chaveDia } from '../lib/datas'
 import { perderVida, recarregarVidas, VIDAS_MAX } from '../lib/vidas'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
@@ -41,6 +43,8 @@ interface DadosJogo {
   acertosTotais: number
   estatisticasPorMateria: Record<string, EstatisticaMateria>
   conquistas: Partial<Record<IdConquista, number>>
+  /** Graduação ou Residência: define quais matérias aparecem */
+  modo: ModoEstudo
   materiaAtual: string
   tema: Tema
 }
@@ -56,10 +60,11 @@ interface ConclusaoSessao {
 interface AcoesJogo {
   /** Resultado da última sessão, mostrado na tela de resultado (não é salvo) */
   ultimoResultado: ResultadoSessao | null
-  criarUsuario: (nome: string, semestre: number, metaDiaria: MetaDiaria) => void
+  criarUsuario: (nome: string, semestre: number | null, metaDiaria: MetaDiaria, modo: ModoEstudo) => void
   atualizarUsuario: (dados: Partial<Usuario>) => void
   definirTema: (tema: Tema) => void
   escolherMateria: (materiaId: string) => void
+  escolherModo: (modo: ModoEstudo) => void
   sincronizarVidas: () => void
   responder: (dados: { questao: Questao; materiaId: string; acertou: boolean; modo: ModoSessao }) => void
   concluirSessao: (dados: ConclusaoSessao) => ResultadoSessao
@@ -79,6 +84,7 @@ const estadoInicial = (): DadosJogo => ({
   acertosTotais: 0,
   estatisticasPorMateria: {},
   conquistas: {},
+  modo: 'graduacao',
   materiaAtual: 'anatomia',
   tema: 'sistema',
 })
@@ -89,8 +95,12 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       ...estadoInicial(),
       ultimoResultado: null,
 
-      criarUsuario: (nome, semestre, metaDiaria) =>
-        set({ usuario: { nome: nome.trim(), semestre, metaDiaria, criadoEm: Date.now() } }),
+      criarUsuario: (nome, semestre, metaDiaria, modo) =>
+        set({
+          usuario: { nome: nome.trim(), semestre, metaDiaria, criadoEm: Date.now() },
+          modo,
+          materiaAtual: primeiraMateriaDoModo(modo).id,
+        }),
 
       atualizarUsuario: (dados) => {
         const usuario = get().usuario
@@ -99,7 +109,15 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
       definirTema: (tema) => set({ tema }),
 
-      escolherMateria: (materiaAtual) => set({ materiaAtual }),
+      // Escolher uma matéria também troca o modo, se ela for do outro modo
+      escolherMateria: (materiaAtual) =>
+        set({ materiaAtual, modo: buscarMateria(materiaAtual)?.modo ?? get().modo }),
+
+      // Trocar de modo leva para a primeira matéria daquele modo
+      escolherModo: (modo) => {
+        if (buscarMateria(get().materiaAtual)?.modo === modo) return set({ modo })
+        set({ modo, materiaAtual: primeiraMateriaDoModo(modo).id })
+      },
 
       sincronizarVidas: () => {
         const { vidas, ultimaRecargaVida } = get()

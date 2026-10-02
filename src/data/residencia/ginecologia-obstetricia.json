@@ -1,0 +1,294 @@
+{
+  "id": "ginecologia-obstetricia",
+  "nome": "Ginecologia e Obstetrícia",
+  "descricao": "Pré-natal, síndromes hipertensivas e hemorragias",
+  "icone": "gestante",
+  "ordem": 4,
+  "unidades": [
+    {
+      "id": "go-u1",
+      "titulo": "Obstetrícia essencial",
+      "descricao": "Pré-natal, pré-eclâmpsia e hemorragias da gestação",
+      "licoes": [
+        {
+          "id": "go-u1-l1",
+          "titulo": "Pré-natal",
+          "questoes": [
+            {
+              "id": "go-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela regra de Naegele, qual é a data provável do parto de uma gestante com última menstruação em 10 de março?",
+              "opcoes": ["17 de dezembro", "10 de dezembro", "17 de novembro", "3 de dezembro"],
+              "resposta": "17 de dezembro",
+              "explicacao": "Somam-se 7 dias ao dia da DUM e subtraem-se 3 meses (ou somam-se 9): 10 + 7 = 17; março menos 3 meses = dezembro.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame do pré-natal ao seu objetivo.",
+              "pares": [
+                { "esquerda": "TOTG 75 g entre 24 e 28 semanas", "direita": "Diagnóstico de diabetes gestacional" },
+                { "esquerda": "Tipagem ABO e fator Rh", "direita": "Prevenção da aloimunização Rh" },
+                { "esquerda": "Ultrassonografia de 11 a 14 semanas", "direita": "Medida da translucência nucal" },
+                { "esquerda": "Sorologia para toxoplasmose", "direita": "Identificar gestante suscetível" }
+              ],
+              "explicacao": "A gestante suscetível à toxoplasmose recebe orientações de prevenção e repete a sorologia ao longo da gestação.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Puérpera Rh negativo não sensibilizada deve receber imunoglobulina anti-D em até 72 horas após o parto, se o recém-nascido for Rh positivo.",
+              "resposta": true,
+              "explicacao": "A imunoglobulina também é indicada após sangramentos, abortamentos e procedimentos invasivos na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na gestação, glicemia de jejum entre 92 e ___ mg/dL faz o diagnóstico de diabetes gestacional.",
+              "opcoes": ["125", "99", "140", "200"],
+              "resposta": "125",
+              "explicacao": "Glicemia de jejum de 126 mg/dL ou mais na gestação indica diabetes prévio (overt diabetes), não gestacional.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 20 semanas tem teste rápido para sífilis reagente e VDRL de 1:16. Não sabe quando se infectou e não tem alergia a penicilina.",
+              "enunciado": "Qual é o tratamento correto?",
+              "opcoes": [
+                "Penicilina benzatina 2,4 milhões UI por semana, por 3 semanas",
+                "Penicilina benzatina 2,4 milhões UI em dose única",
+                "Doxiciclina por 14 dias",
+                "Azitromicina em dose única"
+              ],
+              "resposta": "Penicilina benzatina 2,4 milhões UI por semana, por 3 semanas",
+              "explicacao": "Sífilis de duração desconhecida é tratada como latente tardia. A parceria sexual também deve ser tratada, e o VDRL é acompanhado mensalmente na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual suplemento, iniciado antes da concepção, reduz defeitos do tubo neural?",
+              "opcoes": ["Ácido fólico", "Sulfato ferroso", "Vitamina A", "Cálcio"],
+              "resposta": "Ácido fólico",
+              "explicacao": "O ideal é começar pelo menos 30 dias antes da concepção e manter até o fim do primeiro trimestre.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 26 semanas faz TOTG com 75 g de glicose: jejum 88 mg/dL, 1 hora 190 mg/dL e 2 horas 140 mg/dL.",
+              "enunciado": "Como interpretar o resultado?",
+              "opcoes": [
+                "Diabetes gestacional, pois um valor alterado já basta",
+                "Exame normal",
+                "Repetir o exame em 4 semanas",
+                "Diabetes prévio à gestação"
+              ],
+              "resposta": "Diabetes gestacional, pois um valor alterado já basta",
+              "explicacao": "Os pontos de corte são jejum ≥ 92, 1 hora ≥ 180 e 2 horas ≥ 153 mg/dL. A primeira conduta é dieta e atividade física.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l1-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina dTpa é recomendada a toda gestante a partir da 20ª semana, para proteger o recém-nascido contra coqueluche.",
+              "resposta": true,
+              "explicacao": "Os anticorpos maternos passam pela placenta e protegem o bebê nos primeiros meses, antes de ele completar o esquema vacinal.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "go-u1-l2",
+          "titulo": "Síndromes hipertensivas",
+          "questoes": [
+            {
+              "id": "go-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "A pré-eclâmpsia surge a partir de qual idade gestacional?",
+              "opcoes": ["Após 20 semanas", "Após 12 semanas", "Após 28 semanas", "Após 37 semanas"],
+              "resposta": "Após 20 semanas",
+              "explicacao": "Hipertensão antes de 20 semanas sugere hipertensão crônica. A exceção é a doença trofoblástica, que pode causar pré-eclâmpsia precoce.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A proteinúria não é obrigatória para diagnosticar pré-eclâmpsia quando há sinais de lesão de órgão-alvo.",
+              "resposta": true,
+              "explicacao": "Plaquetopenia, alteração hepática ou renal, edema agudo de pulmão e sintomas neurológicos fecham o diagnóstico mesmo sem proteinúria.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é a droga de escolha para prevenir e tratar as convulsões da eclâmpsia.",
+              "opcoes": ["sulfato de magnésio", "diazepam", "fenitoína", "fenobarbital"],
+              "resposta": "sulfato de magnésio",
+              "explicacao": "É superior aos anticonvulsivantes comuns na eclâmpsia. Os esquemas mais usados no Brasil são os de Pritchard e Zuspan.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medicamento ao seu uso nas síndromes hipertensivas da gestação.",
+              "pares": [
+                { "esquerda": "Sulfato de magnésio", "direita": "Prevenção da eclâmpsia" },
+                { "esquerda": "Gluconato de cálcio", "direita": "Antídoto da intoxicação por magnésio" },
+                { "esquerda": "Hidralazina venosa", "direita": "Crise hipertensiva na gestação" },
+                { "esquerda": "AAS em baixa dose", "direita": "Prevenção da pré-eclâmpsia em gestantes de alto risco" }
+              ],
+              "explicacao": "O AAS deve começar antes de 16 semanas, de preferência a partir de 12. O nifedipino oral é outra opção na crise hipertensiva.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 35 semanas chega com PA de 170/115 mmHg, cefaleia intensa e escotomas visuais. Tem proteinúria e plaquetas normais.",
+              "enunciado": "Qual é a conduta inicial?",
+              "opcoes": [
+                "Sulfato de magnésio, anti-hipertensivo de ação rápida e planejamento do parto",
+                "Enalapril oral e retorno em 1 semana",
+                "Furosemida venosa e observação",
+                "Cesárea imediata, antes de qualquer medicação"
+              ],
+              "resposta": "Sulfato de magnésio, anti-hipertensivo de ação rápida e planejamento do parto",
+              "explicacao": "É pré-eclâmpsia com sinais de gravidade (iminência de eclâmpsia). Estabiliza-se a mãe primeiro; com 34 semanas ou mais, indica-se o parto.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera em uso de sulfato de magnésio apresenta frequência respiratória de 10 irpm e reflexo patelar abolido.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suspender o magnésio e administrar gluconato de cálcio",
+                "Aumentar a dose do magnésio",
+                "Trocar o magnésio por diazepam",
+                "Manter a infusão e reavaliar em 4 horas"
+              ],
+              "resposta": "Suspender o magnésio e administrar gluconato de cálcio",
+              "explicacao": "Arreflexia e depressão respiratória indicam intoxicação. Antes de cada dose, confira reflexo patelar, frequência respiratória e diurese.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que caracteriza a síndrome HELLP?",
+              "opcoes": [
+                "Hemólise, enzimas hepáticas elevadas e plaquetopenia",
+                "Hipertensão, edema e proteinúria",
+                "Hipoglicemia, leucocitose e plaquetose",
+                "Hemorragia, icterícia e insuficiência renal"
+              ],
+              "resposta": "Hemólise, enzimas hepáticas elevadas e plaquetopenia",
+              "explicacao": "É uma forma grave de pré-eclâmpsia. A dor em epigástrio ou hipocôndrio direito é um sintoma de alerta.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tratamento definitivo da pré-eclâmpsia é o parto.",
+              "resposta": true,
+              "explicacao": "Antes de 34 semanas e sem gravidade, pode-se ter conduta expectante com vigilância, para ganhar maturidade fetal.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "go-u1-l3",
+          "titulo": "Hemorragias na gestação",
+          "questoes": [
+            {
+              "id": "go-u1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de sangramento ao seu quadro típico.",
+              "pares": [
+                { "esquerda": "Placenta prévia", "direita": "Sangramento indolor, vermelho vivo e de repetição" },
+                { "esquerda": "Descolamento prematuro de placenta", "direita": "Dor, útero hipertônico e sangue escuro" },
+                { "esquerda": "Rotura uterina", "direita": "Dor súbita e subida da apresentação, comum após cesáreas" },
+                { "esquerda": "Vasa prévia", "direita": "Sangramento na rotura das membranas, com sofrimento fetal" }
+              ],
+              "explicacao": "Na vasa prévia o sangue perdido é fetal, por isso o feto entra em sofrimento rapidamente.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de hemorragia pós-parto?",
+              "opcoes": ["Atonia uterina", "Laceração do trajeto", "Retenção placentária", "Coagulopatia"],
+              "resposta": "Atonia uterina",
+              "explicacao": "As causas seguem os 4 Ts: tônus (atonia), trauma, tecido (restos placentários) e trombina (coagulopatia).",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Para prevenir a hemorragia pós-parto, aplica-se ___ 10 UI intramuscular logo após o nascimento.",
+              "opcoes": ["ocitocina", "misoprostol", "metilergometrina", "ácido tranexâmico"],
+              "resposta": "ocitocina",
+              "explicacao": "A ocitocina profilática é aplicada em todos os partos, vaginais ou cesáreas.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 32 semanas, hipertensa, tem dor abdominal súbita, útero endurecido que não relaxa e sangramento vaginal escuro. Os batimentos cardíacos fetais estão em 100 bpm.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": ["Descolamento prematuro de placenta", "Placenta prévia", "Trabalho de parto prematuro", "Vasa prévia"],
+              "resposta": "Descolamento prematuro de placenta",
+              "explicacao": "Hipertensão é o principal fator de risco. Com feto vivo e sofrimento fetal, indica-se o parto pela via mais rápida.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na suspeita de placenta prévia, o toque vaginal deve ser evitado.",
+              "resposta": true,
+              "explicacao": "O toque pode descolar a placenta e causar hemorragia grave. O diagnóstico é feito por ultrassonografia.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera de 30 minutos após parto vaginal tem sangramento intenso. O útero está amolecido e palpável acima da cicatriz umbilical.",
+              "enunciado": "Qual é a conduta inicial?",
+              "opcoes": [
+                "Massagem uterina bimanual e uterotônicos",
+                "Histerectomia imediata",
+                "Curetagem uterina",
+                "Observar por 1 hora"
+              ],
+              "resposta": "Massagem uterina bimanual e uterotônicos",
+              "explicacao": "É atonia uterina. Associa-se ácido tranexâmico, acesso venoso calibroso e reposição volêmica. A cirurgia fica para quando o tratamento clínico falha.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na hemorragia pós-parto, o ácido tranexâmico deve ser dado em até quanto tempo após o parto?",
+              "opcoes": ["3 horas", "24 horas", "12 horas", "6 horas"],
+              "resposta": "3 horas",
+              "explicacao": "O benefício na redução de mortes por sangramento é maior quanto mais cedo ele é dado, e se perde após 3 horas.",
+              "revisado": false
+            },
+            {
+              "id": "go-u1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos com atraso menstrual de 7 semanas, dor em fossa ilíaca direita e sangramento vaginal discreto. O beta-hCG é de 3.000 mUI/mL e a ultrassonografia transvaginal mostra útero vazio.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": ["Gravidez ectópica", "Abortamento completo", "Mola hidatiforme", "Gestação inicial normal"],
+              "resposta": "Gravidez ectópica",
+              "explicacao": "Com beta-hCG acima da zona discriminatória, uma gestação tópica já deveria aparecer no útero. A tuba uterina é o local mais comum.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

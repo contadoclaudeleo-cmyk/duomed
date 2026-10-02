@@ -1,4 +1,17 @@
-import { Bone, FlaskConical, HeartPulse, Microscope, Pill, Stethoscope, BookOpen, type LucideIcon } from 'lucide-react'
+import {
+  Baby,
+  Bone,
+  BookOpen,
+  FlaskConical,
+  HeartPulse,
+  Microscope,
+  Pill,
+  Scissors,
+  Stethoscope,
+  UsersRound,
+  Venus,
+  type LucideIcon,
+} from 'lucide-react'
 
 // Nome usado no campo "icone" do JSON da matéria -> ícone desenhado
 const icones: Record<string, LucideIcon> = {
@@ -8,6 +21,10 @@ const icones: Record<string, LucideIcon> = {
   pilula: Pill,
   microscopio: Microscope,
   estetoscopio: Stethoscope,
+  bisturi: Scissors,
+  bebe: Baby,
+  gestante: Venus,
+  comunidade: UsersRound,
 }
 
 export function IconeMateria({ nome, className = '' }: { nome: string; className?: string }) {

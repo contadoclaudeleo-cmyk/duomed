@@ -1,11 +1,17 @@
-import type { Licao, Materia, Questao, Unidade } from '../types'
+import type { Licao, Materia, MateriaJson, ModoEstudo, Questao, Unidade } from '../types'
 
-// Todo arquivo .json dentro de src/data/materias entra no app automaticamente.
-// Para criar uma matéria nova, basta criar um arquivo novo nessa pasta.
+// Todo arquivo .json dentro de src/data/graduacao e src/data/residencia entra
+// no app automaticamente. A pasta define em qual modo a matéria aparece.
 // Quando o conteúdo for para o Supabase, só este arquivo precisa mudar.
-const arquivos = import.meta.glob<Materia>('./materias/*.json', { eager: true, import: 'default' })
+const graduacao = import.meta.glob<MateriaJson>('./graduacao/*.json', { eager: true, import: 'default' })
+const residencia = import.meta.glob<MateriaJson>('./residencia/*.json', { eager: true, import: 'default' })
 
-export const MATERIAS: Materia[] = Object.values(arquivos).sort((a, b) => a.ordem - b.ordem)
+const comModo = (arquivos: Record<string, MateriaJson>, modo: ModoEstudo): Materia[] =>
+  Object.values(arquivos)
+    .map((m) => ({ ...m, modo }))
+    .sort((a, b) => a.ordem - b.ordem)
+
+export const MATERIAS: Materia[] = [...comModo(graduacao, 'graduacao'), ...comModo(residencia, 'residencia')]
 
 export interface LocalQuestao {
   questao: Questao
@@ -41,6 +47,14 @@ export const buscarMateria = (id: string) => MATERIAS.find((m) => m.id === id)
 export const buscarLicao = (id: string) => licoesPorId.get(id)
 export const buscarQuestao = (id: string) => questoesPorId.get(id)
 export const materiaDisponivel = (m: Materia) => m.unidades.length > 0
+export const materiasDoModo = (modo: ModoEstudo) => MATERIAS.filter((m) => m.modo === modo)
+/** Primeira matéria com conteúdo de um modo (usada ao trocar de modo) */
+export const primeiraMateriaDoModo = (modo: ModoEstudo) => materiasDoModo(modo).find(materiaDisponivel)!
 
 /** Lista de lições de uma matéria, na ordem da trilha */
 export const licoesDaMateria = (m: Materia) => m.unidades.flatMap((u) => u.licoes)
+
+export const NOMES_MODO: Record<ModoEstudo, string> = {
+  graduacao: 'Graduação',
+  residencia: 'Residência',
+}

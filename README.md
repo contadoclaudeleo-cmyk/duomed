@@ -2,6 +2,11 @@
 
 App de estudo para estudantes de medicina no estilo do Duolingo: trilhas por matéria, lições curtas, XP, vidas, ofensiva diária, níveis, conquistas, revisão espaçada e ranking semanal.
 
+Tem dois modos de estudo, que a pessoa escolhe no cadastro e pode trocar no perfil ou na tela de matérias:
+
+- **Graduação:** matérias do curso (Anatomia e Farmacologia prontas; Fisiologia, Bioquímica, Patologia e Semiologia em breve).
+- **Residência:** as cinco grandes áreas das provas de residência (Clínica Médica, Cirurgia Geral, Pediatria, Ginecologia e Obstetrícia e Medicina Preventiva), com foco em casos clínicos.
+
 Primeira versão (MVP): roda inteira no navegador e salva o progresso no próprio aparelho (localStorage). Não precisa de servidor.
 
 ## Como rodar
@@ -45,7 +50,12 @@ Abra o link da versão publicada no celular:
 
 ## Como adicionar questões
 
-Todo o conteúdo fica em `src/data/materias/`, um arquivo `.json` por matéria. Você não precisa mexer em nenhum código para adicionar conteúdo.
+Todo o conteúdo fica em duas pastas, um arquivo `.json` por matéria. Você não precisa mexer em nenhum código para adicionar conteúdo.
+
+- `src/data/graduacao/`: matérias do modo Graduação
+- `src/data/residencia/`: áreas do modo Residência
+
+A pasta onde o arquivo está decide em qual modo a matéria aparece. O formato dos arquivos é o mesmo nas duas.
 
 A estrutura é: **matéria > unidades > lições > questões**.
 
@@ -160,12 +170,15 @@ A estrutura é: **matéria > unidades > lições > questões**.
 
 **6. Identificar estrutura em imagem** (`identificar_imagem`): igual à múltipla escolha, com um campo `imagem`. Coloque a imagem dentro de `public/questoes/` e escreva o caminho começando com `/questoes/`. Se a imagem não existir, aparece o placeholder.
 
+O campo `creditoImagem` (opcional) aparece em letras pequenas embaixo da imagem. Ele é **obrigatório** quando a imagem tem licença Creative Commons (CC BY ou CC BY-SA), como as do Wikimedia Commons. Prefira imagens sem legendas escritas, para não entregar a resposta.
+
 ```json
 {
   "id": "anat-u1-l3-q6",
   "tipo": "identificar_imagem",
   "enunciado": "A seta indica o osso longo do braço. Qual é?",
-  "imagem": "/questoes/umero.png",
+  "imagem": "/questoes/umero.webp",
+  "creditoImagem": "Imagem: Anatomography, CC BY-SA 2.1 JP, via Wikimedia Commons",
   "opcoes": ["Úmero", "Rádio", "Ulna", "Clavícula"],
   "resposta": "Úmero",
   "explicacao": "A cabeça do úmero se articula com a escápula.",
@@ -184,9 +197,9 @@ Dica: nos textos, prefira vírgula ou ponto em vez de travessão.
 
 - **Lição nova:** copie um bloco `{ "id": ..., "titulo": ..., "questoes": [...] }` dentro de `licoes`. Ela entra no fim da trilha da unidade.
 - **Unidade nova:** copie um bloco inteiro de unidade dentro de `unidades`.
-- **Matéria nova:** crie um arquivo novo em `src/data/materias/` (por exemplo `histologia.json`). Ela aparece sozinha na tela de matérias. Uma matéria com `"unidades": []` aparece como "Em breve".
+- **Matéria nova:** crie um arquivo novo em `src/data/graduacao/` ou `src/data/residencia/` (por exemplo `histologia.json`). Ela aparece sozinha na tela de matérias. Uma matéria com `"unidades": []` aparece como "Em breve".
 
-Ícones disponíveis para o campo `icone`: `osso`, `coracao`, `frasco`, `pilula`, `microscopio`, `estetoscopio`.
+Ícones disponíveis para o campo `icone`: `osso`, `coracao`, `frasco`, `pilula`, `microscopio`, `estetoscopio`, `bisturi`, `bebe`, `gestante`, `comunidade`.
 
 As matérias Fisiologia, Bioquímica, Patologia e Semiologia já têm arquivo, só falta preencher as unidades.
 
@@ -209,7 +222,7 @@ src/
   components/   botões, barras, modal, logo, Lápio, nós da trilha
     questoes/   um componente para cada tipo de questão
   screens/      as telas (boas-vindas, trilha, lição, resultado, perfil, revisão, ranking)
-  data/         conteúdo em JSON (materias/) e funções para buscar lições e questões
+  data/         conteúdo em JSON (graduacao/ e residencia/) e funções para buscar lições e questões
   store/        estado global do jogador (Zustand), salvo automaticamente
   lib/          regras do jogo (XP, vidas, ofensiva, revisão, conquistas, ranking)
   types/        tipos TypeScript

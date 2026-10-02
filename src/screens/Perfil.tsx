@@ -2,7 +2,7 @@ import { Award, Flame, Lock, Medal, Target, Zap, type LucideIcon } from 'lucide-
 import { useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, Tema } from '../types'
-import { MATERIAS, materiaDisponivel } from '../data'
+import { materiaDisponivel, materiasDoModo } from '../data'
 import { useJogo } from '../store/useJogo'
 import { nivelDoXp, progressoNoNivel, XP_POR_NIVEL } from '../lib/xp'
 import { ofensivaVigente } from '../lib/ofensiva'
@@ -13,6 +13,7 @@ import { BarraProgresso } from '../components/BarraProgresso'
 import { IconeMateria } from '../components/IconeMateria'
 import { Botao } from '../components/Botao'
 import { Modal } from '../components/Modal'
+import { AbasModo } from '../components/AbasModo'
 
 export function Perfil() {
   const navegar = useNavigate()
@@ -35,7 +36,12 @@ export function Perfil() {
         <div>
           <h1 className="text-2xl font-extrabold">{usuario.nome}</h1>
           <p className="text-texto-suave">
-            {usuario.semestre}º semestre · estudando desde {desde}
+            {jogo.modo === 'residencia'
+              ? 'Preparação para residência'
+              : usuario.semestre
+                ? `${usuario.semestre}º semestre`
+                : 'Graduação'}{' '}
+            · estudando desde {desde}
           </p>
         </div>
       </div>
@@ -89,9 +95,9 @@ export function Perfil() {
       </div>
 
       {/* Por matéria */}
-      <Titulo>Por matéria</Titulo>
+      <Titulo>{jogo.modo === 'residencia' ? 'Por área' : 'Por matéria'}</Titulo>
       <div className="flex flex-col gap-3">
-        {MATERIAS.filter(materiaDisponivel).map((m) => {
+        {materiasDoModo(jogo.modo).filter(materiaDisponivel).map((m) => {
           const stats = jogo.estatisticasPorMateria[m.id] ?? { respondidas: 0, acertos: 0 }
           const { feitas, total } = contarConcluidas(m, jogo.licoesConcluidas)
           const precisao = stats.respondidas ? Math.round((stats.acertos / stats.respondidas) * 100) : 0
@@ -123,6 +129,10 @@ export function Perfil() {
       {/* Configurações */}
       <Titulo>Configurações</Titulo>
       <div className="flex flex-col gap-5 rounded-2xl border-2 border-borda bg-superficie p-4">
+        <div>
+          <p className="mb-2 font-bold">Modo de estudo</p>
+          <AbasModo valor={jogo.modo} aoMudar={jogo.escolherModo} />
+        </div>
         <div>
           <p className="mb-2 font-bold">Meta diária</p>
           <Segmentado<MetaDiaria>

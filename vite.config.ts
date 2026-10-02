@@ -16,7 +16,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       // Guarda tudo no aparelho para o app abrir sem internet
-      workbox: { globPatterns: ['**/*.{js,css,html,png,svg,woff2}'] },
+      workbox: { globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2}'] },
       manifest: {
         name: 'DuoMed',
         short_name: 'DuoMed',

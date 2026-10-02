@@ -1,0 +1,281 @@
+{
+  "id": "preventiva",
+  "nome": "Medicina Preventiva",
+  "descricao": "SUS, epidemiologia e estudos científicos",
+  "icone": "comunidade",
+  "ordem": 5,
+  "unidades": [
+    {
+      "id": "prev-u1",
+      "titulo": "SUS e epidemiologia",
+      "descricao": "Princípios do SUS, testes diagnósticos e tipos de estudo",
+      "licoes": [
+        {
+          "id": "prev-u1-l1",
+          "titulo": "Sistema Único de Saúde",
+          "questoes": [
+            {
+              "id": "prev-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual lei dispõe sobre a participação da comunidade e as transferências de recursos financeiros no SUS?",
+              "opcoes": ["Lei 8.142/1990", "Lei 8.080/1990", "Lei 9.656/1998", "Lei 13.979/2020"],
+              "resposta": "Lei 8.142/1990",
+              "explicacao": "A Lei 8.142 criou as conferências e os conselhos de saúde e regulou os repasses fundo a fundo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada princípio ou diretriz do SUS ao seu significado.",
+              "pares": [
+                { "esquerda": "Universalidade", "direita": "Acesso garantido a todas as pessoas" },
+                { "esquerda": "Equidade", "direita": "Tratar desigualmente os desiguais" },
+                { "esquerda": "Integralidade", "direita": "Cuidado completo, da prevenção à reabilitação" },
+                { "esquerda": "Participação da comunidade", "direita": "Conselhos e conferências de saúde" }
+              ],
+              "explicacao": "Universalidade, equidade e integralidade são princípios doutrinários. Descentralização, regionalização, hierarquização e participação social são diretrizes organizativas.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As conferências de saúde se reúnem a cada 4 anos, e os conselhos de saúde são permanentes e deliberativos.",
+              "resposta": true,
+              "explicacao": "Ambos existem nas três esferas de governo: municipal, estadual e federal.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A Lei ___ é a Lei Orgânica da Saúde, que regula as ações e os serviços de saúde em todo o país.",
+              "opcoes": ["8.080/1990", "8.142/1990", "9.787/1999", "10.216/2001"],
+              "resposta": "8.080/1990",
+              "explicacao": "Ela define os objetivos, as atribuições, os princípios e a organização do SUS.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como é a composição dos conselhos de saúde?",
+              "opcoes": [
+                "50% usuários, 25% trabalhadores da saúde e 25% gestores e prestadores",
+                "Um terço para cada segmento",
+                "50% gestores e 50% usuários",
+                "Apenas profissionais de saúde"
+              ],
+              "resposta": "50% usuários, 25% trabalhadores da saúde e 25% gestores e prestadores",
+              "explicacao": "É a paridade: os usuários têm metade das vagas, igual à soma dos demais segmentos.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "A equipe de Saúde da Família percebe que o bairro mais vulnerável do seu território concentra os casos de tuberculose e decide priorizar a busca ativa nessa região.",
+              "enunciado": "Qual princípio do SUS orienta essa decisão?",
+              "opcoes": ["Equidade", "Universalidade", "Integralidade", "Hierarquização"],
+              "resposta": "Equidade",
+              "explicacao": "Equidade é oferecer mais a quem mais precisa, para reduzir desigualdades.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na Estratégia Saúde da Família, cada equipe é responsável por uma população adscrita, em um território definido.",
+              "resposta": true,
+              "explicacao": "A adscrição permite conhecer as famílias, criar vínculo e planejar ações a partir das necessidades do território.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os atributos essenciais da Atenção Primária, segundo Starfield?",
+              "opcoes": [
+                "Primeiro contato, longitudinalidade, integralidade e coordenação",
+                "Universalidade, equidade, integralidade e participação",
+                "Orientação familiar, comunitária e competência cultural",
+                "Prevenção, diagnóstico, tratamento e reabilitação"
+              ],
+              "resposta": "Primeiro contato, longitudinalidade, integralidade e coordenação",
+              "explicacao": "Orientação familiar, orientação comunitária e competência cultural são os atributos derivados.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-u1-l2",
+          "titulo": "Testes diagnósticos e medidas",
+          "questoes": [
+            {
+              "id": "prev-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medida à sua definição.",
+              "pares": [
+                { "esquerda": "Sensibilidade", "direita": "Proporção de doentes com teste positivo" },
+                { "esquerda": "Especificidade", "direita": "Proporção de não doentes com teste negativo" },
+                { "esquerda": "Valor preditivo positivo", "direita": "Chance de ter a doença se o teste deu positivo" },
+                { "esquerda": "Valor preditivo negativo", "direita": "Chance de não ter a doença se o teste deu negativo" }
+              ],
+              "explicacao": "Sensibilidade e especificidade são do teste. Os valores preditivos dependem também da prevalência da doença.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Para rastrear uma doença grave e tratável, prefere-se um teste com alta:",
+              "opcoes": ["Sensibilidade", "Especificidade", "Prevalência", "Letalidade"],
+              "resposta": "Sensibilidade",
+              "explicacao": "Teste sensível deixa escapar poucos doentes; se der negativo, descarta a doença. Os positivos são confirmados depois com um teste específico.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O valor preditivo positivo de um teste aumenta quando a prevalência da doença aumenta.",
+              "resposta": true,
+              "explicacao": "Com mais doentes na população, um resultado positivo tem mais chance de ser verdadeiro. O valor preditivo negativo faz o contrário.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Um novo teste foi aplicado em 100 pessoas doentes, com 90 resultados positivos, e em 200 pessoas sem a doença, com 180 resultados negativos.",
+              "enunciado": "Qual é a sensibilidade do teste?",
+              "opcoes": ["90%", "80%", "10%", "45%"],
+              "resposta": "90%",
+              "explicacao": "Sensibilidade = verdadeiros positivos / total de doentes = 90/100. A especificidade também é de 90% (180/200).",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ mede os casos novos de uma doença em uma população durante um período.",
+              "opcoes": ["incidência", "prevalência", "letalidade", "mortalidade"],
+              "resposta": "incidência",
+              "explicacao": "A prevalência conta todos os casos existentes, novos e antigos, em um momento.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se calcula a letalidade de uma doença?",
+              "opcoes": [
+                "Óbitos pela doença divididos pelo número de doentes",
+                "Óbitos pela doença divididos pela população total",
+                "Casos novos divididos pela população",
+                "Óbitos totais divididos pelos nascidos vivos"
+              ],
+              "resposta": "Óbitos pela doença divididos pelo número de doentes",
+              "explicacao": "A letalidade mede a gravidade da doença. A mortalidade usa a população inteira no denominador.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q7",
+              "tipo": "caso_clinico",
+              "caso": "Um novo tratamento aumenta muito a sobrevida de pacientes com uma doença crônica, mas não cura a doença. A incidência não muda.",
+              "enunciado": "O que acontece com a prevalência?",
+              "opcoes": ["Aumenta", "Diminui", "Não se altera", "Cai a zero"],
+              "resposta": "Aumenta",
+              "explicacao": "Prevalência é aproximadamente incidência vezes duração. Se as pessoas vivem mais com a doença, mais casos existem ao mesmo tempo.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Elevar o ponto de corte de um exame para considerá-lo positivo torna o teste mais sensível.",
+              "resposta": false,
+              "explicacao": "Com ponto de corte mais alto há menos positivos: a especificidade sobe e a sensibilidade cai.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "prev-u1-l3",
+          "titulo": "Estudos epidemiológicos",
+          "questoes": [
+            {
+              "id": "prev-u1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de estudo à sua característica.",
+              "pares": [
+                { "esquerda": "Coorte", "direita": "Parte da exposição e acompanha quem adoece" },
+                { "esquerda": "Caso-controle", "direita": "Parte da doença e investiga exposições passadas" },
+                { "esquerda": "Transversal", "direita": "Mede exposição e doença no mesmo momento" },
+                { "esquerda": "Ensaio clínico randomizado", "direita": "O pesquisador sorteia quem recebe a intervenção" }
+              ],
+              "explicacao": "O caso-controle é ótimo para doenças raras. A coorte é melhor para estudar exposições raras e calcular incidência.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medida de associação é típica do estudo de caso-controle?",
+              "opcoes": ["Odds ratio", "Risco relativo", "Incidência", "Prevalência"],
+              "resposta": "Odds ratio",
+              "explicacao": "Como o caso-controle não acompanha expostos ao longo do tempo, não calcula incidência nem risco relativo diretamente.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q3",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisadores acompanham 2.000 fumantes e 2.000 não fumantes, todos sem câncer no início, durante 10 anos, e comparam a incidência de câncer de pulmão entre os grupos.",
+              "enunciado": "Qual é o tipo de estudo?",
+              "opcoes": ["Coorte prospectiva", "Caso-controle", "Transversal", "Ensaio clínico"],
+              "resposta": "Coorte prospectiva",
+              "explicacao": "Parte-se da exposição (fumar ou não) e acompanha-se no tempo. O pesquisador não decide quem fuma, então não é ensaio clínico.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Estudos transversais são os mais adequados para estabelecer a relação temporal entre causa e efeito.",
+              "resposta": false,
+              "explicacao": "Como medem tudo no mesmo momento, não mostram o que veio primeiro. São bons para estimar prevalência.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "No ensaio clínico, o ___ impede que participantes e avaliadores saibam qual tratamento cada pessoa recebe.",
+              "opcoes": ["cegamento", "pareamento", "ajuste estatístico", "seguimento"],
+              "resposta": "cegamento",
+              "explicacao": "O cegamento reduz o viés de aferição. A randomização, por sua vez, controla os fatores de confusão.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se calcula o número necessário para tratar (NNT)?",
+              "opcoes": [
+                "1 dividido pela redução absoluta do risco",
+                "1 dividido pelo risco relativo",
+                "Risco relativo menos 1",
+                "1 dividido pela redução relativa do risco"
+              ],
+              "resposta": "1 dividido pela redução absoluta do risco",
+              "explicacao": "O NNT diz quantas pessoas precisam ser tratadas para evitar um evento. Quanto menor, mais eficaz o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Em um ensaio clínico, o evento ocorreu em 10% do grupo placebo e em 6% do grupo tratado.",
+              "enunciado": "Qual é o NNT?",
+              "opcoes": ["25", "4", "40", "10"],
+              "resposta": "25",
+              "explicacao": "A redução absoluta do risco é 10% menos 6% = 4%, ou 0,04. NNT = 1 / 0,04 = 25.",
+              "revisado": false
+            },
+            {
+              "id": "prev-u1-l3-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Doenças de notificação compulsória imediata devem ser notificadas em até 24 horas.",
+              "resposta": true,
+              "explicacao": "As de notificação semanal podem ser comunicadas em até 7 dias. A notificação vale para casos suspeitos, sem esperar confirmação.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

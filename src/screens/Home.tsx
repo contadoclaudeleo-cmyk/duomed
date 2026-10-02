@@ -1,7 +1,7 @@
 import { Check, Flame, RotateCcw } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { buscarMateria, MATERIAS, materiaDisponivel } from '../data'
+import { buscarMateria, materiaDisponivel, primeiraMateriaDoModo } from '../data'
 import { useJogo } from '../store/useJogo'
 import { statusDasLicoes } from '../lib/progresso'
 import { questoesParaRevisar } from '../lib/revisao'
@@ -19,6 +19,7 @@ const deslocamentoDoNo = (indiceGlobal: number) => Math.round(Math.sin(indiceGlo
 export function Home() {
   const navegar = useNavigate()
   const materiaId = useJogo((s) => s.materiaAtual)
+  const modo = useJogo((s) => s.modo)
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const fila = useJogo((s) => s.filaRevisao)
   const meta = useJogo((s) => s.usuario?.metaDiaria ?? 20)
@@ -27,7 +28,7 @@ export function Home() {
   const [semVidas, setSemVidas] = useState(false)
 
   const atual = buscarMateria(materiaId)
-  const materia = atual && materiaDisponivel(atual) ? atual : MATERIAS.find(materiaDisponivel)!
+  const materia = atual && materiaDisponivel(atual) && atual.modo === modo ? atual : primeiraMateriaDoModo(modo)
   const status = statusDasLicoes(materia, concluidas)
   const pendentes = questoesParaRevisar(fila).length
 

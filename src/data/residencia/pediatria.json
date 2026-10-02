@@ -1,0 +1,291 @@
+{
+  "id": "pediatria",
+  "nome": "Pediatria",
+  "descricao": "Vacinação, puericultura e urgências pediátricas",
+  "icone": "bebe",
+  "ordem": 3,
+  "unidades": [
+    {
+      "id": "ped-u1",
+      "titulo": "Puericultura e urgências",
+      "descricao": "Calendário vacinal, crescimento, aleitamento e doenças comuns",
+      "licoes": [
+        {
+          "id": "ped-u1-l1",
+          "titulo": "Vacinação",
+          "questoes": [
+            {
+              "id": "ped-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais vacinas o recém-nascido recebe ao nascer, pelo calendário do PNI?",
+              "opcoes": ["BCG e hepatite B", "BCG e pentavalente", "Hepatite B e rotavírus", "Tríplice viral e BCG"],
+              "resposta": "BCG e hepatite B",
+              "explicacao": "A vacina da hepatite B deve ser dada de preferência nas primeiras 24 horas de vida.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vacina à idade da primeira dose no calendário infantil.",
+              "pares": [
+                { "esquerda": "Pentavalente", "direita": "2 meses" },
+                { "esquerda": "Meningocócica C", "direita": "3 meses" },
+                { "esquerda": "Febre amarela", "direita": "9 meses" },
+                { "esquerda": "Tríplice viral", "direita": "12 meses" }
+              ],
+              "explicacao": "Aos 2 meses também começam VIP, rotavírus e pneumocócica 10-valente.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina rotavírus tem idade máxima: a primeira dose não pode ser dada após 3 meses e 15 dias de vida.",
+              "resposta": true,
+              "explicacao": "Os limites existem pelo risco de intussuscepção em idades maiores. A segunda dose vai até 7 meses e 29 dias.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A vacina ___ protege contra as formas graves da tuberculose, como a meníngea e a miliar.",
+              "opcoes": ["BCG", "VIP", "pentavalente", "tríplice viral"],
+              "resposta": "BCG",
+              "explicacao": "A BCG não impede a infecção, mas reduz muito as formas graves em crianças.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Lactente de 4 meses com resfriado leve, sem febre há 2 dias e em bom estado geral, chega à unidade para as vacinas de rotina.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Vacinar normalmente",
+                "Adiar todas as vacinas por 30 dias",
+                "Adiar até a tosse desaparecer",
+                "Aplicar só as vacinas inativadas"
+              ],
+              "resposta": "Vacinar normalmente",
+              "explicacao": "Doença leve sem febre não é contraindicação. Adiar vacinas sem motivo é uma das maiores causas de atraso vacinal.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destas é uma contraindicação verdadeira às vacinas de vírus vivo atenuado?",
+              "opcoes": [
+                "Imunodeficiência grave ou corticoide em dose imunossupressora",
+                "Febre baixa",
+                "Uso de antibiótico",
+                "História de prematuridade"
+              ],
+              "resposta": "Imunodeficiência grave ou corticoide em dose imunossupressora",
+              "explicacao": "Gestação também contraindica vacinas vivas. As outras situações não impedem a vacinação.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No SUS, a vacina contra HPV é indicada para meninas e meninos de 9 a 14 anos.",
+              "resposta": true,
+              "explicacao": "A vacina previne câncer de colo do útero, ânus, pênis e orofaringe, além de verrugas genitais.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mãe de um recém-nascido prematuro de 32 semanas, hoje com 2 meses de vida e 3 kg, pergunta se as vacinas devem esperar.",
+              "enunciado": "Qual é a orientação correta?",
+              "opcoes": [
+                "Seguir o calendário pela idade cronológica",
+                "Corrigir a idade pela prematuridade",
+                "Esperar a criança completar 6 meses",
+                "Vacinar só depois de 1 ano"
+              ],
+              "resposta": "Seguir o calendário pela idade cronológica",
+              "explicacao": "Prematuros são vacinados pela idade cronológica. A exceção clássica é a BCG, aplicada quando o bebê atinge 2 kg.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "ped-u1-l2",
+          "titulo": "Crescimento e aleitamento",
+          "questoes": [
+            {
+              "id": "ped-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Até que idade é recomendado o aleitamento materno exclusivo?",
+              "opcoes": ["6 meses", "4 meses", "12 meses", "2 anos"],
+              "resposta": "6 meses",
+              "explicacao": "Depois dos 6 meses, introduz-se a alimentação complementar, mantendo o aleitamento até 2 anos ou mais.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada marco do desenvolvimento à idade aproximada em que surge.",
+              "pares": [
+                { "esquerda": "Sorriso social", "direita": "Cerca de 2 meses" },
+                { "esquerda": "Sustenta a cabeça", "direita": "Cerca de 3 a 4 meses" },
+                { "esquerda": "Senta sem apoio", "direita": "Cerca de 6 a 7 meses" },
+                { "esquerda": "Anda sem apoio", "direita": "Cerca de 12 a 15 meses" }
+              ],
+              "explicacao": "Há variação normal entre crianças. A Caderneta da Criança traz os marcos e as idades limite para cada um.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O recém-nascido a termo costuma recuperar o peso de nascimento entre o 10º e o 15º dia de vida.",
+              "resposta": true,
+              "explicacao": "A perda de até 10% do peso nos primeiros dias é fisiológica. Perdas maiores ou recuperação tardia pedem avaliação da amamentação.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A criança costuma dobrar o peso de nascimento por volta dos ___ meses e triplicá-lo com 1 ano.",
+              "opcoes": ["5", "2", "9", "12"],
+              "resposta": "5",
+              "explicacao": "O ganho de peso é mais rápido nos primeiros meses e vai desacelerando ao longo do primeiro ano.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera de 3 semanas com febre, dor e vermelhidão em um quadrante de uma das mamas. Ela pergunta se deve parar de amamentar.",
+              "enunciado": "Qual é a orientação correta?",
+              "opcoes": [
+                "Manter a amamentação e esvaziar bem a mama",
+                "Suspender a amamentação até o fim do antibiótico",
+                "Amamentar só na mama saudável e descartar o leite da outra",
+                "Suspender a amamentação de vez"
+              ],
+              "resposta": "Manter a amamentação e esvaziar bem a mama",
+              "explicacao": "Na mastite, o esvaziamento da mama faz parte do tratamento. Associa-se antibiótico compatível com a amamentação e analgésico.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destas situações contraindica o aleitamento materno no Brasil?",
+              "opcoes": ["Mãe vivendo com HIV", "Hepatite B materna", "Mastite", "Tabagismo materno"],
+              "resposta": "Mãe vivendo com HIV",
+              "explicacao": "Mães com HIV ou HTLV não devem amamentar. Na hepatite B, o bebê recebe vacina e imunoglobulina e pode mamar normalmente.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q7",
+              "tipo": "caso_clinico",
+              "caso": "Lactente de 9 meses ainda não senta sem apoio, não balbucia e não pega objetos com as mãos. Nasceu a termo, sem intercorrências.",
+              "enunciado": "Qual é a conduta mais adequada?",
+              "opcoes": [
+                "Investigar atraso do desenvolvimento e encaminhar para avaliação",
+                "Tranquilizar a família, é variação normal",
+                "Reavaliar apenas aos 2 anos",
+                "Prescrever ferro e reavaliar em 6 meses"
+              ],
+              "resposta": "Investigar atraso do desenvolvimento e encaminhar para avaliação",
+              "explicacao": "Há atraso em mais de um domínio (motor, linguagem e coordenação). A intervenção precoce melhora o prognóstico.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Sociedade Brasileira de Pediatria recomenda vitamina D desde a primeira semana de vida, mesmo em aleitamento exclusivo.",
+              "resposta": true,
+              "explicacao": "A recomendação é de 400 UI por dia no primeiro ano e 600 UI por dia no segundo, já que o leite materno tem pouca vitamina D.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "ped-u1-l3",
+          "titulo": "Urgências pediátricas",
+          "questoes": [
+            {
+              "id": "ped-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal agente da bronquiolite viral aguda?",
+              "opcoes": ["Vírus sincicial respiratório", "Influenza", "Adenovírus", "Rinovírus"],
+              "resposta": "Vírus sincicial respiratório",
+              "explicacao": "A bronquiolite atinge sobretudo menores de 2 anos, com pico no outono e no inverno.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na bronquiolite, o uso rotineiro de broncodilatador e corticoide é recomendado.",
+              "resposta": false,
+              "explicacao": "O tratamento é de suporte: hidratação, desobstrução nasal e oxigênio se a saturação estiver baixa. Broncodilatador e corticoide não mudam a evolução.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q3",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada plano de hidratação à situação em que é usado.",
+              "pares": [
+                { "esquerda": "Plano A", "direita": "Sem desidratação, tratamento em casa" },
+                { "esquerda": "Plano B", "direita": "Com desidratação, reidratação oral na unidade" },
+                { "esquerda": "Plano C", "direita": "Desidratação grave, hidratação venosa" }
+              ],
+              "explicacao": "No plano B, a criança recebe solução de reidratação oral na unidade e é reavaliada até sair da desidratação.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com diarreia há 2 dias. Está irritada, com olhos fundos, bebe água com avidez e o sinal da prega desaparece lentamente.",
+              "enunciado": "Qual plano de hidratação deve ser usado?",
+              "opcoes": ["Plano B", "Plano A", "Plano C", "Nenhum, só observação"],
+              "resposta": "Plano B",
+              "explicacao": "Dois ou mais sinais como esses indicam desidratação sem gravidade. Letargia, incapacidade de beber e prega que desaparece muito lentamente indicariam o plano C.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "No crupe viral, a tosse é ___ e costuma vir acompanhada de estridor inspiratório e rouquidão.",
+              "opcoes": ["ladrante", "produtiva", "em guincho", "noturna e seca"],
+              "resposta": "ladrante",
+              "explicacao": "A tosse em guincho é típica da coqueluche. O crupe (laringotraqueíte) é causado principalmente pelo vírus parainfluenza.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 18 meses com coriza há 2 dias evolui com tosse ladrante e estridor em repouso, sem cianose e sem alteração da consciência.",
+              "enunciado": "Qual é o tratamento indicado?",
+              "opcoes": [
+                "Dexametasona e nebulização com adrenalina",
+                "Amoxicilina por 10 dias",
+                "Salbutamol inalatório de horário",
+                "Intubação imediata"
+              ],
+              "resposta": "Dexametasona e nebulização com adrenalina",
+              "explicacao": "Estridor em repouso indica crupe moderado. A adrenalina age rápido e o corticoide reduz o edema por mais tempo. Observa-se por algumas horas após a adrenalina.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na diarreia aguda da criança, por quanto tempo se recomenda dar zinco?",
+              "opcoes": ["10 a 14 dias", "3 dias", "1 dia", "30 dias"],
+              "resposta": "10 a 14 dias",
+              "explicacao": "O zinco reduz a duração e a gravidade do episódio e diminui a chance de novos episódios nos meses seguintes.",
+              "revisado": false
+            },
+            {
+              "id": "ped-u1-l3-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Toda diarreia aguda com febre na infância deve ser tratada com antibiótico.",
+              "resposta": false,
+              "explicacao": "A maioria é viral. Antibiótico fica reservado a casos como disenteria (sangue nas fezes) com comprometimento do estado geral e suspeita de cólera.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

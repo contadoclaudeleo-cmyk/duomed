@@ -1,0 +1,283 @@
+{
+  "id": "clinica-medica",
+  "nome": "Clínica Médica",
+  "descricao": "Hipertensão, diabetes, dengue e outros temas campeões de prova",
+  "icone": "estetoscopio",
+  "ordem": 1,
+  "unidades": [
+    {
+      "id": "cm-u1",
+      "titulo": "Temas que mais caem",
+      "descricao": "Hipertensão arterial, diabetes mellitus e dengue",
+      "licoes": [
+        {
+          "id": "cm-u1-l1",
+          "titulo": "Hipertensão arterial",
+          "questoes": [
+            {
+              "id": "cm-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na medida de consultório, repetida em ocasiões diferentes, qual valor define hipertensão arterial no adulto?",
+              "opcoes": ["PA ≥ 140/90 mmHg", "PA ≥ 130/80 mmHg", "PA ≥ 120/80 mmHg", "PA ≥ 160/100 mmHg"],
+              "resposta": "PA ≥ 140/90 mmHg",
+              "explicacao": "A diretriz brasileira define hipertensão por PA sistólica ≥ 140 e/ou diastólica ≥ 90 mmHg em medidas repetidas no consultório, ou por MAPA e MRPA.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na urgência hipertensiva, sem lesão aguda de órgão-alvo, a pressão deve ser reduzida gradualmente, em 24 a 48 horas, com medicação oral.",
+              "resposta": true,
+              "explicacao": "Sem lesão aguda de órgão-alvo, a redução rápida não traz benefício e pode causar isquemia. A emergência hipertensiva é que exige droga venosa e redução imediata.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q3",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos, hipertenso sem tratamento, chega com PA 220/130 mmHg e dor torácica súbita e lancinante que irradia para o dorso. Os pulsos dos membros superiores estão assimétricos.",
+              "enunciado": "Qual é a hipótese diagnóstica principal?",
+              "opcoes": ["Dissecção aguda de aorta", "Urgência hipertensiva", "Pseudocrise hipertensiva", "Pericardite aguda"],
+              "resposta": "Dissecção aguda de aorta",
+              "explicacao": "É uma emergência hipertensiva. A conduta inclui betabloqueador venoso para baixar rapidamente a frequência cardíaca e a PA, e avaliação cirúrgica com angiotomografia.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada classe de anti-hipertensivo ao seu efeito adverso típico.",
+              "pares": [
+                { "esquerda": "IECA", "direita": "Tosse seca" },
+                { "esquerda": "Bloqueador de canal de cálcio diidropiridínico", "direita": "Edema de membros inferiores" },
+                { "esquerda": "Tiazídico", "direita": "Hipocalemia" },
+                { "esquerda": "Espironolactona", "direita": "Ginecomastia" }
+              ],
+              "explicacao": "A tosse do IECA vem do acúmulo de bradicinina. Se ocorrer, troca-se por um BRA, que não causa tosse.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual classe de anti-hipertensivo é contraindicada na gestação?",
+              "opcoes": ["IECA", "Metildopa", "Nifedipino", "Hidralazina"],
+              "resposta": "IECA",
+              "explicacao": "IECA e BRA são teratogênicos e causam lesão renal fetal. Metildopa, nifedipino e hidralazina são usados na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Em hipertenso com diabetes e albuminúria, prefere-se um ___ ou um BRA, pela proteção renal.",
+              "opcoes": ["IECA", "tiazídico", "betabloqueador", "alfabloqueador"],
+              "resposta": "IECA",
+              "explicacao": "IECA e BRA reduzem a pressão intraglomerular e a albuminúria, retardando a progressão da doença renal. Não devem ser associados entre si.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos com hipertensão de difícil controle apesar de três drogas. Exames mostram hipocalemia espontânea e alcalose metabólica.",
+              "enunciado": "Qual é a hipótese mais provável?",
+              "opcoes": ["Hiperaldosteronismo primário", "Feocromocitoma", "Síndrome de Cushing", "Hipotireoidismo"],
+              "resposta": "Hiperaldosteronismo primário",
+              "explicacao": "É a causa endócrina mais comum de hipertensão secundária. O rastreio é feito pela relação aldosterona/renina.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l1-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O efeito do avental branco ocorre quando a PA é normal no consultório e elevada fora dele.",
+              "resposta": false,
+              "explicacao": "Isso é a hipertensão mascarada. No efeito do avental branco é o contrário: PA elevada no consultório e normal na MAPA ou MRPA.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cm-u1-l2",
+          "titulo": "Diabetes mellitus",
+          "questoes": [
+            {
+              "id": "cm-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual valor de glicemia de jejum, confirmado em nova medida, faz o diagnóstico de diabetes?",
+              "opcoes": ["≥ 126 mg/dL", "≥ 100 mg/dL", "≥ 140 mg/dL", "≥ 200 mg/dL"],
+              "resposta": "≥ 126 mg/dL",
+              "explicacao": "Entre 100 e 125 mg/dL considera-se pré-diabetes (glicemia de jejum alterada).",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame ao ponto de corte diagnóstico de diabetes.",
+              "pares": [
+                { "esquerda": "Glicemia de jejum", "direita": "≥ 126 mg/dL" },
+                { "esquerda": "Hemoglobina glicada", "direita": "≥ 6,5%" },
+                { "esquerda": "TOTG com 75 g", "direita": "≥ 200 mg/dL após 2 horas" },
+                { "esquerda": "Glicemia ao acaso", "direita": "≥ 200 mg/dL com sintomas clássicos" }
+              ],
+              "explicacao": "Sem sintomas, o diagnóstico precisa de dois exames alterados. Com sintomas clássicos e glicemia ao acaso ≥ 200 mg/dL, um exame basta.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "No diabetes tipo 2 sem contraindicações, qual é o fármaco inicial clássico?",
+              "opcoes": ["Metformina", "Glibenclamida", "Insulina NPH", "Acarbose"],
+              "resposta": "Metformina",
+              "explicacao": "A metformina é barata, não causa hipoglicemia isolada e não engorda. Em doença cardiovascular ou renal estabelecida, associa-se iSGLT2 ou agonista de GLP-1.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 19 anos com poliúria, polidipsia e perda de peso há 3 semanas chega com vômitos, respiração rápida e profunda e hálito cetônico. Glicemia de 480 mg/dL, pH 7,10 e bicarbonato de 8 mEq/L.",
+              "enunciado": "Qual é a primeira medida no tratamento?",
+              "opcoes": [
+                "Hidratação venosa com soro fisiológico 0,9%",
+                "Bicarbonato de sódio venoso",
+                "Insulina NPH subcutânea",
+                "Restrição hídrica"
+              ],
+              "resposta": "Hidratação venosa com soro fisiológico 0,9%",
+              "explicacao": "Na cetoacidose diabética, a hidratação vem primeiro. A insulina regular venosa é iniciada em seguida, desde que o potássio esteja acima de 3,3 mEq/L.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na cetoacidose diabética, a insulina deve ser adiada se o potássio estiver abaixo de 3,3 mEq/L.",
+              "resposta": true,
+              "explicacao": "A insulina joga potássio para dentro das células e pode causar hipocalemia grave e arritmias. Primeiro repõe-se o potássio.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ diabética é rastreada com exame de fundo de olho.",
+              "opcoes": ["retinopatia", "nefropatia", "neuropatia", "cardiopatia"],
+              "resposta": "retinopatia",
+              "explicacao": "No DM2 o rastreio começa ao diagnóstico; no DM1, após alguns anos de doença. A nefropatia é rastreada com albuminúria e taxa de filtração.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q7",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 78 anos com diabetes tipo 2, em uso de glibenclamida, é encontrada confusa e sudorética. A glicemia capilar é de 42 mg/dL.",
+              "enunciado": "Qual é a conduta mais adequada?",
+              "opcoes": [
+                "Glicose hipertônica venosa e observação prolongada",
+                "Glicose venosa e alta assim que acordar",
+                "Insulina regular venosa",
+                "Apenas suspender a glibenclamida"
+              ],
+              "resposta": "Glicose hipertônica venosa e observação prolongada",
+              "explicacao": "Sulfonilureias causam hipoglicemia prolongada e recorrente, sobretudo em idosos e renais crônicos. O paciente precisa ficar em observação.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual classe causa glicosúria e reduz eventos cardiovasculares e progressão da doença renal?",
+              "opcoes": ["Inibidores da SGLT2", "Sulfonilureias", "Inibidores da DPP-4", "Tiazolidinedionas"],
+              "resposta": "Inibidores da SGLT2",
+              "explicacao": "Empagliflozina e dapagliflozina bloqueiam a reabsorção de glicose no túbulo proximal. Também reduzem internação por insuficiência cardíaca.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cm-u1-l3",
+          "titulo": "Dengue",
+          "questoes": [
+            {
+              "id": "cm-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em que momento da dengue costumam surgir os sinais de alarme?",
+              "opcoes": [
+                "Na defervescência, entre o 3º e o 7º dia",
+                "Nas primeiras 24 horas de febre",
+                "Depois do 14º dia",
+                "Antes do início da febre"
+              ],
+              "resposta": "Na defervescência, entre o 3º e o 7º dia",
+              "explicacao": "É a fase crítica: com a queda da febre, o aumento da permeabilidade capilar pode levar a extravasamento plasmático e choque.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo de estadiamento da dengue à sua característica.",
+              "pares": [
+                { "esquerda": "Grupo A", "direita": "Sem sinais de alarme e sem condições especiais" },
+                { "esquerda": "Grupo B", "direita": "Sangramento de pele ou condição especial, sem sinais de alarme" },
+                { "esquerda": "Grupo C", "direita": "Presença de sinais de alarme" },
+                { "esquerda": "Grupo D", "direita": "Sinais de choque ou sangramento grave" }
+              ],
+              "explicacao": "Condições especiais incluem gestantes, menores de 2 anos, maiores de 65 anos, comorbidades e risco social. Grupos C e D precisam de hidratação venosa.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Dor abdominal intensa e contínua, vômitos persistentes e sangramento de mucosa são sinais de alarme na dengue.",
+              "resposta": true,
+              "explicacao": "Outros sinais de alarme: hipotensão postural, hepatomegalia dolorosa, acúmulo de líquidos, letargia ou irritabilidade e aumento progressivo do hematócrito.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 30 anos no 5º dia de doença; a febre cessou ontem. Agora tem dor abdominal intensa e contínua e vômitos persistentes. PA 110/70 mmHg, sem sinais de choque. O hematócrito subiu de 42% para 48%.",
+              "enunciado": "Como esse paciente deve ser classificado?",
+              "opcoes": ["Grupo C", "Grupo A", "Grupo B", "Grupo D"],
+              "resposta": "Grupo C",
+              "explicacao": "Há sinais de alarme sem choque. O paciente deve ser internado e iniciar hidratação venosa imediatamente, com reavaliação frequente.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medicamento deve ser evitado em pacientes com suspeita de dengue?",
+              "opcoes": ["Anti-inflamatórios não esteroides e AAS", "Dipirona", "Paracetamol", "Sais de reidratação oral"],
+              "resposta": "Anti-inflamatórios não esteroides e AAS",
+              "explicacao": "AINEs e AAS aumentam o risco de sangramento. Para febre e dor usam-se dipirona ou paracetamol.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A prova do ___ positiva indica fragilidade capilar e coloca o paciente sem sinais de alarme no grupo B.",
+              "opcoes": ["laço", "Romberg", "Blumberg", "Lasègue"],
+              "resposta": "laço",
+              "explicacao": "A prova do laço deve ser feita em todo paciente sem sangramento espontâneo e sem sinais de alarme.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 25 anos no 6º dia de dengue chega com extremidades frias, pulso fino, enchimento capilar de 4 segundos e PA de 100/90 mmHg.",
+              "enunciado": "Qual é a conduta inicial?",
+              "opcoes": [
+                "Expansão volêmica rápida com cristaloide e reavaliação",
+                "Hidratação oral e retorno em 24 horas",
+                "Transfusão de plaquetas imediata",
+                "Corticoide venoso em dose alta"
+              ],
+              "resposta": "Expansão volêmica rápida com cristaloide e reavaliação",
+              "explicacao": "PA convergente (diferença de 20 mmHg ou menos) e má perfusão indicam choque: é grupo D. Faz-se expansão rápida com cristaloide, repetida conforme a resposta, em leito de terapia intensiva.",
+              "revisado": false
+            },
+            {
+              "id": "cm-u1-l3-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na dengue, a transfusão de plaquetas está indicada sempre que a contagem estiver abaixo de 100.000/mm³.",
+              "resposta": false,
+              "explicacao": "Plaquetopenia isolada não indica transfusão. Ela é reservada a situações específicas, como sangramento ativo relevante com plaquetas muito baixas.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

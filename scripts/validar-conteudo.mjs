@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..')
-const pasta = join(raiz, 'src', 'data', 'materias')
+const PASTAS = ['graduacao', 'residencia']
 const TIPOS = ['multipla_escolha', 'verdadeiro_falso', 'completar_lacuna', 'associar_pares', 'caso_clinico', 'identificar_imagem']
 
 const erros = []
@@ -20,10 +20,16 @@ function usarId(id, onde) {
   ids.set(id, onde)
 }
 
-for (const arquivo of readdirSync(pasta).filter((f) => f.endsWith('.json'))) {
+const arquivos = PASTAS.flatMap((p) =>
+  readdirSync(join(raiz, 'src', 'data', p))
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => ({ arquivo: `${p}/${f}`, caminho: join(raiz, 'src', 'data', p, f) })),
+)
+
+for (const { arquivo, caminho } of arquivos) {
   let materia
   try {
-    materia = JSON.parse(readFileSync(join(pasta, arquivo), 'utf8'))
+    materia = JSON.parse(readFileSync(caminho, 'utf8'))
   } catch (e) {
     erros.push(`${arquivo}: JSON inválido (${e.message}). Confira vírgulas, aspas e chaves.`)
     continue
