@@ -4,5 +4,1826 @@
   "descricao": "Anamnese, exame físico e sinais clínicos",
   "icone": "estetoscopio",
   "ordem": 6,
-  "unidades": []
+  "unidades": [
+    {
+      "id": "semio-u1",
+      "titulo": "Anamnese e exame geral",
+      "descricao": "Entrevista, sinais vitais e ectoscopia",
+      "licoes": [
+        {
+          "id": "semio-u1-l1",
+          "titulo": "Anamnese",
+          "questoes": [
+            {
+              "id": "semio-u1-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada parte da anamnese ao seu conteúdo.",
+              "pares": [
+                {
+                  "esquerda": "Queixa principal",
+                  "direita": "Motivo da consulta, nas palavras do paciente"
+                },
+                {
+                  "esquerda": "História da doença atual",
+                  "direita": "Evolução detalhada do problema"
+                },
+                {
+                  "esquerda": "Interrogatório sistemático",
+                  "direita": "Revisão dos sintomas de cada sistema"
+                },
+                {
+                  "esquerda": "História familiar",
+                  "direita": "Doenças dos parentes próximos"
+                }
+              ],
+              "explicacao": "Uma boa anamnese resolve a maior parte dos diagnósticos antes mesmo do exame físico.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como deve ser registrada a queixa principal?",
+              "opcoes": [
+                "Com as palavras do paciente, de forma breve e com a duração",
+                "Com o diagnóstico provável",
+                "Com termos técnicos",
+                "Com todos os sintomas da consulta"
+              ],
+              "resposta": "Com as palavras do paciente, de forma breve e com a duração",
+              "explicacao": "Exemplo: dor de cabeça há 3 dias.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Perguntas abertas no início da consulta ajudam o paciente a contar a história sem ser induzido.",
+              "resposta": true,
+              "explicacao": "As perguntas fechadas ficam para depois, para detalhar pontos específicos.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Ao caracterizar uma dor, perguntar para onde ela se espalha é avaliar a ___.",
+              "opcoes": [
+                "irradiação",
+                "intensidade",
+                "duração",
+                "qualidade"
+              ],
+              "resposta": "irradiação",
+              "explicacao": "Outras características: localização, início, qualidade, intensidade, fatores de piora e melhora e sintomas associados.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "O paciente conta: \"Doutor, estou com uma dor no peito em aperto há 2 horas, que vai para o braço esquerdo.\"",
+              "enunciado": "Que característica da dor ele descreve ao dizer que ela vai para o braço?",
+              "opcoes": [
+                "Irradiação",
+                "Fatores de melhora",
+                "Sintomas associados",
+                "Antecedentes pessoais"
+              ],
+              "resposta": "Irradiação",
+              "explicacao": "Dor em aperto irradiada para o braço esquerdo é típica de isquemia do coração.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual informação faz parte dos hábitos de vida?",
+              "opcoes": [
+                "Tabagismo em anos-maço",
+                "Data de nascimento",
+                "Doenças da mãe",
+                "Queixa principal"
+              ],
+              "resposta": "Tabagismo em anos-maço",
+              "explicacao": "Anos-maço é o número de maços por dia multiplicado pelos anos de tabagismo.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Quem fuma 1 maço por dia há 20 anos tem carga tabágica de 20 anos-maço.",
+              "resposta": true,
+              "explicacao": "Acima de 20 anos-maço, o risco de DPOC e câncer de pulmão aumenta bastante.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com várias queixas usa 9 remédios receitados por médicos diferentes.",
+              "enunciado": "Qual parte da anamnese é essencial para evitar interações e efeitos adversos?",
+              "opcoes": [
+                "Revisão completa dos remédios em uso",
+                "História familiar",
+                "Apenas a queixa principal",
+                "Perguntas sobre a infância"
+              ],
+              "resposta": "Revisão completa dos remédios em uso",
+              "explicacao": "Peça para o paciente trazer todas as caixas de remédio na consulta.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u1-l2",
+          "titulo": "Sinais vitais",
+          "questoes": [
+            {
+              "id": "semio-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal vital ao valor normal aproximado em um adulto em repouso.",
+              "pares": [
+                {
+                  "esquerda": "Frequência cardíaca",
+                  "direita": "60 a 100 bpm"
+                },
+                {
+                  "esquerda": "Frequência respiratória",
+                  "direita": "12 a 20 irpm"
+                },
+                {
+                  "esquerda": "Temperatura axilar",
+                  "direita": "35,5 a 37 °C"
+                },
+                {
+                  "esquerda": "Saturação de oxigênio",
+                  "direita": "95% ou mais em ar ambiente"
+                }
+              ],
+              "explicacao": "Atletas podem ter frequência cardíaca normal abaixo de 60 bpm.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tamanho correto do manguito para medir a pressão arterial?",
+              "opcoes": [
+                "Largura de cerca de 40% e comprimento de 80% a 100% da circunferência do braço",
+                "Qualquer tamanho serve",
+                "Sempre o manguito infantil",
+                "Sempre o maior disponível"
+              ],
+              "resposta": "Largura de cerca de 40% e comprimento de 80% a 100% da circunferência do braço",
+              "explicacao": "Usar o manguito certo evita erros grandes na medida.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um manguito pequeno para o braço tende a dar uma pressão falsamente alta.",
+              "resposta": true,
+              "explicacao": "Em pessoas com braço grosso, o manguito comum superestima a pressão.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A respiração de ___ alterna períodos de respiração cada vez mais profunda e depois mais fraca com pausas, e aparece na insuficiência cardíaca grave.",
+              "opcoes": [
+                "Cheyne-Stokes",
+                "Kussmaul",
+                "Biot",
+                "eupneia"
+              ],
+              "resposta": "Cheyne-Stokes",
+              "explicacao": "Também pode ocorrer em lesões neurológicas e em altitudes elevadas.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diabético está desidratado, com respiração rápida e profunda e hálito de frutas.",
+              "enunciado": "Qual é o padrão respiratório?",
+              "opcoes": [
+                "Respiração de Kussmaul",
+                "Respiração de Cheyne-Stokes",
+                "Respiração de Biot",
+                "Bradipneia"
+              ],
+              "resposta": "Respiração de Kussmaul",
+              "explicacao": "É a compensação respiratória da cetoacidose diabética.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é o pulso paradoxal?",
+              "opcoes": [
+                "Queda da pressão sistólica maior que 10 mmHg na inspiração",
+                "Pulso que acelera na inspiração",
+                "Pulso que alterna batimentos fortes e fracos",
+                "Ausência de pulso em um braço"
+              ],
+              "resposta": "Queda da pressão sistólica maior que 10 mmHg na inspiração",
+              "explicacao": "Aparece no tamponamento cardíaco e na asma grave.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pressão deve ser medida com o paciente sentado, costas apoiadas e braço na altura do coração, após alguns minutos de repouso.",
+              "resposta": true,
+              "explicacao": "Também é importante não falar durante a medida e esvaziar a bexiga antes.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem pressão de 150/90 mmHg no braço direito e 120/80 mmHg no esquerdo.",
+              "enunciado": "O que essa diferença pode indicar?",
+              "opcoes": [
+                "Obstrução arterial, como estenose da subclávia ou dissecção da aorta",
+                "Sempre erro de técnica",
+                "É um achado normal",
+                "Hipotensão ao se levantar"
+              ],
+              "resposta": "Obstrução arterial, como estenose da subclávia ou dissecção da aorta",
+              "explicacao": "Na primeira consulta, a pressão deve ser medida nos dois braços.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u1-l3",
+          "titulo": "Exame físico geral",
+          "questoes": [
+            {
+              "id": "semio-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde a icterícia costuma ser notada primeiro no exame físico?",
+              "opcoes": [
+                "Na esclera dos olhos",
+                "Nas palmas das mãos",
+                "Nas unhas",
+                "Nos lábios"
+              ],
+              "resposta": "Na esclera dos olhos",
+              "explicacao": "Ela costuma aparecer quando a bilirrubina passa de 2 a 3 mg/dL.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao seu significado mais provável.",
+              "pares": [
+                {
+                  "esquerda": "Cianose central",
+                  "direita": "Falta de oxigênio no sangue, vista em lábios e língua"
+                },
+                {
+                  "esquerda": "Palidez de pele e mucosas",
+                  "direita": "Anemia"
+                },
+                {
+                  "esquerda": "Baqueteamento digital",
+                  "direita": "Doença pulmonar ou cardíaca crônica"
+                },
+                {
+                  "esquerda": "Edema com depressão à pressão",
+                  "direita": "Excesso de líquido entre as células"
+                }
+              ],
+              "explicacao": "O baqueteamento deixa as pontas dos dedos arredondadas, como baquetas de tambor.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cianose aparece quando há pelo menos cerca de 5 g/dL de hemoglobina sem oxigênio nos capilares.",
+              "resposta": true,
+              "explicacao": "Por isso pessoas muito anêmicas podem ter falta de oxigênio sem ficar cianóticas.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal do ___ é a marca que fica após pressionar com o dedo uma pele com edema.",
+              "opcoes": [
+                "cacifo",
+                "Romberg",
+                "Murphy",
+                "Blumberg"
+              ],
+              "resposta": "cacifo",
+              "explicacao": "O edema com cacifo é graduado em cruzes, conforme a profundidade.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem inchaço nas duas pernas, que piora ao fim do dia, e falta de ar ao deitar.",
+              "enunciado": "Qual é a causa mais provável?",
+              "opcoes": [
+                "Insuficiência cardíaca",
+                "Trombose venosa profunda de uma perna",
+                "Linfedema após cirurgia",
+                "Celulite"
+              ],
+              "resposta": "Insuficiência cardíaca",
+              "explicacao": "Edema bilateral com falta de ar ao deitar sugere congestão por falha do coração.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se avalia o estado de hidratação no exame físico?",
+              "opcoes": [
+                "Pelas mucosas, elasticidade da pele, enchimento capilar e volume de urina",
+                "Apenas pela cor dos olhos",
+                "Apenas pelo peso",
+                "Pelos reflexos"
+              ],
+              "resposta": "Pelas mucosas, elasticidade da pele, enchimento capilar e volume de urina",
+              "explicacao": "Mucosas secas e enchimento capilar lento sugerem desidratação.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O enchimento capilar normal leva até 2 a 3 segundos.",
+              "resposta": true,
+              "explicacao": "Um tempo maior sugere má perfusão, como na desidratação e no choque.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem a pele das palmas amarelada, mas a esclera dos olhos está branca. Come muita cenoura e mamão.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Carotenemia",
+                "Icterícia",
+                "Hepatite",
+                "Anemia hemolítica"
+              ],
+              "resposta": "Carotenemia",
+              "explicacao": "O caroteno não tinge a esclera. A bilirrubina, sim.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semio-u2",
+      "titulo": "Semiologia cardiovascular",
+      "descricao": "Pulsos, bulhas e sopros",
+      "licoes": [
+        {
+          "id": "semio-u2-l1",
+          "titulo": "Pulsos e pressão venosa",
+          "questoes": [
+            {
+              "id": "semio-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde se palpa o pulso pedioso?",
+              "opcoes": [
+                "No dorso do pé",
+                "Atrás do maléolo medial",
+                "Atrás do joelho",
+                "Na virilha"
+              ],
+              "resposta": "No dorso do pé",
+              "explicacao": "O pulso tibial posterior é que fica atrás do maléolo medial.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de pulso à condição.",
+              "pares": [
+                {
+                  "esquerda": "Pulso em martelo d'água",
+                  "direita": "Insuficiência aórtica"
+                },
+                {
+                  "esquerda": "Pulso fraco e tardio",
+                  "direita": "Estenose aórtica"
+                },
+                {
+                  "esquerda": "Pulso alternante",
+                  "direita": "Insuficiência cardíaca grave"
+                },
+                {
+                  "esquerda": "Pulso totalmente irregular",
+                  "direita": "Fibrilação atrial"
+                }
+              ],
+              "explicacao": "Na fibrilação atrial, a frequência no pulso pode ser menor que a frequência na ausculta.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Veia jugular distendida com o paciente a 45 graus sugere pressão venosa central aumentada.",
+              "resposta": true,
+              "explicacao": "É um sinal comum na insuficiência cardíaca direita e no tamponamento cardíaco.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O refluxo ___ é o aumento da distensão da jugular ao comprimir o fígado, sugerindo insuficiência do coração direito.",
+              "opcoes": [
+                "hepatojugular",
+                "carotídeo",
+                "femoral",
+                "venoso profundo"
+              ],
+              "resposta": "hepatojugular",
+              "explicacao": "A compressão aumenta o retorno de sangue, que o coração doente não consegue receber.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Jovem hipertenso tem pulsos femorais fracos e atrasados em relação aos radiais.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Coarctação da aorta",
+                "Estenose mitral",
+                "Insuficiência aórtica",
+                "Fibrilação atrial"
+              ],
+              "resposta": "Coarctação da aorta",
+              "explicacao": "A pressão é alta nos braços e baixa nas pernas, porque o estreitamento fica depois das artérias dos braços.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se calcula o índice tornozelo-braquial?",
+              "opcoes": [
+                "Pressão sistólica do tornozelo dividida pela do braço",
+                "Pressão diastólica do braço dividida pela do tornozelo",
+                "Frequência do pé dividida pela do punho",
+                "Soma das duas pressões"
+              ],
+              "resposta": "Pressão sistólica do tornozelo dividida pela do braço",
+              "explicacao": "É um exame simples, feito com manguito e doppler.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um índice tornozelo-braquial menor que 0,9 sugere doença arterial obstrutiva periférica.",
+              "resposta": true,
+              "explicacao": "Ele também indica maior risco de infarto e AVC.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 65 anos tem dor na panturrilha ao caminhar 200 metros, que melhora quando para. Os pulsos dos pés estão ausentes.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Claudicação intermitente por doença arterial periférica",
+                "Trombose venosa profunda",
+                "Dor ciática",
+                "Insuficiência venosa"
+              ],
+              "resposta": "Claudicação intermitente por doença arterial periférica",
+              "explicacao": "Parar de fumar e caminhar regularmente são partes essenciais do tratamento.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u2-l2",
+          "titulo": "Ausculta cardíaca",
+          "questoes": [
+            {
+              "id": "semio-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada foco de ausculta à sua localização.",
+              "pares": [
+                {
+                  "esquerda": "Foco aórtico",
+                  "direita": "2º espaço intercostal direito, junto ao esterno"
+                },
+                {
+                  "esquerda": "Foco pulmonar",
+                  "direita": "2º espaço intercostal esquerdo, junto ao esterno"
+                },
+                {
+                  "esquerda": "Foco tricúspide",
+                  "direita": "Borda esquerda do esterno, embaixo"
+                },
+                {
+                  "esquerda": "Foco mitral",
+                  "direita": "5º espaço intercostal esquerdo, na linha hemiclavicular"
+                }
+              ],
+              "explicacao": "O foco mitral costuma coincidir com o ponto onde se palpa o ictus cordis.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que causa o desdobramento normal da segunda bulha na inspiração?",
+              "opcoes": [
+                "Mais sangue chegando ao lado direito, o que atrasa o fechamento da valva pulmonar",
+                "Atraso da valva aórtica",
+                "Bloqueio de ramo esquerdo",
+                "Estenose mitral"
+              ],
+              "resposta": "Mais sangue chegando ao lado direito, o que atrasa o fechamento da valva pulmonar",
+              "explicacao": "Na expiração, as duas valvas voltam a fechar quase juntas.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A quarta bulha (B4) surge da contração do átrio contra um ventrículo rígido e não existe na fibrilação atrial.",
+              "resposta": true,
+              "explicacao": "Sem contração atrial organizada, não há B4.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ de abertura é um som agudo logo após a B2, típico da estenose mitral.",
+              "opcoes": [
+                "estalido",
+                "atrito",
+                "clique",
+                "sopro"
+              ],
+              "resposta": "estalido",
+              "explicacao": "O clique no meio da sístole é que é típico do prolapso da valva mitral.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dor no peito que melhora ao se inclinar para frente, e a ausculta mostra um som áspero, como de raspar.",
+              "enunciado": "Qual é o achado e a hipótese?",
+              "opcoes": [
+                "Atrito pericárdico, sugerindo pericardite",
+                "Sopro de estenose aórtica",
+                "Terceira bulha",
+                "Estalido de abertura"
+              ],
+              "resposta": "Atrito pericárdico, sugerindo pericardite",
+              "explicacao": "O ECG costuma mostrar supradesnivelamento difuso do ST.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em que posição a estenose mitral é mais bem auscultada?",
+              "opcoes": [
+                "Deitado sobre o lado esquerdo, com a campânula no ápice",
+                "Sentado e inclinado para frente",
+                "Em pé",
+                "Deitado de costas, com o diafragma"
+              ],
+              "resposta": "Deitado sobre o lado esquerdo, com a campânula no ápice",
+              "explicacao": "Sentado e inclinado para frente é a melhor posição para a insuficiência aórtica.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Uma segunda bulha muito forte no foco pulmonar sugere hipertensão pulmonar.",
+              "resposta": true,
+              "explicacao": "A pressão alta na artéria pulmonar faz a valva fechar com mais força.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "A ausculta mostra desdobramento da segunda bulha que não muda com a respiração.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Comunicação interatrial",
+                "Estenose aórtica",
+                "Hipertensão arterial",
+                "Achado normal"
+              ],
+              "resposta": "Comunicação interatrial",
+              "explicacao": "O desdobramento fixo da B2 é um sinal clássico da comunicação interatrial.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u2-l3",
+          "titulo": "Sopros cardíacos",
+          "questoes": [
+            {
+              "id": "semio-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como é o sopro da estenose aórtica?",
+              "opcoes": [
+                "Sistólico, em diamante, no foco aórtico, irradiando para o pescoço",
+                "Diastólico em ruflar no ápice",
+                "Holossistólico no ápice, irradiando para a axila",
+                "Contínuo, em maquinaria"
+              ],
+              "resposta": "Sistólico, em diamante, no foco aórtico, irradiando para o pescoço",
+              "explicacao": "Quanto mais tardio o pico do sopro, mais grave costuma ser a estenose.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada valvopatia ao seu sopro.",
+              "pares": [
+                {
+                  "esquerda": "Estenose aórtica",
+                  "direita": "Sistólico ejetivo irradiando para as carótidas"
+                },
+                {
+                  "esquerda": "Insuficiência mitral",
+                  "direita": "Holossistólico irradiando para a axila"
+                },
+                {
+                  "esquerda": "Estenose mitral",
+                  "direita": "Diastólico em ruflar no ápice"
+                },
+                {
+                  "esquerda": "Insuficiência aórtica",
+                  "direita": "Diastólico aspirativo na borda esquerda do esterno"
+                }
+              ],
+              "explicacao": "Lembrar o momento do ciclo e o local de maior intensidade ajuda a acertar a valva.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A manobra de Valsalva diminui a maioria dos sopros, mas aumenta o sopro da cardiomiopatia hipertrófica obstrutiva.",
+              "resposta": true,
+              "explicacao": "Com menos sangue no ventrículo, a obstrução da saída piora.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sopro contínuo, em maquinaria, é típico da persistência do canal ___.",
+              "opcoes": [
+                "arterial",
+                "venoso",
+                "atrioventricular",
+                "linfático"
+              ],
+              "resposta": "arterial",
+              "explicacao": "O canal arterial liga a aorta à artéria pulmonar e deveria fechar logo após o nascimento.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem desmaio ao fazer esforço, angina e um sopro sistólico rude no foco aórtico, com segunda bulha fraca.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Estenose aórtica grave",
+                "Insuficiência mitral",
+                "Prolapso da valva mitral",
+                "Comunicação interventricular"
+              ],
+              "resposta": "Estenose aórtica grave",
+              "explicacao": "Angina, desmaio e falta de ar são os sintomas clássicos. Com eles, a troca da valva está indicada.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "A partir de qual grau o sopro passa a ter frêmito palpável?",
+              "opcoes": [
+                "Grau 4 de 6",
+                "Grau 1 de 6",
+                "Grau 2 de 6",
+                "Grau 3 de 6"
+              ],
+              "resposta": "Grau 4 de 6",
+              "explicacao": "É a escala de Levine. O grau 6 é ouvido até com o estetoscópio afastado do tórax.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Sopros inocentes em crianças costumam ser sistólicos, suaves e sem outras alterações no exame.",
+              "resposta": true,
+              "explicacao": "Sopros diastólicos nunca são considerados inocentes.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem sopro diastólico aspirativo na borda do esterno, pulsos amplos e a cabeça balança a cada batimento.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Insuficiência aórtica",
+                "Estenose aórtica",
+                "Estenose mitral",
+                "Comunicação interatrial"
+              ],
+              "resposta": "Insuficiência aórtica",
+              "explicacao": "O balanço da cabeça é o sinal de Musset, causado pela grande diferença entre sistólica e diastólica.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semio-u3",
+      "titulo": "Semiologia respiratória",
+      "descricao": "Inspeção, palpação, percussão e ausculta",
+      "licoes": [
+        {
+          "id": "semio-u3-l1",
+          "titulo": "Inspeção e palpação do tórax",
+          "questoes": [
+            {
+              "id": "semio-u3-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é o frêmito toracovocal?",
+              "opcoes": [
+                "A vibração da voz sentida com a mão no tórax",
+                "Um ruído ouvido na ausculta",
+                "Um tipo de tosse",
+                "Uma deformidade do tórax"
+              ],
+              "resposta": "A vibração da voz sentida com a mão no tórax",
+              "explicacao": "Pede-se ao paciente que fale \"trinta e três\" enquanto se palpa o tórax.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada condição ao frêmito toracovocal esperado.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia com consolidação",
+                  "direita": "Frêmito aumentado"
+                },
+                {
+                  "esquerda": "Derrame pleural",
+                  "direita": "Frêmito diminuído"
+                },
+                {
+                  "esquerda": "Pneumotórax",
+                  "direita": "Frêmito abolido"
+                },
+                {
+                  "esquerda": "Pulmão normal",
+                  "direita": "Frêmito presente e simétrico"
+                }
+              ],
+              "explicacao": "O tecido consolidado transmite melhor a vibração, enquanto o líquido e o ar a bloqueiam.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A expansão do tórax fica reduzida do lado do derrame pleural volumoso.",
+              "resposta": true,
+              "explicacao": "O pulmão comprimido pelo líquido se expande menos.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tórax em ___ tem o diâmetro anteroposterior aumentado e é comum no enfisema.",
+              "opcoes": [
+                "tonel",
+                "funil",
+                "quilha",
+                "sino"
+              ],
+              "resposta": "tonel",
+              "explicacao": "O tórax em funil (pectus excavatum) e em quilha (pectus carinatum) são deformidades do esterno.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC descompensada usa os músculos do pescoço para respirar e tem retração entre as costelas.",
+              "enunciado": "O que esses sinais indicam?",
+              "opcoes": [
+                "Aumento do esforço para respirar",
+                "Respiração normal",
+                "Pneumotórax, necessariamente",
+                "Paralisia do diafragma"
+              ],
+              "resposta": "Aumento do esforço para respirar",
+              "explicacao": "São sinais de desconforto respiratório que exigem avaliação rápida.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é a posição de tripé?",
+              "opcoes": [
+                "Sentado, inclinado para frente, apoiado nos braços, para respirar melhor",
+                "Deitado de costas",
+                "Em pé com os braços para cima",
+                "Deitado de lado"
+              ],
+              "resposta": "Sentado, inclinado para frente, apoiado nos braços, para respirar melhor",
+              "explicacao": "Ela ajuda os músculos acessórios a trabalhar e é comum na DPOC grave.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O baqueteamento digital aparece no câncer de pulmão e nas bronquiectasias, mas não é típico da DPOC sem complicações.",
+              "resposta": true,
+              "explicacao": "Em paciente com DPOC, o surgimento de baqueteamento deve levantar suspeita de câncer de pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumotórax hipertensivo no pulmão direito.",
+              "enunciado": "Para que lado a traqueia se desvia?",
+              "opcoes": [
+                "Para a esquerda, oposto ao pneumotórax",
+                "Para a direita",
+                "Não se desvia",
+                "Para frente"
+              ],
+              "resposta": "Para a esquerda, oposto ao pneumotórax",
+              "explicacao": "O pneumotórax e o derrame volumoso empurram a traqueia. A atelectasia a puxa para o mesmo lado.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u3-l2",
+          "titulo": "Percussão e ausculta normal",
+          "questoes": [
+            {
+              "id": "semio-u3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada som da percussão à situação.",
+              "pares": [
+                {
+                  "esquerda": "Som claro pulmonar",
+                  "direita": "Pulmão normal"
+                },
+                {
+                  "esquerda": "Macicez",
+                  "direita": "Derrame pleural"
+                },
+                {
+                  "esquerda": "Submacicez",
+                  "direita": "Consolidação"
+                },
+                {
+                  "esquerda": "Hipertimpanismo",
+                  "direita": "Pneumotórax"
+                }
+              ],
+              "explicacao": "Na DPOC com enfisema, o som também pode ficar mais timpânico.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se chama o som respiratório normal ouvido na maior parte do tórax?",
+              "opcoes": [
+                "Murmúrio vesicular",
+                "Sopro tubário",
+                "Estridor",
+                "Sibilo"
+              ],
+              "resposta": "Murmúrio vesicular",
+              "explicacao": "Ele é suave e mais longo na inspiração do que na expiração.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O murmúrio vesicular fica diminuído no derrame pleural e no pneumotórax.",
+              "resposta": true,
+              "explicacao": "Líquido ou ar entre o pulmão e a parede impedem a transmissão do som.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O som ___ normal é ouvido sobre a traqueia e, quando aparece na periferia do pulmão, sugere consolidação.",
+              "opcoes": [
+                "traqueal",
+                "vesicular",
+                "anfórico",
+                "pleural"
+              ],
+              "resposta": "traqueal",
+              "explicacao": "Na consolidação, esse som passa a se chamar sopro tubário.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com febre e tosse tem frêmito aumentado, submacicez e sopro tubário na base direita.",
+              "enunciado": "Qual é a síndrome?",
+              "opcoes": [
+                "Consolidação pulmonar, como na pneumonia",
+                "Derrame pleural",
+                "Pneumotórax",
+                "Atelectasia"
+              ],
+              "resposta": "Consolidação pulmonar, como na pneumonia",
+              "explicacao": "Os alvéolos cheios de secreção transmitem melhor o som e a vibração.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é broncofonia aumentada?",
+              "opcoes": [
+                "A voz ouvida com mais nitidez na ausculta, como na consolidação",
+                "A voz mais fraca",
+                "Uma tosse forte",
+                "Rouquidão"
+              ],
+              "resposta": "A voz ouvida com mais nitidez na ausculta, como na consolidação",
+              "explicacao": "Quando até a voz sussurrada é ouvida com nitidez, chama-se pectorilóquia afônica.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na percussão, a perda do timpanismo no espaço de Traube pode sugerir aumento do baço ou derrame pleural à esquerda.",
+              "resposta": true,
+              "explicacao": "O espaço de Traube fica na parte de baixo do lado esquerdo do tórax, sobre o estômago.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem macicez na base esquerda, murmúrio vesicular abolido e frêmito ausente.",
+              "enunciado": "Qual é a síndrome?",
+              "opcoes": [
+                "Derrame pleural",
+                "Consolidação",
+                "Pneumotórax",
+                "Enfisema"
+              ],
+              "resposta": "Derrame pleural",
+              "explicacao": "A punção do líquido (toracocentese) ajuda a descobrir a causa.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u3-l3",
+          "titulo": "Ruídos adventícios",
+          "questoes": [
+            {
+              "id": "semio-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada ruído adventício à sua origem.",
+              "pares": [
+                {
+                  "esquerda": "Sibilos",
+                  "direita": "Estreitamento dos brônquios"
+                },
+                {
+                  "esquerda": "Estertores finos",
+                  "direita": "Abertura de alvéolos com líquido ou fibrose"
+                },
+                {
+                  "esquerda": "Roncos",
+                  "direita": "Secreção nas vias aéreas maiores"
+                },
+                {
+                  "esquerda": "Atrito pleural",
+                  "direita": "Pleuras inflamadas raspando"
+                }
+              ],
+              "explicacao": "Os sibilos são típicos da asma e da DPOC.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual momento da respiração os estertores crepitantes costumam aparecer?",
+              "opcoes": [
+                "No fim da inspiração",
+                "No início da expiração",
+                "Apenas na tosse",
+                "Durante a pausa respiratória"
+              ],
+              "resposta": "No fim da inspiração",
+              "explicacao": "Eles lembram o som de cabelo sendo esfregado perto do ouvido.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Estertores finos em velcro nas bases são típicos da fibrose pulmonar.",
+              "resposta": true,
+              "explicacao": "Aparecem no fim da inspiração e não mudam com a tosse.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um ruído agudo, na inspiração, ouvido até sem estetoscópio, que indica obstrução da via aérea alta.",
+              "opcoes": [
+                "estridor",
+                "sibilo",
+                "ronco",
+                "atrito"
+              ],
+              "resposta": "estridor",
+              "explicacao": "Aparece no crupe, na epiglotite e com corpo estranho na laringe.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Criança em crise de asma grave tem o murmúrio quase inaudível e já não se ouvem sibilos.",
+              "enunciado": "Como interpretar?",
+              "opcoes": [
+                "Sinal de gravidade, porque quase não passa ar",
+                "Melhora da crise",
+                "Ausculta normal",
+                "Pneumonia leve"
+              ],
+              "resposta": "Sinal de gravidade, porque quase não passa ar",
+              "explicacao": "É o tórax silencioso, que pode anteceder parada respiratória.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual manobra ajuda a diferenciar roncos de estertores?",
+              "opcoes": [
+                "Pedir para o paciente tossir, o que costuma mudar os roncos",
+                "Pedir para prender a respiração por 1 minuto",
+                "Deitar de bruços",
+                "Palpar o abdome"
+              ],
+              "resposta": "Pedir para o paciente tossir, o que costuma mudar os roncos",
+              "explicacao": "A tosse desloca a secreção das vias aéreas maiores, alterando os roncos.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O atrito pleural desaparece quando o paciente prende a respiração.",
+              "resposta": true,
+              "explicacao": "O atrito pericárdico, ao contrário, continua, porque depende dos batimentos do coração.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com insuficiência cardíaca descompensada tem falta de ar e estertores crepitantes nas duas bases.",
+              "enunciado": "Qual é a origem desses estertores?",
+              "opcoes": [
+                "Líquido nos alvéolos por congestão pulmonar",
+                "Broncoespasmo",
+                "Pneumotórax",
+                "Derrame no pericárdio"
+              ],
+              "resposta": "Líquido nos alvéolos por congestão pulmonar",
+              "explicacao": "Com diurético e controle da causa, os estertores costumam diminuir.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semio-u4",
+      "titulo": "Semiologia do abdome",
+      "descricao": "Inspeção, palpação e sinais clássicos",
+      "licoes": [
+        {
+          "id": "semio-u4-l1",
+          "titulo": "Inspeção e ausculta do abdome",
+          "questoes": [
+            {
+              "id": "semio-u4-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a ausculta do abdome é feita antes da palpação?",
+              "opcoes": [
+                "Porque a palpação pode alterar os ruídos intestinais",
+                "Porque a ausculta causa dor",
+                "Porque é mais rápida",
+                "Não existe uma ordem"
+              ],
+              "resposta": "Porque a palpação pode alterar os ruídos intestinais",
+              "explicacao": "No abdome, a ordem é inspeção, ausculta, percussão e palpação.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado da inspeção à condição.",
+              "pares": [
+                {
+                  "esquerda": "Cabeça de medusa",
+                  "direita": "Hipertensão portal"
+                },
+                {
+                  "esquerda": "Sinal de Cullen",
+                  "direita": "Mancha roxa ao redor do umbigo"
+                },
+                {
+                  "esquerda": "Sinal de Grey Turner",
+                  "direita": "Mancha roxa nos flancos"
+                },
+                {
+                  "esquerda": "Estrias violáceas largas",
+                  "direita": "Síndrome de Cushing"
+                }
+              ],
+              "explicacao": "Os sinais de Cullen e Grey Turner indicam sangramento retroperitoneal, como na pancreatite grave.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Ruídos intestinais aumentados e metálicos sugerem obstrução intestinal mecânica no início.",
+              "resposta": true,
+              "explicacao": "Com o tempo e a fadiga do intestino, os ruídos podem sumir.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ausência de ruídos intestinais sugere ___ paralítico ou peritonite.",
+              "opcoes": [
+                "íleo",
+                "volvo",
+                "refluxo",
+                "divertículo"
+              ],
+              "resposta": "íleo",
+              "explicacao": "O íleo paralítico é comum após cirurgias abdominais.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose tem abdome volumoso, umbigo saliente e veias dilatadas ao redor do umbigo.",
+              "enunciado": "O que esses achados indicam?",
+              "opcoes": [
+                "Ascite e circulação colateral por hipertensão portal",
+                "Obesidade simples",
+                "Gravidez",
+                "Hérnia inguinal"
+              ],
+              "resposta": "Ascite e circulação colateral por hipertensão portal",
+              "explicacao": "A circulação colateral se forma porque o sangue procura caminhos para desviar do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que um sopro na região do epigástrio pode sugerir?",
+              "opcoes": [
+                "Estenose de artéria renal ou aneurisma da aorta",
+                "Gastrite",
+                "Apendicite",
+                "Constipação"
+              ],
+              "resposta": "Estenose de artéria renal ou aneurisma da aorta",
+              "explicacao": "Em hipertensos jovens ou de difícil controle, o sopro abdominal sugere hipertensão renovascular.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Uma massa pulsátil na linha média, acima do umbigo, em idoso fumante, sugere aneurisma de aorta abdominal.",
+              "resposta": true,
+              "explicacao": "A confirmação é feita com ultrassonografia.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com vômitos e abdome distendido tem cicatriz de cirurgia antiga e ruídos intestinais intensos, em ondas.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Obstrução intestinal por bridas",
+                "Gastroenterite viral",
+                "Pancreatite",
+                "Apendicite"
+              ],
+              "resposta": "Obstrução intestinal por bridas",
+              "explicacao": "Os ruídos de luta são o intestino tentando vencer a obstrução.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u4-l2",
+          "titulo": "Palpação e percussão do abdome",
+          "questoes": [
+            {
+              "id": "semio-u4-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se estima o tamanho do fígado pela percussão?",
+              "opcoes": [
+                "Pela hepatimetria na linha hemiclavicular direita",
+                "Pela palpação do baço",
+                "Pela ausculta",
+                "Pela inspeção"
+              ],
+              "resposta": "Pela hepatimetria na linha hemiclavicular direita",
+              "explicacao": "Percute-se de cima para baixo até o início e o fim da macicez hepática.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada manobra ao seu objetivo.",
+              "pares": [
+                {
+                  "esquerda": "Sinal do piparote",
+                  "direita": "Detectar ascite volumosa"
+                },
+                {
+                  "esquerda": "Macicez móvel de decúbito",
+                  "direita": "Detectar ascite moderada"
+                },
+                {
+                  "esquerda": "Manobra de Lemos Torres",
+                  "direita": "Palpar o fígado"
+                },
+                {
+                  "esquerda": "Posição de Schuster",
+                  "direita": "Palpar o baço"
+                }
+              ],
+              "explicacao": "Na posição de Schuster, o paciente fica deitado sobre o lado direito, o que aproxima o baço da mão do examinador.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Em geral, o baço normal não é palpável em adultos.",
+              "resposta": true,
+              "explicacao": "Um baço palpável costuma estar pelo menos duas vezes maior que o normal.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hepatimetria normal na linha hemiclavicular direita fica entre cerca de 6 e ___ cm.",
+              "opcoes": [
+                "12",
+                "3",
+                "20",
+                "25"
+              ],
+              "resposta": "12",
+              "explicacao": "Valores maiores sugerem aumento do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dor forte em todo o abdome, que está rígido como uma tábua, com defesa involuntária.",
+              "enunciado": "O que esses achados sugerem?",
+              "opcoes": [
+                "Peritonite difusa",
+                "Gastrite",
+                "Constipação",
+                "Cólica renal"
+              ],
+              "resposta": "Peritonite difusa",
+              "explicacao": "É uma urgência cirúrgica, por exemplo por perfuração de úlcera.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere irritação do peritônio?",
+              "opcoes": [
+                "Dor ao soltar a mão de repente após comprimir",
+                "Ruídos intestinais aumentados",
+                "Abdome flácido",
+                "Macicez do fígado normal"
+              ],
+              "resposta": "Dor ao soltar a mão de repente após comprimir",
+              "explicacao": "É o sinal da descompressão dolorosa, como o de Blumberg.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O desaparecimento da macicez do fígado na percussão (sinal de Jobert) sugere ar livre na cavidade, como na perfuração de víscera oca.",
+              "resposta": true,
+              "explicacao": "O ar livre se acumula sob o diafragma, entre o fígado e a parede.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hepatite aguda tem o fígado palpável 3 cm abaixo do rebordo costal e doloroso.",
+              "enunciado": "Qual é o achado?",
+              "opcoes": [
+                "Hepatomegalia dolorosa",
+                "Esplenomegalia",
+                "Ascite",
+                "Exame normal"
+              ],
+              "resposta": "Hepatomegalia dolorosa",
+              "explicacao": "A distensão da cápsula do fígado é que causa a dor.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u4-l3",
+          "titulo": "Sinais clássicos do abdome",
+          "questoes": [
+            {
+              "id": "semio-u4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal à condição que ele sugere.",
+              "pares": [
+                {
+                  "esquerda": "Sinal de Murphy",
+                  "direita": "Colecistite aguda"
+                },
+                {
+                  "esquerda": "Sinal de Giordano",
+                  "direita": "Pielonefrite ou cálculo renal"
+                },
+                {
+                  "esquerda": "Sinal de Blumberg",
+                  "direita": "Irritação peritoneal"
+                },
+                {
+                  "esquerda": "Sinal de Courvoisier",
+                  "direita": "Vesícula palpável e indolor com icterícia"
+                }
+              ],
+              "explicacao": "O sinal de Courvoisier sugere tumor que obstrui o colédoco, como o de cabeça de pâncreas.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se pesquisa o sinal de Giordano?",
+              "opcoes": [
+                "Com um golpe da borda da mão na região lombar",
+                "Palpando o hipocôndrio direito",
+                "Comprimindo e soltando a fossa ilíaca",
+                "Auscultando o abdome"
+              ],
+              "resposta": "Com um golpe da borda da mão na região lombar",
+              "explicacao": "Dor ao golpe sugere inflamação do rim ou cálculo.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sinal do obturador é dor ao girar para dentro a coxa flexionada e pode aparecer na apendicite pélvica.",
+              "resposta": true,
+              "explicacao": "O apêndice inflamado irrita o músculo obturador interno.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de Courvoisier-Terrier descreve a vesícula palpável e indolor em paciente com icterícia.",
+              "opcoes": [
+                "lei",
+                "manobra",
+                "sombra",
+                "ruptura"
+              ],
+              "resposta": "lei",
+              "explicacao": "Na litíase, a vesícula costuma estar fibrosada e não distende.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem febre, calafrios, ardência ao urinar e dor lombar à direita, com Giordano positivo.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Pielonefrite aguda",
+                "Apendicite",
+                "Colecistite",
+                "Cistite simples"
+              ],
+              "resposta": "Pielonefrite aguda",
+              "explicacao": "Febre e dor lombar mostram que a infecção chegou ao rim.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado sugere pancreatite grave com sangramento no retroperitônio?",
+              "opcoes": [
+                "Manchas roxas nos flancos (Grey Turner)",
+                "Sinal de Murphy",
+                "Sinal de Rovsing",
+                "Fígado aumentado"
+              ],
+              "resposta": "Manchas roxas nos flancos (Grey Turner)",
+              "explicacao": "O sinal é raro, mas indica gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sinal de Rovsing é a dor na fossa ilíaca direita ao comprimir a fossa ilíaca esquerda.",
+              "resposta": true,
+              "explicacao": "O ar empurrado no cólon distende o ceco e o apêndice inflamado.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem icterícia que piora aos poucos, perda de peso e vesícula palpável e indolor.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Tumor periampular, como câncer de cabeça de pâncreas",
+                "Colecistite aguda",
+                "Hepatite A",
+                "Cálculo no colédoco com cólica"
+              ],
+              "resposta": "Tumor periampular, como câncer de cabeça de pâncreas",
+              "explicacao": "Icterícia indolor e progressiva em idoso exige investigação de câncer.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semio-u5",
+      "titulo": "Semiologia neurológica",
+      "descricao": "Consciência, força, reflexos e marcha",
+      "licoes": [
+        {
+          "id": "semio-u5-l1",
+          "titulo": "Consciência e nervos cranianos",
+          "questoes": [
+            {
+              "id": "semio-u5-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os três componentes da escala de coma de Glasgow?",
+              "opcoes": [
+                "Abertura ocular, resposta verbal e resposta motora",
+                "Pupilas, reflexos e pulso",
+                "Força, sensibilidade e coordenação",
+                "Fala, marcha e memória"
+              ],
+              "resposta": "Abertura ocular, resposta verbal e resposta motora",
+              "explicacao": "A pontuação vai de 3 a 15.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado das pupilas à situação.",
+              "pares": [
+                {
+                  "esquerda": "Midríase de um lado, sem reação",
+                  "direita": "Herniação comprimindo o oculomotor"
+                },
+                {
+                  "esquerda": "Miose puntiforme nos dois olhos",
+                  "direita": "Intoxicação por opioide ou lesão na ponte"
+                },
+                {
+                  "esquerda": "Pupilas iguais e reagentes à luz",
+                  "direita": "Achado normal"
+                },
+                {
+                  "esquerda": "Síndrome de Horner",
+                  "direita": "Pupila pequena com pálpebra caída do mesmo lado"
+                }
+              ],
+              "explicacao": "A síndrome de Horner indica lesão da via simpática, como em tumores do ápice do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O reflexo fotomotor consensual é a contração da pupila do olho que não está sendo iluminado.",
+              "resposta": true,
+              "explicacao": "Ele mostra que a via entre os dois olhos funciona.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O teste de ___ avalia a audição com o diapasão encostado no meio da testa.",
+              "opcoes": [
+                "Weber",
+                "Rinne",
+                "Romberg",
+                "Babinski"
+              ],
+              "resposta": "Weber",
+              "explicacao": "No teste de Rinne, o diapasão é colocado atrás da orelha e depois na frente dela.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com AVC tem a boca desviada para a direita, mas consegue franzir a testa dos dois lados.",
+              "enunciado": "Qual é o tipo de paralisia facial?",
+              "opcoes": [
+                "Central, por lesão do lado esquerdo do cérebro",
+                "Periférica do lado esquerdo",
+                "Periférica do lado direito",
+                "Central, por lesão do lado direito do cérebro"
+              ],
+              "resposta": "Central, por lesão do lado esquerdo do cérebro",
+              "explicacao": "A parte de baixo da face esquerda está fraca, e a testa é poupada porque recebe fibras dos dois hemisférios.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se examina o nervo hipoglosso?",
+              "opcoes": [
+                "Pedindo para o paciente colocar a língua para fora",
+                "Pedindo para elevar os ombros",
+                "Testando o olfato",
+                "Testando a visão de cores"
+              ],
+              "resposta": "Pedindo para o paciente colocar a língua para fora",
+              "explicacao": "A língua desvia para o lado do nervo lesado.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A perda da visão das metades externas dos dois campos visuais sugere lesão no quiasma óptico, como por tumor de hipófise.",
+              "resposta": true,
+              "explicacao": "É a hemianopsia bitemporal.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente só abre os olhos à dor, emite sons sem palavras e afasta o braço quando sente dor.",
+              "enunciado": "Qual é a pontuação de Glasgow?",
+              "opcoes": [
+                "8",
+                "10",
+                "6",
+                "12"
+              ],
+              "resposta": "8",
+              "explicacao": "Abertura ocular 2, resposta verbal 2 e resposta motora 4. Glasgow 8 ou menos indica necessidade de proteger a via aérea.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u5-l2",
+          "titulo": "Força e reflexos",
+          "questoes": [
+            {
+              "id": "semio-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grau de força muscular à descrição.",
+              "pares": [
+                {
+                  "esquerda": "Grau 0",
+                  "direita": "Nenhuma contração"
+                },
+                {
+                  "esquerda": "Grau 2",
+                  "direita": "Movimenta sem vencer a gravidade"
+                },
+                {
+                  "esquerda": "Grau 3",
+                  "direita": "Vence a gravidade, mas não a resistência"
+                },
+                {
+                  "esquerda": "Grau 5",
+                  "direita": "Força normal"
+                }
+              ],
+              "explicacao": "No grau 1 há só contração visível, sem movimento, e no grau 4 vence alguma resistência.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual nível da medula é avaliado pelo reflexo patelar?",
+              "opcoes": [
+                "L3 e L4",
+                "S1",
+                "C5 e C6",
+                "T10"
+              ],
+              "resposta": "L3 e L4",
+              "explicacao": "O bicipital avalia C5 e C6 e o tricipital, C7.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Em adultos, o sinal de Babinski indica lesão da via piramidal.",
+              "resposta": true,
+              "explicacao": "Ele aparece em lesões do cérebro, do tronco ou da medula que atingem essa via.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O reflexo ___ é pesquisado percutindo o tendão do calcanhar e avalia a raiz S1.",
+              "opcoes": [
+                "aquileu",
+                "patelar",
+                "bicipital",
+                "cutâneo-abdominal"
+              ],
+              "resposta": "aquileu",
+              "explicacao": "Ele costuma estar ausente na hérnia de disco que comprime S1.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Três meses após um AVC, o paciente tem o braço direito fraco, rígido, com reflexos aumentados e Babinski à direita.",
+              "enunciado": "Qual é o tipo de lesão?",
+              "opcoes": [
+                "Neurônio motor superior",
+                "Neurônio motor inferior",
+                "Junção neuromuscular",
+                "Músculo"
+              ],
+              "resposta": "Neurônio motor superior",
+              "explicacao": "Na fase aguda do AVC a paralisia pode ser flácida. A espasticidade aparece com o tempo.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Para que serve a manobra de Mingazzini?",
+              "opcoes": [
+                "Detectar fraqueza leve pela queda dos membros mantidos elevados",
+                "Testar a sensibilidade",
+                "Testar os reflexos",
+                "Testar a marcha"
+              ],
+              "resposta": "Detectar fraqueza leve pela queda dos membros mantidos elevados",
+              "explicacao": "O membro mais fraco cai antes.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A espasticidade é um aumento do tônus que depende da velocidade do movimento passivo.",
+              "resposta": true,
+              "explicacao": "Lembra um canivete: resiste no início e depois cede.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem fraqueza, atrofia e fasciculações nos braços e, ao mesmo tempo, reflexos aumentados e Babinski nas pernas.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Esclerose lateral amiotrófica",
+                "Miastenia gravis",
+                "Síndrome de Guillain-Barré",
+                "Esclerose múltipla"
+              ],
+              "resposta": "Esclerose lateral amiotrófica",
+              "explicacao": "A mistura de sinais de neurônio motor superior e inferior, sem perda de sensibilidade, é típica da ELA.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "semio-u5-l3",
+          "titulo": "Coordenação, marcha e sinais meníngeos",
+          "questoes": [
+            {
+              "id": "semio-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que o teste de Romberg avalia?",
+              "opcoes": [
+                "O equilíbrio que depende da sensibilidade profunda, com os olhos fechados",
+                "A força dos braços",
+                "A visão",
+                "A audição"
+              ],
+              "resposta": "O equilíbrio que depende da sensibilidade profunda, com os olhos fechados",
+              "explicacao": "Com os olhos abertos, a visão compensa a falta de propriocepção.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada marcha à condição.",
+              "pares": [
+                {
+                  "esquerda": "Passos pequenos e arrastados, com braços parados",
+                  "direita": "Doença de Parkinson"
+                },
+                {
+                  "esquerda": "Marcha ceifante",
+                  "direita": "Hemiplegia após AVC"
+                },
+                {
+                  "esquerda": "Marcha ebriosa, de base alargada",
+                  "direita": "Lesão do cerebelo"
+                },
+                {
+                  "esquerda": "Marcha escarvante",
+                  "direita": "Pé caído por lesão do nervo fibular"
+                }
+              ],
+              "explicacao": "Na marcha escarvante, a pessoa eleva muito o joelho para o pé não arrastar.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Queda ao fechar os olhos no teste de Romberg sugere problema na sensibilidade profunda, e não no cerebelo.",
+              "resposta": true,
+              "explicacao": "Na lesão do cerebelo, o paciente é instável mesmo de olhos abertos.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A prova ___ pede que o paciente toque o próprio nariz com a ponta do dedo para avaliar a coordenação.",
+              "opcoes": [
+                "index-nariz",
+                "de Romberg",
+                "de Lasègue",
+                "de Phalen"
+              ],
+              "resposta": "index-nariz",
+              "explicacao": "Errar o alvo ou tremer ao se aproximar dele sugere lesão do cerebelo.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com febre e dor de cabeça forte flexiona os joelhos sem querer quando o médico dobra seu pescoço.",
+              "enunciado": "Qual é o sinal e a hipótese?",
+              "opcoes": [
+                "Sinal de Brudzinski, sugerindo meningite",
+                "Sinal de Lasègue, sugerindo hérnia de disco",
+                "Sinal de Babinski, sugerindo AVC",
+                "Sinal de Romberg"
+              ],
+              "resposta": "Sinal de Brudzinski, sugerindo meningite",
+              "explicacao": "Rigidez de nuca, Kernig e Brudzinski são sinais de irritação das meninges.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é disdiadococinesia?",
+              "opcoes": [
+                "Dificuldade de fazer movimentos alternados rápidos, sugerindo lesão do cerebelo",
+                "Fraqueza muscular",
+                "Perda de sensibilidade",
+                "Tremor de repouso"
+              ],
+              "resposta": "Dificuldade de fazer movimentos alternados rápidos, sugerindo lesão do cerebelo",
+              "explicacao": "Pede-se ao paciente que vire as mãos rapidamente, alternando palma e dorso.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tremor da doença de Parkinson é tipicamente de repouso e melhora com o movimento.",
+              "resposta": true,
+              "explicacao": "O tremor do cerebelo, ao contrário, aparece ao fazer movimentos.",
+              "revisado": false
+            },
+            {
+              "id": "semio-u5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor lombar que desce para a perna sente piora da dor ao elevar a perna esticada entre 30 e 70 graus.",
+              "enunciado": "Qual é o sinal?",
+              "opcoes": [
+                "Sinal de Lasègue, sugerindo compressão de raiz nervosa",
+                "Sinal de Kernig",
+                "Sinal de Brudzinski",
+                "Sinal de Romberg"
+              ],
+              "resposta": "Sinal de Lasègue, sugerindo compressão de raiz nervosa",
+              "explicacao": "É comum na hérnia de disco lombar que comprime L5 ou S1.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

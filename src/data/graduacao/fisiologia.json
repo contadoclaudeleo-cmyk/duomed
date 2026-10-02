@@ -4,5 +4,1824 @@
   "descricao": "Como os órgãos e sistemas funcionam",
   "icone": "coracao",
   "ordem": 2,
-  "unidades": []
+  "unidades": [
+    {
+      "id": "fisio-u1",
+      "titulo": "Fisiologia celular",
+      "descricao": "Transporte, potenciais elétricos e contração",
+      "licoes": [
+        {
+          "id": "fisio-u1-l1",
+          "titulo": "Membrana e transporte",
+          "questoes": [
+            {
+              "id": "fisio-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tipo de transporte usa ATP diretamente para mover íons contra o gradiente?",
+              "opcoes": [
+                "Transporte ativo primário",
+                "Difusão simples",
+                "Difusão facilitada",
+                "Osmose"
+              ],
+              "resposta": "Transporte ativo primário",
+              "explicacao": "A bomba de sódio e potássio é o exemplo clássico de transporte ativo primário.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de transporte a um exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Difusão simples",
+                  "direita": "Passagem de O2 pela membrana"
+                },
+                {
+                  "esquerda": "Difusão facilitada",
+                  "direita": "Entrada de glicose pelo GLUT"
+                },
+                {
+                  "esquerda": "Transporte ativo primário",
+                  "direita": "Bomba de sódio e potássio"
+                },
+                {
+                  "esquerda": "Transporte ativo secundário",
+                  "direita": "Cotransporte de sódio e glicose no intestino"
+                }
+              ],
+              "explicacao": "No transporte ativo secundário, a energia vem do gradiente de sódio criado pela bomba.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cada ciclo, a bomba de sódio e potássio leva 3 íons de sódio para fora e 2 de potássio para dentro da célula.",
+              "resposta": true,
+              "explicacao": "Como sai mais carga positiva do que entra, a bomba é eletrogênica e contribui para o interior negativo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a passagem de água por uma membrana semipermeável, do meio com menos soluto para o meio com mais soluto.",
+              "opcoes": [
+                "osmose",
+                "difusão facilitada",
+                "endocitose",
+                "filtração"
+              ],
+              "resposta": "osmose",
+              "explicacao": "A água vai para onde há mais partículas dissolvidas.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que acontece com uma hemácia colocada em uma solução hipotônica?",
+              "opcoes": [
+                "Ganha água e pode se romper",
+                "Perde água e murcha",
+                "Não se altera",
+                "Perde potássio e encolhe"
+              ],
+              "resposta": "Ganha água e pode se romper",
+              "explicacao": "Em solução hipotônica há menos soluto fora da célula, então a água entra. Em solução hipertônica, a hemácia murcha.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança com cólera tem diarreia aquosa intensa e é tratada com solução de reidratação oral, que contém sódio e glicose.",
+              "enunciado": "Por que a solução funciona mesmo com o intestino doente?",
+              "opcoes": [
+                "O cotransporte de sódio e glicose continua funcionando e puxa água junto",
+                "O sódio é absorvido por difusão simples",
+                "A glicose bloqueia a toxina",
+                "A solução reduz a secreção de ácido gástrico"
+              ],
+              "resposta": "O cotransporte de sódio e glicose continua funcionando e puxa água junto",
+              "explicacao": "A toxina colérica aumenta a secreção de cloro, mas não bloqueia o transportador SGLT1. Essa descoberta é a base da terapia de reidratação oral.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Moléculas pequenas e lipossolúveis, como O2 e CO2, atravessam a membrana por difusão simples.",
+              "resposta": true,
+              "explicacao": "Elas se dissolvem na bicamada lipídica e não precisam de proteínas transportadoras.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela lei de Fick, qual fator aumenta a velocidade de difusão de um gás pela membrana?",
+              "opcoes": [
+                "Maior área de superfície",
+                "Maior espessura da membrana",
+                "Menor diferença de concentração",
+                "Menor solubilidade do gás"
+              ],
+              "resposta": "Maior área de superfície",
+              "explicacao": "A difusão é proporcional à área, ao gradiente e à solubilidade, e inversamente proporcional à espessura. Por isso a fibrose pulmonar prejudica a troca gasosa.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u1-l2",
+          "titulo": "Potencial de membrana e potencial de ação",
+          "questoes": [
+            {
+              "id": "fisio-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual íon é o principal responsável pelo potencial de repouso da membrana?",
+              "opcoes": [
+                "Potássio",
+                "Sódio",
+                "Cálcio",
+                "Cloro"
+              ],
+              "resposta": "Potássio",
+              "explicacao": "Em repouso, a membrana é muito mais permeável ao potássio, que tende a sair e deixa o interior negativo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q2",
+              "tipo": "completar_lacuna",
+              "enunciado": "A despolarização do potencial de ação no neurônio acontece pela entrada de ___.",
+              "opcoes": [
+                "sódio",
+                "potássio",
+                "cloro",
+                "magnésio"
+              ],
+              "resposta": "sódio",
+              "explicacao": "Os canais de sódio voltagem-dependentes se abrem e a entrada rápida de sódio inverte a polaridade da membrana.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Durante o período refratário absoluto, nenhum estímulo, por mais forte que seja, gera um novo potencial de ação.",
+              "resposta": true,
+              "explicacao": "Nessa fase os canais de sódio estão inativados. No período refratário relativo, um estímulo mais forte consegue disparar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fase do potencial de ação ao seu evento.",
+              "pares": [
+                {
+                  "esquerda": "Despolarização",
+                  "direita": "Abertura de canais de sódio"
+                },
+                {
+                  "esquerda": "Repolarização",
+                  "direita": "Saída de potássio"
+                },
+                {
+                  "esquerda": "Hiperpolarização",
+                  "direita": "Excesso transitório de saída de potássio"
+                },
+                {
+                  "esquerda": "Repouso",
+                  "direita": "Canais de vazamento e bomba de sódio e potássio"
+                }
+              ],
+              "explicacao": "A hiperpolarização acontece porque os canais de potássio demoram a fechar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com potássio sérico de 7,5 mEq/L tem fraqueza muscular e alterações no ECG.",
+              "enunciado": "O que acontece com o potencial de repouso das células excitáveis?",
+              "opcoes": [
+                "Fica menos negativo e inativa parte dos canais de sódio",
+                "Fica mais negativo e dificulta a despolarização",
+                "Não se altera",
+                "Fica positivo"
+              ],
+              "resposta": "Fica menos negativo e inativa parte dos canais de sódio",
+              "explicacao": "A hipercalemia despolariza parcialmente as células e reduz sua excitabilidade. O gluconato de cálcio estabiliza a membrana do coração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a condução do impulso é mais rápida em fibras mielinizadas?",
+              "opcoes": [
+                "O impulso salta entre os nodos de Ranvier",
+                "A mielina gera potenciais de ação",
+                "A mielina aumenta a entrada de sódio em toda a fibra",
+                "A fibra fica mais fina"
+              ],
+              "resposta": "O impulso salta entre os nodos de Ranvier",
+              "explicacao": "É a condução saltatória. Os canais de sódio ficam concentrados nos nodos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na esclerose múltipla, a perda de mielina no sistema nervoso central torna a condução mais lenta ou a bloqueia.",
+              "resposta": true,
+              "explicacao": "Isso explica sintomas como neurite óptica, alterações de sensibilidade e fraqueza em surtos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Após comer baiacu mal preparado, um homem tem formigamento na boca e paralisia progressiva.",
+              "enunciado": "Qual é o mecanismo da toxina?",
+              "opcoes": [
+                "Bloqueia canais de sódio voltagem-dependentes",
+                "Bloqueia canais de potássio",
+                "Inibe a acetilcolinesterase",
+                "Bloqueia receptores nicotínicos"
+              ],
+              "resposta": "Bloqueia canais de sódio voltagem-dependentes",
+              "explicacao": "A tetrodotoxina impede o potencial de ação. Os anestésicos locais também agem bloqueando canais de sódio.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u1-l3",
+          "titulo": "Sinapse e contração muscular",
+          "questoes": [
+            {
+              "id": "fisio-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual íon entra no terminal pré-sináptico e desencadeia a liberação do neurotransmissor?",
+              "opcoes": [
+                "Cálcio",
+                "Sódio",
+                "Potássio",
+                "Cloro"
+              ],
+              "resposta": "Cálcio",
+              "explicacao": "O potencial de ação abre canais de cálcio voltagem-dependentes e o cálcio provoca a fusão das vesículas com a membrana.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estrutura à sua função na contração do músculo esquelético.",
+              "pares": [
+                {
+                  "esquerda": "Troponina C",
+                  "direita": "Liga o cálcio"
+                },
+                {
+                  "esquerda": "Tropomiosina",
+                  "direita": "Cobre os sítios de ligação da actina"
+                },
+                {
+                  "esquerda": "Retículo sarcoplasmático",
+                  "direita": "Armazena e libera cálcio"
+                },
+                {
+                  "esquerda": "Túbulos T",
+                  "direita": "Levam o potencial de ação para dentro da fibra"
+                }
+              ],
+              "explicacao": "Quando o cálcio se liga à troponina, a tropomiosina se desloca e a miosina consegue se ligar à actina.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ATP é necessário para que a miosina se solte da actina.",
+              "resposta": true,
+              "explicacao": "Sem ATP, as pontes ficam presas. É o que acontece no rigor mortis.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na junção neuromuscular, a ___ se liga aos receptores nicotínicos da placa motora.",
+              "opcoes": [
+                "acetilcolina",
+                "noradrenalina",
+                "dopamina",
+                "glutamato"
+              ],
+              "resposta": "acetilcolina",
+              "explicacao": "A acetilcolina é rapidamente degradada pela acetilcolinesterase na fenda sináptica.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos tem fraqueza que piora ao longo do dia e pálpebra caída que melhora com repouso e gelo.",
+              "enunciado": "Qual é o mecanismo da doença?",
+              "opcoes": [
+                "Anticorpos contra receptores de acetilcolina",
+                "Anticorpos contra canais de cálcio pré-sinápticos",
+                "Desmielinização dos nervos periféricos",
+                "Falta de distrofina"
+              ],
+              "resposta": "Anticorpos contra receptores de acetilcolina",
+              "explicacao": "É a miastenia gravis. Na síndrome de Lambert-Eaton, os anticorpos atacam os canais de cálcio pré-sinápticos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como o cálcio inicia a contração no músculo liso?",
+              "opcoes": [
+                "Liga-se à calmodulina, que ativa a quinase da cadeia leve de miosina",
+                "Liga-se à troponina C",
+                "O músculo liso não depende de cálcio",
+                "Liga-se diretamente à tropomiosina"
+              ],
+              "resposta": "Liga-se à calmodulina, que ativa a quinase da cadeia leve de miosina",
+              "explicacao": "O músculo liso não tem troponina. A fosforilação da miosina é que permite a contração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No músculo cardíaco, o cálcio que entra pelos canais tipo L estimula a liberação de mais cálcio do retículo sarcoplasmático.",
+              "resposta": true,
+              "explicacao": "É a liberação de cálcio induzida por cálcio. Por isso bloqueadores de canal de cálcio reduzem a força de contração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Pessoa que comeu conserva caseira desenvolve paralisia flácida que começa pelos olhos e desce pelo corpo.",
+              "enunciado": "Qual é o mecanismo da toxina botulínica?",
+              "opcoes": [
+                "Impede a liberação de acetilcolina no terminal nervoso",
+                "Bloqueia o receptor nicotínico",
+                "Inibe a acetilcolinesterase",
+                "Destrói a mielina"
+              ],
+              "resposta": "Impede a liberação de acetilcolina no terminal nervoso",
+              "explicacao": "A toxina cliva proteínas que fazem a fusão das vesículas. O mesmo efeito, em doses mínimas, é usado em tratamentos estéticos e de espasticidade.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fisio-u2",
+      "titulo": "Fisiologia cardiovascular",
+      "descricao": "Ciclo cardíaco, débito e pressão arterial",
+      "licoes": [
+        {
+          "id": "fisio-u2-l1",
+          "titulo": "Ciclo cardíaco",
+          "questoes": [
+            {
+              "id": "fisio-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que produz a primeira bulha cardíaca (B1)?",
+              "opcoes": [
+                "Fechamento das valvas mitral e tricúspide",
+                "Fechamento das valvas aórtica e pulmonar",
+                "Enchimento rápido dos ventrículos",
+                "Contração dos átrios"
+              ],
+              "resposta": "Fechamento das valvas mitral e tricúspide",
+              "explicacao": "A segunda bulha (B2) vem do fechamento das valvas aórtica e pulmonar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fase do ciclo cardíaco ao que acontece nela.",
+              "pares": [
+                {
+                  "esquerda": "Contração isovolumétrica",
+                  "direita": "Valvas fechadas e pressão ventricular subindo"
+                },
+                {
+                  "esquerda": "Ejeção",
+                  "direita": "Valvas aórtica e pulmonar abertas"
+                },
+                {
+                  "esquerda": "Relaxamento isovolumétrico",
+                  "direita": "Valvas fechadas e pressão ventricular caindo"
+                },
+                {
+                  "esquerda": "Enchimento ventricular",
+                  "direita": "Valvas mitral e tricúspide abertas"
+                }
+              ],
+              "explicacao": "Nas fases isovolumétricas o volume do ventrículo não muda, porque todas as valvas estão fechadas.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A contração atrial completa o enchimento ventricular e se torna mais importante quando o coração está rígido ou acelerado.",
+              "resposta": true,
+              "explicacao": "Na fibrilação atrial essa contribuição se perde, o que pode piorar o débito cardíaco.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "No eletrocardiograma, a onda P representa a despolarização dos ___.",
+              "opcoes": [
+                "átrios",
+                "ventrículos",
+                "ramos do feixe de His",
+                "nós sinoatrial e atrioventricular"
+              ],
+              "resposta": "átrios",
+              "explicacao": "O complexo QRS é a despolarização ventricular e a onda T, a repolarização ventricular.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a faixa normal aproximada da fração de ejeção do ventrículo esquerdo?",
+              "opcoes": [
+                "Entre 55% e 70%",
+                "Entre 20% e 30%",
+                "Perto de 100%",
+                "Entre 35% e 40%"
+              ],
+              "resposta": "Entre 55% e 70%",
+              "explicacao": "A fração de ejeção é o volume ejetado dividido pelo volume no fim da diástole.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com estenose aórtica tem um sopro rude no foco aórtico.",
+              "enunciado": "Em qual fase do ciclo o sangue passa turbulento pela valva estreitada?",
+              "opcoes": [
+                "Ejeção ventricular",
+                "Enchimento ventricular",
+                "Relaxamento isovolumétrico",
+                "Contração atrial"
+              ],
+              "resposta": "Ejeção ventricular",
+              "explicacao": "Por isso o sopro da estenose aórtica é sistólico e ejetivo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A terceira bulha (B3) pode ser normal em crianças e jovens, mas em idosos costuma indicar insuficiência cardíaca.",
+              "resposta": true,
+              "explicacao": "A B3 ocorre no enchimento rápido do ventrículo, logo após a B2.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que representa o intervalo PR no eletrocardiograma?",
+              "opcoes": [
+                "O tempo para o impulso ir dos átrios aos ventrículos, incluindo o atraso no nó AV",
+                "A repolarização dos átrios",
+                "A despolarização dos ventrículos",
+                "A repolarização dos ventrículos"
+              ],
+              "resposta": "O tempo para o impulso ir dos átrios aos ventrículos, incluindo o atraso no nó AV",
+              "explicacao": "O normal fica entre 120 e 200 ms. Acima disso é bloqueio atrioventricular de primeiro grau.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u2-l2",
+          "titulo": "Débito cardíaco e Frank-Starling",
+          "questoes": [
+            {
+              "id": "fisio-u2-l2-q1",
+              "tipo": "completar_lacuna",
+              "enunciado": "O débito cardíaco é a frequência cardíaca multiplicada pelo ___.",
+              "opcoes": [
+                "volume sistólico",
+                "volume diastólico final",
+                "volume residual",
+                "volume corrente"
+              ],
+              "resposta": "volume sistólico",
+              "explicacao": "Em repouso, um adulto tem débito de cerca de 5 litros por minuto.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que diz a lei de Frank-Starling?",
+              "opcoes": [
+                "Quanto maior o enchimento do ventrículo, maior a força de contração, até um limite",
+                "Quanto maior a frequência, menor o volume sistólico, sempre",
+                "A pressão arterial depende só da resistência vascular",
+                "O coração ejeta sempre o mesmo volume"
+              ],
+              "resposta": "Quanto maior o enchimento do ventrículo, maior a força de contração, até um limite",
+              "explicacao": "O estiramento das fibras melhora a interação entre actina e miosina, até certo ponto.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q3",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada determinante do débito cardíaco à sua definição.",
+              "pares": [
+                {
+                  "esquerda": "Pré-carga",
+                  "direita": "Volume no ventrículo ao fim da diástole"
+                },
+                {
+                  "esquerda": "Pós-carga",
+                  "direita": "Resistência que o ventrículo enfrenta para ejetar"
+                },
+                {
+                  "esquerda": "Contratilidade",
+                  "direita": "Força própria do miocárdio"
+                },
+                {
+                  "esquerda": "Frequência cardíaca",
+                  "direita": "Número de batimentos por minuto"
+                }
+              ],
+              "explicacao": "A pós-carga aumenta na hipertensão e na estenose aórtica.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O aumento da pós-carga, como numa hipertensão grave, tende a reduzir o volume sistólico.",
+              "resposta": true,
+              "explicacao": "O ventrículo precisa vencer uma pressão maior e ejeta menos sangue a cada batimento.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com choque hemorrágico está hipotenso e taquicárdico.",
+              "enunciado": "Qual determinante do débito cardíaco está reduzido primariamente?",
+              "opcoes": [
+                "Pré-carga",
+                "Contratilidade",
+                "Pós-carga",
+                "Frequência cardíaca"
+              ],
+              "resposta": "Pré-carga",
+              "explicacao": "A perda de sangue reduz o retorno venoso. A taquicardia é a tentativa de compensar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o efeito da estimulação simpática sobre o coração?",
+              "opcoes": [
+                "Aumenta a frequência e a contratilidade",
+                "Reduz a frequência e a contratilidade",
+                "Reduz apenas a frequência",
+                "Não tem efeito no coração"
+              ],
+              "resposta": "Aumenta a frequência e a contratilidade",
+              "explicacao": "A noradrenalina age nos receptores beta-1 do coração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O retorno venoso aumenta quando a pessoa passa de deitada para em pé.",
+              "resposta": false,
+              "explicacao": "Em pé, o sangue se acumula nas pernas e o retorno venoso cai. O barorreflexo compensa aumentando a frequência e o tônus dos vasos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Atleta de maratona tem frequência cardíaca de repouso de 45 bpm e está assintomático.",
+              "enunciado": "Como ele mantém o débito cardíaco normal?",
+              "opcoes": [
+                "Com um volume sistólico maior, pela adaptação do coração ao treino",
+                "Com pressão arterial elevada",
+                "Com fração de ejeção baixa",
+                "Por um bloqueio atrioventricular"
+              ],
+              "resposta": "Com um volume sistólico maior, pela adaptação do coração ao treino",
+              "explicacao": "É uma bradicardia fisiológica, com maior tônus vagal e ventrículo mais eficiente.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u2-l3",
+          "titulo": "Pressão arterial e seu controle",
+          "questoes": [
+            {
+              "id": "fisio-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde ficam os principais barorreceptores arteriais?",
+              "opcoes": [
+                "No seio carotídeo e no arco da aorta",
+                "No átrio direito",
+                "No bulbo",
+                "Nos rins"
+              ],
+              "resposta": "No seio carotídeo e no arco da aorta",
+              "explicacao": "Eles detectam o estiramento da parede arterial e informam o centro cardiovascular do bulbo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Quando a pressão arterial sobe, o barorreflexo aumenta o tônus vagal e reduz a frequência cardíaca.",
+              "resposta": true,
+              "explicacao": "Ao mesmo tempo, o tônus simpático cai e os vasos se dilatam.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q3",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hormônio ao seu efeito.",
+              "pares": [
+                {
+                  "esquerda": "Angiotensina II",
+                  "direita": "Vasoconstrição e liberação de aldosterona"
+                },
+                {
+                  "esquerda": "Aldosterona",
+                  "direita": "Retenção de sódio e eliminação de potássio"
+                },
+                {
+                  "esquerda": "Hormônio antidiurético",
+                  "direita": "Reabsorção de água no ducto coletor"
+                },
+                {
+                  "esquerda": "Peptídeo natriurético atrial",
+                  "direita": "Eliminação de sódio e vasodilatação"
+                }
+              ],
+              "explicacao": "O peptídeo natriurético é liberado quando os átrios são distendidos por excesso de volume.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A renina é liberada pelas células ___ do rim quando a perfusão renal cai.",
+              "opcoes": [
+                "justaglomerulares",
+                "mesangiais",
+                "podocitárias",
+                "do túbulo proximal"
+              ],
+              "resposta": "justaglomerulares",
+              "explicacao": "A renina transforma angiotensinogênio em angiotensina I, que a ECA converte em angiotensina II.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com diabetes de longa data sente tontura ao se levantar. A pressão cai 30 mmHg, sem aumento da frequência cardíaca.",
+              "enunciado": "Qual mecanismo falhou?",
+              "opcoes": [
+                "O barorreflexo, por neuropatia autonômica",
+                "O sistema renina-angiotensina",
+                "A filtração glomerular",
+                "A secreção de insulina"
+              ],
+              "resposta": "O barorreflexo, por neuropatia autonômica",
+              "explicacao": "É hipotensão ortostática neurogênica. Sem a resposta autonômica, o coração não acelera para compensar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se estima a pressão arterial média?",
+              "opcoes": [
+                "Diastólica mais um terço da diferença entre sistólica e diastólica",
+                "Soma da sistólica com a diastólica dividida por 2",
+                "Sistólica menos diastólica",
+                "Diastólica multiplicada por 2"
+              ],
+              "resposta": "Diastólica mais um terço da diferença entre sistólica e diastólica",
+              "explicacao": "Como o coração passa mais tempo em diástole, a média fica mais perto da diastólica.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A resistência vascular periférica depende principalmente das arteríolas.",
+              "resposta": true,
+              "explicacao": "Pela lei de Poiseuille, a resistência varia com a quarta potência do raio. Pequenas mudanças de calibre têm grande efeito.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com estreitamento da artéria de um dos rins tem hipertensão de difícil controle.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Ativação do sistema renina-angiotensina-aldosterona pelo rim mal perfundido",
+                "Excesso de hormônio antidiurético",
+                "Aumento do peptídeo natriurético",
+                "Tumor da medula adrenal"
+              ],
+              "resposta": "Ativação do sistema renina-angiotensina-aldosterona pelo rim mal perfundido",
+              "explicacao": "É a hipertensão renovascular. O rim interpreta a baixa perfusão como falta de volume.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fisio-u3",
+      "titulo": "Fisiologia respiratória",
+      "descricao": "Mecânica, trocas gasosas e controle da respiração",
+      "licoes": [
+        {
+          "id": "fisio-u3-l1",
+          "titulo": "Mecânica e volumes pulmonares",
+          "questoes": [
+            {
+              "id": "fisio-u3-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal músculo da inspiração em repouso?",
+              "opcoes": [
+                "Diafragma",
+                "Intercostais internos",
+                "Reto do abdome",
+                "Esternocleidomastóideo"
+              ],
+              "resposta": "Diafragma",
+              "explicacao": "Em repouso, a expiração é passiva, pela retração elástica do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada volume ou capacidade à sua definição.",
+              "pares": [
+                {
+                  "esquerda": "Volume corrente",
+                  "direita": "Ar mobilizado em uma respiração tranquila"
+                },
+                {
+                  "esquerda": "Volume residual",
+                  "direita": "Ar que fica após expiração máxima"
+                },
+                {
+                  "esquerda": "Capacidade vital",
+                  "direita": "Ar expirado ao máximo após inspiração máxima"
+                },
+                {
+                  "esquerda": "Capacidade residual funcional",
+                  "direita": "Ar no pulmão ao fim de uma expiração tranquila"
+                }
+              ],
+              "explicacao": "A capacidade residual funcional é a reserva de oxigênio entre as respirações.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O volume residual não pode ser medido pela espirometria simples.",
+              "resposta": true,
+              "explicacao": "Ele é medido por pletismografia ou diluição de gases, porque esse ar nunca sai do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___, produzido pelos pneumócitos tipo II, reduz a tensão superficial dos alvéolos.",
+              "opcoes": [
+                "surfactante",
+                "muco",
+                "líquido pleural",
+                "colágeno"
+              ],
+              "resposta": "surfactante",
+              "explicacao": "Sem surfactante, os alvéolos tendem a colapsar no fim da expiração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Prematuro de 29 semanas tem desconforto respiratório logo ao nascer, com gemido expiratório e radiografia com padrão reticulogranular.",
+              "enunciado": "Qual é a causa?",
+              "opcoes": [
+                "Deficiência de surfactante",
+                "Aspiração de mecônio",
+                "Pneumotórax",
+                "Cardiopatia congênita"
+              ],
+              "resposta": "Deficiência de surfactante",
+              "explicacao": "É a síndrome do desconforto respiratório do recém-nascido. Corticoide antenatal e surfactante exógeno são as principais armas.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na espirometria, qual achado indica distúrbio obstrutivo?",
+              "opcoes": [
+                "Relação VEF1/CVF reduzida",
+                "Relação VEF1/CVF aumentada",
+                "CVF normal com volume residual baixo",
+                "Todos os volumes reduzidos na mesma proporção"
+              ],
+              "resposta": "Relação VEF1/CVF reduzida",
+              "explicacao": "Na obstrução, o ar demora para sair, então o VEF1 cai mais que a CVF. É o padrão da asma e da DPOC.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A complacência pulmonar está aumentada no enfisema e reduzida na fibrose pulmonar.",
+              "resposta": true,
+              "explicacao": "No enfisema o pulmão perde a elasticidade e fica frouxo. Na fibrose ele fica duro e difícil de expandir.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrose pulmonar faz espirometria: CVF reduzida e relação VEF1/CVF normal.",
+              "enunciado": "Qual é o padrão?",
+              "opcoes": [
+                "Restritivo",
+                "Obstrutivo",
+                "Normal",
+                "Misto, obrigatoriamente"
+              ],
+              "resposta": "Restritivo",
+              "explicacao": "A confirmação do distúrbio restritivo é feita com a capacidade pulmonar total reduzida.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u3-l2",
+          "titulo": "Trocas gasosas e transporte de oxigênio",
+          "questoes": [
+            {
+              "id": "fisio-u3-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como a maior parte do CO2 é transportada no sangue?",
+              "opcoes": [
+                "Na forma de bicarbonato",
+                "Dissolvido no plasma",
+                "Ligado à hemoglobina",
+                "Ligado à albumina"
+              ],
+              "resposta": "Na forma de bicarbonato",
+              "explicacao": "Cerca de 70% vira bicarbonato dentro das hemácias, graças à anidrase carbônica.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada termo do transporte de gases à sua definição.",
+              "pares": [
+                {
+                  "esquerda": "Efeito Bohr",
+                  "direita": "Menor afinidade da hemoglobina pelo O2 com acidose e CO2 alto"
+                },
+                {
+                  "esquerda": "Efeito Haldane",
+                  "direita": "Hemoglobina sem O2 transporta mais CO2"
+                },
+                {
+                  "esquerda": "Hemoglobina fetal",
+                  "direita": "Maior afinidade pelo O2 que a do adulto"
+                },
+                {
+                  "esquerda": "2,3-BPG",
+                  "direita": "Reduz a afinidade da hemoglobina pelo O2"
+                }
+              ],
+              "explicacao": "A hemoglobina fetal capta o oxigênio da hemoglobina materna na placenta.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Aumento de temperatura e acidose desviam a curva de dissociação da hemoglobina para a direita, facilitando a entrega de O2.",
+              "resposta": true,
+              "explicacao": "É o que acontece num músculo em exercício: mais calor e mais ácido liberam mais oxigênio.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A intoxicação por ___ reduz o transporte de oxigênio porque esse gás se liga à hemoglobina com afinidade cerca de 200 vezes maior que a do O2.",
+              "opcoes": [
+                "monóxido de carbono",
+                "dióxido de carbono",
+                "nitrogênio",
+                "óxido nítrico"
+              ],
+              "resposta": "monóxido de carbono",
+              "explicacao": "O tratamento é oxigênio a 100%, que acelera a eliminação do monóxido de carbono.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de incêndio em ambiente fechado tem dor de cabeça e confusão, mas o oxímetro de pulso mostra 98%.",
+              "enunciado": "Por que o oxímetro pode enganar?",
+              "opcoes": [
+                "O oxímetro comum não diferencia carboxi-hemoglobina de oxi-hemoglobina",
+                "A saturação está realmente normal",
+                "O monóxido de carbono aumenta a PaO2",
+                "A hemoglobina está baixa"
+              ],
+              "resposta": "O oxímetro comum não diferencia carboxi-hemoglobina de oxi-hemoglobina",
+              "explicacao": "É preciso dosar a carboxi-hemoglobina por cooximetria na gasometria.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que acontece com a PaCO2 quando a ventilação alveolar dobra?",
+              "opcoes": [
+                "Cai aproximadamente pela metade",
+                "Dobra",
+                "Não se altera",
+                "Sobe um pouco"
+              ],
+              "resposta": "Cai aproximadamente pela metade",
+              "explicacao": "A PaCO2 é inversamente proporcional à ventilação alveolar.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Em grandes altitudes, a pressão parcial de O2 do ar é menor, o que leva à hiperventilação.",
+              "resposta": true,
+              "explicacao": "Os quimiorreceptores periféricos detectam a queda da PaO2 e aumentam a ventilação.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem embolia pulmonar. Uma área do pulmão continua ventilada, mas não recebe sangue.",
+              "enunciado": "Como se chama essa alteração?",
+              "opcoes": [
+                "Espaço morto",
+                "Shunt",
+                "Hipoventilação",
+                "Aumento da difusão"
+              ],
+              "resposta": "Espaço morto",
+              "explicacao": "No espaço morto, o ar chega ao alvéolo mas não participa da troca gasosa.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u3-l3",
+          "titulo": "Controle da respiração e relação V/Q",
+          "questoes": [
+            {
+              "id": "fisio-u3-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal estímulo para a respiração em uma pessoa saudável?",
+              "opcoes": [
+                "Aumento da PaCO2, detectado pelos quimiorreceptores centrais",
+                "Queda da PaO2",
+                "Aumento do pH",
+                "Queda da temperatura"
+              ],
+              "resposta": "Aumento da PaCO2, detectado pelos quimiorreceptores centrais",
+              "explicacao": "O CO2 atravessa a barreira hematoencefálica e acidifica o líquor, estimulando o bulbo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q2",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os quimiorreceptores periféricos, nos corpos ___ e aórticos, respondem principalmente à queda da PaO2.",
+              "opcoes": [
+                "carotídeos",
+                "ciliares",
+                "geniculados",
+                "mamilares"
+              ],
+              "resposta": "carotídeos",
+              "explicacao": "Eles enviam sinais pelos nervos glossofaríngeo e vago.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No shunt há perfusão sem ventilação, e a hipoxemia melhora pouco com oxigênio suplementar.",
+              "resposta": true,
+              "explicacao": "O sangue passa por alvéolos que não recebem ar, então o oxigênio extra não chega até ele.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação à alteração da relação ventilação/perfusão.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia com alvéolos cheios de secreção",
+                  "direita": "Shunt"
+                },
+                {
+                  "esquerda": "Tromboembolismo pulmonar",
+                  "direita": "Espaço morto"
+                },
+                {
+                  "esquerda": "Ápice do pulmão em pé",
+                  "direita": "Relação V/Q mais alta"
+                },
+                {
+                  "esquerda": "Base do pulmão em pé",
+                  "direita": "Relação V/Q mais baixa"
+                }
+              ],
+              "explicacao": "Em pé, a perfusão aumenta mais que a ventilação na base do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC grave e retenção crônica de CO2 recebe oxigênio em alto fluxo e fica sonolento, com a PaCO2 subindo.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "Piora da relação V/Q e efeito Haldane aumentam a retenção de CO2",
+                "Toxicidade do oxigênio no cérebro",
+                "Melhora da ventilação alveolar",
+                "Alcalose metabólica"
+              ],
+              "resposta": "Piora da relação V/Q e efeito Haldane aumentam a retenção de CO2",
+              "explicacao": "Por isso, nesses pacientes, o alvo de saturação costuma ficar entre 88% e 92%.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em pé, em qual região do pulmão a ventilação e a perfusão são maiores?",
+              "opcoes": [
+                "Nas bases",
+                "Nos ápices",
+                "Apenas no hilo",
+                "São iguais em todo o pulmão"
+              ],
+              "resposta": "Nas bases",
+              "explicacao": "As duas são maiores na base, mas a perfusão aumenta mais, por efeito da gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hiperventilação por ansiedade causa alcalose respiratória, com queda da PaCO2.",
+              "resposta": true,
+              "explicacao": "A alcalose reduz o cálcio ionizado e pode causar formigamento e câimbras nas mãos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com overdose de opioide respira 6 vezes por minuto.",
+              "enunciado": "Qual alteração é esperada na gasometria?",
+              "opcoes": [
+                "Acidose respiratória, com PaCO2 elevada",
+                "Alcalose respiratória",
+                "Acidose metabólica isolada",
+                "Gasometria normal"
+              ],
+              "resposta": "Acidose respiratória, com PaCO2 elevada",
+              "explicacao": "A hipoventilação retém CO2, que forma ácido carbônico e reduz o pH.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fisio-u4",
+      "titulo": "Fisiologia renal",
+      "descricao": "Filtração, transporte tubular e ácido-base",
+      "licoes": [
+        {
+          "id": "fisio-u4-l1",
+          "titulo": "Filtração glomerular",
+          "questoes": [
+            {
+              "id": "fisio-u4-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a taxa de filtração glomerular normal aproximada de um adulto jovem?",
+              "opcoes": [
+                "Cerca de 120 mL/min",
+                "Cerca de 20 mL/min",
+                "Cerca de 500 mL/min",
+                "Cerca de 1 L/min"
+              ],
+              "resposta": "Cerca de 120 mL/min",
+              "explicacao": "Isso equivale a filtrar cerca de 180 litros de plasma por dia, quase todos reabsorvidos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fator ao seu papel na filtração glomerular.",
+              "pares": [
+                {
+                  "esquerda": "Pressão hidrostática no capilar glomerular",
+                  "direita": "Principal força a favor da filtração"
+                },
+                {
+                  "esquerda": "Pressão oncótica no capilar",
+                  "direita": "Retém líquido no vaso pelas proteínas"
+                },
+                {
+                  "esquerda": "Pressão na cápsula de Bowman",
+                  "direita": "Opõe-se à filtração"
+                },
+                {
+                  "esquerda": "Constrição da arteríola eferente",
+                  "direita": "Aumenta a pressão dentro do glomérulo"
+                }
+              ],
+              "explicacao": "O equilíbrio dessas forças define quanto plasma é filtrado.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A creatinina é usada para estimar a filtração glomerular porque é filtrada livremente e pouco secretada.",
+              "resposta": true,
+              "explicacao": "A pequena secreção tubular faz a creatinina superestimar um pouco a filtração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A angiotensina II contrai principalmente a arteríola ___, ajudando a manter a filtração quando a perfusão renal cai.",
+              "opcoes": [
+                "eferente",
+                "aferente",
+                "arqueada",
+                "interlobar"
+              ],
+              "resposta": "eferente",
+              "explicacao": "Por isso IECA e BRA reduzem a pressão dentro do glomérulo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com estenose nas artérias dos dois rins começa enalapril e a creatinina sobe muito.",
+              "enunciado": "Por que isso aconteceu?",
+              "opcoes": [
+                "O IECA desfez a constrição da eferente que sustentava a filtração",
+                "O IECA lesou diretamente os túbulos",
+                "O IECA aumentou a filtração",
+                "Houve obstrução urinária"
+              ],
+              "resposta": "O IECA desfez a constrição da eferente que sustentava a filtração",
+              "explicacao": "Com pouco fluxo chegando, o rim dependia da angiotensina II para manter a pressão no glomérulo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual substância é o padrão-ouro para medir a filtração glomerular?",
+              "opcoes": [
+                "Inulina",
+                "Glicose",
+                "Ureia",
+                "Albumina"
+              ],
+              "resposta": "Inulina",
+              "explicacao": "A inulina é filtrada livremente e não é reabsorvida nem secretada.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Anti-inflamatórios podem reduzir a filtração glomerular porque inibem prostaglandinas que dilatam a arteríola aferente.",
+              "resposta": true,
+              "explicacao": "O risco é maior em idosos, desidratados e em quem usa IECA ou diurético.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem cálculos obstruindo os dois ureteres e a filtração glomerular cai.",
+              "enunciado": "Qual força explica essa queda?",
+              "opcoes": [
+                "Aumento da pressão na cápsula de Bowman",
+                "Aumento da pressão no capilar glomerular",
+                "Queda da pressão oncótica",
+                "Aumento do fluxo plasmático renal"
+              ],
+              "resposta": "Aumento da pressão na cápsula de Bowman",
+              "explicacao": "A urina represada aumenta a pressão a montante. É a insuficiência renal pós-renal.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u4-l2",
+          "titulo": "Túbulos e transporte",
+          "questoes": [
+            {
+              "id": "fisio-u4-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual segmento do néfron ocorre a maior parte da reabsorção de sódio e água?",
+              "opcoes": [
+                "Túbulo contorcido proximal",
+                "Alça de Henle descendente",
+                "Túbulo distal",
+                "Ducto coletor"
+              ],
+              "resposta": "Túbulo contorcido proximal",
+              "explicacao": "O túbulo proximal reabsorve cerca de dois terços do filtrado.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada segmento do néfron à sua característica.",
+              "pares": [
+                {
+                  "esquerda": "Túbulo proximal",
+                  "direita": "Reabsorve toda a glicose filtrada em condições normais"
+                },
+                {
+                  "esquerda": "Alça descendente",
+                  "direita": "Permeável à água e pouco ao sódio"
+                },
+                {
+                  "esquerda": "Alça ascendente espessa",
+                  "direita": "Impermeável à água e reabsorve sódio"
+                },
+                {
+                  "esquerda": "Ducto coletor",
+                  "direita": "Reabsorve água sob ação do ADH"
+                }
+              ],
+              "explicacao": "A furosemida age bloqueando o transportador da alça ascendente espessa.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A glicose aparece na urina quando a glicemia passa da capacidade máxima de reabsorção do túbulo proximal, em torno de 180 mg/dL.",
+              "resposta": true,
+              "explicacao": "Os inibidores da SGLT2 baixam esse limite de propósito para eliminar glicose.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O hormônio ___ coloca aquaporinas no ducto coletor e aumenta a reabsorção de água.",
+              "opcoes": [
+                "antidiurético",
+                "aldosterona",
+                "paratormônio",
+                "natriurético atrial"
+              ],
+              "resposta": "antidiurético",
+              "explicacao": "Ele é produzido no hipotálamo e liberado pela neuro-hipófise.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Após uma cirurgia de hipófise, o paciente urina muito, com urina muito diluída, tem sede intensa e o sódio do sangue sobe.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Diabetes insípido central, por falta de ADH",
+                "Diabetes mellitus",
+                "Secreção inapropriada de ADH",
+                "Insuficiência adrenal"
+              ],
+              "resposta": "Diabetes insípido central, por falta de ADH",
+              "explicacao": "O tratamento é com desmopressina, um análogo do ADH.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde a aldosterona age principalmente?",
+              "opcoes": [
+                "Na parte final do túbulo distal e no ducto coletor",
+                "No túbulo proximal",
+                "Na alça descendente",
+                "No glomérulo"
+              ],
+              "resposta": "Na parte final do túbulo distal e no ducto coletor",
+              "explicacao": "Ela aumenta a reabsorção de sódio e a eliminação de potássio e hidrogênio.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O mecanismo de contracorrente da alça de Henle cria um interstício medular concentrado, que permite produzir urina concentrada.",
+              "resposta": true,
+              "explicacao": "Sem esse gradiente, o ADH não conseguiria concentrar a urina.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pulmão de pequenas células tem sódio de 120 mEq/L, urina concentrada e volume corporal normal.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Secreção inapropriada de ADH",
+                "Diabetes insípido",
+                "Hiperaldosteronismo",
+                "Insuficiência renal aguda"
+              ],
+              "resposta": "Secreção inapropriada de ADH",
+              "explicacao": "O tumor produz ADH. O corpo retém água e o sódio fica diluído. A base do tratamento é restringir a água.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u4-l3",
+          "titulo": "Equilíbrio ácido-base",
+          "questoes": [
+            {
+              "id": "fisio-u4-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal sistema tampão do líquido extracelular?",
+              "opcoes": [
+                "Bicarbonato e ácido carbônico",
+                "Fosfato",
+                "Proteínas plasmáticas",
+                "Amônia"
+              ],
+              "resposta": "Bicarbonato e ácido carbônico",
+              "explicacao": "Ele é eficiente porque o pulmão controla o CO2 e o rim controla o bicarbonato.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada gasometria ao distúrbio primário.",
+              "pares": [
+                {
+                  "esquerda": "pH baixo e bicarbonato baixo",
+                  "direita": "Acidose metabólica"
+                },
+                {
+                  "esquerda": "pH baixo e PaCO2 alta",
+                  "direita": "Acidose respiratória"
+                },
+                {
+                  "esquerda": "pH alto e bicarbonato alto",
+                  "direita": "Alcalose metabólica"
+                },
+                {
+                  "esquerda": "pH alto e PaCO2 baixa",
+                  "direita": "Alcalose respiratória"
+                }
+              ],
+              "explicacao": "Primeiro olhe o pH; depois veja qual valor (CO2 ou bicarbonato) explica a alteração.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ânion ___ é calculado como sódio menos a soma de cloro e bicarbonato.",
+              "opcoes": [
+                "gap",
+                "livre",
+                "base",
+                "residual"
+              ],
+              "resposta": "gap",
+              "explicacao": "O valor normal fica em torno de 8 a 12 mEq/L.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cetoacidose diabética tem sódio 135, cloro 100 e bicarbonato 10 mEq/L.",
+              "enunciado": "Qual é o ânion gap e o que ele indica?",
+              "opcoes": [
+                "25, acidose com ânion gap aumentado",
+                "10, acidose com ânion gap normal",
+                "35, alcalose metabólica",
+                "125, valor normal"
+              ],
+              "resposta": "25, acidose com ânion gap aumentado",
+              "explicacao": "135 menos (100 + 10) = 25. Os cetoácidos são os ânions não medidos que aumentam o gap.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A diarreia intensa causa acidose metabólica com ânion gap normal, pela perda de bicarbonato.",
+              "resposta": true,
+              "explicacao": "O rim retém cloro para compensar, e a acidose fica hiperclorêmica.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a compensação esperada para uma acidose metabólica?",
+              "opcoes": [
+                "Hiperventilação, com queda da PaCO2",
+                "Retenção de CO2",
+                "Eliminação de bicarbonato pelo rim",
+                "Hipoventilação"
+              ],
+              "resposta": "Hiperventilação, com queda da PaCO2",
+              "explicacao": "A respiração rápida e profunda da cetoacidose é a respiração de Kussmaul.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Vômitos repetidos causam alcalose metabólica com hipocalemia.",
+              "resposta": true,
+              "explicacao": "A perda de ácido do estômago e a desidratação mantêm a alcalose. O tratamento é com soro fisiológico e potássio.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC estável tem pH 7,36, PaCO2 de 60 mmHg e bicarbonato de 33 mEq/L.",
+              "enunciado": "Qual é a interpretação?",
+              "opcoes": [
+                "Acidose respiratória crônica com compensação renal",
+                "Alcalose metabólica primária",
+                "Acidose metabólica",
+                "Gasometria normal"
+              ],
+              "resposta": "Acidose respiratória crônica com compensação renal",
+              "explicacao": "O rim retém bicarbonato ao longo de dias e traz o pH para perto do normal.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fisio-u5",
+      "titulo": "Fisiologia endócrina",
+      "descricao": "Hipófise, tireoide, adrenal e pâncreas",
+      "licoes": [
+        {
+          "id": "fisio-u5-l1",
+          "titulo": "Eixo hipotálamo-hipófise",
+          "questoes": [
+            {
+              "id": "fisio-u5-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hormônio é produzido no hipotálamo e liberado pela neuro-hipófise?",
+              "opcoes": [
+                "Ocitocina",
+                "Prolactina",
+                "TSH",
+                "GH"
+              ],
+              "resposta": "Ocitocina",
+              "explicacao": "A neuro-hipófise libera ocitocina e ADH, que são produzidos no hipotálamo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hormônio da adeno-hipófise ao seu alvo.",
+              "pares": [
+                {
+                  "esquerda": "TSH",
+                  "direita": "Tireoide"
+                },
+                {
+                  "esquerda": "ACTH",
+                  "direita": "Córtex da adrenal"
+                },
+                {
+                  "esquerda": "LH e FSH",
+                  "direita": "Gônadas"
+                },
+                {
+                  "esquerda": "GH",
+                  "direita": "Fígado, com produção de IGF-1"
+                }
+              ],
+              "explicacao": "A adeno-hipófise é controlada por hormônios liberadores e inibidores do hipotálamo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dopamina do hipotálamo inibe a secreção de prolactina.",
+              "resposta": true,
+              "explicacao": "Por isso remédios que bloqueiam dopamina, como antipsicóticos, podem causar saída de leite e falta de menstruação.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o principal mediador dos efeitos de crescimento do GH e é produzido sobretudo no fígado.",
+              "opcoes": [
+                "IGF-1",
+                "TSH",
+                "cortisol",
+                "somatostatina"
+              ],
+              "resposta": "IGF-1",
+              "explicacao": "O IGF-1 é usado para rastrear excesso de GH.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Adulto nota aumento das mãos, dos pés e da mandíbula, dentes mais espaçados e suor excessivo.",
+              "enunciado": "Qual é o exame inicial?",
+              "opcoes": [
+                "Dosagem de IGF-1",
+                "Dosagem de TSH",
+                "Cortisol na urina",
+                "Prolactina isolada"
+              ],
+              "resposta": "Dosagem de IGF-1",
+              "explicacao": "É a acromegalia. A confirmação é feita mostrando que o GH não cai após sobrecarga de glicose.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como funciona a retroalimentação dos hormônios da tireoide?",
+              "opcoes": [
+                "T3 e T4 inibem a secreção de TRH e TSH",
+                "T3 estimula a secreção de TSH",
+                "O TSH inibe o TRH sem relação com o T4",
+                "Não há retroalimentação"
+              ],
+              "resposta": "T3 e T4 inibem a secreção de TRH e TSH",
+              "explicacao": "É uma retroalimentação negativa. Quando há pouco hormônio, o TSH sobe.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No hipotireoidismo primário, o TSH está elevado.",
+              "resposta": true,
+              "explicacao": "A falha é na tireoide, e a hipófise aumenta o TSH tentando estimulá-la.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos sem menstruar, com saída de leite pelas mamas, teste de gravidez negativo e prolactina muito alta. A ressonância mostra um adenoma de 8 mm na hipófise.",
+              "enunciado": "Qual é o tratamento inicial?",
+              "opcoes": [
+                "Agonista dopaminérgico, como cabergolina",
+                "Cirurgia imediata",
+                "Radioterapia",
+                "Reposição isolada de estrogênio"
+              ],
+              "resposta": "Agonista dopaminérgico, como cabergolina",
+              "explicacao": "O prolactinoma responde muito bem à cabergolina, que reduz a prolactina e o tamanho do tumor.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u5-l2",
+          "titulo": "Tireoide e adrenal",
+          "questoes": [
+            {
+              "id": "fisio-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada região da adrenal ao hormônio que produz.",
+              "pares": [
+                {
+                  "esquerda": "Zona glomerulosa",
+                  "direita": "Aldosterona"
+                },
+                {
+                  "esquerda": "Zona fasciculada",
+                  "direita": "Cortisol"
+                },
+                {
+                  "esquerda": "Zona reticular",
+                  "direita": "Andrógenos"
+                },
+                {
+                  "esquerda": "Medula",
+                  "direita": "Adrenalina e noradrenalina"
+                }
+              ],
+              "explicacao": "Um mnemônico em inglês é sal, açúcar e sexo, de fora para dentro do córtex.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hormônio da tireoide é o mais ativo nos tecidos?",
+              "opcoes": [
+                "T3",
+                "T4",
+                "Calcitonina",
+                "TSH"
+              ],
+              "resposta": "T3",
+              "explicacao": "A tireoide produz mais T4, que é convertido em T3 nos tecidos pelas deiodinases.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O cortisol aumenta a glicemia, estimulando a gliconeogênese.",
+              "resposta": true,
+              "explicacao": "Por isso o uso de corticoide pode descompensar o diabetes.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o elemento indispensável para a síntese dos hormônios da tireoide.",
+              "opcoes": [
+                "iodo",
+                "ferro",
+                "zinco",
+                "cálcio"
+              ],
+              "resposta": "iodo",
+              "explicacao": "No Brasil, o sal de cozinha é iodado para prevenir bócio e hipotireoidismo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com perda de peso, palpitações, tremor, olhos saltados e bócio difuso. O TSH está suprimido e o T4 livre alto.",
+              "enunciado": "Qual é o mecanismo da doença?",
+              "opcoes": [
+                "Anticorpos que estimulam o receptor do TSH",
+                "Anticorpos que destroem a tireoide",
+                "Excesso de TSH produzido pela hipófise",
+                "Ingestão de hormônio tireoidiano"
+              ],
+              "resposta": "Anticorpos que estimulam o receptor do TSH",
+              "explicacao": "É a doença de Graves, a causa mais comum de hipertireoidismo.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado é típico da insuficiência adrenal primária (doença de Addison)?",
+              "opcoes": [
+                "Escurecimento da pele e potássio alto",
+                "Hipertensão e potássio baixo",
+                "Ganho de peso e estrias violáceas",
+                "Glicemia alta"
+              ],
+              "resposta": "Escurecimento da pele e potássio alto",
+              "explicacao": "O ACTH elevado escurece a pele. A falta de aldosterona causa perda de sódio e retenção de potássio.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na síndrome de Cushing há obesidade central, estrias violáceas e fraqueza nos músculos proximais.",
+              "resposta": true,
+              "explicacao": "O excesso de cortisol também causa hipertensão, diabetes e osteoporose.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usou prednisona 40 mg por dia durante 3 meses e parou de repente. Agora tem pressão baixa, náuseas e fraqueza.",
+              "enunciado": "O que aconteceu?",
+              "opcoes": [
+                "Insuficiência adrenal por supressão do eixo",
+                "Hipertireoidismo",
+                "Hiperaldosteronismo",
+                "Síndrome de Cushing"
+              ],
+              "resposta": "Insuficiência adrenal por supressão do eixo",
+              "explicacao": "O uso prolongado de corticoide desliga o eixo hipotálamo-hipófise-adrenal. A retirada precisa ser gradual.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "fisio-u5-l3",
+          "titulo": "Pâncreas endócrino e glicemia",
+          "questoes": [
+            {
+              "id": "fisio-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais células das ilhotas pancreáticas produzem insulina?",
+              "opcoes": [
+                "Células beta",
+                "Células alfa",
+                "Células delta",
+                "Células acinares"
+              ],
+              "resposta": "Células beta",
+              "explicacao": "As células alfa produzem glucagon e as delta, somatostatina.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hormônio ao seu efeito na glicose.",
+              "pares": [
+                {
+                  "esquerda": "Insulina",
+                  "direita": "Reduz a glicemia"
+                },
+                {
+                  "esquerda": "Glucagon",
+                  "direita": "Aumenta a glicemia pela quebra do glicogênio do fígado"
+                },
+                {
+                  "esquerda": "Adrenalina",
+                  "direita": "Aumenta a glicemia em situações de estresse"
+                },
+                {
+                  "esquerda": "Somatostatina",
+                  "direita": "Inibe insulina e glucagon"
+                }
+              ],
+              "explicacao": "Glucagon, adrenalina, cortisol e GH são os hormônios contrarreguladores.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A insulina faz a glicose entrar no músculo e no tecido adiposo pelo transportador GLUT4.",
+              "resposta": true,
+              "explicacao": "Sem insulina, o GLUT4 fica dentro da célula e a glicose não entra.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A insulina faz o ___ entrar nas células, o que explica a queda desse íon no tratamento da cetoacidose.",
+              "opcoes": [
+                "potássio",
+                "sódio",
+                "cálcio",
+                "cloro"
+              ],
+              "resposta": "potássio",
+              "explicacao": "Insulina com glicose é um dos tratamentos de urgência da hipercalemia.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Jovem magro tem glicemia alta, cetonas na urina e anticorpos anti-GAD positivos.",
+              "enunciado": "Qual é o mecanismo da doença?",
+              "opcoes": [
+                "Destruição autoimune das células beta",
+                "Resistência à insulina",
+                "Excesso de glucagon por tumor",
+                "Excesso de cortisol"
+              ],
+              "resposta": "Destruição autoimune das células beta",
+              "explicacao": "É o diabetes tipo 1. O tratamento é sempre com insulina.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é o peptídeo C?",
+              "opcoes": [
+                "Fragmento liberado junto com a insulina produzida pelo próprio corpo",
+                "Um tipo de insulina sintética",
+                "Um hormônio que aumenta a glicemia",
+                "Um anticorpo do diabetes"
+              ],
+              "resposta": "Fragmento liberado junto com a insulina produzida pelo próprio corpo",
+              "explicacao": "Ele mostra se o corpo ainda produz insulina, porque as insulinas de farmácia não têm peptídeo C.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Incretinas como o GLP-1 aumentam a secreção de insulina após as refeições, dependendo da glicose.",
+              "resposta": true,
+              "explicacao": "Como o efeito depende da glicose, os análogos de GLP-1 raramente causam hipoglicemia sozinhos.",
+              "revisado": false
+            },
+            {
+              "id": "fisio-u5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mulher saudável tem hipoglicemia grave. Os exames mostram insulina alta e peptídeo C baixo.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Uso de insulina por conta própria",
+                "Insulinoma",
+                "Uso de sulfonilureia",
+                "Jejum prolongado"
+              ],
+              "resposta": "Uso de insulina por conta própria",
+              "explicacao": "No insulinoma e no uso de sulfonilureia, o peptídeo C fica alto, porque a insulina vem do próprio pâncreas.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

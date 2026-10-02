@@ -11,6 +11,7 @@ const TIPOS = ['multipla_escolha', 'verdadeiro_falso', 'completar_lacuna', 'asso
 const erros = []
 const avisos = []
 const ids = new Map()
+const enunciados = new Map()
 let totalQuestoes = 0
 let naoRevisadas = 0
 
@@ -51,6 +52,9 @@ for (const { arquivo, caminho } of arquivos) {
         if (!TIPOS.includes(q.tipo)) erros.push(`${onde}: tipo "${q.tipo}" não existe. Use um de: ${TIPOS.join(', ')}`)
         if (!q.enunciado) erros.push(`${onde}: falta "enunciado"`)
         if (!q.explicacao) erros.push(`${onde}: falta "explicacao"`)
+        const texto = `${q.caso ?? ''} ${q.enunciado ?? ''}`.trim().toLowerCase()
+        if (enunciados.has(texto)) avisos.push(`${onde}: pergunta igual à de ${enunciados.get(texto)}`)
+        else enunciados.set(texto, q.id)
         if (typeof q.revisado !== 'boolean') erros.push(`${onde}: falta "revisado": true ou false`)
         if (q.revisado === false) naoRevisadas++
 
