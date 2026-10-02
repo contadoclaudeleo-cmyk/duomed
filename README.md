@@ -4,8 +4,17 @@ App de estudo para estudantes de medicina no estilo do Duolingo: trilhas por mat
 
 Tem dois modos de estudo, que a pessoa escolhe no cadastro e pode trocar no perfil ou na tela de matérias:
 
-- **Graduação:** matérias do curso (Anatomia e Farmacologia prontas; Fisiologia, Bioquímica, Patologia e Semiologia em breve).
+- **Graduação:** seis matérias do curso (Anatomia, Farmacologia, Fisiologia, Bioquímica, Patologia e Semiologia).
 - **Residência:** as cinco grandes áreas das provas de residência (Clínica Médica, Cirurgia Geral, Pediatria, Ginecologia e Obstetrícia e Medicina Preventiva), com foco em casos clínicos.
+
+Cada matéria tem **duas trilhas**:
+
+- **Fácil:** conceitos básicos, para aprender e fixar.
+- **Difícil:** questões no estilo de prova, com casos clínicos mais longos e alternativas parecidas.
+
+Logo depois do cadastro, a pessoa faz um **teste de nível** com 8 questões de matérias variadas. Quem acerta 6 ou mais recebe a sugestão do nível difícil, mas sempre pode escolher. O nível pode ser trocado a qualquer momento na trilha ou no perfil, e o teste pode ser refeito pelo perfil.
+
+**Conteúdo atual:** 2.880 questões em 360 lições (cada lição tem 8 questões). São 90 lições no nível fácil e 90 no difícil em cada modo, o que dá mais de um mês estudando todos os dias na intensidade máxima.
 
 Primeira versão (MVP): roda inteira no navegador e salva o progresso no próprio aparelho (localStorage). Não precisa de servidor.
 
@@ -197,11 +206,10 @@ Dica: nos textos, prefira vírgula ou ponto em vez de travessão.
 
 - **Lição nova:** copie um bloco `{ "id": ..., "titulo": ..., "questoes": [...] }` dentro de `licoes`. Ela entra no fim da trilha da unidade.
 - **Unidade nova:** copie um bloco inteiro de unidade dentro de `unidades`.
+- **Unidade do nível difícil:** igual a uma unidade comum, com o campo `"nivel": "dificil"`. Unidades sem esse campo são do nível fácil. Por organização, os ids das unidades difíceis usam a letra `d` (por exemplo `anat-d1`, com lições `anat-d1-l1`).
 - **Matéria nova:** crie um arquivo novo em `src/data/graduacao/` ou `src/data/residencia/` (por exemplo `histologia.json`). Ela aparece sozinha na tela de matérias. Uma matéria com `"unidades": []` aparece como "Em breve".
 
 Ícones disponíveis para o campo `icone`: `osso`, `coracao`, `frasco`, `pilula`, `microscopio`, `estetoscopio`, `bisturi`, `bebe`, `gestante`, `comunidade`.
-
-As matérias Fisiologia, Bioquímica, Patologia e Semiologia já têm arquivo, só falta preencher as unidades.
 
 ## Regras do jogo
 
@@ -214,6 +222,7 @@ As matérias Fisiologia, Bioquímica, Patologia e Semiologia já têm arquivo, s
 | Revisão | Questão errada entra na fila na hora. Cada acerto na revisão faz ela voltar depois de 1, 3 e 7 dias; no acerto seguinte ela sai da fila. Errou, volta ao começo. | `src/lib/revisao.ts` |
 | Conquistas | Primeira lição, lição perfeita, unidade completa, 7 dias de ofensiva, 100 questões | `src/lib/conquistas.ts` |
 | Ranking | Liga semanal com 14 jogadores fictícios que reinicia toda segunda | `src/lib/ranking.ts` |
+| Teste de nível | 8 questões, sem gastar vidas e sem ganhar XP. 6 acertos ou mais sugerem o nível difícil. | `src/screens/Nivelamento.tsx` |
 
 ## Organização do código
 
@@ -221,7 +230,7 @@ As matérias Fisiologia, Bioquímica, Patologia e Semiologia já têm arquivo, s
 src/
   components/   botões, barras, modal, logo, Lápio, nós da trilha
     questoes/   um componente para cada tipo de questão
-  screens/      as telas (boas-vindas, trilha, lição, resultado, perfil, revisão, ranking)
+  screens/      as telas (boas-vindas, teste de nível, trilha, lição, resultado, perfil, revisão, ranking)
   data/         conteúdo em JSON (graduacao/ e residencia/) e funções para buscar lições e questões
   store/        estado global do jogador (Zustand), salvo automaticamente
   lib/          regras do jogo (XP, vidas, ofensiva, revisão, conquistas, ranking)
