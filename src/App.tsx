@@ -1,0 +1,80 @@
+import { useEffect } from 'react'
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
+import { useJogo } from './store/useJogo'
+import { Layout } from './components/Layout'
+import { BoasVindas } from './screens/BoasVindas'
+import { Home } from './screens/Home'
+import { Materias } from './screens/Materias'
+import { Licao } from './screens/Licao'
+import { Resultado } from './screens/Resultado'
+import { Revisao } from './screens/Revisao'
+import { RevisaoPratica } from './screens/RevisaoPratica'
+import { Ranking } from './screens/Ranking'
+import { Perfil } from './screens/Perfil'
+
+/** Aplica claro/escuro no <html> conforme a escolha do usuário */
+function useTema() {
+  const tema = useJogo((s) => s.tema)
+  useEffect(() => {
+    const midia = matchMedia('(prefers-color-scheme: dark)')
+    const aplicar = () => {
+      const escuro = tema === 'escuro' || (tema === 'sistema' && midia.matches)
+      document.documentElement.classList.toggle('dark', escuro)
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', escuro ? '#141817' : '#14B8A6')
+    }
+    aplicar()
+    midia.addEventListener('change', aplicar)
+    return () => midia.removeEventListener('change', aplicar)
+  }, [tema])
+}
+
+/** Recarrega vidas de tempos em tempos e quando o app volta a ficar visível */
+function useRecargaDeVidas() {
+  const sincronizar = useJogo((s) => s.sincronizarVidas)
+  useEffect(() => {
+    sincronizar()
+    const id = setInterval(sincronizar, 15_000)
+    document.addEventListener('visibilitychange', sincronizar)
+    return () => {
+      clearInterval(id)
+      document.removeEventListener('visibilitychange', sincronizar)
+    }
+  }, [sincronizar])
+}
+
+export function App() {
+  useTema()
+  useRecargaDeVidas()
+
+  return (
+    <Routes>
+      <Route path="/boas-vindas" element={<SoSemUsuario />} />
+      <Route element={<ExigeUsuario />}>
+        {/* Telas com a barra de navegação */}
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="materias" element={<Materias />} />
+          <Route path="revisao" element={<Revisao />} />
+          <Route path="ranking" element={<Ranking />} />
+          <Route path="perfil" element={<Perfil />} />
+        </Route>
+        {/* Telas em tela cheia */}
+        <Route path="licao/:licaoId" element={<Licao />} />
+        <Route path="revisao/praticar" element={<RevisaoPratica />} />
+        <Route path="resultado" element={<Resultado />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+  )
+}
+
+/** Sem cadastro, todas as telas mandam para as boas-vindas */
+function ExigeUsuario() {
+  const temUsuario = useJogo((s) => !!s.usuario)
+  return temUsuario ? <Outlet /> : <Navigate to="/boas-vindas" replace />
+}
+
+function SoSemUsuario() {
+  const temUsuario = useJogo((s) => !!s.usuario)
+  return temUsuario ? <Navigate to="/" replace /> : <BoasVindas />
+}

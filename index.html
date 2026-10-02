@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#14B8A6" />
+    <meta name="description" content="Estude medicina em lições curtas, todos os dias." />
+    <link rel="icon" type="image/png" href="/brand/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="DuoMed" />
+    <title>DuoMed</title>
+    <script>
+      // Aplica o tema antes de o React carregar, para não piscar branco no modo escuro
+      try {
+        var salvo = JSON.parse(localStorage.getItem('duomed') || '{}')
+        var tema = (salvo.state && salvo.state.tema) || 'sistema'
+        var escuro = tema === 'escuro' || (tema === 'sistema' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (escuro) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

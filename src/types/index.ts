@@ -1,0 +1,169 @@
+// ============================================================
+// Conteúdo (o que fica nos arquivos JSON de src/data/materias)
+// ============================================================
+
+export type TipoQuestao =
+  | 'multipla_escolha'
+  | 'verdadeiro_falso'
+  | 'completar_lacuna'
+  | 'associar_pares'
+  | 'caso_clinico'
+  | 'identificar_imagem'
+
+interface QuestaoBase {
+  id: string
+  tipo: TipoQuestao
+  enunciado: string
+  explicacao: string
+  /** Fica false até o conteúdo passar por revisão médica */
+  revisado: boolean
+}
+
+export interface QuestaoMultiplaEscolha extends QuestaoBase {
+  tipo: 'multipla_escolha'
+  opcoes: string[]
+  resposta: string
+}
+
+export interface QuestaoVerdadeiroFalso extends QuestaoBase {
+  tipo: 'verdadeiro_falso'
+  resposta: boolean
+}
+
+/** O enunciado precisa conter "___" no lugar da lacuna */
+export interface QuestaoCompletarLacuna extends QuestaoBase {
+  tipo: 'completar_lacuna'
+  opcoes: string[]
+  resposta: string
+}
+
+export interface Par {
+  esquerda: string
+  direita: string
+}
+
+export interface QuestaoAssociarPares extends QuestaoBase {
+  tipo: 'associar_pares'
+  pares: Par[]
+}
+
+export interface QuestaoCasoClinico extends QuestaoBase {
+  tipo: 'caso_clinico'
+  /** Enunciado do caso, de 2 a 4 linhas */
+  caso: string
+  opcoes: string[]
+  resposta: string
+}
+
+export interface QuestaoIdentificarImagem extends QuestaoBase {
+  tipo: 'identificar_imagem'
+  /** Caminho dentro de public/. Se não existir, aparece um placeholder */
+  imagem?: string
+  opcoes: string[]
+  resposta: string
+}
+
+export type Questao =
+  | QuestaoMultiplaEscolha
+  | QuestaoVerdadeiroFalso
+  | QuestaoCompletarLacuna
+  | QuestaoAssociarPares
+  | QuestaoCasoClinico
+  | QuestaoIdentificarImagem
+
+export interface Licao {
+  id: string
+  titulo: string
+  questoes: Questao[]
+}
+
+export interface Unidade {
+  id: string
+  titulo: string
+  descricao: string
+  licoes: Licao[]
+}
+
+export interface Materia {
+  id: string
+  nome: string
+  descricao: string
+  /** Nome do ícone (ver src/components/IconeMateria.tsx) */
+  icone: string
+  ordem: number
+  /** Matéria sem unidades aparece como "em breve" */
+  unidades: Unidade[]
+}
+
+// ============================================================
+// Respostas do usuário
+// ============================================================
+
+/** Alternativa escolhida (texto), verdadeiro/falso, ou mapa esquerda -> direita nos pares */
+export type Resposta = string | boolean | Record<string, string>
+
+// ============================================================
+// Estado do jogador (o que é salvo no localStorage)
+// ============================================================
+
+export type MetaDiaria = 10 | 20 | 30
+export type Tema = 'claro' | 'escuro' | 'sistema'
+
+export interface Usuario {
+  nome: string
+  semestre: number
+  metaDiaria: MetaDiaria
+  criadoEm: number
+}
+
+export interface Ofensiva {
+  atual: number
+  recorde: number
+  /** Último dia (AAAA-MM-DD) em que a meta diária foi batida */
+  ultimoDiaMeta: string | null
+}
+
+export interface ItemRevisao {
+  questaoId: string
+  /** Quantas vezes já acertou na revisão (0 a 3) */
+  etapa: number
+  /** Timestamp a partir do qual a questão volta a aparecer */
+  proximaEm: number
+  adicionadaEm: number
+}
+
+export interface LicaoConcluida {
+  vezes: number
+  melhorPrecisao: number
+  ultimaEm: number
+}
+
+export interface EstatisticaMateria {
+  respondidas: number
+  acertos: number
+}
+
+export type IdConquista =
+  | 'primeira_licao'
+  | 'ofensiva_7'
+  | 'questoes_100'
+  | 'licao_perfeita'
+  | 'unidade_completa'
+
+export type ModoSessao = 'licao' | 'revisao'
+
+export interface ResultadoSessao {
+  modo: ModoSessao
+  titulo: string
+  xp: { base: number; perfeita: number; casos: number; total: number }
+  acertos: number
+  total: number
+  precisao: number
+  tempoMs: number
+  conquistasNovas: IdConquista[]
+  /** Novo nível, se subiu */
+  subiuParaNivel: number | null
+  /** true se esta sessão fez a meta do dia ser batida agora */
+  bateuMetaAgora: boolean
+  ofensiva: number
+}

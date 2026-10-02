@@ -1,0 +1,518 @@
+{
+  "id": "anatomia",
+  "nome": "Anatomia",
+  "descricao": "Ossos, articulações e órgãos do corpo humano",
+  "icone": "osso",
+  "ordem": 1,
+  "unidades": [
+    {
+      "id": "anat-u1",
+      "titulo": "Sistema esquelético",
+      "descricao": "Crânio, coluna vertebral e membro superior",
+      "licoes": [
+        {
+          "id": "anat-u1-l1",
+          "titulo": "Ossos do crânio",
+          "questoes": [
+            {
+              "id": "anat-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual osso forma a fronte (testa)?",
+              "opcoes": ["Frontal", "Parietal", "Occipital", "Temporal"],
+              "resposta": "Frontal",
+              "explicacao": "O osso frontal forma a fronte e a parte superior das órbitas.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O forame magno está localizado no osso temporal.",
+              "resposta": false,
+              "explicacao": "O forame magno fica no osso occipital. Por ele passa a transição entre o bulbo e a medula espinhal.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A sutura ___ une os dois ossos parietais na linha mediana.",
+              "opcoes": ["sagital", "coronal", "lambdoide", "escamosa"],
+              "resposta": "sagital",
+              "explicacao": "A sutura sagital une os parietais. A coronal une o frontal aos parietais, e a lambdoide une os parietais ao occipital.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada osso à sua característica.",
+              "pares": [
+                { "esquerda": "Temporal", "direita": "Meato acústico externo" },
+                { "esquerda": "Esfenoide", "direita": "Sela turca" },
+                { "esquerda": "Etmoide", "direita": "Lâmina cribriforme" },
+                { "esquerda": "Occipital", "direita": "Forame magno" }
+              ],
+              "explicacao": "A sela turca do esfenoide aloja a hipófise. A lâmina cribriforme do etmoide dá passagem aos filetes do nervo olfatório.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual osso do crânio forma uma articulação sinovial móvel?",
+              "opcoes": ["Mandíbula", "Maxila", "Vômer", "Nasal"],
+              "resposta": "Mandíbula",
+              "explicacao": "A mandíbula se articula com o osso temporal pela articulação temporomandibular (ATM), que é sinovial.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q6",
+              "tipo": "identificar_imagem",
+              "enunciado": "A seta indica o osso que forma a proeminência da bochecha. Qual é?",
+              "imagem": "/questoes/placeholder.svg",
+              "opcoes": ["Zigomático", "Maxila", "Nasal", "Lacrimal"],
+              "resposta": "Zigomático",
+              "explicacao": "O zigomático forma a maçã do rosto e, junto com o processo zigomático do temporal, o arco zigomático.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 25 anos leva uma pancada na região do ptério durante um jogo de futebol. Perde a consciência por alguns segundos, acorda bem e, horas depois, fica sonolento e com cefaleia intensa. A TC mostra um hematoma biconvexo.",
+              "enunciado": "Qual vaso provavelmente foi lesado?",
+              "opcoes": ["Artéria meníngea média", "Artéria carótida interna", "Veias ponte", "Artéria cerebral anterior"],
+              "resposta": "Artéria meníngea média",
+              "explicacao": "O ptério é a região mais fina da calota e cobre o ramo anterior da artéria meníngea média. Sua lesão causa hematoma epidural, classicamente com intervalo lúcido.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l1-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A fontanela anterior costuma fechar entre 12 e 24 meses de vida.",
+              "resposta": true,
+              "explicacao": "A fontanela anterior (bregmática) fecha em média por volta dos 18 meses. A posterior fecha bem antes, nos primeiros 2 a 3 meses.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "anat-u1-l2",
+          "titulo": "Coluna vertebral",
+          "questoes": [
+            {
+              "id": "anat-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quantas vértebras cervicais o ser humano tem?",
+              "opcoes": ["7", "5", "8", "12"],
+              "resposta": "7",
+              "explicacao": "São 7 cervicais, 12 torácicas, 5 lombares, 5 sacrais fundidas (sacro) e o cóccix.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada região da coluna à característica típica das suas vértebras.",
+              "pares": [
+                { "esquerda": "Cervical", "direita": "Forame transversário" },
+                { "esquerda": "Torácica", "direita": "Fóveas costais" },
+                { "esquerda": "Lombar", "direita": "Corpo grande e robusto" },
+                { "esquerda": "Sacral", "direita": "Vértebras fundidas" }
+              ],
+              "explicacao": "O forame transversário das cervicais dá passagem à artéria vertebral. As fóveas costais das torácicas se articulam com as costelas.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O atlas (C1) não possui corpo vertebral.",
+              "resposta": true,
+              "explicacao": "O atlas é um anel formado por arcos anterior e posterior e massas laterais. Não tem corpo nem processo espinhoso.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O dente do áxis, também chamado de processo ___, funciona como pivô para a rotação da cabeça.",
+              "opcoes": ["odontoide", "espinhoso", "transverso", "mastoide"],
+              "resposta": "odontoide",
+              "explicacao": "O processo odontoide do áxis (C2) se articula com o arco anterior do atlas na articulação atlantoaxial mediana, que permite a rotação.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em adultos, a medula espinhal normalmente termina em qual nível?",
+              "opcoes": ["Entre L1 e L2", "Em T10", "Entre L4 e L5", "No sacro"],
+              "resposta": "Entre L1 e L2",
+              "explicacao": "O cone medular termina em torno de L1 e L2 no adulto. Abaixo disso ficam as raízes da cauda equina.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com febre alta e rigidez de nuca precisa de uma punção lombar. O médico palpa as cristas ilíacas e traça uma linha imaginária entre elas para escolher o local.",
+              "enunciado": "Qual nível vertebral essa linha costuma cruzar?",
+              "opcoes": ["L4", "T12", "L1", "S2"],
+              "resposta": "L4",
+              "explicacao": "A linha intercristal passa pelo processo espinhoso de L4 ou pelo espaço L4 L5. A punção é feita em L3 L4 ou L4 L5, abaixo do fim da medula.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A lordose é a curvatura normal das regiões torácica e sacral.",
+              "resposta": false,
+              "explicacao": "Torácica e sacral têm cifose (curvaturas primárias). Cervical e lombar têm lordose (curvaturas secundárias).",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na hérnia de disco, qual parte do disco intervertebral costuma extravasar?",
+              "opcoes": ["Núcleo pulposo", "Anel fibroso", "Ligamento amarelo", "Lâmina vertebral"],
+              "resposta": "Núcleo pulposo",
+              "explicacao": "O núcleo pulposo protrui por uma fissura do anel fibroso, geralmente em direção posterolateral, onde pode comprimir uma raiz nervosa.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "anat-u1-l3",
+          "titulo": "Membro superior",
+          "questoes": [
+            {
+              "id": "anat-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quantos ossos formam o carpo?",
+              "opcoes": ["8", "5", "7", "14"],
+              "resposta": "8",
+              "explicacao": "São 8 ossos em duas fileiras. Proximal: escafoide, semilunar, piramidal e pisiforme. Distal: trapézio, trapezoide, capitato e hamato.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clavícula é o único osso que liga o membro superior ao esqueleto axial.",
+              "resposta": true,
+              "explicacao": "A clavícula se articula com o esterno na articulação esternoclavicular. A escápula se prende ao tronco apenas por músculos.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O nervo ___ passa atrás do epicôndilo medial do úmero e causa o famoso choque ao bater o cotovelo.",
+              "opcoes": ["ulnar", "radial", "mediano", "axilar"],
+              "resposta": "ulnar",
+              "explicacao": "O nervo ulnar passa superficialmente no sulco do nervo ulnar, atrás do epicôndilo medial, por isso é facilmente traumatizado.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada osso a uma estrutura que pertence a ele.",
+              "pares": [
+                { "esquerda": "Escápula", "direita": "Acrômio" },
+                { "esquerda": "Úmero", "direita": "Tubérculo maior" },
+                { "esquerda": "Ulna", "direita": "Olécrano" },
+                { "esquerda": "Rádio", "direita": "Tubérculo dorsal (de Lister)" }
+              ],
+              "explicacao": "O olécrano da ulna forma a ponta do cotovelo. O tubérculo maior do úmero recebe a inserção de músculos do manguito rotador.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos cai sobre a mão espalmada. Refere dor no punho, mais intensa à palpação da tabaqueira anatômica. A radiografia inicial não mostra fratura.",
+              "enunciado": "Qual fratura deve ser suspeitada?",
+              "opcoes": ["Fratura do escafoide", "Fratura do semilunar", "Fratura do hamato", "Fratura do pisiforme"],
+              "resposta": "Fratura do escafoide",
+              "explicacao": "É o osso do carpo mais fraturado. Como a irrigação chega de distal para proximal, há risco de necrose avascular, então se imobiliza mesmo com raio X normal.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q6",
+              "tipo": "identificar_imagem",
+              "enunciado": "A seta indica o osso longo do braço que se articula com a escápula. Qual é?",
+              "imagem": "/questoes/placeholder.svg",
+              "opcoes": ["Úmero", "Rádio", "Ulna", "Clavícula"],
+              "resposta": "Úmero",
+              "explicacao": "A cabeça do úmero se articula com a cavidade glenoidal da escápula, formando a articulação do ombro (glenoumeral).",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na posição anatômica, o rádio fica no lado medial do antebraço.",
+              "resposta": false,
+              "explicacao": "O rádio é lateral, do lado do polegar. A ulna é medial, do lado do dedo mínimo.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u1-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "A fratura do colo cirúrgico do úmero pode lesar qual nervo?",
+              "opcoes": ["Axilar", "Radial", "Ulnar", "Mediano"],
+              "resposta": "Axilar",
+              "explicacao": "O nervo axilar contorna o colo cirúrgico junto com a artéria circunflexa posterior do úmero. Já a fratura da diáfise ameaça o nervo radial.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anat-u2",
+      "titulo": "Coração",
+      "descricao": "Câmaras, valvas, irrigação e condução",
+      "licoes": [
+        {
+          "id": "anat-u2-l1",
+          "titulo": "Câmaras e valvas",
+          "questoes": [
+            {
+              "id": "anat-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual valva separa o átrio esquerdo do ventrículo esquerdo?",
+              "opcoes": ["Mitral", "Tricúspide", "Aórtica", "Pulmonar"],
+              "resposta": "Mitral",
+              "explicacao": "A valva mitral (bicúspide) fica entre o átrio e o ventrículo esquerdos. A tricúspide fica do lado direito.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A valva tricúspide fica entre o átrio direito e o ventrículo direito.",
+              "resposta": true,
+              "explicacao": "A tricúspide é a valva atrioventricular direita e tem três cúspides: anterior, posterior e septal.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "As ___ conectam as cúspides das valvas atrioventriculares aos músculos papilares.",
+              "opcoes": ["cordas tendíneas", "trabéculas cárneas", "valvas semilunares", "fossas ovais"],
+              "resposta": "cordas tendíneas",
+              "explicacao": "As cordas tendíneas, tensionadas pelos músculos papilares, impedem que as cúspides se invertam para o átrio durante a sístole.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estrutura à câmara cardíaca onde ela se encontra.",
+              "pares": [
+                { "esquerda": "Fossa oval", "direita": "Átrio direito" },
+                { "esquerda": "Trabécula septomarginal", "direita": "Ventrículo direito" },
+                { "esquerda": "Desembocadura das veias pulmonares", "direita": "Átrio esquerdo" },
+                { "esquerda": "Parede mais espessa", "direita": "Ventrículo esquerdo" }
+              ],
+              "explicacao": "A fossa oval é o resquício do forame oval fetal. A trabécula septomarginal leva o ramo direito do feixe de His ao músculo papilar anterior.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual câmara forma a maior parte da face anterior (esternocostal) do coração?",
+              "opcoes": ["Ventrículo direito", "Ventrículo esquerdo", "Átrio direito", "Átrio esquerdo"],
+              "resposta": "Ventrículo direito",
+              "explicacao": "O ventrículo direito ocupa a maior parte da face esternocostal. O átrio esquerdo forma a maior parte da base, voltada para trás.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos com dispneia aos esforços e história de febre reumática na infância. Ao exame, há um sopro diastólico em ruflar no ápice cardíaco. O ecocardiograma mostra uma valva com abertura reduzida.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": ["Estenose mitral", "Estenose aórtica", "Insuficiência aórtica", "Insuficiência tricúspide"],
+              "resposta": "Estenose mitral",
+              "explicacao": "A febre reumática é a principal causa de estenose mitral. O sopro é diastólico e mais audível no foco mitral, no ápice.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q7",
+              "tipo": "identificar_imagem",
+              "enunciado": "A seta indica a câmara que bombeia sangue para a aorta. Qual é?",
+              "imagem": "/questoes/placeholder.svg",
+              "opcoes": ["Ventrículo esquerdo", "Ventrículo direito", "Átrio esquerdo", "Átrio direito"],
+              "resposta": "Ventrículo esquerdo",
+              "explicacao": "O ventrículo esquerdo ejeta o sangue para a aorta através da valva aórtica, levando-o para a circulação sistêmica.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l1-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As valvas semilunares (aórtica e pulmonar) possuem cordas tendíneas.",
+              "resposta": false,
+              "explicacao": "As semilunares não têm cordas tendíneas nem músculos papilares. Elas fecham passivamente quando o sangue reflui e enche suas válvulas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "anat-u2-l2",
+          "titulo": "Irrigação coronariana",
+          "questoes": [
+            {
+              "id": "anat-u2-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "As artérias coronárias se originam de qual vaso?",
+              "opcoes": ["Aorta ascendente", "Arco da aorta", "Tronco pulmonar", "Aorta descendente"],
+              "resposta": "Aorta ascendente",
+              "explicacao": "As coronárias direita e esquerda saem dos seios da aorta, logo acima da valva aórtica, no início da aorta ascendente.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A artéria interventricular anterior é ramo da coronária direita.",
+              "resposta": false,
+              "explicacao": "A interventricular anterior (descendente anterior) é ramo da coronária esquerda, assim como a circunflexa.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na maioria das pessoas, o nó sinoatrial é irrigado por um ramo da artéria coronária ___.",
+              "opcoes": ["direita", "esquerda", "circunflexa", "marginal"],
+              "resposta": "direita",
+              "explicacao": "Em cerca de 60% das pessoas a artéria do nó sinoatrial vem da coronária direita. Nas demais, vem da circunflexa.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada artéria ao território que ela irriga principalmente.",
+              "pares": [
+                { "esquerda": "Interventricular anterior", "direita": "Parede anterior e septo anterior" },
+                { "esquerda": "Circunflexa", "direita": "Parede lateral do VE" },
+                { "esquerda": "Coronária direita", "direita": "Ventrículo direito e parede inferior" }
+              ],
+              "explicacao": "Na dominância direita, que é a mais comum, a coronária direita também irriga a parede inferior pela interventricular posterior.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O seio coronário drena para qual câmara?",
+              "opcoes": ["Átrio direito", "Átrio esquerdo", "Ventrículo direito", "Ventrículo esquerdo"],
+              "resposta": "Átrio direito",
+              "explicacao": "O seio coronário corre no sulco coronário posterior e desemboca no átrio direito, entre a veia cava inferior e a valva tricúspide.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos, tabagista, com dor torácica em aperto há 1 hora. O ECG mostra supradesnivelamento do segmento ST de V1 a V4.",
+              "enunciado": "Qual artéria provavelmente está ocluída?",
+              "opcoes": ["Interventricular anterior", "Coronária direita", "Circunflexa", "Marginal direita"],
+              "resposta": "Interventricular anterior",
+              "explicacao": "V1 a V4 olham para a parede anterosseptal, irrigada pela interventricular anterior (descendente anterior), ramo da coronária esquerda.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q7",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 65 anos com infarto e supradesnivelamento de ST em DII, DIII e aVF. Evolui com bradicardia e bloqueio atrioventricular.",
+              "enunciado": "Qual artéria é a mais provavelmente acometida?",
+              "opcoes": ["Coronária direita", "Interventricular anterior", "Circunflexa", "Tronco da coronária esquerda"],
+              "resposta": "Coronária direita",
+              "explicacao": "DII, DIII e aVF indicam parede inferior. Na dominância direita, a coronária direita irriga essa parede e, na maioria das pessoas, o nó atrioventricular.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dominância coronária é definida pela artéria que origina a interventricular posterior.",
+              "resposta": true,
+              "explicacao": "Se a interventricular posterior vem da coronária direita, a dominância é direita, o que ocorre em cerca de 70% das pessoas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "anat-u2-l3",
+          "titulo": "Condução e pericárdio",
+          "questoes": [
+            {
+              "id": "anat-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a ordem correta de condução do impulso elétrico no coração?",
+              "opcoes": [
+                "Nó SA, nó AV, feixe de His, ramos, fibras de Purkinje",
+                "Nó AV, nó SA, feixe de His, ramos, fibras de Purkinje",
+                "Nó SA, feixe de His, nó AV, fibras de Purkinje, ramos",
+                "Feixe de His, nó SA, nó AV, ramos, fibras de Purkinje"
+              ],
+              "resposta": "Nó SA, nó AV, feixe de His, ramos, fibras de Purkinje",
+              "explicacao": "O impulso nasce no nó sinoatrial, passa pelos átrios até o nó atrioventricular, desce pelo feixe de His e seus ramos e chega às fibras de Purkinje.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q2",
+              "tipo": "completar_lacuna",
+              "enunciado": "O nó ___ retarda o impulso elétrico, permitindo que os átrios esvaziem antes da contração ventricular.",
+              "opcoes": ["atrioventricular", "sinoatrial", "ventricular", "septal"],
+              "resposta": "atrioventricular",
+              "explicacao": "A condução lenta no nó atrioventricular cria o atraso que aparece no ECG como parte do intervalo PR.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O nó sinoatrial fica na parede do átrio direito, próximo à desembocadura da veia cava superior.",
+              "resposta": true,
+              "explicacao": "Ele fica na parte superior do sulco terminal, na junção da veia cava superior com o átrio direito.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada parte do sistema de condução à sua localização.",
+              "pares": [
+                { "esquerda": "Nó sinoatrial", "direita": "Junção da veia cava superior com o átrio direito" },
+                { "esquerda": "Nó atrioventricular", "direita": "Triângulo de Koch, no septo interatrial" },
+                { "esquerda": "Feixe de His", "direita": "Atravessa o esqueleto fibroso" },
+                { "esquerda": "Fibras de Purkinje", "direita": "Subendocárdio dos ventrículos" }
+              ],
+              "explicacao": "O esqueleto fibroso isola eletricamente átrios e ventrículos. O feixe de His é a única via normal de passagem do impulso entre eles.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Inferiormente, o pericárdio fibroso se funde com qual estrutura?",
+              "opcoes": ["Tendão central do diafragma", "Esterno", "Esôfago", "Pleura visceral"],
+              "resposta": "Tendão central do diafragma",
+              "explicacao": "O pericárdio fibroso se funde ao tendão central do diafragma e à adventícia dos grandes vasos, o que limita a distensão do coração.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 22 anos chega ao pronto-socorro após uma facada no tórax. Está hipotenso, com turgência jugular e bulhas cardíacas abafadas.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": ["Tamponamento cardíaco", "Choque hipovolêmico", "Infarto agudo do miocárdio", "Contusão pulmonar"],
+              "resposta": "Tamponamento cardíaco",
+              "explicacao": "Hipotensão, turgência jugular e bulhas abafadas formam a tríade de Beck. O sangue no saco pericárdico, que é pouco distensível, comprime o coração.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cavidade pericárdica fica entre o pericárdio fibroso e a lâmina parietal do pericárdio seroso.",
+              "resposta": false,
+              "explicacao": "A cavidade pericárdica fica entre as lâminas parietal e visceral do pericárdio seroso. O fibroso é aderido à lâmina parietal.",
+              "revisado": false
+            },
+            {
+              "id": "anat-u2-l3-q8",
+              "tipo": "identificar_imagem",
+              "enunciado": "A seta indica a estrutura onde o impulso cardíaco normalmente se inicia. Qual é?",
+              "imagem": "/questoes/placeholder.svg",
+              "opcoes": ["Nó sinoatrial", "Nó atrioventricular", "Feixe de His", "Ramo direito"],
+              "resposta": "Nó sinoatrial",
+              "explicacao": "O nó sinoatrial tem a maior frequência de despolarização espontânea, por isso comanda o ritmo do coração.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

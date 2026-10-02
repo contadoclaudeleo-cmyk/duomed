@@ -1,0 +1,561 @@
+{
+  "id": "farmacologia",
+  "nome": "Farmacologia",
+  "descricao": "Como os fármacos agem no corpo e o que o corpo faz com eles",
+  "icone": "pilula",
+  "ordem": 4,
+  "unidades": [
+    {
+      "id": "farm-u1",
+      "titulo": "Farmacologia geral",
+      "descricao": "Farmacocinética e farmacodinâmica",
+      "licoes": [
+        {
+          "id": "farm-u1-l1",
+          "titulo": "Absorção e distribuição",
+          "questoes": [
+            {
+              "id": "farm-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual via de administração tem, por definição, biodisponibilidade de 100%?",
+              "opcoes": ["Intravenosa", "Oral", "Sublingual", "Intramuscular"],
+              "resposta": "Intravenosa",
+              "explicacao": "Na via intravenosa toda a dose chega diretamente à circulação sistêmica, sem etapa de absorção.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O efeito de primeira passagem hepática reduz a biodisponibilidade de fármacos dados por via oral.",
+              "resposta": true,
+              "explicacao": "Após a absorção intestinal, o fármaco passa pela veia porta e pode ser metabolizado no fígado antes de chegar à circulação sistêmica.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A via ___ evita o metabolismo de primeira passagem, pois a drenagem venosa segue direto para a veia cava superior.",
+              "opcoes": ["sublingual", "oral", "por sonda nasogástrica", "por sonda nasoenteral"],
+              "resposta": "sublingual",
+              "explicacao": "É por isso que a nitroglicerina sublingual age em minutos, enquanto por via oral boa parte seria inativada no fígado.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada conceito à sua definição.",
+              "pares": [
+                { "esquerda": "Biodisponibilidade", "direita": "Fração da dose que chega inalterada à circulação" },
+                { "esquerda": "Volume de distribuição", "direita": "Relação entre a quantidade no corpo e a concentração plasmática" },
+                { "esquerda": "Meia-vida", "direita": "Tempo para a concentração plasmática cair pela metade" },
+                { "esquerda": "Clearance", "direita": "Volume de plasma depurado por unidade de tempo" }
+              ],
+              "explicacao": "Esses quatro parâmetros são a base da farmacocinética e ajudam a calcular dose de ataque, dose de manutenção e intervalo entre doses.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Fármacos ácidos fracos, como o ácido acetilsalicílico, ligam-se principalmente a qual proteína plasmática?",
+              "opcoes": ["Albumina", "Alfa-1 glicoproteína ácida", "Hemoglobina", "Transferrina"],
+              "resposta": "Albumina",
+              "explicacao": "Ácidos fracos se ligam sobretudo à albumina. Bases fracas tendem a se ligar à alfa-1 glicoproteína ácida.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q6",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A fração do fármaco ligada à albumina é a que exerce o efeito farmacológico.",
+              "resposta": false,
+              "explicacao": "Somente a fração livre atravessa membranas, chega ao receptor e é metabolizada ou excretada. A fração ligada funciona como reservatório.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 80 anos, desnutrida, com albumina sérica muito baixa, usa fenitoína há anos na mesma dose. Nas últimas semanas passou a apresentar ataxia e nistagmo.",
+              "enunciado": "Qual é a explicação mais provável?",
+              "opcoes": [
+                "Aumento da fração livre da fenitoína",
+                "Redução da absorção intestinal",
+                "Indução das enzimas hepáticas",
+                "Aumento da excreção renal"
+              ],
+              "resposta": "Aumento da fração livre da fenitoína",
+              "explicacao": "A fenitoína é muito ligada à albumina. Com hipoalbuminemia, a fração livre aumenta e pode causar toxicidade mesmo com nível total dentro da faixa.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um fármaco com volume de distribuição muito alto provavelmente:",
+              "opcoes": [
+                "Se acumula nos tecidos",
+                "Fica restrito ao plasma",
+                "É muito ligado à albumina",
+                "Não atravessa membranas"
+              ],
+              "resposta": "Se acumula nos tecidos",
+              "explicacao": "Vd alto indica distribuição extensa para os tecidos, comum em fármacos lipofílicos. Fármacos muito ligados à albumina costumam ter Vd baixo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-u1-l2",
+          "titulo": "Metabolismo e excreção",
+          "questoes": [
+            {
+              "id": "farm-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual família de enzimas é a principal responsável pelas reações de fase I no fígado?",
+              "opcoes": ["Citocromo P450", "Glicuroniltransferases", "Monoamina oxidase", "Colinesterases"],
+              "resposta": "Citocromo P450",
+              "explicacao": "As enzimas do citocromo P450 fazem reações de oxidação, redução e hidrólise. A CYP3A4 é a que metaboliza o maior número de fármacos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As reações de fase II geralmente tornam o fármaco mais lipossolúvel.",
+              "resposta": false,
+              "explicacao": "A conjugação de fase II (glicuronidação, sulfatação, acetilação) torna a molécula mais hidrossolúvel, o que facilita a excreção.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q3",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco à característica do seu metabolismo.",
+              "pares": [
+                { "esquerda": "Rifampicina", "direita": "Indutor potente do citocromo P450" },
+                { "esquerda": "Cetoconazol", "direita": "Inibidor da CYP3A4" },
+                { "esquerda": "Isoniazida", "direita": "Acetiladores lentos e rápidos" },
+                { "esquerda": "Paracetamol", "direita": "Metabólito tóxico neutralizado pela glutationa" }
+              ],
+              "explicacao": "Indutores aceleram o metabolismo de outros fármacos e inibidores o reduzem. A velocidade de acetilação da isoniazida varia geneticamente.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Em doses usuais, o etanol é eliminado por cinética de ___, ou seja, uma quantidade constante por hora.",
+              "opcoes": ["ordem zero", "primeira ordem", "segunda ordem", "ordem mista"],
+              "resposta": "ordem zero",
+              "explicacao": "Na ordem zero as enzimas estão saturadas e a eliminação é constante. Na primeira ordem, elimina-se uma fração constante por unidade de tempo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Com doses repetidas, após quantas meias-vidas o fármaco atinge aproximadamente o estado de equilíbrio?",
+              "opcoes": ["4 a 5", "1", "2", "10"],
+              "resposta": "4 a 5",
+              "explicacao": "Após 4 a 5 meias-vidas a concentração chega a cerca de 94% a 97% do equilíbrio. O mesmo vale para a eliminação após suspender o fármaco.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em uso de varfarina, com INR estável, inicia rifampicina para tratar tuberculose. Duas semanas depois, o INR está abaixo da faixa terapêutica.",
+              "enunciado": "O que explica essa mudança?",
+              "opcoes": [
+                "A rifampicina induziu o metabolismo da varfarina",
+                "A rifampicina inibiu o metabolismo da varfarina",
+                "A rifampicina deslocou a varfarina da albumina",
+                "A rifampicina aumentou a absorção de vitamina K"
+              ],
+              "resposta": "A rifampicina induziu o metabolismo da varfarina",
+              "explicacao": "A rifampicina induz enzimas do citocromo P450, acelerando o metabolismo da varfarina e reduzindo seu efeito anticoagulante.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A insuficiência renal pode exigir ajuste de dose de fármacos eliminados pelos rins, como a gentamicina.",
+              "resposta": true,
+              "explicacao": "Aminoglicosídeos são eliminados por filtração glomerular. Na insuficiência renal eles se acumulam e aumentam o risco de nefro e ototoxicidade.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente ingeriu uma grande quantidade de comprimidos de paracetamol há 4 horas. Está assintomática, mas a concentração sérica está acima da linha de tratamento do nomograma.",
+              "enunciado": "Qual antídoto deve ser iniciado?",
+              "opcoes": ["N-acetilcisteína", "Naloxona", "Flumazenil", "Atropina"],
+              "resposta": "N-acetilcisteína",
+              "explicacao": "A N-acetilcisteína repõe a glutationa, que neutraliza o NAPQI, metabólito hepatotóxico do paracetamol. Funciona melhor nas primeiras 8 horas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-u1-l3",
+          "titulo": "Farmacodinâmica",
+          "questoes": [
+            {
+              "id": "farm-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um fármaco que se liga ao receptor e produz a resposta máxima possível é um:",
+              "opcoes": ["Agonista pleno", "Agonista parcial", "Antagonista competitivo", "Agonista inverso"],
+              "resposta": "Agonista pleno",
+              "explicacao": "O agonista pleno tem eficácia máxima. O parcial, mesmo ocupando todos os receptores, produz uma resposta menor.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um antagonista competitivo reduz o efeito máximo do agonista, mesmo com doses altas de agonista.",
+              "resposta": false,
+              "explicacao": "O antagonismo competitivo é superável. A curva do agonista se desloca para a direita, mas o efeito máximo é mantido com doses maiores.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a concentração que produz 50% do efeito máximo e serve como medida de potência.",
+              "opcoes": ["CE50", "DL50", "Emax", "janela terapêutica"],
+              "resposta": "CE50",
+              "explicacao": "Quanto menor a CE50, mais potente é o fármaco. A DL50 é a dose letal para 50% dos animais em estudos experimentais.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada termo à sua definição.",
+              "pares": [
+                { "esquerda": "Potência", "direita": "Quantidade necessária para produzir um efeito" },
+                { "esquerda": "Eficácia", "direita": "Efeito máximo que o fármaco consegue produzir" },
+                { "esquerda": "Afinidade", "direita": "Capacidade de se ligar ao receptor" },
+                { "esquerda": "Índice terapêutico", "direita": "Razão entre dose tóxica e dose eficaz" }
+              ],
+              "explicacao": "Um fármaco pode ser mais potente que outro e ainda assim menos eficaz. Na prática clínica, eficácia costuma importar mais que potência.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "A naloxona reverte a depressão respiratória por opioides porque é um:",
+              "opcoes": [
+                "Antagonista competitivo dos receptores opioides",
+                "Agonista parcial dos receptores opioides",
+                "Antagonista fisiológico",
+                "Inibidor do metabolismo dos opioides"
+              ],
+              "resposta": "Antagonista competitivo dos receptores opioides",
+              "explicacao": "A naloxona desloca o opioide do receptor mu. Como sua meia-vida é curta, pode ser preciso repetir a dose.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q6",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Fármacos com índice terapêutico estreito, como digoxina e lítio, costumam exigir monitorização do nível sérico.",
+              "resposta": true,
+              "explicacao": "Quando a dose tóxica é próxima da eficaz, pequenas variações de nível podem causar intoxicação.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em uso crônico de morfina para dor oncológica recebe uma dose de buprenorfina. Pouco depois, apresenta piora da dor, sudorese, bocejos e piloereção.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "A buprenorfina é agonista parcial e deslocou a morfina",
+                "A buprenorfina é um antagonista puro",
+                "Houve interação no citocromo P450",
+                "Houve tolerância aguda à morfina"
+              ],
+              "resposta": "A buprenorfina é agonista parcial e deslocou a morfina",
+              "explicacao": "A buprenorfina tem alta afinidade e baixa eficácia no receptor mu. Ao deslocar um agonista pleno, reduz o efeito e precipita abstinência.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u1-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Receptores acoplados à proteína G têm quantos domínios transmembrana?",
+              "opcoes": ["7", "4", "12", "1"],
+              "resposta": "7",
+              "explicacao": "São os receptores de sete domínios transmembrana, a maior família de alvos de fármacos, como os adrenérgicos e os muscarínicos.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm-u2",
+      "titulo": "Sistema nervoso autônomo",
+      "descricao": "Colinérgicos, anticolinérgicos e adrenérgicos",
+      "licoes": [
+        {
+          "id": "farm-u2-l1",
+          "titulo": "Colinérgicos",
+          "questoes": [
+            {
+              "id": "farm-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual neurotransmissor é liberado pelas fibras pós-ganglionares parassimpáticas?",
+              "opcoes": ["Acetilcolina", "Noradrenalina", "Dopamina", "Serotonina"],
+              "resposta": "Acetilcolina",
+              "explicacao": "Todas as fibras pré-ganglionares e as pós-ganglionares parassimpáticas liberam acetilcolina. As pós-ganglionares simpáticas liberam, em geral, noradrenalina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A neostigmina é um inibidor da acetilcolinesterase usado para reverter o bloqueio neuromuscular não despolarizante.",
+              "resposta": true,
+              "explicacao": "Ao inibir a acetilcolinesterase, aumenta a acetilcolina na placa motora, que compete com o bloqueador. Costuma ser associada à atropina ou ao glicopirrolato.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A pilocarpina, agonista ___, é usada no glaucoma por causar miose e facilitar a drenagem do humor aquoso.",
+              "opcoes": ["muscarínico", "nicotínico", "beta-adrenérgico", "dopaminérgico"],
+              "resposta": "muscarínico",
+              "explicacao": "A pilocarpina contrai o músculo ciliar e o esfíncter da pupila, abrindo a malha trabecular e aumentando a drenagem do humor aquoso.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco colinérgico ao seu uso clínico.",
+              "pares": [
+                { "esquerda": "Pilocarpina", "direita": "Glaucoma" },
+                { "esquerda": "Neostigmina", "direita": "Reversão de bloqueio neuromuscular" },
+                { "esquerda": "Piridostigmina", "direita": "Miastenia gravis" },
+                { "esquerda": "Betanecol", "direita": "Retenção urinária não obstrutiva" }
+              ],
+              "explicacao": "A piridostigmina tem ação mais longa que a neostigmina, por isso é preferida no tratamento oral da miastenia gravis.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Agricultor de 40 anos chega após aplicar inseticida organofosforado sem proteção. Apresenta miose, sialorreia, broncorreia, bradicardia e fasciculações.",
+              "enunciado": "Qual é o tratamento específico inicial?",
+              "opcoes": [
+                "Atropina associada à pralidoxima",
+                "Fisostigmina",
+                "Neostigmina",
+                "Naloxona"
+              ],
+              "resposta": "Atropina associada à pralidoxima",
+              "explicacao": "A atropina bloqueia os efeitos muscarínicos, mas não as fasciculações. A pralidoxima reativa a acetilcolinesterase se for dada antes do envelhecimento da enzima.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual efeito é esperado da estimulação de receptores muscarínicos?",
+              "opcoes": ["Bradicardia", "Midríase", "Broncodilatação", "Retenção urinária"],
+              "resposta": "Bradicardia",
+              "explicacao": "Receptores M2 no nó sinoatrial reduzem a frequência cardíaca. Midríase, broncodilatação e retenção urinária são efeitos de bloqueio muscarínico.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os receptores nicotínicos são acoplados à proteína G.",
+              "resposta": false,
+              "explicacao": "Receptores nicotínicos são canais iônicos ativados por ligante. Os muscarínicos é que são acoplados à proteína G.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes sinais não faz parte de uma crise colinérgica?",
+              "opcoes": ["Midríase", "Diarreia", "Lacrimejamento", "Sudorese"],
+              "resposta": "Midríase",
+              "explicacao": "O excesso colinérgico causa miose. Diarreia, lacrimejamento, sudorese, salivação e broncorreia são típicos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-u2-l2",
+          "titulo": "Anticolinérgicos",
+          "questoes": [
+            {
+              "id": "farm-u2-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "A atropina age como:",
+              "opcoes": [
+                "Antagonista muscarínico",
+                "Agonista muscarínico",
+                "Inibidor da acetilcolinesterase",
+                "Antagonista nicotínico"
+              ],
+              "resposta": "Antagonista muscarínico",
+              "explicacao": "A atropina bloqueia competitivamente os receptores muscarínicos. Por isso aumenta a frequência cardíaca e reduz secreções.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Anticolinérgicos costumam causar diarreia e aumento da salivação.",
+              "resposta": false,
+              "explicacao": "É o contrário: causam boca seca, constipação e retenção urinária, porque bloqueiam a ação parassimpática.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um antagonista muscarínico inalatório de longa ação usado na DPOC.",
+              "opcoes": ["tiotrópio", "salbutamol", "budesonida", "montelucaste"],
+              "resposta": "tiotrópio",
+              "explicacao": "O tiotrópio bloqueia receptores M3 da musculatura brônquica, causando broncodilatação com uma dose ao dia.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada anticolinérgico ao seu uso clínico.",
+              "pares": [
+                { "esquerda": "Atropina", "direita": "Bradicardia sintomática" },
+                { "esquerda": "Escopolamina", "direita": "Cinetose" },
+                { "esquerda": "Ipratrópio", "direita": "Broncoespasmo" },
+                { "esquerda": "Oxibutinina", "direita": "Bexiga hiperativa" }
+              ],
+              "explicacao": "Todos bloqueiam receptores muscarínicos. O que muda é o local de ação e a farmacocinética de cada um.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q5",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos ingeriu comprimidos da avó. Está agitada e confusa, com pele quente, seca e avermelhada, pupilas dilatadas, taquicardia e bexiga palpável.",
+              "enunciado": "Qual classe de substância provavelmente causou o quadro?",
+              "opcoes": ["Anticolinérgico", "Organofosforado", "Opioide", "Benzodiazepínico"],
+              "resposta": "Anticolinérgico",
+              "explicacao": "É a síndrome anticolinérgica: quente, seco, vermelho, com midríase, taquicardia, retenção urinária e delirium.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antídoto pode ser usado na intoxicação anticolinérgica grave com delirium?",
+              "opcoes": ["Fisostigmina", "Atropina", "Naloxona", "Flumazenil"],
+              "resposta": "Fisostigmina",
+              "explicacao": "A fisostigmina inibe a acetilcolinesterase e, por ser uma amina terciária, atravessa a barreira hematoencefálica, ao contrário da neostigmina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antagonistas muscarínicos podem precipitar crise de glaucoma de ângulo fechado.",
+              "resposta": true,
+              "explicacao": "A midríase pode estreitar o ângulo iridocorneano e bloquear a drenagem do humor aquoso, elevando a pressão intraocular.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "A succinilcolina é um bloqueador neuromuscular de qual tipo?",
+              "opcoes": ["Despolarizante", "Não despolarizante", "Antagonista muscarínico", "Inibidor da acetilcolinesterase"],
+              "resposta": "Despolarizante",
+              "explicacao": "Ela age como agonista nicotínico na placa motora, causando despolarização persistente, com fasciculações seguidas de paralisia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-u2-l3",
+          "titulo": "Adrenérgicos",
+          "questoes": [
+            {
+              "id": "farm-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual receptor, quando estimulado, causa broncodilatação?",
+              "opcoes": ["β2", "α1", "β1", "α2"],
+              "resposta": "β2",
+              "explicacao": "Receptores β2 relaxam a musculatura lisa brônquica. É o alvo do salbutamol e do formoterol.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O propranolol é um betabloqueador não seletivo e pode precipitar broncoespasmo em asmáticos.",
+              "resposta": true,
+              "explicacao": "Ao bloquear também os receptores β2 dos brônquios, o propranolol pode desencadear broncoespasmo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ por via intramuscular é o tratamento de primeira linha da anafilaxia.",
+              "opcoes": ["adrenalina", "noradrenalina", "dopamina", "dobutamina"],
+              "resposta": "adrenalina",
+              "explicacao": "A adrenalina age em α1 (vasoconstrição), β1 (aumenta o débito cardíaco) e β2 (broncodilatação). Não deve ser atrasada.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco à sua ação principal.",
+              "pares": [
+                { "esquerda": "Salbutamol", "direita": "Agonista β2" },
+                { "esquerda": "Fenilefrina", "direita": "Agonista α1" },
+                { "esquerda": "Clonidina", "direita": "Agonista α2 central" },
+                { "esquerda": "Metoprolol", "direita": "Antagonista β1 seletivo" }
+              ],
+              "explicacao": "A seletividade define o uso: o salbutamol dilata brônquios, a fenilefrina contrai vasos e o metoprolol reduz a frequência cardíaca.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual efeito resulta da estimulação dos receptores β1 do coração?",
+              "opcoes": [
+                "Aumento da frequência e da contratilidade",
+                "Redução da frequência cardíaca",
+                "Vasoconstrição coronariana",
+                "Broncodilatação"
+              ],
+              "resposta": "Aumento da frequência e da contratilidade",
+              "explicacao": "O β1 tem efeito cronotrópico e inotrópico positivo. É o alvo da dobutamina e dos betabloqueadores cardiosseletivos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos, hipertenso, toma a primeira dose de prazosina à tarde. Ao se levantar do sofá, sente tontura intensa e quase desmaia.",
+              "enunciado": "O que explica esse efeito?",
+              "opcoes": [
+                "Hipotensão postural por bloqueio α1",
+                "Bradicardia por bloqueio β1",
+                "Hipoglicemia por bloqueio β2",
+                "Broncoespasmo por bloqueio β2"
+              ],
+              "resposta": "Hipotensão postural por bloqueio α1",
+              "explicacao": "É o efeito de primeira dose dos bloqueadores α1. Por isso a primeira dose é baixa e tomada ao deitar.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diabético em uso de insulina começa a tomar propranolol. Na consulta seguinte, conta que deixou de perceber quando a glicose fica baixa.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "O betabloqueador mascara os sinais adrenérgicos da hipoglicemia",
+                "O propranolol aumenta a absorção da insulina",
+                "O propranolol estimula a secreção de glucagon",
+                "O propranolol causa hiperglicemia rebote"
+              ],
+              "resposta": "O betabloqueador mascara os sinais adrenérgicos da hipoglicemia",
+              "explicacao": "Taquicardia, tremor e palpitações são mediados por receptores β e ficam atenuados. A sudorese, mediada por via colinérgica, costuma persistir.",
+              "revisado": false
+            },
+            {
+              "id": "farm-u2-l3-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clonidina reduz a pressão arterial por bloquear receptores β1 no coração.",
+              "resposta": false,
+              "explicacao": "A clonidina é agonista α2 central. Ela reduz o tônus simpático a partir do tronco encefálico. A suspensão abrupta pode causar hipertensão rebote.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+/* Modo escuro controlado pela classe "dark" no <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Cores fixas da marca (iguais ao logo) */
+@theme {
+  --font-sans: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --color-agua: #14b8a6;
+  --color-agua-escura: #0f9488;
+  --color-agua-texto: #0f766e;
+  --color-menta: #8ee5cf;
+  --color-laranja: #f59e0b;
+  --color-laranja-escura: #d97706;
+  --color-tinta: #1f2937;
+  --color-erro: #ef4444;
+  --color-erro-escura: #dc2626;
+}
+
+/* Cores que mudam entre claro e escuro */
+:root {
+  --fundo: #fafaf9;
+  --superficie: #ffffff;
+  --superficie-2: #f5f5f4;
+  --borda: #e7e5e4;
+  --borda-forte: #d6d3d1;
+  --texto: #1f2937;
+  --texto-suave: #6b7280;
+  --apagado: #e5e7eb;
+  --apagado-sombra: #cfd2d6;
+  --apagado-texto: #9ca3af;
+  --acerto-fundo: #d9f6ee;
+  --acerto-texto: #0f766e;
+  --erro-fundo: #fde8e8;
+  --erro-texto: #b91c1c;
+  color-scheme: light;
+}
+
+.dark {
+  --fundo: #141817;
+  --superficie: #1c2120;
+  --superficie-2: #232928;
+  --borda: #2d3433;
+  --borda-forte: #3a4241;
+  --texto: #eef1f0;
+  --texto-suave: #9aa3a1;
+  --apagado: #2d3433;
+  --apagado-sombra: #232928;
+  --apagado-texto: #6b7472;
+  --acerto-fundo: #143a33;
+  --acerto-texto: #8ee5cf;
+  --erro-fundo: #3d1f1f;
+  --erro-texto: #fca5a5;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-fundo: var(--fundo);
+  --color-superficie: var(--superficie);
+  --color-superficie-2: var(--superficie-2);
+  --color-borda: var(--borda);
+  --color-borda-forte: var(--borda-forte);
+  --color-texto: var(--texto);
+  --color-texto-suave: var(--texto-suave);
+  --color-apagado: var(--apagado);
+  --color-apagado-sombra: var(--apagado-sombra);
+  --color-apagado-texto: var(--apagado-texto);
+  --color-acerto-fundo: var(--acerto-fundo);
+  --color-acerto-texto: var(--acerto-texto);
+  --color-erro-fundo: var(--erro-fundo);
+  --color-erro-texto: var(--erro-texto);
+}
+
+html,
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:disabled {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-agua) 60%, transparent);
+  outline-offset: 2px;
+}
+
+/* Espaço para a barra de navegação inferior em celulares com "notch" */
+.pb-seguro {
+  padding-bottom: env(safe-area-inset-bottom);
+}
