@@ -1820,6 +1820,1939 @@
           ]
         }
       ]
+    },
+    {
+      "id": "farm-d1",
+      "titulo": "Farmacocinética clínica",
+      "descricao": "Cálculos de dose, interações e populações especiais",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "farm-d1-l1",
+          "titulo": "Cálculos de dose",
+          "questoes": [
+            {
+              "id": "farm-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente de 70 kg precisa atingir rapidamente concentração plasmática de 10 mg/L de um fármaco com volume de distribuição de 0,5 L/kg e biodisponibilidade de 100%.",
+              "enunciado": "Qual é a dose de ataque?",
+              "opcoes": [
+                "350 mg",
+                "35 mg",
+                "700 mg",
+                "3.500 mg"
+              ],
+              "resposta": "350 mg",
+              "explicacao": "Dose de ataque = concentração alvo × volume de distribuição = 10 mg/L × 35 L = 350 mg.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "A dose de manutenção de um fármaco depende principalmente de qual parâmetro?",
+              "opcoes": [
+                "Clearance",
+                "Volume de distribuição",
+                "Apenas a meia-vida",
+                "Apenas a ligação às proteínas"
+              ],
+              "resposta": "Clearance",
+              "explicacao": "Para manter a concentração, é preciso repor o que é eliminado, e a eliminação depende do clearance.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q3",
+              "tipo": "caso_clinico",
+              "caso": "Um fármaco tem meia-vida de 8 horas e é dado a cada 8 horas, sem dose de ataque.",
+              "enunciado": "Em quanto tempo ele chega ao estado de equilíbrio?",
+              "opcoes": [
+                "Entre 32 e 40 horas",
+                "8 horas",
+                "4 horas",
+                "1 semana"
+              ],
+              "resposta": "Entre 32 e 40 horas",
+              "explicacao": "São necessárias de 4 a 5 meias-vidas. A dose de ataque é usada quando não dá para esperar.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fórmula ao parâmetro que ela calcula.",
+              "pares": [
+                {
+                  "esquerda": "Dose de ataque",
+                  "direita": "Concentração alvo × volume de distribuição"
+                },
+                {
+                  "esquerda": "Dose de manutenção por hora",
+                  "direita": "Concentração alvo × clearance"
+                },
+                {
+                  "esquerda": "Meia-vida",
+                  "direita": "0,693 × volume de distribuição / clearance"
+                },
+                {
+                  "esquerda": "Clearance",
+                  "direita": "Velocidade de eliminação / concentração no plasma"
+                }
+              ],
+              "explicacao": "Note que a meia-vida depende tanto do volume quanto do clearance.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa digoxina desenvolve insuficiência renal, e o clearance do fármaco cai pela metade.",
+              "enunciado": "O que acontece com a meia-vida e o que fazer com a dose de manutenção?",
+              "opcoes": [
+                "A meia-vida dobra; reduzir a dose de manutenção pela metade",
+                "A meia-vida cai; aumentar a dose",
+                "Nada muda",
+                "Dobrar a dose de ataque"
+              ],
+              "resposta": "A meia-vida dobra; reduzir a dose de manutenção pela metade",
+              "explicacao": "O volume de distribuição não mudou, então só a manutenção precisa de ajuste.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q6",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na cinética de ordem zero, como a da fenitoína em doses altas, um pequeno aumento de dose pode causar um grande aumento da concentração.",
+              "resposta": true,
+              "explicacao": "Com as enzimas saturadas, o excesso não consegue ser eliminado e se acumula.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q7",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com função renal normal tem nível de vancomicina abaixo do alvo após a 4ª dose.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Aumentar a dose ou encurtar o intervalo, guiando-se pelo nível ou pela AUC",
+                "Suspender o antibiótico",
+                "Trocar por vancomicina oral",
+                "Parar de monitorar"
+              ],
+              "resposta": "Aumentar a dose ou encurtar o intervalo, guiando-se pelo nível ou pela AUC",
+              "explicacao": "Doses subterapêuticas favorecem falha do tratamento e resistência.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A fração do fármaco eliminada sem alteração pelo rim ajuda a prever se a dose precisará de ajuste na ___ renal.",
+              "opcoes": [
+                "insuficiência",
+                "hipertrofia",
+                "litíase",
+                "infecção"
+              ],
+              "resposta": "insuficiência",
+              "explicacao": "Fármacos eliminados principalmente pelo fígado costumam dispensar esse ajuste.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d1-l2",
+          "titulo": "Interações medicamentosas",
+          "questoes": [
+            {
+              "id": "farm-d1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco ao seu efeito no citocromo P450.",
+              "pares": [
+                {
+                  "esquerda": "Claritromicina",
+                  "direita": "Inibidor da CYP3A4"
+                },
+                {
+                  "esquerda": "Rifampicina",
+                  "direita": "Indutor potente de várias enzimas"
+                },
+                {
+                  "esquerda": "Fluoxetina",
+                  "direita": "Inibidor da CYP2D6"
+                },
+                {
+                  "esquerda": "Carbamazepina",
+                  "direita": "Indutor, inclusive do próprio metabolismo"
+                }
+              ],
+              "explicacao": "Inibidores aumentam o nível de outros remédios; indutores reduzem.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa sinvastatina começa claritromicina para pneumonia e passa a ter dor muscular forte e urina escura.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "A inibição da CYP3A4 aumenta a sinvastatina e causa rabdomiólise",
+                "Indução enzimática",
+                "Interação apenas no rim",
+                "Alergia"
+              ],
+              "resposta": "A inibição da CYP3A4 aumenta a sinvastatina e causa rabdomiólise",
+              "explicacao": "Rosuvastatina e pravastatina dependem menos da CYP3A4.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q3",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de mama em uso de tamoxifeno passa a usar paroxetina para as ondas de calor.",
+              "enunciado": "Qual é o problema?",
+              "opcoes": [
+                "A paroxetina inibe a CYP2D6 e reduz a formação do metabólito ativo do tamoxifeno",
+                "A paroxetina torna o tamoxifeno tóxico",
+                "Não há problema",
+                "A paroxetina causa câncer"
+              ],
+              "resposta": "A paroxetina inibe a CYP2D6 e reduz a formação do metabólito ativo do tamoxifeno",
+              "explicacao": "A venlafaxina é uma opção com menos interação.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q4",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bebida inibe a CYP3A4 do intestino e pode aumentar o nível de alguns remédios?",
+              "opcoes": [
+                "Suco de toranja (grapefruit)",
+                "Leite",
+                "Água de coco",
+                "Chá de camomila"
+              ],
+              "resposta": "Suco de toranja (grapefruit)",
+              "explicacao": "O efeito pode durar mais de um dia após o consumo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Usar ao mesmo tempo IECA, diurético e anti-inflamatório aumenta muito o risco de lesão renal aguda.",
+              "resposta": true,
+              "explicacao": "É chamado de triplo golpe: cada um reduz uma defesa da filtração do rim.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa varfarina começa metronidazol e passa a ter sangramento na gengiva, com INR de 7.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Inibição do metabolismo da varfarina",
+                "Indução enzimática",
+                "Deslocamento da vitamina K",
+                "Mais absorção de vitamina K"
+              ],
+              "resposta": "Inibição do metabolismo da varfarina",
+              "explicacao": "Metronidazol, fluconazol e amiodarona são inibidores clássicos que elevam o INR.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "Associar dois fármacos que prolongam o intervalo ___ aumenta o risco de torsades de pointes.",
+              "opcoes": [
+                "QT",
+                "PR",
+                "QRS",
+                "ST"
+              ],
+              "resposta": "QT",
+              "explicacao": "Hipocalemia e hipomagnesemia aumentam ainda mais o risco.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa clopidogrel após stent e começa omeprazol.",
+              "enunciado": "Qual é a preocupação e uma alternativa?",
+              "opcoes": [
+                "O omeprazol inibe a CYP2C19 e reduz a ativação do clopidogrel; preferir pantoprazol",
+                "Não há preocupação",
+                "O omeprazol causa sangramento direto",
+                "Trocar o clopidogrel por AAS isolado"
+              ],
+              "resposta": "O omeprazol inibe a CYP2C19 e reduz a ativação do clopidogrel; preferir pantoprazol",
+              "explicacao": "O clopidogrel é um pró-fármaco que precisa ser ativado no fígado.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d1-l3",
+          "titulo": "Populações especiais",
+          "questoes": [
+            {
+              "id": "farm-d1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual alteração farmacocinética é típica do idoso?",
+              "opcoes": [
+                "Menos massa magra e água, com maior volume de distribuição dos fármacos lipofílicos",
+                "Aumento da função renal",
+                "Aumento da massa muscular",
+                "Metabolismo do fígado mais rápido"
+              ],
+              "resposta": "Menos massa magra e água, com maior volume de distribuição dos fármacos lipofílicos",
+              "explicacao": "Benzodiazepínicos lipofílicos ficam mais tempo no corpo do idoso.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco ao seu risco na gestação.",
+              "pares": [
+                {
+                  "esquerda": "Varfarina",
+                  "direita": "Embriopatia no primeiro trimestre"
+                },
+                {
+                  "esquerda": "Isotretinoína",
+                  "direita": "Malformações graves"
+                },
+                {
+                  "esquerda": "IECA",
+                  "direita": "Lesão renal do feto no 2º e 3º trimestres"
+                },
+                {
+                  "esquerda": "Tetraciclinas",
+                  "direita": "Manchas nos dentes e alteração óssea"
+                }
+              ],
+              "explicacao": "Isotretinoína exige dois métodos contraceptivos e teste de gravidez.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q3",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 82 anos com demência leve começa a usar difenidramina para dormir e fica confusa, com retenção urinária.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "Efeito anticolinérgico de um fármaco listado nos critérios de Beers",
+                "Piora natural da demência",
+                "Infecção urinária, obrigatoriamente",
+                "Hipoglicemia"
+              ],
+              "resposta": "Efeito anticolinérgico de um fármaco listado nos critérios de Beers",
+              "explicacao": "Anti-histamínicos antigos devem ser evitados em idosos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na insuficiência hepática grave, fármacos muito metabolizados pelo fígado, dados por via oral, podem ter a biodisponibilidade muito aumentada.",
+              "resposta": true,
+              "explicacao": "O fígado doente faz menos efeito de primeira passagem.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com clearance de creatinina de 20 mL/min precisa de antibiótico.",
+              "enunciado": "Qual destes exige ajuste de dose?",
+              "opcoes": [
+                "Ciprofloxacino",
+                "Ceftriaxona",
+                "Doxiciclina",
+                "Azitromicina"
+              ],
+              "resposta": "Ciprofloxacino",
+              "explicacao": "A ceftriaxona tem eliminação dupla, pelo rim e pela bile.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os critérios de ___ listam medicamentos potencialmente inapropriados para idosos.",
+              "opcoes": [
+                "Beers",
+                "Jones",
+                "Light",
+                "Centor"
+              ],
+              "resposta": "Beers",
+              "explicacao": "Os critérios STOPP/START são outra ferramenta usada com o mesmo objetivo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Mulher que amamenta tem depressão e precisa de antidepressivo.",
+              "enunciado": "Qual opção tem mais dados de segurança na amamentação?",
+              "opcoes": [
+                "Sertralina",
+                "Lítio",
+                "Doxepina",
+                "Fluoxetina em dose máxima"
+              ],
+              "resposta": "Sertralina",
+              "explicacao": "A sertralina passa pouco para o leite e para o bebê.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d1-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que recém-nascidos podem ter síndrome do bebê cinzento com cloranfenicol?",
+              "opcoes": [
+                "Porque a conjugação pelo fígado ainda é imatura",
+                "Porque têm albumina demais",
+                "Porque o rim é maduro demais",
+                "Porque não têm gordura"
+              ],
+              "resposta": "Porque a conjugação pelo fígado ainda é imatura",
+              "explicacao": "Sem glicuronidação adequada, o fármaco se acumula e causa colapso circulatório.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm-d2",
+      "titulo": "Antimicrobianos na prática",
+      "descricao": "Escolha empírica, resistência e efeitos adversos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "farm-d2-l1",
+          "titulo": "Tratamento empírico",
+          "questoes": [
+            {
+              "id": "farm-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 anos tem febre, rigidez de nuca e confusão. O líquor está turvo, com muitos neutrófilos.",
+              "enunciado": "Qual é o esquema empírico?",
+              "opcoes": [
+                "Ceftriaxona, vancomicina e ampicilina, com dexametasona",
+                "Apenas ceftriaxona",
+                "Apenas aciclovir",
+                "Amoxicilina oral"
+              ],
+              "resposta": "Ceftriaxona, vancomicina e ampicilina, com dexametasona",
+              "explicacao": "Acima de 50 anos, a ampicilina é acrescentada para cobrir Listeria.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção ao antibiótico empírico de escolha no adulto.",
+              "pares": [
+                {
+                  "esquerda": "Celulite sem pus",
+                  "direita": "Cefalexina"
+                },
+                {
+                  "esquerda": "Pneumonia comunitária leve sem comorbidades",
+                  "direita": "Amoxicilina"
+                },
+                {
+                  "esquerda": "Pielonefrite com internação",
+                  "direita": "Ceftriaxona"
+                },
+                {
+                  "esquerda": "Diarreia por Clostridioides difficile",
+                  "direita": "Vancomicina oral"
+                }
+              ],
+              "explicacao": "A escolha sempre considera o padrão de resistência local.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q3",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 25 anos tem pielonefrite leve, aceita bem a via oral, e a resistência local às quinolonas é baixa.",
+              "enunciado": "Qual é uma opção para tratar em casa?",
+              "opcoes": [
+                "Ciprofloxacino por 7 dias",
+                "Nitrofurantoína",
+                "Fosfomicina em dose única",
+                "Amoxicilina"
+              ],
+              "resposta": "Ciprofloxacino por 7 dias",
+              "explicacao": "A urocultura deve ser colhida antes de iniciar.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q4",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a nitrofurantoína não serve para tratar pielonefrite?",
+              "opcoes": [
+                "Porque não atinge concentração adequada no rim e no sangue",
+                "Porque é muito tóxica para o rim",
+                "Porque não age contra E. coli",
+                "Porque só existe na veia"
+              ],
+              "resposta": "Porque não atinge concentração adequada no rim e no sangue",
+              "explicacao": "Ela se concentra apenas na urina da bexiga.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na neutropenia febril, o antibiótico empírico deve cobrir Pseudomonas, como cefepima ou piperacilina-tazobactam.",
+              "resposta": true,
+              "explicacao": "A Pseudomonas é uma causa grave de sepse nesses pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tem úlcera infectada no pé, com osso exposto e celulite ao redor, sem sepse.",
+              "enunciado": "O que confirmar antes de planejar um tratamento longo?",
+              "opcoes": [
+                "Osteomielite, com imagem e, de preferência, biópsia com cultura do osso",
+                "Nada",
+                "Apenas a glicemia",
+                "Apenas o hemograma"
+              ],
+              "resposta": "Osteomielite, com imagem e, de preferência, biópsia com cultura do osso",
+              "explicacao": "Osso exposto ou tocado com instrumento estéril sugere fortemente osteomielite.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na endocardite de valva nativa por estreptococo sensível, a ___ cristalina venosa é o tratamento clássico.",
+              "opcoes": [
+                "penicilina",
+                "vancomicina oral",
+                "clindamicina",
+                "azitromicina"
+              ],
+              "resposta": "penicilina",
+              "explicacao": "A ceftriaxona é alternativa prática, inclusive para tratamento fora do hospital.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com AVC tem pneumonia por aspiração, sem abscesso.",
+              "enunciado": "Qual é uma opção empírica?",
+              "opcoes": [
+                "Amoxicilina com clavulanato ou ampicilina com sulbactam",
+                "Metronidazol isolado",
+                "Fluconazol",
+                "Vancomicina isolada"
+              ],
+              "resposta": "Amoxicilina com clavulanato ou ampicilina com sulbactam",
+              "explicacao": "A cobertura de anaeróbios isolada não é suficiente.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d2-l2",
+          "titulo": "Resistência bacteriana",
+          "questoes": [
+            {
+              "id": "farm-d2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe resistente ao tratamento de escolha.",
+              "pares": [
+                {
+                  "esquerda": "MRSA",
+                  "direita": "Vancomicina ou linezolida"
+                },
+                {
+                  "esquerda": "Enterobactéria produtora de ESBL",
+                  "direita": "Carbapenêmico"
+                },
+                {
+                  "esquerda": "Enterococo resistente à vancomicina",
+                  "direita": "Linezolida ou daptomicina"
+                },
+                {
+                  "esquerda": "Enterobactéria produtora de KPC",
+                  "direita": "Ceftazidima-avibactam ou polimixina, conforme antibiograma"
+                }
+              ],
+              "explicacao": "O antibiograma sempre deve guiar o tratamento definitivo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual mecanismo explica a resistência do MRSA?",
+              "opcoes": [
+                "Uma proteína ligadora de penicilina alterada (PBP2a, gene mecA)",
+                "Produção de ESBL",
+                "Bomba que expulsa quinolonas",
+                "Perda de porinas"
+              ],
+              "resposta": "Uma proteína ligadora de penicilina alterada (PBP2a, gene mecA)",
+              "explicacao": "A PBP2a tem baixa afinidade por quase todos os betalactâmicos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O uso desnecessário de antibióticos de amplo espectro aumenta a seleção de bactérias multirresistentes.",
+              "resposta": true,
+              "explicacao": "Programas de uso racional reduzem resistência e infecção por C. difficile.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente internado há 15 dias com pneumonia associada à ventilação tem cultura positiva para Klebsiella produtora de carbapenemase.",
+              "enunciado": "Que medida é necessária além do antibiótico?",
+              "opcoes": [
+                "Precaução de contato e aviso ao controle de infecção",
+                "Nenhuma",
+                "Alta imediata",
+                "Apenas isolamento respiratório"
+              ],
+              "resposta": "Precaução de contato e aviso ao controle de infecção",
+              "explicacao": "Essas bactérias se espalham pelas mãos e pelo ambiente.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q5",
+              "tipo": "completar_lacuna",
+              "enunciado": "A Pseudomonas aeruginosa é naturalmente resistente à ___, mas costuma ser sensível à cefepima e à ceftazidima.",
+              "opcoes": [
+                "ceftriaxona",
+                "cefepima",
+                "piperacilina-tazobactam",
+                "meropeném"
+              ],
+              "resposta": "ceftriaxona",
+              "explicacao": "Por isso a ceftriaxona não serve quando se suspeita de Pseudomonas.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "A hemocultura mostra Staphylococcus aureus sensível à oxacilina em paciente que recebe vancomicina.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Trocar para oxacilina ou cefazolina, que são superiores",
+                "Manter a vancomicina",
+                "Suspender todos os antibióticos",
+                "Associar azitromicina"
+              ],
+              "resposta": "Trocar para oxacilina ou cefazolina, que são superiores",
+              "explicacao": "Contra estafilococo sensível, betalactâmicos curam mais que a vancomicina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração mínima habitual de antibiótico venoso na bacteremia não complicada por S. aureus?",
+              "opcoes": [
+                "14 dias",
+                "3 dias",
+                "5 dias",
+                "1 dia"
+              ],
+              "resposta": "14 dias",
+              "explicacao": "Casos complicados, como endocardite, exigem de 4 a 6 semanas.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l2-q8",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na bacteremia por Staphylococcus aureus, o ecocardiograma é recomendado para procurar endocardite.",
+              "resposta": true,
+              "explicacao": "Hemoculturas de controle também devem ser repetidas até negativarem.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d2-l3",
+          "titulo": "Efeitos adversos dos antimicrobianos",
+          "questoes": [
+            {
+              "id": "farm-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antimicrobiano ao seu efeito adverso.",
+              "pares": [
+                {
+                  "esquerda": "Linezolida",
+                  "direita": "Plaquetas baixas e síndrome serotoninérgica"
+                },
+                {
+                  "esquerda": "Polimixina B",
+                  "direita": "Lesão renal e neurológica"
+                },
+                {
+                  "esquerda": "Sulfametoxazol com trimetoprim",
+                  "direita": "Potássio alto e reações graves de pele"
+                },
+                {
+                  "esquerda": "Ceftriaxona",
+                  "direita": "Lama na vesícula biliar"
+                }
+              ],
+              "explicacao": "A linezolida também é um inibidor fraco da MAO.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV usa sulfametoxazol com trimetoprim em dose alta e tem potássio de 6,2 mEq/L.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "O trimetoprim bloqueia canais de sódio no ducto coletor, como a amilorida",
+                "Hemólise",
+                "Rabdomiólise",
+                "Insuficiência adrenal"
+              ],
+              "resposta": "O trimetoprim bloqueia canais de sódio no ducto coletor, como a amilorida",
+              "explicacao": "O risco aumenta com IECA, espironolactona e doença renal.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais antibióticos podem prolongar o QT e causar arritmia?",
+              "opcoes": [
+                "Azitromicina e quinolonas",
+                "Amoxicilina",
+                "Cefalexina",
+                "Fosfomicina"
+              ],
+              "resposta": "Azitromicina e quinolonas",
+              "explicacao": "Em quem tem QT longo, a escolha deve ser feita com cuidado.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Em recém-nascidos, a ceftriaxona não deve ser dada junto com soluções de cálcio, pelo risco de precipitação.",
+              "resposta": true,
+              "explicacao": "Nessa idade, a cefotaxima costuma ser preferida.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose que usa etambutol diz que não distingue mais o verde do vermelho.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suspender o etambutol e encaminhar ao oftalmologista",
+                "Manter e observar",
+                "Aumentar a dose",
+                "Dobrar a isoniazida"
+              ],
+              "resposta": "Suspender o etambutol e encaminhar ao oftalmologista",
+              "explicacao": "A neurite óptica pelo etambutol costuma regredir se o remédio for suspenso cedo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na síndrome DRESS causada por remédios, há manchas na pele, febre, eosinofilia e lesão de ___ internos.",
+              "opcoes": [
+                "órgãos",
+                "ossos",
+                "dentes",
+                "cabelos"
+              ],
+              "resposta": "órgãos",
+              "explicacao": "Ela aparece de 2 a 8 semanas após o início do fármaco e pode ser grave.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q7",
+              "tipo": "caso_clinico",
+              "caso": "Jovem toma amoxicilina para uma suposta amigdalite e desenvolve manchas por todo o corpo. Tem gânglios no pescoço e baço aumentado.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Mononucleose infecciosa, com reação ao usar amoxicilina",
+                "Alergia grave à penicilina, obrigatoriamente",
+                "Escarlatina",
+                "Sarampo"
+              ],
+              "resposta": "Mononucleose infecciosa, com reação ao usar amoxicilina",
+              "explicacao": "A reação não significa alergia verdadeira à penicilina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d2-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que exames devem ser acompanhados no uso de aminoglicosídeos?",
+              "opcoes": [
+                "Creatinina e avaliação da audição e do equilíbrio",
+                "Glicemia",
+                "TSH",
+                "Amilase"
+              ],
+              "resposta": "Creatinina e avaliação da audição e do equilíbrio",
+              "explicacao": "O risco aumenta com o tempo de uso e com outras drogas tóxicas ao rim.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm-d3",
+      "titulo": "Cardiovascular avançado",
+      "descricao": "Hipertensão especial, arritmias e anticoagulação",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "farm-d3-l1",
+          "titulo": "Anti-hipertensivos em situações especiais",
+          "questoes": [
+            {
+              "id": "farm-d3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação ao anti-hipertensivo preferido.",
+              "pares": [
+                {
+                  "esquerda": "Gestação",
+                  "direita": "Metildopa, nifedipino ou labetalol"
+                },
+                {
+                  "esquerda": "Insuficiência cardíaca com fração reduzida",
+                  "direita": "IECA ou BRA com betabloqueador"
+                },
+                {
+                  "esquerda": "Hiperplasia da próstata",
+                  "direita": "Alfabloqueador, como doxazosina"
+                },
+                {
+                  "esquerda": "Hipertensão resistente",
+                  "direita": "Espironolactona como quarto remédio"
+                }
+              ],
+              "explicacao": "A escolha certa trata duas condições ao mesmo tempo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Hipertenso negro, sem outras doenças, vai começar com um único remédio.",
+              "enunciado": "Qual classe costuma ter melhor resposta?",
+              "opcoes": [
+                "Tiazídico ou bloqueador de canal de cálcio",
+                "Betabloqueador",
+                "IECA isolado, sempre",
+                "Alfabloqueador"
+              ],
+              "resposta": "Tiazídico ou bloqueador de canal de cálcio",
+              "explicacao": "Nessa população, o sistema renina-angiotensina costuma ser menos ativo.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual associação deve ser evitada pelo risco de potássio alto e lesão renal, sem benefício extra?",
+              "opcoes": [
+                "IECA com BRA",
+                "IECA com tiazídico",
+                "BRA com anlodipino",
+                "Tiazídico com anlodipino"
+              ],
+              "resposta": "IECA com BRA",
+              "explicacao": "Grandes estudos mostraram mais eventos adversos com a dupla bloqueio.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com feocromocitoma vai ser operado.",
+              "enunciado": "Qual é a ordem do preparo com medicamentos?",
+              "opcoes": [
+                "Alfabloqueador primeiro e betabloqueador depois",
+                "Betabloqueador primeiro",
+                "Apenas diurético",
+                "Nenhum preparo"
+              ],
+              "resposta": "Alfabloqueador primeiro e betabloqueador depois",
+              "explicacao": "Betabloqueador antes do alfa pode causar crise hipertensiva grave.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Hipertensão resistente é a pressão não controlada com três remédios em dose adequada, incluindo um diurético.",
+              "resposta": true,
+              "explicacao": "Antes de confirmar, é preciso checar adesão, técnica de medida e efeito do avental branco.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que já teve angioedema com IECA precisa de bloqueio do sistema renina-angiotensina.",
+              "enunciado": "Qual é uma opção?",
+              "opcoes": [
+                "BRA, com cautela, pois o risco de angioedema é baixo",
+                "Outro IECA",
+                "Sacubitril-valsartana",
+                "Nenhuma"
+              ],
+              "resposta": "BRA, com cautela, pois o risco de angioedema é baixo",
+              "explicacao": "A sacubitril-valsartana é contraindicada em quem já teve angioedema por IECA.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na emergência hipertensiva com edema agudo de pulmão, usa-se ___ venoso associado a diurético.",
+              "opcoes": [
+                "nitrato",
+                "betabloqueador",
+                "metildopa",
+                "clonidina"
+              ],
+              "resposta": "nitrato",
+              "explicacao": "O nitrato reduz rapidamente a congestão e a pressão.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com pré-eclâmpsia grave está com PA de 170/112 mmHg.",
+              "enunciado": "Qual medicamento reduz a pressão rapidamente?",
+              "opcoes": [
+                "Hidralazina venosa ou nifedipino oral",
+                "Enalapril",
+                "Losartana",
+                "Espironolactona"
+              ],
+              "resposta": "Hidralazina venosa ou nifedipino oral",
+              "explicacao": "O objetivo é evitar AVC na mãe, sem derrubar demais a pressão, o que prejudicaria o bebê.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d3-l2",
+          "titulo": "Antiarrítmicos e QT longo",
+          "questoes": [
+            {
+              "id": "farm-d3-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com QT longo recebe azitromicina e ondansetrona e desenvolve taquicardia ventricular polimórfica, com QRS girando em torno da linha de base.",
+              "enunciado": "Qual é o tratamento imediato?",
+              "opcoes": [
+                "Sulfato de magnésio venoso, com desfibrilação se houver instabilidade",
+                "Amiodarona",
+                "Lidocaína",
+                "Procainamida"
+              ],
+              "resposta": "Sulfato de magnésio venoso, com desfibrilação se houver instabilidade",
+              "explicacao": "É torsades de pointes. Amiodarona prolonga ainda mais o QT.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fármaco ao seu uso.",
+              "pares": [
+                {
+                  "esquerda": "Adenosina",
+                  "direita": "Reverter taquicardia por reentrada nodal"
+                },
+                {
+                  "esquerda": "Amiodarona",
+                  "direita": "Taquicardia ventricular estável e fibrilação atrial"
+                },
+                {
+                  "esquerda": "Atropina",
+                  "direita": "Bradicardia com sintomas"
+                },
+                {
+                  "esquerda": "Digoxina",
+                  "direita": "Controle da frequência na fibrilação atrial com insuficiência cardíaca"
+                }
+              ],
+              "explicacao": "Na bradicardia que não responde à atropina, usa-se marcapasso ou adrenalina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antiarrítmico aumentou a mortalidade em pacientes pós-infarto, segundo o estudo CAST?",
+              "opcoes": [
+                "Flecainida",
+                "Amiodarona",
+                "Metoprolol",
+                "Lidocaína"
+              ],
+              "resposta": "Flecainida",
+              "explicacao": "Por isso antiarrítmicos da classe IC são evitados em quem tem doença estrutural do coração.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com síndrome de Wolff-Parkinson-White tem fibrilação atrial com QRS largo e irregular, mas está estável.",
+              "enunciado": "Quais fármacos devem ser evitados?",
+              "opcoes": [
+                "Bloqueadores do nó AV, como adenosina, verapamil e digoxina",
+                "Procainamida",
+                "Cardioversão elétrica",
+                "Ibutilida"
+              ],
+              "resposta": "Bloqueadores do nó AV, como adenosina, verapamil e digoxina",
+              "explicacao": "Bloquear o nó AV joga todos os estímulos pela via acessória e pode causar fibrilação ventricular.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A amiodarona pode aumentar o nível da varfarina e da digoxina.",
+              "resposta": true,
+              "explicacao": "As doses desses remédios costumam ser reduzidas ao associar.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a droga de escolha na taquicardia supraventricular estável quando as manobras vagais não funcionam.",
+              "opcoes": [
+                "adenosina",
+                "amiodarona",
+                "atropina",
+                "lidocaína"
+              ],
+              "resposta": "adenosina",
+              "explicacao": "O paciente deve ser avisado de que pode sentir um mal-estar breve no peito.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q7",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa amiodarona há 2 anos passa a ter tosse seca, falta de ar e infiltrado intersticial nos pulmões.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Toxicidade pulmonar pela amiodarona",
+                "Pneumonia bacteriana",
+                "Asma",
+                "Edema agudo de pulmão"
+              ],
+              "resposta": "Toxicidade pulmonar pela amiodarona",
+              "explicacao": "O tratamento é suspender a amiodarona e, muitas vezes, usar corticoide.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado do ECG é mais típico da intoxicação digitálica?",
+              "opcoes": [
+                "Taquicardia atrial com bloqueio e extrassístoles ventriculares",
+                "QT longo",
+                "Onda T apiculada",
+                "Supra de ST difuso"
+              ],
+              "resposta": "Taquicardia atrial com bloqueio e extrassístoles ventriculares",
+              "explicacao": "A depressão do ST em colher é efeito do digital, e não sinal de intoxicação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d3-l3",
+          "titulo": "Anticoagulação na prática",
+          "questoes": [
+            {
+              "id": "farm-d3-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa dabigatrana sofre trauma com sangramento dentro do crânio.",
+              "enunciado": "Qual é o antídoto?",
+              "opcoes": [
+                "Idarucizumabe",
+                "Protamina",
+                "Vitamina K",
+                "Flumazenil"
+              ],
+              "resposta": "Idarucizumabe",
+              "explicacao": "É um anticorpo que se liga à dabigatrana e reverte o efeito em minutos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada anticoagulante ao seu reversor.",
+              "pares": [
+                {
+                  "esquerda": "Dabigatrana",
+                  "direita": "Idarucizumabe"
+                },
+                {
+                  "esquerda": "Rivaroxabana ou apixabana",
+                  "direita": "Andexanete alfa ou complexo protrombínico"
+                },
+                {
+                  "esquerda": "Varfarina",
+                  "direita": "Vitamina K e complexo protrombínico"
+                },
+                {
+                  "esquerda": "Heparina não fracionada",
+                  "direita": "Protamina"
+                }
+              ],
+              "explicacao": "A disponibilidade dos antídotos varia entre hospitais.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual anticoagulante é preferido em paciente com prótese valvar mecânica?",
+              "opcoes": [
+                "Varfarina",
+                "Rivaroxabana",
+                "Dabigatrana",
+                "Apixabana"
+              ],
+              "resposta": "Varfarina",
+              "explicacao": "Os anticoagulantes diretos tiveram mais tromboses e sangramentos nesses pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de mama ativo tem trombose venosa profunda.",
+              "enunciado": "Qual é uma opção de anticoagulação?",
+              "opcoes": [
+                "Heparina de baixo peso molecular ou anticoagulante oral direto, conforme o risco de sangramento",
+                "Apenas AAS",
+                "Nenhuma",
+                "Apenas varfarina, sempre"
+              ],
+              "resposta": "Heparina de baixo peso molecular ou anticoagulante oral direto, conforme o risco de sangramento",
+              "explicacao": "Tumores do trato digestivo e urinário aumentam o risco de sangramento com os anticoagulantes diretos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na síndrome antifosfolípide com trombose e alto risco, a varfarina é preferível aos anticoagulantes orais diretos.",
+              "resposta": true,
+              "explicacao": "Estudos mostraram mais tromboses arteriais com os anticoagulantes diretos nesses pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial que usa apixabana vai fazer uma cirurgia de alto risco de sangramento. A função renal é normal.",
+              "enunciado": "Com quanta antecedência suspender?",
+              "opcoes": [
+                "Cerca de 48 horas",
+                "2 semanas",
+                "Não precisa suspender",
+                "6 horas"
+              ],
+              "resposta": "Cerca de 48 horas",
+              "explicacao": "Pela meia-vida curta, em geral não é preciso usar heparina como ponte.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A heparina de baixo peso molecular, quando precisa ser monitorada, é acompanhada pela dosagem do anti-fator ___.",
+              "opcoes": [
+                "Xa",
+                "VIII",
+                "II",
+                "XII"
+              ],
+              "resposta": "Xa",
+              "explicacao": "O monitoramento é útil em obesos, gestantes e na insuficiência renal.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com obesidade grave e insuficiência renal grave precisa de anticoagulação plena com urgência.",
+              "enunciado": "Qual é a opção mais segura?",
+              "opcoes": [
+                "Heparina não fracionada, ajustada pelo TTPa",
+                "Enoxaparina sem ajuste",
+                "Rivaroxabana",
+                "Dabigatrana"
+              ],
+              "resposta": "Heparina não fracionada, ajustada pelo TTPa",
+              "explicacao": "Ela é eliminada sem depender do rim e pode ser revertida com protamina.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm-d4",
+      "titulo": "Toxicologia e neuropsicofarmacologia",
+      "descricao": "Intoxicações, psicofármacos e antiepilépticos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "farm-d4-l1",
+          "titulo": "Intoxicações e antídotos",
+          "questoes": [
+            {
+              "id": "farm-d4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada síndrome tóxica ao seu achado característico.",
+              "pares": [
+                {
+                  "esquerda": "Anticolinérgica",
+                  "direita": "Pele seca, pupilas dilatadas e retenção urinária"
+                },
+                {
+                  "esquerda": "Colinérgica",
+                  "direita": "Salivação, pupilas pequenas e secreção nos brônquios"
+                },
+                {
+                  "esquerda": "Simpatomimética",
+                  "direita": "Pupilas dilatadas, suor e hipertensão"
+                },
+                {
+                  "esquerda": "Opioide",
+                  "direita": "Pupilas pequenas, respiração lenta e sonolência"
+                }
+              ],
+              "explicacao": "O suor ajuda a separar a síndrome simpatomimética da anticolinérgica.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente ingeriu muitos comprimidos de AAS. Tem zumbido, vômitos e respiração rápida. A gasometria mostra alcalose respiratória e acidose metabólica.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Bicarbonato venoso para alcalinizar a urina e avaliar hemodiálise",
+                "Acidificar a urina",
+                "Naloxona",
+                "Flumazenil"
+              ],
+              "resposta": "Bicarbonato venoso para alcalinizar a urina e avaliar hemodiálise",
+              "explicacao": "Alterações neurológicas e níveis muito altos indicam hemodiálise.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antídoto é usado na intoxicação por metanol ou etilenoglicol?",
+              "opcoes": [
+                "Fomepizol ou etanol",
+                "Naloxona",
+                "N-acetilcisteína",
+                "Atropina"
+              ],
+              "resposta": "Fomepizol ou etanol",
+              "explicacao": "Eles bloqueiam a álcool desidrogenase e impedem a formação dos metabólitos tóxicos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente intoxicado por antidepressivo tricíclico tem QRS de 140 ms e pressão baixa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Bicarbonato de sódio venoso",
+                "Fisostigmina",
+                "Flumazenil",
+                "Amiodarona"
+              ],
+              "resposta": "Bicarbonato de sódio venoso",
+              "explicacao": "O bicarbonato reverte o bloqueio dos canais de sódio do coração.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O flumazenil é contraindicado de rotina em intoxicações mistas com tricíclicos, pelo risco de convulsões.",
+              "resposta": true,
+              "explicacao": "Ele também pode causar convulsões em usuários crônicos de benzodiazepínicos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente intoxicado por betabloqueador tem bradicardia e pressão baixa que não respondem à atropina.",
+              "enunciado": "Quais antídotos podem ajudar?",
+              "opcoes": [
+                "Glucagon e insulina em dose alta com glicose",
+                "Naloxona",
+                "Flumazenil",
+                "Fisostigmina"
+              ],
+              "resposta": "Glucagon e insulina em dose alta com glicose",
+              "explicacao": "O glucagon aumenta o AMP cíclico do coração por uma via que não depende do receptor beta.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na intoxicação grave por monóxido de carbono, com perda de consciência ou em gestantes, pode haver indicação de oxigênio ___.",
+              "opcoes": [
+                "hiperbárico",
+                "a 21%",
+                "apenas por cateter nasal",
+                "intermitente"
+              ],
+              "resposta": "hiperbárico",
+              "explicacao": "Ele acelera a saída do monóxido e pode reduzir sequelas neurológicas.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Criança engoliu comprimidos de clonidina da avó e está sonolenta, com pupilas pequenas e bradicardia.",
+              "enunciado": "Qual é o principal diagnóstico diferencial?",
+              "opcoes": [
+                "Intoxicação por clonidina, que imita a intoxicação por opioide",
+                "Hipoglicemia simples",
+                "Meningite",
+                "Intoxicação anticolinérgica"
+              ],
+              "resposta": "Intoxicação por clonidina, que imita a intoxicação por opioide",
+              "explicacao": "A naloxona pode ter efeito parcial em alguns casos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d4-l2",
+          "titulo": "Psicofármacos na prática",
+          "questoes": [
+            {
+              "id": "farm-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com transtorno bipolar em uso de lítio começa ibuprofeno e losartana e passa a ter tremor grosseiro, confusão e desequilíbrio.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suspender o lítio e o anti-inflamatório, hidratar e avaliar hemodiálise conforme o nível e a gravidade",
+                "Aumentar o lítio",
+                "Apenas observar",
+                "Dar furosemida"
+              ],
+              "resposta": "Suspender o lítio e o anti-inflamatório, hidratar e avaliar hemodiálise conforme o nível e a gravidade",
+              "explicacao": "Sintomas neurológicos graves indicam hemodiálise mesmo com nível pouco elevado.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada efeito adverso ao psicofármaco.",
+              "pares": [
+                {
+                  "esquerda": "Diabetes insípido nefrogênico",
+                  "direita": "Lítio"
+                },
+                {
+                  "esquerda": "Hiponatremia em idosos",
+                  "direita": "Inibidores seletivos da recaptação de serotonina"
+                },
+                {
+                  "esquerda": "Prolongamento do QT em dose alta",
+                  "direita": "Citalopram"
+                },
+                {
+                  "esquerda": "Crise hipertensiva com queijos curados",
+                  "direita": "Inibidores da MAO"
+                }
+              ],
+              "explicacao": "A tiramina dos alimentos fermentados libera noradrenalina quando a MAO está bloqueada.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fármaco tem efeito comprovado na redução do suicídio no transtorno bipolar?",
+              "opcoes": [
+                "Lítio",
+                "Haloperidol",
+                "Diazepam",
+                "Bupropiona"
+              ],
+              "resposta": "Lítio",
+              "explicacao": "Esse é um dos motivos de o lítio continuar sendo primeira linha.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa fenelzina (inibidor da MAO) recebe meperidina para dor e desenvolve febre alta, rigidez e agitação.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Síndrome serotoninérgica pela interação",
+                "Síndrome neuroléptica maligna",
+                "Hipertermia maligna",
+                "Sepse"
+              ],
+              "resposta": "Síndrome serotoninérgica pela interação",
+              "explicacao": "Meperidina, tramadol e dextrometorfano são contraindicados com inibidores da MAO.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clozapina é o antipsicótico de escolha na esquizofrenia resistente ao tratamento.",
+              "resposta": true,
+              "explicacao": "Por causa do risco de agranulocitose, exige hemogramas frequentes.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com primeiro surto psicótico começa olanzapina e, em 3 meses, ganha 12 kg e tem glicemia de jejum de 118 mg/dL.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratar os riscos metabólicos e considerar trocar por antipsicótico com menos efeito metabólico",
+                "Nada",
+                "Aumentar a dose",
+                "Suspender sem substituir"
+              ],
+              "resposta": "Tratar os riscos metabólicos e considerar trocar por antipsicótico com menos efeito metabólico",
+              "explicacao": "Peso, glicemia e colesterol devem ser acompanhados desde o início.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um antipsicótico atípico com menor efeito metabólico e menos aumento de prolactina, mas pode causar inquietação (acatisia).",
+              "opcoes": [
+                "aripiprazol",
+                "olanzapina",
+                "clozapina",
+                "risperidona"
+              ],
+              "resposta": "aripiprazol",
+              "explicacao": "Ele é um agonista parcial do receptor de dopamina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com depressão começa sertralina e, na primeira semana, fica mais ansioso e dorme mal.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "É um efeito inicial comum; manter e reavaliar, ajustando a dose devagar",
+                "Suspender imediatamente",
+                "Dobrar a dose",
+                "Associar lítio"
+              ],
+              "resposta": "É um efeito inicial comum; manter e reavaliar, ajustando a dose devagar",
+              "explicacao": "Em jovens, também é importante monitorar ideação suicida no início do tratamento.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d4-l3",
+          "titulo": "Antiepilépticos em situações especiais",
+          "questoes": [
+            {
+              "id": "farm-d4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antiepiléptico ao seu perfil.",
+              "pares": [
+                {
+                  "esquerda": "Lamotrigina",
+                  "direita": "Lesão grave de pele se a dose subir rápido"
+                },
+                {
+                  "esquerda": "Levetiracetam",
+                  "direita": "Irritabilidade e alterações de humor"
+                },
+                {
+                  "esquerda": "Topiramato",
+                  "direita": "Cálculo renal e perda de peso"
+                },
+                {
+                  "esquerda": "Fenitoína",
+                  "direita": "Cinética não linear e aumento da gengiva"
+                }
+              ],
+              "explicacao": "Conhecer o perfil ajuda a escolher o fármaco para cada paciente.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com epilepsia que usa carbamazepina e anticoncepcional oral engravida.",
+              "enunciado": "Qual é a explicação mais provável?",
+              "opcoes": [
+                "A carbamazepina induz enzimas e reduz o efeito do anticoncepcional",
+                "O anticoncepcional anula a carbamazepina",
+                "Coincidência",
+                "Falha por vômitos"
+              ],
+              "resposta": "A carbamazepina induz enzimas e reduz o efeito do anticoncepcional",
+              "explicacao": "DIU e acetato de medroxiprogesterona são opções sem essa interação.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em mulher em idade fértil com epilepsia generalizada, quais fármacos são preferidos em relação ao valproato?",
+              "opcoes": [
+                "Lamotrigina ou levetiracetam",
+                "Fenobarbital",
+                "Carbamazepina para ausências",
+                "Topiramato em dose alta"
+              ],
+              "resposta": "Lamotrigina ou levetiracetam",
+              "explicacao": "O valproato tem o maior risco de malformações e de prejuízo ao desenvolvimento.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem crises de ausência típicas.",
+              "enunciado": "Qual fármaco pode piorar essas crises?",
+              "opcoes": [
+                "Carbamazepina",
+                "Etossuximida",
+                "Valproato",
+                "Lamotrigina"
+              ],
+              "resposta": "Carbamazepina",
+              "explicacao": "Carbamazepina, fenitoína e oxcarbazepina podem piorar ausências e mioclonias.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Mulheres com epilepsia que planejam engravidar devem tomar ácido fólico antes da concepção, muitas vezes em dose maior.",
+              "resposta": true,
+              "explicacao": "Alguns antiepilépticos interferem no metabolismo do folato.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em estado de mal epiléptico continua em crise após duas doses de benzodiazepínico e uma dose de fenitoína.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Intubar e iniciar anestésico contínuo, como midazolam ou propofol, na UTI",
+                "Esperar",
+                "Mais diazepam por via oral",
+                "Haloperidol"
+              ],
+              "resposta": "Intubar e iniciar anestésico contínuo, como midazolam ou propofol, na UTI",
+              "explicacao": "É o estado de mal refratário, que exige monitorização com eletroencefalograma.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O valproato pode causar lesão do fígado, pancreatite e aumento da ___ no sangue.",
+              "opcoes": [
+                "amônia",
+                "ureia",
+                "glicose",
+                "creatinina"
+              ],
+              "resposta": "amônia",
+              "explicacao": "A hiperamonemia pode causar confusão mesmo com o fígado normal.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente de ascendência asiática com epilepsia focal vai começar carbamazepina.",
+              "enunciado": "Qual exame é recomendado antes?",
+              "opcoes": [
+                "Pesquisa do alelo HLA-B*1502",
+                "TSH",
+                "Ecocardiograma",
+                "Teste do pezinho"
+              ],
+              "resposta": "Pesquisa do alelo HLA-B*1502",
+              "explicacao": "Portadores têm alto risco de síndrome de Stevens-Johnson com carbamazepina.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm-d5",
+      "titulo": "Endócrino, imunologia e oncologia",
+      "descricao": "Antidiabéticos, imunossupressores e quimioterápicos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "farm-d5-l1",
+          "titulo": "Antidiabéticos e insulinas",
+          "questoes": [
+            {
+              "id": "farm-d5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antidiabético ao seu efeito adverso.",
+              "pares": [
+                {
+                  "esquerda": "Metformina",
+                  "direita": "Intolerância intestinal e falta de B12"
+                },
+                {
+                  "esquerda": "Inibidor da SGLT2",
+                  "direita": "Infecção genital e cetoacidose com glicose pouco elevada"
+                },
+                {
+                  "esquerda": "Agonista de GLP-1",
+                  "direita": "Náuseas e risco de pancreatite"
+                },
+                {
+                  "esquerda": "Pioglitazona",
+                  "direita": "Retenção de líquido e piora da insuficiência cardíaca"
+                }
+              ],
+              "explicacao": "A escolha considera comorbidades, custo e efeitos adversos.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com diabetes tipo 2, insuficiência cardíaca de fração reduzida e doença renal crônica com filtração de 45.",
+              "enunciado": "Qual classe traz benefício para o coração e o rim?",
+              "opcoes": [
+                "Inibidor da SGLT2",
+                "Sulfonilureia",
+                "Pioglitazona",
+                "Saxagliptina"
+              ],
+              "resposta": "Inibidor da SGLT2",
+              "explicacao": "Ela reduz internação por insuficiência cardíaca e a progressão da doença renal.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "A partir de qual filtração glomerular a metformina deve ser suspensa?",
+              "opcoes": [
+                "Abaixo de 30 mL/min/1,73 m²",
+                "Abaixo de 90",
+                "Nunca",
+                "Com creatinina de 1,0"
+              ],
+              "resposta": "Abaixo de 30 mL/min/1,73 m²",
+              "explicacao": "Entre 30 e 45, a dose costuma ser reduzida.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa dapagliflozina fica em jejum para uma cirurgia e chega com náuseas, glicemia de 180 mg/dL, pH 7,15 e cetonas altas.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Cetoacidose euglicêmica pelo inibidor da SGLT2",
+                "Hipoglicemia",
+                "Gastroenterite",
+                "Acidose lática pela metformina"
+              ],
+              "resposta": "Cetoacidose euglicêmica pelo inibidor da SGLT2",
+              "explicacao": "Esses remédios devem ser suspensos alguns dias antes de cirurgias.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A insulina NPH tem pico de ação, enquanto glargina e degludeca agem de forma mais estável, com menos hipoglicemia noturna.",
+              "resposta": true,
+              "explicacao": "A insulina NPH costuma ser dada à noite e pela manhã.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com diabetes tipo 2 tem HbA1c de 11%, perda de peso, sede e urina em excesso.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Iniciar insulina",
+                "Apenas dieta",
+                "Apenas metformina em dose baixa",
+                "Esperar 6 meses"
+              ],
+              "resposta": "Iniciar insulina",
+              "explicacao": "Perda de peso com glicose muito alta indica falta de insulina.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "O fenômeno do ___ é a glicemia alta ao acordar, causada por hormônios que sobem no fim da madrugada.",
+              "opcoes": [
+                "alvorecer",
+                "Somogyi",
+                "Raynaud",
+                "Wenckebach"
+              ],
+              "resposta": "alvorecer",
+              "explicacao": "O cortisol e o GH sobem nesse horário.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em uso de insulina tem glicemia alta ao acordar e hipoglicemia às 3 horas da manhã.",
+              "enunciado": "Como interpretar e ajustar?",
+              "opcoes": [
+                "Efeito Somogyi; reduzir a insulina da noite",
+                "Fenômeno do alvorecer; aumentar a insulina",
+                "Normal",
+                "Suspender toda a insulina"
+              ],
+              "resposta": "Efeito Somogyi; reduzir a insulina da noite",
+              "explicacao": "Hoje o efeito Somogyi é discutido, mas a medida da glicemia de madrugada orienta o ajuste.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d5-l2",
+          "titulo": "Corticoides e imunossupressores",
+          "questoes": [
+            {
+              "id": "farm-d5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada imunossupressor ao seu efeito adverso.",
+              "pares": [
+                {
+                  "esquerda": "Ciclosporina",
+                  "direita": "Lesão renal e hipertensão"
+                },
+                {
+                  "esquerda": "Tacrolimo",
+                  "direita": "Diabetes e efeitos neurológicos"
+                },
+                {
+                  "esquerda": "Metotrexato",
+                  "direita": "Queda das células do sangue e fibrose do fígado"
+                },
+                {
+                  "esquerda": "Micofenolato",
+                  "direita": "Diarreia e queda de leucócitos"
+                }
+              ],
+              "explicacao": "Os níveis de ciclosporina e tacrolimo precisam ser monitorados.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai usar prednisona 20 mg por dia por 6 meses.",
+              "enunciado": "Quais medidas preventivas indicar?",
+              "opcoes": [
+                "Cálcio, vitamina D e avaliação para bisfosfonato, além de atualizar as vacinas",
+                "Nenhuma",
+                "Suspender de repente se melhorar",
+                "Dobrar a dose"
+              ],
+              "resposta": "Cálcio, vitamina D e avaliação para bisfosfonato, além de atualizar as vacinas",
+              "explicacao": "O corticoide é a causa mais comum de osteoporose secundária.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual suplemento acompanha o metotrexato para reduzir efeitos adversos?",
+              "opcoes": [
+                "Ácido fólico",
+                "Vitamina C",
+                "Ferro",
+                "Vitamina K"
+              ],
+              "resposta": "Ácido fólico",
+              "explicacao": "O ácido fólico reduz feridas na boca, náuseas e alterações do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com doença de Crohn em uso de infliximabe tem febre e tosse há 1 mês. Não fez triagem antes de começar.",
+              "enunciado": "Qual infecção deve ser investigada?",
+              "opcoes": [
+                "Tuberculose",
+                "Gripe comum",
+                "Rinite",
+                "Apenas candidíase oral"
+              ],
+              "resposta": "Tuberculose",
+              "explicacao": "O bloqueio do TNF atrapalha a manutenção dos granulomas e reativa a tuberculose latente.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antes de iniciar um anti-TNF, deve-se rastrear tuberculose latente e hepatite B.",
+              "resposta": true,
+              "explicacao": "A hepatite B pode se reativar de forma grave durante a imunossupressão.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usa corticoide há anos é operado e fica com pressão baixa que não melhora com volume.",
+              "enunciado": "Qual é a hipótese e a conduta?",
+              "opcoes": [
+                "Insuficiência adrenal por supressão do eixo; hidrocortisona venosa",
+                "Choque séptico sem relação",
+                "Apenas hipovolemia",
+                "Anafilaxia"
+              ],
+              "resposta": "Insuficiência adrenal por supressão do eixo; hidrocortisona venosa",
+              "explicacao": "Por isso esses pacientes recebem dose extra de corticoide na cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q7",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o corticoide com maior efeito mineralocorticoide entre os usados na clínica.",
+              "opcoes": [
+                "fludrocortisona",
+                "dexametasona",
+                "metilprednisolona",
+                "budesonida"
+              ],
+              "resposta": "fludrocortisona",
+              "explicacao": "Ela é usada na doença de Addison para repor a aldosterona.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente transplantado de rim que usa tacrolimo começa claritromicina.",
+              "enunciado": "Qual é o risco?",
+              "opcoes": [
+                "Aumento do tacrolimo, com lesão do rim",
+                "Rejeição por queda do tacrolimo",
+                "Nenhum",
+                "Hipoglicemia"
+              ],
+              "resposta": "Aumento do tacrolimo, com lesão do rim",
+              "explicacao": "O nível do tacrolimo deve ser checado e a dose ajustada.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "farm-d5-l3",
+          "titulo": "Quimioterápicos e efeitos adversos",
+          "questoes": [
+            {
+              "id": "farm-d5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quimioterápico ao seu efeito adverso característico.",
+              "pares": [
+                {
+                  "esquerda": "Doxorrubicina",
+                  "direita": "Lesão do coração"
+                },
+                {
+                  "esquerda": "Cisplatina",
+                  "direita": "Lesão do rim e perda de audição"
+                },
+                {
+                  "esquerda": "Bleomicina",
+                  "direita": "Fibrose pulmonar"
+                },
+                {
+                  "esquerda": "Vincristina",
+                  "direita": "Neuropatia periférica"
+                }
+              ],
+              "explicacao": "A dose total acumulada da doxorrubicina é limitada pelo risco ao coração.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medicamento previne a cistite hemorrágica da ciclofosfamida?",
+              "opcoes": [
+                "Mesna",
+                "Leucovorina",
+                "Dexrazoxano",
+                "Amifostina"
+              ],
+              "resposta": "Mesna",
+              "explicacao": "O dexrazoxano é usado para proteger o coração das antraciclinas.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q3",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com linfoma agressivo começa quimioterapia e, no dia seguinte, tem potássio de 6,8, fósforo alto, cálcio baixo, ácido úrico de 14 mg/dL e creatinina subindo.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome de lise tumoral",
+                "Insuficiência adrenal",
+                "Hipercalcemia do câncer",
+                "Rabdomiólise"
+              ],
+              "resposta": "Síndrome de lise tumoral",
+              "explicacao": "Hidratação, alopurinol ou rasburicase previnem o quadro em pacientes de risco.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q4",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A neutropenia febril após quimioterapia é uma emergência e exige antibiótico venoso na primeira hora.",
+              "resposta": true,
+              "explicacao": "Mesmo sem foco aparente, a infecção pode evoluir rápido para sepse.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q5",
+              "tipo": "caso_clinico",
+              "caso": "Paciente recebe metotrexato em dose alta e desenvolve feridas na boca e queda importante das células do sangue.",
+              "enunciado": "Qual é o antídoto?",
+              "opcoes": [
+                "Leucovorina (ácido folínico)",
+                "Mesna",
+                "Naloxona",
+                "Vitamina K"
+              ],
+              "resposta": "Leucovorina (ácido folínico)",
+              "explicacao": "A leucovorina fornece o folato já ativo, que o metotrexato bloqueou.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os inibidores de checkpoint imunológico, como o pembrolizumabe, podem causar eventos adversos ___, como colite e tireoidite.",
+              "opcoes": [
+                "imunomediados",
+                "hemorrágicos",
+                "apenas infecciosos",
+                "alérgicos"
+              ],
+              "resposta": "imunomediados",
+              "explicacao": "O sistema imune ativado pelo remédio pode atacar órgãos saudáveis.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia de náuseas na quimioterapia altamente emetogênica?",
+              "opcoes": [
+                "Antagonista de 5-HT3, antagonista de NK1 e dexametasona, com ou sem olanzapina",
+                "Apenas metoclopramida",
+                "Apenas omeprazol",
+                "Nenhuma"
+              ],
+              "resposta": "Antagonista de 5-HT3, antagonista de NK1 e dexametasona, com ou sem olanzapina",
+              "explicacao": "Prevenir é mais eficaz que tratar o vômito depois.",
+              "revisado": false
+            },
+            {
+              "id": "farm-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de mama HER2 positivo em uso de trastuzumabe tem queda da fração de ejeção de 60% para 42%.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suspender temporariamente, tratar a disfunção e reavaliar",
+                "Manter sem mudanças",
+                "Dobrar a dose",
+                "Trocar por doxorrubicina"
+              ],
+              "resposta": "Suspender temporariamente, tratar a disfunção e reavaliar",
+              "explicacao": "Ao contrário das antraciclinas, a lesão pelo trastuzumabe costuma ser reversível.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
