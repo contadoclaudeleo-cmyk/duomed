@@ -1,4 +1,4 @@
-import type { Licao, Materia, MateriaJson, ModoEstudo, Questao, Unidade } from '../types'
+import type { Licao, Materia, MateriaJson, ModoEstudo, NivelDificuldade, Questao, Unidade } from '../types'
 
 // Todo arquivo .json dentro de src/data/graduacao e src/data/residencia entra
 // no app automaticamente. A pasta define em qual modo a matéria aparece.
@@ -51,8 +51,20 @@ export const materiasDoModo = (modo: ModoEstudo) => MATERIAS.filter((m) => m.mod
 /** Primeira matéria com conteúdo de um modo (usada ao trocar de modo) */
 export const primeiraMateriaDoModo = (modo: ModoEstudo) => materiasDoModo(modo).find(materiaDisponivel)!
 
-/** Lista de lições de uma matéria, na ordem da trilha */
-export const licoesDaMateria = (m: Materia) => m.unidades.flatMap((u) => u.licoes)
+export const nivelDaUnidade = (u: Unidade): NivelDificuldade => u.nivel ?? 'facil'
+
+/** Unidades de uma das trilhas (fácil ou difícil) da matéria */
+export const unidadesDoNivel = (m: Materia, nivel: NivelDificuldade) =>
+  m.unidades.filter((u) => nivelDaUnidade(u) === nivel)
+
+/** Lista de lições de uma matéria, na ordem da trilha. Sem nível, traz as duas trilhas. */
+export const licoesDaMateria = (m: Materia, nivel?: NivelDificuldade) =>
+  (nivel ? unidadesDoNivel(m, nivel) : m.unidades).flatMap((u) => u.licoes)
+
+export const NOMES_NIVEL: Record<NivelDificuldade, string> = {
+  facil: 'Fácil',
+  dificil: 'Difícil',
+}
 
 export const NOMES_MODO: Record<ModoEstudo, string> = {
   graduacao: 'Graduação',

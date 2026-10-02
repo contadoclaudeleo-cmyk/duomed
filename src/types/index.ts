@@ -79,10 +79,15 @@ export interface Licao {
   questoes: Questao[]
 }
 
+/** Fácil (conceitos) ou Difícil (questões no estilo das provas) */
+export type NivelDificuldade = 'facil' | 'dificil'
+
 export interface Unidade {
   id: string
   titulo: string
   descricao: string
+  /** Trilha em que a unidade aparece. Se faltar, é 'facil'. */
+  nivel?: NivelDificuldade
   licoes: Licao[]
 }
 
@@ -162,7 +167,8 @@ export type IdConquista =
   | 'licao_perfeita'
   | 'unidade_completa'
 
-export type ModoSessao = 'licao' | 'revisao'
+/** 'nivelamento' é o teste de nível: não gasta vidas nem dá XP */
+export type ModoSessao = 'licao' | 'revisao' | 'nivelamento'
 
 export interface ResultadoSessao {
   modo: ModoSessao

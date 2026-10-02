@@ -19,6 +19,7 @@ export function Materias() {
   const atual = useJogo((s) => s.materiaAtual)
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const escolher = useJogo((s) => s.escolherMateria)
+  const nivel = useJogo((s) => s.nivel)
   // A aba começa no modo atual, mas dá para espiar o outro antes de escolher
   const [aba, setAba] = useState(useJogo.getState().modo)
 
@@ -42,7 +43,7 @@ export function Materias() {
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {materiasDoModo(aba).map((m, i) => {
           const disponivel = materiaDisponivel(m)
-          const { feitas, total } = contarConcluidas(m, concluidas)
+          const { feitas, total } = contarConcluidas(m, concluidas, nivel)
           const selecionada = m.id === atual
           return (
             <motion.button

@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { RotateCcw, X } from 'lucide-react'
+import { ClipboardCheck, RotateCcw, X } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { ModoSessao, Questao as TQuestao, Resposta } from '../types'
@@ -24,13 +24,16 @@ interface Props {
   titulo: string
   itens: ItemSessao[]
   licaoId?: string
+  /** Só no teste de nível: recebe as respostas no fim, sem XP nem estatísticas */
+  aoTerminar?: (respostas: RespostaDada[]) => void
 }
 
 /**
  * Motor de uma sessão de questões. Serve tanto para lições da trilha
- * quanto para a revisão (no modo revisão, errar não gasta vida).
+ * quanto para a revisão (no modo revisão, errar não gasta vida) e para o
+ * teste de nível (não gasta vida, não dá XP e não entra nas estatísticas).
  */
-export function Sessao({ modo, titulo, itens, licaoId }: Props) {
+export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
   const navegar = useNavigate()
   const responder = useJogo((s) => s.responder)
   const concluirSessao = useJogo((s) => s.concluirSessao)
@@ -56,7 +59,7 @@ export function Sessao({ modo, titulo, itens, licaoId }: Props) {
     setVerificada(true)
     setRespostas((r) => [...r, { questao: item.questao, acertou: certo }])
     // Salva na hora: estatísticas, fila de revisão e perda de vida
-    responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
+    if (modo !== 'nivelamento') responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
   }, [podeVerificar, item, resposta, responder, modo])
 
   const continuar = useCallback(() => {
@@ -69,6 +72,7 @@ export function Sessao({ modo, titulo, itens, licaoId }: Props) {
     }
 
     if (indice + 1 >= itens.length) {
+      if (modo === 'nivelamento') return aoTerminar?.(respostas)
       concluirSessao({ modo, titulo, licaoId, respostas, tempoMs: Date.now() - inicio.current })
       navegar('/resultado', { replace: true })
       return
@@ -77,7 +81,7 @@ export function Sessao({ modo, titulo, itens, licaoId }: Props) {
     setIndice((i) => i + 1)
     setResposta(null)
     setVerificada(false)
-  }, [verificada, modo, indice, itens.length, concluirSessao, titulo, licaoId, respostas, navegar])
+  }, [verificada, modo, indice, itens.length, concluirSessao, titulo, licaoId, respostas, navegar, aoTerminar])
 
   // Enter verifica ou continua (para quem usa teclado no computador)
   useEffect(() => {
@@ -112,7 +116,12 @@ export function Sessao({ modo, titulo, itens, licaoId }: Props) {
           <ContadorVidas />
         ) : (
           <span className="flex items-center gap-1 text-sm font-extrabold text-agua-texto dark:text-menta">
-            <RotateCcw className="h-5 w-5" strokeWidth={2.6} /> Revisão
+            {modo === 'revisao' ? (
+              <RotateCcw className="h-5 w-5" strokeWidth={2.6} />
+            ) : (
+              <ClipboardCheck className="h-5 w-5" strokeWidth={2.6} />
+            )}
+            {modo === 'revisao' ? 'Revisão' : 'Teste'}
           </span>
         )}
       </header>
@@ -166,7 +175,9 @@ export function Sessao({ modo, titulo, itens, licaoId }: Props) {
           <p className="text-texto-suave">
             {modo === 'licao'
               ? 'Você vai perder o progresso desta lição. As vidas perdidas não voltam.'
-              : 'Você pode continuar a revisão depois.'}
+              : modo === 'revisao'
+                ? 'Você pode continuar a revisão depois.'
+                : 'Você começa no nível fácil e pode refazer o teste depois, pelo perfil.'}
           </p>
           <Botao larguraTotal onClick={() => setConfirmarSaida(false)}>
             Continuar estudando

@@ -7,6 +7,7 @@ import type {
   LicaoConcluida,
   MetaDiaria,
   ModoEstudo,
+  NivelDificuldade,
   ModoSessao,
   Ofensiva,
   Questao,
@@ -45,6 +46,8 @@ interface DadosJogo {
   conquistas: Partial<Record<IdConquista, number>>
   /** Graduação ou Residência: define quais matérias aparecem */
   modo: ModoEstudo
+  /** Trilha fácil ou difícil, escolhida pelo teste de nível ou pelo usuário */
+  nivel: NivelDificuldade
   materiaAtual: string
   tema: Tema
 }
@@ -65,6 +68,7 @@ interface AcoesJogo {
   definirTema: (tema: Tema) => void
   escolherMateria: (materiaId: string) => void
   escolherModo: (modo: ModoEstudo) => void
+  definirNivel: (nivel: NivelDificuldade) => void
   sincronizarVidas: () => void
   responder: (dados: { questao: Questao; materiaId: string; acertou: boolean; modo: ModoSessao }) => void
   concluirSessao: (dados: ConclusaoSessao) => ResultadoSessao
@@ -85,6 +89,7 @@ const estadoInicial = (): DadosJogo => ({
   estatisticasPorMateria: {},
   conquistas: {},
   modo: 'graduacao',
+  nivel: 'facil',
   materiaAtual: 'anatomia',
   tema: 'sistema',
 })
@@ -108,6 +113,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       },
 
       definirTema: (tema) => set({ tema }),
+
+      definirNivel: (nivel) => set({ nivel }),
 
       // Escolher uma matéria também troca o modo, se ela for do outro modo
       escolherMateria: (materiaAtual) =>

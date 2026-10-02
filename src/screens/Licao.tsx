@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { buscarLicao } from '../data'
+import { buscarLicao, nivelDaUnidade } from '../data'
 import { useJogo } from '../store/useJogo'
 import { statusDasLicoes } from '../lib/progresso'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
@@ -21,7 +21,8 @@ export function Licao() {
   if (!local) return <Navigate to="/" replace />
 
   // Lição bloqueada não pode ser aberta pela URL
-  if (statusDasLicoes(local.materia, concluidas)[licaoId] === 'bloqueada') return <Navigate to="/" replace />
+  const nivel = nivelDaUnidade(local.unidade)
+  if (statusDasLicoes(local.materia, concluidas, nivel)[licaoId] === 'bloqueada') return <Navigate to="/" replace />
 
   if (semVidasAoAbrir) {
     return (

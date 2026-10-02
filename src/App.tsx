@@ -11,6 +11,7 @@ import { Revisao } from './screens/Revisao'
 import { RevisaoPratica } from './screens/RevisaoPratica'
 import { Ranking } from './screens/Ranking'
 import { Perfil } from './screens/Perfil'
+import { Nivelamento } from './screens/Nivelamento'
 
 /** Aplica claro/escuro no <html> conforme a escolha do usuário */
 function useTema() {
@@ -62,6 +63,7 @@ export function App() {
         <Route path="licao/:licaoId" element={<Licao />} />
         <Route path="revisao/praticar" element={<RevisaoPratica />} />
         <Route path="resultado" element={<Resultado />} />
+        <Route path="nivelamento" element={<Nivelamento />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

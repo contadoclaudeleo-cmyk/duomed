@@ -41,6 +41,8 @@ for (const { arquivo, caminho } of arquivos) {
   }
   for (const unidade of materia.unidades ?? []) {
     usarId(unidade.id, arquivo)
+    if (unidade.nivel !== undefined && !['facil', 'dificil'].includes(unidade.nivel))
+      erros.push(`${arquivo} > ${unidade.id}: "nivel" deve ser "facil" ou "dificil"`)
     for (const licao of unidade.licoes ?? []) {
       usarId(licao.id, arquivo)
       const n = licao.questoes?.length ?? 0

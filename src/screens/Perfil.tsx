@@ -13,7 +13,7 @@ import { BarraProgresso } from '../components/BarraProgresso'
 import { IconeMateria } from '../components/IconeMateria'
 import { Botao } from '../components/Botao'
 import { Modal } from '../components/Modal'
-import { AbasModo } from '../components/AbasModo'
+import { AbasModo, AbasNivel } from '../components/AbasModo'
 
 export function Perfil() {
   const navegar = useNavigate()
@@ -99,7 +99,7 @@ export function Perfil() {
       <div className="flex flex-col gap-3">
         {materiasDoModo(jogo.modo).filter(materiaDisponivel).map((m) => {
           const stats = jogo.estatisticasPorMateria[m.id] ?? { respondidas: 0, acertos: 0 }
-          const { feitas, total } = contarConcluidas(m, jogo.licoesConcluidas)
+          const { feitas, total } = contarConcluidas(m, jogo.licoesConcluidas, jogo.nivel)
           const precisao = stats.respondidas ? Math.round((stats.acertos / stats.respondidas) * 100) : 0
           return (
             <div key={m.id} className="rounded-2xl border-2 border-borda bg-superficie p-4">
@@ -132,6 +132,17 @@ export function Perfil() {
         <div>
           <p className="mb-2 font-bold">Modo de estudo</p>
           <AbasModo valor={jogo.modo} aoMudar={jogo.escolherModo} />
+        </div>
+        <div>
+          <p className="mb-2 font-bold">Nível</p>
+          <AbasNivel valor={jogo.nivel} aoMudar={jogo.definirNivel} />
+          <button
+            type="button"
+            onClick={() => navegar('/nivelamento')}
+            className="mt-2 text-sm font-bold text-agua-texto underline-offset-4 hover:underline dark:text-menta"
+          >
+            Refazer o teste de nível
+          </button>
         </div>
         <div>
           <p className="mb-2 font-bold">Meta diária</p>

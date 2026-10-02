@@ -58,7 +58,8 @@ export function BoasVindas() {
     if (!podeAvancar) return
     if (!ultimo) return setIndice(indice + 1)
     criarUsuario(nome, modo === 'residencia' ? null : semestre, meta!, modo!)
-    navegar('/', { replace: true })
+    // Logo depois do cadastro vem o teste de nível (dá para pular)
+    navegar('/nivelamento', { replace: true })
   }
 
   if (passo === 'inicio') {

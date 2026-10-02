@@ -1,7 +1,7 @@
 import { Check, Flame, RotateCcw } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { buscarMateria, materiaDisponivel, primeiraMateriaDoModo } from '../data'
+import { buscarMateria, materiaDisponivel, NOMES_NIVEL, primeiraMateriaDoModo, unidadesDoNivel } from '../data'
 import { useJogo } from '../store/useJogo'
 import { statusDasLicoes } from '../lib/progresso'
 import { questoesParaRevisar } from '../lib/revisao'
@@ -12,6 +12,8 @@ import { NoLicao } from '../components/NoLicao'
 import { Modal } from '../components/Modal'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { Lapio } from '../components/Lapio'
+import { AbasNivel } from '../components/AbasModo'
+import { Botao } from '../components/Botao'
 
 /** Curva do caminho: cada lição se desloca um pouco para os lados */
 const deslocamentoDoNo = (indiceGlobal: number) => Math.round(Math.sin(indiceGlobal * 0.95) * 64)
@@ -20,6 +22,8 @@ export function Home() {
   const navegar = useNavigate()
   const materiaId = useJogo((s) => s.materiaAtual)
   const modo = useJogo((s) => s.modo)
+  const nivel = useJogo((s) => s.nivel)
+  const definirNivel = useJogo((s) => s.definirNivel)
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const fila = useJogo((s) => s.filaRevisao)
   const meta = useJogo((s) => s.usuario?.metaDiaria ?? 20)
@@ -29,7 +33,8 @@ export function Home() {
 
   const atual = buscarMateria(materiaId)
   const materia = atual && materiaDisponivel(atual) && atual.modo === modo ? atual : primeiraMateriaDoModo(modo)
-  const status = statusDasLicoes(materia, concluidas)
+  const status = statusDasLicoes(materia, concluidas, nivel)
+  const unidades = unidadesDoNivel(materia, nivel)
   const pendentes = questoesParaRevisar(fila).length
 
   function comecar(licaoId: string) {
@@ -83,8 +88,25 @@ export function Home() {
           </Link>
         )}
 
+        {/* Escolha da trilha: fácil ou difícil */}
+        <div className="mt-3">
+          <AbasNivel valor={nivel} aoMudar={definirNivel} />
+        </div>
+
+        {unidades.length === 0 && (
+          <div className="mt-8 flex flex-col items-center gap-3 text-center">
+            <Lapio altura={90} />
+            <p className="max-w-72 font-semibold text-texto-suave">
+              O nível {NOMES_NIVEL[nivel].toLowerCase()} de {materia.nome} ainda está em preparação.
+            </p>
+            <Botao tamanho="md" variante="contorno" onClick={() => definirNivel(nivel === 'facil' ? 'dificil' : 'facil')}>
+              Ver o nível {nivel === 'facil' ? 'difícil' : 'fácil'}
+            </Botao>
+          </div>
+        )}
+
         {/* Trilha: unidades e lições */}
-        {materia.unidades.map((unidade, ui) => {
+        {unidades.map((unidade, ui) => {
           const feitas = unidade.licoes.filter((l) => concluidas[l.id]).length
           const liberada = unidade.licoes.some((l) => status[l.id] !== 'bloqueada')
           const completa = feitas === unidade.licoes.length
@@ -95,7 +117,10 @@ export function Home() {
                 className={`flex items-center gap-4 rounded-2xl p-4 ${liberada ? 'bg-agua text-white' : 'bg-apagado text-apagado-texto'}`}
               >
                 <div className="flex-1">
-                  <p className="text-xs font-extrabold uppercase tracking-wider opacity-80">Unidade {ui + 1}</p>
+                  <p className="text-xs font-extrabold uppercase tracking-wider opacity-80">
+                    Unidade {ui + 1}
+                    {nivel === 'dificil' && ' · nível difícil'}
+                  </p>
                   <h2 className="text-xl font-extrabold">{unidade.titulo}</h2>
                   <p className="text-sm opacity-90">{unidade.descricao}</p>
                 </div>
@@ -127,10 +152,12 @@ export function Home() {
           )
         })}
 
-        <div className="mt-10 flex flex-col items-center gap-2 pb-6 text-center">
-          <Lapio altura={90} />
-          <p className="max-w-60 text-sm font-semibold text-texto-suave">Novas unidades de {materia.nome} em breve.</p>
-        </div>
+        {unidades.length > 0 && (
+          <div className="mt-10 flex flex-col items-center gap-2 pb-6 text-center">
+            <Lapio altura={90} />
+            <p className="max-w-60 text-sm font-semibold text-texto-suave">Novas unidades de {materia.nome} em breve.</p>
+          </div>
+        )}
       </div>
 
       {/* Toque fora do balão fecha o balão */}
