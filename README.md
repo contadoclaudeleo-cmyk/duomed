@@ -229,6 +229,7 @@ No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide
 | Ranking | Liga semanal com 14 jogadores fictícios que reinicia toda segunda | `src/lib/ranking.ts` |
 | Resolução | Depois de responder uma questão, o comentário (campo `explicacao`) fica escondido. Ele só aparece se a pessoa tocar em "Ver resolução". | `src/components/PainelFeedback.tsx` |
 | Revisão comentada | Ao fim de cada lição ou revisão, o botão "Ver revisão comentada" mostra cada questão com a resposta certa, o que a pessoa marcou e o comentário (campo `explicacao`). Nas lições já concluídas da trilha, o balão da lição também abre o gabarito comentado. | `src/screens/RevisaoComentada.tsx` |
+| Trilha | Na graduação, cada lição libera a próxima. Na residência, todas as lições ficam liberadas (tudo cai na mesma prova) e a trilha tem botões para trocar de área; a próxima lição pendente fica destacada como sugestão. | `src/lib/progresso.ts` |
 | Teste de nível | 8 questões, sem gastar vidas e sem ganhar XP. 6 acertos ou mais sugerem o nível difícil. | `src/screens/Nivelamento.tsx` |
 | Sons e animações | Sons de clique, acerto, erro, acertos seguidos (3, 5 e 8), fim de lição e conquista. Os arquivos ficam em `public/sons/` (clique e fim de lição da Mixkit, com licença gratuita para apps; os outros da Kenney, domínio público CC0). Dá para desligar no Perfil. As animações somem se o aparelho estiver com "reduzir movimento" ligado. | `src/lib/sons.ts` e `src/components/Animacoes.tsx` |
 

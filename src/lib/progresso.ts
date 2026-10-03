@@ -2,12 +2,15 @@ import type { LicaoConcluida, Materia, NivelDificuldade } from '../types'
 import { licoesDaMateria } from '../data'
 
 // ============================================================
-// Trilha: a ordem das lições é linear dentro de cada matéria.
+// Trilha da graduação: a ordem das lições é linear dentro de cada matéria.
 // Uma lição só é liberada quando a anterior foi concluída.
+// Trilha da residência: tudo liberado, a pessoa escolhe por onde estudar
+// (tudo cai na mesma prova). A primeira lição pendente fica como sugestão.
 // As trilhas fácil e difícil são independentes: cada uma tem sua ordem.
 // ============================================================
 
-export type StatusLicao = 'concluida' | 'atual' | 'bloqueada'
+/** livre: liberada para fazer, mas não é a próxima sugerida (só na residência) */
+export type StatusLicao = 'concluida' | 'atual' | 'livre' | 'bloqueada'
 
 export function statusDasLicoes(
   materia: Materia,
@@ -23,7 +26,7 @@ export function statusDasLicoes(
       status[licao.id] = 'atual'
       jaMarcouAtual = true
     } else {
-      status[licao.id] = 'bloqueada'
+      status[licao.id] = materia.modo === 'residencia' ? 'livre' : 'bloqueada'
     }
   }
   return status

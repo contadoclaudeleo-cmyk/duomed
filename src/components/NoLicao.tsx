@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { Check, Lock, Star } from 'lucide-react'
+import { BookOpen, Check, Lock, Star } from 'lucide-react'
 import type { StatusLicao } from '../lib/progresso'
 import { Botao } from './Botao'
 
@@ -22,6 +22,7 @@ interface Props {
 const cores: Record<StatusLicao, string> = {
   concluida: 'bg-agua text-white shadow-[0_6px_0_0_var(--color-agua-escura)]',
   atual: 'bg-agua text-white shadow-[0_6px_0_0_var(--color-agua-escura)]',
+  livre: 'bg-superficie text-agua-texto dark:text-menta border-[3px] border-agua shadow-[0_6px_0_0_var(--color-agua)]',
   bloqueada: 'bg-apagado text-apagado-texto shadow-[0_6px_0_0_var(--apagado-sombra)]',
 }
 
@@ -38,7 +39,7 @@ export function NoLicao({
   aoVerComentada,
   recemConcluida,
 }: Props) {
-  const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : Lock
+  const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : status === 'livre' ? BookOpen : Lock
 
   return (
     // Cada nó aparece com efeito de mola quando entra na tela
@@ -78,7 +79,9 @@ export function NoLicao({
         <motion.button
           type="button"
           onClick={aoAlternar}
-          aria-label={`${titulo}, ${status === 'concluida' ? 'concluída' : status === 'atual' ? 'próxima lição' : 'bloqueada'}`}
+          aria-label={`${titulo}, ${
+            status === 'concluida' ? 'concluída' : status === 'atual' ? 'próxima lição' : status === 'livre' ? 'liberada' : 'bloqueada'
+          }`}
           aria-expanded={aberto}
           className={`flex h-[70px] w-[70px] items-center justify-center rounded-full transition-[box-shadow] duration-75 active:shadow-none ${cores[status]}`}
           whileTap={{ y: 6 }}

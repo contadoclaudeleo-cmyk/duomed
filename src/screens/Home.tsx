@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Check, Flame, RotateCcw } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { buscarMateria, materiaDisponivel, NOMES_NIVEL, primeiraMateriaDoModo, unidadesDoNivel } from '../data'
+import { buscarMateria, materiaDisponivel, materiasDoModo, NOMES_NIVEL, primeiraMateriaDoModo, unidadesDoNivel } from '../data'
 import { useJogo } from '../store/useJogo'
 import { statusDasLicoes } from '../lib/progresso'
 import { questoesParaRevisar } from '../lib/revisao'
@@ -15,6 +15,7 @@ import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { Lapio } from '../components/Lapio'
 import { AbasNivel } from '../components/AbasModo'
 import { Botao } from '../components/Botao'
+import { IconeMateria } from '../components/IconeMateria'
 
 /** Curva do caminho: cada lição se desloca um pouco para os lados */
 const deslocamentoDoNo = (indiceGlobal: number) => Math.round(Math.sin(indiceGlobal * 0.95) * 64)
@@ -29,6 +30,7 @@ export function Home() {
   const modo = useJogo((s) => s.modo)
   const nivel = useJogo((s) => s.nivel)
   const definirNivel = useJogo((s) => s.definirNivel)
+  const escolherMateria = useJogo((s) => s.escolherMateria)
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const fila = useJogo((s) => s.filaRevisao)
   const meta = useJogo((s) => s.usuario?.metaDiaria ?? 20)
@@ -113,6 +115,42 @@ export function Home() {
         <div className="mt-3">
           <AbasNivel valor={nivel} aoMudar={definirNivel} />
         </div>
+
+        {/* Residência: troca de área com um toque, e todas as lições ficam liberadas */}
+        {modo === 'residencia' && (
+          <div className="mt-3">
+            <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none]" role="radiogroup" aria-label="Área de estudo">
+              {materiasDoModo('residencia')
+                .filter(materiaDisponivel)
+                .map((m) => {
+                  const ativa = m.id === materia.id
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={ativa}
+                      onClick={() => {
+                        setAberta(null)
+                        escolherMateria(m.id)
+                      }}
+                      className={`flex shrink-0 items-center gap-2 rounded-xl border-2 px-3 py-2 text-sm font-bold transition-colors ${
+                        ativa
+                          ? 'border-agua bg-agua/10 text-agua-texto dark:text-menta'
+                          : 'border-borda bg-superficie text-texto-suave hover:bg-superficie-2'
+                      }`}
+                    >
+                      <IconeMateria nome={m.icone} className="h-4 w-4" />
+                      {m.nome}
+                    </button>
+                  )
+                })}
+            </div>
+            <p className="mt-2 text-xs font-semibold text-texto-suave">
+              Na residência, todas as lições estão liberadas. Estude na ordem que quiser.
+            </p>
+          </div>
+        )}
 
         {unidades.length === 0 && (
           <div className="mt-8 flex flex-col items-center gap-3 text-center">
