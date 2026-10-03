@@ -81,12 +81,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual paciente é classificado como ASA III?",
               "opcoes": [
-                "Paciente com doença grave que limita a atividade",
-                "Paciente saudável",
-                "Paciente em morte encefálica",
-                "Paciente com doença leve"
+                "Doença grave que limita a atividade",
+                "Saudável, sem nenhuma doença",
+                "Em morte encefálica, doador de órgãos",
+                "Doença leve, bem controlada com um remédio diário"
               ],
-              "resposta": "Paciente com doença grave que limita a atividade",
+              "resposta": "Doença grave que limita a atividade",
               "explicacao": "Exemplo: diabetes mal controlado.",
               "revisado": false
             },
@@ -97,9 +97,9 @@
               "enunciado": "O que suspeitar?",
               "opcoes": [
                 "Risco de hipertermia maligna",
-                "Alergia comum",
-                "Nada",
-                "Ansiedade"
+                "Alergia comum a remédios",
+                "Ansiedade antes da cirurgia",
+                "Infecção hospitalar que o parente pegou durante a internação"
               ],
               "resposta": "Risco de hipertermia maligna",
               "explicacao": "Evitar os gatilhos, como succinilcolina.",
@@ -163,12 +163,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que avalia a classificação de Mallampati?",
               "opcoes": [
-                "Visão das estruturas da garganta com a boca aberta",
-                "Força",
-                "Pressão",
-                "Função do coração"
+                "Estruturas da garganta com a boca aberta",
+                "Força dos músculos do pescoço",
+                "Pressão arterial antes da cirurgia",
+                "Função do coração pelo ecocardiograma feito em repouso e no esforço"
               ],
-              "resposta": "Visão das estruturas da garganta com a boca aberta",
+              "resposta": "Estruturas da garganta com a boca aberta",
               "explicacao": "Classes altas sugerem intubação difícil.",
               "revisado": false
             },
@@ -186,9 +186,9 @@
               "enunciado": "O ___ é um aparelho de vídeo que ajuda na intubação difícil.",
               "opcoes": [
                 "videolaringoscópio",
-                "estetoscópio",
+                "estetoscópio digital",
                 "otoscópio",
-                "oxímetro"
+                "oxímetro de pulso de dedo"
               ],
               "resposta": "videolaringoscópio",
               "explicacao": "Melhora a visão das cordas vocais.",
@@ -202,7 +202,7 @@
                 "Cormack-Lehane",
                 "Mallampati",
                 "Glasgow",
-                "ASA"
+                "Escala de Patil-Aldreti modificada"
               ],
               "resposta": "Cormack-Lehane",
               "explicacao": "Graus altos indicam intubação difícil.",
@@ -214,12 +214,12 @@
               "caso": "Paciente obeso com pescoço curto e Mallampati IV vai fazer cirurgia.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Planejar via aérea difícil com equipamentos e plano alternativo",
-                "Nada",
-                "Intubar sem preparo",
-                "Cancelar sempre"
+                "Planejar via aérea difícil com plano alternativo",
+                "Intubar sem preparo especial",
+                "Cancelar a cirurgia sempre",
+                "Usar apenas máscara laríngea durante toda a cirurgia, sem plano B"
               ],
-              "resposta": "Planejar via aérea difícil com equipamentos e plano alternativo",
+              "resposta": "Planejar via aérea difícil com plano alternativo",
               "explicacao": "Ter dispositivos supraglóticos e acesso cirúrgico.",
               "revisado": false
             },
@@ -238,8 +238,8 @@
               "opcoes": [
                 "oxigenar",
                 "sedar",
-                "falar",
-                "andar"
+                "aspirar",
+                "extubar com segurança"
               ],
               "resposta": "oxigenar",
               "explicacao": "A cricotireoidostomia é indicada.",
@@ -259,7 +259,7 @@
                 "Inibidor de SGLT2",
                 "Betabloqueador",
                 "Estatina",
-                "Levotiroxina"
+                "Levotiroxina em dose de reposição"
               ],
               "resposta": "Inibidor de SGLT2",
               "explicacao": "Suspender 3 dias antes.",
@@ -305,8 +305,8 @@
               "opcoes": [
                 "estenose aórtica",
                 "miopia",
-                "rinite",
-                "acne"
+                "rinite alérgica",
+                "acne inflamatória no rosto"
               ],
               "resposta": "estenose aórtica",
               "explicacao": "A queda da pressão é mal tolerada.",
@@ -318,9 +318,9 @@
               "enunciado": "Qual é o cuidado com o paciente com doença renal antes da anestesia?",
               "opcoes": [
                 "Verificar potássio e ajustar remédios",
-                "Nada",
                 "Dar mais soro sempre",
-                "Suspender a diálise"
+                "Suspender a diálise",
+                "Dobrar a dose dos remédios para compensar a perda pela urina"
               ],
               "resposta": "Verificar potássio e ajustar remédios",
               "explicacao": "O potássio alto é perigoso.",
@@ -332,12 +332,12 @@
               "caso": "Paciente com diabetes usa insulina e vai operar de manhã.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Reduzir a insulina basal da noite e monitorar a glicose",
+                "Reduzir a insulina basal e monitorar a glicose",
                 "Suspender toda insulina por dias",
                 "Dose normal com jejum",
-                "Nada"
+                "Dar o dobro da insulina rápida de manhã para evitar a glicose alta na cirurgia"
               ],
-              "resposta": "Reduzir a insulina basal da noite e monitorar a glicose",
+              "resposta": "Reduzir a insulina basal e monitorar a glicose",
               "explicacao": "Evitar hipoglicemia e hiperglicemia.",
               "revisado": false
             },
@@ -357,7 +357,7 @@
                 "consentimento",
                 "prontuário",
                 "atestado",
-                "receituário"
+                "receituário de controle especial"
               ],
               "resposta": "consentimento",
               "explicacao": "Deve ser feito antes da cirurgia.",
@@ -406,12 +406,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são os componentes da anestesia geral?",
               "opcoes": [
-                "Inconsciência, analgesia, relaxamento muscular e controle dos reflexos",
-                "Só sono",
-                "Só analgesia",
-                "Só relaxamento"
+                "Inconsciência, analgesia, relaxamento e controle de reflexos",
+                "Só sono profundo",
+                "Só analgesia forte",
+                "Só relaxamento muscular, sem precisar de sono nem de remédio para dor"
               ],
-              "resposta": "Inconsciência, analgesia, relaxamento muscular e controle dos reflexos",
+              "resposta": "Inconsciência, analgesia, relaxamento e controle de reflexos",
               "explicacao": "O equilíbrio usa vários remédios.",
               "revisado": false
             },
@@ -459,8 +459,8 @@
               "opcoes": [
                 "Cetamina ou etomidato",
                 "Propofol em dose alta",
-                "Nenhum",
-                "Tiopental"
+                "Tiopental em bolus",
+                "Midazolam em dose alta associado a fentanil, porque estabiliza a pressão"
               ],
               "resposta": "Cetamina ou etomidato",
               "explicacao": "O propofol pode piorar a pressão.",
@@ -527,7 +527,7 @@
                 "Potássio muito alto",
                 "Hipoglicemia",
                 "Hipertensão",
-                "Bradicardia leve"
+                "Bradicardia leve que melhora sozinha em poucos minutos"
               ],
               "resposta": "Potássio muito alto",
               "explicacao": "Pode causar parada cardíaca.",
@@ -549,7 +549,7 @@
                 "succinilcolina",
                 "morfina",
                 "lidocaína",
-                "dipirona"
+                "dipirona em dose venosa"
               ],
               "resposta": "succinilcolina",
               "explicacao": "O tratamento é dantroleno.",
@@ -561,9 +561,9 @@
               "enunciado": "Qual é o cuidado com pacientes com bloqueio residual após a anestesia?",
               "opcoes": [
                 "Risco de falta de ar e aspiração",
-                "Nenhum",
-                "Euforia",
-                "Dor"
+                "Euforia e agitação",
+                "Dor no local da punção",
+                "Aumento da força muscular e tremores nos braços e nas pernas"
               ],
               "resposta": "Risco de falta de ar e aspiração",
               "explicacao": "Monitorar a função muscular.",
@@ -576,9 +576,9 @@
               "enunciado": "O que ocorre?",
               "opcoes": [
                 "Paralisia prolongada pela falta da enzima",
-                "Alergia",
-                "AVC",
-                "Hipoglicemia"
+                "Alergia ao remédio",
+                "AVC durante a indução",
+                "Hipoglicemia causada pelo jejum prolongado antes da cirurgia"
               ],
               "resposta": "Paralisia prolongada pela falta da enzima",
               "explicacao": "Manter ventilação até passar o efeito.",
@@ -645,7 +645,7 @@
                 "Aumento do CO2 expirado",
                 "Febre baixa",
                 "Hipotensão leve",
-                "Bradicardia"
+                "Bradicardia com pupilas pequenas e pele fria e pálida"
               ],
               "resposta": "Aumento do CO2 expirado",
               "explicacao": "A febre é um sinal tardio.",
@@ -678,12 +678,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a causa mais comum de anafilaxia na anestesia?",
               "opcoes": [
-                "Bloqueadores neuromusculares, antibióticos e látex",
-                "Soro",
+                "Relaxantes musculares, antibióticos e látex",
+                "Soro fisiológico",
                 "Oxigênio",
-                "Água"
+                "Água destilada usada para diluir os remédios na seringa"
               ],
-              "resposta": "Bloqueadores neuromusculares, antibióticos e látex",
+              "resposta": "Relaxantes musculares, antibióticos e látex",
               "explicacao": "A clorexidina também pode causar.",
               "revisado": false
             },
@@ -696,7 +696,7 @@
                 "Anafilaxia; adrenalina",
                 "Hipovolemia; soro apenas",
                 "Asma; broncodilatador apenas",
-                "Nada"
+                "Reação vagal; atropina e elevação das pernas do paciente"
               ],
               "resposta": "Anafilaxia; adrenalina",
               "explicacao": "Suspender o agente suspeito.",
@@ -718,7 +718,7 @@
                 "síndrome",
                 "doença",
                 "crise",
-                "lesão"
+                "lesão pulmonar"
               ],
               "resposta": "síndrome",
               "explicacao": "Mais comum em gestantes.",
@@ -819,9 +819,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Parar a injeção, suporte e emulsão lipídica",
-                "Mais anestésico",
-                "Nada",
-                "Diazepam apenas"
+                "Injetar mais anestésico",
+                "Diazepam apenas",
+                "Apenas observar e completar o bloqueio quando a convulsão terminar"
               ],
               "resposta": "Parar a injeção, suporte e emulsão lipídica",
               "explicacao": "A bupivacaína é muito cardiotóxica.",
@@ -885,12 +885,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a complicação comum após raquianestesia?",
               "opcoes": [
-                "Dor de cabeça que piora ao ficar em pé",
-                "Febre",
-                "Infecção",
-                "Paralisia permanente"
+                "Dor de cabeça que piora em pé",
+                "Febre alta no mesmo dia",
+                "Infecção no local",
+                "Paralisia permanente das pernas que nunca mais melhora"
               ],
-              "resposta": "Dor de cabeça que piora ao ficar em pé",
+              "resposta": "Dor de cabeça que piora em pé",
               "explicacao": "É a cefaleia pós-punção.",
               "revisado": false
             },
@@ -921,12 +921,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a contraindicação à raquianestesia?",
               "opcoes": [
-                "Distúrbio grave da coagulação ou infecção no local",
-                "Idade",
+                "Coagulação muito alterada ou infecção no local",
+                "Idade acima de 70 anos",
                 "Ansiedade leve",
-                "Diabetes controlado"
+                "Diabetes controlado com remédio oral e dieta há muitos anos"
               ],
-              "resposta": "Distúrbio grave da coagulação ou infecção no local",
+              "resposta": "Coagulação muito alterada ou infecção no local",
               "explicacao": "Também recusa do paciente.",
               "revisado": false
             },
@@ -936,12 +936,12 @@
               "caso": "Paciente usando anticoagulante em dose cheia vai fazer cirurgia de joelho.",
               "enunciado": "Pode fazer raquianestesia?",
               "opcoes": [
-                "Não sem suspender pelo tempo adequado, pelo risco de hematoma",
+                "Não sem suspender a tempo, pelo risco de hematoma",
                 "Sim, sempre",
                 "Sim, em dose dupla",
-                "Não importa"
+                "Não importa, porque a agulha da raqui é muito fina e não causa sangramento"
               ],
-              "resposta": "Não sem suspender pelo tempo adequado, pelo risco de hematoma",
+              "resposta": "Não sem suspender a tempo, pelo risco de hematoma",
               "explicacao": "O hematoma pode comprimir a medula.",
               "revisado": false
             },
@@ -979,9 +979,9 @@
               "enunciado": "Qual é a vantagem dos bloqueios de nervos periféricos?",
               "opcoes": [
                 "Analgesia forte com menos opioides",
-                "Mais náusea",
-                "Mais sono",
-                "Nenhuma"
+                "Mais náusea e vômito",
+                "Mais sono depois",
+                "Dispensam qualquer monitorização durante e depois da cirurgia"
               ],
               "resposta": "Analgesia forte com menos opioides",
               "explicacao": "Guiados por ultrassom.",
@@ -1042,7 +1042,7 @@
                 "Paralisia do diafragma do mesmo lado",
                 "Cegueira",
                 "Surdez",
-                "Diarreia"
+                "Diarreia e cólicas por estímulo do nervo vago"
               ],
               "resposta": "Paralisia do diafragma do mesmo lado",
               "explicacao": "Cuidado em pacientes com doença pulmonar.",
@@ -1054,12 +1054,12 @@
               "caso": "Paciente vai operar o ombro e tem DPOC grave.",
               "enunciado": "Qual é o cuidado com o bloqueio interescalênico?",
               "opcoes": [
-                "Evitar ou adaptar, pelo risco de paralisia do diafragma",
+                "Evitar ou adaptar, pelo risco ao diafragma",
                 "Usar sempre",
-                "Nenhum",
-                "Dose dupla"
+                "Dose dupla",
+                "Fazer o bloqueio dos dois lados ao mesmo tempo para ter mais efeito"
               ],
-              "resposta": "Evitar ou adaptar, pelo risco de paralisia do diafragma",
+              "resposta": "Evitar ou adaptar, pelo risco ao diafragma",
               "explicacao": "Pode piorar a respiração.",
               "revisado": false
             },
@@ -1131,7 +1131,7 @@
                 "Depressão respiratória",
                 "Diarreia",
                 "Hipertensão",
-                "Insônia"
+                "Insônia e agitação durante a noite"
               ],
               "resposta": "Depressão respiratória",
               "explicacao": "Monitorar sedação e respiração.",
@@ -1167,7 +1167,7 @@
                 "Escala numérica de 0 a 10",
                 "Glasgow",
                 "Apgar",
-                "ASA"
+                "Classificação ASA de risco antes da cirurgia"
               ],
               "resposta": "Escala numérica de 0 a 10",
               "explicacao": "A dor é o quinto sinal vital.",
@@ -1179,12 +1179,12 @@
               "caso": "Paciente operado tem dor 8 em 10 com paracetamol.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Associar anti-inflamatório e opioide conforme necessário",
-                "Nada",
+                "Associar anti-inflamatório e opioide se preciso",
                 "Dar só paracetamol a mais",
-                "Esperar"
+                "Manter igual",
+                "Dizer ao paciente que a dor é normal e deve passar sozinha em alguns dias"
               ],
-              "resposta": "Associar anti-inflamatório e opioide conforme necessário",
+              "resposta": "Associar anti-inflamatório e opioide se preciso",
               "explicacao": "A analgesia multimodal funciona melhor.",
               "revisado": false
             },
@@ -1246,12 +1246,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual monitorização é obrigatória na sedação?",
               "opcoes": [
-                "Oximetria, pressão e observação da respiração",
-                "Nenhuma",
+                "Oximetria, pressão e respiração",
                 "Só pressão",
-                "Só temperatura"
+                "Só temperatura",
+                "Só a observação visual da cor da pele do paciente"
               ],
-              "resposta": "Oximetria, pressão e observação da respiração",
+              "resposta": "Oximetria, pressão e respiração",
               "explicacao": "A capnografia é recomendada.",
               "revisado": false
             },
@@ -1297,12 +1297,12 @@
               "caso": "Paciente sedado para endoscopia tem saturação caindo para 85% e ronco.",
               "enunciado": "Qual é a primeira medida?",
               "opcoes": [
-                "Manobras para abrir a via aérea e oxigênio",
+                "Abrir a via aérea e dar oxigênio",
                 "Mais sedativo",
-                "Nada",
-                "Esperar"
+                "Aguardar",
+                "Aumentar a velocidade do procedimento para terminar logo e acordar o paciente"
               ],
-              "resposta": "Manobras para abrir a via aérea e oxigênio",
+              "resposta": "Abrir a via aérea e dar oxigênio",
               "explicacao": "Elevar o queixo e tracionar a mandíbula.",
               "revisado": false
             },
@@ -1322,7 +1322,7 @@
                 "dexmedetomidina",
                 "propofol",
                 "midazolam",
-                "morfina"
+                "morfina em infusão contínua"
               ],
               "resposta": "dexmedetomidina",
               "explicacao": "Pode causar bradicardia.",
@@ -1340,9 +1340,9 @@
               "enunciado": "Qual é o risco do uso prolongado de opioides na dor crônica não oncológica?",
               "opcoes": [
                 "Tolerância, dependência e hiperalgesia",
-                "Nenhum",
                 "Cura da dor",
-                "Ganho de força"
+                "Ganho de força",
+                "Melhora definitiva do sono e do humor sem efeitos ruins"
               ],
               "resposta": "Tolerância, dependência e hiperalgesia",
               "explicacao": "Devem ser usados com cautela.",
@@ -1400,12 +1400,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tratamento da dor neuropática?",
               "opcoes": [
-                "Antidepressivos e anticonvulsivantes, como gabapentina",
+                "Antidepressivos e anticonvulsivantes",
                 "Só paracetamol",
                 "Só anti-inflamatório",
-                "Nada"
+                "Repouso absoluto na cama por várias semanas, sem remédio"
               ],
-              "resposta": "Antidepressivos e anticonvulsivantes, como gabapentina",
+              "resposta": "Antidepressivos e anticonvulsivantes",
               "explicacao": "Opioides funcionam menos.",
               "revisado": false
             },
@@ -1417,8 +1417,8 @@
               "opcoes": [
                 "Hiperalgesia e tolerância ao opioide",
                 "Piora da doença sempre",
-                "Alergia",
-                "Nada"
+                "Alergia à morfina",
+                "Dose de morfina baixa demais, que precisa ser dobrada logo"
               ],
               "resposta": "Hiperalgesia e tolerância ao opioide",
               "explicacao": "Avaliar redução gradual e outras abordagens.",
@@ -1492,7 +1492,7 @@
                 "Maior risco de via aérea difícil e aspiração",
                 "É mais cara",
                 "Não funciona",
-                "É proibida"
+                "É proibida por lei em qualquer gestante, mesmo em emergência"
               ],
               "resposta": "Maior risco de via aérea difícil e aspiração",
               "explicacao": "O bloqueio é mais seguro.",
@@ -1514,7 +1514,7 @@
                 "esquerda",
                 "direita",
                 "frente",
-                "trás"
+                "cabeceira, bem elevada"
               ],
               "resposta": "esquerda",
               "explicacao": "Melhora o retorno do sangue.",
@@ -1528,7 +1528,7 @@
                 "Alívio da dor com a mãe acordada",
                 "Acelera muito o parto",
                 "Evita a cesárea sempre",
-                "Nenhuma"
+                "Dispensa a monitorização do bebê durante todo o trabalho de parto"
               ],
               "resposta": "Alívio da dor com a mãe acordada",
               "explicacao": "Pode ser convertida para cesárea.",
@@ -1540,12 +1540,12 @@
               "caso": "Gestante com pré-eclâmpsia grave e plaquetas de 50 mil vai para cesárea.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Evitar raquianestesia pelo risco de hematoma",
+                "Evitar raqui pelo risco de hematoma",
                 "Raquianestesia normal",
-                "Nenhum",
-                "Peridural dupla"
+                "Peridural dupla",
+                "Transfundir plasma e fazer peridural com cateter mesmo assim"
               ],
-              "resposta": "Evitar raquianestesia pelo risco de hematoma",
+              "resposta": "Evitar raqui pelo risco de hematoma",
               "explicacao": "Plaquetas baixas aumentam o risco.",
               "revisado": false
             },
@@ -1610,7 +1610,7 @@
                 "Inalatória com máscara",
                 "Venosa sempre",
                 "Raquianestesia",
-                "Peridural"
+                "Peridural caudal com a criança acordada"
               ],
               "resposta": "Inalatória com máscara",
               "explicacao": "Evita a punção acordada.",
@@ -1644,9 +1644,9 @@
               "enunciado": "Qual é o risco da hipotermia durante a cirurgia?",
               "opcoes": [
                 "Infecção, sangramento e problemas no coração",
-                "Nenhum",
                 "Melhora a cicatrização",
-                "Melhora a pressão"
+                "Melhora a pressão",
+                "Protege os órgãos e acelera o despertar, sem nenhum risco real"
               ],
               "resposta": "Infecção, sangramento e problemas no coração",
               "explicacao": "Manter o paciente aquecido.",
@@ -1658,12 +1658,12 @@
               "caso": "Criança com resfriado leve vai fazer cirurgia eletiva pequena.",
               "enunciado": "O que considerar?",
               "opcoes": [
-                "Maior risco de broncoespasmo e laringoespasmo; avaliar adiar",
-                "Nada",
+                "Risco de broncoespasmo e laringoespasmo; avaliar adiar",
                 "Cancelar sempre",
-                "Dar antibiótico"
+                "Dar antibiótico",
+                "Operar normalmente, porque resfriado nunca muda nada na anestesia da criança"
               ],
-              "resposta": "Maior risco de broncoespasmo e laringoespasmo; avaliar adiar",
+              "resposta": "Risco de broncoespasmo e laringoespasmo; avaliar adiar",
               "explicacao": "Depende da gravidade dos sintomas.",
               "revisado": false
             },
@@ -1683,7 +1683,7 @@
                 "cognitiva",
                 "renal",
                 "hepática",
-                "motora"
+                "motora dos membros inferiores"
               ],
               "resposta": "cognitiva",
               "explicacao": "Pode durar semanas.",
@@ -1727,8 +1727,8 @@
               "opcoes": [
                 "Capnografia com onda de CO2",
                 "Ouvir o estômago",
-                "Raio X sempre antes",
-                "Saturação"
+                "Saturação",
+                "Raio X de tórax sempre antes de ligar o ventilador"
               ],
               "resposta": "Capnografia com onda de CO2",
               "explicacao": "A capnografia é o padrão.",
@@ -1763,8 +1763,8 @@
               "opcoes": [
                 "Abrir a via aérea e ventilar",
                 "Intubar sem ventilar",
-                "Esperar",
-                "Dar remédio"
+                "Dar remédio",
+                "Aguardar alguns minutos para ver se volta a respirar sozinho"
               ],
               "resposta": "Abrir a via aérea e ventilar",
               "explicacao": "A ventilação com bolsa-máscara vem primeiro.",
@@ -1778,8 +1778,8 @@
               "opcoes": [
                 "Via aérea cirúrgica (cricotireoidostomia)",
                 "Continuar tentando intubar",
-                "Esperar",
-                "Dar mais sedativo"
+                "Dar mais sedativo",
+                "Acordar o paciente com flumazenil e naloxona e esperar a respiração voltar"
               ],
               "resposta": "Via aérea cirúrgica (cricotireoidostomia)",
               "explicacao": "É a situação de não intubar e não oxigenar.",
@@ -1801,7 +1801,7 @@
                 "esofágica",
                 "seletiva",
                 "nasal",
-                "traqueal"
+                "traqueal com balonete"
               ],
               "resposta": "esofágica",
               "explicacao": "Deve ser corrigido imediatamente.",
@@ -1866,12 +1866,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado com anestesia em paciente com miastenia gravis?",
               "opcoes": [
-                "Doses menores de relaxantes não despolarizantes e monitorização",
+                "Doses menores de relaxante não despolarizante",
                 "Doses maiores",
-                "Nenhum",
-                "Usar succinilcolina sempre"
+                "Usar succinilcolina sempre",
+                "Suspender a piridostigmina uma semana antes e operar sem monitorização"
               ],
-              "resposta": "Doses menores de relaxantes não despolarizantes e monitorização",
+              "resposta": "Doses menores de relaxante não despolarizante",
               "explicacao": "São muito sensíveis.",
               "revisado": false
             },
@@ -1884,7 +1884,7 @@
                 "Succinilcolina",
                 "Propofol",
                 "Morfina",
-                "Paracetamol"
+                "Paracetamol venoso"
               ],
               "resposta": "Succinilcolina",
               "explicacao": "Pode causar potássio alto e parada.",
@@ -1920,7 +1920,7 @@
                 "Quem usa prednisona há meses",
                 "Ninguém",
                 "Todos",
-                "Só crianças"
+                "Só crianças abaixo de 5 anos de idade"
               ],
               "resposta": "Quem usa prednisona há meses",
               "explicacao": "Evita insuficiência adrenal.",
@@ -1932,12 +1932,12 @@
               "caso": "Paciente com doença de Parkinson usa levodopa e vai operar.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Manter a levodopa e evitar remédios que pioram o Parkinson",
+                "Manter a levodopa e evitar remédios que pioram",
                 "Suspender por 1 semana",
-                "Nada",
-                "Usar metoclopramida"
+                "Usar metoclopramida",
+                "Trocar a levodopa por haloperidol para controlar os tremores durante a cirurgia"
               ],
-              "resposta": "Manter a levodopa e evitar remédios que pioram o Parkinson",
+              "resposta": "Manter a levodopa e evitar remédios que pioram",
               "explicacao": "Parar a levodopa pode causar rigidez grave.",
               "revisado": false
             }
@@ -1981,7 +1981,7 @@
                 "Intubação acordada com fibroscópio",
                 "Indução rápida sem plano",
                 "Máscara apenas",
-                "Nada"
+                "Máscara laríngea após indução profunda com propofol e relaxante muscular"
               ],
               "resposta": "Intubação acordada com fibroscópio",
               "explicacao": "Mantém a respiração espontânea.",
@@ -1992,12 +1992,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é a pré-oxigenação com cateter nasal de alto fluxo?",
               "opcoes": [
-                "Oxigênio contínuo pelo nariz durante a intubação",
+                "Oxigênio contínuo pelo nariz na intubação",
                 "Ventilação mecânica",
                 "Intubação nasal",
-                "Nada"
+                "Máscara com reservatório usada só depois que o tubo já está na traqueia"
               ],
-              "resposta": "Oxigênio contínuo pelo nariz durante a intubação",
+              "resposta": "Oxigênio contínuo pelo nariz na intubação",
               "explicacao": "Aumenta o tempo seguro.",
               "revisado": false
             },
@@ -2007,12 +2007,12 @@
               "caso": "Paciente obeso dessatura rápido durante a intubação.",
               "enunciado": "O que ajuda?",
               "opcoes": [
-                "Pré-oxigenação com cabeceira elevada e pressão positiva",
+                "Cabeceira elevada e pressão positiva",
                 "Deitar reto",
-                "Nada",
-                "Mais sedativo"
+                "Mais sedativo",
+                "Retirar a máscara de oxigênio para facilitar a visão da laringe"
               ],
-              "resposta": "Pré-oxigenação com cabeceira elevada e pressão positiva",
+              "resposta": "Cabeceira elevada e pressão positiva",
               "explicacao": "Os obesos têm menos reserva de oxigênio.",
               "revisado": false
             },
@@ -2046,7 +2046,7 @@
                 "Fratura da base do crânio",
                 "Boca pequena",
                 "Obesidade",
-                "Nenhuma"
+                "Paciente com dentes frouxos ou prótese"
               ],
               "resposta": "Fratura da base do crânio",
               "explicacao": "O tubo pode entrar no crânio.",
@@ -2058,12 +2058,12 @@
               "caso": "Paciente com angioedema e língua muito inchada precisa de via aérea.",
               "enunciado": "Qual é a abordagem?",
               "opcoes": [
-                "Intubação acordada ou via cirúrgica preparada",
+                "Intubação acordada ou via cirúrgica pronta",
                 "Sequência rápida sem preparo",
-                "Máscara",
-                "Nada"
+                "Máscara facial",
+                "Aguardar o inchaço melhorar só com antialérgico oral, sem preparar a via aérea"
               ],
-              "resposta": "Intubação acordada ou via cirúrgica preparada",
+              "resposta": "Intubação acordada ou via cirúrgica pronta",
               "explicacao": "A anatomia está distorcida.",
               "revisado": false
             }
@@ -2079,12 +2079,12 @@
               "caso": "Paciente em uso de semaglutida vai operar e diz que está em jejum de 8 horas.",
               "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Estômago com conteúdo pelo esvaziamento lento",
-                "Nenhum",
+                "Estômago cheio pelo esvaziamento lento",
                 "Hipoglicemia",
-                "Hipertensão"
+                "Hipertensão",
+                "Risco nenhum, porque 8 horas de jejum bastam para qualquer paciente"
               ],
-              "resposta": "Estômago com conteúdo pelo esvaziamento lento",
+              "resposta": "Estômago cheio pelo esvaziamento lento",
               "explicacao": "Considerar suspender antes ou ultrassom do estômago.",
               "revisado": false
             },
@@ -2119,9 +2119,9 @@
               "enunciado": "O que mostra o ultrassom do estômago antes da anestesia?",
               "opcoes": [
                 "Se há conteúdo no estômago",
-                "Pressão",
-                "Coração",
-                "Nada"
+                "Pressão arterial",
+                "Função do coração",
+                "Tamanho do fígado e presença de cálculos na vesícula"
               ],
               "resposta": "Se há conteúdo no estômago",
               "explicacao": "Ajuda em casos duvidosos.",
@@ -2135,8 +2135,8 @@
               "opcoes": [
                 "Aspirar a via aérea, intubar e dar suporte",
                 "Antibiótico imediato sempre",
-                "Nada",
-                "Corticoide"
+                "Corticoide",
+                "Acordar o paciente e mandar para o quarto observando a saturação"
               ],
               "resposta": "Aspirar a via aérea, intubar e dar suporte",
               "explicacao": "A pneumonite química nem sempre precisa de antibiótico.",
@@ -2184,12 +2184,12 @@
               "caso": "Criança tomou suco de laranja com polpa 2 horas antes da cirurgia.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar como alimento e esperar mais",
+                "Tratar como alimento e esperar mais",
                 "Seguir normalmente",
                 "Cancelar sempre",
-                "Dar remédio"
+                "Dar metoclopramida e começar logo, porque suco é sempre líquido claro"
               ],
-              "resposta": "Considerar como alimento e esperar mais",
+              "resposta": "Tratar como alimento e esperar mais",
               "explicacao": "Líquidos com polpa não são claros.",
               "revisado": false
             }
@@ -2241,7 +2241,7 @@
                 "Cetamina, que dilata os brônquios",
                 "Propofol em dose baixa",
                 "Tiopental",
-                "Morfina"
+                "Morfina em dose alta, que relaxa a musculatura dos brônquios"
               ],
               "resposta": "Cetamina, que dilata os brônquios",
               "explicacao": "A cetamina ajuda no broncoespasmo.",
@@ -2253,9 +2253,9 @@
               "enunciado": "Qual é o cuidado com o etomidato na sepse?",
               "opcoes": [
                 "Pode suprimir a produção de cortisol",
-                "Nenhum",
                 "Aumenta a pressão muito",
-                "Causa asma"
+                "Causa asma",
+                "Nenhum, porque o etomidato não tem efeito sobre as glândulas"
               ],
               "resposta": "Pode suprimir a produção de cortisol",
               "explicacao": "O efeito dura horas.",
@@ -2267,12 +2267,12 @@
               "caso": "Idoso com fração de ejeção baixa vai ser anestesiado.",
               "enunciado": "Qual é o cuidado com o propofol?",
               "opcoes": [
-                "Usar dose menor e mais devagar pela queda da pressão",
+                "Dose menor e mais lenta pela queda da pressão",
                 "Dose maior",
-                "Nenhum",
-                "Não usar anestesia"
+                "Não usar anestesia",
+                "Dose habitual, porque o propofol não mexe na pressão de quem tem coração fraco"
               ],
-              "resposta": "Usar dose menor e mais devagar pela queda da pressão",
+              "resposta": "Dose menor e mais lenta pela queda da pressão",
               "explicacao": "O coração fraco tolera mal.",
               "revisado": false
             },
@@ -2318,12 +2318,12 @@
               "caso": "Paciente com alergia a ovo vai receber propofol.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Pode usar, pois a alergia a ovo não contraindica",
+                "Pode usar; alergia a ovo não contraindica",
                 "Nunca usar",
                 "Usar só com corticoide",
-                "Trocar sempre"
+                "Trocar sempre por tiopental e fazer teste de alergia na pele antes da cirurgia"
               ],
-              "resposta": "Pode usar, pois a alergia a ovo não contraindica",
+              "resposta": "Pode usar; alergia a ovo não contraindica",
               "explicacao": "Estudos mostram segurança.",
               "revisado": false
             }
@@ -2367,7 +2367,7 @@
                 "Acúmulo de metabólitos da morfina",
                 "Infecção",
                 "AVC",
-                "Hipoglicemia"
+                "Hipoglicemia pelo jejum prolongado da cirurgia"
               ],
               "resposta": "Acúmulo de metabólitos da morfina",
               "explicacao": "Preferir fentanil.",
@@ -2381,7 +2381,7 @@
                 "Dificuldade de ventilar",
                 "Hipertensão",
                 "Diarreia",
-                "Nada"
+                "Tosse produtiva com catarro e febre"
               ],
               "resposta": "Dificuldade de ventilar",
               "explicacao": "Tratada com relaxante muscular.",
@@ -2396,7 +2396,7 @@
                 "Intoxicação por anestésico local",
                 "Epilepsia",
                 "Hipoglicemia",
-                "AVC"
+                "AVC isquêmico causado pela posição na mesa cirúrgica"
               ],
               "resposta": "Intoxicação por anestésico local",
               "explicacao": "Tratar com emulsão lipídica.",
@@ -2431,8 +2431,8 @@
               "opcoes": [
                 "Prolonga o efeito e reduz sangramento",
                 "Reduz a dor da injeção",
-                "Nenhuma",
-                "Aumenta a toxicidade"
+                "Aumenta a toxicidade",
+                "Permite usar o dobro da dose sem nenhum risco em qualquer região do corpo"
               ],
               "resposta": "Prolonga o efeito e reduz sangramento",
               "explicacao": "Permite dose maior.",
@@ -2447,7 +2447,7 @@
                 "Síndrome serotoninérgica",
                 "Abstinência",
                 "Alergia",
-                "Normal"
+                "Reação normal ao tramadol, que passa sem tratamento"
               ],
               "resposta": "Síndrome serotoninérgica",
               "explicacao": "Suspender o tramadol.",
@@ -2493,7 +2493,7 @@
                 "Suspender o gatilho, dantroleno e resfriar",
                 "Mais anestésico",
                 "Antibiótico",
-                "Nada"
+                "Aprofundar o sevoflurano e dar dipirona para baixar a febre"
               ],
               "resposta": "Suspender o gatilho, dantroleno e resfriar",
               "explicacao": "É hipertermia maligna.",
@@ -2504,12 +2504,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual alteração laboratorial ocorre na hipertermia maligna?",
               "opcoes": [
-                "Potássio alto, acidose e CPK muito alta",
+                "Potássio alto, acidose e CPK alta",
                 "Glicose baixa",
                 "Sódio alto isolado",
-                "Nada"
+                "Exames normais, porque a doença só aparece no monitor da sala"
               ],
-              "resposta": "Potássio alto, acidose e CPK muito alta",
+              "resposta": "Potássio alto, acidose e CPK alta",
               "explicacao": "Pode causar insuficiência renal.",
               "revisado": false
             },
@@ -2520,9 +2520,9 @@
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
                 "Sala e materiais sem látex",
-                "Nada",
                 "Usar luvas de látex",
-                "Antialérgico apenas"
+                "Antialérgico apenas",
+                "Operar normalmente, mas tomar corticoide em casa na semana seguinte"
               ],
               "resposta": "Sala e materiais sem látex",
               "explicacao": "A reação pode ser anafilaxia.",
@@ -2544,7 +2544,7 @@
                 "consciência intraoperatória",
                 "sedação",
                 "analgesia",
-                "amnésia"
+                "amnésia anterógrada completa"
               ],
               "resposta": "consciência intraoperatória",
               "explicacao": "O monitor de profundidade ajuda.",
@@ -2558,7 +2558,7 @@
                 "Índice bispectral (BIS)",
                 "Oxímetro",
                 "Eletrocardiograma",
-                "Termômetro"
+                "Termômetro esofágico de temperatura central"
               ],
               "resposta": "Índice bispectral (BIS)",
               "explicacao": "Reduz o risco de despertar.",
@@ -2570,12 +2570,12 @@
               "caso": "Paciente após anestesia geral não acorda após 1 hora.",
               "enunciado": "O que investigar?",
               "opcoes": [
-                "Efeito residual de remédios, hipoglicemia, hipotermia e AVC",
-                "Nada",
+                "Remédios residuais, glicose, temperatura e AVC",
                 "Dar mais sedativo",
-                "Alta"
+                "Alta para o quarto",
+                "Apenas aguardar mais algumas horas, porque idosos sempre demoram a acordar"
               ],
-              "resposta": "Efeito residual de remédios, hipoglicemia, hipotermia e AVC",
+              "resposta": "Remédios residuais, glicose, temperatura e AVC",
               "explicacao": "Revisar todas as causas.",
               "revisado": false
             }
@@ -2599,12 +2599,12 @@
               "caso": "Paciente 2 dias após raquianestesia tem dor de cabeça forte ao sentar que melhora deitado.",
               "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Cefaleia pós-punção; hidratação, analgesia e tampão sanguíneo se persistir",
+                "Cefaleia pós-punção; hidratação, analgesia e tampão",
                 "Meningite; antibiótico",
                 "Enxaqueca; triptano",
-                "AVC; trombólise"
+                "AVC; trombólise imediata e tomografia de controle em 24 horas, com internação na UTI"
               ],
-              "resposta": "Cefaleia pós-punção; hidratação, analgesia e tampão sanguíneo se persistir",
+              "resposta": "Cefaleia pós-punção; hidratação, analgesia e tampão",
               "explicacao": "Agulhas finas reduzem o risco.",
               "revisado": false
             },
@@ -2656,7 +2656,7 @@
                 "Hematoma ou abscesso peridural",
                 "Efeito normal",
                 "Ansiedade",
-                "Nada"
+                "Fraqueza comum que sempre passa sozinha após alguns dias"
               ],
               "resposta": "Hematoma ou abscesso peridural",
               "explicacao": "Ressonância urgente.",
@@ -2678,7 +2678,7 @@
                 "raquianestesia",
                 "peridural",
                 "sedação",
-                "analgesia"
+                "analgesia venosa controlada pelo paciente"
               ],
               "resposta": "raquianestesia",
               "explicacao": "Exige ventilação e suporte.",
@@ -2692,7 +2692,7 @@
                 "Geralmente pode ser feita",
                 "Contraindicada sempre",
                 "Suspender 1 mês antes",
-                "Nada"
+                "Transfundir plaquetas antes de qualquer punção nas costas"
               ],
               "resposta": "Geralmente pode ser feita",
               "explicacao": "Outros antiagregantes exigem suspensão.",
@@ -2705,9 +2705,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Deslocar o útero, volume e vasopressor",
-                "Nada",
                 "Retirar o cateter",
-                "Antibiótico"
+                "Antibiótico",
+                "Deitar a gestante de barriga para cima e aguardar a pressão subir sozinha"
               ],
               "resposta": "Deslocar o útero, volume e vasopressor",
               "explicacao": "O bloqueio simpático causa a queda.",
@@ -2753,7 +2753,7 @@
                 "Pneumotórax",
                 "Asma",
                 "Ansiedade",
-                "Embolia"
+                "Embolia pulmonar por trombose da perna"
               ],
               "resposta": "Pneumotórax",
               "explicacao": "Fazer raio X.",
@@ -2764,12 +2764,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a vantagem do ultrassom nos bloqueios?",
               "opcoes": [
-                "Ver o nervo e a agulha, reduzindo complicações",
-                "Nenhuma",
+                "Ver o nervo e a agulha e reduzir riscos",
                 "Mais rápido sempre",
-                "Mais barato"
+                "Mais barato",
+                "Dispensa a monitorização e o consentimento do paciente antes do bloqueio"
               ],
-              "resposta": "Ver o nervo e a agulha, reduzindo complicações",
+              "resposta": "Ver o nervo e a agulha e reduzir riscos",
               "explicacao": "Também usa menos anestésico.",
               "revisado": false
             },
@@ -2782,7 +2782,7 @@
                 "Fraqueza do quadríceps pelo bloqueio",
                 "AVC",
                 "Fratura",
-                "Nada"
+                "Hipoglicemia por jejum prolongado após a cirurgia"
               ],
               "resposta": "Fraqueza do quadríceps pelo bloqueio",
               "explicacao": "Orientar sobre o risco de queda.",
@@ -2804,7 +2804,7 @@
                 "perineural",
                 "venoso",
                 "urinário",
-                "arterial"
+                "arterial radial"
               ],
               "resposta": "perineural",
               "explicacao": "Para analgesia contínua.",
@@ -2818,7 +2818,7 @@
                 "Geralmente melhora em semanas a meses",
                 "Sempre permanente",
                 "Nunca ocorre",
-                "Causa febre"
+                "Causa febre alta e infecção grave na pele ao redor do local"
               ],
               "resposta": "Geralmente melhora em semanas a meses",
               "explicacao": "É rara.",
@@ -2830,12 +2830,12 @@
               "caso": "Paciente vai operar o pé e tem doença pulmonar grave.",
               "enunciado": "Qual anestesia evita intubação?",
               "opcoes": [
-                "Bloqueio do nervo ciático e safeno",
+                "Bloqueio dos nervos ciático e safeno",
                 "Anestesia geral",
-                "Nada",
-                "Sedação profunda"
+                "Sedação profunda",
+                "Anestesia geral com máscara laríngea e relaxante muscular em dose alta"
               ],
-              "resposta": "Bloqueio do nervo ciático e safeno",
+              "resposta": "Bloqueio dos nervos ciático e safeno",
               "explicacao": "Reduz riscos respiratórios.",
               "revisado": false
             }
@@ -2876,12 +2876,12 @@
               "caso": "Paciente após cirurgia de abdome tem dor intensa e náusea com morfina.",
               "enunciado": "Qual é a melhor estratégia?",
               "opcoes": [
-                "Analgesia multimodal com bloqueio e menos opioide",
+                "Analgesia multimodal com bloqueio",
                 "Mais morfina",
-                "Nada",
-                "Só paracetamol"
+                "Só paracetamol",
+                "Suspender todo analgésico e observar se a dor melhora sozinha"
               ],
-              "resposta": "Analgesia multimodal com bloqueio e menos opioide",
+              "resposta": "Analgesia multimodal com bloqueio",
               "explicacao": "Reduz náusea e melhora a dor.",
               "revisado": false
             },
@@ -2891,9 +2891,9 @@
               "enunciado": "Qual é o risco do anti-inflamatório no pós-operatório de idosos?",
               "opcoes": [
                 "Lesão renal e sangramento",
-                "Nenhum",
                 "Ganho de peso",
-                "Hipertensão leve apenas"
+                "Hipertensão leve apenas",
+                "Risco nenhum, pois os rins dos idosos funcionam igual aos dos jovens"
               ],
               "resposta": "Lesão renal e sangramento",
               "explicacao": "Usar com cautela.",
@@ -2905,12 +2905,12 @@
               "caso": "Paciente usuário de opioides há anos vai operar.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Manter a dose habitual e acrescentar analgesia",
+                "Manter a dose habitual e somar analgesia",
                 "Suspender os opioides",
-                "Nada",
-                "Dar só paracetamol"
+                "Dar só paracetamol",
+                "Trocar o opioide por placebo no dia da cirurgia para testar a dependência"
               ],
-              "resposta": "Manter a dose habitual e acrescentar analgesia",
+              "resposta": "Manter a dose habitual e somar analgesia",
               "explicacao": "Evita abstinência e dor mal controlada.",
               "revisado": false
             },
@@ -2944,7 +2944,7 @@
                 "Permitir movimento, respiração e recuperação",
                 "Dor zero a qualquer custo",
                 "Sedação",
-                "Nada"
+                "Deixar o paciente dormindo até a alta para que ele não sinta nada"
               ],
               "resposta": "Permitir movimento, respiração e recuperação",
               "explicacao": "Dor controlada para funcionar.",
@@ -2959,7 +2959,7 @@
                 "Infecção da ferida",
                 "Dor normal",
                 "Pouco analgésico",
-                "Nada"
+                "Alergia ao fio da sutura, sem gravidade nenhuma"
               ],
               "resposta": "Infecção da ferida",
               "explicacao": "A dor que piora deve ser investigada.",
@@ -2985,12 +2985,12 @@
               "caso": "Gestante em trabalho de parto com peridural tem pressão baixa e o bebê com desacelerações.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Deslocar o útero, volume, vasopressor e avaliar o bebê",
+                "Deslocar o útero, volume, vasopressor e avaliar",
                 "Retirar o cateter",
-                "Nada",
-                "Sedar"
+                "Sedar",
+                "Aumentar a dose da peridural para relaxar o útero e melhorar o fluxo"
               ],
-              "resposta": "Deslocar o útero, volume, vasopressor e avaliar o bebê",
+              "resposta": "Deslocar o útero, volume, vasopressor e avaliar",
               "explicacao": "A pressão baixa reduz o fluxo para o bebê.",
               "revisado": false
             },
@@ -3024,12 +3024,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado com a via aérea da gestante?",
               "opcoes": [
-                "Maior risco de intubação difícil por edema",
-                "Nenhum",
+                "Maior risco de intubação difícil",
                 "É mais fácil",
-                "Não precisa de jejum"
+                "Não precisa de jejum",
+                "Nenhum, porque a via aérea da gestante é igual à de qualquer adulto"
               ],
-              "resposta": "Maior risco de intubação difícil por edema",
+              "resposta": "Maior risco de intubação difícil",
               "explicacao": "Planejar com cuidado.",
               "revisado": false
             },
@@ -3039,12 +3039,12 @@
               "caso": "Gestante com pré-eclâmpsia recebe sulfato de magnésio e anestesia geral.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Reduzir dose de relaxante muscular e monitorar",
-                "Nenhum",
+                "Reduzir o relaxante muscular e monitorar",
                 "Dose dupla",
-                "Suspender o magnésio"
+                "Suspender o magnésio",
+                "Nenhum, porque o magnésio não interage com nenhum anestésico ou relaxante"
               ],
-              "resposta": "Reduzir dose de relaxante muscular e monitorar",
+              "resposta": "Reduzir o relaxante muscular e monitorar",
               "explicacao": "O magnésio potencializa os relaxantes.",
               "revisado": false
             },
@@ -3075,12 +3075,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o anestésico usado na raquianestesia para cesárea?",
               "opcoes": [
-                "Bupivacaína hiperbárica com opioide",
+                "Bupivacaína pesada com opioide",
                 "Lidocaína em dose alta",
                 "Propofol",
-                "Etomidato"
+                "Etomidato associado a fentanil em dose alta na veia"
               ],
-              "resposta": "Bupivacaína hiperbárica com opioide",
+              "resposta": "Bupivacaína pesada com opioide",
               "explicacao": "O opioide melhora a analgesia.",
               "revisado": false
             },
@@ -3093,7 +3093,7 @@
                 "Geral, com cuidado com a via aérea",
                 "Raquianestesia sem cuidado",
                 "Peridural",
-                "Nada"
+                "Peridural com cateter após transfusão de plaquetas lenta, em várias horas"
               ],
               "resposta": "Geral, com cuidado com a via aérea",
               "explicacao": "Plaquetas baixas contraindicam o bloqueio.",
@@ -3139,7 +3139,7 @@
                 "Laringoespasmo",
                 "Asma",
                 "Pneumotórax",
-                "Nada"
+                "Reação alérgica ao tubo de plástico"
               ],
               "resposta": "Laringoespasmo",
               "explicacao": "Tratar com pressão positiva.",
@@ -3167,8 +3167,8 @@
               "opcoes": [
                 "Monitorar apneia por 12 a 24 horas",
                 "Alta imediata",
-                "Nada",
-                "Sedar"
+                "Sedar",
+                "Liberar no mesmo dia se ele mamou bem e está sem febre"
               ],
               "resposta": "Monitorar apneia por 12 a 24 horas",
               "explicacao": "Prematuros têm risco de apneia.",
@@ -3201,12 +3201,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual preparação psicológica ajuda a criança antes da anestesia?",
               "opcoes": [
-                "Presença dos pais e explicação adequada à idade",
-                "Nenhuma",
+                "Presença dos pais e explicação simples",
                 "Assustar",
-                "Sedar sempre"
+                "Sedar sempre",
+                "Não contar nada e levar a criança dormindo, sem os pais por perto"
               ],
-              "resposta": "Presença dos pais e explicação adequada à idade",
+              "resposta": "Presença dos pais e explicação simples",
               "explicacao": "Reduz a ansiedade.",
               "revisado": false
             },
@@ -3219,7 +3219,7 @@
                 "Considerar adiar por algumas semanas",
                 "Operar sempre",
                 "Cancelar para sempre",
-                "Dar antibiótico"
+                "Dar antibiótico e operar no dia seguinte sem nova avaliação"
               ],
               "resposta": "Considerar adiar por algumas semanas",
               "explicacao": "O risco de complicações respiratórias aumenta.",
@@ -3262,12 +3262,12 @@
               "caso": "Politraumatizado em choque precisa de cirurgia urgente.",
               "enunciado": "Qual é a estratégia anestésica?",
               "opcoes": [
-                "Doses baixas de anestésico, sangue e controle do sangramento",
+                "Doses baixas, sangue e controle do sangramento",
                 "Doses normais de propofol",
-                "Nada",
-                "Esperar estabilizar sem cirurgia"
+                "Só soro, sem sangue",
+                "Esperar estabilizar sem cirurgia, só com soro em grande volume por várias horas"
               ],
-              "resposta": "Doses baixas de anestésico, sangue e controle do sangramento",
+              "resposta": "Doses baixas, sangue e controle do sangramento",
               "explicacao": "O anestésico pode piorar o choque.",
               "revisado": false
             },
@@ -3277,9 +3277,9 @@
               "enunciado": "Qual é a meta de pressão no trauma de crânio grave?",
               "opcoes": [
                 "Evitar sistólica abaixo de 100 a 110",
-                "Pressão baixa permissiva",
                 "Pressão de 60",
-                "Nenhuma"
+                "Nenhuma meta",
+                "Hipotensão permissiva com sistólica de 70, como no trauma de abdome"
               ],
               "resposta": "Evitar sistólica abaixo de 100 a 110",
               "explicacao": "O cérebro precisa de perfusão.",
@@ -3294,7 +3294,7 @@
                 "Succinilcolina",
                 "Rocurônio",
                 "Cisatracúrio",
-                "Vecurônio"
+                "Vecurônio em dose de intubação"
               ],
               "resposta": "Succinilcolina",
               "explicacao": "Causa potássio muito alto.",
@@ -3316,7 +3316,7 @@
                 "estabilização",
                 "flexão",
                 "extensão",
-                "rotação"
+                "rotação lateral máxima"
               ],
               "resposta": "estabilização",
               "explicacao": "Protege a medula.",
@@ -3328,9 +3328,9 @@
               "enunciado": "Qual é o efeito do óxido nitroso em pneumotórax?",
               "opcoes": [
                 "Aumenta o pneumotórax",
-                "Reduz",
-                "Nenhum",
-                "Cura"
+                "Reduz o pneumotórax",
+                "Nenhum efeito",
+                "Cura o pneumotórax em poucas horas, sem precisar de dreno"
               ],
               "resposta": "Aumenta o pneumotórax",
               "explicacao": "Deve ser evitado.",
@@ -3342,12 +3342,12 @@
               "caso": "Paciente com trauma de tórax e pneumotórax vai ser anestesiado.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Drenar o tórax antes da ventilação com pressão positiva",
-                "Nada",
+                "Drenar o tórax antes da pressão positiva",
                 "Usar óxido nitroso",
-                "Intubar sem drenar"
+                "Intubar sem drenar",
+                "Ventilar com pressões bem altas para reexpandir o pulmão sem dreno"
               ],
-              "resposta": "Drenar o tórax antes da ventilação com pressão positiva",
+              "resposta": "Drenar o tórax antes da pressão positiva",
               "explicacao": "A pressão positiva pode tornar o pneumotórax hipertensivo.",
               "revisado": false
             }
@@ -3398,8 +3398,8 @@
               "opcoes": [
                 "Desobstruir a via aérea e oxigênio",
                 "Mais sedativo",
-                "Nada",
-                "Alta"
+                "Alta para o quarto",
+                "Esperar ele acordar sozinho, porque o ronco mostra que está respirando"
               ],
               "resposta": "Desobstruir a via aérea e oxigênio",
               "explicacao": "A língua pode obstruir.",
@@ -3411,9 +3411,9 @@
               "enunciado": "Qual critério permite alta da sala de recuperação?",
               "opcoes": [
                 "Escore de Aldrete adequado",
-                "Tempo fixo de 6 horas",
                 "Pedido do paciente",
-                "Nada"
+                "Tempo fixo de 6 horas",
+                "Decisão da família de acordo com o horário de visita"
               ],
               "resposta": "Escore de Aldrete adequado",
               "explicacao": "Avalia consciência, respiração e circulação.",
@@ -3428,7 +3428,7 @@
                 "Retenção urinária",
                 "Delirium sem causa",
                 "Dor apenas",
-                "Nada"
+                "Abstinência de álcool com tremores e alucinações"
               ],
               "resposta": "Retenção urinária",
               "explicacao": "Esvaziar a bexiga.",
@@ -3461,12 +3461,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia de náusea em paciente de alto risco?",
               "opcoes": [
-                "Combinação de antieméticos, como ondansetrona e dexametasona",
-                "Nenhuma",
+                "Ondansetrona com dexametasona",
                 "Só água",
-                "Só jejum"
+                "Só jejum",
+                "Nenhuma, porque a náusea só se trata depois que aparece"
               ],
-              "resposta": "Combinação de antieméticos, como ondansetrona e dexametasona",
+              "resposta": "Ondansetrona com dexametasona",
               "explicacao": "Reduz muito a náusea.",
               "revisado": false
             },
@@ -3478,8 +3478,8 @@
               "opcoes": [
                 "Tratar a dor",
                 "Anti-hipertensivo forte",
-                "Nada",
-                "Alta"
+                "Alta para casa",
+                "Nitroprussiato venoso em dose alta logo"
               ],
               "resposta": "Tratar a dor",
               "explicacao": "A dor eleva a pressão.",
@@ -3523,9 +3523,9 @@
               "enunciado": "Qual medida previne?",
               "opcoes": [
                 "Etiquetas coloridas e dupla checagem",
-                "Nada",
                 "Seringas iguais",
-                "Pressa"
+                "Pressa",
+                "Preparar todos os remédios no dia anterior e guardar sem identificação"
               ],
               "resposta": "Etiquetas coloridas e dupla checagem",
               "explicacao": "Erros de remédio são comuns.",
@@ -3536,12 +3536,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a monitorização mínima obrigatória na anestesia?",
               "opcoes": [
-                "Eletrocardiograma, pressão, oximetria e capnografia",
+                "ECG, pressão, oximetria e capnografia",
                 "Só pressão",
                 "Só oximetria",
-                "Nenhuma"
+                "Só a observação clínica, sem nenhum monitor ligado ao paciente"
               ],
-              "resposta": "Eletrocardiograma, pressão, oximetria e capnografia",
+              "resposta": "ECG, pressão, oximetria e capnografia",
               "explicacao": "Definida pelas normas.",
               "revisado": false
             },
@@ -3554,7 +3554,7 @@
                 "Consciência intraoperatória",
                 "Sonho",
                 "Delirium",
-                "Normal"
+                "Alucinação normal do despertar"
               ],
               "resposta": "Consciência intraoperatória",
               "explicacao": "Pode causar estresse pós-traumático.",
@@ -3576,7 +3576,7 @@
                 "checagem",
                 "troca",
                 "limpeza",
-                "compra"
+                "compra de reposição"
               ],
               "resposta": "checagem",
               "explicacao": "Inclui o aparelho de anestesia e a aspiração.",
@@ -3590,7 +3590,7 @@
                 "Problemas de via aérea e ventilação",
                 "Alergia",
                 "Infecção",
-                "Câncer"
+                "Câncer causado pelos gases anestésicos inalados"
               ],
               "resposta": "Problemas de via aérea e ventilação",
               "explicacao": "A monitorização reduziu muito.",
@@ -3603,9 +3603,9 @@
               "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Infecção, sangramento e arritmias",
-                "Nenhum",
                 "Melhora a recuperação",
-                "Febre"
+                "Febre",
+                "Nenhum, porque a temperatura volta ao normal sozinha"
               ],
               "resposta": "Infecção, sangramento e arritmias",
               "explicacao": "Aquecimento ativo é indicado.",
@@ -3648,12 +3648,12 @@
               "caso": "Criança precisa de sedação para ressonância.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Equipamentos compatíveis com ressonância e monitorização à distância",
+                "Equipamentos próprios para ressonância e monitor",
                 "Equipamentos comuns de metal",
-                "Nada",
-                "Sedação sem monitor"
+                "Sedação sem monitor",
+                "Sedar em casa antes de sair e levar a criança dormindo para o exame"
               ],
-              "resposta": "Equipamentos compatíveis com ressonância e monitorização à distância",
+              "resposta": "Equipamentos próprios para ressonância e monitor",
               "explicacao": "O metal é perigoso no campo magnético.",
               "revisado": false
             },
@@ -3663,9 +3663,9 @@
               "enunciado": "Qual é o risco da sedação em endoscopia digestiva?",
               "opcoes": [
                 "Obstrução da via aérea e aspiração",
-                "Nenhum",
                 "Febre",
-                "Hipertensão"
+                "Hipertensão",
+                "Risco nenhum, porque a sedação é leve e o exame é rápido"
               ],
               "resposta": "Obstrução da via aérea e aspiração",
               "explicacao": "A via aérea é compartilhada.",
@@ -3679,8 +3679,8 @@
               "opcoes": [
                 "Sedação breve, como propofol ou etomidato",
                 "Anestesia geral longa",
-                "Nenhuma",
-                "Raquianestesia"
+                "Raquianestesia",
+                "Sem sedação, porque o choque é rápido e não dói"
               ],
               "resposta": "Sedação breve, como propofol ou etomidato",
               "explicacao": "O procedimento é curto e doloroso.",
@@ -3716,7 +3716,7 @@
                 "Idoso, obeso, com apneia ou doença grave",
                 "Jovem saudável",
                 "Atleta",
-                "Criança saudável"
+                "Criança saudável que já fez outros exames com sedação antes"
               ],
               "resposta": "Idoso, obeso, com apneia ou doença grave",
               "explicacao": "Avaliar antes.",
@@ -3728,12 +3728,12 @@
               "caso": "Durante sedação para colonoscopia, paciente tem saturação de 82% e não responde.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Parar o procedimento, abrir a via aérea e ventilar",
+                "Parar, abrir a via aérea e ventilar",
                 "Continuar",
                 "Mais sedativo",
-                "Nada"
+                "Terminar a colonoscopia rapidamente e depois avaliar a respiração"
               ],
-              "resposta": "Parar o procedimento, abrir a via aérea e ventilar",
+              "resposta": "Parar, abrir a via aérea e ventilar",
               "explicacao": "Reverter com antídotos se necessário.",
               "revisado": false
             }
