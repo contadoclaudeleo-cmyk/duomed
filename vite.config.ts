@@ -26,7 +26,7 @@ export default defineConfig({
       // Guarda tudo no aparelho para o app abrir sem internet
       // O conteúdo passa de 2 MB (limite padrão), por isso o limite maior
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2}'],
+        globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2,mp3}'],
         maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
       },
       manifest: {
