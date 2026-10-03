@@ -9,14 +9,26 @@ const base = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
   base,
-  build: { chunkSizeWarningLimit: 700 },
+  build: {
+    // As questões (src/data) ficam num arquivo separado do código do app
+    chunkSizeWarningLimit: 5000,
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => (id.includes('/src/data/') && id.endsWith('.json') ? 'conteudo' : undefined),
+      },
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       // Guarda tudo no aparelho para o app abrir sem internet
-      workbox: { globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2}'] },
+      // O conteúdo passa de 2 MB (limite padrão), por isso o limite maior
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2}'],
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+      },
       manifest: {
         name: 'DuoMed',
         short_name: 'DuoMed',

@@ -4,7 +4,10 @@ App de estudo para estudantes de medicina no estilo do Duolingo: trilhas por mat
 
 Tem dois modos de estudo, que a pessoa escolhe no cadastro e pode trocar no perfil ou na tela de matérias:
 
-- **Graduação:** seis matérias do curso (Anatomia, Farmacologia, Fisiologia, Bioquímica, Patologia e Semiologia).
+- **Graduação:** a grade curricular completa, com 39 matérias separadas em três ciclos:
+  - **Ciclo básico (14):** Anatomia, Histologia e Embriologia, Biologia Celular, Genética, Fisiologia, Bioquímica, Imunologia, Microbiologia, Parasitologia, Patologia, Farmacologia, Saúde Coletiva, Psicologia Médica, Bioética e Medicina Legal.
+  - **Ciclo clínico (23):** Semiologia, Cardiologia, Pneumologia, Gastroenterologia, Nefrologia, Endocrinologia, Hematologia, Reumatologia, Infectologia, Neurologia, Psiquiatria, Dermatologia, Oncologia, Geriatria, Clínica Cirúrgica, Ortopedia, Urologia, Otorrinolaringologia, Oftalmologia, Anestesiologia, Radiologia, Pediatria e Ginecologia e Obstetrícia.
+  - **Internato (2):** Urgência e Emergência e Medicina de Família e Comunidade.
 - **Residência:** as cinco grandes áreas das provas de residência (Clínica Médica, Cirurgia Geral, Pediatria, Ginecologia e Obstetrícia e Medicina Preventiva), com foco em casos clínicos.
 
 Cada matéria tem **duas trilhas**:
@@ -14,7 +17,7 @@ Cada matéria tem **duas trilhas**:
 
 Logo depois do cadastro, a pessoa faz um **teste de nível** com 8 questões de matérias variadas. Quem acerta 6 ou mais recebe a sugestão do nível difícil, mas sempre pode escolher. O nível pode ser trocado a qualquer momento na trilha ou no perfil, e o teste pode ser refeito pelo perfil.
 
-**Conteúdo atual:** 2.880 questões em 360 lições (cada lição tem 8 questões). São 90 lições no nível fácil e 90 no difícil em cada modo, o que dá mais de um mês estudando todos os dias na intensidade máxima.
+**Conteúdo atual:** 10.800 questões em 1.350 lições (cada lição tem 8 questões). Na graduação, cada matéria tem 15 lições no nível fácil e 15 no difícil (1.170 lições). Na residência, cada área tem 18 em cada nível (180 lições).
 
 Primeira versão (MVP): roda inteira no navegador e salva o progresso no próprio aparelho (localStorage). Não precisa de servidor.
 
