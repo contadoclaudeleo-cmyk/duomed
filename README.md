@@ -17,7 +17,7 @@ Cada matéria tem **duas trilhas**:
 
 Logo depois do cadastro, a pessoa faz um **teste de nível** com 8 questões de matérias variadas. Quem acerta 6 ou mais recebe a sugestão do nível difícil, mas sempre pode escolher. O nível pode ser trocado a qualquer momento na trilha ou no perfil, e o teste pode ser refeito pelo perfil.
 
-**Conteúdo atual:** 10.800 questões em 1.350 lições (cada lição tem 8 questões). Na graduação, cada matéria tem 15 lições no nível fácil e 15 no difícil (1.170 lições). Na residência, cada área tem 18 em cada nível (180 lições).
+**Conteúdo atual:** 12.720 questões em 1.590 lições (cada lição tem 8 questões). Na graduação, cada matéria tem 15 lições no nível fácil e 15 no difícil (1.170 lições). Na residência, cada área tem 42 em cada nível (420 lições).
 
 Primeira versão (MVP): roda inteira no navegador e salva o progresso no próprio aparelho (localStorage). Não precisa de servidor.
 
