@@ -5,5 +5,3741 @@
   "icone": "digestivo",
   "ordem": 23,
   "ciclo": "clinico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "gastro-u1",
+      "titulo": "Esôfago e estômago",
+      "descricao": "Refluxo, dispepsia e úlcera",
+      "licoes": [
+        {
+          "id": "gastro-u1-l1",
+          "titulo": "Doença do refluxo",
+          "questoes": [
+            {
+              "id": "gastro-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são as duas queixas clássicas do refluxo gastroesofágico?",
+              "opcoes": [
+                "Azia e regurgitação",
+                "Diarreia e febre",
+                "Dor nas pernas",
+                "Tosse com sangue"
+              ],
+              "resposta": "Azia e regurgitação",
+              "explicacao": "Sintomas atípicos incluem tosse e rouquidão.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medida ao tratamento do refluxo.",
+              "pares": [
+                {
+                  "esquerda": "Elevar a cabeceira",
+                  "direita": "Reduz refluxo noturno"
+                },
+                {
+                  "esquerda": "Perder peso",
+                  "direita": "Diminui a pressão no abdome"
+                },
+                {
+                  "esquerda": "Evitar comer antes de deitar",
+                  "direita": "Menos refluxo à noite"
+                },
+                {
+                  "esquerda": "Inibidor de bomba de prótons",
+                  "direita": "Reduz o ácido"
+                }
+              ],
+              "explicacao": "O inibidor de bomba é o remédio mais eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com sinais de alarme e refluxo devem fazer endoscopia.",
+              "resposta": true,
+              "explicacao": "Sinais de alarme incluem perda de peso e dificuldade para engolir.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O esôfago de ___ é a troca do epitélio por tecido intestinal, causada por refluxo crônico.",
+              "opcoes": [
+                "Barrett",
+                "Mallory",
+                "Zenker",
+                "Plummer"
+              ],
+              "resposta": "Barrett",
+              "explicacao": "Aumenta o risco de adenocarcinoma.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto tempo antes da refeição deve ser tomado o omeprazol?",
+              "opcoes": [
+                "Cerca de 30 minutos antes do café da manhã",
+                "Junto com o jantar",
+                "À noite antes de dormir",
+                "Não importa"
+              ],
+              "resposta": "Cerca de 30 minutos antes do café da manhã",
+              "explicacao": "Ele age melhor com as bombas ativas pela refeição.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem azia três vezes por semana há 2 meses, sem sinais de alarme, aos 35 anos.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento empírico com inibidor de bomba de prótons por 8 semanas",
+                "Endoscopia imediata",
+                "Cirurgia",
+                "Nada"
+              ],
+              "resposta": "Tratamento empírico com inibidor de bomba de prótons por 8 semanas",
+              "explicacao": "A endoscopia fica para casos com alarme ou sem resposta.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O uso prolongado de inibidor de bomba pode reduzir a absorção de vitamina B12 e magnésio.",
+              "resposta": true,
+              "explicacao": "Deve-se usar a menor dose eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A cirurgia de ___ é a fundoplicatura, uma opção para refluxo que não melhora.",
+              "opcoes": [
+                "Nissen",
+                "Whipple",
+                "Hartmann",
+                "Billroth"
+              ],
+              "resposta": "Nissen",
+              "explicacao": "Ela envolve o estômago ao redor do esôfago.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u1-l2",
+          "titulo": "Dispepsia e Helicobacter pylori",
+          "questoes": [
+            {
+              "id": "gastro-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é dispepsia funcional?",
+              "opcoes": [
+                "Dor ou desconforto no alto do abdome sem lesão na endoscopia",
+                "Úlcera sangrante",
+                "Câncer",
+                "Pedra na vesícula"
+              ],
+              "resposta": "Dor ou desconforto no alto do abdome sem lesão na endoscopia",
+              "explicacao": "É muito comum.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada teste à detecção do Helicobacter pylori.",
+              "pares": [
+                {
+                  "esquerda": "Teste da urease na biópsia",
+                  "direita": "Durante a endoscopia"
+                },
+                {
+                  "esquerda": "Teste respiratório",
+                  "direita": "Mede carbono marcado no ar expirado"
+                },
+                {
+                  "esquerda": "Antígeno nas fezes",
+                  "direita": "Pesquisa feita nas fezes"
+                },
+                {
+                  "esquerda": "Histologia",
+                  "direita": "Biópsia do estômago"
+                }
+              ],
+              "explicacao": "Suspender inibidor de bomba 2 semanas antes evita falso negativo.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Helicobacter pylori é a principal causa de úlcera péptica e um fator de risco para câncer gástrico.",
+              "resposta": true,
+              "explicacao": "Erradicar a bactéria reduz esses riscos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tratamento do Helicobacter usa inibidor de bomba e dois ___ por 14 dias.",
+              "opcoes": [
+                "antibióticos",
+                "antifúngicos",
+                "antivirais",
+                "analgésicos"
+              ],
+              "resposta": "antibióticos",
+              "explicacao": "Amoxicilina e claritromicina são comuns.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a outra grande causa de úlcera péptica, além do Helicobacter?",
+              "opcoes": [
+                "Anti-inflamatórios",
+                "Café",
+                "Estresse emocional apenas",
+                "Pimenta"
+              ],
+              "resposta": "Anti-inflamatórios",
+              "explicacao": "Os anti-inflamatórios lesam a proteção do estômago.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tratado para Helicobacter pylori pergunta se precisa confirmar a cura.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Sim, com teste respiratório ou de fezes 4 semanas após o tratamento",
+                "Não precisa",
+                "Só com sintomas",
+                "Só com endoscopia em 1 ano"
+              ],
+              "resposta": "Sim, com teste respiratório ou de fezes 4 semanas após o tratamento",
+              "explicacao": "A resistência à claritromicina é comum.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A úlcera duodenal costuma doer com fome e melhorar ao comer.",
+              "resposta": true,
+              "explicacao": "Na úlcera gástrica, a dor pode piorar ao comer.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A úlcera ___ é uma complicação grave, com dor súbita intensa e abdome em tábua.",
+              "opcoes": [
+                "perfurada",
+                "cicatrizada",
+                "pequena",
+                "silenciosa"
+              ],
+              "resposta": "perfurada",
+              "explicacao": "Exige cirurgia urgente.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u1-l3",
+          "titulo": "Hemorragia digestiva alta",
+          "questoes": [
+            {
+              "id": "gastro-u1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de hemorragia digestiva alta à pista.",
+              "pares": [
+                {
+                  "esquerda": "Úlcera péptica",
+                  "direita": "Uso de anti-inflamatório"
+                },
+                {
+                  "esquerda": "Varizes de esôfago",
+                  "direita": "Cirrose"
+                },
+                {
+                  "esquerda": "Síndrome de Mallory-Weiss",
+                  "direita": "Vômitos intensos antes do sangramento"
+                },
+                {
+                  "esquerda": "Câncer gástrico",
+                  "direita": "Perda de peso e anemia"
+                }
+              ],
+              "explicacao": "A úlcera é a causa mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é melena?",
+              "opcoes": [
+                "Fezes pretas e com mau cheiro por sangue digerido",
+                "Fezes com sangue vivo",
+                "Fezes brancas",
+                "Diarreia aquosa"
+              ],
+              "resposta": "Fezes pretas e com mau cheiro por sangue digerido",
+              "explicacao": "Indica sangramento alto em geral.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hematêmese é o vômito com sangue.",
+              "resposta": true,
+              "explicacao": "Pode ser vermelho vivo ou em borra de café.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ digestiva alta deve ser feita nas primeiras 24 horas em pacientes com sangramento.",
+              "opcoes": [
+                "endoscopia",
+                "colonoscopia",
+                "cirurgia",
+                "tomografia"
+              ],
+              "resposta": "endoscopia",
+              "explicacao": "Permite tratar o sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio é dado na hemorragia por úlcera antes da endoscopia?",
+              "opcoes": [
+                "Inibidor de bomba de prótons venoso",
+                "Anti-inflamatório",
+                "Antibiótico apenas",
+                "Nada"
+              ],
+              "resposta": "Inibidor de bomba de prótons venoso",
+              "explicacao": "Reduz o ressangramento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose vomita sangue em grande quantidade e está hipotenso.",
+              "enunciado": "Quais medidas iniciais?",
+              "opcoes": [
+                "Reposição de volume, vasoconstritor como terlipressina, antibiótico e endoscopia",
+                "Só endoscopia",
+                "Só soro",
+                "Alta"
+              ],
+              "resposta": "Reposição de volume, vasoconstritor como terlipressina, antibiótico e endoscopia",
+              "explicacao": "O antibiótico reduz infecções e mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na hemorragia digestiva, a transfusão costuma ser feita com hemoglobina abaixo de 7.",
+              "resposta": true,
+              "explicacao": "Transfusão liberal pode piorar o sangramento por varizes.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O escore de ___ ajuda a decidir quais pacientes com sangramento alto podem ir para casa.",
+              "opcoes": [
+                "Glasgow-Blatchford",
+                "CURB-65",
+                "Child",
+                "Ranson"
+              ],
+              "resposta": "Glasgow-Blatchford",
+              "explicacao": "Escore zero tem baixo risco.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-u2",
+      "titulo": "Intestino",
+      "descricao": "Diarreia, constipação e doenças inflamatórias",
+      "licoes": [
+        {
+          "id": "gastro-u2-l1",
+          "titulo": "Diarreias",
+          "questoes": [
+            {
+              "id": "gastro-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de diarreia aguda?",
+              "opcoes": [
+                "Infecções, principalmente por vírus",
+                "Câncer",
+                "Doença celíaca",
+                "Doença inflamatória"
+              ],
+              "resposta": "Infecções, principalmente por vírus",
+              "explicacao": "A maioria melhora sozinha.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de diarreia à característica.",
+              "pares": [
+                {
+                  "esquerda": "Osmótica",
+                  "direita": "Melhora com jejum"
+                },
+                {
+                  "esquerda": "Secretora",
+                  "direita": "Continua mesmo em jejum"
+                },
+                {
+                  "esquerda": "Inflamatória",
+                  "direita": "Sangue e pus nas fezes"
+                },
+                {
+                  "esquerda": "Disabsortiva",
+                  "direita": "Gordura nas fezes"
+                }
+              ],
+              "explicacao": "Essa divisão ajuda a investigar.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hidratação oral é a base do tratamento da diarreia aguda.",
+              "resposta": true,
+              "explicacao": "Os sais de reidratação oral salvam muitas vidas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A diarreia ___ dura mais de 4 semanas.",
+              "opcoes": [
+                "crônica",
+                "aguda",
+                "persistente",
+                "leve"
+              ],
+              "resposta": "crônica",
+              "explicacao": "Exige investigação.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando usar antibiótico na diarreia aguda?",
+              "opcoes": [
+                "Diarreia com sangue e febre, ou em imunossuprimidos",
+                "Sempre",
+                "Nunca",
+                "Só em crianças"
+              ],
+              "resposta": "Diarreia com sangue e febre, ou em imunossuprimidos",
+              "explicacao": "A maioria não precisa.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente que usou antibiótico há 1 semana tem diarreia aquosa intensa e cólicas.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Colite por Clostridioides difficile",
+                "Gastroenterite viral",
+                "Doença celíaca",
+                "Intolerância à lactose"
+              ],
+              "resposta": "Colite por Clostridioides difficile",
+              "explicacao": "O tratamento é com vancomicina oral ou fidaxomicina.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A intolerância à lactose causa diarreia, gases e distensão após comer leite.",
+              "resposta": true,
+              "explicacao": "Deve-se reduzir lactose ou usar lactase.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A doença ___ causa diarreia, perda de peso e anemia por reação ao glúten.",
+              "opcoes": [
+                "celíaca",
+                "de Crohn",
+                "de Whipple",
+                "diverticular"
+              ],
+              "resposta": "celíaca",
+              "explicacao": "O anticorpo antitransglutaminase ajuda no diagnóstico.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u2-l2",
+          "titulo": "Doença inflamatória intestinal",
+          "questoes": [
+            {
+              "id": "gastro-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à doença inflamatória intestinal.",
+              "pares": [
+                {
+                  "esquerda": "Doença de Crohn",
+                  "direita": "Lesões salteadas em qualquer parte do tubo digestivo"
+                },
+                {
+                  "esquerda": "Retocolite ulcerativa",
+                  "direita": "Começa no reto e sobe de forma contínua"
+                },
+                {
+                  "esquerda": "Granuloma na biópsia",
+                  "direita": "Típico da doença de Crohn"
+                },
+                {
+                  "esquerda": "Colangite esclerosante primária",
+                  "direita": "Mais ligada à retocolite"
+                }
+              ],
+              "explicacao": "O fumo piora o Crohn e parece proteger na retocolite.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sintoma é típico da retocolite ulcerativa?",
+              "opcoes": [
+                "Diarreia com sangue e muco",
+                "Constipação",
+                "Fístula perianal",
+                "Obstrução do delgado"
+              ],
+              "resposta": "Diarreia com sangue e muco",
+              "explicacao": "A inflamação é da mucosa.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A doença de Crohn pode causar fístulas perianais.",
+              "resposta": true,
+              "explicacao": "É uma das manifestações típicas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é um marcador de inflamação nas fezes usado para diferenciar doença inflamatória de funcional.",
+              "opcoes": [
+                "calprotectina",
+                "ferritina",
+                "albumina",
+                "amilase"
+              ],
+              "resposta": "calprotectina",
+              "explicacao": "Valores altos sugerem inflamação.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tratamento é usado na retocolite leve a moderada?",
+              "opcoes": [
+                "Mesalazina",
+                "Antibiótico",
+                "Antifúngico",
+                "Cirurgia sempre"
+              ],
+              "resposta": "Mesalazina",
+              "explicacao": "Pode ser oral ou retal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem diarreia crônica, dor na fossa ilíaca direita, perda de peso e fístula perianal.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Doença de Crohn",
+                "Retocolite",
+                "Apendicite",
+                "Câncer"
+              ],
+              "resposta": "Doença de Crohn",
+              "explicacao": "O íleo terminal é o local mais afetado.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com doença inflamatória intestinal de longa data têm maior risco de câncer de cólon.",
+              "resposta": true,
+              "explicacao": "Fazem colonoscopia de vigilância.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O megacólon ___ é uma complicação grave da retocolite, com cólon muito dilatado e febre.",
+              "opcoes": [
+                "tóxico",
+                "congênito",
+                "chagásico",
+                "funcional"
+              ],
+              "resposta": "tóxico",
+              "explicacao": "Pode precisar de cirurgia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u2-l3",
+          "titulo": "Constipação e intestino irritável",
+          "questoes": [
+            {
+              "id": "gastro-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os critérios de Roma para síndrome do intestino irritável?",
+              "opcoes": [
+                "Dor abdominal recorrente ligada à evacuação ou a mudanças nas fezes",
+                "Sangue nas fezes",
+                "Perda de peso",
+                "Febre"
+              ],
+              "resposta": "Dor abdominal recorrente ligada à evacuação ou a mudanças nas fezes",
+              "explicacao": "Os sintomas devem durar meses.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal de alarme à investigação no intestino.",
+              "pares": [
+                {
+                  "esquerda": "Sangue nas fezes",
+                  "direita": "Pede colonoscopia"
+                },
+                {
+                  "esquerda": "Perda de peso",
+                  "direita": "Investigar câncer"
+                },
+                {
+                  "esquerda": "Início após os 50 anos",
+                  "direita": "Sugere causa orgânica"
+                },
+                {
+                  "esquerda": "Anemia por falta de ferro",
+                  "direita": "Endoscopia e colonoscopia"
+                }
+              ],
+              "explicacao": "Sinais de alarme afastam o diagnóstico de intestino irritável sem exames.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O aumento de fibras e de água ajuda na constipação.",
+              "resposta": true,
+              "explicacao": "A atividade física também.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome do intestino ___ é um distúrbio funcional, sem lesão estrutural.",
+              "opcoes": [
+                "irritável",
+                "inflamatório",
+                "curto",
+                "longo"
+              ],
+              "resposta": "irritável",
+              "explicacao": "O estresse piora os sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual laxante é seguro e usado com frequência na constipação?",
+              "opcoes": [
+                "Polietilenoglicol",
+                "Óleo de rícino diário",
+                "Bisacodil todo dia por anos",
+                "Nenhum"
+              ],
+              "resposta": "Polietilenoglicol",
+              "explicacao": "O polietilenoglicol atrai água para as fezes.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos tem dor abdominal que melhora ao evacuar, alternância de diarreia e constipação, sem sinais de alarme.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Síndrome do intestino irritável",
+                "Câncer",
+                "Doença de Crohn",
+                "Doença celíaca sempre"
+              ],
+              "resposta": "Síndrome do intestino irritável",
+              "explicacao": "Pode-se pedir exames simples para excluir outras causas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dieta pobre em FODMAP pode melhorar os sintomas do intestino irritável.",
+              "resposta": true,
+              "explicacao": "Reduz alimentos que fermentam.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A constipação nova em idoso deve levantar suspeita de ___ de cólon.",
+              "opcoes": [
+                "câncer",
+                "infecção",
+                "hérnia",
+                "úlcera"
+              ],
+              "resposta": "câncer",
+              "explicacao": "Exige colonoscopia.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-u3",
+      "titulo": "Fígado",
+      "descricao": "Hepatites, cirrose e complicações",
+      "licoes": [
+        {
+          "id": "gastro-u3-l1",
+          "titulo": "Exames do fígado",
+          "questoes": [
+            {
+              "id": "gastro-u3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame à função do fígado.",
+              "pares": [
+                {
+                  "esquerda": "ALT e AST",
+                  "direita": "Lesão das células do fígado"
+                },
+                {
+                  "esquerda": "Fosfatase alcalina e GGT",
+                  "direita": "Obstrução das vias biliares"
+                },
+                {
+                  "esquerda": "Albumina",
+                  "direita": "Capacidade de produzir proteínas"
+                },
+                {
+                  "esquerda": "Tempo de protrombina",
+                  "direita": "Produção de fatores da coagulação"
+                }
+              ],
+              "explicacao": "Albumina e coagulação avaliam a função real.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual relação de AST e ALT sugere doença alcoólica do fígado?",
+              "opcoes": [
+                "AST maior que o dobro da ALT",
+                "ALT muito maior que AST",
+                "Iguais",
+                "Ambas normais"
+              ],
+              "resposta": "AST maior que o dobro da ALT",
+              "explicacao": "O álcool afeta mais a AST.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A bilirrubina direta alta sugere obstrução ou doença do fígado.",
+              "resposta": true,
+              "explicacao": "A indireta alta sugere hemólise ou Gilbert.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ é benigna e causa leve aumento da bilirrubina indireta em jejum ou estresse.",
+              "opcoes": [
+                "Gilbert",
+                "Dubin-Johnson",
+                "Crigler-Najjar",
+                "Budd-Chiari"
+              ],
+              "resposta": "Gilbert",
+              "explicacao": "Não precisa de tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame avalia fibrose do fígado sem biópsia?",
+              "opcoes": [
+                "Elastografia",
+                "Raio X",
+                "Hemograma",
+                "Colonoscopia"
+              ],
+              "resposta": "Elastografia",
+              "explicacao": "Mede a rigidez do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem ALT de 1.500 e AST de 1.300, com icterícia, sem uso de álcool.",
+              "enunciado": "Quais causas pensar?",
+              "opcoes": [
+                "Hepatite viral aguda, remédios como paracetamol ou isquemia",
+                "Esteatose simples",
+                "Gilbert",
+                "Cálculo na vesícula sem obstrução"
+              ],
+              "resposta": "Hepatite viral aguda, remédios como paracetamol ou isquemia",
+              "explicacao": "Valores muito altos indicam lesão aguda.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tempo de protrombina alargado em doença do fígado pode indicar insuficiência hepática.",
+              "resposta": true,
+              "explicacao": "Não melhora com vitamina K se o fígado não funciona.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a cor amarelada da pele e dos olhos por excesso de bilirrubina.",
+              "opcoes": [
+                "icterícia",
+                "cianose",
+                "palidez",
+                "eritema"
+              ],
+              "resposta": "icterícia",
+              "explicacao": "Aparece com bilirrubina acima de 2 a 3 mg/dL.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u3-l2",
+          "titulo": "Hepatites e esteatose",
+          "questoes": [
+            {
+              "id": "gastro-u3-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a doença crônica do fígado mais comum no mundo?",
+              "opcoes": [
+                "Doença hepática gordurosa associada à disfunção metabólica",
+                "Hepatite C",
+                "Hepatite B",
+                "Cirrose biliar"
+              ],
+              "resposta": "Doença hepática gordurosa associada à disfunção metabólica",
+              "explicacao": "Está ligada a obesidade e diabetes.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hepatite à prevenção.",
+              "pares": [
+                {
+                  "esquerda": "Hepatite A",
+                  "direita": "Vacina e saneamento"
+                },
+                {
+                  "esquerda": "Hepatite B",
+                  "direita": "Vacina"
+                },
+                {
+                  "esquerda": "Hepatite C",
+                  "direita": "Evitar contato com sangue"
+                },
+                {
+                  "esquerda": "Hepatite alcoólica",
+                  "direita": "Evitar álcool"
+                }
+              ],
+              "explicacao": "Não há vacina para hepatite C.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A esteatose hepática pode evoluir para cirrose.",
+              "resposta": true,
+              "explicacao": "A perda de peso é o principal tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hepatite ___ pode ser grave em alcoólatras, com icterícia, febre e fígado aumentado.",
+              "opcoes": [
+                "alcoólica",
+                "viral A",
+                "autoimune",
+                "medicamentosa"
+              ],
+              "resposta": "alcoólica",
+              "explicacao": "O escore de Maddrey avalia a gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal medida para tratar a esteatose hepática?",
+              "opcoes": [
+                "Perder 7% a 10% do peso",
+                "Remédio específico sempre",
+                "Cirurgia",
+                "Nada"
+              ],
+              "resposta": "Perder 7% a 10% do peso",
+              "explicacao": "Exercício e dieta são a base.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem tem hepatite com anticorpo antimúsculo liso positivo e IgG alta.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Hepatite autoimune",
+                "Hepatite viral",
+                "Esteatose",
+                "Doença de Wilson"
+              ],
+              "resposta": "Hepatite autoimune",
+              "explicacao": "O tratamento é com corticoide e azatioprina.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O paracetamol em dose alta pode causar insuficiência hepática aguda.",
+              "resposta": true,
+              "explicacao": "O antídoto é a N-acetilcisteína.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hepatite ___ crônica é muitas vezes silenciosa e só é descoberta por exame.",
+              "opcoes": [
+                "C",
+                "A",
+                "E",
+                "alcoólica aguda"
+              ],
+              "resposta": "C",
+              "explicacao": "O SUS oferece testagem e tratamento.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u3-l3",
+          "titulo": "Cirrose e complicações",
+          "questoes": [
+            {
+              "id": "gastro-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada complicação da cirrose ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Ascite",
+                  "direita": "Diurético e restrição de sal"
+                },
+                {
+                  "esquerda": "Encefalopatia",
+                  "direita": "Lactulose"
+                },
+                {
+                  "esquerda": "Varizes de esôfago",
+                  "direita": "Betabloqueador ou ligadura"
+                },
+                {
+                  "esquerda": "Peritonite bacteriana espontânea",
+                  "direita": "Antibiótico"
+                }
+              ],
+              "explicacao": "A cirrose avançada pode precisar de transplante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual escore avalia a gravidade da cirrose?",
+              "opcoes": [
+                "Child-Pugh e MELD",
+                "CURB-65",
+                "Glasgow",
+                "APGAR"
+              ],
+              "resposta": "Child-Pugh e MELD",
+              "explicacao": "O MELD é usado na lista de transplante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A encefalopatia hepática causa confusão, sonolência e tremor das mãos (flapping).",
+              "resposta": true,
+              "explicacao": "A amônia alta participa do quadro.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o acúmulo de líquido no abdome, comum na cirrose.",
+              "opcoes": [
+                "ascite",
+                "edema",
+                "hérnia",
+                "flatulência"
+              ],
+              "resposta": "ascite",
+              "explicacao": "A paracentese avalia o líquido.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de cirrose no Brasil?",
+              "opcoes": [
+                "Álcool e hepatites virais",
+                "Doença de Wilson",
+                "Hemocromatose",
+                "Fibrose cística"
+              ],
+              "resposta": "Álcool e hepatites virais",
+              "explicacao": "A doença gordurosa está crescendo.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose tem febre, dor abdominal e ascite com mais de 250 neutrófilos no líquido.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Peritonite bacteriana espontânea; ceftriaxona e albumina",
+                "Apendicite; cirurgia",
+                "Pancreatite; jejum",
+                "Nada"
+              ],
+              "resposta": "Peritonite bacteriana espontânea; ceftriaxona e albumina",
+              "explicacao": "A albumina reduz a lesão renal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com cirrose devem fazer ultrassom a cada 6 meses para rastrear câncer de fígado.",
+              "resposta": true,
+              "explicacao": "O carcinoma hepatocelular é comum na cirrose.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome ___ é a lesão dos rins causada pela cirrose avançada.",
+              "opcoes": [
+                "hepatorrenal",
+                "nefrótica",
+                "nefrítica",
+                "urêmica"
+              ],
+              "resposta": "hepatorrenal",
+              "explicacao": "O tratamento inclui terlipressina e albumina.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-u4",
+      "titulo": "Vias biliares e pâncreas",
+      "descricao": "Cálculos e inflamação",
+      "licoes": [
+        {
+          "id": "gastro-u4-l1",
+          "titulo": "Doenças da vesícula",
+          "questoes": [
+            {
+              "id": "gastro-u4-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os fatores de risco clássicos para cálculo de vesícula?",
+              "opcoes": [
+                "Mulher, quarenta anos, obesa e com filhos",
+                "Homem jovem magro",
+                "Criança",
+                "Atleta"
+              ],
+              "resposta": "Mulher, quarenta anos, obesa e com filhos",
+              "explicacao": "É o mnemônico dos 4 Fs em inglês.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quadro biliar à característica.",
+              "pares": [
+                {
+                  "esquerda": "Cólica biliar",
+                  "direita": "Dor após refeição gordurosa que passa em horas"
+                },
+                {
+                  "esquerda": "Colecistite",
+                  "direita": "Dor persistente, febre e sinal de Murphy"
+                },
+                {
+                  "esquerda": "Coledocolitíase",
+                  "direita": "Icterícia e enzimas de obstrução altas"
+                },
+                {
+                  "esquerda": "Colangite",
+                  "direita": "Febre, icterícia e dor"
+                }
+              ],
+              "explicacao": "A colangite é emergência.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Cálculos de vesícula sem sintomas, em geral, não precisam de cirurgia.",
+              "resposta": true,
+              "explicacao": "Há exceções, como vesícula em porcelana.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal de ___ é a interrupção da inspiração ao apertar o ponto da vesícula.",
+              "opcoes": [
+                "Murphy",
+                "Blumberg",
+                "Rovsing",
+                "Giordano"
+              ],
+              "resposta": "Murphy",
+              "explicacao": "É típico da colecistite.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame inicial para suspeita de cálculo na vesícula?",
+              "opcoes": [
+                "Ultrassonografia",
+                "Tomografia",
+                "Raio X",
+                "Ressonância"
+              ],
+              "resposta": "Ultrassonografia",
+              "explicacao": "É barata e muito sensível.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos tem dor no lado direito do abdome há 2 dias, febre e Murphy positivo.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Antibiótico e colecistectomia precoce",
+                "Analgésico e alta",
+                "Dieta apenas",
+                "Nada"
+              ],
+              "resposta": "Antibiótico e colecistectomia precoce",
+              "explicacao": "A cirurgia nos primeiros dias tem menos complicações.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tríade de Charcot é febre, icterícia e dor no lado direito do abdome.",
+              "resposta": true,
+              "explicacao": "Indica colangite.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o exame endoscópico que retira cálculos do colédoco.",
+              "opcoes": [
+                "CPRE",
+                "colonoscopia",
+                "broncoscopia",
+                "cistoscopia"
+              ],
+              "resposta": "CPRE",
+              "explicacao": "Pode causar pancreatite como complicação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u4-l2",
+          "titulo": "Pancreatite aguda",
+          "questoes": [
+            {
+              "id": "gastro-u4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de pancreatite aguda à característica.",
+              "pares": [
+                {
+                  "esquerda": "Cálculos biliares",
+                  "direita": "Causa mais comum"
+                },
+                {
+                  "esquerda": "Álcool",
+                  "direita": "Segunda causa mais comum"
+                },
+                {
+                  "esquerda": "Triglicerídeos muito altos",
+                  "direita": "Acima de 1.000"
+                },
+                {
+                  "esquerda": "Após CPRE",
+                  "direita": "Complicação do procedimento"
+                }
+              ],
+              "explicacao": "A causa deve ser investigada para evitar novas crises.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se diagnostica a pancreatite aguda?",
+              "opcoes": [
+                "Dois de três: dor típica, amilase ou lipase acima de 3 vezes e imagem",
+                "Apenas dor",
+                "Apenas amilase alta",
+                "Apenas tomografia"
+              ],
+              "resposta": "Dois de três: dor típica, amilase ou lipase acima de 3 vezes e imagem",
+              "explicacao": "A lipase é mais específica.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dor da pancreatite costuma ir para as costas, em faixa.",
+              "resposta": true,
+              "explicacao": "Melhora ao inclinar para a frente.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tratamento inicial da pancreatite inclui hidratação, analgesia e ___ precoce quando possível.",
+              "opcoes": [
+                "alimentação",
+                "cirurgia",
+                "antibiótico",
+                "jejum prolongado"
+              ],
+              "resposta": "alimentação",
+              "explicacao": "A alimentação precoce reduz complicações.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a complicação local tardia da pancreatite?",
+              "opcoes": [
+                "Pseudocisto",
+                "Úlcera",
+                "Hérnia",
+                "Apendicite"
+              ],
+              "resposta": "Pseudocisto",
+              "explicacao": "A maioria regride sozinha.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pancreatite biliar leve melhora em 3 dias.",
+              "enunciado": "Quando fazer a colecistectomia?",
+              "opcoes": [
+                "Na mesma internação",
+                "Após 1 ano",
+                "Nunca",
+                "Só se tiver nova crise"
+              ],
+              "resposta": "Na mesma internação",
+              "explicacao": "Evita novas crises.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antibiótico não deve ser usado de rotina na pancreatite aguda.",
+              "resposta": true,
+              "explicacao": "Só se houver infecção.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os critérios de ___ e o BISAP avaliam a gravidade da pancreatite.",
+              "opcoes": [
+                "Ranson",
+                "Light",
+                "Wells",
+                "Duke"
+              ],
+              "resposta": "Ranson",
+              "explicacao": "A falência de órgãos define a gravidade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u4-l3",
+          "titulo": "Pancreatite crônica e tumores",
+          "questoes": [
+            {
+              "id": "gastro-u4-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de pancreatite crônica?",
+              "opcoes": [
+                "Álcool",
+                "Cálculo",
+                "Vírus",
+                "Trauma"
+              ],
+              "resposta": "Álcool",
+              "explicacao": "O tabagismo também contribui.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada consequência à pancreatite crônica.",
+              "pares": [
+                {
+                  "esquerda": "Falta de enzimas",
+                  "direita": "Fezes gordurosas"
+                },
+                {
+                  "esquerda": "Falta de insulina",
+                  "direita": "Diabetes"
+                },
+                {
+                  "esquerda": "Dor",
+                  "direita": "Dor abdominal crônica"
+                },
+                {
+                  "esquerda": "Calcificações",
+                  "direita": "Achado na tomografia"
+                }
+              ],
+              "explicacao": "O tratamento inclui enzimas e controle da dor.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O câncer de pâncreas costuma ser descoberto em fase avançada.",
+              "resposta": true,
+              "explicacao": "Tem prognóstico ruim.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A icterícia sem dor com vesícula palpável sugere câncer da cabeça do pâncreas, o sinal de ___.",
+              "opcoes": [
+                "Courvoisier",
+                "Murphy",
+                "Cullen",
+                "Grey Turner"
+              ],
+              "resposta": "Courvoisier",
+              "explicacao": "O tumor obstrui o colédoco.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual marcador acompanha o câncer de pâncreas?",
+              "opcoes": [
+                "CA 19-9",
+                "PSA",
+                "CEA apenas",
+                "Alfafetoproteína"
+              ],
+              "resposta": "CA 19-9",
+              "explicacao": "Não serve para rastreamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem perda de peso, icterícia sem dor e diabetes de início recente.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Câncer de pâncreas",
+                "Hepatite",
+                "Cálculo",
+                "Gastrite"
+              ],
+              "resposta": "Câncer de pâncreas",
+              "explicacao": "O diabetes novo em idoso pode ser um sinal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cirurgia de Whipple é usada para tumores da cabeça do pâncreas.",
+              "resposta": true,
+              "explicacao": "É uma cirurgia grande.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tratamento da insuficiência pancreática exócrina é a reposição de ___.",
+              "opcoes": [
+                "enzimas pancreáticas",
+                "insulina",
+                "ferro",
+                "vitamina C"
+              ],
+              "resposta": "enzimas pancreáticas",
+              "explicacao": "Melhora a absorção de gorduras.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-u5",
+      "titulo": "Câncer e rastreamento digestivo",
+      "descricao": "Esôfago, estômago e cólon",
+      "licoes": [
+        {
+          "id": "gastro-u5-l1",
+          "titulo": "Câncer de esôfago e estômago",
+          "questoes": [
+            {
+              "id": "gastro-u5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de câncer à característica.",
+              "pares": [
+                {
+                  "esquerda": "Carcinoma epidermoide de esôfago",
+                  "direita": "Fumo e álcool"
+                },
+                {
+                  "esquerda": "Adenocarcinoma de esôfago",
+                  "direita": "Refluxo e Barrett"
+                },
+                {
+                  "esquerda": "Câncer gástrico intestinal",
+                  "direita": "Helicobacter e gastrite atrófica"
+                },
+                {
+                  "esquerda": "Câncer gástrico difuso",
+                  "direita": "Jovens, pior prognóstico"
+                }
+              ],
+              "explicacao": "A disfagia progressiva é o sintoma principal no esôfago.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sintoma típico do câncer de esôfago?",
+              "opcoes": [
+                "Dificuldade para engolir que piora, primeiro com sólidos",
+                "Diarreia",
+                "Tosse com catarro",
+                "Febre"
+              ],
+              "resposta": "Dificuldade para engolir que piora, primeiro com sólidos",
+              "explicacao": "Também perda de peso.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O chimarrão muito quente está associado ao câncer de esôfago no sul do Brasil.",
+              "resposta": true,
+              "explicacao": "O calor lesa a mucosa.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O linfonodo de ___ na região supraclavicular esquerda sugere câncer abdominal.",
+              "opcoes": [
+                "Virchow",
+                "Irmã Maria José",
+                "Krukenberg",
+                "Blumer"
+              ],
+              "resposta": "Virchow",
+              "explicacao": "Indica metástase.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere câncer gástrico avançado?",
+              "opcoes": [
+                "Perda de peso, anemia e saciedade precoce",
+                "Azia leve",
+                "Fome",
+                "Diarreia"
+              ],
+              "resposta": "Perda de peso, anemia e saciedade precoce",
+              "explicacao": "Exige endoscopia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 60 anos tem saciedade precoce, perda de 8 kg e anemia.",
+              "enunciado": "Qual é o exame?",
+              "opcoes": [
+                "Endoscopia digestiva alta com biópsia",
+                "Colonoscopia",
+                "Ultrassom",
+                "Nada"
+              ],
+              "resposta": "Endoscopia digestiva alta com biópsia",
+              "explicacao": "São sinais de alarme.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Tratar o Helicobacter pylori reduz o risco de câncer gástrico.",
+              "resposta": true,
+              "explicacao": "Especialmente quando feito cedo.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tumor de ___ é a metástase de câncer gástrico nos ovários.",
+              "opcoes": [
+                "Krukenberg",
+                "Wilms",
+                "Klatskin",
+                "Pancoast"
+              ],
+              "resposta": "Krukenberg",
+              "explicacao": "É mais comum no tipo difuso.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u5-l2",
+          "titulo": "Câncer colorretal",
+          "questoes": [
+            {
+              "id": "gastro-u5-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando começar o rastreamento de câncer colorretal na população de risco médio?",
+              "opcoes": [
+                "Aos 45 a 50 anos",
+                "Aos 20 anos",
+                "Aos 70 anos",
+                "Não é recomendado"
+              ],
+              "resposta": "Aos 45 a 50 anos",
+              "explicacao": "O SUS usa a pesquisa de sangue oculto nas fezes.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame ao rastreamento colorretal.",
+              "pares": [
+                {
+                  "esquerda": "Pesquisa de sangue oculto",
+                  "direita": "Anual"
+                },
+                {
+                  "esquerda": "Colonoscopia",
+                  "direita": "A cada 10 anos se normal"
+                },
+                {
+                  "esquerda": "Retossigmoidoscopia",
+                  "direita": "A cada 5 anos"
+                },
+                {
+                  "esquerda": "Colonoscopia após teste positivo",
+                  "direita": "Obrigatória"
+                }
+              ],
+              "explicacao": "A colonoscopia retira pólipos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A maioria dos cânceres colorretais vem de pólipos adenomatosos.",
+              "resposta": true,
+              "explicacao": "Retirar pólipos previne o câncer.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O marcador ___ é usado no seguimento do câncer colorretal.",
+              "opcoes": [
+                "CEA",
+                "PSA",
+                "CA 125",
+                "AFP"
+              ],
+              "resposta": "CEA",
+              "explicacao": "Não serve para rastreamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sintoma sugere câncer do cólon esquerdo?",
+              "opcoes": [
+                "Mudança do hábito intestinal e sangue nas fezes",
+                "Anemia isolada",
+                "Massa no lado direito",
+                "Diarreia aguda"
+              ],
+              "resposta": "Mudança do hábito intestinal e sangue nas fezes",
+              "explicacao": "No cólon direito, é comum anemia sem outros sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem anemia por falta de ferro sem sangramento visível.",
+              "enunciado": "Qual exame é obrigatório?",
+              "opcoes": [
+                "Colonoscopia e endoscopia",
+                "Só ferro",
+                "Nada",
+                "Ultrassom"
+              ],
+              "resposta": "Colonoscopia e endoscopia",
+              "explicacao": "Câncer de cólon direito pode causar anemia oculta.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Familiares de primeiro grau de pessoas com câncer colorretal jovem devem iniciar o rastreamento mais cedo.",
+              "resposta": true,
+              "explicacao": "Em geral aos 40 anos ou 10 anos antes do caso.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Comer muita carne vermelha e ___ aumenta o risco de câncer colorretal.",
+              "opcoes": [
+                "embutidos",
+                "frutas",
+                "fibras",
+                "verduras"
+              ],
+              "resposta": "embutidos",
+              "explicacao": "Fibras e atividade física protegem.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-u5-l3",
+          "titulo": "Câncer de fígado e outros",
+          "questoes": [
+            {
+              "id": "gastro-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de risco para carcinoma hepatocelular?",
+              "opcoes": [
+                "Cirrose",
+                "Cálculo de vesícula",
+                "Gastrite",
+                "Hemorroidas"
+              ],
+              "resposta": "Cirrose",
+              "explicacao": "Hepatite B pode causar mesmo sem cirrose.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tumor ao marcador ou achado.",
+              "pares": [
+                {
+                  "esquerda": "Carcinoma hepatocelular",
+                  "direita": "Alfafetoproteína"
+                },
+                {
+                  "esquerda": "Colangiocarcinoma",
+                  "direita": "CA 19-9"
+                },
+                {
+                  "esquerda": "Tumor neuroendócrino",
+                  "direita": "Cromogranina A"
+                },
+                {
+                  "esquerda": "Tumor estromal (GIST)",
+                  "direita": "CD117 (c-KIT)"
+                }
+              ],
+              "explicacao": "O GIST responde ao imatinibe.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O hemangioma é o tumor benigno mais comum do fígado.",
+              "resposta": true,
+              "explicacao": "Geralmente não precisa de tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tumor de ___ é o colangiocarcinoma na junção dos ductos hepáticos.",
+              "opcoes": [
+                "Klatskin",
+                "Krukenberg",
+                "Wilms",
+                "Pancoast"
+              ],
+              "resposta": "Klatskin",
+              "explicacao": "Causa icterícia sem dor.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tumor causa diarreia, rubor e chiado quando dá metástase no fígado?",
+              "opcoes": [
+                "Tumor neuroendócrino (síndrome carcinoide)",
+                "Câncer de cólon",
+                "Câncer de estômago",
+                "Linfoma"
+              ],
+              "resposta": "Tumor neuroendócrino (síndrome carcinoide)",
+              "explicacao": "A serotonina causa os sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose tem nódulo de 3 cm no fígado com padrão típico na tomografia.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Carcinoma hepatocelular",
+                "Hemangioma",
+                "Cisto",
+                "Metástase"
+              ],
+              "resposta": "Carcinoma hepatocelular",
+              "explicacao": "O padrão de imagem pode dispensar biópsia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O adenoma hepático está ligado ao uso de anticoncepcional e pode sangrar.",
+              "resposta": true,
+              "explicacao": "Adenomas grandes são retirados.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O transplante de fígado pode ser indicado no carcinoma hepatocelular dentro dos critérios de ___.",
+              "opcoes": [
+                "Milão",
+                "Roma",
+                "Boston",
+                "Atlanta"
+              ],
+              "resposta": "Milão",
+              "explicacao": "Um nódulo até 5 cm ou até 3 nódulos até 3 cm.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-d1",
+      "titulo": "Esôfago e estômago em casos",
+      "descricao": "Disfagia e sangramentos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "gastro-d1-l1",
+          "titulo": "Disfagia em casos",
+          "questoes": [
+            {
+              "id": "gastro-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dificuldade para engolir sólidos e líquidos desde o início, com regurgitação e perda de peso.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Acalasia",
+                "Câncer de esôfago",
+                "Refluxo",
+                "Esofagite infecciosa"
+              ],
+              "resposta": "Acalasia",
+              "explicacao": "Disfagia para sólidos e líquidos desde o início sugere distúrbio motor.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de disfagia à característica.",
+              "pares": [
+                {
+                  "esquerda": "Câncer de esôfago",
+                  "direita": "Progressiva, primeiro sólidos"
+                },
+                {
+                  "esquerda": "Acalasia",
+                  "direita": "Sólidos e líquidos desde o início"
+                },
+                {
+                  "esquerda": "Anel de Schatzki",
+                  "direita": "Disfagia intermitente para sólidos"
+                },
+                {
+                  "esquerda": "Esofagite eosinofílica",
+                  "direita": "Impactação alimentar em jovem alérgico"
+                }
+              ],
+              "explicacao": "O padrão da disfagia orienta o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame padrão-ouro para acalasia?",
+              "opcoes": [
+                "Manometria esofágica",
+                "Endoscopia",
+                "Raio X",
+                "pHmetria"
+              ],
+              "resposta": "Manometria esofágica",
+              "explicacao": "A endoscopia exclui câncer.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem dor intensa ao engolir.",
+              "enunciado": "Quais causas pensar?",
+              "opcoes": [
+                "Esofagite por Candida, citomegalovírus ou herpes",
+                "Refluxo apenas",
+                "Câncer apenas",
+                "Nada"
+              ],
+              "resposta": "Esofagite por Candida, citomegalovírus ou herpes",
+              "explicacao": "A endoscopia com biópsia define.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A disfagia orofaríngea é comum após AVC e aumenta o risco de pneumonia aspirativa.",
+              "resposta": true,
+              "explicacao": "A avaliação da deglutição é importante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ associa disfagia, anemia ferropriva e membranas no esôfago.",
+              "opcoes": [
+                "Plummer-Vinson",
+                "Mallory-Weiss",
+                "Zollinger-Ellison",
+                "Boerhaave"
+              ],
+              "resposta": "Plummer-Vinson",
+              "explicacao": "Aumenta o risco de câncer.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da esofagite eosinofílica?",
+              "opcoes": [
+                "Inibidor de bomba, corticoide deglutido e dieta",
+                "Antibiótico",
+                "Cirurgia",
+                "Nada"
+              ],
+              "resposta": "Inibidor de bomba, corticoide deglutido e dieta",
+              "explicacao": "Dilatação pode ser necessária.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com acalasia não quer cirurgia.",
+              "enunciado": "Quais opções existem?",
+              "opcoes": [
+                "Dilatação pneumática, POEM ou toxina botulínica",
+                "Inibidor de bomba apenas",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Dilatação pneumática, POEM ou toxina botulínica",
+              "explicacao": "A toxina é para quem não pode fazer procedimentos maiores.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d1-l2",
+          "titulo": "Hemorragia digestiva alta em casos",
+          "questoes": [
+            {
+              "id": "gastro-d1-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com úlcera duodenal sangrante tem vaso visível no fundo da úlcera na endoscopia.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento endoscópico combinado e inibidor de bomba venoso",
+                "Apenas observar",
+                "Alta",
+                "Cirurgia imediata sempre"
+              ],
+              "resposta": "Tratamento endoscópico combinado e inibidor de bomba venoso",
+              "explicacao": "A classificação de Forrest indica alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado de Forrest ao risco de ressangramento.",
+              "pares": [
+                {
+                  "esquerda": "Ia (jato)",
+                  "direita": "Muito alto"
+                },
+                {
+                  "esquerda": "IIa (vaso visível)",
+                  "direita": "Alto"
+                },
+                {
+                  "esquerda": "IIb (coágulo aderido)",
+                  "direita": "Intermediário"
+                },
+                {
+                  "esquerda": "III (base limpa)",
+                  "direita": "Baixo"
+                }
+              ],
+              "explicacao": "Lesões de alto risco precisam de tratamento endoscópico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia de sangramento de varizes de esôfago grandes nunca sangradas?",
+              "opcoes": [
+                "Betabloqueador não seletivo ou ligadura elástica",
+                "Nada",
+                "Omeprazol",
+                "Antibiótico"
+              ],
+              "resposta": "Betabloqueador não seletivo ou ligadura elástica",
+              "explicacao": "Carvedilol e propranolol são usados.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com varizes que sangraram continua sangrando após ligadura e terlipressina.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "TIPS ou balão de tamponamento como ponte",
+                "Nada",
+                "Cirurgia de Whipple",
+                "Omeprazol"
+              ],
+              "resposta": "TIPS ou balão de tamponamento como ponte",
+              "explicacao": "O TIPS liga a veia porta à veia hepática.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com cirrose e hemorragia digestiva devem receber antibiótico profilático.",
+              "resposta": true,
+              "explicacao": "A ceftriaxona é a escolha.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A lesão de ___ é uma artéria anormal na parede do estômago que sangra muito.",
+              "opcoes": [
+                "Dieulafoy",
+                "Mallory",
+                "Cushing",
+                "Curling"
+              ],
+              "resposta": "Dieulafoy",
+              "explicacao": "É difícil de achar na endoscopia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco de usar inibidor de bomba junto com clopidogrel?",
+              "opcoes": [
+                "Algumas interações reduzem o efeito do clopidogrel, com o omeprazol",
+                "Nenhum",
+                "Aumenta o sangramento",
+                "Causa hepatite"
+              ],
+              "resposta": "Algumas interações reduzem o efeito do clopidogrel, com o omeprazol",
+              "explicacao": "Pantoprazol tem menos interação.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso usa AAS e anti-inflamatório e chega com melena e hemoglobina de 6.",
+              "enunciado": "Qual é a conduta inicial?",
+              "opcoes": [
+                "Estabilizar, transfundir, inibidor de bomba e endoscopia",
+                "Alta",
+                "Só ferro",
+                "Colonoscopia primeiro"
+              ],
+              "resposta": "Estabilizar, transfundir, inibidor de bomba e endoscopia",
+              "explicacao": "A causa provável é úlcera por anti-inflamatório.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d1-l3",
+          "titulo": "Estômago em casos",
+          "questoes": [
+            {
+              "id": "gastro-d1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao diagnóstico gástrico.",
+              "pares": [
+                {
+                  "esquerda": "Úlceras múltiplas com diarreia e gastrina alta",
+                  "direita": "Zollinger-Ellison"
+                },
+                {
+                  "esquerda": "Gastrite atrófica com anemia de B12",
+                  "direita": "Gastrite autoimune"
+                },
+                {
+                  "esquerda": "Vômitos após refeição com abdome distendido",
+                  "direita": "Obstrução da saída do estômago"
+                },
+                {
+                  "esquerda": "Plenitude em diabético com vômitos tardios",
+                  "direita": "Gastroparesia"
+                }
+              ],
+              "explicacao": "A gastroparesia é comum no diabetes de longa data.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com úlceras graves e repetidas no duodeno e jejuno tem diarreia.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Gastrinoma (Zollinger-Ellison)",
+                "Úlcera comum",
+                "Doença de Crohn",
+                "Câncer gástrico"
+              ],
+              "resposta": "Gastrinoma (Zollinger-Ellison)",
+              "explicacao": "Pode fazer parte da NEM 1.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da gastroparesia diabética?",
+              "opcoes": [
+                "Controle da glicose, refeições pequenas e procinéticos",
+                "Cirurgia",
+                "Antibiótico",
+                "Jejum"
+              ],
+              "resposta": "Controle da glicose, refeições pequenas e procinéticos",
+              "explicacao": "A metoclopramida é usada com cuidado.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com úlcera pilórica antiga tem vômitos de comida do dia anterior e alcalose metabólica.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Estenose pilórica por úlcera (obstrução da saída)",
+                "Gastroparesia",
+                "Câncer de esôfago",
+                "Refluxo"
+              ],
+              "resposta": "Estenose pilórica por úlcera (obstrução da saída)",
+              "explicacao": "Perde ácido clorídrico com os vômitos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O linfoma MALT do estômago pode regredir com a erradicação do Helicobacter pylori.",
+              "resposta": true,
+              "explicacao": "É um exemplo de câncer tratado com antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A úlcera de ___ ocorre em pacientes com queimaduras graves.",
+              "opcoes": [
+                "Curling",
+                "Cushing",
+                "Dieulafoy",
+                "Barrett"
+              ],
+              "resposta": "Curling",
+              "explicacao": "A úlcera de Cushing ocorre em lesão do sistema nervoso.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta na úlcera gástrica?",
+              "opcoes": [
+                "Biópsia e controle endoscópico até a cicatrização",
+                "Só remédio sem biópsia",
+                "Cirurgia sempre",
+                "Nada"
+              ],
+              "resposta": "Biópsia e controle endoscópico até a cicatrização",
+              "explicacao": "Para excluir câncer.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com gastrite atrófica autoimune tem pequeno nódulo no estômago.",
+              "enunciado": "Qual tumor é mais provável?",
+              "opcoes": [
+                "Tumor neuroendócrino (carcinoide) gástrico tipo 1",
+                "Adenocarcinoma",
+                "GIST",
+                "Linfoma"
+              ],
+              "resposta": "Tumor neuroendócrino (carcinoide) gástrico tipo 1",
+              "explicacao": "A gastrina alta estimula essas células.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-d2",
+      "titulo": "Intestino em casos",
+      "descricao": "Doença inflamatória, celíaca e infecções",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "gastro-d2-l1",
+          "titulo": "Doença inflamatória em casos",
+          "questoes": [
+            {
+              "id": "gastro-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com retocolite tem 8 evacuações com sangue por dia, febre e frequência de 110.",
+              "enunciado": "Qual é a gravidade e o tratamento?",
+              "opcoes": [
+                "Crise grave; internação e corticoide venoso",
+                "Crise leve; mesalazina oral",
+                "Nada",
+                "Antibiótico apenas"
+              ],
+              "resposta": "Crise grave; internação e corticoide venoso",
+              "explicacao": "Os critérios de Truelove e Witts avaliam a gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada manifestação extraintestinal à doença inflamatória.",
+              "pares": [
+                {
+                  "esquerda": "Eritema nodoso",
+                  "direita": "Acompanha a atividade intestinal"
+                },
+                {
+                  "esquerda": "Pioderma gangrenoso",
+                  "direita": "Úlcera de pele profunda"
+                },
+                {
+                  "esquerda": "Colangite esclerosante primária",
+                  "direita": "Mais ligada à retocolite"
+                },
+                {
+                  "esquerda": "Uveíte",
+                  "direita": "Inflamação no olho"
+                }
+              ],
+              "explicacao": "Também pode haver artrite e cálculos renais.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual biológico é usado em doença de Crohn moderada a grave?",
+              "opcoes": [
+                "Infliximabe ou adalimumabe",
+                "Mesalazina sempre",
+                "Antibiótico",
+                "Omeprazol"
+              ],
+              "resposta": "Infliximabe ou adalimumabe",
+              "explicacao": "O vedolizumabe e o ustequinumabe também são opções.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Crohn tem obstrução intestinal por estenose fibrótica.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Dilatação endoscópica ou cirurgia",
+                "Aumentar o corticoide",
+                "Antibiótico",
+                "Nada"
+              ],
+              "resposta": "Dilatação endoscópica ou cirurgia",
+              "explicacao": "A fibrose não responde a anti-inflamatórios.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com doença inflamatória devem rastrear tuberculose latente antes de iniciar anti-TNF.",
+              "resposta": true,
+              "explicacao": "Também hepatite B.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ esclerosante primária aumenta o risco de colangiocarcinoma e câncer de cólon.",
+              "opcoes": [
+                "colangite",
+                "colecistite",
+                "pancreatite",
+                "gastrite"
+              ],
+              "resposta": "colangite",
+              "explicacao": "Está ligada à retocolite.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a cirurgia que cura a retocolite ulcerativa?",
+              "opcoes": [
+                "Retirada do cólon e do reto",
+                "Ressecção do íleo",
+                "Apendicectomia",
+                "Gastrectomia"
+              ],
+              "resposta": "Retirada do cólon e do reto",
+              "explicacao": "Pode ser feita bolsa ileal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Crohn ileal ressecado tem diarreia e deficiência de vitamina B12.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "Perda do íleo terminal, onde se absorvem B12 e sais biliares",
+                "Falta de estômago",
+                "Infecção",
+                "Pancreatite"
+              ],
+              "resposta": "Perda do íleo terminal, onde se absorvem B12 e sais biliares",
+              "explicacao": "Os sais biliares não absorvidos causam diarreia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d2-l2",
+          "titulo": "Doença celíaca e má absorção",
+          "questoes": [
+            {
+              "id": "gastro-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem anemia por falta de ferro que não melhora com ferro oral e diarreia leve.",
+              "enunciado": "Qual doença investigar?",
+              "opcoes": [
+                "Doença celíaca",
+                "Úlcera",
+                "Hemorroidas",
+                "Câncer de pele"
+              ],
+              "resposta": "Doença celíaca",
+              "explicacao": "O ferro é absorvido no duodeno.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à doença celíaca.",
+              "pares": [
+                {
+                  "esquerda": "Antitransglutaminase IgA",
+                  "direita": "Exame de triagem"
+                },
+                {
+                  "esquerda": "Atrofia das vilosidades",
+                  "direita": "Biópsia do duodeno"
+                },
+                {
+                  "esquerda": "Dermatite herpetiforme",
+                  "direita": "Manifestação na pele"
+                },
+                {
+                  "esquerda": "Dieta sem glúten",
+                  "direita": "Tratamento"
+                }
+              ],
+              "explicacao": "A IgA total deve ser dosada junto.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que se dosa a IgA total junto com a antitransglutaminase IgA?",
+              "opcoes": [
+                "A deficiência de IgA pode dar falso negativo",
+                "Para ver alergia",
+                "Para ver infecção",
+                "Não é necessário"
+              ],
+              "resposta": "A deficiência de IgA pode dar falso negativo",
+              "explicacao": "Nesse caso, usam-se anticorpos IgG.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com doença celíaca segue a dieta, mas os sintomas voltaram.",
+              "enunciado": "Qual é a causa mais comum?",
+              "opcoes": [
+                "Ingestão acidental de glúten",
+                "Câncer sempre",
+                "Infecção",
+                "Normal"
+              ],
+              "resposta": "Ingestão acidental de glúten",
+              "explicacao": "O linfoma de intestino é uma complicação rara.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A doença de Whipple causa má absorção, artrite e alterações neurológicas.",
+              "resposta": true,
+              "explicacao": "É causada pela bactéria Tropheryma whipplei.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O crescimento ___ bacteriano no intestino delgado causa gases, diarreia e má absorção.",
+              "opcoes": [
+                "excessivo",
+                "normal",
+                "reduzido",
+                "ausente"
+              ],
+              "resposta": "excessivo",
+              "explicacao": "O teste respiratório ajuda no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vitamina falta na má absorção de gorduras?",
+              "opcoes": [
+                "Vitaminas A, D, E e K",
+                "Vitamina C apenas",
+                "Vitamina B1 apenas",
+                "Nenhuma"
+              ],
+              "resposta": "Vitaminas A, D, E e K",
+              "explicacao": "São as vitaminas lipossolúveis.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente operado de grande parte do intestino tem diarreia grave e desnutrição.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome do intestino curto",
+                "Doença celíaca",
+                "Intestino irritável",
+                "Pancreatite"
+              ],
+              "resposta": "Síndrome do intestino curto",
+              "explicacao": "Pode precisar de nutrição parenteral.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d2-l3",
+          "titulo": "Infecções intestinais em casos",
+          "questoes": [
+            {
+              "id": "gastro-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe à diarreia.",
+              "pares": [
+                {
+                  "esquerda": "Clostridioides difficile",
+                  "direita": "Após antibiótico"
+                },
+                {
+                  "esquerda": "Vibrio cholerae",
+                  "direita": "Aquosa em água de arroz"
+                },
+                {
+                  "esquerda": "Shigella",
+                  "direita": "Disenteria com febre"
+                },
+                {
+                  "esquerda": "Rotavírus",
+                  "direita": "Diarreia em crianças pequenas"
+                }
+              ],
+              "explicacao": "A vacina de rotavírus reduziu muito os casos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com colite por Clostridioides difficile teve terceira recorrência.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "Transplante de microbiota fecal",
+                "Mais metronidazol",
+                "Nada",
+                "Cirurgia sempre"
+              ],
+              "resposta": "Transplante de microbiota fecal",
+              "explicacao": "Tem alta taxa de cura.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico é primeira escolha na colite por Clostridioides difficile?",
+              "opcoes": [
+                "Vancomicina oral ou fidaxomicina",
+                "Metronidazol venoso",
+                "Ciprofloxacino",
+                "Ceftriaxona"
+              ],
+              "resposta": "Vancomicina oral ou fidaxomicina",
+              "explicacao": "O metronidazol é reservado a situações especiais.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 30 tem diarreia crônica e perda de peso.",
+              "enunciado": "Quais causas investigar?",
+              "opcoes": [
+                "Cryptosporidium, citomegalovírus e micobactérias",
+                "Apenas vírus comuns",
+                "Intolerância à lactose",
+                "Nada"
+              ],
+              "resposta": "Cryptosporidium, citomegalovírus e micobactérias",
+              "explicacao": "O exame de fezes e a colonoscopia ajudam.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A colite isquêmica é mais comum em idosos, com dor e sangue nas fezes.",
+              "resposta": true,
+              "explicacao": "Afeta mais o lado esquerdo do cólon.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ por cólera pode matar por desidratação em horas.",
+              "opcoes": [
+                "diarreia",
+                "febre",
+                "tosse",
+                "anemia"
+              ],
+              "resposta": "diarreia",
+              "explicacao": "A reidratação rápida é o tratamento principal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado na diarreia com sangue por E. coli O157?",
+              "opcoes": [
+                "Evitar antibiótico, pelo risco de síndrome hemolítico-urêmica",
+                "Antibiótico sempre",
+                "Antidiarreico",
+                "Nada"
+              ],
+              "resposta": "Evitar antibiótico, pelo risco de síndrome hemolítico-urêmica",
+              "explicacao": "Monitorar rins e plaquetas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente idoso tem dor abdominal desproporcional ao exame, fibrilação atrial e lactato alto.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Isquemia mesentérica aguda",
+                "Gastroenterite",
+                "Pancreatite",
+                "Apendicite"
+              ],
+              "resposta": "Isquemia mesentérica aguda",
+              "explicacao": "É emergência com alta mortalidade.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-d3",
+      "titulo": "Fígado em casos",
+      "descricao": "Hepatopatias e complicações graves",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "gastro-d3-l1",
+          "titulo": "Insuficiência hepática aguda",
+          "questoes": [
+            {
+              "id": "gastro-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tomou 30 comprimidos de paracetamol há 8 horas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "N-acetilcisteína imediatamente",
+                "Esperar os exames",
+                "Carvão apenas",
+                "Alta"
+              ],
+              "resposta": "N-acetilcisteína imediatamente",
+              "explicacao": "O antídoto funciona melhor nas primeiras 8 horas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa à insuficiência hepática aguda.",
+              "pares": [
+                {
+                  "esquerda": "Paracetamol",
+                  "direita": "Causa mais comum em países ricos"
+                },
+                {
+                  "esquerda": "Hepatite B",
+                  "direita": "Causa viral importante"
+                },
+                {
+                  "esquerda": "Doença de Wilson",
+                  "direita": "Jovem com hemólise"
+                },
+                {
+                  "esquerda": "Esteatose aguda da gestação",
+                  "direita": "Fim da gravidez"
+                }
+              ],
+              "explicacao": "Os casos graves vão para transplante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que define a insuficiência hepática aguda?",
+              "opcoes": [
+                "Lesão do fígado com coagulação alterada e encefalopatia em paciente sem doença prévia",
+                "Apenas icterícia",
+                "Apenas enzimas altas",
+                "Cirrose antiga"
+              ],
+              "resposta": "Lesão do fígado com coagulação alterada e encefalopatia em paciente sem doença prévia",
+              "explicacao": "É uma emergência.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência hepática aguda tem encefalopatia grau 3 e INR de 4.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Transferir para centro de transplante e UTI",
+                "Alta",
+                "Ambulatório",
+                "Nada"
+              ],
+              "resposta": "Transferir para centro de transplante e UTI",
+              "explicacao": "Os critérios do King's College orientam o transplante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O edema cerebral é uma causa importante de morte na insuficiência hepática aguda.",
+              "resposta": true,
+              "explicacao": "A amônia alta contribui.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na doença de ___, há cobre acumulado, anel na córnea e hemólise.",
+              "opcoes": [
+                "Wilson",
+                "Gilbert",
+                "Gaucher",
+                "Fabry"
+              ],
+              "resposta": "Wilson",
+              "explicacao": "O tratamento usa quelantes de cobre.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica da hemocromatose hereditária?",
+              "opcoes": [
+                "Acúmulo de ferro em fígado, pâncreas, coração e pele",
+                "Falta de ferro",
+                "Acúmulo de cobre",
+                "Acúmulo de cálcio"
+              ],
+              "resposta": "Acúmulo de ferro em fígado, pâncreas, coração e pele",
+              "explicacao": "O tratamento são sangrias.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos tem diabetes, pele bronzeada, fígado aumentado e ferritina muito alta.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Hemocromatose",
+                "Wilson",
+                "Cirrose alcoólica",
+                "Hepatite C"
+              ],
+              "resposta": "Hemocromatose",
+              "explicacao": "Era chamada de diabetes bronzeado.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d3-l2",
+          "titulo": "Cirrose avançada em casos",
+          "questoes": [
+            {
+              "id": "gastro-d3-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose e ascite tem creatinina subindo, sódio baixo e urina com pouco sódio, sem resposta a volume.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome hepatorrenal",
+                "Necrose tubular",
+                "Desidratação",
+                "Obstrução urinária"
+              ],
+              "resposta": "Síndrome hepatorrenal",
+              "explicacao": "O tratamento é terlipressina e albumina.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fator à encefalopatia hepática.",
+              "pares": [
+                {
+                  "esquerda": "Infecção",
+                  "direita": "Desencadeante comum"
+                },
+                {
+                  "esquerda": "Sangramento digestivo",
+                  "direita": "Aumenta a amônia"
+                },
+                {
+                  "esquerda": "Benzodiazepínico",
+                  "direita": "Piora a consciência"
+                },
+                {
+                  "esquerda": "Lactulose",
+                  "direita": "Tratamento"
+                }
+              ],
+              "explicacao": "Sempre procurar o desencadeante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento de segunda linha na encefalopatia hepática recorrente?",
+              "opcoes": [
+                "Rifaximina associada à lactulose",
+                "Antibiótico comum",
+                "Proteína zero",
+                "Nada"
+              ],
+              "resposta": "Rifaximina associada à lactulose",
+              "explicacao": "Reduz novas crises.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com ascite grande tem falta de ar.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Paracentese de alívio com albumina se retirar mais de 5 litros",
+                "Diurético venoso em alta dose",
+                "Nada",
+                "Cirurgia"
+              ],
+              "resposta": "Paracentese de alívio com albumina se retirar mais de 5 litros",
+              "explicacao": "A albumina evita disfunção circulatória.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com cirrose devem evitar anti-inflamatórios.",
+              "resposta": true,
+              "explicacao": "Eles pioram a função renal e o sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O escore ___ inclui bilirrubina, creatinina, INR e sódio para priorizar o transplante.",
+              "opcoes": [
+                "MELD",
+                "Child",
+                "Ranson",
+                "Glasgow"
+              ],
+              "resposta": "MELD",
+              "explicacao": "Maior escore, maior prioridade.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta nutricional na cirrose?",
+              "opcoes": [
+                "Proteína adequada, sem restrição, e refeição antes de dormir",
+                "Proteína zero",
+                "Jejum",
+                "Sal à vontade"
+              ],
+              "resposta": "Proteína adequada, sem restrição, e refeição antes de dormir",
+              "explicacao": "A desnutrição piora o prognóstico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose tem ascite que não responde a diuréticos em dose máxima.",
+              "enunciado": "Quais opções existem?",
+              "opcoes": [
+                "Paracenteses repetidas, TIPS ou transplante",
+                "Mais sal",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Paracenteses repetidas, TIPS ou transplante",
+              "explicacao": "É ascite refratária.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d3-l3",
+          "titulo": "Doenças biliares do fígado",
+          "questoes": [
+            {
+              "id": "gastro-d3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Colangite biliar primária",
+                  "direita": "Antimitocôndria em mulher"
+                },
+                {
+                  "esquerda": "Colangite esclerosante primária",
+                  "direita": "Ductos em contas de rosário"
+                },
+                {
+                  "esquerda": "Doença hepática por remédio",
+                  "direita": "Melhora ao suspender"
+                },
+                {
+                  "esquerda": "Hepatite autoimune",
+                  "direita": "Antimúsculo liso e IgG alta"
+                }
+              ],
+              "explicacao": "O ácido ursodesoxicólico é usado na colangite biliar.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 50 anos tem coceira, cansaço e fosfatase alcalina alta, com antimitocôndria positivo.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Colangite biliar primária; ácido ursodesoxicólico",
+                "Hepatite viral; antiviral",
+                "Cálculo; cirurgia",
+                "Câncer; quimioterapia"
+              ],
+              "resposta": "Colangite biliar primária; ácido ursodesoxicólico",
+              "explicacao": "É uma doença autoimune.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame mostra a colangite esclerosante primária?",
+              "opcoes": [
+                "Colangiorressonância",
+                "Raio X",
+                "Hemograma",
+                "Endoscopia"
+              ],
+              "resposta": "Colangiorressonância",
+              "explicacao": "Mostra estreitamentos e dilatações.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usando amoxicilina com clavulanato tem icterícia e coceira após 3 semanas.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Lesão hepática por remédio, padrão colestático",
+                "Hepatite A",
+                "Cálculo",
+                "Câncer"
+              ],
+              "resposta": "Lesão hepática por remédio, padrão colestático",
+              "explicacao": "Pode aparecer até semanas depois.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A colestase da gravidez causa coceira nas mãos e pés no fim da gestação.",
+              "resposta": true,
+              "explicacao": "Aumenta riscos para o bebê.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ácido ___ é usado para melhorar o fluxo de bile em doenças colestáticas.",
+              "opcoes": [
+                "ursodesoxicólico",
+                "fólico",
+                "acetilsalicílico",
+                "ascórbico"
+              ],
+              "resposta": "ursodesoxicólico",
+              "explicacao": "Também ajuda a dissolver alguns cálculos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa de abscesso hepático em paciente com infecção abdominal?",
+              "opcoes": [
+                "Bactérias vindas pelas vias biliares ou veia porta",
+                "Vírus",
+                "Fungos sempre",
+                "Parasitas sempre"
+              ],
+              "resposta": "Bactérias vindas pelas vias biliares ou veia porta",
+              "explicacao": "O amebiano é diferenciado pela sorologia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem febre, dor no fígado e lesão com líquido, após diverticulite.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Antibiótico e drenagem guiada por imagem",
+                "Só antifúngico",
+                "Nada",
+                "Cirurgia aberta sempre"
+              ],
+              "resposta": "Antibiótico e drenagem guiada por imagem",
+              "explicacao": "O abscesso piogênico precisa de drenagem.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-d4",
+      "titulo": "Pâncreas e vias biliares em casos",
+      "descricao": "Do pronto-socorro à cirurgia",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "gastro-d4-l1",
+          "titulo": "Pancreatite em casos",
+          "questoes": [
+            {
+              "id": "gastro-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pancreatite tem falência renal que persiste por mais de 48 horas.",
+              "enunciado": "Qual é a classificação de gravidade?",
+              "opcoes": [
+                "Grave",
+                "Leve",
+                "Moderada",
+                "Não classificável"
+              ],
+              "resposta": "Grave",
+              "explicacao": "A falência persistente define a forma grave.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada coleção pancreática ao tempo.",
+              "pares": [
+                {
+                  "esquerda": "Coleção líquida aguda",
+                  "direita": "Menos de 4 semanas"
+                },
+                {
+                  "esquerda": "Pseudocisto",
+                  "direita": "Mais de 4 semanas, sem necrose"
+                },
+                {
+                  "esquerda": "Coleção necrótica aguda",
+                  "direita": "Necrose nas primeiras semanas"
+                },
+                {
+                  "esquerda": "Necrose encapsulada",
+                  "direita": "Necrose após 4 semanas"
+                }
+              ],
+              "explicacao": "Essa é a classificação de Atlanta.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando suspeitar de necrose pancreática infectada?",
+              "opcoes": [
+                "Piora clínica após 7 a 10 dias e gás na coleção",
+                "Logo no primeiro dia",
+                "Nunca",
+                "Só com dor"
+              ],
+              "resposta": "Piora clínica após 7 a 10 dias e gás na coleção",
+              "explicacao": "O tratamento é antibiótico e drenagem tardia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pancreatite biliar tem colangite associada.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "CPRE urgente",
+                "Esperar",
+                "Cirurgia aberta",
+                "Nada"
+              ],
+              "resposta": "CPRE urgente",
+              "explicacao": "A colangite exige desobstrução.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hidratação agressiva demais na pancreatite pode causar sobrecarga de volume.",
+              "resposta": true,
+              "explicacao": "A hidratação moderada guiada por metas é preferida.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal de ___ é a mancha roxa ao redor do umbigo na pancreatite grave.",
+              "opcoes": [
+                "Cullen",
+                "Grey Turner",
+                "Murphy",
+                "Courvoisier"
+              ],
+              "resposta": "Cullen",
+              "explicacao": "O de Grey Turner é nos flancos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para avaliar necrose pancreática?",
+              "opcoes": [
+                "Tomografia com contraste após 72 horas",
+                "Raio X",
+                "Ultrassom no primeiro dia",
+                "Endoscopia"
+              ],
+              "resposta": "Tomografia com contraste após 72 horas",
+              "explicacao": "Feita cedo demais pode subestimar.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pancreatite grave tem hipocalcemia e hipoxemia.",
+              "enunciado": "O que indicam?",
+              "opcoes": [
+                "Gravidade da doença",
+                "Melhora",
+                "Complicação leve",
+                "Erro de exame"
+              ],
+              "resposta": "Gravidade da doença",
+              "explicacao": "A hipoxemia pode indicar síndrome do desconforto respiratório.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d4-l2",
+          "titulo": "Vias biliares em casos",
+          "questoes": [
+            {
+              "id": "gastro-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente idoso com colangite tem confusão, pressão baixa, febre e icterícia.",
+              "enunciado": "Como se chama esse quadro e a conduta?",
+              "opcoes": [
+                "Pêntade de Reynolds; desobstrução urgente e antibiótico",
+                "Hepatite; antiviral",
+                "Cirrose; lactulose",
+                "Pancreatite; jejum"
+              ],
+              "resposta": "Pêntade de Reynolds; desobstrução urgente e antibiótico",
+              "explicacao": "É colangite grave.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à causa de icterícia obstrutiva.",
+              "pares": [
+                {
+                  "esquerda": "Cálculo no colédoco",
+                  "direita": "Dor e icterícia flutuante"
+                },
+                {
+                  "esquerda": "Câncer da cabeça do pâncreas",
+                  "direita": "Icterícia sem dor e progressiva"
+                },
+                {
+                  "esquerda": "Colangiocarcinoma",
+                  "direita": "Icterícia com CA 19-9 alto"
+                },
+                {
+                  "esquerda": "Síndrome de Mirizzi",
+                  "direita": "Cálculo na vesícula comprimindo o ducto"
+                }
+              ],
+              "explicacao": "A imagem define a causa.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame avalia o colédoco sem ser invasivo?",
+              "opcoes": [
+                "Colangiorressonância",
+                "CPRE",
+                "Colonoscopia",
+                "Laparoscopia"
+              ],
+              "resposta": "Colangiorressonância",
+              "explicacao": "A CPRE é reservada para tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com colecistite aguda é idoso e muito grave para cirurgia.",
+              "enunciado": "Qual é a alternativa?",
+              "opcoes": [
+                "Colecistostomia percutânea",
+                "Esperar sem tratar",
+                "Cirurgia aberta de urgência obrigatória",
+                "Alta"
+              ],
+              "resposta": "Colecistostomia percutânea",
+              "explicacao": "Drena a vesícula até melhorar.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vesícula em porcelana, calcificada, pode ter risco de câncer.",
+              "resposta": true,
+              "explicacao": "A cirurgia costuma ser indicada.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O íleo ___ é a obstrução do intestino por cálculo que passou por fístula da vesícula.",
+              "opcoes": [
+                "biliar",
+                "paralítico",
+                "meconial",
+                "adinâmico"
+              ],
+              "resposta": "biliar",
+              "explicacao": "É mais comum em idosas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a complicação mais comum da CPRE?",
+              "opcoes": [
+                "Pancreatite",
+                "Infarto",
+                "Pneumonia",
+                "AVC"
+              ],
+              "resposta": "Pancreatite",
+              "explicacao": "Ocorre em cerca de 3% a 5%.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente operado de vesícula tem icterícia e dor dias depois.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Lesão ou cálculo residual na via biliar",
+                "Hepatite viral",
+                "Apendicite",
+                "Normal"
+              ],
+              "resposta": "Lesão ou cálculo residual na via biliar",
+              "explicacao": "Deve ser investigado com exames de imagem.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d4-l3",
+          "titulo": "Abdome agudo clínico",
+          "questoes": [
+            {
+              "id": "gastro-d4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de abdome agudo à pista.",
+              "pares": [
+                {
+                  "esquerda": "Apendicite",
+                  "direita": "Dor que migra do umbigo para a fossa ilíaca direita"
+                },
+                {
+                  "esquerda": "Diverticulite",
+                  "direita": "Dor na fossa ilíaca esquerda em idoso"
+                },
+                {
+                  "esquerda": "Gravidez ectópica rota",
+                  "direita": "Mulher com atraso e choque"
+                },
+                {
+                  "esquerda": "Isquemia mesentérica",
+                  "direita": "Dor intensa com exame pobre"
+                }
+              ],
+              "explicacao": "O exame físico é fundamental.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem dor na fossa ilíaca esquerda, febre e massa dolorosa.",
+              "enunciado": "Qual é a hipótese e o exame?",
+              "opcoes": [
+                "Diverticulite; tomografia",
+                "Apendicite; ultrassom",
+                "Câncer; colonoscopia imediata",
+                "Gastrite; endoscopia"
+              ],
+              "resposta": "Diverticulite; tomografia",
+              "explicacao": "A colonoscopia é feita semanas depois.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta na diverticulite leve sem complicações em paciente saudável?",
+              "opcoes": [
+                "Tratamento em casa, com antibiótico em casos selecionados",
+                "Cirurgia",
+                "Internação sempre",
+                "Colonoscopia imediata"
+              ],
+              "resposta": "Tratamento em casa, com antibiótico em casos selecionados",
+              "explicacao": "Estudos mostram que nem sempre precisa de antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dor abdominal difusa, distensão, vômitos e não elimina gases.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Obstrução intestinal",
+                "Gastrite",
+                "Hepatite",
+                "Pneumonia"
+              ],
+              "resposta": "Obstrução intestinal",
+              "explicacao": "A radiografia mostra níveis hidroaéreos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cetoacidose diabética pode causar dor abdominal intensa, imitando abdome agudo cirúrgico.",
+              "resposta": true,
+              "explicacao": "A dor melhora com o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A dor da ___ começa no umbigo e depois vai para a fossa ilíaca direita.",
+              "opcoes": [
+                "apendicite",
+                "colecistite",
+                "pancreatite",
+                "diverticulite"
+              ],
+              "resposta": "apendicite",
+              "explicacao": "O sinal de Blumberg indica irritação do peritônio.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de obstrução do intestino delgado em quem já foi operado?",
+              "opcoes": [
+                "Aderências (bridas)",
+                "Câncer",
+                "Hérnia",
+                "Cálculo"
+              ],
+              "resposta": "Aderências (bridas)",
+              "explicacao": "A maioria melhora com sonda e jejum.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dor abdominal súbita, pressão baixa e massa pulsátil.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Aneurisma de aorta roto",
+                "Pancreatite",
+                "Apendicite",
+                "Cólica renal"
+              ],
+              "resposta": "Aneurisma de aorta roto",
+              "explicacao": "É emergência cirúrgica.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastro-d5",
+      "titulo": "Câncer digestivo em casos",
+      "descricao": "Diagnóstico e conduta",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "gastro-d5-l1",
+          "titulo": "Pólipos e câncer colorretal",
+          "questoes": [
+            {
+              "id": "gastro-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Colonoscopia mostra adenoma de 15 mm com displasia de alto grau, retirado por inteiro.",
+              "enunciado": "Quando repetir a colonoscopia?",
+              "opcoes": [
+                "Em 3 anos",
+                "Em 10 anos",
+                "Nunca",
+                "Em 1 semana"
+              ],
+              "resposta": "Em 3 anos",
+              "explicacao": "Pólipos de alto risco exigem intervalo menor.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de pólipo ao risco.",
+              "pares": [
+                {
+                  "esquerda": "Pólipo hiperplásico pequeno no reto",
+                  "direita": "Baixo risco"
+                },
+                {
+                  "esquerda": "Adenoma tubular pequeno",
+                  "direita": "Risco baixo a moderado"
+                },
+                {
+                  "esquerda": "Adenoma viloso grande",
+                  "direita": "Alto risco"
+                },
+                {
+                  "esquerda": "Pólipo serrilhado séssil",
+                  "direita": "Pode virar câncer"
+                }
+              ],
+              "explicacao": "O tamanho e a histologia definem o risco.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento do câncer de cólon estágio III após cirurgia?",
+              "opcoes": [
+                "Quimioterapia adjuvante",
+                "Nada",
+                "Radioterapia apenas",
+                "Remédio-alvo apenas"
+              ],
+              "resposta": "Quimioterapia adjuvante",
+              "explicacao": "Linfonodos positivos indicam quimioterapia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de reto baixo localmente avançado.",
+              "enunciado": "Qual é a sequência de tratamento?",
+              "opcoes": [
+                "Quimiorradioterapia antes da cirurgia",
+                "Cirurgia direto sempre",
+                "Nada",
+                "Só quimioterapia"
+              ],
+              "resposta": "Quimiorradioterapia antes da cirurgia",
+              "explicacao": "Reduz a recidiva local.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A instabilidade de microssatélites alta no câncer colorretal prevê boa resposta à imunoterapia.",
+              "resposta": true,
+              "explicacao": "Também levanta suspeita de Lynch.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A mutação do gene ___ indica que o anticorpo anti-EGFR não funciona no câncer colorretal metastático.",
+              "opcoes": [
+                "KRAS",
+                "BRCA",
+                "HER2",
+                "ALK"
+              ],
+              "resposta": "KRAS",
+              "explicacao": "O teste é feito antes de escolher o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o local mais comum de metástase do câncer colorretal?",
+              "opcoes": [
+                "Fígado",
+                "Cérebro",
+                "Osso",
+                "Pele"
+              ],
+              "resposta": "Fígado",
+              "explicacao": "Metástases isoladas podem ser operadas.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de cólon e 2 metástases no fígado ressecáveis.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento com intenção de cura, com quimioterapia e cirurgia",
+                "Só cuidados paliativos",
+                "Nada",
+                "Radioterapia apenas"
+              ],
+              "resposta": "Tratamento com intenção de cura, com quimioterapia e cirurgia",
+              "explicacao": "Parte dos pacientes é curada.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d5-l2",
+          "titulo": "Câncer gastroesofágico em casos",
+          "questoes": [
+            {
+              "id": "gastro-d5-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer gástrico tem ascite e nódulos no peritônio.",
+              "enunciado": "Qual é o estágio e a conduta?",
+              "opcoes": [
+                "Doença metastática; tratamento sistêmico e paliativo",
+                "Estágio inicial; cirurgia",
+                "Cura com cirurgia",
+                "Nada"
+              ],
+              "resposta": "Doença metastática; tratamento sistêmico e paliativo",
+              "explicacao": "A carcinomatose indica doença avançada.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal de câncer gástrico avançado ao local.",
+              "pares": [
+                {
+                  "esquerda": "Linfonodo de Virchow",
+                  "direita": "Fossa supraclavicular esquerda"
+                },
+                {
+                  "esquerda": "Nódulo da Irmã Maria José",
+                  "direita": "Umbigo"
+                },
+                {
+                  "esquerda": "Tumor de Krukenberg",
+                  "direita": "Ovário"
+                },
+                {
+                  "esquerda": "Prateleira de Blumer",
+                  "direita": "Fundo de saco no toque retal"
+                }
+              ],
+              "explicacao": "São sinais de disseminação.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica do câncer gástrico precoce?",
+              "opcoes": [
+                "Restrito à mucosa ou submucosa",
+                "Invade o peritônio",
+                "Tem metástase no fígado",
+                "Sempre incurável"
+              ],
+              "resposta": "Restrito à mucosa ou submucosa",
+              "explicacao": "Pode ser tratado por endoscopia em casos selecionados.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem disfagia progressiva e endoscopia mostra adenocarcinoma no esôfago distal.",
+              "enunciado": "Qual é o fator de risco mais ligado?",
+              "opcoes": [
+                "Refluxo crônico e Barrett",
+                "Chimarrão",
+                "Infecção",
+                "Vitaminas"
+              ],
+              "resposta": "Refluxo crônico e Barrett",
+              "explicacao": "O adenocarcinoma é mais comum no esôfago distal.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O câncer gástrico HER2 positivo pode ser tratado com trastuzumabe.",
+              "resposta": true,
+              "explicacao": "É testado nos tumores avançados.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A linite ___ é o câncer gástrico difuso que deixa o estômago rígido como garrafa de couro.",
+              "opcoes": [
+                "plástica",
+                "aguda",
+                "ulcerativa",
+                "polipoide"
+              ],
+              "resposta": "plástica",
+              "explicacao": "Tem prognóstico ruim.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a nutrição preferida para paciente com câncer de esôfago que não consegue engolir?",
+              "opcoes": [
+                "Sonda ou gastrostomia, usando o intestino",
+                "Jejum",
+                "Só soro",
+                "Nutrição parenteral sempre"
+              ],
+              "resposta": "Sonda ou gastrostomia, usando o intestino",
+              "explicacao": "Usar o intestino é melhor quando possível.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de esôfago avançado não consegue engolir nem saliva.",
+              "enunciado": "Qual é a opção paliativa?",
+              "opcoes": [
+                "Prótese esofágica",
+                "Cirurgia radical",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Prótese esofágica",
+              "explicacao": "A prótese alivia a disfagia rapidamente.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "gastro-d5-l3",
+          "titulo": "Tumores do fígado e pâncreas em casos",
+          "questoes": [
+            {
+              "id": "gastro-d5-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cirrose tem alfafetoproteína subindo e nódulo novo de 2 cm.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tomografia ou ressonância com contraste",
+                "Nada",
+                "Colonoscopia",
+                "Antibiótico"
+              ],
+              "resposta": "Tomografia ou ressonância com contraste",
+              "explicacao": "O padrão de imagem pode confirmar o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tratamento ao carcinoma hepatocelular.",
+              "pares": [
+                {
+                  "esquerda": "Tumor pequeno com fígado bom",
+                  "direita": "Ressecção ou ablação"
+                },
+                {
+                  "esquerda": "Dentro dos critérios de Milão",
+                  "direita": "Transplante"
+                },
+                {
+                  "esquerda": "Doença intermediária",
+                  "direita": "Quimioembolização"
+                },
+                {
+                  "esquerda": "Doença avançada",
+                  "direita": "Imunoterapia e remédios-alvo"
+                }
+              ],
+              "explicacao": "O sistema BCLC orienta a escolha.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a cirurgia para tumor da cabeça do pâncreas ressecável?",
+              "opcoes": [
+                "Duodenopancreatectomia (Whipple)",
+                "Colectomia",
+                "Gastrectomia total",
+                "Hepatectomia"
+              ],
+              "resposta": "Duodenopancreatectomia (Whipple)",
+              "explicacao": "Seguida de quimioterapia.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pâncreas avançado tem dor intensa nas costas que não melhora com opioides.",
+              "enunciado": "Qual opção existe?",
+              "opcoes": [
+                "Bloqueio do plexo celíaco",
+                "Cirurgia de Whipple",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Bloqueio do plexo celíaco",
+              "explicacao": "Alivia a dor em muitos pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Cistos de pâncreas mucinosos podem virar câncer e precisam de seguimento.",
+              "resposta": true,
+              "explicacao": "Os serosos costumam ser benignos.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A neoplasia ___ papilar mucinosa intraductal é um cisto do pâncreas que pode virar câncer.",
+              "opcoes": [
+                "intraductal",
+                "serosa",
+                "simples",
+                "inflamatória"
+              ],
+              "resposta": "intraductal",
+              "explicacao": "O seguimento depende do tamanho e de sinais de risco.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a sobrevida do câncer de pâncreas em 5 anos?",
+              "opcoes": [
+                "Baixa, em torno de 10%",
+                "90%",
+                "50%",
+                "100%"
+              ],
+              "resposta": "Baixa, em torno de 10%",
+              "explicacao": "Por isso o diagnóstico precoce é importante.",
+              "revisado": false
+            },
+            {
+              "id": "gastro-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pâncreas tem icterícia e coceira.",
+              "enunciado": "Qual é a medida paliativa?",
+              "opcoes": [
+                "Prótese biliar por CPRE",
+                "Nada",
+                "Antibiótico",
+                "Antialérgico apenas"
+              ],
+              "resposta": "Prótese biliar por CPRE",
+              "explicacao": "A desobstrução alivia a coceira e permite a quimioterapia.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
