@@ -5,5 +5,3741 @@
   "icone": "microbio",
   "ordem": 8,
   "ciclo": "basico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "micro-u1",
+      "titulo": "Bacteriologia geral",
+      "descricao": "Estrutura, coloração e crescimento",
+      "licoes": [
+        {
+          "id": "micro-u1-l1",
+          "titulo": "Estrutura bacteriana",
+          "questoes": [
+            {
+              "id": "micro-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estrutura diferencia bactérias gram-positivas das gram-negativas?",
+              "opcoes": [
+                "Espessura da parede de peptidoglicano",
+                "Presença de núcleo",
+                "Tamanho do ribossomo",
+                "Presença de mitocôndria"
+              ],
+              "resposta": "Espessura da parede de peptidoglicano",
+              "explicacao": "As gram-positivas têm parede grossa e ficam roxas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Bactérias gram-negativas têm uma membrana externa com lipopolissacarídeo.",
+              "resposta": true,
+              "explicacao": "O lipopolissacarídeo é a endotoxina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na coloração de Gram, as bactérias gram-positivas ficam de cor ___.",
+              "opcoes": [
+                "roxa",
+                "rosa",
+                "verde",
+                "amarela"
+              ],
+              "resposta": "roxa",
+              "explicacao": "As gram-negativas ficam rosadas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estrutura bacteriana à função.",
+              "pares": [
+                {
+                  "esquerda": "Cápsula",
+                  "direita": "Protege contra a fagocitose"
+                },
+                {
+                  "esquerda": "Flagelo",
+                  "direita": "Movimento"
+                },
+                {
+                  "esquerda": "Fímbria (pili)",
+                  "direita": "Adesão às células"
+                },
+                {
+                  "esquerda": "Esporo",
+                  "direita": "Resistência ao ambiente"
+                }
+              ],
+              "explicacao": "Bactérias com cápsula são mais agressivas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual coloração é usada para identificar o bacilo da tuberculose?",
+              "opcoes": [
+                "Ziehl-Neelsen",
+                "Gram",
+                "Giemsa",
+                "Tinta da China"
+              ],
+              "resposta": "Ziehl-Neelsen",
+              "explicacao": "Ele é álcool-ácido resistente.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tétano teve ferimento com prego enferrujado sujo de terra.",
+              "enunciado": "Que estrutura permitiu à bactéria sobreviver na terra?",
+              "opcoes": [
+                "Esporo",
+                "Cápsula",
+                "Flagelo",
+                "Plasmídeo"
+              ],
+              "resposta": "Esporo",
+              "explicacao": "Clostridium e Bacillus formam esporos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os plasmídeos são pedaços de DNA fora do cromossomo e podem levar genes de resistência.",
+              "resposta": true,
+              "explicacao": "Podem passar entre bactérias.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "As bactérias sem parede celular, como o ___, não coram pelo Gram e resistem à penicilina.",
+              "opcoes": [
+                "Mycoplasma",
+                "Staphylococcus",
+                "Streptococcus",
+                "Escherichia"
+              ],
+              "resposta": "Mycoplasma",
+              "explicacao": "Por isso se usa macrolídeo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u1-l2",
+          "titulo": "Formas e classificação",
+          "questoes": [
+            {
+              "id": "micro-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada forma bacteriana ao exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Cocos em cachos",
+                  "direita": "Staphylococcus"
+                },
+                {
+                  "esquerda": "Cocos em cadeia",
+                  "direita": "Streptococcus"
+                },
+                {
+                  "esquerda": "Diplococos gram-negativos",
+                  "direita": "Neisseria"
+                },
+                {
+                  "esquerda": "Espiroqueta",
+                  "direita": "Treponema"
+                }
+              ],
+              "explicacao": "A forma ajuda na primeira suspeita.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria precisa de ambiente sem oxigênio para crescer?",
+              "opcoes": [
+                "Anaeróbia, como Clostridium",
+                "Aeróbia, como Pseudomonas",
+                "Mycobacterium tuberculosis",
+                "Bordetella"
+              ],
+              "resposta": "Anaeróbia, como Clostridium",
+              "explicacao": "Anaeróbios causam abscessos com mau cheiro.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O teste da catalase diferencia Staphylococcus (positivo) de Streptococcus (negativo).",
+              "resposta": true,
+              "explicacao": "A catalase quebra água oxigenada.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O teste da ___ diferencia o Staphylococcus aureus (positivo) dos outros estafilococos.",
+              "opcoes": [
+                "coagulase",
+                "catalase",
+                "oxidase",
+                "urease"
+              ],
+              "resposta": "coagulase",
+              "explicacao": "O aureus é o mais agressivo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria gram-negativa é a principal causa de infecção urinária?",
+              "opcoes": [
+                "Escherichia coli",
+                "Staphylococcus aureus",
+                "Streptococcus pyogenes",
+                "Clostridium"
+              ],
+              "resposta": "Escherichia coli",
+              "explicacao": "Ela vem da flora do intestino.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com gastrite tem teste respiratório da urease positivo.",
+              "enunciado": "Qual bactéria foi detectada?",
+              "opcoes": [
+                "Helicobacter pylori",
+                "Escherichia coli",
+                "Salmonella",
+                "Shigella"
+              ],
+              "resposta": "Helicobacter pylori",
+              "explicacao": "A urease produz amônia, que protege a bactéria do ácido.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Bactérias anaeróbias obrigatórias morrem na presença de oxigênio.",
+              "resposta": true,
+              "explicacao": "Elas não têm enzimas para se defender dele.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "As bactérias ___ não crescem em meios comuns e vivem dentro das células, como Chlamydia e Rickettsia.",
+              "opcoes": [
+                "intracelulares obrigatórias",
+                "aeróbias",
+                "gram-positivas",
+                "esporuladas"
+              ],
+              "resposta": "intracelulares obrigatórias",
+              "explicacao": "Precisam de cultura em células.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u1-l3",
+          "titulo": "Flora normal e patogenicidade",
+          "questoes": [
+            {
+              "id": "micro-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a função da microbiota normal do intestino?",
+              "opcoes": [
+                "Proteger contra germes, produzir vitaminas e treinar a defesa",
+                "Causar doenças",
+                "Nenhuma",
+                "Só produzir gases"
+              ],
+              "resposta": "Proteger contra germes, produzir vitaminas e treinar a defesa",
+              "explicacao": "Os antibióticos podem desequilibrar a microbiota.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fator de virulência à bactéria.",
+              "pares": [
+                {
+                  "esquerda": "Toxina da cólera",
+                  "direita": "Vibrio cholerae"
+                },
+                {
+                  "esquerda": "Proteína A",
+                  "direita": "Staphylococcus aureus"
+                },
+                {
+                  "esquerda": "Toxina diftérica",
+                  "direita": "Corynebacterium diphtheriae"
+                },
+                {
+                  "esquerda": "Toxina botulínica",
+                  "direita": "Clostridium botulinum"
+                }
+              ],
+              "explicacao": "A toxina botulínica é a mais potente conhecida.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O uso de antibiótico pode permitir o crescimento do Clostridioides difficile e causar colite.",
+              "resposta": true,
+              "explicacao": "É a colite pseudomembranosa.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a toxina das gram-negativas que faz parte da parede e causa febre e choque.",
+              "opcoes": [
+                "endotoxina",
+                "exotoxina",
+                "toxoide",
+                "enterotoxina"
+              ],
+              "resposta": "endotoxina",
+              "explicacao": "As exotoxinas são secretadas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é um patógeno oportunista?",
+              "opcoes": [
+                "Germe que causa doença em pessoas com defesa baixa",
+                "Germe que sempre causa doença",
+                "Germe que nunca causa doença",
+                "Um vírus de planta"
+              ],
+              "resposta": "Germe que causa doença em pessoas com defesa baixa",
+              "explicacao": "Exemplos são Pneumocystis e Candida.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher que tomou antibiótico tem corrimento branco grumoso e coceira vaginal.",
+              "enunciado": "Qual é a causa?",
+              "opcoes": [
+                "Candidíase pela perda dos lactobacilos",
+                "Gonorreia",
+                "Sífilis",
+                "Infecção urinária"
+              ],
+              "resposta": "Candidíase pela perda dos lactobacilos",
+              "explicacao": "Os lactobacilos protegem a vagina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As exotoxinas podem ser transformadas em toxoides para fazer vacinas.",
+              "resposta": true,
+              "explicacao": "É o caso das vacinas contra tétano e difteria.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os ___ de Koch definem os critérios para provar que um micróbio causa uma doença.",
+              "opcoes": [
+                "postulados",
+                "princípios",
+                "testes",
+                "métodos"
+              ],
+              "resposta": "postulados",
+              "explicacao": "Nem todos os germes cumprem todos os critérios.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-u2",
+      "titulo": "Bactérias de importância médica",
+      "descricao": "Gram-positivas e gram-negativas",
+      "licoes": [
+        {
+          "id": "micro-u2-l1",
+          "titulo": "Cocos gram-positivos",
+          "questoes": [
+            {
+              "id": "micro-u2-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada bactéria à doença típica.",
+              "pares": [
+                {
+                  "esquerda": "Staphylococcus aureus",
+                  "direita": "Furúnculo e abscesso"
+                },
+                {
+                  "esquerda": "Streptococcus pyogenes",
+                  "direita": "Faringite e erisipela"
+                },
+                {
+                  "esquerda": "Streptococcus pneumoniae",
+                  "direita": "Pneumonia e meningite"
+                },
+                {
+                  "esquerda": "Streptococcus agalactiae",
+                  "direita": "Sepse do recém-nascido"
+                }
+              ],
+              "explicacao": "O agalactiae é o estreptococo do grupo B.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a resistência mais temida do Staphylococcus aureus?",
+              "opcoes": [
+                "Resistência à oxacilina (MRSA)",
+                "Resistência à penicilina apenas",
+                "Resistência ao calor",
+                "Resistência à luz"
+              ],
+              "resposta": "Resistência à oxacilina (MRSA)",
+              "explicacao": "O MRSA é tratado com vancomicina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Streptococcus pyogenes pode causar febre reumática e glomerulonefrite após a infecção.",
+              "resposta": true,
+              "explicacao": "São complicações não supurativas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um estreptococo que causa endocardite em valvas lesadas após manipulação dentária.",
+              "opcoes": [
+                "Streptococcus viridans",
+                "Streptococcus pyogenes",
+                "Enterococcus",
+                "Staphylococcus epidermidis"
+              ],
+              "resposta": "Streptococcus viridans",
+              "explicacao": "Ele vive na boca.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estafilococo causa infecção em cateteres e próteses?",
+              "opcoes": [
+                "Staphylococcus epidermidis",
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae",
+                "Enterococcus"
+              ],
+              "resposta": "Staphylococcus epidermidis",
+              "explicacao": "Ele forma biofilme.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Pessoas comeram doce com creme em festa e tiveram vômitos intensos 2 horas depois.",
+              "enunciado": "Qual é a causa mais provável?",
+              "opcoes": [
+                "Toxina do Staphylococcus aureus",
+                "Salmonella",
+                "Clostridium botulinum",
+                "Rotavírus"
+              ],
+              "resposta": "Toxina do Staphylococcus aureus",
+              "explicacao": "A toxina já pronta age rápido.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Enterococcus é naturalmente resistente às cefalosporinas.",
+              "resposta": true,
+              "explicacao": "A ampicilina é uma opção para cepas sensíveis.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O pneumococo tem cápsula de ___ e é a principal causa de pneumonia comunitária.",
+              "opcoes": [
+                "polissacarídeo",
+                "proteína",
+                "lipídio",
+                "DNA"
+              ],
+              "resposta": "polissacarídeo",
+              "explicacao": "As vacinas usam esses polissacarídeos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u2-l2",
+          "titulo": "Bacilos gram-negativos",
+          "questoes": [
+            {
+              "id": "micro-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada bactéria à doença.",
+              "pares": [
+                {
+                  "esquerda": "Salmonella Typhi",
+                  "direita": "Febre tifoide"
+                },
+                {
+                  "esquerda": "Shigella",
+                  "direita": "Disenteria com sangue"
+                },
+                {
+                  "esquerda": "Pseudomonas aeruginosa",
+                  "direita": "Infecção em queimados e fibrose cística"
+                },
+                {
+                  "esquerda": "Klebsiella pneumoniae",
+                  "direita": "Pneumonia em alcoólatras"
+                }
+              ],
+              "explicacao": "A Pseudomonas tem pigmento esverdeado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria causa a doença da arranhadura do gato?",
+              "opcoes": [
+                "Bartonella henselae",
+                "Pasteurella",
+                "Brucella",
+                "Francisella"
+              ],
+              "resposta": "Bartonella henselae",
+              "explicacao": "Causa linfonodos aumentados perto do arranhão.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Pseudomonas aeruginosa é uma causa importante de infecção hospitalar.",
+              "resposta": true,
+              "explicacao": "Ela resiste a muitos antibióticos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A Escherichia coli ___ produtora de toxina Shiga causa diarreia com sangue e síndrome hemolítico-urêmica.",
+              "opcoes": [
+                "O157:H7",
+                "enterotoxigênica",
+                "uropatogênica",
+                "comensal"
+              ],
+              "resposta": "O157:H7",
+              "explicacao": "A enterotoxigênica causa a diarreia do viajante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria causa a coqueluche?",
+              "opcoes": [
+                "Bordetella pertussis",
+                "Haemophilus influenzae",
+                "Streptococcus pneumoniae",
+                "Moraxella"
+              ],
+              "resposta": "Bordetella pertussis",
+              "explicacao": "Causa tosse em acessos com guincho.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Viajante tem diarreia aquosa sem febre durante uma viagem.",
+              "enunciado": "Qual é a causa mais comum?",
+              "opcoes": [
+                "Escherichia coli enterotoxigênica",
+                "Shigella",
+                "Salmonella Typhi",
+                "Clostridium"
+              ],
+              "resposta": "Escherichia coli enterotoxigênica",
+              "explicacao": "É a diarreia do viajante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Legionella é transmitida pela água de ar-condicionado e torres de resfriamento.",
+              "resposta": true,
+              "explicacao": "Causa pneumonia com diarreia e sódio baixo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ produz urease e causa cálculos renais de estruvita.",
+              "opcoes": [
+                "Proteus",
+                "Escherichia coli",
+                "Salmonella",
+                "Shigella"
+              ],
+              "resposta": "Proteus",
+              "explicacao": "A urina fica alcalina.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u2-l3",
+          "titulo": "Outras bactérias importantes",
+          "questoes": [
+            {
+              "id": "micro-u2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada bactéria de transmissão sexual ou ambiental à doença.",
+              "pares": [
+                {
+                  "esquerda": "Treponema pallidum",
+                  "direita": "Sífilis"
+                },
+                {
+                  "esquerda": "Neisseria gonorrhoeae",
+                  "direita": "Gonorreia"
+                },
+                {
+                  "esquerda": "Chlamydia trachomatis",
+                  "direita": "Uretrite e tracoma"
+                },
+                {
+                  "esquerda": "Leptospira",
+                  "direita": "Leptospirose"
+                }
+              ],
+              "explicacao": "A Chlamydia é a infecção sexual bacteriana mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria causa a hanseníase?",
+              "opcoes": [
+                "Mycobacterium leprae",
+                "Mycobacterium tuberculosis",
+                "Mycobacterium avium",
+                "Nocardia"
+              ],
+              "resposta": "Mycobacterium leprae",
+              "explicacao": "Ela afeta pele e nervos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Treponema pallidum não cresce em meios de cultura comuns.",
+              "resposta": true,
+              "explicacao": "O diagnóstico é feito por sorologia.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é uma bactéria que causa o tétano por toxina que impede o relaxamento dos músculos.",
+              "opcoes": [
+                "Clostridium tetani",
+                "Clostridium botulinum",
+                "Clostridium perfringens",
+                "Bacillus anthracis"
+              ],
+              "resposta": "Clostridium tetani",
+              "explicacao": "Causa rigidez e espasmos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bactéria causa gangrena gasosa?",
+              "opcoes": [
+                "Clostridium perfringens",
+                "Clostridium tetani",
+                "Staphylococcus",
+                "Streptococcus"
+              ],
+              "resposta": "Clostridium perfringens",
+              "explicacao": "Produz gás no tecido.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses comeu mel, ficou com constipação, choro fraco e fraqueza.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Botulismo infantil",
+                "Tétano",
+                "Meningite",
+                "Desidratação"
+              ],
+              "resposta": "Botulismo infantil",
+              "explicacao": "Mel não deve ser dado antes de 1 ano.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Neisseria meningitidis pode causar meningite e manchas roxas na pele com choque.",
+              "resposta": true,
+              "explicacao": "É a meningococcemia.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A Listeria é transmitida por queijos e frios e causa meningite em recém-nascidos, idosos e ___.",
+              "opcoes": [
+                "gestantes",
+                "atletas",
+                "adolescentes",
+                "fumantes"
+              ],
+              "resposta": "gestantes",
+              "explicacao": "Ela atravessa a placenta.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-u3",
+      "titulo": "Virologia",
+      "descricao": "Estrutura e vírus importantes",
+      "licoes": [
+        {
+          "id": "micro-u3-l1",
+          "titulo": "Estrutura dos vírus",
+          "questoes": [
+            {
+              "id": "micro-u3-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica que define um vírus?",
+              "opcoes": [
+                "Só se multiplica dentro de células vivas",
+                "Tem parede celular",
+                "Tem ribossomos próprios",
+                "Faz fotossíntese"
+              ],
+              "resposta": "Só se multiplica dentro de células vivas",
+              "explicacao": "Ele usa a máquina da célula.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vírus ao material genético.",
+              "pares": [
+                {
+                  "esquerda": "HIV",
+                  "direita": "RNA (retrovírus)"
+                },
+                {
+                  "esquerda": "Herpesvírus",
+                  "direita": "DNA de fita dupla"
+                },
+                {
+                  "esquerda": "Influenza",
+                  "direita": "RNA segmentado"
+                },
+                {
+                  "esquerda": "Hepatite B",
+                  "direita": "DNA parcialmente duplo"
+                }
+              ],
+              "explicacao": "O RNA segmentado permite grandes mudanças no influenza.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os antibióticos não funcionam contra vírus.",
+              "resposta": true,
+              "explicacao": "Vírus não têm parede nem ribossomos próprios.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O envelope viral é uma membrana tirada da célula ___.",
+              "opcoes": [
+                "hospedeira",
+                "bacteriana",
+                "vegetal",
+                "fúngica"
+              ],
+              "resposta": "hospedeira",
+              "explicacao": "Vírus com envelope são mais sensíveis ao álcool e sabão.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vírus permanece latente nos gânglios nervosos após a infecção?",
+              "opcoes": [
+                "Herpes simples",
+                "Influenza",
+                "Rotavírus",
+                "Hepatite A"
+              ],
+              "resposta": "Herpes simples",
+              "explicacao": "Pode reativar e causar novas lesões.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso que teve catapora na infância agora tem dor e bolhas em faixa de um lado do tórax.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Herpes-zóster",
+                "Catapora de novo",
+                "Alergia",
+                "Impetigo"
+              ],
+              "resposta": "Herpes-zóster",
+              "explicacao": "O vírus reativa ao longo de um nervo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A mudança antigênica (shift) do influenza pode causar pandemias.",
+              "resposta": true,
+              "explicacao": "Ocorre por troca de segmentos entre vírus diferentes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A transcriptase ___ do HIV transforma o RNA do vírus em DNA.",
+              "opcoes": [
+                "reversa",
+                "direta",
+                "polimerase",
+                "ligase"
+              ],
+              "resposta": "reversa",
+              "explicacao": "É alvo de antirretrovirais.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u3-l2",
+          "titulo": "Vírus respiratórios e exantemáticos",
+          "questoes": [
+            {
+              "id": "micro-u3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vírus à doença.",
+              "pares": [
+                {
+                  "esquerda": "Vírus sincicial respiratório",
+                  "direita": "Bronquiolite"
+                },
+                {
+                  "esquerda": "Influenza",
+                  "direita": "Gripe"
+                },
+                {
+                  "esquerda": "Sarampo",
+                  "direita": "Febre, tosse e manchas"
+                },
+                {
+                  "esquerda": "Parvovírus B19",
+                  "direita": "Eritema infeccioso"
+                }
+              ],
+              "explicacao": "O vírus sincicial respiratório é a principal causa de bronquiolite.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vírus causa a mononucleose?",
+              "opcoes": [
+                "Epstein-Barr",
+                "Citomegalovírus apenas",
+                "Influenza",
+                "Rinovírus"
+              ],
+              "resposta": "Epstein-Barr",
+              "explicacao": "É chamada de doença do beijo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O rinovírus é a principal causa do resfriado comum.",
+              "resposta": true,
+              "explicacao": "Não há vacina por causa dos muitos tipos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O vírus da ___ causa febre, inchaço das parótidas e pode causar orquite.",
+              "opcoes": [
+                "caxumba",
+                "rubéola",
+                "varicela",
+                "dengue"
+              ],
+              "resposta": "caxumba",
+              "explicacao": "A vacina tríplice viral protege.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vírus causou a pandemia de 2020?",
+              "opcoes": [
+                "SARS-CoV-2",
+                "Influenza H1N1",
+                "Zika",
+                "Ebola"
+              ],
+              "resposta": "SARS-CoV-2",
+              "explicacao": "É um coronavírus.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança com febre e manchas que começaram no rosto e desceram, com manchas brancas na boca.",
+              "enunciado": "Qual é o vírus?",
+              "opcoes": [
+                "Sarampo",
+                "Rubéola",
+                "Varicela",
+                "Dengue"
+              ],
+              "resposta": "Sarampo",
+              "explicacao": "As manchas de Koplik são típicas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O citomegalovírus é a infecção congênita mais comum e pode causar surdez.",
+              "resposta": true,
+              "explicacao": "Muitos bebês nascem sem sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O vírus ___ causa verrugas e câncer do colo do útero.",
+              "opcoes": [
+                "HPV",
+                "herpes",
+                "HIV",
+                "Epstein-Barr"
+              ],
+              "resposta": "HPV",
+              "explicacao": "Os tipos 16 e 18 são os de maior risco.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u3-l3",
+          "titulo": "Hepatites e arboviroses",
+          "questoes": [
+            {
+              "id": "micro-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada hepatite à transmissão.",
+              "pares": [
+                {
+                  "esquerda": "Hepatite A",
+                  "direita": "Fecal-oral"
+                },
+                {
+                  "esquerda": "Hepatite B",
+                  "direita": "Sangue, sexo e da mãe para o bebê"
+                },
+                {
+                  "esquerda": "Hepatite C",
+                  "direita": "Sangue"
+                },
+                {
+                  "esquerda": "Hepatite E",
+                  "direita": "Fecal-oral, grave em gestantes"
+                }
+              ],
+              "explicacao": "A hepatite D só ocorre junto com a B.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hepatite tem cura com remédios antivirais em mais de 95% dos casos?",
+              "opcoes": [
+                "Hepatite C",
+                "Hepatite B",
+                "Hepatite D",
+                "Nenhuma"
+              ],
+              "resposta": "Hepatite C",
+              "explicacao": "Os antivirais de ação direta mudaram o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hepatite B pode se tornar crônica e causar cirrose e câncer de fígado.",
+              "resposta": true,
+              "explicacao": "A vacina previne.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A dengue é transmitida pelo mosquito ___ aegypti.",
+              "opcoes": [
+                "Aedes",
+                "Anopheles",
+                "Culex",
+                "Lutzomyia"
+              ],
+              "resposta": "Aedes",
+              "explicacao": "Ele também transmite zika e chikungunya.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual arbovirose tem vacina no calendário brasileiro aos 9 meses?",
+              "opcoes": [
+                "Febre amarela",
+                "Dengue",
+                "Zika",
+                "Chikungunya"
+              ],
+              "resposta": "Febre amarela",
+              "explicacao": "A vacina da dengue é usada em grupos específicos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve dengue há anos e agora tem nova dengue com sinais de alarme.",
+              "enunciado": "Por que a segunda infecção pode ser mais grave?",
+              "opcoes": [
+                "Anticorpos de um sorotipo podem facilitar a infecção por outro",
+                "O vírus ficou mais forte",
+                "Não pode ser mais grave",
+                "Falta de vacina"
+              ],
+              "resposta": "Anticorpos de um sorotipo podem facilitar a infecção por outro",
+              "explicacao": "É o fenômeno de amplificação dependente de anticorpo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hepatite A é prevenida com vacina e saneamento básico.",
+              "resposta": true,
+              "explicacao": "A vacina está no calendário infantil.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A febre ___ tem fase com icterícia e sangramentos, e pode ser transmitida em áreas de mata.",
+              "opcoes": [
+                "amarela",
+                "tifoide",
+                "maculosa",
+                "reumática"
+              ],
+              "resposta": "amarela",
+              "explicacao": "A vacina é a principal prevenção.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-u4",
+      "titulo": "Micologia",
+      "descricao": "Fungos de importância médica",
+      "licoes": [
+        {
+          "id": "micro-u4-l1",
+          "titulo": "Fungos superficiais",
+          "questoes": [
+            {
+              "id": "micro-u4-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica dos fungos?",
+              "opcoes": [
+                "Têm parede com quitina e membrana com ergosterol",
+                "Não têm núcleo",
+                "São vírus",
+                "Têm parede de peptidoglicano"
+              ],
+              "resposta": "Têm parede com quitina e membrana com ergosterol",
+              "explicacao": "O ergosterol é alvo de muitos antifúngicos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada micose à característica.",
+              "pares": [
+                {
+                  "esquerda": "Pitiríase versicolor",
+                  "direita": "Manchas claras ou escuras no tronco"
+                },
+                {
+                  "esquerda": "Tinea pedis",
+                  "direita": "Frieira entre os dedos"
+                },
+                {
+                  "esquerda": "Onicomicose",
+                  "direita": "Unha grossa e amarelada"
+                },
+                {
+                  "esquerda": "Candidíase oral",
+                  "direita": "Placas brancas que saem ao raspar"
+                }
+              ],
+              "explicacao": "A tinea é causada por dermatófitos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os dermatófitos se alimentam de queratina e afetam pele, cabelo e unhas.",
+              "resposta": true,
+              "explicacao": "Não invadem tecidos profundos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O exame ___ direto com hidróxido de potássio mostra hifas em raspados de pele.",
+              "opcoes": [
+                "micológico",
+                "bacteriológico",
+                "parasitológico",
+                "histológico"
+              ],
+              "resposta": "micológico",
+              "explicacao": "Ele confirma a micose.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fungo causa o sapinho em bebês?",
+              "opcoes": [
+                "Candida albicans",
+                "Aspergillus",
+                "Cryptococcus",
+                "Histoplasma"
+              ],
+              "resposta": "Candida albicans",
+              "explicacao": "Aparece como placas brancas na boca.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem placa sem cabelo, com descamação, no couro cabeludo, após contato com gato.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Tinea capitis",
+                "Alopecia areata",
+                "Psoríase",
+                "Dermatite seborreica"
+              ],
+              "resposta": "Tinea capitis",
+              "explicacao": "O tratamento é oral, como griseofulvina ou terbinafina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pitiríase versicolor é causada pela Malassezia, que faz parte da pele normal.",
+              "resposta": true,
+              "explicacao": "Calor e suor favorecem.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Para tratar a onicomicose, o antifúngico oral ___ é muito usado.",
+              "opcoes": [
+                "terbinafina",
+                "nistatina",
+                "anfotericina B",
+                "fluconazol tópico"
+              ],
+              "resposta": "terbinafina",
+              "explicacao": "O tratamento dura meses.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u4-l2",
+          "titulo": "Micoses sistêmicas",
+          "questoes": [
+            {
+              "id": "micro-u4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fungo à doença.",
+              "pares": [
+                {
+                  "esquerda": "Cryptococcus neoformans",
+                  "direita": "Meningite em pessoas com HIV"
+                },
+                {
+                  "esquerda": "Histoplasma capsulatum",
+                  "direita": "Doença pulmonar ligada a cavernas e morcegos"
+                },
+                {
+                  "esquerda": "Paracoccidioides",
+                  "direita": "Paracoccidioidomicose em trabalhador rural"
+                },
+                {
+                  "esquerda": "Pneumocystis jirovecii",
+                  "direita": "Pneumonia em HIV"
+                }
+              ],
+              "explicacao": "A paracoccidioidomicose é típica do Brasil.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame do líquor detecta o Cryptococcus?",
+              "opcoes": [
+                "Tinta da China e antígeno criptocócico",
+                "Gram",
+                "Ziehl-Neelsen",
+                "VDRL"
+              ],
+              "resposta": "Tinta da China e antígeno criptocócico",
+              "explicacao": "A cápsula aparece como halo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A paracoccidioidomicose causa lesões na boca e nos pulmões em trabalhadores rurais.",
+              "resposta": true,
+              "explicacao": "O fungo tem aspecto de roda de leme.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um fungo que causa bola fúngica em cavidades antigas do pulmão.",
+              "opcoes": [
+                "Aspergillus",
+                "Candida",
+                "Cryptococcus",
+                "Histoplasma"
+              ],
+              "resposta": "Aspergillus",
+              "explicacao": "Pode causar sangramento ao tossir.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antifúngico é usado em micoses graves e é tóxico para os rins?",
+              "opcoes": [
+                "Anfotericina B",
+                "Fluconazol",
+                "Nistatina",
+                "Terbinafina"
+              ],
+              "resposta": "Anfotericina B",
+              "explicacao": "A forma lipossomal é menos tóxica.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI com cateter tem febre persistente apesar de antibióticos, e a hemocultura mostra leveduras.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Candidemia",
+                "Bacteremia",
+                "Malária",
+                "Dengue"
+              ],
+              "resposta": "Candidemia",
+              "explicacao": "Deve-se retirar o cateter e usar antifúngico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A esporotricose é transmitida por arranhadura de gato e é comum no Rio de Janeiro.",
+              "resposta": true,
+              "explicacao": "Causa nódulos que sobem pelo braço.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na mucormicose, o fungo invade os ___ e causa necrose, principalmente em diabéticos descompensados.",
+              "opcoes": [
+                "vasos",
+                "ossos",
+                "rins",
+                "olhos apenas"
+              ],
+              "resposta": "vasos",
+              "explicacao": "É uma emergência.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u4-l3",
+          "titulo": "Diagnóstico microbiológico",
+          "questoes": [
+            {
+              "id": "micro-u4-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor momento para colher hemocultura?",
+              "opcoes": [
+                "Antes do antibiótico",
+                "Depois do antibiótico",
+                "Uma semana depois",
+                "Não importa"
+              ],
+              "resposta": "Antes do antibiótico",
+              "explicacao": "O antibiótico pode deixar a cultura negativa.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame ao que avalia.",
+              "pares": [
+                {
+                  "esquerda": "Cultura",
+                  "direita": "Identificar o germe"
+                },
+                {
+                  "esquerda": "Antibiograma",
+                  "direita": "Sensibilidade aos antibióticos"
+                },
+                {
+                  "esquerda": "Gram",
+                  "direita": "Forma e cor das bactérias"
+                },
+                {
+                  "esquerda": "PCR",
+                  "direita": "Material genético do germe"
+                }
+              ],
+              "explicacao": "O antibiograma guia o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Urocultura com mais de 100 mil colônias por mL sugere infecção urinária.",
+              "resposta": true,
+              "explicacao": "Valores menores podem ser significativos em homens e cateteres.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ inibitória mínima é a menor concentração de antibiótico que impede o crescimento da bactéria.",
+              "opcoes": [
+                "concentração",
+                "dose",
+                "taxa",
+                "quantidade"
+              ],
+              "resposta": "concentração",
+              "explicacao": "É usada no antibiograma.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quantas amostras de hemocultura se colhem habitualmente?",
+              "opcoes": [
+                "Duas, de locais diferentes",
+                "Uma",
+                "Cinco",
+                "Dez"
+              ],
+              "resposta": "Duas, de locais diferentes",
+              "explicacao": "Isso ajuda a diferenciar contaminação.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Hemocultura mostra Staphylococcus epidermidis em apenas uma de duas amostras, sem cateter.",
+              "enunciado": "Como interpretar?",
+              "opcoes": [
+                "Provável contaminação da coleta",
+                "Infecção grave",
+                "Endocardite",
+                "Meningite"
+              ],
+              "resposta": "Provável contaminação da coleta",
+              "explicacao": "A pele tem esse germe.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O teste rápido de antígeno pode detectar o estreptococo na garganta em minutos.",
+              "resposta": true,
+              "explicacao": "Ajuda a decidir sobre antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A coleta de urina deve ser do jato ___ após higiene.",
+              "opcoes": [
+                "médio",
+                "inicial",
+                "final",
+                "contínuo"
+              ],
+              "resposta": "médio",
+              "explicacao": "Isso reduz a contaminação.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-u5",
+      "titulo": "Antimicrobianos e controle",
+      "descricao": "Resistência, esterilização e infecção hospitalar",
+      "licoes": [
+        {
+          "id": "micro-u5-l1",
+          "titulo": "Resistência bacteriana",
+          "questoes": [
+            {
+              "id": "micro-u5-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como bactérias se tornam resistentes à penicilina com frequência?",
+              "opcoes": [
+                "Produzindo betalactamase",
+                "Perdendo a cápsula",
+                "Formando esporos",
+                "Mudando de cor"
+              ],
+              "resposta": "Produzindo betalactamase",
+              "explicacao": "A betalactamase quebra o anel do antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada mecanismo de resistência ao exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Enzima que destrói o antibiótico",
+                  "direita": "Betalactamase"
+                },
+                {
+                  "esquerda": "Mudança no alvo",
+                  "direita": "PBP alterada no MRSA"
+                },
+                {
+                  "esquerda": "Bomba de efluxo",
+                  "direita": "Expulsa tetraciclina"
+                },
+                {
+                  "esquerda": "Redução da entrada",
+                  "direita": "Perda de porinas"
+                }
+              ],
+              "explicacao": "Muitas bactérias somam vários mecanismos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O uso inadequado de antibióticos aumenta a resistência bacteriana.",
+              "resposta": true,
+              "explicacao": "Por isso não se deve usar antibiótico em viroses.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "As enterobactérias produtoras de ___ resistem às cefalosporinas de terceira geração.",
+              "opcoes": [
+                "ESBL",
+                "catalase",
+                "coagulase",
+                "urease"
+              ],
+              "resposta": "ESBL",
+              "explicacao": "São tratadas com carbapenêmicos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a resistência mais preocupante em gram-negativos hospitalares?",
+              "opcoes": [
+                "Produção de carbapenemase",
+                "Resistência à penicilina",
+                "Resistência à amoxicilina",
+                "Resistência ao calor"
+              ],
+              "resposta": "Produção de carbapenemase",
+              "explicacao": "Deixa poucas opções de tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI tem infecção por Klebsiella resistente a carbapenêmicos.",
+              "enunciado": "O que mais ajuda a conter a disseminação?",
+              "opcoes": [
+                "Isolamento de contato e higiene das mãos",
+                "Nada",
+                "Mais antibiótico em todos",
+                "Ar-condicionado"
+              ],
+              "resposta": "Isolamento de contato e higiene das mãos",
+              "explicacao": "A higiene das mãos é a medida mais importante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Enterococcus resistente à vancomicina é uma ameaça em hospitais.",
+              "resposta": true,
+              "explicacao": "É conhecido como VRE.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O programa de ___ de antimicrobianos busca usar antibióticos de forma correta nos hospitais.",
+              "opcoes": [
+                "gerenciamento (stewardship)",
+                "venda",
+                "propaganda",
+                "produção"
+              ],
+              "resposta": "gerenciamento (stewardship)",
+              "explicacao": "Ele reduz resistência e custos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u5-l2",
+          "titulo": "Esterilização e desinfecção",
+          "questoes": [
+            {
+              "id": "micro-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada método ao uso.",
+              "pares": [
+                {
+                  "esquerda": "Autoclave",
+                  "direita": "Esterilização de instrumentos com vapor"
+                },
+                {
+                  "esquerda": "Álcool 70%",
+                  "direita": "Desinfecção da pele e superfícies"
+                },
+                {
+                  "esquerda": "Óxido de etileno",
+                  "direita": "Esterilização de materiais sensíveis ao calor"
+                },
+                {
+                  "esquerda": "Clorexidina",
+                  "direita": "Antissepsia da pele"
+                }
+              ],
+              "explicacao": "A autoclave mata até os esporos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a diferença entre esterilização e desinfecção?",
+              "opcoes": [
+                "Esterilização destrói todas as formas de vida, incluindo esporos",
+                "São iguais",
+                "A desinfecção é mais forte",
+                "A esterilização só tira a sujeira"
+              ],
+              "resposta": "Esterilização destrói todas as formas de vida, incluindo esporos",
+              "explicacao": "A desinfecção não elimina todos os esporos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O álcool 70% é mais eficaz que o álcool 100% para desinfecção.",
+              "resposta": true,
+              "explicacao": "A água ajuda a desnaturar as proteínas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ das mãos é a medida mais importante para prevenir infecções em hospitais.",
+              "opcoes": [
+                "higiene",
+                "secagem",
+                "luva",
+                "joia"
+              ],
+              "resposta": "higiene",
+              "explicacao": "O álcool em gel é prático e eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual germe resiste ao álcool em gel, exigindo lavagem com água e sabão?",
+              "opcoes": [
+                "Clostridioides difficile (esporos)",
+                "Staphylococcus aureus",
+                "Influenza",
+                "Escherichia coli"
+              ],
+              "resposta": "Clostridioides difficile (esporos)",
+              "explicacao": "Os esporos não morrem com álcool.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Enfermeiro vai cuidar de paciente com diarreia por Clostridioides difficile.",
+              "enunciado": "Qual cuidado é necessário?",
+              "opcoes": [
+                "Precaução de contato e lavar as mãos com água e sabão",
+                "Só álcool em gel",
+                "Máscara N95",
+                "Nenhum"
+              ],
+              "resposta": "Precaução de contato e lavar as mãos com água e sabão",
+              "explicacao": "Luvas e avental também são usados.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Instrumentos que entram em tecidos estéreis precisam ser esterilizados.",
+              "resposta": true,
+              "explicacao": "São os chamados artigos críticos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O hipoclorito de ___ é usado para desinfetar superfícies e é eficaz contra esporos em altas concentrações.",
+              "opcoes": [
+                "sódio",
+                "potássio",
+                "cálcio",
+                "magnésio"
+              ],
+              "resposta": "sódio",
+              "explicacao": "É a água sanitária.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-u5-l3",
+          "titulo": "Infecção hospitalar e precauções",
+          "questoes": [
+            {
+              "id": "micro-u5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença à precaução.",
+              "pares": [
+                {
+                  "esquerda": "Tuberculose",
+                  "direita": "Aerossol com máscara N95"
+                },
+                {
+                  "esquerda": "Influenza",
+                  "direita": "Gotículas com máscara cirúrgica"
+                },
+                {
+                  "esquerda": "MRSA",
+                  "direita": "Contato com luvas e avental"
+                },
+                {
+                  "esquerda": "Varicela",
+                  "direita": "Aerossol e contato"
+                }
+              ],
+              "explicacao": "O sarampo também exige precaução para aerossol.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a infecção hospitalar mais comum ligada a dispositivos?",
+              "opcoes": [
+                "Infecção urinária por sonda",
+                "Infecção de pele",
+                "Otite",
+                "Conjuntivite"
+              ],
+              "resposta": "Infecção urinária por sonda",
+              "explicacao": "Retirar a sonda logo reduz o risco.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pneumonia associada à ventilação mecânica é prevenida com cabeceira elevada e higiene da boca.",
+              "resposta": true,
+              "explicacao": "Também com despertar diário da sedação.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A infecção hospitalar é a que surge após ___ horas da internação.",
+              "opcoes": [
+                "48",
+                "6",
+                "12",
+                "2"
+              ],
+              "resposta": "48",
+              "explicacao": "Ou que se relaciona a procedimentos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medida reduz infecção de cateter venoso central?",
+              "opcoes": [
+                "Técnica estéril na inserção e retirar quando não for mais necessário",
+                "Trocar o cateter todo dia",
+                "Usar sem curativo",
+                "Antibiótico pelo cateter sempre"
+              ],
+              "resposta": "Técnica estéril na inserção e retirar quando não for mais necessário",
+              "explicacao": "Os pacotes de medidas reduzem as infecções.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente internado com tosse há 4 semanas e emagrecimento aguarda exames.",
+              "enunciado": "Qual precaução tomar?",
+              "opcoes": [
+                "Isolamento para aerossóis com N95 até excluir tuberculose",
+                "Nenhuma",
+                "Só luvas",
+                "Máscara no médico apenas quando tossir"
+              ],
+              "resposta": "Isolamento para aerossóis com N95 até excluir tuberculose",
+              "explicacao": "O quarto deve ter pressão negativa, se possível.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Profissionais de saúde devem ser vacinados contra hepatite B.",
+              "resposta": true,
+              "explicacao": "Eles têm risco de exposição a sangue.",
+              "revisado": false
+            },
+            {
+              "id": "micro-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os ___ de medidas são conjuntos de ações simples que, feitas juntas, reduzem infecções.",
+              "opcoes": [
+                "pacotes (bundles)",
+                "kits",
+                "testes",
+                "ciclos"
+              ],
+              "resposta": "pacotes (bundles)",
+              "explicacao": "São usados para cateteres, sondas e ventilação.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-d1",
+      "titulo": "Bactérias em casos",
+      "descricao": "Diagnóstico pela clínica e pelo laboratório",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "micro-d1-l1",
+          "titulo": "Gram-positivos em casos",
+          "questoes": [
+            {
+              "id": "micro-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de drogas injetáveis tem febre e sopro novo, com hemoculturas positivas para cocos gram-positivos em cachos.",
+              "enunciado": "Qual é o germe e a valva provável?",
+              "opcoes": [
+                "Staphylococcus aureus na valva tricúspide",
+                "Streptococcus viridans na valva mitral",
+                "Enterococcus na aórtica",
+                "Candida na pulmonar"
+              ],
+              "resposta": "Staphylococcus aureus na valva tricúspide",
+              "explicacao": "Pode causar êmbolos sépticos nos pulmões.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada toxina do Staphylococcus aureus à doença.",
+              "pares": [
+                {
+                  "esquerda": "Toxina esfoliativa",
+                  "direita": "Síndrome da pele escaldada"
+                },
+                {
+                  "esquerda": "TSST-1",
+                  "direita": "Síndrome do choque tóxico"
+                },
+                {
+                  "esquerda": "Enterotoxina",
+                  "direita": "Intoxicação alimentar"
+                },
+                {
+                  "esquerda": "Leucocidina de Panton-Valentine",
+                  "direita": "Pneumonia necrosante"
+                }
+              ],
+              "explicacao": "A TSST-1 é um superantígeno.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico é usado no MRSA comunitário em infecções de pele leves?",
+              "opcoes": [
+                "Sulfametoxazol e trimetoprima",
+                "Penicilina",
+                "Amoxicilina",
+                "Cefalexina"
+              ],
+              "resposta": "Sulfametoxazol e trimetoprima",
+              "explicacao": "Clindamicina e doxiciclina também são opções.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Mulher usando tampão vaginal tem febre alta, pressão baixa e manchas que descamam nas mãos.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome do choque tóxico estafilocócica",
+                "Sepse por E. coli",
+                "Dengue",
+                "Alergia"
+              ],
+              "resposta": "Síndrome do choque tóxico estafilocócica",
+              "explicacao": "A toxina age como superantígeno.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A faringite estreptocócica deve ser tratada para prevenir a febre reumática.",
+              "resposta": true,
+              "explicacao": "A penicilina benzatina é o tratamento clássico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O teste da ___ diferencia o Streptococcus pneumoniae (sensível) do viridans (resistente).",
+              "opcoes": [
+                "optoquina",
+                "bacitracina",
+                "catalase",
+                "coagulase"
+              ],
+              "resposta": "optoquina",
+              "explicacao": "O pneumococo também é solúvel em bile.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estreptococo é rastreado na gestante entre 35 e 37 semanas?",
+              "opcoes": [
+                "Streptococcus agalactiae (grupo B)",
+                "Streptococcus pyogenes",
+                "Pneumococo",
+                "Viridans"
+              ],
+              "resposta": "Streptococcus agalactiae (grupo B)",
+              "explicacao": "Se positivo, recebe antibiótico no parto.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com câncer de cólon tem endocardite por Streptococcus gallolyticus.",
+              "enunciado": "Qual exame deve ser feito?",
+              "opcoes": [
+                "Colonoscopia",
+                "Endoscopia apenas",
+                "Tomografia de crânio",
+                "Nenhum"
+              ],
+              "resposta": "Colonoscopia",
+              "explicacao": "Esse germe se associa a tumores do cólon.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d1-l2",
+          "titulo": "Gram-negativos em casos",
+          "questoes": [
+            {
+              "id": "micro-d1-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrose cística tem pneumonia por germe com pigmento verde e cheiro de uva.",
+              "enunciado": "Qual é o germe?",
+              "opcoes": [
+                "Pseudomonas aeruginosa",
+                "Staphylococcus aureus",
+                "Klebsiella",
+                "Haemophilus"
+              ],
+              "resposta": "Pseudomonas aeruginosa",
+              "explicacao": "Ela forma biofilme no pulmão desses pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção ao germe típico.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia com escarro em geleia de groselha",
+                  "direita": "Klebsiella pneumoniae"
+                },
+                {
+                  "esquerda": "Diarreia após comer ovo cru",
+                  "direita": "Salmonella"
+                },
+                {
+                  "esquerda": "Otite externa maligna em diabético",
+                  "direita": "Pseudomonas"
+                },
+                {
+                  "esquerda": "Mordida de cão ou gato infectada",
+                  "direita": "Pasteurella multocida"
+                }
+              ],
+              "explicacao": "A Pasteurella é tratada com amoxicilina e clavulanato.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da febre tifoide?",
+              "opcoes": [
+                "Ceftriaxona ou azitromicina",
+                "Penicilina benzatina",
+                "Metronidazol",
+                "Nenhum"
+              ],
+              "resposta": "Ceftriaxona ou azitromicina",
+              "explicacao": "O cloranfenicol é usado em alguns locais.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem febre alta com pulso lento, manchas rosadas no abdome e diarreia após viagem.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Febre tifoide",
+                "Dengue",
+                "Malária",
+                "Leptospirose"
+              ],
+              "resposta": "Febre tifoide",
+              "explicacao": "O pulso lento com febre é a dissociação de Faget.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Helicobacter pylori é tratada com associação de antibióticos e inibidor de bomba de prótons.",
+              "resposta": true,
+              "explicacao": "O esquema dura 14 dias.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ causa a doença dos legionários, com pneumonia, confusão e diarreia.",
+              "opcoes": [
+                "Legionella",
+                "Klebsiella",
+                "Moraxella",
+                "Bordetella"
+              ],
+              "resposta": "Legionella",
+              "explicacao": "O antígeno na urina ajuda no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual germe causa meningite em adultos alcoólatras e idosos, além de pneumococo?",
+              "opcoes": [
+                "Listeria monocytogenes",
+                "Escherichia coli",
+                "Salmonella",
+                "Shigella"
+              ],
+              "resposta": "Listeria monocytogenes",
+              "explicacao": "Por isso se adiciona ampicilina no esquema.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com diarreia com sangue após comer hambúrguer mal passado tem insuficiência renal e anemia.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome hemolítico-urêmica por E. coli O157:H7",
+                "Febre tifoide",
+                "Cólera",
+                "Giardíase"
+              ],
+              "resposta": "Síndrome hemolítico-urêmica por E. coli O157:H7",
+              "explicacao": "Antibiótico pode piorar.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d1-l3",
+          "titulo": "Infecções sexualmente transmissíveis",
+          "questoes": [
+            {
+              "id": "micro-d1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção sexual ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Sífilis primária",
+                  "direita": "Úlcera indolor e endurecida"
+                },
+                {
+                  "esquerda": "Cancro mole",
+                  "direita": "Úlcera dolorosa com pus"
+                },
+                {
+                  "esquerda": "Linfogranuloma venéreo",
+                  "direita": "Linfonodos na virilha que supuram"
+                },
+                {
+                  "esquerda": "Donovanose",
+                  "direita": "Úlcera vermelha que cresce e sangra"
+                }
+              ],
+              "explicacao": "O cancro mole é causado pelo Haemophilus ducreyi.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem corrimento uretral purulento 3 dias após relação desprotegida.",
+              "enunciado": "Qual é o tratamento empírico?",
+              "opcoes": [
+                "Ceftriaxona e azitromicina",
+                "Penicilina benzatina",
+                "Metronidazol",
+                "Aciclovir"
+              ],
+              "resposta": "Ceftriaxona e azitromicina",
+              "explicacao": "Trata gonorreia e clamídia juntas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o esquema de penicilina para a sífilis recente (primária)?",
+              "opcoes": [
+                "Penicilina benzatina 2,4 milhões em dose única",
+                "Azitromicina",
+                "Aciclovir",
+                "Metronidazol"
+              ],
+              "resposta": "Penicilina benzatina 2,4 milhões em dose única",
+              "explicacao": "Na sífilis tardia, são três doses.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sífilis recebe penicilina e, horas depois, tem febre, calafrios e piora das manchas.",
+              "enunciado": "Qual é a reação?",
+              "opcoes": [
+                "Reação de Jarisch-Herxheimer",
+                "Alergia à penicilina",
+                "Falha do tratamento",
+                "Nova infecção"
+              ],
+              "resposta": "Reação de Jarisch-Herxheimer",
+              "explicacao": "É causada pela morte dos treponemas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clamídia não tratada pode causar infertilidade feminina.",
+              "resposta": true,
+              "explicacao": "Ela causa doença inflamatória pélvica.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A sífilis ___ pode causar alterações neurológicas e cardíacas anos depois da infecção.",
+              "opcoes": [
+                "terciária",
+                "primária",
+                "secundária",
+                "latente recente"
+              ],
+              "resposta": "terciária",
+              "explicacao": "Inclui aortite e tabes dorsalis.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame acompanha a resposta ao tratamento da sífilis?",
+              "opcoes": [
+                "VDRL com títulos",
+                "Teste treponêmico",
+                "Cultura",
+                "Hemograma"
+              ],
+              "resposta": "VDRL com títulos",
+              "explicacao": "O teste treponêmico fica positivo por toda a vida.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem manchas nas palmas das mãos e plantas dos pés e lesões úmidas na região genital.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Sífilis secundária",
+                "Sífilis primária",
+                "Herpes",
+                "Psoríase"
+              ],
+              "resposta": "Sífilis secundária",
+              "explicacao": "As lesões úmidas são os condilomas planos.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-d2",
+      "titulo": "Micobactérias e germes especiais",
+      "descricao": "Tuberculose, hanseníase e atípicos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "micro-d2-l1",
+          "titulo": "Tuberculose em casos",
+          "questoes": [
+            {
+              "id": "micro-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tosse há 4 semanas tem baciloscopia positiva.",
+              "enunciado": "Qual é a característica do bacilo?",
+              "opcoes": [
+                "Álcool-ácido resistente, com parede rica em ácidos micólicos",
+                "Gram-negativo",
+                "Sem parede",
+                "Esporulado"
+              ],
+              "resposta": "Álcool-ácido resistente, com parede rica em ácidos micólicos",
+              "explicacao": "Isso explica a coloração de Ziehl-Neelsen.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame da tuberculose à função.",
+              "pares": [
+                {
+                  "esquerda": "Baciloscopia",
+                  "direita": "Ver o bacilo no escarro"
+                },
+                {
+                  "esquerda": "Teste rápido molecular",
+                  "direita": "Detectar DNA e resistência à rifampicina"
+                },
+                {
+                  "esquerda": "Cultura",
+                  "direita": "Confirmar e testar sensibilidade"
+                },
+                {
+                  "esquerda": "Prova tuberculínica",
+                  "direita": "Avaliar infecção latente"
+                }
+              ],
+              "explicacao": "A cultura demora semanas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a forma de transmissão da tuberculose?",
+              "opcoes": [
+                "Gotículas pequenas no ar (aerossóis)",
+                "Água",
+                "Alimentos",
+                "Picada de inseto"
+              ],
+              "resposta": "Gotículas pequenas no ar (aerossóis)",
+              "explicacao": "Só a forma pulmonar ou laríngea transmite.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Criança com tuberculose tem lesão no pulmão e linfonodo aumentado no hilo.",
+              "enunciado": "Como se chama esse achado?",
+              "opcoes": [
+                "Complexo de Ghon (complexo primário)",
+                "Caverna",
+                "Bola fúngica",
+                "Derrame"
+              ],
+              "resposta": "Complexo de Ghon (complexo primário)",
+              "explicacao": "É a primoinfecção.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tuberculose miliar mostra pequenos nódulos espalhados pelos pulmões.",
+              "resposta": true,
+              "explicacao": "Ocorre por disseminação pelo sangue.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tratamento da tuberculose usa rifampicina, isoniazida, pirazinamida e ___.",
+              "opcoes": [
+                "etambutol",
+                "amoxicilina",
+                "penicilina",
+                "metronidazol"
+              ],
+              "resposta": "etambutol",
+              "explicacao": "A isoniazida pode causar neuropatia, prevenida com piridoxina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual efeito colateral da rifampicina deve ser avisado ao paciente?",
+              "opcoes": [
+                "Urina e lágrima alaranjadas",
+                "Urina verde",
+                "Perda de cabelo",
+                "Ganho de altura"
+              ],
+              "resposta": "Urina e lágrima alaranjadas",
+              "explicacao": "Também reduz o efeito de anticoncepcionais.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em tratamento de tuberculose tem alteração na visão de cores.",
+              "enunciado": "Qual remédio é suspeito?",
+              "opcoes": [
+                "Etambutol",
+                "Rifampicina",
+                "Isoniazida",
+                "Pirazinamida"
+              ],
+              "resposta": "Etambutol",
+              "explicacao": "Causa neurite óptica.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d2-l2",
+          "titulo": "Hanseníase e outras micobactérias",
+          "questoes": [
+            {
+              "id": "micro-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem mancha clara com perda de sensibilidade ao calor e à dor.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Hanseníase",
+                "Vitiligo",
+                "Pitiríase versicolor",
+                "Micose"
+              ],
+              "resposta": "Hanseníase",
+              "explicacao": "A perda de sensibilidade é o sinal mais importante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada forma de hanseníase à característica.",
+              "pares": [
+                {
+                  "esquerda": "Tuberculoide",
+                  "direita": "Poucas lesões bem delimitadas"
+                },
+                {
+                  "esquerda": "Virchowiana",
+                  "direita": "Muitas lesões e nódulos, muito bacilo"
+                },
+                {
+                  "esquerda": "Dimorfa",
+                  "direita": "Formas intermediárias"
+                },
+                {
+                  "esquerda": "Indeterminada",
+                  "direita": "Mancha clara inicial"
+                }
+              ],
+              "explicacao": "A virchowiana é a mais contagiosa.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se transmite a hanseníase?",
+              "opcoes": [
+                "Vias aéreas, por contato prolongado",
+                "Picada de inseto",
+                "Água",
+                "Comida"
+              ],
+              "resposta": "Vias aéreas, por contato prolongado",
+              "explicacao": "Após o início do tratamento, o paciente deixa de transmitir.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 30 tem febre, perda de peso e diarreia com micobactéria no sangue.",
+              "enunciado": "Qual é o germe?",
+              "opcoes": [
+                "Complexo Mycobacterium avium",
+                "Mycobacterium leprae",
+                "Mycobacterium bovis",
+                "Mycobacterium marinum"
+              ],
+              "resposta": "Complexo Mycobacterium avium",
+              "explicacao": "A profilaxia era feita com azitromicina.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Mycobacterium marinum causa lesões na pele de quem cuida de aquários.",
+              "resposta": true,
+              "explicacao": "É o granuloma do aquário.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A reação hansênica tipo 2, com nódulos dolorosos e febre, é tratada com ___ ou corticoide.",
+              "opcoes": [
+                "talidomida",
+                "penicilina",
+                "metronidazol",
+                "insulina"
+              ],
+              "resposta": "talidomida",
+              "explicacao": "A talidomida não pode ser usada em mulheres que podem engravidar sem contracepção.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual micobactéria está na vacina BCG?",
+              "opcoes": [
+                "Mycobacterium bovis atenuado",
+                "Mycobacterium tuberculosis",
+                "Mycobacterium leprae",
+                "Mycobacterium avium"
+              ],
+              "resposta": "Mycobacterium bovis atenuado",
+              "explicacao": "O nome vem de Bacilo de Calmette e Guérin.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hanseníase tem dor e espessamento do nervo ulnar com perda de força na mão.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Corticoide para a neurite, mantendo o tratamento da hanseníase",
+                "Parar o tratamento",
+                "Cirurgia imediata",
+                "Nada"
+              ],
+              "resposta": "Corticoide para a neurite, mantendo o tratamento da hanseníase",
+              "explicacao": "A neurite pode deixar sequelas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d2-l3",
+          "titulo": "Bactérias atípicas e zoonoses",
+          "questoes": [
+            {
+              "id": "micro-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada bactéria atípica à doença.",
+              "pares": [
+                {
+                  "esquerda": "Mycoplasma pneumoniae",
+                  "direita": "Pneumonia em jovens"
+                },
+                {
+                  "esquerda": "Chlamydia psittaci",
+                  "direita": "Pneumonia por contato com aves"
+                },
+                {
+                  "esquerda": "Coxiella burnetii",
+                  "direita": "Febre Q, por animais de fazenda"
+                },
+                {
+                  "esquerda": "Rickettsia rickettsii",
+                  "direita": "Febre maculosa"
+                }
+              ],
+              "explicacao": "Esses germes não respondem a betalactâmicos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente esteve em área de mata, foi picado por carrapato e tem febre, manchas e sangramento.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Febre maculosa; doxiciclina",
+                "Dengue; hidratação",
+                "Malária; cloroquina",
+                "Leptospirose; penicilina"
+              ],
+              "resposta": "Febre maculosa; doxiciclina",
+              "explicacao": "O carrapato-estrela transmite a doença.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da leptospirose grave?",
+              "opcoes": [
+                "Penicilina ou ceftriaxona",
+                "Doxiciclina sempre",
+                "Metronidazol",
+                "Nenhum"
+              ],
+              "resposta": "Penicilina ou ceftriaxona",
+              "explicacao": "A doxiciclina é usada na forma leve e na profilaxia.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Fazendeiro tem febre que vai e vem, suor noturno e dor nas costas, e toma leite cru.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Brucelose",
+                "Tuberculose",
+                "Febre tifoide",
+                "Malária"
+              ],
+              "resposta": "Brucelose",
+              "explicacao": "A brucelose é transmitida por leite não pasteurizado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A doença de Lyme é transmitida por carrapatos e causa uma mancha em alvo.",
+              "resposta": true,
+              "explicacao": "É rara no Brasil, mas existe uma doença parecida.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o antibiótico de escolha para a maioria das doenças por riquétsias.",
+              "opcoes": [
+                "doxiciclina",
+                "amoxicilina",
+                "cefalexina",
+                "metronidazol"
+              ],
+              "resposta": "doxiciclina",
+              "explicacao": "Deve ser usado mesmo em crianças nos casos graves.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual germe causa pneumonia com anemia hemolítica por crioaglutininas?",
+              "opcoes": [
+                "Mycoplasma pneumoniae",
+                "Pneumococo",
+                "Legionella",
+                "Klebsiella"
+              ],
+              "resposta": "Mycoplasma pneumoniae",
+              "explicacao": "As crioaglutininas são anticorpos IgM.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Criadora de papagaios tem pneumonia com febre alta e baço grande.",
+              "enunciado": "Qual é o germe?",
+              "opcoes": [
+                "Chlamydia psittaci",
+                "Mycoplasma",
+                "Pneumococo",
+                "Pseudomonas"
+              ],
+              "resposta": "Chlamydia psittaci",
+              "explicacao": "É a psitacose.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-d3",
+      "titulo": "Vírus em casos",
+      "descricao": "Hepatites, HIV, herpes e outros",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "micro-d3-l1",
+          "titulo": "Hepatites em casos",
+          "questoes": [
+            {
+              "id": "micro-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hepatite B crônica tem HBeAg positivo, carga viral alta e enzimas do fígado altas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento antiviral com tenofovir ou entecavir",
+                "Nada",
+                "Vacina",
+                "Interferon obrigatório"
+              ],
+              "resposta": "Tratamento antiviral com tenofovir ou entecavir",
+              "explicacao": "O tratamento reduz cirrose e câncer.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à hepatite.",
+              "pares": [
+                {
+                  "esquerda": "Anti-HAV IgM positivo",
+                  "direita": "Hepatite A aguda"
+                },
+                {
+                  "esquerda": "Anti-HCV positivo com RNA positivo",
+                  "direita": "Hepatite C ativa"
+                },
+                {
+                  "esquerda": "HBsAg positivo e anti-HDV positivo",
+                  "direita": "Coinfecção com hepatite D"
+                },
+                {
+                  "esquerda": "Gestante com hepatite fulminante após água contaminada",
+                  "direita": "Hepatite E"
+                }
+              ],
+              "explicacao": "A hepatite D é comum na Amazônia.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame confirma infecção ativa pela hepatite C?",
+              "opcoes": [
+                "RNA do vírus (carga viral)",
+                "Anti-HCV apenas",
+                "ALT",
+                "Bilirrubina"
+              ],
+              "resposta": "RNA do vírus (carga viral)",
+              "explicacao": "O anti-HCV pode ficar positivo após a cura.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de mãe com HBsAg positivo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Vacina e imunoglobulina contra hepatite B nas primeiras 12 horas",
+                "Só a vacina aos 2 meses",
+                "Nada",
+                "Suspender a amamentação"
+              ],
+              "resposta": "Vacina e imunoglobulina contra hepatite B nas primeiras 12 horas",
+              "explicacao": "Essa conduta previne a maioria das transmissões.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hepatite A raramente se torna crônica.",
+              "resposta": true,
+              "explicacao": "Pode ser grave em adultos e em quem tem doença do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é um antiviral de ação direta usado na hepatite C.",
+              "opcoes": [
+                "sofosbuvir",
+                "aciclovir",
+                "oseltamivir",
+                "zidovudina"
+              ],
+              "resposta": "sofosbuvir",
+              "explicacao": "Tratamentos de 8 a 12 semanas curam a maioria.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco da reativação da hepatite B?",
+              "opcoes": [
+                "Ocorre com quimioterapia e imunossupressores",
+                "Ocorre com vacinas",
+                "Ocorre com exercício",
+                "Não existe"
+              ],
+              "resposta": "Ocorre com quimioterapia e imunossupressores",
+              "explicacao": "Deve-se rastrear antes desses tratamentos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hepatite C crônica tem plaquetas baixas e fígado nodular no ultrassom.",
+              "enunciado": "O que deve ser rastreado?",
+              "opcoes": [
+                "Câncer de fígado e varizes de esôfago",
+                "Câncer de pele",
+                "Diabetes",
+                "Nada"
+              ],
+              "resposta": "Câncer de fígado e varizes de esôfago",
+              "explicacao": "O ultrassom é repetido a cada 6 meses.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d3-l2",
+          "titulo": "Herpesvírus em casos",
+          "questoes": [
+            {
+              "id": "micro-d3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada herpesvírus à doença.",
+              "pares": [
+                {
+                  "esquerda": "Herpes simples 1",
+                  "direita": "Herpes labial e encefalite"
+                },
+                {
+                  "esquerda": "Varicela-zóster",
+                  "direita": "Catapora e zóster"
+                },
+                {
+                  "esquerda": "Citomegalovírus",
+                  "direita": "Retinite em HIV"
+                },
+                {
+                  "esquerda": "Herpesvírus 8",
+                  "direita": "Sarcoma de Kaposi"
+                }
+              ],
+              "explicacao": "O herpesvírus 6 causa o exantema súbito.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem febre, confusão, alteração do comportamento e lesão no lobo temporal na ressonância.",
+              "enunciado": "Qual é o diagnóstico e tratamento?",
+              "opcoes": [
+                "Encefalite herpética; aciclovir venoso imediato",
+                "Meningite bacteriana; ceftriaxona",
+                "AVC; trombólise",
+                "Psicose; antipsicótico"
+              ],
+              "resposta": "Encefalite herpética; aciclovir venoso imediato",
+              "explicacao": "O atraso no tratamento aumenta as sequelas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a vacina contra o herpes-zóster recomendada para idosos?",
+              "opcoes": [
+                "Vacina recombinante",
+                "Vacina da catapora infantil",
+                "BCG",
+                "Não existe"
+              ],
+              "resposta": "Vacina recombinante",
+              "explicacao": "Ela reduz o zóster e a dor após o zóster.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente transplantado tem febre, queda dos leucócitos e hepatite.",
+              "enunciado": "Qual vírus é suspeito?",
+              "opcoes": [
+                "Citomegalovírus",
+                "Herpes simples",
+                "Influenza",
+                "HPV"
+              ],
+              "resposta": "Citomegalovírus",
+              "explicacao": "Ele é a infecção mais comum após transplantes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O zóster que atinge o nervo do olho pode causar perda de visão e exige tratamento urgente.",
+              "resposta": true,
+              "explicacao": "Lesão na ponta do nariz sugere envolvimento do olho.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ pós-herpética é a dor que persiste meses após o zóster.",
+              "opcoes": [
+                "neuralgia",
+                "cefaleia",
+                "artralgia",
+                "mialgia"
+              ],
+              "resposta": "neuralgia",
+              "explicacao": "É mais comum em idosos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere herpes-zóster com risco no olho?",
+              "opcoes": [
+                "Lesão na ponta do nariz (sinal de Hutchinson)",
+                "Lesão no tórax",
+                "Lesão na perna",
+                "Febre baixa"
+              ],
+              "resposta": "Lesão na ponta do nariz (sinal de Hutchinson)",
+              "explicacao": "O nervo nasociliar inerva a ponta do nariz e o olho.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com mononucleose tem dor abdominal súbita após jogar futebol.",
+              "enunciado": "Qual é a complicação temida?",
+              "opcoes": [
+                "Ruptura do baço",
+                "Apendicite",
+                "Hepatite",
+                "Pancreatite"
+              ],
+              "resposta": "Ruptura do baço",
+              "explicacao": "Deve-se evitar esportes de contato por semanas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d3-l3",
+          "titulo": "Vírus emergentes e respiratórios",
+          "questoes": [
+            {
+              "id": "micro-d3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vírus ao tratamento ou prevenção.",
+              "pares": [
+                {
+                  "esquerda": "Influenza",
+                  "direita": "Oseltamivir"
+                },
+                {
+                  "esquerda": "Vírus sincicial respiratório",
+                  "direita": "Anticorpo monoclonal em bebês de risco"
+                },
+                {
+                  "esquerda": "Raiva",
+                  "direita": "Vacina e soro após exposição"
+                },
+                {
+                  "esquerda": "Herpes simples",
+                  "direita": "Aciclovir"
+                }
+              ],
+              "explicacao": "O oseltamivir funciona melhor nas primeiras 48 horas.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com gripe tem falta de ar e saturação baixa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Internar e iniciar oseltamivir mesmo após 48 horas",
+                "Apenas antitérmico",
+                "Antibiótico apenas",
+                "Alta"
+              ],
+              "resposta": "Internar e iniciar oseltamivir mesmo após 48 horas",
+              "explicacao": "Em grupos de risco, o antiviral é sempre indicado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vírus causa a síndrome mão-pé-boca?",
+              "opcoes": [
+                "Coxsackie (enterovírus)",
+                "Herpes",
+                "Sarampo",
+                "Rubéola"
+              ],
+              "resposta": "Coxsackie (enterovírus)",
+              "explicacao": "É comum em creches.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente foi mordido por um morcego em casa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Lavar a ferida, vacina e soro antirrábico",
+                "Nada",
+                "Apenas vacina",
+                "Apenas antibiótico"
+              ],
+              "resposta": "Lavar a ferida, vacina e soro antirrábico",
+              "explicacao": "Morcegos são considerados animais de alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A raiva é quase sempre fatal após o início dos sintomas.",
+              "resposta": true,
+              "explicacao": "Por isso a profilaxia após a exposição é tão importante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O vírus da ___ causa encefalite e é transmitido por mamíferos, com hidrofobia.",
+              "opcoes": [
+                "raiva",
+                "dengue",
+                "zika",
+                "influenza"
+              ],
+              "resposta": "raiva",
+              "explicacao": "O medo de água ocorre por espasmos ao engolir.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual vírus causa paralisia flácida e é prevenido pela vacina gotinha?",
+              "opcoes": [
+                "Poliovírus",
+                "Sarampo",
+                "Rotavírus",
+                "Influenza"
+              ],
+              "resposta": "Poliovírus",
+              "explicacao": "O Brasil está livre da pólio desde 1989.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem lesões roxas na pele e na boca.",
+              "enunciado": "Qual vírus está associado?",
+              "opcoes": [
+                "Herpesvírus 8 (sarcoma de Kaposi)",
+                "Citomegalovírus",
+                "Epstein-Barr",
+                "HPV"
+              ],
+              "resposta": "Herpesvírus 8 (sarcoma de Kaposi)",
+              "explicacao": "O tratamento do HIV ajuda a regredir as lesões.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-d4",
+      "titulo": "Fungos em casos",
+      "descricao": "Micoses graves e oportunistas",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "micro-d4-l1",
+          "titulo": "Micoses oportunistas",
+          "questoes": [
+            {
+              "id": "micro-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 50 tem dor de cabeça há 2 semanas e pressão do líquor muito alta.",
+              "enunciado": "Qual é o diagnóstico e o tratamento inicial?",
+              "opcoes": [
+                "Neurocriptococose; anfotericina B e flucitosina, com punções de alívio",
+                "Meningite bacteriana; ceftriaxona",
+                "Toxoplasmose; sulfadiazina",
+                "Tuberculose; RIPE"
+              ],
+              "resposta": "Neurocriptococose; anfotericina B e flucitosina, com punções de alívio",
+              "explicacao": "A pressão alta do líquor é uma causa de morte.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fungo ao paciente de risco.",
+              "pares": [
+                {
+                  "esquerda": "Aspergillus invasivo",
+                  "direita": "Neutropenia prolongada"
+                },
+                {
+                  "esquerda": "Mucor",
+                  "direita": "Diabético em cetoacidose"
+                },
+                {
+                  "esquerda": "Pneumocystis",
+                  "direita": "HIV com CD4 baixo"
+                },
+                {
+                  "esquerda": "Candida",
+                  "direita": "Cateter e antibióticos de largo espectro"
+                }
+              ],
+              "explicacao": "A doença invasiva exige tratamento urgente.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame no sangue ajuda no diagnóstico da aspergilose invasiva?",
+              "opcoes": [
+                "Galactomanana",
+                "Antígeno criptocócico",
+                "VDRL",
+                "Beta-HCG"
+              ],
+              "resposta": "Galactomanana",
+              "explicacao": "A tomografia pode mostrar o sinal do halo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Diabético em cetoacidose tem dor no rosto, secreção escura no nariz e necrose no palato.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Mucormicose; cirurgia e anfotericina B",
+                "Sinusite bacteriana; amoxicilina",
+                "Herpes; aciclovir",
+                "Câncer; quimioterapia"
+              ],
+              "resposta": "Mucormicose; cirurgia e anfotericina B",
+              "explicacao": "A corrida contra o tempo é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pneumocistose é tratada com sulfametoxazol e trimetoprima em dose alta.",
+              "resposta": true,
+              "explicacao": "Casos graves recebem corticoide associado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A candidíase ___ é a infecção do esôfago comum em pessoas com HIV, com dor ao engolir.",
+              "opcoes": [
+                "esofágica",
+                "oral",
+                "vaginal",
+                "cutânea"
+              ],
+              "resposta": "esofágica",
+              "explicacao": "O tratamento é com fluconazol.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da histoplasmose disseminada grave?",
+              "opcoes": [
+                "Anfotericina B, depois itraconazol",
+                "Fluconazol apenas",
+                "Nada",
+                "Penicilina"
+              ],
+              "resposta": "Anfotericina B, depois itraconazol",
+              "explicacao": "É comum em HIV avançado.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com neutropenia por quimioterapia tem febre persistente e nódulos com halo na tomografia.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Aspergilose invasiva",
+                "Pneumonia bacteriana",
+                "Tuberculose",
+                "Metástase"
+              ],
+              "resposta": "Aspergilose invasiva",
+              "explicacao": "O voriconazol é o tratamento de escolha.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d4-l2",
+          "titulo": "Micoses endêmicas do Brasil",
+          "questoes": [
+            {
+              "id": "micro-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador rural tem úlceras na boca com pontos vermelhos, tosse e linfonodos no pescoço.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Paracoccidioidomicose",
+                "Tuberculose",
+                "Câncer de boca",
+                "Sífilis"
+              ],
+              "resposta": "Paracoccidioidomicose",
+              "explicacao": "É a micose sistêmica mais importante do Brasil.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada micose à forma de contágio.",
+              "pares": [
+                {
+                  "esquerda": "Paracoccidioidomicose",
+                  "direita": "Inalação de esporos do solo"
+                },
+                {
+                  "esquerda": "Esporotricose",
+                  "direita": "Arranhão de gato ou espinhos"
+                },
+                {
+                  "esquerda": "Cromoblastomicose",
+                  "direita": "Ferimento com madeira ou planta"
+                },
+                {
+                  "esquerda": "Criptococose",
+                  "direita": "Inalação de fezes de pombo"
+                }
+              ],
+              "explicacao": "A esporotricose virou uma epidemia em gatos no Rio.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da esporotricose cutânea?",
+              "opcoes": [
+                "Itraconazol",
+                "Penicilina",
+                "Anfotericina sempre",
+                "Nistatina"
+              ],
+              "resposta": "Itraconazol",
+              "explicacao": "O tratamento dura meses.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Lavrador tem lesão verrucosa crônica no pé, que cresce há anos.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Cromoblastomicose",
+                "Esporotricose",
+                "Pé diabético",
+                "Hanseníase"
+              ],
+              "resposta": "Cromoblastomicose",
+              "explicacao": "Os corpos fumagoides são vistos no exame.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os gatos com esporotricose devem ser tratados e não devem ser abandonados.",
+              "resposta": true,
+              "explicacao": "Abandonar espalha a doença.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é a forma de fungo vista na paracoccidioidomicose, com brotos em roda de leme.",
+              "opcoes": [
+                "Paracoccidioides",
+                "Cryptococcus",
+                "Aspergillus",
+                "Histoplasma"
+              ],
+              "resposta": "Paracoccidioides",
+              "explicacao": "Os brotos lembram as orelhas do Mickey.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual micose subcutânea forma grãos e fístulas no pé?",
+              "opcoes": [
+                "Micetoma",
+                "Pitiríase",
+                "Candidíase",
+                "Tinea"
+              ],
+              "resposta": "Micetoma",
+              "explicacao": "Pode ser causado por fungos ou bactérias.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com paracoccidioidomicose melhora com tratamento.",
+              "enunciado": "Por quanto tempo tratar?",
+              "opcoes": [
+                "Muitos meses, até a cura clínica e sorológica",
+                "7 dias",
+                "1 dia",
+                "Não precisa tratar"
+              ],
+              "resposta": "Muitos meses, até a cura clínica e sorológica",
+              "explicacao": "O itraconazol é usado por 9 a 18 meses.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d4-l3",
+          "titulo": "Antifúngicos",
+          "questoes": [
+            {
+              "id": "micro-d4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antifúngico ao mecanismo.",
+              "pares": [
+                {
+                  "esquerda": "Anfotericina B",
+                  "direita": "Liga-se ao ergosterol e fura a membrana"
+                },
+                {
+                  "esquerda": "Azóis",
+                  "direita": "Bloqueiam a produção do ergosterol"
+                },
+                {
+                  "esquerda": "Equinocandinas",
+                  "direita": "Bloqueiam a parede do fungo"
+                },
+                {
+                  "esquerda": "Flucitosina",
+                  "direita": "Atrapalha o DNA do fungo"
+                }
+              ],
+              "explicacao": "As equinocandinas são usadas em candidemia.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em fluconazol começa a ter interações com outros remédios.",
+              "enunciado": "Por que os azóis têm muitas interações?",
+              "opcoes": [
+                "Inibem o citocromo P450",
+                "Induzem o P450",
+                "Não são absorvidos",
+                "Destroem o fígado"
+              ],
+              "resposta": "Inibem o citocromo P450",
+              "explicacao": "Cuidado com estatinas e anticoagulantes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o antifúngico de escolha para candidemia em paciente grave?",
+              "opcoes": [
+                "Equinocandina (como micafungina)",
+                "Nistatina",
+                "Griseofulvina",
+                "Terbinafina"
+              ],
+              "resposta": "Equinocandina (como micafungina)",
+              "explicacao": "Depois pode-se trocar para fluconazol.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usando anfotericina B convencional tem creatinina subindo e potássio baixo.",
+              "enunciado": "Qual é a causa?",
+              "opcoes": [
+                "Toxicidade renal da anfotericina",
+                "Infecção",
+                "Desidratação apenas",
+                "Nada"
+              ],
+              "resposta": "Toxicidade renal da anfotericina",
+              "explicacao": "Hidratação e formas lipídicas reduzem o risco.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A Candida krusei é naturalmente resistente ao fluconazol.",
+              "resposta": true,
+              "explicacao": "A Candida auris é outra espécie preocupante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o antifúngico de escolha na aspergilose invasiva.",
+              "opcoes": [
+                "voriconazol",
+                "fluconazol",
+                "nistatina",
+                "terbinafina"
+              ],
+              "resposta": "voriconazol",
+              "explicacao": "Pode causar alterações visuais.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antifúngico é usado apenas de forma local, por não ser absorvido?",
+              "opcoes": [
+                "Nistatina",
+                "Fluconazol",
+                "Anfotericina",
+                "Voriconazol"
+              ],
+              "resposta": "Nistatina",
+              "explicacao": "É usada no sapinho.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tinea extensa no corpo não melhora com creme.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Antifúngico oral, como terbinafina ou itraconazol",
+                "Corticoide em creme",
+                "Antibiótico",
+                "Nada"
+              ],
+              "resposta": "Antifúngico oral, como terbinafina ou itraconazol",
+              "explicacao": "O corticoide pode piorar a micose.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "micro-d5",
+      "titulo": "Antibióticos em casos",
+      "descricao": "Escolha racional e resistência",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "micro-d5-l1",
+          "titulo": "Escolhendo o antibiótico",
+          "questoes": [
+            {
+              "id": "micro-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia comunitária leve, sem doenças, será tratado em casa.",
+              "enunciado": "Qual é a opção adequada?",
+              "opcoes": [
+                "Amoxicilina",
+                "Meropenem",
+                "Vancomicina",
+                "Colistina"
+              ],
+              "resposta": "Amoxicilina",
+              "explicacao": "Antibióticos de amplo espectro devem ser reservados.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antibiótico à classe.",
+              "pares": [
+                {
+                  "esquerda": "Ceftriaxona",
+                  "direita": "Cefalosporina"
+                },
+                {
+                  "esquerda": "Azitromicina",
+                  "direita": "Macrolídeo"
+                },
+                {
+                  "esquerda": "Ciprofloxacino",
+                  "direita": "Quinolona"
+                },
+                {
+                  "esquerda": "Gentamicina",
+                  "direita": "Aminoglicosídeo"
+                }
+              ],
+              "explicacao": "Conhecer a classe ajuda a prever efeitos e resistência.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico pode causar ruptura do tendão de Aquiles?",
+              "opcoes": [
+                "Ciprofloxacino",
+                "Amoxicilina",
+                "Azitromicina",
+                "Cefalexina"
+              ],
+              "resposta": "Ciprofloxacino",
+              "explicacao": "O risco é maior em idosos e com corticoide.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usando gentamicina tem zumbido e creatinina subindo.",
+              "enunciado": "Quais são as toxicidades?",
+              "opcoes": [
+                "Ototoxicidade e nefrotoxicidade",
+                "Hepatite",
+                "Alergia",
+                "Nenhuma"
+              ],
+              "resposta": "Ototoxicidade e nefrotoxicidade",
+              "explicacao": "Os níveis no sangue devem ser monitorados.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vancomicina não age em bactérias gram-negativas.",
+              "resposta": true,
+              "explicacao": "Ela não atravessa a membrana externa.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome do homem ___ é uma reação à vancomicina infundida rápido, com vermelhidão no rosto e tronco.",
+              "opcoes": [
+                "vermelho",
+                "azul",
+                "amarelo",
+                "branco"
+              ],
+              "resposta": "vermelho",
+              "explicacao": "Reduzir a velocidade previne.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico é contraindicado em gestantes e crianças por afetar dentes e ossos?",
+              "opcoes": [
+                "Tetraciclina",
+                "Amoxicilina",
+                "Azitromicina",
+                "Cefalexina"
+              ],
+              "resposta": "Tetraciclina",
+              "explicacao": "Causa manchas nos dentes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infecção abdominal precisa de cobertura para anaeróbios.",
+              "enunciado": "Qual antibiótico é adicionado?",
+              "opcoes": [
+                "Metronidazol",
+                "Azitromicina",
+                "Vancomicina",
+                "Fluconazol"
+              ],
+              "resposta": "Metronidazol",
+              "explicacao": "Ele age muito bem em anaeróbios.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d5-l2",
+          "titulo": "Resistência em casos",
+          "questoes": [
+            {
+              "id": "micro-d5-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI tem pneumonia por Acinetobacter resistente a carbapenêmicos.",
+              "enunciado": "Qual antibiótico ainda pode funcionar?",
+              "opcoes": [
+                "Polimixina (colistina)",
+                "Amoxicilina",
+                "Cefalexina",
+                "Azitromicina"
+              ],
+              "resposta": "Polimixina (colistina)",
+              "explicacao": "É tóxica para rins e nervos.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe resistente ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "MRSA",
+                  "direita": "Vancomicina ou linezolida"
+                },
+                {
+                  "esquerda": "Enterobactéria ESBL",
+                  "direita": "Carbapenêmico"
+                },
+                {
+                  "esquerda": "VRE",
+                  "direita": "Linezolida ou daptomicina"
+                },
+                {
+                  "esquerda": "KPC",
+                  "direita": "Ceftazidima-avibactam"
+                }
+              ],
+              "explicacao": "O antibiograma deve guiar a escolha.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico não deve ser usado em pneumonia por MRSA, apesar de agir no germe?",
+              "opcoes": [
+                "Daptomicina",
+                "Vancomicina",
+                "Linezolida",
+                "Teicoplanina"
+              ],
+              "resposta": "Daptomicina",
+              "explicacao": "A daptomicina é inativada pelo surfactante.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infecção urinária por ESBL está estável.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Carbapenêmico ou opção oral guiada pelo antibiograma",
+                "Ceftriaxona",
+                "Amoxicilina",
+                "Cefalexina"
+              ],
+              "resposta": "Carbapenêmico ou opção oral guiada pelo antibiograma",
+              "explicacao": "As cefalosporinas comuns falham.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O descalonamento é trocar para antibiótico de espectro menor após o resultado da cultura.",
+              "resposta": true,
+              "explicacao": "Reduz resistência e efeitos colaterais.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é um efeito colateral da linezolida com uso prolongado, com queda das plaquetas.",
+              "opcoes": [
+                "mielossupressão",
+                "hepatite",
+                "nefrite",
+                "ototoxicidade"
+              ],
+              "resposta": "mielossupressão",
+              "explicacao": "Também pode causar síndrome serotoninérgica.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a amoxicilina com clavulanato funciona em germes produtores de betalactamase simples?",
+              "opcoes": [
+                "O clavulanato inibe a betalactamase",
+                "O clavulanato é um antibiótico forte",
+                "O clavulanato aumenta a absorção",
+                "Não funciona"
+              ],
+              "resposta": "O clavulanato inibe a betalactamase",
+              "explicacao": "É uma associação muito usada.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente recebe antibiótico por 14 dias para pneumonia sem complicações.",
+              "enunciado": "Qual é o problema?",
+              "opcoes": [
+                "Tempo longo demais, aumentando resistência e efeitos colaterais",
+                "Tempo curto",
+                "Nenhum",
+                "Antibiótico errado"
+              ],
+              "resposta": "Tempo longo demais, aumentando resistência e efeitos colaterais",
+              "explicacao": "Cursos de 5 a 7 dias costumam ser suficientes.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "micro-d5-l3",
+          "titulo": "Infecções em situações especiais",
+          "questoes": [
+            {
+              "id": "micro-d5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção ao tratamento empírico.",
+              "pares": [
+                {
+                  "esquerda": "Meningite bacteriana no adulto",
+                  "direita": "Ceftriaxona e vancomicina"
+                },
+                {
+                  "esquerda": "Celulite sem pus",
+                  "direita": "Cefalexina"
+                },
+                {
+                  "esquerda": "Infecção urinária baixa na mulher",
+                  "direita": "Nitrofurantoína ou fosfomicina"
+                },
+                {
+                  "esquerda": "Neutropenia febril",
+                  "direita": "Cefepima"
+                }
+              ],
+              "explicacao": "O tratamento é ajustado conforme a cultura.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com prótese de joelho tem febre, dor e secreção no local 2 meses após a cirurgia.",
+              "enunciado": "Qual é o germe mais provável?",
+              "opcoes": [
+                "Staphylococcus, formando biofilme",
+                "Influenza",
+                "Candida sempre",
+                "Vírus"
+              ],
+              "resposta": "Staphylococcus, formando biofilme",
+              "explicacao": "O tratamento costuma exigir cirurgia e antibiótico longo.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico é seguro para tratar infecção urinária na gestação?",
+              "opcoes": [
+                "Cefalexina",
+                "Ciprofloxacino",
+                "Tetraciclina",
+                "Sulfametoxazol no fim da gestação"
+              ],
+              "resposta": "Cefalexina",
+              "explicacao": "As quinolonas são evitadas na gravidez.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pé diabético tem úlcera com secreção, osso exposto e mau cheiro.",
+              "enunciado": "Qual é a complicação provável?",
+              "opcoes": [
+                "Osteomielite com infecção mista",
+                "Celulite simples",
+                "Alergia",
+                "Gota"
+              ],
+              "resposta": "Osteomielite com infecção mista",
+              "explicacao": "Deve-se fazer cultura do osso e cobrir vários germes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Em infecções com abscesso, a drenagem é essencial, e só o antibiótico costuma falhar.",
+              "resposta": true,
+              "explicacao": "O antibiótico penetra mal no pus.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ infecciosa precisa de hemoculturas e ecocardiograma, e o tratamento dura semanas.",
+              "opcoes": [
+                "endocardite",
+                "faringite",
+                "otite",
+                "cistite"
+              ],
+              "resposta": "endocardite",
+              "explicacao": "Os critérios de Duke orientam o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia antibiótica antes de cirurgia limpa com prótese?",
+              "opcoes": [
+                "Cefazolina em dose única antes da incisão",
+                "Meropenem por 7 dias",
+                "Nenhuma",
+                "Vancomicina por 14 dias"
+              ],
+              "resposta": "Cefazolina em dose única antes da incisão",
+              "explicacao": "A dose deve ser dada até 60 minutos antes.",
+              "revisado": false
+            },
+            {
+              "id": "micro-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com mordida humana na mão tem inchaço e dor.",
+              "enunciado": "Qual antibiótico é indicado?",
+              "opcoes": [
+                "Amoxicilina com clavulanato",
+                "Cefalexina apenas",
+                "Metronidazol apenas",
+                "Nenhum"
+              ],
+              "resposta": "Amoxicilina com clavulanato",
+              "explicacao": "A boca humana tem germes como Eikenella.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
