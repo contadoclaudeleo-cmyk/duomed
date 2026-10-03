@@ -23,7 +23,7 @@
                 "Transporte ativo primário",
                 "Difusão simples",
                 "Difusão facilitada",
-                "Osmose"
+                "Transporte ativo secundário por cotransporte"
               ],
               "resposta": "Transporte ativo primário",
               "explicacao": "A bomba de sódio e potássio é o exemplo clássico de transporte ativo primário.",
@@ -83,8 +83,8 @@
               "opcoes": [
                 "Ganha água e pode se romper",
                 "Perde água e murcha",
-                "Não se altera",
-                "Perde potássio e encolhe"
+                "Não se altera em nada",
+                "Perde potássio e encolhe sem mudar o volume"
               ],
               "resposta": "Ganha água e pode se romper",
               "explicacao": "Em solução hipotônica há menos soluto fora da célula, então a água entra. Em solução hipertônica, a hemácia murcha.",
@@ -96,12 +96,12 @@
               "caso": "Criança com cólera tem diarreia aquosa intensa e é tratada com solução de reidratação oral, que contém sódio e glicose.",
               "enunciado": "Por que a solução funciona mesmo com o intestino doente?",
               "opcoes": [
-                "O cotransporte de sódio e glicose continua funcionando e puxa água junto",
-                "O sódio é absorvido por difusão simples",
-                "A glicose bloqueia a toxina",
-                "A solução reduz a secreção de ácido gástrico"
+                "O cotransporte de sódio e glicose continua e puxa água",
+                "O sódio é absorvido por difusão simples na mucosa",
+                "A glicose neutraliza a toxina da cólera no lúmen",
+                "A solução reduz a secreção de cloro pelo canal CFTR do intestino"
               ],
-              "resposta": "O cotransporte de sódio e glicose continua funcionando e puxa água junto",
+              "resposta": "O cotransporte de sódio e glicose continua e puxa água",
               "explicacao": "A toxina colérica aumenta a secreção de cloro, mas não bloqueia o transportador SGLT1. Essa descoberta é a base da terapia de reidratação oral.",
               "revisado": false
             },
@@ -141,7 +141,7 @@
                 "Potássio",
                 "Sódio",
                 "Cálcio",
-                "Cloro"
+                "Cloreto livre"
               ],
               "resposta": "Potássio",
               "explicacao": "Em repouso, a membrana é muito mais permeável ao potássio, que tende a sair e deixa o interior negativo.",
@@ -200,12 +200,12 @@
               "caso": "Paciente com potássio sérico de 7,5 mEq/L tem fraqueza muscular e alterações no ECG.",
               "enunciado": "O que acontece com o potencial de repouso das células excitáveis?",
               "opcoes": [
-                "Fica menos negativo e inativa parte dos canais de sódio",
+                "Fica menos negativo e inativa canais de sódio",
                 "Fica mais negativo e dificulta a despolarização",
-                "Não se altera",
-                "Fica positivo"
+                "Não se altera, só muda a repolarização",
+                "Fica positivo e mantém os canais de sódio sempre abertos"
               ],
-              "resposta": "Fica menos negativo e inativa parte dos canais de sódio",
+              "resposta": "Fica menos negativo e inativa canais de sódio",
               "explicacao": "A hipercalemia despolariza parcialmente as células e reduz sua excitabilidade. O gluconato de cálcio estabiliza a membrana do coração.",
               "revisado": false
             },
@@ -238,9 +238,9 @@
               "enunciado": "Qual é o mecanismo da toxina?",
               "opcoes": [
                 "Bloqueia canais de sódio voltagem-dependentes",
-                "Bloqueia canais de potássio",
+                "Bloqueia canais de potássio dos nervos",
                 "Inibe a acetilcolinesterase",
-                "Bloqueia receptores nicotínicos"
+                "Bloqueia receptores nicotínicos da placa motora do músculo"
               ],
               "resposta": "Bloqueia canais de sódio voltagem-dependentes",
               "explicacao": "A tetrodotoxina impede o potencial de ação. Os anestésicos locais também agem bloqueando canais de sódio.",
@@ -333,12 +333,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como o cálcio inicia a contração no músculo liso?",
               "opcoes": [
-                "Liga-se à calmodulina, que ativa a quinase da cadeia leve de miosina",
-                "Liga-se à troponina C",
-                "O músculo liso não depende de cálcio",
-                "Liga-se diretamente à tropomiosina"
+                "Ativa a calmodulina e a quinase da miosina",
+                "Liga-se à troponina C do filamento fino",
+                "Não depende de cálcio para contrair",
+                "Liga-se diretamente à tropomiosina e libera a actina para a miosina"
               ],
-              "resposta": "Liga-se à calmodulina, que ativa a quinase da cadeia leve de miosina",
+              "resposta": "Ativa a calmodulina e a quinase da miosina",
               "explicacao": "O músculo liso não tem troponina. A fosforilação da miosina é que permite a contração.",
               "revisado": false
             },
@@ -356,12 +356,12 @@
               "caso": "Pessoa que comeu conserva caseira desenvolve paralisia flácida que começa pelos olhos e desce pelo corpo.",
               "enunciado": "Qual é o mecanismo da toxina botulínica?",
               "opcoes": [
-                "Impede a liberação de acetilcolina no terminal nervoso",
+                "Impede a liberação de acetilcolina",
                 "Bloqueia o receptor nicotínico",
                 "Inibe a acetilcolinesterase",
-                "Destrói a mielina"
+                "Destrói a mielina dos nervos motores periféricos"
               ],
-              "resposta": "Impede a liberação de acetilcolina no terminal nervoso",
+              "resposta": "Impede a liberação de acetilcolina",
               "explicacao": "A toxina cliva proteínas que fazem a fusão das vesículas. O mesmo efeito, em doses mínimas, é usado em tratamentos estéticos e de espasticidade.",
               "revisado": false
             }
@@ -386,7 +386,7 @@
                 "Fechamento das valvas mitral e tricúspide",
                 "Fechamento das valvas aórtica e pulmonar",
                 "Enchimento rápido dos ventrículos",
-                "Contração dos átrios"
+                "Contração dos átrios contra um ventrículo endurecido"
               ],
               "resposta": "Fechamento das valvas mitral e tricúspide",
               "explicacao": "A segunda bulha (B2) vem do fechamento das valvas aórtica e pulmonar.",
@@ -481,12 +481,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que representa o intervalo PR no eletrocardiograma?",
               "opcoes": [
-                "O tempo para o impulso ir dos átrios aos ventrículos, incluindo o atraso no nó AV",
-                "A repolarização dos átrios",
-                "A despolarização dos ventrículos",
-                "A repolarização dos ventrículos"
+                "Tempo dos átrios aos ventrículos, com atraso no nó AV",
+                "Repolarização dos átrios",
+                "Despolarização dos ventrículos",
+                "Repolarização dos ventrículos e fim da sístole elétrica"
               ],
-              "resposta": "O tempo para o impulso ir dos átrios aos ventrículos, incluindo o atraso no nó AV",
+              "resposta": "Tempo dos átrios aos ventrículos, com atraso no nó AV",
               "explicacao": "O normal fica entre 120 e 200 ms. Acima disso é bloqueio atrioventricular de primeiro grau.",
               "revisado": false
             }
@@ -515,12 +515,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que diz a lei de Frank-Starling?",
               "opcoes": [
-                "Quanto maior o enchimento do ventrículo, maior a força de contração, até um limite",
-                "Quanto maior a frequência, menor o volume sistólico, sempre",
-                "A pressão arterial depende só da resistência vascular",
-                "O coração ejeta sempre o mesmo volume"
+                "Mais enchimento gera mais força, até um limite",
+                "Mais frequência sempre gera menos volume ejetado",
+                "A pressão depende só da resistência dos vasos",
+                "O coração ejeta sempre o mesmo volume, não importa quanto encheu"
               ],
-              "resposta": "Quanto maior o enchimento do ventrículo, maior a força de contração, até um limite",
+              "resposta": "Mais enchimento gera mais força, até um limite",
               "explicacao": "O estiramento das fibras melhora a interação entre actina e miosina, até certo ponto.",
               "revisado": false
             },
@@ -579,8 +579,8 @@
               "opcoes": [
                 "Aumenta a frequência e a contratilidade",
                 "Reduz a frequência e a contratilidade",
-                "Reduz apenas a frequência",
-                "Não tem efeito no coração"
+                "Reduz apenas a frequência cardíaca",
+                "Aumenta só a frequência, sem mudar a força da contração"
               ],
               "resposta": "Aumenta a frequência e a contratilidade",
               "explicacao": "A noradrenalina age nos receptores beta-1 do coração.",
@@ -600,12 +600,12 @@
               "caso": "Atleta de maratona tem frequência cardíaca de repouso de 45 bpm e está assintomático.",
               "enunciado": "Como ele mantém o débito cardíaco normal?",
               "opcoes": [
-                "Com um volume sistólico maior, pela adaptação do coração ao treino",
-                "Com pressão arterial elevada",
-                "Com fração de ejeção baixa",
-                "Por um bloqueio atrioventricular"
+                "Volume sistólico maior pelo treino",
+                "Pressão arterial elevada",
+                "Fração de ejeção baixa",
+                "Bloqueio atrioventricular de segundo grau compensado"
               ],
-              "resposta": "Com um volume sistólico maior, pela adaptação do coração ao treino",
+              "resposta": "Volume sistólico maior pelo treino",
               "explicacao": "É uma bradicardia fisiológica, com maior tônus vagal e ventrículo mais eficiente.",
               "revisado": false
             }
@@ -620,12 +620,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Onde ficam os principais barorreceptores arteriais?",
               "opcoes": [
-                "No seio carotídeo e no arco da aorta",
-                "No átrio direito",
-                "No bulbo",
-                "Nos rins"
+                "Seio carotídeo e arco da aorta",
+                "Átrio direito e veias cavas",
+                "Bulbo, no centro vasomotor",
+                "Rins, na arteríola aferente do glomérulo"
               ],
-              "resposta": "No seio carotídeo e no arco da aorta",
+              "resposta": "Seio carotídeo e arco da aorta",
               "explicacao": "Eles detectam o estiramento da parede arterial e informam o centro cardiovascular do bulbo.",
               "revisado": false
             },
@@ -682,12 +682,12 @@
               "caso": "Idoso com diabetes de longa data sente tontura ao se levantar. A pressão cai 30 mmHg, sem aumento da frequência cardíaca.",
               "enunciado": "Qual mecanismo falhou?",
               "opcoes": [
-                "O barorreflexo, por neuropatia autonômica",
-                "O sistema renina-angiotensina",
-                "A filtração glomerular",
-                "A secreção de insulina"
+                "Barorreflexo, por neuropatia autonômica",
+                "Sistema renina-angiotensina",
+                "Filtração glomerular",
+                "Secreção de insulina pelas células beta do pâncreas"
               ],
-              "resposta": "O barorreflexo, por neuropatia autonômica",
+              "resposta": "Barorreflexo, por neuropatia autonômica",
               "explicacao": "É hipotensão ortostática neurogênica. Sem a resposta autonômica, o coração não acelera para compensar.",
               "revisado": false
             },
@@ -696,12 +696,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se estima a pressão arterial média?",
               "opcoes": [
-                "Diastólica mais um terço da diferença entre sistólica e diastólica",
+                "Diastólica mais 1/3 da diferença entre as duas",
                 "Soma da sistólica com a diastólica dividida por 2",
                 "Sistólica menos diastólica",
-                "Diastólica multiplicada por 2"
+                "Diastólica multiplicada por 2, menos a sistólica dividida por 3"
               ],
-              "resposta": "Diastólica mais um terço da diferença entre sistólica e diastólica",
+              "resposta": "Diastólica mais 1/3 da diferença entre as duas",
               "explicacao": "Como o coração passa mais tempo em diástole, a média fica mais perto da diastólica.",
               "revisado": false
             },
@@ -719,12 +719,12 @@
               "caso": "Paciente com estreitamento da artéria de um dos rins tem hipertensão de difícil controle.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "Ativação do sistema renina-angiotensina-aldosterona pelo rim mal perfundido",
+                "Renina-angiotensina ativada pelo rim mal perfundido",
                 "Excesso de hormônio antidiurético",
                 "Aumento do peptídeo natriurético",
-                "Tumor da medula adrenal"
+                "Tumor da medula adrenal liberando catecolaminas em crises"
               ],
-              "resposta": "Ativação do sistema renina-angiotensina-aldosterona pelo rim mal perfundido",
+              "resposta": "Renina-angiotensina ativada pelo rim mal perfundido",
               "explicacao": "É a hipertensão renovascular. O rim interpreta a baixa perfusão como falta de volume.",
               "revisado": false
             }
@@ -810,8 +810,8 @@
               "opcoes": [
                 "Deficiência de surfactante",
                 "Aspiração de mecônio",
-                "Pneumotórax",
-                "Cardiopatia congênita"
+                "Pneumotórax hipertensivo",
+                "Cardiopatia congênita cianótica com canal dependente"
               ],
               "resposta": "Deficiência de surfactante",
               "explicacao": "É a síndrome do desconforto respiratório do recém-nascido. Corticoide antenatal e surfactante exógeno são as principais armas.",
@@ -848,7 +848,7 @@
                 "Restritivo",
                 "Obstrutivo",
                 "Normal",
-                "Misto, obrigatoriamente"
+                "Misto obrigatório"
               ],
               "resposta": "Restritivo",
               "explicacao": "A confirmação do distúrbio restritivo é feita com a capacidade pulmonar total reduzida.",
@@ -915,7 +915,7 @@
                 "monóxido de carbono",
                 "dióxido de carbono",
                 "nitrogênio",
-                "óxido nítrico"
+                "óxido nítrico inalado"
               ],
               "resposta": "monóxido de carbono",
               "explicacao": "O tratamento é oxigênio a 100%, que acelera a eliminação do monóxido de carbono.",
@@ -927,12 +927,12 @@
               "caso": "Vítima de incêndio em ambiente fechado tem dor de cabeça e confusão, mas o oxímetro de pulso mostra 98%.",
               "enunciado": "Por que o oxímetro pode enganar?",
               "opcoes": [
-                "O oxímetro comum não diferencia carboxi-hemoglobina de oxi-hemoglobina",
+                "Não diferencia carboxi-hemoglobina da oxi-hemoglobina",
                 "A saturação está realmente normal",
-                "O monóxido de carbono aumenta a PaO2",
-                "A hemoglobina está baixa"
+                "O monóxido aumenta a PaO2",
+                "A hemoglobina está baixa e o aparelho compensa a leitura automaticamente"
               ],
-              "resposta": "O oxímetro comum não diferencia carboxi-hemoglobina de oxi-hemoglobina",
+              "resposta": "Não diferencia carboxi-hemoglobina da oxi-hemoglobina",
               "explicacao": "É preciso dosar a carboxi-hemoglobina por cooximetria na gasometria.",
               "revisado": false
             },
@@ -941,12 +941,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que acontece com a PaCO2 quando a ventilação alveolar dobra?",
               "opcoes": [
-                "Cai aproximadamente pela metade",
+                "Cai mais ou menos pela metade",
                 "Dobra",
                 "Não se altera",
-                "Sobe um pouco"
+                "Sobe um pouco por mais produção de CO2"
               ],
-              "resposta": "Cai aproximadamente pela metade",
+              "resposta": "Cai mais ou menos pela metade",
               "explicacao": "A PaCO2 é inversamente proporcional à ventilação alveolar.",
               "revisado": false
             },
@@ -984,12 +984,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o principal estímulo para a respiração em uma pessoa saudável?",
               "opcoes": [
-                "Aumento da PaCO2, detectado pelos quimiorreceptores centrais",
-                "Queda da PaO2",
-                "Aumento do pH",
-                "Queda da temperatura"
+                "PaCO2 alta, nos quimiorreceptores centrais",
+                "Queda da PaO2 nos corpos carotídeos",
+                "Aumento do pH do sangue",
+                "Queda da temperatura do corpo, percebida pelo hipotálamo"
               ],
-              "resposta": "Aumento da PaCO2, detectado pelos quimiorreceptores centrais",
+              "resposta": "PaCO2 alta, nos quimiorreceptores centrais",
               "explicacao": "O CO2 atravessa a barreira hematoencefálica e acidifica o líquor, estimulando o bulbo.",
               "revisado": false
             },
@@ -1046,12 +1046,12 @@
               "caso": "Paciente com DPOC grave e retenção crônica de CO2 recebe oxigênio em alto fluxo e fica sonolento, com a PaCO2 subindo.",
               "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "Piora da relação V/Q e efeito Haldane aumentam a retenção de CO2",
+                "Piora da relação V/Q e efeito Haldane",
                 "Toxicidade do oxigênio no cérebro",
                 "Melhora da ventilação alveolar",
-                "Alcalose metabólica"
+                "Alcalose metabólica causada pelo próprio oxigênio"
               ],
-              "resposta": "Piora da relação V/Q e efeito Haldane aumentam a retenção de CO2",
+              "resposta": "Piora da relação V/Q e efeito Haldane",
               "explicacao": "Por isso, nesses pacientes, o alvo de saturação costuma ficar entre 88% e 92%.",
               "revisado": false
             },
@@ -1083,12 +1083,12 @@
               "caso": "Paciente com overdose de opioide respira 6 vezes por minuto.",
               "enunciado": "Qual alteração é esperada na gasometria?",
               "opcoes": [
-                "Acidose respiratória, com PaCO2 elevada",
+                "Acidose respiratória, com PaCO2 alta",
                 "Alcalose respiratória",
                 "Acidose metabólica isolada",
-                "Gasometria normal"
+                "Gasometria normal, porque o rim compensa na hora"
               ],
-              "resposta": "Acidose respiratória, com PaCO2 elevada",
+              "resposta": "Acidose respiratória, com PaCO2 alta",
               "explicacao": "A hipoventilação retém CO2, que forma ácido carbônico e reduz o pH.",
               "revisado": false
             }
@@ -1172,12 +1172,12 @@
               "caso": "Paciente com estenose nas artérias dos dois rins começa enalapril e a creatinina sobe muito.",
               "enunciado": "Por que isso aconteceu?",
               "opcoes": [
-                "O IECA desfez a constrição da eferente que sustentava a filtração",
-                "O IECA lesou diretamente os túbulos",
-                "O IECA aumentou a filtração",
-                "Houve obstrução urinária"
+                "Desfez a constrição da eferente que sustentava a filtração",
+                "Lesou diretamente os túbulos renais",
+                "Aumentou a filtração além do limite",
+                "Causou obstrução urinária por cristais na pelve dos dois rins"
               ],
-              "resposta": "O IECA desfez a constrição da eferente que sustentava a filtração",
+              "resposta": "Desfez a constrição da eferente que sustentava a filtração",
               "explicacao": "Com pouco fluxo chegando, o rim dependia da angiotensina II para manter a pressão no glomérulo.",
               "revisado": false
             },
@@ -1231,8 +1231,8 @@
               "opcoes": [
                 "Túbulo contorcido proximal",
                 "Alça de Henle descendente",
-                "Túbulo distal",
-                "Ducto coletor"
+                "Túbulo contorcido distal",
+                "Ducto coletor sob efeito do ADH"
               ],
               "resposta": "Túbulo contorcido proximal",
               "explicacao": "O túbulo proximal reabsorve cerca de dois terços do filtrado.",
@@ -1292,9 +1292,9 @@
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
                 "Diabetes insípido central, por falta de ADH",
-                "Diabetes mellitus",
+                "Diabetes mellitus descompensado",
                 "Secreção inapropriada de ADH",
-                "Insuficiência adrenal"
+                "Insuficiência adrenal aguda por lesão da hipófise"
               ],
               "resposta": "Diabetes insípido central, por falta de ADH",
               "explicacao": "O tratamento é com desmopressina, um análogo do ADH.",
@@ -1305,12 +1305,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Onde a aldosterona age principalmente?",
               "opcoes": [
-                "Na parte final do túbulo distal e no ducto coletor",
-                "No túbulo proximal",
-                "Na alça descendente",
-                "No glomérulo"
+                "Final do túbulo distal e ducto coletor",
+                "Túbulo contorcido proximal",
+                "Ramo descendente da alça",
+                "Glomérulo, aumentando a filtração de sódio"
               ],
-              "resposta": "Na parte final do túbulo distal e no ducto coletor",
+              "resposta": "Final do túbulo distal e ducto coletor",
               "explicacao": "Ela aumenta a reabsorção de sódio e a eliminação de potássio e hidrogênio.",
               "revisado": false
             },
@@ -1329,9 +1329,9 @@
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
                 "Secreção inapropriada de ADH",
-                "Diabetes insípido",
-                "Hiperaldosteronismo",
-                "Insuficiência renal aguda"
+                "Diabetes insípido central",
+                "Hiperaldosteronismo primário",
+                "Insuficiência renal aguda com retenção de água"
               ],
               "resposta": "Secreção inapropriada de ADH",
               "explicacao": "O tumor produz ADH. O corpo retém água e o sódio fica diluído. A base do tratamento é restringir a água.",
@@ -1349,9 +1349,9 @@
               "enunciado": "Qual é o principal sistema tampão do líquido extracelular?",
               "opcoes": [
                 "Bicarbonato e ácido carbônico",
-                "Fosfato",
+                "Fosfato inorgânico do plasma",
                 "Proteínas plasmáticas",
-                "Amônia"
+                "Amônia e amônio produzidos pelo rim"
               ],
               "resposta": "Bicarbonato e ácido carbônico",
               "explicacao": "Ele é eficiente porque o pulmão controla o CO2 e o rim controla o bicarbonato.",
@@ -1405,7 +1405,7 @@
                 "25, acidose com ânion gap aumentado",
                 "10, acidose com ânion gap normal",
                 "35, alcalose metabólica",
-                "125, valor normal"
+                "125, valor normal para um diabético"
               ],
               "resposta": "25, acidose com ânion gap aumentado",
               "explicacao": "135 menos (100 + 10) = 25. Os cetoácidos são os ânions não medidos que aumentam o gap.",
@@ -1424,12 +1424,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a compensação esperada para uma acidose metabólica?",
               "opcoes": [
-                "Hiperventilação, com queda da PaCO2",
+                "Hiperventilação, com PaCO2 baixa",
                 "Retenção de CO2",
                 "Eliminação de bicarbonato pelo rim",
-                "Hipoventilação"
+                "Hipoventilação para reter ácido carbônico"
               ],
-              "resposta": "Hiperventilação, com queda da PaCO2",
+              "resposta": "Hiperventilação, com PaCO2 baixa",
               "explicacao": "A respiração rápida e profunda da cetoacidose é a respiração de Kussmaul.",
               "revisado": false
             },
@@ -1447,12 +1447,12 @@
               "caso": "Paciente com DPOC estável tem pH 7,36, PaCO2 de 60 mmHg e bicarbonato de 33 mEq/L.",
               "enunciado": "Qual é a interpretação?",
               "opcoes": [
-                "Acidose respiratória crônica com compensação renal",
+                "Acidose respiratória crônica compensada",
                 "Alcalose metabólica primária",
-                "Acidose metabólica",
-                "Gasometria normal"
+                "Acidose metabólica pura",
+                "Gasometria normal de quem vive em lugar alto"
               ],
-              "resposta": "Acidose respiratória crônica com compensação renal",
+              "resposta": "Acidose respiratória crônica compensada",
               "explicacao": "O rim retém bicarbonato ao longo de dias e traz o pH para perto do normal.",
               "revisado": false
             }
@@ -1573,12 +1573,12 @@
               "caso": "Mulher de 28 anos sem menstruar, com saída de leite pelas mamas, teste de gravidez negativo e prolactina muito alta. A ressonância mostra um adenoma de 8 mm na hipófise.",
               "enunciado": "Qual é o tratamento inicial?",
               "opcoes": [
-                "Agonista dopaminérgico, como cabergolina",
-                "Cirurgia imediata",
-                "Radioterapia",
-                "Reposição isolada de estrogênio"
+                "Agonista dopaminérgico (cabergolina)",
+                "Cirurgia imediata da hipófise",
+                "Radioterapia da sela",
+                "Reposição isolada de estrogênio e progesterona"
               ],
-              "resposta": "Agonista dopaminérgico, como cabergolina",
+              "resposta": "Agonista dopaminérgico (cabergolina)",
               "explicacao": "O prolactinoma responde muito bem à cabergolina, que reduz a prolactina e o tamanho do tumor.",
               "revisado": false
             }
@@ -1669,12 +1669,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado é típico da insuficiência adrenal primária (doença de Addison)?",
               "opcoes": [
-                "Escurecimento da pele e potássio alto",
+                "Pele escura e potássio alto",
                 "Hipertensão e potássio baixo",
                 "Ganho de peso e estrias violáceas",
-                "Glicemia alta"
+                "Glicemia alta e sódio alto"
               ],
-              "resposta": "Escurecimento da pele e potássio alto",
+              "resposta": "Pele escura e potássio alto",
               "explicacao": "O ACTH elevado escurece a pele. A falta de aldosterona causa perda de sódio e retenção de potássio.",
               "revisado": false
             },
@@ -1695,7 +1695,7 @@
                 "Insuficiência adrenal por supressão do eixo",
                 "Hipertireoidismo",
                 "Hiperaldosteronismo",
-                "Síndrome de Cushing"
+                "Síndrome de Cushing por excesso de cortisol no sangue"
               ],
               "resposta": "Insuficiência adrenal por supressão do eixo",
               "explicacao": "O uso prolongado de corticoide desliga o eixo hipotálamo-hipófise-adrenal. A retirada precisa ser gradual.",
@@ -1762,7 +1762,7 @@
                 "potássio",
                 "sódio",
                 "cálcio",
-                "cloro"
+                "cloreto livre"
               ],
               "resposta": "potássio",
               "explicacao": "Insulina com glicose é um dos tratamentos de urgência da hipercalemia.",
@@ -1777,7 +1777,7 @@
                 "Destruição autoimune das células beta",
                 "Resistência à insulina",
                 "Excesso de glucagon por tumor",
-                "Excesso de cortisol"
+                "Excesso de cortisol vindo da suprarrenal"
               ],
               "resposta": "Destruição autoimune das células beta",
               "explicacao": "É o diabetes tipo 1. O tratamento é sempre com insulina.",
@@ -1788,12 +1788,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o peptídeo C?",
               "opcoes": [
-                "Fragmento liberado junto com a insulina produzida pelo próprio corpo",
+                "Fragmento liberado junto com a insulina própria",
                 "Um tipo de insulina sintética",
                 "Um hormônio que aumenta a glicemia",
-                "Um anticorpo do diabetes"
+                "Um anticorpo que destrói as células do pâncreas"
               ],
-              "resposta": "Fragmento liberado junto com a insulina produzida pelo próprio corpo",
+              "resposta": "Fragmento liberado junto com a insulina própria",
               "explicacao": "Ele mostra se o corpo ainda produz insulina, porque as insulinas de farmácia não têm peptídeo C.",
               "revisado": false
             },
@@ -1814,7 +1814,7 @@
                 "Uso de insulina por conta própria",
                 "Insulinoma",
                 "Uso de sulfonilureia",
-                "Jejum prolongado"
+                "Jejum prolongado com glicogênio esgotado"
               ],
               "resposta": "Uso de insulina por conta própria",
               "explicacao": "No insulinoma e no uso de sulfonilureia, o peptídeo C fica alto, porque a insulina vem do próprio pâncreas.",
@@ -1879,12 +1879,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Na estenose mitral, qual pressão fica elevada e reflete a gravidade?",
               "opcoes": [
-                "Pressão no átrio esquerdo, transmitida aos capilares pulmonares",
+                "Pressão no átrio esquerdo, levada aos capilares pulmonares",
                 "Pressão no ventrículo esquerdo na diástole",
-                "Pressão na aorta",
-                "Pressão no ventrículo direito apenas"
+                "Pressão na aorta durante a sístole",
+                "Pressão no ventrículo direito, que sobe primeiro e mais que todas"
               ],
-              "resposta": "Pressão no átrio esquerdo, transmitida aos capilares pulmonares",
+              "resposta": "Pressão no átrio esquerdo, levada aos capilares pulmonares",
               "explicacao": "O gradiente entre átrio e ventrículo esquerdos durante a diástole mede a gravidade.",
               "revisado": false
             },
@@ -1894,12 +1894,12 @@
               "caso": "Paciente com estenose mitral desenvolve fibrilação atrial com frequência de 140 bpm e passa a ter edema agudo de pulmão.",
               "enunciado": "Por que a taquicardia piora tanto o quadro?",
               "opcoes": [
-                "Encurta a diástole e o tempo de esvaziamento do átrio, aumentando a pressão nos pulmões",
-                "Aumenta a contratilidade",
-                "Reduz a pressão no átrio",
-                "Melhora o enchimento ventricular"
+                "Encurta a diástole e o esvaziamento do átrio",
+                "Aumenta a contratilidade do ventrículo",
+                "Reduz a pressão dentro do átrio",
+                "Melhora o enchimento do ventrículo, mas reduz o retorno venoso"
               ],
-              "resposta": "Encurta a diástole e o tempo de esvaziamento do átrio, aumentando a pressão nos pulmões",
+              "resposta": "Encurta a diástole e o esvaziamento do átrio",
               "explicacao": "Por isso, controlar a frequência é essencial nesses pacientes.",
               "revisado": false
             },
@@ -1917,12 +1917,12 @@
               "caso": "Paciente com tamponamento cardíaco tem queda da pressão sistólica de 20 mmHg na inspiração.",
               "enunciado": "Qual é o mecanismo do pulso paradoxal?",
               "opcoes": [
-                "Na inspiração, o ventrículo direito enche mais e empurra o septo, reduzindo o enchimento do esquerdo",
-                "A inspiração aumenta a pós-carga do ventrículo direito",
+                "Na inspiração, o VD enche e empurra o septo",
+                "A inspiração aumenta a pós-carga do VD",
                 "O pericárdio relaxa na inspiração",
-                "É um erro de medida"
+                "É um erro de medida da pressão no braço durante a respiração"
               ],
-              "resposta": "Na inspiração, o ventrículo direito enche mais e empurra o septo, reduzindo o enchimento do esquerdo",
+              "resposta": "Na inspiração, o VD enche e empurra o septo",
               "explicacao": "Como o pericárdio está cheio, os dois ventrículos competem pelo espaço.",
               "revisado": false
             },
@@ -1946,12 +1946,12 @@
               "caso": "Paciente com cardiomiopatia hipertrófica obstrutiva tem sopro que aumenta ao ficar em pé e na manobra de Valsalva.",
               "enunciado": "Por que o sopro aumenta?",
               "opcoes": [
-                "Com menos sangue no ventrículo, a obstrução da via de saída piora",
-                "Com mais sangue, a obstrução piora",
+                "Menos sangue no ventrículo piora a obstrução",
+                "Mais sangue no ventrículo piora a obstrução",
                 "A pós-carga aumenta e o sopro diminui",
-                "Não há relação com o volume"
+                "Não há relação com o volume, só com a frequência cardíaca"
               ],
-              "resposta": "Com menos sangue no ventrículo, a obstrução da via de saída piora",
+              "resposta": "Menos sangue no ventrículo piora a obstrução",
               "explicacao": "O agachamento faz o contrário e diminui o sopro.",
               "revisado": false
             }
@@ -1992,12 +1992,12 @@
               "caso": "Paciente tem pressão baixa, pele fria, estertores nos pulmões e veias do pescoço distendidas após infarto extenso.",
               "enunciado": "Qual é o tipo de choque e o que ajuda a perfusão?",
               "opcoes": [
-                "Cardiogênico; inotrópico e suporte, e não grandes volumes de soro",
-                "Hipovolêmico; muito volume",
-                "Séptico; apenas antibiótico",
-                "Neurogênico; atropina"
+                "Cardiogênico; inotrópico, sem grandes volumes",
+                "Hipovolêmico; muito volume de soro rápido",
+                "Séptico; apenas antibiótico de amplo espectro",
+                "Neurogênico; atropina e elevação das pernas"
               ],
-              "resposta": "Cardiogênico; inotrópico e suporte, e não grandes volumes de soro",
+              "resposta": "Cardiogênico; inotrópico, sem grandes volumes",
               "explicacao": "O coração não consegue bombear o volume que já tem.",
               "revisado": false
             },
@@ -2006,12 +2006,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "No choque séptico, o que acontece com a saturação venosa central de oxigênio nas fases iniciais com reanimação adequada?",
               "opcoes": [
-                "Pode estar normal ou alta, porque os tecidos extraem mal o oxigênio",
+                "Pode estar normal ou alta, pela má extração",
                 "Está sempre muito baixa",
                 "É sempre zero",
-                "Não muda em nenhum caso"
+                "Não muda em nenhum caso, porque o pulmão compensa"
               ],
-              "resposta": "Pode estar normal ou alta, porque os tecidos extraem mal o oxigênio",
+              "resposta": "Pode estar normal ou alta, pela má extração",
               "explicacao": "Saturação venosa normal não exclui má perfusão; o lactato ajuda na avaliação.",
               "revisado": false
             },
@@ -2021,12 +2021,12 @@
               "caso": "Após trauma de medula cervical, o paciente tem pressão baixa, bradicardia e pele quente.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "Perda do tônus simpático, com vasodilatação e bradicardia",
-                "Perda de sangue",
-                "Falência do coração",
-                "Infecção"
+                "Perda do tônus simpático, com vasodilatação",
+                "Perda de sangue pela fratura da coluna",
+                "Falência do coração por contusão miocárdica",
+                "Infecção grave com toxinas de bactérias no sangue"
               ],
-              "resposta": "Perda do tônus simpático, com vasodilatação e bradicardia",
+              "resposta": "Perda do tônus simpático, com vasodilatação",
               "explicacao": "É o choque neurogênico. Ainda assim, no trauma, deve-se procurar sangramento.",
               "revisado": false
             },
@@ -2044,12 +2044,12 @@
               "caso": "Paciente em choque recebe soro e a pressão sobe pouco, mas o lactato cai e a diurese melhora.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Há melhora da perfusão, mesmo sem grande aumento da pressão",
+                "Há melhora da perfusão, mesmo sem subir muito a pressão",
                 "O choque piorou",
                 "O lactato não tem valor",
-                "A diurese não importa"
+                "A diurese não importa e só a pressão serve para avaliar"
               ],
-              "resposta": "Há melhora da perfusão, mesmo sem grande aumento da pressão",
+              "resposta": "Há melhora da perfusão, mesmo sem subir muito a pressão",
               "explicacao": "Os alvos de perfusão são tão importantes quanto o número da pressão.",
               "revisado": false
             },
@@ -2061,7 +2061,7 @@
                 "volume",
                 "antibiótico",
                 "oxigênio",
-                "corticoide"
+                "vasopressor"
               ],
               "resposta": "volume",
               "explicacao": "O sangue das pernas volta ao coração e simula uma pequena infusão.",
@@ -2073,12 +2073,12 @@
               "caso": "Paciente com anafilaxia tem pressão muito baixa e taquicardia.",
               "enunciado": "Qual é o mecanismo do choque e a droga principal?",
               "opcoes": [
-                "Vasodilatação e extravasamento capilar maciços; adrenalina",
-                "Falência do coração; dobutamina",
-                "Hipovolemia por sangramento; transfusão",
-                "Bradicardia; atropina"
+                "Vasodilatação e extravasamento; adrenalina",
+                "Falência do coração; dobutamina na veia",
+                "Sangramento oculto; transfusão de sangue",
+                "Bradicardia por reflexo vagal; atropina na veia"
               ],
-              "resposta": "Vasodilatação e extravasamento capilar maciços; adrenalina",
+              "resposta": "Vasodilatação e extravasamento; adrenalina",
               "explicacao": "A adrenalina age nos receptores alfa e beta e também estabiliza os mastócitos.",
               "revisado": false
             }
@@ -2094,12 +2094,12 @@
               "caso": "Paciente tem potássio de 7,8 mEq/L e o ECG mostra QRS alargado.",
               "enunciado": "Qual é a base elétrica dessa alteração?",
               "opcoes": [
-                "A despolarização parcial inativa canais de sódio e lentifica a condução",
+                "Inativa canais de sódio e lentifica a condução",
                 "Aumenta a velocidade da condução",
-                "Bloqueia apenas os canais de cálcio",
-                "Não altera a condução"
+                "Bloqueia apenas canais de cálcio",
+                "Não altera a condução, só a onda T e o segmento ST"
               ],
-              "resposta": "A despolarização parcial inativa canais de sódio e lentifica a condução",
+              "resposta": "Inativa canais de sódio e lentifica a condução",
               "explicacao": "O cálcio venoso restabelece a diferença entre o potencial de repouso e o limiar.",
               "revisado": false
             },
@@ -2133,12 +2133,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que as células do nó sinoatrial despolarizam sozinhas?",
               "opcoes": [
-                "Pela corrente de entrada lenta de sódio (corrente funny) na fase 4",
-                "Pela saída de cálcio",
-                "Por terem potencial de repouso muito negativo",
-                "Por estímulo do vago"
+                "Corrente de entrada lenta de sódio (funny)",
+                "Saída de cálcio na fase 4",
+                "Potencial de repouso muito negativo",
+                "Estímulo contínuo do nervo vago sobre o nó sinusal"
               ],
-              "resposta": "Pela corrente de entrada lenta de sódio (corrente funny) na fase 4",
+              "resposta": "Corrente de entrada lenta de sódio (funny)",
               "explicacao": "A noradrenalina acelera e a acetilcolina lentifica essa corrente.",
               "revisado": false
             },
@@ -2151,7 +2151,7 @@
                 "O platô (fase 2)",
                 "A fase 0",
                 "A fase 4 do nó sinusal",
-                "Nenhuma"
+                "Nenhuma, o QT longo vem do QRS largo"
               ],
               "resposta": "O platô (fase 2)",
               "explicacao": "Na hipercalcemia ocorre o contrário: o QT encurta.",
@@ -2188,7 +2188,7 @@
                 "Mobitz I (Wenckebach)",
                 "Mobitz II",
                 "2:1 fixo",
-                "de terceiro grau"
+                "total (terceiro grau)"
               ],
               "resposta": "Mobitz I (Wenckebach)",
               "explicacao": "O Mobitz II, sem aumento progressivo do PR, é mais grave e costuma exigir marcapasso.",
@@ -2200,12 +2200,12 @@
               "caso": "Idoso tem desmaios e ECG com ondas P e complexos QRS sem relação entre si, com frequência ventricular de 35 bpm.",
               "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Bloqueio atrioventricular total; marcapasso",
+                "BAV total; marcapasso",
                 "Bradicardia sinusal; observar",
                 "Fibrilação atrial; anticoagular",
-                "Bloqueio de primeiro grau; nada"
+                "BAV de primeiro grau; nenhuma conduta"
               ],
-              "resposta": "Bloqueio atrioventricular total; marcapasso",
+              "resposta": "BAV total; marcapasso",
               "explicacao": "Até o marcapasso definitivo, pode ser preciso marcapasso transcutâneo ou transvenoso.",
               "revisado": false
             }
@@ -2231,8 +2231,8 @@
               "opcoes": [
                 "Cerca de 40 mmHg, aumentado",
                 "Cerca de 10 mmHg, normal",
-                "Zero",
-                "Cerca de 100 mmHg"
+                "Zero, sem gradiente",
+                "Cerca de 100 mmHg, muito aumentado"
               ],
               "resposta": "Cerca de 40 mmHg, aumentado",
               "explicacao": "PAO2 ≈ 150 − 40/0,8 = 100. Gradiente = 100 − 60 = 40 mmHg. O normal é até cerca de 10 a 20, aumentando com a idade.",
@@ -2268,12 +2268,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a causa mais comum de hipoxemia na prática clínica?",
               "opcoes": [
-                "Distúrbio da relação ventilação/perfusão",
-                "Altitude",
+                "Distúrbio da relação V/Q",
+                "Altitude elevada",
                 "Problema de difusão isolado",
-                "Hipoventilação pura"
+                "Hipoventilação pura por sedação"
               ],
-              "resposta": "Distúrbio da relação ventilação/perfusão",
+              "resposta": "Distúrbio da relação V/Q",
               "explicacao": "Pneumonia, DPOC, asma e embolia causam esse distúrbio.",
               "revisado": false
             },
@@ -2283,12 +2283,12 @@
               "caso": "Paciente com overdose de benzodiazepínico tem PaO2 de 45 mmHg e PaCO2 de 80 mmHg em ar ambiente.",
               "enunciado": "Qual é o mecanismo da hipoxemia?",
               "opcoes": [
-                "Hipoventilação, com gradiente alvéolo-arterial normal",
-                "Shunt",
+                "Hipoventilação com gradiente normal",
+                "Shunt intrapulmonar",
                 "Distúrbio de difusão",
-                "Embolia pulmonar"
+                "Embolia pulmonar com espaço morto aumentado"
               ],
-              "resposta": "Hipoventilação, com gradiente alvéolo-arterial normal",
+              "resposta": "Hipoventilação com gradiente normal",
               "explicacao": "PAO2 = 150 − 80/0,8 = 50 mmHg. Gradiente = 50 − 45 = 5 mmHg, normal: o CO2 alto ocupa o lugar do O2 no alvéolo.",
               "revisado": false
             },
@@ -2338,7 +2338,7 @@
                 "Embolia pulmonar com hiperventilação",
                 "Hipoventilação por sedação",
                 "DPOC compensada",
-                "Gasometria normal"
+                "Gasometria normal para quem está com dor"
               ],
               "resposta": "Embolia pulmonar com hiperventilação",
               "explicacao": "A hipoxemia com alcalose respiratória é comum, mas a gasometria não exclui nem confirma embolia.",
@@ -2381,12 +2381,12 @@
               "caso": "Paciente com síndrome do desconforto respiratório agudo, 70 kg de peso ideal, está em ventilação mecânica.",
               "enunciado": "Qual volume corrente é recomendado?",
               "opcoes": [
-                "Cerca de 6 mL/kg do peso ideal, ou seja, 420 mL",
-                "10 mL/kg do peso real",
-                "1.000 mL",
-                "200 mL"
+                "Cerca de 6 mL/kg do peso ideal (420 mL)",
+                "10 mL/kg do peso real (900 mL)",
+                "1.000 mL fixos",
+                "200 mL, para proteger o pulmão ao máximo possível"
               ],
-              "resposta": "Cerca de 6 mL/kg do peso ideal, ou seja, 420 mL",
+              "resposta": "Cerca de 6 mL/kg do peso ideal (420 mL)",
               "explicacao": "A ventilação protetora reduz a lesão pulmonar e a mortalidade, com platô abaixo de 30 cmH2O.",
               "revisado": false
             },
@@ -2395,12 +2395,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Paciente ventilado tem aumento súbito da pressão de pico com pressão de platô normal. Qual é a causa mais provável?",
               "opcoes": [
-                "Aumento da resistência, como broncoespasmo ou secreção no tubo",
+                "Mais resistência, como broncoespasmo ou secreção",
                 "Pneumotórax",
                 "Edema pulmonar",
-                "Intubação seletiva no brônquio direito"
+                "Intubação seletiva no brônquio direito com atelectasia"
               ],
-              "resposta": "Aumento da resistência, como broncoespasmo ou secreção no tubo",
+              "resposta": "Mais resistência, como broncoespasmo ou secreção",
               "explicacao": "Se pico e platô sobem juntos, o problema é a complacência, como em pneumotórax ou edema.",
               "revisado": false
             },
@@ -2410,12 +2410,12 @@
               "caso": "Paciente com DPOC em ventilação mecânica fica hipotenso, e a curva de fluxo mostra que o ar não termina de sair antes da próxima respiração.",
               "enunciado": "Qual é o problema?",
               "opcoes": [
-                "Auto-PEEP por aprisionamento de ar",
-                "Pneumonia",
+                "Auto-PEEP por ar aprisionado",
+                "Pneumonia associada",
                 "Hipovolemia isolada",
-                "Infarto"
+                "Infarto agudo do miocárdio sem dor"
               ],
-              "resposta": "Auto-PEEP por aprisionamento de ar",
+              "resposta": "Auto-PEEP por ar aprisionado",
               "explicacao": "A conduta é reduzir a frequência e o volume e aumentar o tempo expiratório.",
               "revisado": false
             },
@@ -2433,12 +2433,12 @@
               "caso": "Logo após a intubação, o murmúrio vesicular está ausente à esquerda e presente à direita.",
               "enunciado": "Qual é a hipótese mais provável?",
               "opcoes": [
-                "Intubação seletiva no brônquio direito",
+                "Intubação seletiva do brônquio direito",
                 "Pneumotórax hipertensivo à direita",
                 "Intubação no esôfago",
-                "Derrame pleural à esquerda"
+                "Derrame pleural grande do lado esquerdo"
               ],
-              "resposta": "Intubação seletiva no brônquio direito",
+              "resposta": "Intubação seletiva do brônquio direito",
               "explicacao": "A conduta é recuar o tubo e checar com radiografia.",
               "revisado": false
             },
@@ -2462,12 +2462,12 @@
               "caso": "Paciente com síndrome do desconforto respiratório agudo grave continua com PaO2/FiO2 abaixo de 150 apesar da ventilação protetora.",
               "enunciado": "Qual medida reduz a mortalidade?",
               "opcoes": [
-                "Posição prona por várias horas ao dia",
+                "Posição prona várias horas por dia",
                 "Volume corrente alto",
                 "Retirar a PEEP",
-                "Sedação leve sem monitorizar"
+                "Sedação leve sem monitorizar a ventilação"
               ],
-              "resposta": "Posição prona por várias horas ao dia",
+              "resposta": "Posição prona várias horas por dia",
               "explicacao": "A prona melhora a distribuição da ventilação e da perfusão.",
               "revisado": false
             }
@@ -2483,12 +2483,12 @@
               "caso": "Paciente com pneumonia extensa de um lobo recebe oxigênio a 100%, mas a PaO2 quase não sobe.",
               "enunciado": "Qual é o mecanismo principal?",
               "opcoes": [
-                "Shunt, com sangue passando por alvéolos sem ventilação",
+                "Shunt, com sangue por alvéolos sem ar",
                 "Hipoventilação",
                 "Altitude",
-                "Problema de difusão leve"
+                "Problema leve de difusão pela membrana alveolar"
               ],
-              "resposta": "Shunt, com sangue passando por alvéolos sem ventilação",
+              "resposta": "Shunt, com sangue por alvéolos sem ar",
               "explicacao": "No shunt, o oxigênio extra não chega ao sangue que passa pelos alvéolos cheios.",
               "revisado": false
             },
@@ -2522,12 +2522,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual sinal sugere shunt intracardíaco ou malformação arteriovenosa pulmonar como causa da hipoxemia?",
               "opcoes": [
-                "Hipoxemia que não melhora com oxigênio a 100% e piora em pé (platipneia, ortodeoxia)",
-                "Hipoxemia que corrige com pouco oxigênio",
-                "PaCO2 muito alta",
-                "Febre"
+                "Não melhora com O2 a 100% e piora em pé",
+                "Corrige facilmente com pouco oxigênio",
+                "PaCO2 muito alta com acidose respiratória",
+                "Febre e tosse com secreção purulenta há dias"
               ],
-              "resposta": "Hipoxemia que não melhora com oxigênio a 100% e piora em pé (platipneia, ortodeoxia)",
+              "resposta": "Não melhora com O2 a 100% e piora em pé",
               "explicacao": "A síndrome hepatopulmonar da cirrose também causa ortodeoxia.",
               "revisado": false
             },
@@ -2560,12 +2560,12 @@
               "caso": "Paciente anêmico, com hemoglobina de 6 g/dL, tem saturação de 99% e PaO2 normal, mas está cansado e taquicárdico.",
               "enunciado": "O que está reduzido?",
               "opcoes": [
-                "O conteúdo arterial de oxigênio",
-                "A PaO2",
-                "A saturação",
-                "O gradiente alvéolo-arterial"
+                "Conteúdo arterial de oxigênio",
+                "Pressão parcial de oxigênio (PaO2)",
+                "Saturação da hemoglobina",
+                "Gradiente alvéolo-arterial de oxigênio"
               ],
-              "resposta": "O conteúdo arterial de oxigênio",
+              "resposta": "Conteúdo arterial de oxigênio",
               "explicacao": "A maior parte do oxigênio vai ligada à hemoglobina; com pouca hemoglobina, o conteúdo cai.",
               "revisado": false
             },
@@ -2589,12 +2589,12 @@
               "caso": "Paciente com intoxicação por cianeto tem saturação venosa central muito alta e lactato alto.",
               "enunciado": "O que explica a saturação venosa alta?",
               "opcoes": [
-                "As células não conseguem usar o oxigênio, que volta no sangue venoso",
+                "As células não usam o oxigênio, que volta",
                 "Excesso de oxigênio no ar",
                 "Anemia",
-                "Erro de coleta"
+                "Erro de coleta com bolha de ar na seringa"
               ],
-              "resposta": "As células não conseguem usar o oxigênio, que volta no sangue venoso",
+              "resposta": "As células não usam o oxigênio, que volta",
               "explicacao": "O bloqueio da cadeia respiratória impede a extração de oxigênio pelos tecidos.",
               "revisado": false
             }
@@ -2618,12 +2618,12 @@
               "caso": "Paciente com cetoacidose tem pH 7,20, bicarbonato de 10 mEq/L e PaCO2 de 35 mmHg.",
               "enunciado": "A compensação respiratória está adequada?",
               "opcoes": [
-                "Não; há acidose respiratória associada, pois o esperado seria PaCO2 entre 21 e 25",
-                "Sim, está perfeita",
+                "Não; há acidose respiratória (esperado 21 a 25)",
+                "Sim, a compensação está perfeita",
                 "Não; há alcalose respiratória associada",
-                "Não é possível avaliar"
+                "Não é possível avaliar sem dosar o lactato e o cloro"
               ],
-              "resposta": "Não; há acidose respiratória associada, pois o esperado seria PaCO2 entre 21 e 25",
+              "resposta": "Não; há acidose respiratória (esperado 21 a 25)",
               "explicacao": "Pela fórmula de Winter: PaCO2 esperada = 1,5 × 10 + 8 ± 2 = 21 a 25 mmHg.",
               "revisado": false
             },
@@ -2695,12 +2695,12 @@
               "caso": "Paciente com diarreia grave tem acidose metabólica com ânion gap normal.",
               "enunciado": "Como diferenciar de acidose tubular renal?",
               "opcoes": [
-                "Pelo ânion gap urinário, que é negativo na diarreia",
-                "Pelo sódio sérico",
-                "Pela glicemia",
-                "Não há como diferenciar"
+                "Pelo ânion gap urinário, negativo na diarreia",
+                "Pelo sódio sérico, que é baixo na acidose tubular",
+                "Pela glicemia, alta na acidose tubular renal",
+                "Não há como diferenciar sem biópsia do rim"
               ],
-              "resposta": "Pelo ânion gap urinário, que é negativo na diarreia",
+              "resposta": "Pelo ânion gap urinário, negativo na diarreia",
               "explicacao": "Ânion gap urinário negativo indica que o rim está eliminando bem o amônio.",
               "revisado": false
             },
@@ -2712,7 +2712,7 @@
                 "baixo",
                 "alto",
                 "normal",
-                "ausente sempre"
+                "variável"
               ],
               "resposta": "baixo",
               "explicacao": "Cloro urinário alto sugere causas que não respondem ao soro, como excesso de mineralocorticoide.",
@@ -2724,12 +2724,12 @@
               "caso": "Paciente com DPOC e retenção crônica de CO2 começa diurético de alça e vomita. A gasometria mostra pH 7,48, PaCO2 de 60 e bicarbonato de 44.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Acidose respiratória crônica com alcalose metabólica associada",
+                "Acidose respiratória crônica com alcalose metabólica",
                 "Distúrbio simples compensado",
                 "Acidose metabólica pura",
-                "Gasometria normal"
+                "Gasometria normal de quem tem DPOC e mora no litoral"
               ],
-              "resposta": "Acidose respiratória crônica com alcalose metabólica associada",
+              "resposta": "Acidose respiratória crônica com alcalose metabólica",
               "explicacao": "O pH alcalino com CO2 alto mostra que o bicarbonato subiu além da compensação.",
               "revisado": false
             }
@@ -2745,12 +2745,12 @@
               "caso": "Paciente com hemorragia subaracnóidea tem sódio de 126 mEq/L, poliúria, sódio urinário alto e sinais de desidratação.",
               "enunciado": "Qual é a hipótese e o tratamento?",
               "opcoes": [
-                "Síndrome cerebral perdedora de sal; repor volume e sódio",
-                "Secreção inapropriada de ADH; restringir água",
+                "Perda cerebral de sal; repor volume e sódio",
+                "SIADH; restringir água",
                 "Diabetes insípido; desmopressina",
-                "Polidipsia primária"
+                "Polidipsia primária; restringir a ingestão de água"
               ],
-              "resposta": "Síndrome cerebral perdedora de sal; repor volume e sódio",
+              "resposta": "Perda cerebral de sal; repor volume e sódio",
               "explicacao": "O ponto principal é o volume: na secreção inapropriada de ADH, o paciente não está desidratado.",
               "revisado": false
             },
@@ -2784,12 +2784,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Na correção da hiponatremia crônica, qual é o principal fator de risco para a desmielinização osmótica?",
               "opcoes": [
-                "Correção maior que 8 a 10 mEq/L em 24 horas, sobretudo em desnutridos, alcoolistas e hipocalêmicos",
-                "Correção lenta",
-                "Uso de soro glicosado",
-                "Restrição de água"
+                "Corrigir mais de 8 a 10 mEq/L em 24 horas",
+                "Corrigir devagar demais",
+                "Usar soro glicosado",
+                "Restringir água em quem tem hiponatremia por ADH"
               ],
-              "resposta": "Correção maior que 8 a 10 mEq/L em 24 horas, sobretudo em desnutridos, alcoolistas e hipocalêmicos",
+              "resposta": "Corrigir mais de 8 a 10 mEq/L em 24 horas",
               "explicacao": "Se a correção passar do limite, pode-se usar água livre e desmopressina para descer o sódio de novo.",
               "revisado": false
             },
@@ -2799,12 +2799,12 @@
               "caso": "Paciente com esquizofrenia bebe 10 litros de água por dia e tem sódio de 122 mEq/L com urina muito diluída.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "A ingestão de água supera a capacidade de eliminar água livre",
+                "Bebe mais água do que consegue eliminar",
                 "Secreção inapropriada de ADH",
                 "Insuficiência adrenal",
-                "Perda de sal"
+                "Perda de sal pelo rim por uso de remédio antipsicótico"
               ],
-              "resposta": "A ingestão de água supera a capacidade de eliminar água livre",
+              "resposta": "Bebe mais água do que consegue eliminar",
               "explicacao": "Ao reduzir a ingestão, o rim elimina o excesso rápido, e o sódio pode subir rápido demais.",
               "revisado": false
             },
@@ -2837,9 +2837,9 @@
               "enunciado": "A osmolalidade plasmática estimada é igual a duas vezes o sódio mais a glicose dividida por 18 mais a ___ dividida por 2,8.",
               "opcoes": [
                 "ureia (nitrogênio ureico)",
-                "creatinina",
-                "albumina",
-                "bilirrubina"
+                "creatinina sérica",
+                "albumina sérica",
+                "bilirrubina total do plasma"
               ],
               "resposta": "ureia (nitrogênio ureico)",
               "explicacao": "Usando a ureia em mg/dL, divide-se por 6 em vez de 2,8.",
@@ -2851,12 +2851,12 @@
               "caso": "Idosa com hiponatremia e secreção inapropriada de ADH não melhora só com restrição de água.",
               "enunciado": "Qual é uma opção adicional?",
               "opcoes": [
-                "Ureia oral ou tolvaptana, com monitorização",
-                "Soro glicosado",
-                "Mais água",
-                "Desmopressina"
+                "Ureia oral ou tolvaptana, monitorando",
+                "Soro glicosado a 5%",
+                "Mais água por boca",
+                "Desmopressina para concentrar a urina"
               ],
-              "resposta": "Ureia oral ou tolvaptana, com monitorização",
+              "resposta": "Ureia oral ou tolvaptana, monitorando",
               "explicacao": "Os vaptanos bloqueiam o receptor do ADH e exigem cuidado com correção rápida.",
               "revisado": false
             }
@@ -2874,8 +2874,8 @@
               "opcoes": [
                 "Hiperaldosteronismo primário",
                 "Estenose de artéria renal",
-                "Uso de diurético",
-                "Síndrome de Bartter"
+                "Uso de diurético tiazídico",
+                "Síndrome de Bartter com pressão alta"
               ],
               "resposta": "Hiperaldosteronismo primário",
               "explicacao": "Na estenose renal e no uso de diurético, a renina costuma estar alta.",
@@ -2911,12 +2911,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que se corrige o cálcio total pela albumina?",
               "opcoes": [
-                "Porque cerca de metade do cálcio está ligada à albumina, e só a fração livre é ativa",
-                "Porque a albumina produz cálcio",
-                "Porque o cálcio é eliminado com a albumina",
-                "Não é necessário"
+                "Metade do cálcio está ligada à albumina",
+                "A albumina produz o cálcio",
+                "O cálcio é eliminado com a albumina",
+                "Não é necessário, o cálcio total sempre reflete o livre"
               ],
-              "resposta": "Porque cerca de metade do cálcio está ligada à albumina, e só a fração livre é ativa",
+              "resposta": "Metade do cálcio está ligada à albumina",
               "explicacao": "Na dúvida, o melhor é medir o cálcio ionizado.",
               "revisado": false
             },
@@ -2926,12 +2926,12 @@
               "caso": "Paciente com câncer de pulmão tem confusão, poliúria e cálcio de 14 mg/dL.",
               "enunciado": "Qual é o tratamento inicial?",
               "opcoes": [
-                "Soro fisiológico em grande volume e bisfosfonato venoso, com calcitonina se necessário",
-                "Furosemida isolada primeiro",
-                "Cálcio oral",
-                "Restrição de líquidos"
+                "Muito soro fisiológico e bisfosfonato venoso",
+                "Furosemida isolada como primeira medida",
+                "Cálcio por via oral e vitamina D",
+                "Restrição de líquidos e dieta sem cálcio nenhum"
               ],
-              "resposta": "Soro fisiológico em grande volume e bisfosfonato venoso, com calcitonina se necessário",
+              "resposta": "Muito soro fisiológico e bisfosfonato venoso",
               "explicacao": "A hidratação vem antes, porque a hipercalcemia causa desidratação.",
               "revisado": false
             },
@@ -2949,12 +2949,12 @@
               "caso": "Paciente desnutrido começa a receber nutrição e, em 2 dias, tem fraqueza, insuficiência respiratória e fósforo de 0,8 mg/dL.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "A insulina leva fósforo para dentro das células, esgotando o do sangue",
-                "Perda de fósforo pelo intestino",
-                "Excesso de PTH",
-                "Excesso de vitamina D"
+                "A insulina leva o fósforo para dentro das células",
+                "Perda de fósforo pelo intestino com a diarreia",
+                "Excesso de PTH estimulado pela nova dieta",
+                "Excesso de vitamina D por suplementos na nutrição"
               ],
-              "resposta": "A insulina leva fósforo para dentro das células, esgotando o do sangue",
+              "resposta": "A insulina leva o fósforo para dentro das células",
               "explicacao": "Sem fósforo, falta ATP para músculos como o diafragma.",
               "revisado": false
             },
@@ -2981,7 +2981,7 @@
                 "Gluconato de cálcio venoso",
                 "Furosemida",
                 "Bisfosfonato",
-                "Restrição de cálcio"
+                "Restrição de cálcio na dieta"
               ],
               "resposta": "Gluconato de cálcio venoso",
               "explicacao": "Depois, mantém-se cálcio oral e calcitriol até a recuperação das paratireoides.",
@@ -3007,12 +3007,12 @@
               "caso": "Paciente com obesidade central, estrias violáceas e hipertensão faz o teste de supressão com 1 mg de dexametasona à noite, e o cortisol da manhã não suprime.",
               "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Dosar o ACTH para saber se o hipercortisolismo depende dele",
+                "Dosar o ACTH",
                 "Confirmar com TSH",
                 "Iniciar hidrocortisona",
-                "Operar a adrenal direto"
+                "Operar a adrenal direto, sem mais exames"
               ],
-              "resposta": "Dosar o ACTH para saber se o hipercortisolismo depende dele",
+              "resposta": "Dosar o ACTH",
               "explicacao": "O ACTH baixo indica causa adrenal; alto indica hipófise ou produção ectópica.",
               "revisado": false
             },
@@ -3046,12 +3046,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual teste confirma insuficiência adrenal primária?",
               "opcoes": [
-                "Teste de estímulo com ACTH sintético (cortrosina) sem aumento adequado do cortisol",
-                "Teste de supressão com dexametasona",
+                "Teste com ACTH sintético sem subida do cortisol",
+                "Supressão com dexametasona",
                 "Dosagem de TSH",
-                "Teste de tolerância à glicose"
+                "Teste de tolerância à glicose com dosagem de GH"
               ],
-              "resposta": "Teste de estímulo com ACTH sintético (cortrosina) sem aumento adequado do cortisol",
+              "resposta": "Teste com ACTH sintético sem subida do cortisol",
               "explicacao": "Na insuficiência adrenal primária, o ACTH basal também fica muito alto.",
               "revisado": false
             },
@@ -3061,12 +3061,12 @@
               "caso": "Paciente com doença de Addison chega com vômitos, pressão baixa, sódio de 124 e potássio de 6,2.",
               "enunciado": "Qual é a conduta imediata?",
               "opcoes": [
-                "Hidrocortisona venosa em dose alta e soro fisiológico",
+                "Hidrocortisona venosa e soro fisiológico",
                 "Fludrocortisona oral apenas",
                 "Restrição de água",
-                "Furosemida"
+                "Furosemida para baixar o potássio rapidamente"
               ],
-              "resposta": "Hidrocortisona venosa em dose alta e soro fisiológico",
+              "resposta": "Hidrocortisona venosa e soro fisiológico",
               "explicacao": "É a crise adrenal. Em dose alta, a hidrocortisona também tem efeito mineralocorticoide.",
               "revisado": false
             },
@@ -3084,12 +3084,12 @@
               "caso": "Paciente com incidentaloma de adrenal de 2 cm, sem sintomas.",
               "enunciado": "Quais exames hormonais fazer?",
               "opcoes": [
-                "Teste de supressão com dexametasona e metanefrinas; aldosterona e renina se houver hipertensão",
-                "Nenhum",
-                "Apenas TSH",
-                "Apenas glicemia"
+                "Supressão com dexametasona e metanefrinas",
+                "Nenhum exame, só tomografia em 5 anos",
+                "Apenas TSH e T4 livre do sangue",
+                "Apenas glicemia de jejum e hemoglobina glicada"
               ],
-              "resposta": "Teste de supressão com dexametasona e metanefrinas; aldosterona e renina se houver hipertensão",
+              "resposta": "Supressão com dexametasona e metanefrinas",
               "explicacao": "Mesmo nódulos sem sintomas podem produzir hormônios.",
               "revisado": false
             },
@@ -3113,12 +3113,12 @@
               "caso": "Recém-nascida tem genitália ambígua e, na segunda semana, vômitos, desidratação, sódio baixo e potássio alto.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Hiperplasia adrenal congênita perdedora de sal",
+                "Hiperplasia adrenal perdedora de sal",
                 "Estenose de piloro",
-                "Sepse",
-                "Hipotireoidismo congênito"
+                "Sepse neonatal",
+                "Hipotireoidismo congênito com vômitos"
               ],
-              "resposta": "Hiperplasia adrenal congênita perdedora de sal",
+              "resposta": "Hiperplasia adrenal perdedora de sal",
               "explicacao": "Na estenose de piloro, o potássio costuma estar baixo, com alcalose.",
               "revisado": false
             }
@@ -3159,12 +3159,12 @@
               "caso": "Mulher tem hipertireoidismo com captação de iodo muito baixa na cintilografia e tireoide dolorosa após uma gripe.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Tireoidite subaguda (de De Quervain)",
-                "Doença de Graves",
+                "Tireoidite subaguda (De Quervain)",
+                "Doença de Graves com oftalmopatia",
                 "Bócio multinodular tóxico",
-                "Adenoma tóxico"
+                "Adenoma tóxico com nódulo quente único"
               ],
-              "resposta": "Tireoidite subaguda (de De Quervain)",
+              "resposta": "Tireoidite subaguda (De Quervain)",
               "explicacao": "É uma tireoidite que libera hormônio pronto. Tionamidas não ajudam; usam-se anti-inflamatório e betabloqueador.",
               "revisado": false
             },
@@ -3175,8 +3175,8 @@
               "opcoes": [
                 "Síndrome do eutireoidiano doente",
                 "Doença de Graves",
-                "Hashimoto",
-                "Tumor de hipófise"
+                "Tireoidite de Hashimoto",
+                "Tumor de hipófise produtor de TSH"
               ],
               "resposta": "Síndrome do eutireoidiano doente",
               "explicacao": "Não se deve repor hormônio nesses pacientes.",
@@ -3188,12 +3188,12 @@
               "caso": "Gestante de 10 semanas tem TSH suprimido e T4 livre levemente elevado, com muitos vômitos.",
               "enunciado": "Qual é a causa mais provável?",
               "opcoes": [
-                "Efeito do hCG, que estimula a tireoide (tireotoxicose gestacional transitória)",
+                "Efeito do hCG sobre a tireoide",
                 "Doença de Graves obrigatoriamente",
                 "Tumor de hipófise",
-                "Tireoidite"
+                "Tireoidite pós-parto antecipada"
               ],
-              "resposta": "Efeito do hCG, que estimula a tireoide (tireotoxicose gestacional transitória)",
+              "resposta": "Efeito do hCG sobre a tireoide",
               "explicacao": "Costuma melhorar com o fim do primeiro trimestre, sem tionamida.",
               "revisado": false
             },
@@ -3211,12 +3211,12 @@
               "caso": "Idoso com hipotireoidismo grave chega sonolento, com hipotermia, bradicardia e sódio baixo.",
               "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Coma mixedematoso; levotiroxina venosa e hidrocortisona",
-                "Hipotermia simples",
-                "AVC",
-                "Sepse sem relação"
+                "Coma mixedematoso; levotiroxina e hidrocortisona",
+                "Hipotermia ambiental simples; só aquecer",
+                "AVC de tronco; tomografia e trombólise",
+                "Sepse sem relação com a tireoide; antibiótico na veia"
               ],
-              "resposta": "Coma mixedematoso; levotiroxina venosa e hidrocortisona",
+              "resposta": "Coma mixedematoso; levotiroxina e hidrocortisona",
               "explicacao": "A hidrocortisona vem antes, caso exista insuficiência adrenal junto.",
               "revisado": false
             },
@@ -3240,12 +3240,12 @@
               "caso": "Paciente com câncer papilífero de tireoide operado tem tireoglobulina subindo no seguimento.",
               "enunciado": "O que isso sugere?",
               "opcoes": [
-                "Recidiva ou metástase da doença",
+                "Recidiva ou metástase",
                 "Cura completa",
                 "Hipotireoidismo",
-                "Erro sem importância"
+                "Erro de exame sem importância"
               ],
-              "resposta": "Recidiva ou metástase da doença",
+              "resposta": "Recidiva ou metástase",
               "explicacao": "Após a retirada total da tireoide, a tireoglobulina funciona como marcador do tumor.",
               "revisado": false
             }
@@ -3301,9 +3301,9 @@
               "enunciado": "Qual condição causa cálcio levemente alto, PTH normal ou pouco alto e cálcio baixo na urina, de origem familiar?",
               "opcoes": [
                 "Hipercalcemia hipocalciúrica familiar",
-                "Hiperparatireoidismo primário",
-                "Hipercalcemia do câncer",
-                "Sarcoidose"
+                "Hiperparatireoidismo primário por adenoma",
+                "Hipercalcemia humoral do câncer",
+                "Sarcoidose com produção de calcitriol"
               ],
               "resposta": "Hipercalcemia hipocalciúrica familiar",
               "explicacao": "Não precisa de cirurgia; a relação cálcio/creatinina urinária baixa ajuda a diagnosticar.",
@@ -3318,7 +3318,7 @@
                 "Os granulomas produzem calcitriol",
                 "Os granulomas produzem PTH",
                 "Excesso de calcitonina",
-                "Perda de cálcio pelo rim"
+                "Perda de cálcio pelo rim por lesão renal"
               ],
               "resposta": "Os granulomas produzem calcitriol",
               "explicacao": "Linfomas e tuberculose podem fazer o mesmo. Corticoide reduz essa produção.",
@@ -3338,12 +3338,12 @@
               "caso": "Paciente renal crônico em diálise tem fósforo alto, cálcio baixo e PTH muito alto.",
               "enunciado": "Qual é o tratamento inicial?",
               "opcoes": [
-                "Restringir fósforo, usar quelante de fósforo e análogo de vitamina D ou calcimimético",
-                "Cálcio venoso em bolus diário",
-                "Paratireoidectomia imediata",
-                "Nada"
+                "Restringir fósforo, quelante e vitamina D ativa",
+                "Cálcio venoso em bolus todos os dias",
+                "Paratireoidectomia imediata das quatro",
+                "Nada, até o PTH passar de dez vezes o normal"
               ],
-              "resposta": "Restringir fósforo, usar quelante de fósforo e análogo de vitamina D ou calcimimético",
+              "resposta": "Restringir fósforo, quelante e vitamina D ativa",
               "explicacao": "O controle do fósforo é a base para reduzir o PTH.",
               "revisado": false
             },
@@ -3353,9 +3353,9 @@
               "enunciado": "O ___ é o principal marcador para avaliar o estoque de vitamina D no corpo.",
               "opcoes": [
                 "25-hidroxivitamina D",
-                "calcitriol",
-                "PTH",
-                "cálcio total"
+                "calcitriol (1,25-di-hidroxi)",
+                "PTH intacto",
+                "cálcio iônico corrigido"
               ],
               "resposta": "25-hidroxivitamina D",
               "explicacao": "O calcitriol pode estar normal mesmo com falta de vitamina D.",
@@ -3367,12 +3367,12 @@
               "caso": "Paciente com hipocalcemia tem PTH alto e fósforo alto, com função renal normal e baixa estatura.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Pseudo-hipoparatireoidismo, por resistência ao PTH",
+                "Pseudo-hipoparatireoidismo",
                 "Hipoparatireoidismo",
                 "Falta de vitamina D",
-                "Hiperparatireoidismo primário"
+                "Hiperparatireoidismo primário com fósforo alto"
               ],
-              "resposta": "Pseudo-hipoparatireoidismo, por resistência ao PTH",
+              "resposta": "Pseudo-hipoparatireoidismo",
               "explicacao": "Algumas formas têm um fenótipo típico com encurtamento dos metacarpos.",
               "revisado": false
             }
@@ -3435,12 +3435,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Na doença celíaca, qual parte do intestino é mais atingida e qual deficiência é comum?",
               "opcoes": [
-                "Duodeno e jejuno proximal; anemia por falta de ferro",
-                "Íleo terminal; falta de B12 isolada",
+                "Duodeno e jejuno; falta de ferro",
+                "Íleo terminal; falta de B12",
                 "Cólon; falta de vitamina C",
-                "Estômago; falta de iodo"
+                "Estômago; falta de iodo e de zinco"
               ],
-              "resposta": "Duodeno e jejuno proximal; anemia por falta de ferro",
+              "resposta": "Duodeno e jejuno; falta de ferro",
               "explicacao": "O ferro é absorvido no duodeno, por isso a anemia ferropriva é muito comum.",
               "revisado": false
             },
@@ -3453,7 +3453,7 @@
                 "Falta de absorção de B12 e de sais biliares",
                 "Falta de absorção de ferro",
                 "Excesso de lactase",
-                "Falta de ácido no estômago"
+                "Falta de ácido no estômago e de fator intrínseco"
               ],
               "resposta": "Falta de absorção de B12 e de sais biliares",
               "explicacao": "Os sais biliares não reabsorvidos irritam o cólon e causam diarreia.",
@@ -3473,12 +3473,12 @@
               "caso": "Paciente com supercrescimento bacteriano no intestino delgado tem B12 baixa e ácido fólico alto.",
               "enunciado": "Por que o folato está alto?",
               "opcoes": [
-                "As bactérias produzem folato e consomem B12",
+                "As bactérias produzem folato e gastam B12",
                 "O fígado produz mais folato",
-                "Por excesso na dieta",
-                "Erro de exame"
+                "Excesso de folato na dieta",
+                "Erro de exame causado pela hemólise da amostra"
               ],
-              "resposta": "As bactérias produzem folato e consomem B12",
+              "resposta": "As bactérias produzem folato e gastam B12",
               "explicacao": "É um padrão que ajuda a pensar em supercrescimento bacteriano.",
               "revisado": false
             },
@@ -3490,7 +3490,7 @@
                 "colecistocinina",
                 "gastrina",
                 "secretina",
-                "grelina"
+                "peptídeo inibidor gástrico"
               ],
               "resposta": "colecistocinina",
               "explicacao": "A secretina estimula a liberação de bicarbonato pelo pâncreas.",
@@ -3503,9 +3503,9 @@
               "enunciado": "Qual é a síndrome?",
               "opcoes": [
                 "Síndrome de Zollinger-Ellison",
-                "Doença celíaca",
+                "Doença celíaca refratária",
                 "Síndrome carcinoide",
-                "Doença de Crohn"
+                "Doença de Crohn do jejuno proximal"
               ],
               "resposta": "Síndrome de Zollinger-Ellison",
               "explicacao": "O ácido em excesso inativa as enzimas do pâncreas e causa diarreia.",
@@ -3547,12 +3547,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que a urina fica escura na icterícia obstrutiva, mas não na hemolítica?",
               "opcoes": [
-                "Porque só a bilirrubina direta, solúvel em água, é eliminada na urina",
-                "Porque a hemólise clareia a urina",
-                "Porque a bilirrubina indireta é eliminada pelos rins",
-                "Por causa da ureia"
+                "Só a bilirrubina direta sai na urina",
+                "A hemólise clareia a urina",
+                "A indireta é eliminada pelo rim",
+                "Por causa da ureia que escurece a urina na obstrução"
               ],
-              "resposta": "Porque só a bilirrubina direta, solúvel em água, é eliminada na urina",
+              "resposta": "Só a bilirrubina direta sai na urina",
               "explicacao": "A bilirrubina indireta vai ligada à albumina e não passa pelo glomérulo.",
               "revisado": false
             },
@@ -3562,12 +3562,12 @@
               "caso": "Paciente tem icterícia, urina escura, fezes claras e coceira, com fosfatase alcalina e GGT muito altas.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "Colestase, com bile que não chega ao intestino",
-                "Hemólise",
-                "Síndrome de Gilbert",
-                "Hepatite com padrão de necrose"
+                "Colestase, com bile sem chegar ao intestino",
+                "Hemólise com excesso de bilirrubina",
+                "Síndrome de Gilbert descompensada",
+                "Hepatite com necrose dos hepatócitos e AST alta"
               ],
-              "resposta": "Colestase, com bile que não chega ao intestino",
+              "resposta": "Colestase, com bile sem chegar ao intestino",
               "explicacao": "A coceira vem dos sais biliares acumulados.",
               "revisado": false
             },
@@ -3585,12 +3585,12 @@
               "caso": "Paciente com hepatite aguda tem transaminases acima de 5.000 U/L após uso de muitos comprimidos de paracetamol.",
               "enunciado": "Qual é o padrão de lesão?",
               "opcoes": [
-                "Lesão das células do fígado (hepatocelular)",
+                "Hepatocelular",
                 "Colestase pura",
                 "Hemólise",
                 "Gilbert"
               ],
-              "resposta": "Lesão das células do fígado (hepatocelular)",
+              "resposta": "Hepatocelular",
               "explicacao": "Transaminases muito altas indicam necrose maciça, como no paracetamol, isquemia ou vírus.",
               "revisado": false
             },
@@ -3617,7 +3617,7 @@
                 "Perda da função de síntese do fígado",
                 "Obstrução biliar isolada",
                 "Hemólise",
-                "Função normal"
+                "Função normal, os valores são esperados na cirrose compensada"
               ],
               "resposta": "Perda da função de síntese do fígado",
               "explicacao": "Albumina, INR e bilirrubina avaliam a função; as transaminases avaliam lesão.",
@@ -3649,12 +3649,12 @@
               "caso": "Paciente com tumor cerebral tem cefaleia matinal, vômitos e papiledema.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "Aumento da pressão intracraniana pelo volume extra no crânio rígido",
+                "Pressão intracraniana alta no crânio rígido",
                 "Queda da pressão do líquor",
                 "Inflamação das meninges",
-                "Enxaqueca"
+                "Enxaqueca com aura visual e vômitos matinais"
               ],
-              "resposta": "Aumento da pressão intracraniana pelo volume extra no crânio rígido",
+              "resposta": "Pressão intracraniana alta no crânio rígido",
               "explicacao": "Pela doutrina de Monro-Kellie, o crânio tem volume fixo; quando algo cresce, a pressão sobe.",
               "revisado": false
             },
@@ -3688,12 +3688,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se calcula a pressão de perfusão cerebral?",
               "opcoes": [
-                "Pressão arterial média menos a pressão intracraniana",
-                "Pressão sistólica menos a diastólica",
-                "Pressão intracraniana mais a venosa",
-                "Pressão arterial média vezes 2"
+                "Pressão arterial média menos a intracraniana",
+                "Sistólica menos a diastólica",
+                "Intracraniana mais a venosa",
+                "Pressão arterial média multiplicada por dois"
               ],
-              "resposta": "Pressão arterial média menos a pressão intracraniana",
+              "resposta": "Pressão arterial média menos a intracraniana",
               "explicacao": "No traumatismo craniano grave, busca-se manter a perfusão adequada sem aumentar a pressão intracraniana.",
               "revisado": false
             },
@@ -3703,12 +3703,12 @@
               "caso": "Paciente com traumatismo craniano grave tem pressão intracraniana alta.",
               "enunciado": "Qual medida reduz rapidamente a pressão?",
               "opcoes": [
-                "Elevar a cabeceira a 30 graus e usar manitol ou salina hipertônica",
+                "Cabeceira a 30 graus e manitol ou salina hipertônica",
                 "Deitar com a cabeça baixa",
                 "Soro glicosado",
-                "Hipoventilação"
+                "Hipoventilação para aumentar o CO2 e dilatar os vasos"
               ],
-              "resposta": "Elevar a cabeceira a 30 graus e usar manitol ou salina hipertônica",
+              "resposta": "Cabeceira a 30 graus e manitol ou salina hipertônica",
               "explicacao": "A hiperventilação leve pode ser usada brevemente, porque reduz o fluxo cerebral.",
               "revisado": false
             },
@@ -3729,7 +3729,7 @@
                 "Hidrocefalia de pressão normal",
                 "Doença de Alzheimer",
                 "Doença de Parkinson",
-                "AVC"
+                "AVC lacunar múltiplo nos núcleos da base"
               ],
               "resposta": "Hidrocefalia de pressão normal",
               "explicacao": "Pode melhorar com a retirada de líquor ou com derivação ventricular.",
@@ -3755,12 +3755,12 @@
               "caso": "Paciente com hipertensão intracraniana tem pressão alta, bradicardia e respiração irregular.",
               "enunciado": "O que essa tríade indica?",
               "opcoes": [
-                "Reflexo de Cushing, sinal de herniação iminente",
+                "Reflexo de Cushing, herniação iminente",
                 "Choque neurogênico",
                 "Sepse",
-                "Hipotireoidismo"
+                "Hipotireoidismo grave com mixedema e bradicardia"
               ],
-              "resposta": "Reflexo de Cushing, sinal de herniação iminente",
+              "resposta": "Reflexo de Cushing, herniação iminente",
               "explicacao": "É uma emergência neurocirúrgica.",
               "revisado": false
             }
