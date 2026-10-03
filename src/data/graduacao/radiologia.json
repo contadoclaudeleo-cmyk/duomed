@@ -48,7 +48,7 @@
                 "Ressonância magnética",
                 "Tomografia",
                 "Radiografia",
-                "Cintilografia"
+                "Cintilografia com material radioativo"
               ],
               "resposta": "Ressonância magnética",
               "explicacao": "O ultrassom também não usa.",
@@ -84,7 +84,7 @@
                 "Ar, gordura, água, osso e metal",
                 "Osso, água, ar",
                 "Metal, ar, gordura",
-                "Água, ar, osso"
+                "Metal, osso, água, gordura e ar, do mais escuro ao mais claro"
               ],
               "resposta": "Ar, gordura, água, osso e metal",
               "explicacao": "São as cinco densidades.",
@@ -166,7 +166,7 @@
                 "Unidades Hounsfield",
                 "Decibéis",
                 "Tesla",
-                "Gray"
+                "Gray por quilo de tecido"
               ],
               "resposta": "Unidades Hounsfield",
               "explicacao": "A água tem valor zero.",
@@ -200,9 +200,9 @@
               "enunciado": "Qual é o risco do contraste iodado?",
               "opcoes": [
                 "Alergia e piora da função renal",
-                "Nenhum",
                 "Hipoglicemia",
-                "Febre"
+                "Febre",
+                "Risco nenhum, porque o contraste sai todo pela urina"
               ],
               "resposta": "Alergia e piora da função renal",
               "explicacao": "Avaliar história de alergia.",
@@ -214,12 +214,12 @@
               "caso": "Paciente diabético usa metformina e vai fazer tomografia com contraste, com função renal muito reduzida.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Suspender a metformina pelo risco de acidose lática",
-                "Nada",
+                "Suspender a metformina (risco de acidose)",
+                "Manter igual",
                 "Dobrar a dose",
-                "Usar mais contraste"
+                "Dobrar a metformina e usar mais contraste para melhorar a imagem"
               ],
-              "resposta": "Suspender a metformina pelo risco de acidose lática",
+              "resposta": "Suspender a metformina (risco de acidose)",
               "explicacao": "Retomar após avaliar a função renal.",
               "revisado": false
             },
@@ -284,7 +284,7 @@
                 "Marcapasso antigo não compatível",
                 "Obesidade",
                 "Gravidez em qualquer fase",
-                "Diabetes"
+                "Diabetes controlado com remédio oral"
               ],
               "resposta": "Marcapasso antigo não compatível",
               "explicacao": "Também clipes metálicos antigos.",
@@ -306,7 +306,7 @@
                 "gadolínio",
                 "iodo",
                 "bário",
-                "ar"
+                "ar ambiente"
               ],
               "resposta": "gadolínio",
               "explicacao": "Cuidado na doença renal grave.",
@@ -317,12 +317,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a vantagem do ultrassom?",
               "opcoes": [
-                "Não usa radiação, é barato e feito à beira do leito",
+                "Sem radiação, barato e à beira do leito",
                 "Vê ossos melhor",
                 "Atravessa o ar",
-                "Mostra o cérebro do adulto"
+                "Mostra o cérebro do adulto através do crânio fechado"
               ],
-              "resposta": "Não usa radiação, é barato e feito à beira do leito",
+              "resposta": "Sem radiação, barato e à beira do leito",
               "explicacao": "Depende do operador.",
               "revisado": false
             },
@@ -335,7 +335,7 @@
                 "Sedação leve ou aparelho aberto",
                 "Cancelar sempre",
                 "Fazer sem preparo",
-                "Tomografia sempre"
+                "Trocar sempre por tomografia, mesmo quando ela não serve"
               ],
               "resposta": "Sedação leve ou aparelho aberto",
               "explicacao": "Avaliar o melhor caminho.",
@@ -409,7 +409,7 @@
                 "AP, feita no leito",
                 "PA",
                 "Perfil",
-                "Oblíqua"
+                "Oblíqua anterior esquerda"
               ],
               "resposta": "AP, feita no leito",
               "explicacao": "O coração fica longe do filme.",
@@ -431,7 +431,7 @@
                 "silhueta",
                 "coluna",
                 "asa",
-                "bola"
+                "bola de neve"
               ],
               "resposta": "silhueta",
               "explicacao": "Ajuda a localizar lesões.",
@@ -524,12 +524,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado sugere pneumotórax hipertensivo?",
               "opcoes": [
-                "Desvio do mediastino para o lado oposto",
+                "Mediastino desviado para o lado oposto",
                 "Desvio para o mesmo lado",
-                "Nenhum",
-                "Derrame"
+                "Derrame",
+                "Desvio do mediastino para o mesmo lado do pulmão doente"
               ],
-              "resposta": "Desvio do mediastino para o lado oposto",
+              "resposta": "Mediastino desviado para o lado oposto",
               "explicacao": "É emergência; não esperar o raio X.",
               "revisado": false
             },
@@ -560,12 +560,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o achado do edema agudo de pulmão no raio X?",
               "opcoes": [
-                "Opacidades em asa de borboleta perto do hilo",
+                "Opacidades em asa de borboleta no hilo",
                 "Pneumotórax",
                 "Nódulo único",
-                "Pulmão normal"
+                "Pulmão totalmente normal, sem nenhuma alteração visível"
               ],
-              "resposta": "Opacidades em asa de borboleta perto do hilo",
+              "resposta": "Opacidades em asa de borboleta no hilo",
               "explicacao": "Também derrame e coração grande.",
               "revisado": false
             },
@@ -578,7 +578,7 @@
                 "DPOC com enfisema",
                 "Pneumonia",
                 "Edema",
-                "Derrame"
+                "Derrame pleural bilateral grande"
               ],
               "resposta": "DPOC com enfisema",
               "explicacao": "O pulmão fica cheio de ar.",
@@ -600,7 +600,7 @@
                 "diafragma",
                 "coração",
                 "fígado",
-                "rim"
+                "rim direito"
               ],
               "resposta": "diafragma",
               "explicacao": "É pneumoperitônio.",
@@ -620,7 +620,7 @@
                 "Mediastino alargado",
                 "Coração pequeno",
                 "Pneumotórax",
-                "Nada"
+                "Coração pequeno e pulmões limpos"
               ],
               "resposta": "Mediastino alargado",
               "explicacao": "A tomografia confirma.",
@@ -678,12 +678,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são os 4 T das massas do mediastino anterior?",
               "opcoes": [
-                "Timoma, tireoide, teratoma e terrível linfoma",
+                "Timoma, tireoide, teratoma e linfoma",
                 "Tuberculose, tosse, tumor, trauma",
                 "Todos os tumores",
-                "Nenhum"
+                "Tuberculose, tosse, tumor e trauma de tórax por acidente"
               ],
-              "resposta": "Timoma, tireoide, teratoma e terrível linfoma",
+              "resposta": "Timoma, tireoide, teratoma e linfoma",
               "explicacao": "Ajuda no diagnóstico.",
               "revisado": false
             },
@@ -695,8 +695,8 @@
               "opcoes": [
                 "Retirar e reposicionar antes de usar",
                 "Usar normalmente",
-                "Nada",
-                "Dar dieta"
+                "Dar dieta",
+                "Usar normalmente e começar a dieta pela sonda"
               ],
               "resposta": "Retirar e reposicionar antes de usar",
               "explicacao": "A dieta no pulmão causa pneumonia grave.",
@@ -821,7 +821,7 @@
                 "Obstrução do intestino delgado",
                 "Normal",
                 "Pneumonia",
-                "Apendicite"
+                "Apendicite aguda simples com febre baixa"
               ],
               "resposta": "Obstrução do intestino delgado",
               "explicacao": "A tomografia ajuda a achar a causa.",
@@ -910,7 +910,7 @@
                 "hepatocelular",
                 "colorretal",
                 "pancreático",
-                "gástrico"
+                "gástrico metastático"
               ],
               "resposta": "hepatocelular",
               "explicacao": "Diagnóstico por imagem em cirróticos.",
@@ -924,7 +924,7 @@
                 "Ressonância da pelve",
                 "Raio X",
                 "Ultrassom",
-                "Cintilografia"
+                "Cintilografia óssea de corpo inteiro"
               ],
               "resposta": "Ressonância da pelve",
               "explicacao": "Mostra a invasão local.",
@@ -939,7 +939,7 @@
                 "Angiotomografia para isquemia mesentérica",
                 "Raio X",
                 "Ultrassom",
-                "Nada"
+                "Raio X simples de abdome e observação por 24 horas"
               ],
               "resposta": "Angiotomografia para isquemia mesentérica",
               "explicacao": "É emergência.",
@@ -961,7 +961,7 @@
                 "aneurisma",
                 "infarto",
                 "trombo",
-                "espasmo"
+                "espasmo arterial"
               ],
               "resposta": "aneurisma",
               "explicacao": "Rastreio em homens fumantes idosos.",
@@ -980,8 +980,8 @@
               "opcoes": [
                 "Tomografia de corpo inteiro",
                 "Só raio X",
-                "Nada",
-                "Ressonância"
+                "Ressonância",
+                "Ressonância de corpo inteiro com contraste"
               ],
               "resposta": "Tomografia de corpo inteiro",
               "explicacao": "Rápida e completa.",
@@ -1042,7 +1042,7 @@
                 "Crescente, em meia-lua",
                 "Lente biconvexa",
                 "Redonda",
-                "Em linha"
+                "Em forma de lente, limitada pelas suturas"
               ],
               "resposta": "Crescente, em meia-lua",
               "explicacao": "Causado por veias.",
@@ -1055,9 +1055,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Tomografia de crânio",
-                "Alta sem exame",
+                "Liberar sem exame",
                 "Raio X",
-                "Nada"
+                "Raio X simples de crânio e liberar"
               ],
               "resposta": "Tomografia de crânio",
               "explicacao": "O risco de sangramento é maior.",
@@ -1128,12 +1128,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que a tomografia é feita primeiro no AVC agudo?",
               "opcoes": [
-                "Para excluir sangramento antes da trombólise",
-                "Para ver o infarto",
-                "Para ver tumor",
-                "Nenhum motivo"
+                "Excluir sangramento antes da trombólise",
+                "Ver o infarto",
+                "Ver tumor",
+                "Mostrar o infarto completo logo nos primeiros minutos"
               ],
-              "resposta": "Para excluir sangramento antes da trombólise",
+              "resposta": "Excluir sangramento antes da trombólise",
               "explicacao": "O infarto pode não aparecer nas primeiras horas.",
               "revisado": false
             },
@@ -1153,7 +1153,7 @@
                 "cerebral média",
                 "carótida",
                 "basilar",
-                "vertebral"
+                "vertebral esquerda"
               ],
               "resposta": "cerebral média",
               "explicacao": "Pode aparecer cedo.",
@@ -1180,9 +1180,9 @@
               "enunciado": "Qual é o próximo passo?",
               "opcoes": [
                 "Punção lombar",
-                "Alta",
+                "Liberar",
                 "Raio X",
-                "Nada"
+                "Liberar com analgésico, porque a tomografia veio normal"
               ],
               "resposta": "Punção lombar",
               "explicacao": "Procurar sangue no líquor.",
@@ -1248,8 +1248,8 @@
               "opcoes": [
                 "Pelo menos duas, perpendiculares",
                 "Uma",
-                "Nenhuma",
-                "Cinco"
+                "Cinco",
+                "Uma única incidência basta em todos os casos"
               ],
               "resposta": "Pelo menos duas, perpendiculares",
               "explicacao": "Uma só pode esconder a fratura.",
@@ -1285,7 +1285,7 @@
                 "Ressonância",
                 "Raio X",
                 "Ultrassom",
-                "Nada"
+                "Raio X simples repetido no mesmo dia"
               ],
               "resposta": "Ressonância",
               "explicacao": "O raio X demora semanas para alterar.",
@@ -1298,9 +1298,9 @@
               "enunciado": "Qual exame confirma fratura por estresse?",
               "opcoes": [
                 "Ressonância",
-                "Nada",
+                "Ultrassom",
                 "Raio X repetido no mesmo dia",
-                "Ultrassom"
+                "Raio X repetido no mesmo dia em várias posições"
               ],
               "resposta": "Ressonância",
               "explicacao": "Detecta cedo.",
@@ -1322,7 +1322,7 @@
                 "-2,5",
                 "-1",
                 "0",
-                "+2"
+                "+2 ou mais"
               ],
               "resposta": "-2,5",
               "explicacao": "Entre -1 e -2,5 é osteopenia.",
@@ -1339,12 +1339,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a indicação de exame de imagem na dor lombar?",
               "opcoes": [
-                "Sinais de alerta, como febre, perda de peso e déficit",
+                "Sinais de alerta, como febre e déficit",
                 "Toda dor lombar",
                 "Nunca",
-                "Só em idosos"
+                "Toda dor lombar, mesmo de um dia e sem sinais de alerta"
               ],
-              "resposta": "Sinais de alerta, como febre, perda de peso e déficit",
+              "resposta": "Sinais de alerta, como febre e déficit",
               "explicacao": "A maioria não precisa.",
               "revisado": false
             },
@@ -1389,7 +1389,7 @@
                 "equina",
                 "longa",
                 "fina",
-                "curta"
+                "curta e grossa"
               ],
               "resposta": "equina",
               "explicacao": "Compressão das raízes nervosas.",
@@ -1403,7 +1403,7 @@
                 "Ressonância ou ultrassom",
                 "Raio X",
                 "Cintilografia",
-                "Nada"
+                "Raio X simples e cintilografia óssea"
               ],
               "resposta": "Ressonância ou ultrassom",
               "explicacao": "Avalia o tamanho e a relação.",
@@ -1415,12 +1415,12 @@
               "caso": "Paciente com dor lombar há 2 semanas, sem sinais de alerta.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratamento sem exame de imagem",
+                "Tratar sem exame de imagem",
                 "Ressonância",
                 "Tomografia",
-                "Raio X"
+                "Ressonância de toda a coluna com contraste"
               ],
-              "resposta": "Tratamento sem exame de imagem",
+              "resposta": "Tratar sem exame de imagem",
               "explicacao": "A maioria melhora sozinha.",
               "revisado": false
             },
@@ -1540,12 +1540,12 @@
               "caso": "Mamografia de rastreio tem achado incompleto e é classificada como BI-RADS 0.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Exames complementares, como ultrassom ou mais incidências",
+                "Exames complementares, como ultrassom",
                 "Biópsia sempre",
                 "Rotina",
-                "Nada"
+                "Biópsia com agulha grossa sem nenhum outro exame antes"
               ],
-              "resposta": "Exames complementares, como ultrassom ou mais incidências",
+              "resposta": "Exames complementares, como ultrassom",
               "explicacao": "Precisa de mais avaliação.",
               "revisado": false
             },
@@ -1658,12 +1658,12 @@
               "caso": "Gestante com suspeita de embolia pulmonar e raio X normal.",
               "enunciado": "Qual é o exame?",
               "opcoes": [
-                "Cintilografia ou angiotomografia, pesando os riscos",
-                "Nenhum",
+                "Cintilografia ou angiotomografia, pesando riscos",
+                "Nenhum exame",
                 "Só D-dímero",
-                "Ressonância de crânio"
+                "Ressonância de crânio com contraste de gadolínio"
               ],
-              "resposta": "Cintilografia ou angiotomografia, pesando os riscos",
+              "resposta": "Cintilografia ou angiotomografia, pesando riscos",
               "explicacao": "O diagnóstico é importante.",
               "revisado": false
             },
@@ -1680,12 +1680,12 @@
               "tipo": "completar_lacuna",
               "enunciado": "O ultrassom ___ é feito entre 11 e 14 semanas para avaliar a translucência nucal.",
               "opcoes": [
-                "morfológico do primeiro trimestre",
+                "morfológico do 1º trimestre",
                 "obstétrico tardio",
                 "Doppler",
-                "pélvico"
+                "pélvico transabdominal de rotina"
               ],
-              "resposta": "morfológico do primeiro trimestre",
+              "resposta": "morfológico do 1º trimestre",
               "explicacao": "Rastreio de síndromes.",
               "revisado": false
             }
@@ -1701,9 +1701,9 @@
               "enunciado": "Qual é o risco de pedir exames de imagem em excesso?",
               "opcoes": [
                 "Achados incidentais, radiação e custos",
-                "Nenhum",
-                "Diagnóstico melhor sempre",
-                "Cura"
+                "Risco nenhum",
+                "Melhor diagnóstico",
+                "Diagnóstico sempre melhor, sem nenhum efeito ruim para o paciente"
               ],
               "resposta": "Achados incidentais, radiação e custos",
               "explicacao": "Pode levar a procedimentos desnecessários.",
@@ -1750,7 +1750,7 @@
                 "incidentaloma",
                 "tumor",
                 "pólipo",
-                "cisto"
+                "cisto simples"
               ],
               "resposta": "incidentaloma",
               "explicacao": "Muito comum na suprarrenal.",
@@ -1761,12 +1761,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual informação ajuda o radiologista a fazer um bom laudo?",
               "opcoes": [
-                "Dados clínicos e a hipótese no pedido",
-                "Nenhuma",
+                "Dados clínicos e hipótese no pedido",
                 "Só o nome",
-                "Só a idade"
+                "Só a idade",
+                "Só o nome e a idade, sem nenhuma informação clínica"
               ],
-              "resposta": "Dados clínicos e a hipótese no pedido",
+              "resposta": "Dados clínicos e hipótese no pedido",
               "explicacao": "Pedidos completos melhoram o laudo.",
               "revisado": false
             },
@@ -1779,7 +1779,7 @@
                 "Pedir só com sinais de alerta",
                 "Pedir sempre",
                 "Nunca pedir",
-                "Pedir ressonância sempre"
+                "Pedir ressonância de crânio para todos, em vez de tomografia"
               ],
               "resposta": "Pedir só com sinais de alerta",
               "explicacao": "Evita exames desnecessários.",
@@ -1801,7 +1801,7 @@
                 "Fleischner",
                 "Kerley",
                 "Rigler",
-                "Murphy"
+                "Murphy modificadas"
               ],
               "resposta": "Fleischner",
               "explicacao": "Consideram tamanho e risco.",
@@ -1866,12 +1866,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a diferença entre edema cardiogênico e SDRA no raio X?",
               "opcoes": [
-                "O edema cardiogênico tem coração grande e derrame",
+                "Cardiogênico tem coração grande e derrame",
                 "São iguais",
                 "A SDRA tem coração grande",
-                "Nenhuma"
+                "A SDRA tem coração grande e derrame, e o cardiogênico não"
               ],
-              "resposta": "O edema cardiogênico tem coração grande e derrame",
+              "resposta": "Cardiogênico tem coração grande e derrame",
               "explicacao": "A clínica também ajuda.",
               "revisado": false
             },
@@ -1884,7 +1884,7 @@
                 "Atelectasia total do pulmão esquerdo",
                 "Derrame grande",
                 "Pneumotórax",
-                "Normal"
+                "Raio X normal de paciente deitado"
               ],
               "resposta": "Atelectasia total do pulmão esquerdo",
               "explicacao": "Pode ser tampão de secreção ou tubo seletivo.",
@@ -1935,7 +1935,7 @@
                 "Tumor de Pancoast",
                 "Pneumonia",
                 "Tuberculose",
-                "Normal"
+                "Fratura de costela antiga"
               ],
               "resposta": "Tumor de Pancoast",
               "explicacao": "Pode causar síndrome de Horner.",
@@ -1978,12 +1978,12 @@
               "caso": "Fumante com nódulo pulmonar de 2 cm, espiculado, encontrado na tomografia.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Investigar câncer com PET-CT e biópsia",
+                "Investigar com PET-CT e biópsia",
                 "Seguir em 2 anos",
-                "Nada",
-                "Antibiótico"
+                "Antibiótico",
+                "Antibiótico por duas semanas e nova tomografia em dois anos"
               ],
-              "resposta": "Investigar câncer com PET-CT e biópsia",
+              "resposta": "Investigar com PET-CT e biópsia",
               "explicacao": "Bordas espiculadas são suspeitas.",
               "revisado": false
             },
@@ -1995,7 +1995,7 @@
                 "Angiotomografia de tórax",
                 "Raio X",
                 "Ultrassom",
-                "Ressonância"
+                "Raio X de tórax e ultrassom de abdome"
               ],
               "resposta": "Angiotomografia de tórax",
               "explicacao": "Mostra o trombo.",
@@ -2010,7 +2010,7 @@
                 "Bronquiectasias",
                 "Enfisema",
                 "Pneumonia",
-                "Normal"
+                "Achado normal da idade"
               ],
               "resposta": "Bronquiectasias",
               "explicacao": "O brônquio é maior que a artéria ao lado.",
@@ -2032,7 +2032,7 @@
                 "invertido",
                 "duplo",
                 "simples",
-                "central"
+                "central com cavidade"
               ],
               "resposta": "invertido",
               "explicacao": "É vidro fosco cercado por consolidação.",
@@ -2061,7 +2061,7 @@
                 "Aspergilose invasiva",
                 "Pneumonia comum",
                 "Câncer",
-                "Normal"
+                "Achado sem importância nenhuma"
               ],
               "resposta": "Aspergilose invasiva",
               "explicacao": "É o sinal do halo.",
@@ -2107,7 +2107,7 @@
                 "Angiotomografia de aorta",
                 "Raio X repetido",
                 "Eletrocardiograma",
-                "Ecocardiograma só"
+                "Raio X de tórax repetido e eletrocardiograma"
               ],
               "resposta": "Angiotomografia de aorta",
               "explicacao": "É suspeita de dissecção.",
@@ -2121,7 +2121,7 @@
                 "Ressonância com realce tardio",
                 "Raio X",
                 "Ultrassom de abdome",
-                "Tomografia de crânio"
+                "Tomografia de crânio sem contraste"
               ],
               "resposta": "Ressonância com realce tardio",
               "explicacao": "O gadolínio fica no músculo lesado.",
@@ -2136,7 +2136,7 @@
                 "Ressonância cardíaca para miocardite",
                 "Raio X",
                 "Tomografia de crânio",
-                "Nada"
+                "Raio X de tórax e tomografia de crânio"
               ],
               "resposta": "Ressonância cardíaca para miocardite",
               "explicacao": "Mostra inflamação.",
@@ -2172,7 +2172,7 @@
                 "Veia que não se comprime",
                 "Veia que se comprime",
                 "Fluxo normal",
-                "Nada"
+                "Veia que se comprime totalmente com fluxo normal"
               ],
               "resposta": "Veia que não se comprime",
               "explicacao": "Também o trombo visível.",
@@ -2184,12 +2184,12 @@
               "caso": "Paciente com perna inchada e dor e ultrassom normal, com alta suspeita.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Repetir o ultrassom em uma semana ou D-dímero",
-                "Alta sem seguimento",
-                "Anticoagular para sempre",
-                "Nada"
+                "Repetir o ultrassom em 1 semana ou D-dímero",
+                "Liberar sem seguimento",
+                "Anticoagular sempre",
+                "Anticoagular para o resto da vida sem novo exame"
               ],
-              "resposta": "Repetir o ultrassom em uma semana ou D-dímero",
+              "resposta": "Repetir o ultrassom em 1 semana ou D-dímero",
               "explicacao": "Pode haver trombose que progride.",
               "revisado": false
             }
@@ -2213,12 +2213,12 @@
               "caso": "Idoso com dor e distensão abdominal tem alça do sigmoide muito dilatada em forma de grão de café.",
               "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Volvo de sigmoide; descompressão por colonoscopia",
+                "Volvo de sigmoide; descompressão endoscópica",
                 "Obstrução de delgado; sonda",
-                "Normal; alta",
-                "Apendicite; cirurgia"
+                "Normal; liberar",
+                "Apendicite aguda; cirurgia de urgência por videolaparoscopia"
               ],
-              "resposta": "Volvo de sigmoide; descompressão por colonoscopia",
+              "resposta": "Volvo de sigmoide; descompressão endoscópica",
               "explicacao": "Recorre se não houver cirurgia depois.",
               "revisado": false
             },
@@ -2254,8 +2254,8 @@
               "opcoes": [
                 "Tomografia",
                 "Ressonância",
-                "Nada",
-                "Ultrassom só"
+                "Ultrassom só",
+                "Ressonância de abdome sem contraste"
               ],
               "resposta": "Tomografia",
               "explicacao": "É mais sensível para ar livre.",
@@ -2270,7 +2270,7 @@
                 "Enterocolite necrosante",
                 "Volvo",
                 "Normal",
-                "Invaginação"
+                "Invaginação intestinal"
               ],
               "resposta": "Enterocolite necrosante",
               "explicacao": "A pneumatose é típica.",
@@ -2292,7 +2292,7 @@
                 "redemoinho",
                 "alvo",
                 "halo",
-                "anel"
+                "anel de sinete"
               ],
               "resposta": "redemoinho",
               "explicacao": "Indica torção.",
@@ -2306,7 +2306,7 @@
                 "Bridas de cirurgias anteriores",
                 "Tumor",
                 "Volvo",
-                "Hérnia interna"
+                "Hérnia interna congênita rara do mesentério"
               ],
               "resposta": "Bridas de cirurgias anteriores",
               "explicacao": "Em pacientes sem cirurgia, hérnia.",
@@ -2320,8 +2320,8 @@
               "opcoes": [
                 "Tomografia com contraste para necrose infectada",
                 "Raio X",
-                "Nada",
-                "Ultrassom de tireoide"
+                "Ultrassom de tireoide",
+                "Raio X simples de abdome e ultrassom de tireoide"
               ],
               "resposta": "Tomografia com contraste para necrose infectada",
               "explicacao": "Pode ter gás na necrose.",
@@ -2365,9 +2365,9 @@
               "enunciado": "Qual é o próximo exame?",
               "opcoes": [
                 "Colangiorressonância ou tomografia",
-                "Nada",
                 "Raio X",
-                "Alta"
+                "Liberar",
+                "Raio X simples de abdome e liberar"
               ],
               "resposta": "Colangiorressonância ou tomografia",
               "explicacao": "Procurar pedra ou tumor.",
@@ -2378,12 +2378,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o achado de hemangioma no ultrassom?",
               "opcoes": [
-                "Nódulo branco (hiperecogênico) bem definido",
+                "Nódulo branco (hiperecogênico) definido",
                 "Nódulo escuro",
                 "Cisto",
-                "Nada"
+                "Nódulo escuro e irregular com muito fluxo no Doppler"
               ],
-              "resposta": "Nódulo branco (hiperecogênico) bem definido",
+              "resposta": "Nódulo branco (hiperecogênico) definido",
               "explicacao": "É o tumor benigno mais comum do fígado.",
               "revisado": false
             },
@@ -2396,7 +2396,7 @@
                 "Carcinoma hepatocelular",
                 "Hemangioma",
                 "Cisto",
-                "Normal"
+                "Nódulo benigno de regeneração"
               ],
               "resposta": "Carcinoma hepatocelular",
               "explicacao": "Não precisa de biópsia nesse padrão.",
@@ -2444,12 +2444,12 @@
               "caso": "Paciente com febre, icterícia e dor tem ultrassom com gás nas vias biliares e colecistite.",
               "enunciado": "Qual é a gravidade?",
               "opcoes": [
-                "Possível colecistite enfisematosa, grave",
+                "Colecistite enfisematosa, grave",
                 "Leve",
                 "Normal",
-                "Nada"
+                "Achado leve que melhora com dieta sem gordura"
               ],
-              "resposta": "Possível colecistite enfisematosa, grave",
+              "resposta": "Colecistite enfisematosa, grave",
               "explicacao": "Mais comum em diabéticos.",
               "revisado": false
             }
@@ -2491,9 +2491,9 @@
               "enunciado": "Qual é a classificação e a conduta?",
               "opcoes": [
                 "Bosniak alto; avaliar cirurgia",
-                "Bosniak I; nada",
+                "Bosniak I; observar",
                 "Normal",
-                "Seguir em 10 anos"
+                "Bosniak I simples; seguimento em dez anos"
               ],
               "resposta": "Bosniak alto; avaliar cirurgia",
               "explicacao": "O risco de câncer aumenta.",
@@ -2507,7 +2507,7 @@
                 "Ressonância multiparamétrica",
                 "Raio X",
                 "Ultrassom de abdome",
-                "Cintilografia"
+                "Cintilografia óssea de corpo inteiro"
               ],
               "resposta": "Ressonância multiparamétrica",
               "explicacao": "Guia a biópsia.",
@@ -2522,7 +2522,7 @@
                 "Torção de ovário",
                 "Cisto simples",
                 "Normal",
-                "Apendicite"
+                "Apendicite aguda do lado direito"
               ],
               "resposta": "Torção de ovário",
               "explicacao": "É emergência cirúrgica.",
@@ -2558,7 +2558,7 @@
                 "Dilatação da pelve renal",
                 "Rim pequeno",
                 "Cisto",
-                "Nada"
+                "Rim pequeno com cortical fina"
               ],
               "resposta": "Dilatação da pelve renal",
               "explicacao": "Indica obstrução.",
@@ -2570,12 +2570,12 @@
               "caso": "Gestante com dor e hematúria tem hidronefrose leve à direita.",
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "A hidronefrose leve à direita pode ser normal na gestação",
+                "Pode ser normal à direita na gestação",
                 "Sempre cirurgia",
                 "Tomografia sempre",
-                "Nada"
+                "Tomografia com contraste e cirurgia em todos os casos"
               ],
-              "resposta": "A hidronefrose leve à direita pode ser normal na gestação",
+              "resposta": "Pode ser normal à direita na gestação",
               "explicacao": "O útero comprime o ureter.",
               "revisado": false
             }
@@ -2599,12 +2599,12 @@
               "caso": "Paciente com déficit há 2 horas tem tomografia sem sangramento.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar trombólise e angiotomografia para trombectomia",
-                "Esperar a tomografia mostrar o infarto",
-                "Alta",
-                "Nada"
+                "Pensar em trombólise e angiotomografia",
+                "Esperar o infarto aparecer",
+                "Liberar",
+                "Esperar a tomografia mostrar o infarto antes de qualquer tratamento"
               ],
-              "resposta": "Considerar trombólise e angiotomografia para trombectomia",
+              "resposta": "Pensar em trombólise e angiotomografia",
               "explicacao": "O tempo é cérebro.",
               "revisado": false
             },
@@ -2641,7 +2641,7 @@
                 "Difusão",
                 "T1",
                 "T2",
-                "FLAIR"
+                "FLAIR tardio"
               ],
               "resposta": "Difusão",
               "explicacao": "O FLAIR altera depois de horas.",
@@ -2653,12 +2653,12 @@
               "caso": "Paciente acordou com déficit e não se sabe a hora de início.",
               "enunciado": "Qual exame ajuda a decidir trombólise?",
               "opcoes": [
-                "Ressonância com descompasso difusão e FLAIR",
+                "Ressonância com descompasso difusão-FLAIR",
                 "Raio X",
-                "Nada",
-                "Tomografia simples só"
+                "Tomografia simples só",
+                "Raio X de crânio e tomografia simples repetida"
               ],
-              "resposta": "Ressonância com descompasso difusão e FLAIR",
+              "resposta": "Ressonância com descompasso difusão-FLAIR",
               "explicacao": "Sugere AVC recente.",
               "revisado": false
             },
@@ -2692,7 +2692,7 @@
                 "Angiopatia amiloide",
                 "Hipertensão",
                 "Tumor",
-                "Trauma"
+                "Trauma de crânio leve"
               ],
               "resposta": "Angiopatia amiloide",
               "explicacao": "Lesões lobares.",
@@ -2782,7 +2782,7 @@
                 "Encefalite herpética",
                 "AVC",
                 "Tumor",
-                "Normal"
+                "Achado normal sem significado"
               ],
               "resposta": "Encefalite herpética",
               "explicacao": "Tratar com aciclovir.",
@@ -2818,7 +2818,7 @@
                 "Lesões ovais perpendiculares aos ventrículos",
                 "Uma massa",
                 "Sangramento",
-                "Nada"
+                "Uma massa única com edema e efeito de massa"
               ],
               "resposta": "Lesões ovais perpendiculares aos ventrículos",
               "explicacao": "Dedos de Dawson.",
@@ -2833,7 +2833,7 @@
                 "Metástases",
                 "Abscesso",
                 "AVC",
-                "Normal"
+                "Achado normal da idade"
               ],
               "resposta": "Metástases",
               "explicacao": "Pulmão é a origem mais comum.",
@@ -2878,8 +2878,8 @@
               "opcoes": [
                 "Ressonância de toda a coluna",
                 "Raio X",
-                "Nada",
-                "Tomografia de crânio"
+                "Tomografia de crânio",
+                "Raio X simples da coluna lombar"
               ],
               "resposta": "Ressonância de toda a coluna",
               "explicacao": "Suspeita de compressão da medula.",
@@ -2890,12 +2890,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado diferencia infecção de metástase na coluna?",
               "opcoes": [
-                "A infecção acomete o disco; a metástase costuma poupar",
+                "Infecção pega o disco; metástase costuma poupar",
                 "São iguais",
-                "A metástase acomete o disco",
-                "Nenhum"
+                "A metástase pega o disco",
+                "A metástase destrói sempre o disco e a infecção nunca o atinge"
               ],
-              "resposta": "A infecção acomete o disco; a metástase costuma poupar",
+              "resposta": "Infecção pega o disco; metástase costuma poupar",
               "explicacao": "Ajuda no diagnóstico.",
               "revisado": false
             },
@@ -2908,7 +2908,7 @@
                 "Espondilodiscite ou abscesso epidural",
                 "Lombalgia comum",
                 "Hérnia",
-                "Nada"
+                "Lombalgia mecânica por esforço físico no trabalho"
               ],
               "resposta": "Espondilodiscite ou abscesso epidural",
               "explicacao": "Ressonância urgente.",
@@ -2959,7 +2959,7 @@
                 "Fratura vertebral por osteoporose",
                 "Hérnia",
                 "Tumor",
-                "Normal"
+                "Achado normal da idade sem fratura"
               ],
               "resposta": "Fratura vertebral por osteoporose",
               "explicacao": "Investigar osteoporose.",
@@ -3013,7 +3013,7 @@
                 "Osteossarcoma",
                 "Fratura",
                 "Infecção",
-                "Normal"
+                "Achado normal do crescimento"
               ],
               "resposta": "Osteossarcoma",
               "explicacao": "Encaminhar para oncologia ortopédica.",
@@ -3024,12 +3024,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o padrão do osteoma osteoide?",
               "opcoes": [
-                "Pequena lesão com halo de esclerose e dor noturna que melhora com AAS",
+                "Lesão pequena com halo de esclerose e dor noturna",
                 "Lesão grande destrutiva",
                 "Fratura",
-                "Nada"
+                "Lesão grande e destrutiva com reação periosteal agressiva"
               ],
-              "resposta": "Pequena lesão com halo de esclerose e dor noturna que melhora com AAS",
+              "resposta": "Lesão pequena com halo de esclerose e dor noturna",
               "explicacao": "É benigno.",
               "revisado": false
             },
@@ -3042,7 +3042,7 @@
                 "Sarcoma de Ewing",
                 "Osteossarcoma",
                 "Fratura",
-                "Normal"
+                "Achado normal do crescimento"
               ],
               "resposta": "Sarcoma de Ewing",
               "explicacao": "Também infecção pode imitar.",
@@ -3075,12 +3075,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual exame avalia melhor lesões de mieloma?",
               "opcoes": [
-                "Ressonância ou tomografia de baixa dose de corpo inteiro",
+                "Ressonância ou tomografia de baixa dose",
                 "Cintilografia",
-                "Nada",
-                "Ultrassom"
+                "Ultrassom",
+                "Cintilografia óssea, que mostra bem todas as lesões do mieloma"
               ],
-              "resposta": "Ressonância ou tomografia de baixa dose de corpo inteiro",
+              "resposta": "Ressonância ou tomografia de baixa dose",
               "explicacao": "A cintilografia falha.",
               "revisado": false
             },
@@ -3139,7 +3139,7 @@
                 "Ultrassom do piloro",
                 "Raio X",
                 "Tomografia",
-                "Nada"
+                "Tomografia de abdome com contraste oral"
               ],
               "resposta": "Ultrassom do piloro",
               "explicacao": "O piloro fica espessado.",
@@ -3150,12 +3150,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado de raio X sugere maus-tratos na criança?",
               "opcoes": [
-                "Fraturas em fases diferentes de cura e fratura de canto metafisário",
-                "Fratura de clavícula ao nascer",
-                "Fratura de punho em adolescente",
-                "Nada"
+                "Fraturas em fases diferentes e de canto metafisário",
+                "Clavícula ao nascer",
+                "Punho em adolescente",
+                "Fratura de punho em adolescente após cair de skate"
               ],
-              "resposta": "Fraturas em fases diferentes de cura e fratura de canto metafisário",
+              "resposta": "Fraturas em fases diferentes e de canto metafisário",
               "explicacao": "Investigar.",
               "revisado": false
             },
@@ -3204,7 +3204,7 @@
                 "Sinal do polegar",
                 "Sinal da torre",
                 "Normal",
-                "Pneumotórax"
+                "Sinal da torre de igreja"
               ],
               "resposta": "Sinal do polegar",
               "explicacao": "A epiglote está inchada.",
@@ -3216,12 +3216,12 @@
               "caso": "Bebê de 2 dias com vômito bilioso.",
               "enunciado": "Qual é o exame urgente?",
               "opcoes": [
-                "Estudo contrastado do intestino para má rotação",
-                "Nada",
+                "Estudo contrastado para má rotação",
                 "Tomografia de crânio",
-                "Ultrassom de rim"
+                "Ultrassom de rim",
+                "Ultrassom de rins e tomografia de crânio"
               ],
-              "resposta": "Estudo contrastado do intestino para má rotação",
+              "resposta": "Estudo contrastado para má rotação",
               "explicacao": "O volvo pode matar o intestino.",
               "revisado": false
             }
@@ -3265,7 +3265,7 @@
                 "Artrose de quadril",
                 "Artrite séptica",
                 "Fratura",
-                "Normal"
+                "Achado normal da idade"
               ],
               "resposta": "Artrose de quadril",
               "explicacao": "Comum em idosos.",
@@ -3279,7 +3279,7 @@
                 "Ressonância",
                 "Raio X",
                 "Ultrassom",
-                "Nada"
+                "Raio X simples em duas posições"
               ],
               "resposta": "Ressonância",
               "explicacao": "O raio X altera depois.",
@@ -3292,9 +3292,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Punção do líquido articular",
-                "Raio X e alta",
+                "Raio X e liberar",
                 "Ressonância e esperar",
-                "Nada"
+                "Raio X simples e liberar com anti-inflamatório"
               ],
               "resposta": "Punção do líquido articular",
               "explicacao": "Excluir artrite séptica.",
@@ -3316,7 +3316,7 @@
                 "contorno",
                 "anel",
                 "alvo",
-                "halo"
+                "halo hipoecoico"
               ],
               "resposta": "contorno",
               "explicacao": "Cristais sobre a cartilagem.",
@@ -3330,7 +3330,7 @@
                 "Cabeça do úmero alta",
                 "Normal",
                 "Fratura",
-                "Luxação"
+                "Luxação anterior com fratura"
               ],
               "resposta": "Cabeça do úmero alta",
               "explicacao": "Ressonância ou ultrassom confirmam.",
@@ -3345,7 +3345,7 @@
                 "Sinal da lâmpada",
                 "Normal",
                 "Fratura",
-                "Bola"
+                "Sinal da bola de golfe"
               ],
               "resposta": "Sinal da lâmpada",
               "explicacao": "A cabeça do úmero gira.",
@@ -3398,8 +3398,8 @@
               "opcoes": [
                 "Drenagem guiada por imagem",
                 "Cirurgia aberta sempre",
-                "Nada",
-                "Mais antibiótico só"
+                "Mais antibiótico só",
+                "Mais antibiótico oral por três meses sem drenar"
               ],
               "resposta": "Drenagem guiada por imagem",
               "explicacao": "Guiada por ultrassom ou tomografia.",
@@ -3411,9 +3411,9 @@
               "enunciado": "Qual é o tratamento de sangramento de pelve após fratura no paciente instável?",
               "opcoes": [
                 "Embolização arterial ou tamponamento",
-                "Nada",
                 "Antibiótico",
-                "Raio X"
+                "Raio X",
+                "Raio X de pelve repetido e observação"
               ],
               "resposta": "Embolização arterial ou tamponamento",
               "explicacao": "Para o sangramento.",
@@ -3426,9 +3426,9 @@
               "enunciado": "Qual é o procedimento?",
               "opcoes": [
                 "Embolização das artérias brônquicas",
-                "Nada",
                 "Raio X",
-                "Antibiótico só"
+                "Antibiótico só",
+                "Raio X de tórax e antibiótico oral em casa"
               ],
               "resposta": "Embolização das artérias brônquicas",
               "explicacao": "Controla o sangramento.",
@@ -3462,9 +3462,9 @@
               "enunciado": "Qual é o tratamento minimamente invasivo para mioma?",
               "opcoes": [
                 "Embolização das artérias uterinas",
-                "Nada",
                 "Raio X",
-                "Antibiótico"
+                "Antibiótico",
+                "Antibiótico oral e anti-inflamatório"
               ],
               "resposta": "Embolização das artérias uterinas",
               "explicacao": "Alternativa à cirurgia.",
@@ -3477,9 +3477,9 @@
               "enunciado": "Qual é a opção?",
               "opcoes": [
                 "Ablação por radiofrequência",
-                "Nada",
                 "Raio X",
-                "Antibiótico"
+                "Antibiótico",
+                "Antibiótico venoso e observação"
               ],
               "resposta": "Ablação por radiofrequência",
               "explicacao": "Destrói o tumor pelo calor.",
@@ -3522,12 +3522,12 @@
               "caso": "Paciente com reação alérgica grave ao contraste iodado no passado precisa de nova tomografia.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar outro exame ou pré-medicação com corticoide e anti-histamínico",
+                "Outro exame ou pré-medicação com corticoide",
                 "Repetir sem preparo",
                 "Nunca fazer exame",
-                "Nada"
+                "Repetir o mesmo contraste sem nenhum preparo, porque a alergia não volta"
               ],
-              "resposta": "Considerar outro exame ou pré-medicação com corticoide e anti-histamínico",
+              "resposta": "Outro exame ou pré-medicação com corticoide",
               "explicacao": "Pesar riscos e benefícios.",
               "revisado": false
             },
@@ -3538,8 +3538,8 @@
               "opcoes": [
                 "Fibrose sistêmica nefrogênica",
                 "Alergia leve apenas",
-                "Nada",
-                "Hipoglicemia"
+                "Hipoglicemia",
+                "Hipoglicemia grave nas primeiras horas"
               ],
               "resposta": "Fibrose sistêmica nefrogênica",
               "explicacao": "Usar agentes mais seguros.",
@@ -3554,7 +3554,7 @@
                 "Extravasamento do contraste",
                 "Trombose",
                 "Normal",
-                "Infecção"
+                "Infecção bacteriana grave no braço"
               ],
               "resposta": "Extravasamento do contraste",
               "explicacao": "Elevar o braço e observar.",
@@ -3575,8 +3575,8 @@
               "opcoes": [
                 "venosa",
                 "oral apenas",
-                "nenhuma",
-                "gelada"
+                "gelada",
+                "com água gelada e refrigerante"
               ],
               "resposta": "venosa",
               "explicacao": "Em pacientes de alto risco.",
@@ -3588,9 +3588,9 @@
               "enunciado": "Qual é o cuidado com contraste iodado e hipertireoidismo não tratado?",
               "opcoes": [
                 "Pode piorar o hipertireoidismo",
-                "Nenhum",
                 "Melhora a tireoide",
-                "Cura"
+                "Cura",
+                "Cuidado nenhum; o iodo cura a tireoide"
               ],
               "resposta": "Pode piorar o hipertireoidismo",
               "explicacao": "Avaliar antes.",
@@ -3605,7 +3605,7 @@
                 "Reação vasovagal",
                 "Anafilaxia",
                 "Normal",
-                "Infarto"
+                "Infarto agudo do miocárdio"
               ],
               "resposta": "Reação vasovagal",
               "explicacao": "Tratada com elevação das pernas e atropina.",
@@ -3651,7 +3651,7 @@
                 "Observar ou ultrassom antes de tomografia",
                 "Tomografia sempre",
                 "Raio X diário",
-                "Nada"
+                "Tomografia com contraste em todas as crianças com dor"
               ],
               "resposta": "Observar ou ultrassom antes de tomografia",
               "explicacao": "Reduz radiação.",
@@ -3662,12 +3662,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o risco de doses altas e repetidas de radiação?",
               "opcoes": [
-                "Aumento do risco de câncer",
-                "Nenhum",
+                "Mais risco de câncer",
                 "Ganho de peso",
-                "Alergia"
+                "Alergia",
+                "Risco nenhum em qualquer dose"
               ],
-              "resposta": "Aumento do risco de câncer",
+              "resposta": "Mais risco de câncer",
               "explicacao": "Em doses de diagnóstico, o risco é pequeno.",
               "revisado": false
             },
@@ -3677,12 +3677,12 @@
               "caso": "Paciente faz várias tomografias em um ano por dor sem causa.",
               "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Avaliar a necessidade e considerar exames sem radiação",
+                "Rever a necessidade e usar exames sem radiação",
                 "Fazer mais",
-                "Nada",
-                "Proibir exames"
+                "Proibir exames",
+                "Fazer mais tomografias até encontrar a causa da dor"
               ],
-              "resposta": "Avaliar a necessidade e considerar exames sem radiação",
+              "resposta": "Rever a necessidade e usar exames sem radiação",
               "explicacao": "Evitar exposição acumulada.",
               "revisado": false
             },
@@ -3716,7 +3716,7 @@
                 "Tomografia de abdome",
                 "Raio X de tórax",
                 "Ultrassom",
-                "Ressonância"
+                "Ressonância de crânio"
               ],
               "resposta": "Tomografia de abdome",
               "explicacao": "O ultrassom e a ressonância não usam radiação.",
@@ -3728,12 +3728,12 @@
               "caso": "Gestante de 8 semanas fez raio X de tórax sem saber da gravidez.",
               "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Risco ao bebê desprezível nessa dose",
+                "Risco desprezível nessa dose",
                 "Interromper a gravidez",
                 "Muito risco",
-                "Nada"
+                "Risco muito alto, que exige interromper a gestação"
               ],
-              "resposta": "Risco ao bebê desprezível nessa dose",
+              "resposta": "Risco desprezível nessa dose",
               "explicacao": "A dose é muito baixa.",
               "revisado": false
             }
