@@ -1,4 +1,6 @@
-import type { Questao } from '../types'
+import type { RespostaDada } from '../types'
+
+export type { RespostaDada }
 
 // ============================================================
 // XP e níveis
@@ -13,10 +15,6 @@ export const XP_BONUS_PERFEITA = 5
 export const XP_POR_CASO_CLINICO = 2
 export const XP_POR_NIVEL = 100
 
-export interface RespostaDada {
-  questao: Questao
-  acertou: boolean
-}
 
 export function calcularXpSessao(respostas: RespostaDada[]) {
   const perfeita = respostas.length > 0 && respostas.every((r) => r.acertou)

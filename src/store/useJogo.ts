@@ -226,6 +226,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           subiuParaNivel: nivelDepois > nivelAntes ? nivelDepois : null,
           bateuMetaAgora,
           ofensiva: ofensiva.atual,
+          respostas,
         }
 
         set({

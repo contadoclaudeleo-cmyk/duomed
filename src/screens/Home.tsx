@@ -144,6 +144,7 @@ export function Home() {
                       aberto={aberta === licao.id}
                       aoAlternar={() => setAberta(aberta === licao.id ? null : licao.id)}
                       aoComecar={() => comecar(licao.id)}
+                      aoVerComentada={() => navegar(`/comentada/${licao.id}`)}
                     />
                   )
                 })}

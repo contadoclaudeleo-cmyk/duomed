@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Award, Clock, Flame, Target, TrendingUp, Zap, type LucideIcon } from 'lucide-react'
+import { Award, Clock, Flame, MessageSquareText, Target, TrendingUp, Zap, type LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
@@ -96,9 +96,14 @@ export function Resultado() {
         </div>
       </div>
 
-      <Botao larguraTotal onClick={() => navegar(r.modo === 'revisao' ? '/revisao' : '/', { replace: true })}>
-        Continuar
-      </Botao>
+      <div className="flex flex-col gap-3">
+        <Botao larguraTotal variante="contorno" onClick={() => navegar('/comentada')}>
+          <MessageSquareText className="h-5 w-5" strokeWidth={2.6} aria-hidden /> Ver revisão comentada
+        </Botao>
+        <Botao larguraTotal onClick={() => navegar(r.modo === 'revisao' ? '/revisao' : '/', { replace: true })}>
+          Continuar
+        </Botao>
+      </div>
     </div>
   )
 }

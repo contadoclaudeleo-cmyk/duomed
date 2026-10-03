@@ -57,7 +57,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     const certo = corrigir(item.questao, resposta)
     setAcertou(certo)
     setVerificada(true)
-    setRespostas((r) => [...r, { questao: item.questao, acertou: certo }])
+    setRespostas((r) => [...r, { questao: item.questao, acertou: certo, resposta }])
     // Salva na hora: estatísticas, fila de revisão e perda de vida
     if (modo !== 'nivelamento') responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
   }, [podeVerificar, item, resposta, responder, modo])

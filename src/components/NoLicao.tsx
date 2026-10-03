@@ -13,6 +13,8 @@ interface Props {
   aberto: boolean
   aoAlternar: () => void
   aoComecar: () => void
+  /** Abre a revisão comentada (só aparece em lição concluída) */
+  aoVerComentada: () => void
 }
 
 const cores: Record<StatusLicao, string> = {
@@ -22,7 +24,17 @@ const cores: Record<StatusLicao, string> = {
 }
 
 /** Um nó redondo da trilha, com o balão de detalhes ao tocar */
-export function NoLicao({ titulo, numero, totalNaUnidade, status, deslocamento, aberto, aoAlternar, aoComecar }: Props) {
+export function NoLicao({
+  titulo,
+  numero,
+  totalNaUnidade,
+  status,
+  deslocamento,
+  aberto,
+  aoAlternar,
+  aoComecar,
+  aoVerComentada,
+}: Props) {
   const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : Lock
 
   return (
@@ -85,6 +97,15 @@ export function NoLicao({ titulo, numero, totalNaUnidade, status, deslocamento, 
               <Botao larguraTotal tamanho="md" variante="claro" onClick={aoComecar}>
                 {status === 'concluida' ? 'Praticar de novo' : 'Começar'}
               </Botao>
+            )}
+            {status === 'concluida' && (
+              <button
+                type="button"
+                onClick={aoVerComentada}
+                className="mt-2 w-full rounded-2xl border-2 border-white/60 py-2.5 text-sm font-extrabold uppercase tracking-wide text-white transition-colors hover:bg-white/10"
+              >
+                Revisão comentada
+              </button>
             )}
           </motion.div>
         )}

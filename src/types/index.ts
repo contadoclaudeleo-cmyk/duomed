@@ -175,6 +175,13 @@ export type IdConquista =
 /** 'nivelamento' é o teste de nível: não gasta vidas nem dá XP */
 export type ModoSessao = 'licao' | 'revisao' | 'nivelamento'
 
+/** Uma questão respondida numa sessão, com o que a pessoa marcou */
+export interface RespostaDada {
+  questao: Questao
+  acertou: boolean
+  resposta: Resposta | null
+}
+
 export interface ResultadoSessao {
   modo: ModoSessao
   titulo: string
@@ -189,4 +196,6 @@ export interface ResultadoSessao {
   /** true se esta sessão fez a meta do dia ser batida agora */
   bateuMetaAgora: boolean
   ofensiva: number
+  /** Questões da sessão, para a revisão comentada */
+  respostas: RespostaDada[]
 }
