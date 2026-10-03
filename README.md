@@ -209,7 +209,9 @@ Dica: nos textos, prefira vírgula ou ponto em vez de travessão.
 - **Unidade do nível difícil:** igual a uma unidade comum, com o campo `"nivel": "dificil"`. Unidades sem esse campo são do nível fácil. Por organização, os ids das unidades difíceis usam a letra `d` (por exemplo `anat-d1`, com lições `anat-d1-l1`).
 - **Matéria nova:** crie um arquivo novo em `src/data/graduacao/` ou `src/data/residencia/` (por exemplo `histologia.json`). Ela aparece sozinha na tela de matérias. Uma matéria com `"unidades": []` aparece como "Em breve".
 
-Ícones disponíveis para o campo `icone`: `osso`, `coracao`, `frasco`, `pilula`, `microscopio`, `estetoscopio`, `bisturi`, `bebe`, `gestante`, `comunidade`.
+Ícones disponíveis para o campo `icone` (a lista completa está em `src/components/IconeMateria.tsx`): `osso`, `coracao`, `pulso`, `frasco`, `pilula`, `microscopio`, `estetoscopio`, `bisturi`, `bebe`, `gestante`, `comunidade`, `camadas`, `atomo`, `dna`, `escudo`, `microbio`, `inseto`, `conversa`, `balanca`, `pulmao`, `digestivo`, `rim`, `seringa`, `sangue`, `mao`, `termometro`, `cerebro`, `mente`, `pele`, `laco`, `poltrona`, `ondas`, `ouvido`, `olho`, `sono`, `imagem`, `sirene`, `casa`.
+
+No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide em qual grupo a matéria aparece na tela de matérias.
 
 ## Regras do jogo
 

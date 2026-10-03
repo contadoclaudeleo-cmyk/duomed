@@ -94,6 +94,9 @@ export interface Unidade {
 /** Graduação (matérias do curso) ou Residência (grandes áreas das provas) */
 export type ModoEstudo = 'graduacao' | 'residencia'
 
+/** Etapa do curso em que a matéria costuma ser vista (só no modo Graduação) */
+export type CicloCurso = 'basico' | 'clinico' | 'internato'
+
 /** Matéria como está escrita no arquivo JSON */
 export interface MateriaJson {
   id: string
@@ -102,6 +105,7 @@ export interface MateriaJson {
   /** Nome do ícone (ver src/components/IconeMateria.tsx) */
   icone: string
   ordem: number
+  ciclo?: CicloCurso
   /** Matéria sem unidades aparece como "em breve" */
   unidades: Unidade[]
 }
