@@ -5,5 +5,3741 @@
   "icone": "pulmao",
   "ordem": 22,
   "ciclo": "clinico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "pneumo-u1",
+      "titulo": "Avaliação respiratória",
+      "descricao": "Sintomas, exame e exames",
+      "licoes": [
+        {
+          "id": "pneumo-u1-l1",
+          "titulo": "Sintomas respiratórios",
+          "questoes": [
+            {
+              "id": "pneumo-u1-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma respiratório à causa comum.",
+              "pares": [
+                {
+                  "esquerda": "Tosse crônica em não fumante",
+                  "direita": "Rinite, asma ou refluxo"
+                },
+                {
+                  "esquerda": "Hemoptise em fumante",
+                  "direita": "Câncer de pulmão"
+                },
+                {
+                  "esquerda": "Chiado que melhora com broncodilatador",
+                  "direita": "Asma"
+                },
+                {
+                  "esquerda": "Escarro abundante por anos",
+                  "direita": "Bronquiectasias"
+                }
+              ],
+              "explicacao": "Tosse crônica dura mais de 8 semanas.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a definição de tosse crônica em adultos?",
+              "opcoes": [
+                "Mais de 8 semanas",
+                "Mais de 3 dias",
+                "Mais de 1 semana",
+                "Mais de 1 ano"
+              ],
+              "resposta": "Mais de 8 semanas",
+              "explicacao": "De 3 a 8 semanas é tosse subaguda.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hemoptise maciça é uma emergência pelo risco de asfixia.",
+              "resposta": true,
+              "explicacao": "O paciente deve ficar deitado sobre o lado que sangra.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a falta de ar que surge ao deitar e melhora ao sentar.",
+              "opcoes": [
+                "ortopneia",
+                "platipneia",
+                "trepopneia",
+                "taquipneia"
+              ],
+              "resposta": "ortopneia",
+              "explicacao": "É comum na insuficiência cardíaca.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sintoma sugere apneia obstrutiva do sono?",
+              "opcoes": [
+                "Ronco alto, pausas na respiração e sonolência de dia",
+                "Tosse com catarro",
+                "Febre",
+                "Dor no peito"
+              ],
+              "resposta": "Ronco alto, pausas na respiração e sonolência de dia",
+              "explicacao": "O escore STOP-BANG ajuda a rastrear.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem tosse seca há 3 meses desde que começou enalapril.",
+              "enunciado": "Qual é a causa provável?",
+              "opcoes": [
+                "Efeito colateral do inibidor da ECA",
+                "Asma",
+                "Câncer",
+                "Tuberculose"
+              ],
+              "resposta": "Efeito colateral do inibidor da ECA",
+              "explicacao": "A tosse melhora ao trocar o remédio.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O baqueteamento digital pode surgir em câncer de pulmão e doenças pulmonares crônicas.",
+              "resposta": true,
+              "explicacao": "A ponta dos dedos fica arredondada.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o som agudo, de assobio, causado pelo estreitamento das vias aéreas.",
+              "opcoes": [
+                "sibilo",
+                "estertor",
+                "atrito",
+                "estridor"
+              ],
+              "resposta": "sibilo",
+              "explicacao": "É típico da asma.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u1-l2",
+          "titulo": "Exame físico do tórax",
+          "questoes": [
+            {
+              "id": "pneumo-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado do exame do tórax à doença.",
+              "pares": [
+                {
+                  "esquerda": "Macicez e murmúrio ausente",
+                  "direita": "Derrame pleural"
+                },
+                {
+                  "esquerda": "Hipertimpanismo e murmúrio ausente",
+                  "direita": "Pneumotórax"
+                },
+                {
+                  "esquerda": "Macicez com estertores e sopro",
+                  "direita": "Pneumonia (consolidação)"
+                },
+                {
+                  "esquerda": "Murmúrio diminuído difuso",
+                  "direita": "Enfisema"
+                }
+              ],
+              "explicacao": "O frêmito também ajuda a diferenciar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que acontece com o frêmito toracovocal no derrame pleural?",
+              "opcoes": [
+                "Diminui",
+                "Aumenta",
+                "Não muda",
+                "Some só na pneumonia"
+              ],
+              "resposta": "Diminui",
+              "explicacao": "O líquido afasta o pulmão da parede.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na consolidação pneumônica, o frêmito toracovocal aumenta.",
+              "resposta": true,
+              "explicacao": "O tecido sólido conduz melhor o som.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os ___ são sons como de velcro ao final da inspiração, comuns na fibrose pulmonar.",
+              "opcoes": [
+                "estertores finos",
+                "sibilos",
+                "roncos",
+                "estridores"
+              ],
+              "resposta": "estertores finos",
+              "explicacao": "Também aparecem em edema pulmonar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que indica o estridor?",
+              "opcoes": [
+                "Obstrução das vias aéreas altas, como laringe e traqueia",
+                "Asma leve",
+                "Derrame",
+                "Pneumonia"
+              ],
+              "resposta": "Obstrução das vias aéreas altas, como laringe e traqueia",
+              "explicacao": "Pode ser emergência.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem falta de ar súbita, hipertimpanismo e murmúrio ausente no lado direito após trauma.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Pneumotórax",
+                "Derrame",
+                "Pneumonia",
+                "Asma"
+              ],
+              "resposta": "Pneumotórax",
+              "explicacao": "No pneumotórax hipertensivo, a traqueia desvia para o outro lado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O atrito pleural é um som áspero que acompanha a respiração na pleurite.",
+              "resposta": true,
+              "explicacao": "Desaparece quando surge derrame.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A respiração de ___ é rápida e profunda, típica da acidose metabólica.",
+              "opcoes": [
+                "Kussmaul",
+                "Cheyne-Stokes",
+                "Biot",
+                "apnêustica"
+              ],
+              "resposta": "Kussmaul",
+              "explicacao": "É comum na cetoacidose diabética.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u1-l3",
+          "titulo": "Exames respiratórios",
+          "questoes": [
+            {
+              "id": "pneumo-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que a espirometria mede?",
+              "opcoes": [
+                "Volumes e fluxos de ar dos pulmões",
+                "Oxigênio no sangue",
+                "Tamanho do coração",
+                "Infecção"
+              ],
+              "resposta": "Volumes e fluxos de ar dos pulmões",
+              "explicacao": "É o principal exame para asma e DPOC.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada padrão da espirometria à doença.",
+              "pares": [
+                {
+                  "esquerda": "Obstrutivo com resposta ao broncodilatador",
+                  "direita": "Asma"
+                },
+                {
+                  "esquerda": "Obstrutivo sem resposta",
+                  "direita": "DPOC"
+                },
+                {
+                  "esquerda": "Restritivo",
+                  "direita": "Fibrose pulmonar"
+                },
+                {
+                  "esquerda": "Normal com sintomas",
+                  "direita": "Avaliar outras causas"
+                }
+              ],
+              "explicacao": "A relação VEF1/CVF baixa define obstrução.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A oximetria de pulso estima a saturação de oxigênio sem furar o paciente.",
+              "resposta": true,
+              "explicacao": "Pode errar em má perfusão e intoxicação por monóxido de carbono.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na DPOC, a relação VEF1/CVF após broncodilatador é menor que ___.",
+              "opcoes": [
+                "0,70",
+                "0,90",
+                "1,00",
+                "0,50"
+              ],
+              "resposta": "0,70",
+              "explicacao": "É o critério de obstrução.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é melhor para ver nódulos pequenos no pulmão?",
+              "opcoes": [
+                "Tomografia de tórax",
+                "Raio X",
+                "Espirometria",
+                "Oximetria"
+              ],
+              "resposta": "Tomografia de tórax",
+              "explicacao": "A tomografia de baixa dose é usada no rastreamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com falta de ar tem gasometria com pH de 7,30, PaCO2 de 60 e bicarbonato de 30.",
+              "enunciado": "Como interpretar?",
+              "opcoes": [
+                "Acidose respiratória com compensação parcial",
+                "Alcalose metabólica",
+                "Acidose metabólica",
+                "Normal"
+              ],
+              "resposta": "Acidose respiratória com compensação parcial",
+              "explicacao": "O CO2 alto indica falta de ventilação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A difusão de monóxido de carbono (DLCO) cai no enfisema e na fibrose.",
+              "resposta": true,
+              "explicacao": "Na asma, costuma ser normal.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o exame que vê os brônquios por dentro com um aparelho flexível.",
+              "opcoes": [
+                "broncoscopia",
+                "endoscopia",
+                "colonoscopia",
+                "laringoscopia"
+              ],
+              "resposta": "broncoscopia",
+              "explicacao": "Permite colher material e retirar corpos estranhos.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-u2",
+      "titulo": "Asma e DPOC",
+      "descricao": "Doenças obstrutivas",
+      "licoes": [
+        {
+          "id": "pneumo-u2-l1",
+          "titulo": "Asma",
+          "questoes": [
+            {
+              "id": "pneumo-u2-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada remédio de asma ao papel.",
+              "pares": [
+                {
+                  "esquerda": "Corticoide inalatório",
+                  "direita": "Controle da inflamação"
+                },
+                {
+                  "esquerda": "Formoterol com budesonida",
+                  "direita": "Alívio e controle"
+                },
+                {
+                  "esquerda": "Salbutamol",
+                  "direita": "Alívio rápido"
+                },
+                {
+                  "esquerda": "Montelucaste",
+                  "direita": "Controle adicional"
+                }
+              ],
+              "explicacao": "O corticoide inalatório é a base do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento preferido de alívio na asma segundo o GINA?",
+              "opcoes": [
+                "Budesonida com formoterol quando necessário",
+                "Salbutamol sozinho sempre",
+                "Antibiótico",
+                "Corticoide oral"
+              ],
+              "resposta": "Budesonida com formoterol quando necessário",
+              "explicacao": "Reduz crises graves em comparação ao salbutamol isolado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Usar só broncodilatador de curta ação sem corticoide aumenta o risco de morte na asma.",
+              "resposta": true,
+              "explicacao": "Por isso não é mais recomendado isoladamente.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A asma é uma doença ___ crônica das vias aéreas com obstrução reversível.",
+              "opcoes": [
+                "inflamatória",
+                "infecciosa",
+                "cancerosa",
+                "congênita"
+              ],
+              "resposta": "inflamatória",
+              "explicacao": "A inflamação causa hiper-reatividade.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um sinal de asma mal controlada?",
+              "opcoes": [
+                "Sintomas mais de duas vezes por semana e acordar à noite",
+                "Nenhum sintoma",
+                "Exercício sem falta de ar",
+                "Uso raro de bombinha"
+              ],
+              "resposta": "Sintomas mais de duas vezes por semana e acordar à noite",
+              "explicacao": "Exige revisão do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Asmático usa a bombinha de corticoide, mas continua com sintomas.",
+              "enunciado": "Qual é a primeira coisa a avaliar?",
+              "opcoes": [
+                "Técnica inalatória e adesão",
+                "Trocar por antibiótico",
+                "Aumentar o corticoide oral",
+                "Cirurgia"
+              ],
+              "resposta": "Técnica inalatória e adesão",
+              "explicacao": "Muitos pacientes usam a bombinha de forma errada.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O espaçador melhora a chegada do remédio aos pulmões com a bombinha.",
+              "resposta": true,
+              "explicacao": "É essencial em crianças.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os gatilhos comuns da asma incluem ácaros, mofo, fumaça e ___ respiratórias.",
+              "opcoes": [
+                "infecções",
+                "vitaminas",
+                "frutas",
+                "águas"
+              ],
+              "resposta": "infecções",
+              "explicacao": "Evitar gatilhos ajuda no controle.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u2-l2",
+          "titulo": "DPOC",
+          "questoes": [
+            {
+              "id": "pneumo-u2-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de DPOC?",
+              "opcoes": [
+                "Tabagismo",
+                "Asma",
+                "Infecção viral",
+                "Alergia"
+              ],
+              "resposta": "Tabagismo",
+              "explicacao": "Fumaça de lenha também causa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tratamento à DPOC.",
+              "pares": [
+                {
+                  "esquerda": "Parar de fumar",
+                  "direita": "Única medida que muda a evolução da função pulmonar"
+                },
+                {
+                  "esquerda": "Broncodilatador de longa ação",
+                  "direita": "Reduz sintomas e crises"
+                },
+                {
+                  "esquerda": "Oxigênio domiciliar",
+                  "direita": "Aumenta a sobrevida na hipoxemia grave"
+                },
+                {
+                  "esquerda": "Reabilitação pulmonar",
+                  "direita": "Melhora a tolerância ao exercício"
+                }
+              ],
+              "explicacao": "O oxigênio deve ser usado mais de 15 horas por dia.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacinação contra gripe e pneumococo é recomendada para pacientes com DPOC.",
+              "resposta": true,
+              "explicacao": "Reduz infecções e internações.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ pulmonar é a destruição das paredes dos alvéolos, com perda da elasticidade.",
+              "opcoes": [
+                "enfisema",
+                "edema",
+                "infarto",
+                "abscesso"
+              ],
+              "resposta": "enfisema",
+              "explicacao": "É uma das formas da DPOC.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando indicar oxigênio domiciliar na DPOC?",
+              "opcoes": [
+                "PaO2 até 55 ou saturação até 88% em repouso",
+                "Sempre",
+                "Nunca",
+                "Só durante o sono"
+              ],
+              "resposta": "PaO2 até 55 ou saturação até 88% em repouso",
+              "explicacao": "Também com PaO2 até 59 com sinais de cor pulmonale.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 60 anos tem tosse com catarro há anos e falta de ar progressiva.",
+              "enunciado": "Qual exame confirma DPOC?",
+              "opcoes": [
+                "Espirometria com obstrução persistente após broncodilatador",
+                "Raio X",
+                "Tomografia",
+                "Hemograma"
+              ],
+              "resposta": "Espirometria com obstrução persistente após broncodilatador",
+              "explicacao": "A espirometria é obrigatória para o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A deficiência de alfa-1 antitripsina causa enfisema em jovens.",
+              "resposta": true,
+              "explicacao": "Deve ser pesquisada em DPOC precoce.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ pulmonale é a insuficiência do ventrículo direito causada por doença pulmonar.",
+              "opcoes": [
+                "cor",
+                "corpo",
+                "coração",
+                "ventrículo"
+              ],
+              "resposta": "cor",
+              "explicacao": "Causa edema e jugular cheia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u2-l3",
+          "titulo": "Crises e exacerbações",
+          "questoes": [
+            {
+              "id": "pneumo-u2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à gravidade da crise de asma.",
+              "pares": [
+                {
+                  "esquerda": "Fala frases completas",
+                  "direita": "Crise leve"
+                },
+                {
+                  "esquerda": "Fala só palavras",
+                  "direita": "Crise grave"
+                },
+                {
+                  "esquerda": "Tórax silencioso",
+                  "direita": "Risco de parada"
+                },
+                {
+                  "esquerda": "Saturação abaixo de 90%",
+                  "direita": "Precisa de oxigênio e tratamento intensivo"
+                }
+              ],
+              "explicacao": "O tórax silencioso é sinal de alerta máximo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento inicial da crise de asma no pronto-socorro?",
+              "opcoes": [
+                "Broncodilatador inalatório repetido, corticoide e oxigênio se necessário",
+                "Antibiótico",
+                "Sedativo",
+                "Nada"
+              ],
+              "resposta": "Broncodilatador inalatório repetido, corticoide e oxigênio se necessário",
+              "explicacao": "Ipratrópio é associado em crises graves.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Sedativos devem ser evitados na crise de asma, pois deprimem a respiração.",
+              "resposta": true,
+              "explicacao": "Podem levar à parada respiratória.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na exacerbação da DPOC, a meta de saturação é de ___.",
+              "opcoes": [
+                "88% a 92%",
+                "100%",
+                "75%",
+                "95% a 100%"
+              ],
+              "resposta": "88% a 92%",
+              "explicacao": "Oxigênio em excesso pode aumentar o CO2.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando usar antibiótico na exacerbação da DPOC?",
+              "opcoes": [
+                "Com aumento do volume e mudança da cor do escarro",
+                "Sempre",
+                "Nunca",
+                "Só com febre alta"
+              ],
+              "resposta": "Com aumento do volume e mudança da cor do escarro",
+              "explicacao": "São os critérios de Anthonisen.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC em crise tem pH de 7,28 e PaCO2 de 70, consciente.",
+              "enunciado": "Qual é a conduta ventilatória?",
+              "opcoes": [
+                "Ventilação não invasiva",
+                "Intubação imediata",
+                "Oxigênio a 100%",
+                "Nada"
+              ],
+              "resposta": "Ventilação não invasiva",
+              "explicacao": "Reduz a necessidade de intubação e mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sulfato de magnésio venoso pode ser usado na crise grave de asma.",
+              "resposta": true,
+              "explicacao": "Relaxa os músculos dos brônquios.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ de pico de fluxo expiratório ajuda o asmático a monitorar a função pulmonar em casa.",
+              "opcoes": [
+                "medidor",
+                "aparelho de pressão",
+                "termômetro",
+                "oxímetro"
+              ],
+              "resposta": "medidor",
+              "explicacao": "Queda indica piora.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-u3",
+      "titulo": "Infecções respiratórias",
+      "descricao": "Pneumonia e tuberculose",
+      "licoes": [
+        {
+          "id": "pneumo-u3-l1",
+          "titulo": "Pneumonia comunitária",
+          "questoes": [
+            {
+              "id": "pneumo-u3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada critério do CURB-65 ao significado.",
+              "pares": [
+                {
+                  "esquerda": "C",
+                  "direita": "Confusão mental"
+                },
+                {
+                  "esquerda": "U",
+                  "direita": "Ureia alta"
+                },
+                {
+                  "esquerda": "R",
+                  "direita": "Frequência respiratória de 30 ou mais"
+                },
+                {
+                  "esquerda": "B",
+                  "direita": "Pressão baixa"
+                }
+              ],
+              "explicacao": "O 65 é a idade de 65 anos ou mais.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o germe mais comum na pneumonia comunitária?",
+              "opcoes": [
+                "Streptococcus pneumoniae",
+                "Staphylococcus aureus",
+                "Pseudomonas",
+                "Mycoplasma apenas"
+              ],
+              "resposta": "Streptococcus pneumoniae",
+              "explicacao": "O pneumococo é o mais frequente.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com CURB-65 de 0 ou 1 podem ser tratados em casa, em geral.",
+              "resposta": true,
+              "explicacao": "Escores maiores indicam internação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na pneumonia, a radiografia mostra ___ no pulmão.",
+              "opcoes": [
+                "consolidação",
+                "hiperinsuflação",
+                "cavidade sempre",
+                "nódulo único"
+              ],
+              "resposta": "consolidação",
+              "explicacao": "Pode haver broncograma aéreo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico é usado na pneumonia comunitária em paciente saudável tratado em casa?",
+              "opcoes": [
+                "Amoxicilina",
+                "Meropenem",
+                "Vancomicina",
+                "Fluconazol"
+              ],
+              "resposta": "Amoxicilina",
+              "explicacao": "Em alérgicos, usa-se macrolídeo ou doxiciclina.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com pneumonia tem confusão, ureia alta e frequência respiratória de 32.",
+              "enunciado": "Qual é o CURB-65 e a conduta?",
+              "opcoes": [
+                "4; internar, considerando UTI",
+                "1; casa",
+                "0; casa",
+                "2; observar"
+              ],
+              "resposta": "4; internar, considerando UTI",
+              "explicacao": "Escore alto indica pneumonia grave.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pneumonia aspirativa é mais comum em pessoas com dificuldade para engolir ou rebaixamento da consciência.",
+              "resposta": true,
+              "explicacao": "Atinge mais o pulmão direito.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O derrame que surge junto com pneumonia é chamado de derrame ___.",
+              "opcoes": [
+                "parapneumônico",
+                "transudato",
+                "quiloso",
+                "maligno"
+              ],
+              "resposta": "parapneumônico",
+              "explicacao": "Se tiver pus, é empiema.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u3-l2",
+          "titulo": "Tuberculose pulmonar",
+          "questoes": [
+            {
+              "id": "pneumo-u3-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sintoma que deve levar à pesquisa de tuberculose?",
+              "opcoes": [
+                "Tosse por 3 semanas ou mais",
+                "Coriza",
+                "Febre de 1 dia",
+                "Espirros"
+              ],
+              "resposta": "Tosse por 3 semanas ou mais",
+              "explicacao": "Em populações vulneráveis, qualquer tempo de tosse.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à tuberculose.",
+              "pares": [
+                {
+                  "esquerda": "Caverna no ápice do pulmão",
+                  "direita": "Tuberculose pós-primária"
+                },
+                {
+                  "esquerda": "Nódulos pequenos difusos",
+                  "direita": "Tuberculose miliar"
+                },
+                {
+                  "esquerda": "Derrame com linfócitos e ADA alta",
+                  "direita": "Tuberculose pleural"
+                },
+                {
+                  "esquerda": "Linfonodo no hilo em criança",
+                  "direita": "Tuberculose primária"
+                }
+              ],
+              "explicacao": "A forma pleural é a mais comum fora do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tratamento da tuberculose dura no mínimo 6 meses.",
+              "resposta": true,
+              "explicacao": "Abandonar o tratamento leva à resistência.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O exame ___ rápido molecular detecta o bacilo e a resistência à rifampicina.",
+              "opcoes": [
+                "teste",
+                "cultivo",
+                "raio",
+                "sangue"
+              ],
+              "resposta": "teste",
+              "explicacao": "É feito no escarro.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que se usam quatro remédios no início do tratamento da tuberculose?",
+              "opcoes": [
+                "Para matar rápido os bacilos e evitar resistência",
+                "Para ficar mais barato",
+                "Para tratar outras infecções",
+                "Não há motivo"
+              ],
+              "resposta": "Para matar rápido os bacilos e evitar resistência",
+              "explicacao": "A fase intensiva dura 2 meses.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose pulmonar tem baciloscopia positiva.",
+              "enunciado": "O que fazer com as pessoas que moram com ele?",
+              "opcoes": [
+                "Avaliar todos os contatos",
+                "Nada",
+                "Isolar a família",
+                "Tratar todos com 4 remédios"
+              ],
+              "resposta": "Avaliar todos os contatos",
+              "explicacao": "Contatos com infecção latente recebem tratamento preventivo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pessoas com HIV devem ser testadas para tuberculose.",
+              "resposta": true,
+              "explicacao": "A coinfecção é muito grave.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A tuberculose ___ é resistente à rifampicina e à isoniazida.",
+              "opcoes": [
+                "multirresistente",
+                "sensível",
+                "latente",
+                "primária"
+              ],
+              "resposta": "multirresistente",
+              "explicacao": "Exige tratamento mais longo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u3-l3",
+          "titulo": "Outras infecções",
+          "questoes": [
+            {
+              "id": "pneumo-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção respiratória ao germe.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia atípica em jovem",
+                  "direita": "Mycoplasma"
+                },
+                {
+                  "esquerda": "Pneumonia em alcoólatra com escarro de groselha",
+                  "direita": "Klebsiella"
+                },
+                {
+                  "esquerda": "Pneumonia após gripe",
+                  "direita": "Staphylococcus aureus"
+                },
+                {
+                  "esquerda": "Pneumonia em HIV com CD4 baixo",
+                  "direita": "Pneumocystis"
+                }
+              ],
+              "explicacao": "O contexto orienta o antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da pneumonia por Pneumocystis?",
+              "opcoes": [
+                "Sulfametoxazol e trimetoprima",
+                "Amoxicilina",
+                "Fluconazol",
+                "Aciclovir"
+              ],
+              "resposta": "Sulfametoxazol e trimetoprima",
+              "explicacao": "Corticoide se a hipoxemia for grave.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O abscesso pulmonar costuma ser causado por germes anaeróbios da boca.",
+              "resposta": true,
+              "explicacao": "É mais comum após aspiração.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A bronquiolite em bebês é causada principalmente pelo vírus ___.",
+              "opcoes": [
+                "sincicial respiratório",
+                "influenza",
+                "rinovírus",
+                "adenovírus"
+              ],
+              "resposta": "sincicial respiratório",
+              "explicacao": "É mais comum no inverno.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a complicação da pneumonia que exige drenagem?",
+              "opcoes": [
+                "Empiema",
+                "Tosse",
+                "Febre",
+                "Dor leve"
+              ],
+              "resposta": "Empiema",
+              "explicacao": "O pus na pleura não melhora só com antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia tem derrame com pH de 7,0 e glicose baixa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Drenagem do tórax",
+                "Antibiótico apenas",
+                "Nada",
+                "Diurético"
+              ],
+              "resposta": "Drenagem do tórax",
+              "explicacao": "Indica derrame complicado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pneumonia associada à ventilação mecânica é uma infecção hospitalar grave.",
+              "resposta": true,
+              "explicacao": "Germes resistentes são comuns.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os critérios de ___ diferenciam exsudato de transudato no derrame pleural.",
+              "opcoes": [
+                "Light",
+                "Duke",
+                "Wells",
+                "CURB"
+              ],
+              "resposta": "Light",
+              "explicacao": "Usam proteína e LDH do líquido e do sangue.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-u4",
+      "titulo": "Doenças pleurais e vasculares",
+      "descricao": "Derrame, pneumotórax e embolia",
+      "licoes": [
+        {
+          "id": "pneumo-u4-l1",
+          "titulo": "Derrame pleural",
+          "questoes": [
+            {
+              "id": "pneumo-u4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de derrame à causa.",
+              "pares": [
+                {
+                  "esquerda": "Transudato",
+                  "direita": "Insuficiência cardíaca"
+                },
+                {
+                  "esquerda": "Exsudato com linfócitos",
+                  "direita": "Tuberculose"
+                },
+                {
+                  "esquerda": "Exsudato com células malignas",
+                  "direita": "Câncer"
+                },
+                {
+                  "esquerda": "Líquido leitoso",
+                  "direita": "Quilotórax"
+                }
+              ],
+              "explicacao": "A toracocentese diagnostica a causa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de derrame pleural?",
+              "opcoes": [
+                "Insuficiência cardíaca",
+                "Câncer",
+                "Tuberculose",
+                "Trauma"
+              ],
+              "resposta": "Insuficiência cardíaca",
+              "explicacao": "Costuma ser dos dois lados.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O derrame pleural unilateral em fumante deve levantar suspeita de câncer.",
+              "resposta": true,
+              "explicacao": "Exige investigação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a punção do tórax para retirar líquido pleural.",
+              "opcoes": [
+                "toracocentese",
+                "paracentese",
+                "pericardiocentese",
+                "punção lombar"
+              ],
+              "resposta": "toracocentese",
+              "explicacao": "É diagnóstica e terapêutica.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é o hemotórax?",
+              "opcoes": [
+                "Sangue na pleura",
+                "Ar na pleura",
+                "Pus na pleura",
+                "Linfa na pleura"
+              ],
+              "resposta": "Sangue na pleura",
+              "explicacao": "Geralmente ocorre em trauma.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de mama tem derrame pleural que volta após várias punções.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "Pleurodese ou cateter pleural de longa permanência",
+                "Punções diárias para sempre",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Pleurodese ou cateter pleural de longa permanência",
+              "explicacao": "A pleurodese faz a pleura grudar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O derrame pleural da tuberculose costuma ter adenosina deaminase alta.",
+              "resposta": true,
+              "explicacao": "É um exame útil no Brasil.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o acúmulo de linfa na pleura, com triglicerídeos altos no líquido.",
+              "opcoes": [
+                "quilotórax",
+                "hemotórax",
+                "pneumotórax",
+                "empiema"
+              ],
+              "resposta": "quilotórax",
+              "explicacao": "Ocorre por lesão do ducto torácico.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u4-l2",
+          "titulo": "Pneumotórax",
+          "questoes": [
+            {
+              "id": "pneumo-u4-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quem tem mais risco de pneumotórax espontâneo primário?",
+              "opcoes": [
+                "Homem jovem, alto, magro e fumante",
+                "Idosa obesa",
+                "Criança pequena",
+                "Atleta de força"
+              ],
+              "resposta": "Homem jovem, alto, magro e fumante",
+              "explicacao": "Ocorre por rompimento de pequenas bolhas.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de pneumotórax à característica.",
+              "pares": [
+                {
+                  "esquerda": "Primário",
+                  "direita": "Sem doença pulmonar conhecida"
+                },
+                {
+                  "esquerda": "Secundário",
+                  "direita": "Em quem tem DPOC ou outra doença"
+                },
+                {
+                  "esquerda": "Hipertensivo",
+                  "direita": "Ar acumula e comprime o coração"
+                },
+                {
+                  "esquerda": "Traumático",
+                  "direita": "Após ferimento ou trauma"
+                }
+              ],
+              "explicacao": "O hipertensivo é emergência.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O pneumotórax hipertensivo é diagnóstico clínico e não deve esperar radiografia.",
+              "resposta": true,
+              "explicacao": "A descompressão é imediata.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A descompressão do pneumotórax hipertensivo pode ser feita com agulha no ___ espaço intercostal na linha axilar média.",
+              "opcoes": [
+                "5º",
+                "2º",
+                "9º",
+                "1º"
+              ],
+              "resposta": "5º",
+              "explicacao": "O 2º espaço na linha hemiclavicular também é usado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta no pneumotórax pequeno sem sintomas?",
+              "opcoes": [
+                "Observação com oxigênio",
+                "Cirurgia",
+                "Dreno sempre",
+                "Nada"
+              ],
+              "resposta": "Observação com oxigênio",
+              "explicacao": "O oxigênio acelera a absorção do ar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em ventilação mecânica tem queda súbita da pressão, aumento da pressão nas vias aéreas e traqueia desviada.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Pneumotórax hipertensivo",
+                "Broncoespasmo",
+                "Rolha de secreção",
+                "Arritmia"
+              ],
+              "resposta": "Pneumotórax hipertensivo",
+              "explicacao": "A ventilação com pressão positiva aumenta o risco.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Mergulho e viagem de avião devem ser evitados logo após pneumotórax.",
+              "resposta": true,
+              "explicacao": "A mudança de pressão pode piorar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Após pneumotórax recorrente, a cirurgia com ___ reduz novas recorrências.",
+              "opcoes": [
+                "pleurodese",
+                "lobectomia",
+                "transplante",
+                "traqueostomia"
+              ],
+              "resposta": "pleurodese",
+              "explicacao": "Pode ser feita por videotoracoscopia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u4-l3",
+          "titulo": "Embolia pulmonar",
+          "questoes": [
+            {
+              "id": "pneumo-u4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fator à tríade de Virchow.",
+              "pares": [
+                {
+                  "esquerda": "Estase",
+                  "direita": "Imobilização prolongada"
+                },
+                {
+                  "esquerda": "Lesão do endotélio",
+                  "direita": "Cirurgia ou trauma"
+                },
+                {
+                  "esquerda": "Hipercoagulabilidade",
+                  "direita": "Câncer ou anticoncepcional"
+                },
+                {
+                  "esquerda": "Viagem longa",
+                  "direita": "Estase por ficar sentado"
+                }
+              ],
+              "explicacao": "A tríade explica a formação de trombos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sintoma mais comum da embolia pulmonar?",
+              "opcoes": [
+                "Falta de ar súbita",
+                "Tosse com catarro",
+                "Febre alta",
+                "Dor abdominal"
+              ],
+              "resposta": "Falta de ar súbita",
+              "explicacao": "Taquicardia e dor ao respirar também são comuns.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O D-dímero normal ajuda a excluir embolia em pacientes de baixa probabilidade.",
+              "resposta": true,
+              "explicacao": "Não serve para confirmar o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de tórax é o exame de escolha para confirmar embolia pulmonar.",
+              "opcoes": [
+                "angiotomografia",
+                "radiografia",
+                "ultrassonografia",
+                "espirometria"
+              ],
+              "resposta": "angiotomografia",
+              "explicacao": "A cintilografia é alternativa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da embolia pulmonar estável?",
+              "opcoes": [
+                "Anticoagulação",
+                "Trombolítico sempre",
+                "Antibiótico",
+                "Repouso apenas"
+              ],
+              "resposta": "Anticoagulação",
+              "explicacao": "O trombolítico é para embolia com choque.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com embolia pulmonar maciça tem pressão de 70/40.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Trombolítico",
+                "Só heparina",
+                "Alta",
+                "Diurético"
+              ],
+              "resposta": "Trombolítico",
+              "explicacao": "A embolia com choque tem alta mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A prevenção de trombose em pacientes internados inclui heparina e mobilização precoce.",
+              "resposta": true,
+              "explicacao": "É chamada de profilaxia.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os escores de ___ e Genebra estimam a probabilidade de embolia pulmonar.",
+              "opcoes": [
+                "Wells",
+                "Glasgow",
+                "Apgar",
+                "Light"
+              ],
+              "resposta": "Wells",
+              "explicacao": "Orientam os exames.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-u5",
+      "titulo": "Doenças intersticiais e câncer",
+      "descricao": "Fibrose, sono e tumores",
+      "licoes": [
+        {
+          "id": "pneumo-u5-l1",
+          "titulo": "Doenças intersticiais",
+          "questoes": [
+            {
+              "id": "pneumo-u5-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado típico da fibrose pulmonar idiopática na tomografia?",
+              "opcoes": [
+                "Faveolamento nas bases",
+                "Cavidade no ápice",
+                "Derrame",
+                "Nódulo único"
+              ],
+              "resposta": "Faveolamento nas bases",
+              "explicacao": "O padrão é chamado de pneumonia intersticial usual.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exposição à doença pulmonar.",
+              "pares": [
+                {
+                  "esquerda": "Sílica",
+                  "direita": "Silicose"
+                },
+                {
+                  "esquerda": "Amianto",
+                  "direita": "Asbestose e mesotelioma"
+                },
+                {
+                  "esquerda": "Fezes de pássaros",
+                  "direita": "Pneumonite de hipersensibilidade"
+                },
+                {
+                  "esquerda": "Algodão",
+                  "direita": "Bissinose"
+                }
+              ],
+              "explicacao": "A história ocupacional é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os antifibróticos, como nintedanibe e pirfenidona, retardam a fibrose pulmonar idiopática.",
+              "resposta": true,
+              "explicacao": "Não revertem a fibrose já instalada.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é uma doença com granulomas sem necrose, com linfonodos no hilo dos dois lados.",
+              "opcoes": [
+                "sarcoidose",
+                "tuberculose",
+                "silicose",
+                "asbestose"
+              ],
+              "resposta": "sarcoidose",
+              "explicacao": "Pode afetar pele, olhos e coração.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio pode causar fibrose pulmonar?",
+              "opcoes": [
+                "Amiodarona",
+                "Paracetamol",
+                "Amoxicilina",
+                "Omeprazol"
+              ],
+              "resposta": "Amiodarona",
+              "explicacao": "Bleomicina e metotrexato também.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criador de pombos tem falta de ar e tosse que melhoram quando viaja.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Pneumonite de hipersensibilidade",
+                "Asma",
+                "Tuberculose",
+                "Câncer"
+              ],
+              "resposta": "Pneumonite de hipersensibilidade",
+              "explicacao": "Afastar a exposição é fundamental.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As placas pleurais calcificadas indicam exposição ao amianto.",
+              "resposta": true,
+              "explicacao": "Não são câncer, mas marcam o risco.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é o câncer da pleura ligado ao amianto.",
+              "opcoes": [
+                "mesotelioma",
+                "adenocarcinoma",
+                "sarcoma",
+                "linfoma"
+              ],
+              "resposta": "mesotelioma",
+              "explicacao": "Surge décadas após a exposição.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u5-l2",
+          "titulo": "Câncer de pulmão",
+          "questoes": [
+            {
+              "id": "pneumo-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de câncer de pulmão à característica.",
+              "pares": [
+                {
+                  "esquerda": "Adenocarcinoma",
+                  "direita": "Mais comum, periferia, também em não fumantes"
+                },
+                {
+                  "esquerda": "Carcinoma epidermoide",
+                  "direita": "Central, ligado ao fumo, cálcio alto"
+                },
+                {
+                  "esquerda": "Pequenas células",
+                  "direita": "Central, agressivo, síndromes hormonais"
+                },
+                {
+                  "esquerda": "Grandes células",
+                  "direita": "Periférico e pouco diferenciado"
+                }
+              ],
+              "explicacao": "O de pequenas células é tratado principalmente com quimioterapia.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de risco do câncer de pulmão?",
+              "opcoes": [
+                "Tabagismo",
+                "Poluição apenas",
+                "Genética apenas",
+                "Alimentação"
+              ],
+              "resposta": "Tabagismo",
+              "explicacao": "Cerca de 85% dos casos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O rastreamento com tomografia de baixa dose reduz a mortalidade em fumantes pesados.",
+              "resposta": true,
+              "explicacao": "É indicado para pessoas de 50 a 80 anos com carga tabágica alta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ é a compressão da veia cava superior, com inchaço do rosto e braços.",
+              "opcoes": [
+                "veia cava superior",
+                "Horner",
+                "Pancoast",
+                "Cushing"
+              ],
+              "resposta": "veia cava superior",
+              "explicacao": "Pode ser causada por câncer de pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual síndrome hormonal é típica do câncer de pulmão de pequenas células?",
+              "opcoes": [
+                "Secreção inadequada de hormônio antidiurético",
+                "Hipercalcemia",
+                "Hipertireoidismo",
+                "Diabetes"
+              ],
+              "resposta": "Secreção inadequada de hormônio antidiurético",
+              "explicacao": "Causa sódio baixo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Fumante tem nódulo de 2 cm, irregular, que cresceu em 6 meses.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Investigar com PET-CT e biópsia",
+                "Nada",
+                "Raio X em 2 anos",
+                "Antibiótico"
+              ],
+              "resposta": "Investigar com PET-CT e biópsia",
+              "explicacao": "Crescimento e bordas irregulares sugerem câncer.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Tumores com mutação do EGFR podem ser tratados com remédios-alvo.",
+              "resposta": true,
+              "explicacao": "São mais comuns em não fumantes.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tumor de ___ fica no ápice do pulmão e pode causar dor no ombro e síndrome de Horner.",
+              "opcoes": [
+                "Pancoast",
+                "Wilms",
+                "Klatskin",
+                "Krukenberg"
+              ],
+              "resposta": "Pancoast",
+              "explicacao": "Invade o plexo braquial.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-u5-l3",
+          "titulo": "Distúrbios do sono e ventilação",
+          "questoes": [
+            {
+              "id": "pneumo-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento padrão da apneia obstrutiva do sono moderada a grave?",
+              "opcoes": [
+                "CPAP",
+                "Remédio para dormir",
+                "Cirurgia sempre",
+                "Nada"
+              ],
+              "resposta": "CPAP",
+              "explicacao": "O CPAP mantém a via aérea aberta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada consequência à apneia do sono não tratada.",
+              "pares": [
+                {
+                  "esquerda": "Sistema cardiovascular",
+                  "direita": "Hipertensão e arritmias"
+                },
+                {
+                  "esquerda": "Trânsito",
+                  "direita": "Acidentes por sonolência"
+                },
+                {
+                  "esquerda": "Metabolismo",
+                  "direita": "Resistência à insulina"
+                },
+                {
+                  "esquerda": "Cognição",
+                  "direita": "Falta de memória e atenção"
+                }
+              ],
+              "explicacao": "O tratamento reduz muitos riscos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A obesidade é o principal fator de risco para apneia obstrutiva do sono.",
+              "resposta": true,
+              "explicacao": "A perda de peso ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O exame padrão para diagnosticar apneia do sono é a ___.",
+              "opcoes": [
+                "polissonografia",
+                "espirometria",
+                "eletrocardiograma",
+                "gasometria"
+              ],
+              "resposta": "polissonografia",
+              "explicacao": "Mede respiração, oxigênio e sono.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que mede o índice de apneia e hipopneia?",
+              "opcoes": [
+                "Número de pausas respiratórias por hora de sono",
+                "Tempo de sono",
+                "Número de roncos",
+                "Oxigênio no dia"
+              ],
+              "resposta": "Número de pausas respiratórias por hora de sono",
+              "explicacao": "Acima de 30 por hora é grave.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Motorista de caminhão obeso cochila ao volante e ronca muito.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Investigar apneia do sono e orientar sobre o risco ao dirigir",
+                "Dar café",
+                "Nada",
+                "Remédio para dormir"
+              ],
+              "resposta": "Investigar apneia do sono e orientar sobre o risco ao dirigir",
+              "explicacao": "A sonolência ao dirigir é perigosa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Benzodiazepínicos e álcool pioram a apneia do sono.",
+              "resposta": true,
+              "explicacao": "Relaxam os músculos da garganta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de obesidade e ___ causa CO2 alto no sangue durante o dia.",
+              "opcoes": [
+                "hipoventilação",
+                "hiperventilação",
+                "asma",
+                "fibrose"
+              ],
+              "resposta": "hipoventilação",
+              "explicacao": "É uma complicação da obesidade grave.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-d1",
+      "titulo": "Asma e DPOC em casos",
+      "descricao": "Manejo avançado",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "pneumo-d1-l1",
+          "titulo": "Asma em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Asmática usa budesonida e formoterol em dose média e ainda tem crises.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Encaminhar para avaliação de asma grave e considerar biológico",
+                "Parar o tratamento",
+                "Antibiótico",
+                "Corticoide oral contínuo como primeira escolha"
+              ],
+              "resposta": "Encaminhar para avaliação de asma grave e considerar biológico",
+              "explicacao": "Biológicos reduzem crises e o uso de corticoide oral.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada biológico ao alvo na asma grave.",
+              "pares": [
+                {
+                  "esquerda": "Omalizumabe",
+                  "direita": "IgE"
+                },
+                {
+                  "esquerda": "Mepolizumabe",
+                  "direita": "Interleucina 5"
+                },
+                {
+                  "esquerda": "Dupilumabe",
+                  "direita": "Receptor da interleucina 4"
+                },
+                {
+                  "esquerda": "Tezepelumabe",
+                  "direita": "TSLP"
+                }
+              ],
+              "explicacao": "A escolha depende do perfil inflamatório.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame ajuda a definir asma eosinofílica?",
+              "opcoes": [
+                "Eosinófilos no sangue",
+                "Hemoglobina",
+                "Plaquetas",
+                "Glicemia"
+              ],
+              "resposta": "Eosinófilos no sangue",
+              "explicacao": "Valores altos indicam boa resposta a anti-IL-5.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com asma e pólipos nasais tem crises graves após tomar AAS.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Doença respiratória exacerbada por aspirina",
+                "Asma comum",
+                "Alergia alimentar",
+                "Infecção"
+              ],
+              "resposta": "Doença respiratória exacerbada por aspirina",
+              "explicacao": "Deve evitar anti-inflamatórios.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A asma relacionada ao trabalho deve ser investigada quando os sintomas melhoram nas férias.",
+              "resposta": true,
+              "explicacao": "O afastamento da exposição é parte do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A disfunção de ___ vocais imita asma, com estridor e falta de ar.",
+              "opcoes": [
+                "cordas",
+                "pregas apenas",
+                "músculos",
+                "ossos"
+              ],
+              "resposta": "cordas",
+              "explicacao": "A laringoscopia durante a crise confirma.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco do uso frequente de corticoide oral na asma?",
+              "opcoes": [
+                "Osteoporose, diabetes, catarata e infecções",
+                "Nenhum",
+                "Melhora a imunidade",
+                "Cura a asma"
+              ],
+              "resposta": "Osteoporose, diabetes, catarata e infecções",
+              "explicacao": "Os biológicos ajudam a reduzir esse uso.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante asmática pergunta se deve parar a bombinha de corticoide.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Manter, pois a asma descontrolada é mais perigosa para o bebê",
+                "Parar",
+                "Trocar por corticoide oral",
+                "Usar só quando tiver crise grave"
+              ],
+              "resposta": "Manter, pois a asma descontrolada é mais perigosa para o bebê",
+              "explicacao": "A budesonida é segura na gestação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d1-l2",
+          "titulo": "DPOC em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo da DPOC (GOLD) ao tratamento inicial.",
+              "pares": [
+                {
+                  "esquerda": "Grupo A",
+                  "direita": "Um broncodilatador"
+                },
+                {
+                  "esquerda": "Grupo B",
+                  "direita": "Dois broncodilatadores de longa ação"
+                },
+                {
+                  "esquerda": "Grupo E (exacerbações)",
+                  "direita": "Dois broncodilatadores e considerar corticoide inalatório"
+                },
+                {
+                  "esquerda": "Eosinófilos acima de 300",
+                  "direita": "Benefício do corticoide inalatório"
+                }
+              ],
+              "explicacao": "A escolha depende dos sintomas e das crises.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC tem muitas exacerbações, eosinófilos de 400 e usa dois broncodilatadores.",
+              "enunciado": "Qual ajuste fazer?",
+              "opcoes": [
+                "Associar corticoide inalatório",
+                "Suspender tudo",
+                "Antibiótico contínuo sempre",
+                "Corticoide oral contínuo"
+              ],
+              "resposta": "Associar corticoide inalatório",
+              "explicacao": "Eosinófilos altos predizem resposta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta da reabilitação pulmonar na DPOC?",
+              "opcoes": [
+                "Melhorar o fôlego, a força e a qualidade de vida",
+                "Curar a DPOC",
+                "Substituir os remédios",
+                "Aumentar o tabagismo"
+              ],
+              "resposta": "Melhorar o fôlego, a força e a qualidade de vida",
+              "explicacao": "Reduz também internações.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC grave tem saturação de 86% em repouso e PaO2 de 52.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Oxigênio domiciliar por mais de 15 horas por dia",
+                "Nada",
+                "Oxigênio só para dormir",
+                "Ventilação mecânica em casa sempre"
+              ],
+              "resposta": "Oxigênio domiciliar por mais de 15 horas por dia",
+              "explicacao": "Aumenta a sobrevida.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A azitromicina contínua pode reduzir exacerbações em pacientes selecionados com DPOC.",
+              "resposta": true,
+              "explicacao": "Deve-se avaliar audição e QT.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ pulmonar remove partes destruídas do pulmão em enfisema grave selecionado.",
+              "opcoes": [
+                "redução volumétrica",
+                "transplante apenas",
+                "biópsia",
+                "drenagem"
+              ],
+              "resposta": "redução volumétrica",
+              "explicacao": "Válvulas endobrônquicas também são opção.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual paciente com DPOC deve ser avaliado para transplante de pulmão?",
+              "opcoes": [
+                "Doença muito grave apesar de tratamento máximo",
+                "Todos",
+                "Nenhum",
+                "Fumantes ativos"
+              ],
+              "resposta": "Doença muito grave apesar de tratamento máximo",
+              "explicacao": "Fumar é contraindicação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC tem cansaço, edema nas pernas e jugular cheia.",
+              "enunciado": "Qual é a complicação?",
+              "opcoes": [
+                "Cor pulmonale (insuficiência do ventrículo direito)",
+                "Infarto",
+                "Cirrose",
+                "Asma"
+              ],
+              "resposta": "Cor pulmonale (insuficiência do ventrículo direito)",
+              "explicacao": "O oxigênio é parte do tratamento.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d1-l3",
+          "titulo": "Gasometria em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d1-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem pH de 7,50, PaCO2 de 28 e bicarbonato de 22 durante crise de ansiedade.",
+              "enunciado": "Qual é o distúrbio?",
+              "opcoes": [
+                "Alcalose respiratória aguda",
+                "Acidose metabólica",
+                "Alcalose metabólica",
+                "Acidose respiratória"
+              ],
+              "resposta": "Alcalose respiratória aguda",
+              "explicacao": "A hiperventilação elimina CO2.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada gasometria ao distúrbio.",
+              "pares": [
+                {
+                  "esquerda": "pH baixo e CO2 alto",
+                  "direita": "Acidose respiratória"
+                },
+                {
+                  "esquerda": "pH baixo e bicarbonato baixo",
+                  "direita": "Acidose metabólica"
+                },
+                {
+                  "esquerda": "pH alto e CO2 baixo",
+                  "direita": "Alcalose respiratória"
+                },
+                {
+                  "esquerda": "pH alto e bicarbonato alto",
+                  "direita": "Alcalose metabólica"
+                }
+              ],
+              "explicacao": "Sempre verificar a compensação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a fórmula de Winter usada na acidose metabólica?",
+              "opcoes": [
+                "PaCO2 esperada = 1,5 x bicarbonato + 8 (± 2)",
+                "PaCO2 = bicarbonato",
+                "pH = 7,4 x 2",
+                "Ânion gap = sódio menos cloro"
+              ],
+              "resposta": "PaCO2 esperada = 1,5 x bicarbonato + 8 (± 2)",
+              "explicacao": "Valores diferentes indicam distúrbio misto.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em cetoacidose tem bicarbonato de 10 e PaCO2 de 35.",
+              "enunciado": "Como interpretar?",
+              "opcoes": [
+                "Acidose metabólica com acidose respiratória associada",
+                "Compensação adequada",
+                "Alcalose",
+                "Normal"
+              ],
+              "resposta": "Acidose metabólica com acidose respiratória associada",
+              "explicacao": "A PaCO2 esperada seria cerca de 23.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A diferença alvéolo-arterial de oxigênio aumentada indica problema nos pulmões.",
+              "resposta": true,
+              "explicacao": "Na hipoventilação pura, ela é normal.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A relação ___ é a PaO2 dividida pela fração de oxigênio inspirado, usada na síndrome do desconforto respiratório.",
+              "opcoes": [
+                "P/F",
+                "A/a",
+                "V/Q",
+                "I/E"
+              ],
+              "resposta": "P/F",
+              "explicacao": "Abaixo de 300 indica lesão pulmonar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa de hipoxemia que não melhora com oxigênio?",
+              "opcoes": [
+                "Shunt",
+                "Hipoventilação",
+                "Altitude",
+                "Distúrbio de difusão leve"
+              ],
+              "resposta": "Shunt",
+              "explicacao": "Ocorre quando o sangue passa por áreas sem ventilação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente intoxicado por opioide tem PaCO2 de 70 e PaO2 de 55, com gradiente alvéolo-arterial normal.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Hipoventilação",
+                "Shunt",
+                "Embolia",
+                "Fibrose"
+              ],
+              "resposta": "Hipoventilação",
+              "explicacao": "O pulmão está normal, falta ventilação.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-d2",
+      "titulo": "Infecções em casos",
+      "descricao": "Pneumonia grave e tuberculose avançada",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "pneumo-d2-l1",
+          "titulo": "Pneumonia grave",
+          "questoes": [
+            {
+              "id": "pneumo-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia tem pressão baixa, precisa de noradrenalina e oxigênio em alto fluxo.",
+              "enunciado": "Qual esquema de antibiótico empírico?",
+              "opcoes": [
+                "Ceftriaxona com azitromicina, em UTI",
+                "Amoxicilina oral",
+                "Azitromicina sozinha",
+                "Nenhum"
+              ],
+              "resposta": "Ceftriaxona com azitromicina, em UTI",
+              "explicacao": "Pneumonia grave precisa de cobertura para atípicos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fator ao germe resistente na pneumonia.",
+              "pares": [
+                {
+                  "esquerda": "Internação recente com antibiótico venoso",
+                  "direita": "Pseudomonas"
+                },
+                {
+                  "esquerda": "Colonização prévia por MRSA",
+                  "direita": "Staphylococcus resistente"
+                },
+                {
+                  "esquerda": "Bronquiectasias",
+                  "direita": "Pseudomonas e outros gram-negativos"
+                },
+                {
+                  "esquerda": "Aspiração em idoso acamado",
+                  "direita": "Anaeróbios e gram-negativos"
+                }
+              ],
+              "explicacao": "O risco individual guia o espectro do antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual corticoide pode ser usado na pneumonia comunitária grave?",
+              "opcoes": [
+                "Hidrocortisona em pacientes selecionados",
+                "Prednisona em todos",
+                "Dexametasona sempre",
+                "Nenhum"
+              ],
+              "resposta": "Hidrocortisona em pacientes selecionados",
+              "explicacao": "Estudos recentes mostraram benefício na pneumonia grave.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com gripe grave há 5 dias piora com pneumonia necrosante e cavidades.",
+              "enunciado": "Qual germe suspeitar?",
+              "opcoes": [
+                "Staphylococcus aureus",
+                "Mycoplasma",
+                "Haemophilus",
+                "Legionella"
+              ],
+              "resposta": "Staphylococcus aureus",
+              "explicacao": "Pode ser MRSA comunitário.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O antígeno urinário do pneumococo e da Legionella ajuda no diagnóstico da pneumonia.",
+              "resposta": true,
+              "explicacao": "O resultado sai rápido.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome do desconforto respiratório ___ é uma lesão pulmonar difusa com hipoxemia grave.",
+              "opcoes": [
+                "agudo",
+                "crônico",
+                "leve",
+                "infantil"
+              ],
+              "resposta": "agudo",
+              "explicacao": "Pode ser causada por pneumonia e sepse.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a estratégia ventilatória na síndrome do desconforto respiratório agudo?",
+              "opcoes": [
+                "Volume corrente baixo, cerca de 6 mL/kg do peso ideal",
+                "Volume alto",
+                "Sem PEEP",
+                "Oxigênio a 100% sem limite"
+              ],
+              "resposta": "Volume corrente baixo, cerca de 6 mL/kg do peso ideal",
+              "explicacao": "Reduz a lesão causada pelo ventilador.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com síndrome do desconforto respiratório grave tem P/F de 90 apesar da ventilação protetora.",
+              "enunciado": "Qual medida pode ajudar?",
+              "opcoes": [
+                "Posição prona",
+                "Sentar o paciente",
+                "Reduzir a PEEP",
+                "Retirar a sedação"
+              ],
+              "resposta": "Posição prona",
+              "explicacao": "A prona por longos períodos reduz a mortalidade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d2-l2",
+          "titulo": "Tuberculose em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose em tratamento há 2 meses ainda tem baciloscopia positiva.",
+              "enunciado": "O que investigar?",
+              "opcoes": [
+                "Adesão e resistência com cultura e teste de sensibilidade",
+                "Nada",
+                "Alergia",
+                "Câncer"
+              ],
+              "resposta": "Adesão e resistência com cultura e teste de sensibilidade",
+              "explicacao": "A falta de adesão é a causa mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada efeito adverso ao remédio da tuberculose.",
+              "pares": [
+                {
+                  "esquerda": "Hepatite",
+                  "direita": "Isoniazida, rifampicina e pirazinamida"
+                },
+                {
+                  "esquerda": "Neurite óptica",
+                  "direita": "Etambutol"
+                },
+                {
+                  "esquerda": "Neuropatia periférica",
+                  "direita": "Isoniazida"
+                },
+                {
+                  "esquerda": "Dor nas articulações e gota",
+                  "direita": "Pirazinamida"
+                }
+              ],
+              "explicacao": "A piridoxina previne a neuropatia.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta na hepatotoxicidade grave pelos remédios da tuberculose?",
+              "opcoes": [
+                "Suspender e reintroduzir os remédios um a um",
+                "Manter tudo",
+                "Aumentar a dose",
+                "Trocar por antibiótico comum"
+              ],
+              "resposta": "Suspender e reintroduzir os remédios um a um",
+              "explicacao": "Às vezes é preciso esquema alternativo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e tuberculose pulmonar inicia tratamento.",
+              "enunciado": "Qual é a interação mais importante?",
+              "opcoes": [
+                "Rifampicina reduz o nível de muitos antirretrovirais",
+                "Nenhuma",
+                "Etambutol aumenta o HIV",
+                "Isoniazida cura o HIV"
+              ],
+              "resposta": "Rifampicina reduz o nível de muitos antirretrovirais",
+              "explicacao": "O esquema antirretroviral deve ser ajustado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tuberculose pleural costuma ter derrame com linfócitos e baciloscopia negativa no líquido.",
+              "resposta": true,
+              "explicacao": "A biópsia pleural e a ADA ajudam.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A prova ___ e o IGRA detectam infecção latente pela tuberculose.",
+              "opcoes": [
+                "tuberculínica",
+                "rápida",
+                "molecular",
+                "de escarro"
+              ],
+              "resposta": "tuberculínica",
+              "explicacao": "Não diferenciam latente de ativa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais pacientes com infecção latente de tuberculose têm prioridade para tratamento preventivo?",
+              "opcoes": [
+                "Pessoas com HIV, contatos recentes e quem vai usar imunobiológicos",
+                "Todos os adultos",
+                "Apenas idosos",
+                "Ninguém"
+              ],
+              "resposta": "Pessoas com HIV, contatos recentes e quem vai usar imunobiológicos",
+              "explicacao": "O risco de doença ativa é maior nesses grupos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose tem hemoptise maciça.",
+              "enunciado": "Qual é o tratamento de urgência?",
+              "opcoes": [
+                "Proteger a via aérea e embolização das artérias brônquicas",
+                "Antibiótico apenas",
+                "Nada",
+                "Tosse forçada"
+              ],
+              "resposta": "Proteger a via aérea e embolização das artérias brônquicas",
+              "explicacao": "A hemoptise maciça pode matar por asfixia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d2-l3",
+          "titulo": "Infecções em imunossuprimidos",
+          "questoes": [
+            {
+              "id": "pneumo-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção pulmonar ao paciente de risco.",
+              "pares": [
+                {
+                  "esquerda": "Aspergilose invasiva",
+                  "direita": "Neutropenia prolongada"
+                },
+                {
+                  "esquerda": "Pneumocistose",
+                  "direita": "HIV com CD4 abaixo de 200"
+                },
+                {
+                  "esquerda": "Citomegalovírus",
+                  "direita": "Transplante"
+                },
+                {
+                  "esquerda": "Nocardiose",
+                  "direita": "Uso de corticoide"
+                }
+              ],
+              "explicacao": "O padrão da tomografia ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem falta de ar progressiva, LDH alta e infiltrado em vidro fosco difuso.",
+              "enunciado": "Qual é a hipótese e o tratamento?",
+              "opcoes": [
+                "Pneumocistose; sulfametoxazol e trimetoprima e corticoide se PaO2 baixa",
+                "Pneumonia bacteriana; amoxicilina",
+                "Tuberculose; RIPE",
+                "Asma; corticoide inalatório"
+              ],
+              "resposta": "Pneumocistose; sulfametoxazol e trimetoprima e corticoide se PaO2 baixa",
+              "explicacao": "A saturação cai muito com esforço.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando associar corticoide no tratamento da pneumocistose?",
+              "opcoes": [
+                "PaO2 menor que 70 ou gradiente alvéolo-arterial maior que 35",
+                "Sempre",
+                "Nunca",
+                "Só em crianças"
+              ],
+              "resposta": "PaO2 menor que 70 ou gradiente alvéolo-arterial maior que 35",
+              "explicacao": "O corticoide reduz a mortalidade nesses casos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente transplantado de medula tem febre e nódulos com halo na tomografia.",
+              "enunciado": "Qual exame ajuda no diagnóstico?",
+              "opcoes": [
+                "Galactomanana no sangue ou no lavado",
+                "Hemocultura apenas",
+                "Baciloscopia",
+                "Nenhum"
+              ],
+              "resposta": "Galactomanana no sangue ou no lavado",
+              "explicacao": "Sugere aspergilose invasiva.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tuberculose pode se apresentar de forma atípica em pessoas com HIV avançado, sem cavidades.",
+              "resposta": true,
+              "explicacao": "Formas disseminadas são comuns.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ cutâneo ou pulmonar em imunossuprimidos pode ser causado por Nocardia, que parece tuberculose.",
+              "opcoes": [
+                "abscesso",
+                "edema",
+                "câncer",
+                "trombo"
+              ],
+              "resposta": "abscesso",
+              "explicacao": "O tratamento é com sulfametoxazol e trimetoprima.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia indicada para pneumocistose?",
+              "opcoes": [
+                "Sulfametoxazol e trimetoprima",
+                "Fluconazol",
+                "Aciclovir",
+                "Isoniazida"
+              ],
+              "resposta": "Sulfametoxazol e trimetoprima",
+              "explicacao": "Indicada com CD4 abaixo de 200 ou uso prolongado de corticoide em alta dose.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com transplante renal tem febre, tosse e queda dos leucócitos 2 meses após o transplante.",
+              "enunciado": "Qual vírus é suspeito?",
+              "opcoes": [
+                "Citomegalovírus",
+                "Rinovírus",
+                "Influenza apenas",
+                "HPV"
+              ],
+              "resposta": "Citomegalovírus",
+              "explicacao": "O tratamento é com ganciclovir.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-d3",
+      "titulo": "Pleura e circulação em casos",
+      "descricao": "Derrames, pneumotórax e hipertensão pulmonar",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "pneumo-d3-l1",
+          "titulo": "Derrame pleural em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Derrame com proteína do líquido/sangue de 0,7 e LDH do líquido/sangue de 0,8.",
+              "enunciado": "Como classificar?",
+              "opcoes": [
+                "Exsudato",
+                "Transudato",
+                "Sangue",
+                "Quilo"
+              ],
+              "resposta": "Exsudato",
+              "explicacao": "Basta um critério de Light alterado.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado no líquido pleural à causa.",
+              "pares": [
+                {
+                  "esquerda": "Glicose muito baixa e pH baixo",
+                  "direita": "Empiema ou artrite reumatoide"
+                },
+                {
+                  "esquerda": "Amilase alta",
+                  "direita": "Pancreatite ou ruptura do esôfago"
+                },
+                {
+                  "esquerda": "Hematócrito acima de 50% do sangue",
+                  "direita": "Hemotórax"
+                },
+                {
+                  "esquerda": "Eosinófilos altos",
+                  "direita": "Ar ou sangue na pleura"
+                }
+              ],
+              "explicacao": "A análise do líquido orienta a causa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa de derrame pleural com transudato em paciente com ascite?",
+              "opcoes": [
+                "Hidrotórax hepático",
+                "Tuberculose",
+                "Câncer",
+                "Pneumonia"
+              ],
+              "resposta": "Hidrotórax hepático",
+              "explicacao": "O líquido passa do abdome para o tórax.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência cardíaca tratada com diurético tem derrame com critérios de exsudato leve.",
+              "enunciado": "Qual é a explicação?",
+              "opcoes": [
+                "O diurético concentra o líquido; o gradiente de albumina ajuda",
+                "Câncer certo",
+                "Tuberculose certa",
+                "Infecção"
+              ],
+              "resposta": "O diurético concentra o líquido; o gradiente de albumina ajuda",
+              "explicacao": "Gradiente de albumina acima de 1,2 indica transudato.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O derrame pleural maligno tem citologia positiva em cerca de 60% dos casos na primeira punção.",
+              "resposta": true,
+              "explicacao": "A repetição ou a biópsia aumentam o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ por videotoracoscopia permite ver a pleura e fazer biópsias.",
+              "opcoes": [
+                "pleuroscopia",
+                "broncoscopia",
+                "endoscopia",
+                "laparoscopia"
+              ],
+              "resposta": "pleuroscopia",
+              "explicacao": "É útil em derrames sem diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta no empiema loculado que não drena bem pelo dreno?",
+              "opcoes": [
+                "Fibrinolítico pelo dreno ou cirurgia",
+                "Retirar o dreno",
+                "Só antibiótico",
+                "Nada"
+              ],
+              "resposta": "Fibrinolítico pelo dreno ou cirurgia",
+              "explicacao": "A combinação de alteplase e DNase pode ajudar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após vômitos intensos tem dor no peito, enfisema no pescoço e derrame à esquerda com amilase alta.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Ruptura do esôfago (síndrome de Boerhaave)",
+                "Pancreatite",
+                "Infarto",
+                "Pneumonia"
+              ],
+              "resposta": "Ruptura do esôfago (síndrome de Boerhaave)",
+              "explicacao": "É uma emergência cirúrgica.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d3-l2",
+          "titulo": "Embolia em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d3-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer tem embolia pulmonar estável.",
+              "enunciado": "Qual anticoagulante é preferido?",
+              "opcoes": [
+                "Anticoagulante oral direto ou heparina de baixo peso",
+                "Varfarina sempre",
+                "AAS",
+                "Nenhum"
+              ],
+              "resposta": "Anticoagulante oral direto ou heparina de baixo peso",
+              "explicacao": "Em tumores do tubo digestivo, cuidado com sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao risco na embolia pulmonar.",
+              "pares": [
+                {
+                  "esquerda": "Choque",
+                  "direita": "Alto risco"
+                },
+                {
+                  "esquerda": "Ventrículo direito dilatado e troponina alta sem choque",
+                  "direita": "Risco intermediário-alto"
+                },
+                {
+                  "esquerda": "Escore PESI baixo",
+                  "direita": "Baixo risco"
+                },
+                {
+                  "esquerda": "Trombo grande sem sintomas",
+                  "direita": "Avaliar individualmente"
+                }
+              ],
+              "explicacao": "O risco define o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por quanto tempo anticoagular após embolia por causa transitória, como cirurgia?",
+              "opcoes": [
+                "3 meses",
+                "1 semana",
+                "Para sempre",
+                "1 ano obrigatoriamente"
+              ],
+              "resposta": "3 meses",
+              "explicacao": "Sem causa definida, pode ser por tempo indefinido.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tem embolia pulmonar.",
+              "enunciado": "Qual anticoagulante usar?",
+              "opcoes": [
+                "Heparina de baixo peso molecular",
+                "Varfarina",
+                "Rivaroxabana",
+                "Nenhum"
+              ],
+              "resposta": "Heparina de baixo peso molecular",
+              "explicacao": "Varfarina e os orais diretos são evitados na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O filtro de veia cava é indicado quando há contraindicação absoluta à anticoagulação.",
+              "resposta": true,
+              "explicacao": "Não deve ser usado de rotina.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hipertensão pulmonar tromboembólica ___ pode surgir após embolia e causar falta de ar persistente.",
+              "opcoes": [
+                "crônica",
+                "aguda",
+                "leve",
+                "transitória"
+              ],
+              "resposta": "crônica",
+              "explicacao": "Pode ser tratada com cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame avalia a hipertensão pulmonar tromboembólica crônica?",
+              "opcoes": [
+                "Cintilografia de ventilação e perfusão",
+                "Raio X",
+                "Espirometria",
+                "Hemograma"
+              ],
+              "resposta": "Cintilografia de ventilação e perfusão",
+              "explicacao": "É o melhor exame de triagem.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente jovem tem trombose venosa sem causa e uma tia com o mesmo.",
+              "enunciado": "O que investigar?",
+              "opcoes": [
+                "Trombofilias hereditárias, em momento adequado",
+                "Nada",
+                "Câncer apenas",
+                "Doença renal"
+              ],
+              "resposta": "Trombofilias hereditárias, em momento adequado",
+              "explicacao": "Fator V de Leiden é a mais comum.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d3-l3",
+          "titulo": "Hipertensão pulmonar",
+          "questoes": [
+            {
+              "id": "pneumo-d3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo de hipertensão pulmonar à causa.",
+              "pares": [
+                {
+                  "esquerda": "Grupo 1",
+                  "direita": "Hipertensão arterial pulmonar"
+                },
+                {
+                  "esquerda": "Grupo 2",
+                  "direita": "Doença do coração esquerdo"
+                },
+                {
+                  "esquerda": "Grupo 3",
+                  "direita": "Doença pulmonar ou falta de oxigênio"
+                },
+                {
+                  "esquerda": "Grupo 4",
+                  "direita": "Tromboembólica crônica"
+                }
+              ],
+              "explicacao": "O grupo 2 é o mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem tem falta de ar progressiva, desmaio ao esforço e ecocardiograma com pressão pulmonar alta.",
+              "enunciado": "Qual exame confirma?",
+              "opcoes": [
+                "Cateterismo do coração direito",
+                "Raio X",
+                "Espirometria",
+                "Hemograma"
+              ],
+              "resposta": "Cateterismo do coração direito",
+              "explicacao": "O diagnóstico exige medida direta da pressão.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença infecciosa é causa importante de hipertensão pulmonar no Brasil?",
+              "opcoes": [
+                "Esquistossomose",
+                "Gripe",
+                "Dengue",
+                "Sarampo"
+              ],
+              "resposta": "Esquistossomose",
+              "explicacao": "Os ovos lesam os vasos do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com esclerose sistêmica tem DLCO caindo e falta de ar.",
+              "enunciado": "O que investigar?",
+              "opcoes": [
+                "Hipertensão arterial pulmonar",
+                "Asma",
+                "Câncer",
+                "Nada"
+              ],
+              "resposta": "Hipertensão arterial pulmonar",
+              "explicacao": "É uma complicação grave da esclerose sistêmica.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os remédios para hipertensão arterial pulmonar incluem sildenafila e bosentana.",
+              "resposta": true,
+              "explicacao": "Atuam em vias que dilatam os vasos do pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hipertensão pulmonar é definida por pressão média na artéria pulmonar acima de ___ mmHg.",
+              "opcoes": [
+                "20",
+                "40",
+                "60",
+                "10"
+              ],
+              "resposta": "20",
+              "explicacao": "O valor foi reduzido de 25 para 20.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual teste ajuda a escolher bloqueador de cálcio na hipertensão arterial pulmonar?",
+              "opcoes": [
+                "Teste de vasorreatividade no cateterismo",
+                "Teste de esforço",
+                "Espirometria",
+                "Polissonografia"
+              ],
+              "resposta": "Teste de vasorreatividade no cateterismo",
+              "explicacao": "Poucos pacientes respondem.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DPOC grave tem hipertensão pulmonar.",
+              "enunciado": "Qual é o tratamento principal?",
+              "opcoes": [
+                "Oxigênio e tratar a doença pulmonar",
+                "Sildenafila sempre",
+                "Bosentana",
+                "Cirurgia"
+              ],
+              "resposta": "Oxigênio e tratar a doença pulmonar",
+              "explicacao": "Remédios específicos podem piorar a oxigenação.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-d4",
+      "titulo": "Doenças intersticiais e ocupacionais em casos",
+      "descricao": "Diagnóstico e manejo",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "pneumo-d4-l1",
+          "titulo": "Intersticiais em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 anos, ex-fumante, tem falta de ar progressiva, estertores finos nas bases e baqueteamento.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Fibrose pulmonar idiopática",
+                "Asma",
+                "Insuficiência cardíaca apenas",
+                "Pneumonia"
+              ],
+              "resposta": "Fibrose pulmonar idiopática",
+              "explicacao": "A tomografia mostra faveolamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada padrão de tomografia à doença.",
+              "pares": [
+                {
+                  "esquerda": "Faveolamento basal",
+                  "direita": "Pneumonia intersticial usual"
+                },
+                {
+                  "esquerda": "Vidro fosco com aprisionamento de ar",
+                  "direita": "Pneumonite de hipersensibilidade"
+                },
+                {
+                  "esquerda": "Linfonodos hilares e nódulos perilinfáticos",
+                  "direita": "Sarcoidose"
+                },
+                {
+                  "esquerda": "Cistos de paredes finas em mulher jovem",
+                  "direita": "Linfangioleiomiomatose"
+                }
+              ],
+              "explicacao": "O padrão orienta o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença autoimune causa doença pulmonar intersticial com frequência?",
+              "opcoes": [
+                "Esclerose sistêmica",
+                "Psoríase",
+                "Vitiligo",
+                "Gota"
+              ],
+              "resposta": "Esclerose sistêmica",
+              "explicacao": "Artrite reumatoide e miosites também.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sarcoidose tem cálcio alto.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Granulomas produzem vitamina D ativa",
+                "Câncer",
+                "Paratireoide",
+                "Excesso de leite"
+              ],
+              "resposta": "Granulomas produzem vitamina D ativa",
+              "explicacao": "O corticoide corrige.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A sarcoidose pode regredir sozinha, sem tratamento.",
+              "resposta": true,
+              "explicacao": "Muitos casos com linfonodos hilares regridem.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ é uma forma aguda de sarcoidose com eritema nodoso, linfonodos hilares e artrite.",
+              "opcoes": [
+                "Löfgren",
+                "Heerfordt",
+                "Goodpasture",
+                "Churg-Strauss"
+              ],
+              "resposta": "Löfgren",
+              "explicacao": "Tem bom prognóstico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da fibrose pulmonar idiopática?",
+              "opcoes": [
+                "Antifibróticos, como nintedanibe ou pirfenidona",
+                "Corticoide em alta dose",
+                "Antibiótico",
+                "Nenhum"
+              ],
+              "resposta": "Antifibróticos, como nintedanibe ou pirfenidona",
+              "explicacao": "O corticoide pode piorar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrose pulmonar tem piora súbita da falta de ar sem causa aparente.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Exacerbação aguda da fibrose",
+                "Asma",
+                "Ansiedade",
+                "Normal"
+              ],
+              "resposta": "Exacerbação aguda da fibrose",
+              "explicacao": "Tem alta mortalidade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d4-l2",
+          "titulo": "Doenças ocupacionais em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Mineiro com silicose tem febre, emagrecimento e piora da tosse.",
+              "enunciado": "Qual complicação investigar?",
+              "opcoes": [
+                "Tuberculose",
+                "Asma",
+                "Câncer de pele",
+                "Pneumotórax"
+              ],
+              "resposta": "Tuberculose",
+              "explicacao": "A silicose aumenta muito o risco de tuberculose.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exposição ocupacional à doença.",
+              "pares": [
+                {
+                  "esquerda": "Berílio",
+                  "direita": "Doença parecida com sarcoidose"
+                },
+                {
+                  "esquerda": "Carvão",
+                  "direita": "Pneumoconiose dos mineiros"
+                },
+                {
+                  "esquerda": "Isocianatos",
+                  "direita": "Asma ocupacional"
+                },
+                {
+                  "esquerda": "Feno mofado",
+                  "direita": "Pulmão de fazendeiro"
+                }
+              ],
+              "explicacao": "A história ocupacional deve ser sempre colhida.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o câncer de pulmão mais associado ao amianto em fumantes?",
+              "opcoes": [
+                "Carcinoma broncogênico, com risco multiplicado",
+                "Mesotelioma apenas",
+                "Linfoma",
+                "Melanoma"
+              ],
+              "resposta": "Carcinoma broncogênico, com risco multiplicado",
+              "explicacao": "Fumo e amianto juntos multiplicam o risco.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador de jateamento de areia tem falta de ar após 3 anos de trabalho, com rápida piora.",
+              "enunciado": "Qual é a forma?",
+              "opcoes": [
+                "Silicose acelerada",
+                "Silicose crônica",
+                "Asma",
+                "Pneumonia"
+              ],
+              "resposta": "Silicose acelerada",
+              "explicacao": "Exposições intensas causam formas rápidas.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A asma ocupacional pode ser reconhecida como doença do trabalho.",
+              "resposta": true,
+              "explicacao": "Deve ser notificada.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome do edifício ___ causa sintomas respiratórios ligados ao ambiente de trabalho fechado.",
+              "opcoes": [
+                "doente",
+                "novo",
+                "alto",
+                "antigo"
+              ],
+              "resposta": "doente",
+              "explicacao": "Ventilação ruim é a causa.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta principal na pneumonite de hipersensibilidade?",
+              "opcoes": [
+                "Afastar a exposição",
+                "Antibiótico",
+                "Broncodilatador apenas",
+                "Nada"
+              ],
+              "resposta": "Afastar a exposição",
+              "explicacao": "Corticoide pode ser usado em casos graves.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com asbestose tem dor torácica e derrame pleural com sangue.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Mesotelioma",
+                "Pneumonia",
+                "Infarto",
+                "Tuberculose"
+              ],
+              "resposta": "Mesotelioma",
+              "explicacao": "O prognóstico é ruim.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d4-l3",
+          "titulo": "Bronquiectasias e fibrose cística",
+          "questoes": [
+            {
+              "id": "pneumo-d4-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem tosse com muito catarro há anos e infecções repetidas, com brônquios dilatados na tomografia.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Bronquiectasias",
+                "Asma",
+                "DPOC",
+                "Câncer"
+              ],
+              "resposta": "Bronquiectasias",
+              "explicacao": "A fisioterapia respiratória é parte do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de bronquiectasias à pista.",
+              "pares": [
+                {
+                  "esquerda": "Fibrose cística",
+                  "direita": "Teste do suor alterado"
+                },
+                {
+                  "esquerda": "Discinesia ciliar",
+                  "direita": "Situs inversus"
+                },
+                {
+                  "esquerda": "Tuberculose prévia",
+                  "direita": "Lesões nos ápices"
+                },
+                {
+                  "esquerda": "Aspergilose broncopulmonar alérgica",
+                  "direita": "Asma com IgE muito alta"
+                }
+              ],
+              "explicacao": "Investigar a causa muda o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual germe é mais comum nas bronquiectasias e piora o prognóstico?",
+              "opcoes": [
+                "Pseudomonas aeruginosa",
+                "Pneumococo",
+                "Mycoplasma",
+                "Influenza"
+              ],
+              "resposta": "Pseudomonas aeruginosa",
+              "explicacao": "Pode ser erradicada no início.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Adulto jovem tem infecções pulmonares desde a infância, diabetes e infertilidade.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Fibrose cística",
+                "Asma",
+                "Tuberculose",
+                "DPOC"
+              ],
+              "resposta": "Fibrose cística",
+              "explicacao": "Hoje muitos pacientes chegam à vida adulta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os moduladores de CFTR melhoram a função pulmonar na fibrose cística.",
+              "resposta": true,
+              "explicacao": "Mudaram o prognóstico da doença.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A aspergilose broncopulmonar ___ ocorre em asmáticos e pacientes com fibrose cística.",
+              "opcoes": [
+                "alérgica",
+                "invasiva",
+                "crônica cavitária",
+                "cutânea"
+              ],
+              "resposta": "alérgica",
+              "explicacao": "É tratada com corticoide e antifúngico.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a base do tratamento das bronquiectasias?",
+              "opcoes": [
+                "Higiene brônquica com fisioterapia e tratar as infecções",
+                "Cirurgia sempre",
+                "Corticoide oral",
+                "Nada"
+              ],
+              "resposta": "Higiene brônquica com fisioterapia e tratar as infecções",
+              "explicacao": "Macrolídeo contínuo pode reduzir crises.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com bronquiectasias tem hemoptise volumosa.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Embolização das artérias brônquicas",
+                "Antibiótico apenas",
+                "Nada",
+                "Broncodilatador"
+              ],
+              "resposta": "Embolização das artérias brônquicas",
+              "explicacao": "Em casos localizados, a cirurgia é opção.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pneumo-d5",
+      "titulo": "Câncer e nódulos em casos",
+      "descricao": "Diagnóstico e estadiamento",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "pneumo-d5-l1",
+          "titulo": "Nódulo pulmonar em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Não fumante de 40 anos tem nódulo sólido de 5 mm em tomografia feita por acidente.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Não precisa de seguimento de rotina, conforme diretrizes",
+                "Biópsia",
+                "Cirurgia",
+                "PET-CT"
+              ],
+              "resposta": "Não precisa de seguimento de rotina, conforme diretrizes",
+              "explicacao": "Nódulos pequenos em baixo risco são quase sempre benignos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado do nódulo ao risco.",
+              "pares": [
+                {
+                  "esquerda": "Calcificação central ou em pipoca",
+                  "direita": "Benigno"
+                },
+                {
+                  "esquerda": "Espiculado e grande",
+                  "direita": "Alto risco"
+                },
+                {
+                  "esquerda": "Estável por 2 anos (sólido)",
+                  "direita": "Provavelmente benigno"
+                },
+                {
+                  "esquerda": "Crescimento rápido",
+                  "direita": "Suspeito de câncer"
+                }
+              ],
+              "explicacao": "O vidro fosco cresce devagar.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o papel do PET-CT no nódulo pulmonar?",
+              "opcoes": [
+                "Avaliar atividade metabólica em nódulos maiores que 8 mm",
+                "Substituir a biópsia sempre",
+                "Rastrear todos",
+                "Nenhum"
+              ],
+              "resposta": "Avaliar atividade metabólica em nódulos maiores que 8 mm",
+              "explicacao": "Falsos positivos ocorrem em infecções.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 65 anos tem nódulo de 2,5 cm espiculado com captação no PET.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Biópsia ou cirurgia diagnóstica e terapêutica",
+                "Observar",
+                "Antibiótico",
+                "Raio X em 2 anos"
+              ],
+              "resposta": "Biópsia ou cirurgia diagnóstica e terapêutica",
+              "explicacao": "A probabilidade de câncer é alta.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No Brasil, a tuberculose e as micoses são causas comuns de nódulos benignos.",
+              "resposta": true,
+              "explicacao": "Isso aumenta os falsos positivos no PET.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O nódulo em ___ fosco que persiste pode ser um adenocarcinoma de crescimento lento.",
+              "opcoes": [
+                "vidro",
+                "pedra",
+                "cristal",
+                "papel"
+              ],
+              "resposta": "vidro",
+              "explicacao": "O seguimento é mais longo.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o método para obter tecido de linfonodo do mediastino com mínima invasão?",
+              "opcoes": [
+                "Ecobroncoscopia com punção (EBUS)",
+                "Biópsia aberta sempre",
+                "Raio X",
+                "Escarro"
+              ],
+              "resposta": "Ecobroncoscopia com punção (EBUS)",
+              "explicacao": "Ajuda no estadiamento.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com nódulo central tem broncoscopia com biópsia de carcinoma epidermoide.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Estadiamento completo antes de definir o tratamento",
+                "Quimioterapia sem estadiar",
+                "Alta",
+                "Antibiótico"
+              ],
+              "resposta": "Estadiamento completo antes de definir o tratamento",
+              "explicacao": "O estadiamento define cirurgia ou não.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d5-l2",
+          "titulo": "Câncer de pulmão em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estágio do câncer de pulmão de não pequenas células ao tratamento principal.",
+              "pares": [
+                {
+                  "esquerda": "Estágio I",
+                  "direita": "Cirurgia"
+                },
+                {
+                  "esquerda": "Estágio III não ressecável",
+                  "direita": "Quimiorradioterapia e imunoterapia"
+                },
+                {
+                  "esquerda": "Estágio IV com mutação EGFR",
+                  "direita": "Remédio-alvo"
+                },
+                {
+                  "esquerda": "Estágio IV sem mutação com PD-L1 alto",
+                  "direita": "Imunoterapia"
+                }
+              ],
+              "explicacao": "O teste molecular é obrigatório no estágio IV.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Fumante com câncer de pulmão tem cálcio de 13 e confusão.",
+              "enunciado": "Qual é o tipo provável e a causa?",
+              "opcoes": [
+                "Carcinoma epidermoide com produção de proteína parecida com o PTH",
+                "Pequenas células",
+                "Adenocarcinoma por metástase óssea apenas",
+                "Linfoma"
+              ],
+              "resposta": "Carcinoma epidermoide com produção de proteína parecida com o PTH",
+              "explicacao": "A hidratação é o tratamento inicial.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento principal do câncer de pequenas células extenso?",
+              "opcoes": [
+                "Quimioterapia com imunoterapia",
+                "Cirurgia",
+                "Remédio-alvo",
+                "Nada"
+              ],
+              "resposta": "Quimioterapia com imunoterapia",
+              "explicacao": "A radioterapia do crânio pode ser considerada.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pulmão tem pálpebra caída, pupila pequena e falta de suor de um lado do rosto.",
+              "enunciado": "Qual é a síndrome e o tumor?",
+              "opcoes": [
+                "Síndrome de Horner por tumor de Pancoast",
+                "Paralisia facial",
+                "AVC",
+                "Miastenia"
+              ],
+              "resposta": "Síndrome de Horner por tumor de Pancoast",
+              "explicacao": "O tumor invade a cadeia simpática.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A mutação ALK em câncer de pulmão tem remédios-alvo com ótima resposta.",
+              "resposta": true,
+              "explicacao": "É mais comum em jovens não fumantes.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ é a fraqueza muscular que melhora com esforço repetido, associada ao câncer de pequenas células.",
+              "opcoes": [
+                "Lambert-Eaton",
+                "Guillain-Barré",
+                "Horner",
+                "Cushing"
+              ],
+              "resposta": "Lambert-Eaton",
+              "explicacao": "Os anticorpos atacam canais de cálcio.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere metástase cerebral de câncer de pulmão?",
+              "opcoes": [
+                "Dor de cabeça nova, convulsão ou déficit neurológico",
+                "Tosse",
+                "Febre",
+                "Perda de peso apenas"
+              ],
+              "resposta": "Dor de cabeça nova, convulsão ou déficit neurológico",
+              "explicacao": "O cérebro é local comum de metástase.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pulmão avançado tem falta de ar por derrame recorrente e baixa funcionalidade.",
+              "enunciado": "Qual é a abordagem?",
+              "opcoes": [
+                "Controle de sintomas com drenagem e cuidados paliativos",
+                "Quimioterapia intensa obrigatória",
+                "Nada",
+                "Cirurgia"
+              ],
+              "resposta": "Controle de sintomas com drenagem e cuidados paliativos",
+              "explicacao": "Os cuidados paliativos precoces aumentam a qualidade de vida.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "pneumo-d5-l3",
+          "titulo": "Insuficiência respiratória em casos",
+          "questoes": [
+            {
+              "id": "pneumo-d5-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia tem saturação de 88% com máscara e frequência de 35.",
+              "enunciado": "Qual suporte pode ser usado antes de intubar?",
+              "opcoes": [
+                "Cateter nasal de alto fluxo",
+                "Nada",
+                "Cateter comum",
+                "Sedação"
+              ],
+              "resposta": "Cateter nasal de alto fluxo",
+              "explicacao": "O alto fluxo reduz o trabalho respiratório.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de insuficiência respiratória à causa.",
+              "pares": [
+                {
+                  "esquerda": "Tipo 1 (hipoxêmica)",
+                  "direita": "Pneumonia e edema pulmonar"
+                },
+                {
+                  "esquerda": "Tipo 2 (hipercápnica)",
+                  "direita": "DPOC e doenças neuromusculares"
+                },
+                {
+                  "esquerda": "Perioperatória",
+                  "direita": "Atelectasia após cirurgia"
+                },
+                {
+                  "esquerda": "Choque",
+                  "direita": "Baixa oferta de oxigênio aos tecidos"
+                }
+              ],
+              "explicacao": "O tipo orienta o suporte.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um critério para intubação?",
+              "opcoes": [
+                "Rebaixamento da consciência sem proteção da via aérea",
+                "Saturação de 95%",
+                "Tosse",
+                "Febre"
+              ],
+              "resposta": "Rebaixamento da consciência sem proteção da via aérea",
+              "explicacao": "Também fadiga respiratória e falha da ventilação não invasiva.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com miastenia tem fraqueza e capacidade vital caindo para 15 mL/kg.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Considerar intubação e tratar a crise miastênica",
+                "Alta",
+                "Nada",
+                "Oxigênio apenas"
+              ],
+              "resposta": "Considerar intubação e tratar a crise miastênica",
+              "explicacao": "A capacidade vital baixa prevê falência respiratória.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ventilação não invasiva é contraindicada em pacientes com vômitos e rebaixamento da consciência.",
+              "resposta": true,
+              "explicacao": "Há risco de aspiração.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o colapso de partes do pulmão, comum após cirurgias abdominais.",
+              "opcoes": [
+                "atelectasia",
+                "consolidação",
+                "fibrose",
+                "embolia"
+              ],
+              "resposta": "atelectasia",
+              "explicacao": "Fisioterapia respiratória previne.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o desmame da ventilação mais indicado?",
+              "opcoes": [
+                "Teste de respiração espontânea diário em pacientes aptos",
+                "Retirar de uma vez sem teste",
+                "Manter para sempre",
+                "Desligar à noite"
+              ],
+              "resposta": "Teste de respiração espontânea diário em pacientes aptos",
+              "explicacao": "O teste dura 30 a 120 minutos.",
+              "revisado": false
+            },
+            {
+              "id": "pneumo-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente intubado há 3 semanas não consegue sair do ventilador.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "Traqueostomia",
+                "Extubar sem teste",
+                "Aumentar a sedação",
+                "Nada"
+              ],
+              "resposta": "Traqueostomia",
+              "explicacao": "Facilita o desmame prolongado.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
