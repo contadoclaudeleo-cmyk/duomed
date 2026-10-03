@@ -15,6 +15,8 @@ interface Props {
   aoComecar: () => void
   /** Abre a revisão comentada (só aparece em lição concluída) */
   aoVerComentada: () => void
+  /** Lição que acabou de ser concluída: comemora ao voltar para a trilha */
+  recemConcluida?: boolean
 }
 
 const cores: Record<StatusLicao, string> = {
@@ -34,11 +36,20 @@ export function NoLicao({
   aoAlternar,
   aoComecar,
   aoVerComentada,
+  recemConcluida,
 }: Props) {
   const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : Lock
 
   return (
-    <div className={`relative flex flex-col items-center ${aberto ? 'z-20' : ''}`} style={{ transform: `translateX(${deslocamento}px)` }}>
+    // Cada nó aparece com efeito de mola quando entra na tela
+    <motion.div
+      className={`relative flex flex-col items-center ${aberto ? 'z-20' : ''}`}
+      style={{ x: deslocamento }}
+      initial={{ opacity: 0, scale: 0.6 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: '0px 0px -40px 0px' }}
+      transition={{ type: 'spring', stiffness: 420, damping: 22 }}
+    >
       {/* Balão "Começar" pulando em cima da lição atual */}
       {status === 'atual' && !aberto && (
         <motion.div
@@ -51,20 +62,39 @@ export function NoLicao({
         </motion.div>
       )}
 
-      <div className={`rounded-full p-1.5 ${status === 'atual' ? 'border-4 border-agua/25' : 'border-4 border-transparent'}`}>
-        <button
+      <div className={`relative rounded-full p-1.5 ${status === 'atual' ? 'border-4 border-agua/25' : 'border-4 border-transparent'}`}>
+        {/* Anel que pulsa em volta da próxima lição */}
+        {status === 'atual' && (
+          <motion.span
+            className="pointer-events-none absolute -inset-1 rounded-full border-4 border-agua"
+            initial={{ opacity: 0.5, scale: 1 }}
+            animate={{ opacity: 0, scale: 1.3 }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeOut' }}
+            aria-hidden
+          />
+        )}
+        {/* Estrelinhas saindo da lição recém-concluída */}
+        {recemConcluida && <Faiscas />}
+        <motion.button
           type="button"
           onClick={aoAlternar}
           aria-label={`${titulo}, ${status === 'concluida' ? 'concluída' : status === 'atual' ? 'próxima lição' : 'bloqueada'}`}
           aria-expanded={aberto}
-          className={`flex h-[70px] w-[70px] items-center justify-center rounded-full transition-[transform,box-shadow] duration-75 active:translate-y-[6px] active:shadow-none ${cores[status]}`}
+          className={`flex h-[70px] w-[70px] items-center justify-center rounded-full transition-[box-shadow] duration-75 active:shadow-none ${cores[status]}`}
+          whileTap={{ y: 6 }}
+          animate={
+            recemConcluida
+              ? { scale: [1, 1.3, 0.92, 1.08, 1], rotate: [0, -10, 8, 0], transition: { duration: 0.8, delay: 0.5 } }
+              : undefined
+          }
+          transition={{ duration: 0.06 }}
         >
           <Icone
             className="h-8 w-8"
             strokeWidth={status === 'concluida' ? 3.5 : 2.5}
             fill={status === 'atual' ? 'currentColor' : 'none'}
           />
-        </button>
+        </motion.button>
       </div>
 
       <AnimatePresence>
@@ -110,6 +140,29 @@ export function NoLicao({
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
+  )
+}
+
+const ANGULOS_FAISCAS = [0, 45, 90, 135, 180, 225, 270, 315]
+
+function Faiscas() {
+  return (
+    <span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden>
+      {ANGULOS_FAISCAS.map((angulo, i) => {
+        const rad = (angulo * Math.PI) / 180
+        return (
+          <motion.span
+            key={angulo}
+            className="absolute"
+            initial={{ x: 0, y: 0, scale: 0, opacity: 1 }}
+            animate={{ x: Math.cos(rad) * 62, y: Math.sin(rad) * 62, scale: [0, 1.1, 0.6], opacity: [1, 1, 0] }}
+            transition={{ duration: 0.9, delay: 0.55 + (i % 2) * 0.05, ease: 'easeOut' }}
+          >
+            <Star className={`h-4 w-4 ${i % 2 ? 'text-laranja' : 'text-agua'}`} fill="currentColor" strokeWidth={0} />
+          </motion.span>
+        )
+      })}
+    </span>
   )
 }

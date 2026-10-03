@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { motion, useAnimationControls } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 interface Props {
   /** De 0 a 1 */
@@ -10,6 +11,15 @@ interface Props {
 
 export function BarraProgresso({ valor, cor = 'agua', altura = 'grossa', rotulo }: Props) {
   const pct = Math.min(1, Math.max(0, valor)) * 100
+  const brilho = useAnimationControls()
+  const anterior = useRef(pct)
+
+  // Quando a barra avança, um brilho passa por ela
+  useEffect(() => {
+    if (pct > anterior.current) brilho.start({ x: ['-120%', '420%'], transition: { duration: 0.7, delay: 0.15, ease: 'easeOut' } })
+    anterior.current = pct
+  }, [pct, brilho])
+
   return (
     <div
       role="progressbar"
@@ -29,6 +39,13 @@ export function BarraProgresso({ valor, cor = 'agua', altura = 'grossa', rotulo 
         {altura === 'grossa' && pct > 4 && (
           <span className="absolute inset-x-2 top-1 h-1 rounded-full bg-white/30" />
         )}
+        <span className="absolute inset-0 overflow-hidden rounded-full">
+          <motion.span
+            className="absolute inset-y-0 left-0 w-1/4 -skew-x-12 bg-white/45"
+            initial={{ x: '-120%' }}
+            animate={brilho}
+          />
+        </span>
       </motion.div>
     </div>
   )

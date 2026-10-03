@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { CalendarClock, CircleCheck, RotateCcw, type LucideIcon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
@@ -32,6 +33,7 @@ export function Revisao() {
           corIcone="bg-laranja/15 text-laranja-escura"
           variante="secundario"
           vazio="Quando você errar uma questão, ela aparece aqui na hora."
+          atraso={0.05}
         />
         <CartaoFila
           origem="acerto"
@@ -43,6 +45,7 @@ export function Revisao() {
           corIcone="bg-agua/15 text-agua-texto dark:text-menta"
           variante="primario"
           vazio="As questões que você acertar nas lições voltam aqui depois de 3 dias."
+          atraso={0.15}
         />
       </div>
 
@@ -72,9 +75,10 @@ interface PropsCartao {
   corIcone: string
   variante: 'primario' | 'secundario'
   vazio: string
+  atraso: number
 }
 
-function CartaoFila({ origem, fila, agora, Icone, titulo, subtitulo, corIcone, variante, vazio }: PropsCartao) {
+function CartaoFila({ origem, fila, agora, Icone, titulo, subtitulo, corIcone, variante, vazio, atraso }: PropsCartao) {
   const navegar = useNavigate()
   const daOrigem = Object.fromEntries(Object.entries(fila).filter(([, item]) => origemDoItem(item) === origem))
   const pendentes = questoesParaRevisar(daOrigem, agora).length
@@ -82,7 +86,12 @@ function CartaoFila({ origem, fila, agora, Icone, titulo, subtitulo, corIcone, v
   const proxima = proximaRevisao(daOrigem)
 
   return (
-    <div className="rounded-2xl border-2 border-borda bg-superficie p-4 text-left">
+    <motion.div
+      className="rounded-2xl border-2 border-borda bg-superficie p-4 text-left"
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: atraso, type: 'spring', stiffness: 300, damping: 24 }}
+    >
       <div className="flex items-center gap-3">
         <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${corIcone}`}>
           <Icone className="h-6 w-6" strokeWidth={2.6} />
@@ -119,7 +128,7 @@ function CartaoFila({ origem, fila, agora, Icone, titulo, subtitulo, corIcone, v
       >
         {pendentes > 0 ? textoBotao(Math.min(pendentes, MAX_QUESTOES_POR_REVISAO)) : 'Tudo revisado'}
       </Botao>
-    </div>
+    </motion.div>
   )
 }
 

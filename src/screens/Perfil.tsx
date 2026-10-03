@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Award, Flame, Lock, Medal, Target, Zap, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -14,6 +15,7 @@ import { IconeMateria } from '../components/IconeMateria'
 import { Botao } from '../components/Botao'
 import { Modal } from '../components/Modal'
 import { AbasModo, AbasNivel } from '../components/AbasModo'
+import { NumeroAnimado } from '../components/Animacoes'
 
 export function Perfil() {
   const navegar = useNavigate()
@@ -30,9 +32,14 @@ export function Perfil() {
 
       {/* Quem é o usuário */}
       <div className="mt-6 flex items-center gap-4">
-        <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-agua text-2xl font-extrabold text-white">
+        <motion.span
+          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-agua text-2xl font-extrabold text-white"
+          initial={{ scale: 0, rotate: -30 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: 'spring', stiffness: 380, damping: 14, delay: 0.1 }}
+        >
           {usuario.nome[0]?.toUpperCase()}
-        </span>
+        </motion.span>
         <div>
           <h1 className="text-2xl font-extrabold">{usuario.nome}</h1>
           <p className="text-texto-suave">
@@ -69,10 +76,17 @@ export function Perfil() {
       {/* Conquistas */}
       <Titulo>Conquistas</Titulo>
       <div className="overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
-        {CONQUISTAS.map((c) => {
+        {CONQUISTAS.map((c, i) => {
           const quando = jogo.conquistas[c.id]
           return (
-            <div key={c.id} className="flex items-center gap-4 border-b-2 border-borda px-4 py-3 last:border-b-0">
+            <motion.div
+              key={c.id}
+              className="flex items-center gap-4 border-b-2 border-borda px-4 py-3 last:border-b-0"
+              initial={{ opacity: 0, x: -16 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05, duration: 0.3 }}
+            >
               <span
                 className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${
                   quando ? 'bg-laranja text-white shadow-[0_3px_0_0_var(--color-laranja-escura)]' : 'bg-apagado text-apagado-texto'
@@ -89,7 +103,7 @@ export function Perfil() {
                   {new Date(quando).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })}
                 </span>
               )}
-            </div>
+            </motion.div>
           )
         })}
       </div>
@@ -226,7 +240,9 @@ function Numero({
         aria-hidden
       />
       <div>
-        <p className="text-xl font-extrabold leading-tight">{valor}</p>
+        <p className="text-xl font-extrabold leading-tight">
+          <NumeroAnimado valor={valor} duracao={1} />
+        </p>
         <p className="text-xs font-semibold text-texto-suave">{rotulo}</p>
       </div>
     </div>

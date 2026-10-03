@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ClipboardCheck, RotateCcw, X } from 'lucide-react'
+import { ClipboardCheck, Flame, RotateCcw, X } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { ModoSessao, Questao as TQuestao, Resposta } from '../types'
@@ -46,6 +46,9 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
   const [respostas, setRespostas] = useState<RespostaDada[]>([])
   const [confirmarSaida, setConfirmarSaida] = useState(false)
   const [semVidas, setSemVidas] = useState(false)
+  // Acertos seguidos; em 3, 5 e 8 aparece um aviso de comemoração
+  const [seguidas, setSeguidas] = useState(0)
+  const [combo, setCombo] = useState<number | null>(null)
   const inicio = useRef(Date.now())
 
   const item = itens[indice]
@@ -57,10 +60,20 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     const certo = corrigir(item.questao, resposta)
     setAcertou(certo)
     setVerificada(true)
+    const novaSequencia = certo ? seguidas + 1 : 0
+    setSeguidas(novaSequencia)
+    if ([3, 5, 8].includes(novaSequencia)) setCombo(novaSequencia)
     setRespostas((r) => [...r, { questao: item.questao, acertou: certo, resposta }])
     // Salva na hora: estatísticas, fila de revisão e perda de vida
     if (modo !== 'nivelamento') responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
-  }, [podeVerificar, item, resposta, responder, modo])
+  }, [podeVerificar, item, resposta, responder, modo, seguidas])
+
+  // O aviso de sequência some sozinho
+  useEffect(() => {
+    if (combo === null) return
+    const id = setTimeout(() => setCombo(null), 1800)
+    return () => clearTimeout(id)
+  }, [combo])
 
   const continuar = useCallback(() => {
     if (!verificada) return
@@ -129,6 +142,30 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
           </span>
         )}
       </header>
+
+      {/* Aviso de acertos seguidos */}
+      <div className="pointer-events-none relative z-30 flex justify-center" aria-live="polite">
+        <AnimatePresence>
+          {combo !== null && (
+            <motion.div
+              key={combo}
+              className="absolute top-1 flex items-center gap-1.5 rounded-full bg-laranja px-4 py-1.5 font-extrabold text-white shadow-[0_4px_0_0_var(--color-laranja-escura)]"
+              initial={{ opacity: 0, y: -12, scale: 0.6 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.8 }}
+              transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+            >
+              <motion.span
+                animate={{ rotate: [0, -15, 12, -6, 0], scale: [1, 1.3, 1] }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <Flame className="h-5 w-5" fill="currentColor" strokeWidth={1.5} aria-hidden />
+              </motion.span>
+              {combo} seguidas!
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
 
       {/* Questão atual */}
       <main className="flex-1 overflow-y-auto">

@@ -1,5 +1,6 @@
 import { House, RotateCcw, Trophy, UserRound, type LucideIcon } from 'lucide-react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { questoesParaRevisar } from '../lib/revisao'
 import { useAgora } from '../lib/hooks'
@@ -23,6 +24,7 @@ export function Layout() {
   const fila = useJogo((s) => s.filaRevisao)
   const agora = useAgora(30_000)
   const pendentes = questoesParaRevisar(fila, agora).length
+  const { pathname } = useLocation()
 
   return (
     <div className="min-h-dvh md:flex">
@@ -35,7 +37,15 @@ export function Layout() {
       </aside>
 
       <main className="min-w-0 flex-1 pb-24 md:pb-10">
-        <Outlet />
+        {/* Cada tela entra subindo de leve ao trocar de aba */}
+        <motion.div
+          key={pathname}
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.25, ease: 'easeOut' }}
+        >
+          <Outlet />
+        </motion.div>
       </main>
 
       {/* Barra inferior no celular */}
@@ -66,15 +76,30 @@ function LinkNav({ item, contador, lateral }: { item: ItemNav; contador: number;
         }`
       }
     >
-      <span className="relative">
-        <Icone className={lateral ? 'h-6 w-6' : 'h-6 w-6'} strokeWidth={2.4} aria-hidden />
-        {contador > 0 && (
-          <span className="absolute -right-2.5 -top-1.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-laranja px-1 text-[10px] font-extrabold text-white">
-            {contador > 9 ? '9+' : contador}
-          </span>
-        )}
-      </span>
-      {rotulo}
+      {({ isActive }) => (
+        <>
+          {/* O ícone da aba escolhida dá um pulinho */}
+          <motion.span
+            className="relative"
+            animate={isActive ? { scale: [1, 1.25, 1], rotate: [0, -8, 0] } : { scale: 1, rotate: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Icone className="h-6 w-6" strokeWidth={2.4} aria-hidden />
+            {contador > 0 && (
+              <motion.span
+                key={contador}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 18 }}
+                className="absolute -right-2.5 -top-1.5 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-laranja px-1 text-[10px] font-extrabold text-white"
+              >
+                {contador > 9 ? '9+' : contador}
+              </motion.span>
+            )}
+          </motion.span>
+          {rotulo}
+        </>
+      )}
     </NavLink>
   )
 }

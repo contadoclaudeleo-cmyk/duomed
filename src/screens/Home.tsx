@@ -1,5 +1,6 @@
+import { motion } from 'framer-motion'
 import { Check, Flame, RotateCcw } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { buscarMateria, materiaDisponivel, NOMES_NIVEL, primeiraMateriaDoModo, unidadesDoNivel } from '../data'
 import { useJogo } from '../store/useJogo'
@@ -17,6 +18,10 @@ import { Botao } from '../components/Botao'
 
 /** Curva do caminho: cada lição se desloca um pouco para os lados */
 const deslocamentoDoNo = (indiceGlobal: number) => Math.round(Math.sin(indiceGlobal * 0.95) * 64)
+
+// Lições concluídas que a trilha já mostrou. Fica fora do componente para
+// lembrar entre telas: a lição concluída agora comemora ao voltar para cá.
+let concluidasJaVistas: Set<string> | null = null
 
 export function Home() {
   const navegar = useNavigate()
@@ -37,6 +42,15 @@ export function Home() {
   const unidades = unidadesDoNivel(materia, nivel)
   const pendentes = questoesParaRevisar(fila).length
 
+  // Na primeira abertura do app nada comemora; depois, só as lições novas
+  const [recentes] = useState(() => {
+    const novas = concluidasJaVistas ? Object.keys(concluidas).filter((id) => !concluidasJaVistas!.has(id)) : []
+    return new Set(novas)
+  })
+  useEffect(() => {
+    concluidasJaVistas = new Set(Object.keys(concluidas))
+  }, [concluidas])
+
   function comecar(licaoId: string) {
     const jogo = useJogo.getState()
     jogo.sincronizarVidas()
@@ -56,11 +70,18 @@ export function Home() {
       <div className="mx-auto max-w-2xl px-4 pt-5">
         {/* Meta do dia */}
         <div className="flex items-center gap-4 rounded-2xl border-2 border-borda bg-superficie p-4">
-          <Flame
-            className={`h-9 w-9 shrink-0 ${xpHoje >= meta ? 'text-laranja' : 'text-apagado-texto'}`}
-            fill="currentColor"
-            strokeWidth={1.5}
-          />
+          <motion.span
+            className="shrink-0"
+            style={{ transformOrigin: '50% 90%' }}
+            animate={xpHoje >= meta ? { scaleY: [1, 1.12, 0.95, 1], rotate: [0, -5, 4, 0] } : { scaleY: 1, rotate: 0 }}
+            transition={xpHoje >= meta ? { duration: 1.6, repeat: Infinity, ease: 'easeInOut' } : { duration: 0.2 }}
+          >
+            <Flame
+              className={`h-9 w-9 ${xpHoje >= meta ? 'text-laranja' : 'text-apagado-texto'}`}
+              fill="currentColor"
+              strokeWidth={1.5}
+            />
+          </motion.span>
           <div className="flex-1">
             <div className="mb-1.5 flex items-baseline justify-between">
               <p className="font-extrabold">{xpHoje >= meta ? 'Meta do dia batida!' : 'Meta do dia'}</p>
@@ -113,8 +134,12 @@ export function Home() {
 
           return (
             <section key={unidade.id} className="mt-8">
-              <div
+              <motion.div
                 className={`flex items-center gap-4 rounded-2xl p-4 ${liberada ? 'bg-agua text-white' : 'bg-apagado text-apagado-texto'}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, ease: 'easeOut' }}
               >
                 <div className="flex-1">
                   <p className="text-xs font-extrabold uppercase tracking-wider opacity-80">
@@ -128,7 +153,7 @@ export function Home() {
                   {completa && <Check className="h-4 w-4" strokeWidth={3.5} />}
                   {feitas}/{unidade.licoes.length}
                 </span>
-              </div>
+              </motion.div>
 
               <div className="flex flex-col items-center gap-7 pb-4 pt-14">
                 {unidade.licoes.map((licao, li) => {
@@ -145,6 +170,7 @@ export function Home() {
                       aoAlternar={() => setAberta(aberta === licao.id ? null : licao.id)}
                       aoComecar={() => comecar(licao.id)}
                       aoVerComentada={() => navegar(`/comentada/${licao.id}`)}
+                      recemConcluida={recentes.has(licao.id)}
                     />
                   )
                 })}

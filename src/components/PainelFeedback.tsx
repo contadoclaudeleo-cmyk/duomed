@@ -34,12 +34,26 @@ export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinu
           <Lapio humor={acertou ? 'acerto' : 'erro'} altura={64} className="shrink-0" />
           <div className={`flex-1 ${acertou ? 'text-acerto-texto' : 'text-erro-texto'}`}>
             <div className="flex items-center gap-2">
-              <span
+              <motion.span
                 className={`flex h-8 w-8 items-center justify-center rounded-full ${acertou ? 'bg-agua' : 'bg-erro'} text-white`}
+                initial={{ scale: 0, rotate: acertou ? -120 : 0 }}
+                animate={acertou ? { scale: 1, rotate: 0 } : { scale: 1, rotate: [0, -14, 12, -8, 0] }}
+                transition={{
+                  scale: { type: 'spring', stiffness: 480, damping: 14, delay: 0.12 },
+                  // Mola só aceita dois valores; o balanço do erro usa animação comum
+                  rotate: acertou ? { type: 'spring', stiffness: 300, damping: 15, delay: 0.12 } : { duration: 0.5, delay: 0.25 },
+                }}
               >
                 {acertou ? <Check className="h-5 w-5" strokeWidth={3.5} /> : <X className="h-5 w-5" strokeWidth={3.5} />}
-              </span>
-              <h3 className="text-xl font-extrabold">{titulo}</h3>
+              </motion.span>
+              <motion.h3
+                className="text-xl font-extrabold"
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.18, duration: 0.25 }}
+              >
+                {titulo}
+              </motion.h3>
             </div>
             {!acertou && (
               <p className="mt-2 font-bold">

@@ -7,10 +7,11 @@ import { formatarDuracao } from '../lib/datas'
 import { buscarConquista } from '../lib/conquistas'
 import { Botao } from '../components/Botao'
 import { Lapio } from '../components/Lapio'
+import { Confete, NumeroAnimado } from '../components/Animacoes'
 
 interface CartaoProps {
   rotulo: string
-  valor: string
+  valor: ReactNode
   Icone: LucideIcon
   cor: 'laranja' | 'agua' | 'texto'
   atraso: number
@@ -35,7 +36,13 @@ function CartaoNumero({ rotulo, valor, Icone, cor, atraso }: CartaoProps) {
         {rotulo}
       </div>
       <div className={`flex items-center justify-center gap-1.5 bg-superficie py-3 text-xl font-extrabold ${c.texto}`}>
-        <Icone className="h-5 w-5" strokeWidth={2.6} aria-hidden />
+        <motion.span
+          initial={{ scale: 0, rotate: -90 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ delay: atraso + 0.15, type: 'spring', stiffness: 400, damping: 12 }}
+        >
+          <Icone className="h-5 w-5" strokeWidth={2.6} aria-hidden />
+        </motion.span>
         {valor}
       </div>
     </motion.div>
@@ -55,13 +62,15 @@ export function Resultado() {
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col px-5 pb-6 pt-10">
+      <Confete quantidade={r.precisao === 100 ? 80 : 56} />
       <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
         <Lapio humor="festa" altura={160} />
 
         <div>
           <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.4 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: 'spring', stiffness: 380, damping: 14 }}
             className="text-3xl font-extrabold text-laranja"
           >
             {titulo}
@@ -70,8 +79,20 @@ export function Resultado() {
         </div>
 
         <div className="flex w-full gap-3">
-          <CartaoNumero rotulo="XP ganho" valor={`+${r.xp.total}`} Icone={Zap} cor="laranja" atraso={0.15} />
-          <CartaoNumero rotulo="Precisão" valor={`${r.precisao}%`} Icone={Target} cor="agua" atraso={0.3} />
+          <CartaoNumero
+            rotulo="XP ganho"
+            valor={<NumeroAnimado valor={r.xp.total} atraso={0.35} formatar={(n) => `+${n}`} />}
+            Icone={Zap}
+            cor="laranja"
+            atraso={0.15}
+          />
+          <CartaoNumero
+            rotulo="Precisão"
+            valor={<NumeroAnimado valor={r.precisao} atraso={0.5} formatar={(n) => `${n}%`} />}
+            Icone={Target}
+            cor="agua"
+            atraso={0.3}
+          />
           <CartaoNumero rotulo="Tempo" valor={formatarDuracao(r.tempoMs)} Icone={Clock} cor="texto" atraso={0.45} />
         </div>
         <p className="-mt-3 text-xs text-texto-suave">{partesXp.join(' + ')}</p>
@@ -121,12 +142,19 @@ function Destaque({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: atraso }}
+      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ delay: atraso, type: 'spring', stiffness: 320, damping: 22 }}
       className="flex items-center gap-3 rounded-2xl border-2 border-borda bg-superficie px-4 py-3 text-left text-sm font-semibold"
     >
-      <Icone className={`h-6 w-6 shrink-0 ${cor}`} strokeWidth={2.4} aria-hidden />
+      <motion.span
+        className="shrink-0"
+        initial={{ scale: 0 }}
+        animate={{ scale: [0, 1.4, 1], rotate: [0, -12, 0] }}
+        transition={{ delay: atraso + 0.15, duration: 0.5 }}
+      >
+        <Icone className={`h-6 w-6 ${cor}`} strokeWidth={2.4} aria-hidden />
+      </motion.span>
       <span>{children}</span>
     </motion.div>
   )
