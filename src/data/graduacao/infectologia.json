@@ -20,12 +20,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é sepse?",
               "opcoes": [
-                "Disfunção de órgãos causada por resposta desregulada a uma infecção",
+                "Disfunção de órgão por resposta desregulada à infecção",
                 "Qualquer febre",
                 "Infecção leve",
-                "Bactéria no sangue sem sintomas"
+                "Presença de bactéria no sangue, mesmo sem nenhum sintoma ou alteração de exame"
               ],
-              "resposta": "Disfunção de órgãos causada por resposta desregulada a uma infecção",
+              "resposta": "Disfunção de órgão por resposta desregulada à infecção",
               "explicacao": "É uma emergência médica.",
               "revisado": false
             },
@@ -81,12 +81,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais medidas fazem parte do pacote da primeira hora da sepse?",
               "opcoes": [
-                "Lactato, hemoculturas, antibiótico e volume se pressão baixa",
+                "Lactato, hemocultura, antibiótico e volume",
                 "Só antibiótico",
                 "Só soro",
-                "Esperar exames"
+                "Aguardar todos os exames antes de começar qualquer tratamento no paciente"
               ],
-              "resposta": "Lactato, hemoculturas, antibiótico e volume se pressão baixa",
+              "resposta": "Lactato, hemocultura, antibiótico e volume",
               "explicacao": "Vasopressor se a pressão não melhorar.",
               "revisado": false
             },
@@ -96,12 +96,12 @@
               "caso": "Idoso com infecção urinária tem confusão, frequência respiratória de 26 e pressão de 85/50.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Sepse, possivelmente choque séptico",
+                "Sepse, talvez choque séptico",
                 "Infecção urinária simples",
                 "Desidratação",
-                "AVC"
+                "AVC isquêmico com confusão e queda da pressão"
               ],
-              "resposta": "Sepse, possivelmente choque séptico",
+              "resposta": "Sepse, talvez choque séptico",
               "explicacao": "Exige tratamento imediato.",
               "revisado": false
             },
@@ -121,7 +121,7 @@
                 "noradrenalina",
                 "dopamina",
                 "adrenalina",
-                "dobutamina"
+                "dobutamina em dose alta"
               ],
               "resposta": "noradrenalina",
               "explicacao": "A meta é pressão média de 65.",
@@ -163,12 +163,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a definição de febre de origem indeterminada clássica?",
               "opcoes": [
-                "Febre acima de 38,3 por mais de 3 semanas sem causa após investigação",
+                "Febre > 38,3 por 3 semanas sem causa após investigação",
                 "Febre de 1 dia",
                 "Febre de 37,5",
-                "Febre com causa conhecida"
+                "Qualquer febre acima de 37,8 que dure mais de dois dias e tenha causa conhecida"
               ],
-              "resposta": "Febre acima de 38,3 por mais de 3 semanas sem causa após investigação",
+              "resposta": "Febre > 38,3 por 3 semanas sem causa após investigação",
               "explicacao": "As principais causas são infecções, cânceres e doenças inflamatórias.",
               "revisado": false
             },
@@ -202,7 +202,7 @@
                 "Tuberculose",
                 "Gripe",
                 "Resfriado",
-                "Otite"
+                "Otite média de repetição"
               ],
               "resposta": "Tuberculose",
               "explicacao": "Também endocardite e abscessos.",
@@ -214,12 +214,12 @@
               "caso": "Paciente tem febre há 4 semanas, perda de peso e suor noturno, sem foco aparente.",
               "enunciado": "Quais causas investigar?",
               "opcoes": [
-                "Tuberculose, endocardite, linfoma e doenças autoimunes",
-                "Nenhuma",
+                "Tuberculose, endocardite, linfoma e autoimunes",
                 "Só gripe",
-                "Só alergia"
+                "Só alergia",
+                "Nenhuma causa; febre longa sem foco é sempre emocional"
               ],
-              "resposta": "Tuberculose, endocardite, linfoma e doenças autoimunes",
+              "resposta": "Tuberculose, endocardite, linfoma e autoimunes",
               "explicacao": "A investigação deve ser organizada.",
               "revisado": false
             },
@@ -239,7 +239,7 @@
                 "neutropenia febril",
                 "febre do feno",
                 "febre reumática",
-                "febre amarela"
+                "febre amarela silvestre"
               ],
               "resposta": "neutropenia febril",
               "explicacao": "Neutrófilos abaixo de 500.",
@@ -256,12 +256,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é tratamento empírico?",
               "opcoes": [
-                "Antibiótico escolhido antes de saber o germe, pelo provável causador",
-                "Antibiótico guiado pela cultura",
+                "Antibiótico pelo germe provável, antes da cultura",
+                "Guiado pela cultura",
                 "Sem antibiótico",
-                "Antibiótico para sempre"
+                "Antibiótico mantido para sempre, sem nunca suspender o tratamento"
               ],
-              "resposta": "Antibiótico escolhido antes de saber o germe, pelo provável causador",
+              "resposta": "Antibiótico pelo germe provável, antes da cultura",
               "explicacao": "Depois se ajusta pela cultura.",
               "revisado": false
             },
@@ -317,12 +317,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que não usar antibiótico em resfriados?",
               "opcoes": [
-                "São causados por vírus e o antibiótico só traz riscos",
+                "São vírus, e o antibiótico só traz riscos",
                 "Porque é caro",
                 "Porque cura rápido",
-                "Porque é proibido"
+                "Porque é proibido por lei em qualquer pessoa resfriada"
               ],
-              "resposta": "São causados por vírus e o antibiótico só traz riscos",
+              "resposta": "São vírus, e o antibiótico só traz riscos",
               "explicacao": "Aumenta resistência e efeitos colaterais.",
               "revisado": false
             },
@@ -332,12 +332,12 @@
               "caso": "Paciente com pneumonia melhora após 3 dias de ceftriaxona, e a cultura mostra pneumococo sensível à penicilina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Trocar para amoxicilina oral e completar o tempo",
-                "Manter ceftriaxona por 21 dias",
+                "Trocar para amoxicilina oral e completar",
+                "Ceftriaxona por 21 dias",
                 "Associar vancomicina",
-                "Parar tudo"
+                "Manter a ceftriaxona e somar mais dois antibióticos por segurança"
               ],
-              "resposta": "Trocar para amoxicilina oral e completar o tempo",
+              "resposta": "Trocar para amoxicilina oral e completar",
               "explicacao": "É o descalonamento.",
               "revisado": false
             },
@@ -357,7 +357,7 @@
                 "efeito colateral",
                 "benefício",
                 "tempo",
-                "custo"
+                "custo para o hospital"
               ],
               "resposta": "efeito colateral",
               "explicacao": "Usar só quando necessário.",
@@ -381,12 +381,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se faz o diagnóstico do HIV no Brasil?",
               "opcoes": [
-                "Dois testes diferentes positivos, como testes rápidos ou ELISA com confirmatório",
+                "Dois testes diferentes positivos",
                 "Um teste rápido apenas",
                 "Pelo sintoma",
-                "Pelo hemograma"
+                "Pelo hemograma com linfócitos baixos e plaquetas normais"
               ],
-              "resposta": "Dois testes diferentes positivos, como testes rápidos ou ELISA com confirmatório",
+              "resposta": "Dois testes diferentes positivos",
               "explicacao": "O fluxograma do Ministério da Saúde orienta.",
               "revisado": false
             },
@@ -431,7 +431,7 @@
                 "imunológica",
                 "de risco",
                 "clínica",
-                "viral"
+                "viral latente"
               ],
               "resposta": "imunológica",
               "explicacao": "Testes de quarta geração encurtam a janela.",
@@ -457,12 +457,12 @@
               "caso": "Paciente teve relação sem camisinha há 3 dias e o teste rápido deu negativo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Iniciar profilaxia pós-exposição e repetir os testes depois",
-                "Tranquilizar e nada",
+                "Iniciar PEP e repetir os testes depois",
+                "Tranquilizar e liberar",
                 "Esperar 6 meses",
-                "Só repetir o teste em 1 ano"
+                "Repetir só o teste rápido daqui a um ano, sem nenhum remédio agora"
               ],
-              "resposta": "Iniciar profilaxia pós-exposição e repetir os testes depois",
+              "resposta": "Iniciar PEP e repetir os testes depois",
               "explicacao": "A PEP é eficaz até 72 horas.",
               "revisado": false
             },
@@ -527,7 +527,7 @@
                 "Tenofovir, lamivudina e dolutegravir",
                 "Apenas um remédio",
                 "Efavirenz sozinho",
-                "Nenhum"
+                "Zidovudina e nevirapina em dose dobrada"
               ],
               "resposta": "Tenofovir, lamivudina e dolutegravir",
               "explicacao": "É bem tolerado e eficaz.",
@@ -547,9 +547,9 @@
               "enunciado": "A carga viral ___ significa que o vírus não é detectado no sangue com o tratamento.",
               "opcoes": [
                 "indetectável",
-                "alta",
+                "elevada",
                 "positiva",
-                "baixa"
+                "baixa mas ainda visível no exame"
               ],
               "resposta": "indetectável",
               "explicacao": "Quem está indetectável não transmite por via sexual.",
@@ -575,12 +575,12 @@
               "caso": "Paciente com HIV para os remédios por 6 meses e volta com carga viral alta.",
               "enunciado": "O que avaliar?",
               "opcoes": [
-                "Teste de resistência (genotipagem) e reforço da adesão",
-                "Nada",
+                "Genotipagem e reforço da adesão",
                 "Reiniciar sem avaliação",
-                "Trocar todos aleatoriamente"
+                "Trocar todos ao acaso",
+                "Aguardar mais um ano sem remédio para ver se a carga viral cai sozinha"
               ],
-              "resposta": "Teste de resistência (genotipagem) e reforço da adesão",
+              "resposta": "Genotipagem e reforço da adesão",
               "explicacao": "A interrupção favorece resistência.",
               "revisado": false
             },
@@ -678,12 +678,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quando suspender a profilaxia de pneumocistose?",
               "opcoes": [
-                "Após CD4 acima de 200 por mais de 3 meses com tratamento",
+                "Com CD4 > 200 por mais de 3 meses",
                 "Nunca",
                 "Após 1 semana",
-                "Logo no início"
+                "Logo no início do tratamento antirretroviral, antes de qualquer melhora"
               ],
-              "resposta": "Após CD4 acima de 200 por mais de 3 meses com tratamento",
+              "resposta": "Com CD4 > 200 por mais de 3 meses",
               "explicacao": "A recuperação imune protege.",
               "revisado": false
             },
@@ -693,12 +693,12 @@
               "caso": "Paciente com HIV tem febre, dor de cabeça há 3 semanas e pressão do líquor alta.",
               "enunciado": "Qual é a hipótese e o exame?",
               "opcoes": [
-                "Neurocriptococose; antígeno criptocócico e tinta da China no líquor",
-                "Meningite viral; nada",
+                "Neurocriptococose; antígeno e tinta da China",
+                "Meningite viral; observar",
                 "Enxaqueca; analgésico",
-                "AVC; tomografia apenas"
+                "AVC; tomografia apenas e liberar se a imagem vier normal"
               ],
-              "resposta": "Neurocriptococose; antígeno criptocócico e tinta da China no líquor",
+              "resposta": "Neurocriptococose; antígeno e tinta da China",
               "explicacao": "Punções de alívio são parte do tratamento.",
               "revisado": false
             },
@@ -767,12 +767,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a tríade clássica da meningite bacteriana?",
               "opcoes": [
-                "Febre, rigidez de nuca e alteração da consciência",
+                "Febre, rigidez de nuca e confusão",
                 "Tosse, febre e chiado",
                 "Dor abdominal, febre e diarreia",
-                "Dor de cabeça e vômito apenas"
+                "Dor de cabeça e vômito apenas, sem febre nem rigidez no pescoço"
               ],
-              "resposta": "Febre, rigidez de nuca e alteração da consciência",
+              "resposta": "Febre, rigidez de nuca e confusão",
               "explicacao": "Nem todos têm a tríade completa.",
               "revisado": false
             },
@@ -792,7 +792,7 @@
                 "Brudzinski",
                 "Kernig",
                 "Babinski",
-                "Lasègue"
+                "Lasègue da ciatalgia"
               ],
               "resposta": "Brudzinski",
               "explicacao": "O de Kernig é dor ao estender a perna.",
@@ -806,7 +806,7 @@
                 "Ceftriaxona, vancomicina e ampicilina",
                 "Amoxicilina oral",
                 "Ceftriaxona sozinha",
-                "Nada"
+                "Antiviral oral e analgésico, com alta para casa"
               ],
               "resposta": "Ceftriaxona, vancomicina e ampicilina",
               "explicacao": "A ampicilina cobre Listeria.",
@@ -821,7 +821,7 @@
                 "Meningococcemia",
                 "Dengue",
                 "Alergia",
-                "Enxaqueca"
+                "Enxaqueca com aura visual"
               ],
               "resposta": "Meningococcemia",
               "explicacao": "Antibiótico imediato e profilaxia dos contatos.",
@@ -863,7 +863,7 @@
                 "Herpes simples",
                 "Influenza",
                 "Rinovírus",
-                "Rotavírus"
+                "Rotavírus intestinal"
               ],
               "resposta": "Herpes simples",
               "explicacao": "O aciclovir deve ser iniciado logo.",
@@ -910,7 +910,7 @@
                 "seios da face",
                 "pele",
                 "unha",
-                "pé"
+                "pé diabético"
               ],
               "resposta": "seios da face",
               "explicacao": "Também de endocardite.",
@@ -924,7 +924,7 @@
                 "Penicilina cristalina venosa por 14 dias",
                 "Penicilina benzatina",
                 "Azitromicina",
-                "Doxiciclina"
+                "Doxiciclina oral por apenas três dias"
               ],
               "resposta": "Penicilina cristalina venosa por 14 dias",
               "explicacao": "A benzatina não atinge bem o cérebro.",
@@ -937,9 +937,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Aciclovir venoso imediatamente",
-                "Esperar o resultado do PCR",
+                "Esperar o PCR",
                 "Antibiótico apenas",
-                "Antipsicótico"
+                "Antipsicótico e observação até o resultado do líquor sair"
               ],
               "resposta": "Aciclovir venoso imediatamente",
               "explicacao": "O PCR de herpes no líquor confirma.",
@@ -961,7 +961,7 @@
                 "NMDA",
                 "DNA",
                 "Ro",
-                "CCP"
+                "CCP citrulinado"
               ],
               "resposta": "NMDA",
               "explicacao": "Pode se associar a tumor de ovário.",
@@ -1003,12 +1003,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o sinal de alerta para fasciíte necrosante?",
               "opcoes": [
-                "Dor desproporcional ao aspecto da pele",
+                "Dor maior que o aspecto da pele",
                 "Coceira",
                 "Pele fria",
-                "Ausência de dor"
+                "Ausência total de dor no local, com pele normal"
               ],
-              "resposta": "Dor desproporcional ao aspecto da pele",
+              "resposta": "Dor maior que o aspecto da pele",
               "explicacao": "Exige cirurgia urgente.",
               "revisado": false
             },
@@ -1028,7 +1028,7 @@
                 "subcutâneo",
                 "muscular",
                 "ósseo",
-                "articular"
+                "articular do joelho"
               ],
               "resposta": "subcutâneo",
               "explicacao": "A erisipela é mais superficial.",
@@ -1042,7 +1042,7 @@
                 "Penicilina ou cefalexina",
                 "Antifúngico",
                 "Antiviral",
-                "Nada"
+                "Pomada de corticoide no local"
               ],
               "resposta": "Penicilina ou cefalexina",
               "explicacao": "Elevar a perna ajuda.",
@@ -1054,12 +1054,12 @@
               "caso": "Diabético tem dor intensa na perna, pele roxa com bolhas e crepitação.",
               "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Fasciíte necrosante; cirurgia urgente e antibiótico",
+                "Fasciíte necrosante; cirurgia e antibiótico",
                 "Celulite; antibiótico oral",
                 "Trombose; anticoagulante",
-                "Alergia; antialérgico"
+                "Alergia; antialérgico e compressa fria com retorno no dia seguinte"
               ],
-              "resposta": "Fasciíte necrosante; cirurgia urgente e antibiótico",
+              "resposta": "Fasciíte necrosante; cirurgia e antibiótico",
               "explicacao": "O atraso aumenta muito a mortalidade.",
               "revisado": false
             },
@@ -1131,7 +1131,7 @@
                 "AAS e anti-inflamatórios",
                 "Paracetamol",
                 "Dipirona",
-                "Nenhum"
+                "Compressa fria na testa"
               ],
               "resposta": "AAS e anti-inflamatórios",
               "explicacao": "Aumentam o risco de sangramento.",
@@ -1165,9 +1165,9 @@
               "enunciado": "Qual sinal de alarme indica gravidade na dengue?",
               "opcoes": [
                 "Dor abdominal intensa e vômitos persistentes",
-                "Febre alta no primeiro dia",
+                "Febre alta no 1º dia",
                 "Dor no corpo",
-                "Dor atrás dos olhos"
+                "Dor atrás dos olhos e manchas vermelhas que coçam no tronco"
               ],
               "resposta": "Dor abdominal intensa e vômitos persistentes",
               "explicacao": "Também sangramento e queda das plaquetas com hematócrito subindo.",
@@ -1182,7 +1182,7 @@
                 "Internar e hidratação venosa",
                 "Casa com soro oral",
                 "Antibiótico",
-                "Nada"
+                "Anti-inflamatório para a dor e retorno em três dias"
               ],
               "resposta": "Internar e hidratação venosa",
               "explicacao": "É dengue com sinais de alarme.",
@@ -1249,7 +1249,7 @@
                 "Síndrome de Guillain-Barré",
                 "AVC",
                 "Enxaqueca",
-                "Epilepsia"
+                "Epilepsia de difícil controle"
               ],
               "resposta": "Síndrome de Guillain-Barré",
               "explicacao": "Na gestação, causa microcefalia.",
@@ -1282,12 +1282,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tratamento da chikungunya na fase aguda?",
               "opcoes": [
-                "Repouso, hidratação e analgésicos como paracetamol e dipirona",
+                "Repouso, hidratação e paracetamol ou dipirona",
                 "Antibiótico",
                 "Antiviral",
-                "Corticoide sempre"
+                "Corticoide em dose alta logo no primeiro dia, para todos os pacientes"
               ],
-              "resposta": "Repouso, hidratação e analgésicos como paracetamol e dipirona",
+              "resposta": "Repouso, hidratação e paracetamol ou dipirona",
               "explicacao": "Evitar anti-inflamatórios até excluir dengue.",
               "revisado": false
             },
@@ -1297,12 +1297,12 @@
               "caso": "Gestante tem manchas com coceira e conjuntivite em área de zika.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Investigar zika e acompanhar o feto com ultrassom",
-                "Nada",
+                "Investigar zika e acompanhar o feto",
                 "Interromper a gestação",
-                "Antibiótico"
+                "Antibiótico",
+                "Repouso e antialérgico, sem nenhum exame ou acompanhamento do bebê"
               ],
-              "resposta": "Investigar zika e acompanhar o feto com ultrassom",
+              "resposta": "Investigar zika e acompanhar o feto",
               "explicacao": "O risco é maior no início da gestação.",
               "revisado": false
             },
@@ -1322,7 +1322,7 @@
                 "chikungunya",
                 "zika",
                 "dengue",
-                "influenza"
+                "influenza do tipo A"
               ],
               "resposta": "chikungunya",
               "explicacao": "A dor pode durar anos.",
@@ -1364,12 +1364,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a forma grave da leptospirose?",
               "opcoes": [
-                "Síndrome de Weil com icterícia, lesão renal e sangramento",
+                "Síndrome de Weil: icterícia, rim e sangramento",
                 "Gripe leve",
                 "Diarreia",
-                "Conjuntivite"
+                "Conjuntivite com coceira e lacrimejamento que passa sozinha"
               ],
-              "resposta": "Síndrome de Weil com icterícia, lesão renal e sangramento",
+              "resposta": "Síndrome de Weil: icterícia, rim e sangramento",
               "explicacao": "Também hemorragia pulmonar.",
               "revisado": false
             },
@@ -1389,7 +1389,7 @@
                 "febre maculosa",
                 "dengue",
                 "zika",
-                "gripe"
+                "gripe sazonal"
               ],
               "resposta": "febre maculosa",
               "explicacao": "Tem alta mortalidade sem tratamento.",
@@ -1418,7 +1418,7 @@
                 "Gota espessa para malária",
                 "Hemocultura apenas",
                 "Raio X",
-                "Nada"
+                "Sorologia para dengue e espera do resultado por uma semana"
               ],
               "resposta": "Gota espessa para malária",
               "explicacao": "O diagnóstico rápido salva vidas.",
@@ -1440,7 +1440,7 @@
                 "visceral",
                 "cutânea",
                 "mucosa",
-                "difusa"
+                "difusa anérgica"
               ],
               "resposta": "visceral",
               "explicacao": "É chamada de calazar.",
@@ -1514,7 +1514,7 @@
                 "estreptococo",
                 "vírus",
                 "fungo",
-                "mycoplasma"
+                "mycoplasma atípico"
               ],
               "resposta": "estreptococo",
               "explicacao": "Por 10 dias.",
@@ -1525,12 +1525,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tratamento da gripe em grupos de risco?",
               "opcoes": [
-                "Oseltamivir, idealmente nas primeiras 48 horas",
+                "Oseltamivir, de preferência em até 48 h",
                 "Antibiótico",
-                "Nada",
-                "Corticoide"
+                "Corticoide",
+                "Somente repouso e vitamina C, sem antiviral"
               ],
-              "resposta": "Oseltamivir, idealmente nas primeiras 48 horas",
+              "resposta": "Oseltamivir, de preferência em até 48 h",
               "explicacao": "Gestantes e idosos são grupos de risco.",
               "revisado": false
             },
@@ -1540,12 +1540,12 @@
               "caso": "Criança de 4 anos tem febre, garganta com placas, linfonodos dolorosos e sem tosse.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Teste rápido de estreptococo ou tratar com amoxicilina",
-                "Nada",
+                "Teste rápido ou amoxicilina",
                 "Antiviral",
-                "Corticoide"
+                "Corticoide",
+                "Apenas gargarejo com água e sal, sem exame nem antibiótico"
               ],
-              "resposta": "Teste rápido de estreptococo ou tratar com amoxicilina",
+              "resposta": "Teste rápido ou amoxicilina",
               "explicacao": "Previne a febre reumática.",
               "revisado": false
             },
@@ -1607,12 +1607,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a abordagem sindrômica das infecções sexuais?",
               "opcoes": [
-                "Tratar pelo sintoma, sem esperar exames, cobrindo as causas mais prováveis",
+                "Tratar pelo sintoma, cobrindo as causas prováveis",
                 "Esperar todos os exames",
                 "Não tratar",
-                "Tratar só o parceiro"
+                "Tratar só o parceiro e mandar a pessoa voltar quando os exames estiverem prontos"
               ],
-              "resposta": "Tratar pelo sintoma, sem esperar exames, cobrindo as causas mais prováveis",
+              "resposta": "Tratar pelo sintoma, cobrindo as causas prováveis",
               "explicacao": "Útil quando o exame não está disponível.",
               "revisado": false
             },
@@ -1646,7 +1646,7 @@
                 "Herpes genital",
                 "Sífilis",
                 "Gonorreia",
-                "Clamídia"
+                "Clamídia com corrimento"
               ],
               "resposta": "Herpes genital",
               "explicacao": "O aciclovir reduz as crises.",
@@ -1658,12 +1658,12 @@
               "caso": "Gestante tem VDRL positivo 1:32 no pré-natal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratar com penicilina benzatina e tratar o parceiro",
+                "Penicilina benzatina e tratar o parceiro",
                 "Esperar o parto",
                 "Azitromicina",
-                "Nada"
+                "Repetir o VDRL no próximo mês e só tratar se o valor subir"
               ],
-              "resposta": "Tratar com penicilina benzatina e tratar o parceiro",
+              "resposta": "Penicilina benzatina e tratar o parceiro",
               "explicacao": "Previne a sífilis congênita.",
               "revisado": false
             },
@@ -1683,7 +1683,7 @@
                 "profilaxia",
                 "vacina",
                 "cura",
-                "dieta"
+                "dieta especial"
               ],
               "resposta": "profilaxia",
               "explicacao": "Usa tenofovir com entricitabina.",
@@ -1725,12 +1725,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a conduta após acidente com agulha de paciente com HIV?",
               "opcoes": [
-                "Lavar o local e iniciar profilaxia pós-exposição em até 72 horas",
-                "Nada",
-                "Esperar exames do paciente por 1 semana",
-                "Só vacina"
+                "Lavar e iniciar PEP em até 72 h",
+                "Só vacina",
+                "Só lavar",
+                "Esperar os exames do paciente-fonte por uma semana antes de decidir"
               ],
-              "resposta": "Lavar o local e iniciar profilaxia pós-exposição em até 72 horas",
+              "resposta": "Lavar e iniciar PEP em até 72 h",
               "explicacao": "A profilaxia dura 28 dias.",
               "revisado": false
             },
@@ -1761,12 +1761,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia indicada após mordida de cão com ferimento grave?",
               "opcoes": [
-                "Lavar a ferida, vacina e soro antirrábico, conforme o caso",
-                "Nada",
+                "Lavar, vacina e soro antirrábico",
                 "Antibiótico apenas",
-                "Só curativo"
+                "Só curativo",
+                "Observar o cão por 10 dias e só vacinar se ele morrer"
               ],
-              "resposta": "Lavar a ferida, vacina e soro antirrábico, conforme o caso",
+              "resposta": "Lavar, vacina e soro antirrábico",
               "explicacao": "O animal pode ser observado por 10 dias.",
               "revisado": false
             },
@@ -1777,9 +1777,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Vacina e imunoglobulina contra hepatite B",
-                "Nada",
                 "Só vacina em 1 ano",
-                "Antiviral"
+                "Antiviral",
+                "Apenas lavar o local e repetir a sorologia em seis meses"
               ],
               "resposta": "Vacina e imunoglobulina contra hepatite B",
               "explicacao": "O ideal é nas primeiras 48 horas.",
@@ -1827,12 +1827,12 @@
               "caso": "Paciente com pneumonia tem pressão de 80/40 após 30 mL/kg de soro, lactato de 5.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Iniciar noradrenalina e manter antibiótico",
+                "Noradrenalina e manter antibiótico",
                 "Mais 5 litros de soro",
-                "Esperar",
-                "Alta"
+                "Observar",
+                "Suspender o antibiótico e esperar a cultura sair"
               ],
-              "resposta": "Iniciar noradrenalina e manter antibiótico",
+              "resposta": "Noradrenalina e manter antibiótico",
               "explicacao": "É choque séptico.",
               "revisado": false
             },
@@ -1866,12 +1866,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quando associar corticoide no choque séptico?",
               "opcoes": [
-                "Quando o choque persiste apesar de volume e vasopressor",
+                "Choque que persiste com volume e vasopressor",
                 "Sempre",
                 "Nunca",
-                "Só em crianças"
+                "Só em crianças com febre alta no primeiro dia"
               ],
-              "resposta": "Quando o choque persiste apesar de volume e vasopressor",
+              "resposta": "Choque que persiste com volume e vasopressor",
               "explicacao": "A hidrocortisona reduz o tempo de choque.",
               "revisado": false
             },
@@ -1883,8 +1883,8 @@
               "opcoes": [
                 "Retirar o cateter e buscar outros focos",
                 "Trocar o antibiótico apenas",
-                "Nada",
-                "Dar antitérmico"
+                "Dar antitérmico",
+                "Manter o cateter e dobrar a dose do mesmo antibiótico"
               ],
               "resposta": "Retirar o cateter e buscar outros focos",
               "explicacao": "O controle do foco é essencial.",
@@ -1906,7 +1906,7 @@
                 "fluidorresponsividade",
                 "diurese",
                 "glicemia",
-                "saturação"
+                "saturação venosa central"
               ],
               "resposta": "fluidorresponsividade",
               "explicacao": "A elevação passiva das pernas ajuda.",
@@ -1932,12 +1932,12 @@
               "caso": "Paciente em choque séptico com noradrenalina em dose alta continua hipotenso.",
               "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Associar vasopressina e hidrocortisona",
+                "Somar vasopressina e hidrocortisona",
                 "Suspender a noradrenalina",
                 "Dar diurético",
-                "Nada"
+                "Dar mais 5 litros de soro rápido e repetir o lactato"
               ],
-              "resposta": "Associar vasopressina e hidrocortisona",
+              "resposta": "Somar vasopressina e hidrocortisona",
               "explicacao": "A vasopressina reduz a dose de noradrenalina.",
               "revisado": false
             }
@@ -1978,12 +1978,12 @@
               "caso": "Paciente intubado há 6 dias tem febre, secreção purulenta e infiltrado novo.",
               "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Pneumonia associada à ventilação; antibiótico de amplo espectro",
+                "PAV; antibiótico de amplo espectro",
                 "Atelectasia; fisioterapia",
                 "Edema; diurético",
-                "Nada"
+                "Secreção normal do tubo; aspirar mais vezes e manter tudo igual"
               ],
-              "resposta": "Pneumonia associada à ventilação; antibiótico de amplo espectro",
+              "resposta": "PAV; antibiótico de amplo espectro",
               "explicacao": "Cobrir Pseudomonas e, se necessário, MRSA.",
               "revisado": false
             },
@@ -2010,7 +2010,7 @@
                 "Não tratar e retirar a sonda se possível",
                 "Antibiótico venoso",
                 "Antifúngico",
-                "Trocar a sonda e tratar"
+                "Trocar a sonda e tratar com antibiótico por 14 dias"
               ],
               "resposta": "Não tratar e retirar a sonda se possível",
               "explicacao": "Bacteriúria sem sintomas não deve ser tratada.",
@@ -2058,12 +2058,12 @@
               "caso": "Paciente tem diarreia grave, leucócitos de 30 mil e cólon dilatado após antibiótico.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Colite fulminante por Clostridioides difficile",
+                "Colite fulminante por C. difficile",
                 "Gastroenterite viral",
                 "Doença de Crohn",
-                "Isquemia"
+                "Isquemia mesentérica por trombose venosa"
               ],
-              "resposta": "Colite fulminante por Clostridioides difficile",
+              "resposta": "Colite fulminante por C. difficile",
               "explicacao": "Pode precisar de cirurgia.",
               "revisado": false
             }
@@ -2079,12 +2079,12 @@
               "caso": "Hemocultura positiva para Staphylococcus aureus em paciente sem foco aparente.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ecocardiograma e antibiótico venoso por pelo menos 14 dias",
+                "Eco e antibiótico venoso por ≥ 14 dias",
                 "Tratar como contaminação",
                 "Antibiótico oral por 5 dias",
-                "Nada"
+                "Repetir a hemocultura em um mês sem tratar agora"
               ],
-              "resposta": "Ecocardiograma e antibiótico venoso por pelo menos 14 dias",
+              "resposta": "Eco e antibiótico venoso por ≥ 14 dias",
               "explicacao": "O aureus no sangue nunca é contaminação.",
               "revisado": false
             },
@@ -2121,7 +2121,7 @@
                 "Vancomicina ou daptomicina",
                 "Penicilina",
                 "Cefalexina",
-                "Amoxicilina"
+                "Amoxicilina com clavulanato oral"
               ],
               "resposta": "Vancomicina ou daptomicina",
               "explicacao": "A daptomicina é útil em endocardite do lado direito.",
@@ -2135,8 +2135,8 @@
               "opcoes": [
                 "Cirurgia cardíaca urgente",
                 "Só antibiótico",
-                "Alta",
-                "Diurético apenas"
+                "Liberar",
+                "Diurético apenas e antibiótico oral em casa"
               ],
               "resposta": "Cirurgia cardíaca urgente",
               "explicacao": "A insuficiência cardíaca é a principal indicação de cirurgia.",
@@ -2169,12 +2169,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual germe causa endocardite com hemocultura negativa?",
               "opcoes": [
-                "Germes do grupo HACEK, Coxiella e Bartonella",
+                "HACEK, Coxiella e Bartonella",
                 "Staphylococcus aureus",
                 "E. coli",
-                "Pneumococo"
+                "Pneumococo resistente à penicilina"
               ],
-              "resposta": "Germes do grupo HACEK, Coxiella e Bartonella",
+              "resposta": "HACEK, Coxiella e Bartonella",
               "explicacao": "Também uso prévio de antibiótico.",
               "revisado": false
             },
@@ -2184,12 +2184,12 @@
               "caso": "Paciente com prótese valvar tem febre há 2 semanas sem foco.",
               "enunciado": "Qual exame é obrigatório?",
               "opcoes": [
-                "Hemoculturas e ecocardiograma transesofágico",
+                "Hemoculturas e eco transesofágico",
                 "Raio X",
                 "Hemograma apenas",
-                "Nada"
+                "Antitérmico e retorno em um mês se a febre continuar"
               ],
-              "resposta": "Hemoculturas e ecocardiograma transesofágico",
+              "resposta": "Hemoculturas e eco transesofágico",
               "explicacao": "Endocardite de prótese é grave.",
               "revisado": false
             }
@@ -2214,9 +2214,9 @@
               "enunciado": "Quais infecções investigar antes de iniciar os antirretrovirais?",
               "opcoes": [
                 "Tuberculose e criptococose",
-                "Nenhuma",
                 "Só gripe",
-                "Só hepatite"
+                "Só hepatite",
+                "Investigação nenhuma; os antirretrovirais devem começar sem nenhum exame"
               ],
               "resposta": "Tuberculose e criptococose",
               "explicacao": "Iniciar antirretroviral com estas infecções exige cuidado com o tempo.",
@@ -2252,12 +2252,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a interação mais importante entre rifampicina e dolutegravir?",
               "opcoes": [
-                "A rifampicina reduz o dolutegravir, exigindo dose dobrada",
-                "Nenhuma",
+                "Rifampicina reduz o dolutegravir; dobrar a dose",
+                "Interação nenhuma",
                 "Aumenta a toxicidade",
-                "Anula a rifampicina"
+                "Anula a rifampicina, que deve ser trocada por isoniazida sozinha"
               ],
-              "resposta": "A rifampicina reduz o dolutegravir, exigindo dose dobrada",
+              "resposta": "Rifampicina reduz o dolutegravir; dobrar a dose",
               "explicacao": "O dolutegravir passa para duas vezes ao dia.",
               "revisado": false
             },
@@ -2270,7 +2270,7 @@
                 "Síndrome inflamatória de reconstituição imune",
                 "Falha do tratamento",
                 "Nova infecção",
-                "Alergia"
+                "Alergia grave aos antirretrovirais com febre, manchas e linfonodos"
               ],
               "resposta": "Síndrome inflamatória de reconstituição imune",
               "explicacao": "Pode precisar de corticoide.",
@@ -2303,12 +2303,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a meta do tratamento antirretroviral?",
               "opcoes": [
-                "Carga viral indetectável e recuperação do CD4",
+                "Carga viral indetectável e CD4 subindo",
                 "Cura do HIV",
                 "CD4 zero",
-                "Carga viral alta"
+                "Carga viral alta e estável por vários anos"
               ],
-              "resposta": "Carga viral indetectável e recuperação do CD4",
+              "resposta": "Carga viral indetectável e CD4 subindo",
               "explicacao": "O tratamento é por toda a vida.",
               "revisado": false
             },
@@ -2318,12 +2318,12 @@
               "caso": "Gestante com HIV tem carga viral indetectável com 36 semanas.",
               "enunciado": "Qual é a via de parto?",
               "opcoes": [
-                "Indicação obstétrica, podendo ser parto normal",
+                "Indicação obstétrica, podendo ser normal",
                 "Cesárea obrigatória",
                 "Proibido parto normal",
-                "Parto em casa"
+                "Parto em casa, sem nenhum cuidado com o bebê"
               ],
-              "resposta": "Indicação obstétrica, podendo ser parto normal",
+              "resposta": "Indicação obstétrica, podendo ser normal",
               "explicacao": "Com carga detectável alta, prefere-se cesárea.",
               "revisado": false
             }
@@ -2339,12 +2339,12 @@
               "caso": "Paciente com HIV e CD4 de 80 tem lesão cerebral com reforço em anel e IgG para toxoplasma positiva.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratamento empírico para toxoplasmose e reavaliar em 2 semanas",
+                "Tratar toxoplasmose e reavaliar em 2 semanas",
                 "Biópsia imediata",
-                "Nada",
-                "Cirurgia"
+                "Cirurgia",
+                "Esperar o CD4 subir com os antirretrovirais sem tratar a lesão"
               ],
-              "resposta": "Tratamento empírico para toxoplasmose e reavaliar em 2 semanas",
+              "resposta": "Tratar toxoplasmose e reavaliar em 2 semanas",
               "explicacao": "Se não melhorar, pensar em linfoma.",
               "revisado": false
             },
@@ -2378,12 +2378,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia secundária após neurotoxoplasmose?",
               "opcoes": [
-                "Manter sulfadiazina e pirimetamina em dose menor até CD4 subir",
-                "Nada",
+                "Sulfadiazina e pirimetamina até o CD4 subir",
                 "Só antirretroviral",
-                "Antibiótico comum"
+                "Antibiótico comum",
+                "Nenhuma profilaxia depois que a lesão do cérebro melhorar"
               ],
-              "resposta": "Manter sulfadiazina e pirimetamina em dose menor até CD4 subir",
+              "resposta": "Sulfadiazina e pirimetamina até o CD4 subir",
               "explicacao": "Evita recidivas.",
               "revisado": false
             },
@@ -2396,7 +2396,7 @@
                 "Retinite por citomegalovírus",
                 "Catarata",
                 "Glaucoma",
-                "Conjuntivite"
+                "Conjuntivite viral comum que passa sozinha"
               ],
               "resposta": "Retinite por citomegalovírus",
               "explicacao": "Exige tratamento urgente.",
@@ -2418,7 +2418,7 @@
                 "disseminada",
                 "cutânea",
                 "leve",
-                "ocular"
+                "ocular isolada"
               ],
               "resposta": "disseminada",
               "explicacao": "Causa febre, perda de peso e pancitopenia.",
@@ -2432,7 +2432,7 @@
                 "Anfotericina B com flucitosina",
                 "Fluconazol sozinho",
                 "Antibiótico",
-                "Corticoide"
+                "Corticoide em dose alta por um mês"
               ],
               "resposta": "Anfotericina B com flucitosina",
               "explicacao": "Depois segue com fluconazol.",
@@ -2444,12 +2444,12 @@
               "caso": "Paciente com HIV tem diarreia crônica e emagrecimento com CD4 de 30.",
               "enunciado": "Quais causas investigar?",
               "opcoes": [
-                "Cryptosporidium, Cystoisospora, microsporídios e citomegalovírus",
+                "Cryptosporidium, Cystoisospora e CMV",
                 "Só vírus comuns",
-                "Nenhuma",
-                "Só bactérias"
+                "Só bactérias",
+                "Causa nenhuma; é só efeito dos antirretrovirais"
               ],
-              "resposta": "Cryptosporidium, Cystoisospora, microsporídios e citomegalovírus",
+              "resposta": "Cryptosporidium, Cystoisospora e CMV",
               "explicacao": "O tratamento do HIV ajuda a resolver.",
               "revisado": false
             }
@@ -2490,12 +2490,12 @@
               "caso": "Homem tem relações frequentes sem camisinha com parceiros de status desconhecido.",
               "enunciado": "Qual estratégia oferecer?",
               "opcoes": [
-                "Profilaxia pré-exposição e testagem regular",
-                "Nada",
+                "PrEP e testagem regular",
                 "Só camisinha obrigatória",
-                "Só PEP sempre"
+                "Só PEP sempre",
+                "Orientar abstinência e não oferecer nenhuma profilaxia"
               ],
-              "resposta": "Profilaxia pré-exposição e testagem regular",
+              "resposta": "PrEP e testagem regular",
               "explicacao": "A PrEP é muito eficaz.",
               "revisado": false
             },
@@ -2504,12 +2504,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual exame é necessário antes de iniciar PrEP?",
               "opcoes": [
-                "Teste de HIV negativo e função renal",
-                "Nenhum",
+                "HIV negativo e função renal",
                 "Só hemograma",
-                "Ressonância"
+                "Ressonância",
+                "Exame nenhum; a PrEP pode ser dada sem testar"
               ],
-              "resposta": "Teste de HIV negativo e função renal",
+              "resposta": "HIV negativo e função renal",
               "explicacao": "Também testes de outras infecções sexuais.",
               "revisado": false
             },
@@ -2519,12 +2519,12 @@
               "caso": "Casal em que só um tem HIV, com carga viral indetectável há 1 ano, quer ter filhos.",
               "enunciado": "O que orientar?",
               "opcoes": [
-                "Relação sem camisinha é segura para transmissão do HIV nessas condições",
+                "Sem camisinha, não transmite o HIV nesse caso",
                 "Não pode ter filhos",
                 "Só por inseminação",
-                "Precisa de cesárea"
+                "Precisa de cesárea e não pode amamentar, mesmo sendo o homem que tem HIV"
               ],
-              "resposta": "Relação sem camisinha é segura para transmissão do HIV nessas condições",
+              "resposta": "Sem camisinha, não transmite o HIV nesse caso",
               "explicacao": "É o conceito indetectável igual a intransmissível.",
               "revisado": false
             },
@@ -2544,7 +2544,7 @@
                 "transmissão",
                 "infecção",
                 "cura",
-                "doença"
+                "doença congênita"
               ],
               "resposta": "transmissão",
               "explicacao": "A taxa cai para menos de 1%.",
@@ -2555,12 +2555,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado com o bebê de mãe com HIV?",
               "opcoes": [
-                "Antirretroviral, não amamentar e testar o bebê",
+                "Antirretroviral, não amamentar e testar",
                 "Amamentar",
-                "Nada",
-                "Só vacinas"
+                "Só vacinas",
+                "Amamentar no peito e só testar o bebê aos 5 anos"
               ],
-              "resposta": "Antirretroviral, não amamentar e testar o bebê",
+              "resposta": "Antirretroviral, não amamentar e testar",
               "explicacao": "O SUS fornece fórmula.",
               "revisado": false
             },
@@ -2570,12 +2570,12 @@
               "caso": "Mulher sofreu violência sexual há 12 horas.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "PEP para HIV, contracepção de emergência e prevenção de outras infecções",
-                "Esperar",
+                "PEP, contracepção de emergência e outras profilaxias",
                 "Só boletim de ocorrência",
-                "Nada"
+                "Aguardar",
+                "Exigir boletim de ocorrência e laudo do IML antes de qualquer atendimento"
               ],
-              "resposta": "PEP para HIV, contracepção de emergência e prevenção de outras infecções",
+              "resposta": "PEP, contracepção de emergência e outras profilaxias",
               "explicacao": "O atendimento não depende de boletim.",
               "revisado": false
             }
@@ -2638,12 +2638,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual exame do líquor ajuda no diagnóstico de meningite tuberculosa?",
               "opcoes": [
-                "Adenosina deaminase e teste molecular",
+                "ADA e teste molecular",
                 "Glicose apenas",
-                "Cultura comum em 24 horas",
-                "Nada"
+                "Cultura em 24 horas",
+                "Hemograma e PCR no sangue"
               ],
-              "resposta": "Adenosina deaminase e teste molecular",
+              "resposta": "ADA e teste molecular",
               "explicacao": "A cultura demora semanas.",
               "revisado": false
             },
@@ -2654,9 +2654,9 @@
               "enunciado": "Qual é a conduta além do antifúngico?",
               "opcoes": [
                 "Punções de alívio repetidas",
-                "Nada",
                 "Corticoide",
-                "Cirurgia"
+                "Cirurgia",
+                "Acetazolamida e manitol sem nenhuma punção"
               ],
               "resposta": "Punções de alívio repetidas",
               "explicacao": "A pressão alta causa cegueira e morte.",
@@ -2689,12 +2689,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia para contatos de meningite por Haemophilus?",
               "opcoes": [
-                "Rifampicina para contatos domiciliares com crianças não vacinadas",
-                "Nada",
+                "Rifampicina para contatos com crianças não vacinadas",
                 "Amoxicilina",
-                "Vacina BCG"
+                "Vacina BCG",
+                "Profilaxia nenhuma; o Haemophilus não passa de uma pessoa para outra"
               ],
-              "resposta": "Rifampicina para contatos domiciliares com crianças não vacinadas",
+              "resposta": "Rifampicina para contatos com crianças não vacinadas",
               "explicacao": "Reduz casos secundários.",
               "revisado": false
             },
@@ -2704,12 +2704,12 @@
               "caso": "Paciente com meningite pneumocócica fica surdo após a alta.",
               "enunciado": "O que poderia ter reduzido esse risco?",
               "opcoes": [
-                "Dexametasona antes ou junto do antibiótico",
+                "Dexametasona antes ou com o antibiótico",
                 "Antibiótico mais tarde",
-                "Nada",
-                "Antiviral"
+                "Antiviral",
+                "Esperar a cultura antes de qualquer remédio"
               ],
-              "resposta": "Dexametasona antes ou junto do antibiótico",
+              "resposta": "Dexametasona antes ou com o antibiótico",
               "explicacao": "A surdez é sequela comum.",
               "revisado": false
             }
@@ -2804,7 +2804,7 @@
                 "opistótono",
                 "trismo",
                 "tetania",
-                "riso"
+                "riso sardônico facial"
               ],
               "resposta": "opistótono",
               "explicacao": "O trismo é a rigidez da mandíbula.",
@@ -2818,7 +2818,7 @@
                 "Suporte em UTI",
                 "Antibiótico",
                 "Antiviral específico",
-                "Nada"
+                "Repouso em casa e soro oral"
               ],
               "resposta": "Suporte em UTI",
               "explicacao": "Não há remédio específico.",
@@ -2833,7 +2833,7 @@
                 "Hemorragia pulmonar",
                 "Pneumonia simples",
                 "Asma",
-                "Embolia"
+                "Embolia pulmonar por trombose de perna"
               ],
               "resposta": "Hemorragia pulmonar",
               "explicacao": "É a forma mais grave.",
@@ -2944,7 +2944,7 @@
                 "Cerca de 4 a 6 semanas",
                 "3 dias",
                 "1 ano",
-                "1 semana"
+                "Uma única dose no pronto-socorro"
               ],
               "resposta": "Cerca de 4 a 6 semanas",
               "explicacao": "Pode ser parcialmente oral.",
@@ -2988,7 +2988,7 @@
                 "Grupo D, choque; soro rápido e UTI",
                 "Grupo A; casa",
                 "Grupo B; observação",
-                "Grupo C; soro oral"
+                "Grupo C; soro oral em casa com retorno em 48 horas"
               ],
               "resposta": "Grupo D, choque; soro rápido e UTI",
               "explicacao": "O choque da dengue é por extravasamento de plasma.",
@@ -3024,12 +3024,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado na fase de recuperação da dengue?",
               "opcoes": [
-                "Evitar excesso de soro pelo risco de edema pulmonar",
+                "Evitar soro demais pelo risco de edema pulmonar",
                 "Dar mais soro",
                 "Antibiótico",
-                "Corticoide"
+                "Corticoide em dose alta para acelerar a recuperação das plaquetas"
               ],
-              "resposta": "Evitar excesso de soro pelo risco de edema pulmonar",
+              "resposta": "Evitar soro demais pelo risco de edema pulmonar",
               "explicacao": "O líquido volta para os vasos.",
               "revisado": false
             },
@@ -3039,12 +3039,12 @@
               "caso": "Paciente com dengue tem plaquetas de 20 mil sem sangramento.",
               "enunciado": "Precisa de transfusão de plaquetas?",
               "opcoes": [
-                "Não, sem sangramento não se transfunde",
+                "Não; sem sangramento não se transfunde",
                 "Sim, sempre",
                 "Sim, abaixo de 50 mil",
-                "Sim, com qualquer valor"
+                "Sim, com qualquer valor abaixo de 150 mil, mesmo sem nenhum sangramento"
               ],
-              "resposta": "Não, sem sangramento não se transfunde",
+              "resposta": "Não; sem sangramento não se transfunde",
               "explicacao": "A transfusão profilática não ajuda.",
               "revisado": false
             },
@@ -3064,7 +3064,7 @@
                 "pressão diferencial (convergente)",
                 "pressão alta",
                 "frequência",
-                "saturação"
+                "saturação de oxigênio medida no dedo da mão"
               ],
               "resposta": "pressão diferencial (convergente)",
               "explicacao": "Indica gravidade.",
@@ -3090,12 +3090,12 @@
               "caso": "Paciente com dengue tem dor abdominal intensa no 4º dia.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar sinal de alarme e internar para soro venoso",
-                "Analgésico e alta",
+                "Sinal de alarme: internar e soro venoso",
+                "Analgésico e liberar",
                 "Anti-inflamatório",
-                "Nada"
+                "Anti-inflamatório e retorno no dia seguinte só se piorar"
               ],
-              "resposta": "Considerar sinal de alarme e internar para soro venoso",
+              "resposta": "Sinal de alarme: internar e soro venoso",
               "explicacao": "A dor abdominal é sinal de alarme.",
               "revisado": false
             }
@@ -3114,7 +3114,7 @@
                 "Artesunato venoso em UTI",
                 "Cloroquina oral",
                 "Primaquina",
-                "Nada"
+                "Observação e hidratação oral em casa"
               ],
               "resposta": "Artesunato venoso em UTI",
               "explicacao": "É malária grave.",
@@ -3150,12 +3150,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o principal cuidado com a febre amarela grave?",
               "opcoes": [
-                "Suporte em UTI, sem tratamento antiviral específico",
+                "Suporte em UTI, sem antiviral específico",
                 "Antibiótico",
                 "Vacina na doença",
-                "Cloroquina"
+                "Cloroquina e primaquina por 14 dias, com repouso em casa"
               ],
-              "resposta": "Suporte em UTI, sem tratamento antiviral específico",
+              "resposta": "Suporte em UTI, sem antiviral específico",
               "explicacao": "A prevenção é a vacina.",
               "revisado": false
             },
@@ -3168,7 +3168,7 @@
                 "Febre amarela",
                 "Hepatite A",
                 "Malária",
-                "Dengue"
+                "Dengue clássica sem gravidade"
               ],
               "resposta": "Febre amarela",
               "explicacao": "Notificar imediatamente.",
@@ -3204,7 +3204,7 @@
                 "Teste de antígeno em fita",
                 "Hemograma",
                 "PCR para dengue",
-                "Teste de HIV"
+                "Teste rápido de HIV e sífilis"
               ],
               "resposta": "Teste de antígeno em fita",
               "explicacao": "Útil em locais sem microscopista.",
@@ -3218,8 +3218,8 @@
               "opcoes": [
                 "Derivados de artemisinina",
                 "Primaquina",
-                "Nada",
-                "Doxiciclina"
+                "Doxiciclina",
+                "Tratamento nenhum até o parto, para proteger o bebê"
               ],
               "resposta": "Derivados de artemisinina",
               "explicacao": "A primaquina é proibida na gestação.",
@@ -3262,12 +3262,12 @@
               "caso": "Criança com febre há 2 meses, baço gigante e pancitopenia.",
               "enunciado": "Qual exame confirma leishmaniose visceral?",
               "opcoes": [
-                "Teste rápido rK39 ou aspirado de medula",
+                "Teste rK39 ou aspirado de medula",
                 "Hemocultura",
                 "Raio X",
-                "Ultrassom apenas"
+                "Ultrassom de abdome apenas, sem nenhum exame de sangue"
               ],
-              "resposta": "Teste rápido rK39 ou aspirado de medula",
+              "resposta": "Teste rK39 ou aspirado de medula",
               "explicacao": "O tratamento é com anfotericina ou antimoniato.",
               "revisado": false
             },
@@ -3279,7 +3279,7 @@
                 "Penicilina cristalina ou ceftriaxona",
                 "Doxiciclina sempre",
                 "Antifúngico",
-                "Nada"
+                "Antiviral venoso e hidratação vigorosa, sem nenhum antibiótico"
               ],
               "resposta": "Penicilina cristalina ou ceftriaxona",
               "explicacao": "Também suporte renal.",
@@ -3291,12 +3291,12 @@
               "caso": "Paciente com leptospirose tem insuficiência renal com potássio baixo.",
               "enunciado": "Qual é a característica dessa lesão renal?",
               "opcoes": [
-                "Lesão renal não oligúrica com perda de potássio",
+                "Lesão não oligúrica com perda de potássio",
                 "Lesão com potássio alto",
                 "Normal",
-                "Obstrução"
+                "Obstrução das vias urinárias por cálculos bilaterais"
               ],
-              "resposta": "Lesão renal não oligúrica com perda de potássio",
+              "resposta": "Lesão não oligúrica com perda de potássio",
               "explicacao": "É típica da leptospirose.",
               "revisado": false
             },
@@ -3327,12 +3327,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a complicação neurológica mais temida da doença de Chagas aguda?",
               "opcoes": [
-                "Meningoencefalite em crianças e imunossuprimidos",
+                "Meningoencefalite em criança e imunossuprimido",
                 "Enxaqueca",
                 "Epilepsia comum",
-                "Nenhuma"
+                "Complicação nenhuma; o Chagas agudo só atinge o coração"
               ],
-              "resposta": "Meningoencefalite em crianças e imunossuprimidos",
+              "resposta": "Meningoencefalite em criança e imunossuprimido",
               "explicacao": "É rara, mas grave.",
               "revisado": false
             },
@@ -3342,12 +3342,12 @@
               "caso": "Surto de febre, mialgia e miocardite em família após açaí não pasteurizado.",
               "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Doença de Chagas aguda; benznidazol",
+                "Chagas aguda; benznidazol",
                 "Dengue; hidratação",
                 "Leptospirose; penicilina",
-                "Hepatite; suporte"
+                "Hepatite viral aguda; suporte e repouso em casa sem exames"
               ],
-              "resposta": "Doença de Chagas aguda; benznidazol",
+              "resposta": "Chagas aguda; benznidazol",
               "explicacao": "Notificar a vigilância.",
               "revisado": false
             }
@@ -3371,12 +3371,12 @@
               "caso": "Paciente na UTI tem infecção por Acinetobacter resistente a carbapenêmicos.",
               "enunciado": "Quais opções existem?",
               "opcoes": [
-                "Polimixina B ou ampicilina com sulbactam em dose alta, conforme sensibilidade",
+                "Polimixina B ou ampicilina-sulbactam em dose alta",
                 "Amoxicilina",
                 "Cefalexina",
-                "Nada"
+                "Ceftriaxona em dose habitual, porque o germe sempre responde a ela"
               ],
-              "resposta": "Polimixina B ou ampicilina com sulbactam em dose alta, conforme sensibilidade",
+              "resposta": "Polimixina B ou ampicilina-sulbactam em dose alta",
               "explicacao": "Germes muito resistentes exigem combinação.",
               "revisado": false
             },
@@ -3411,9 +3411,9 @@
               "enunciado": "Qual é o risco das polimixinas?",
               "opcoes": [
                 "Lesão renal e neurológica",
-                "Nenhum",
                 "Hepatite",
-                "Diabetes"
+                "Diabetes",
+                "Risco nenhum; são remédios muito seguros"
               ],
               "resposta": "Lesão renal e neurológica",
               "explicacao": "Devem ser usadas com cuidado.",
@@ -3425,12 +3425,12 @@
               "caso": "Paciente com infecção urinária por E. coli ESBL está estável e pode tomar remédio oral.",
               "enunciado": "Qual opção pode ser usada conforme o antibiograma?",
               "opcoes": [
-                "Fosfomicina ou nitrofurantoína para cistite",
+                "Fosfomicina ou nitrofurantoína, se cistite",
                 "Ceftriaxona",
                 "Amoxicilina",
-                "Cefalexina"
+                "Cefalexina oral, que sempre funciona contra germes produtores de ESBL"
               ],
-              "resposta": "Fosfomicina ou nitrofurantoína para cistite",
+              "resposta": "Fosfomicina ou nitrofurantoína, se cistite",
               "explicacao": "Cistite por ESBL pode ser tratada por via oral.",
               "revisado": false
             },
@@ -3461,12 +3461,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é colonização?",
               "opcoes": [
-                "Presença do germe sem causar doença",
+                "Germe presente sem causar doença",
                 "Infecção grave",
                 "Contaminação de exame",
-                "Cura"
+                "Cura completa da infecção depois do antibiótico"
               ],
-              "resposta": "Presença do germe sem causar doença",
+              "resposta": "Germe presente sem causar doença",
               "explicacao": "Não deve ser tratada com antibiótico.",
               "revisado": false
             },
@@ -3478,8 +3478,8 @@
               "opcoes": [
                 "Isolamento de contato, sem antibiótico",
                 "Tratar com polimixina",
-                "Alta imediata",
-                "Nada"
+                "Liberar",
+                "Tratar com dois antibióticos fortes por 14 dias para eliminar o germe"
               ],
               "resposta": "Isolamento de contato, sem antibiótico",
               "explicacao": "Colonização não se trata.",
@@ -3525,7 +3525,7 @@
                 "Síndrome serotoninérgica",
                 "Sepse",
                 "Alergia",
-                "AVC"
+                "AVC isquêmico de tronco"
               ],
               "resposta": "Síndrome serotoninérgica",
               "explicacao": "A linezolida inibe a monoamina oxidase.",
@@ -3539,7 +3539,7 @@
                 "Azitromicina e quinolonas",
                 "Amoxicilina",
                 "Cefalexina",
-                "Penicilina"
+                "Penicilina benzatina intramuscular"
               ],
               "resposta": "Azitromicina e quinolonas",
               "explicacao": "Evitar com outros remédios que prolongam o QT.",
@@ -3551,12 +3551,12 @@
               "caso": "Paciente usando sulfametoxazol e trimetoprima tem potássio alto.",
               "enunciado": "Qual é a causa?",
               "opcoes": [
-                "A trimetoprima reduz a eliminação de potássio pelo rim",
+                "A trimetoprima retém potássio no rim",
                 "Desidratação",
                 "Hemólise",
-                "Erro"
+                "Erro do laboratório na coleta do sangue"
               ],
-              "resposta": "A trimetoprima reduz a eliminação de potássio pelo rim",
+              "resposta": "A trimetoprima retém potássio no rim",
               "explicacao": "Monitorar em idosos e renais.",
               "revisado": false
             },
@@ -3590,7 +3590,7 @@
                 "Voriconazol e fluconazol",
                 "Anfotericina",
                 "Nistatina",
-                "Terbinafina tópica"
+                "Terbinafina em creme na pele"
               ],
               "resposta": "Voriconazol e fluconazol",
               "explicacao": "Cuidado com estatinas e anticoagulantes.",
@@ -3602,12 +3602,12 @@
               "caso": "Paciente com alergia leve antiga à penicilina precisa de cefalosporina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Pode usar cefalosporina de outra geração com baixo risco",
+                "Pode usar cefalosporina de outra geração",
                 "Nunca usar",
-                "Usar vancomicina sempre",
-                "Dessensibilizar sempre"
+                "Vancomicina sempre",
+                "Dessensibilizar sempre, em UTI, antes de qualquer dose de cefalosporina"
               ],
-              "resposta": "Pode usar cefalosporina de outra geração com baixo risco",
+              "resposta": "Pode usar cefalosporina de outra geração",
               "explicacao": "A alergia cruzada é rara.",
               "revisado": false
             }
@@ -3648,12 +3648,12 @@
               "caso": "Paciente vai fazer cirurgia de cólon.",
               "enunciado": "Qual profilaxia é indicada?",
               "opcoes": [
-                "Antibiótico que cubra gram-negativos e anaeróbios antes da incisão",
-                "Nada",
+                "Antibiótico para gram-negativo e anaeróbio na incisão",
                 "Vancomicina por 7 dias",
-                "Antifúngico"
+                "Antifúngico",
+                "Antibiótico só depois da cirurgia, por duas semanas"
               ],
-              "resposta": "Antibiótico que cubra gram-negativos e anaeróbios antes da incisão",
+              "resposta": "Antibiótico para gram-negativo e anaeróbio na incisão",
               "explicacao": "Ex.: cefazolina com metronidazol.",
               "revisado": false
             },
@@ -3665,7 +3665,7 @@
                 "Dose única ou até 24 horas",
                 "7 dias",
                 "14 dias",
-                "1 mês"
+                "Até a retirada dos pontos, em um mês"
               ],
               "resposta": "Dose única ou até 24 horas",
               "explicacao": "Prolongar não reduz infecções.",
@@ -3677,12 +3677,12 @@
               "caso": "Paciente vai iniciar quimioterapia e tem sorologia positiva para hepatite B.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Profilaxia antiviral contra reativação",
-                "Nada",
+                "Antiviral para evitar reativação",
                 "Vacina",
-                "Interferon"
+                "Interferon",
+                "Medida nenhuma; a quimioterapia não muda a hepatite"
               ],
-              "resposta": "Profilaxia antiviral contra reativação",
+              "resposta": "Antiviral para evitar reativação",
               "explicacao": "A reativação pode ser fatal.",
               "revisado": false
             },
@@ -3713,12 +3713,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia de infecções em transplantados de órgãos?",
               "opcoes": [
-                "Sulfametoxazol para pneumocistose e antiviral para citomegalovírus conforme o risco",
-                "Nada",
+                "Sulfametoxazol e antiviral para CMV, conforme o risco",
                 "Apenas vacinas vivas",
-                "Antibiótico amplo diário"
+                "Antibiótico amplo diário",
+                "Profilaxia nenhuma; os remédios do transplante já protegem contra infecção"
               ],
-              "resposta": "Sulfametoxazol para pneumocistose e antiviral para citomegalovírus conforme o risco",
+              "resposta": "Sulfametoxazol e antiviral para CMV, conforme o risco",
               "explicacao": "A profilaxia depende do tempo após o transplante.",
               "revisado": false
             },
@@ -3729,9 +3729,9 @@
               "enunciado": "Qual estratégia ajuda?",
               "opcoes": [
                 "Estrogênio vaginal e avaliar profilaxia",
-                "Nada",
                 "Antibiótico venoso mensal",
-                "Sonda"
+                "Sonda",
+                "Beber pouca água para urinar menos vezes"
               ],
               "resposta": "Estrogênio vaginal e avaliar profilaxia",
               "explicacao": "O estrogênio restaura a flora vaginal.",
