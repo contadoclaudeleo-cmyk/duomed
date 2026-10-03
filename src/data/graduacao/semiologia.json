@@ -45,12 +45,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como deve ser registrada a queixa principal?",
               "opcoes": [
-                "Com as palavras do paciente, de forma breve e com a duração",
-                "Com o diagnóstico provável",
-                "Com termos técnicos",
-                "Com todos os sintomas da consulta"
+                "Palavras do paciente, breve e com a duração",
+                "Diagnóstico provável",
+                "Termos técnicos",
+                "Lista com todos os sintomas da consulta em termos técnicos e o diagnóstico provável"
               ],
-              "resposta": "Com as palavras do paciente, de forma breve e com a duração",
+              "resposta": "Palavras do paciente, breve e com a duração",
               "explicacao": "Exemplo: dor de cabeça há 3 dias.",
               "revisado": false
             },
@@ -99,7 +99,7 @@
                 "Tabagismo em anos-maço",
                 "Data de nascimento",
                 "Doenças da mãe",
-                "Queixa principal"
+                "Queixa principal com as palavras do paciente"
               ],
               "resposta": "Tabagismo em anos-maço",
               "explicacao": "Anos-maço é o número de maços por dia multiplicado pelos anos de tabagismo.",
@@ -122,7 +122,7 @@
                 "Revisão completa dos remédios em uso",
                 "História familiar",
                 "Apenas a queixa principal",
-                "Perguntas sobre a infância"
+                "Perguntas detalhadas sobre a infância e as doenças dos avós"
               ],
               "resposta": "Revisão completa dos remédios em uso",
               "explicacao": "Peça para o paciente trazer todas as caixas de remédio na consulta.",
@@ -164,12 +164,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tamanho correto do manguito para medir a pressão arterial?",
               "opcoes": [
-                "Largura de cerca de 40% e comprimento de 80% a 100% da circunferência do braço",
+                "Largura de 40% e comprimento de 80 a 100% do braço",
                 "Qualquer tamanho serve",
-                "Sempre o manguito infantil",
-                "Sempre o maior disponível"
+                "Sempre o infantil",
+                "Sempre o maior manguito disponível, para qualquer braço, adulto ou criança"
               ],
-              "resposta": "Largura de cerca de 40% e comprimento de 80% a 100% da circunferência do braço",
+              "resposta": "Largura de 40% e comprimento de 80 a 100% do braço",
               "explicacao": "Usar o manguito certo evita erros grandes na medida.",
               "revisado": false
             },
@@ -189,7 +189,7 @@
                 "Cheyne-Stokes",
                 "Kussmaul",
                 "Biot",
-                "eupneia"
+                "eupneia com suspiros frequentes"
               ],
               "resposta": "Cheyne-Stokes",
               "explicacao": "Também pode ocorrer em lesões neurológicas e em altitudes elevadas.",
@@ -215,12 +215,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o pulso paradoxal?",
               "opcoes": [
-                "Queda da pressão sistólica maior que 10 mmHg na inspiração",
-                "Pulso que acelera na inspiração",
-                "Pulso que alterna batimentos fortes e fracos",
-                "Ausência de pulso em um braço"
+                "Sistólica cai mais de 10 mmHg na inspiração",
+                "Acelera na inspiração",
+                "Fortes e fracos alternados",
+                "Pulso que some em um braço e aparece no outro durante a expiração"
               ],
-              "resposta": "Queda da pressão sistólica maior que 10 mmHg na inspiração",
+              "resposta": "Sistólica cai mais de 10 mmHg na inspiração",
               "explicacao": "Aparece no tamponamento cardíaco e na asma grave.",
               "revisado": false
             },
@@ -238,12 +238,12 @@
               "caso": "Paciente tem pressão de 150/90 mmHg no braço direito e 120/80 mmHg no esquerdo.",
               "enunciado": "O que essa diferença pode indicar?",
               "opcoes": [
-                "Obstrução arterial, como estenose da subclávia ou dissecção da aorta",
+                "Obstrução arterial, como subclávia ou dissecção",
                 "Sempre erro de técnica",
-                "É um achado normal",
-                "Hipotensão ao se levantar"
+                "Achado normal",
+                "Hipotensão ao se levantar da cama de manhã, sem nenhuma gravidade"
               ],
-              "resposta": "Obstrução arterial, como estenose da subclávia ou dissecção da aorta",
+              "resposta": "Obstrução arterial, como subclávia ou dissecção",
               "explicacao": "Na primeira consulta, a pressão deve ser medida nos dois braços.",
               "revisado": false
             }
@@ -334,12 +334,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se avalia o estado de hidratação no exame físico?",
               "opcoes": [
-                "Pelas mucosas, elasticidade da pele, enchimento capilar e volume de urina",
-                "Apenas pela cor dos olhos",
-                "Apenas pelo peso",
-                "Pelos reflexos"
+                "Mucosas, turgor, enchimento capilar e diurese",
+                "Só a cor dos olhos",
+                "Só o peso",
+                "Apenas pelos reflexos tendíneos e pela força muscular dos braços"
               ],
-              "resposta": "Pelas mucosas, elasticidade da pele, enchimento capilar e volume de urina",
+              "resposta": "Mucosas, turgor, enchimento capilar e diurese",
               "explicacao": "Mucosas secas e enchimento capilar lento sugerem desidratação.",
               "revisado": false
             },
@@ -483,12 +483,12 @@
               "caso": "Fumante de 65 anos tem dor na panturrilha ao caminhar 200 metros, que melhora quando para. Os pulsos dos pés estão ausentes.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Claudicação intermitente por doença arterial periférica",
+                "Claudicação por doença arterial periférica",
                 "Trombose venosa profunda",
                 "Dor ciática",
-                "Insuficiência venosa"
+                "Insuficiência venosa crônica com varizes e inchaço nas pernas"
               ],
-              "resposta": "Claudicação intermitente por doença arterial periférica",
+              "resposta": "Claudicação por doença arterial periférica",
               "explicacao": "Parar de fumar e caminhar regularmente são partes essenciais do tratamento.",
               "revisado": false
             }
@@ -528,12 +528,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que causa o desdobramento normal da segunda bulha na inspiração?",
               "opcoes": [
-                "Mais sangue chegando ao lado direito, o que atrasa o fechamento da valva pulmonar",
+                "Mais sangue à direita atrasa a valva pulmonar",
                 "Atraso da valva aórtica",
                 "Bloqueio de ramo esquerdo",
-                "Estenose mitral"
+                "Estenose mitral com átrio esquerdo grande e fibrilação atrial"
               ],
-              "resposta": "Mais sangue chegando ao lado direito, o que atrasa o fechamento da valva pulmonar",
+              "resposta": "Mais sangue à direita atrasa a valva pulmonar",
               "explicacao": "Na expiração, as duas valvas voltam a fechar quase juntas.",
               "revisado": false
             },
@@ -553,7 +553,7 @@
                 "estalido",
                 "atrito",
                 "clique",
-                "sopro"
+                "sopro contínuo"
               ],
               "resposta": "estalido",
               "explicacao": "O clique no meio da sístole é que é típico do prolapso da valva mitral.",
@@ -566,9 +566,9 @@
               "enunciado": "Qual é o achado e a hipótese?",
               "opcoes": [
                 "Atrito pericárdico, sugerindo pericardite",
-                "Sopro de estenose aórtica",
+                "Estenose aórtica",
                 "Terceira bulha",
-                "Estalido de abertura"
+                "Estalido de abertura da valva mitral estreitada"
               ],
               "resposta": "Atrito pericárdico, sugerindo pericardite",
               "explicacao": "O ECG costuma mostrar supradesnivelamento difuso do ST.",
@@ -579,12 +579,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Em que posição a estenose mitral é mais bem auscultada?",
               "opcoes": [
-                "Deitado sobre o lado esquerdo, com a campânula no ápice",
-                "Sentado e inclinado para frente",
+                "Decúbito lateral esquerdo, campânula no ápice",
+                "Sentado, inclinado à frente",
                 "Em pé",
-                "Deitado de costas, com o diafragma"
+                "Deitado de costas, com o diafragma no foco aórtico"
               ],
-              "resposta": "Deitado sobre o lado esquerdo, com a campânula no ápice",
+              "resposta": "Decúbito lateral esquerdo, campânula no ápice",
               "explicacao": "Sentado e inclinado para frente é a melhor posição para a insuficiência aórtica.",
               "revisado": false
             },
@@ -605,7 +605,7 @@
                 "Comunicação interatrial",
                 "Estenose aórtica",
                 "Hipertensão arterial",
-                "Achado normal"
+                "Achado normal em todas as idades"
               ],
               "resposta": "Comunicação interatrial",
               "explicacao": "O desdobramento fixo da B2 é um sinal clássico da comunicação interatrial.",
@@ -622,12 +622,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como é o sopro da estenose aórtica?",
               "opcoes": [
-                "Sistólico, em diamante, no foco aórtico, irradiando para o pescoço",
-                "Diastólico em ruflar no ápice",
-                "Holossistólico no ápice, irradiando para a axila",
-                "Contínuo, em maquinaria"
+                "Sistólico em diamante no foco aórtico, para o pescoço",
+                "Ruflar diastólico no ápice",
+                "Holossistólico para a axila",
+                "Sopro contínuo em maquinaria abaixo da clavícula esquerda"
               ],
-              "resposta": "Sistólico, em diamante, no foco aórtico, irradiando para o pescoço",
+              "resposta": "Sistólico em diamante no foco aórtico, para o pescoço",
               "explicacao": "Quanto mais tardio o pico do sopro, mais grave costuma ser a estenose.",
               "revisado": false
             },
@@ -748,12 +748,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o frêmito toracovocal?",
               "opcoes": [
-                "A vibração da voz sentida com a mão no tórax",
-                "Um ruído ouvido na ausculta",
+                "A vibração da voz sentida no tórax",
+                "Um ruído da ausculta",
                 "Um tipo de tosse",
-                "Uma deformidade do tórax"
+                "Uma deformidade do tórax em forma de quilha"
               ],
-              "resposta": "A vibração da voz sentida com a mão no tórax",
+              "resposta": "A vibração da voz sentida no tórax",
               "explicacao": "Pede-se ao paciente que fale \"trinta e três\" enquanto se palpa o tórax.",
               "revisado": false
             },
@@ -810,12 +810,12 @@
               "caso": "Paciente com DPOC descompensada usa os músculos do pescoço para respirar e tem retração entre as costelas.",
               "enunciado": "O que esses sinais indicam?",
               "opcoes": [
-                "Aumento do esforço para respirar",
+                "Mais esforço para respirar",
                 "Respiração normal",
-                "Pneumotórax, necessariamente",
-                "Paralisia do diafragma"
+                "Pneumotórax sempre",
+                "Paralisia completa do diafragma dos dois lados"
               ],
-              "resposta": "Aumento do esforço para respirar",
+              "resposta": "Mais esforço para respirar",
               "explicacao": "São sinais de desconforto respiratório que exigem avaliação rápida.",
               "revisado": false
             },
@@ -824,12 +824,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é a posição de tripé?",
               "opcoes": [
-                "Sentado, inclinado para frente, apoiado nos braços, para respirar melhor",
+                "Sentado, inclinado à frente, apoiado nos braços",
                 "Deitado de costas",
-                "Em pé com os braços para cima",
-                "Deitado de lado"
+                "Em pé, braços para cima",
+                "Deitado de lado com as pernas dobradas sobre a barriga"
               ],
-              "resposta": "Sentado, inclinado para frente, apoiado nos braços, para respirar melhor",
+              "resposta": "Sentado, inclinado à frente, apoiado nos braços",
               "explicacao": "Ela ajuda os músculos acessórios a trabalhar e é comum na DPOC grave.",
               "revisado": false
             },
@@ -850,7 +850,7 @@
                 "Para a esquerda, oposto ao pneumotórax",
                 "Para a direita",
                 "Não se desvia",
-                "Para frente"
+                "Para o mesmo lado do pneumotórax, puxada pelo pulmão"
               ],
               "resposta": "Para a esquerda, oposto ao pneumotórax",
               "explicacao": "O pneumotórax e o derrame volumoso empurram a traqueia. A atelectasia a puxa para o mesmo lado.",
@@ -895,7 +895,7 @@
                 "Murmúrio vesicular",
                 "Sopro tubário",
                 "Estridor",
-                "Sibilo"
+                "Sibilo expiratório difuso"
               ],
               "resposta": "Murmúrio vesicular",
               "explicacao": "Ele é suave e mais longo na inspiração do que na expiração.",
@@ -929,12 +929,12 @@
               "caso": "Paciente com febre e tosse tem frêmito aumentado, submacicez e sopro tubário na base direita.",
               "enunciado": "Qual é a síndrome?",
               "opcoes": [
-                "Consolidação pulmonar, como na pneumonia",
+                "Consolidação, como na pneumonia",
                 "Derrame pleural",
                 "Pneumotórax",
-                "Atelectasia"
+                "Atelectasia por obstrução de brônquio"
               ],
-              "resposta": "Consolidação pulmonar, como na pneumonia",
+              "resposta": "Consolidação, como na pneumonia",
               "explicacao": "Os alvéolos cheios de secreção transmitem melhor o som e a vibração.",
               "revisado": false
             },
@@ -943,12 +943,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é broncofonia aumentada?",
               "opcoes": [
-                "A voz ouvida com mais nitidez na ausculta, como na consolidação",
-                "A voz mais fraca",
-                "Uma tosse forte",
-                "Rouquidão"
+                "Voz mais nítida na ausculta, como na consolidação",
+                "Voz mais fraca",
+                "Tosse forte",
+                "Voz mais fraca e abafada, como no derrame pleural"
               ],
-              "resposta": "A voz ouvida com mais nitidez na ausculta, como na consolidação",
+              "resposta": "Voz mais nítida na ausculta, como na consolidação",
               "explicacao": "Quando até a voz sussurrada é ouvida com nitidez, chama-se pectorilóquia afônica.",
               "revisado": false
             },
@@ -969,7 +969,7 @@
                 "Derrame pleural",
                 "Consolidação",
                 "Pneumotórax",
-                "Enfisema"
+                "Enfisema pulmonar difuso"
               ],
               "resposta": "Derrame pleural",
               "explicacao": "A punção do líquido (toracocentese) ajuda a descobrir a causa.",
@@ -1036,7 +1036,7 @@
                 "estridor",
                 "sibilo",
                 "ronco",
-                "atrito"
+                "atrito pleural"
               ],
               "resposta": "estridor",
               "explicacao": "Aparece no crupe, na epiglotite e com corpo estranho na laringe.",
@@ -1048,12 +1048,12 @@
               "caso": "Criança em crise de asma grave tem o murmúrio quase inaudível e já não se ouvem sibilos.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Sinal de gravidade, porque quase não passa ar",
+                "Gravidade: quase não passa ar",
                 "Melhora da crise",
                 "Ausculta normal",
-                "Pneumonia leve"
+                "Melhora da crise, porque os sibilos sumiram"
               ],
-              "resposta": "Sinal de gravidade, porque quase não passa ar",
+              "resposta": "Gravidade: quase não passa ar",
               "explicacao": "É o tórax silencioso, que pode anteceder parada respiratória.",
               "revisado": false
             },
@@ -1062,12 +1062,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual manobra ajuda a diferenciar roncos de estertores?",
               "opcoes": [
-                "Pedir para o paciente tossir, o que costuma mudar os roncos",
-                "Pedir para prender a respiração por 1 minuto",
+                "Pedir para tossir, o que muda os roncos",
+                "Prender a respiração 1 min",
                 "Deitar de bruços",
-                "Palpar o abdome"
+                "Pedir para prender a respiração por um minuto e deitar de bruços"
               ],
-              "resposta": "Pedir para o paciente tossir, o que costuma mudar os roncos",
+              "resposta": "Pedir para tossir, o que muda os roncos",
               "explicacao": "A tosse desloca a secreção das vias aéreas maiores, alterando os roncos.",
               "revisado": false
             },
@@ -1085,12 +1085,12 @@
               "caso": "Idoso com insuficiência cardíaca descompensada tem falta de ar e estertores crepitantes nas duas bases.",
               "enunciado": "Qual é a origem desses estertores?",
               "opcoes": [
-                "Líquido nos alvéolos por congestão pulmonar",
+                "Líquido nos alvéolos por congestão",
                 "Broncoespasmo",
                 "Pneumotórax",
-                "Derrame no pericárdio"
+                "Derrame no pericárdio com tamponamento"
               ],
-              "resposta": "Líquido nos alvéolos por congestão pulmonar",
+              "resposta": "Líquido nos alvéolos por congestão",
               "explicacao": "Com diurético e controle da causa, os estertores costumam diminuir.",
               "revisado": false
             }
@@ -1112,12 +1112,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que a ausculta do abdome é feita antes da palpação?",
               "opcoes": [
-                "Porque a palpação pode alterar os ruídos intestinais",
-                "Porque a ausculta causa dor",
-                "Porque é mais rápida",
-                "Não existe uma ordem"
+                "A palpação pode alterar os ruídos",
+                "A ausculta causa dor",
+                "É mais rápida",
+                "Não existe ordem certa entre os passos do exame do abdome"
               ],
-              "resposta": "Porque a palpação pode alterar os ruídos intestinais",
+              "resposta": "A palpação pode alterar os ruídos",
               "explicacao": "No abdome, a ordem é inspeção, ausculta, percussão e palpação.",
               "revisado": false
             },
@@ -1174,12 +1174,12 @@
               "caso": "Paciente com cirrose tem abdome volumoso, umbigo saliente e veias dilatadas ao redor do umbigo.",
               "enunciado": "O que esses achados indicam?",
               "opcoes": [
-                "Ascite e circulação colateral por hipertensão portal",
+                "Ascite e colaterais por hipertensão portal",
                 "Obesidade simples",
                 "Gravidez",
-                "Hérnia inguinal"
+                "Hérnia inguinal grande com conteúdo intestinal"
               ],
-              "resposta": "Ascite e circulação colateral por hipertensão portal",
+              "resposta": "Ascite e colaterais por hipertensão portal",
               "explicacao": "A circulação colateral se forma porque o sangue procura caminhos para desviar do fígado.",
               "revisado": false
             },
@@ -1188,12 +1188,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que um sopro na região do epigástrio pode sugerir?",
               "opcoes": [
-                "Estenose de artéria renal ou aneurisma da aorta",
+                "Estenose renal ou aneurisma da aorta",
                 "Gastrite",
                 "Apendicite",
-                "Constipação"
+                "Constipação com gases presos no estômago e no intestino"
               ],
-              "resposta": "Estenose de artéria renal ou aneurisma da aorta",
+              "resposta": "Estenose renal ou aneurisma da aorta",
               "explicacao": "Em hipertensos jovens ou de difícil controle, o sopro abdominal sugere hipertensão renovascular.",
               "revisado": false
             },
@@ -1214,7 +1214,7 @@
                 "Obstrução intestinal por bridas",
                 "Gastroenterite viral",
                 "Pancreatite",
-                "Apendicite"
+                "Apendicite aguda com peritonite"
               ],
               "resposta": "Obstrução intestinal por bridas",
               "explicacao": "Os ruídos de luta são o intestino tentando vencer a obstrução.",
@@ -1231,12 +1231,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se estima o tamanho do fígado pela percussão?",
               "opcoes": [
-                "Pela hepatimetria na linha hemiclavicular direita",
-                "Pela palpação do baço",
-                "Pela ausculta",
-                "Pela inspeção"
+                "Hepatimetria na hemiclavicular direita",
+                "Palpar o baço",
+                "Ausculta",
+                "Inspeção do abdome com o paciente em pé e respirando fundo"
               ],
-              "resposta": "Pela hepatimetria na linha hemiclavicular direita",
+              "resposta": "Hepatimetria na hemiclavicular direita",
               "explicacao": "Percute-se de cima para baixo até o início e o fim da macicez hepática.",
               "revisado": false
             },
@@ -1296,7 +1296,7 @@
                 "Peritonite difusa",
                 "Gastrite",
                 "Constipação",
-                "Cólica renal"
+                "Cólica renal com cálculo no ureter"
               ],
               "resposta": "Peritonite difusa",
               "explicacao": "É uma urgência cirúrgica, por exemplo por perfuração de úlcera.",
@@ -1308,9 +1308,9 @@
               "enunciado": "Qual sinal sugere irritação do peritônio?",
               "opcoes": [
                 "Dor ao soltar a mão de repente após comprimir",
-                "Ruídos intestinais aumentados",
+                "Ruídos aumentados",
                 "Abdome flácido",
-                "Macicez do fígado normal"
+                "Macicez normal do fígado com abdome flácido e indolor"
               ],
               "resposta": "Dor ao soltar a mão de repente após comprimir",
               "explicacao": "É o sinal da descompressão dolorosa, como o de Blumberg.",
@@ -1333,7 +1333,7 @@
                 "Hepatomegalia dolorosa",
                 "Esplenomegalia",
                 "Ascite",
-                "Exame normal"
+                "Exame normal para a idade"
               ],
               "resposta": "Hepatomegalia dolorosa",
               "explicacao": "A distensão da cápsula do fígado é que causa a dor.",
@@ -1375,12 +1375,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se pesquisa o sinal de Giordano?",
               "opcoes": [
-                "Com um golpe da borda da mão na região lombar",
-                "Palpando o hipocôndrio direito",
-                "Comprimindo e soltando a fossa ilíaca",
-                "Auscultando o abdome"
+                "Golpe com a borda da mão na região lombar",
+                "Palpar o hipocôndrio direito",
+                "Comprimir e soltar a fossa ilíaca",
+                "Auscultar o abdome por dois minutos em cada quadrante"
               ],
-              "resposta": "Com um golpe da borda da mão na região lombar",
+              "resposta": "Golpe com a borda da mão na região lombar",
               "explicacao": "Dor ao golpe sugere inflamação do rim ou cálculo.",
               "revisado": false
             },
@@ -1415,7 +1415,7 @@
                 "Pielonefrite aguda",
                 "Apendicite",
                 "Colecistite",
-                "Cistite simples"
+                "Cistite simples sem febre"
               ],
               "resposta": "Pielonefrite aguda",
               "explicacao": "Febre e dor lombar mostram que a infecção chegou ao rim.",
@@ -1429,7 +1429,7 @@
                 "Manchas roxas nos flancos (Grey Turner)",
                 "Sinal de Murphy",
                 "Sinal de Rovsing",
-                "Fígado aumentado"
+                "Fígado aumentado e doloroso à palpação"
               ],
               "resposta": "Manchas roxas nos flancos (Grey Turner)",
               "explicacao": "O sinal é raro, mas indica gravidade.",
@@ -1449,12 +1449,12 @@
               "caso": "Idoso tem icterícia que piora aos poucos, perda de peso e vesícula palpável e indolor.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Tumor periampular, como câncer de cabeça de pâncreas",
+                "Tumor periampular, como de pâncreas",
                 "Colecistite aguda",
                 "Hepatite A",
-                "Cálculo no colédoco com cólica"
+                "Cálculo no colédoco com cólica forte e febre"
               ],
-              "resposta": "Tumor periampular, como câncer de cabeça de pâncreas",
+              "resposta": "Tumor periampular, como de pâncreas",
               "explicacao": "Icterícia indolor e progressiva em idoso exige investigação de câncer.",
               "revisado": false
             }
@@ -1476,12 +1476,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são os três componentes da escala de coma de Glasgow?",
               "opcoes": [
-                "Abertura ocular, resposta verbal e resposta motora",
+                "Abertura ocular, resposta verbal e motora",
                 "Pupilas, reflexos e pulso",
                 "Força, sensibilidade e coordenação",
-                "Fala, marcha e memória"
+                "Fala, marcha, memória e orientação no tempo e no espaço"
               ],
-              "resposta": "Abertura ocular, resposta verbal e resposta motora",
+              "resposta": "Abertura ocular, resposta verbal e motora",
               "explicacao": "A pontuação vai de 3 a 15.",
               "revisado": false
             },
@@ -1552,12 +1552,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se examina o nervo hipoglosso?",
               "opcoes": [
-                "Pedindo para o paciente colocar a língua para fora",
-                "Pedindo para elevar os ombros",
-                "Testando o olfato",
-                "Testando a visão de cores"
+                "Pedindo para pôr a língua para fora",
+                "Elevar os ombros",
+                "Testar o olfato",
+                "Pedindo para elevar os ombros contra a resistência do examinador"
               ],
-              "resposta": "Pedindo para o paciente colocar a língua para fora",
+              "resposta": "Pedindo para pôr a língua para fora",
               "explicacao": "A língua desvia para o lado do nervo lesado.",
               "revisado": false
             },
@@ -1671,12 +1671,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Para que serve a manobra de Mingazzini?",
               "opcoes": [
-                "Detectar fraqueza leve pela queda dos membros mantidos elevados",
+                "Achar fraqueza leve pela queda dos membros elevados",
                 "Testar a sensibilidade",
-                "Testar os reflexos",
-                "Testar a marcha"
+                "Testar reflexos",
+                "Testar a marcha e o equilíbrio com os olhos fechados"
               ],
-              "resposta": "Detectar fraqueza leve pela queda dos membros mantidos elevados",
+              "resposta": "Achar fraqueza leve pela queda dos membros elevados",
               "explicacao": "O membro mais fraco cai antes.",
               "revisado": false
             },
@@ -1696,8 +1696,8 @@
               "opcoes": [
                 "Esclerose lateral amiotrófica",
                 "Miastenia gravis",
-                "Síndrome de Guillain-Barré",
-                "Esclerose múltipla"
+                "Guillain-Barré",
+                "Esclerose múltipla com surtos e remissões"
               ],
               "resposta": "Esclerose lateral amiotrófica",
               "explicacao": "A mistura de sinais de neurônio motor superior e inferior, sem perda de sensibilidade, é típica da ELA.",
@@ -1714,12 +1714,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que o teste de Romberg avalia?",
               "opcoes": [
-                "O equilíbrio que depende da sensibilidade profunda, com os olhos fechados",
-                "A força dos braços",
-                "A visão",
-                "A audição"
+                "Equilíbrio pela sensibilidade profunda, de olhos fechados",
+                "Força dos braços",
+                "Visão",
+                "A força das pernas e a visão de longe com os olhos abertos"
               ],
-              "resposta": "O equilíbrio que depende da sensibilidade profunda, com os olhos fechados",
+              "resposta": "Equilíbrio pela sensibilidade profunda, de olhos fechados",
               "explicacao": "Com os olhos abertos, a visão compensa a falta de propriocepção.",
               "revisado": false
             },
@@ -1790,12 +1790,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é disdiadococinesia?",
               "opcoes": [
-                "Dificuldade de fazer movimentos alternados rápidos, sugerindo lesão do cerebelo",
+                "Falha em movimentos alternados rápidos, pelo cerebelo",
                 "Fraqueza muscular",
                 "Perda de sensibilidade",
-                "Tremor de repouso"
+                "Tremor de repouso que melhora com o movimento voluntário"
               ],
-              "resposta": "Dificuldade de fazer movimentos alternados rápidos, sugerindo lesão do cerebelo",
+              "resposta": "Falha em movimentos alternados rápidos, pelo cerebelo",
               "explicacao": "Pede-se ao paciente que vire as mãos rapidamente, alternando palma e dorso.",
               "revisado": false
             },
@@ -1813,12 +1813,12 @@
               "caso": "Paciente com dor lombar que desce para a perna sente piora da dor ao elevar a perna esticada entre 30 e 70 graus.",
               "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "Sinal de Lasègue, sugerindo compressão de raiz nervosa",
+                "Lasègue, sugerindo compressão de raiz",
                 "Sinal de Kernig",
                 "Sinal de Brudzinski",
-                "Sinal de Romberg"
+                "Sinal de Romberg com queda para o lado da dor"
               ],
-              "resposta": "Sinal de Lasègue, sugerindo compressão de raiz nervosa",
+              "resposta": "Lasègue, sugerindo compressão de raiz",
               "explicacao": "É comum na hérnia de disco lombar que comprime L5 ou S1.",
               "revisado": false
             }
@@ -1867,12 +1867,12 @@
               "caso": "Homem de 55 anos tem dor em aperto no peito há 30 minutos, com suor frio e náuseas. O primeiro ECG é normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Repetir o ECG em série e dosar troponina, mantendo o paciente monitorizado",
-                "Dar alta, pois o ECG é normal",
-                "Pedir endoscopia",
-                "Tratar como ansiedade"
+                "ECG seriado e troponina, com monitorização",
+                "Liberar, ECG normal",
+                "Endoscopia",
+                "Liberar para casa, porque o primeiro eletrocardiograma veio normal"
               ],
-              "resposta": "Repetir o ECG em série e dosar troponina, mantendo o paciente monitorizado",
+              "resposta": "ECG seriado e troponina, com monitorização",
               "explicacao": "Um ECG normal no início não exclui síndrome coronariana aguda.",
               "revisado": false
             },
@@ -1881,12 +1881,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado do exame físico sugere dissecção aguda da aorta em paciente com dor torácica?",
               "opcoes": [
-                "Diferença de pressão maior que 20 mmHg entre os braços",
-                "Sopro sistólico suave no ápice",
+                "Diferença de PA > 20 mmHg entre os braços",
+                "Sopro suave no ápice",
                 "Estertores nas bases",
-                "Febre"
+                "Febre e estertores nas bases dos dois pulmões"
               ],
-              "resposta": "Diferença de pressão maior que 20 mmHg entre os braços",
+              "resposta": "Diferença de PA > 20 mmHg entre os braços",
               "explicacao": "Um novo sopro diastólico de insuficiência aórtica também sugere dissecção da raiz.",
               "revisado": false
             },
@@ -1896,12 +1896,12 @@
               "caso": "Mulher de 30 anos tem dor torácica que piora ao apertar o esterno e ao mover o tronco, sem outros achados.",
               "enunciado": "Qual é a hipótese mais provável?",
               "opcoes": [
-                "Dor osteomuscular, como costocondrite",
+                "Dor osteomuscular (costocondrite)",
                 "Infarto",
                 "Embolia pulmonar",
-                "Dissecção da aorta"
+                "Dissecção aguda da aorta torácica com dor nas costas"
               ],
-              "resposta": "Dor osteomuscular, como costocondrite",
+              "resposta": "Dor osteomuscular (costocondrite)",
               "explicacao": "Dor reproduzida pela palpação favorece causa da parede, mas não exclui outras se houver fatores de risco.",
               "revisado": false
             },
@@ -1919,12 +1919,12 @@
               "caso": "Homem de 70 anos tem dor torácica após vômitos intensos, com enfisema subcutâneo no pescoço.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Ruptura do esôfago (síndrome de Boerhaave)",
+                "Ruptura do esôfago (Boerhaave)",
                 "Infarto",
                 "Pneumonia",
-                "Pericardite"
+                "Pericardite viral aguda com atrito"
               ],
-              "resposta": "Ruptura do esôfago (síndrome de Boerhaave)",
+              "resposta": "Ruptura do esôfago (Boerhaave)",
               "explicacao": "É uma emergência cirúrgica, com alta mortalidade se o diagnóstico atrasar.",
               "revisado": false
             },
@@ -1948,12 +1948,12 @@
               "caso": "Paciente com dor torácica tem ECG com supradesnivelamento de ST em uma parede e imagem em espelho na parede oposta.",
               "enunciado": "O que isso sugere?",
               "opcoes": [
-                "Infarto com supradesnivelamento, e não pericardite",
+                "Infarto com supra, e não pericardite",
                 "Pericardite",
-                "Repolarização precoce benigna",
-                "Hipercalemia"
+                "Repolarização precoce",
+                "Pericardite aguda com supra difuso e infra de PR"
               ],
-              "resposta": "Infarto com supradesnivelamento, e não pericardite",
+              "resposta": "Infarto com supra, e não pericardite",
               "explicacao": "A imagem em espelho é rara na pericardite.",
               "revisado": false
             }
@@ -2011,7 +2011,7 @@
                 "Escore de Wells",
                 "CURB-65",
                 "CHA2DS2-VASc",
-                "Glasgow"
+                "Glasgow de coma"
               ],
               "resposta": "Escore de Wells",
               "explicacao": "Em baixa probabilidade, um D-dímero normal exclui embolia.",
@@ -2023,12 +2023,12 @@
               "caso": "Idoso tem dispneia aos esforços, edema nas pernas, turgência jugular e terceira bulha.",
               "enunciado": "Qual é a hipótese e o exame inicial?",
               "opcoes": [
-                "Insuficiência cardíaca; BNP e ecocardiograma",
+                "Insuficiência cardíaca; BNP e eco",
                 "Asma; espirometria",
                 "DPOC; gasometria",
-                "Ansiedade; nada"
+                "Ansiedade; calmante e retorno em um mês"
               ],
-              "resposta": "Insuficiência cardíaca; BNP e ecocardiograma",
+              "resposta": "Insuficiência cardíaca; BNP e eco",
               "explicacao": "A terceira bulha em idoso é muito específica de insuficiência cardíaca.",
               "revisado": false
             },
@@ -2046,12 +2046,12 @@
               "caso": "Jovem tem dispneia, formigamento ao redor da boca e nas mãos, e espasmo das mãos, com saturação normal, durante crise de ansiedade.",
               "enunciado": "Qual é o mecanismo dos sintomas?",
               "opcoes": [
-                "Hiperventilação com alcalose respiratória e queda do cálcio ionizado",
+                "Hiperventilação, alcalose e queda do cálcio iônico",
                 "Embolia pulmonar",
                 "Asma",
-                "Hipocalcemia por doença da paratireoide"
+                "Hipocalcemia por doença da paratireoide que exige cirurgia"
               ],
-              "resposta": "Hiperventilação com alcalose respiratória e queda do cálcio ionizado",
+              "resposta": "Hiperventilação, alcalose e queda do cálcio iônico",
               "explicacao": "Antes de atribuir à ansiedade, devem-se excluir causas orgânicas.",
               "revisado": false
             },
@@ -2075,12 +2075,12 @@
               "caso": "Paciente com insuficiência cardíaca sente falta de ar ao se curvar para amarrar os sapatos.",
               "enunciado": "Como se chama esse sintoma e o que indica?",
               "opcoes": [
-                "Bendopneia; pressões de enchimento elevadas",
+                "Bendopneia; pressões de enchimento altas",
                 "Platipneia; shunt",
                 "Ortopneia; asma",
-                "Trepopneia; derrame"
+                "Trepopneia por derrame pleural de um lado só"
               ],
-              "resposta": "Bendopneia; pressões de enchimento elevadas",
+              "resposta": "Bendopneia; pressões de enchimento altas",
               "explicacao": "Ao se curvar, o retorno venoso e a pressão no abdome aumentam.",
               "revisado": false
             }
@@ -2124,7 +2124,7 @@
                 "Síncope vasovagal",
                 "Convulsão",
                 "Arritmia",
-                "AVC"
+                "AVC isquêmico transitório"
               ],
               "resposta": "Síncope vasovagal",
               "explicacao": "O aviso antes e a recuperação rápida e completa são típicos.",
@@ -2135,12 +2135,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado sugere convulsão em vez de síncope?",
               "opcoes": [
-                "Confusão prolongada após o episódio e mordedura lateral da língua",
-                "Palidez antes do episódio",
+                "Confusão longa depois e mordedura lateral da língua",
+                "Palidez antes",
                 "Recuperação em segundos",
-                "Desmaio após ficar em pé"
+                "Palidez e suor antes, com recuperação completa em poucos segundos"
               ],
-              "resposta": "Confusão prolongada após o episódio e mordedura lateral da língua",
+              "resposta": "Confusão longa depois e mordedura lateral da língua",
               "explicacao": "Abalos breves podem ocorrer na síncope e não bastam para diferenciar.",
               "revisado": false
             },
@@ -2153,7 +2153,7 @@
                 "Cardiomiopatia hipertrófica",
                 "Síncope vasovagal",
                 "Desidratação",
-                "Anemia"
+                "Anemia por falta de ferro em atleta"
               ],
               "resposta": "Cardiomiopatia hipertrófica",
               "explicacao": "O atleta deve ser afastado do esporte até a avaliação completa.",
@@ -2173,12 +2173,12 @@
               "caso": "Idoso tem palpitações e tontura, e o ECG mostra pausas sinusais alternadas com fibrilação atrial rápida.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Doença do nó sinusal (síndrome bradi-taqui)",
+                "Doença do nó sinusal (bradi-taqui)",
                 "Síncope vasovagal",
                 "Hipertireoidismo",
-                "Ansiedade"
+                "Ansiedade com crises de pânico frequentes"
               ],
-              "resposta": "Doença do nó sinusal (síndrome bradi-taqui)",
+              "resposta": "Doença do nó sinusal (bradi-taqui)",
               "explicacao": "Muitas vezes precisa de marcapasso para permitir o controle da taquicardia.",
               "revisado": false
             },
@@ -2205,7 +2205,7 @@
                 "Taquicardia por reentrada nodal",
                 "Fibrilação atrial",
                 "Taquicardia sinusal",
-                "Extrassístoles"
+                "Extrassístoles ventriculares isoladas"
               ],
               "resposta": "Taquicardia por reentrada nodal",
               "explicacao": "A manobra vagal interrompe o circuito no nó atrioventricular.",
@@ -2270,12 +2270,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual sopro é típico do prolapso da valva mitral?",
               "opcoes": [
-                "Clique mesossistólico seguido de sopro tardio",
-                "Sopro diastólico em ruflar",
+                "Clique mesossistólico e sopro tardio",
+                "Ruflar diastólico",
                 "Sopro contínuo",
-                "Sopro holossistólico desde o início"
+                "Sopro holossistólico desde a primeira bulha até a segunda"
               ],
-              "resposta": "Clique mesossistólico seguido de sopro tardio",
+              "resposta": "Clique mesossistólico e sopro tardio",
               "explicacao": "Ficar em pé faz o clique aparecer mais cedo.",
               "revisado": false
             },
@@ -2285,12 +2285,12 @@
               "caso": "Idoso com estenose aórtica tem sopro que diminuiu de intensidade e agora tem insuficiência cardíaca.",
               "enunciado": "O que isso pode indicar?",
               "opcoes": [
-                "Piora da estenose com queda do débito, e não melhora",
+                "Piora da estenose com queda do débito",
                 "Melhora da valva",
                 "Cura espontânea",
-                "Erro de ausculta"
+                "Melhora da valva, porque o sopro mais fraco indica menos estreitamento"
               ],
-              "resposta": "Piora da estenose com queda do débito, e não melhora",
+              "resposta": "Piora da estenose com queda do débito",
               "explicacao": "Com o ventrículo falhando, passa menos sangue pela valva e o sopro fica mais fraco.",
               "revisado": false
             },
@@ -2308,12 +2308,12 @@
               "caso": "Paciente com endocardite tem sopro diastólico novo, pulsos amplos e pressão diastólica muito baixa.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Insuficiência aórtica aguda por destruição da valva",
+                "Insuficiência aórtica aguda pela valva destruída",
                 "Estenose aórtica",
                 "Prolapso mitral",
-                "Pericardite"
+                "Pericardite aguda com atrito e pequeno derrame no pericárdio"
               ],
-              "resposta": "Insuficiência aórtica aguda por destruição da valva",
+              "resposta": "Insuficiência aórtica aguda pela valva destruída",
               "explicacao": "A insuficiência aórtica aguda é emergência cirúrgica.",
               "revisado": false
             },
@@ -2325,7 +2325,7 @@
                 "esclerose aórtica",
                 "Graham Steell",
                 "Carey Coombs",
-                "Gallavardin"
+                "Gallavardin da estenose aórtica grave"
               ],
               "resposta": "esclerose aórtica",
               "explicacao": "O fenômeno de Gallavardin é a irradiação do sopro da estenose aórtica para o ápice.",
@@ -2397,12 +2397,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o melhor sinal de pressão venosa central elevada no exame físico?",
               "opcoes": [
-                "Turgência da veia jugular interna acima de 3 cm do ângulo esternal",
+                "Jugular interna > 3 cm acima do ângulo esternal",
                 "Edema de pernas",
                 "Fígado palpável",
-                "Pressão arterial alta"
+                "Pressão arterial alta medida no braço direito"
               ],
-              "resposta": "Turgência da veia jugular interna acima de 3 cm do ângulo esternal",
+              "resposta": "Jugular interna > 3 cm acima do ângulo esternal",
               "explicacao": "O edema das pernas tem muitas outras causas.",
               "revisado": false
             },
@@ -2464,12 +2464,12 @@
               "caso": "Paciente com estenose mitral tem rouquidão.",
               "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "O átrio esquerdo aumentado comprime o nervo laríngeo recorrente esquerdo (síndrome de Ortner)",
+                "Átrio esquerdo grande comprime o laríngeo (Ortner)",
                 "Refluxo",
                 "Infecção da laringe",
-                "Tumor de laringe obrigatório"
+                "Tumor de laringe, que deve sempre ser investigado com biópsia"
               ],
-              "resposta": "O átrio esquerdo aumentado comprime o nervo laríngeo recorrente esquerdo (síndrome de Ortner)",
+              "resposta": "Átrio esquerdo grande comprime o laríngeo (Ortner)",
               "explicacao": "A artéria pulmonar dilatada também pode participar.",
               "revisado": false
             }
@@ -2513,7 +2513,7 @@
                 "Isquemia crítica do membro",
                 "Trombose venosa",
                 "Neuropatia",
-                "Gota"
+                "Gota com crise no dedão do pé"
               ],
               "resposta": "Isquemia crítica do membro",
               "explicacao": "A dor em repouso indica doença arterial avançada, com risco de perder o membro.",
@@ -2524,12 +2524,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são os 6 Ps da isquemia arterial aguda?",
               "opcoes": [
-                "Dor, palidez, ausência de pulso, parestesia, paralisia e frio",
+                "Dor, palidez, sem pulso, parestesia, paralisia e frio",
                 "Pressão, pulso, pele, pelos, pé e perna",
-                "Prurido, pus, palidez, pressão, pele e pelos",
-                "Não existem"
+                "Não existem",
+                "Prurido, pus, palidez, pressão, pele e pelos caídos na perna"
               ],
-              "resposta": "Dor, palidez, ausência de pulso, parestesia, paralisia e frio",
+              "resposta": "Dor, palidez, sem pulso, parestesia, paralisia e frio",
               "explicacao": "Paralisia e parestesia indicam isquemia avançada, com urgência para revascularizar.",
               "revisado": false
             },
@@ -2562,12 +2562,12 @@
               "caso": "Paciente tem dor e calor ao longo de uma veia superficial endurecida na coxa, perto da junção com a veia profunda.",
               "enunciado": "Qual é o risco e a conduta?",
               "opcoes": [
-                "Tromboflebite superficial com risco de progredir para a veia profunda; ultrassonografia e anticoagulação",
+                "Tromboflebite perto da profunda; ultrassom e anticoagular",
                 "Celulite; antibiótico",
-                "Varizes simples; nada",
-                "Linfangite; antibiótico"
+                "Varizes; observar",
+                "Linfangite; antibiótico oral e compressa morna em casa por uma semana"
               ],
-              "resposta": "Tromboflebite superficial com risco de progredir para a veia profunda; ultrassonografia e anticoagulação",
+              "resposta": "Tromboflebite perto da profunda; ultrassom e anticoagular",
               "explicacao": "Tromboflebites perto da junção safenofemoral são tratadas com anticoagulante.",
               "revisado": false
             },
@@ -2591,12 +2591,12 @@
               "caso": "Jovem tem dedos que ficam brancos, depois roxos e depois vermelhos com o frio.",
               "enunciado": "Como se chama o fenômeno e o que investigar?",
               "opcoes": [
-                "Fenômeno de Raynaud; investigar doenças do tecido conjuntivo, como esclerose sistêmica",
+                "Raynaud; investigar doença do tecido conjuntivo",
                 "Gangrena; amputação",
-                "Trombose venosa; anticoagular",
-                "Alergia; anti-histamínico"
+                "Trombose; anticoagular",
+                "Alergia ao frio; anti-histamínico e luvas grossas, sem outra investigação"
               ],
-              "resposta": "Fenômeno de Raynaud; investigar doenças do tecido conjuntivo, como esclerose sistêmica",
+              "resposta": "Raynaud; investigar doença do tecido conjuntivo",
               "explicacao": "A capilaroscopia ajuda a separar a forma primária da secundária.",
               "revisado": false
             }
@@ -2645,12 +2645,12 @@
               "caso": "Paciente tem macicez na base direita com frêmito abolido, mas acima da macicez há uma faixa de sopro e egofonia.",
               "enunciado": "O que esses achados indicam?",
               "opcoes": [
-                "Derrame pleural, com pulmão comprimido logo acima",
+                "Derrame pleural com pulmão comprimido acima",
                 "Pneumotórax",
                 "Consolidação extensa",
-                "Enfisema"
+                "Pneumotórax com ar acima e sangue embaixo na mesma cavidade"
               ],
-              "resposta": "Derrame pleural, com pulmão comprimido logo acima",
+              "resposta": "Derrame pleural com pulmão comprimido acima",
               "explicacao": "O pulmão comprimido acima do líquido transmite melhor o som.",
               "revisado": false
             },
@@ -2659,12 +2659,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é egofonia?",
               "opcoes": [
-                "A voz soa anasalada, como balido de cabra, sobre área de consolidação ou acima de derrame",
+                "Voz anasalada sobre consolidação ou acima de derrame",
                 "Voz ausente",
                 "Tosse rouca",
-                "Voz normal"
+                "Voz totalmente ausente na ausculta de toda a base do pulmão"
               ],
-              "resposta": "A voz soa anasalada, como balido de cabra, sobre área de consolidação ou acima de derrame",
+              "resposta": "Voz anasalada sobre consolidação ou acima de derrame",
               "explicacao": "Pede-se ao paciente para falar a letra \"i\", que soa como \"e\".",
               "revisado": false
             },
@@ -2700,7 +2700,7 @@
                 "Pneumotórax hipertensivo por barotrauma",
                 "Intubação seletiva",
                 "Derrame pleural",
-                "Atelectasia"
+                "Atelectasia por rolha de secreção no brônquio"
               ],
               "resposta": "Pneumotórax hipertensivo por barotrauma",
               "explicacao": "A descompressão é imediata.",
@@ -2729,7 +2729,7 @@
                 "Atelectasia por obstrução do brônquio",
                 "Derrame pleural",
                 "Pneumotórax",
-                "Consolidação"
+                "Consolidação por pneumonia bacteriana"
               ],
               "resposta": "Atelectasia por obstrução do brônquio",
               "explicacao": "O tumor fecha o brônquio, o ar é absorvido e o lobo colapsa.",
@@ -2772,12 +2772,12 @@
               "caso": "Paciente com tosse e escarro com sangue em grande volume, mais de 200 mL em 24 horas, está com falta de ar.",
               "enunciado": "Qual é a prioridade?",
               "opcoes": [
-                "Proteger a via aérea e deitar o paciente com o lado que sangra para baixo",
-                "Fazer espirometria",
-                "Dar antitussígeno e alta",
-                "Esperar a tomografia sem suporte"
+                "Proteger a via aérea e deitar sobre o lado que sangra",
+                "Espirometria",
+                "Antitussígeno e liberar",
+                "Aguardar a tomografia sem nenhum suporte, sentado na cadeira"
               ],
-              "resposta": "Proteger a via aérea e deitar o paciente com o lado que sangra para baixo",
+              "resposta": "Proteger a via aérea e deitar sobre o lado que sangra",
               "explicacao": "A morte na hemoptise grave costuma ser por asfixia, e não por perda de sangue.",
               "revisado": false
             },
@@ -2786,12 +2786,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado ajuda a diferenciar hemoptise de hematêmese?",
               "opcoes": [
-                "Sangue vermelho vivo, com espuma e pH alcalino",
-                "Sangue escuro com restos de comida",
+                "Sangue vivo, com espuma e pH alcalino",
+                "Escuro com restos de comida",
                 "Sangue ácido",
-                "Náuseas antes"
+                "Sangue escuro, ácido e com restos de comida, após náuseas"
               ],
-              "resposta": "Sangue vermelho vivo, com espuma e pH alcalino",
+              "resposta": "Sangue vivo, com espuma e pH alcalino",
               "explicacao": "Na hematêmese, o sangue costuma ser escuro e ácido.",
               "revisado": false
             },
@@ -2804,7 +2804,7 @@
                 "Tuberculose pulmonar",
                 "Asma",
                 "Refluxo",
-                "Bronquite aguda"
+                "Bronquite aguda viral"
               ],
               "resposta": "Tuberculose pulmonar",
               "explicacao": "O teste rápido molecular no escarro é o primeiro exame.",
@@ -2827,7 +2827,7 @@
                 "Síndrome de Goodpasture",
                 "Tuberculose",
                 "Pneumonia",
-                "Embolia pulmonar"
+                "Embolia pulmonar com infarto"
               ],
               "resposta": "Síndrome de Goodpasture",
               "explicacao": "É uma síndrome pulmão-rim que exige tratamento imediato.",
@@ -2853,12 +2853,12 @@
               "caso": "Paciente com coqueluche tem crises de tosse seguidas de um guincho inspiratório e vômitos.",
               "enunciado": "Qual é o tratamento e a medida para os contatos?",
               "opcoes": [
-                "Azitromicina para o paciente e para os contatos próximos",
+                "Azitromicina para ele e os contatos próximos",
                 "Amoxicilina",
                 "Corticoide",
-                "Nenhum"
+                "Corticoide oral e xarope para tosse, sem tratar os contatos"
               ],
-              "resposta": "Azitromicina para o paciente e para os contatos próximos",
+              "resposta": "Azitromicina para ele e os contatos próximos",
               "explicacao": "O tratamento precoce reduz a transmissão. Em lactentes, a doença pode ser grave.",
               "revisado": false
             }
@@ -2899,12 +2899,12 @@
               "caso": "Paciente com DPOC em exacerbação tem respiração paradoxal, sonolência e pH 7,20.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ventilação não invasiva ou intubação, conforme a resposta e o nível de consciência",
-                "Apenas nebulização",
-                "Alta",
-                "Oxigênio em alto fluxo sem monitorizar"
+                "VNI ou intubação, conforme resposta e consciência",
+                "Só nebulização",
+                "Liberar",
+                "Oxigênio em alto fluxo sem monitorizar e nebulização com soro"
               ],
-              "resposta": "Ventilação não invasiva ou intubação, conforme a resposta e o nível de consciência",
+              "resposta": "VNI ou intubação, conforme resposta e consciência",
               "explicacao": "Sonolência importante pode contraindicar a ventilação não invasiva.",
               "revisado": false
             },
@@ -2913,12 +2913,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual sinal do exame físico sugere hipercapnia?",
               "opcoes": [
-                "Asterixe (flapping), sonolência, vasodilatação e cefaleia",
+                "Asterixe, sonolência, vasodilatação e cefaleia",
                 "Pele fria e pálida",
-                "Bradipneia com miose sempre",
-                "Febre"
+                "Bradipneia com miose",
+                "Febre alta com calafrios, suor intenso e manchas vermelhas"
               ],
-              "resposta": "Asterixe (flapping), sonolência, vasodilatação e cefaleia",
+              "resposta": "Asterixe, sonolência, vasodilatação e cefaleia",
               "explicacao": "O CO2 dilata os vasos e causa pele quente e dor de cabeça.",
               "revisado": false
             },
@@ -2931,7 +2931,7 @@
                 "Piora grave, com cansaço e pouco fluxo de ar",
                 "Melhora da crise",
                 "Fim da crise",
-                "Efeito do salbutamol"
+                "Melhora pelo efeito do salbutamol, que já pode ser suspenso"
               ],
               "resposta": "Piora grave, com cansaço e pouco fluxo de ar",
               "explicacao": "É o tórax silencioso, que pode anteceder a parada respiratória.",
@@ -2951,12 +2951,12 @@
               "caso": "Paciente com pneumonia tem frequência respiratória de 32, pressão de 85/50 e está confuso.",
               "enunciado": "O que esses achados indicam?",
               "opcoes": [
-                "Pneumonia grave com sepse, com indicação de UTI",
+                "Pneumonia grave com sepse; UTI",
                 "Pneumonia leve",
                 "Asma",
-                "Ansiedade"
+                "Pneumonia leve, tratada em casa com antibiótico oral"
               ],
-              "resposta": "Pneumonia grave com sepse, com indicação de UTI",
+              "resposta": "Pneumonia grave com sepse; UTI",
               "explicacao": "Frequência respiratória alta, pressão baixa e confusão também fazem parte do qSOFA.",
               "revisado": false
             },
@@ -2980,12 +2980,12 @@
               "caso": "Paciente com Guillain-Barré tem fraqueza progressiva e capacidade vital caindo para 15 mL/kg.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar intubação, pelo risco de falência respiratória",
-                "Alta",
-                "Apenas fisioterapia",
-                "Esperar a saturação cair"
+                "Pensar em intubar pelo risco de falência",
+                "Liberar",
+                "Só fisioterapia",
+                "Esperar a saturação cair para decidir, com fisioterapia apenas"
               ],
-              "resposta": "Considerar intubação, pelo risco de falência respiratória",
+              "resposta": "Pensar em intubar pelo risco de falência",
               "explicacao": "Nas doenças neuromusculares, a saturação cai tarde; a capacidade vital avisa antes.",
               "revisado": false
             }
@@ -3034,12 +3034,12 @@
               "caso": "Mulher de 28 anos tem dor na fossa ilíaca direita, atraso menstrual e tontura ao se levantar.",
               "enunciado": "Qual é o primeiro exame?",
               "opcoes": [
-                "Teste de gravidez, pensando em gravidez ectópica",
+                "Teste de gravidez, pensando em ectópica",
                 "Endoscopia",
                 "Colonoscopia",
-                "Radiografia de tórax"
+                "Radiografia de tórax e endoscopia digestiva alta"
               ],
-              "resposta": "Teste de gravidez, pensando em gravidez ectópica",
+              "resposta": "Teste de gravidez, pensando em ectópica",
               "explicacao": "Gravidez ectópica rota é uma causa de choque que não pode ser esquecida.",
               "revisado": false
             },
@@ -3048,12 +3048,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual sinal sugere pancreatite com sangramento no retroperitônio?",
               "opcoes": [
-                "Manchas roxas nos flancos ou ao redor do umbigo",
+                "Manchas roxas nos flancos ou no umbigo",
                 "Sinal de Murphy",
                 "Sinal de Rovsing",
-                "Icterícia isolada"
+                "Icterícia isolada com fezes claras e urina escura"
               ],
-              "resposta": "Manchas roxas nos flancos ou ao redor do umbigo",
+              "resposta": "Manchas roxas nos flancos ou no umbigo",
               "explicacao": "São os sinais de Grey Turner e de Cullen.",
               "revisado": false
             },
@@ -3066,7 +3066,7 @@
                 "Isquemia mesentérica aguda",
                 "Gastroenterite",
                 "Constipação",
-                "Cólica renal"
+                "Cólica renal com cálculo pequeno"
               ],
               "resposta": "Isquemia mesentérica aguda",
               "explicacao": "A dor desproporcional ao exame é o sinal clássico.",
@@ -3086,12 +3086,12 @@
               "caso": "Homem de 70 anos, hipertenso e fumante, tem dor lombar súbita, pressão baixa e massa pulsátil no abdome.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Ruptura de aneurisma de aorta abdominal",
+                "Aneurisma de aorta abdominal roto",
                 "Cólica renal",
                 "Pancreatite",
-                "Lombalgia"
+                "Lombalgia mecânica por esforço"
               ],
-              "resposta": "Ruptura de aneurisma de aorta abdominal",
+              "resposta": "Aneurisma de aorta abdominal roto",
               "explicacao": "A cólica renal é o erro de diagnóstico mais comum nesses casos.",
               "revisado": false
             },
@@ -3103,7 +3103,7 @@
                 "parietal (somática)",
                 "referida",
                 "neuropática",
-                "psicogênica"
+                "psicogênica sem lesão"
               ],
               "resposta": "parietal (somática)",
               "explicacao": "A transição de uma para outra explica a migração da dor na apendicite.",
@@ -3115,12 +3115,12 @@
               "caso": "Paciente diabético tem dor abdominal, vômitos e respiração profunda, com glicemia de 500 mg/dL e abdome sem sinais de peritonite.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Cetoacidose diabética causando dor abdominal",
+                "Cetoacidose causando dor abdominal",
                 "Apendicite certa",
                 "Úlcera perfurada",
-                "Cólica biliar"
+                "Apendicite certa, que exige cirurgia antes de corrigir a glicose"
               ],
-              "resposta": "Cetoacidose diabética causando dor abdominal",
+              "resposta": "Cetoacidose causando dor abdominal",
               "explicacao": "A dor costuma melhorar com o tratamento da cetoacidose; se não melhorar, investigue outra causa.",
               "revisado": false
             }
@@ -3161,12 +3161,12 @@
               "caso": "Paciente tem icterícia, vesícula palpável e indolor e perda de peso.",
               "enunciado": "O que isso sugere?",
               "opcoes": [
-                "Obstrução maligna do colédoco, como câncer de cabeça de pâncreas",
+                "Obstrução maligna do colédoco, como pâncreas",
                 "Cálculo no colédoco",
                 "Hepatite viral",
-                "Síndrome de Gilbert"
+                "Síndrome de Gilbert com icterícia leve no jejum"
               ],
-              "resposta": "Obstrução maligna do colédoco, como câncer de cabeça de pâncreas",
+              "resposta": "Obstrução maligna do colédoco, como pâncreas",
               "explicacao": "É o sinal de Courvoisier.",
               "revisado": false
             },
@@ -3175,12 +3175,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado do exame sugere hipertensão portal?",
               "opcoes": [
-                "Baço aumentado, ascite e circulação colateral no abdome",
+                "Baço grande, ascite e colaterais",
                 "Icterícia isolada",
-                "Fígado pequeno sem outras alterações",
-                "Edema de face"
+                "Fígado pequeno isolado",
+                "Edema de face e pálpebras ao acordar, sem nenhuma outra alteração"
               ],
-              "resposta": "Baço aumentado, ascite e circulação colateral no abdome",
+              "resposta": "Baço grande, ascite e colaterais",
               "explicacao": "Na cirrose avançada, o fígado costuma ficar pequeno e endurecido.",
               "revisado": false
             },
@@ -3193,7 +3193,7 @@
                 "Paracentese diagnóstica",
                 "Endoscopia apenas",
                 "Biópsia",
-                "Colonoscopia"
+                "Colonoscopia e biópsia do fígado"
               ],
               "resposta": "Paracentese diagnóstica",
               "explicacao": "A peritonite bacteriana espontânea pode ter poucos sintomas.",
@@ -3216,7 +3216,7 @@
                 "Função discriminante de Maddrey",
                 "Glasgow",
                 "CURB-65",
-                "Wells"
+                "Wells para trombose venosa profunda"
               ],
               "resposta": "Função discriminante de Maddrey",
               "explicacao": "Valores de 32 ou mais indicam doença grave.",
@@ -3242,12 +3242,12 @@
               "caso": "Paciente tem icterícia com urina clara e fezes normais, anemia e baço aumentado.",
               "enunciado": "Qual é o tipo de icterícia?",
               "opcoes": [
-                "Por hemólise, com bilirrubina indireta",
+                "Hemolítica, com bilirrubina indireta",
                 "Obstrutiva",
                 "Por hepatite",
-                "Por cálculo"
+                "Obstrutiva por cálculo no colédoco com fezes claras"
               ],
-              "resposta": "Por hemólise, com bilirrubina indireta",
+              "resposta": "Hemolítica, com bilirrubina indireta",
               "explicacao": "Sem bilirrubina direta, a urina não escurece.",
               "revisado": false
             }
@@ -3288,12 +3288,12 @@
               "caso": "Homem de 65 anos, fumante, tem sangue visível na urina sem dor e sem infecção.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Investigar câncer de bexiga e rim com cistoscopia e exame de imagem",
-                "Tratar como infecção e alta",
-                "Apenas repetir em 1 ano",
-                "Nada"
+                "Investigar bexiga e rim com cistoscopia e imagem",
+                "Tratar como infecção",
+                "Repetir em 1 ano",
+                "Tratar como infecção urinária e liberar sem nenhum exame"
               ],
-              "resposta": "Investigar câncer de bexiga e rim com cistoscopia e exame de imagem",
+              "resposta": "Investigar bexiga e rim com cistoscopia e imagem",
               "explicacao": "Hematúria indolor em fumante é câncer de bexiga até prova em contrário.",
               "revisado": false
             },
@@ -3302,12 +3302,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado da urina sugere nefrite intersticial alérgica por remédio?",
               "opcoes": [
-                "Leucócitos e eosinófilos na urina, com febre e manchas na pele",
+                "Leucócitos e eosinófilos na urina, com febre e manchas",
                 "Cilindros hemáticos",
                 "Proteinúria maciça",
-                "Glicosúria"
+                "Cilindros hemáticos e proteinúria maciça sem febre"
               ],
-              "resposta": "Leucócitos e eosinófilos na urina, com febre e manchas na pele",
+              "resposta": "Leucócitos e eosinófilos na urina, com febre e manchas",
               "explicacao": "Anti-inflamatórios, penicilinas e omeprazol são causas comuns.",
               "revisado": false
             },
@@ -3340,12 +3340,12 @@
               "caso": "Paciente com dor lombar intensa em cólica tem sangue na urina e cálculo de 4 mm no ureter distal, sem febre.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Analgesia e tamsulosina para facilitar a saída do cálculo",
+                "Analgesia e tamsulosina",
                 "Cirurgia aberta",
                 "Antibiótico obrigatório",
-                "Nada"
+                "Cirurgia aberta de urgência para retirar o cálculo"
               ],
-              "resposta": "Analgesia e tamsulosina para facilitar a saída do cálculo",
+              "resposta": "Analgesia e tamsulosina",
               "explicacao": "Cálculo com infecção e obstrução, porém, exige desobstrução urgente.",
               "revisado": false
             },
@@ -3372,7 +3372,7 @@
                 "Pós-renal, por obstrução",
                 "Pré-renal",
                 "Necrose tubular",
-                "Glomerulonefrite"
+                "Glomerulonefrite rapidamente progressiva"
               ],
               "resposta": "Pós-renal, por obstrução",
               "explicacao": "Desobstruir, por sonda ou cateter nos ureteres, costuma recuperar a função.",
@@ -3426,7 +3426,7 @@
                 "Hemisfério esquerdo, região frontal",
                 "Hemisfério direito",
                 "Medula cervical",
-                "Cerebelo"
+                "Cerebelo do lado direito com tremor e desequilíbrio"
               ],
               "resposta": "Hemisfério esquerdo, região frontal",
               "explicacao": "A afasia indica lesão do hemisfério dominante.",
@@ -3437,12 +3437,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual achado sugere lesão de neurônio motor inferior?",
               "opcoes": [
-                "Atrofia, fasciculações e reflexos diminuídos",
+                "Atrofia, fasciculações e reflexos baixos",
                 "Reflexos aumentados e Babinski",
                 "Espasticidade",
-                "Clônus"
+                "Reflexos aumentados, Babinski e clônus nos pés"
               ],
-              "resposta": "Atrofia, fasciculações e reflexos diminuídos",
+              "resposta": "Atrofia, fasciculações e reflexos baixos",
               "explicacao": "As fasciculações são contrações visíveis de grupos de fibras musculares.",
               "revisado": false
             },
@@ -3478,7 +3478,7 @@
                 "Na junção neuromuscular",
                 "No córtex",
                 "Na medula",
-                "No nervo periférico"
+                "No nervo periférico por diabetes"
               ],
               "resposta": "Na junção neuromuscular",
               "explicacao": "É o quadro típico de miastenia gravis.",
@@ -3550,12 +3550,12 @@
               "caso": "Mulher de 40 anos tem a pior dor de cabeça da vida, que atingiu o máximo em 1 minuto, com rigidez de nuca. A tomografia, feita após 10 horas, é normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Punção lombar para procurar sangue e xantocromia",
-                "Alta com analgésico",
-                "Repetir a tomografia em 1 mês",
-                "Ressonância eletiva"
+                "Punção lombar atrás de sangue e xantocromia",
+                "Liberar com analgésico",
+                "Repetir tomografia em 1 mês",
+                "Liberar com analgésico e ressonância eletiva em um mês"
               ],
-              "resposta": "Punção lombar para procurar sangue e xantocromia",
+              "resposta": "Punção lombar atrás de sangue e xantocromia",
               "explicacao": "A sensibilidade da tomografia cai com o passar das horas.",
               "revisado": false
             },
@@ -3579,12 +3579,12 @@
               "caso": "Idosa de 70 anos tem dor de cabeça nova, dor ao mastigar, artéria temporal endurecida e VHS de 90.",
               "enunciado": "Qual é a hipótese e a conduta urgente?",
               "opcoes": [
-                "Arterite de células gigantes; corticoide imediato antes da biópsia",
+                "Arterite de células gigantes; corticoide antes da biópsia",
                 "Enxaqueca; triptano",
                 "Sinusite; antibiótico",
-                "Cefaleia tensional; analgésico"
+                "Cefaleia tensional; analgésico comum e retorno ao posto em um mês"
               ],
-              "resposta": "Arterite de células gigantes; corticoide imediato antes da biópsia",
+              "resposta": "Arterite de células gigantes; corticoide antes da biópsia",
               "explicacao": "O risco é perder a visão de forma definitiva.",
               "revisado": false
             },
@@ -3602,12 +3602,12 @@
               "caso": "Jovem com enxaqueca usa analgésico mais de 15 dias por mês e a dor ficou diária.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Cefaleia por uso excessivo de medicamento",
+                "Cefaleia por uso excessivo de remédio",
                 "Tumor cerebral",
                 "Meningite",
-                "Hipertensão"
+                "Hipertensão arterial grave com lesão de órgãos"
               ],
-              "resposta": "Cefaleia por uso excessivo de medicamento",
+              "resposta": "Cefaleia por uso excessivo de remédio",
               "explicacao": "O tratamento envolve retirar o excesso de analgésico e iniciar prevenção.",
               "revisado": false
             },
@@ -3619,7 +3619,7 @@
                 "hipotensão (vazamento)",
                 "hipertensão",
                 "infecção",
-                "hemorragia"
+                "hemorragia subaracnoide"
               ],
               "resposta": "hipotensão (vazamento)",
               "explicacao": "O tampão sanguíneo peridural trata os casos persistentes.",
@@ -3634,7 +3634,7 @@
                 "Pré-eclâmpsia com sinais de gravidade",
                 "Enxaqueca comum",
                 "Sinusite",
-                "Cefaleia tensional"
+                "Cefaleia tensional pelo cansaço da gestação"
               ],
               "resposta": "Pré-eclâmpsia com sinais de gravidade",
               "explicacao": "A conduta inclui sulfato de magnésio e controle da pressão.",
@@ -3677,12 +3677,12 @@
               "caso": "Jovem tem fraqueza que começou nas pernas há 5 dias e está subindo, reflexos ausentes e diarreia há 2 semanas.",
               "enunciado": "Qual é o diagnóstico e o que monitorar?",
               "opcoes": [
-                "Síndrome de Guillain-Barré; capacidade vital e função autonômica",
+                "Guillain-Barré; capacidade vital e autonomia",
                 "AVC; pressão",
                 "Miastenia; pálpebras",
-                "Esclerose múltipla; ressonância"
+                "Esclerose múltipla; ressonância eletiva e retorno em um mês"
               ],
-              "resposta": "Síndrome de Guillain-Barré; capacidade vital e função autonômica",
+              "resposta": "Guillain-Barré; capacidade vital e autonomia",
               "explicacao": "O líquor mostra proteína alta sem aumento de células.",
               "revisado": false
             },
@@ -3691,12 +3691,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como diferenciar artrite inflamatória de mecânica na anamnese?",
               "opcoes": [
-                "Rigidez matinal acima de 30 a 60 minutos e melhora com o movimento sugerem inflamação",
-                "Dor que piora com o uso sugere inflamação",
-                "Ausência de inchaço sugere inflamação",
-                "Dor apenas à noite descarta inflamação"
+                "Rigidez > 30 a 60 min que melhora ao mexer indica inflamação",
+                "Piora com o uso indica inflamação",
+                "Sem inchaço indica inflamação",
+                "Dor que piora com o uso e sem inchaço indica artrite inflamatória"
               ],
-              "resposta": "Rigidez matinal acima de 30 a 60 minutos e melhora com o movimento sugerem inflamação",
+              "resposta": "Rigidez > 30 a 60 min que melhora ao mexer indica inflamação",
               "explicacao": "Na artrose, a rigidez é curta e a dor piora com o uso.",
               "revisado": false
             },
@@ -3709,7 +3709,7 @@
                 "Artrite reumatoide",
                 "Artrose",
                 "Gota",
-                "Artrite séptica"
+                "Artrite séptica bilateral"
               ],
               "resposta": "Artrite reumatoide",
               "explicacao": "As interfalângicas distais costumam ser poupadas na artrite reumatoide.",
@@ -3729,12 +3729,12 @@
               "caso": "Paciente tem joelho quente, vermelho e muito doloroso, com febre, e não consegue mover a articulação.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Puncionar a articulação para análise e cultura antes do antibiótico",
-                "Anti-inflamatório e alta",
+                "Puncionar para análise e cultura antes do antibiótico",
+                "Anti-inflamatório e liberar",
                 "Fisioterapia",
-                "Infiltração com corticoide"
+                "Infiltração com corticoide e liberar para casa com anti-inflamatório"
               ],
-              "resposta": "Puncionar a articulação para análise e cultura antes do antibiótico",
+              "resposta": "Puncionar para análise e cultura antes do antibiótico",
               "explicacao": "Artrite séptica destrói a cartilagem em poucos dias.",
               "revisado": false
             },
@@ -3746,7 +3746,7 @@
                 "Finkelstein",
                 "Phalen",
                 "Tinel",
-                "Allen"
+                "Allen modificado"
               ],
               "resposta": "Finkelstein",
               "explicacao": "A tenossinovite de De Quervain é comum em mães com bebês pequenos.",
