@@ -1,4 +1,4 @@
-import type { ItemRevisao } from '../types'
+import type { ItemRevisao, OrigemRevisao } from '../types'
 import { UM_DIA } from './datas'
 
 // ============================================================
@@ -10,6 +10,11 @@ import { UM_DIA } from './datas'
 // 4. Acertou de novo: volta depois de 7 dias.
 // 5. Acertou mais uma vez: sai da fila (questão dominada).
 // Se errar em qualquer etapa, volta para o começo.
+//
+// Acertos também são revisados, para o conteúdo não ser esquecido:
+// questão acertada na lição entra direto na etapa 2 e volta
+// depois de 3 dias. Acertou de novo, volta em 7 dias e depois sai.
+// Se errar, vira uma questão de erro e começa do zero.
 // ============================================================
 
 /** Intervalos depois de cada acerto na revisão, em dias */
@@ -17,6 +22,8 @@ export const INTERVALOS_DIAS = [1, 3, 7]
 export const MAX_QUESTOES_POR_REVISAO = 10
 
 type Fila = Record<string, ItemRevisao>
+
+export const origemDoItem = (item: ItemRevisao): OrigemRevisao => item.origem ?? 'erro'
 
 /** Questão errada (em lição ou revisão): entra na fila, ou volta para a etapa 0 */
 export function registrarErroNaFila(fila: Fila, questaoId: string, agora = Date.now()): Fila {
@@ -27,6 +34,23 @@ export function registrarErroNaFila(fila: Fila, questaoId: string, agora = Date.
       etapa: 0,
       proximaEm: agora,
       adicionadaEm: fila[questaoId]?.adicionadaEm ?? agora,
+      origem: 'erro',
+    },
+  }
+}
+
+/** Questão acertada na lição: entra na fila para reforço, se ainda não estiver lá */
+export function registrarAcertoNaLicao(fila: Fila, questaoId: string, agora = Date.now()): Fila {
+  if (fila[questaoId]) return fila
+  return {
+    ...fila,
+    [questaoId]: {
+      questaoId,
+      // Pula a etapa de 1 dia: volta em 3 dias, depois em 7, e sai
+      etapa: 2,
+      proximaEm: agora + INTERVALOS_DIAS[1] * UM_DIA,
+      adicionadaEm: agora,
+      origem: 'acerto',
     },
   }
 }
@@ -54,9 +78,9 @@ export function registrarAcertoNaRevisao(fila: Fila, questaoId: string, agora = 
 }
 
 /** Questões que já podem ser revisadas agora, das mais antigas para as mais novas */
-export function questoesParaRevisar(fila: Fila, agora = Date.now()): ItemRevisao[] {
+export function questoesParaRevisar(fila: Fila, agora = Date.now(), origem?: OrigemRevisao): ItemRevisao[] {
   return Object.values(fila)
-    .filter((item) => item.proximaEm <= agora)
+    .filter((item) => item.proximaEm <= agora && (!origem || origemDoItem(item) === origem))
     .sort((a, b) => a.proximaEm - b.proximaEm)
 }
 

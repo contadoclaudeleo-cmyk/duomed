@@ -16,12 +16,12 @@ import type {
   Usuario,
 } from '../types'
 import { armazenamento } from '../lib/armazenamento'
-import { buscarMateria, primeiraMateriaDoModo } from '../data'
+import { buscarLicao, buscarMateria, primeiraMateriaDoModo } from '../data'
 import { chaveDia } from '../lib/datas'
 import { perderVida, recarregarVidas, VIDAS_MAX } from '../lib/vidas'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
 import { atualizarOfensiva } from '../lib/ofensiva'
-import { registrarAcertoNaRevisao, registrarErroNaFila } from '../lib/revisao'
+import { registrarAcertoNaLicao, registrarAcertoNaRevisao, registrarErroNaFila } from '../lib/revisao'
 import { verificarConquistas } from '../lib/conquistas'
 
 // ============================================================
@@ -146,6 +146,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         let filaRevisao = s.filaRevisao
         if (!acertou) filaRevisao = registrarErroNaFila(filaRevisao, questao.id, agora)
         else if (modo === 'revisao') filaRevisao = registrarAcertoNaRevisao(filaRevisao, questao.id, agora)
+        else if (modo === 'licao') filaRevisao = registrarAcertoNaLicao(filaRevisao, questao.id, agora)
 
         // Vidas: só se perde vida errando em lição. Revisão nunca gasta vida.
         let vidas = { vidas: s.vidas, ultimaRecarga: s.ultimaRecargaVida }
@@ -242,8 +243,26 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
     }),
     {
       name: 'duomed',
-      version: 1,
+      version: 2,
       storage: createJSONStorage(() => armazenamento),
+      migrate: (salvo, versao) => {
+        const dados = salvo as DadosJogo
+        // Versão 2: acertos também vão para a revisão. Quem já jogava recebe,
+        // liberadas na hora, as questões das lições que já tinha concluído.
+        if (versao < 2) {
+          const agora = Date.now()
+          let fila = dados.filaRevisao ?? {}
+          for (const licaoId of Object.keys(dados.licoesConcluidas ?? {})) {
+            for (const questao of buscarLicao(licaoId)?.licao.questoes ?? []) {
+              if (fila[questao.id]) continue
+              const item = registrarAcertoNaLicao({}, questao.id, agora)[questao.id]
+              fila = { ...fila, [questao.id]: { ...item, proximaEm: agora } }
+            }
+          }
+          dados.filaRevisao = fila
+        }
+        return dados
+      },
       // Salva só os dados do jogador (sem o resultado temporário e sem as funções)
       partialize: (estado): DadosJogo => {
         const dados: Record<string, unknown> = {}

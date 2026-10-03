@@ -147,7 +147,12 @@ export interface ItemRevisao {
   /** Timestamp a partir do qual a questão volta a aparecer */
   proximaEm: number
   adicionadaEm: number
+  /** Por que entrou na fila. Itens antigos, sem esse campo, são erros. */
+  origem?: OrigemRevisao
 }
+
+/** Erro: entrou porque a pessoa errou. Acerto: entrou para reforçar o que ela acertou. */
+export type OrigemRevisao = 'erro' | 'acerto'
 
 export interface LicaoConcluida {
   vezes: number

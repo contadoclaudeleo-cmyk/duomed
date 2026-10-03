@@ -219,7 +219,7 @@ Dica: nos textos, prefira vírgula ou ponto em vez de travessão.
 | XP | 10 por lição concluída, +5 se não errar nada, +2 por caso clínico acertado. A revisão segue a mesma regra. | `src/lib/xp.ts` |
 | Níveis | Sobe um nível a cada 100 XP | `src/lib/xp.ts` |
 | Ofensiva | Dias seguidos batendo a meta diária (10, 20 ou 30 XP). Zera se pular um dia. | `src/lib/ofensiva.ts` |
-| Revisão | Questão errada entra na fila na hora. Cada acerto na revisão faz ela voltar depois de 1, 3 e 7 dias; no acerto seguinte ela sai da fila. Errou, volta ao começo. | `src/lib/revisao.ts` |
+| Revisão | Duas filas. **Erros:** questão errada entra na hora e, a cada acerto na revisão, volta depois de 1, 3 e 7 dias; no acerto seguinte sai da fila. **Acertos:** questão acertada na lição volta depois de 3 e 7 dias e depois sai. Errou, vai para os erros e volta ao começo. | `src/lib/revisao.ts` |
 | Conquistas | Primeira lição, lição perfeita, unidade completa, 7 dias de ofensiva, 100 questões | `src/lib/conquistas.ts` |
 | Ranking | Liga semanal com 14 jogadores fictícios que reinicia toda segunda | `src/lib/ranking.ts` |
 | Teste de nível | 8 questões, sem gastar vidas e sem ganhar XP. 6 acertos ou mais sugerem o nível difícil. | `src/screens/Nivelamento.tsx` |
