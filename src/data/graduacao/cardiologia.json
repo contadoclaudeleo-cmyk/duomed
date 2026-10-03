@@ -5,5 +5,3741 @@
   "icone": "coracao",
   "ordem": 21,
   "ciclo": "clinico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "cardio-u1",
+      "titulo": "Eletrocardiograma básico",
+      "descricao": "Ritmo, eixo e ondas",
+      "licoes": [
+        {
+          "id": "cardio-u1-l1",
+          "titulo": "Ondas e intervalos",
+          "questoes": [
+            {
+              "id": "cardio-u1-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada parte do eletrocardiograma ao evento elétrico.",
+              "pares": [
+                {
+                  "esquerda": "Onda P",
+                  "direita": "Despolarização dos átrios"
+                },
+                {
+                  "esquerda": "Complexo QRS",
+                  "direita": "Despolarização dos ventrículos"
+                },
+                {
+                  "esquerda": "Onda T",
+                  "direita": "Repolarização dos ventrículos"
+                },
+                {
+                  "esquerda": "Intervalo PR",
+                  "direita": "Condução do átrio ao ventrículo"
+                }
+              ],
+              "explicacao": "A repolarização dos átrios fica escondida no QRS.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração normal do intervalo PR?",
+              "opcoes": [
+                "0,12 a 0,20 segundo",
+                "0,04 a 0,08 segundo",
+                "0,40 a 0,60 segundo",
+                "Mais de 1 segundo"
+              ],
+              "resposta": "0,12 a 0,20 segundo",
+              "explicacao": "PR longo indica bloqueio atrioventricular de 1º grau.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O QRS normal dura menos de 0,12 segundo.",
+              "resposta": true,
+              "explicacao": "QRS largo sugere bloqueio de ramo ou ritmo ventricular.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "No papel do eletrocardiograma, cada quadradinho pequeno vale ___ segundo.",
+              "opcoes": [
+                "0,04",
+                "0,20",
+                "1",
+                "0,10"
+              ],
+              "resposta": "0,04",
+              "explicacao": "Cada quadrado grande vale 0,20 segundo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como calcular a frequência cardíaca em ritmo regular pelo eletrocardiograma?",
+              "opcoes": [
+                "300 dividido pelo número de quadrados grandes entre dois QRS",
+                "60 vezes o número de ondas P",
+                "Contar as ondas T",
+                "Dividir o PR por 2"
+              ],
+              "resposta": "300 dividido pelo número de quadrados grandes entre dois QRS",
+              "explicacao": "Também se pode usar 1.500 dividido pelos quadradinhos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Eletrocardiograma tem 3 quadrados grandes entre cada QRS, com ritmo regular.",
+              "enunciado": "Qual é a frequência?",
+              "opcoes": [
+                "100 por minuto",
+                "60 por minuto",
+                "150 por minuto",
+                "300 por minuto"
+              ],
+              "resposta": "100 por minuto",
+              "explicacao": "300 dividido por 3.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ritmo sinusal tem onda P positiva em DII antes de cada QRS.",
+              "resposta": true,
+              "explicacao": "É o ritmo normal do coração.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O intervalo ___ corrigido longo aumenta o risco de arritmias graves.",
+              "opcoes": [
+                "QT",
+                "PR",
+                "RR",
+                "ST"
+              ],
+              "resposta": "QT",
+              "explicacao": "Vários remédios prolongam o QT.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u1-l2",
+          "titulo": "Derivações e eixo",
+          "questoes": [
+            {
+              "id": "cardio-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo de derivações à parede do coração.",
+              "pares": [
+                {
+                  "esquerda": "DII, DIII e aVF",
+                  "direita": "Parede inferior"
+                },
+                {
+                  "esquerda": "V1 e V2",
+                  "direita": "Septo"
+                },
+                {
+                  "esquerda": "V3 e V4",
+                  "direita": "Parede anterior"
+                },
+                {
+                  "esquerda": "DI, aVL, V5 e V6",
+                  "direita": "Parede lateral"
+                }
+              ],
+              "explicacao": "Essa divisão localiza o infarto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o eixo elétrico normal do coração?",
+              "opcoes": [
+                "Entre -30° e +90°",
+                "Entre +90° e +180°",
+                "Entre -90° e -180°",
+                "Sempre 0°"
+              ],
+              "resposta": "Entre -30° e +90°",
+              "explicacao": "O eixo para a esquerda é comum em idosos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O eletrocardiograma padrão tem 12 derivações.",
+              "resposta": true,
+              "explicacao": "São 6 dos membros e 6 precordiais.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Se o QRS é positivo em DI e em aVF, o eixo é ___.",
+              "opcoes": [
+                "normal",
+                "desviado à esquerda",
+                "desviado à direita",
+                "indeterminado"
+              ],
+              "resposta": "normal",
+              "explicacao": "É uma forma rápida de avaliar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde se coloca o eletrodo V1?",
+              "opcoes": [
+                "4º espaço intercostal à direita do esterno",
+                "5º espaço na linha axilar",
+                "No braço esquerdo",
+                "No abdome"
+              ],
+              "resposta": "4º espaço intercostal à direita do esterno",
+              "explicacao": "V2 fica no mesmo espaço à esquerda.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem QRS positivo em DI e negativo em aVF, com DII negativo.",
+              "enunciado": "Qual é o eixo?",
+              "opcoes": [
+                "Desviado para a esquerda",
+                "Normal",
+                "Desviado para a direita",
+                "Extremo"
+              ],
+              "resposta": "Desviado para a esquerda",
+              "explicacao": "Sugere bloqueio da divisão anterossuperior.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A troca dos eletrodos dos braços inverte a onda P em DI.",
+              "resposta": true,
+              "explicacao": "É um erro técnico comum.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O desvio do eixo para a ___ é comum em hipertrofia do ventrículo direito.",
+              "opcoes": [
+                "direita",
+                "esquerda",
+                "frente",
+                "trás"
+              ],
+              "resposta": "direita",
+              "explicacao": "Também ocorre em embolia pulmonar.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u1-l3",
+          "titulo": "Alterações básicas",
+          "questoes": [
+            {
+              "id": "cardio-u1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada alteração do eletrocardiograma à causa.",
+              "pares": [
+                {
+                  "esquerda": "Onda T apiculada",
+                  "direita": "Potássio alto"
+                },
+                {
+                  "esquerda": "Onda U",
+                  "direita": "Potássio baixo"
+                },
+                {
+                  "esquerda": "Supradesnível de ST",
+                  "direita": "Infarto agudo"
+                },
+                {
+                  "esquerda": "QT curto",
+                  "direita": "Cálcio alto"
+                }
+              ],
+              "explicacao": "Os eletrólitos alteram muito o traçado.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado sugere sobrecarga do ventrículo esquerdo?",
+              "opcoes": [
+                "Ondas R altas em V5 e V6 e S profundas em V1",
+                "Onda P larga",
+                "QRS baixo",
+                "PR curto"
+              ],
+              "resposta": "Ondas R altas em V5 e V6 e S profundas em V1",
+              "explicacao": "Os critérios de Sokolow ajudam.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na pericardite aguda, há supradesnível de ST difuso, com infradesnível de PR.",
+              "resposta": true,
+              "explicacao": "Não segue uma parede específica.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O bloqueio de ramo ___ tem QRS largo com padrão rSR' em V1.",
+              "opcoes": [
+                "direito",
+                "esquerdo",
+                "atrial",
+                "sinusal"
+              ],
+              "resposta": "direito",
+              "explicacao": "Em V6, aparece S larga.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado do bloqueio de ramo esquerdo?",
+              "opcoes": [
+                "QRS largo com R alargado e entalhado em V5 e V6",
+                "Onda P ausente",
+                "QT curto",
+                "PR longo"
+              ],
+              "resposta": "QRS largo com R alargado e entalhado em V5 e V6",
+              "explicacao": "Novo bloqueio de ramo esquerdo com dor pode indicar infarto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência renal tem fraqueza e ondas T altas e pontiagudas.",
+              "enunciado": "Qual é a causa?",
+              "opcoes": [
+                "Hipercalemia",
+                "Hipocalemia",
+                "Hipocalcemia",
+                "Infarto"
+              ],
+              "resposta": "Hipercalemia",
+              "explicacao": "É uma emergência pelo risco de parada.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A baixa voltagem do QRS pode ocorrer em derrame pericárdico.",
+              "resposta": true,
+              "explicacao": "Também em obesidade e enfisema.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A onda ___ de Osborn aparece na hipotermia.",
+              "opcoes": [
+                "J",
+                "U",
+                "T",
+                "P"
+              ],
+              "resposta": "J",
+              "explicacao": "É um entalhe no fim do QRS.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-u2",
+      "titulo": "Arritmias",
+      "descricao": "Taquicardias e bradicardias",
+      "licoes": [
+        {
+          "id": "cardio-u2-l1",
+          "titulo": "Fibrilação e flutter atrial",
+          "questoes": [
+            {
+              "id": "cardio-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado da fibrilação atrial no eletrocardiograma?",
+              "opcoes": [
+                "Ritmo irregular sem ondas P",
+                "Ondas P em serra",
+                "PR longo",
+                "QRS largo regular"
+              ],
+              "resposta": "Ritmo irregular sem ondas P",
+              "explicacao": "É a arritmia sustentada mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada arritmia ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Fibrilação atrial",
+                  "direita": "Irregularmente irregular"
+                },
+                {
+                  "esquerda": "Flutter atrial",
+                  "direita": "Ondas em dente de serra"
+                },
+                {
+                  "esquerda": "Taquicardia supraventricular",
+                  "direita": "Regular e rápida, com QRS estreito"
+                },
+                {
+                  "esquerda": "Taquicardia ventricular",
+                  "direita": "Regular e rápida, com QRS largo"
+                }
+              ],
+              "explicacao": "O flutter costuma ter frequência de 150.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A fibrilação atrial aumenta o risco de AVC por formação de coágulos no átrio.",
+              "resposta": true,
+              "explicacao": "O escore CHA2DS2-VASc avalia esse risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O escore ___ estima o risco de AVC na fibrilação atrial.",
+              "opcoes": [
+                "CHA2DS2-VASc",
+                "HAS-BLED",
+                "Wells",
+                "CURB-65"
+              ],
+              "resposta": "CHA2DS2-VASc",
+              "explicacao": "O HAS-BLED estima o risco de sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o objetivo do controle de frequência na fibrilação atrial?",
+              "opcoes": [
+                "Manter a frequência em repouso abaixo de cerca de 110",
+                "Zerar a frequência",
+                "Aumentar a frequência",
+                "Nenhum"
+              ],
+              "resposta": "Manter a frequência em repouso abaixo de cerca de 110",
+              "explicacao": "Usam-se betabloqueadores ou bloqueadores de cálcio.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial há 3 dias está estável e quer voltar ao ritmo normal.",
+              "enunciado": "Qual é o cuidado antes da cardioversão?",
+              "opcoes": [
+                "Anticoagular por 3 semanas ou excluir trombo por ecocardiograma",
+                "Cardioverter já",
+                "Nada",
+                "Dar só aspirina"
+              ],
+              "resposta": "Anticoagular por 3 semanas ou excluir trombo por ecocardiograma",
+              "explicacao": "Com menos de 48 horas, o risco é menor.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os anticoagulantes orais diretos são opção à varfarina na fibrilação atrial sem valva mecânica.",
+              "resposta": true,
+              "explicacao": "Não precisam de controle do INR.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A fibrilação atrial com resposta ventricular rápida em paciente instável deve ser tratada com cardioversão ___.",
+              "opcoes": [
+                "elétrica sincronizada",
+                "química lenta",
+                "não sincronizada",
+                "nenhuma"
+              ],
+              "resposta": "elétrica sincronizada",
+              "explicacao": "Instabilidade exige ação imediata.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u2-l2",
+          "titulo": "Taquicardias",
+          "questoes": [
+            {
+              "id": "cardio-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada taquicardia ao tratamento inicial no paciente estável.",
+              "pares": [
+                {
+                  "esquerda": "Taquicardia supraventricular",
+                  "direita": "Manobra vagal e adenosina"
+                },
+                {
+                  "esquerda": "Taquicardia ventricular monomórfica",
+                  "direita": "Amiodarona"
+                },
+                {
+                  "esquerda": "Torsades de pointes",
+                  "direita": "Sulfato de magnésio"
+                },
+                {
+                  "esquerda": "Taquicardia sinusal",
+                  "direita": "Tratar a causa"
+                }
+              ],
+              "explicacao": "Paciente instável recebe cardioversão elétrica.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual manobra vagal pode reverter a taquicardia supraventricular?",
+              "opcoes": [
+                "Valsalva modificada",
+                "Respirar rápido",
+                "Correr",
+                "Comer"
+              ],
+              "resposta": "Valsalva modificada",
+              "explicacao": "Massagem do seio carotídeo também, com cuidado.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A adenosina causa sensação breve de mal-estar e pausa no coração.",
+              "resposta": true,
+              "explicacao": "O efeito dura segundos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome de ___ tem PR curto e onda delta por via acessória.",
+              "opcoes": [
+                "Wolff-Parkinson-White",
+                "Brugada",
+                "QT longo",
+                "Lown-Ganong"
+              ],
+              "resposta": "Wolff-Parkinson-White",
+              "explicacao": "A ablação pode curar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os sinais de instabilidade em uma taquicardia?",
+              "opcoes": [
+                "Pressão baixa, confusão, dor no peito e falta de ar",
+                "Palpitação leve",
+                "Ansiedade",
+                "Suor leve"
+              ],
+              "resposta": "Pressão baixa, confusão, dor no peito e falta de ar",
+              "explicacao": "A instabilidade indica cardioversão elétrica.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem palpitações súbitas, frequência de 190 regular e QRS estreito, estável.",
+              "enunciado": "Qual é a primeira conduta?",
+              "opcoes": [
+                "Manobra vagal",
+                "Cardioversão elétrica",
+                "Amiodarona",
+                "Desfibrilação"
+              ],
+              "resposta": "Manobra vagal",
+              "explicacao": "Se não funcionar, adenosina.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Taquicardia com QRS largo deve ser considerada ventricular até prova contrária.",
+              "resposta": true,
+              "explicacao": "Isso evita tratamentos perigosos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na fibrilação ventricular, o tratamento é a ___ imediata.",
+              "opcoes": [
+                "desfibrilação",
+                "adenosina",
+                "manobra vagal",
+                "atropina"
+              ],
+              "resposta": "desfibrilação",
+              "explicacao": "Junto com a reanimação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u2-l3",
+          "titulo": "Bradicardias e bloqueios",
+          "questoes": [
+            {
+              "id": "cardio-u2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada bloqueio atrioventricular ao achado.",
+              "pares": [
+                {
+                  "esquerda": "1º grau",
+                  "direita": "PR longo, todos os P conduzem"
+                },
+                {
+                  "esquerda": "2º grau Mobitz I",
+                  "direita": "PR aumenta até uma P não conduzir"
+                },
+                {
+                  "esquerda": "2º grau Mobitz II",
+                  "direita": "P não conduzida sem aumento prévio do PR"
+                },
+                {
+                  "esquerda": "3º grau",
+                  "direita": "P e QRS sem relação"
+                }
+              ],
+              "explicacao": "Mobitz II e 3º grau costumam precisar de marca-passo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento inicial da bradicardia sintomática?",
+              "opcoes": [
+                "Atropina",
+                "Adenosina",
+                "Amiodarona",
+                "Digoxina"
+              ],
+              "resposta": "Atropina",
+              "explicacao": "Se não responder, marca-passo transcutâneo ou adrenalina.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Atletas podem ter bradicardia sinusal normal em repouso.",
+              "resposta": true,
+              "explicacao": "O coração treinado bate mais devagar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O bloqueio atrioventricular ___ grau é o bloqueio total, com átrios e ventrículos batendo separados.",
+              "opcoes": [
+                "de 3º",
+                "de 1º",
+                "de 2º Mobitz I",
+                "sinusal"
+              ],
+              "resposta": "de 3º",
+              "explicacao": "Precisa de marca-passo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio pode causar bradicardia e bloqueio?",
+              "opcoes": [
+                "Betabloqueador",
+                "Amoxicilina",
+                "Paracetamol",
+                "Omeprazol"
+              ],
+              "resposta": "Betabloqueador",
+              "explicacao": "Digoxina e bloqueadores de cálcio também.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem desmaios e eletrocardiograma com ondas P sem relação com os QRS, frequência de 35.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Bloqueio atrioventricular total; marca-passo",
+                "Ritmo sinusal; nada",
+                "Fibrilação atrial; anticoagular",
+                "Taquicardia; adenosina"
+              ],
+              "resposta": "Bloqueio atrioventricular total; marca-passo",
+              "explicacao": "Os desmaios por bradicardia são as crises de Stokes-Adams.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A doença do nó sinusal pode alternar bradicardia com taquicardia.",
+              "resposta": true,
+              "explicacao": "É a síndrome bradi-taqui.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A doença de ___ é uma causa infecciosa de bloqueios no Brasil.",
+              "opcoes": [
+                "Chagas",
+                "Lyme",
+                "dengue",
+                "sarampo"
+              ],
+              "resposta": "Chagas",
+              "explicacao": "Bloqueio de ramo direito é muito típico.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-u3",
+      "titulo": "Doença coronariana",
+      "descricao": "Angina e infarto",
+      "licoes": [
+        {
+          "id": "cardio-u3-l1",
+          "titulo": "Angina estável",
+          "questoes": [
+            {
+              "id": "cardio-u3-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica da angina estável?",
+              "opcoes": [
+                "Dor no peito ao esforço que melhora com repouso",
+                "Dor em repouso por horas",
+                "Dor que piora ao respirar",
+                "Dor ao apertar o peito"
+              ],
+              "resposta": "Dor no peito ao esforço que melhora com repouso",
+              "explicacao": "Tem padrão previsível.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada remédio ao efeito na angina.",
+              "pares": [
+                {
+                  "esquerda": "Nitrato",
+                  "direita": "Dilata veias e alivia a dor"
+                },
+                {
+                  "esquerda": "Betabloqueador",
+                  "direita": "Reduz frequência e consumo de oxigênio"
+                },
+                {
+                  "esquerda": "AAS",
+                  "direita": "Previne trombose"
+                },
+                {
+                  "esquerda": "Estatina",
+                  "direita": "Estabiliza a placa"
+                }
+              ],
+              "explicacao": "Todos reduzem eventos ou sintomas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A aterosclerose é a principal causa da doença coronariana.",
+              "resposta": true,
+              "explicacao": "Placas de gordura estreitam as artérias.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O teste ___ avalia isquemia ao fazer o paciente se exercitar na esteira.",
+              "opcoes": [
+                "ergométrico",
+                "de Holter",
+                "de inclinação",
+                "de esforço respiratório"
+              ],
+              "resposta": "ergométrico",
+              "explicacao": "Mostra infradesnível do ST na isquemia.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o fator de risco cardiovascular mais importante que pode ser mudado?",
+              "opcoes": [
+                "Tabagismo",
+                "Idade",
+                "Sexo masculino",
+                "História familiar"
+              ],
+              "resposta": "Tabagismo",
+              "explicacao": "Parar de fumar reduz muito o risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos tem dor no peito ao subir escadas, que passa em 3 minutos de repouso.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Angina estável",
+                "Infarto",
+                "Pericardite",
+                "Refluxo"
+              ],
+              "resposta": "Angina estável",
+              "explicacao": "Deve fazer exames para avaliar isquemia.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Mulheres, diabéticos e idosos podem ter infarto com sintomas atípicos.",
+              "resposta": true,
+              "explicacao": "Como cansaço, náusea e falta de ar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ de risco cardiovascular estima a chance de infarto e AVC em 10 anos.",
+              "opcoes": [
+                "escore",
+                "índice glicêmico",
+                "IMC",
+                "teste"
+              ],
+              "resposta": "escore",
+              "explicacao": "Exemplos são Framingham e o escore global.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u3-l2",
+          "titulo": "Síndrome coronariana aguda",
+          "questoes": [
+            {
+              "id": "cardio-u3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada síndrome coronariana ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Angina instável",
+                  "direita": "Dor sem aumento de troponina"
+                },
+                {
+                  "esquerda": "Infarto sem supra",
+                  "direita": "Troponina alta sem supradesnível"
+                },
+                {
+                  "esquerda": "Infarto com supra",
+                  "direita": "Supradesnível de ST"
+                },
+                {
+                  "esquerda": "Angina estável",
+                  "direita": "Dor previsível aos esforços"
+                }
+              ],
+              "explicacao": "O infarto com supra precisa de reperfusão urgente.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo ideal entre a chegada e a angioplastia no infarto com supra?",
+              "opcoes": [
+                "Até 90 minutos",
+                "Até 12 horas",
+                "Até 1 semana",
+                "Não importa"
+              ],
+              "resposta": "Até 90 minutos",
+              "explicacao": "Tempo é músculo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No infarto com supra, se a angioplastia não puder ser feita em até 120 minutos, usa-se trombolítico.",
+              "resposta": true,
+              "explicacao": "O trombolítico deve ser dado em até 30 minutos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O marcador mais usado para diagnosticar infarto é a ___.",
+              "opcoes": [
+                "troponina",
+                "CK total",
+                "amilase",
+                "lipase"
+              ],
+              "resposta": "troponina",
+              "explicacao": "Ela sobe algumas horas após a lesão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais remédios são dados logo na suspeita de síndrome coronariana aguda?",
+              "opcoes": [
+                "AAS e outro antiagregante, anticoagulante e estatina",
+                "Apenas analgésico",
+                "Antibiótico",
+                "Insulina"
+              ],
+              "resposta": "AAS e outro antiagregante, anticoagulante e estatina",
+              "explicacao": "Nitrato e morfina conforme o caso.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem dor no peito há 1 hora e supradesnível de ST em DII, DIII e aVF.",
+              "enunciado": "Qual parede está infartada e qual artéria é mais provável?",
+              "opcoes": [
+                "Inferior; coronária direita",
+                "Anterior; descendente anterior",
+                "Lateral; circunflexa",
+                "Septal; diagonal"
+              ],
+              "resposta": "Inferior; coronária direita",
+              "explicacao": "Avaliar também o ventrículo direito com V3R e V4R.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No infarto do ventrículo direito, nitratos podem causar queda grave da pressão.",
+              "resposta": true,
+              "explicacao": "Esses pacientes dependem do volume.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O supradesnível de ST de V1 a V4 indica infarto da parede ___.",
+              "opcoes": [
+                "anterior",
+                "inferior",
+                "lateral",
+                "posterior"
+              ],
+              "resposta": "anterior",
+              "explicacao": "Geralmente pela descendente anterior.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u3-l3",
+          "titulo": "Complicações do infarto",
+          "questoes": [
+            {
+              "id": "cardio-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada complicação ao momento típico após o infarto.",
+              "pares": [
+                {
+                  "esquerda": "Fibrilação ventricular",
+                  "direita": "Primeiras horas"
+                },
+                {
+                  "esquerda": "Ruptura do músculo papilar",
+                  "direita": "3 a 5 dias"
+                },
+                {
+                  "esquerda": "Ruptura da parede livre",
+                  "direita": "5 a 14 dias"
+                },
+                {
+                  "esquerda": "Aneurisma ventricular",
+                  "direita": "Semanas a meses"
+                }
+              ],
+              "explicacao": "A arritmia é a principal causa de morte precoce.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual complicação causa sopro novo e edema pulmonar súbito dias após o infarto?",
+              "opcoes": [
+                "Ruptura do músculo papilar com insuficiência mitral",
+                "Pericardite",
+                "Arritmia leve",
+                "Anemia"
+              ],
+              "resposta": "Ruptura do músculo papilar com insuficiência mitral",
+              "explicacao": "É uma emergência cirúrgica.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A síndrome de Dressler é uma pericardite que surge semanas após o infarto.",
+              "resposta": true,
+              "explicacao": "Tem origem autoimune.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O choque ___ ocorre quando o coração não bombeia sangue suficiente após grande infarto.",
+              "opcoes": [
+                "cardiogênico",
+                "séptico",
+                "hipovolêmico",
+                "anafilático"
+              ],
+              "resposta": "cardiogênico",
+              "explicacao": "Tem alta mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio reduz a mortalidade após infarto com fração de ejeção baixa?",
+              "opcoes": [
+                "Betabloqueador e inibidor da ECA",
+                "Digoxina",
+                "Antibiótico",
+                "Diurético apenas"
+              ],
+              "resposta": "Betabloqueador e inibidor da ECA",
+              "explicacao": "Também antagonistas da aldosterona.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente 4 dias após infarto tem queda súbita da pressão, turgência jugular e abafamento das bulhas.",
+              "enunciado": "Qual é a complicação?",
+              "opcoes": [
+                "Ruptura da parede com tamponamento",
+                "Pericardite simples",
+                "Arritmia",
+                "Embolia"
+              ],
+              "resposta": "Ruptura da parede com tamponamento",
+              "explicacao": "É uma emergência fatal.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Reabilitação cardíaca após infarto reduz mortalidade e melhora a qualidade de vida.",
+              "resposta": true,
+              "explicacao": "Inclui exercício supervisionado e educação.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Após um infarto, o LDL deve ficar abaixo de ___ mg/dL, segundo diretrizes atuais.",
+              "opcoes": [
+                "55",
+                "160",
+                "200",
+                "130"
+              ],
+              "resposta": "55",
+              "explicacao": "Estatinas em alta dose são a base.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-u4",
+      "titulo": "Insuficiência cardíaca e valvopatias",
+      "descricao": "Falha da bomba e das valvas",
+      "licoes": [
+        {
+          "id": "cardio-u4-l1",
+          "titulo": "Insuficiência cardíaca",
+          "questoes": [
+            {
+              "id": "cardio-u4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada classe funcional da NYHA ao sintoma.",
+              "pares": [
+                {
+                  "esquerda": "Classe I",
+                  "direita": "Sem sintomas nas atividades comuns"
+                },
+                {
+                  "esquerda": "Classe II",
+                  "direita": "Sintomas em atividades comuns"
+                },
+                {
+                  "esquerda": "Classe III",
+                  "direita": "Sintomas em atividades leves"
+                },
+                {
+                  "esquerda": "Classe IV",
+                  "direita": "Sintomas em repouso"
+                }
+              ],
+              "explicacao": "A classe orienta o tratamento e o prognóstico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais remédios formam a base do tratamento da insuficiência cardíaca com fração reduzida?",
+              "opcoes": [
+                "Inibidor da neprilisina e do receptor de angiotensina, betabloqueador, antagonista da aldosterona e inibidor de SGLT2",
+                "Apenas diurético",
+                "Apenas digoxina",
+                "Antibiótico"
+              ],
+              "resposta": "Inibidor da neprilisina e do receptor de angiotensina, betabloqueador, antagonista da aldosterona e inibidor de SGLT2",
+              "explicacao": "São os quatro pilares.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os diuréticos aliviam a congestão, mas não reduzem a mortalidade de forma clara.",
+              "resposta": true,
+              "explicacao": "Melhoram falta de ar e inchaço.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O BNP alto ajuda a confirmar que a falta de ar é por insuficiência ___.",
+              "opcoes": [
+                "cardíaca",
+                "renal",
+                "hepática",
+                "respiratória"
+              ],
+              "resposta": "cardíaca",
+              "explicacao": "Valores normais tornam o diagnóstico improvável.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sinal de congestão pulmonar no exame físico?",
+              "opcoes": [
+                "Estertores nas bases dos pulmões",
+                "Sopro no pescoço",
+                "Abdome escavado",
+                "Pele seca"
+              ],
+              "resposta": "Estertores nas bases dos pulmões",
+              "explicacao": "Também ortopneia e dispneia paroxística noturna.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência cardíaca tem falta de ar ao deitar e acorda à noite sufocado.",
+              "enunciado": "Quais são esses sintomas?",
+              "opcoes": [
+                "Ortopneia e dispneia paroxística noturna",
+                "Asma",
+                "Ansiedade",
+                "Apneia do sono"
+              ],
+              "resposta": "Ortopneia e dispneia paroxística noturna",
+              "explicacao": "São sinais de congestão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com insuficiência cardíaca devem evitar anti-inflamatórios.",
+              "resposta": true,
+              "explicacao": "Eles retêm sal e água e pioram a doença.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A fração de ___ mede a porcentagem de sangue que o ventrículo esquerdo bombeia a cada batimento.",
+              "opcoes": [
+                "ejeção",
+                "filtração",
+                "excreção",
+                "perfusão"
+              ],
+              "resposta": "ejeção",
+              "explicacao": "Abaixo de 40% é considerada reduzida.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u4-l2",
+          "titulo": "Valvopatias",
+          "questoes": [
+            {
+              "id": "cardio-u4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada valvopatia ao sopro.",
+              "pares": [
+                {
+                  "esquerda": "Estenose aórtica",
+                  "direita": "Sistólico em foco aórtico irradiando para o pescoço"
+                },
+                {
+                  "esquerda": "Insuficiência mitral",
+                  "direita": "Sistólico em foco mitral irradiando para a axila"
+                },
+                {
+                  "esquerda": "Estenose mitral",
+                  "direita": "Diastólico em ruflar no foco mitral"
+                },
+                {
+                  "esquerda": "Insuficiência aórtica",
+                  "direita": "Diastólico aspirativo na borda esternal"
+                }
+              ],
+              "explicacao": "O momento do sopro é a primeira pista.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de estenose mitral no Brasil?",
+              "opcoes": [
+                "Febre reumática",
+                "Calcificação pela idade",
+                "Endocardite",
+                "Congênita"
+              ],
+              "resposta": "Febre reumática",
+              "explicacao": "A febre reumática ainda é comum em países em desenvolvimento.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tríade da estenose aórtica grave é angina, síncope e insuficiência cardíaca.",
+              "resposta": true,
+              "explicacao": "Após os sintomas, a sobrevida cai muito sem troca da valva.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O TAVI é o implante de valva ___ por cateter, sem abrir o tórax.",
+              "opcoes": [
+                "aórtica",
+                "mitral",
+                "tricúspide",
+                "pulmonar"
+              ],
+              "resposta": "aórtica",
+              "explicacao": "É uma opção em pacientes de maior risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual valvopatia causa pulso em martelo d'água?",
+              "opcoes": [
+                "Insuficiência aórtica",
+                "Estenose aórtica",
+                "Estenose mitral",
+                "Prolapso mitral"
+              ],
+              "resposta": "Insuficiência aórtica",
+              "explicacao": "O pulso sobe e cai rápido.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem desmaio ao esforço e sopro sistólico rude no foco aórtico que irradia para o pescoço.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Estenose aórtica grave",
+                "Insuficiência mitral",
+                "Estenose mitral",
+                "Comunicação interatrial"
+              ],
+              "resposta": "Estenose aórtica grave",
+              "explicacao": "O ecocardiograma confirma.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O prolapso da valva mitral causa clique no meio da sístole.",
+              "resposta": true,
+              "explicacao": "Costuma ser benigno.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A profilaxia da febre reumática é feita com penicilina ___.",
+              "opcoes": [
+                "benzatina",
+                "cristalina",
+                "oral por 1 semana",
+                "procaína apenas"
+              ],
+              "resposta": "benzatina",
+              "explicacao": "É dada a cada 21 dias por anos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u4-l3",
+          "titulo": "Endocardite e miocardiopatias",
+          "questoes": [
+            {
+              "id": "cardio-u4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada miocardiopatia à característica.",
+              "pares": [
+                {
+                  "esquerda": "Dilatada",
+                  "direita": "Ventrículo grande e fraco"
+                },
+                {
+                  "esquerda": "Hipertrófica",
+                  "direita": "Parede grossa, risco de morte súbita em jovens"
+                },
+                {
+                  "esquerda": "Restritiva",
+                  "direita": "Parede rígida, como na amiloidose"
+                },
+                {
+                  "esquerda": "Arritmogênica",
+                  "direita": "Gordura no ventrículo direito"
+                }
+              ],
+              "explicacao": "A miocardiopatia hipertrófica é a causa mais comum de morte súbita em atletas jovens.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o critério maior de Duke para endocardite?",
+              "opcoes": [
+                "Hemoculturas positivas com germe típico e vegetação no ecocardiograma",
+                "Febre",
+                "Sopro antigo",
+                "Anemia"
+              ],
+              "resposta": "Hemoculturas positivas com germe típico e vegetação no ecocardiograma",
+              "explicacao": "Os critérios combinam achados maiores e menores.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Usuários de drogas injetáveis têm risco de endocardite na valva tricúspide.",
+              "resposta": true,
+              "explicacao": "O Staphylococcus aureus é o germe mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "As manchas de ___ são lesões indolores nas palmas e plantas na endocardite.",
+              "opcoes": [
+                "Janeway",
+                "Osler",
+                "Roth",
+                "Koplik"
+              ],
+              "resposta": "Janeway",
+              "explicacao": "Os nódulos de Osler são dolorosos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de miocardiopatia dilatada no Brasil, além da isquêmica?",
+              "opcoes": [
+                "Doença de Chagas",
+                "Alcoolismo apenas",
+                "Gravidez",
+                "Infecção bacteriana"
+              ],
+              "resposta": "Doença de Chagas",
+              "explicacao": "A cardiopatia chagásica é muito importante no país.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem atleta desmaia durante o jogo, e o ecocardiograma mostra septo muito grosso.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Miocardiopatia hipertrófica",
+                "Miocardite viral",
+                "Infarto",
+                "Asma"
+              ],
+              "resposta": "Miocardiopatia hipertrófica",
+              "explicacao": "Deve evitar esportes competitivos intensos e ser avaliado para desfibrilador.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A miocardite viral pode causar insuficiência cardíaca aguda em jovens.",
+              "resposta": true,
+              "explicacao": "A ressonância cardíaca ajuda no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A miocardiopatia ___ ocorre no fim da gestação ou após o parto.",
+              "opcoes": [
+                "periparto",
+                "alcoólica",
+                "chagásica",
+                "isquêmica"
+              ],
+              "resposta": "periparto",
+              "explicacao": "Muitas mulheres recuperam a função.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-u5",
+      "titulo": "Hipertensão e prevenção",
+      "descricao": "Pressão, lipídios e risco",
+      "licoes": [
+        {
+          "id": "cardio-u5-l1",
+          "titulo": "Hipertensão arterial",
+          "questoes": [
+            {
+              "id": "cardio-u5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada classe de anti-hipertensivo ao efeito colateral.",
+              "pares": [
+                {
+                  "esquerda": "Inibidor da ECA",
+                  "direita": "Tosse seca"
+                },
+                {
+                  "esquerda": "Bloqueador de canal de cálcio",
+                  "direita": "Inchaço nas pernas"
+                },
+                {
+                  "esquerda": "Diurético tiazídico",
+                  "direita": "Potássio baixo"
+                },
+                {
+                  "esquerda": "Betabloqueador",
+                  "direita": "Cansaço e bradicardia"
+                }
+              ],
+              "explicacao": "Conhecer os efeitos ajuda na adesão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o valor que define hipertensão no consultório?",
+              "opcoes": [
+                "140/90 mmHg ou mais",
+                "120/80 mmHg",
+                "100/60 mmHg",
+                "160/100 apenas"
+              ],
+              "resposta": "140/90 mmHg ou mais",
+              "explicacao": "O diagnóstico exige medidas repetidas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hipertensão é muitas vezes chamada de assassina silenciosa por não dar sintomas.",
+              "resposta": true,
+              "explicacao": "Causa infarto, AVC e doença renal.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A monitorização ___ da pressão arterial por 24 horas ajuda a diagnosticar hipertensão do avental branco.",
+              "opcoes": [
+                "ambulatorial",
+                "hospitalar",
+                "invasiva",
+                "ocasional"
+              ],
+              "resposta": "ambulatorial",
+              "explicacao": "É conhecida como MAPA.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual mudança de estilo de vida reduz a pressão?",
+              "opcoes": [
+                "Reduzir o sal, perder peso e fazer exercício",
+                "Aumentar o sal",
+                "Ficar parado",
+                "Beber mais álcool"
+              ],
+              "resposta": "Reduzir o sal, perder peso e fazer exercício",
+              "explicacao": "A dieta DASH é recomendada.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diabético tem pressão de 150/95 e proteína na urina.",
+              "enunciado": "Qual classe de remédio é preferida?",
+              "opcoes": [
+                "Inibidor da ECA ou bloqueador do receptor de angiotensina",
+                "Betabloqueador apenas",
+                "Hidralazina",
+                "Nenhum"
+              ],
+              "resposta": "Inibidor da ECA ou bloqueador do receptor de angiotensina",
+              "explicacao": "Eles protegem os rins.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Não se deve associar inibidor da ECA com bloqueador do receptor de angiotensina.",
+              "resposta": true,
+              "explicacao": "A associação aumenta o risco de lesão renal e potássio alto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hipertensão ___ é aquela que não controla com três remédios em dose adequada, incluindo diurético.",
+              "opcoes": [
+                "resistente",
+                "primária",
+                "do avental branco",
+                "mascarada"
+              ],
+              "resposta": "resistente",
+              "explicacao": "Deve-se investigar causas secundárias e adesão.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u5-l2",
+          "titulo": "Dislipidemias",
+          "questoes": [
+            {
+              "id": "cardio-u5-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal alvo do tratamento das dislipidemias para reduzir infartos?",
+              "opcoes": [
+                "LDL colesterol",
+                "HDL",
+                "Triglicerídeos",
+                "Colesterol total"
+              ],
+              "resposta": "LDL colesterol",
+              "explicacao": "Quanto mais baixo o LDL, menor o risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada remédio ao efeito nos lipídios.",
+              "pares": [
+                {
+                  "esquerda": "Estatina",
+                  "direita": "Reduz LDL"
+                },
+                {
+                  "esquerda": "Ezetimiba",
+                  "direita": "Reduz a absorção de colesterol"
+                },
+                {
+                  "esquerda": "Fibrato",
+                  "direita": "Reduz triglicerídeos"
+                },
+                {
+                  "esquerda": "Inibidor de PCSK9",
+                  "direita": "Reduz muito o LDL"
+                }
+              ],
+              "explicacao": "As estatinas são a primeira escolha.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Triglicerídeos muito altos, acima de 1.000, podem causar pancreatite.",
+              "resposta": true,
+              "explicacao": "Nesse caso, o tratamento é urgente.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O efeito colateral muscular mais temido das estatinas é a ___.",
+              "opcoes": [
+                "rabdomiólise",
+                "hepatite",
+                "tosse",
+                "alopecia"
+              ],
+              "resposta": "rabdomiólise",
+              "explicacao": "É raro; dores leves são mais comuns.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal físico sugere hipercolesterolemia familiar?",
+              "opcoes": [
+                "Xantomas nos tendões",
+                "Pele amarela",
+                "Cabelo branco",
+                "Unhas fracas"
+              ],
+              "resposta": "Xantomas nos tendões",
+              "explicacao": "O arco corneano antes dos 45 anos também.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com LDL de 220 tem pai que infartou aos 42 anos.",
+              "enunciado": "Qual é a hipótese e a conduta?",
+              "opcoes": [
+                "Hipercolesterolemia familiar; estatina e rastrear a família",
+                "Normal; nada",
+                "Dieta apenas",
+                "Exames em 5 anos"
+              ],
+              "resposta": "Hipercolesterolemia familiar; estatina e rastrear a família",
+              "explicacao": "O rastreamento em cascata encontra outros afetados.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O HDL é chamado de colesterol bom porque leva o colesterol para o fígado.",
+              "resposta": true,
+              "explicacao": "Mas aumentar o HDL com remédios não reduziu infartos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O exame de ___ mede o cálcio nas coronárias e ajuda a refinar o risco.",
+              "opcoes": [
+                "escore de cálcio",
+                "ecocardiograma",
+                "eletrocardiograma",
+                "Holter"
+              ],
+              "resposta": "escore de cálcio",
+              "explicacao": "É uma tomografia sem contraste.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-u5-l3",
+          "titulo": "Prevenção cardiovascular",
+          "questoes": [
+            {
+              "id": "cardio-u5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada medida à prevenção.",
+              "pares": [
+                {
+                  "esquerda": "Parar de fumar",
+                  "direita": "Reduz pela metade o risco em poucos anos"
+                },
+                {
+                  "esquerda": "Exercício regular",
+                  "direita": "150 minutos por semana"
+                },
+                {
+                  "esquerda": "Dieta mediterrânea",
+                  "direita": "Menos eventos cardiovasculares"
+                },
+                {
+                  "esquerda": "Controle do diabetes",
+                  "direita": "Menos lesão dos vasos"
+                }
+              ],
+              "explicacao": "A prevenção começa cedo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando o AAS é indicado para prevenir infarto?",
+              "opcoes": [
+                "Principalmente em quem já teve evento cardiovascular",
+                "Para toda a população",
+                "Para crianças",
+                "Nunca"
+              ],
+              "resposta": "Principalmente em quem já teve evento cardiovascular",
+              "explicacao": "Na prevenção primária, o sangramento pode superar o benefício.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A obesidade abdominal aumenta o risco cardiovascular.",
+              "resposta": true,
+              "explicacao": "A medida da cintura ajuda a avaliar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome ___ reúne obesidade abdominal, pressão alta, glicose alta e alterações de lipídios.",
+              "opcoes": [
+                "metabólica",
+                "nefrótica",
+                "coronariana",
+                "de Cushing"
+              ],
+              "resposta": "metabólica",
+              "explicacao": "Aumenta muito o risco cardiovascular.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta de pressão para a maioria dos hipertensos de alto risco?",
+              "opcoes": [
+                "Abaixo de 130/80",
+                "Abaixo de 160/100",
+                "Abaixo de 180/110",
+                "Não há meta"
+              ],
+              "resposta": "Abaixo de 130/80",
+              "explicacao": "As metas devem ser individualizadas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos, fumante, sedentário, com pressão e colesterol altos, sem sintomas.",
+              "enunciado": "Qual é a prioridade?",
+              "opcoes": [
+                "Calcular o risco e tratar todos os fatores, começando por parar de fumar",
+                "Nada até ter sintomas",
+                "Cateterismo",
+                "Cirurgia"
+              ],
+              "resposta": "Calcular o risco e tratar todos os fatores, começando por parar de fumar",
+              "explicacao": "Os fatores de risco se somam.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sono ruim e o estresse crônico também aumentam o risco cardiovascular.",
+              "resposta": true,
+              "explicacao": "A apneia do sono é fator importante.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O consumo de ___ ultraprocessados está ligado a mais doença cardiovascular.",
+              "opcoes": [
+                "alimentos",
+                "vegetais",
+                "frutas",
+                "grãos integrais"
+              ],
+              "resposta": "alimentos",
+              "explicacao": "O Guia Alimentar recomenda evitar.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-d1",
+      "titulo": "Eletrocardiograma em casos",
+      "descricao": "Interpretação de prova",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "cardio-d1-l1",
+          "titulo": "Isquemia no eletrocardiograma",
+          "questoes": [
+            {
+              "id": "cardio-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor no peito tem infradesnível de ST de V1 a V3 com R alta em V1 e V2.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Infarto da parede posterior (equivalente de supra)",
+                "Isquemia anterior sem infarto",
+                "Bloqueio de ramo direito",
+                "Normal"
+              ],
+              "resposta": "Infarto da parede posterior (equivalente de supra)",
+              "explicacao": "Deve-se fazer V7 a V9.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada padrão de eletrocardiograma ao significado.",
+              "pares": [
+                {
+                  "esquerda": "Ondas de Wellens",
+                  "direita": "Estenose crítica da descendente anterior"
+                },
+                {
+                  "esquerda": "Padrão de De Winter",
+                  "direita": "Oclusão da descendente anterior"
+                },
+                {
+                  "esquerda": "Supra em aVR com infra difuso",
+                  "direita": "Lesão de tronco ou multiarterial"
+                },
+                {
+                  "esquerda": "Critérios de Sgarbossa",
+                  "direita": "Infarto com bloqueio de ramo esquerdo"
+                }
+              ],
+              "explicacao": "São padrões de alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que são as ondas de Wellens?",
+              "opcoes": [
+                "Ondas T bifásicas ou profundas em V2 e V3 fora da dor, indicando estenose grave da descendente anterior",
+                "Ondas P largas",
+                "Ondas U",
+                "QRS largo"
+              ],
+              "resposta": "Ondas T bifásicas ou profundas em V2 e V3 fora da dor, indicando estenose grave da descendente anterior",
+              "explicacao": "Não se deve fazer teste de esforço nesses pacientes.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor no peito tem bloqueio de ramo esquerdo e supradesnível de ST de 2 mm na mesma direção do QRS em V5.",
+              "enunciado": "Qual é a interpretação?",
+              "opcoes": [
+                "Critério de Sgarbossa positivo, sugerindo infarto",
+                "Achado esperado no bloqueio",
+                "Pericardite",
+                "Normal"
+              ],
+              "resposta": "Critério de Sgarbossa positivo, sugerindo infarto",
+              "explicacao": "O supra concordante é muito específico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O supradesnível de ST em DIII maior que em DII sugere oclusão da coronária direita.",
+              "resposta": true,
+              "explicacao": "Na circunflexa, o supra é maior em DII.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O infradesnível de ST em DI e aVL no infarto inferior é chamado de imagem ___.",
+              "opcoes": [
+                "em espelho (recíproca)",
+                "primária",
+                "falsa",
+                "de repolarização"
+              ],
+              "resposta": "em espelho (recíproca)",
+              "explicacao": "Reforça o diagnóstico de infarto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual condição pode imitar infarto com supra em jovem saudável?",
+              "opcoes": [
+                "Repolarização precoce",
+                "Fibrilação atrial",
+                "Bloqueio de 1º grau",
+                "Hipocalemia"
+              ],
+              "resposta": "Repolarização precoce",
+              "explicacao": "O supra é côncavo com entalhe no ponto J.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente de 30 anos tem dor torácica que piora ao deitar e supra de ST difuso com infra de PR.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Pericardite aguda",
+                "Infarto",
+                "Embolia pulmonar",
+                "Dissecção de aorta"
+              ],
+              "resposta": "Pericardite aguda",
+              "explicacao": "O tratamento é com anti-inflamatório e colchicina.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d1-l2",
+          "titulo": "Arritmias em casos",
+          "questoes": [
+            {
+              "id": "cardio-d1-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial tem QRS largos e irregulares com frequência de 250 após usar um remédio que bloqueia o nó atrioventricular.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Fibrilação atrial pré-excitada (Wolff-Parkinson-White)",
+                "Fibrilação atrial comum",
+                "Taquicardia sinusal",
+                "Flutter"
+              ],
+              "resposta": "Fibrilação atrial pré-excitada (Wolff-Parkinson-White)",
+              "explicacao": "Bloquear o nó acelera a condução pela via acessória.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação ao tratamento evitado.",
+              "pares": [
+                {
+                  "esquerda": "Fibrilação atrial com pré-excitação",
+                  "direita": "Bloqueadores do nó atrioventricular"
+                },
+                {
+                  "esquerda": "Torsades de pointes",
+                  "direita": "Remédios que prolongam o QT"
+                },
+                {
+                  "esquerda": "Taquicardia de QRS largo de origem incerta",
+                  "direita": "Verapamil"
+                },
+                {
+                  "esquerda": "Bradicardia com bloqueio total",
+                  "direita": "Betabloqueador"
+                }
+              ],
+              "explicacao": "Escolhas erradas podem matar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da fibrilação atrial pré-excitada estável?",
+              "opcoes": [
+                "Procainamida ou cardioversão elétrica",
+                "Digoxina",
+                "Verapamil",
+                "Adenosina"
+              ],
+              "resposta": "Procainamida ou cardioversão elétrica",
+              "explicacao": "A ablação da via acessória é o tratamento definitivo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com QT longo por remédio tem taquicardia ventricular polimórfica que torce o eixo.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Sulfato de magnésio e suspender o remédio",
+                "Amiodarona",
+                "Adenosina",
+                "Digoxina"
+              ],
+              "resposta": "Sulfato de magnésio e suspender o remédio",
+              "explicacao": "Aumentar a frequência também ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A síndrome de Brugada tem supra de ST em V1 e V2 em padrão de barbatana e risco de morte súbita.",
+              "resposta": true,
+              "explicacao": "O desfibrilador implantável é indicado em alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ cardíaco implantável é indicado para prevenção de morte súbita em pacientes de alto risco.",
+              "opcoes": [
+                "desfibrilador",
+                "marca-passo simples",
+                "Holter",
+                "monitor"
+              ],
+              "resposta": "desfibrilador",
+              "explicacao": "Ele reconhece e trata arritmias graves.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual arritmia é comum em intoxicação por digoxina?",
+              "opcoes": [
+                "Taquicardia atrial com bloqueio",
+                "Fibrilação atrial pré-excitada",
+                "Torsades por magnésio",
+                "Nenhuma"
+              ],
+              "resposta": "Taquicardia atrial com bloqueio",
+              "explicacao": "Também bigeminismo ventricular.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem palpitações e Holter mostra muitas extrassístoles ventriculares, com coração normal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tranquilizar e tratar se houver sintomas importantes ou disfunção",
+                "Desfibrilador",
+                "Cirurgia",
+                "Internação"
+              ],
+              "resposta": "Tranquilizar e tratar se houver sintomas importantes ou disfunção",
+              "explicacao": "Em coração normal, o prognóstico costuma ser bom.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d1-l3",
+          "titulo": "Distúrbios eletrolíticos e outros",
+          "questoes": [
+            {
+              "id": "cardio-d1-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com potássio de 7,5 tem QRS largo e ritmo lento.",
+              "enunciado": "Qual é a primeira medida?",
+              "opcoes": [
+                "Gluconato de cálcio na veia",
+                "Diurético oral",
+                "Esperar",
+                "Dieta"
+              ],
+              "resposta": "Gluconato de cálcio na veia",
+              "explicacao": "O cálcio protege o coração enquanto o potássio é reduzido.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao distúrbio.",
+              "pares": [
+                {
+                  "esquerda": "QT longo",
+                  "direita": "Hipocalcemia"
+                },
+                {
+                  "esquerda": "Onda U proeminente",
+                  "direita": "Hipocalemia"
+                },
+                {
+                  "esquerda": "Onda T apiculada",
+                  "direita": "Hipercalemia"
+                },
+                {
+                  "esquerda": "QT curto",
+                  "direita": "Hipercalcemia"
+                }
+              ],
+              "explicacao": "Tratar a causa corrige o traçado.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual alteração do eletrocardiograma sugere embolia pulmonar?",
+              "opcoes": [
+                "S em DI, Q e T invertida em DIII, e taquicardia sinusal",
+                "Supra difuso",
+                "Onda delta",
+                "PR curto"
+              ],
+              "resposta": "S em DI, Q e T invertida em DIII, e taquicardia sinusal",
+              "explicacao": "O achado mais comum é a taquicardia sinusal.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com intoxicação por antidepressivo tricíclico tem QRS de 0,14 segundo.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Bicarbonato de sódio",
+                "Gluconato de cálcio",
+                "Adenosina",
+                "Atropina"
+              ],
+              "resposta": "Bicarbonato de sódio",
+              "explicacao": "O bicarbonato reduz o bloqueio dos canais de sódio.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A digoxina causa infradesnível de ST em forma de colher.",
+              "resposta": true,
+              "explicacao": "É o efeito digitálico, que não significa intoxicação.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na hipotermia grave, o eletrocardiograma mostra a onda de ___.",
+              "opcoes": [
+                "Osborn",
+                "Wellens",
+                "Epsilon",
+                "delta"
+              ],
+              "resposta": "Osborn",
+              "explicacao": "É um entalhe no ponto J.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado de eletrocardiograma é típico da displasia arritmogênica do ventrículo direito?",
+              "opcoes": [
+                "Onda epsilon",
+                "Onda delta",
+                "Onda U",
+                "Onda J"
+              ],
+              "resposta": "Onda epsilon",
+              "explicacao": "É um pequeno entalhe após o QRS em V1.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com derrame pericárdico grande tem QRS que alterna de altura a cada batimento.",
+              "enunciado": "Como se chama esse achado?",
+              "opcoes": [
+                "Alternância elétrica",
+                "Bloqueio de ramo",
+                "Fibrilação",
+                "Extrassístole"
+              ],
+              "resposta": "Alternância elétrica",
+              "explicacao": "Sugere tamponamento.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-d2",
+      "titulo": "Coronariopatia em casos",
+      "descricao": "Do pronto-socorro ao seguimento",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "cardio-d2-l1",
+          "titulo": "Dor torácica no pronto-socorro",
+          "questoes": [
+            {
+              "id": "cardio-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor no peito rasgando que vai para as costas tem diferença de pressão entre os braços.",
+              "enunciado": "Qual é a hipótese e o que evitar?",
+              "opcoes": [
+                "Dissecção de aorta; evitar anticoagulantes e trombolíticos",
+                "Infarto; trombolítico",
+                "Pericardite; anti-inflamatório",
+                "Refluxo; omeprazol"
+              ],
+              "resposta": "Dissecção de aorta; evitar anticoagulantes e trombolíticos",
+              "explicacao": "A angiotomografia confirma.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de dor torácica à pista.",
+              "pares": [
+                {
+                  "esquerda": "Embolia pulmonar",
+                  "direita": "Falta de ar súbita após viagem longa"
+                },
+                {
+                  "esquerda": "Pneumotórax",
+                  "direita": "Dor súbita com murmúrio ausente de um lado"
+                },
+                {
+                  "esquerda": "Ruptura do esôfago",
+                  "direita": "Dor após vômitos intensos"
+                },
+                {
+                  "esquerda": "Pericardite",
+                  "direita": "Dor que melhora ao inclinar para a frente"
+                }
+              ],
+              "explicacao": "São as dores torácicas que matam, além do infarto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual escore estima risco de eventos em pacientes com dor torácica no pronto-socorro?",
+              "opcoes": [
+                "HEART",
+                "CURB-65",
+                "Glasgow",
+                "Child-Pugh"
+              ],
+              "resposta": "HEART",
+              "explicacao": "Usa história, eletrocardiograma, idade, fatores de risco e troponina.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor no peito tem troponina normal na chegada e após 1 hora, com eletrocardiograma normal e HEART baixo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Alta com seguimento ambulatorial",
+                "Cateterismo urgente",
+                "Trombolítico",
+                "Internar na UTI"
+              ],
+              "resposta": "Alta com seguimento ambulatorial",
+              "explicacao": "Os protocolos rápidos com troponina ultrassensível são seguros.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na dissecção de aorta tipo A, que envolve a aorta ascendente, o tratamento é cirúrgico de urgência.",
+              "resposta": true,
+              "explicacao": "A tipo B costuma ser tratada clinicamente.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O controle da pressão na dissecção de aorta começa com ___ venoso para reduzir a frequência.",
+              "opcoes": [
+                "betabloqueador",
+                "nitroprussiato isolado",
+                "diurético",
+                "vasopressor"
+              ],
+              "resposta": "betabloqueador",
+              "explicacao": "Depois se usa vasodilatador se necessário.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta de frequência e pressão na dissecção aguda?",
+              "opcoes": [
+                "Frequência abaixo de 60 e sistólica entre 100 e 120",
+                "Frequência de 100",
+                "Pressão de 180",
+                "Não há meta"
+              ],
+              "resposta": "Frequência abaixo de 60 e sistólica entre 100 e 120",
+              "explicacao": "Reduz a força sobre a parede da aorta.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de cocaína tem dor torácica e supra de ST.",
+              "enunciado": "Qual remédio deve ser evitado inicialmente?",
+              "opcoes": [
+                "Betabloqueador",
+                "Benzodiazepínico",
+                "Nitrato",
+                "AAS"
+              ],
+              "resposta": "Betabloqueador",
+              "explicacao": "O betabloqueador pode piorar o espasmo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d2-l2",
+          "titulo": "Infarto em casos",
+          "questoes": [
+            {
+              "id": "cardio-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infarto com supra chega a hospital sem hemodinâmica, a 3 horas do centro mais próximo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Trombolítico em até 30 minutos e transferir",
+                "Esperar o transporte",
+                "Só AAS",
+                "Cirurgia"
+              ],
+              "resposta": "Trombolítico em até 30 minutos e transferir",
+              "explicacao": "Após o trombolítico, faz-se cateterismo em 2 a 24 horas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado aos critérios de reperfusão após trombolítico.",
+              "pares": [
+                {
+                  "esquerda": "Melhora da dor",
+                  "direita": "Sinal clínico"
+                },
+                {
+                  "esquerda": "Queda do supra em mais de 50%",
+                  "direita": "Sinal no eletrocardiograma"
+                },
+                {
+                  "esquerda": "Arritmias de reperfusão",
+                  "direita": "Ritmo idioventricular acelerado"
+                },
+                {
+                  "esquerda": "Falha da reperfusão",
+                  "direita": "Angioplastia de resgate"
+                }
+              ],
+              "explicacao": "A falha exige transferência urgente.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a contraindicação absoluta ao trombolítico?",
+              "opcoes": [
+                "AVC hemorrágico prévio",
+                "Idade acima de 70",
+                "Hipertensão controlada",
+                "Diabetes"
+              ],
+              "resposta": "AVC hemorrágico prévio",
+              "explicacao": "Também sangramento ativo e dissecção de aorta.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infarto inferior tem pressão de 80/50, pulmões limpos e jugular cheia.",
+              "enunciado": "Qual é a hipótese e a conduta?",
+              "opcoes": [
+                "Infarto do ventrículo direito; volume e evitar nitratos",
+                "Edema pulmonar; diurético",
+                "Choque séptico; antibiótico",
+                "Tamponamento; punção"
+              ],
+              "resposta": "Infarto do ventrículo direito; volume e evitar nitratos",
+              "explicacao": "O ventrículo direito depende da pré-carga.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No infarto sem supra de alto risco, o cateterismo é feito nas primeiras 24 horas.",
+              "resposta": true,
+              "explicacao": "Pacientes muito instáveis fazem em até 2 horas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O escore ___ estima o risco de morte no infarto sem supra.",
+              "opcoes": [
+                "GRACE",
+                "CHA2DS2-VASc",
+                "Wells",
+                "CURB-65"
+              ],
+              "resposta": "GRACE",
+              "explicacao": "O TIMI também é usado.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por quanto tempo se mantém a dupla antiagregação após angioplastia no infarto?",
+              "opcoes": [
+                "Em geral 12 meses",
+                "1 semana",
+                "1 mês",
+                "Para sempre sempre"
+              ],
+              "resposta": "Em geral 12 meses",
+              "explicacao": "O tempo pode mudar conforme o risco de sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infarto anterior extenso tem fração de ejeção de 25% após 40 dias, mesmo com tratamento otimizado.",
+              "enunciado": "Qual dispositivo considerar?",
+              "opcoes": [
+                "Desfibrilador implantável",
+                "Marca-passo simples",
+                "Holter",
+                "Nenhum"
+              ],
+              "resposta": "Desfibrilador implantável",
+              "explicacao": "Reduz a morte súbita.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d2-l3",
+          "titulo": "Prevenção secundária em casos",
+          "questoes": [
+            {
+              "id": "cardio-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada remédio da prevenção após infarto ao objetivo.",
+              "pares": [
+                {
+                  "esquerda": "AAS",
+                  "direita": "Prevenir nova trombose"
+                },
+                {
+                  "esquerda": "Estatina em alta dose",
+                  "direita": "Reduzir o LDL"
+                },
+                {
+                  "esquerda": "Betabloqueador",
+                  "direita": "Reduzir arritmias e isquemia"
+                },
+                {
+                  "esquerda": "Inibidor da ECA",
+                  "direita": "Proteger o remodelamento"
+                }
+              ],
+              "explicacao": "Juntos reduzem muito a mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após infarto usa estatina em alta dose e tem LDL de 90.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Associar ezetimiba e, se necessário, inibidor de PCSK9",
+                "Manter igual",
+                "Suspender a estatina",
+                "Dieta apenas"
+              ],
+              "resposta": "Associar ezetimiba e, se necessário, inibidor de PCSK9",
+              "explicacao": "A meta é LDL abaixo de 55.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antidiabético reduz eventos cardiovasculares em diabéticos com doença do coração?",
+              "opcoes": [
+                "Inibidores de SGLT2 e agonistas de GLP-1",
+                "Sulfonilureias",
+                "Insulina NPH",
+                "Acarbose"
+              ],
+              "resposta": "Inibidores de SGLT2 e agonistas de GLP-1",
+              "explicacao": "Eles têm benefício além do controle da glicose.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após infarto está deprimido e não toma os remédios.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratar a depressão e trabalhar a adesão",
+                "Ignorar",
+                "Trocar os remédios",
+                "Internar"
+              ],
+              "resposta": "Tratar a depressão e trabalhar a adesão",
+              "explicacao": "A depressão aumenta o risco de novos eventos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina da gripe reduz eventos cardiovasculares em pacientes com doença coronariana.",
+              "resposta": true,
+              "explicacao": "É recomendada todo ano.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ supervisionado é parte da reabilitação cardíaca.",
+              "opcoes": [
+                "exercício",
+                "repouso",
+                "jejum",
+                "sono"
+              ],
+              "resposta": "exercício",
+              "explicacao": "Começa com intensidade leve.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando o paciente pode voltar a dirigir após infarto sem complicações?",
+              "opcoes": [
+                "Em cerca de 1 semana, conforme orientação",
+                "Nunca",
+                "No mesmo dia",
+                "Após 1 ano"
+              ],
+              "resposta": "Em cerca de 1 semana, conforme orientação",
+              "explicacao": "Depende da profissão e das complicações.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após infarto pergunta sobre atividade sexual.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Pode retomar quando tolerar esforço moderado, como subir dois lances de escada",
+                "Proibido para sempre",
+                "Só após 1 ano",
+                "Só com remédio"
+              ],
+              "resposta": "Pode retomar quando tolerar esforço moderado, como subir dois lances de escada",
+              "explicacao": "Não usar sildenafila com nitratos.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-d3",
+      "titulo": "Insuficiência cardíaca em casos",
+      "descricao": "Do ambulatório à emergência",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "cardio-d3-l1",
+          "titulo": "Insuficiência cardíaca descompensada",
+          "questoes": [
+            {
+              "id": "cardio-d3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada perfil hemodinâmico ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Quente e úmido",
+                  "direita": "Diurético e vasodilatador"
+                },
+                {
+                  "esquerda": "Frio e úmido",
+                  "direita": "Inotrópico e diurético"
+                },
+                {
+                  "esquerda": "Quente e seco",
+                  "direita": "Ajustar o tratamento oral"
+                },
+                {
+                  "esquerda": "Frio e seco",
+                  "direita": "Volume com cuidado"
+                }
+              ],
+              "explicacao": "A avaliação é feita à beira do leito.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência cardíaca chega com falta de ar, estertores, edema e pressão de 150/90.",
+              "enunciado": "Qual é o perfil e a conduta?",
+              "opcoes": [
+                "Quente e úmido; furosemida venosa e nitrato",
+                "Frio e seco; volume",
+                "Frio e úmido; dobutamina apenas",
+                "Quente e seco; alta"
+              ],
+              "resposta": "Quente e úmido; furosemida venosa e nitrato",
+              "explicacao": "É o perfil mais comum.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual inotrópico é usado no choque cardiogênico com pressão baixa?",
+              "opcoes": [
+                "Dobutamina associada a noradrenalina",
+                "Furosemida",
+                "Nitroprussiato",
+                "Betabloqueador"
+              ],
+              "resposta": "Dobutamina associada a noradrenalina",
+              "explicacao": "A noradrenalina mantém a pressão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com edema agudo de pulmão tem saturação de 82% apesar de máscara.",
+              "enunciado": "Qual é a medida ventilatória?",
+              "opcoes": [
+                "Ventilação não invasiva com pressão positiva",
+                "Cateter nasal",
+                "Nada",
+                "Intubar sem tentar"
+              ],
+              "resposta": "Ventilação não invasiva com pressão positiva",
+              "explicacao": "Ela reduz a intubação e melhora a oxigenação.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "As causas comuns de descompensação incluem falta de adesão, excesso de sal, infecção e arritmias.",
+              "resposta": true,
+              "explicacao": "Sempre buscar o fator desencadeante.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O mnemônico FAILURE lembra as causas de ___ da insuficiência cardíaca.",
+              "opcoes": [
+                "descompensação",
+                "origem",
+                "diagnóstico",
+                "cura"
+              ],
+              "resposta": "descompensação",
+              "explicacao": "Inclui infecção, isquemia, arritmia e excesso de sal.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado ao iniciar betabloqueador na insuficiência cardíaca?",
+              "opcoes": [
+                "Começar em dose baixa e aumentar devagar com o paciente compensado",
+                "Dose alta de início",
+                "Iniciar na descompensação grave",
+                "Não usar"
+              ],
+              "resposta": "Começar em dose baixa e aumentar devagar com o paciente compensado",
+              "explicacao": "Pode piorar no começo se a dose for alta.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência cardíaca usa espironolactona e enalapril e tem potássio de 6,2.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Reduzir ou suspender a espironolactona e corrigir o potássio",
+                "Aumentar a dose",
+                "Nada",
+                "Dar potássio"
+              ],
+              "resposta": "Reduzir ou suspender a espironolactona e corrigir o potássio",
+              "explicacao": "O potássio deve ser monitorado.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d3-l2",
+          "titulo": "Insuficiência cardíaca crônica",
+          "questoes": [
+            {
+              "id": "cardio-d3-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fração de ejeção de 30% já usa enalapril, carvedilol e espironolactona e continua com sintomas.",
+              "enunciado": "Quais ajustes podem ser feitos?",
+              "opcoes": [
+                "Trocar enalapril por sacubitril-valsartana e associar inibidor de SGLT2",
+                "Suspender tudo",
+                "Apenas diurético",
+                "Digoxina apenas"
+              ],
+              "resposta": "Trocar enalapril por sacubitril-valsartana e associar inibidor de SGLT2",
+              "explicacao": "São os pilares modernos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada intervenção à indicação na insuficiência cardíaca.",
+              "pares": [
+                {
+                  "esquerda": "Ressincronizador",
+                  "direita": "Bloqueio de ramo esquerdo com QRS largo"
+                },
+                {
+                  "esquerda": "Desfibrilador",
+                  "direita": "Fração de ejeção muito baixa"
+                },
+                {
+                  "esquerda": "Transplante",
+                  "direita": "Doença avançada refratária"
+                },
+                {
+                  "esquerda": "Ferro venoso",
+                  "direita": "Deficiência de ferro"
+                }
+              ],
+              "explicacao": "A deficiência de ferro piora sintomas mesmo sem anemia.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o benefício dos inibidores de SGLT2 na insuficiência cardíaca?",
+              "opcoes": [
+                "Reduzem internações e mortes, com ou sem diabetes",
+                "Só baixam glicose",
+                "Aumentam a pressão",
+                "Nenhum"
+              ],
+              "resposta": "Reduzem internações e mortes, com ou sem diabetes",
+              "explicacao": "Funcionam em fração reduzida e preservada.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente idosa com insuficiência cardíaca e fração de ejeção de 60% tem falta de ar e pressão alta.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Insuficiência cardíaca com fração de ejeção preservada",
+                "Pulmão normal",
+                "Asma",
+                "Normal"
+              ],
+              "resposta": "Insuficiência cardíaca com fração de ejeção preservada",
+              "explicacao": "O coração enche mal por rigidez.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ivabradina reduz a frequência cardíaca e é usada em ritmo sinusal com frequência alta na insuficiência cardíaca.",
+              "resposta": true,
+              "explicacao": "É associada ao tratamento padrão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A restrição de ___ é recomendada de forma moderada na insuficiência cardíaca.",
+              "opcoes": [
+                "sal",
+                "proteína",
+                "fibra",
+                "água sempre"
+              ],
+              "resposta": "sal",
+              "explicacao": "A restrição de água é para casos selecionados.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa da insuficiência cardíaca de alto débito?",
+              "opcoes": [
+                "Anemia grave, hipertireoidismo ou fístula arteriovenosa",
+                "Infarto",
+                "Estenose aórtica",
+                "Hipotireoidismo"
+              ],
+              "resposta": "Anemia grave, hipertireoidismo ou fístula arteriovenosa",
+              "explicacao": "O coração trabalha demais.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência cardíaca avançada tem internações frequentes e piora apesar de tudo.",
+              "enunciado": "Qual discussão deve ser feita?",
+              "opcoes": [
+                "Transplante ou assistência ventricular, e cuidados paliativos",
+                "Nada",
+                "Apenas mais diurético",
+                "Alta definitiva"
+              ],
+              "resposta": "Transplante ou assistência ventricular, e cuidados paliativos",
+              "explicacao": "Os cuidados paliativos melhoram a qualidade de vida.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d3-l3",
+          "titulo": "Doença de Chagas e outras",
+          "questoes": [
+            {
+              "id": "cardio-d3-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Chagas tem insuficiência cardíaca, aneurisma na ponta do ventrículo e arritmias.",
+              "enunciado": "Quais complicações são típicas?",
+              "opcoes": [
+                "Morte súbita, AVC por trombo e insuficiência cardíaca",
+                "Apenas dor torácica",
+                "Apenas sopro",
+                "Nenhuma"
+              ],
+              "resposta": "Morte súbita, AVC por trombo e insuficiência cardíaca",
+              "explicacao": "A cardiopatia chagásica é muito arritmogênica.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença ao achado cardíaco.",
+              "pares": [
+                {
+                  "esquerda": "Amiloidose",
+                  "direita": "Parede grossa com baixa voltagem no eletrocardiograma"
+                },
+                {
+                  "esquerda": "Sarcoidose",
+                  "direita": "Bloqueios e arritmias"
+                },
+                {
+                  "esquerda": "Hemocromatose",
+                  "direita": "Ferro no músculo cardíaco"
+                },
+                {
+                  "esquerda": "Doença de Fabry",
+                  "direita": "Hipertrofia em homem com dor nas mãos"
+                }
+              ],
+              "explicacao": "São causas de miocardiopatia infiltrativa.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame ajuda a diagnosticar amiloidose cardíaca por transtirretina?",
+              "opcoes": [
+                "Cintilografia com pirofosfato",
+                "Hemograma",
+                "Teste ergométrico",
+                "Raio X"
+              ],
+              "resposta": "Cintilografia com pirofosfato",
+              "explicacao": "Evita biópsia em muitos casos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com miocardite tem fração de ejeção de 20% e choque.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Suporte em UTI, inotrópicos e considerar assistência circulatória",
+                "Alta",
+                "Antibiótico",
+                "Exercício"
+              ],
+              "resposta": "Suporte em UTI, inotrópicos e considerar assistência circulatória",
+              "explicacao": "Muitos recuperam a função depois.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A miocardite por vacinas de RNA mensageiro é rara e costuma ser leve.",
+              "resposta": true,
+              "explicacao": "Afeta mais homens jovens.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ restritiva é rara e pode ser confundida com pericardite constritiva.",
+              "opcoes": [
+                "miocardiopatia",
+                "valvopatia",
+                "pericardite",
+                "endocardite"
+              ],
+              "resposta": "miocardiopatia",
+              "explicacao": "A ressonância ajuda a diferenciar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere pericardite constritiva?",
+              "opcoes": [
+                "Jugular que sobe na inspiração (sinal de Kussmaul)",
+                "Pulso em martelo d'água",
+                "Sopro diastólico",
+                "Edema de face"
+              ],
+              "resposta": "Jugular que sobe na inspiração (sinal de Kussmaul)",
+              "explicacao": "O pericárdio rígido limita o enchimento.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose antiga tem edema, ascite e pericárdio calcificado.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Pericardite constritiva; retirada do pericárdio",
+                "Cirrose; transplante",
+                "Insuficiência renal; diálise",
+                "Asma; corticoide"
+              ],
+              "resposta": "Pericardite constritiva; retirada do pericárdio",
+              "explicacao": "A pericardiectomia é o tratamento.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-d4",
+      "titulo": "Valvas e endocardite em casos",
+      "descricao": "Indicações de intervenção",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "cardio-d4-l1",
+          "titulo": "Valvopatias em casos",
+          "questoes": [
+            {
+              "id": "cardio-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com estenose mitral reumática tem falta de ar e fibrilação atrial no segundo trimestre.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Betabloqueador, anticoagulação e considerar valvoplastia por balão",
+                "Interromper a gestação sempre",
+                "Nada",
+                "Cirurgia aberta imediata"
+              ],
+              "resposta": "Betabloqueador, anticoagulação e considerar valvoplastia por balão",
+              "explicacao": "A gestação aumenta o fluxo e piora a estenose.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada valvopatia à indicação de intervenção.",
+              "pares": [
+                {
+                  "esquerda": "Estenose aórtica grave com sintomas",
+                  "direita": "Troca cirúrgica ou por cateter (TAVI)"
+                },
+                {
+                  "esquerda": "Estenose mitral reumática com anatomia favorável",
+                  "direita": "Valvoplastia por balão"
+                },
+                {
+                  "esquerda": "Insuficiência mitral grave com sintomas",
+                  "direita": "Plástica ou troca da mitral"
+                },
+                {
+                  "esquerda": "Insuficiência aórtica grave com ventrículo dilatado",
+                  "direita": "Cirurgia antes de piorar o ventrículo"
+                }
+              ],
+              "explicacao": "O ecocardiograma guia a decisão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual paciente com estenose aórtica pode ser tratado com TAVI?",
+              "opcoes": [
+                "Idosos ou pacientes com risco cirúrgico alto ou intermediário",
+                "Apenas jovens",
+                "Nenhum",
+                "Apenas gestantes"
+              ],
+              "resposta": "Idosos ou pacientes com risco cirúrgico alto ou intermediário",
+              "explicacao": "A decisão é do time do coração.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com estenose aórtica grave sem sintomas tem teste de esforço com queda da pressão.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Indicar a troca da valva",
+                "Observar",
+                "Teste de novo em 5 anos",
+                "Nada"
+              ],
+              "resposta": "Indicar a troca da valva",
+              "explicacao": "A queda da pressão no esforço é sinal de gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com prótese valvar mecânica devem usar varfarina, e não anticoagulantes diretos.",
+              "resposta": true,
+              "explicacao": "Os diretos aumentam trombose em próteses mecânicas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal de ___ é o sopro diastólico da insuficiência aórtica ouvido na ponta, que imita estenose mitral.",
+              "opcoes": [
+                "Austin Flint",
+                "Carvallo",
+                "Musset",
+                "Quincke"
+              ],
+              "resposta": "Austin Flint",
+              "explicacao": "O sinal de Musset é a cabeça que balança com o pulso.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sopro aumenta na inspiração?",
+              "opcoes": [
+                "Sopros do lado direito, como insuficiência tricúspide",
+                "Sopros do lado esquerdo",
+                "Todos",
+                "Nenhum"
+              ],
+              "resposta": "Sopros do lado direito, como insuficiência tricúspide",
+              "explicacao": "É o sinal de Rivero-Carvallo.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com prótese mecânica mitral está com INR de 1,4.",
+              "enunciado": "Qual é o risco?",
+              "opcoes": [
+                "Trombose da prótese e embolia",
+                "Sangramento",
+                "Nenhum",
+                "Melhor controle"
+              ],
+              "resposta": "Trombose da prótese e embolia",
+              "explicacao": "O INR alvo é mais alto em próteses mitrais.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d4-l2",
+          "titulo": "Endocardite em casos",
+          "questoes": [
+            {
+              "id": "cardio-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com prótese valvar tem febre há 3 semanas, sopro novo e hemoculturas positivas para Staphylococcus.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Antibiótico venoso prolongado e avaliar cirurgia",
+                "Antibiótico oral por 7 dias",
+                "Antitérmico",
+                "Alta"
+              ],
+              "resposta": "Antibiótico venoso prolongado e avaliar cirurgia",
+              "explicacao": "A endocardite em prótese tem alta mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe à situação de endocardite.",
+              "pares": [
+                {
+                  "esquerda": "Streptococcus viridans",
+                  "direita": "Valva nativa após procedimento dentário"
+                },
+                {
+                  "esquerda": "Staphylococcus aureus",
+                  "direita": "Usuário de drogas injetáveis"
+                },
+                {
+                  "esquerda": "Enterococcus",
+                  "direita": "Idoso após procedimento urinário"
+                },
+                {
+                  "esquerda": "Staphylococcus epidermidis",
+                  "direita": "Prótese valvar precoce"
+                }
+              ],
+              "explicacao": "O germe orienta o antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são as indicações de cirurgia na endocardite?",
+              "opcoes": [
+                "Insuficiência cardíaca, infecção não controlada e risco de embolia",
+                "Febre leve",
+                "Qualquer sopro",
+                "Nenhuma"
+              ],
+              "resposta": "Insuficiência cardíaca, infecção não controlada e risco de embolia",
+              "explicacao": "Vegetações grandes também podem indicar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com endocardite tem AVC isquêmico por êmbolo.",
+              "enunciado": "Qual é o cuidado?",
+              "opcoes": [
+                "Avaliar o momento da cirurgia com cuidado pelo risco de sangramento cerebral",
+                "Trombolítico",
+                "Anticoagular sempre",
+                "Nada"
+              ],
+              "resposta": "Avaliar o momento da cirurgia com cuidado pelo risco de sangramento cerebral",
+              "explicacao": "A decisão é multidisciplinar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A profilaxia de endocardite antes de procedimento dentário é indicada apenas em pacientes de alto risco.",
+              "resposta": true,
+              "explicacao": "Como portadores de prótese valvar e endocardite prévia.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "As manchas de ___ são hemorragias na retina com centro claro na endocardite.",
+              "opcoes": [
+                "Roth",
+                "Janeway",
+                "Osler",
+                "Koplik"
+              ],
+              "resposta": "Roth",
+              "explicacao": "Também aparecem em outras doenças.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame de imagem mais sensível para vegetações?",
+              "opcoes": [
+                "Ecocardiograma transesofágico",
+                "Raio X",
+                "Eletrocardiograma",
+                "Ecocardiograma transtorácico sempre basta"
+              ],
+              "resposta": "Ecocardiograma transesofágico",
+              "explicacao": "Especialmente em próteses.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com endocardite por Streptococcus gallolyticus.",
+              "enunciado": "Qual exame adicional é obrigatório?",
+              "opcoes": [
+                "Colonoscopia",
+                "Endoscopia",
+                "Mamografia",
+                "Nenhum"
+              ],
+              "resposta": "Colonoscopia",
+              "explicacao": "O germe se associa a câncer de cólon.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d4-l3",
+          "titulo": "Pericárdio em casos",
+          "questoes": [
+            {
+              "id": "cardio-d4-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer tem falta de ar, pressão caindo, jugular cheia e pulso que some na inspiração.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Tamponamento cardíaco; pericardiocentese",
+                "Insuficiência cardíaca; diurético",
+                "Embolia; anticoagulação",
+                "Pneumonia; antibiótico"
+              ],
+              "resposta": "Tamponamento cardíaco; pericardiocentese",
+              "explicacao": "O pulso paradoxal é típico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao tamponamento cardíaco.",
+              "pares": [
+                {
+                  "esquerda": "Tríade de Beck",
+                  "direita": "Hipotensão, jugular cheia e bulhas abafadas"
+                },
+                {
+                  "esquerda": "Pulso paradoxal",
+                  "direita": "Queda da pressão na inspiração"
+                },
+                {
+                  "esquerda": "Alternância elétrica",
+                  "direita": "QRS que muda de altura"
+                },
+                {
+                  "esquerda": "Colapso do ventrículo direito",
+                  "direita": "Achado no ecocardiograma"
+                }
+              ],
+              "explicacao": "É uma emergência.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da pericardite aguda idiopática?",
+              "opcoes": [
+                "Anti-inflamatório e colchicina",
+                "Antibiótico",
+                "Corticoide sempre",
+                "Cirurgia"
+              ],
+              "resposta": "Anti-inflamatório e colchicina",
+              "explicacao": "A colchicina reduz recorrências.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pericardite tem febre alta e líquido purulento no pericárdio.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Drenagem e antibiótico",
+                "Anti-inflamatório apenas",
+                "Nada",
+                "Colchicina apenas"
+              ],
+              "resposta": "Drenagem e antibiótico",
+              "explicacao": "A pericardite purulenta é grave.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No tamponamento, diuréticos e vasodilatadores podem piorar a pressão.",
+              "resposta": true,
+              "explicacao": "O coração depende do volume.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A pericardite ___ pode ocorrer em pacientes com insuficiência renal grave.",
+              "opcoes": [
+                "urêmica",
+                "viral",
+                "bacteriana",
+                "tuberculosa"
+              ],
+              "resposta": "urêmica",
+              "explicacao": "O tratamento é diálise.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando suspeitar de tuberculose como causa de derrame pericárdico?",
+              "opcoes": [
+                "Derrame grande e crônico em área endêmica ou em pessoa com HIV",
+                "Sempre",
+                "Nunca",
+                "Só em crianças"
+              ],
+              "resposta": "Derrame grande e crônico em área endêmica ou em pessoa com HIV",
+              "explicacao": "A adenosina deaminase no líquido ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pericardite volta a ter dor várias vezes no ano.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Colchicina por longo tempo e investigar causas",
+                "Cirurgia imediata",
+                "Nada",
+                "Corticoide em alta dose sempre"
+              ],
+              "resposta": "Colchicina por longo tempo e investigar causas",
+              "explicacao": "O corticoide aumenta recorrências.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-d5",
+      "titulo": "Hipertensão e vasos em casos",
+      "descricao": "Emergências e causas secundárias",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "cardio-d5-l1",
+          "titulo": "Emergências hipertensivas",
+          "questoes": [
+            {
+              "id": "cardio-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pressão de 220/130 tem dor no peito e edema pulmonar.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Emergência hipertensiva; reduzir a pressão com remédio venoso em UTI",
+                "Urgência; remédio oral e alta",
+                "Normal; nada",
+                "Ansiedade; calmante"
+              ],
+              "resposta": "Emergência hipertensiva; reduzir a pressão com remédio venoso em UTI",
+              "explicacao": "Há lesão aguda de órgão.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada emergência hipertensiva ao remédio preferido.",
+              "pares": [
+                {
+                  "esquerda": "Dissecção de aorta",
+                  "direita": "Betabloqueador e vasodilatador"
+                },
+                {
+                  "esquerda": "Edema agudo de pulmão",
+                  "direita": "Nitroglicerina e diurético"
+                },
+                {
+                  "esquerda": "Eclâmpsia",
+                  "direita": "Sulfato de magnésio e hidralazina"
+                },
+                {
+                  "esquerda": "Feocromocitoma",
+                  "direita": "Bloqueio alfa"
+                }
+              ],
+              "explicacao": "O remédio depende do órgão afetado.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto reduzir a pressão na primeira hora de uma emergência hipertensiva comum?",
+              "opcoes": [
+                "Até 25%",
+                "Normalizar em minutos",
+                "50%",
+                "Não reduzir"
+              ],
+              "resposta": "Até 25%",
+              "explicacao": "A queda brusca pode causar isquemia.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pressão de 200/120 sem sintomas e sem lesão de órgão.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ajustar o remédio oral e reavaliar em poucos dias",
+                "Remédio venoso em UTI",
+                "Nifedipina sublingual",
+                "Internar por 1 semana"
+              ],
+              "resposta": "Ajustar o remédio oral e reavaliar em poucos dias",
+              "explicacao": "Pressão alta sem lesão aguda não é emergência.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A nifedipina sublingual não deve ser usada por causar quedas bruscas da pressão.",
+              "resposta": true,
+              "explicacao": "Pode causar AVC e infarto.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "No AVC isquêmico, a pressão só é reduzida se estiver acima de ___ sem trombolítico.",
+              "opcoes": [
+                "220/120",
+                "140/90",
+                "160/100",
+                "180/110 sempre"
+              ],
+              "resposta": "220/120",
+              "explicacao": "Com trombolítico, o limite é 185/110.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado de fundo de olho na hipertensão maligna?",
+              "opcoes": [
+                "Edema de papila, hemorragias e exsudatos",
+                "Fundo normal",
+                "Catarata",
+                "Glaucoma"
+              ],
+              "resposta": "Edema de papila, hemorragias e exsudatos",
+              "explicacao": "Indica lesão grave dos vasos.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem crises de pressão alta, cefaleia, palpitação e sudorese.",
+              "enunciado": "Qual causa secundária investigar?",
+              "opcoes": [
+                "Feocromocitoma",
+                "Hipertensão essencial",
+                "Ansiedade apenas",
+                "Asma"
+              ],
+              "resposta": "Feocromocitoma",
+              "explicacao": "Dosam-se metanefrinas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d5-l2",
+          "titulo": "Hipertensão secundária",
+          "questoes": [
+            {
+              "id": "cardio-d5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de hipertensão secundária à pista.",
+              "pares": [
+                {
+                  "esquerda": "Hiperaldosteronismo",
+                  "direita": "Potássio baixo"
+                },
+                {
+                  "esquerda": "Estenose de artéria renal",
+                  "direita": "Piora da creatinina com inibidor da ECA"
+                },
+                {
+                  "esquerda": "Coarctação da aorta",
+                  "direita": "Pressão alta nos braços e baixa nas pernas"
+                },
+                {
+                  "esquerda": "Apneia do sono",
+                  "direita": "Ronco e sonolência"
+                }
+              ],
+              "explicacao": "Pacientes jovens e resistentes devem ser investigados.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem tem hipertensão grave e sopro abdominal.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Displasia fibromuscular da artéria renal",
+                "Aterosclerose",
+                "Hipertensão essencial",
+                "Feocromocitoma"
+              ],
+              "resposta": "Displasia fibromuscular da artéria renal",
+              "explicacao": "A angioplastia pode curar.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame inicial para hiperaldosteronismo primário?",
+              "opcoes": [
+                "Relação aldosterona e renina",
+                "Cortisol",
+                "TSH",
+                "Metanefrina"
+              ],
+              "resposta": "Relação aldosterona e renina",
+              "explicacao": "A relação alta sugere o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Homem obeso, roncador, com hipertensão resistente e sono durante o dia.",
+              "enunciado": "Qual exame pedir?",
+              "opcoes": [
+                "Polissonografia",
+                "Ecocardiograma apenas",
+                "Cateterismo",
+                "Nada"
+              ],
+              "resposta": "Polissonografia",
+              "explicacao": "A apneia é causa comum de hipertensão resistente.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Remédios como anti-inflamatórios, descongestionantes e anticoncepcionais podem aumentar a pressão.",
+              "resposta": true,
+              "explicacao": "Sempre revisar os remédios.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na coarctação da aorta, a radiografia pode mostrar ___ nas costelas.",
+              "opcoes": [
+                "erosões (sinal de Roesler)",
+                "fraturas",
+                "calcificações",
+                "tumores"
+              ],
+              "resposta": "erosões (sinal de Roesler)",
+              "explicacao": "Os vasos colaterais aumentados erodem as costelas.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento do hiperaldosteronismo por adenoma de um lado?",
+              "opcoes": [
+                "Retirada da suprarrenal afetada",
+                "Espironolactona para sempre",
+                "Nada",
+                "Quimioterapia"
+              ],
+              "resposta": "Retirada da suprarrenal afetada",
+              "explicacao": "A hiperplasia bilateral é tratada com espironolactona.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hipertensão desenvolve insuficiência renal aguda logo após iniciar inibidor da ECA.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Estenose bilateral de artéria renal",
+                "Alergia",
+                "Nefrite",
+                "Desidratação"
+              ],
+              "resposta": "Estenose bilateral de artéria renal",
+              "explicacao": "O rim depende da angiotensina para filtrar.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "cardio-d5-l3",
+          "titulo": "Doenças vasculares",
+          "questoes": [
+            {
+              "id": "cardio-d5-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente idoso fumante tem dor nas panturrilhas ao caminhar que passa ao parar, com índice tornozelo-braço de 0,6.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Doença arterial periférica",
+                "Trombose venosa",
+                "Hérnia de disco",
+                "Cãibra"
+              ],
+              "resposta": "Doença arterial periférica",
+              "explicacao": "Índice abaixo de 0,9 confirma.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença vascular ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Isquemia aguda de membro",
+                  "direita": "Dor, palidez, pulso ausente e frio"
+                },
+                {
+                  "esquerda": "Trombose venosa profunda",
+                  "direita": "Perna inchada e dolorosa"
+                },
+                {
+                  "esquerda": "Aneurisma de aorta abdominal",
+                  "direita": "Massa pulsátil no abdome"
+                },
+                {
+                  "esquerda": "Fenômeno de Raynaud",
+                  "direita": "Dedos brancos e roxos no frio"
+                }
+              ],
+              "explicacao": "Os 6 Ps descrevem a isquemia aguda.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento inicial da claudicação intermitente?",
+              "opcoes": [
+                "Parar de fumar, exercício, estatina e antiagregante",
+                "Cirurgia imediata",
+                "Amputação",
+                "Repouso"
+              ],
+              "resposta": "Parar de fumar, exercício, estatina e antiagregante",
+              "explicacao": "O exercício supervisionado melhora a distância de caminhada.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial tem dor súbita na perna, frieza e falta de pulso.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Heparina e embolectomia urgente",
+                "Esperar",
+                "Analgésico e alta",
+                "Fisioterapia"
+              ],
+              "resposta": "Heparina e embolectomia urgente",
+              "explicacao": "Tempo é crucial para salvar o membro.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O rastreamento de aneurisma de aorta com ultrassom é recomendado em homens fumantes de 65 a 75 anos.",
+              "resposta": true,
+              "explicacao": "Aneurismas grandes têm risco de ruptura.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A trombose venosa profunda pode causar ___ pulmonar, uma complicação grave.",
+              "opcoes": [
+                "embolia",
+                "edema",
+                "fibrose",
+                "pneumonia"
+              ],
+              "resposta": "embolia",
+              "explicacao": "Por isso deve ser tratada com anticoagulante.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual escore estima a probabilidade de trombose venosa profunda?",
+              "opcoes": [
+                "Escore de Wells",
+                "CHA2DS2-VASc",
+                "GRACE",
+                "HEART"
+              ],
+              "resposta": "Escore de Wells",
+              "explicacao": "Probabilidade baixa com D-dímero normal exclui.",
+              "revisado": false
+            },
+            {
+              "id": "cardio-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem tem dedos que ficam brancos e roxos no frio, com úlceras e pele endurecida.",
+              "enunciado": "Qual doença investigar?",
+              "opcoes": [
+                "Esclerose sistêmica",
+                "Raynaud primário simples",
+                "Trombose",
+                "Gota"
+              ],
+              "resposta": "Esclerose sistêmica",
+              "explicacao": "Úlceras sugerem Raynaud secundário.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
