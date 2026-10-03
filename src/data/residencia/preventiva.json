@@ -80,12 +80,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como é a composição dos conselhos de saúde?",
               "opcoes": [
-                "50% usuários, 25% trabalhadores da saúde e 25% gestores e prestadores",
-                "Um terço para cada segmento",
+                "50% usuários, 25% trabalhadores e 25% gestores",
+                "Um terço para cada",
                 "50% gestores e 50% usuários",
-                "Apenas profissionais de saúde"
+                "Apenas profissionais de saúde indicados pelo secretário municipal"
               ],
-              "resposta": "50% usuários, 25% trabalhadores da saúde e 25% gestores e prestadores",
+              "resposta": "50% usuários, 25% trabalhadores e 25% gestores",
               "explicacao": "É a paridade: os usuários têm metade das vagas, igual à soma dos demais segmentos.",
               "revisado": false
             },
@@ -299,7 +299,7 @@
                 "Coorte prospectiva",
                 "Caso-controle",
                 "Transversal",
-                "Ensaio clínico"
+                "Ensaio clínico randomizado"
               ],
               "resposta": "Coorte prospectiva",
               "explicacao": "Parte-se da exposição (fumar ou não) e acompanha-se no tempo. O pesquisador não decide quem fuma, então não é ensaio clínico.",
@@ -382,12 +382,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como se calcula o coeficiente de mortalidade infantil?",
               "opcoes": [
-                "Óbitos de menores de 1 ano divididos pelos nascidos vivos, vezes 1.000",
-                "Óbitos de menores de 5 anos divididos pela população",
-                "Óbitos de recém-nascidos divididos pelos partos",
-                "Nascidos vivos divididos pela população"
+                "Óbitos < 1 ano ÷ nascidos vivos × 1.000",
+                "Óbitos < 5 anos ÷ população",
+                "Óbitos neonatais ÷ partos",
+                "Nascidos vivos divididos pela população total do município, vezes cem mil"
               ],
-              "resposta": "Óbitos de menores de 1 ano divididos pelos nascidos vivos, vezes 1.000",
+              "resposta": "Óbitos < 1 ano ÷ nascidos vivos × 1.000",
               "explicacao": "É um dos indicadores que melhor refletem as condições de vida de um país.",
               "revisado": false
             },
@@ -432,7 +432,7 @@
                 "Swaroop-Uemura",
                 "Gini",
                 "Apgar",
-                "Quetelet"
+                "Quetelet de massa corporal"
               ],
               "resposta": "Swaroop-Uemura",
               "explicacao": "Quanto maior, melhores as condições de saúde da população.",
@@ -444,12 +444,12 @@
               "caso": "Em um município, a mortalidade infantil caiu muito, mas a maior parte das mortes que restaram ocorre na primeira semana de vida.",
               "enunciado": "Onde concentrar esforços?",
               "opcoes": [
-                "Na qualidade do pré-natal, do parto e do cuidado ao recém-nascido",
-                "No saneamento básico apenas",
-                "Na vacinação de adolescentes",
-                "Na atenção ao idoso"
+                "Pré-natal, parto e cuidado ao recém-nascido",
+                "Só saneamento",
+                "Vacinar adolescentes",
+                "Apenas saneamento básico e vacinação de adolescentes na escola"
               ],
-              "resposta": "Na qualidade do pré-natal, do parto e do cuidado ao recém-nascido",
+              "resposta": "Pré-natal, parto e cuidado ao recém-nascido",
               "explicacao": "As mortes neonatais precoces dependem muito da assistência à gestação e ao parto.",
               "revisado": false
             },
@@ -501,12 +501,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que caracteriza uma epidemia?",
               "opcoes": [
-                "Ocorrência de casos acima do esperado para o local e o período",
-                "Casos presentes sempre em uma região",
-                "Doença que atinge vários continentes",
-                "Qualquer caso de doença infecciosa"
+                "Casos acima do esperado para o local e período",
+                "Casos sempre presentes",
+                "Vários continentes",
+                "Casos presentes sempre na mesma região, com número estável ao longo dos anos"
               ],
-              "resposta": "Ocorrência de casos acima do esperado para o local e o período",
+              "resposta": "Casos acima do esperado para o local e período",
               "explicacao": "A endemia é a presença constante, dentro do esperado.",
               "revisado": false
             },
@@ -563,12 +563,12 @@
               "caso": "Vinte pessoas que almoçaram juntas em uma festa têm vômitos e diarreia horas depois.",
               "enunciado": "Qual é a primeira medida da vigilância?",
               "opcoes": [
-                "Notificar, investigar os casos e os alimentos consumidos",
+                "Notificar e investigar casos e alimentos",
                 "Esperar mais casos",
-                "Tratar todos com antibiótico",
-                "Fechar a cidade"
+                "Antibiótico para todos",
+                "Tratar todos com antibiótico e esperar mais casos antes de notificar"
               ],
-              "resposta": "Notificar, investigar os casos e os alimentos consumidos",
+              "resposta": "Notificar e investigar casos e alimentos",
               "explicacao": "A investigação compara quem comeu cada alimento e quem adoeceu.",
               "revisado": false
             },
@@ -577,12 +577,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a diferença entre vigilância ativa e passiva?",
               "opcoes": [
-                "Na ativa, o serviço busca os casos; na passiva, espera as notificações",
-                "Na ativa, só se notifica por telefone",
-                "Na passiva, faz-se busca em domicílios",
-                "Não há diferença"
+                "Na ativa, o serviço busca; na passiva, espera notificar",
+                "Na ativa, só por telefone",
+                "Na passiva, visita casas",
+                "Na passiva, os agentes visitam todas as casas em busca de doentes"
               ],
-              "resposta": "Na ativa, o serviço busca os casos; na passiva, espera as notificações",
+              "resposta": "Na ativa, o serviço busca; na passiva, espera notificar",
               "explicacao": "A vigilância passiva é mais barata, mas perde casos.",
               "revisado": false
             },
@@ -602,8 +602,8 @@
               "opcoes": [
                 "Bloqueio vacinal dos contatos suscetíveis",
                 "Esperar novos casos",
-                "Apenas orientar lavar as mãos",
-                "Antibiótico para todos"
+                "Só lavar as mãos",
+                "Antibiótico para todos os alunos e professores da escola"
               ],
               "resposta": "Bloqueio vacinal dos contatos suscetíveis",
               "explicacao": "O sarampo é muito contagioso e a vacina aplicada logo após a exposição pode evitar a doença.",
@@ -620,12 +620,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que caracteriza a transição demográfica?",
               "opcoes": [
-                "Queda da mortalidade seguida da queda da natalidade, com envelhecimento da população",
-                "Aumento da natalidade e da mortalidade",
-                "Crescimento só de crianças",
-                "Redução da população idosa"
+                "Cai a mortalidade, depois a natalidade, e a população envelhece",
+                "Sobem natalidade e mortalidade",
+                "Mais crianças",
+                "Aumento da natalidade e da mortalidade, com menos idosos na população"
               ],
-              "resposta": "Queda da mortalidade seguida da queda da natalidade, com envelhecimento da população",
+              "resposta": "Cai a mortalidade, depois a natalidade, e a população envelhece",
               "explicacao": "O Brasil passou por essa transição de forma muito rápida.",
               "revisado": false
             },
@@ -682,12 +682,12 @@
               "caso": "Um município tem cada vez mais idosos e mais casos de diabetes, hipertensão e demência.",
               "enunciado": "Qual é a principal mudança necessária nos serviços?",
               "opcoes": [
-                "Organizar o cuidado contínuo de doenças crônicas, com foco na atenção primária",
-                "Só abrir mais leitos de UTI",
+                "Cuidado contínuo de crônicas pela atenção primária",
+                "Só mais UTI",
                 "Reduzir a atenção primária",
-                "Focar apenas em vacinas infantis"
+                "Abrir apenas mais leitos de UTI e reduzir as unidades básicas"
               ],
-              "resposta": "Organizar o cuidado contínuo de doenças crônicas, com foco na atenção primária",
+              "resposta": "Cuidado contínuo de crônicas pela atenção primária",
               "explicacao": "Doenças crônicas exigem acompanhamento longo e coordenado.",
               "revisado": false
             },
@@ -696,12 +696,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é a tripla carga de doenças, descrita no Brasil?",
               "opcoes": [
-                "Convivência de doenças infecciosas, crônicas e causas externas",
-                "Três epidemias ao mesmo tempo",
+                "Infecciosas, crônicas e causas externas juntas",
+                "Três epidemias",
                 "Três tipos de câncer",
-                "Excesso de três vacinas"
+                "Três epidemias de doenças infecciosas ao mesmo tempo no país"
               ],
-              "resposta": "Convivência de doenças infecciosas, crônicas e causas externas",
+              "resposta": "Infecciosas, crônicas e causas externas juntas",
               "explicacao": "As causas externas incluem violências e acidentes.",
               "revisado": false
             },
@@ -845,12 +845,12 @@
               "caso": "Um estudo mostra a média de idade dos participantes com o intervalo de confiança de 95%.",
               "enunciado": "O que esse intervalo indica?",
               "opcoes": [
-                "A faixa em que provavelmente está a média verdadeira da população",
-                "A faixa de idade de todos os participantes",
+                "Faixa provável da média verdadeira da população",
+                "Faixa de idade dos participantes",
                 "O valor de p",
-                "A prevalência da doença"
+                "A faixa de idade de todos os participantes, do mais novo ao mais velho"
               ],
-              "resposta": "A faixa em que provavelmente está a média verdadeira da população",
+              "resposta": "Faixa provável da média verdadeira da população",
               "explicacao": "Quanto maior a amostra, mais estreito tende a ser o intervalo.",
               "revisado": false
             }
@@ -865,12 +865,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o erro tipo I (alfa)?",
               "opcoes": [
-                "Concluir que há diferença quando na verdade não há",
-                "Não detectar uma diferença que existe",
-                "Errar o cálculo da média",
-                "Perder participantes"
+                "Concluir que há diferença quando não há",
+                "Não ver diferença que existe",
+                "Errar a média",
+                "Não detectar uma diferença que existe de verdade na população"
               ],
-              "resposta": "Concluir que há diferença quando na verdade não há",
+              "resposta": "Concluir que há diferença quando não há",
               "explicacao": "O nível de significância, geralmente 5%, é a chance aceita de cometer esse erro.",
               "revisado": false
             },
@@ -927,12 +927,12 @@
               "caso": "Um estudo pequeno não encontra diferença entre dois remédios (p = 0,30), mas o intervalo de confiança é muito largo.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "O estudo pode não ter tido poder para detectar uma diferença real",
-                "Os remédios são comprovadamente iguais",
-                "O estudo prova que um é melhor",
-                "O valor de p confirma o efeito"
+                "Pode ter faltado poder para ver a diferença",
+                "São comprovadamente iguais",
+                "Prova que um é melhor",
+                "Os remédios são comprovadamente iguais em eficácia e segurança"
               ],
-              "resposta": "O estudo pode não ter tido poder para detectar uma diferença real",
+              "resposta": "Pode ter faltado poder para ver a diferença",
               "explicacao": "Ausência de evidência não é evidência de ausência.",
               "revisado": false
             },
@@ -941,12 +941,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quando o intervalo de confiança de 95% de um risco relativo inclui o valor 1, o que isso indica?",
               "opcoes": [
-                "O resultado não é estatisticamente significativo",
-                "O tratamento dobra o risco",
-                "O tratamento elimina o risco",
-                "O estudo foi bem feito"
+                "Não é estatisticamente significativo",
+                "Dobra o risco",
+                "Elimina o risco",
+                "O tratamento elimina completamente o risco da doença"
               ],
-              "resposta": "O resultado não é estatisticamente significativo",
+              "resposta": "Não é estatisticamente significativo",
               "explicacao": "Risco relativo igual a 1 significa nenhuma diferença.",
               "revisado": false
             },
@@ -1009,12 +1009,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual tipo de estudo está no topo da pirâmide de evidências?",
               "opcoes": [
-                "Revisão sistemática com metanálise de ensaios clínicos",
+                "Revisão sistemática com metanálise de ensaios",
                 "Relato de caso",
                 "Opinião de especialista",
-                "Estudo transversal"
+                "Opinião de especialista experiente, com muitos anos de prática clínica"
               ],
-              "resposta": "Revisão sistemática com metanálise de ensaios clínicos",
+              "resposta": "Revisão sistemática com metanálise de ensaios",
               "explicacao": "A qualidade dos estudos incluídos também importa.",
               "revisado": false
             },
@@ -1034,7 +1034,7 @@
                 "fator de confusão",
                 "desfecho",
                 "placebo",
-                "marcador"
+                "marcador de risco biológico"
               ],
               "resposta": "fator de confusão",
               "explicacao": "Exemplo: o fumo confunde a relação entre consumo de café e câncer de pulmão.",
@@ -1049,7 +1049,7 @@
                 "Confusão pelo tabagismo",
                 "Viés de memória",
                 "Erro tipo II",
-                "Falta de poder"
+                "Falta de poder estatístico da amostra"
               ],
               "resposta": "Confusão pelo tabagismo",
               "explicacao": "Ao ajustar para o tabagismo, a associação com café desaparece.",
@@ -1061,9 +1061,9 @@
               "enunciado": "Qual estratégia de análise mantém os participantes no grupo para o qual foram sorteados, mesmo que não sigam o tratamento?",
               "opcoes": [
                 "Análise por intenção de tratar",
-                "Análise por protocolo",
-                "Análise de subgrupos",
-                "Análise de sobrevivência"
+                "Por protocolo",
+                "De subgrupos",
+                "Análise apenas de quem seguiu o tratamento até o fim"
               ],
               "resposta": "Análise por intenção de tratar",
               "explicacao": "Ela preserva os benefícios da randomização.",
@@ -1086,7 +1086,7 @@
                 "Viés de atrito (perda de seguimento)",
                 "Viés de memória",
                 "Viés de publicação",
-                "Nenhum"
+                "Viés de memória dos pacientes sobre os efeitos"
               ],
               "resposta": "Viés de atrito (perda de seguimento)",
               "explicacao": "A análise por intenção de tratar reduz esse problema.",
@@ -1172,12 +1172,12 @@
               "caso": "Idoso saudável pede uma bateria anual de exames de imagem de corpo inteiro, sem sintomas.",
               "enunciado": "Qual é a conduta mais adequada?",
               "opcoes": [
-                "Explicar os riscos de exames desnecessários e oferecer apenas o rastreamento indicado",
+                "Explicar os riscos e oferecer só o rastreio indicado",
                 "Pedir todos os exames",
-                "Pedir tomografia de corpo inteiro todo ano",
-                "Encaminhar a vários especialistas"
+                "Tomografia anual",
+                "Pedir tomografia de corpo inteiro todo ano e encaminhar a especialistas"
               ],
-              "resposta": "Explicar os riscos de exames desnecessários e oferecer apenas o rastreamento indicado",
+              "resposta": "Explicar os riscos e oferecer só o rastreio indicado",
               "explicacao": "Achados casuais levam a procedimentos e ansiedade sem benefício.",
               "revisado": false
             },
@@ -1209,12 +1209,12 @@
               "caso": "Paciente diabético faz exame anual do pé para evitar úlceras e amputação.",
               "enunciado": "Qual nível de prevenção é esse?",
               "opcoes": [
-                "Terciária, pois evita complicações de uma doença já existente",
+                "Terciária: evita complicações de doença existente",
                 "Primária",
                 "Quaternária",
-                "Não é prevenção"
+                "Prevenção primária, porque evita que a doença comece"
               ],
-              "resposta": "Terciária, pois evita complicações de uma doença já existente",
+              "resposta": "Terciária: evita complicações de doença existente",
               "explicacao": "Há autores que classificam como secundária. O importante é que a doença já existe.",
               "revisado": false
             }
@@ -1229,12 +1229,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais critérios uma doença deve cumprir para valer a pena rastreá-la?",
               "opcoes": [
-                "Ser importante, ter fase pré-clínica detectável, teste aceitável e tratamento precoce eficaz",
-                "Ser rara e sem tratamento",
-                "Ter teste caro e invasivo",
-                "Não ter fase sem sintomas"
+                "Importante, fase pré-clínica, teste aceitável e tratar cedo ajuda",
+                "Rara e sem tratamento",
+                "Teste caro e invasivo",
+                "Ser rara, sem tratamento eficaz e com teste caro e invasivo para detectar"
               ],
-              "resposta": "Ser importante, ter fase pré-clínica detectável, teste aceitável e tratamento precoce eficaz",
+              "resposta": "Importante, fase pré-clínica, teste aceitável e tratar cedo ajuda",
               "explicacao": "São os critérios de Wilson e Jungner.",
               "revisado": false
             },
@@ -1291,12 +1291,12 @@
               "caso": "Homem de 55 anos, sem sintomas e sem histórico familiar, pede um exame de PSA.",
               "enunciado": "Qual é a conduta mais adequada?",
               "opcoes": [
-                "Explicar benefícios e riscos e decidir junto com ele",
-                "Pedir PSA todo ano sem conversar",
-                "Encaminhar para biópsia",
-                "Recusar qualquer conversa"
+                "Explicar benefícios e riscos e decidir juntos",
+                "PSA anual sem conversar",
+                "Biópsia",
+                "Pedir PSA todo ano sem conversar e encaminhar logo para biópsia"
               ],
-              "resposta": "Explicar benefícios e riscos e decidir junto com ele",
+              "resposta": "Explicar benefícios e riscos e decidir juntos",
               "explicacao": "É uma decisão compartilhada, já que o benefício é incerto.",
               "revisado": false
             },
@@ -1305,12 +1305,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual exame é usado para rastrear câncer de pulmão em pessoas de alto risco, onde o programa existe?",
               "opcoes": [
-                "Tomografia de tórax com baixa dose de radiação",
+                "Tomografia de tórax com baixa dose",
                 "Radiografia de tórax",
-                "Escarro para citologia",
-                "PSA"
+                "Citologia do escarro",
+                "Radiografia de tórax anual e citologia do escarro"
               ],
-              "resposta": "Tomografia de tórax com baixa dose de radiação",
+              "resposta": "Tomografia de tórax com baixa dose",
               "explicacao": "O alto risco inclui fumantes com carga tabágica elevada.",
               "revisado": false
             },
@@ -1328,12 +1328,12 @@
               "caso": "Um novo exame de sangue detecta um câncer raro, mas o tratamento precoce não muda a sobrevida.",
               "enunciado": "Deve ser usado para rastrear a população?",
               "opcoes": [
-                "Não, pois não há benefício comprovado e pode haver danos",
+                "Não; não há benefício e pode haver danos",
                 "Sim, sempre",
-                "Sim, para todos acima de 18 anos",
-                "Sim, mesmo sem tratamento"
+                "Sim, para todos > 18",
+                "Sim, para todos os adultos, porque detectar cedo sempre ajuda"
               ],
-              "resposta": "Não, pois não há benefício comprovado e pode haver danos",
+              "resposta": "Não; não há benefício e pode haver danos",
               "explicacao": "Exames de rastreamento só devem ser adotados com evidência de benefício.",
               "revisado": false
             }
@@ -1424,12 +1424,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é sobretratamento?",
               "opcoes": [
-                "Tratar doenças que não causariam problemas, expondo o paciente a riscos",
+                "Tratar doenças que não causariam problemas, com riscos",
                 "Tratar com dose maior",
-                "Tratar duas vezes a mesma doença",
-                "Tratamento de reabilitação"
+                "Tratar duas vezes",
+                "Tratar duas vezes a mesma doença com remédios diferentes"
               ],
-              "resposta": "Tratar doenças que não causariam problemas, expondo o paciente a riscos",
+              "resposta": "Tratar doenças que não causariam problemas, com riscos",
               "explicacao": "É a consequência direta do sobrediagnóstico.",
               "revisado": false
             },
@@ -1447,12 +1447,12 @@
               "caso": "Um município quer começar um rastreamento de uma doença rara com um teste de especificidade baixa.",
               "enunciado": "Qual é o problema esperado?",
               "opcoes": [
-                "Muitos falsos positivos, com exames e ansiedade desnecessários",
+                "Muitos falsos positivos, com exames e ansiedade",
                 "Poucos falsos positivos",
-                "Nenhum problema",
-                "Muitos falsos negativos apenas"
+                "Problema nenhum",
+                "Muitos falsos negativos apenas, sem nenhum falso positivo"
               ],
-              "resposta": "Muitos falsos positivos, com exames e ansiedade desnecessários",
+              "resposta": "Muitos falsos positivos, com exames e ansiedade",
               "explicacao": "Em doenças raras, até testes bons geram mais falsos positivos que verdadeiros.",
               "revisado": false
             }
@@ -1474,12 +1474,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual documento comunica um acidente de trabalho à Previdência Social?",
               "opcoes": [
-                "CAT, a Comunicação de Acidente de Trabalho",
-                "Atestado médico simples",
+                "CAT (Comunicação de Acidente)",
+                "Atestado simples",
                 "Declaração de óbito",
-                "Receita médica"
+                "Receita médica com o diagnóstico e o CID"
               ],
-              "resposta": "CAT, a Comunicação de Acidente de Trabalho",
+              "resposta": "CAT (Comunicação de Acidente)",
               "explicacao": "A CAT deve ser emitida mesmo sem afastamento.",
               "revisado": false
             },
@@ -1550,12 +1550,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quem pode emitir a CAT, se a empresa não emitir?",
               "opcoes": [
-                "O próprio trabalhador, o sindicato, o médico ou a autoridade pública",
+                "Trabalhador, sindicato, médico ou autoridade pública",
                 "Só o empregador",
                 "Só o INSS",
-                "Ninguém"
+                "Somente o empregador, que tem obrigação exclusiva de emitir"
               ],
-              "resposta": "O próprio trabalhador, o sindicato, o médico ou a autoridade pública",
+              "resposta": "Trabalhador, sindicato, médico ou autoridade pública",
               "explicacao": "A falta da CAT pela empresa não impede o registro.",
               "revisado": false
             },
@@ -1573,12 +1573,12 @@
               "caso": "Bancária com dor e formigamento nas mãos que piora com o trabalho de digitação.",
               "enunciado": "Que conduta inclui a saúde do trabalhador?",
               "opcoes": [
-                "Investigar relação com o trabalho, notificar e orientar ergonomia e afastamento se necessário",
-                "Apenas analgésico",
-                "Tratar como doença sem relação com o trabalho",
-                "Encaminhar para cirurgia imediata"
+                "Ver a relação com o trabalho, notificar e orientar ergonomia",
+                "Só analgésico",
+                "Sem relação com o trabalho",
+                "Encaminhar para cirurgia imediata do punho sem investigar o trabalho"
               ],
-              "resposta": "Investigar relação com o trabalho, notificar e orientar ergonomia e afastamento se necessário",
+              "resposta": "Ver a relação com o trabalho, notificar e orientar ergonomia",
               "explicacao": "As doenças relacionadas ao trabalho são de notificação compulsória no SUS.",
               "revisado": false
             }
@@ -1593,12 +1593,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quando o médico pode quebrar o sigilo profissional?",
               "opcoes": [
-                "Por motivo justo, dever legal ou consentimento por escrito do paciente",
-                "Sempre que a família pedir",
-                "Para comentar o caso nas redes sociais",
-                "Nunca, em nenhuma situação"
+                "Motivo justo, dever legal ou consentimento escrito",
+                "Quando a família pedir",
+                "Nas redes sociais",
+                "Sempre que a família pedir, mesmo sem o paciente concordar"
               ],
-              "resposta": "Por motivo justo, dever legal ou consentimento por escrito do paciente",
+              "resposta": "Motivo justo, dever legal ou consentimento escrito",
               "explicacao": "Exemplos de dever legal são as doenças de notificação compulsória.",
               "revisado": false
             },
@@ -1643,7 +1643,7 @@
                 "vontade",
                 "tratamento",
                 "internação",
-                "alta"
+                "alta hospitalar"
               ],
               "resposta": "vontade",
               "explicacao": "A Resolução CFM 1.995/2012 trata desse tema.",
@@ -1655,12 +1655,12 @@
               "caso": "Adolescente de 16 anos pede sigilo sobre sua vida sexual e quer orientação sobre anticoncepção.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Atender e manter o sigilo, salvo risco grave à vida",
-                "Contar aos pais obrigatoriamente",
-                "Recusar o atendimento",
-                "Exigir a presença dos pais"
+                "Atender com sigilo, salvo risco grave à vida",
+                "Contar aos pais",
+                "Recusar",
+                "Exigir a presença dos pais e contar tudo a eles na mesma consulta"
               ],
-              "resposta": "Atender e manter o sigilo, salvo risco grave à vida",
+              "resposta": "Atender com sigilo, salvo risco grave à vida",
               "explicacao": "O adolescente tem direito à privacidade e ao sigilo.",
               "revisado": false
             },
@@ -1671,8 +1671,8 @@
               "opcoes": [
                 "Respeitar a recusa e buscar alternativas",
                 "Transfundir à força",
-                "Dar alta sem atendimento",
-                "Chamar a polícia"
+                "Liberar sem atender",
+                "Transfundir à força com ajuda da segurança do hospital"
               ],
               "resposta": "Respeitar a recusa e buscar alternativas",
               "explicacao": "Em risco iminente de morte, as normas e decisões judiciais são discutidas caso a caso.",
@@ -1695,7 +1695,7 @@
                 "Recusar e avaliar o paciente antes de assinar",
                 "Assinar para ajudar",
                 "Assinar e avisar depois",
-                "Pedir para a enfermagem assinar"
+                "Pedir para a enfermagem assinar no lugar do residente"
               ],
               "resposta": "Recusar e avaliar o paciente antes de assinar",
               "explicacao": "O médico responde por tudo o que assina.",
@@ -1712,12 +1712,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quem deve preencher a declaração de óbito em morte natural com assistência médica?",
               "opcoes": [
-                "O médico que prestava assistência ao paciente",
+                "O médico que assistia o paciente",
                 "O agente funerário",
                 "O cartório",
-                "A família"
+                "A família, junto com o agente funerário"
               ],
-              "resposta": "O médico que prestava assistência ao paciente",
+              "resposta": "O médico que assistia o paciente",
               "explicacao": "Na falta dele, o substituto ou o plantonista.",
               "revisado": false
             },
@@ -1774,12 +1774,12 @@
               "caso": "Paciente com diabetes de longa data teve infarto e morreu de choque cardiogênico. Também tinha doença renal crônica.",
               "enunciado": "Como preencher a Parte I, de cima para baixo?",
               "opcoes": [
-                "Choque cardiogênico, infarto agudo do miocárdio, diabetes mellitus",
+                "Choque cardiogênico, infarto, diabetes",
                 "Diabetes, infarto, choque",
-                "Parada cardiorrespiratória apenas",
-                "Doença renal crônica, choque"
+                "Só parada cardiorrespiratória",
+                "Parada cardiorrespiratória, choque e doença renal crônica, nessa ordem"
               ],
-              "resposta": "Choque cardiogênico, infarto agudo do miocárdio, diabetes mellitus",
+              "resposta": "Choque cardiogênico, infarto, diabetes",
               "explicacao": "A doença renal crônica pode ir para a Parte II, como condição que contribuiu.",
               "revisado": false
             },
@@ -1788,12 +1788,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que não deve ser registrado como causa de morte?",
               "opcoes": [
-                "Modos de morrer, como parada cardiorrespiratória",
+                "Modos de morrer, como parada",
                 "Infarto",
                 "Pneumonia",
-                "Câncer de pulmão"
+                "Câncer de pulmão com metástase óssea e cerebral"
               ],
-              "resposta": "Modos de morrer, como parada cardiorrespiratória",
+              "resposta": "Modos de morrer, como parada",
               "explicacao": "Todo mundo morre com parada cardíaca. Ela não explica a causa.",
               "revisado": false
             },
@@ -1811,12 +1811,12 @@
               "caso": "Homem é encontrado morto em casa após uma queda de escada.",
               "enunciado": "Quem deve emitir a declaração de óbito?",
               "opcoes": [
-                "O Instituto Médico Legal, por ser morte por causa externa",
+                "O IML, por ser causa externa",
                 "O médico de família",
-                "O Serviço de Verificação de Óbito",
-                "A família"
+                "O SVO",
+                "O Serviço de Verificação de Óbito do município"
               ],
-              "resposta": "O Instituto Médico Legal, por ser morte por causa externa",
+              "resposta": "O IML, por ser causa externa",
               "explicacao": "Mesmo que pareça acidente, mortes por causas externas vão para o IML.",
               "revisado": false
             }
@@ -1838,12 +1838,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a composição mínima de uma equipe de Saúde da Família?",
               "opcoes": [
-                "Médico, enfermeiro, técnico ou auxiliar de enfermagem e agentes comunitários de saúde",
-                "Apenas médico e recepcionista",
-                "Médico especialista e dentista",
-                "Só agentes comunitários"
+                "Médico, enfermeiro, técnico de enfermagem e ACS",
+                "Médico e recepcionista",
+                "Especialista e dentista",
+                "Médico especialista, dentista e psicólogo, sem agentes comunitários"
               ],
-              "resposta": "Médico, enfermeiro, técnico ou auxiliar de enfermagem e agentes comunitários de saúde",
+              "resposta": "Médico, enfermeiro, técnico de enfermagem e ACS",
               "explicacao": "A equipe de saúde bucal pode ser incorporada.",
               "revisado": false
             },
@@ -1914,12 +1914,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é longitudinalidade?",
               "opcoes": [
-                "Acompanhamento do paciente pela mesma equipe ao longo do tempo",
+                "Mesma equipe acompanhando ao longo do tempo",
                 "Atender todos no mesmo dia",
-                "Encaminhar ao especialista",
-                "Fazer exames anuais"
+                "Encaminhar",
+                "Encaminhar ao especialista e fazer exames anuais de rotina"
               ],
-              "resposta": "Acompanhamento do paciente pela mesma equipe ao longo do tempo",
+              "resposta": "Mesma equipe acompanhando ao longo do tempo",
               "explicacao": "A relação de confiança melhora a adesão e reduz custos.",
               "revisado": false
             },
@@ -1938,9 +1938,9 @@
               "enunciado": "Qual problema isso representa?",
               "opcoes": [
                 "Falha no acesso e no primeiro contato",
-                "Boa organização do serviço",
+                "Boa organização",
                 "Respeito à equidade",
-                "Integralidade adequada"
+                "Boa organização do serviço, com respeito à equidade e à integralidade"
               ],
               "resposta": "Falha no acesso e no primeiro contato",
               "explicacao": "A atenção primária deve atender a demanda espontânea e a programada.",
@@ -1957,12 +1957,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o genograma?",
               "opcoes": [
-                "Representação gráfica da família, com relações e doenças ao longo das gerações",
+                "Desenho da família em gerações, com relações e doenças",
                 "Mapa do território",
                 "Lista de remédios",
-                "Exame genético"
+                "Mapa do território com as ruas e os serviços de saúde do bairro"
               ],
-              "resposta": "Representação gráfica da família, com relações e doenças ao longo das gerações",
+              "resposta": "Desenho da família em gerações, com relações e doenças",
               "explicacao": "Ele ajuda a entender padrões de doença e de relação familiar.",
               "revisado": false
             },
@@ -2019,12 +2019,12 @@
               "caso": "Paciente com dor de cabeça leve há 3 dias, sem sinais de alarme, pede tomografia.",
               "enunciado": "Qual é uma conduta adequada na atenção primária?",
               "opcoes": [
-                "Explicar, usar a demora permitida e reavaliar, com orientação sobre sinais de alarme",
-                "Pedir tomografia de imediato",
-                "Encaminhar ao neurologista com urgência",
-                "Internar"
+                "Explicar, usar a demora permitida e reavaliar",
+                "Tomografia já",
+                "Neurologista urgente",
+                "Pedir tomografia de imediato e encaminhar ao neurologista com urgência"
               ],
-              "resposta": "Explicar, usar a demora permitida e reavaliar, com orientação sobre sinais de alarme",
+              "resposta": "Explicar, usar a demora permitida e reavaliar",
               "explicacao": "Sinais de alarme mudariam a conduta, como febre, déficit neurológico ou dor súbita intensa.",
               "revisado": false
             },
@@ -2033,12 +2033,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é o ecomapa?",
               "opcoes": [
-                "Representação das relações da família com o meio externo, como escola, trabalho e igreja",
-                "Mapa de doenças da cidade",
+                "Relações da família com escola, trabalho e igreja",
+                "Mapa de doenças",
                 "Tipo de exame",
-                "Gráfico de crescimento"
+                "Mapa de doenças da cidade, com casos por bairro"
               ],
-              "resposta": "Representação das relações da família com o meio externo, como escola, trabalho e igreja",
+              "resposta": "Relações da família com escola, trabalho e igreja",
               "explicacao": "Ele mostra apoios e fontes de estresse.",
               "revisado": false
             },
@@ -2056,12 +2056,12 @@
               "caso": "Família tem uma idosa com demência, a filha cuidadora está esgotada e um neto desempregado.",
               "enunciado": "Qual abordagem ajuda a entender e apoiar essa família?",
               "opcoes": [
-                "Abordagem familiar com genograma, ecomapa e apoio à cuidadora",
+                "Abordagem familiar com genograma, ecomapa e apoio",
                 "Tratar só a idosa",
-                "Encaminhar todos a especialistas",
-                "Nada a fazer"
+                "Especialistas para todos",
+                "Tratar só a idosa e encaminhar toda a família a especialistas diferentes"
               ],
-              "resposta": "Abordagem familiar com genograma, ecomapa e apoio à cuidadora",
+              "resposta": "Abordagem familiar com genograma, ecomapa e apoio",
               "explicacao": "O adoecimento de um membro afeta toda a família.",
               "revisado": false
             }
@@ -2077,9 +2077,9 @@
               "enunciado": "Qual é o papel da atenção primária nas redes de atenção à saúde?",
               "opcoes": [
                 "Centro de comunicação e coordenação do cuidado",
-                "Apenas emergências",
-                "Apenas cirurgias",
-                "Apenas exames de alta complexidade"
+                "Só emergências",
+                "Só cirurgias",
+                "Apenas exames de alta complexidade e cirurgias eletivas"
               ],
               "resposta": "Centro de comunicação e coordenação do cuidado",
               "explicacao": "A rede é organizada de forma horizontal, com a atenção primária no centro.",
@@ -2152,12 +2152,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é a contrarreferência?",
               "opcoes": [
-                "O retorno de informações do especialista para a atenção primária",
-                "O encaminhamento para o especialista",
-                "A internação de urgência",
-                "A alta do hospital sem relatório"
+                "Retorno do especialista para a atenção primária",
+                "O encaminhamento",
+                "Internação de urgência",
+                "A alta do hospital sem nenhum relatório para a unidade"
               ],
-              "resposta": "O retorno de informações do especialista para a atenção primária",
+              "resposta": "Retorno do especialista para a atenção primária",
               "explicacao": "Sem contrarreferência, a coordenação do cuidado fica prejudicada.",
               "revisado": false
             },
@@ -2230,7 +2230,7 @@
                 "Médicos e todos os profissionais de saúde",
                 "Só o médico",
                 "Só o hospital",
-                "Ninguém"
+                "Somente o hospital, por meio do setor de epidemiologia"
               ],
               "resposta": "Médicos e todos os profissionais de saúde",
               "explicacao": "Também responsáveis por escolas e laboratórios.",
@@ -2263,12 +2263,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o objetivo da notificação compulsória?",
               "opcoes": [
-                "Desencadear ações de controle e conhecer a situação de saúde",
+                "Desencadear controle e conhecer a situação",
                 "Punir o paciente",
                 "Cobrar impostos",
-                "Nada"
+                "Punir o paciente e cobrar multa da família"
               ],
-              "resposta": "Desencadear ações de controle e conhecer a situação de saúde",
+              "resposta": "Desencadear controle e conhecer a situação",
               "explicacao": "Base da vigilância.",
               "revisado": false
             },
@@ -2278,12 +2278,12 @@
               "caso": "Médico atende criança com paralisia flácida aguda.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Notificar imediatamente como suspeita de poliomielite",
+                "Notificar já como suspeita de pólio",
                 "Esperar exames",
-                "Nada",
-                "Notificar no fim do mês"
+                "No fim do mês",
+                "Esperar os exames e notificar só no fim do mês"
               ],
-              "resposta": "Notificar imediatamente como suspeita de poliomielite",
+              "resposta": "Notificar já como suspeita de pólio",
               "explicacao": "Vigilância da pólio.",
               "revisado": false
             },
@@ -2345,12 +2345,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é um surto?",
               "opcoes": [
-                "Aumento de casos acima do esperado em local e tempo limitados",
+                "Casos acima do esperado em local e tempo restritos",
                 "Qualquer caso",
                 "Doença endêmica",
-                "Doença rara isolada"
+                "Qualquer caso isolado de doença rara no país, em qualquer época"
               ],
-              "resposta": "Aumento de casos acima do esperado em local e tempo limitados",
+              "resposta": "Casos acima do esperado em local e tempo restritos",
               "explicacao": "Em grupo restrito.",
               "revisado": false
             },
@@ -2384,7 +2384,7 @@
                 "Pandemia atinge vários continentes",
                 "São iguais",
                 "Epidemia é maior",
-                "Nenhuma"
+                "A epidemia é sempre maior que a pandemia"
               ],
               "resposta": "Pandemia atinge vários continentes",
               "explicacao": "Disseminação mundial.",
@@ -2397,9 +2397,9 @@
               "enunciado": "Qual é a fonte provável?",
               "opcoes": [
                 "Fonte comum pontual por alimento",
-                "Transmissão pessoa a pessoa",
+                "Pessoa a pessoa",
                 "Endemia",
-                "Nada"
+                "Transmissão de pessoa a pessoa ao longo de semanas"
               ],
               "resposta": "Fonte comum pontual por alimento",
               "explicacao": "Intoxicação alimentar estafilocócica.",
@@ -2514,12 +2514,12 @@
               "caso": "Criança de 3 anos que nunca tomou vacinas chega à unidade.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Iniciar o esquema conforme a idade, sem reiniciar o que foi feito",
+                "Iniciar conforme a idade, sem reiniciar",
                 "Esperar a escola",
-                "Nada",
-                "Só BCG"
+                "Só BCG",
+                "Esperar a entrada na escola e dar só a BCG"
               ],
-              "resposta": "Iniciar o esquema conforme a idade, sem reiniciar o que foi feito",
+              "resposta": "Iniciar conforme a idade, sem reiniciar",
               "explicacao": "Atualizar o calendário.",
               "revisado": false
             },
@@ -2539,7 +2539,7 @@
                 "coadministração",
                 "proibição",
                 "separação",
-                "suspensão"
+                "suspensão temporária"
               ],
               "resposta": "coadministração",
               "explicacao": "Não há intervalo entre inativadas.",
@@ -2566,7 +2566,7 @@
                 "Teste rápido molecular (TRM-TB)",
                 "Raio X",
                 "Prova tuberculínica",
-                "Hemograma"
+                "Hemograma completo e raio X de tórax"
               ],
               "resposta": "Teste rápido molecular (TRM-TB)",
               "explicacao": "Também detecta resistência à rifampicina.",
@@ -2613,7 +2613,7 @@
                 "observado",
                 "rápido",
                 "caro",
-                "longo"
+                "longo e cansativo"
               ],
               "resposta": "observado",
               "explicacao": "TDO.",
@@ -2624,12 +2624,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais contatos devem ser avaliados?",
               "opcoes": [
-                "Pessoas que convivem com o caso",
+                "Quem convive com o caso",
                 "Ninguém",
-                "Só familiares distantes",
-                "Só profissionais"
+                "Só parentes distantes",
+                "Somente os familiares distantes que não moram junto"
               ],
-              "resposta": "Pessoas que convivem com o caso",
+              "resposta": "Quem convive com o caso",
               "explicacao": "Procurar doença e infecção latente.",
               "revisado": false
             },
@@ -2639,12 +2639,12 @@
               "caso": "Morador de rua com tosse há 1 semana e perda de peso.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Investigar tuberculose mesmo com menos de 3 semanas",
+                "Investigar TB mesmo com < 3 semanas",
                 "Esperar 3 semanas",
-                "Nada",
-                "Antibiótico comum"
+                "Antibiótico comum",
+                "Esperar completar três semanas de tosse e dar antibiótico comum"
               ],
-              "resposta": "Investigar tuberculose mesmo com menos de 3 semanas",
+              "resposta": "Investigar TB mesmo com < 3 semanas",
               "explicacao": "População vulnerável.",
               "revisado": false
             },
@@ -2664,7 +2664,7 @@
                 "multirresistente",
                 "sensível",
                 "latente",
-                "extrapulmonar"
+                "extrapulmonar ganglionar"
               ],
               "resposta": "multirresistente",
               "explicacao": "TB-MDR.",
@@ -2709,7 +2709,7 @@
                 "Mancha com perda de sensibilidade",
                 "Coceira intensa",
                 "Febre alta",
-                "Manchas que doem"
+                "Manchas que doem muito e coçam"
               ],
               "resposta": "Mancha com perda de sensibilidade",
               "explicacao": "Também espessamento de nervo.",
@@ -2742,12 +2742,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a principal forma de transmissão da hanseníase?",
               "opcoes": [
-                "Vias aéreas de pessoas multibacilares sem tratamento",
+                "Vias aéreas de multibacilares sem tratamento",
                 "Picada de inseto",
                 "Água",
-                "Toque na pele"
+                "Toque na pele de qualquer pessoa com mancha"
               ],
-              "resposta": "Vias aéreas de pessoas multibacilares sem tratamento",
+              "resposta": "Vias aéreas de multibacilares sem tratamento",
               "explicacao": "Após contato prolongado.",
               "revisado": false
             },
@@ -2827,7 +2827,7 @@
                 "Eliminar criadouros do mosquito",
                 "Só fumacê",
                 "Antibióticos",
-                "Nada"
+                "Apenas fumacê nas ruas e antibióticos"
               ],
               "resposta": "Eliminar criadouros do mosquito",
               "explicacao": "Ação contínua.",
@@ -2861,9 +2861,9 @@
               "enunciado": "Qual é a vacina contra dengue no SUS?",
               "opcoes": [
                 "Vacina para faixas etárias definidas",
-                "Nenhuma",
-                "Para todos os adultos",
-                "Só idosos"
+                "Sem vacina",
+                "Todos os adultos",
+                "Para todos os adultos e idosos, sem restrição"
               ],
               "resposta": "Vacina para faixas etárias definidas",
               "explicacao": "Ampliada conforme disponibilidade.",
@@ -2875,12 +2875,12 @@
               "caso": "Município com aumento de casos de dengue acima do esperado.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Intensificar controle vetorial e organizar a rede de atendimento",
-                "Nada",
+                "Intensificar controle vetorial e organizar a rede",
                 "Fechar escolas",
-                "Antibiótico em massa"
+                "Antibiótico em massa",
+                "Fechar todas as escolas e dar antibiótico em massa"
               ],
-              "resposta": "Intensificar controle vetorial e organizar a rede de atendimento",
+              "resposta": "Intensificar controle vetorial e organizar a rede",
               "explicacao": "Plano de contingência.",
               "revisado": false
             },
@@ -2900,7 +2900,7 @@
                 "macacos",
                 "cães",
                 "gatos",
-                "aves"
+                "aves domésticas"
               ],
               "resposta": "macacos",
               "explicacao": "Vigilância de epizootias.",
@@ -3025,7 +3025,7 @@
                 "absoluta",
                 "relativa",
                 "atribuível populacional",
-                "nenhuma"
+                "proporcional de óbitos"
               ],
               "resposta": "absoluta",
               "explicacao": "Base do NNT.",
@@ -3103,12 +3103,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o exemplo de gradiente dose-resposta?",
               "opcoes": [
-                "Quanto mais cigarros, maior o risco de câncer",
+                "Mais cigarros, mais risco de câncer",
                 "Câncer em não fumantes",
                 "Uma única exposição",
-                "Nenhum"
+                "Uma única exposição que causa a doença em todos"
               ],
-              "resposta": "Quanto mais cigarros, maior o risco de câncer",
+              "resposta": "Mais cigarros, mais risco de câncer",
               "explicacao": "Reforça a causalidade.",
               "revisado": false
             },
@@ -3121,7 +3121,7 @@
                 "Confusão pelo tabagismo",
                 "Causalidade",
                 "Acaso só",
-                "Nada"
+                "Causalidade direta pelo isqueiro"
               ],
               "resposta": "Confusão pelo tabagismo",
               "explicacao": "Isqueiro se associa ao fumo.",
@@ -3143,7 +3143,7 @@
                 "efeito",
                 "dose",
                 "tempo",
-                "causa"
+                "causa principal"
               ],
               "resposta": "efeito",
               "explicacao": "Também chamada interação.",
@@ -3188,7 +3188,7 @@
                 "Ensaio clínico randomizado",
                 "Caso-controle",
                 "Série de casos",
-                "Opinião"
+                "Opinião de especialista experiente"
               ],
               "resposta": "Ensaio clínico randomizado",
               "explicacao": "Abaixo apenas da metanálise.",
@@ -3238,8 +3238,8 @@
               "opcoes": [
                 "Viés de seleção",
                 "Viés de memória",
-                "Nenhum",
-                "Viés de publicação"
+                "Viés de publicação",
+                "Viés de memória dos pacientes graves"
               ],
               "resposta": "Viés de seleção",
               "explicacao": "Falta de randomização.",
@@ -3261,7 +3261,7 @@
                 "alocação",
                 "doença",
                 "dose",
-                "idade"
+                "idade dos participantes"
               ],
               "resposta": "alocação",
               "explicacao": "Protege a randomização.",
@@ -3347,9 +3347,9 @@
               "enunciado": "Para onde vão os recursos federais repassados aos municípios?",
               "opcoes": [
                 "Fundo Municipal de Saúde",
-                "Prefeito pessoalmente",
+                "Prefeito",
                 "Hospitais privados",
-                "Nada"
+                "Conta pessoal do prefeito"
               ],
               "resposta": "Fundo Municipal de Saúde",
               "explicacao": "Transferência fundo a fundo.",
@@ -3431,7 +3431,7 @@
                 "Conselho Municipal de Saúde",
                 "Prefeito sozinho",
                 "Ministério",
-                "Ninguém"
+                "O prefeito sozinho, sem consulta"
               ],
               "resposta": "Conselho Municipal de Saúde",
               "explicacao": "Participação social.",
@@ -3467,7 +3467,7 @@
                 "Comissão Intergestores Bipartite",
                 "Conselho Nacional",
                 "Câmara dos Deputados",
-                "Tribunal"
+                "Tribunal de Contas do Estado e da União"
               ],
               "resposta": "Comissão Intergestores Bipartite",
               "explicacao": "CIB.",
@@ -3482,7 +3482,7 @@
                 "Comissão Intergestores Tripartite",
                 "Conselho Municipal",
                 "Prefeitura",
-                "Nada"
+                "Prefeitura da capital do estado"
               ],
               "resposta": "Comissão Intergestores Tripartite",
               "explicacao": "CIT.",
@@ -3504,7 +3504,7 @@
                 "Organizativo",
                 "Social",
                 "Privado",
-                "Simples"
+                "Simples de prestação"
               ],
               "resposta": "Organizativo",
               "explicacao": "COAP, do Decreto 7.508.",
@@ -3549,7 +3549,7 @@
                 "Lei 8.142 de 1990",
                 "Lei 8.080",
                 "Constituição só",
-                "Lei 141"
+                "Lei Complementar 141 de 2012"
               ],
               "resposta": "Lei 8.142 de 1990",
               "explicacao": "Também transferências.",
@@ -3582,12 +3582,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a composição dos conselhos de saúde?",
               "opcoes": [
-                "50% usuários, 25% trabalhadores, 25% gestores e prestadores",
+                "50% usuários, 25% trabalhadores, 25% gestores",
                 "Só médicos",
                 "Só gestores",
-                "Só usuários"
+                "Apenas médicos e gestores indicados pelo prefeito"
               ],
-              "resposta": "50% usuários, 25% trabalhadores, 25% gestores e prestadores",
+              "resposta": "50% usuários, 25% trabalhadores, 25% gestores",
               "explicacao": "Paridade.",
               "revisado": false
             },
@@ -3597,12 +3597,12 @@
               "caso": "Comunidade quer participar das decisões da saúde do município.",
               "enunciado": "Como?",
               "opcoes": [
-                "Pelo Conselho Municipal e conferências",
+                "Conselho Municipal e conferências",
                 "Não pode",
                 "Só votando",
-                "Só na justiça"
+                "Somente votando nas eleições a cada quatro anos"
               ],
-              "resposta": "Pelo Conselho Municipal e conferências",
+              "resposta": "Conselho Municipal e conferências",
               "explicacao": "Controle social.",
               "revisado": false
             },
@@ -3674,7 +3674,7 @@
                 "Neonatal precoce",
                 "Pós-neonatal",
                 "Escolar",
-                "Adolescente"
+                "Adolescente e adulto jovem"
               ],
               "resposta": "Neonatal precoce",
               "explicacao": "Ligada ao pré-natal e parto.",
@@ -3710,7 +3710,7 @@
                 "Hipertensão na gestação",
                 "Câncer",
                 "Acidente",
-                "Infecção urinária"
+                "Infecção urinária simples"
               ],
               "resposta": "Hipertensão na gestação",
               "explicacao": "Junto com hemorragia.",
@@ -3722,12 +3722,12 @@
               "caso": "Município com mortalidade neonatal precoce alta.",
               "enunciado": "Onde intervir?",
               "opcoes": [
-                "Qualidade do pré-natal e da atenção ao parto e ao recém-nascido",
+                "Pré-natal, parto e cuidado ao recém-nascido",
                 "Saneamento só",
-                "Vacinas da adolescência",
-                "Nada"
+                "Vacinas na adolescência",
+                "Apenas saneamento e vacinas da adolescência"
               ],
-              "resposta": "Qualidade do pré-natal e da atenção ao parto e ao recém-nascido",
+              "resposta": "Pré-natal, parto e cuidado ao recém-nascido",
               "explicacao": "Causas perinatais.",
               "revisado": false
             },
@@ -3747,7 +3747,7 @@
                 "Sistema de Informações",
                 "Censo",
                 "Cartório",
-                "Hospital"
+                "Hospital de referência"
               ],
               "resposta": "Sistema de Informações",
               "explicacao": "Usa a Declaração de Nascido Vivo.",
@@ -3814,7 +3814,7 @@
                 "Política",
                 "Lei",
                 "Norma",
-                "Rede"
+                "Rede de urgência"
               ],
               "resposta": "Política",
               "explicacao": "Foco na funcionalidade.",
@@ -3825,12 +3825,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a meta principal na atenção ao idoso?",
               "opcoes": [
-                "Manter a capacidade funcional e a autonomia",
+                "Manter capacidade funcional e autonomia",
                 "Curar todas as doenças",
                 "Internar",
-                "Nada"
+                "Curar todas as doenças crônicas e internar quando preciso"
               ],
-              "resposta": "Manter a capacidade funcional e a autonomia",
+              "resposta": "Manter capacidade funcional e autonomia",
               "explicacao": "Envelhecimento ativo.",
               "revisado": false
             },
@@ -3841,9 +3841,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Avaliação multifatorial de quedas",
-                "Nada",
                 "Repouso",
-                "Benzodiazepínico"
+                "Benzodiazepínico",
+                "Repouso no leito e benzodiazepínico à noite"
               ],
               "resposta": "Avaliação multifatorial de quedas",
               "explicacao": "Remédios, visão, casa e força.",
@@ -3946,7 +3946,7 @@
                 "Redução de danos",
                 "Só abstinência forçada",
                 "Prisão",
-                "Nada"
+                "Abstinência forçada em comunidade fechada"
               ],
               "resposta": "Redução de danos",
               "explicacao": "Respeita a pessoa.",
@@ -3959,9 +3959,9 @@
               "enunciado": "Qual é a estratégia?",
               "opcoes": [
                 "Equipe de Consultório na Rua",
-                "Esperar que procure",
-                "Nada",
-                "Polícia"
+                "Esperar procurar",
+                "Polícia",
+                "Esperar que a pessoa procure a unidade sozinha"
               ],
               "resposta": "Equipe de Consultório na Rua",
               "explicacao": "Cuidado no território.",
@@ -3982,8 +3982,8 @@
               "opcoes": [
                 "internação",
                 "consulta",
-                "alta",
-                "medicação"
+                "transferência",
+                "medicação injetável de depósito"
               ],
               "resposta": "internação",
               "explicacao": "Lei 10.216.",
@@ -4007,12 +4007,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual modelo explica os determinantes sociais em camadas?",
               "opcoes": [
-                "Modelo de Dahlgren e Whitehead",
-                "Modelo de Leavell e Clark",
+                "Dahlgren e Whitehead",
+                "Leavell e Clark",
                 "Bradford Hill",
-                "Wilson e Jungner"
+                "Wilson e Jungner para rastreamento"
               ],
-              "resposta": "Modelo de Dahlgren e Whitehead",
+              "resposta": "Dahlgren e Whitehead",
               "explicacao": "Do indivíduo às condições gerais.",
               "revisado": false
             },
@@ -4068,12 +4068,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é promoção da saúde?",
               "opcoes": [
-                "Ações que aumentam o controle das pessoas sobre os determinantes da saúde",
+                "Aumentar o controle das pessoas sobre os determinantes",
                 "Tratar doenças",
                 "Só vacinar",
-                "Nada"
+                "Tratar as doenças já existentes com remédios e vacinas"
               ],
-              "resposta": "Ações que aumentam o controle das pessoas sobre os determinantes da saúde",
+              "resposta": "Aumentar o controle das pessoas sobre os determinantes",
               "explicacao": "Carta de Ottawa.",
               "revisado": false
             },
@@ -4085,8 +4085,8 @@
               "opcoes": [
                 "Saneamento básico",
                 "Mais antibióticos",
-                "Nada",
-                "Mais hospitais"
+                "Mais hospitais",
+                "Mais antibióticos e mais hospitais"
               ],
               "resposta": "Saneamento básico",
               "explicacao": "Atuar no determinante.",
@@ -4150,12 +4150,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tratamento do tabagismo oferecido no SUS?",
               "opcoes": [
-                "Abordagem cognitiva e remédios como adesivo e bupropiona",
-                "Nada",
+                "Abordagem cognitiva com adesivo e bupropiona",
                 "Só força de vontade",
-                "Cigarro eletrônico"
+                "Cigarro eletrônico",
+                "Trocar pelo cigarro eletrônico, sem outro acompanhamento"
               ],
-              "resposta": "Abordagem cognitiva e remédios como adesivo e bupropiona",
+              "resposta": "Abordagem cognitiva com adesivo e bupropiona",
               "explicacao": "Programa nacional.",
               "revisado": false
             },
@@ -4189,7 +4189,7 @@
                 "Políticas de ambiente alimentar e atividade física",
                 "Remédios para todos",
                 "Cirurgia",
-                "Nada"
+                "Remédios para emagrecer para toda a população adulta"
               ],
               "resposta": "Políticas de ambiente alimentar e atividade física",
               "explicacao": "Guia alimentar e rotulagem.",
@@ -4201,12 +4201,12 @@
               "caso": "Município quer reduzir o consumo de ultraprocessados nas escolas.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Regras para a alimentação escolar e educação alimentar",
-                "Nada",
+                "Regras para merenda e educação alimentar",
                 "Proibir merenda",
-                "Distribuir refrigerante"
+                "Refrigerante",
+                "Proibir a merenda e distribuir refrigerante"
               ],
-              "resposta": "Regras para a alimentação escolar e educação alimentar",
+              "resposta": "Regras para merenda e educação alimentar",
               "explicacao": "Programa Nacional de Alimentação Escolar.",
               "revisado": false
             },
@@ -4226,7 +4226,7 @@
                 "Fagerström",
                 "AUDIT",
                 "CAGE",
-                "Katz"
+                "Katz de atividades"
               ],
               "resposta": "Fagerström",
               "explicacao": "Orienta o tratamento.",
@@ -4268,12 +4268,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são as principais doenças crônicas não transmissíveis?",
               "opcoes": [
-                "Cardiovasculares, câncer, respiratórias crônicas e diabetes",
+                "Cardiovasculares, câncer, respiratórias e diabetes",
                 "Infecções",
                 "Acidentes",
-                "Nenhuma"
+                "Infecções respiratórias agudas e acidentes de trânsito"
               ],
-              "resposta": "Cardiovasculares, câncer, respiratórias crônicas e diabetes",
+              "resposta": "Cardiovasculares, câncer, respiratórias e diabetes",
               "explicacao": "Principais causas de morte.",
               "revisado": false
             },
@@ -4307,7 +4307,7 @@
                 "Doenças cardiovasculares",
                 "Infecções",
                 "Acidentes",
-                "Câncer de pele"
+                "Câncer de pele não melanoma"
               ],
               "resposta": "Doenças cardiovasculares",
               "explicacao": "Em especial infarto e AVC.",
@@ -4319,12 +4319,12 @@
               "caso": "Município com muita hipertensão sem controle.",
               "enunciado": "Qual é a estratégia?",
               "opcoes": [
-                "Rastreio, cadastro e acompanhamento na atenção primária",
+                "Rastreio, cadastro e acompanhamento na APS",
                 "Mais hospitais",
-                "Nada",
-                "Só campanhas"
+                "Só campanhas",
+                "Apenas campanhas na televisão e mais hospitais"
               ],
-              "resposta": "Rastreio, cadastro e acompanhamento na atenção primária",
+              "resposta": "Rastreio, cadastro e acompanhamento na APS",
               "explicacao": "Cuidado longitudinal.",
               "revisado": false
             },
@@ -4432,7 +4432,7 @@
                 "Avermelhada a arroxeada",
                 "Amarela",
                 "Esverdeada",
-                "Normal"
+                "Amarelo-esverdeada com bordas"
               ],
               "resposta": "Avermelhada a arroxeada",
               "explicacao": "Depois azul, verde e amarela.",
@@ -4514,7 +4514,7 @@
                 "Mancha verde abdominal",
                 "Rigidez",
                 "Livores",
-                "Esfriamento"
+                "Esfriamento do corpo"
               ],
               "resposta": "Mancha verde abdominal",
               "explicacao": "Começa na fossa ilíaca direita.",
@@ -4536,7 +4536,7 @@
                 "mandíbula",
                 "perna",
                 "mão",
-                "pé"
+                "planta do pé"
               ],
               "resposta": "mandíbula",
               "explicacao": "Lei de Nysten.",
@@ -4547,12 +4547,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que indica livor em posição incompatível com a do corpo?",
               "opcoes": [
-                "O corpo foi mudado de posição após a fixação",
+                "O corpo foi mudado após a fixação",
                 "Morte natural",
-                "Nada",
-                "Envenenamento"
+                "Envenenamento",
+                "Morte natural sem nenhuma manipulação"
               ],
-              "resposta": "O corpo foi mudado de posição após a fixação",
+              "resposta": "O corpo foi mudado após a fixação",
               "explicacao": "Sinal de manipulação.",
               "revisado": false
             },
@@ -4565,7 +4565,7 @@
                 "Entre 12 e 24 horas",
                 "Menos de 1 hora",
                 "Mais de 1 semana",
-                "2 horas"
+                "Cerca de duas horas"
               ],
               "resposta": "Entre 12 e 24 horas",
               "explicacao": "Combinação de sinais.",
@@ -4632,7 +4632,7 @@
                 "O médico que assistia o paciente",
                 "O delegado",
                 "O IML",
-                "A família"
+                "O Instituto Médico Legal sempre"
               ],
               "resposta": "O médico que assistia o paciente",
               "explicacao": "Também o médico substituto.",
@@ -4668,7 +4668,7 @@
                 "Serviço de Verificação de Óbito",
                 "IML",
                 "Hospital",
-                "Cartório"
+                "Cartório de registro civil da cidade"
               ],
               "resposta": "Serviço de Verificação de Óbito",
               "explicacao": "Esclarece a causa.",
@@ -4680,12 +4680,12 @@
               "caso": "Paciente morre em casa de causa natural, sem médico e em cidade sem SVO.",
               "enunciado": "Quem atesta?",
               "opcoes": [
-                "Médico do serviço público mais próximo ou qualquer médico da localidade",
+                "Médico público mais próximo ou da localidade",
                 "Delegado",
                 "Família",
-                "Ninguém"
+                "O delegado de polícia, junto com a família e o agente funerário"
               ],
-              "resposta": "Médico do serviço público mais próximo ou qualquer médico da localidade",
+              "resposta": "Médico público mais próximo ou da localidade",
               "explicacao": "Declarando causa mal definida se necessário.",
               "revisado": false
             },
@@ -4705,7 +4705,7 @@
                 "declaração",
                 "certidão",
                 "guia",
-                "ficha"
+                "ficha de atendimento"
               ],
               "resposta": "declaração",
               "explicacao": "Base do SIM.",
@@ -4756,8 +4756,8 @@
               "opcoes": [
                 "Água tratada e esgoto",
                 "Antibióticos",
-                "Vacinas só",
-                "Nada"
+                "Só vacinas",
+                "Antibióticos e vacinas para toda a população"
               ],
               "resposta": "Água tratada e esgoto",
               "explicacao": "Saneamento básico.",
@@ -4779,7 +4779,7 @@
                 "fluoretação",
                 "cloração",
                 "filtração",
-                "fervura"
+                "fervura doméstica"
               ],
               "resposta": "fluoretação",
               "explicacao": "Política de saúde bucal.",
@@ -4793,7 +4793,7 @@
                 "Leptospirose e diarreias",
                 "Câncer",
                 "Asma",
-                "Nada"
+                "Câncer de pele e asma alérgica"
               ],
               "resposta": "Leptospirose e diarreias",
               "explicacao": "Vigilância após desastres.",
@@ -4805,12 +4805,12 @@
               "caso": "Cidade após enchente com casos de febre e dor na panturrilha.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Alertar profissionais e população sobre leptospirose",
-                "Nada",
+                "Alertar sobre leptospirose",
                 "Vacinar contra gripe",
-                "Fechar escolas"
+                "Fechar escolas",
+                "Vacinar todos contra gripe e fechar escolas"
               ],
-              "resposta": "Alertar profissionais e população sobre leptospirose",
+              "resposta": "Alertar sobre leptospirose",
               "explicacao": "Diagnóstico e tratamento precoce.",
               "revisado": false
             },
@@ -4847,12 +4847,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é uma Emergência de Saúde Pública de Importância Nacional?",
               "opcoes": [
-                "Situação que exige medidas urgentes de prevenção e controle",
+                "Situação que exige medidas urgentes de controle",
                 "Qualquer caso de gripe",
-                "Nada",
-                "Reunião"
+                "Reunião",
+                "Qualquer caso isolado de gripe comum no município"
               ],
-              "resposta": "Situação que exige medidas urgentes de prevenção e controle",
+              "resposta": "Situação que exige medidas urgentes de controle",
               "explicacao": "Declarada pelo Ministério da Saúde.",
               "revisado": false
             },
@@ -4897,7 +4897,7 @@
                 "Vigilância em Saúde",
                 "Hospitais",
                 "Educação",
-                "Trânsito"
+                "Trânsito e Transporte"
               ],
               "resposta": "Vigilância em Saúde",
               "explicacao": "Funciona 24 horas.",
@@ -4924,9 +4924,9 @@
               "enunciado": "Qual é a estratégia?",
               "opcoes": [
                 "Triagem para salvar o maior número",
-                "Atender por ordem de chegada",
-                "Nada",
-                "Só os graves"
+                "Ordem de chegada",
+                "Só os graves",
+                "Atender por ordem de chegada, sem nenhuma triagem"
               ],
               "resposta": "Triagem para salvar o maior número",
               "explicacao": "Medicina de desastres.",
@@ -4948,7 +4948,7 @@
                 "vermelha",
                 "verde",
                 "amarela",
-                "preta"
+                "preta com faixa branca"
               ],
               "resposta": "vermelha",
               "explicacao": "Grave, mas salvável.",
@@ -5029,7 +5029,7 @@
                 "A partir do 16º dia",
                 "Do 1º dia",
                 "Após 60 dias",
-                "Nunca"
+                "Somente depois de seis meses"
               ],
               "resposta": "A partir do 16º dia",
               "explicacao": "Os 15 primeiros dias são da empresa.",
@@ -5066,7 +5066,7 @@
                 "CEREST",
                 "CAPS",
                 "CIEVS",
-                "SAMU"
+                "SAMU regional"
               ],
               "resposta": "CEREST",
               "explicacao": "Rede de saúde do trabalhador.",
@@ -5092,12 +5092,12 @@
               "caso": "Uma cidade de 100 mil habitantes tem 500 pessoas com diabetes e, no ano, surgem 50 casos novos.",
               "enunciado": "Qual é a incidência anual?",
               "opcoes": [
-                "50 por 100 mil habitantes, ou cerca de 0,05%",
+                "50 por 100 mil (cerca de 0,05%)",
                 "500 por 100 mil",
                 "5%",
-                "550 por 100 mil"
+                "550 por 100 mil, somando os casos antigos e novos"
               ],
-              "resposta": "50 por 100 mil habitantes, ou cerca de 0,05%",
+              "resposta": "50 por 100 mil (cerca de 0,05%)",
               "explicacao": "A rigor, o denominador é a população em risco, sem os 500 que já têm a doença.",
               "revisado": false
             },
@@ -5276,7 +5276,7 @@
                 "Cerca de 82%",
                 "90%",
                 "50%",
-                "20%"
+                "Cerca de 20%"
               ],
               "resposta": "Cerca de 82%",
               "explicacao": "VPP = 90 / (90 + 20) = 0,82.",
@@ -5296,12 +5296,12 @@
               "caso": "Dois testes são feitos em série, e o paciente só é considerado doente se ambos forem positivos.",
               "enunciado": "O que acontece?",
               "opcoes": [
-                "A especificidade aumenta, e a sensibilidade diminui",
-                "A sensibilidade aumenta",
-                "Ambas aumentam",
-                "Nada muda"
+                "Sobe a especificidade e cai a sensibilidade",
+                "Sobe a sensibilidade",
+                "Ambas sobem",
+                "A sensibilidade e a especificidade aumentam ao mesmo tempo"
               ],
-              "resposta": "A especificidade aumenta, e a sensibilidade diminui",
+              "resposta": "Sobe a especificidade e cai a sensibilidade",
               "explicacao": "Em paralelo, ocorre o contrário.",
               "revisado": false
             },
@@ -5325,12 +5325,12 @@
               "caso": "Um rastreamento de câncer mostra maior sobrevida nos casos detectados, mas sem reduzir a mortalidade.",
               "enunciado": "Qual viés pode explicar isso?",
               "opcoes": [
-                "Viés de tempo de antecipação (lead time)",
+                "Viés de antecipação (lead time)",
                 "Viés de memória",
-                "Viés de seleção de controles",
-                "Viés de aferição"
+                "Seleção de controles",
+                "Viés de seleção de controles hospitalares"
               ],
-              "resposta": "Viés de tempo de antecipação (lead time)",
+              "resposta": "Viés de antecipação (lead time)",
               "explicacao": "O diagnóstico mais cedo aumenta a sobrevida aparente sem mudar a data da morte.",
               "revisado": false
             }
@@ -5423,12 +5423,12 @@
               "caso": "O risco atribuível populacional de um fator é alto.",
               "enunciado": "O que significa?",
               "opcoes": [
-                "Eliminar o fator reduziria muitos casos na população",
-                "O fator não importa",
-                "O fator é raro",
-                "Não há associação"
+                "Eliminar o fator reduziria muitos casos",
+                "Não importa",
+                "É raro",
+                "O fator não tem importância para a população"
               ],
-              "resposta": "Eliminar o fator reduziria muitos casos na população",
+              "resposta": "Eliminar o fator reduziria muitos casos",
               "explicacao": "Ele depende da força da associação e da frequência da exposição.",
               "revisado": false
             },
@@ -5452,12 +5452,12 @@
               "caso": "Um estudo tem poder de 80%.",
               "enunciado": "O que isso significa?",
               "opcoes": [
-                "80% de chance de detectar uma diferença real, se ela existir",
-                "80% de chance de erro",
-                "80% dos pacientes melhoraram",
-                "O valor de p é 0,8"
+                "80% de chance de achar a diferença real",
+                "80% de erro",
+                "80% melhoraram",
+                "Oitenta por cento dos pacientes melhoraram com o tratamento"
               ],
-              "resposta": "80% de chance de detectar uma diferença real, se ela existir",
+              "resposta": "80% de chance de achar a diferença real",
               "explicacao": "O poder é 1 menos beta.",
               "revisado": false
             }
@@ -5535,12 +5535,12 @@
               "caso": "Um estudo usa registros de 1990 para acompanhar trabalhadores expostos e não expostos até hoje.",
               "enunciado": "Qual é o desenho?",
               "opcoes": [
-                "Coorte histórica (retrospectiva)",
+                "Coorte histórica",
                 "Caso-controle",
                 "Ensaio clínico",
-                "Transversal"
+                "Transversal de prevalência"
               ],
-              "resposta": "Coorte histórica (retrospectiva)",
+              "resposta": "Coorte histórica",
               "explicacao": "A direção é da exposição para a doença, mesmo usando dados do passado.",
               "revisado": false
             },
@@ -5650,7 +5650,7 @@
                 "Confusão pelo tabagismo",
                 "Viés de memória",
                 "Viés de publicação",
-                "Acaso puro"
+                "Acaso puro sem explicação"
               ],
               "resposta": "Confusão pelo tabagismo",
               "explicacao": "O fator de confusão se associa à exposição e ao desfecho.",
@@ -5662,12 +5662,12 @@
               "caso": "Um estudo quer controlar a confusão pela idade.",
               "enunciado": "Quais são as formas de controle?",
               "opcoes": [
-                "Randomização, pareamento, restrição, estratificação e análise multivariada",
-                "Aumentar o tamanho apenas",
-                "Nada pode ser feito",
-                "Mudar o desfecho"
+                "Randomizar, parear, restringir, estratificar e ajustar",
+                "Só aumentar a amostra",
+                "Mudar o desfecho",
+                "Apenas aumentar o tamanho da amostra e mudar o desfecho principal"
               ],
-              "resposta": "Randomização, pareamento, restrição, estratificação e análise multivariada",
+              "resposta": "Randomizar, parear, restringir, estratificar e ajustar",
               "explicacao": "Na fase de análise, usam-se estratificação e regressão.",
               "revisado": false
             },
@@ -5685,12 +5685,12 @@
               "caso": "Em um estudo, o efeito do remédio é diferente em homens e mulheres.",
               "enunciado": "Qual é o nome desse fenômeno?",
               "opcoes": [
-                "Modificação de efeito (interação)",
+                "Modificação de efeito",
                 "Confusão",
                 "Viés de seleção",
-                "Acaso"
+                "Acaso por amostra pequena demais"
               ],
-              "resposta": "Modificação de efeito (interação)",
+              "resposta": "Modificação de efeito",
               "explicacao": "Na modificação de efeito, os resultados devem ser apresentados separados.",
               "revisado": false
             },
@@ -5702,7 +5702,7 @@
                 "perda de seguimento",
                 "memória",
                 "publicação",
-                "aferição"
+                "aferição do desfecho"
               ],
               "resposta": "perda de seguimento",
               "explicacao": "É uma forma de viés de seleção.",
@@ -5714,12 +5714,12 @@
               "caso": "Uma doença parece mais grave no hospital do que na comunidade.",
               "enunciado": "Qual é o viés?",
               "opcoes": [
-                "Viés de Berkson (de admissão)",
+                "Viés de Berkson",
                 "Viés de memória",
                 "Viés de tempo",
-                "Confusão"
+                "Confusão pela gravidade da doença"
               ],
-              "resposta": "Viés de Berkson (de admissão)",
+              "resposta": "Viés de Berkson",
               "explicacao": "Pacientes hospitalizados não representam a população geral.",
               "revisado": false
             }
@@ -5774,12 +5774,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é um critério de Wilson e Jungner para um bom programa de rastreamento?",
               "opcoes": [
-                "A doença deve ser importante e ter fase sem sintomas detectável",
-                "A doença deve ser rara e sem tratamento",
-                "O teste deve ser caro",
-                "A doença deve ter cura espontânea"
+                "Doença importante com fase assintomática detectável",
+                "Rara e sem tratamento",
+                "Teste caro",
+                "Doença rara, sem tratamento, com cura espontânea e teste caro"
               ],
-              "resposta": "A doença deve ser importante e ter fase sem sintomas detectável",
+              "resposta": "Doença importante com fase assintomática detectável",
               "explicacao": "Também deve existir tratamento eficaz para a fase precoce.",
               "revisado": false
             },
@@ -5812,12 +5812,12 @@
               "caso": "Os tumores de crescimento lento são mais detectados em rastreamentos do que os agressivos.",
               "enunciado": "Qual é o viés?",
               "opcoes": [
-                "Viés de duração (length bias)",
+                "Viés de duração",
                 "Viés de memória",
                 "Viés de antecipação",
-                "Confusão"
+                "Confusão pela idade dos pacientes"
               ],
-              "resposta": "Viés de duração (length bias)",
+              "resposta": "Viés de duração",
               "explicacao": "Ele faz o rastreamento parecer melhor do que é.",
               "revisado": false
             },
@@ -5841,12 +5841,12 @@
               "caso": "Programa de rastreamento de câncer de mama no Brasil.",
               "enunciado": "Qual é a recomendação do Ministério da Saúde?",
               "opcoes": [
-                "Mamografia a cada 2 anos dos 50 aos 69 anos",
-                "Mamografia anual a partir dos 30",
-                "Ultrassom anual para todas",
-                "Nada"
+                "Mamografia bienal dos 50 aos 69 anos",
+                "Anual a partir dos 30",
+                "Ultrassom anual",
+                "Mamografia anual a partir dos 30 anos e ultrassom para todas"
               ],
-              "resposta": "Mamografia a cada 2 anos dos 50 aos 69 anos",
+              "resposta": "Mamografia bienal dos 50 aos 69 anos",
               "explicacao": "Outras sociedades recomendam começar aos 40 anos.",
               "revisado": false
             }
@@ -5870,12 +5870,12 @@
               "caso": "Um município registra 3 casos de sarampo em uma semana.",
               "enunciado": "Qual é a conduta de vigilância?",
               "opcoes": [
-                "Notificação imediata (em até 24 horas) e bloqueio vacinal",
+                "Notificar em 24 h e bloqueio vacinal",
                 "Notificação semanal",
-                "Nada",
-                "Esperar mais casos"
+                "Esperar mais casos",
+                "Notificação semanal e esperar mais casos para agir"
               ],
-              "resposta": "Notificação imediata (em até 24 horas) e bloqueio vacinal",
+              "resposta": "Notificar em 24 h e bloqueio vacinal",
               "explicacao": "O sarampo é de notificação imediata.",
               "revisado": false
             },
@@ -5950,7 +5950,7 @@
                 "Fonte comum pontual",
                 "Propagado",
                 "Contínuo",
-                "Sem fonte"
+                "Propagado de pessoa a pessoa"
               ],
               "resposta": "Fonte comum pontual",
               "explicacao": "No propagado, há vários picos por transmissão de pessoa para pessoa.",
@@ -5976,12 +5976,12 @@
               "caso": "Uma criança tem paralisia flácida aguda.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Notificação imediata e coleta de fezes para pesquisa de poliovírus",
-                "Nada",
+                "Notificar já e colher fezes para poliovírus",
                 "Notificação semanal",
-                "Esperar"
+                "Aguardar",
+                "Notificação semanal e aguardar a evolução da paralisia"
               ],
-              "resposta": "Notificação imediata e coleta de fezes para pesquisa de poliovírus",
+              "resposta": "Notificar já e colher fezes para poliovírus",
               "explicacao": "Toda paralisia flácida aguda em menores de 15 anos deve ser notificada.",
               "revisado": false
             }
@@ -6036,12 +6036,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual documento deve ser emitido em caso de acidente de trabalho?",
               "opcoes": [
-                "Comunicação de Acidente de Trabalho (CAT)",
+                "CAT (Comunicação de Acidente)",
                 "Atestado simples",
                 "Receita",
-                "Nenhum"
+                "Atestado simples de três dias de repouso"
               ],
-              "resposta": "Comunicação de Acidente de Trabalho (CAT)",
+              "resposta": "CAT (Comunicação de Acidente)",
               "explicacao": "A CAT pode ser emitida pelo médico, pela empresa ou pelo sindicato.",
               "revisado": false
             },
@@ -6051,12 +6051,12 @@
               "caso": "Enfermeira se fere com agulha de paciente com HIV.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lavar o local e iniciar a profilaxia pós-exposição em até 72 horas, de preferência nas primeiras 2 horas",
-                "Nada",
+                "Lavar e PEP em até 72 h, de preferência em 2 h",
                 "Esperar exames",
-                "Usar álcool e esperar"
+                "Álcool e esperar",
+                "Passar álcool no local e esperar os exames do paciente-fonte por uma semana"
               ],
-              "resposta": "Lavar o local e iniciar a profilaxia pós-exposição em até 72 horas, de preferência nas primeiras 2 horas",
+              "resposta": "Lavar e PEP em até 72 h, de preferência em 2 h",
               "explicacao": "A profilaxia dura 28 dias.",
               "revisado": false
             },
@@ -6077,7 +6077,7 @@
                 "Organofosforado",
                 "Glifosato",
                 "Paraquat",
-                "Piretroide"
+                "Piretroide de uso doméstico"
               ],
               "resposta": "Organofosforado",
               "explicacao": "O tratamento é feito com atropina e oximas.",
@@ -6091,7 +6091,7 @@
                 "CEREST",
                 "CAPS",
                 "NASF",
-                "CTA"
+                "CTA de testagem"
               ],
               "resposta": "CEREST",
               "explicacao": "Ele faz parte da RENAST.",
@@ -6124,12 +6124,12 @@
               "caso": "Criança de 2 meses vai tomar as vacinas do calendário.",
               "enunciado": "Quais vacinas recebe aos 2 meses?",
               "opcoes": [
-                "Pentavalente, poliomielite inativada, pneumocócica e rotavírus",
+                "Pentavalente, VIP, pneumocócica e rotavírus",
                 "BCG e hepatite B",
                 "Febre amarela",
-                "Tríplice viral"
+                "Tríplice viral e febre amarela no mesmo dia"
               ],
-              "resposta": "Pentavalente, poliomielite inativada, pneumocócica e rotavírus",
+              "resposta": "Pentavalente, VIP, pneumocócica e rotavírus",
               "explicacao": "A BCG e a hepatite B são dadas ao nascer.",
               "revisado": false
             },
@@ -6163,12 +6163,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual vacina é contraindicada em pessoas com imunossupressão grave?",
               "opcoes": [
-                "Vacinas vivas atenuadas, como tríplice viral e febre amarela",
-                "Vacina de influenza inativada",
-                "Vacina de hepatite B",
-                "Toxóide tetânico"
+                "Vivas atenuadas, como tríplice viral",
+                "Influenza inativada",
+                "Hepatite B",
+                "Toxoide tetânico e vacina de hepatite B"
               ],
-              "resposta": "Vacinas vivas atenuadas, como tríplice viral e febre amarela",
+              "resposta": "Vivas atenuadas, como tríplice viral",
               "explicacao": "Vacinas inativadas são seguras, embora possam funcionar menos.",
               "revisado": false
             },
@@ -6179,9 +6179,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Vacina e imunoglobulina antitetânica",
-                "Apenas vacina",
-                "Nada",
-                "Apenas antibiótico"
+                "Só vacina",
+                "Só antibiótico",
+                "Apenas antibiótico oral, sem vacina"
               ],
               "resposta": "Vacina e imunoglobulina antitetânica",
               "explicacao": "Ferimentos sujos com vacinação incompleta exigem ambos.",
@@ -6201,12 +6201,12 @@
               "caso": "Criança teve reação febril leve após vacina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Orientar, dar antitérmico se necessário e manter o calendário",
-                "Suspender todas as vacinas",
+                "Orientar, antitérmico se preciso e seguir o calendário",
+                "Suspender todas",
                 "Notificar como grave",
-                "Nada"
+                "Suspender todas as vacinas e notificar como evento grave"
               ],
-              "resposta": "Orientar, dar antitérmico se necessário e manter o calendário",
+              "resposta": "Orientar, antitérmico se preciso e seguir o calendário",
               "explicacao": "Eventos graves devem ser notificados como eventos adversos.",
               "revisado": false
             },
@@ -6230,12 +6230,12 @@
               "caso": "Cão saudável, que pode ser observado, deu uma mordida superficial na perna de uma pessoa.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Observar o animal por 10 dias e só vacinar se ele adoecer ou morrer",
-                "Vacina e soro imediatos",
-                "Nada",
-                "Sacrificar o cão"
+                "Observar o cão 10 dias; vacinar se adoecer",
+                "Vacina e soro já",
+                "Sacrificar o cão",
+                "Sacrificar o cão imediatamente e dar vacina e soro"
               ],
-              "resposta": "Observar o animal por 10 dias e só vacinar se ele adoecer ou morrer",
+              "resposta": "Observar o cão 10 dias; vacinar se adoecer",
               "explicacao": "Se o animal ficar saudável, não há risco de raiva.",
               "revisado": false
             }
@@ -6316,7 +6316,7 @@
                 "10, ou 50%",
                 "5",
                 "15",
-                "20"
+                "Todos os 20 membros"
               ],
               "resposta": "10, ou 50%",
               "explicacao": "Os outros 50% se dividem entre trabalhadores (25%) e gestores e prestadores (25%).",
@@ -6336,12 +6336,12 @@
               "caso": "Uma unidade de saúde encaminha paciente para especialista e recebe o retorno da avaliação.",
               "enunciado": "Qual princípio organizativo é esse?",
               "opcoes": [
-                "Hierarquização com referência e contrarreferência",
+                "Referência e contrarreferência",
                 "Universalidade",
                 "Equidade",
-                "Participação"
+                "Participação da comunidade nas decisões locais"
               ],
-              "resposta": "Hierarquização com referência e contrarreferência",
+              "resposta": "Referência e contrarreferência",
               "explicacao": "A hierarquização organiza os níveis de atenção.",
               "revisado": false
             },
@@ -6365,12 +6365,12 @@
               "caso": "O município quer contratar um hospital privado para atender o SUS.",
               "enunciado": "Qual é a regra?",
               "opcoes": [
-                "A participação privada é complementar, com preferência para entidades filantrópicas",
+                "Privado é complementar, preferindo filantrópicos",
                 "Proibido",
                 "Sem regras",
-                "Somente com fins lucrativos"
+                "Somente empresas com fins lucrativos podem ser contratadas"
               ],
-              "resposta": "A participação privada é complementar, com preferência para entidades filantrópicas",
+              "resposta": "Privado é complementar, preferindo filantrópicos",
               "explicacao": "Isso está na Constituição e na Lei 8.080.",
               "revisado": false
             }
@@ -6428,7 +6428,7 @@
                 "2.000 a 3.500 pessoas",
                 "10.000 pessoas",
                 "500 pessoas",
-                "50.000 pessoas"
+                "Cerca de 50.000 pessoas"
               ],
               "resposta": "2.000 a 3.500 pessoas",
               "explicacao": "A PNAB de 2017 define esses números.",
@@ -6443,7 +6443,7 @@
                 "Orientação comunitária",
                 "Longitudinalidade",
                 "Primeiro contato",
-                "Coordenação"
+                "Coordenação do cuidado"
               ],
               "resposta": "Orientação comunitária",
               "explicacao": "Ela olha para a comunidade e não só para o indivíduo.",
@@ -6466,7 +6466,7 @@
                 "Centro de Atenção Psicossocial (CAPS)",
                 "Hospital psiquiátrico",
                 "Pronto-socorro",
-                "UBS apenas"
+                "Hospital psiquiátrico fechado por tempo indeterminado"
               ],
               "resposta": "Centro de Atenção Psicossocial (CAPS)",
               "explicacao": "O CAPS faz parte da Rede de Atenção Psicossocial.",
@@ -6513,12 +6513,12 @@
               "caso": "Paciente adulto e capaz recusa transfusão por motivo religioso, em situação sem risco imediato de morte.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Respeitar a recusa, registrar e buscar alternativas",
+                "Respeitar, registrar e buscar alternativas",
                 "Transfundir à força",
                 "Chamar a polícia",
-                "Dar alta"
+                "Transfundir à força, chamar a polícia e avisar o juiz"
               ],
-              "resposta": "Respeitar a recusa, registrar e buscar alternativas",
+              "resposta": "Respeitar, registrar e buscar alternativas",
               "explicacao": "A autonomia do paciente capaz deve ser respeitada.",
               "revisado": false
             },
@@ -6552,12 +6552,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quando o médico pode quebrar o sigilo?",
               "opcoes": [
-                "Por dever legal, justa causa ou autorização do paciente",
-                "Sempre que a família pedir",
+                "Dever legal, justa causa ou autorização",
+                "Quando a família pedir",
                 "Nunca",
-                "Se o empregador pedir"
+                "Sempre que a família, o empregador ou a polícia pedirem"
               ],
-              "resposta": "Por dever legal, justa causa ou autorização do paciente",
+              "resposta": "Dever legal, justa causa ou autorização",
               "explicacao": "Notificação de doenças é dever legal.",
               "revisado": false
             },
@@ -6567,12 +6567,12 @@
               "caso": "Adolescente de 15 anos pede anticoncepcional e não quer que os pais saibam.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Manter o sigilo se não houver risco, e orientar",
+                "Manter sigilo se não houver risco, e orientar",
                 "Contar aos pais",
                 "Negar atendimento",
-                "Chamar o Conselho Tutelar"
+                "Contar aos pais e chamar o Conselho Tutelar"
               ],
-              "resposta": "Manter o sigilo se não houver risco, e orientar",
+              "resposta": "Manter sigilo se não houver risco, e orientar",
               "explicacao": "O sigilo pode ser quebrado se houver risco à vida ou abuso.",
               "revisado": false
             },
@@ -6607,7 +6607,7 @@
                 "decisão compartilhada",
                 "ordem médica",
                 "prescrição",
-                "triagem"
+                "triagem de risco do paciente"
               ],
               "resposta": "decisão compartilhada",
               "explicacao": "Ela é um dos pilares da medicina centrada na pessoa.",
@@ -6619,12 +6619,12 @@
               "caso": "Paciente com câncer terminal pede para não ser reanimado.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Registrar a diretiva antecipada de vontade e respeitá-la",
+                "Registrar a diretiva antecipada e respeitar",
                 "Ignorar",
                 "Reanimar sempre",
-                "Pedir autorização judicial"
+                "Reanimar sempre e pedir autorização judicial"
               ],
-              "resposta": "Registrar a diretiva antecipada de vontade e respeitá-la",
+              "resposta": "Registrar a diretiva antecipada e respeitar",
               "explicacao": "O Conselho Federal de Medicina reconhece as diretivas antecipadas.",
               "revisado": false
             }
@@ -6648,12 +6648,12 @@
               "caso": "Paciente tem tosse há 3 semanas, perda de peso e suor noturno.",
               "enunciado": "Qual é o exame inicial?",
               "opcoes": [
-                "Teste rápido molecular para tuberculose no escarro",
-                "Radiografia apenas",
+                "Teste rápido molecular no escarro",
+                "Só radiografia",
                 "Tomografia",
-                "Nenhum"
+                "Apenas radiografia de tórax e tomografia"
               ],
-              "resposta": "Teste rápido molecular para tuberculose no escarro",
+              "resposta": "Teste rápido molecular no escarro",
               "explicacao": "O teste rápido também detecta resistência à rifampicina.",
               "revisado": false
             },
@@ -6687,12 +6687,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a indicação de tratamento da infecção latente da tuberculose?",
               "opcoes": [
-                "Contato com teste positivo, após excluir doença ativa",
-                "Todos os contatos sem exame",
-                "Apenas quem tem tosse",
-                "Ninguém"
+                "Contato com teste positivo, sem doença ativa",
+                "Todos sem exame",
+                "Só quem tosse",
+                "Todos os contatos, sem nenhum exame, por nove meses"
               ],
-              "resposta": "Contato com teste positivo, após excluir doença ativa",
+              "resposta": "Contato com teste positivo, sem doença ativa",
               "explicacao": "Pessoas com HIV têm indicação mesmo com teste negativo em alguns casos.",
               "revisado": false
             },
@@ -6702,12 +6702,12 @@
               "caso": "Paciente em tratamento de tuberculose tem icterícia e enzimas do fígado 5 vezes acima do normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Suspender o esquema e reintroduzir os remédios aos poucos",
+                "Suspender e reintroduzir os remédios aos poucos",
                 "Manter tudo",
                 "Aumentar a dose",
-                "Trocar por antibiótico comum"
+                "Trocar todo o esquema por antibiótico comum"
               ],
-              "resposta": "Suspender o esquema e reintroduzir os remédios aos poucos",
+              "resposta": "Suspender e reintroduzir os remédios aos poucos",
               "explicacao": "A pirazinamida e a isoniazida são as mais tóxicas ao fígado.",
               "revisado": false
             },
@@ -6725,12 +6725,12 @@
               "caso": "Paciente com HIV e tuberculose vai iniciar o tratamento.",
               "enunciado": "Quando iniciar o antirretroviral?",
               "opcoes": [
-                "Em até 2 semanas após o início do tratamento da tuberculose (ou até 8 semanas em alguns casos)",
-                "Após terminar a tuberculose",
-                "Ao mesmo tempo, no primeiro dia",
-                "Nunca"
+                "Em até 2 semanas do início do tratamento da TB",
+                "Após terminar a TB",
+                "No 1º dia junto",
+                "Somente depois de terminar os seis meses de tratamento da tuberculose"
               ],
-              "resposta": "Em até 2 semanas após o início do tratamento da tuberculose (ou até 8 semanas em alguns casos)",
+              "resposta": "Em até 2 semanas do início do tratamento da TB",
               "explicacao": "Na meningite tuberculosa, espera-se mais pelo risco de reação inflamatória.",
               "revisado": false
             },
@@ -6742,7 +6742,7 @@
                 "reconstituição",
                 "supressão",
                 "ativação",
-                "rejeição"
+                "rejeição do enxerto"
               ],
               "resposta": "reconstituição",
               "explicacao": "Ela pode ser tratada com corticoide.",
@@ -6754,12 +6754,12 @@
               "caso": "Contato de tuberculose, criança de 3 anos, sem sintomas e com radiografia normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratar infecção latente após avaliação, conforme a prova tuberculínica",
-                "Nada",
-                "Tratar como doença ativa",
-                "BCG de novo"
+                "Tratar infecção latente após avaliação",
+                "Doença ativa",
+                "BCG de novo",
+                "Tratar como doença ativa com quatro remédios"
               ],
-              "resposta": "Tratar infecção latente após avaliação, conforme a prova tuberculínica",
+              "resposta": "Tratar infecção latente após avaliação",
               "explicacao": "Crianças pequenas têm maior risco de formas graves.",
               "revisado": false
             }
@@ -6778,7 +6778,7 @@
                 "Multibacilar; poliquimioterapia por 12 meses",
                 "Paucibacilar; 6 meses",
                 "Não é hanseníase",
-                "Apenas corticoide"
+                "Apenas corticoide, porque não é hanseníase"
               ],
               "resposta": "Multibacilar; poliquimioterapia por 12 meses",
               "explicacao": "Mais de 5 lesões indica multibacilar.",
@@ -6814,12 +6814,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o sinal de alarme na dengue?",
               "opcoes": [
-                "Dor abdominal intensa, vômitos persistentes e sangramento de mucosas",
+                "Dor abdominal forte, vômitos e sangue em mucosas",
                 "Febre de 39 °C",
                 "Dor no corpo",
-                "Manchas vermelhas"
+                "Febre de 39 graus com dor no corpo e manchas vermelhas"
               ],
-              "resposta": "Dor abdominal intensa, vômitos persistentes e sangramento de mucosas",
+              "resposta": "Dor abdominal forte, vômitos e sangue em mucosas",
               "explicacao": "O alarme indica risco de choque.",
               "revisado": false
             },
@@ -6829,12 +6829,12 @@
               "caso": "Paciente com dengue tem hematócrito subindo, plaquetas caindo e dor abdominal.",
               "enunciado": "Qual é o grupo e a conduta?",
               "opcoes": [
-                "Grupo C; internar e hidratação venosa",
+                "Grupo C; internar e soro venoso",
                 "Grupo A; casa",
-                "Grupo B; observação",
-                "Grupo D; UTI direta"
+                "Grupo B; observar",
+                "Grupo D; UTI direta sem nenhum soro antes"
               ],
-              "resposta": "Grupo C; internar e hidratação venosa",
+              "resposta": "Grupo C; internar e soro venoso",
               "explicacao": "O grupo D é o de choque.",
               "revisado": false
             },
@@ -6852,12 +6852,12 @@
               "caso": "Gestante tem manchas com coceira, conjuntivite e febre baixa.",
               "enunciado": "Qual arbovirose é mais preocupante?",
               "opcoes": [
-                "Zika, pelo risco de microcefalia",
+                "Zika (risco de microcefalia)",
                 "Dengue",
                 "Chikungunya",
-                "Febre amarela"
+                "Febre amarela silvestre ou urbana"
               ],
-              "resposta": "Zika, pelo risco de microcefalia",
+              "resposta": "Zika (risco de microcefalia)",
               "explicacao": "A gestante deve ser acompanhada com ultrassonografias.",
               "revisado": false
             },
@@ -6905,7 +6905,7 @@
                 "Leptospirose (síndrome de Weil)",
                 "Hepatite A",
                 "Dengue",
-                "Malária"
+                "Malária por falciparum grave e cerebral"
               ],
               "resposta": "Leptospirose (síndrome de Weil)",
               "explicacao": "A forma grave tem icterícia, insuficiência renal e sangramento pulmonar.",
@@ -6944,7 +6944,7 @@
                 "Anfotericina B lipossomal",
                 "Antimoniato",
                 "Miltefosina",
-                "Nada"
+                "Antimoniato de meglumina injetável"
               ],
               "resposta": "Anfotericina B lipossomal",
               "explicacao": "O antimoniato e a miltefosina são contraindicados na gestação.",
@@ -6956,12 +6956,12 @@
               "caso": "Paciente picado por cobra tem dor e inchaço local, sangramento na gengiva e sangue que não coagula.",
               "enunciado": "Qual é o gênero e o tratamento?",
               "opcoes": [
-                "Bothrops (jararaca); soro antibotrópico",
-                "Crotalus; soro anticrotálico",
-                "Micrurus; soro antielapídico",
-                "Não peçonhenta; nada"
+                "Bothrops; soro antibotrópico",
+                "Crotalus; anticrotálico",
+                "Micrurus; antielapídico",
+                "Cobra não peçonhenta; apenas curativo e alta"
               ],
-              "resposta": "Bothrops (jararaca); soro antibotrópico",
+              "resposta": "Bothrops; soro antibotrópico",
               "explicacao": "O tempo de coagulação ajuda a avaliar a gravidade.",
               "revisado": false
             },
@@ -6979,12 +6979,12 @@
               "caso": "Paciente mordido por morcego no rosto.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lavar o ferimento, soro e vacina antirrábica",
-                "Apenas vacina",
-                "Nada",
-                "Observar o morcego"
+                "Lavar, soro e vacina antirrábica",
+                "Só vacina",
+                "Observar o morcego",
+                "Observar o morcego por dez dias antes de qualquer vacina"
               ],
-              "resposta": "Lavar o ferimento, soro e vacina antirrábica",
+              "resposta": "Lavar, soro e vacina antirrábica",
               "explicacao": "Toda agressão por morcego é considerada grave.",
               "revisado": false
             },
@@ -6996,7 +6996,7 @@
                 "falciparum",
                 "vivax",
                 "malariae",
-                "ovale"
+                "ovale recorrente"
               ],
               "resposta": "falciparum",
               "explicacao": "O P. vivax pode recair por formas latentes no fígado.",
@@ -7011,7 +7011,7 @@
                 "Leishmaniose visceral (calazar)",
                 "Leucemia",
                 "Malária",
-                "Esquistossomose"
+                "Esquistossomose hepatoesplênica"
               ],
               "resposta": "Leishmaniose visceral (calazar)",
               "explicacao": "O diagnóstico pode ser feito com teste rápido ou medula óssea.",
@@ -7079,7 +7079,7 @@
                 "Cerca de 95%",
                 "68%",
                 "99,7%",
-                "50%"
+                "Metade dos valores"
               ],
               "resposta": "Cerca de 95%",
               "explicacao": "Um desvio-padrão para cada lado inclui cerca de 68%.",
@@ -7117,7 +7117,7 @@
                 "Curva de Kaplan-Meier",
                 "Curva ROC",
                 "Gráfico de barras",
-                "Regressão linear"
+                "Regressão linear simples"
               ],
               "resposta": "Curva de Kaplan-Meier",
               "explicacao": "A comparação entre curvas usa o teste log-rank.",
@@ -7143,12 +7143,12 @@
               "caso": "Num ensaio, a razão de riscos (hazard ratio) é de 0,7 com intervalo de 0,6 a 0,8.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Redução de cerca de 30% no risco do evento ao longo do tempo, com significância",
+                "Reduz cerca de 30% o risco, com significância",
                 "Aumento de 70%",
                 "Sem efeito",
-                "Resultado inválido"
+                "Aumento de 70% no risco do evento, sem significância"
               ],
-              "resposta": "Redução de cerca de 30% no risco do evento ao longo do tempo, com significância",
+              "resposta": "Reduz cerca de 30% o risco, com significância",
               "explicacao": "O intervalo não inclui 1.",
               "revisado": false
             }
@@ -7203,12 +7203,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a característica da transição epidemiológica no Brasil?",
               "opcoes": [
-                "Tripla carga de doenças, com crônicas, infecciosas e causas externas",
-                "Apenas doenças crônicas",
-                "Apenas doenças infecciosas",
-                "Nenhuma mudança"
+                "Tripla carga: crônicas, infecciosas e externas",
+                "Só crônicas",
+                "Só infecciosas",
+                "Apenas doenças infecciosas, como no início do século passado"
               ],
-              "resposta": "Tripla carga de doenças, com crônicas, infecciosas e causas externas",
+              "resposta": "Tripla carga: crônicas, infecciosas e externas",
               "explicacao": "Por isso é chamada de transição prolongada ou polarizada.",
               "revisado": false
             },
@@ -7218,12 +7218,12 @@
               "caso": "A mortalidade infantil caiu, mas a mortalidade neonatal precoce passou a ser a maior parte.",
               "enunciado": "O que isso indica?",
               "opcoes": [
-                "As mortes dependem mais da atenção ao pré-natal e ao parto",
-                "As mortes são por diarreia",
-                "Não há mudança",
-                "O saneamento piorou"
+                "Dependem mais do pré-natal e do parto",
+                "Diarreia",
+                "Sem mudança",
+                "As mortes agora são principalmente por diarreia e desnutrição"
               ],
-              "resposta": "As mortes dependem mais da atenção ao pré-natal e ao parto",
+              "resposta": "Dependem mais do pré-natal e do parto",
               "explicacao": "A mortalidade pós-neonatal depende mais do ambiente.",
               "revisado": false
             },
@@ -7294,7 +7294,7 @@
                 "Saneamento básico e água tratada",
                 "Antibiótico para todos",
                 "Vacina de hepatite B",
-                "Nada"
+                "Antibiótico para todas as crianças do bairro"
               ],
               "resposta": "Saneamento básico e água tratada",
               "explicacao": "O saneamento é uma das intervenções mais custo-efetivas.",
@@ -7330,12 +7330,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o principal objetivo do Regulamento Sanitário Internacional?",
               "opcoes": [
-                "Prevenir e responder à propagação internacional de doenças",
-                "Controlar preços de remédios",
+                "Prevenir e responder à propagação internacional",
+                "Controlar preços",
                 "Definir salários",
-                "Proibir viagens"
+                "Proibir viagens entre países em qualquer surto"
               ],
-              "resposta": "Prevenir e responder à propagação internacional de doenças",
+              "resposta": "Prevenir e responder à propagação internacional",
               "explicacao": "Ele define as emergências de saúde pública de importância internacional.",
               "revisado": false
             },
@@ -7348,7 +7348,7 @@
                 "Mercúrio",
                 "Chumbo",
                 "Ferro",
-                "Zinco"
+                "Zinco de baterias"
               ],
               "resposta": "Mercúrio",
               "explicacao": "O mercúrio se acumula nos peixes.",
@@ -7444,7 +7444,7 @@
                 "Ocorrência de um evento, como óbito",
                 "Inclusão de pacientes",
                 "Perda de seguimento",
-                "Nada"
+                "Inclusão de novos pacientes no estudo"
               ],
               "resposta": "Ocorrência de um evento, como óbito",
               "explicacao": "Censuras aparecem como marcas.",
@@ -7455,12 +7455,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é censura em análise de sobrevida?",
               "opcoes": [
-                "Paciente sem o evento até o fim do acompanhamento ou perdido",
+                "Sem o evento até o fim ou perdido",
                 "Paciente que morreu",
                 "Erro de digitação",
-                "Nada"
+                "Paciente que morreu durante o acompanhamento"
               ],
-              "resposta": "Paciente sem o evento até o fim do acompanhamento ou perdido",
+              "resposta": "Sem o evento até o fim ou perdido",
               "explicacao": "Ainda conta até sair.",
               "revisado": false
             },
@@ -7495,12 +7495,12 @@
               "caso": "Hazard ratio de 0,7 para morte com o tratamento novo.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Redução de 30% no risco instantâneo de morte",
+                "Redução de 30% no risco instantâneo",
                 "Aumento de 70%",
-                "Nada",
-                "Redução de 70%"
+                "Redução de 70%",
+                "Redução de 70% na mortalidade total"
               ],
-              "resposta": "Redução de 30% no risco instantâneo de morte",
+              "resposta": "Redução de 30% no risco instantâneo",
               "explicacao": "Comparado ao controle.",
               "revisado": false
             },
@@ -7513,7 +7513,7 @@
                 "Viés de antecipação (lead time)",
                 "Viés de seleção",
                 "Viés de memória",
-                "Nenhum"
+                "Viés de memória dos pacientes"
               ],
               "resposta": "Viés de antecipação (lead time)",
               "explicacao": "A sobrevida parece maior.",
@@ -7583,12 +7583,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a vantagem do ensaio de não inferioridade?",
               "opcoes": [
-                "Mostrar que um tratamento mais barato ou seguro não é pior que o padrão",
+                "Mostrar que opção mais barata ou segura não é pior",
                 "Provar superioridade",
-                "Nada",
-                "Evitar randomizar"
+                "Evitar randomizar",
+                "Provar que o tratamento novo é muito superior ao padrão"
               ],
-              "resposta": "Mostrar que um tratamento mais barato ou seguro não é pior que o padrão",
+              "resposta": "Mostrar que opção mais barata ou segura não é pior",
               "explicacao": "Margem definida antes.",
               "revisado": false
             },
@@ -7624,9 +7624,9 @@
               "enunciado": "Qual é o problema?",
               "opcoes": [
                 "Viés de atrito comprometendo a validade",
-                "Nenhum",
+                "Problema nenhum",
                 "Melhor resultado",
-                "Aumenta o poder"
+                "Aumenta o poder do estudo e melhora o resultado"
               ],
               "resposta": "Viés de atrito comprometendo a validade",
               "explicacao": "Perdas grandes distorcem.",
@@ -7638,12 +7638,12 @@
               "caso": "Ensaio mostra queda do colesterol, mas sem redução de infarto.",
               "enunciado": "O que isso mostra?",
               "opcoes": [
-                "Desfecho substituto nem sempre se traduz em benefício clínico",
+                "Desfecho substituto nem sempre vira benefício",
                 "Benefício certo",
-                "Nada",
-                "Erro de cálculo"
+                "Erro de cálculo",
+                "Benefício certo, porque colesterol baixo sempre reduz infarto"
               ],
-              "resposta": "Desfecho substituto nem sempre se traduz em benefício clínico",
+              "resposta": "Desfecho substituto nem sempre vira benefício",
               "explicacao": "Preferir desfechos duros.",
               "revisado": false
             },
@@ -7662,9 +7662,9 @@
               "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Superestimar o efeito",
-                "Nenhum",
                 "Subestimar",
-                "Nada"
+                "Risco nenhum",
+                "Subestimar o efeito verdadeiro do tratamento"
               ],
               "resposta": "Superestimar o efeito",
               "explicacao": "Interrupção precoce exagera resultados.",
@@ -7682,12 +7682,12 @@
               "caso": "Gráfico de floresta mostra diamante final que não cruza a linha de efeito nulo.",
               "enunciado": "Como interpretar?",
               "opcoes": [
-                "Efeito combinado estatisticamente significativo",
+                "Efeito combinado significativo",
                 "Sem efeito",
                 "Erro",
-                "Heterogeneidade"
+                "Heterogeneidade alta entre os estudos incluídos"
               ],
-              "resposta": "Efeito combinado estatisticamente significativo",
+              "resposta": "Efeito combinado significativo",
               "explicacao": "Diamante é o resultado combinado.",
               "revisado": false
             },
@@ -7699,8 +7699,8 @@
               "opcoes": [
                 "Viés de publicação",
                 "Homogeneidade",
-                "Nada",
-                "Boa qualidade"
+                "Boa qualidade",
+                "Boa qualidade dos estudos incluídos"
               ],
               "resposta": "Viés de publicação",
               "explicacao": "Estudos pequenos negativos faltam.",
@@ -7714,7 +7714,7 @@
                 "Heterogeneidade entre os estudos",
                 "Tamanho da amostra",
                 "Viés de publicação",
-                "Poder"
+                "Poder estatístico da metanálise"
               ],
               "resposta": "Heterogeneidade entre os estudos",
               "explicacao": "Acima de 50% é moderada a alta.",
@@ -7753,8 +7753,8 @@
               "opcoes": [
                 "Efeitos aleatórios",
                 "Efeitos fixos",
-                "Nenhum",
-                "Só o maior estudo"
+                "Só o maior estudo",
+                "Usar apenas o maior estudo e ignorar os outros"
               ],
               "resposta": "Efeitos aleatórios",
               "explicacao": "Considera variação entre estudos.",
@@ -7767,9 +7767,9 @@
               "enunciado": "Qual é a certeza pelo GRADE?",
               "opcoes": [
                 "Baixa ou muito baixa",
-                "Alta",
+                "Alta certeza",
                 "Moderada sempre",
-                "Nenhuma"
+                "Alta, porque há muitos estudos"
               ],
               "resposta": "Baixa ou muito baixa",
               "explicacao": "Observacionais começam baixos.",
@@ -7789,12 +7789,12 @@
               "caso": "Médico quer a melhor evidência sobre eficácia de um remédio.",
               "enunciado": "O que buscar primeiro?",
               "opcoes": [
-                "Revisão sistemática de ensaios clínicos",
+                "Revisão sistemática de ensaios",
                 "Opinião de especialista",
                 "Relato de caso",
-                "Nada"
+                "Série de casos de um único hospital"
               ],
-              "resposta": "Revisão sistemática de ensaios clínicos",
+              "resposta": "Revisão sistemática de ensaios",
               "explicacao": "Topo da pirâmide.",
               "revisado": false
             }
@@ -7835,7 +7835,7 @@
               "opcoes": [
                 "0,125",
                 "4,5",
-                "1",
+                "1,125",
                 "0,9"
               ],
               "resposta": "0,125",
@@ -7902,12 +7902,12 @@
               "caso": "Médico usa o nomograma de Fagan.",
               "enunciado": "Para que serve?",
               "opcoes": [
-                "Converter probabilidade pré-teste em pós-teste com a RV",
+                "Converter probabilidade pré em pós-teste",
                 "Calcular NNT",
                 "Calcular sobrevida",
-                "Nada"
+                "Calcular o número necessário para causar dano"
               ],
-              "resposta": "Converter probabilidade pré-teste em pós-teste com a RV",
+              "resposta": "Converter probabilidade pré em pós-teste",
               "explicacao": "Teorema de Bayes.",
               "revisado": false
             },
@@ -7928,7 +7928,7 @@
                 "Considerar a doença praticamente excluída",
                 "Repetir sempre",
                 "Tratar",
-                "Nada"
+                "Tratar como doença confirmada e repetir o exame"
               ],
               "resposta": "Considerar a doença praticamente excluída",
               "explicacao": "Ótimo para excluir.",
@@ -7949,7 +7949,7 @@
                 "O de 0,95",
                 "O de 0,65",
                 "São iguais",
-                "Nenhum"
+                "Nenhum dos dois serve"
               ],
               "resposta": "O de 0,95",
               "explicacao": "Mais perto de 1, melhor.",
@@ -7961,12 +7961,12 @@
               "caso": "Baixar o ponto de corte de um teste.",
               "enunciado": "O que acontece em geral?",
               "opcoes": [
-                "Aumenta a sensibilidade e reduz a especificidade",
+                "Sobe a sensibilidade e cai a especificidade",
                 "Aumenta as duas",
                 "Reduz as duas",
-                "Nada"
+                "Sobe a especificidade e cai a sensibilidade do teste"
               ],
-              "resposta": "Aumenta a sensibilidade e reduz a especificidade",
+              "resposta": "Sobe a sensibilidade e cai a especificidade",
               "explicacao": "Troca entre os dois.",
               "revisado": false
             },
@@ -7977,8 +7977,8 @@
               "opcoes": [
                 "Aumentar a sensibilidade",
                 "Aumentar a especificidade",
-                "Nada",
-                "Reduzir custo"
+                "Reduzir custo",
+                "Aumentar a especificidade e reduzir os custos"
               ],
               "resposta": "Aumentar a sensibilidade",
               "explicacao": "Bom para não perder casos.",
@@ -8018,7 +8018,7 @@
                 "Testes em série",
                 "Em paralelo",
                 "Teste único",
-                "Nada"
+                "Testes em paralelo simultâneos"
               ],
               "resposta": "Testes em série",
               "explicacao": "Reduz falsos positivos.",
@@ -8032,8 +8032,8 @@
               "opcoes": [
                 "Alta sensibilidade",
                 "Alta especificidade",
-                "Qualquer",
-                "Nenhum"
+                "Qualquer teste",
+                "Alto valor preditivo positivo"
               ],
               "resposta": "Alta sensibilidade",
               "explicacao": "Evita falsos negativos.",
@@ -8056,7 +8056,7 @@
                 "Teste sem capacidade de discriminar",
                 "Teste perfeito",
                 "Ótimo",
-                "Nada"
+                "Teste ótimo, com acerto em quase todos os casos"
               ],
               "resposta": "Teste sem capacidade de discriminar",
               "explicacao": "Igual ao acaso.",
@@ -8077,7 +8077,7 @@
                 "Baixo, com muitos falsos positivos",
                 "Alto",
                 "90%",
-                "100%"
+                "Alto, igual à sensibilidade de 90% do teste"
               ],
               "resposta": "Baixo, com muitos falsos positivos",
               "explicacao": "Prevalência baixa reduz o VPP.",
@@ -8160,8 +8160,8 @@
               "opcoes": [
                 "O valor preditivo positivo aumenta",
                 "A sensibilidade muda",
-                "Nada",
-                "A especificidade cai"
+                "A especificidade cai",
+                "A sensibilidade e a especificidade mudam juntas"
               ],
               "resposta": "O valor preditivo positivo aumenta",
               "explicacao": "Valores preditivos dependem da prevalência.",
@@ -8228,7 +8228,7 @@
                 "Febre amarela",
                 "Rotavírus",
                 "BCG se já tem cicatriz",
-                "Nada"
+                "Rotavírus oral"
               ],
               "resposta": "Febre amarela",
               "explicacao": "Aos 9 meses.",
@@ -8242,7 +8242,7 @@
                 "30 dias",
                 "7 dias",
                 "1 ano",
-                "Nenhum"
+                "Sem intervalo mínimo"
               ],
               "resposta": "30 dias",
               "explicacao": "Ou aplicar no mesmo dia.",
@@ -8281,8 +8281,8 @@
               "opcoes": [
                 "Aplicar a vacina",
                 "Não pode mais",
-                "Esperar 18 anos",
-                "Nada"
+                "Aguardar os 18 anos",
+                "Só depois da primeira relação"
               ],
               "resposta": "Aplicar a vacina",
               "explicacao": "Faixa de 9 a 14 anos.",
@@ -8295,9 +8295,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Aplicar dTpa",
-                "Esperar o parto",
-                "Nada",
-                "Só dT"
+                "Aguardar o parto",
+                "Só dT",
+                "Aplicar só depois do parto"
               ],
               "resposta": "Aplicar dTpa",
               "explicacao": "Protege o bebê da coqueluche.",
@@ -8319,8 +8319,8 @@
               "opcoes": [
                 "3 doses de dT",
                 "Uma dose",
-                "Nada",
-                "5 doses"
+                "5 doses",
+                "Uma dose única de reforço"
               ],
               "resposta": "3 doses de dT",
               "explicacao": "Com reforço a cada 10 anos.",
@@ -8338,12 +8338,12 @@
               "caso": "Criança com anafilaxia após dose anterior de uma vacina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Contraindicar novas doses dessa vacina e notificar",
+                "Contraindicar novas doses e notificar",
                 "Repetir",
-                "Nada",
-                "Dobrar a dose"
+                "Dobrar a dose",
+                "Repetir a dose com antialérgico antes e observar"
               ],
-              "resposta": "Contraindicar novas doses dessa vacina e notificar",
+              "resposta": "Contraindicar novas doses e notificar",
               "explicacao": "Evento adverso grave.",
               "revisado": false
             },
@@ -8353,12 +8353,12 @@
               "caso": "Criança em quimioterapia precisa de tríplice viral.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Adiar até a recuperação imunológica",
+                "Adiar até recuperar a imunidade",
                 "Aplicar já",
-                "Nada nunca",
-                "Dose dupla"
+                "Dose dupla",
+                "Aplicar já, em dose dupla, durante a quimioterapia"
               ],
-              "resposta": "Adiar até a recuperação imunológica",
+              "resposta": "Adiar até recuperar a imunidade",
               "explicacao": "Vacina viva.",
               "revisado": false
             },
@@ -8367,12 +8367,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o evento adverso típico da BCG?",
               "opcoes": [
-                "Úlcera local maior que 1 cm ou abscesso",
+                "Úlcera maior que 1 cm ou abscesso",
                 "Febre alta",
                 "Convulsão",
-                "Nada"
+                "Febre alta com convulsão no mesmo dia da vacina"
               ],
-              "resposta": "Úlcera local maior que 1 cm ou abscesso",
+              "resposta": "Úlcera maior que 1 cm ou abscesso",
               "explicacao": "Também linfadenite.",
               "revisado": false
             },
@@ -8407,12 +8407,12 @@
               "caso": "Criança teve convulsão febril 2 dias após a pentavalente.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Notificar e avaliar; geralmente continuar o esquema",
-                "Contraindicar todas as vacinas",
-                "Nada",
-                "Repetir já"
+                "Notificar, avaliar e em geral continuar",
+                "Contraindicar todas",
+                "Repetir já",
+                "Contraindicar todas as vacinas do calendário infantil"
               ],
-              "resposta": "Notificar e avaliar; geralmente continuar o esquema",
+              "resposta": "Notificar, avaliar e em geral continuar",
               "explicacao": "Evento adverso.",
               "revisado": false
             },
@@ -8424,8 +8424,8 @@
               "opcoes": [
                 "Pode vacinar com observação",
                 "Contraindicada",
-                "Nada",
-                "Só com dessensibilização"
+                "Só com dessensibilização",
+                "Contraindicada para sempre, em qualquer idade"
               ],
               "resposta": "Pode vacinar com observação",
               "explicacao": "Pouca proteína de ovo.",
@@ -8445,12 +8445,12 @@
               "caso": "Recém-nascido de mãe com HIV, assintomático.",
               "enunciado": "Pode receber BCG?",
               "opcoes": [
-                "Sim, se assintomático e sem imunossupressão",
+                "Sim, se sem imunossupressão",
                 "Não",
                 "Só aos 5 anos",
-                "Nunca"
+                "Não, só depois dos cinco anos de idade"
               ],
-              "resposta": "Sim, se assintomático e sem imunossupressão",
+              "resposta": "Sim, se sem imunossupressão",
               "explicacao": "Avaliar caso a caso.",
               "revisado": false
             }
@@ -8466,12 +8466,12 @@
               "caso": "Pessoa mordida por cão desconhecido na mão, ferimento profundo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lavar, vacina antirrábica e soro ou imunoglobulina",
+                "Lavar, vacina e soro antirrábico",
                 "Só lavar",
-                "Nada",
-                "Antibiótico só"
+                "Só antibiótico",
+                "Lavar e observar o cão por dez dias em casa"
               ],
-              "resposta": "Lavar, vacina antirrábica e soro ou imunoglobulina",
+              "resposta": "Lavar, vacina e soro antirrábico",
               "explicacao": "Exposição grave.",
               "revisado": false
             },
@@ -8481,12 +8481,12 @@
               "caso": "Pessoa mordida superficialmente no braço por cão que pode ser observado.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lavar e observar o animal por 10 dias",
+                "Lavar e observar o cão 10 dias",
                 "Soro sempre",
-                "Nada",
-                "Vacina e soro sempre"
+                "Só lavar",
+                "Vacina e soro antirrábico sempre, sem observar"
               ],
-              "resposta": "Lavar e observar o animal por 10 dias",
+              "resposta": "Lavar e observar o cão 10 dias",
               "explicacao": "Se o animal ficar bem, encerra.",
               "revisado": false
             },
@@ -8495,12 +8495,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a profilaxia para profissional exposto a sangue de paciente com HIV?",
               "opcoes": [
-                "Antirretroviral por 28 dias, iniciado em até 72 horas",
-                "Nada",
+                "Antirretroviral 28 dias, até 72 h",
                 "Vacina",
-                "Antibiótico"
+                "Antibiótico",
+                "Aguardar o resultado do paciente-fonte e repetir em 6 meses"
               ],
-              "resposta": "Antirretroviral por 28 dias, iniciado em até 72 horas",
+              "resposta": "Antirretroviral 28 dias, até 72 h",
               "explicacao": "Quanto antes melhor.",
               "revisado": false
             },
@@ -8535,12 +8535,12 @@
               "caso": "Profissional vacinado contra hepatite B com anti-HBs positivo se fura com agulha de paciente HBsAg positivo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Nada para hepatite B",
+                "Dispensa profilaxia",
                 "Imunoglobulina",
                 "Vacina",
-                "Antiviral"
+                "Imunoglobulina e nova dose da vacina"
               ],
-              "resposta": "Nada para hepatite B",
+              "resposta": "Dispensa profilaxia",
               "explicacao": "Já protegido.",
               "revisado": false
             },
@@ -8551,9 +8551,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Azitromicina para contatos",
-                "Nada",
-                "Vacina só",
-                "Penicilina"
+                "Só vacina",
+                "Penicilina",
+                "Apenas observar os sintomas dos contatos"
               ],
               "resposta": "Azitromicina para contatos",
               "explicacao": "Quimioprofilaxia.",
@@ -8573,12 +8573,12 @@
               "caso": "Morcego encontrado no quarto onde dormia criança.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Considerar exposição grave e iniciar profilaxia antirrábica",
-                "Nada",
+                "Iniciar profilaxia antirrábica",
                 "Só observar",
-                "Lavar"
+                "Lavar",
+                "Apenas observar a criança e procurar marcas de mordida"
               ],
-              "resposta": "Considerar exposição grave e iniciar profilaxia antirrábica",
+              "resposta": "Iniciar profilaxia antirrábica",
               "explicacao": "Mordida de morcego pode passar despercebida.",
               "revisado": false
             }
@@ -8602,12 +8602,12 @@
               "caso": "Gestante com HBsAg positivo.",
               "enunciado": "Qual é a conduta para o bebê?",
               "opcoes": [
-                "Vacina e imunoglobulina nas primeiras 12 a 24 horas",
+                "Vacina e imunoglobulina em 12 a 24 h",
                 "Só vacina aos 2 meses",
-                "Nada",
-                "Cesárea"
+                "Cesárea",
+                "Só vacina aos dois meses e evitar a amamentação"
               ],
-              "resposta": "Vacina e imunoglobulina nas primeiras 12 a 24 horas",
+              "resposta": "Vacina e imunoglobulina em 12 a 24 h",
               "explicacao": "Previne transmissão.",
               "revisado": false
             },
@@ -8617,12 +8617,12 @@
               "caso": "Gestante com HBsAg positivo e carga viral muito alta.",
               "enunciado": "O que acrescentar?",
               "opcoes": [
-                "Tenofovir no terceiro trimestre",
-                "Nada",
+                "Tenofovir no 3º trimestre",
                 "Interferon",
-                "Cesárea"
+                "Cesárea",
+                "Cesárea eletiva e interferon no pós-parto"
               ],
-              "resposta": "Tenofovir no terceiro trimestre",
+              "resposta": "Tenofovir no 3º trimestre",
               "explicacao": "Reduz transmissão.",
               "revisado": false
             },
@@ -8631,12 +8631,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a forma de transmissão principal da hepatite C no Brasil?",
               "opcoes": [
-                "Sangue, como compartilhamento de agulhas e procedimentos sem esterilização",
+                "Sangue, como agulhas compartilhadas",
                 "Água",
                 "Saliva",
-                "Relação sexual sempre"
+                "Relação sexual em todos os casos, como principal via"
               ],
-              "resposta": "Sangue, como compartilhamento de agulhas e procedimentos sem esterilização",
+              "resposta": "Sangue, como agulhas compartilhadas",
               "explicacao": "Rastrear grupos de risco.",
               "revisado": false
             },
@@ -8674,7 +8674,7 @@
                 "Praticamente zero",
                 "Alto",
                 "Moderado",
-                "Nada se sabe"
+                "Alto, igual ao de quem não trata"
               ],
               "resposta": "Praticamente zero",
               "explicacao": "I=I.",
@@ -8687,9 +8687,9 @@
               "enunciado": "O que oferecer?",
               "opcoes": [
                 "PrEP e testagem regular",
-                "Nada",
                 "Só preservativo",
-                "Antibiótico"
+                "Antibiótico",
+                "Apenas preservativo e orientação verbal"
               ],
               "resposta": "PrEP e testagem regular",
               "explicacao": "População prioritária.",
@@ -8710,9 +8710,9 @@
               "enunciado": "Qual é o próximo passo?",
               "opcoes": [
                 "Segundo teste rápido de outro fabricante",
-                "Iniciar tratamento sem confirmar",
-                "Nada",
-                "Western blot obrigatório"
+                "Tratar sem confirmar",
+                "Western blot",
+                "Iniciar tratamento sem confirmar e notificar o parceiro"
               ],
               "resposta": "Segundo teste rápido de outro fabricante",
               "explicacao": "Fluxograma do Ministério.",
@@ -8730,12 +8730,12 @@
               "caso": "Município com aumento de sífilis congênita.",
               "enunciado": "Qual é a principal ação?",
               "opcoes": [
-                "Testar e tratar gestantes e parceiros no pré-natal",
+                "Testar e tratar gestantes e parceiros",
                 "Só tratar o bebê",
-                "Nada",
-                "Vacinar"
+                "Vacinar",
+                "Tratar apenas os bebês após o nascimento, na maternidade"
               ],
-              "resposta": "Testar e tratar gestantes e parceiros no pré-natal",
+              "resposta": "Testar e tratar gestantes e parceiros",
               "explicacao": "Prevenção na gestação.",
               "revisado": false
             },
@@ -8746,9 +8746,9 @@
               "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Reinfecção",
-                "Nenhum",
+                "Risco nenhum",
                 "Cura garantida",
-                "Nada"
+                "Cura garantida da gestante"
               ],
               "resposta": "Reinfecção",
               "explicacao": "Tratar o parceiro.",
@@ -8759,12 +8759,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que define caso de sífilis congênita para vigilância?",
               "opcoes": [
-                "Criança de mãe com sífilis não tratada ou tratada inadequadamente, entre outros critérios",
+                "Filho de mãe não tratada ou mal tratada",
                 "Só criança com sintomas",
-                "Nada",
-                "Só mãe"
+                "Só a mãe",
+                "Somente a criança com sintomas graves ao nascer, com exame positivo"
               ],
-              "resposta": "Criança de mãe com sífilis não tratada ou tratada inadequadamente, entre outros critérios",
+              "resposta": "Filho de mãe não tratada ou mal tratada",
               "explicacao": "Definição ampla.",
               "revisado": false
             },
@@ -8801,8 +8801,8 @@
               "opcoes": [
                 "Cicatriz sorológica",
                 "Sífilis ativa",
-                "Erro",
-                "Nada"
+                "Erro do exame",
+                "Sífilis ativa que precisa de novo tratamento"
               ],
               "resposta": "Cicatriz sorológica",
               "explicacao": "Títulos baixos estáveis.",
@@ -8814,12 +8814,12 @@
               "caso": "Homem com úlcera genital indolor e VDRL negativo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratar como sífilis primária e repetir exames",
-                "Nada",
-                "Esperar",
-                "Aciclovir"
+                "Tratar como sífilis primária e repetir",
+                "Aguardar",
+                "Aciclovir",
+                "Aguardar o VDRL positivar antes de tratar o paciente"
               ],
-              "resposta": "Tratar como sífilis primária e repetir exames",
+              "resposta": "Tratar como sífilis primária e repetir",
               "explicacao": "VDRL pode ser negativo no início.",
               "revisado": false
             },
@@ -8839,8 +8839,8 @@
               "opcoes": [
                 "Com 1, 3, 6, 12 e 18 meses",
                 "Só uma vez",
-                "Nada",
-                "Aos 5 anos"
+                "Aos 5 anos",
+                "Só uma vez, ao completar cinco anos de idade"
               ],
               "resposta": "Com 1, 3, 6, 12 e 18 meses",
               "explicacao": "Até negativar.",
@@ -8858,12 +8858,12 @@
               "caso": "Criança com febre, manchas e conjuntivite em cidade com casos de sarampo.",
               "enunciado": "Qual é a ação de vigilância?",
               "opcoes": [
-                "Notificar em 24 horas e vacinar os contatos",
-                "Esperar exames",
-                "Nada",
-                "Fechar a cidade"
+                "Notificar em 24 h e vacinar contatos",
+                "Aguardar exames",
+                "Fechar a cidade",
+                "Aguardar os exames e fechar as escolas da cidade"
               ],
-              "resposta": "Notificar em 24 horas e vacinar os contatos",
+              "resposta": "Notificar em 24 h e vacinar contatos",
               "explicacao": "Bloqueio vacinal.",
               "revisado": false
             },
@@ -8873,12 +8873,12 @@
               "caso": "Caso de doença meningocócica em creche.",
               "enunciado": "Qual é a conduta com os contatos?",
               "opcoes": [
-                "Quimioprofilaxia com rifampicina para contatos próximos",
-                "Nada",
-                "Vacina só",
-                "Antibiótico para toda a cidade"
+                "Rifampicina para contatos próximos",
+                "Só vacina",
+                "Antibiótico para todos",
+                "Antibiótico para toda a cidade e fechamento da creche"
               ],
-              "resposta": "Quimioprofilaxia com rifampicina para contatos próximos",
+              "resposta": "Rifampicina para contatos próximos",
               "explicacao": "Em até 48 horas.",
               "revisado": false
             },
@@ -8889,8 +8889,8 @@
               "opcoes": [
                 "Rifampicina",
                 "Penicilina",
-                "Nada",
-                "Azitromicina"
+                "Azitromicina",
+                "Amoxicilina oral"
               ],
               "resposta": "Rifampicina",
               "explicacao": "Em situações específicas.",
@@ -8927,12 +8927,12 @@
               "caso": "Surto de caxumba em universidade.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Atualizar tríplice viral e isolar casos",
+                "Atualizar tríplice viral e isolar",
                 "Antibiótico",
-                "Nada",
-                "Fechar o país"
+                "Fechar o país",
+                "Antibiótico para todos os alunos e fechar a universidade"
               ],
-              "resposta": "Atualizar tríplice viral e isolar casos",
+              "resposta": "Atualizar tríplice viral e isolar",
               "explicacao": "Vigilância.",
               "revisado": false
             },
@@ -8942,12 +8942,12 @@
               "caso": "Criança com paralisia flácida aguda.",
               "enunciado": "Qual é a ação de vigilância?",
               "opcoes": [
-                "Notificar e coletar fezes para investigar pólio",
-                "Nada",
-                "Esperar",
-                "Só fisioterapia"
+                "Notificar e colher fezes para pólio",
+                "Aguardar",
+                "Só fisioterapia",
+                "Só fisioterapia e aguardar a evolução da paralisia"
               ],
-              "resposta": "Notificar e coletar fezes para investigar pólio",
+              "resposta": "Notificar e colher fezes para pólio",
               "explicacao": "Vigilância da pólio.",
               "revisado": false
             },
@@ -8965,12 +8965,12 @@
               "caso": "Caso confirmado de rubéola em gestante.",
               "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Síndrome da rubéola congênita",
-                "Nenhum",
+                "Rubéola congênita",
+                "Risco nenhum",
                 "Diabetes",
-                "Nada"
+                "Diabetes gestacional e pré-eclâmpsia"
               ],
-              "resposta": "Síndrome da rubéola congênita",
+              "resposta": "Rubéola congênita",
               "explicacao": "Acompanhar o bebê.",
               "revisado": false
             }
@@ -8994,12 +8994,12 @@
               "caso": "Município quer cobrar consulta no SUS.",
               "enunciado": "Pode?",
               "opcoes": [
-                "Não, o SUS é gratuito no ponto de atenção",
+                "Não, o SUS é gratuito",
                 "Sim",
-                "Só de quem tem dinheiro",
-                "Sim, metade"
+                "Sim, metade",
+                "Só de quem tem dinheiro ou plano de saúde"
               ],
-              "resposta": "Não, o SUS é gratuito no ponto de atenção",
+              "resposta": "Não, o SUS é gratuito",
               "explicacao": "Universalidade e gratuidade.",
               "revisado": false
             },
@@ -9009,12 +9009,12 @@
               "caso": "Hospital filantrópico conveniado atende pelo SUS.",
               "enunciado": "Qual é a participação privada no SUS?",
               "opcoes": [
-                "Complementar, com preferência às filantrópicas",
+                "Complementar, preferindo filantrópicas",
                 "Proibida",
                 "Principal",
-                "Nada"
+                "Principal, com prioridade para empresas com fins lucrativos"
               ],
-              "resposta": "Complementar, com preferência às filantrópicas",
+              "resposta": "Complementar, preferindo filantrópicas",
               "explicacao": "Constituição.",
               "revisado": false
             },
@@ -9023,12 +9023,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que regulamentou a organização do SUS em regiões de saúde?",
               "opcoes": [
-                "Decreto 7.508 de 2011",
+                "Decreto 7.508/2011",
                 "Lei 8.142",
                 "Lei 141",
-                "NOB 96"
+                "Norma Operacional Básica de 1996"
               ],
-              "resposta": "Decreto 7.508 de 2011",
+              "resposta": "Decreto 7.508/2011",
               "explicacao": "Também o COAP.",
               "revisado": false
             },
@@ -9063,12 +9063,12 @@
               "caso": "Paciente com câncer espera há 90 dias para iniciar tratamento.",
               "enunciado": "O que diz a lei?",
               "opcoes": [
-                "Tem direito a iniciar em até 60 dias do diagnóstico",
+                "Iniciar em até 60 dias do diagnóstico",
                 "Não há prazo",
                 "1 ano",
-                "Nada"
+                "Até um ano depois do diagnóstico, conforme a fila do hospital"
               ],
-              "resposta": "Tem direito a iniciar em até 60 dias do diagnóstico",
+              "resposta": "Iniciar em até 60 dias do diagnóstico",
               "explicacao": "Lei 12.732.",
               "revisado": false
             },
@@ -9081,7 +9081,7 @@
                 "Descentralização",
                 "Universalidade",
                 "Equidade",
-                "Integralidade"
+                "Integralidade do cuidado"
               ],
               "resposta": "Descentralização",
               "explicacao": "Comando único em cada esfera.",
@@ -9104,7 +9104,7 @@
                 "Sim, o SUS é universal",
                 "Não",
                 "Só emergência paga",
-                "Nada"
+                "Não, apenas brasileiros e naturalizados"
               ],
               "resposta": "Sim, o SUS é universal",
               "explicacao": "Direito à saúde.",
@@ -9151,12 +9151,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que não conta como ação de saúde para o mínimo constitucional?",
               "opcoes": [
-                "Merenda escolar e saneamento sem decisão do conselho",
-                "Compra de remédios do SUS",
-                "Pagamento de profissionais do SUS",
-                "Vigilância epidemiológica"
+                "Merenda escolar",
+                "Remédios do SUS",
+                "Salário de profissionais",
+                "Vigilância epidemiológica municipal"
               ],
-              "resposta": "Merenda escolar e saneamento sem decisão do conselho",
+              "resposta": "Merenda escolar",
               "explicacao": "LC 141.",
               "revisado": false
             },
@@ -9191,12 +9191,12 @@
               "caso": "Conselho municipal não aprova o Relatório Anual de Gestão.",
               "enunciado": "O que pode ocorrer?",
               "opcoes": [
-                "Questionamento das contas e possíveis sanções",
-                "Nada",
-                "Prefeito fica sem salário",
-                "Fechar o SUS"
+                "Questionamento das contas e sanções",
+                "Prefeito sem salário",
+                "Fechar o SUS",
+                "Fechamento das unidades de saúde e corte do salário do prefeito"
               ],
-              "resposta": "Questionamento das contas e possíveis sanções",
+              "resposta": "Questionamento das contas e sanções",
               "explicacao": "Controle social e órgãos de controle.",
               "revisado": false
             },
@@ -9209,7 +9209,7 @@
                 "Fundo a fundo",
                 "Convênio",
                 "Doação",
-                "Emenda só"
+                "Emenda parlamentar"
               ],
               "resposta": "Fundo a fundo",
               "explicacao": "Regular e automática.",
@@ -9250,12 +9250,12 @@
               "caso": "Município com 50 mil habitantes quer saber quantas equipes de Saúde da Família para 100% de cobertura.",
               "enunciado": "Qual é o cálculo aproximado?",
               "opcoes": [
-                "Cerca de 15 a 20 equipes, considerando até 3.500 pessoas por equipe",
+                "Cerca de 15 a 20 equipes",
                 "1 equipe",
                 "100 equipes",
-                "500 equipes"
+                "500 equipes, uma para cada 100 pessoas"
               ],
-              "resposta": "Cerca de 15 a 20 equipes, considerando até 3.500 pessoas por equipe",
+              "resposta": "Cerca de 15 a 20 equipes",
               "explicacao": "Depende da vulnerabilidade.",
               "revisado": false
             },
@@ -9265,12 +9265,12 @@
               "caso": "Gestor quer avaliar a resolutividade da atenção primária.",
               "enunciado": "Qual indicador usar?",
               "opcoes": [
-                "Internações por condições sensíveis à atenção primária",
-                "Número de tomografias",
-                "Nada",
-                "Partos cesáreos"
+                "Internações sensíveis à atenção primária",
+                "Tomografias",
+                "Partos cesáreos",
+                "Número de tomografias e de partos cesáreos por ano"
               ],
-              "resposta": "Internações por condições sensíveis à atenção primária",
+              "resposta": "Internações sensíveis à atenção primária",
               "explicacao": "Quanto menor, melhor.",
               "revisado": false
             },
@@ -9279,12 +9279,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Ao avaliar um programa de saúde, como se diferencia eficácia de efetividade?",
               "opcoes": [
-                "Eficácia em condições ideais; efetividade no mundo real",
+                "Eficácia é ideal; efetividade é real",
                 "São iguais",
                 "Eficácia é custo",
-                "Nada"
+                "Eficácia é o custo e efetividade é o tempo de tratamento"
               ],
-              "resposta": "Eficácia em condições ideais; efetividade no mundo real",
+              "resposta": "Eficácia é ideal; efetividade é real",
               "explicacao": "Eficiência considera custos.",
               "revisado": false
             },
@@ -9337,7 +9337,7 @@
                 "Custo-minimização",
                 "Custo-utilidade",
                 "Custo-benefício",
-                "Nenhuma"
+                "Custo-efetividade incremental"
               ],
               "resposta": "Custo-minimização",
               "explicacao": "Escolhe o mais barato.",
@@ -9415,12 +9415,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o sinal de ferida de entrada de projétil a curta distância?",
               "opcoes": [
-                "Zona de tatuagem e esfumaçamento",
+                "Tatuagem e esfumaçamento",
                 "Bordas evertidas",
                 "Sem orla",
-                "Maior que a saída sempre"
+                "Sempre maior que o orifício de saída"
               ],
-              "resposta": "Zona de tatuagem e esfumaçamento",
+              "resposta": "Tatuagem e esfumaçamento",
               "explicacao": "Grãos de pólvora.",
               "revisado": false
             },
@@ -9458,7 +9458,7 @@
                 "Perfurocortante",
                 "Contundente",
                 "Perfurante",
-                "Arma de fogo"
+                "Arma de fogo de baixo calibre"
               ],
               "resposta": "Perfurocortante",
               "explicacao": "Faca.",
@@ -9470,12 +9470,12 @@
               "caso": "Equimose amarelada em vítima de agressão.",
               "enunciado": "Qual é a idade aproximada da lesão?",
               "opcoes": [
-                "Vários dias, cerca de 7 a 10 dias",
+                "Cerca de 7 a 10 dias",
                 "Horas",
                 "1 dia",
-                "Meses"
+                "Poucas horas, no mesmo dia da agressão"
               ],
-              "resposta": "Vários dias, cerca de 7 a 10 dias",
+              "resposta": "Cerca de 7 a 10 dias",
               "explicacao": "Espectro equimótico de Legrand du Saulle.",
               "revisado": false
             },
@@ -9495,8 +9495,8 @@
               "opcoes": [
                 "Lesão intencional",
                 "Acidente",
-                "Normal",
-                "Doença de pele"
+                "Doença de pele",
+                "Acidente doméstico comum"
               ],
               "resposta": "Lesão intencional",
               "explicacao": "Forma do objeto.",
@@ -9543,12 +9543,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a diferença do estrangulamento?",
               "opcoes": [
-                "Sulco horizontal e contínuo por laço movido por força externa",
+                "Sulco horizontal e contínuo",
                 "Sulco oblíquo",
                 "Sem sulco",
-                "Marca de unhas"
+                "Sulco oblíquo e interrompido no pescoço"
               ],
-              "resposta": "Sulco horizontal e contínuo por laço movido por força externa",
+              "resposta": "Sulco horizontal e contínuo",
               "explicacao": "Esganadura é com as mãos.",
               "revisado": false
             },
@@ -9586,7 +9586,7 @@
                 "Mais de 48 a 72 horas",
                 "Menos de 6 horas",
                 "12 horas",
-                "1 hora"
+                "Cerca de uma hora após a morte"
               ],
               "resposta": "Mais de 48 a 72 horas",
               "explicacao": "Período gasoso da putrefação.",
@@ -9598,12 +9598,12 @@
               "caso": "Corpo com livores vermelho-cereja.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Intoxicação por monóxido de carbono",
+                "Monóxido de carbono",
                 "Afogamento",
                 "Morte natural",
-                "Hemorragia"
+                "Hemorragia interna maciça"
               ],
-              "resposta": "Intoxicação por monóxido de carbono",
+              "resposta": "Monóxido de carbono",
               "explicacao": "Carboxi-hemoglobina.",
               "revisado": false
             },
@@ -9621,12 +9621,12 @@
               "caso": "Recém-nascido encontrado morto; docimásia hidrostática positiva.",
               "enunciado": "O que indica?",
               "opcoes": [
-                "Respirou após o nascimento",
+                "Respirou após nascer",
                 "Natimorto",
-                "Nada",
-                "Afogamento"
+                "Afogamento",
+                "Nasceu morto e foi colocado na água"
               ],
-              "resposta": "Respirou após o nascimento",
+              "resposta": "Respirou após nascer",
               "explicacao": "Pulmão flutua.",
               "revisado": false
             }
@@ -9642,12 +9642,12 @@
               "caso": "Vítima de violência sexual chega 24 horas após.",
               "enunciado": "O que coletar?",
               "opcoes": [
-                "Material para perícia com consentimento e acolhimento",
-                "Nada",
+                "Material para perícia, com consentimento",
                 "Só exames de sangue",
-                "Esperar a polícia"
+                "Aguardar a polícia",
+                "Aguardar a polícia chegar antes de qualquer atendimento"
               ],
-              "resposta": "Material para perícia com consentimento e acolhimento",
+              "resposta": "Material para perícia, com consentimento",
               "explicacao": "Sem exigir boletim.",
               "revisado": false
             },
@@ -9659,7 +9659,7 @@
                 "Menor de 14 anos",
                 "Menor de 18",
                 "Menor de 12",
-                "Menor de 16"
+                "Menor de 16 anos completos"
               ],
               "resposta": "Menor de 14 anos",
               "explicacao": "Código Penal.",
@@ -9696,12 +9696,12 @@
               "caso": "Médico atende vítima de violência sexual que não quer registrar ocorrência.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Atender, fazer profilaxias e notificar sem obrigar a denúncia",
+                "Atender, fazer profilaxias e notificar",
                 "Recusar",
-                "Chamar a polícia à força",
-                "Nada"
+                "Chamar a polícia",
+                "Chamar a polícia à força e só atender depois do boletim"
               ],
-              "resposta": "Atender, fazer profilaxias e notificar sem obrigar a denúncia",
+              "resposta": "Atender, fazer profilaxias e notificar",
               "explicacao": "Respeitar a vontade da vítima maior de idade.",
               "revisado": false
             },
@@ -9711,12 +9711,12 @@
               "caso": "Médico emite atestado de doença para paciente saudável a pedido.",
               "enunciado": "O que ocorreu?",
               "opcoes": [
-                "Atestado falso, infração ética e crime",
+                "Atestado falso, infração e crime",
                 "Normal",
-                "Nada",
-                "Gentileza"
+                "Gentileza",
+                "Gentileza permitida pelo Código de Ética Médica"
               ],
-              "resposta": "Atestado falso, infração ética e crime",
+              "resposta": "Atestado falso, infração e crime",
               "explicacao": "Proibido.",
               "revisado": false
             },
@@ -9752,7 +9752,7 @@
                 "IML, por morte suspeita",
                 "Cartório",
                 "Hospital",
-                "SVO sempre"
+                "Serviço de Verificação de Óbito"
               ],
               "resposta": "IML, por morte suspeita",
               "explicacao": "Excluir violência.",
@@ -9796,7 +9796,7 @@
                 "Intoxicação por chumbo",
                 "Benzeno",
                 "Mercúrio",
-                "Sílica"
+                "Silicose por exposição a sílica"
               ],
               "resposta": "Intoxicação por chumbo",
               "explicacao": "Saturnismo.",
@@ -9807,12 +9807,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o achado audiométrico típico da perda induzida por ruído?",
               "opcoes": [
-                "Entalhe em 4 kHz nos dois ouvidos",
+                "Entalhe em 4 kHz bilateral",
                 "Perda em graves",
                 "Unilateral súbita",
-                "Normal"
+                "Perda unilateral súbita em frequências graves"
               ],
-              "resposta": "Entalhe em 4 kHz nos dois ouvidos",
+              "resposta": "Entalhe em 4 kHz bilateral",
               "explicacao": "Bilateral e simétrica.",
               "revisado": false
             },
@@ -9847,12 +9847,12 @@
               "caso": "Digitadora com dor e formigamento nas mãos há meses que piora à noite.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Síndrome do túnel do carpo relacionada ao trabalho",
+                "Túnel do carpo ocupacional",
                 "Artrite",
-                "Normal",
-                "AVC"
+                "AVC",
+                "Artrite reumatoide de início recente"
               ],
-              "resposta": "Síndrome do túnel do carpo relacionada ao trabalho",
+              "resposta": "Túnel do carpo ocupacional",
               "explicacao": "LER/DORT.",
               "revisado": false
             },
@@ -9864,8 +9864,8 @@
               "opcoes": [
                 "Dermatite de contato ocupacional",
                 "Psoríase",
-                "Normal",
-                "Micose"
+                "Micose",
+                "Psoríase em placas desencadeada por estresse"
               ],
               "resposta": "Dermatite de contato ocupacional",
               "explicacao": "Luvas e sabonetes.",
@@ -9888,7 +9888,7 @@
                 "Sim, se houver nexo com o trabalho",
                 "Não",
                 "Nunca",
-                "Só se tiver lesão física"
+                "Só se tiver lesão física comprovada por perícia"
               ],
               "resposta": "Sim, se houver nexo com o trabalho",
               "explicacao": "Transtornos mentais também.",
@@ -9908,8 +9908,8 @@
               "opcoes": [
                 "Sim",
                 "Não",
-                "Só se for de carro da empresa",
-                "Nada"
+                "Só em carro da empresa",
+                "Não, só dentro da empresa"
               ],
               "resposta": "Sim",
               "explicacao": "Acidente de trajeto.",
@@ -9921,12 +9921,12 @@
               "caso": "Empresa se recusa a emitir CAT.",
               "enunciado": "Quem pode emitir?",
               "opcoes": [
-                "O próprio trabalhador, sindicato, médico ou autoridade",
+                "Trabalhador, sindicato ou médico",
                 "Ninguém",
                 "Só a empresa",
-                "Só o juiz"
+                "Só o juiz do trabalho, após processo"
               ],
-              "resposta": "O próprio trabalhador, sindicato, médico ou autoridade",
+              "resposta": "Trabalhador, sindicato ou médico",
               "explicacao": "Garante direitos.",
               "revisado": false
             },
@@ -9935,12 +9935,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o prazo para a empresa emitir a CAT?",
               "opcoes": [
-                "Até o primeiro dia útil após o acidente",
+                "1º dia útil após o acidente",
                 "1 mês",
                 "1 ano",
-                "Nenhum"
+                "Até trinta dias após o retorno ao trabalho"
               ],
-              "resposta": "Até o primeiro dia útil após o acidente",
+              "resposta": "1º dia útil após o acidente",
               "explicacao": "Imediato em caso de morte.",
               "revisado": false
             },
@@ -9976,9 +9976,9 @@
               "enunciado": "Qual é o direito?",
               "opcoes": [
                 "Estabilidade de 12 meses",
-                "Nada",
                 "Demissão imediata",
-                "Férias dobradas"
+                "Férias dobradas",
+                "Férias em dobro no ano seguinte ao retorno"
               ],
               "resposta": "Estabilidade de 12 meses",
               "explicacao": "Lei 8.213.",
@@ -9990,12 +9990,12 @@
               "caso": "Profissional de saúde fura o dedo com agulha usada.",
               "enunciado": "O que fazer além da profilaxia?",
               "opcoes": [
-                "Notificar acidente com material biológico e emitir CAT",
-                "Nada",
+                "Notificar e emitir CAT",
                 "Só lavar",
-                "Esconder"
+                "Esconder",
+                "Só lavar e esconder o acidente da chefia"
               ],
-              "resposta": "Notificar acidente com material biológico e emitir CAT",
+              "resposta": "Notificar e emitir CAT",
               "explicacao": "Notificação compulsória.",
               "revisado": false
             },
@@ -10014,9 +10014,9 @@
               "enunciado": "Qual é a obrigação do médico?",
               "opcoes": [
                 "Notificar no SINAN",
-                "Nada",
                 "Só tratar",
-                "Esperar"
+                "Aguardar",
+                "Só tratar e liberar sem registro"
               ],
               "resposta": "Notificar no SINAN",
               "explicacao": "Intoxicação exógena é notificável.",
@@ -10034,12 +10034,12 @@
               "caso": "Trabalhador CLT precisa de 30 dias de afastamento por doença comum.",
               "enunciado": "Quem paga?",
               "opcoes": [
-                "Empresa os 15 primeiros dias e INSS a partir do 16º",
+                "Empresa 15 dias e INSS a partir do 16º",
                 "Só a empresa",
                 "Só o INSS",
-                "Ninguém"
+                "Só o INSS, desde o primeiro dia de afastamento do trabalho"
               ],
-              "resposta": "Empresa os 15 primeiros dias e INSS a partir do 16º",
+              "resposta": "Empresa 15 dias e INSS a partir do 16º",
               "explicacao": "Regra da Previdência.",
               "revisado": false
             },
@@ -10051,8 +10051,8 @@
               "opcoes": [
                 "Não, há impedimento ético",
                 "Sim",
-                "Só com autorização",
-                "Sempre"
+                "Sempre",
+                "Sim, com autorização do próprio paciente"
               ],
               "resposta": "Não, há impedimento ético",
               "explicacao": "Código de Ética.",
@@ -10065,8 +10065,8 @@
               "opcoes": [
                 "Avaliar aptidão para a função",
                 "Tratar doenças",
-                "Nada",
-                "Contratar"
+                "Contratar",
+                "Tratar doenças e decidir sobre a contratação"
               ],
               "resposta": "Avaliar aptidão para a função",
               "explicacao": "PCMSO.",
@@ -10103,12 +10103,12 @@
               "caso": "Trabalhador com perda auditiva por ruído quer saber se pode continuar.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Afastar da exposição ou proteger e acompanhar com audiometria",
-                "Nada",
+                "Afastar ou proteger e seguir audiometria",
                 "Demitir",
-                "Aumentar a exposição"
+                "Aumentar a exposição",
+                "Manter a mesma exposição sem protetor e sem nenhum exame de controle"
               ],
-              "resposta": "Afastar da exposição ou proteger e acompanhar com audiometria",
+              "resposta": "Afastar ou proteger e seguir audiometria",
               "explicacao": "Evitar progressão.",
               "revisado": false
             },
@@ -10119,9 +10119,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Afastar da exposição",
-                "Nada",
                 "Dobrar a dose",
-                "Demitir"
+                "Demitir",
+                "Manter na mesma função com avental"
               ],
               "resposta": "Afastar da exposição",
               "explicacao": "Proteção da gestante.",
@@ -10141,12 +10141,12 @@
               "caso": "Trabalhador afastado pelo INSS sem melhora em 2 anos e sem possibilidade de reabilitação.",
               "enunciado": "O que pode ocorrer?",
               "opcoes": [
-                "Aposentadoria por incapacidade permanente",
-                "Nada",
+                "Aposentadoria por incapacidade",
                 "Demissão",
-                "Retorno obrigatório"
+                "Retorno obrigatório",
+                "Retorno obrigatório à mesma função de antes"
               ],
-              "resposta": "Aposentadoria por incapacidade permanente",
+              "resposta": "Aposentadoria por incapacidade",
               "explicacao": "Avaliação pericial.",
               "revisado": false
             }
@@ -10170,12 +10170,12 @@
               "caso": "Mulher de 30 anos sem queixas pede ultrassom de abdome, tomografia e vários exames de sangue.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Explicar riscos de exames sem indicação e fazer só os rastreios recomendados",
+                "Explicar riscos e fazer só rastreios indicados",
                 "Pedir tudo",
-                "Nada",
-                "Encaminhar"
+                "Encaminhar",
+                "Pedir todos os exames solicitados e encaminhar a um especialista"
               ],
-              "resposta": "Explicar riscos de exames sem indicação e fazer só os rastreios recomendados",
+              "resposta": "Explicar riscos e fazer só rastreios indicados",
               "explicacao": "Prevenção quaternária.",
               "revisado": false
             },
@@ -10199,12 +10199,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que é prevenção quaternária?",
               "opcoes": [
-                "Proteger o paciente de intervenções desnecessárias",
+                "Evitar intervenções desnecessárias",
                 "Vacinar",
                 "Reabilitar",
-                "Tratar"
+                "Tratar a doença já instalada e reabilitar"
               ],
-              "resposta": "Proteger o paciente de intervenções desnecessárias",
+              "resposta": "Evitar intervenções desnecessárias",
               "explicacao": "Conceito de Jamoulle.",
               "revisado": false
             },
@@ -10239,12 +10239,12 @@
               "caso": "Paciente com achado incidental de nódulo de 3 mm no pulmão em não fumante.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Não precisa de seguimento conforme diretrizes",
+                "Dispensa seguimento pelas diretrizes",
                 "Biópsia",
                 "Cirurgia",
-                "Tomografia mensal"
+                "Tomografia mensal por dois anos e biópsia se crescer"
               ],
-              "resposta": "Não precisa de seguimento conforme diretrizes",
+              "resposta": "Dispensa seguimento pelas diretrizes",
               "explicacao": "Evita cascata de exames.",
               "revisado": false
             },
@@ -10254,12 +10254,12 @@
               "caso": "Médico pede exames anuais de rotina sem indicação para todos.",
               "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Sobrediagnóstico e cascata de intervenções",
-                "Nenhum",
+                "Sobrediagnóstico e cascata",
+                "Risco nenhum",
                 "Cura",
-                "Nada"
+                "Cura precoce de todas as doenças silenciosas"
               ],
-              "resposta": "Sobrediagnóstico e cascata de intervenções",
+              "resposta": "Sobrediagnóstico e cascata",
               "explicacao": "Exames têm danos.",
               "revisado": false
             },
@@ -10277,12 +10277,12 @@
               "caso": "Paciente idoso usa 12 remédios.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Revisar e desprescrever o que não traz benefício",
+                "Revisar e desprescrever",
                 "Mais remédios",
-                "Nada",
-                "Internar"
+                "Internar",
+                "Acrescentar mais remédios para os efeitos colaterais"
               ],
-              "resposta": "Revisar e desprescrever o que não traz benefício",
+              "resposta": "Revisar e desprescrever",
               "explicacao": "Prevenção quaternária.",
               "revisado": false
             }
@@ -10298,12 +10298,12 @@
               "caso": "Família com idoso acamado, filha cuidadora exausta e conflitos.",
               "enunciado": "Qual é a ferramenta útil?",
               "opcoes": [
-                "Genograma e ecomapa com conferência familiar",
-                "Nada",
+                "Genograma, ecomapa e conferência",
                 "Raio X",
-                "Internação"
+                "Internação",
+                "Internação do idoso em instituição de longa permanência"
               ],
-              "resposta": "Genograma e ecomapa com conferência familiar",
+              "resposta": "Genograma, ecomapa e conferência",
               "explicacao": "Abordagem familiar.",
               "revisado": false
             },
@@ -10315,7 +10315,7 @@
               "opcoes": [
                 "Família com filhos pequenos",
                 "Ninho vazio",
-                "Família com adolescentes",
+                "Família com filhos adolescentes",
                 "Aposentadoria"
               ],
               "resposta": "Família com filhos pequenos",
@@ -10327,12 +10327,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que avalia o APGAR familiar?",
               "opcoes": [
-                "Satisfação com o funcionamento da família",
+                "Funcionamento da família",
                 "Vitalidade do bebê",
                 "Risco de quedas",
-                "Nada"
+                "Vitalidade do recém-nascido no primeiro minuto"
               ],
-              "resposta": "Satisfação com o funcionamento da família",
+              "resposta": "Funcionamento da família",
               "explicacao": "Adaptação, participação, crescimento, afeto e resolução.",
               "revisado": false
             },
@@ -10367,12 +10367,12 @@
               "caso": "Agente comunitário identifica casa com várias crianças fora da escola e sem vacinas.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Visita da equipe e articulação com assistência social e escola",
-                "Nada",
+                "Visita e rede com assistência e escola",
                 "Polícia",
-                "Esperar"
+                "Aguardar",
+                "Chamar a polícia e aguardar a família procurar a unidade"
               ],
-              "resposta": "Visita da equipe e articulação com assistência social e escola",
+              "resposta": "Visita e rede com assistência e escola",
               "explicacao": "Ação intersetorial.",
               "revisado": false
             },
@@ -10383,9 +10383,9 @@
               "enunciado": "Qual é a ação da equipe?",
               "opcoes": [
                 "Rede de proteção, grupos e notificação",
-                "Nada",
                 "Só tratar lesões",
-                "Mudar de bairro"
+                "Mudar de bairro",
+                "Só tratar as lesões físicas e orientar a mudar de bairro"
               ],
               "resposta": "Rede de proteção, grupos e notificação",
               "explicacao": "Abordagem comunitária.",
@@ -10405,12 +10405,12 @@
               "caso": "Paciente com doença crônica e baixa adesão por problemas financeiros.",
               "enunciado": "O que considerar?",
               "opcoes": [
-                "Determinantes sociais e acesso a remédios gratuitos",
-                "Nada",
+                "Determinantes sociais e remédio gratuito",
                 "Culpar o paciente",
-                "Mais remédios"
+                "Mais remédios",
+                "Culpar o paciente e acrescentar mais remédios caros"
               ],
-              "resposta": "Determinantes sociais e acesso a remédios gratuitos",
+              "resposta": "Determinantes sociais e remédio gratuito",
               "explicacao": "Farmácia Popular e SUS.",
               "revisado": false
             }
@@ -10426,12 +10426,12 @@
               "caso": "Hipertenso cadastrado com pressão controlada.",
               "enunciado": "Qual é a frequência de consultas sugerida?",
               "opcoes": [
-                "Conforme a estratificação de risco, geralmente semestral a anual",
+                "Pelo risco, semestral a anual",
                 "Semanal",
                 "Nunca",
-                "Diária"
+                "Diária, com medida de pressão na unidade"
               ],
-              "resposta": "Conforme a estratificação de risco, geralmente semestral a anual",
+              "resposta": "Pelo risco, semestral a anual",
               "explicacao": "Cuidado programado.",
               "revisado": false
             },
@@ -10441,12 +10441,12 @@
               "caso": "Município quer reduzir mortalidade por câncer de colo.",
               "enunciado": "Qual é a ação mais efetiva?",
               "opcoes": [
-                "Ampliar rastreio na faixa de 25 a 64 anos e vacinar contra HPV",
+                "Rastrear dos 25 aos 64 e vacinar HPV",
                 "Mamografia",
-                "Nada",
-                "PSA"
+                "PSA",
+                "Mamografia anual e PSA para os parceiros das mulheres"
               ],
-              "resposta": "Ampliar rastreio na faixa de 25 a 64 anos e vacinar contra HPV",
+              "resposta": "Rastrear dos 25 aos 64 e vacinar HPV",
               "explicacao": "Rastreio organizado.",
               "revisado": false
             },
@@ -10458,7 +10458,7 @@
                 "Farmácia Popular",
                 "Mais Médicos",
                 "PNI",
-                "SAMU"
+                "Serviço de Atendimento Móvel"
               ],
               "resposta": "Farmácia Popular",
               "explicacao": "Aqui Tem Farmácia Popular.",
@@ -10495,12 +10495,12 @@
               "caso": "Diabético com hemoglobina glicada de 9% na unidade.",
               "enunciado": "Qual é a ação?",
               "opcoes": [
-                "Intensificar tratamento e educação em saúde",
-                "Nada",
+                "Intensificar tratamento e educação",
                 "Só encaminhar",
-                "Repetir em 2 anos"
+                "Repetir em 2 anos",
+                "Só encaminhar e repetir o exame em dois anos"
               ],
-              "resposta": "Intensificar tratamento e educação em saúde",
+              "resposta": "Intensificar tratamento e educação",
               "explicacao": "Cuidado longitudinal.",
               "revisado": false
             },
@@ -10533,12 +10533,12 @@
               "caso": "Equipe quer avaliar se o cuidado aos hipertensos melhora.",
               "enunciado": "Qual indicador de resultado usar?",
               "opcoes": [
-                "Proporção de hipertensos com pressão controlada",
+                "Hipertensos com pressão controlada",
                 "Número de consultas",
                 "Número de receitas",
-                "Nada"
+                "Número de consultas e de receitas emitidas por mês"
               ],
-              "resposta": "Proporção de hipertensos com pressão controlada",
+              "resposta": "Hipertensos com pressão controlada",
               "explicacao": "Resultado, não processo.",
               "revisado": false
             }
