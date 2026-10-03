@@ -5,5 +5,3741 @@
   "icone": "termometro",
   "ordem": 28,
   "ciclo": "clinico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "infecto-u1",
+      "titulo": "Sepse e febre",
+      "descricao": "Reconhecer e tratar cedo",
+      "licoes": [
+        {
+          "id": "infecto-u1-l1",
+          "titulo": "Sepse",
+          "questoes": [
+            {
+              "id": "infecto-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é sepse?",
+              "opcoes": [
+                "Disfunção de órgãos causada por resposta desregulada a uma infecção",
+                "Qualquer febre",
+                "Infecção leve",
+                "Bactéria no sangue sem sintomas"
+              ],
+              "resposta": "Disfunção de órgãos causada por resposta desregulada a uma infecção",
+              "explicacao": "É uma emergência médica.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada item do qSOFA ao critério.",
+              "pares": [
+                {
+                  "esquerda": "Frequência respiratória",
+                  "direita": "22 ou mais por minuto"
+                },
+                {
+                  "esquerda": "Consciência",
+                  "direita": "Alteração do estado mental"
+                },
+                {
+                  "esquerda": "Pressão",
+                  "direita": "Sistólica de 100 ou menos"
+                },
+                {
+                  "esquerda": "Pontuação",
+                  "direita": "2 ou mais indica risco alto"
+                }
+              ],
+              "explicacao": "O qSOFA ajuda a identificar risco fora da UTI.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na sepse, o antibiótico deve ser dado na primeira hora.",
+              "resposta": true,
+              "explicacao": "Cada hora de atraso aumenta a mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ alto no sangue é um sinal de má perfusão na sepse.",
+              "opcoes": [
+                "lactato",
+                "sódio",
+                "cálcio",
+                "colesterol"
+              ],
+              "resposta": "lactato",
+              "explicacao": "Valores acima de 2 indicam risco.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais medidas fazem parte do pacote da primeira hora da sepse?",
+              "opcoes": [
+                "Lactato, hemoculturas, antibiótico e volume se pressão baixa",
+                "Só antibiótico",
+                "Só soro",
+                "Esperar exames"
+              ],
+              "resposta": "Lactato, hemoculturas, antibiótico e volume se pressão baixa",
+              "explicacao": "Vasopressor se a pressão não melhorar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com infecção urinária tem confusão, frequência respiratória de 26 e pressão de 85/50.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Sepse, possivelmente choque séptico",
+                "Infecção urinária simples",
+                "Desidratação",
+                "AVC"
+              ],
+              "resposta": "Sepse, possivelmente choque séptico",
+              "explicacao": "Exige tratamento imediato.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O choque séptico é a sepse com necessidade de vasopressor e lactato alto apesar do volume.",
+              "resposta": true,
+              "explicacao": "Tem alta mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o vasopressor de primeira escolha no choque séptico.",
+              "opcoes": [
+                "noradrenalina",
+                "dopamina",
+                "adrenalina",
+                "dobutamina"
+              ],
+              "resposta": "noradrenalina",
+              "explicacao": "A meta é pressão média de 65.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u1-l2",
+          "titulo": "Febre",
+          "questoes": [
+            {
+              "id": "infecto-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada padrão de febre ao exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Febre contínua",
+                  "direita": "Febre tifoide"
+                },
+                {
+                  "esquerda": "Febre intermitente com picos",
+                  "direita": "Abscesso"
+                },
+                {
+                  "esquerda": "Febre a cada 48 horas",
+                  "direita": "Malária vivax"
+                },
+                {
+                  "esquerda": "Febre que volta após dias sem febre",
+                  "direita": "Febre recorrente"
+                }
+              ],
+              "explicacao": "O padrão pode sugerir a causa.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a definição de febre de origem indeterminada clássica?",
+              "opcoes": [
+                "Febre acima de 38,3 por mais de 3 semanas sem causa após investigação",
+                "Febre de 1 dia",
+                "Febre de 37,5",
+                "Febre com causa conhecida"
+              ],
+              "resposta": "Febre acima de 38,3 por mais de 3 semanas sem causa após investigação",
+              "explicacao": "As principais causas são infecções, cânceres e doenças inflamatórias.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antitérmicos não precisam ser usados em toda febre; o objetivo é o conforto.",
+              "resposta": true,
+              "explicacao": "A febre em si não é perigosa na maioria dos casos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A dissociação entre febre alta e pulso ___ é chamada de sinal de Faget.",
+              "opcoes": [
+                "lento",
+                "rápido",
+                "ausente",
+                "fraco"
+              ],
+              "resposta": "lento",
+              "explicacao": "Ocorre na febre amarela e febre tifoide.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa infecciosa mais comum de febre prolongada no Brasil?",
+              "opcoes": [
+                "Tuberculose",
+                "Gripe",
+                "Resfriado",
+                "Otite"
+              ],
+              "resposta": "Tuberculose",
+              "explicacao": "Também endocardite e abscessos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem febre há 4 semanas, perda de peso e suor noturno, sem foco aparente.",
+              "enunciado": "Quais causas investigar?",
+              "opcoes": [
+                "Tuberculose, endocardite, linfoma e doenças autoimunes",
+                "Nenhuma",
+                "Só gripe",
+                "Só alergia"
+              ],
+              "resposta": "Tuberculose, endocardite, linfoma e doenças autoimunes",
+              "explicacao": "A investigação deve ser organizada.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A febre por remédio é uma causa possível de febre sem explicação em internados.",
+              "resposta": true,
+              "explicacao": "Antibióticos e anticonvulsivantes são exemplos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a febre que surge em paciente neutropênico e exige antibiótico imediato.",
+              "opcoes": [
+                "neutropenia febril",
+                "febre do feno",
+                "febre reumática",
+                "febre amarela"
+              ],
+              "resposta": "neutropenia febril",
+              "explicacao": "Neutrófilos abaixo de 500.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u1-l3",
+          "titulo": "Princípios do uso de antibióticos",
+          "questoes": [
+            {
+              "id": "infecto-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é tratamento empírico?",
+              "opcoes": [
+                "Antibiótico escolhido antes de saber o germe, pelo provável causador",
+                "Antibiótico guiado pela cultura",
+                "Sem antibiótico",
+                "Antibiótico para sempre"
+              ],
+              "resposta": "Antibiótico escolhido antes de saber o germe, pelo provável causador",
+              "explicacao": "Depois se ajusta pela cultura.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada princípio ao significado.",
+              "pares": [
+                {
+                  "esquerda": "Descalonamento",
+                  "direita": "Reduzir o espectro após a cultura"
+                },
+                {
+                  "esquerda": "Tempo adequado",
+                  "direita": "Não prolongar sem necessidade"
+                },
+                {
+                  "esquerda": "Controle do foco",
+                  "direita": "Drenar abscessos e retirar cateteres"
+                },
+                {
+                  "esquerda": "Dose correta",
+                  "direita": "Ajustar pelo peso e rim"
+                }
+              ],
+              "explicacao": "São pilares do uso responsável.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Colher culturas antes do antibiótico aumenta a chance de achar o germe.",
+              "resposta": true,
+              "explicacao": "Sem atrasar o tratamento em casos graves.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é a capacidade de bactérias sobreviverem a antibióticos.",
+              "opcoes": [
+                "resistência",
+                "sensibilidade",
+                "virulência",
+                "tolerância"
+              ],
+              "resposta": "resistência",
+              "explicacao": "O uso inadequado aumenta a resistência.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que não usar antibiótico em resfriados?",
+              "opcoes": [
+                "São causados por vírus e o antibiótico só traz riscos",
+                "Porque é caro",
+                "Porque cura rápido",
+                "Porque é proibido"
+              ],
+              "resposta": "São causados por vírus e o antibiótico só traz riscos",
+              "explicacao": "Aumenta resistência e efeitos colaterais.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia melhora após 3 dias de ceftriaxona, e a cultura mostra pneumococo sensível à penicilina.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Trocar para amoxicilina oral e completar o tempo",
+                "Manter ceftriaxona por 21 dias",
+                "Associar vancomicina",
+                "Parar tudo"
+              ],
+              "resposta": "Trocar para amoxicilina oral e completar o tempo",
+              "explicacao": "É o descalonamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A troca do antibiótico venoso para oral pode ser feita quando o paciente melhora e consegue engolir.",
+              "resposta": true,
+              "explicacao": "Reduz custos e tempo de internação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ dos antibióticos inclui diarreia, alergia e colite por Clostridioides difficile.",
+              "opcoes": [
+                "efeito colateral",
+                "benefício",
+                "tempo",
+                "custo"
+              ],
+              "resposta": "efeito colateral",
+              "explicacao": "Usar só quando necessário.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-u2",
+      "titulo": "HIV e AIDS",
+      "descricao": "Diagnóstico, tratamento e prevenção",
+      "licoes": [
+        {
+          "id": "infecto-u2-l1",
+          "titulo": "Diagnóstico do HIV",
+          "questoes": [
+            {
+              "id": "infecto-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se faz o diagnóstico do HIV no Brasil?",
+              "opcoes": [
+                "Dois testes diferentes positivos, como testes rápidos ou ELISA com confirmatório",
+                "Um teste rápido apenas",
+                "Pelo sintoma",
+                "Pelo hemograma"
+              ],
+              "resposta": "Dois testes diferentes positivos, como testes rápidos ou ELISA com confirmatório",
+              "explicacao": "O fluxograma do Ministério da Saúde orienta.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fase da infecção pelo HIV à característica.",
+              "pares": [
+                {
+                  "esquerda": "Infecção aguda",
+                  "direita": "Febre, manchas e linfonodos"
+                },
+                {
+                  "esquerda": "Fase sem sintomas",
+                  "direita": "Anos sem doença"
+                },
+                {
+                  "esquerda": "AIDS",
+                  "direita": "CD4 abaixo de 200 ou doença definidora"
+                },
+                {
+                  "esquerda": "Janela imunológica",
+                  "direita": "Teste ainda negativo"
+                }
+              ],
+              "explicacao": "A janela dura algumas semanas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A síndrome retroviral aguda pode parecer gripe ou mononucleose.",
+              "resposta": true,
+              "explicacao": "Ocorre 2 a 4 semanas após a infecção.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A janela ___ é o período em que a pessoa está infectada, mas o teste ainda dá negativo.",
+              "opcoes": [
+                "imunológica",
+                "de risco",
+                "clínica",
+                "viral"
+              ],
+              "resposta": "imunológica",
+              "explicacao": "Testes de quarta geração encurtam a janela.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame mede a quantidade de vírus no sangue?",
+              "opcoes": [
+                "Carga viral",
+                "CD4",
+                "Teste rápido",
+                "Western blot"
+              ],
+              "resposta": "Carga viral",
+              "explicacao": "Serve para acompanhar o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve relação sem camisinha há 3 dias e o teste rápido deu negativo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Iniciar profilaxia pós-exposição e repetir os testes depois",
+                "Tranquilizar e nada",
+                "Esperar 6 meses",
+                "Só repetir o teste em 1 ano"
+              ],
+              "resposta": "Iniciar profilaxia pós-exposição e repetir os testes depois",
+              "explicacao": "A PEP é eficaz até 72 horas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O teste de HIV é oferecido a todas as gestantes no pré-natal.",
+              "resposta": true,
+              "explicacao": "No primeiro e terceiro trimestres e no parto.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O CD4 abaixo de ___ define AIDS e risco de infecções oportunistas.",
+              "opcoes": [
+                "200",
+                "500",
+                "1.000",
+                "50"
+              ],
+              "resposta": "200",
+              "explicacao": "O valor normal é acima de 500.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u2-l2",
+          "titulo": "Tratamento do HIV",
+          "questoes": [
+            {
+              "id": "infecto-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada classe de antirretroviral ao exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Inibidor da transcriptase reversa análogo",
+                  "direita": "Tenofovir"
+                },
+                {
+                  "esquerda": "Inibidor da integrase",
+                  "direita": "Dolutegravir"
+                },
+                {
+                  "esquerda": "Inibidor de protease",
+                  "direita": "Darunavir"
+                },
+                {
+                  "esquerda": "Inibidor da transcriptase não análogo",
+                  "direita": "Efavirenz"
+                }
+              ],
+              "explicacao": "O esquema inicial usa três remédios.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o esquema inicial preferido no Brasil para HIV?",
+              "opcoes": [
+                "Tenofovir, lamivudina e dolutegravir",
+                "Apenas um remédio",
+                "Efavirenz sozinho",
+                "Nenhum"
+              ],
+              "resposta": "Tenofovir, lamivudina e dolutegravir",
+              "explicacao": "É bem tolerado e eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tratamento deve ser iniciado para todas as pessoas com HIV, independentemente do CD4.",
+              "resposta": true,
+              "explicacao": "O início precoce reduz doenças e transmissão.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A carga viral ___ significa que o vírus não é detectado no sangue com o tratamento.",
+              "opcoes": [
+                "indetectável",
+                "alta",
+                "positiva",
+                "baixa"
+              ],
+              "resposta": "indetectável",
+              "explicacao": "Quem está indetectável não transmite por via sexual.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o maior desafio do tratamento do HIV?",
+              "opcoes": [
+                "Adesão contínua aos remédios",
+                "Custo para o paciente no SUS",
+                "Falta de remédios",
+                "Cura rápida"
+              ],
+              "resposta": "Adesão contínua aos remédios",
+              "explicacao": "O SUS fornece os remédios de graça.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV para os remédios por 6 meses e volta com carga viral alta.",
+              "enunciado": "O que avaliar?",
+              "opcoes": [
+                "Teste de resistência (genotipagem) e reforço da adesão",
+                "Nada",
+                "Reiniciar sem avaliação",
+                "Trocar todos aleatoriamente"
+              ],
+              "resposta": "Teste de resistência (genotipagem) e reforço da adesão",
+              "explicacao": "A interrupção favorece resistência.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tenofovir pode lesar os rins e os ossos.",
+              "resposta": true,
+              "explicacao": "A função renal deve ser monitorada.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é dado ao recém-nascido de mãe com HIV para prevenir a transmissão.",
+              "opcoes": [
+                "antirretroviral (AZT)",
+                "antibiótico",
+                "antifúngico",
+                "antiviral para gripe"
+              ],
+              "resposta": "antirretroviral (AZT)",
+              "explicacao": "A amamentação é contraindicada.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u2-l3",
+          "titulo": "Infecções oportunistas",
+          "questoes": [
+            {
+              "id": "infecto-u2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção oportunista da AIDS ao remédio de escolha.",
+              "pares": [
+                {
+                  "esquerda": "Pneumocistose",
+                  "direita": "Sulfametoxazol e trimetoprima"
+                },
+                {
+                  "esquerda": "Neurotoxoplasmose",
+                  "direita": "Sulfadiazina e pirimetamina"
+                },
+                {
+                  "esquerda": "Neurocriptococose",
+                  "direita": "Anfotericina B e flucitosina"
+                },
+                {
+                  "esquerda": "Candidíase de esôfago",
+                  "direita": "Fluconazol"
+                }
+              ],
+              "explicacao": "O tratamento antirretroviral também é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a infecção oportunista mais comum no Brasil em pessoas com HIV?",
+              "opcoes": [
+                "Tuberculose",
+                "Pneumocistose",
+                "Toxoplasmose",
+                "Criptococose"
+              ],
+              "resposta": "Tuberculose",
+              "explicacao": "Pode ocorrer com qualquer CD4.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A profilaxia de pneumocistose é indicada com CD4 abaixo de 200.",
+              "resposta": true,
+              "explicacao": "Com sulfametoxazol e trimetoprima.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A retinite por ___ causa perda da visão em pessoas com CD4 muito baixo.",
+              "opcoes": [
+                "citomegalovírus",
+                "toxoplasma",
+                "herpes simples",
+                "candida"
+              ],
+              "resposta": "citomegalovírus",
+              "explicacao": "O tratamento é ganciclovir.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando suspender a profilaxia de pneumocistose?",
+              "opcoes": [
+                "Após CD4 acima de 200 por mais de 3 meses com tratamento",
+                "Nunca",
+                "Após 1 semana",
+                "Logo no início"
+              ],
+              "resposta": "Após CD4 acima de 200 por mais de 3 meses com tratamento",
+              "explicacao": "A recuperação imune protege.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem febre, dor de cabeça há 3 semanas e pressão do líquor alta.",
+              "enunciado": "Qual é a hipótese e o exame?",
+              "opcoes": [
+                "Neurocriptococose; antígeno criptocócico e tinta da China no líquor",
+                "Meningite viral; nada",
+                "Enxaqueca; analgésico",
+                "AVC; tomografia apenas"
+              ],
+              "resposta": "Neurocriptococose; antígeno criptocócico e tinta da China no líquor",
+              "explicacao": "Punções de alívio são parte do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sarcoma de Kaposi está ligado ao herpesvírus 8.",
+              "resposta": true,
+              "explicacao": "Melhora com o tratamento do HIV.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A leucoencefalopatia multifocal ___ é causada pelo vírus JC em pessoas com imunidade muito baixa.",
+              "opcoes": [
+                "progressiva",
+                "aguda",
+                "benigna",
+                "reversível"
+              ],
+              "resposta": "progressiva",
+              "explicacao": "Não há tratamento específico.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-u3",
+      "titulo": "Infecções do sistema nervoso e da pele",
+      "descricao": "Meningite, encefalite e celulite",
+      "licoes": [
+        {
+          "id": "infecto-u3-l1",
+          "titulo": "Meningites",
+          "questoes": [
+            {
+              "id": "infecto-u3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe de meningite à faixa etária.",
+              "pares": [
+                {
+                  "esquerda": "Streptococcus agalactiae e E. coli",
+                  "direita": "Recém-nascidos"
+                },
+                {
+                  "esquerda": "Pneumococo e meningococo",
+                  "direita": "Crianças e adultos"
+                },
+                {
+                  "esquerda": "Listeria",
+                  "direita": "Idosos e imunossuprimidos"
+                },
+                {
+                  "esquerda": "Haemophilus",
+                  "direita": "Crianças não vacinadas"
+                }
+              ],
+              "explicacao": "A vacinação mudou o perfil das meningites.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a tríade clássica da meningite bacteriana?",
+              "opcoes": [
+                "Febre, rigidez de nuca e alteração da consciência",
+                "Tosse, febre e chiado",
+                "Dor abdominal, febre e diarreia",
+                "Dor de cabeça e vômito apenas"
+              ],
+              "resposta": "Febre, rigidez de nuca e alteração da consciência",
+              "explicacao": "Nem todos têm a tríade completa.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tomografia antes da punção lombar é indicada em pacientes com déficit focal ou convulsão.",
+              "resposta": true,
+              "explicacao": "O antibiótico não deve esperar a tomografia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal de ___ é a flexão dos joelhos ao dobrar o pescoço do paciente.",
+              "opcoes": [
+                "Brudzinski",
+                "Kernig",
+                "Babinski",
+                "Lasègue"
+              ],
+              "resposta": "Brudzinski",
+              "explicacao": "O de Kernig é dor ao estender a perna.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o esquema empírico de meningite em adulto acima de 50 anos?",
+              "opcoes": [
+                "Ceftriaxona, vancomicina e ampicilina",
+                "Amoxicilina oral",
+                "Ceftriaxona sozinha",
+                "Nada"
+              ],
+              "resposta": "Ceftriaxona, vancomicina e ampicilina",
+              "explicacao": "A ampicilina cobre Listeria.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem febre, dor de cabeça, rigidez de nuca e manchas roxas que não somem.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Meningococcemia",
+                "Dengue",
+                "Alergia",
+                "Enxaqueca"
+              ],
+              "resposta": "Meningococcemia",
+              "explicacao": "Antibiótico imediato e profilaxia dos contatos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O líquor da meningite viral tem linfócitos e glicose normal.",
+              "resposta": true,
+              "explicacao": "Costuma ter evolução benigna.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é dada antes ou junto do antibiótico na meningite por pneumococo para reduzir sequelas.",
+              "opcoes": [
+                "dexametasona",
+                "prednisona",
+                "hidrocortisona",
+                "insulina"
+              ],
+              "resposta": "dexametasona",
+              "explicacao": "Reduz surdez e mortalidade.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u3-l2",
+          "titulo": "Encefalites e infecções do cérebro",
+          "questoes": [
+            {
+              "id": "infecto-u3-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de encefalite viral grave tratável?",
+              "opcoes": [
+                "Herpes simples",
+                "Influenza",
+                "Rinovírus",
+                "Rotavírus"
+              ],
+              "resposta": "Herpes simples",
+              "explicacao": "O aciclovir deve ser iniciado logo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção cerebral ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Encefalite herpética",
+                  "direita": "Lesão no lobo temporal"
+                },
+                {
+                  "esquerda": "Abscesso cerebral",
+                  "direita": "Lesão com anel e edema"
+                },
+                {
+                  "esquerda": "Neurocisticercose",
+                  "direita": "Cistos e calcificações"
+                },
+                {
+                  "esquerda": "Neurossífilis",
+                  "direita": "VDRL positivo no líquor"
+                }
+              ],
+              "explicacao": "A imagem e o líquor orientam.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A raiva causa encefalite quase sempre fatal.",
+              "resposta": true,
+              "explicacao": "A prevenção após mordida é fundamental.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O abscesso cerebral pode vir de infecções de ___, dentes ou ouvido.",
+              "opcoes": [
+                "seios da face",
+                "pele",
+                "unha",
+                "pé"
+              ],
+              "resposta": "seios da face",
+              "explicacao": "Também de endocardite.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da neurossífilis?",
+              "opcoes": [
+                "Penicilina cristalina venosa por 14 dias",
+                "Penicilina benzatina",
+                "Azitromicina",
+                "Doxiciclina"
+              ],
+              "resposta": "Penicilina cristalina venosa por 14 dias",
+              "explicacao": "A benzatina não atinge bem o cérebro.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem febre, confusão e alteração de comportamento, com lesão no lobo temporal na ressonância.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Aciclovir venoso imediatamente",
+                "Esperar o resultado do PCR",
+                "Antibiótico apenas",
+                "Antipsicótico"
+              ],
+              "resposta": "Aciclovir venoso imediatamente",
+              "explicacao": "O PCR de herpes no líquor confirma.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A meningite tuberculosa tem início lento, com líquor de linfócitos e glicose baixa.",
+              "resposta": true,
+              "explicacao": "Pode causar hidrocefalia e AVC.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A encefalite autoimune anti-___ causa psicose, convulsões e movimentos anormais em mulheres jovens.",
+              "opcoes": [
+                "NMDA",
+                "DNA",
+                "Ro",
+                "CCP"
+              ],
+              "resposta": "NMDA",
+              "explicacao": "Pode se associar a tumor de ovário.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u3-l3",
+          "titulo": "Infecções de pele e partes moles",
+          "questoes": [
+            {
+              "id": "infecto-u3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção de pele ao germe.",
+              "pares": [
+                {
+                  "esquerda": "Erisipela",
+                  "direita": "Streptococcus"
+                },
+                {
+                  "esquerda": "Furúnculo",
+                  "direita": "Staphylococcus aureus"
+                },
+                {
+                  "esquerda": "Impetigo bolhoso",
+                  "direita": "Staphylococcus"
+                },
+                {
+                  "esquerda": "Fasciíte necrosante",
+                  "direita": "Vários germes ou estreptococo"
+                }
+              ],
+              "explicacao": "A erisipela tem bordas bem delimitadas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sinal de alerta para fasciíte necrosante?",
+              "opcoes": [
+                "Dor desproporcional ao aspecto da pele",
+                "Coceira",
+                "Pele fria",
+                "Ausência de dor"
+              ],
+              "resposta": "Dor desproporcional ao aspecto da pele",
+              "explicacao": "Exige cirurgia urgente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Abscessos de pele precisam ser drenados.",
+              "resposta": true,
+              "explicacao": "O antibiótico sozinho costuma falhar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A celulite é a infecção da derme e do tecido ___.",
+              "opcoes": [
+                "subcutâneo",
+                "muscular",
+                "ósseo",
+                "articular"
+              ],
+              "resposta": "subcutâneo",
+              "explicacao": "A erisipela é mais superficial.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da erisipela sem complicações?",
+              "opcoes": [
+                "Penicilina ou cefalexina",
+                "Antifúngico",
+                "Antiviral",
+                "Nada"
+              ],
+              "resposta": "Penicilina ou cefalexina",
+              "explicacao": "Elevar a perna ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tem dor intensa na perna, pele roxa com bolhas e crepitação.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Fasciíte necrosante; cirurgia urgente e antibiótico",
+                "Celulite; antibiótico oral",
+                "Trombose; anticoagulante",
+                "Alergia; antialérgico"
+              ],
+              "resposta": "Fasciíte necrosante; cirurgia urgente e antibiótico",
+              "explicacao": "O atraso aumenta muito a mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A gangrena de Fournier é uma fasciíte necrosante do períneo.",
+              "resposta": true,
+              "explicacao": "Mais comum em diabéticos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de entrada, como micose entre os dedos, deve ser tratada para evitar erisipela de repetição.",
+              "opcoes": [
+                "porta",
+                "via",
+                "ferida aberta",
+                "lesão óssea"
+              ],
+              "resposta": "porta",
+              "explicacao": "A frieira é porta comum.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-u4",
+      "titulo": "Arboviroses e doenças tropicais",
+      "descricao": "Dengue, febre amarela e outras",
+      "licoes": [
+        {
+          "id": "infecto-u4-l1",
+          "titulo": "Dengue",
+          "questoes": [
+            {
+              "id": "infecto-u4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo da dengue ao manejo.",
+              "pares": [
+                {
+                  "esquerda": "Grupo A",
+                  "direita": "Hidratação oral em casa"
+                },
+                {
+                  "esquerda": "Grupo B",
+                  "direita": "Exames e observação"
+                },
+                {
+                  "esquerda": "Grupo C",
+                  "direita": "Sinais de alarme, internar e soro venoso"
+                },
+                {
+                  "esquerda": "Grupo D",
+                  "direita": "Choque, UTI"
+                }
+              ],
+              "explicacao": "A classificação guia o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual analgésico deve ser evitado na dengue?",
+              "opcoes": [
+                "AAS e anti-inflamatórios",
+                "Paracetamol",
+                "Dipirona",
+                "Nenhum"
+              ],
+              "resposta": "AAS e anti-inflamatórios",
+              "explicacao": "Aumentam o risco de sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A fase crítica da dengue ocorre quando a febre baixa, entre o 3º e o 7º dia.",
+              "resposta": true,
+              "explicacao": "É quando surgem os sinais de alarme.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A prova do ___ positiva indica fragilidade dos vasos na dengue.",
+              "opcoes": [
+                "laço",
+                "Mantoux",
+                "Romberg",
+                "Kernig"
+              ],
+              "resposta": "laço",
+              "explicacao": "Usada na classificação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal de alarme indica gravidade na dengue?",
+              "opcoes": [
+                "Dor abdominal intensa e vômitos persistentes",
+                "Febre alta no primeiro dia",
+                "Dor no corpo",
+                "Dor atrás dos olhos"
+              ],
+              "resposta": "Dor abdominal intensa e vômitos persistentes",
+              "explicacao": "Também sangramento e queda das plaquetas com hematócrito subindo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dengue no 5º dia tem dor abdominal, vômitos e hematócrito subindo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Internar e hidratação venosa",
+                "Casa com soro oral",
+                "Antibiótico",
+                "Nada"
+              ],
+              "resposta": "Internar e hidratação venosa",
+              "explicacao": "É dengue com sinais de alarme.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dengue pode ser causada por quatro sorotipos diferentes.",
+              "resposta": true,
+              "explicacao": "A segunda infecção pode ser mais grave.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O mosquito ___ aegypti transmite dengue, zika e chikungunya.",
+              "opcoes": [
+                "Aedes",
+                "Anopheles",
+                "Culex",
+                "Lutzomyia"
+              ],
+              "resposta": "Aedes",
+              "explicacao": "Pica durante o dia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u4-l2",
+          "titulo": "Febre amarela, zika e chikungunya",
+          "questoes": [
+            {
+              "id": "infecto-u4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada arbovirose à característica marcante.",
+              "pares": [
+                {
+                  "esquerda": "Chikungunya",
+                  "direita": "Dor nas articulações intensa e longa"
+                },
+                {
+                  "esquerda": "Zika",
+                  "direita": "Manchas com coceira e conjuntivite"
+                },
+                {
+                  "esquerda": "Febre amarela",
+                  "direita": "Icterícia e sangramentos"
+                },
+                {
+                  "esquerda": "Dengue",
+                  "direita": "Dor atrás dos olhos e no corpo"
+                }
+              ],
+              "explicacao": "Os quadros podem se parecer.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a complicação neurológica associada ao zika em adultos?",
+              "opcoes": [
+                "Síndrome de Guillain-Barré",
+                "AVC",
+                "Enxaqueca",
+                "Epilepsia"
+              ],
+              "resposta": "Síndrome de Guillain-Barré",
+              "explicacao": "Na gestação, causa microcefalia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina de febre amarela é de vírus vivo e tem restrições em imunossuprimidos.",
+              "resposta": true,
+              "explicacao": "Também em gestantes, salvo situações de risco.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A febre amarela ___ é transmitida por mosquitos da mata, como Haemagogus.",
+              "opcoes": [
+                "silvestre",
+                "urbana",
+                "aquática",
+                "hospitalar"
+              ],
+              "resposta": "silvestre",
+              "explicacao": "O Brasil não tem casos urbanos desde 1942.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da chikungunya na fase aguda?",
+              "opcoes": [
+                "Repouso, hidratação e analgésicos como paracetamol e dipirona",
+                "Antibiótico",
+                "Antiviral",
+                "Corticoide sempre"
+              ],
+              "resposta": "Repouso, hidratação e analgésicos como paracetamol e dipirona",
+              "explicacao": "Evitar anti-inflamatórios até excluir dengue.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tem manchas com coceira e conjuntivite em área de zika.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Investigar zika e acompanhar o feto com ultrassom",
+                "Nada",
+                "Interromper a gestação",
+                "Antibiótico"
+              ],
+              "resposta": "Investigar zika e acompanhar o feto com ultrassom",
+              "explicacao": "O risco é maior no início da gestação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A febre amarela grave tem fase toxêmica com lesão do fígado e dos rins.",
+              "resposta": true,
+              "explicacao": "A mortalidade é alta.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O vírus ___ causa febre, manchas e dor nas articulações e pode deixar artrite crônica.",
+              "opcoes": [
+                "chikungunya",
+                "zika",
+                "dengue",
+                "influenza"
+              ],
+              "resposta": "chikungunya",
+              "explicacao": "A dor pode durar anos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u4-l3",
+          "titulo": "Leptospirose, malária e outras",
+          "questoes": [
+            {
+              "id": "infecto-u4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença à exposição.",
+              "pares": [
+                {
+                  "esquerda": "Leptospirose",
+                  "direita": "Água de enchente"
+                },
+                {
+                  "esquerda": "Malária",
+                  "direita": "Viagem à Amazônia"
+                },
+                {
+                  "esquerda": "Febre maculosa",
+                  "direita": "Picada de carrapato"
+                },
+                {
+                  "esquerda": "Hantavirose",
+                  "direita": "Poeira com fezes de roedores"
+                }
+              ],
+              "explicacao": "A história de exposição é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a forma grave da leptospirose?",
+              "opcoes": [
+                "Síndrome de Weil com icterícia, lesão renal e sangramento",
+                "Gripe leve",
+                "Diarreia",
+                "Conjuntivite"
+              ],
+              "resposta": "Síndrome de Weil com icterícia, lesão renal e sangramento",
+              "explicacao": "Também hemorragia pulmonar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A dor na panturrilha é típica da leptospirose.",
+              "resposta": true,
+              "explicacao": "Também a sufusão conjuntival.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é tratada com doxiciclina e deve ser iniciada logo na suspeita, sem esperar exames.",
+              "opcoes": [
+                "febre maculosa",
+                "dengue",
+                "zika",
+                "gripe"
+              ],
+              "resposta": "febre maculosa",
+              "explicacao": "Tem alta mortalidade sem tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença causa síndrome respiratória grave após contato com roedores silvestres?",
+              "opcoes": [
+                "Hantavirose",
+                "Leptospirose",
+                "Raiva",
+                "Dengue"
+              ],
+              "resposta": "Hantavirose",
+              "explicacao": "Comum em áreas rurais do Sul e Centro-Oeste.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Garimpeiro voltou da Amazônia com febre alta, calafrios e anemia.",
+              "enunciado": "Qual exame é essencial?",
+              "opcoes": [
+                "Gota espessa para malária",
+                "Hemocultura apenas",
+                "Raio X",
+                "Nada"
+              ],
+              "resposta": "Gota espessa para malária",
+              "explicacao": "O diagnóstico rápido salva vidas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A febre maculosa brasileira é transmitida pelo carrapato-estrela.",
+              "resposta": true,
+              "explicacao": "Capivaras e cavalos participam do ciclo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A leishmaniose ___ causa febre, baço gigante e pancitopenia.",
+              "opcoes": [
+                "visceral",
+                "cutânea",
+                "mucosa",
+                "difusa"
+              ],
+              "resposta": "visceral",
+              "explicacao": "É chamada de calazar.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-u5",
+      "titulo": "Infecções comuns e prevenção",
+      "descricao": "Respiratórias, urinárias e vacinas",
+      "licoes": [
+        {
+          "id": "infecto-u5-l1",
+          "titulo": "Infecções respiratórias altas",
+          "questoes": [
+            {
+              "id": "infecto-u5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção à causa mais comum.",
+              "pares": [
+                {
+                  "esquerda": "Resfriado",
+                  "direita": "Rinovírus"
+                },
+                {
+                  "esquerda": "Faringite com febre e pus sem tosse",
+                  "direita": "Estreptococo"
+                },
+                {
+                  "esquerda": "Sinusite aguda",
+                  "direita": "Vírus na maioria"
+                },
+                {
+                  "esquerda": "Otite média",
+                  "direita": "Pneumococo e Haemophilus"
+                }
+              ],
+              "explicacao": "Muitas são virais e não precisam de antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual escore ajuda a decidir sobre antibiótico na faringite?",
+              "opcoes": [
+                "Centor",
+                "CURB-65",
+                "Wells",
+                "Glasgow"
+              ],
+              "resposta": "Centor",
+              "explicacao": "Considera febre, pus, linfonodos e ausência de tosse.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A sinusite bacteriana é mais provável quando os sintomas duram mais de 10 dias ou pioram após melhorar.",
+              "resposta": true,
+              "explicacao": "A maioria é viral.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A amoxicilina é o antibiótico de escolha na faringite por ___.",
+              "opcoes": [
+                "estreptococo",
+                "vírus",
+                "fungo",
+                "mycoplasma"
+              ],
+              "resposta": "estreptococo",
+              "explicacao": "Por 10 dias.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da gripe em grupos de risco?",
+              "opcoes": [
+                "Oseltamivir, idealmente nas primeiras 48 horas",
+                "Antibiótico",
+                "Nada",
+                "Corticoide"
+              ],
+              "resposta": "Oseltamivir, idealmente nas primeiras 48 horas",
+              "explicacao": "Gestantes e idosos são grupos de risco.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos tem febre, garganta com placas, linfonodos dolorosos e sem tosse.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Teste rápido de estreptococo ou tratar com amoxicilina",
+                "Nada",
+                "Antiviral",
+                "Corticoide"
+              ],
+              "resposta": "Teste rápido de estreptococo ou tratar com amoxicilina",
+              "explicacao": "Previne a febre reumática.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A mononucleose pode causar manchas na pele se a pessoa tomar amoxicilina.",
+              "resposta": true,
+              "explicacao": "Não é alergia verdadeira.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a inflamação da epiglote, emergência com baba e dificuldade de engolir.",
+              "opcoes": [
+                "epiglotite",
+                "faringite",
+                "laringite",
+                "amigdalite"
+              ],
+              "resposta": "epiglotite",
+              "explicacao": "Rara após a vacina contra Haemophilus.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u5-l2",
+          "titulo": "Infecções sexualmente transmissíveis",
+          "questoes": [
+            {
+              "id": "infecto-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção sexual ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Sífilis recente",
+                  "direita": "Penicilina benzatina"
+                },
+                {
+                  "esquerda": "Gonorreia",
+                  "direita": "Ceftriaxona"
+                },
+                {
+                  "esquerda": "Clamídia",
+                  "direita": "Azitromicina ou doxiciclina"
+                },
+                {
+                  "esquerda": "Tricomoníase",
+                  "direita": "Metronidazol"
+                }
+              ],
+              "explicacao": "O parceiro também deve ser tratado.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a abordagem sindrômica das infecções sexuais?",
+              "opcoes": [
+                "Tratar pelo sintoma, sem esperar exames, cobrindo as causas mais prováveis",
+                "Esperar todos os exames",
+                "Não tratar",
+                "Tratar só o parceiro"
+              ],
+              "resposta": "Tratar pelo sintoma, sem esperar exames, cobrindo as causas mais prováveis",
+              "explicacao": "Útil quando o exame não está disponível.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pessoas com uma infecção sexual devem ser testadas para HIV, sífilis e hepatites.",
+              "resposta": true,
+              "explicacao": "As infecções costumam vir juntas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ causa verrugas genitais e câncer do colo do útero.",
+              "opcoes": [
+                "HPV",
+                "herpes",
+                "HIV",
+                "HTLV"
+              ],
+              "resposta": "HPV",
+              "explicacao": "A vacina previne.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual infecção sexual causa úlceras dolorosas que voltam várias vezes?",
+              "opcoes": [
+                "Herpes genital",
+                "Sífilis",
+                "Gonorreia",
+                "Clamídia"
+              ],
+              "resposta": "Herpes genital",
+              "explicacao": "O aciclovir reduz as crises.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tem VDRL positivo 1:32 no pré-natal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratar com penicilina benzatina e tratar o parceiro",
+                "Esperar o parto",
+                "Azitromicina",
+                "Nada"
+              ],
+              "resposta": "Tratar com penicilina benzatina e tratar o parceiro",
+              "explicacao": "Previne a sífilis congênita.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A sífilis congênita é um problema grave e evitável no Brasil.",
+              "resposta": true,
+              "explicacao": "Depende do teste e tratamento no pré-natal.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ pré-exposição ao HIV (PrEP) é oferecida pelo SUS a pessoas com maior risco.",
+              "opcoes": [
+                "profilaxia",
+                "vacina",
+                "cura",
+                "dieta"
+              ],
+              "resposta": "profilaxia",
+              "explicacao": "Usa tenofovir com entricitabina.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-u5-l3",
+          "titulo": "Vacinação do adulto e profilaxias",
+          "questoes": [
+            {
+              "id": "infecto-u5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada vacina ao grupo de adulto.",
+              "pares": [
+                {
+                  "esquerda": "Hepatite B",
+                  "direita": "Todos os adultos não vacinados"
+                },
+                {
+                  "esquerda": "Influenza",
+                  "direita": "Anual para grupos prioritários"
+                },
+                {
+                  "esquerda": "Pneumocócica",
+                  "direita": "Idosos e doentes crônicos"
+                },
+                {
+                  "esquerda": "dTpa",
+                  "direita": "Gestantes em toda gestação"
+                }
+              ],
+              "explicacao": "O calendário do adulto também é importante.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta após acidente com agulha de paciente com HIV?",
+              "opcoes": [
+                "Lavar o local e iniciar profilaxia pós-exposição em até 72 horas",
+                "Nada",
+                "Esperar exames do paciente por 1 semana",
+                "Só vacina"
+              ],
+              "resposta": "Lavar o local e iniciar profilaxia pós-exposição em até 72 horas",
+              "explicacao": "A profilaxia dura 28 dias.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina do tétano precisa de reforço a cada 10 anos.",
+              "resposta": true,
+              "explicacao": "Em ferimentos graves, pode ser antes.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Viajantes para áreas de risco devem ser vacinados contra febre ___ pelo menos 10 dias antes.",
+              "opcoes": [
+                "amarela",
+                "tifoide",
+                "maculosa",
+                "reumática"
+              ],
+              "resposta": "amarela",
+              "explicacao": "A dose única protege por toda a vida para a maioria.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia indicada após mordida de cão com ferimento grave?",
+              "opcoes": [
+                "Lavar a ferida, vacina e soro antirrábico, conforme o caso",
+                "Nada",
+                "Antibiótico apenas",
+                "Só curativo"
+              ],
+              "resposta": "Lavar a ferida, vacina e soro antirrábico, conforme o caso",
+              "explicacao": "O animal pode ser observado por 10 dias.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Profissional de saúde se fura com agulha de paciente com hepatite B, e ele nunca foi vacinado.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Vacina e imunoglobulina contra hepatite B",
+                "Nada",
+                "Só vacina em 1 ano",
+                "Antiviral"
+              ],
+              "resposta": "Vacina e imunoglobulina contra hepatite B",
+              "explicacao": "O ideal é nas primeiras 48 horas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina contra herpes-zóster é recomendada para idosos.",
+              "resposta": true,
+              "explicacao": "Reduz o zóster e a dor após o zóster.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A profilaxia de ___ é feita com antibiótico em contatos de meningite meningocócica.",
+              "opcoes": [
+                "contatos",
+                "viajantes",
+                "idosos",
+                "crianças"
+              ],
+              "resposta": "contatos",
+              "explicacao": "Usa-se rifampicina ou ceftriaxona.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-d1",
+      "titulo": "Sepse e choque em casos",
+      "descricao": "Manejo na emergência e UTI",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "infecto-d1-l1",
+          "titulo": "Sepse em casos",
+          "questoes": [
+            {
+              "id": "infecto-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia tem pressão de 80/40 após 30 mL/kg de soro, lactato de 5.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Iniciar noradrenalina e manter antibiótico",
+                "Mais 5 litros de soro",
+                "Esperar",
+                "Alta"
+              ],
+              "resposta": "Iniciar noradrenalina e manter antibiótico",
+              "explicacao": "É choque séptico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada foco de sepse ao antibiótico empírico.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia comunitária grave",
+                  "direita": "Ceftriaxona com azitromicina"
+                },
+                {
+                  "esquerda": "Infecção abdominal",
+                  "direita": "Piperacilina com tazobactam"
+                },
+                {
+                  "esquerda": "Infecção urinária grave",
+                  "direita": "Ceftriaxona ou outro conforme o risco"
+                },
+                {
+                  "esquerda": "Foco desconhecido em hospitalizado",
+                  "direita": "Amplo espectro com cobertura para resistentes"
+                }
+              ],
+              "explicacao": "Ajustar após as culturas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando associar corticoide no choque séptico?",
+              "opcoes": [
+                "Quando o choque persiste apesar de volume e vasopressor",
+                "Sempre",
+                "Nunca",
+                "Só em crianças"
+              ],
+              "resposta": "Quando o choque persiste apesar de volume e vasopressor",
+              "explicacao": "A hidrocortisona reduz o tempo de choque.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sepse por cateter continua com febre após 3 dias de antibiótico.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Retirar o cateter e buscar outros focos",
+                "Trocar o antibiótico apenas",
+                "Nada",
+                "Dar antitérmico"
+              ],
+              "resposta": "Retirar o cateter e buscar outros focos",
+              "explicacao": "O controle do foco é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O balanço hídrico muito positivo na sepse está ligado a maior mortalidade.",
+              "resposta": true,
+              "explicacao": "Após a fase inicial, deve-se evitar excesso de soro.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a medida da resposta a volume para decidir se o paciente precisa de mais soro.",
+              "opcoes": [
+                "fluidorresponsividade",
+                "diurese",
+                "glicemia",
+                "saturação"
+              ],
+              "resposta": "fluidorresponsividade",
+              "explicacao": "A elevação passiva das pernas ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta de pressão arterial média no choque séptico?",
+              "opcoes": [
+                "65 mmHg",
+                "100 mmHg",
+                "40 mmHg",
+                "120 mmHg"
+              ],
+              "resposta": "65 mmHg",
+              "explicacao": "Em hipertensos crônicos, pode ser maior.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em choque séptico com noradrenalina em dose alta continua hipotenso.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Associar vasopressina e hidrocortisona",
+                "Suspender a noradrenalina",
+                "Dar diurético",
+                "Nada"
+              ],
+              "resposta": "Associar vasopressina e hidrocortisona",
+              "explicacao": "A vasopressina reduz a dose de noradrenalina.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d1-l2",
+          "titulo": "Infecções hospitalares em casos",
+          "questoes": [
+            {
+              "id": "infecto-d1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção hospitalar ao germe frequente.",
+              "pares": [
+                {
+                  "esquerda": "Pneumonia associada à ventilação",
+                  "direita": "Pseudomonas e Acinetobacter"
+                },
+                {
+                  "esquerda": "Infecção de cateter",
+                  "direita": "Staphylococcus"
+                },
+                {
+                  "esquerda": "Infecção urinária por sonda",
+                  "direita": "Enterobactérias"
+                },
+                {
+                  "esquerda": "Diarreia após antibiótico",
+                  "direita": "Clostridioides difficile"
+                }
+              ],
+              "explicacao": "O perfil local de resistência guia o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente intubado há 6 dias tem febre, secreção purulenta e infiltrado novo.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Pneumonia associada à ventilação; antibiótico de amplo espectro",
+                "Atelectasia; fisioterapia",
+                "Edema; diurético",
+                "Nada"
+              ],
+              "resposta": "Pneumonia associada à ventilação; antibiótico de amplo espectro",
+              "explicacao": "Cobrir Pseudomonas e, se necessário, MRSA.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a medida mais simples e eficaz para prevenir infecções hospitalares?",
+              "opcoes": [
+                "Higiene das mãos",
+                "Antibiótico profilático em todos",
+                "Isolamento de todos",
+                "Máscara N95 em todos"
+              ],
+              "resposta": "Higiene das mãos",
+              "explicacao": "Antes e depois de tocar o paciente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sonda vesical há 2 semanas tem urocultura positiva, sem febre ou sintomas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Não tratar e retirar a sonda se possível",
+                "Antibiótico venoso",
+                "Antifúngico",
+                "Trocar a sonda e tratar"
+              ],
+              "resposta": "Não tratar e retirar a sonda se possível",
+              "explicacao": "Bacteriúria sem sintomas não deve ser tratada.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A infecção por Klebsiella produtora de carbapenemase exige isolamento de contato.",
+              "resposta": true,
+              "explicacao": "Para evitar disseminação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a candidíase no sangue, comum em pacientes graves com cateter e antibióticos.",
+              "opcoes": [
+                "candidemia",
+                "bacteremia",
+                "viremia",
+                "fungúria"
+              ],
+              "resposta": "candidemia",
+              "explicacao": "Exige retirar o cateter e fazer fundo de olho.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antifúngico é preferido na candidemia em paciente grave?",
+              "opcoes": [
+                "Equinocandina",
+                "Fluconazol sempre",
+                "Nistatina",
+                "Terbinafina"
+              ],
+              "resposta": "Equinocandina",
+              "explicacao": "Depois pode trocar conforme a espécie.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem diarreia grave, leucócitos de 30 mil e cólon dilatado após antibiótico.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Colite fulminante por Clostridioides difficile",
+                "Gastroenterite viral",
+                "Doença de Crohn",
+                "Isquemia"
+              ],
+              "resposta": "Colite fulminante por Clostridioides difficile",
+              "explicacao": "Pode precisar de cirurgia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d1-l3",
+          "titulo": "Endocardite e bacteremia em casos",
+          "questoes": [
+            {
+              "id": "infecto-d1-l3-q1",
+              "tipo": "caso_clinico",
+              "caso": "Hemocultura positiva para Staphylococcus aureus em paciente sem foco aparente.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ecocardiograma e antibiótico venoso por pelo menos 14 dias",
+                "Tratar como contaminação",
+                "Antibiótico oral por 5 dias",
+                "Nada"
+              ],
+              "resposta": "Ecocardiograma e antibiótico venoso por pelo menos 14 dias",
+              "explicacao": "O aureus no sangue nunca é contaminação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada germe na hemocultura à interpretação.",
+              "pares": [
+                {
+                  "esquerda": "Staphylococcus aureus",
+                  "direita": "Sempre infecção verdadeira"
+                },
+                {
+                  "esquerda": "Staphylococcus epidermidis em uma amostra",
+                  "direita": "Provável contaminação"
+                },
+                {
+                  "esquerda": "Streptococcus gallolyticus",
+                  "direita": "Investigar câncer de cólon"
+                },
+                {
+                  "esquerda": "Candida",
+                  "direita": "Sempre infecção"
+                }
+              ],
+              "explicacao": "Alguns germes nunca são contaminantes.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da bacteremia por MRSA?",
+              "opcoes": [
+                "Vancomicina ou daptomicina",
+                "Penicilina",
+                "Cefalexina",
+                "Amoxicilina"
+              ],
+              "resposta": "Vancomicina ou daptomicina",
+              "explicacao": "A daptomicina é útil em endocardite do lado direito.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com endocardite tem insuficiência cardíaca por valva destruída.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Cirurgia cardíaca urgente",
+                "Só antibiótico",
+                "Alta",
+                "Diurético apenas"
+              ],
+              "resposta": "Cirurgia cardíaca urgente",
+              "explicacao": "A insuficiência cardíaca é a principal indicação de cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com endocardite devem fazer avaliação dentária.",
+              "resposta": true,
+              "explicacao": "A boca é uma fonte de germes.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os critérios de ___ modificados são usados para diagnosticar endocardite.",
+              "opcoes": [
+                "Duke",
+                "Jones",
+                "Light",
+                "Ranson"
+              ],
+              "resposta": "Duke",
+              "explicacao": "Combinam cultura, eco e sinais clínicos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual germe causa endocardite com hemocultura negativa?",
+              "opcoes": [
+                "Germes do grupo HACEK, Coxiella e Bartonella",
+                "Staphylococcus aureus",
+                "E. coli",
+                "Pneumococo"
+              ],
+              "resposta": "Germes do grupo HACEK, Coxiella e Bartonella",
+              "explicacao": "Também uso prévio de antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com prótese valvar tem febre há 2 semanas sem foco.",
+              "enunciado": "Qual exame é obrigatório?",
+              "opcoes": [
+                "Hemoculturas e ecocardiograma transesofágico",
+                "Raio X",
+                "Hemograma apenas",
+                "Nada"
+              ],
+              "resposta": "Hemoculturas e ecocardiograma transesofágico",
+              "explicacao": "Endocardite de prótese é grave.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-d2",
+      "titulo": "HIV em casos",
+      "descricao": "Situações clínicas avançadas",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "infecto-d2-l1",
+          "titulo": "HIV em casos",
+          "questoes": [
+            {
+              "id": "infecto-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV recém-diagnosticado tem CD4 de 30 e tosse.",
+              "enunciado": "Quais infecções investigar antes de iniciar os antirretrovirais?",
+              "opcoes": [
+                "Tuberculose e criptococose",
+                "Nenhuma",
+                "Só gripe",
+                "Só hepatite"
+              ],
+              "resposta": "Tuberculose e criptococose",
+              "explicacao": "Iniciar antirretroviral com estas infecções exige cuidado com o tempo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção ao momento de iniciar o antirretroviral.",
+              "pares": [
+                {
+                  "esquerda": "Tuberculose",
+                  "direita": "Em até 2 semanas, ou 8 conforme o caso"
+                },
+                {
+                  "esquerda": "Neurocriptococose",
+                  "direita": "Esperar 4 a 6 semanas"
+                },
+                {
+                  "esquerda": "Pneumocistose",
+                  "direita": "Em até 2 semanas"
+                },
+                {
+                  "esquerda": "Meningite tuberculosa",
+                  "direita": "Esperar mais, com cuidado"
+                }
+              ],
+              "explicacao": "Na meningite, o início precoce pode piorar o quadro.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a interação mais importante entre rifampicina e dolutegravir?",
+              "opcoes": [
+                "A rifampicina reduz o dolutegravir, exigindo dose dobrada",
+                "Nenhuma",
+                "Aumenta a toxicidade",
+                "Anula a rifampicina"
+              ],
+              "resposta": "A rifampicina reduz o dolutegravir, exigindo dose dobrada",
+              "explicacao": "O dolutegravir passa para duas vezes ao dia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV inicia tratamento e, 3 semanas depois, tem febre e linfonodos maiores com tuberculose conhecida.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Síndrome inflamatória de reconstituição imune",
+                "Falha do tratamento",
+                "Nova infecção",
+                "Alergia"
+              ],
+              "resposta": "Síndrome inflamatória de reconstituição imune",
+              "explicacao": "Pode precisar de corticoide.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O teste de genotipagem é recomendado antes de iniciar o tratamento em alguns grupos.",
+              "resposta": true,
+              "explicacao": "Como gestantes e quem já usou antirretroviral.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ pode causar sonhos vívidos e tontura, sendo menos usado hoje.",
+              "opcoes": [
+                "efavirenz",
+                "dolutegravir",
+                "tenofovir",
+                "lamivudina"
+              ],
+              "resposta": "efavirenz",
+              "explicacao": "Era muito usado antes.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta do tratamento antirretroviral?",
+              "opcoes": [
+                "Carga viral indetectável e recuperação do CD4",
+                "Cura do HIV",
+                "CD4 zero",
+                "Carga viral alta"
+              ],
+              "resposta": "Carga viral indetectável e recuperação do CD4",
+              "explicacao": "O tratamento é por toda a vida.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com HIV tem carga viral indetectável com 36 semanas.",
+              "enunciado": "Qual é a via de parto?",
+              "opcoes": [
+                "Indicação obstétrica, podendo ser parto normal",
+                "Cesárea obrigatória",
+                "Proibido parto normal",
+                "Parto em casa"
+              ],
+              "resposta": "Indicação obstétrica, podendo ser parto normal",
+              "explicacao": "Com carga detectável alta, prefere-se cesárea.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d2-l2",
+          "titulo": "Oportunistas em casos",
+          "questoes": [
+            {
+              "id": "infecto-d2-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 80 tem lesão cerebral com reforço em anel e IgG para toxoplasma positiva.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento empírico para toxoplasmose e reavaliar em 2 semanas",
+                "Biópsia imediata",
+                "Nada",
+                "Cirurgia"
+              ],
+              "resposta": "Tratamento empírico para toxoplasmose e reavaliar em 2 semanas",
+              "explicacao": "Se não melhorar, pensar em linfoma.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada lesão cerebral em HIV à característica.",
+              "pares": [
+                {
+                  "esquerda": "Neurotoxoplasmose",
+                  "direita": "Várias lesões com anel nos gânglios da base"
+                },
+                {
+                  "esquerda": "Linfoma primário",
+                  "direita": "Lesão única perto dos ventrículos com EBV no líquor"
+                },
+                {
+                  "esquerda": "Leucoencefalopatia multifocal progressiva",
+                  "direita": "Lesões brancas sem efeito de massa"
+                },
+                {
+                  "esquerda": "Criptococose",
+                  "direita": "Pressão do líquor alta"
+                }
+              ],
+              "explicacao": "A imagem e o líquor diferenciam.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia secundária após neurotoxoplasmose?",
+              "opcoes": [
+                "Manter sulfadiazina e pirimetamina em dose menor até CD4 subir",
+                "Nada",
+                "Só antirretroviral",
+                "Antibiótico comum"
+              ],
+              "resposta": "Manter sulfadiazina e pirimetamina em dose menor até CD4 subir",
+              "explicacao": "Evita recidivas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 20 tem visão turva e manchas na retina.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Retinite por citomegalovírus",
+                "Catarata",
+                "Glaucoma",
+                "Conjuntivite"
+              ],
+              "resposta": "Retinite por citomegalovírus",
+              "explicacao": "Exige tratamento urgente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na pneumocistose grave, o corticoide reduz a mortalidade.",
+              "resposta": true,
+              "explicacao": "Indicado com PaO2 abaixo de 70.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A histoplasmose ___ é comum em pessoas com HIV avançado em algumas regiões do Brasil.",
+              "opcoes": [
+                "disseminada",
+                "cutânea",
+                "leve",
+                "ocular"
+              ],
+              "resposta": "disseminada",
+              "explicacao": "Causa febre, perda de peso e pancitopenia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da neurocriptococose na fase de indução?",
+              "opcoes": [
+                "Anfotericina B com flucitosina",
+                "Fluconazol sozinho",
+                "Antibiótico",
+                "Corticoide"
+              ],
+              "resposta": "Anfotericina B com flucitosina",
+              "explicacao": "Depois segue com fluconazol.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem diarreia crônica e emagrecimento com CD4 de 30.",
+              "enunciado": "Quais causas investigar?",
+              "opcoes": [
+                "Cryptosporidium, Cystoisospora, microsporídios e citomegalovírus",
+                "Só vírus comuns",
+                "Nenhuma",
+                "Só bactérias"
+              ],
+              "resposta": "Cryptosporidium, Cystoisospora, microsporídios e citomegalovírus",
+              "explicacao": "O tratamento do HIV ajuda a resolver.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d2-l3",
+          "titulo": "Prevenção do HIV em casos",
+          "questoes": [
+            {
+              "id": "infecto-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estratégia de prevenção combinada ao exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Profilaxia pré-exposição",
+                  "direita": "Tenofovir com entricitabina diário"
+                },
+                {
+                  "esquerda": "Profilaxia pós-exposição",
+                  "direita": "Antirretroviral por 28 dias"
+                },
+                {
+                  "esquerda": "Tratamento como prevenção",
+                  "direita": "Pessoa indetectável não transmite"
+                },
+                {
+                  "esquerda": "Camisinha",
+                  "direita": "Previne HIV e outras infecções"
+                }
+              ],
+              "explicacao": "A prevenção combinada é mais eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem relações frequentes sem camisinha com parceiros de status desconhecido.",
+              "enunciado": "Qual estratégia oferecer?",
+              "opcoes": [
+                "Profilaxia pré-exposição e testagem regular",
+                "Nada",
+                "Só camisinha obrigatória",
+                "Só PEP sempre"
+              ],
+              "resposta": "Profilaxia pré-exposição e testagem regular",
+              "explicacao": "A PrEP é muito eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é necessário antes de iniciar PrEP?",
+              "opcoes": [
+                "Teste de HIV negativo e função renal",
+                "Nenhum",
+                "Só hemograma",
+                "Ressonância"
+              ],
+              "resposta": "Teste de HIV negativo e função renal",
+              "explicacao": "Também testes de outras infecções sexuais.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Casal em que só um tem HIV, com carga viral indetectável há 1 ano, quer ter filhos.",
+              "enunciado": "O que orientar?",
+              "opcoes": [
+                "Relação sem camisinha é segura para transmissão do HIV nessas condições",
+                "Não pode ter filhos",
+                "Só por inseminação",
+                "Precisa de cesárea"
+              ],
+              "resposta": "Relação sem camisinha é segura para transmissão do HIV nessas condições",
+              "explicacao": "É o conceito indetectável igual a intransmissível.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A PEP deve ser iniciada o mais rápido possível, idealmente nas primeiras 2 horas.",
+              "resposta": true,
+              "explicacao": "O limite é 72 horas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ vertical do HIV pode ser prevenida com tratamento na gestação, no parto e no bebê.",
+              "opcoes": [
+                "transmissão",
+                "infecção",
+                "cura",
+                "doença"
+              ],
+              "resposta": "transmissão",
+              "explicacao": "A taxa cai para menos de 1%.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado com o bebê de mãe com HIV?",
+              "opcoes": [
+                "Antirretroviral, não amamentar e testar o bebê",
+                "Amamentar",
+                "Nada",
+                "Só vacinas"
+              ],
+              "resposta": "Antirretroviral, não amamentar e testar o bebê",
+              "explicacao": "O SUS fornece fórmula.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Mulher sofreu violência sexual há 12 horas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "PEP para HIV, contracepção de emergência e prevenção de outras infecções",
+                "Esperar",
+                "Só boletim de ocorrência",
+                "Nada"
+              ],
+              "resposta": "PEP para HIV, contracepção de emergência e prevenção de outras infecções",
+              "explicacao": "O atendimento não depende de boletim.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-d3",
+      "titulo": "Infecções neurológicas e graves em casos",
+      "descricao": "Diagnóstico pelo líquor",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "infecto-d3-l1",
+          "titulo": "Líquor em casos",
+          "questoes": [
+            {
+              "id": "infecto-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Líquor tem 2.000 células com neutrófilos, glicose de 15 e proteína de 250.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Meningite bacteriana",
+                "Meningite viral",
+                "Meningite tuberculosa",
+                "Normal"
+              ],
+              "resposta": "Meningite bacteriana",
+              "explicacao": "Iniciar antibiótico imediatamente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada perfil de líquor ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Neutrófilos, glicose muito baixa",
+                  "direita": "Bacteriana"
+                },
+                {
+                  "esquerda": "Linfócitos, glicose normal",
+                  "direita": "Viral"
+                },
+                {
+                  "esquerda": "Linfócitos, glicose baixa e proteína alta",
+                  "direita": "Tuberculosa ou fúngica"
+                },
+                {
+                  "esquerda": "Pressão muito alta e tinta da China positiva",
+                  "direita": "Criptocócica"
+                }
+              ],
+              "explicacao": "O exame do líquor é decisivo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame do líquor ajuda no diagnóstico de meningite tuberculosa?",
+              "opcoes": [
+                "Adenosina deaminase e teste molecular",
+                "Glicose apenas",
+                "Cultura comum em 24 horas",
+                "Nada"
+              ],
+              "resposta": "Adenosina deaminase e teste molecular",
+              "explicacao": "A cultura demora semanas.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com meningite tem pressão de abertura de 40 cm de água e tinta da China positiva.",
+              "enunciado": "Qual é a conduta além do antifúngico?",
+              "opcoes": [
+                "Punções de alívio repetidas",
+                "Nada",
+                "Corticoide",
+                "Cirurgia"
+              ],
+              "resposta": "Punções de alívio repetidas",
+              "explicacao": "A pressão alta causa cegueira e morte.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O antibiótico dado antes da punção pode deixar a cultura negativa, mas não altera tanto o perfil das células.",
+              "resposta": true,
+              "explicacao": "Por isso não se deve atrasar o antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A meningite ___ tem início lento, paralisia de nervos cranianos e hidrocefalia.",
+              "opcoes": [
+                "tuberculosa",
+                "viral",
+                "meningocócica",
+                "pneumocócica"
+              ],
+              "resposta": "tuberculosa",
+              "explicacao": "O tratamento inclui corticoide.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia para contatos de meningite por Haemophilus?",
+              "opcoes": [
+                "Rifampicina para contatos domiciliares com crianças não vacinadas",
+                "Nada",
+                "Amoxicilina",
+                "Vacina BCG"
+              ],
+              "resposta": "Rifampicina para contatos domiciliares com crianças não vacinadas",
+              "explicacao": "Reduz casos secundários.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com meningite pneumocócica fica surdo após a alta.",
+              "enunciado": "O que poderia ter reduzido esse risco?",
+              "opcoes": [
+                "Dexametasona antes ou junto do antibiótico",
+                "Antibiótico mais tarde",
+                "Nada",
+                "Antiviral"
+              ],
+              "resposta": "Dexametasona antes ou junto do antibiótico",
+              "explicacao": "A surdez é sequela comum.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d3-l2",
+          "titulo": "Infecções graves diversas",
+          "questoes": [
+            {
+              "id": "infecto-d3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção grave ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Tétano",
+                  "direita": "Imunoglobulina, metronidazol e controle dos espasmos"
+                },
+                {
+                  "esquerda": "Botulismo",
+                  "direita": "Antitoxina e suporte ventilatório"
+                },
+                {
+                  "esquerda": "Raiva com sintomas",
+                  "direita": "Cuidados de suporte"
+                },
+                {
+                  "esquerda": "Malária grave",
+                  "direita": "Artesunato venoso"
+                }
+              ],
+              "explicacao": "Muitas exigem UTI.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Agricultor tem rigidez da mandíbula, espasmos e riso forçado após ferimento no pé.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Tétano",
+                "Raiva",
+                "Meningite",
+                "AVC"
+              ],
+              "resposta": "Tétano",
+              "explicacao": "A vacinação previne.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa do botulismo de origem alimentar?",
+              "opcoes": [
+                "Toxina em conservas caseiras mal preparadas",
+                "Bactéria viva no intestino de adulto sempre",
+                "Vírus",
+                "Fungo"
+              ],
+              "resposta": "Toxina em conservas caseiras mal preparadas",
+              "explicacao": "Causa paralisia que desce, começando nos olhos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Família comeu palmito caseiro e tem visão dupla, pálpebras caídas e dificuldade para engolir.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Botulismo",
+                "Intoxicação comum",
+                "AVC",
+                "Miastenia"
+              ],
+              "resposta": "Botulismo",
+              "explicacao": "É uma emergência de saúde pública.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O antídoto do botulismo é a antitoxina e deve ser dado cedo.",
+              "resposta": true,
+              "explicacao": "Não reverte a paralisia já instalada.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ é a contração intensa dos músculos das costas no tétano.",
+              "opcoes": [
+                "opistótono",
+                "trismo",
+                "tetania",
+                "riso"
+              ],
+              "resposta": "opistótono",
+              "explicacao": "O trismo é a rigidez da mandíbula.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da hantavirose?",
+              "opcoes": [
+                "Suporte em UTI",
+                "Antibiótico",
+                "Antiviral específico",
+                "Nada"
+              ],
+              "resposta": "Suporte em UTI",
+              "explicacao": "Não há remédio específico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leptospirose tem tosse com sangue e falta de ar.",
+              "enunciado": "Qual é a complicação?",
+              "opcoes": [
+                "Hemorragia pulmonar",
+                "Pneumonia simples",
+                "Asma",
+                "Embolia"
+              ],
+              "resposta": "Hemorragia pulmonar",
+              "explicacao": "É a forma mais grave.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d3-l3",
+          "titulo": "Infecções ósseas e articulares",
+          "questoes": [
+            {
+              "id": "infecto-d3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada infecção óssea ao contexto.",
+              "pares": [
+                {
+                  "esquerda": "Osteomielite em criança",
+                  "direita": "Via sanguínea"
+                },
+                {
+                  "esquerda": "Osteomielite em pé diabético",
+                  "direita": "Úlcera próxima"
+                },
+                {
+                  "esquerda": "Espondilodiscite",
+                  "direita": "Coluna, com dor nas costas e febre"
+                },
+                {
+                  "esquerda": "Osteomielite em anemia falciforme",
+                  "direita": "Salmonella"
+                }
+              ],
+              "explicacao": "O germe varia com o contexto.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tem úlcera no pé e o instrumento toca o osso.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Osteomielite",
+                "Celulite simples",
+                "Gota",
+                "Artrite"
+              ],
+              "resposta": "Osteomielite",
+              "explicacao": "O teste de tocar o osso é muito útil.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame de imagem detecta osteomielite precoce?",
+              "opcoes": [
+                "Ressonância magnética",
+                "Raio X",
+                "Ultrassom",
+                "Tomografia sem contraste"
+              ],
+              "resposta": "Ressonância magnética",
+              "explicacao": "O raio X demora semanas para mudar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de drogas injetáveis tem dor nas costas, febre e fraqueza nas pernas.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Abscesso epidural",
+                "Lombalgia simples",
+                "Hérnia",
+                "Pielonefrite"
+              ],
+              "resposta": "Abscesso epidural",
+              "explicacao": "É emergência neurocirúrgica.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A osteomielite crônica pode exigir retirada cirúrgica do osso morto.",
+              "resposta": true,
+              "explicacao": "O sequestro ósseo não melhora só com antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O mal de ___ é a tuberculose da coluna.",
+              "opcoes": [
+                "Pott",
+                "Paget",
+                "Perthes",
+                "Osgood"
+              ],
+              "resposta": "Pott",
+              "explicacao": "Causa deformidade em giba.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto tempo dura o tratamento da osteomielite aguda?",
+              "opcoes": [
+                "Cerca de 4 a 6 semanas",
+                "3 dias",
+                "1 ano",
+                "1 semana"
+              ],
+              "resposta": "Cerca de 4 a 6 semanas",
+              "explicacao": "Pode ser parcialmente oral.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos tem dor no fêmur, febre e não apoia a perna.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Osteomielite aguda",
+                "Dor do crescimento",
+                "Fratura",
+                "Artrose"
+              ],
+              "resposta": "Osteomielite aguda",
+              "explicacao": "O Staphylococcus aureus é o germe mais comum.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-d4",
+      "titulo": "Doenças tropicais em casos",
+      "descricao": "Diagnóstico e manejo",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "infecto-d4-l1",
+          "titulo": "Dengue grave em casos",
+          "questoes": [
+            {
+              "id": "infecto-d4-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dengue no 5º dia tem pressão convergente, extremidades frias e hematócrito de 50%.",
+              "enunciado": "Qual é a classificação e a conduta?",
+              "opcoes": [
+                "Grupo D, choque; soro rápido e UTI",
+                "Grupo A; casa",
+                "Grupo B; observação",
+                "Grupo C; soro oral"
+              ],
+              "resposta": "Grupo D, choque; soro rápido e UTI",
+              "explicacao": "O choque da dengue é por extravasamento de plasma.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fase da dengue ao risco.",
+              "pares": [
+                {
+                  "esquerda": "Fase febril",
+                  "direita": "Desidratação"
+                },
+                {
+                  "esquerda": "Fase crítica",
+                  "direita": "Extravasamento de plasma e choque"
+                },
+                {
+                  "esquerda": "Fase de recuperação",
+                  "direita": "Sobrecarga de volume"
+                },
+                {
+                  "esquerda": "Gestação",
+                  "direita": "Maior risco de complicações"
+                }
+              ],
+              "explicacao": "O cuidado muda com a fase.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado na fase de recuperação da dengue?",
+              "opcoes": [
+                "Evitar excesso de soro pelo risco de edema pulmonar",
+                "Dar mais soro",
+                "Antibiótico",
+                "Corticoide"
+              ],
+              "resposta": "Evitar excesso de soro pelo risco de edema pulmonar",
+              "explicacao": "O líquido volta para os vasos.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dengue tem plaquetas de 20 mil sem sangramento.",
+              "enunciado": "Precisa de transfusão de plaquetas?",
+              "opcoes": [
+                "Não, sem sangramento não se transfunde",
+                "Sim, sempre",
+                "Sim, abaixo de 50 mil",
+                "Sim, com qualquer valor"
+              ],
+              "resposta": "Não, sem sangramento não se transfunde",
+              "explicacao": "A transfusão profilática não ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Gestantes, idosos e crianças pequenas com dengue são grupos de maior risco.",
+              "resposta": true,
+              "explicacao": "Devem ser acompanhados de perto.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de pulso, menor que 20 mmHg, é sinal de choque na dengue.",
+              "opcoes": [
+                "pressão diferencial (convergente)",
+                "pressão alta",
+                "frequência",
+                "saturação"
+              ],
+              "resposta": "pressão diferencial (convergente)",
+              "explicacao": "Indica gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame confirma dengue nos primeiros 5 dias?",
+              "opcoes": [
+                "Antígeno NS1 ou PCR",
+                "IgG",
+                "IgM no primeiro dia",
+                "Hemograma"
+              ],
+              "resposta": "Antígeno NS1 ou PCR",
+              "explicacao": "A IgM aparece depois do 6º dia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dengue tem dor abdominal intensa no 4º dia.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Considerar sinal de alarme e internar para soro venoso",
+                "Analgésico e alta",
+                "Anti-inflamatório",
+                "Nada"
+              ],
+              "resposta": "Considerar sinal de alarme e internar para soro venoso",
+              "explicacao": "A dor abdominal é sinal de alarme.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d4-l2",
+          "titulo": "Malária e febre amarela em casos",
+          "questoes": [
+            {
+              "id": "infecto-d4-l2-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com malária falciparum tem parasitemia de 10%, icterícia e creatinina alta.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Artesunato venoso em UTI",
+                "Cloroquina oral",
+                "Primaquina",
+                "Nada"
+              ],
+              "resposta": "Artesunato venoso em UTI",
+              "explicacao": "É malária grave.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada critério à malária grave.",
+              "pares": [
+                {
+                  "esquerda": "Neurológico",
+                  "direita": "Coma ou convulsões"
+                },
+                {
+                  "esquerda": "Sangue",
+                  "direita": "Anemia grave"
+                },
+                {
+                  "esquerda": "Rim",
+                  "direita": "Insuficiência renal"
+                },
+                {
+                  "esquerda": "Pulmão",
+                  "direita": "Edema pulmonar"
+                }
+              ],
+              "explicacao": "Um critério já define gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal cuidado com a febre amarela grave?",
+              "opcoes": [
+                "Suporte em UTI, sem tratamento antiviral específico",
+                "Antibiótico",
+                "Vacina na doença",
+                "Cloroquina"
+              ],
+              "resposta": "Suporte em UTI, sem tratamento antiviral específico",
+              "explicacao": "A prevenção é a vacina.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Viajante não vacinado voltou de área de mata com febre, icterícia e sangramento.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Febre amarela",
+                "Hepatite A",
+                "Malária",
+                "Dengue"
+              ],
+              "resposta": "Febre amarela",
+              "explicacao": "Notificar imediatamente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A vacina de febre amarela pode causar doença grave rara em idosos e imunossuprimidos.",
+              "resposta": true,
+              "explicacao": "O risco é avaliado individualmente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A malária por ___ tem gametócitos em forma de banana no esfregaço.",
+              "opcoes": [
+                "Plasmodium falciparum",
+                "Plasmodium vivax",
+                "Plasmodium malariae",
+                "Plasmodium ovale"
+              ],
+              "resposta": "Plasmodium falciparum",
+              "explicacao": "Também anéis múltiplos nas hemácias.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual teste rápido pode diagnosticar malária?",
+              "opcoes": [
+                "Teste de antígeno em fita",
+                "Hemograma",
+                "PCR para dengue",
+                "Teste de HIV"
+              ],
+              "resposta": "Teste de antígeno em fita",
+              "explicacao": "Útil em locais sem microscopista.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com malária por falciparum no segundo trimestre.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Derivados de artemisinina",
+                "Primaquina",
+                "Nada",
+                "Doxiciclina"
+              ],
+              "resposta": "Derivados de artemisinina",
+              "explicacao": "A primaquina é proibida na gestação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d4-l3",
+          "titulo": "Outras doenças tropicais em casos",
+          "questoes": [
+            {
+              "id": "infecto-d4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada doença ao achado laboratorial.",
+              "pares": [
+                {
+                  "esquerda": "Leishmaniose visceral",
+                  "direita": "Pancitopenia e globulinas altas"
+                },
+                {
+                  "esquerda": "Leptospirose",
+                  "direita": "Potássio baixo com lesão renal"
+                },
+                {
+                  "esquerda": "Febre tifoide",
+                  "direita": "Leucócitos baixos"
+                },
+                {
+                  "esquerda": "Esquistossomose aguda",
+                  "direita": "Eosinofilia alta"
+                }
+              ],
+              "explicacao": "Os exames ajudam a diferenciar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Criança com febre há 2 meses, baço gigante e pancitopenia.",
+              "enunciado": "Qual exame confirma leishmaniose visceral?",
+              "opcoes": [
+                "Teste rápido rK39 ou aspirado de medula",
+                "Hemocultura",
+                "Raio X",
+                "Ultrassom apenas"
+              ],
+              "resposta": "Teste rápido rK39 ou aspirado de medula",
+              "explicacao": "O tratamento é com anfotericina ou antimoniato.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na leptospirose com icterícia e lesão renal, qual antibiótico venoso usar?",
+              "opcoes": [
+                "Penicilina cristalina ou ceftriaxona",
+                "Doxiciclina sempre",
+                "Antifúngico",
+                "Nada"
+              ],
+              "resposta": "Penicilina cristalina ou ceftriaxona",
+              "explicacao": "Também suporte renal.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leptospirose tem insuficiência renal com potássio baixo.",
+              "enunciado": "Qual é a característica dessa lesão renal?",
+              "opcoes": [
+                "Lesão renal não oligúrica com perda de potássio",
+                "Lesão com potássio alto",
+                "Normal",
+                "Obstrução"
+              ],
+              "resposta": "Lesão renal não oligúrica com perda de potássio",
+              "explicacao": "É típica da leptospirose.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A febre tifoide pode perfurar o intestino na terceira semana.",
+              "resposta": true,
+              "explicacao": "Exige cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ visceral em pessoas com HIV costuma recair, exigindo profilaxia secundária.",
+              "opcoes": [
+                "leishmaniose",
+                "malária",
+                "dengue",
+                "febre amarela"
+              ],
+              "resposta": "leishmaniose",
+              "explicacao": "A anfotericina é dada periodicamente.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a complicação neurológica mais temida da doença de Chagas aguda?",
+              "opcoes": [
+                "Meningoencefalite em crianças e imunossuprimidos",
+                "Enxaqueca",
+                "Epilepsia comum",
+                "Nenhuma"
+              ],
+              "resposta": "Meningoencefalite em crianças e imunossuprimidos",
+              "explicacao": "É rara, mas grave.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Surto de febre, mialgia e miocardite em família após açaí não pasteurizado.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Doença de Chagas aguda; benznidazol",
+                "Dengue; hidratação",
+                "Leptospirose; penicilina",
+                "Hepatite; suporte"
+              ],
+              "resposta": "Doença de Chagas aguda; benznidazol",
+              "explicacao": "Notificar a vigilância.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infecto-d5",
+      "titulo": "Antimicrobianos e resistência em casos",
+      "descricao": "Escolhas difíceis",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "infecto-d5-l1",
+          "titulo": "Germes multirresistentes em casos",
+          "questoes": [
+            {
+              "id": "infecto-d5-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI tem infecção por Acinetobacter resistente a carbapenêmicos.",
+              "enunciado": "Quais opções existem?",
+              "opcoes": [
+                "Polimixina B ou ampicilina com sulbactam em dose alta, conforme sensibilidade",
+                "Amoxicilina",
+                "Cefalexina",
+                "Nada"
+              ],
+              "resposta": "Polimixina B ou ampicilina com sulbactam em dose alta, conforme sensibilidade",
+              "explicacao": "Germes muito resistentes exigem combinação.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada mecanismo de resistência ao antibiótico de escolha.",
+              "pares": [
+                {
+                  "esquerda": "ESBL",
+                  "direita": "Carbapenêmico"
+                },
+                {
+                  "esquerda": "KPC",
+                  "direita": "Ceftazidima com avibactam"
+                },
+                {
+                  "esquerda": "Metalobetalactamase",
+                  "direita": "Aztreonam com ceftazidima-avibactam"
+                },
+                {
+                  "esquerda": "MRSA",
+                  "direita": "Vancomicina"
+                }
+              ],
+              "explicacao": "O laboratório identifica o mecanismo.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco das polimixinas?",
+              "opcoes": [
+                "Lesão renal e neurológica",
+                "Nenhum",
+                "Hepatite",
+                "Diabetes"
+              ],
+              "resposta": "Lesão renal e neurológica",
+              "explicacao": "Devem ser usadas com cuidado.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infecção urinária por E. coli ESBL está estável e pode tomar remédio oral.",
+              "enunciado": "Qual opção pode ser usada conforme o antibiograma?",
+              "opcoes": [
+                "Fosfomicina ou nitrofurantoína para cistite",
+                "Ceftriaxona",
+                "Amoxicilina",
+                "Cefalexina"
+              ],
+              "resposta": "Fosfomicina ou nitrofurantoína para cistite",
+              "explicacao": "Cistite por ESBL pode ser tratada por via oral.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O programa de controle de antimicrobianos reduz resistência e custos nos hospitais.",
+              "resposta": true,
+              "explicacao": "Também reduz a infecção por Clostridioides difficile.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é a infecção de gram-negativos resistentes a quase todos os antibióticos.",
+              "opcoes": [
+                "pan-resistência",
+                "sensibilidade",
+                "colonização",
+                "contaminação"
+              ],
+              "resposta": "pan-resistência",
+              "explicacao": "É um grande problema mundial.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é colonização?",
+              "opcoes": [
+                "Presença do germe sem causar doença",
+                "Infecção grave",
+                "Contaminação de exame",
+                "Cura"
+              ],
+              "resposta": "Presença do germe sem causar doença",
+              "explicacao": "Não deve ser tratada com antibiótico.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem swab retal positivo para KPC, sem sinais de infecção.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Isolamento de contato, sem antibiótico",
+                "Tratar com polimixina",
+                "Alta imediata",
+                "Nada"
+              ],
+              "resposta": "Isolamento de contato, sem antibiótico",
+              "explicacao": "Colonização não se trata.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d5-l2",
+          "titulo": "Efeitos adversos de antimicrobianos em casos",
+          "questoes": [
+            {
+              "id": "infecto-d5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antibiótico ao efeito adverso.",
+              "pares": [
+                {
+                  "esquerda": "Linezolida",
+                  "direita": "Plaquetas baixas e síndrome serotoninérgica"
+                },
+                {
+                  "esquerda": "Quinolona",
+                  "direita": "Ruptura de tendão e QT longo"
+                },
+                {
+                  "esquerda": "Aminoglicosídeo",
+                  "direita": "Surdez e lesão renal"
+                },
+                {
+                  "esquerda": "Vancomicina",
+                  "direita": "Lesão renal e síndrome do homem vermelho"
+                }
+              ],
+              "explicacao": "Conhecer os efeitos ajuda a monitorar.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usando linezolida e sertralina tem febre, tremores e agitação.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Síndrome serotoninérgica",
+                "Sepse",
+                "Alergia",
+                "AVC"
+              ],
+              "resposta": "Síndrome serotoninérgica",
+              "explicacao": "A linezolida inibe a monoamina oxidase.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico prolonga o QT e exige cuidado em cardiopatas?",
+              "opcoes": [
+                "Azitromicina e quinolonas",
+                "Amoxicilina",
+                "Cefalexina",
+                "Penicilina"
+              ],
+              "resposta": "Azitromicina e quinolonas",
+              "explicacao": "Evitar com outros remédios que prolongam o QT.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usando sulfametoxazol e trimetoprima tem potássio alto.",
+              "enunciado": "Qual é a causa?",
+              "opcoes": [
+                "A trimetoprima reduz a eliminação de potássio pelo rim",
+                "Desidratação",
+                "Hemólise",
+                "Erro"
+              ],
+              "resposta": "A trimetoprima reduz a eliminação de potássio pelo rim",
+              "explicacao": "Monitorar em idosos e renais.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ceftriaxona pode formar barro biliar e cálculos.",
+              "resposta": true,
+              "explicacao": "Mais comum em crianças.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ pode causar efeito semelhante ao dissulfiram com álcool.",
+              "opcoes": [
+                "metronidazol",
+                "amoxicilina",
+                "azitromicina",
+                "vancomicina"
+              ],
+              "resposta": "metronidazol",
+              "explicacao": "Evitar álcool durante e após o uso.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antifúngico tem muitas interações por inibir o citocromo P450?",
+              "opcoes": [
+                "Voriconazol e fluconazol",
+                "Anfotericina",
+                "Nistatina",
+                "Terbinafina tópica"
+              ],
+              "resposta": "Voriconazol e fluconazol",
+              "explicacao": "Cuidado com estatinas e anticoagulantes.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com alergia leve antiga à penicilina precisa de cefalosporina.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Pode usar cefalosporina de outra geração com baixo risco",
+                "Nunca usar",
+                "Usar vancomicina sempre",
+                "Dessensibilizar sempre"
+              ],
+              "resposta": "Pode usar cefalosporina de outra geração com baixo risco",
+              "explicacao": "A alergia cruzada é rara.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "infecto-d5-l3",
+          "titulo": "Profilaxia e situações especiais",
+          "questoes": [
+            {
+              "id": "infecto-d5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação à profilaxia.",
+              "pares": [
+                {
+                  "esquerda": "Cirurgia limpa com prótese",
+                  "direita": "Cefazolina antes da incisão"
+                },
+                {
+                  "esquerda": "Esplenectomizado",
+                  "direita": "Vacinas e antibiótico se febre"
+                },
+                {
+                  "esquerda": "Contato de tuberculose com teste positivo",
+                  "direita": "Isoniazida ou rifapentina"
+                },
+                {
+                  "esquerda": "Contato de meningococo",
+                  "direita": "Rifampicina"
+                }
+              ],
+              "explicacao": "A profilaxia deve ser bem indicada.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai fazer cirurgia de cólon.",
+              "enunciado": "Qual profilaxia é indicada?",
+              "opcoes": [
+                "Antibiótico que cubra gram-negativos e anaeróbios antes da incisão",
+                "Nada",
+                "Vancomicina por 7 dias",
+                "Antifúngico"
+              ],
+              "resposta": "Antibiótico que cubra gram-negativos e anaeróbios antes da incisão",
+              "explicacao": "Ex.: cefazolina com metronidazol.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por quanto tempo deve durar a profilaxia cirúrgica?",
+              "opcoes": [
+                "Dose única ou até 24 horas",
+                "7 dias",
+                "14 dias",
+                "1 mês"
+              ],
+              "resposta": "Dose única ou até 24 horas",
+              "explicacao": "Prolongar não reduz infecções.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai iniciar quimioterapia e tem sorologia positiva para hepatite B.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Profilaxia antiviral contra reativação",
+                "Nada",
+                "Vacina",
+                "Interferon"
+              ],
+              "resposta": "Profilaxia antiviral contra reativação",
+              "explicacao": "A reativação pode ser fatal.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pacientes com valvopatias simples não precisam de profilaxia de endocardite antes do dentista.",
+              "resposta": true,
+              "explicacao": "Só os de alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A profilaxia com ___ é indicada em quem tem cirrose com hemorragia digestiva.",
+              "opcoes": [
+                "ceftriaxona",
+                "metronidazol",
+                "vancomicina",
+                "fluconazol"
+              ],
+              "resposta": "ceftriaxona",
+              "explicacao": "Reduz infecções e mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a profilaxia de infecções em transplantados de órgãos?",
+              "opcoes": [
+                "Sulfametoxazol para pneumocistose e antiviral para citomegalovírus conforme o risco",
+                "Nada",
+                "Apenas vacinas vivas",
+                "Antibiótico amplo diário"
+              ],
+              "resposta": "Sulfametoxazol para pneumocistose e antiviral para citomegalovírus conforme o risco",
+              "explicacao": "A profilaxia depende do tempo após o transplante.",
+              "revisado": false
+            },
+            {
+              "id": "infecto-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infecções urinárias de repetição pós-menopausa.",
+              "enunciado": "Qual estratégia ajuda?",
+              "opcoes": [
+                "Estrogênio vaginal e avaliar profilaxia",
+                "Nada",
+                "Antibiótico venoso mensal",
+                "Sonda"
+              ],
+              "resposta": "Estrogênio vaginal e avaliar profilaxia",
+              "explicacao": "O estrogênio restaura a flora vaginal.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
