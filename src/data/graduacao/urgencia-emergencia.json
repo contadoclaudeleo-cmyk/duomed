@@ -46,9 +46,9 @@
               "enunciado": "Qual é o objetivo da classificação de risco?",
               "opcoes": [
                 "Atender primeiro quem está mais grave",
-                "Atender por ordem de chegada",
-                "Atender só quem paga",
-                "Mandar para casa"
+                "Ordem de chegada",
+                "Só quem paga",
+                "Atender por ordem de chegada, sem olhar a gravidade de ninguém"
               ],
               "resposta": "Atender primeiro quem está mais grave",
               "explicacao": "Organiza o fluxo.",
@@ -70,7 +70,7 @@
                 "Protocolo de Manchester",
                 "Escore de Wells",
                 "Escore de Glasgow",
-                "Critério de Centor"
+                "Critério de Centor para faringite"
               ],
               "resposta": "Protocolo de Manchester",
               "explicacao": "Muito usado no Brasil.",
@@ -84,7 +84,7 @@
                 "Parada respiratória ou choque",
                 "Dor de dente",
                 "Resfriado",
-                "Pedido de atestado"
+                "Pedido de atestado médico para o trabalho"
               ],
               "resposta": "Parada respiratória ou choque",
               "explicacao": "Risco imediato de morte.",
@@ -96,12 +96,12 @@
               "caso": "Paciente chega com dor no peito há 30 minutos, suado e pálido.",
               "enunciado": "Qual é a prioridade?",
               "opcoes": [
-                "Muito urgente, com eletrocardiograma em até 10 minutos",
+                "Muito urgente, com ECG em até 10 min",
                 "Pouco urgente",
                 "Não urgente",
-                "Mandar para o posto"
+                "Pouco urgente, com consulta marcada para o dia seguinte"
               ],
-              "resposta": "Muito urgente, com eletrocardiograma em até 10 minutos",
+              "resposta": "Muito urgente, com ECG em até 10 min",
               "explicacao": "Pode ser infarto.",
               "revisado": false
             },
@@ -121,7 +121,7 @@
                 "SAMU",
                 "SUS",
                 "UBS",
-                "UPA"
+                "UPA 24 horas"
               ],
               "resposta": "SAMU",
               "explicacao": "Atende no local.",
@@ -188,7 +188,7 @@
                 "queixo e tração da mandíbula",
                 "braço",
                 "joelho",
-                "tórax"
+                "tórax com as duas mãos e a cabeça para trás"
               ],
               "resposta": "queixo e tração da mandíbula",
               "explicacao": "Protege a coluna.",
@@ -202,7 +202,7 @@
                 "Ruído como ronco ou estridor",
                 "Fala normal",
                 "Tosse leve",
-                "Nada"
+                "Fala normal com voz clara e forte"
               ],
               "resposta": "Ruído como ronco ou estridor",
               "explicacao": "Agir rápido.",
@@ -214,12 +214,12 @@
               "caso": "Paciente inconsciente ronca alto e a saturação está caindo.",
               "enunciado": "Qual é a primeira medida?",
               "opcoes": [
-                "Abrir a via aérea com manobras e cânula",
+                "Abrir a via aérea com manobra e cânula",
                 "Raio X",
                 "Eletrocardiograma",
-                "Esperar"
+                "Raio X de tórax e eletrocardiograma antes de mexer"
               ],
-              "resposta": "Abrir a via aérea com manobras e cânula",
+              "resposta": "Abrir a via aérea com manobra e cânula",
               "explicacao": "A língua obstrui a via aérea.",
               "revisado": false
             },
@@ -284,7 +284,7 @@
                 "Entre 94% e 98%",
                 "100% sempre",
                 "80%",
-                "70%"
+                "Sempre 100%, com oxigênio no máximo"
               ],
               "resposta": "Entre 94% e 98%",
               "explicacao": "Em DPOC, entre 88% e 92%.",
@@ -320,7 +320,7 @@
                 "Abaixo de 70 mg/dL",
                 "Abaixo de 150",
                 "Abaixo de 200",
-                "Abaixo de 100"
+                "Qualquer valor abaixo de 100 mg/dL"
               ],
               "resposta": "Abaixo de 70 mg/dL",
               "explicacao": "Abaixo de 54 é grave.",
@@ -334,8 +334,8 @@
               "opcoes": [
                 "Glicose na veia",
                 "Insulina",
-                "Nada",
-                "Tomografia antes"
+                "Observar",
+                "Tomografia de crânio antes de corrigir a glicose"
               ],
               "resposta": "Glicose na veia",
               "explicacao": "Tratar e reavaliar.",
@@ -357,7 +357,7 @@
                 "índice",
                 "ritmo",
                 "grau",
-                "tempo"
+                "tempo de enchimento capilar"
               ],
               "resposta": "índice",
               "explicacao": "Acima de 1 sugere gravidade.",
@@ -409,7 +409,7 @@
                 "100 a 120 por minuto",
                 "60 por minuto",
                 "200 por minuto",
-                "30 por minuto"
+                "Cerca de 30 por minuto, bem devagar"
               ],
               "resposta": "100 a 120 por minuto",
               "explicacao": "Deixar o tórax voltar.",
@@ -458,9 +458,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Chamar ajuda e iniciar compressões",
-                "Esperar",
+                "Aguardar",
                 "Dar água",
-                "Colocar sentada"
+                "Colocar a pessoa sentada e oferecer água com açúcar"
               ],
               "resposta": "Chamar ajuda e iniciar compressões",
               "explicacao": "O gasping não é respiração normal.",
@@ -527,7 +527,7 @@
                 "1 mg a cada 3 a 5 minutos",
                 "10 mg",
                 "0,1 mg",
-                "5 mg uma vez"
+                "Uma dose única de 5 mg no início"
               ],
               "resposta": "1 mg a cada 3 a 5 minutos",
               "explicacao": "Na veia ou intraóssea.",
@@ -560,12 +560,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são os 5 H das causas reversíveis de parada?",
               "opcoes": [
-                "Hipovolemia, hipóxia, hidrogênio, hipo ou hipercalemia e hipotermia",
+                "Hipovolemia, hipóxia, H+, K+ alterado e hipotermia",
                 "Hipertensão, hepatite, herpes",
-                "Nenhum",
-                "Hemorragia, hérnia"
+                "Hemorragia, hérnia",
+                "Hipertensão, hepatite, herpes, hérnia e hemorroida"
               ],
-              "resposta": "Hipovolemia, hipóxia, hidrogênio, hipo ou hipercalemia e hipotermia",
+              "resposta": "Hipovolemia, hipóxia, H+, K+ alterado e hipotermia",
               "explicacao": "Junto com os 5 T.",
               "revisado": false
             },
@@ -577,8 +577,8 @@
               "opcoes": [
                 "Desfibrilar o quanto antes",
                 "Adrenalina primeiro",
-                "Esperar",
-                "Intubar primeiro"
+                "Intubar primeiro",
+                "Intubar e dar adrenalina antes de qualquer choque"
               ],
               "resposta": "Desfibrilar o quanto antes",
               "explicacao": "O choque é o tratamento.",
@@ -617,12 +617,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado após o retorno da circulação?",
               "opcoes": [
-                "Controle da temperatura, da pressão e da oxigenação",
-                "Alta",
-                "Nada",
-                "Mais adrenalina"
+                "Controlar temperatura, pressão e oxigenação",
+                "Liberar",
+                "Mais adrenalina",
+                "Dar mais adrenalina e liberar quando acordar"
               ],
-              "resposta": "Controle da temperatura, da pressão e da oxigenação",
+              "resposta": "Controlar temperatura, pressão e oxigenação",
               "explicacao": "Também eletrocardiograma e cateterismo se indicado.",
               "revisado": false
             },
@@ -681,7 +681,7 @@
                 "Manobra vagal",
                 "Choque",
                 "Amiodarona",
-                "Nada"
+                "Choque elétrico não sincronizado"
               ],
               "resposta": "Manobra vagal",
               "explicacao": "Depois adenosina.",
@@ -694,9 +694,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Atropina e preparar marcapasso",
-                "Alta",
-                "Nada",
-                "Amiodarona"
+                "Liberar",
+                "Amiodarona",
+                "Amiodarona venosa e observação"
               ],
               "resposta": "Atropina e preparar marcapasso",
               "explicacao": "É bradicardia instável.",
@@ -770,7 +770,7 @@
                 "Até 10 minutos",
                 "1 hora",
                 "24 horas",
-                "Não precisa"
+                "Só depois da troponina"
               ],
               "resposta": "Até 10 minutos",
               "explicacao": "Pode mostrar infarto.",
@@ -805,8 +805,8 @@
               "opcoes": [
                 "AAS, antiagregante, anticoagulante e reperfusão",
                 "Só analgésico",
-                "Nada",
-                "Antibiótico"
+                "Antibiótico",
+                "Só analgésico forte e repouso, sem nenhum antiagregante"
               ],
               "resposta": "AAS, antiagregante, anticoagulante e reperfusão",
               "explicacao": "Conforme o tipo de infarto.",
@@ -820,8 +820,8 @@
               "opcoes": [
                 "Reperfusão com angioplastia ou trombolítico",
                 "Esperar a troponina",
-                "Alta",
-                "Nada"
+                "Liberar",
+                "Esperar o resultado da troponina para decidir qualquer tratamento"
               ],
               "resposta": "Reperfusão com angioplastia ou trombolítico",
               "explicacao": "Tempo é músculo.",
@@ -843,7 +843,7 @@
                 "balão",
                 "agulha",
                 "sala",
-                "alta"
+                "alta hospitalar"
               ],
               "resposta": "balão",
               "explicacao": "Tempo da chegada até abrir a artéria.",
@@ -886,9 +886,9 @@
               "enunciado": "Qual é o uso da ventilação não invasiva?",
               "opcoes": [
                 "Edema agudo de pulmão e DPOC exacerbada",
-                "Todo paciente com falta de ar",
+                "Toda falta de ar",
                 "Parada cardíaca",
-                "Nada"
+                "Todo paciente com falta de ar, inclusive em parada cardíaca"
               ],
               "resposta": "Edema agudo de pulmão e DPOC exacerbada",
               "explicacao": "Evita intubação.",
@@ -924,7 +924,7 @@
                 "Escore de Wells",
                 "Glasgow",
                 "Apgar",
-                "Child"
+                "Child-Pugh para cirrose"
               ],
               "resposta": "Escore de Wells",
               "explicacao": "Orienta os exames.",
@@ -939,7 +939,7 @@
                 "Embolia pulmonar",
                 "Ansiedade",
                 "Normal",
-                "Pneumonia"
+                "Pneumonia bacteriana comum"
               ],
               "resposta": "Embolia pulmonar",
               "explicacao": "Fazer angiotomografia.",
@@ -1006,7 +1006,7 @@
                 "Até 4,5 horas",
                 "24 horas",
                 "12 horas",
-                "1 semana"
+                "Até uma semana do início"
               ],
               "resposta": "Até 4,5 horas",
               "explicacao": "Quanto antes, melhor.",
@@ -1042,7 +1042,7 @@
                 "ABCDE e glicemia capilar",
                 "Tomografia",
                 "Punção",
-                "Nada"
+                "Tomografia de crânio antes de tudo"
               ],
               "resposta": "ABCDE e glicemia capilar",
               "explicacao": "Tratar causas rápidas.",
@@ -1055,9 +1055,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Tomografia urgente e avaliar trombólise",
-                "Esperar",
-                "Alta",
-                "Nada"
+                "Aguardar",
+                "Liberar",
+                "Aguardar 24 horas para ver se melhora sozinho"
               ],
               "resposta": "Tomografia urgente e avaliar trombólise",
               "explicacao": "É AVC.",
@@ -1131,7 +1131,7 @@
                 "Pressão baixa, pele fria e confusão",
                 "Febre isolada",
                 "Tosse",
-                "Dor leve"
+                "Febre isolada com tosse e coriza"
               ],
               "resposta": "Pressão baixa, pele fria e confusão",
               "explicacao": "Também diurese baixa.",
@@ -1167,7 +1167,7 @@
                 "Noradrenalina",
                 "Dopamina",
                 "Adrenalina",
-                "Dobutamina"
+                "Dobutamina isolada"
               ],
               "resposta": "Noradrenalina",
               "explicacao": "Meta de pressão média de 65.",
@@ -1182,7 +1182,7 @@
                 "Tamponamento cardíaco",
                 "Choque hipovolêmico",
                 "Normal",
-                "Sepse"
+                "Sepse de foco urinário"
               ],
               "resposta": "Tamponamento cardíaco",
               "explicacao": "Tratar com punção do pericárdio.",
@@ -1246,12 +1246,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como a definição atual (Sepse-3) descreve a sepse?",
               "opcoes": [
-                "Disfunção de órgão causada por resposta desregulada à infecção",
+                "Disfunção de órgão por resposta desregulada à infecção",
                 "Qualquer febre",
                 "Infecção leve",
-                "Gripe"
+                "Qualquer febre acima de 38 graus com aumento dos leucócitos no sangue"
               ],
-              "resposta": "Disfunção de órgão causada por resposta desregulada à infecção",
+              "resposta": "Disfunção de órgão por resposta desregulada à infecção",
               "explicacao": "Pode levar ao choque.",
               "revisado": false
             },
@@ -1297,12 +1297,12 @@
               "caso": "Paciente com pneumonia, confuso, pressão de 80/50 e frequência respiratória de 28.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hemoculturas, antibiótico, volume e vasopressor se necessário",
+                "Culturas, antibiótico, volume e vasopressor",
                 "Esperar exames",
-                "Alta",
-                "Nada"
+                "Liberar",
+                "Esperar todos os exames ficarem prontos antes do antibiótico"
               ],
-              "resposta": "Hemoculturas, antibiótico, volume e vasopressor se necessário",
+              "resposta": "Culturas, antibiótico, volume e vasopressor",
               "explicacao": "É sepse grave.",
               "revisado": false
             },
@@ -1367,7 +1367,7 @@
                 "0,5 mg intramuscular na coxa",
                 "1 mg na veia direto",
                 "10 mg",
-                "0,01 mg"
+                "1 mg direto na veia, sem diluir, em bolus rápido"
               ],
               "resposta": "0,5 mg intramuscular na coxa",
               "explicacao": "Pode repetir a cada 5 a 15 minutos.",
@@ -1400,12 +1400,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o tratamento do choque hemorrágico grave?",
               "opcoes": [
-                "Parar o sangramento e transfundir sangue",
+                "Parar o sangramento e transfundir",
                 "Só soro",
-                "Nada",
-                "Vasopressor apenas"
+                "Vasopressor apenas",
+                "Apenas soro fisiológico em grande volume, sem sangue"
               ],
-              "resposta": "Parar o sangramento e transfundir sangue",
+              "resposta": "Parar o sangramento e transfundir",
               "explicacao": "Evitar muito soro.",
               "revisado": false
             },
@@ -1415,12 +1415,12 @@
               "caso": "Paciente com úlcera sangrando, pressão de 80/50 e fezes pretas.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Acesso, sangue, inibidor de bomba e endoscopia",
-                "Alta",
-                "Nada",
-                "Antibiótico"
+                "Acesso, sangue, IBP e endoscopia",
+                "Liberar",
+                "Antibiótico",
+                "Antibiótico oral e liberar com retorno em uma semana"
               ],
-              "resposta": "Acesso, sangue, inibidor de bomba e endoscopia",
+              "resposta": "Acesso, sangue, IBP e endoscopia",
               "explicacao": "É hemorragia digestiva.",
               "revisado": false
             },
@@ -1492,7 +1492,7 @@
                 "Hemorragia",
                 "Infecção",
                 "Febre",
-                "Dor"
+                "Dor não tratada"
               ],
               "resposta": "Hemorragia",
               "explicacao": "Controlar o sangramento.",
@@ -1525,12 +1525,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o sinal de pneumotórax hipertensivo?",
               "opcoes": [
-                "Falta de ar, desvio da traqueia e pressão baixa",
+                "Falta de ar, traqueia desviada e pressão baixa",
                 "Febre",
                 "Tosse",
-                "Nada"
+                "Febre com tosse produtiva e dor ao respirar fundo"
               ],
-              "resposta": "Falta de ar, desvio da traqueia e pressão baixa",
+              "resposta": "Falta de ar, traqueia desviada e pressão baixa",
               "explicacao": "Descomprimir com agulha.",
               "revisado": false
             },
@@ -1542,8 +1542,8 @@
               "opcoes": [
                 "Descompressão com agulha e drenagem",
                 "Raio X antes",
-                "Nada",
-                "Esperar"
+                "Aguardar",
+                "Raio X de tórax antes de qualquer procedimento"
               ],
               "resposta": "Descompressão com agulha e drenagem",
               "explicacao": "Não esperar exame.",
@@ -1632,7 +1632,7 @@
                 "N-acetilcisteína",
                 "naloxona",
                 "atropina",
-                "flumazenil"
+                "flumazenil venoso"
               ],
               "resposta": "N-acetilcisteína",
               "explicacao": "Protege o fígado.",
@@ -1644,9 +1644,9 @@
               "enunciado": "Qual é o tratamento da intoxicação por monóxido de carbono?",
               "opcoes": [
                 "Oxigênio a 100%",
-                "Nada",
                 "Antibiótico",
-                "Atropina"
+                "Atropina",
+                "Antibiótico e atropina venosa"
               ],
               "resposta": "Oxigênio a 100%",
               "explicacao": "A oximetria engana.",
@@ -1660,8 +1660,8 @@
               "opcoes": [
                 "Naloxona e suporte",
                 "Atropina",
-                "Nada",
-                "Flumazenil"
+                "Flumazenil",
+                "Flumazenil e atropina juntos"
               ],
               "resposta": "Naloxona e suporte",
               "explicacao": "É intoxicação por opioide.",
@@ -1683,7 +1683,7 @@
                 "CIATox",
                 "SAMU",
                 "CAPS",
-                "CRM"
+                "CRM do estado"
               ],
               "resposta": "CIATox",
               "explicacao": "Funciona 24 horas.",
@@ -1728,7 +1728,7 @@
                 "Parkland",
                 "Wells",
                 "Glasgow",
-                "Child"
+                "Child-Pugh"
               ],
               "resposta": "Parkland",
               "explicacao": "4 mL vezes peso vezes área queimada.",
@@ -1761,12 +1761,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado inicial com a queimadura?",
               "opcoes": [
-                "Água corrente em temperatura ambiente por alguns minutos",
+                "Água corrente em temperatura ambiente",
                 "Gelo",
                 "Pasta de dente",
-                "Manteiga"
+                "Gelo direto na pele e pasta de dente por cima"
               ],
-              "resposta": "Água corrente em temperatura ambiente por alguns minutos",
+              "resposta": "Água corrente em temperatura ambiente",
               "explicacao": "Evitar produtos caseiros.",
               "revisado": false
             },
@@ -1777,9 +1777,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Intubação precoce",
-                "Esperar",
-                "Alta",
-                "Nada"
+                "Aguardar",
+                "Liberar",
+                "Oxigênio por cateter e liberar se a saturação estiver boa"
               ],
               "resposta": "Intubação precoce",
               "explicacao": "Risco de inchaço da via aérea.",
@@ -1827,12 +1827,12 @@
               "caso": "Paciente em parada há 10 minutos, assistolia persistente após várias doses de adrenalina.",
               "enunciado": "O que avaliar?",
               "opcoes": [
-                "Causas reversíveis e quando encerrar os esforços",
+                "Causas reversíveis e quando encerrar",
                 "Dar choque",
-                "Nada",
-                "Parar logo"
+                "Parar logo",
+                "Dar choques repetidos na assistolia até voltar o ritmo"
               ],
-              "resposta": "Causas reversíveis e quando encerrar os esforços",
+              "resposta": "Causas reversíveis e quando encerrar",
               "explicacao": "Os 5 H e 5 T.",
               "revisado": false
             },
@@ -1869,7 +1869,7 @@
                 "CO2 expirado acima de 10 mmHg",
                 "CO2 zero",
                 "Saturação 100%",
-                "Nada"
+                "Saturação de 100% no dedo durante as compressões"
               ],
               "resposta": "CO2 expirado acima de 10 mmHg",
               "explicacao": "Um aumento súbito sugere retorno da circulação.",
@@ -1883,8 +1883,8 @@
               "opcoes": [
                 "Hipercalemia; cálcio na veia",
                 "Hipocalemia; potássio",
-                "Nada",
-                "Hipotermia; aquecer"
+                "Hipotermia; aquecer",
+                "Hipocalemia; potássio venoso em dose alta"
               ],
               "resposta": "Hipercalemia; cálcio na veia",
               "explicacao": "Tratar durante a RCP.",
@@ -1917,12 +1917,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a carga do choque em desfibrilador bifásico?",
               "opcoes": [
-                "120 a 200 J conforme o aparelho",
+                "120 a 200 J, conforme o aparelho",
                 "10 J",
                 "50 J",
-                "500 J"
+                "Sempre 500 J em qualquer aparelho"
               ],
-              "resposta": "120 a 200 J conforme o aparelho",
+              "resposta": "120 a 200 J, conforme o aparelho",
               "explicacao": "Seguir o fabricante.",
               "revisado": false
             },
@@ -1933,9 +1933,9 @@
               "enunciado": "O que considerar?",
               "opcoes": [
                 "Trombolítico durante a RCP",
-                "Nada",
                 "Choque",
-                "Atropina"
+                "Atropina",
+                "Choque elétrico e atropina em dose alta"
               ],
               "resposta": "Trombolítico durante a RCP",
               "explicacao": "Pode salvar a vida.",
@@ -1978,12 +1978,12 @@
               "caso": "Paciente com taquicardia de QRS largo, 180 bpm, pressão normal e consciente.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratar como taquicardia ventricular com amiodarona",
+                "Tratar como TV, com amiodarona",
                 "Adenosina sempre",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Adenosina em bolus e liberar se melhorar"
               ],
-              "resposta": "Tratar como taquicardia ventricular com amiodarona",
+              "resposta": "Tratar como TV, com amiodarona",
               "explicacao": "QRS largo é ventricular até prova contrária.",
               "revisado": false
             },
@@ -1995,7 +1995,7 @@
                 "120 a 200 J bifásico",
                 "10 J",
                 "360 J sempre",
-                "Nenhuma"
+                "Sempre 360 J, em qualquer aparelho e ritmo"
               ],
               "resposta": "120 a 200 J bifásico",
               "explicacao": "Sincronizada com o QRS.",
@@ -2007,12 +2007,12 @@
               "caso": "Paciente com fibrilação atrial há 3 dias, estável, frequência de 140.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Controle da frequência e anticoagulação antes de cardioverter",
+                "Controlar frequência e anticoagular antes de cardioverter",
                 "Cardioversão imediata",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Cardioversão elétrica imediata, sem anticoagular e sem eco"
               ],
-              "resposta": "Controle da frequência e anticoagulação antes de cardioverter",
+              "resposta": "Controlar frequência e anticoagular antes de cardioverter",
               "explicacao": "Risco de trombo.",
               "revisado": false
             },
@@ -2044,9 +2044,9 @@
               "enunciado": "Qual é o risco de adenosina na fibrilação atrial com pré-excitação?",
               "opcoes": [
                 "Pode causar fibrilação ventricular",
-                "Nenhum",
+                "Risco nenhum",
                 "Cura",
-                "Bradicardia leve"
+                "Cura a arritmia de vez, sem nenhum risco"
               ],
               "resposta": "Pode causar fibrilação ventricular",
               "explicacao": "Evitar bloqueadores do nó.",
@@ -2058,12 +2058,12 @@
               "caso": "Jovem com palpitações e eletrocardiograma com onda delta.",
               "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Síndrome de Wolff-Parkinson-White",
+                "Wolff-Parkinson-White",
                 "Infarto",
                 "Normal",
-                "Bloqueio"
+                "Bloqueio de ramo esquerdo"
               ],
-              "resposta": "Síndrome de Wolff-Parkinson-White",
+              "resposta": "Wolff-Parkinson-White",
               "explicacao": "Tratar com ablação.",
               "revisado": false
             }
@@ -2106,8 +2106,8 @@
               "opcoes": [
                 "Marcapasso",
                 "Atropina só",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Atropina oral e retorno em uma semana"
               ],
               "resposta": "Marcapasso",
               "explicacao": "O bloqueio total exige marcapasso.",
@@ -2118,12 +2118,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual bloqueio responde mal à atropina?",
               "opcoes": [
-                "Bloqueio abaixo do nó, como Mobitz II e terceiro grau",
+                "Abaixo do nó, como Mobitz II e BAV total",
                 "Primeiro grau",
                 "Mobitz I",
-                "Nenhum"
+                "Bloqueio de primeiro grau com PR pouco alargado"
               ],
-              "resposta": "Bloqueio abaixo do nó, como Mobitz II e terceiro grau",
+              "resposta": "Abaixo do nó, como Mobitz II e BAV total",
               "explicacao": "Usar marcapasso.",
               "revisado": false
             },
@@ -2136,7 +2136,7 @@
                 "Glucagon",
                 "Naloxona",
                 "Atropina só",
-                "Nada"
+                "Naloxona e flumazenil juntos"
               ],
               "resposta": "Glucagon",
               "explicacao": "Também cálcio e insulina em dose alta.",
@@ -2158,7 +2158,7 @@
                 "transcutâneo",
                 "definitivo",
                 "oral",
-                "interno"
+                "interno permanente"
               ],
               "resposta": "transcutâneo",
               "explicacao": "É doloroso, exige sedação.",
@@ -2172,7 +2172,7 @@
                 "Isquemia do nó atrioventricular",
                 "Hipertireoidismo",
                 "Febre",
-                "Nada"
+                "Hipertireoidismo com febre e suor"
               ],
               "resposta": "Isquemia do nó atrioventricular",
               "explicacao": "Costuma ser temporária.",
@@ -2187,7 +2187,7 @@
                 "Anticorpo antidigoxina",
                 "Atropina",
                 "Naloxona",
-                "Nada"
+                "Naloxona venosa em dose alta"
               ],
               "resposta": "Anticorpo antidigoxina",
               "explicacao": "Em casos graves.",
@@ -2241,7 +2241,7 @@
                 "Infarto do ventrículo direito",
                 "Edema agudo",
                 "Normal",
-                "Pneumonia"
+                "Pneumonia com sepse e choque distributivo"
               ],
               "resposta": "Infarto do ventrículo direito",
               "explicacao": "Evitar nitrato e dar volume.",
@@ -2252,12 +2252,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a contraindicação ao nitrato no infarto?",
               "opcoes": [
-                "Uso de sildenafila e infarto do ventrículo direito",
+                "Sildenafila recente e infarto de VD",
                 "Dor",
                 "Hipertensão",
-                "Nenhuma"
+                "Dor no peito com pressão alta e taquicardia"
               ],
-              "resposta": "Uso de sildenafila e infarto do ventrículo direito",
+              "resposta": "Sildenafila recente e infarto de VD",
               "explicacao": "Pode causar queda grave da pressão.",
               "revisado": false
             },
@@ -2268,9 +2268,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Trombolítico e transferência",
-                "Esperar",
-                "Nada",
-                "Só AAS"
+                "Aguardar",
+                "Só AAS",
+                "Esperar o transporte e dar só AAS durante a viagem"
               ],
               "resposta": "Trombolítico e transferência",
               "explicacao": "O tempo para abrir é longo.",
@@ -2305,8 +2305,8 @@
               "opcoes": [
                 "Ruptura de músculo papilar ou do septo",
                 "Pericardite",
-                "Nada",
-                "Arritmia"
+                "Arritmia",
+                "Pericardite leve com atrito e febre baixa"
               ],
               "resposta": "Ruptura de músculo papilar ou do septo",
               "explicacao": "É emergência cirúrgica.",
@@ -2318,12 +2318,12 @@
               "caso": "Paciente com dor torácica, eletrocardiograma normal e troponina negativa em duas medidas.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Estratificar o risco e considerar teste não invasivo",
+                "Estratificar o risco e pensar em teste não invasivo",
                 "Cateterismo sempre",
-                "Nada",
-                "Internar sempre"
+                "Internar sempre",
+                "Cateterismo de urgência em todos os casos, mesmo com exames normais"
               ],
-              "resposta": "Estratificar o risco e considerar teste não invasivo",
+              "resposta": "Estratificar o risco e pensar em teste não invasivo",
               "explicacao": "Pode ter alta com segurança.",
               "revisado": false
             }
@@ -2364,12 +2364,12 @@
               "caso": "Paciente diabético com glicose de 500, cetonas e pH de 7,1.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Soro, insulina contínua e controle do potássio",
+                "Soro, insulina contínua e controlar o potássio",
                 "Insulina sem soro",
-                "Nada",
-                "Bicarbonato sempre"
+                "Bicarbonato sempre",
+                "Insulina em bolus alto sem soro e bicarbonato em todos os casos"
               ],
-              "resposta": "Soro, insulina contínua e controle do potássio",
+              "resposta": "Soro, insulina contínua e controlar o potássio",
               "explicacao": "É cetoacidose.",
               "revisado": false
             },
@@ -2379,9 +2379,9 @@
               "enunciado": "Qual é o cuidado antes de iniciar insulina na cetoacidose?",
               "opcoes": [
                 "Potássio acima de 3,3",
-                "Nenhum",
-                "Glicose acima de 1000",
-                "Sódio normal"
+                "Sódio baixo",
+                "Glicose > 1000",
+                "Glicose acima de 1000 e sódio normal"
               ],
               "resposta": "Potássio acima de 3,3",
               "explicacao": "A insulina baixa o potássio.",
@@ -2395,8 +2395,8 @@
               "opcoes": [
                 "Gluconato de cálcio",
                 "Diurético",
-                "Nada",
-                "Diálise imediata sem nada"
+                "Observar",
+                "Diálise imediata sem nenhuma medida antes"
               ],
               "resposta": "Gluconato de cálcio",
               "explicacao": "Estabiliza o coração.",
@@ -2431,8 +2431,8 @@
               "opcoes": [
                 "Hidrocortisona e soro",
                 "Insulina",
-                "Nada",
-                "Diurético"
+                "Diurético",
+                "Insulina e diurético venoso"
               ],
               "resposta": "Hidrocortisona e soro",
               "explicacao": "Na suspeita, não esperar exames.",
@@ -2444,12 +2444,12 @@
               "caso": "Paciente com hipoglicemia por sulfonilureia melhora com glicose, mas volta a cair.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Manter glicose contínua e observar por horas",
-                "Alta",
-                "Nada",
-                "Insulina"
+                "Glicose contínua e observar por horas",
+                "Liberar",
+                "Insulina",
+                "Liberar logo que a glicose normalizar uma vez"
               ],
-              "resposta": "Manter glicose contínua e observar por horas",
+              "resposta": "Glicose contínua e observar por horas",
               "explicacao": "A sulfonilureia age por muito tempo.",
               "revisado": false
             }
@@ -2490,12 +2490,12 @@
               "caso": "Paciente convulsionando há 10 minutos.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Benzodiazepínico e depois anticonvulsivante na veia",
-                "Esperar",
-                "Nada",
-                "Punção"
+                "Benzodiazepínico e depois anticonvulsivante venoso",
+                "Aguardar",
+                "Punção",
+                "Esperar a crise parar sozinha e depois fazer punção lombar"
               ],
-              "resposta": "Benzodiazepínico e depois anticonvulsivante na veia",
+              "resposta": "Benzodiazepínico e depois anticonvulsivante venoso",
               "explicacao": "É estado de mal.",
               "revisado": false
             },
@@ -2506,8 +2506,8 @@
               "opcoes": [
                 "Fenitoína, valproato ou levetiracetam",
                 "Paracetamol",
-                "Nada",
-                "Antibiótico"
+                "Antibiótico",
+                "Paracetamol venoso e antibiótico de amplo espectro"
               ],
               "resposta": "Fenitoína, valproato ou levetiracetam",
               "explicacao": "Após o benzodiazepínico.",
@@ -2522,7 +2522,7 @@
                 "Hemorragia subaracnóidea",
                 "Enxaqueca",
                 "AVC isquêmico",
-                "Normal"
+                "Enxaqueca com aura prolongada"
               ],
               "resposta": "Hemorragia subaracnóidea",
               "explicacao": "Investigar aneurisma.",
@@ -2555,12 +2555,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o cuidado com a pressão no AVC isquêmico sem trombólise?",
               "opcoes": [
-                "Tolerar pressão até 220/120",
-                "Baixar rapidamente",
-                "Nada",
-                "Manter abaixo de 120"
+                "Tolerar até 220/120",
+                "Baixar rápido",
+                "Manter < 120",
+                "Baixar rápido para menos de 120 de sistólica"
               ],
-              "resposta": "Tolerar pressão até 220/120",
+              "resposta": "Tolerar até 220/120",
               "explicacao": "Preserva o fluxo cerebral.",
               "revisado": false
             },
@@ -2570,12 +2570,12 @@
               "caso": "Paciente com AVC isquêmico candidato à trombólise e pressão de 200/110.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Baixar para menos de 185/110 antes de trombolisar",
+                "Baixar para < 185/110 antes da trombólise",
                 "Trombolisar assim",
-                "Nada",
-                "Não trombolisar nunca"
+                "Nunca trombolisar",
+                "Trombolisar com qualquer pressão, sem baixar antes"
               ],
-              "resposta": "Baixar para menos de 185/110 antes de trombolisar",
+              "resposta": "Baixar para < 185/110 antes da trombólise",
               "explicacao": "Reduz o risco de sangramento.",
               "revisado": false
             }
@@ -2624,12 +2624,12 @@
               "caso": "Paciente séptico continua com pressão baixa após volume e noradrenalina em dose alta.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Associar vasopressina e considerar hidrocortisona",
-                "Mais volume sem limite",
-                "Nada",
-                "Alta"
+                "Somar vasopressina e pensar em hidrocortisona",
+                "Volume sem limite",
+                "Liberar",
+                "Mais volume sem limite até a pressão subir, sem outro remédio"
               ],
-              "resposta": "Associar vasopressina e considerar hidrocortisona",
+              "resposta": "Somar vasopressina e pensar em hidrocortisona",
               "explicacao": "Choque refratário.",
               "revisado": false
             },
@@ -2638,12 +2638,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o sinal de resposta ao volume?",
               "opcoes": [
-                "Aumento do débito ou da pressão após elevação das pernas",
+                "Débito ou pressão sobem ao elevar as pernas",
                 "Febre",
-                "Nada",
-                "Tosse"
+                "Tosse",
+                "Febre alta com tosse e chiado no peito, sem mudança na pressão"
               ],
-              "resposta": "Aumento do débito ou da pressão após elevação das pernas",
+              "resposta": "Débito ou pressão sobem ao elevar as pernas",
               "explicacao": "Teste para avaliar.",
               "revisado": false
             },
@@ -2654,9 +2654,9 @@
               "enunciado": "O que considerar?",
               "opcoes": [
                 "Disfunção do coração; dobutamina",
-                "Alta",
-                "Nada",
-                "Mais antibiótico só"
+                "Liberar",
+                "Mais antibiótico só",
+                "Trocar o antibiótico e liberar para a enfermaria"
               ],
               "resposta": "Disfunção do coração; dobutamina",
               "explicacao": "Avaliar com ecocardiograma.",
@@ -2690,9 +2690,9 @@
               "enunciado": "Qual é o risco de dar volume demais na sepse?",
               "opcoes": [
                 "Edema pulmonar e piora",
-                "Nenhum",
+                "Risco nenhum",
                 "Cura",
-                "Febre"
+                "Risco nenhum; quanto mais soro, melhor"
               ],
               "resposta": "Edema pulmonar e piora",
               "explicacao": "Avaliar resposta a cada dose.",
@@ -2707,7 +2707,7 @@
                 "Sepse com hipoperfusão oculta",
                 "Normal",
                 "Infecção leve",
-                "Nada"
+                "Infecção urinária leve sem gravidade"
               ],
               "resposta": "Sepse com hipoperfusão oculta",
               "explicacao": "Tratar como grave.",
@@ -2753,7 +2753,7 @@
                 "Classe III",
                 "Classe I",
                 "Normal",
-                "Classe II"
+                "Classe I, sem perda importante"
               ],
               "resposta": "Classe III",
               "explicacao": "Exige sangue.",
@@ -2764,12 +2764,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a hipotensão permissiva no trauma?",
               "opcoes": [
-                "Pressão sistólica de 80 a 90 até controlar o sangramento",
+                "Sistólica de 80 a 90 até parar o sangramento",
                 "Pressão normal sempre",
                 "Pressão de 50",
-                "Nenhuma"
+                "Pressão normal sempre, com muito soro desde o início"
               ],
-              "resposta": "Pressão sistólica de 80 a 90 até controlar o sangramento",
+              "resposta": "Sistólica de 80 a 90 até parar o sangramento",
               "explicacao": "Evita piorar o sangramento.",
               "revisado": false
             },
@@ -2779,12 +2779,12 @@
               "caso": "Paciente com trauma de crânio e sangramento.",
               "enunciado": "A hipotensão permissiva pode ser usada?",
               "opcoes": [
-                "Não, o cérebro precisa de pressão maior",
+                "Não; o cérebro precisa de mais pressão",
                 "Sim, sempre",
-                "Nada",
-                "Sim, com pressão de 60"
+                "Sim, com pressão de 60",
+                "Sim, com sistólica de 60, para sangrar menos no crânio"
               ],
-              "resposta": "Não, o cérebro precisa de pressão maior",
+              "resposta": "Não; o cérebro precisa de mais pressão",
               "explicacao": "O trauma de crânio exige pressão adequada.",
               "revisado": false
             },
@@ -2818,7 +2818,7 @@
                 "Tórax, abdome, pelve e ossos longos",
                 "Cabeça",
                 "Mão",
-                "Pé"
+                "Mão e pé, por cortes pequenos que sangram muito"
               ],
               "resposta": "Tórax, abdome, pelve e ossos longos",
               "explicacao": "Procurar nesses locais.",
@@ -2830,12 +2830,12 @@
               "caso": "Vítima com fratura de pelve instável e choque.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cinta pélvica, sangue e controle do sangramento",
-                "Esperar",
-                "Nada",
-                "Raio X repetido"
+                "Cinta pélvica, sangue e parar o sangramento",
+                "Aguardar",
+                "Raio X repetido",
+                "Raio X de pelve repetido e aguardar a pressão subir"
               ],
-              "resposta": "Cinta pélvica, sangue e controle do sangramento",
+              "resposta": "Cinta pélvica, sangue e parar o sangramento",
               "explicacao": "A pelve sangra muito.",
               "revisado": false
             }
@@ -2879,7 +2879,7 @@
                 "Choque cardiogênico; reperfusão e inotrópico",
                 "Hipovolemia; volume",
                 "Sepse; antibiótico",
-                "Nada"
+                "Hipovolemia; vários litros de soro rápido na veia"
               ],
               "resposta": "Choque cardiogênico; reperfusão e inotrópico",
               "explicacao": "Reabrir a artéria salva vidas.",
@@ -2893,7 +2893,7 @@
                 "Dobutamina",
                 "Insulina",
                 "Atropina",
-                "Nada"
+                "Atropina em dose alta"
               ],
               "resposta": "Dobutamina",
               "explicacao": "Aumenta a força do coração.",
@@ -2908,7 +2908,7 @@
                 "Tamponamento cardíaco",
                 "Asma",
                 "Normal",
-                "Pneumonia"
+                "Pneumonia com derrame pleural"
               ],
               "resposta": "Tamponamento cardíaco",
               "explicacao": "É o pulso paradoxal.",
@@ -2944,7 +2944,7 @@
                 "Ultrassom (POCUS)",
                 "Raio X",
                 "Ressonância",
-                "Nada"
+                "Ressonância cardíaca com contraste"
               ],
               "resposta": "Ultrassom (POCUS)",
               "explicacao": "Avalia coração, veia cava e pulmão.",
@@ -2959,7 +2959,7 @@
                 "Embolia pulmonar maciça",
                 "Tamponamento",
                 "Hipovolemia",
-                "Normal"
+                "Achado normal do coração"
               ],
               "resposta": "Embolia pulmonar maciça",
               "explicacao": "Considerar trombólise.",
@@ -3010,12 +3010,12 @@
               "caso": "Vítima de facada no tórax com choque e macicez à esquerda.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Drenagem do tórax e reposição; cirurgia se drenar muito",
+                "Drenar o tórax e repor; operar se drenar muito",
                 "Raio X e esperar",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Raio X de tórax e aguardar a evolução sem drenar"
               ],
-              "resposta": "Drenagem do tórax e reposição; cirurgia se drenar muito",
+              "resposta": "Drenar o tórax e repor; operar se drenar muito",
               "explicacao": "É hemotórax maciço.",
               "revisado": false
             },
@@ -3024,12 +3024,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a indicação de toracotomia após drenagem de hemotórax?",
               "opcoes": [
-                "Drenagem de mais de 1500 mL na hora",
+                "Mais de 1500 mL na drenagem",
                 "100 mL",
-                "Nada",
-                "50 mL"
+                "50 mL",
+                "Qualquer volume acima de 100 mL"
               ],
-              "resposta": "Drenagem de mais de 1500 mL na hora",
+              "resposta": "Mais de 1500 mL na drenagem",
               "explicacao": "Ou mais de 200 mL por hora.",
               "revisado": false
             },
@@ -3042,7 +3042,7 @@
                 "Tórax instável",
                 "Pneumotórax",
                 "Normal",
-                "Hemotórax"
+                "Hemotórax pequeno"
               ],
               "resposta": "Tórax instável",
               "explicacao": "Tratar a dor e a contusão.",
@@ -3075,12 +3075,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o local da descompressão com agulha no adulto?",
               "opcoes": [
-                "4º ou 5º espaço intercostal na linha axilar",
-                "2º espaço sempre na linha do mamilo",
+                "4º ou 5º espaço na linha axilar",
+                "2º espaço sempre",
                 "Abdome",
-                "Pescoço"
+                "No pescoço, acima da clavícula"
               ],
-              "resposta": "4º ou 5º espaço intercostal na linha axilar",
+              "resposta": "4º ou 5º espaço na linha axilar",
               "explicacao": "Atualizado pelo ATLS.",
               "revisado": false
             },
@@ -3092,8 +3092,8 @@
               "opcoes": [
                 "Angiotomografia de tórax",
                 "Raio X repetido",
-                "Nada",
-                "Ultrassom"
+                "Ultrassom",
+                "Raio X repetido em seis horas"
               ],
               "resposta": "Angiotomografia de tórax",
               "explicacao": "Suspeita de lesão de aorta.",
@@ -3138,8 +3138,8 @@
               "opcoes": [
                 "Laparotomia",
                 "Tomografia",
-                "Nada",
-                "Observar"
+                "Observar",
+                "Tomografia com contraste antes de qualquer decisão"
               ],
               "resposta": "Laparotomia",
               "explicacao": "Não levar instável à tomografia.",
@@ -3152,8 +3152,8 @@
               "opcoes": [
                 "Cirurgia na maioria dos casos",
                 "Observar sempre",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Observar sempre com exames seriados e liberar"
               ],
               "resposta": "Cirurgia na maioria dos casos",
               "explicacao": "Alto risco de lesão interna.",
@@ -3165,12 +3165,12 @@
               "caso": "Paciente estável com lesão de baço na tomografia.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratamento sem cirurgia com observação",
-                "Retirada do baço sempre",
-                "Nada",
-                "Alta"
+                "Tratar sem cirurgia, com observação",
+                "Tirar o baço sempre",
+                "Liberar",
+                "Retirada do baço em todos os casos, mesmo estáveis"
               ],
-              "resposta": "Tratamento sem cirurgia com observação",
+              "resposta": "Tratar sem cirurgia, com observação",
               "explicacao": "Muitos casos não precisam de cirurgia.",
               "revisado": false
             },
@@ -3202,9 +3202,9 @@
               "enunciado": "Qual é o sinal de lesão de víscera oca no trauma?",
               "opcoes": [
                 "Dor abdominal com peritonite",
-                "Nada",
                 "Febre só",
-                "Tosse"
+                "Tosse",
+                "Febre isolada sem dor abdominal"
               ],
               "resposta": "Dor abdominal com peritonite",
               "explicacao": "A tomografia pode não mostrar no início.",
@@ -3216,12 +3216,12 @@
               "caso": "Paciente com marca do cinto e dor abdominal após acidente.",
               "enunciado": "O que suspeitar?",
               "opcoes": [
-                "Lesão de intestino e coluna lombar",
-                "Nada",
+                "Lesão de intestino e da coluna lombar",
                 "Apendicite",
-                "Normal"
+                "Normal",
+                "Apendicite aguda coincidente com o acidente"
               ],
-              "resposta": "Lesão de intestino e coluna lombar",
+              "resposta": "Lesão de intestino e da coluna lombar",
               "explicacao": "É a fratura de Chance.",
               "revisado": false
             }
@@ -3264,8 +3264,8 @@
               "opcoes": [
                 "Intubação e tomografia",
                 "Observar",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Observar na maca e repetir o Glasgow em seis horas"
               ],
               "resposta": "Intubação e tomografia",
               "explicacao": "Proteger a via aérea.",
@@ -3278,8 +3278,8 @@
               "opcoes": [
                 "Intervalo lúcido seguido de piora",
                 "Piora lenta por semanas",
-                "Nada",
-                "Febre"
+                "Febre",
+                "Piora lenta ao longo de várias semanas sem intervalo"
               ],
               "resposta": "Intervalo lúcido seguido de piora",
               "explicacao": "Exige cirurgia urgente.",
@@ -3294,7 +3294,7 @@
                 "Hematoma subdural crônico",
                 "AVC",
                 "Demência",
-                "Normal"
+                "Demência alcoólica de evolução lenta"
               ],
               "resposta": "Hematoma subdural crônico",
               "explicacao": "Tomografia confirma.",
@@ -3327,12 +3327,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a conduta com suspeita de lesão da coluna?",
               "opcoes": [
-                "Imobilizar e mobilizar em bloco",
+                "Imobilizar e mover em bloco",
                 "Mexer à vontade",
-                "Nada",
-                "Sentar"
+                "Sentar",
+                "Sentar a vítima para avaliar se ela consegue andar"
               ],
-              "resposta": "Imobilizar e mobilizar em bloco",
+              "resposta": "Imobilizar e mover em bloco",
               "explicacao": "Evita lesão da medula.",
               "revisado": false
             },
@@ -3398,8 +3398,8 @@
               "opcoes": [
                 "Bicarbonato de sódio na veia",
                 "Flumazenil",
-                "Nada",
-                "Atropina"
+                "Atropina",
+                "Flumazenil e atropina juntos"
               ],
               "resposta": "Bicarbonato de sódio na veia",
               "explicacao": "Protege o coração.",
@@ -3413,7 +3413,7 @@
                 "Rumack-Matthew",
                 "Glasgow",
                 "Wells",
-                "Parkland"
+                "Parkland para queimados"
               ],
               "resposta": "Rumack-Matthew",
               "explicacao": "Mede o nível após 4 horas.",
@@ -3428,7 +3428,7 @@
                 "Intoxicação por organofosforado",
                 "Opioide",
                 "Normal",
-                "Gripe"
+                "Gripe forte com diarreia e dor no corpo"
               ],
               "resposta": "Intoxicação por organofosforado",
               "explicacao": "Tratar com atropina.",
@@ -3463,8 +3463,8 @@
               "opcoes": [
                 "Hemodiálise",
                 "Carvão ativado",
-                "Nada",
-                "Naloxona"
+                "Naloxona",
+                "Carvão ativado em doses repetidas"
               ],
               "resposta": "Hemodiálise",
               "explicacao": "O carvão não adsorve lítio.",
@@ -3476,12 +3476,12 @@
               "caso": "Jovem após festa com agitação, febre, pupilas dilatadas e pressão alta.",
               "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Intoxicação por estimulantes, como cocaína ou ecstasy",
+                "Estimulantes, como cocaína ou ecstasy",
                 "Opioide",
                 "Normal",
-                "Álcool"
+                "Intoxicação por opioide com sedação"
               ],
-              "resposta": "Intoxicação por estimulantes, como cocaína ou ecstasy",
+              "resposta": "Estimulantes, como cocaína ou ecstasy",
               "explicacao": "Tratar com benzodiazepínico.",
               "revisado": false
             }
@@ -3524,8 +3524,8 @@
               "opcoes": [
                 "Soro antiescorpiônico e observação",
                 "Analgésico só",
-                "Nada",
-                "Alta"
+                "Liberar",
+                "Analgésico e liberar para casa com compressa"
               ],
               "resposta": "Soro antiescorpiônico e observação",
               "explicacao": "Crianças têm mais risco.",
@@ -3538,8 +3538,8 @@
               "opcoes": [
                 "Insuficiência renal por lesão muscular",
                 "Infecção só",
-                "Nada",
-                "Hipertensão"
+                "Hipertensão",
+                "Hipertensão arterial leve sem outras alterações"
               ],
               "resposta": "Insuficiência renal por lesão muscular",
               "explicacao": "Hidratar bem.",
@@ -3553,8 +3553,8 @@
               "opcoes": [
                 "RCP e aquecimento ativo",
                 "Declarar morte",
-                "Nada",
-                "Esperar"
+                "Aguardar",
+                "Declarar a morte logo, porque não há pulso"
               ],
               "resposta": "RCP e aquecimento ativo",
               "explicacao": "Ninguém está morto até estar quente e morto.",
@@ -3590,7 +3590,7 @@
                 "Torniquete e cortar o local",
                 "Lavar",
                 "Elevar",
-                "Levar ao hospital"
+                "Levar o paciente ao hospital"
               ],
               "resposta": "Torniquete e cortar o local",
               "explicacao": "Pioram o quadro.",
@@ -3603,9 +3603,9 @@
               "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Oxigênio e observação por horas",
-                "Alta",
-                "Nada",
-                "Antibiótico"
+                "Liberar",
+                "Antibiótico",
+                "Liberar para casa logo depois que parar de tossir"
               ],
               "resposta": "Oxigênio e observação por horas",
               "explicacao": "Pode piorar depois.",
@@ -3648,12 +3648,12 @@
               "caso": "Adulto de 70 kg com queimadura de 30% da superfície.",
               "enunciado": "Qual é o volume de soro nas primeiras 24 horas?",
               "opcoes": [
-                "Cerca de 8.400 mL, metade nas primeiras 8 horas",
+                "Cerca de 8.400 mL, metade nas primeiras 8 h",
                 "1 litro",
                 "20 litros",
-                "Nada"
+                "Cerca de 20 litros, todos nas primeiras duas horas"
               ],
-              "resposta": "Cerca de 8.400 mL, metade nas primeiras 8 horas",
+              "resposta": "Cerca de 8.400 mL, metade nas primeiras 8 h",
               "explicacao": "Pela fórmula de Parkland.",
               "revisado": false
             },
@@ -3664,8 +3664,8 @@
               "opcoes": [
                 "0,5 mL/kg/h",
                 "5 mL/kg/h",
-                "Nada",
-                "0,1 mL/kg/h"
+                "0,1 mL/kg/h",
+                "Pelo menos 5 mL/kg/h, mesmo com edema"
               ],
               "resposta": "0,5 mL/kg/h",
               "explicacao": "Ajustar o soro.",
@@ -3678,9 +3678,9 @@
               "enunciado": "Qual é o cuidado?",
               "opcoes": [
                 "Avaliar lesões internas, coração e músculos",
-                "Alta",
-                "Nada",
-                "Curativo só"
+                "Liberar",
+                "Curativo só",
+                "Curativo simples na mão e liberar para casa no mesmo dia"
               ],
               "resposta": "Avaliar lesões internas, coração e músculos",
               "explicacao": "O dano interno é maior que o visível.",
@@ -3713,12 +3713,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o critério de transferência para centro de queimados?",
               "opcoes": [
-                "Queimaduras em face, mãos, genitais ou extensas",
+                "Face, mãos, genitais ou queimadura extensa",
                 "Queimadura pequena",
-                "Nada",
-                "Primeiro grau"
+                "Primeiro grau",
+                "Queimadura pequena de primeiro grau no braço"
               ],
-              "resposta": "Queimaduras em face, mãos, genitais ou extensas",
+              "resposta": "Face, mãos, genitais ou queimadura extensa",
               "explicacao": "Exige cuidado especializado.",
               "revisado": false
             },
@@ -3731,7 +3731,7 @@
                 "Intoxicação por monóxido de carbono",
                 "Normal",
                 "Ansiedade",
-                "Nada"
+                "Ansiedade pelo susto do incêndio"
               ],
               "resposta": "Intoxicação por monóxido de carbono",
               "explicacao": "O oxímetro engana.",
