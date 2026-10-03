@@ -222,6 +222,7 @@ Dica: nos textos, prefira vírgula ou ponto em vez de travessão.
 | Revisão | Duas filas. **Erros:** questão errada entra na hora e, a cada acerto na revisão, volta depois de 1, 3 e 7 dias; no acerto seguinte sai da fila. **Acertos:** questão acertada na lição volta depois de 3 e 7 dias e depois sai. Errou, vai para os erros e volta ao começo. | `src/lib/revisao.ts` |
 | Conquistas | Primeira lição, lição perfeita, unidade completa, 7 dias de ofensiva, 100 questões | `src/lib/conquistas.ts` |
 | Ranking | Liga semanal com 14 jogadores fictícios que reinicia toda segunda | `src/lib/ranking.ts` |
+| Resolução | Depois de responder uma questão, o comentário (campo `explicacao`) fica escondido. Ele só aparece se a pessoa tocar em "Ver resolução". | `src/components/PainelFeedback.tsx` |
 | Revisão comentada | Ao fim de cada lição ou revisão, o botão "Ver revisão comentada" mostra cada questão com a resposta certa, o que a pessoa marcou e o comentário (campo `explicacao`). Nas lições já concluídas da trilha, o balão da lição também abre o gabarito comentado. | `src/screens/RevisaoComentada.tsx` |
 | Teste de nível | 8 questões, sem gastar vidas e sem ganhar XP. 6 acertos ou mais sugerem o nível difícil. | `src/screens/Nivelamento.tsx` |
 

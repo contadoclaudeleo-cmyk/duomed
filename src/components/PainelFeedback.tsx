@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Check, X } from 'lucide-react'
+import { Check, ChevronDown, Lightbulb, X } from 'lucide-react'
 import { useState } from 'react'
 import { Botao } from './Botao'
 import { Lapio } from './Lapio'
@@ -17,6 +17,8 @@ const ELOGIOS = ['Muito bem!', 'Mandou bem!', 'Exato!', 'Isso mesmo!', 'Perfeito
 export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinuar }: Props) {
   const [elogio] = useState(() => ELOGIOS[Math.floor(Math.random() * ELOGIOS.length)])
   const titulo = acertou ? elogio : 'Não foi dessa vez'
+  // O comentário só aparece se a pessoa pedir
+  const [mostrarResolucao, setMostrarResolucao] = useState(false)
 
   return (
     <motion.div
@@ -44,7 +46,31 @@ export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinu
                 Resposta correta: <span className="font-semibold">{respostaCorreta}</span>
               </p>
             )}
-            <p className="mt-2 text-sm leading-relaxed text-texto">{explicacao}</p>
+            <button
+              type="button"
+              onClick={() => setMostrarResolucao((m) => !m)}
+              aria-expanded={mostrarResolucao}
+              className={`mt-2 inline-flex items-center gap-1.5 rounded-xl border-2 px-3 py-1.5 text-sm font-extrabold transition-colors ${
+                acertou ? 'border-agua/40 hover:bg-agua/10' : 'border-erro/40 hover:bg-erro/10'
+              }`}
+            >
+              <Lightbulb className="h-4 w-4" strokeWidth={2.6} aria-hidden />
+              {mostrarResolucao ? 'Esconder resolução' : 'Ver resolução'}
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${mostrarResolucao ? 'rotate-180' : ''}`}
+                strokeWidth={2.6}
+                aria-hidden
+              />
+            </button>
+            {mostrarResolucao && (
+              <motion.p
+                initial={{ opacity: 0, y: -4 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-2 max-h-40 overflow-y-auto text-sm leading-relaxed text-texto"
+              >
+                {explicacao}
+              </motion.p>
+            )}
           </div>
         </div>
         <Botao variante={acertou ? 'primario' : 'perigo'} onClick={aoContinuar} className="w-full sm:w-44">
