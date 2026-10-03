@@ -16,6 +16,7 @@ import { Botao } from '../components/Botao'
 import { Modal } from '../components/Modal'
 import { AbasModo, AbasNivel } from '../components/AbasModo'
 import { NumeroAnimado } from '../components/Animacoes'
+import { tocarSom } from '../lib/sons'
 
 export function Perfil() {
   const navegar = useNavigate()
@@ -180,6 +181,21 @@ export function Perfil() {
               ['sistema', 'Automático'],
             ]}
             aoMudar={jogo.definirTema}
+          />
+        </div>
+        <div>
+          <p className="mb-2 font-bold">Efeitos sonoros</p>
+          <Segmentado<'sim' | 'nao'>
+            valor={jogo.sons ? 'sim' : 'nao'}
+            opcoes={[
+              ['sim', 'Ligados'],
+              ['nao', 'Desligados'],
+            ]}
+            aoMudar={(v) => {
+              jogo.definirSons(v === 'sim')
+              // Toca um exemplo ao ligar
+              if (v === 'sim') tocarSom('acerto')
+            }}
           />
         </div>
         <button

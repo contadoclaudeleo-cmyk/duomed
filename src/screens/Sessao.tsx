@@ -13,6 +13,7 @@ import { Modal } from '../components/Modal'
 import { PainelFeedback } from '../components/PainelFeedback'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { Questao } from '../components/questoes/Questao'
+import { tocarSom } from '../lib/sons'
 
 export interface ItemSessao {
   questao: TQuestao
@@ -60,6 +61,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     const certo = corrigir(item.questao, resposta)
     setAcertou(certo)
     setVerificada(true)
+    tocarSom(certo ? 'acerto' : 'erro')
     const novaSequencia = certo ? seguidas + 1 : 0
     setSeguidas(novaSequencia)
     if ([3, 5, 8].includes(novaSequencia)) setCombo(novaSequencia)
@@ -68,12 +70,22 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     if (modo !== 'nivelamento') responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
   }, [podeVerificar, item, resposta, responder, modo, seguidas])
 
-  // O aviso de sequência some sozinho
+  // O aviso de sequência toca um som logo depois do acerto e some sozinho
   useEffect(() => {
     if (combo === null) return
+    const som = setTimeout(() => tocarSom('sequencia'), 380)
     const id = setTimeout(() => setCombo(null), 1800)
-    return () => clearTimeout(id)
+    return () => {
+      clearTimeout(som)
+      clearTimeout(id)
+    }
   }, [combo])
+
+  // Clique ao escolher uma alternativa (ou desfazer a escolha)
+  const escolher = useCallback((nova: Resposta | null) => {
+    if (nova !== null) tocarSom('toque')
+    setResposta(nova)
+  }, [])
 
   const continuar = useCallback(() => {
     if (!verificada) return
@@ -181,7 +193,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
               <Questao
                 questao={item.questao}
                 resposta={resposta}
-                aoResponder={setResposta}
+                aoResponder={escolher}
                 verificada={verificada}
               />
             </motion.div>

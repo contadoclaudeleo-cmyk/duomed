@@ -52,6 +52,8 @@ interface DadosJogo {
   testeNivelPendente: boolean
   materiaAtual: string
   tema: Tema
+  /** Efeitos sonoros ligados */
+  sons: boolean
 }
 
 interface ConclusaoSessao {
@@ -68,6 +70,7 @@ interface AcoesJogo {
   criarUsuario: (nome: string, semestre: number | null, metaDiaria: MetaDiaria, modo: ModoEstudo) => void
   atualizarUsuario: (dados: Partial<Usuario>) => void
   definirTema: (tema: Tema) => void
+  definirSons: (sons: boolean) => void
   escolherMateria: (materiaId: string) => void
   escolherModo: (modo: ModoEstudo) => void
   definirNivel: (nivel: NivelDificuldade) => void
@@ -95,6 +98,7 @@ const estadoInicial = (): DadosJogo => ({
   testeNivelPendente: false,
   materiaAtual: 'anatomia',
   tema: 'sistema',
+  sons: true,
 })
 
 export const useJogo = create<DadosJogo & AcoesJogo>()(
@@ -117,6 +121,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       },
 
       definirTema: (tema) => set({ tema }),
+
+      definirSons: (sons) => set({ sons }),
 
       definirNivel: (nivel) => set({ nivel, testeNivelPendente: false }),
 

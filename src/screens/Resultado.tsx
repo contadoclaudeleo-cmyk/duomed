@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Award, Clock, Flame, MessageSquareText, Target, TrendingUp, Zap, type LucideIcon } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { formatarDuracao } from '../lib/datas'
@@ -8,6 +8,7 @@ import { buscarConquista } from '../lib/conquistas'
 import { Botao } from '../components/Botao'
 import { Lapio } from '../components/Lapio'
 import { Confete, NumeroAnimado } from '../components/Animacoes'
+import { tocarSom } from '../lib/sons'
 
 interface CartaoProps {
   rotulo: string
@@ -52,6 +53,16 @@ function CartaoNumero({ rotulo, valor, Icone, cor, atraso }: CartaoProps) {
 export function Resultado() {
   const navegar = useNavigate()
   const r = useJogo((s) => s.ultimoResultado)
+  const temDestaque = !!r && (r.bateuMetaAgora || !!r.subiuParaNivel || r.conquistasNovas.length > 0)
+
+  // Fanfarra ao chegar; brilho extra quando há conquista, nível novo ou meta batida
+  useEffect(() => {
+    if (!r) return
+    const ids = [setTimeout(() => tocarSom('conclusao'), 150)]
+    if (temDestaque) ids.push(setTimeout(() => tocarSom('conquista'), 1150))
+    return () => ids.forEach(clearTimeout)
+  }, [r, temDestaque])
+
   if (!r) return <Navigate to="/" replace />
 
   const partesXp = [`${r.xp.base} da ${r.modo === 'licao' ? 'lição' : 'revisão'}`]

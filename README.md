@@ -230,6 +230,7 @@ No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide
 | Resolução | Depois de responder uma questão, o comentário (campo `explicacao`) fica escondido. Ele só aparece se a pessoa tocar em "Ver resolução". | `src/components/PainelFeedback.tsx` |
 | Revisão comentada | Ao fim de cada lição ou revisão, o botão "Ver revisão comentada" mostra cada questão com a resposta certa, o que a pessoa marcou e o comentário (campo `explicacao`). Nas lições já concluídas da trilha, o balão da lição também abre o gabarito comentado. | `src/screens/RevisaoComentada.tsx` |
 | Teste de nível | 8 questões, sem gastar vidas e sem ganhar XP. 6 acertos ou mais sugerem o nível difícil. | `src/screens/Nivelamento.tsx` |
+| Sons e animações | Sons de clique, acerto, erro, acertos seguidos (3, 5 e 8), fim de lição e conquista. São gerados pelo navegador, sem arquivos de áudio. Dá para desligar no Perfil. As animações somem se o aparelho estiver com "reduzir movimento" ligado. | `src/lib/sons.ts` e `src/components/Animacoes.tsx` |
 
 ## Organização do código
 
