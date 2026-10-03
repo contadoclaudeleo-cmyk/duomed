@@ -5,5 +5,3741 @@
   "icone": "imagem",
   "ordem": 40,
   "ciclo": "clinico",
-  "unidades": []
+  "unidades": [
+    {
+      "id": "radio-u1",
+      "titulo": "Princípios dos exames",
+      "descricao": "Como cada exame funciona",
+      "licoes": [
+        {
+          "id": "radio-u1-l1",
+          "titulo": "Métodos de imagem",
+          "questoes": [
+            {
+              "id": "radio-u1-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada método de imagem ao princípio físico.",
+              "pares": [
+                {
+                  "esquerda": "Radiografia",
+                  "direita": "Raios X que atravessam o corpo"
+                },
+                {
+                  "esquerda": "Tomografia",
+                  "direita": "Raios X em cortes processados por computador"
+                },
+                {
+                  "esquerda": "Ressonância",
+                  "direita": "Campo magnético e ondas de rádio"
+                },
+                {
+                  "esquerda": "Ultrassom",
+                  "direita": "Ondas sonoras que refletem nos tecidos"
+                }
+              ],
+              "explicacao": "Cada método tem vantagens.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame não usa radiação ionizante?",
+              "opcoes": [
+                "Ressonância magnética",
+                "Tomografia",
+                "Radiografia",
+                "Cintilografia"
+              ],
+              "resposta": "Ressonância magnética",
+              "explicacao": "O ultrassom também não usa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na radiografia, o osso aparece branco porque absorve mais raios X.",
+              "resposta": true,
+              "explicacao": "É chamado de radiopaco.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na radiografia, o ar aparece ___ porque deixa passar os raios X.",
+              "opcoes": [
+                "preto",
+                "branco",
+                "cinza claro",
+                "azul"
+              ],
+              "resposta": "preto",
+              "explicacao": "É radiotransparente.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a ordem de densidade na radiografia, do mais escuro ao mais claro?",
+              "opcoes": [
+                "Ar, gordura, água, osso e metal",
+                "Osso, água, ar",
+                "Metal, ar, gordura",
+                "Água, ar, osso"
+              ],
+              "resposta": "Ar, gordura, água, osso e metal",
+              "explicacao": "São as cinco densidades.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Médico quer avaliar uma gestante com dor abdominal sem usar radiação.",
+              "enunciado": "Qual exame escolher primeiro?",
+              "opcoes": [
+                "Ultrassom",
+                "Tomografia",
+                "Radiografia",
+                "Cintilografia"
+              ],
+              "resposta": "Ultrassom",
+              "explicacao": "A ressonância sem contraste também é opção.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tomografia expõe o paciente a mais radiação que uma radiografia simples.",
+              "resposta": true,
+              "explicacao": "Por isso deve ter boa indicação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O princípio ___ orienta usar a menor dose de radiação possível.",
+              "opcoes": [
+                "ALARA",
+                "ABCDE",
+                "SAMPLE",
+                "SOAP"
+              ],
+              "resposta": "ALARA",
+              "explicacao": "Tão baixo quanto razoavelmente possível.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u1-l2",
+          "titulo": "Tomografia e contraste",
+          "questoes": [
+            {
+              "id": "radio-u1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada densidade na tomografia ao tecido.",
+              "pares": [
+                {
+                  "esquerda": "Muito branca",
+                  "direita": "Osso e contraste"
+                },
+                {
+                  "esquerda": "Branca acinzentada",
+                  "direita": "Sangue agudo"
+                },
+                {
+                  "esquerda": "Cinza",
+                  "direita": "Músculo e órgãos"
+                },
+                {
+                  "esquerda": "Preta",
+                  "direita": "Ar e gordura"
+                }
+              ],
+              "explicacao": "A densidade é medida em unidades Hounsfield.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em que unidade se mede a densidade na tomografia?",
+              "opcoes": [
+                "Unidades Hounsfield",
+                "Decibéis",
+                "Tesla",
+                "Gray"
+              ],
+              "resposta": "Unidades Hounsfield",
+              "explicacao": "A água tem valor zero.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sangue agudo aparece branco (hiperdenso) na tomografia de crânio sem contraste.",
+              "resposta": true,
+              "explicacao": "Por isso ela é o exame inicial no AVC.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O contraste ___ é usado na tomografia e pode prejudicar os rins.",
+              "opcoes": [
+                "iodado",
+                "gadolínio",
+                "bário",
+                "ar"
+              ],
+              "resposta": "iodado",
+              "explicacao": "Avaliar a função renal antes.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco do contraste iodado?",
+              "opcoes": [
+                "Alergia e piora da função renal",
+                "Nenhum",
+                "Hipoglicemia",
+                "Febre"
+              ],
+              "resposta": "Alergia e piora da função renal",
+              "explicacao": "Avaliar história de alergia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diabético usa metformina e vai fazer tomografia com contraste, com função renal muito reduzida.",
+              "enunciado": "Qual é o cuidado?",
+              "opcoes": [
+                "Suspender a metformina pelo risco de acidose lática",
+                "Nada",
+                "Dobrar a dose",
+                "Usar mais contraste"
+              ],
+              "resposta": "Suspender a metformina pelo risco de acidose lática",
+              "explicacao": "Retomar após avaliar a função renal.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O hipotireoidismo é uma contraindicação clássica do contraste iodado.",
+              "resposta": false,
+              "explicacao": "A preocupação é o hipertireoidismo não tratado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A janela de ___ na tomografia de tórax mostra melhor os brônquios e o tecido pulmonar.",
+              "opcoes": [
+                "pulmão",
+                "osso",
+                "mediastino",
+                "cérebro"
+              ],
+              "resposta": "pulmão",
+              "explicacao": "Cada janela destaca tecidos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u1-l3",
+          "titulo": "Ressonância e ultrassom",
+          "questoes": [
+            {
+              "id": "radio-u1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sequência de ressonância à característica.",
+              "pares": [
+                {
+                  "esquerda": "T1",
+                  "direita": "Gordura branca e líquido escuro"
+                },
+                {
+                  "esquerda": "T2",
+                  "direita": "Líquido branco"
+                },
+                {
+                  "esquerda": "FLAIR",
+                  "direita": "T2 com líquor escuro"
+                },
+                {
+                  "esquerda": "Difusão",
+                  "direita": "Detecta AVC isquêmico precoce"
+                }
+              ],
+              "explicacao": "Cada sequência destaca tecidos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a contraindicação absoluta da ressonância?",
+              "opcoes": [
+                "Marcapasso antigo não compatível",
+                "Obesidade",
+                "Gravidez em qualquer fase",
+                "Diabetes"
+              ],
+              "resposta": "Marcapasso antigo não compatível",
+              "explicacao": "Também clipes metálicos antigos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ressonância é o melhor exame para ver ligamentos e medula.",
+              "resposta": true,
+              "explicacao": "Mostra muito bem as partes moles.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O contraste usado na ressonância é o ___.",
+              "opcoes": [
+                "gadolínio",
+                "iodo",
+                "bário",
+                "ar"
+              ],
+              "resposta": "gadolínio",
+              "explicacao": "Cuidado na doença renal grave.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a vantagem do ultrassom?",
+              "opcoes": [
+                "Não usa radiação, é barato e feito à beira do leito",
+                "Vê ossos melhor",
+                "Atravessa o ar",
+                "Mostra o cérebro do adulto"
+              ],
+              "resposta": "Não usa radiação, é barato e feito à beira do leito",
+              "explicacao": "Depende do operador.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem claustrofobia e precisa de ressonância.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "Sedação leve ou aparelho aberto",
+                "Cancelar sempre",
+                "Fazer sem preparo",
+                "Tomografia sempre"
+              ],
+              "resposta": "Sedação leve ou aparelho aberto",
+              "explicacao": "Avaliar o melhor caminho.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ultrassom não atravessa bem o ar e o osso.",
+              "resposta": true,
+              "explicacao": "Por isso é limitado no pulmão e no crânio.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u1-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O efeito ___ no ultrassom mostra o fluxo de sangue nos vasos.",
+              "opcoes": [
+                "Doppler",
+                "Hounsfield",
+                "Tesla",
+                "Compton"
+              ],
+              "resposta": "Doppler",
+              "explicacao": "Avalia artérias e veias.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-u2",
+      "titulo": "Radiografia de tórax",
+      "descricao": "Leitura sistemática",
+      "licoes": [
+        {
+          "id": "radio-u2-l1",
+          "titulo": "Como ler o raio X de tórax",
+          "questoes": [
+            {
+              "id": "radio-u2-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada item da qualidade do raio X ao critério.",
+              "pares": [
+                {
+                  "esquerda": "Penetração",
+                  "direita": "Ver as vértebras atrás do coração"
+                },
+                {
+                  "esquerda": "Rotação",
+                  "direita": "Clavículas iguais ao processo espinhoso"
+                },
+                {
+                  "esquerda": "Inspiração",
+                  "direita": "Ver 9 a 10 costelas posteriores"
+                },
+                {
+                  "esquerda": "Incidência",
+                  "direita": "PA ou AP"
+                }
+              ],
+              "explicacao": "A qualidade afeta a leitura.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual incidência aumenta o tamanho do coração na radiografia?",
+              "opcoes": [
+                "AP, feita no leito",
+                "PA",
+                "Perfil",
+                "Oblíqua"
+              ],
+              "resposta": "AP, feita no leito",
+              "explicacao": "O coração fica longe do filme.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O índice cardiotorácico acima de 0,5 no PA sugere aumento do coração.",
+              "resposta": true,
+              "explicacao": "Mede o coração em relação ao tórax.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal da ___ ocorre quando uma lesão apaga o contorno de uma estrutura vizinha.",
+              "opcoes": [
+                "silhueta",
+                "coluna",
+                "asa",
+                "bola"
+              ],
+              "resposta": "silhueta",
+              "explicacao": "Ajuda a localizar lesões.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que significa apagar a borda direita do coração?",
+              "opcoes": [
+                "Lesão no lobo médio",
+                "Lesão no lobo inferior esquerdo",
+                "Pneumotórax",
+                "Normal"
+              ],
+              "resposta": "Lesão no lobo médio",
+              "explicacao": "O lobo médio toca o coração.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Raio X mostra opacidade que apaga o contorno esquerdo do diafragma.",
+              "enunciado": "Onde está a lesão?",
+              "opcoes": [
+                "Lobo inferior esquerdo",
+                "Lobo médio",
+                "Lobo superior direito",
+                "Mediastino"
+              ],
+              "resposta": "Lobo inferior esquerdo",
+              "explicacao": "É o sinal da silhueta.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ângulo costofrênico apagado sugere derrame pleural.",
+              "resposta": true,
+              "explicacao": "São necessários cerca de 200 mL no PA.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ aéreo é o ar nos brônquios visível dentro de uma área branca do pulmão.",
+              "opcoes": [
+                "broncograma",
+                "pneumotórax",
+                "derrame",
+                "nódulo"
+              ],
+              "resposta": "broncograma",
+              "explicacao": "Típico de pneumonia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u2-l2",
+          "titulo": "Achados pulmonares",
+          "questoes": [
+            {
+              "id": "radio-u2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado do raio X de tórax ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Consolidação com broncograma",
+                  "direita": "Pneumonia"
+                },
+                {
+                  "esquerda": "Linha pleural sem trama além dela",
+                  "direita": "Pneumotórax"
+                },
+                {
+                  "esquerda": "Menisco no seio costofrênico",
+                  "direita": "Derrame pleural"
+                },
+                {
+                  "esquerda": "Cavidade com nível líquido",
+                  "direita": "Abscesso"
+                }
+              ],
+              "explicacao": "Cada achado tem padrão.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado sugere pneumotórax hipertensivo?",
+              "opcoes": [
+                "Desvio do mediastino para o lado oposto",
+                "Desvio para o mesmo lado",
+                "Nenhum",
+                "Derrame"
+              ],
+              "resposta": "Desvio do mediastino para o lado oposto",
+              "explicacao": "É emergência; não esperar o raio X.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A atelectasia puxa o mediastino para o lado da lesão.",
+              "resposta": true,
+              "explicacao": "O derrame grande empurra para o outro lado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "As linhas B de ___ são finas linhas horizontais na base do pulmão no edema.",
+              "opcoes": [
+                "Kerley",
+                "Hounsfield",
+                "Fleischner",
+                "Rigler"
+              ],
+              "resposta": "Kerley",
+              "explicacao": "Indicam líquido no interstício.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado do edema agudo de pulmão no raio X?",
+              "opcoes": [
+                "Opacidades em asa de borboleta perto do hilo",
+                "Pneumotórax",
+                "Nódulo único",
+                "Pulmão normal"
+              ],
+              "resposta": "Opacidades em asa de borboleta perto do hilo",
+              "explicacao": "Também derrame e coração grande.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Raio X mostra hiperinsuflação, diafragma plano e coração em gota.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "DPOC com enfisema",
+                "Pneumonia",
+                "Edema",
+                "Derrame"
+              ],
+              "resposta": "DPOC com enfisema",
+              "explicacao": "O pulmão fica cheio de ar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tuberculose pós-primária costuma acometer os ápices pulmonares.",
+              "resposta": true,
+              "explicacao": "Pode ter cavidades.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ar livre sob o ___ no raio X em pé indica perfuração de víscera.",
+              "opcoes": [
+                "diafragma",
+                "coração",
+                "fígado",
+                "rim"
+              ],
+              "resposta": "diafragma",
+              "explicacao": "É pneumoperitônio.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u2-l3",
+          "titulo": "Mediastino e dispositivos",
+          "questoes": [
+            {
+              "id": "radio-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado sugere dissecção de aorta no raio X?",
+              "opcoes": [
+                "Mediastino alargado",
+                "Coração pequeno",
+                "Pneumotórax",
+                "Nada"
+              ],
+              "resposta": "Mediastino alargado",
+              "explicacao": "A tomografia confirma.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada dispositivo à posição correta no raio X.",
+              "pares": [
+                {
+                  "esquerda": "Tubo traqueal",
+                  "direita": "2 a 5 cm acima da carina"
+                },
+                {
+                  "esquerda": "Cateter venoso central",
+                  "direita": "Na veia cava superior"
+                },
+                {
+                  "esquerda": "Sonda gástrica",
+                  "direita": "Abaixo do diafragma, no estômago"
+                },
+                {
+                  "esquerda": "Dreno de tórax",
+                  "direita": "Dentro do espaço pleural"
+                }
+              ],
+              "explicacao": "Conferir após a colocação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A intubação seletiva costuma ir para o brônquio direito.",
+              "resposta": true,
+              "explicacao": "Ele é mais reto e largo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O mediastino ___ contém o coração e o pericárdio.",
+              "opcoes": [
+                "médio",
+                "posterior",
+                "anterior",
+                "superior"
+              ],
+              "resposta": "médio",
+              "explicacao": "O anterior fica à frente e o posterior perto da coluna.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os 4 T das massas do mediastino anterior?",
+              "opcoes": [
+                "Timoma, tireoide, teratoma e terrível linfoma",
+                "Tuberculose, tosse, tumor, trauma",
+                "Todos os tumores",
+                "Nenhum"
+              ],
+              "resposta": "Timoma, tireoide, teratoma e terrível linfoma",
+              "explicacao": "Ajuda no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Após passar sonda, o raio X mostra a ponta no brônquio direito.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Retirar e reposicionar antes de usar",
+                "Usar normalmente",
+                "Nada",
+                "Dar dieta"
+              ],
+              "resposta": "Retirar e reposicionar antes de usar",
+              "explicacao": "A dieta no pulmão causa pneumonia grave.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O raio X após punção venosa central serve para ver posição e pneumotórax.",
+              "resposta": true,
+              "explicacao": "Principalmente na subclávia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u2-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O botão ___ aparece como aorta saliente no raio X.",
+              "opcoes": [
+                "aórtico",
+                "pulmonar",
+                "traqueal",
+                "gástrico"
+              ],
+              "resposta": "aórtico",
+              "explicacao": "Está à esquerda da traqueia.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-u3",
+      "titulo": "Abdome e urgência",
+      "descricao": "Imagens do abdome",
+      "licoes": [
+        {
+          "id": "radio-u3-l1",
+          "titulo": "Raio X e ultrassom do abdome",
+          "questoes": [
+            {
+              "id": "radio-u3-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado no raio X do abdome ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Alças dilatadas com níveis líquidos",
+                  "direita": "Obstrução intestinal"
+                },
+                {
+                  "esquerda": "Ar sob o diafragma",
+                  "direita": "Perfuração"
+                },
+                {
+                  "esquerda": "Grão de café",
+                  "direita": "Volvo de sigmoide"
+                },
+                {
+                  "esquerda": "Cálculo radiopaco",
+                  "direita": "Pedra nos rins"
+                }
+              ],
+              "explicacao": "O raio X é simples e rápido.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame inicial para colecistite aguda?",
+              "opcoes": [
+                "Ultrassom",
+                "Tomografia",
+                "Ressonância",
+                "Raio X"
+              ],
+              "resposta": "Ultrassom",
+              "explicacao": "Mostra pedras e parede espessa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sinal de Murphy ultrassonográfico é dor ao pressionar a vesícula com o transdutor.",
+              "resposta": true,
+              "explicacao": "Ajuda no diagnóstico de colecistite.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ sem contraste é o exame de escolha para cálculo renal em adultos.",
+              "opcoes": [
+                "tomografia",
+                "radiografia",
+                "ressonância",
+                "cintilografia"
+              ],
+              "resposta": "tomografia",
+              "explicacao": "Mostra quase todos os cálculos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é usado para apendicite em crianças e gestantes?",
+              "opcoes": [
+                "Ultrassom primeiro",
+                "Tomografia sempre",
+                "Raio X",
+                "Cintilografia"
+              ],
+              "resposta": "Ultrassom primeiro",
+              "explicacao": "Evita radiação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor abdominal difusa e ausência de evacuações tem alças de delgado dilatadas no raio X.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Obstrução do intestino delgado",
+                "Normal",
+                "Pneumonia",
+                "Apendicite"
+              ],
+              "resposta": "Obstrução do intestino delgado",
+              "explicacao": "A tomografia ajuda a achar a causa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O intestino delgado dilatado tem pregas que cruzam toda a alça (válvulas coniventes).",
+              "resposta": true,
+              "explicacao": "O cólon tem haustrações que não cruzam toda a alça.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O FAST é o ultrassom no ___ para procurar sangue no abdome.",
+              "opcoes": [
+                "trauma",
+                "parto",
+                "infarto",
+                "AVC"
+              ],
+              "resposta": "trauma",
+              "explicacao": "Rápido, à beira do leito.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u3-l2",
+          "titulo": "Tomografia do abdome",
+          "questoes": [
+            {
+              "id": "radio-u3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado na tomografia ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Apêndice espessado com gordura borrada",
+                  "direita": "Apendicite"
+                },
+                {
+                  "esquerda": "Divertículo com inflamação no sigmoide",
+                  "direita": "Diverticulite"
+                },
+                {
+                  "esquerda": "Pâncreas aumentado com líquido",
+                  "direita": "Pancreatite"
+                },
+                {
+                  "esquerda": "Dilatação da aorta acima de 3 cm",
+                  "direita": "Aneurisma"
+                }
+              ],
+              "explicacao": "A tomografia é muito usada na urgência.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para diverticulite?",
+              "opcoes": [
+                "Tomografia com contraste",
+                "Raio X",
+                "Colonoscopia na fase aguda",
+                "Ultrassom sempre"
+              ],
+              "resposta": "Tomografia com contraste",
+              "explicacao": "A colonoscopia é feita depois.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tomografia com contraste avalia as fases do contraste no fígado para caracterizar nódulos.",
+              "resposta": true,
+              "explicacao": "Fase arterial, portal e tardia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O carcinoma ___ realça na fase arterial e lava na fase portal.",
+              "opcoes": [
+                "hepatocelular",
+                "colorretal",
+                "pancreático",
+                "gástrico"
+              ],
+              "resposta": "hepatocelular",
+              "explicacao": "Diagnóstico por imagem em cirróticos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é usado para estadiar câncer de reto?",
+              "opcoes": [
+                "Ressonância da pelve",
+                "Raio X",
+                "Ultrassom",
+                "Cintilografia"
+              ],
+              "resposta": "Ressonância da pelve",
+              "explicacao": "Mostra a invasão local.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor abdominal intensa, desproporcional ao exame, e fibrilação atrial.",
+              "enunciado": "Qual é o exame?",
+              "opcoes": [
+                "Angiotomografia para isquemia mesentérica",
+                "Raio X",
+                "Ultrassom",
+                "Nada"
+              ],
+              "resposta": "Angiotomografia para isquemia mesentérica",
+              "explicacao": "É emergência.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A colangiorressonância mostra as vias biliares sem contraste e sem radiação.",
+              "resposta": true,
+              "explicacao": "Útil para pedras no colédoco.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ de aorta abdominal é a dilatação da aorta, avaliado por ultrassom ou tomografia.",
+              "opcoes": [
+                "aneurisma",
+                "infarto",
+                "trombo",
+                "espasmo"
+              ],
+              "resposta": "aneurisma",
+              "explicacao": "Rastreio em homens fumantes idosos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u3-l3",
+          "titulo": "Imagem no trauma",
+          "questoes": [
+            {
+              "id": "radio-u3-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame de imagem do politraumatizado estável?",
+              "opcoes": [
+                "Tomografia de corpo inteiro",
+                "Só raio X",
+                "Nada",
+                "Ressonância"
+              ],
+              "resposta": "Tomografia de corpo inteiro",
+              "explicacao": "Rápida e completa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame ao uso no trauma.",
+              "pares": [
+                {
+                  "esquerda": "FAST",
+                  "direita": "Sangue no abdome do instável"
+                },
+                {
+                  "esquerda": "Raio X de tórax",
+                  "direita": "Pneumotórax e hemotórax"
+                },
+                {
+                  "esquerda": "Tomografia de crânio",
+                  "direita": "Sangramento no cérebro"
+                },
+                {
+                  "esquerda": "Tomografia de coluna",
+                  "direita": "Fratura vertebral"
+                }
+              ],
+              "explicacao": "A escolha depende da estabilidade.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Paciente instável não deve ir para a tomografia.",
+              "resposta": true,
+              "explicacao": "Primeiro estabilizar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O hematoma ___ tem forma de lente biconvexa na tomografia de crânio.",
+              "opcoes": [
+                "epidural",
+                "subdural",
+                "intraparenquimatoso",
+                "subaracnóideo"
+              ],
+              "resposta": "epidural",
+              "explicacao": "Causado por artéria.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a forma do hematoma subdural na tomografia?",
+              "opcoes": [
+                "Crescente, em meia-lua",
+                "Lente biconvexa",
+                "Redonda",
+                "Em linha"
+              ],
+              "resposta": "Crescente, em meia-lua",
+              "explicacao": "Causado por veias.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso que bateu a cabeça usa anticoagulante e está bem.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tomografia de crânio",
+                "Alta sem exame",
+                "Raio X",
+                "Nada"
+              ],
+              "resposta": "Tomografia de crânio",
+              "explicacao": "O risco de sangramento é maior.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tomografia de crânio é mais sensível que a ressonância para AVC isquêmico nas primeiras horas.",
+              "resposta": false,
+              "explicacao": "A ressonância com difusão é mais sensível.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u3-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "As regras ___ ajudam a decidir quem precisa de tomografia de crânio após trauma leve.",
+              "opcoes": [
+                "canadenses",
+                "europeias",
+                "americanas",
+                "asiáticas"
+              ],
+              "resposta": "canadenses",
+              "explicacao": "Evitam exames desnecessários.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-u4",
+      "titulo": "Neuro e musculoesquelético",
+      "descricao": "Imagens do cérebro e dos ossos",
+      "licoes": [
+        {
+          "id": "radio-u4-l1",
+          "titulo": "Neuroimagem",
+          "questoes": [
+            {
+              "id": "radio-u4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado na tomografia de crânio à doença.",
+              "pares": [
+                {
+                  "esquerda": "Área hipodensa no território de uma artéria",
+                  "direita": "AVC isquêmico"
+                },
+                {
+                  "esquerda": "Hiperdensidade nas cisternas",
+                  "direita": "Hemorragia subaracnóidea"
+                },
+                {
+                  "esquerda": "Lesão com realce em anel",
+                  "direita": "Abscesso ou tumor"
+                },
+                {
+                  "esquerda": "Ventrículos dilatados",
+                  "direita": "Hidrocefalia"
+                }
+              ],
+              "explicacao": "A tomografia é o exame inicial.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a tomografia é feita primeiro no AVC agudo?",
+              "opcoes": [
+                "Para excluir sangramento antes da trombólise",
+                "Para ver o infarto",
+                "Para ver tumor",
+                "Nenhum motivo"
+              ],
+              "resposta": "Para excluir sangramento antes da trombólise",
+              "explicacao": "O infarto pode não aparecer nas primeiras horas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ressonância é melhor que a tomografia para lesões da fossa posterior.",
+              "resposta": true,
+              "explicacao": "O osso atrapalha a tomografia ali.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal da artéria ___ hiperdensa indica trombo na artéria cerebral média.",
+              "opcoes": [
+                "cerebral média",
+                "carótida",
+                "basilar",
+                "vertebral"
+              ],
+              "resposta": "cerebral média",
+              "explicacao": "Pode aparecer cedo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é melhor para esclerose múltipla?",
+              "opcoes": [
+                "Ressonância",
+                "Tomografia",
+                "Raio X",
+                "Ultrassom"
+              ],
+              "resposta": "Ressonância",
+              "explicacao": "Mostra as placas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pior dor de cabeça da vida tem tomografia normal em 10 horas.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Punção lombar",
+                "Alta",
+                "Raio X",
+                "Nada"
+              ],
+              "resposta": "Punção lombar",
+              "explicacao": "Procurar sangue no líquor.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A escala ASPECTS avalia a extensão do AVC na tomografia.",
+              "resposta": true,
+              "explicacao": "Valores baixos indicam infarto grande.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de crânio é feita para ver vasos e aneurismas com contraste.",
+              "opcoes": [
+                "angiotomografia",
+                "radiografia",
+                "ultrassonografia",
+                "cintilografia"
+              ],
+              "resposta": "angiotomografia",
+              "explicacao": "Também usada no AVC.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u4-l2",
+          "titulo": "Ossos e articulações",
+          "questoes": [
+            {
+              "id": "radio-u4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ósseo ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Reação periosteal em casca de cebola",
+                  "direita": "Sarcoma de Ewing"
+                },
+                {
+                  "esquerda": "Triângulo de Codman",
+                  "direita": "Osteossarcoma"
+                },
+                {
+                  "esquerda": "Lesão lítica em saca-bocado",
+                  "direita": "Mieloma múltiplo"
+                },
+                {
+                  "esquerda": "Redução do espaço articular com osteófitos",
+                  "direita": "Artrose"
+                }
+              ],
+              "explicacao": "Os padrões ajudam.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quantas incidências são necessárias no raio X de fratura?",
+              "opcoes": [
+                "Pelo menos duas, perpendiculares",
+                "Uma",
+                "Nenhuma",
+                "Cinco"
+              ],
+              "resposta": "Pelo menos duas, perpendiculares",
+              "explicacao": "Uma só pode esconder a fratura.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A fratura de escafoide pode não aparecer no primeiro raio X.",
+              "resposta": true,
+              "explicacao": "Repetir ou fazer ressonância.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ é o melhor exame para lesões de menisco e ligamentos do joelho.",
+              "opcoes": [
+                "ressonância",
+                "radiografia",
+                "tomografia",
+                "cintilografia"
+              ],
+              "resposta": "ressonância",
+              "explicacao": "Mostra partes moles.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para osteomielite precoce?",
+              "opcoes": [
+                "Ressonância",
+                "Raio X",
+                "Ultrassom",
+                "Nada"
+              ],
+              "resposta": "Ressonância",
+              "explicacao": "O raio X demora semanas para alterar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Corredor com dor na tíbia tem raio X normal.",
+              "enunciado": "Qual exame confirma fratura por estresse?",
+              "opcoes": [
+                "Ressonância",
+                "Nada",
+                "Raio X repetido no mesmo dia",
+                "Ultrassom"
+              ],
+              "resposta": "Ressonância",
+              "explicacao": "Detecta cedo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A densitometria óssea diagnostica osteoporose.",
+              "resposta": true,
+              "explicacao": "Usa o T-score.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na osteoporose, o T-score é igual ou menor que ___.",
+              "opcoes": [
+                "-2,5",
+                "-1",
+                "0",
+                "+2"
+              ],
+              "resposta": "-2,5",
+              "explicacao": "Entre -1 e -2,5 é osteopenia.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u4-l3",
+          "titulo": "Coluna e partes moles",
+          "questoes": [
+            {
+              "id": "radio-u4-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a indicação de exame de imagem na dor lombar?",
+              "opcoes": [
+                "Sinais de alerta, como febre, perda de peso e déficit",
+                "Toda dor lombar",
+                "Nunca",
+                "Só em idosos"
+              ],
+              "resposta": "Sinais de alerta, como febre, perda de peso e déficit",
+              "explicacao": "A maioria não precisa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal de alerta da dor lombar à preocupação.",
+              "pares": [
+                {
+                  "esquerda": "Febre",
+                  "direita": "Infecção"
+                },
+                {
+                  "esquerda": "Perda de peso e câncer prévio",
+                  "direita": "Metástase"
+                },
+                {
+                  "esquerda": "Retenção urinária e anestesia em sela",
+                  "direita": "Cauda equina"
+                },
+                {
+                  "esquerda": "Trauma em idoso",
+                  "direita": "Fratura"
+                }
+              ],
+              "explicacao": "Exigem investigação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Hérnias de disco aparecem em muitas pessoas sem dor.",
+              "resposta": true,
+              "explicacao": "Por isso o exame deve combinar com a clínica.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A síndrome da cauda ___ exige ressonância urgente.",
+              "opcoes": [
+                "equina",
+                "longa",
+                "fina",
+                "curta"
+              ],
+              "resposta": "equina",
+              "explicacao": "Compressão das raízes nervosas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para massa de partes moles?",
+              "opcoes": [
+                "Ressonância ou ultrassom",
+                "Raio X",
+                "Cintilografia",
+                "Nada"
+              ],
+              "resposta": "Ressonância ou ultrassom",
+              "explicacao": "Avalia o tamanho e a relação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor lombar há 2 semanas, sem sinais de alerta.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratamento sem exame de imagem",
+                "Ressonância",
+                "Tomografia",
+                "Raio X"
+              ],
+              "resposta": "Tratamento sem exame de imagem",
+              "explicacao": "A maioria melhora sozinha.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cintilografia óssea ajuda a procurar metástases em vários ossos ao mesmo tempo.",
+              "resposta": true,
+              "explicacao": "Mostra áreas de atividade.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u4-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O PET-CT usa glicose ___ para mostrar áreas de metabolismo alto.",
+              "opcoes": [
+                "marcada",
+                "pura",
+                "cristalizada",
+                "gelada"
+              ],
+              "resposta": "marcada",
+              "explicacao": "Útil no câncer.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-u5",
+      "titulo": "Mama, gestação e uso racional",
+      "descricao": "Exames especiais",
+      "licoes": [
+        {
+          "id": "radio-u5-l1",
+          "titulo": "Imagem da mama",
+          "questoes": [
+            {
+              "id": "radio-u5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada categoria BI-RADS da mamografia à conduta recomendada.",
+              "pares": [
+                {
+                  "esquerda": "BI-RADS 1 e 2",
+                  "direita": "Rotina"
+                },
+                {
+                  "esquerda": "BI-RADS 3",
+                  "direita": "Controle em 6 meses"
+                },
+                {
+                  "esquerda": "BI-RADS 4",
+                  "direita": "Biópsia"
+                },
+                {
+                  "esquerda": "BI-RADS 5",
+                  "direita": "Biópsia com alta suspeita"
+                }
+              ],
+              "explicacao": "Padroniza o laudo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame de rastreio do câncer de mama?",
+              "opcoes": [
+                "Mamografia",
+                "Ultrassom",
+                "Ressonância",
+                "Tomografia"
+              ],
+              "resposta": "Mamografia",
+              "explicacao": "Ultrassom e ressonância são complementares.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Microcalcificações agrupadas e finas na mamografia podem indicar câncer.",
+              "resposta": true,
+              "explicacao": "Devem ser biopsiadas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O BI-RADS ___ é usado quando o câncer já foi confirmado por biópsia.",
+              "opcoes": [
+                "6",
+                "0",
+                "3",
+                "1"
+              ],
+              "resposta": "6",
+              "explicacao": "Antes do tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame inicial para nódulo de mama em mulher de 25 anos?",
+              "opcoes": [
+                "Ultrassom",
+                "Mamografia",
+                "Tomografia",
+                "Ressonância"
+              ],
+              "resposta": "Ultrassom",
+              "explicacao": "A mama jovem é densa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mamografia de rastreio tem achado incompleto e é classificada como BI-RADS 0.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Exames complementares, como ultrassom ou mais incidências",
+                "Biópsia sempre",
+                "Rotina",
+                "Nada"
+              ],
+              "resposta": "Exames complementares, como ultrassom ou mais incidências",
+              "explicacao": "Precisa de mais avaliação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ressonância de mama é usada no rastreio de mulheres de alto risco, como com BRCA.",
+              "resposta": true,
+              "explicacao": "Junto com a mamografia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l1-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "A mama ___ reduz a sensibilidade da mamografia.",
+              "opcoes": [
+                "densa",
+                "gordurosa",
+                "pequena",
+                "grande"
+              ],
+              "resposta": "densa",
+              "explicacao": "O ultrassom pode complementar.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u5-l2",
+          "titulo": "Gestação e crianças",
+          "questoes": [
+            {
+              "id": "radio-u5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame à segurança na gestação.",
+              "pares": [
+                {
+                  "esquerda": "Ultrassom",
+                  "direita": "Seguro"
+                },
+                {
+                  "esquerda": "Ressonância sem contraste",
+                  "direita": "Segura após o primeiro trimestre"
+                },
+                {
+                  "esquerda": "Tomografia de abdome",
+                  "direita": "Evitar se possível"
+                },
+                {
+                  "esquerda": "Gadolínio",
+                  "direita": "Evitar"
+                }
+              ],
+              "explicacao": "Pesar riscos e benefícios.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame se usa para avaliar a idade gestacional no início da gravidez?",
+              "opcoes": [
+                "Ultrassom",
+                "Tomografia",
+                "Raio X",
+                "Ressonância"
+              ],
+              "resposta": "Ultrassom",
+              "explicacao": "Medida do comprimento do embrião.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Nenhum exame necessário deve ser negado à gestante por medo da radiação em doses baixas.",
+              "resposta": true,
+              "explicacao": "Doses de diagnóstico raramente causam dano.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ de radiação em crianças deve ser menor, pois são mais sensíveis.",
+              "opcoes": [
+                "dose",
+                "cor",
+                "idade",
+                "altura"
+              ],
+              "resposta": "dose",
+              "explicacao": "Usar protocolos pediátricos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame avalia o quadril do bebê com suspeita de displasia?",
+              "opcoes": [
+                "Ultrassom",
+                "Raio X",
+                "Tomografia",
+                "Ressonância"
+              ],
+              "resposta": "Ultrassom",
+              "explicacao": "Antes dos 4 a 6 meses.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com suspeita de embolia pulmonar e raio X normal.",
+              "enunciado": "Qual é o exame?",
+              "opcoes": [
+                "Cintilografia ou angiotomografia, pesando os riscos",
+                "Nenhum",
+                "Só D-dímero",
+                "Ressonância de crânio"
+              ],
+              "resposta": "Cintilografia ou angiotomografia, pesando os riscos",
+              "explicacao": "O diagnóstico é importante.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na criança com suspeita de invaginação, o ultrassom mostra o sinal do alvo.",
+              "resposta": true,
+              "explicacao": "Exame inicial.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l2-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ultrassom ___ é feito entre 11 e 14 semanas para avaliar a translucência nucal.",
+              "opcoes": [
+                "morfológico do primeiro trimestre",
+                "obstétrico tardio",
+                "Doppler",
+                "pélvico"
+              ],
+              "resposta": "morfológico do primeiro trimestre",
+              "explicacao": "Rastreio de síndromes.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-u5-l3",
+          "titulo": "Uso racional dos exames",
+          "questoes": [
+            {
+              "id": "radio-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco de pedir exames de imagem em excesso?",
+              "opcoes": [
+                "Achados incidentais, radiação e custos",
+                "Nenhum",
+                "Diagnóstico melhor sempre",
+                "Cura"
+              ],
+              "resposta": "Achados incidentais, radiação e custos",
+              "explicacao": "Pode levar a procedimentos desnecessários.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado incidental à conduta comum.",
+              "pares": [
+                {
+                  "esquerda": "Nódulo pulmonar pequeno",
+                  "direita": "Seguimento conforme o risco"
+                },
+                {
+                  "esquerda": "Cisto renal simples",
+                  "direita": "Nada"
+                },
+                {
+                  "esquerda": "Nódulo de tireoide",
+                  "direita": "Ultrassom e avaliação"
+                },
+                {
+                  "esquerda": "Massa na suprarrenal",
+                  "direita": "Avaliar hormônios e tamanho"
+                }
+              ],
+              "explicacao": "Há diretrizes para cada caso.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q3",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O laudo de imagem deve ser interpretado junto com a clínica do paciente.",
+              "resposta": true,
+              "explicacao": "O exame não substitui o exame físico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q4",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ incidental é um achado que não tem relação com o motivo do exame.",
+              "opcoes": [
+                "incidentaloma",
+                "tumor",
+                "pólipo",
+                "cisto"
+              ],
+              "resposta": "incidentaloma",
+              "explicacao": "Muito comum na suprarrenal.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual informação ajuda o radiologista a fazer um bom laudo?",
+              "opcoes": [
+                "Dados clínicos e a hipótese no pedido",
+                "Nenhuma",
+                "Só o nome",
+                "Só a idade"
+              ],
+              "resposta": "Dados clínicos e a hipótese no pedido",
+              "explicacao": "Pedidos completos melhoram o laudo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Médico quer pedir tomografia de crânio para todo paciente com dor de cabeça.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Pedir só com sinais de alerta",
+                "Pedir sempre",
+                "Nunca pedir",
+                "Pedir ressonância sempre"
+              ],
+              "resposta": "Pedir só com sinais de alerta",
+              "explicacao": "Evita exames desnecessários.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O nódulo pulmonar com crescimento ao longo do tempo é mais suspeito.",
+              "resposta": true,
+              "explicacao": "Nódulos estáveis por 2 anos tendem a ser benignos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-u5-l3-q8",
+              "tipo": "completar_lacuna",
+              "enunciado": "As diretrizes de ___ orientam o seguimento de nódulos pulmonares.",
+              "opcoes": [
+                "Fleischner",
+                "Kerley",
+                "Rigler",
+                "Murphy"
+              ],
+              "resposta": "Fleischner",
+              "explicacao": "Consideram tamanho e risco.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-d1",
+      "titulo": "Tórax em casos",
+      "descricao": "Raio X e tomografia do tórax",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "radio-d1-l1",
+          "titulo": "Raio X de tórax em casos",
+          "questoes": [
+            {
+              "id": "radio-d1-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tosse e febre tem opacidade que apaga a borda direita do coração.",
+              "enunciado": "Onde está a pneumonia?",
+              "opcoes": [
+                "Lobo médio",
+                "Lobo inferior direito",
+                "Lobo superior direito",
+                "Língula"
+              ],
+              "resposta": "Lobo médio",
+              "explicacao": "É o sinal da silhueta.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada padrão de raio X à doença intersticial ou alveolar.",
+              "pares": [
+                {
+                  "esquerda": "Opacidades reticulares nas bases",
+                  "direita": "Fibrose pulmonar"
+                },
+                {
+                  "esquerda": "Opacidade alveolar bilateral",
+                  "direita": "Edema ou SDRA"
+                },
+                {
+                  "esquerda": "Nódulos pequenos difusos",
+                  "direita": "Tuberculose miliar"
+                },
+                {
+                  "esquerda": "Linfonodos hilares bilaterais",
+                  "direita": "Sarcoidose"
+                }
+              ],
+              "explicacao": "Os padrões ajudam no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a diferença entre edema cardiogênico e SDRA no raio X?",
+              "opcoes": [
+                "O edema cardiogênico tem coração grande e derrame",
+                "São iguais",
+                "A SDRA tem coração grande",
+                "Nenhuma"
+              ],
+              "resposta": "O edema cardiogênico tem coração grande e derrame",
+              "explicacao": "A clínica também ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI tem saturação caindo e raio X mostra pulmão esquerdo todo branco com mediastino puxado para a esquerda.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Atelectasia total do pulmão esquerdo",
+                "Derrame grande",
+                "Pneumotórax",
+                "Normal"
+              ],
+              "resposta": "Atelectasia total do pulmão esquerdo",
+              "explicacao": "Pode ser tampão de secreção ou tubo seletivo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sinal do sulco profundo indica pneumotórax no raio X do paciente deitado.",
+              "resposta": true,
+              "explicacao": "O ar se acumula na frente.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal de ___ é a cunha pulmonar periférica de infarto na embolia.",
+              "opcoes": [
+                "Hampton",
+                "Westermark",
+                "Kerley",
+                "Rigler"
+              ],
+              "resposta": "Hampton",
+              "explicacao": "Achado raro, mas típico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado do raio X de tórax na embolia pulmonar?",
+              "opcoes": [
+                "Geralmente normal",
+                "Sempre derrame grande",
+                "Sempre pneumotórax",
+                "Sempre consolidação"
+              ],
+              "resposta": "Geralmente normal",
+              "explicacao": "O raio X serve para excluir outras causas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Raio X mostra massa no ápice direito com destruição de costela e dor no ombro.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Tumor de Pancoast",
+                "Pneumonia",
+                "Tuberculose",
+                "Normal"
+              ],
+              "resposta": "Tumor de Pancoast",
+              "explicacao": "Pode causar síndrome de Horner.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d1-l2",
+          "titulo": "Tomografia de tórax em casos",
+          "questoes": [
+            {
+              "id": "radio-d1-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado da tomografia de tórax à doença.",
+              "pares": [
+                {
+                  "esquerda": "Vidro fosco bilateral periférico",
+                  "direita": "Pneumonia viral"
+                },
+                {
+                  "esquerda": "Favo de mel nas bases",
+                  "direita": "Fibrose pulmonar"
+                },
+                {
+                  "esquerda": "Árvore em brotamento",
+                  "direita": "Infecção bronquiolar"
+                },
+                {
+                  "esquerda": "Falha de enchimento na artéria pulmonar",
+                  "direita": "Embolia"
+                }
+              ],
+              "explicacao": "Cada padrão sugere causas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Fumante com nódulo pulmonar de 2 cm, espiculado, encontrado na tomografia.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Investigar câncer com PET-CT e biópsia",
+                "Seguir em 2 anos",
+                "Nada",
+                "Antibiótico"
+              ],
+              "resposta": "Investigar câncer com PET-CT e biópsia",
+              "explicacao": "Bordas espiculadas são suspeitas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame de escolha para embolia pulmonar?",
+              "opcoes": [
+                "Angiotomografia de tórax",
+                "Raio X",
+                "Ultrassom",
+                "Ressonância"
+              ],
+              "resposta": "Angiotomografia de tórax",
+              "explicacao": "Mostra o trombo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tosse crônica e tomografia mostra brônquios dilatados com paredes grossas.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Bronquiectasias",
+                "Enfisema",
+                "Pneumonia",
+                "Normal"
+              ],
+              "resposta": "Bronquiectasias",
+              "explicacao": "O brônquio é maior que a artéria ao lado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O enfisema centrolobular é típico do fumante e predomina nos ápices.",
+              "resposta": true,
+              "explicacao": "O panlobular predomina nas bases.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal do halo ___ (atol) pode aparecer na pneumonia organizante.",
+              "opcoes": [
+                "invertido",
+                "duplo",
+                "simples",
+                "central"
+              ],
+              "resposta": "invertido",
+              "explicacao": "É vidro fosco cercado por consolidação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a tomografia usada no rastreio de câncer de pulmão em fumantes?",
+              "opcoes": [
+                "Tomografia de baixa dose",
+                "Tomografia com contraste",
+                "Raio X",
+                "Ressonância"
+              ],
+              "resposta": "Tomografia de baixa dose",
+              "explicacao": "Reduz mortalidade.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com neutropenia tem nódulo com halo de vidro fosco na tomografia.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Aspergilose invasiva",
+                "Pneumonia comum",
+                "Câncer",
+                "Normal"
+              ],
+              "resposta": "Aspergilose invasiva",
+              "explicacao": "É o sinal do halo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d1-l3",
+          "titulo": "Cardiovascular em casos",
+          "questoes": [
+            {
+              "id": "radio-d1-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame cardiovascular ao uso.",
+              "pares": [
+                {
+                  "esquerda": "Angiotomografia de coronárias",
+                  "direita": "Excluir doença coronariana"
+                },
+                {
+                  "esquerda": "Ressonância cardíaca",
+                  "direita": "Avaliar fibrose e miocardite"
+                },
+                {
+                  "esquerda": "Ecocardiograma",
+                  "direita": "Função e valvas"
+                },
+                {
+                  "esquerda": "Escore de cálcio",
+                  "direita": "Risco cardiovascular"
+                }
+              ],
+              "explicacao": "Cada um tem papel.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor torácica súbita, pressão diferente entre os braços e mediastino alargado.",
+              "enunciado": "Qual exame confirma?",
+              "opcoes": [
+                "Angiotomografia de aorta",
+                "Raio X repetido",
+                "Eletrocardiograma",
+                "Ecocardiograma só"
+              ],
+              "resposta": "Angiotomografia de aorta",
+              "explicacao": "É suspeita de dissecção.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame de imagem mostra fibrose do coração após infarto?",
+              "opcoes": [
+                "Ressonância com realce tardio",
+                "Raio X",
+                "Ultrassom de abdome",
+                "Tomografia de crânio"
+              ],
+              "resposta": "Ressonância com realce tardio",
+              "explicacao": "O gadolínio fica no músculo lesado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente jovem com dor torácica após gripe e troponina alta, coronárias normais.",
+              "enunciado": "Qual exame ajuda?",
+              "opcoes": [
+                "Ressonância cardíaca para miocardite",
+                "Raio X",
+                "Tomografia de crânio",
+                "Nada"
+              ],
+              "resposta": "Ressonância cardíaca para miocardite",
+              "explicacao": "Mostra inflamação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O escore de cálcio zero indica baixo risco de eventos coronarianos.",
+              "resposta": true,
+              "explicacao": "Ajuda a decidir sobre estatina.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ venoso com Doppler é o exame de escolha para trombose venosa profunda.",
+              "opcoes": [
+                "ultrassom",
+                "raio X",
+                "tomografia",
+                "cintilografia"
+              ],
+              "resposta": "ultrassom",
+              "explicacao": "Mostra a veia que não comprime.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o sinal de trombose no ultrassom de veia?",
+              "opcoes": [
+                "Veia que não se comprime",
+                "Veia que se comprime",
+                "Fluxo normal",
+                "Nada"
+              ],
+              "resposta": "Veia que não se comprime",
+              "explicacao": "Também o trombo visível.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d1-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com perna inchada e dor e ultrassom normal, com alta suspeita.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Repetir o ultrassom em uma semana ou D-dímero",
+                "Alta sem seguimento",
+                "Anticoagular para sempre",
+                "Nada"
+              ],
+              "resposta": "Repetir o ultrassom em uma semana ou D-dímero",
+              "explicacao": "Pode haver trombose que progride.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-d2",
+      "titulo": "Abdome em casos",
+      "descricao": "Urgência abdominal",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "radio-d2-l1",
+          "titulo": "Abdome agudo em casos",
+          "questoes": [
+            {
+              "id": "radio-d2-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com dor e distensão abdominal tem alça do sigmoide muito dilatada em forma de grão de café.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Volvo de sigmoide; descompressão por colonoscopia",
+                "Obstrução de delgado; sonda",
+                "Normal; alta",
+                "Apendicite; cirurgia"
+              ],
+              "resposta": "Volvo de sigmoide; descompressão por colonoscopia",
+              "explicacao": "Recorre se não houver cirurgia depois.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal radiológico ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Sinal de Rigler",
+                  "direita": "Ar dos dois lados da parede intestinal"
+                },
+                {
+                  "esquerda": "Empilhamento de moedas",
+                  "direita": "Hematoma da parede do delgado"
+                },
+                {
+                  "esquerda": "Pneumatose intestinal",
+                  "direita": "Ar na parede do intestino"
+                },
+                {
+                  "esquerda": "Ar na veia porta",
+                  "direita": "Isquemia grave"
+                }
+              ],
+              "explicacao": "São sinais de gravidade.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame para suspeita de perfuração com raio X normal?",
+              "opcoes": [
+                "Tomografia",
+                "Ressonância",
+                "Nada",
+                "Ultrassom só"
+              ],
+              "resposta": "Tomografia",
+              "explicacao": "É mais sensível para ar livre.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Bebê prematuro com distensão e sangue nas fezes tem ar na parede do intestino no raio X.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Enterocolite necrosante",
+                "Volvo",
+                "Normal",
+                "Invaginação"
+              ],
+              "resposta": "Enterocolite necrosante",
+              "explicacao": "A pneumatose é típica.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A tomografia identifica o ponto de transição na obstrução intestinal.",
+              "resposta": true,
+              "explicacao": "Ajuda a achar a causa.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal do ___ na tomografia mostra os vasos do mesentério torcidos no volvo.",
+              "opcoes": [
+                "redemoinho",
+                "alvo",
+                "halo",
+                "anel"
+              ],
+              "resposta": "redemoinho",
+              "explicacao": "Indica torção.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa mais comum de obstrução do delgado?",
+              "opcoes": [
+                "Bridas de cirurgias anteriores",
+                "Tumor",
+                "Volvo",
+                "Hérnia interna"
+              ],
+              "resposta": "Bridas de cirurgias anteriores",
+              "explicacao": "Em pacientes sem cirurgia, hérnia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pancreatite grave piora após 1 semana e tem febre.",
+              "enunciado": "Qual é o exame?",
+              "opcoes": [
+                "Tomografia com contraste para necrose infectada",
+                "Raio X",
+                "Nada",
+                "Ultrassom de tireoide"
+              ],
+              "resposta": "Tomografia com contraste para necrose infectada",
+              "explicacao": "Pode ter gás na necrose.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d2-l2",
+          "titulo": "Fígado e vias biliares em casos",
+          "questoes": [
+            {
+              "id": "radio-d2-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada lesão hepática ao padrão de imagem.",
+              "pares": [
+                {
+                  "esquerda": "Hemangioma",
+                  "direita": "Realce periférico em glóbulos"
+                },
+                {
+                  "esquerda": "Hiperplasia nodular focal",
+                  "direita": "Cicatriz central"
+                },
+                {
+                  "esquerda": "Cisto simples",
+                  "direita": "Sem realce, líquido"
+                },
+                {
+                  "esquerda": "Metástase",
+                  "direita": "Múltiplas com realce periférico"
+                }
+              ],
+              "explicacao": "A ressonância caracteriza melhor.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com icterícia e ultrassom mostra vias biliares dilatadas sem pedra visível.",
+              "enunciado": "Qual é o próximo exame?",
+              "opcoes": [
+                "Colangiorressonância ou tomografia",
+                "Nada",
+                "Raio X",
+                "Alta"
+              ],
+              "resposta": "Colangiorressonância ou tomografia",
+              "explicacao": "Procurar pedra ou tumor.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado de hemangioma no ultrassom?",
+              "opcoes": [
+                "Nódulo branco (hiperecogênico) bem definido",
+                "Nódulo escuro",
+                "Cisto",
+                "Nada"
+              ],
+              "resposta": "Nódulo branco (hiperecogênico) bem definido",
+              "explicacao": "É o tumor benigno mais comum do fígado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente cirrótico tem nódulo de 3 cm que realça na fase arterial e lava na portal.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Carcinoma hepatocelular",
+                "Hemangioma",
+                "Cisto",
+                "Normal"
+              ],
+              "resposta": "Carcinoma hepatocelular",
+              "explicacao": "Não precisa de biópsia nesse padrão.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A esteatose hepática deixa o fígado mais branco no ultrassom.",
+              "resposta": true,
+              "explicacao": "O fígado fica mais brilhante.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sistema ___ classifica nódulos no fígado do cirrótico.",
+              "opcoes": [
+                "LI-RADS",
+                "BI-RADS",
+                "TI-RADS",
+                "PI-RADS"
+              ],
+              "resposta": "LI-RADS",
+              "explicacao": "Padroniza o laudo.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para coledocolitíase com intenção de tratamento?",
+              "opcoes": [
+                "CPRE",
+                "Ultrassom",
+                "Raio X",
+                "Tomografia"
+              ],
+              "resposta": "CPRE",
+              "explicacao": "Permite retirar a pedra.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com febre, icterícia e dor tem ultrassom com gás nas vias biliares e colecistite.",
+              "enunciado": "Qual é a gravidade?",
+              "opcoes": [
+                "Possível colecistite enfisematosa, grave",
+                "Leve",
+                "Normal",
+                "Nada"
+              ],
+              "resposta": "Possível colecistite enfisematosa, grave",
+              "explicacao": "Mais comum em diabéticos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d2-l3",
+          "titulo": "Rins e pelve em casos",
+          "questoes": [
+            {
+              "id": "radio-d2-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sistema de laudo ao órgão.",
+              "pares": [
+                {
+                  "esquerda": "PI-RADS",
+                  "direita": "Próstata"
+                },
+                {
+                  "esquerda": "TI-RADS",
+                  "direita": "Tireoide"
+                },
+                {
+                  "esquerda": "Bosniak",
+                  "direita": "Cistos renais"
+                },
+                {
+                  "esquerda": "O-RADS",
+                  "direita": "Ovário"
+                }
+              ],
+              "explicacao": "Padronizam a conduta.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Cisto renal com septos grossos e realce na tomografia.",
+              "enunciado": "Qual é a classificação e a conduta?",
+              "opcoes": [
+                "Bosniak alto; avaliar cirurgia",
+                "Bosniak I; nada",
+                "Normal",
+                "Seguir em 10 anos"
+              ],
+              "resposta": "Bosniak alto; avaliar cirurgia",
+              "explicacao": "O risco de câncer aumenta.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o exame para investigar câncer de próstata antes da biópsia?",
+              "opcoes": [
+                "Ressonância multiparamétrica",
+                "Raio X",
+                "Ultrassom de abdome",
+                "Cintilografia"
+              ],
+              "resposta": "Ressonância multiparamétrica",
+              "explicacao": "Guia a biópsia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem com dor pélvica súbita e ultrassom mostra ovário aumentado sem fluxo.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Torção de ovário",
+                "Cisto simples",
+                "Normal",
+                "Apendicite"
+              ],
+              "resposta": "Torção de ovário",
+              "explicacao": "É emergência cirúrgica.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O ultrassom transvaginal é o exame inicial para sangramento uterino anormal.",
+              "resposta": true,
+              "explicacao": "Avalia o endométrio.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal do ___ de fogo no Doppler sugere gravidez ectópica ou corpo lúteo.",
+              "opcoes": [
+                "anel",
+                "halo",
+                "alvo",
+                "redemoinho"
+              ],
+              "resposta": "anel",
+              "explicacao": "Fluxo ao redor da lesão.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado de hidronefrose no ultrassom?",
+              "opcoes": [
+                "Dilatação da pelve renal",
+                "Rim pequeno",
+                "Cisto",
+                "Nada"
+              ],
+              "resposta": "Dilatação da pelve renal",
+              "explicacao": "Indica obstrução.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d2-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com dor e hematúria tem hidronefrose leve à direita.",
+              "enunciado": "Qual é o cuidado?",
+              "opcoes": [
+                "A hidronefrose leve à direita pode ser normal na gestação",
+                "Sempre cirurgia",
+                "Tomografia sempre",
+                "Nada"
+              ],
+              "resposta": "A hidronefrose leve à direita pode ser normal na gestação",
+              "explicacao": "O útero comprime o ureter.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-d3",
+      "titulo": "Neurorradiologia em casos",
+      "descricao": "Cérebro e coluna",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "radio-d3-l1",
+          "titulo": "AVC em casos",
+          "questoes": [
+            {
+              "id": "radio-d3-l1-q1",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com déficit há 2 horas tem tomografia sem sangramento.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Considerar trombólise e angiotomografia para trombectomia",
+                "Esperar a tomografia mostrar o infarto",
+                "Alta",
+                "Nada"
+              ],
+              "resposta": "Considerar trombólise e angiotomografia para trombectomia",
+              "explicacao": "O tempo é cérebro.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q2",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada exame no AVC ao objetivo.",
+              "pares": [
+                {
+                  "esquerda": "Tomografia sem contraste",
+                  "direita": "Excluir sangramento"
+                },
+                {
+                  "esquerda": "Angiotomografia",
+                  "direita": "Achar oclusão de grande vaso"
+                },
+                {
+                  "esquerda": "Perfusão",
+                  "direita": "Ver tecido salvável"
+                },
+                {
+                  "esquerda": "Ressonância com difusão",
+                  "direita": "Confirmar isquemia pequena"
+                }
+              ],
+              "explicacao": "Ajudam a decidir o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a sequência de ressonância que mostra AVC isquêmico em minutos?",
+              "opcoes": [
+                "Difusão",
+                "T1",
+                "T2",
+                "FLAIR"
+              ],
+              "resposta": "Difusão",
+              "explicacao": "O FLAIR altera depois de horas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente acordou com déficit e não se sabe a hora de início.",
+              "enunciado": "Qual exame ajuda a decidir trombólise?",
+              "opcoes": [
+                "Ressonância com descompasso difusão e FLAIR",
+                "Raio X",
+                "Nada",
+                "Tomografia simples só"
+              ],
+              "resposta": "Ressonância com descompasso difusão e FLAIR",
+              "explicacao": "Sugere AVC recente.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hemorragia subaracnóidea aparece como sangue nas cisternas e sulcos.",
+              "resposta": true,
+              "explicacao": "Causada por aneurisma na maioria.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal do ___ na tomografia indica sangramento ativo no hematoma cerebral.",
+              "opcoes": [
+                "ponto",
+                "halo",
+                "alvo",
+                "anel"
+              ],
+              "resposta": "ponto",
+              "explicacao": "Contraste extravasando.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a causa comum de hemorragia cerebral no idoso com sangramentos na periferia?",
+              "opcoes": [
+                "Angiopatia amiloide",
+                "Hipertensão",
+                "Tumor",
+                "Trauma"
+              ],
+              "resposta": "Angiopatia amiloide",
+              "explicacao": "Lesões lobares.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Hipertenso com hemorragia nos núcleos da base.",
+              "enunciado": "Qual é a causa mais provável?",
+              "opcoes": [
+                "Hipertensão",
+                "Angiopatia amiloide",
+                "Tumor",
+                "Aneurisma"
+              ],
+              "resposta": "Hipertensão",
+              "explicacao": "É o local típico da hipertensão.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d3-l2",
+          "titulo": "Tumores e infecções em casos",
+          "questoes": [
+            {
+              "id": "radio-d3-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada lesão cerebral ao padrão de imagem.",
+              "pares": [
+                {
+                  "esquerda": "Glioblastoma",
+                  "direita": "Lesão com realce irregular e necrose"
+                },
+                {
+                  "esquerda": "Meningioma",
+                  "direita": "Lesão presa à dura com cauda dural"
+                },
+                {
+                  "esquerda": "Abscesso",
+                  "direita": "Realce em anel com restrição à difusão"
+                },
+                {
+                  "esquerda": "Metástases",
+                  "direita": "Múltiplas na junção entre substâncias branca e cinzenta"
+                }
+              ],
+              "explicacao": "A ressonância ajuda a diferenciar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV tem várias lesões com realce em anel nos núcleos da base.",
+              "enunciado": "Qual é a hipótese principal?",
+              "opcoes": [
+                "Toxoplasmose",
+                "Glioblastoma",
+                "AVC",
+                "Normal"
+              ],
+              "resposta": "Toxoplasmose",
+              "explicacao": "O linfoma também pode causar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sequência diferencia abscesso de tumor necrótico?",
+              "opcoes": [
+                "Difusão",
+                "T1",
+                "Raio X",
+                "Tomografia sem contraste"
+              ],
+              "resposta": "Difusão",
+              "explicacao": "O abscesso restringe a difusão.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com febre, confusão e lesão no lobo temporal na ressonância.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Encefalite herpética",
+                "AVC",
+                "Tumor",
+                "Normal"
+              ],
+              "resposta": "Encefalite herpética",
+              "explicacao": "Tratar com aciclovir.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O meningioma é um tumor benigno comum que realça muito com contraste.",
+              "resposta": true,
+              "explicacao": "Preso à meninge.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A ___ dural é o espessamento da meninge ao lado do meningioma.",
+              "opcoes": [
+                "cauda",
+                "cabeça",
+                "ponte",
+                "ponta"
+              ],
+              "resposta": "cauda",
+              "explicacao": "Sinal típico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado da esclerose múltipla na ressonância?",
+              "opcoes": [
+                "Lesões ovais perpendiculares aos ventrículos",
+                "Uma massa",
+                "Sangramento",
+                "Nada"
+              ],
+              "resposta": "Lesões ovais perpendiculares aos ventrículos",
+              "explicacao": "Dedos de Dawson.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pulmão tem dor de cabeça e várias lesões cerebrais.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Metástases",
+                "Abscesso",
+                "AVC",
+                "Normal"
+              ],
+              "resposta": "Metástases",
+              "explicacao": "Pulmão é a origem mais comum.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d3-l3",
+          "titulo": "Coluna em casos",
+          "questoes": [
+            {
+              "id": "radio-d3-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado de coluna à doença.",
+              "pares": [
+                {
+                  "esquerda": "Lesão no disco e em duas vértebras",
+                  "direita": "Espondilodiscite"
+                },
+                {
+                  "esquerda": "Vértebras com perda de altura em idosa",
+                  "direita": "Fratura por osteoporose"
+                },
+                {
+                  "esquerda": "Lesão no corpo poupando o disco",
+                  "direita": "Metástase"
+                },
+                {
+                  "esquerda": "Ponte entre vértebras",
+                  "direita": "Espondilite anquilosante"
+                }
+              ],
+              "explicacao": "O padrão ajuda.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de mama tem dor nas costas e fraqueza nas pernas.",
+              "enunciado": "Qual é o exame urgente?",
+              "opcoes": [
+                "Ressonância de toda a coluna",
+                "Raio X",
+                "Nada",
+                "Tomografia de crânio"
+              ],
+              "resposta": "Ressonância de toda a coluna",
+              "explicacao": "Suspeita de compressão da medula.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado diferencia infecção de metástase na coluna?",
+              "opcoes": [
+                "A infecção acomete o disco; a metástase costuma poupar",
+                "São iguais",
+                "A metástase acomete o disco",
+                "Nenhum"
+              ],
+              "resposta": "A infecção acomete o disco; a metástase costuma poupar",
+              "explicacao": "Ajuda no diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de drogas injetáveis com febre e dor lombar intensa.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Espondilodiscite ou abscesso epidural",
+                "Lombalgia comum",
+                "Hérnia",
+                "Nada"
+              ],
+              "resposta": "Espondilodiscite ou abscesso epidural",
+              "explicacao": "Ressonância urgente.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A coluna em bambu é típica da espondilite anquilosante.",
+              "resposta": true,
+              "explicacao": "As vértebras se fundem.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A tomografia de coluna ___ é usada no trauma com suspeita de fratura.",
+              "opcoes": [
+                "cervical",
+                "sacral",
+                "coccígea",
+                "pélvica"
+              ],
+              "resposta": "cervical",
+              "explicacao": "Conforme as regras NEXUS ou canadenses.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o melhor exame para avaliar compressão da medula?",
+              "opcoes": [
+                "Ressonância",
+                "Raio X",
+                "Tomografia sem contraste",
+                "Ultrassom"
+              ],
+              "resposta": "Ressonância",
+              "explicacao": "Mostra a medula.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d3-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com dor lombar súbita após tossir tem perda de altura de uma vértebra.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Fratura vertebral por osteoporose",
+                "Hérnia",
+                "Tumor",
+                "Normal"
+              ],
+              "resposta": "Fratura vertebral por osteoporose",
+              "explicacao": "Investigar osteoporose.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-d4",
+      "titulo": "Musculoesquelético e pediatria em casos",
+      "descricao": "Ossos e crianças",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "radio-d4-l1",
+          "titulo": "Ossos em casos",
+          "questoes": [
+            {
+              "id": "radio-d4-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada lesão óssea ao padrão de agressividade.",
+              "pares": [
+                {
+                  "esquerda": "Bordas bem definidas e escleróticas",
+                  "direita": "Lesão benigna"
+                },
+                {
+                  "esquerda": "Bordas mal definidas e permeativas",
+                  "direita": "Lesão agressiva"
+                },
+                {
+                  "esquerda": "Reação periosteal em raios de sol",
+                  "direita": "Osteossarcoma"
+                },
+                {
+                  "esquerda": "Lesão sem bordas no idoso",
+                  "direita": "Metástase ou mieloma"
+                }
+              ],
+              "explicacao": "Ajuda a decidir a biópsia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com dor no joelho e raio X com lesão destrutiva e triângulo de Codman.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Osteossarcoma",
+                "Fratura",
+                "Infecção",
+                "Normal"
+              ],
+              "resposta": "Osteossarcoma",
+              "explicacao": "Encaminhar para oncologia ortopédica.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o padrão do osteoma osteoide?",
+              "opcoes": [
+                "Pequena lesão com halo de esclerose e dor noturna que melhora com AAS",
+                "Lesão grande destrutiva",
+                "Fratura",
+                "Nada"
+              ],
+              "resposta": "Pequena lesão com halo de esclerose e dor noturna que melhora com AAS",
+              "explicacao": "É benigno.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Criança com dor e raio X com lesão lítica em casca de cebola na diáfise do fêmur.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Sarcoma de Ewing",
+                "Osteossarcoma",
+                "Fratura",
+                "Normal"
+              ],
+              "resposta": "Sarcoma de Ewing",
+              "explicacao": "Também infecção pode imitar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O mieloma múltiplo pode não aparecer na cintilografia óssea.",
+              "resposta": true,
+              "explicacao": "As lesões são puramente líticas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ___ ósseo simples é uma lesão benigna com risco de fratura.",
+              "opcoes": [
+                "cisto",
+                "tumor",
+                "abscesso",
+                "hematoma"
+              ],
+              "resposta": "cisto",
+              "explicacao": "Sinal do fragmento caído.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame avalia melhor lesões de mieloma?",
+              "opcoes": [
+                "Ressonância ou tomografia de baixa dose de corpo inteiro",
+                "Cintilografia",
+                "Nada",
+                "Ultrassom"
+              ],
+              "resposta": "Ressonância ou tomografia de baixa dose de corpo inteiro",
+              "explicacao": "A cintilografia falha.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com dor óssea e lesões líticas no crânio em saca-bocado.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Mieloma múltiplo",
+                "Osteoporose",
+                "Metástase de próstata",
+                "Normal"
+              ],
+              "resposta": "Mieloma múltiplo",
+              "explicacao": "Investigar proteína M.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d4-l2",
+          "titulo": "Pediatria em casos",
+          "questoes": [
+            {
+              "id": "radio-d4-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado pediátrico ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Sinal do alvo no ultrassom",
+                  "direita": "Invaginação"
+                },
+                {
+                  "esquerda": "Dupla bolha no raio X",
+                  "direita": "Atresia duodenal"
+                },
+                {
+                  "esquerda": "Piloro espessado no ultrassom",
+                  "direita": "Estenose de piloro"
+                },
+                {
+                  "esquerda": "Ar na parede do intestino",
+                  "direita": "Enterocolite necrosante"
+                }
+              ],
+              "explicacao": "A criança tem doenças próprias.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 1 mês vomita em jato após mamar e tem oliva no abdome.",
+              "enunciado": "Qual exame confirma?",
+              "opcoes": [
+                "Ultrassom do piloro",
+                "Raio X",
+                "Tomografia",
+                "Nada"
+              ],
+              "resposta": "Ultrassom do piloro",
+              "explicacao": "O piloro fica espessado.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado de raio X sugere maus-tratos na criança?",
+              "opcoes": [
+                "Fraturas em fases diferentes de cura e fratura de canto metafisário",
+                "Fratura de clavícula ao nascer",
+                "Fratura de punho em adolescente",
+                "Nada"
+              ],
+              "resposta": "Fraturas em fases diferentes de cura e fratura de canto metafisário",
+              "explicacao": "Investigar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com fraturas de costelas posteriores sem história de trauma.",
+              "enunciado": "O que suspeitar?",
+              "opcoes": [
+                "Maus-tratos",
+                "Raquitismo apenas",
+                "Normal",
+                "Queda"
+              ],
+              "resposta": "Maus-tratos",
+              "explicacao": "Notificar e investigar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O sinal da vela de barco no raio X da criança é o timo normal.",
+              "resposta": true,
+              "explicacao": "Não confundir com doença.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O sinal da ___ no raio X de pescoço sugere crupe.",
+              "opcoes": [
+                "torre",
+                "bola",
+                "vela",
+                "moeda"
+              ],
+              "resposta": "torre",
+              "explicacao": "Estreitamento abaixo das cordas.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado de epiglotite no raio X de perfil do pescoço?",
+              "opcoes": [
+                "Sinal do polegar",
+                "Sinal da torre",
+                "Normal",
+                "Pneumotórax"
+              ],
+              "resposta": "Sinal do polegar",
+              "explicacao": "A epiglote está inchada.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 dias com vômito bilioso.",
+              "enunciado": "Qual é o exame urgente?",
+              "opcoes": [
+                "Estudo contrastado do intestino para má rotação",
+                "Nada",
+                "Tomografia de crânio",
+                "Ultrassom de rim"
+              ],
+              "resposta": "Estudo contrastado do intestino para má rotação",
+              "explicacao": "O volvo pode matar o intestino.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d4-l3",
+          "titulo": "Articulações em casos",
+          "questoes": [
+            {
+              "id": "radio-d4-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada artrite ao achado radiológico.",
+              "pares": [
+                {
+                  "esquerda": "Artrite reumatoide",
+                  "direita": "Erosões nas mãos com osteopenia"
+                },
+                {
+                  "esquerda": "Gota",
+                  "direita": "Erosões com bordas salientes"
+                },
+                {
+                  "esquerda": "Artrose",
+                  "direita": "Osteófitos e redução assimétrica do espaço"
+                },
+                {
+                  "esquerda": "Psoríase",
+                  "direita": "Lápis na xícara"
+                }
+              ],
+              "explicacao": "O padrão sugere a doença.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor em quadril e raio X com perda do espaço articular e osteófitos.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Artrose de quadril",
+                "Artrite séptica",
+                "Fratura",
+                "Normal"
+              ],
+              "resposta": "Artrose de quadril",
+              "explicacao": "Comum em idosos.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame mostra necrose da cabeça do fêmur precoce?",
+              "opcoes": [
+                "Ressonância",
+                "Raio X",
+                "Ultrassom",
+                "Nada"
+              ],
+              "resposta": "Ressonância",
+              "explicacao": "O raio X altera depois.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com joelho quente, vermelho e febre.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Punção do líquido articular",
+                "Raio X e alta",
+                "Ressonância e esperar",
+                "Nada"
+              ],
+              "resposta": "Punção do líquido articular",
+              "explicacao": "Excluir artrite séptica.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A condrocalcinose é a calcificação da cartilagem vista na pseudogota.",
+              "resposta": true,
+              "explicacao": "Aparece no raio X.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O ultrassom pode mostrar o sinal do duplo ___ na gota.",
+              "opcoes": [
+                "contorno",
+                "anel",
+                "alvo",
+                "halo"
+              ],
+              "resposta": "contorno",
+              "explicacao": "Cristais sobre a cartilagem.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado de ombro na ruptura do manguito?",
+              "opcoes": [
+                "Cabeça do úmero alta",
+                "Normal",
+                "Fratura",
+                "Luxação"
+              ],
+              "resposta": "Cabeça do úmero alta",
+              "explicacao": "Ressonância ou ultrassom confirmam.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d4-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com luxação de ombro posterior após convulsão.",
+              "enunciado": "Qual é o sinal do raio X?",
+              "opcoes": [
+                "Sinal da lâmpada",
+                "Normal",
+                "Fratura",
+                "Bola"
+              ],
+              "resposta": "Sinal da lâmpada",
+              "explicacao": "A cabeça do úmero gira.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio-d5",
+      "titulo": "Radiologia intervencionista e segurança em casos",
+      "descricao": "Procedimentos e riscos",
+      "nivel": "dificil",
+      "licoes": [
+        {
+          "id": "radio-d5-l1",
+          "titulo": "Radiologia intervencionista em casos",
+          "questoes": [
+            {
+              "id": "radio-d5-l1-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada procedimento intervencionista ao uso.",
+              "pares": [
+                {
+                  "esquerda": "Embolização",
+                  "direita": "Parar sangramento"
+                },
+                {
+                  "esquerda": "Drenagem guiada",
+                  "direita": "Retirar abscesso"
+                },
+                {
+                  "esquerda": "Biópsia guiada",
+                  "direita": "Diagnóstico de lesão"
+                },
+                {
+                  "esquerda": "Quimioembolização",
+                  "direita": "Tratar câncer de fígado"
+                }
+              ],
+              "explicacao": "Menos invasivo que a cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com abscesso hepático de 6 cm não melhora com antibiótico.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Drenagem guiada por imagem",
+                "Cirurgia aberta sempre",
+                "Nada",
+                "Mais antibiótico só"
+              ],
+              "resposta": "Drenagem guiada por imagem",
+              "explicacao": "Guiada por ultrassom ou tomografia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento de sangramento de pelve após fratura no paciente instável?",
+              "opcoes": [
+                "Embolização arterial ou tamponamento",
+                "Nada",
+                "Antibiótico",
+                "Raio X"
+              ],
+              "resposta": "Embolização arterial ou tamponamento",
+              "explicacao": "Para o sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hemoptise maciça.",
+              "enunciado": "Qual é o procedimento?",
+              "opcoes": [
+                "Embolização das artérias brônquicas",
+                "Nada",
+                "Raio X",
+                "Antibiótico só"
+              ],
+              "resposta": "Embolização das artérias brônquicas",
+              "explicacao": "Controla o sangramento.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A TIPS é um desvio dentro do fígado para tratar hipertensão portal.",
+              "resposta": true,
+              "explicacao": "Reduz varizes e ascite.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O filtro de veia ___ é usado quando não se pode anticoagular paciente com trombose.",
+              "opcoes": [
+                "cava",
+                "porta",
+                "jugular",
+                "femoral"
+              ],
+              "resposta": "cava",
+              "explicacao": "Impede que o trombo vá ao pulmão.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento minimamente invasivo para mioma?",
+              "opcoes": [
+                "Embolização das artérias uterinas",
+                "Nada",
+                "Raio X",
+                "Antibiótico"
+              ],
+              "resposta": "Embolização das artérias uterinas",
+              "explicacao": "Alternativa à cirurgia.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l1-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tumor de fígado pequeno não pode operar.",
+              "enunciado": "Qual é a opção?",
+              "opcoes": [
+                "Ablação por radiofrequência",
+                "Nada",
+                "Raio X",
+                "Antibiótico"
+              ],
+              "resposta": "Ablação por radiofrequência",
+              "explicacao": "Destrói o tumor pelo calor.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d5-l2",
+          "titulo": "Contraste em casos",
+          "questoes": [
+            {
+              "id": "radio-d5-l2-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada reação ao contraste ao tratamento.",
+              "pares": [
+                {
+                  "esquerda": "Urticária leve",
+                  "direita": "Anti-histamínico"
+                },
+                {
+                  "esquerda": "Broncoespasmo",
+                  "direita": "Broncodilatador e adrenalina"
+                },
+                {
+                  "esquerda": "Anafilaxia",
+                  "direita": "Adrenalina"
+                },
+                {
+                  "esquerda": "Reação vasovagal",
+                  "direita": "Elevar as pernas e atropina"
+                }
+              ],
+              "explicacao": "A equipe deve estar preparada.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com reação alérgica grave ao contraste iodado no passado precisa de nova tomografia.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Considerar outro exame ou pré-medicação com corticoide e anti-histamínico",
+                "Repetir sem preparo",
+                "Nunca fazer exame",
+                "Nada"
+              ],
+              "resposta": "Considerar outro exame ou pré-medicação com corticoide e anti-histamínico",
+              "explicacao": "Pesar riscos e benefícios.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco do gadolínio em pacientes com doença renal grave?",
+              "opcoes": [
+                "Fibrose sistêmica nefrogênica",
+                "Alergia leve apenas",
+                "Nada",
+                "Hipoglicemia"
+              ],
+              "resposta": "Fibrose sistêmica nefrogênica",
+              "explicacao": "Usar agentes mais seguros.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente faz tomografia com contraste e tem dor e inchaço no braço da injeção.",
+              "enunciado": "O que ocorreu?",
+              "opcoes": [
+                "Extravasamento do contraste",
+                "Trombose",
+                "Normal",
+                "Infecção"
+              ],
+              "resposta": "Extravasamento do contraste",
+              "explicacao": "Elevar o braço e observar.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A alergia a frutos do mar não contraindica o contraste iodado.",
+              "resposta": true,
+              "explicacao": "É um mito comum.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "A hidratação ___ antes do contraste ajuda a proteger os rins em risco.",
+              "opcoes": [
+                "venosa",
+                "oral apenas",
+                "nenhuma",
+                "gelada"
+              ],
+              "resposta": "venosa",
+              "explicacao": "Em pacientes de alto risco.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado com contraste iodado e hipertireoidismo não tratado?",
+              "opcoes": [
+                "Pode piorar o hipertireoidismo",
+                "Nenhum",
+                "Melhora a tireoide",
+                "Cura"
+              ],
+              "resposta": "Pode piorar o hipertireoidismo",
+              "explicacao": "Avaliar antes.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l2-q8",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hipotensão após contraste, sem manchas, com bradicardia.",
+              "enunciado": "Qual é a reação?",
+              "opcoes": [
+                "Reação vasovagal",
+                "Anafilaxia",
+                "Normal",
+                "Infarto"
+              ],
+              "resposta": "Reação vasovagal",
+              "explicacao": "Tratada com elevação das pernas e atropina.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "radio-d5-l3",
+          "titulo": "Proteção radiológica em casos",
+          "questoes": [
+            {
+              "id": "radio-d5-l3-q1",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada princípio de proteção à ação.",
+              "pares": [
+                {
+                  "esquerda": "Tempo",
+                  "direita": "Menor tempo de exposição"
+                },
+                {
+                  "esquerda": "Distância",
+                  "direita": "Ficar longe da fonte"
+                },
+                {
+                  "esquerda": "Blindagem",
+                  "direita": "Avental de chumbo"
+                },
+                {
+                  "esquerda": "Justificativa",
+                  "direita": "Exame com indicação"
+                }
+              ],
+              "explicacao": "Protegem paciente e equipe.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q2",
+              "tipo": "caso_clinico",
+              "caso": "Criança com dor abdominal leve e exame físico tranquilo.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Observar ou ultrassom antes de tomografia",
+                "Tomografia sempre",
+                "Raio X diário",
+                "Nada"
+              ],
+              "resposta": "Observar ou ultrassom antes de tomografia",
+              "explicacao": "Reduz radiação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco de doses altas e repetidas de radiação?",
+              "opcoes": [
+                "Aumento do risco de câncer",
+                "Nenhum",
+                "Ganho de peso",
+                "Alergia"
+              ],
+              "resposta": "Aumento do risco de câncer",
+              "explicacao": "Em doses de diagnóstico, o risco é pequeno.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q4",
+              "tipo": "caso_clinico",
+              "caso": "Paciente faz várias tomografias em um ano por dor sem causa.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Avaliar a necessidade e considerar exames sem radiação",
+                "Fazer mais",
+                "Nada",
+                "Proibir exames"
+              ],
+              "resposta": "Avaliar a necessidade e considerar exames sem radiação",
+              "explicacao": "Evitar exposição acumulada.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q5",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O dosímetro mede a radiação que o profissional recebe.",
+              "resposta": true,
+              "explicacao": "Usado no trabalho.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q6",
+              "tipo": "completar_lacuna",
+              "enunciado": "O avental de ___ protege a equipe na sala de raio X.",
+              "opcoes": [
+                "chumbo",
+                "algodão",
+                "papel",
+                "plástico"
+              ],
+              "resposta": "chumbo",
+              "explicacao": "Também o protetor de tireoide.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a dose de radiação mais alta entre os exames?",
+              "opcoes": [
+                "Tomografia de abdome",
+                "Raio X de tórax",
+                "Ultrassom",
+                "Ressonância"
+              ],
+              "resposta": "Tomografia de abdome",
+              "explicacao": "O ultrassom e a ressonância não usam radiação.",
+              "revisado": false
+            },
+            {
+              "id": "radio-d5-l3-q8",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 8 semanas fez raio X de tórax sem saber da gravidez.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Risco ao bebê desprezível nessa dose",
+                "Interromper a gravidez",
+                "Muito risco",
+                "Nada"
+              ],
+              "resposta": "Risco ao bebê desprezível nessa dose",
+              "explicacao": "A dose é muito baixa.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
