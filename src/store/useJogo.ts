@@ -17,6 +17,7 @@ import type {
 } from '../types'
 import { armazenamento } from '../lib/armazenamento'
 import { buscarLicao, buscarMateria, primeiraMateriaDoModo } from '../data'
+import { materiasDoSemestre } from '../data/semestres'
 import { chaveDia } from '../lib/datas'
 import { perderVida, recarregarVidas, VIDAS_MAX } from '../lib/vidas'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
@@ -111,7 +112,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         set({
           usuario: { nome: nome.trim(), semestre, metaDiaria, criadoEm: Date.now() },
           modo,
-          materiaAtual: primeiraMateriaDoModo(modo).id,
+          // Na graduação, começa pela primeira matéria do semestre da pessoa
+          materiaAtual: ((modo === 'graduacao' && materiasDoSemestre(semestre)[0]) || primeiraMateriaDoModo(modo)).id,
           testeNivelPendente: true,
         }),
 
@@ -130,10 +132,11 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       escolherMateria: (materiaAtual) =>
         set({ materiaAtual, modo: buscarMateria(materiaAtual)?.modo ?? get().modo }),
 
-      // Trocar de modo leva para a primeira matéria daquele modo
+      // Trocar de modo leva para a primeira matéria daquele modo (na graduação, a do semestre)
       escolherModo: (modo) => {
         if (buscarMateria(get().materiaAtual)?.modo === modo) return set({ modo })
-        set({ modo, materiaAtual: primeiraMateriaDoModo(modo).id })
+        const doSemestre = modo === 'graduacao' ? materiasDoSemestre(get().usuario?.semestre)[0] : undefined
+        set({ modo, materiaAtual: (doSemestre ?? primeiraMateriaDoModo(modo)).id })
       },
 
       sincronizarVidas: () => {

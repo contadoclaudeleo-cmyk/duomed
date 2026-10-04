@@ -3,6 +3,7 @@ import { ArrowLeft, Check } from 'lucide-react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { materiaDisponivel, materiasDoModo } from '../data'
+import { materiasDoSemestre } from '../data/semestres'
 import type { CicloCurso, Materia } from '../types'
 import { useJogo } from '../store/useJogo'
 import { contarConcluidas } from '../lib/progresso'
@@ -21,12 +22,19 @@ const CICLOS: { ciclo: CicloCurso; titulo: string }[] = [
   { ciclo: 'internato', titulo: 'Internato' },
 ]
 
-/** Na graduação, separa as matérias por ciclo do curso; na residência, é um grupo só */
-function agrupar(materias: Materia[]): { titulo: string | null; materias: Materia[] }[] {
+/**
+ * Na graduação, as matérias do semestre da pessoa vêm primeiro e as outras
+ * ficam separadas por ciclo do curso; na residência, é um grupo só.
+ */
+function agrupar(materias: Materia[], semestre: number | null): { titulo: string | null; materias: Materia[] }[] {
   if (!materias.some((m) => m.ciclo)) return [{ titulo: null, materias }]
-  return CICLOS.map(({ ciclo, titulo }) => ({ titulo, materias: materias.filter((m) => m.ciclo === ciclo) })).filter(
-    (g) => g.materias.length > 0,
-  )
+  const doSemestre = materiasDoSemestre(semestre)
+  const resto = materias.filter((m) => !doSemestre.includes(m))
+  const ciclos = CICLOS.map(({ ciclo, titulo }) => ({
+    titulo: doSemestre.length > 0 ? `Outras do ${titulo.toLowerCase()}` : titulo,
+    materias: resto.filter((m) => m.ciclo === ciclo),
+  }))
+  return [{ titulo: `Do seu ${semestre}º semestre`, materias: doSemestre }, ...ciclos].filter((g) => g.materias.length > 0)
 }
 
 export function Materias() {
@@ -35,6 +43,7 @@ export function Materias() {
   const concluidas = useJogo((s) => s.licoesConcluidas)
   const escolher = useJogo((s) => s.escolherMateria)
   const nivel = useJogo((s) => s.nivel)
+  const semestre = useJogo((s) => s.usuario?.semestre ?? null)
   // A aba começa no modo atual, mas dá para espiar o outro antes de escolher
   const [aba, setAba] = useState(useJogo.getState().modo)
 
@@ -55,7 +64,7 @@ export function Materias() {
       <AbasModo valor={aba} aoMudar={setAba} />
       <p className="mb-5 mt-3 text-sm text-texto-suave">{SUBTITULOS[aba]}</p>
 
-      {agrupar(materiasDoModo(aba)).map((grupo) => (
+      {agrupar(materiasDoModo(aba), semestre).map((grupo) => (
         <section key={`${aba}-${grupo.titulo ?? 'todas'}`} className="mb-6">
           {grupo.titulo && (
             <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-texto-suave">

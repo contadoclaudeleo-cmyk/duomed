@@ -8,6 +8,7 @@ import {
   Feather,
   Flame,
   Gauge,
+  GraduationCap,
   Lock,
   Medal,
   MonitorSmartphone,
@@ -24,6 +25,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { METAS } from '../lib/metas'
+import { materiasDoSemestre } from '../data/semestres'
 import { useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, Tema } from '../types'
@@ -191,6 +193,37 @@ export function Perfil() {
             Refazer o teste de nível
           </button>
         </Ajuste>
+
+        {jogo.modo === 'graduacao' && (
+          <Ajuste Icone={GraduationCap} titulo="Semestre" descricao="A trilha mostra primeiro as matérias do seu semestre">
+            <div className="grid grid-cols-6 gap-2" role="radiogroup" aria-label="Semestre">
+              {Array.from({ length: 12 }, (_, i) => i + 1).map((s) => {
+                const ativo = usuario.semestre === s
+                return (
+                  <button
+                    key={s}
+                    type="button"
+                    role="radio"
+                    aria-checked={ativo}
+                    onClick={() => {
+                      jogo.atualizarUsuario({ semestre: s })
+                      // Se a matéria aberta não é do novo semestre, abre a primeira dele
+                      const novas = materiasDoSemestre(s)
+                      if (novas.length > 0 && !novas.some((m) => m.id === jogo.materiaAtual)) jogo.escolherMateria(novas[0].id)
+                    }}
+                    className={`rounded-xl border-2 py-2 text-sm font-extrabold transition-colors ${
+                      ativo
+                        ? 'border-agua bg-agua text-white shadow-[0_3px_0_0_var(--color-agua-escura)]'
+                        : 'border-borda text-texto-suave shadow-[0_3px_0_0_var(--borda)] hover:bg-superficie-2'
+                    }`}
+                  >
+                    {s}º
+                  </button>
+                )
+              })}
+            </div>
+          </Ajuste>
+        )}
 
         <Ajuste Icone={Target} titulo="Meta diária" descricao="Quanto você quer estudar por dia">
           <Opcoes<MetaDiaria>

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { buscarMateria, materiaDisponivel, materiasDoModo, NOMES_NIVEL, primeiraMateriaDoModo, unidadesDoNivel } from '../data'
 import { useJogo } from '../store/useJogo'
+import { materiasDoSemestre } from '../data/semestres'
 import { statusDasLicoes, type StatusLicao } from '../lib/progresso'
 import { questoesParaRevisar } from '../lib/revisao'
 import { chaveDia } from '../lib/datas'
@@ -60,6 +61,15 @@ export function Home() {
   const totalLicoes = unidades.reduce((n, u) => n + u.licoes.length, 0)
   const feitasNoNivel = unidades.reduce((n, u) => n + u.licoes.filter((l) => concluidas[l.id]).length, 0)
   const metaBatida = xpHoje >= meta
+  const semestre = useJogo((s) => s.usuario?.semestre ?? null)
+  const doSemestre = modo === 'graduacao' ? materiasDoSemestre(semestre) : []
+  // Se a matéria aberta não é do semestre, ela aparece primeiro para não sumir da lista
+  const atalhos =
+    modo === 'residencia'
+      ? materiasDoModo('residencia').filter(materiaDisponivel)
+      : doSemestre.length > 0 && !doSemestre.some((m) => m.id === materia.id)
+        ? [materia, ...doSemestre]
+        : doSemestre
 
   // Na primeira abertura do app nada comemora; depois, só as lições novas
   const [recentes] = useState(() => {
@@ -160,13 +170,19 @@ export function Home() {
             <AbasNivel valor={nivel} aoMudar={definirNivel} />
           </div>
 
-          {/* Residência: troca de área com um toque, e todas as lições ficam liberadas */}
-          {modo === 'residencia' && (
+          {/* Troca rápida de matéria: áreas da residência ou matérias do semestre na graduação */}
+          {atalhos.length > 0 && (
             <div className="mt-3">
+              {modo === 'graduacao' && (
+                <div className="mb-2 flex items-baseline justify-between gap-2">
+                  <p className="text-sm font-extrabold">Matérias do seu {semestre}º semestre</p>
+                  <Link to="/materias" className="shrink-0 text-sm font-bold text-agua-texto hover:underline dark:text-menta">
+                    Ver todas
+                  </Link>
+                </div>
+              )}
               <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Área de estudo">
-                {materiasDoModo('residencia')
-                  .filter(materiaDisponivel)
-                  .map((m) => {
+                {atalhos.map((m) => {
                     const ativa = m.id === materia.id
                     return (
                       <button
@@ -190,9 +206,11 @@ export function Home() {
                     )
                   })}
               </div>
-              <p className="mt-2 text-xs font-semibold text-texto-suave">
-                Na residência, todas as lições estão liberadas. Estude na ordem que quiser.
-              </p>
+              {modo === 'residencia' && (
+                <p className="mt-2 text-xs font-semibold text-texto-suave">
+                  Na residência, todas as lições estão liberadas. Estude na ordem que quiser.
+                </p>
+              )}
             </div>
           )}
 
