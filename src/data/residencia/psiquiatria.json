@@ -5116,16 +5116,17 @@
             },
             {
               "id": "rpsiq-d1-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual especificador tem piora pela manhã, despertar precoce e perda de prazer em tudo?",
+              "tipo": "caso_clinico",
+              "caso": "Homem deprimido acorda às 4 horas sem conseguir dormir, está pior pela manhã, perdeu peso e nada lhe dá prazer, nem boas notícias.",
+              "enunciado": "Qual é o especificador?",
               "opcoes": [
                 "Melancólico",
                 "Atípico",
-                "Ansioso",
-                "Misto com sintomas de hipomania"
+                "Com sintomas ansiosos",
+                "Misto com hipomania"
               ],
               "resposta": "Melancólico",
-              "explicacao": "Responde bem a tratamentos biológicos.",
+              "explicacao": "O melancólico responde bem a tratamentos biológicos, como antidepressivos e ECT.",
               "revisado": false
             },
             {
@@ -5146,9 +5147,9 @@
             {
               "id": "rpsiq-d1-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A depressão que sempre aparece no outono e inverno pode ser tratada com fototerapia.",
+              "enunciado": "Mulher que fica deprimida todo ano no inverno e melhora na primavera pode ser tratada com fototerapia.",
               "resposta": true,
-              "explicacao": "Padrão sazonal.",
+              "explicacao": "Verdadeiro. É o padrão sazonal, que responde à fototerapia.",
               "revisado": false
             },
             {
@@ -5244,16 +5245,17 @@
             },
             {
               "id": "rpsiq-d1-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo tem mais interações por inibir enzimas do fígado?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa metoprolol, tamoxifeno e codeína e vai iniciar antidepressivo.",
+              "enunciado": "Qual antidepressivo tem mais risco de interação aqui?",
               "opcoes": [
                 "Fluoxetina",
                 "Escitalopram",
-                "Sertralina",
-                "Mirtazapina em dose baixa"
+                "Sertralina em dose baixa",
+                "Mirtazapina"
               ],
               "resposta": "Fluoxetina",
-              "explicacao": "Inibe o CYP2D6.",
+              "explicacao": "A fluoxetina inibe o CYP2D6, que metaboliza esses remédios.",
               "revisado": false
             },
             {
@@ -5274,9 +5276,9 @@
             {
               "id": "rpsiq-d1-l2-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O escitalopram em dose alta pode alongar o intervalo QT.",
-              "resposta": true,
-              "explicacao": "Cuidado em cardiopatas e idosos.",
+              "enunciado": "Idosa com QT longo pode usar escitalopram em dose alta sem cuidado com o ECG.",
+              "resposta": false,
+              "explicacao": "Falso. O escitalopram em dose alta pode alongar o QT; cuidado em cardiopatas e idosos.",
               "revisado": false
             },
             {
@@ -5327,16 +5329,17 @@
           "questoes": [
             {
               "id": "rpsiq-d1-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando a depressão é considerada resistente?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tomou sertralina por 8 semanas e depois venlafaxina por 8 semanas, em doses adequadas e com boa adesão, sem melhora.",
+              "enunciado": "Como classificar?",
               "opcoes": [
-                "Falha de 2 antidepressivos bem usados",
-                "Sem resposta em 1 semana",
-                "Sem resposta a 1 dose baixa",
-                "Qualquer depressão com mais de um mês de duração"
+                "Depressão resistente",
+                "Depressão leve",
+                "Falha por pouco tempo",
+                "Transtorno de personalidade"
               ],
-              "resposta": "Falha de 2 antidepressivos bem usados",
-              "explicacao": "Checar adesão e diagnóstico antes.",
+              "resposta": "Depressão resistente",
+              "explicacao": "Falha de 2 antidepressivos bem usados define resistência; antes, conferir adesão e diagnóstico.",
               "revisado": false
             },
             {
@@ -5372,9 +5375,9 @@
             {
               "id": "rpsiq-d1-l3-q4",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A estimulação magnética transcraniana é uma opção para depressão resistente.",
-              "resposta": true,
-              "explicacao": "Não precisa de anestesia.",
+              "enunciado": "A estimulação magnética transcraniana exige anestesia geral, como a eletroconvulsoterapia.",
+              "resposta": false,
+              "explicacao": "Falso. Ela não precisa de anestesia e é opção na depressão resistente.",
               "revisado": false
             },
             {
@@ -5394,16 +5397,17 @@
             },
             {
               "id": "rpsiq-d1-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual nível de lítio se busca quando usado para potencializar antidepressivo?",
+              "tipo": "caso_clinico",
+              "caso": "Médico associa lítio à sertralina para potencializar o tratamento de depressão resistente.",
+              "enunciado": "Qual nível de lítio buscar?",
               "opcoes": [
                 "Cerca de 0,5 a 0,8 mEq/L",
-                "Acima de 2",
-                "Abaixo de 0,1",
-                "Exatamente 3 mEq/L, para ter efeito máximo"
+                "Acima de 2 mEq/L",
+                "Abaixo de 0,1 mEq/L",
+                "Exatamente 3 mEq/L, para efeito máximo"
               ],
               "resposta": "Cerca de 0,5 a 0,8 mEq/L",
-              "explicacao": "Nível menor que o usado na mania.",
+              "explicacao": "Na potencialização, o nível é menor que o usado na mania.",
               "revisado": false
             },
             {
@@ -5507,16 +5511,17 @@
             },
             {
               "id": "rpsiq-d2-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo tem maior risco de virada maníaca?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar em depressão vai usar um antidepressivo junto com o estabilizador.",
+              "enunciado": "Qual classe tem maior risco de virada maníaca?",
               "opcoes": [
                 "Tricíclico",
                 "Bupropiona",
-                "Sertralina",
-                "Escitalopram em dose baixa"
+                "ISRS em dose baixa",
+                "Quetiapina"
               ],
               "resposta": "Tricíclico",
-              "explicacao": "Evitar no bipolar.",
+              "explicacao": "Tricíclicos têm mais risco de virada e devem ser evitados no bipolar.",
               "revisado": false
             },
             {
@@ -5537,9 +5542,9 @@
             {
               "id": "rpsiq-d2-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na gestação, o lítio pode ser mantido em casos graves, com monitoramento.",
+              "enunciado": "Gestante bipolar grave, estável há anos com lítio, pode manter o lítio com monitoramento.",
               "resposta": true,
-              "explicacao": "Pesar risco e benefício.",
+              "explicacao": "Verdadeiro. Pesam-se risco e benefício; parar aumenta a recaída.",
               "revisado": false
             },
             {
@@ -5620,8 +5625,9 @@
             },
             {
               "id": "rpsiq-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio reduz a poliúria causada pelo lítio?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente estável com lítio urina 5 litros por dia por diabetes insípido nefrogênico e quer continuar o remédio.",
+              "enunciado": "Qual remédio ajuda?",
               "opcoes": [
                 "Amilorida",
                 "Furosemida",
@@ -5629,7 +5635,7 @@
                 "Desmopressina nasal"
               ],
               "resposta": "Amilorida",
-              "explicacao": "Bloqueia a entrada do lítio no túbulo.",
+              "explicacao": "A amilorida bloqueia a entrada do lítio no túbulo coletor.",
               "revisado": false
             },
             {
@@ -5650,9 +5656,9 @@
             {
               "id": "rpsiq-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O lítio deve ser dosado cerca de 12 horas após a última dose.",
-              "resposta": true,
-              "explicacao": "Nível de vale.",
+              "enunciado": "O nível de lítio deve ser colhido 2 horas após a dose da manhã.",
+              "resposta": false,
+              "explicacao": "Falso. Colhe-se cerca de 12 horas após a última dose, o nível de vale.",
               "revisado": false
             },
             {
@@ -5697,16 +5703,17 @@
             },
             {
               "id": "rpsiq-d2-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a faixa de nível sérico de lítio na manutenção?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar em manutenção com lítio tem nível de 0,8 mEq/L, sem efeitos colaterais.",
+              "enunciado": "Como interpretar?",
               "opcoes": [
-                "0,6 a 1,2 mEq/L",
-                "2 a 3 mEq/L",
-                "0,01 a 0,1 mEq/L",
-                "Acima de 4 mEq/L, para melhor efeito"
+                "Nível adequado de manutenção",
+                "Nível tóxico, suspender já",
+                "Nível baixo, dobrar a dose",
+                "Nível que exige hemodiálise"
               ],
-              "resposta": "0,6 a 1,2 mEq/L",
-              "explicacao": "Na mania aguda pode ir um pouco mais alto.",
+              "resposta": "Nível adequado de manutenção",
+              "explicacao": "A faixa de manutenção é de 0,6 a 1,2 mEq/L.",
               "revisado": false
             }
           ]
@@ -5747,16 +5754,17 @@
             },
             {
               "id": "rpsiq-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que a lamotrigina deve ter a dose aumentada lentamente?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar vai iniciar lamotrigina e pergunta por que a dose sobe tão devagar.",
+              "enunciado": "Qual é o motivo?",
               "opcoes": [
-                "Reduzir o risco de reação grave na pele",
-                "Evitar mania",
+                "Evitar reação grave na pele",
+                "Evitar virada maníaca",
                 "Evitar ganho de peso",
-                "Evitar hipotireoidismo, diabetes e queda de cabelo"
+                "Evitar hipotireoidismo e diabetes"
               ],
-              "resposta": "Reduzir o risco de reação grave na pele",
-              "explicacao": "O valproato dobra o nível dela.",
+              "resposta": "Evitar reação grave na pele",
+              "explicacao": "O risco é a síndrome de Stevens-Johnson; o valproato dobra o nível da lamotrigina.",
               "revisado": false
             },
             {
@@ -5777,9 +5785,9 @@
             {
               "id": "rpsiq-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "No bipolar, a psicoeducação reduz recaídas.",
-              "resposta": true,
-              "explicacao": "Ensina a reconhecer sinais iniciais.",
+              "enunciado": "No transtorno bipolar, a psicoeducação não muda o número de recaídas.",
+              "resposta": false,
+              "explicacao": "Falso. Ela reduz recaídas, ensinando a reconhecer sinais iniciais.",
               "revisado": false
             },
             {
@@ -5824,16 +5832,17 @@
             },
             {
               "id": "rpsiq-d2-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estabilizador causa mais ganho de peso e síndrome dos ovários policísticos?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem bipolar em valproato tem ganho de peso, ciclos irregulares e pelos em excesso.",
+              "enunciado": "Qual efeito adverso explica?",
               "opcoes": [
-                "Valproato",
-                "Lamotrigina",
-                "Carbamazepina",
-                "Lítio em nível baixo"
+                "Ovários policísticos",
+                "Hipotireoidismo pelo lítio",
+                "Hiperprolactinemia",
+                "Síndrome de Cushing por corticoide"
               ],
-              "resposta": "Valproato",
-              "explicacao": "Cuidado em mulheres jovens.",
+              "resposta": "Ovários policísticos",
+              "explicacao": "O valproato causa ganho de peso e se associa à síndrome dos ovários policísticos.",
               "revisado": false
             }
           ]
@@ -5897,16 +5906,17 @@
             },
             {
               "id": "rpsiq-d3-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual encefalite autoimune causa psicose em mulheres jovens e pode ter teratoma de ovário?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 24 anos com psicose aguda, convulsões e movimentos estranhos da boca. Líquor com linfócitos.",
+              "enunciado": "Qual hipótese investigar e o que procurar?",
               "opcoes": [
-                "Anti-receptor NMDA",
-                "Herpes",
-                "Raiva",
-                "Toxoplasmose cerebral"
+                "Anti-NMDA; teratoma de ovário",
+                "Esquizofrenia; nada mais",
+                "Herpes; ressonância só",
+                "Raiva; vacina antirrábica imediata e soro"
               ],
-              "resposta": "Anti-receptor NMDA",
-              "explicacao": "Procurar o tumor.",
+              "resposta": "Anti-NMDA; teratoma de ovário",
+              "explicacao": "A encefalite anti-receptor NMDA causa psicose em mulheres jovens e pode ter teratoma de ovário.",
               "revisado": false
             },
             {
@@ -5927,9 +5937,9 @@
             {
               "id": "rpsiq-d3-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O período sem tratamento da psicose mais longo piora o prognóstico.",
-              "resposta": true,
-              "explicacao": "Tratar cedo é importante.",
+              "enunciado": "Na esquizofrenia, o tempo de psicose sem tratamento não interfere no prognóstico.",
+              "resposta": false,
+              "explicacao": "Falso. Quanto mais longo o período sem tratamento, pior o prognóstico.",
               "revisado": false
             },
             {
@@ -6025,16 +6035,17 @@
             },
             {
               "id": "rpsiq-d3-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio é aprovado para discinesia tardia?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com discinesia tardia por antipsicótico usado há anos.",
+              "enunciado": "Qual remédio é aprovado para esse quadro?",
               "opcoes": [
                 "Valbenazina",
                 "Biperideno",
                 "Haloperidol em dose maior",
-                "Levodopa em dose alta"
+                "Levodopa"
               ],
               "resposta": "Valbenazina",
-              "explicacao": "Inibidor do VMAT2.",
+              "explicacao": "A valbenazina inibe o VMAT2; anticolinérgicos pioram a discinesia.",
               "revisado": false
             },
             {
@@ -6055,9 +6066,9 @@
             {
               "id": "rpsiq-d3-l2-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os anticolinérgicos pioram a discinesia tardia.",
-              "resposta": true,
-              "explicacao": "Melhoram o parkinsonismo e a distonia.",
+              "enunciado": "Biperideno é a melhor opção para tratar a discinesia tardia.",
+              "resposta": false,
+              "explicacao": "Falso. Anticolinérgicos pioram a discinesia tardia; melhoram distonia e parkinsonismo.",
               "revisado": false
             },
             {
@@ -6108,16 +6119,17 @@
           "questoes": [
             {
               "id": "rpsiq-d3-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando indicar clozapina na esquizofrenia?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com esquizofrenia usou risperidona e depois olanzapina, cada uma por 8 semanas em dose adequada, sem melhora.",
+              "enunciado": "Qual é a próxima opção?",
               "opcoes": [
-                "Falha de 2 antipsicóticos bem usados",
-                "No primeiro surto",
-                "Para insônia",
-                "Sempre como primeira escolha no primeiro surto"
+                "Clozapina",
+                "Haloperidol de depósito",
+                "Terceiro antipsicótico comum",
+                "Benzodiazepínico isolado"
               ],
-              "resposta": "Falha de 2 antipsicóticos bem usados",
-              "explicacao": "Também com alto risco de suicídio.",
+              "resposta": "Clozapina",
+              "explicacao": "Falha de 2 antipsicóticos bem usados indica clozapina.",
               "revisado": false
             },
             {
@@ -6152,24 +6164,25 @@
             },
             {
               "id": "rpsiq-d3-l3-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual efeito colateral comum da clozapina pode ser grave e é muitas vezes esquecido?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em clozapina há 2 meses está há 6 dias sem evacuar, com abdome distendido.",
+              "enunciado": "Qual é a preocupação?",
               "opcoes": [
-                "Constipação intensa",
-                "Diarreia",
-                "Insônia",
-                "Queda de cabelo sem outros sintomas"
+                "Obstrução intestinal",
+                "Efeito esperado e sem risco",
+                "Agranulocitose",
+                "Síndrome serotoninérgica grave"
               ],
-              "resposta": "Constipação intensa",
-              "explicacao": "Pode causar obstrução intestinal.",
+              "resposta": "Obstrução intestinal",
+              "explicacao": "A constipação da clozapina é comum e pode evoluir para obstrução.",
               "revisado": false
             },
             {
               "id": "rpsiq-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A clozapina reduz o risco de suicídio na esquizofrenia.",
-              "resposta": true,
-              "explicacao": "Vantagem além da eficácia.",
+              "enunciado": "A clozapina não tem efeito sobre o risco de suicídio na esquizofrenia.",
+              "resposta": false,
+              "explicacao": "Falso. Ela reduz o risco de suicídio, vantagem além da eficácia.",
               "revisado": false
             },
             {
@@ -6214,16 +6227,17 @@
             },
             {
               "id": "rpsiq-d3-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal efeito adverso que exige hemograma na clozapina?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai iniciar clozapina.",
+              "enunciado": "Qual exame é exigido de forma periódica e por quê?",
               "opcoes": [
-                "Agranulocitose",
-                "Anemia ferropriva",
-                "Plaquetose",
-                "Aumento dos eosinófilos sem risco"
+                "Hemograma, por agranulocitose",
+                "TSH, pelo hipotireoidismo",
+                "Função renal, pela nefrite",
+                "Eletroencefalograma, pelo risco de epilepsia"
               ],
-              "resposta": "Agranulocitose",
-              "explicacao": "Mais comum nos primeiros meses.",
+              "resposta": "Hemograma, por agranulocitose",
+              "explicacao": "A agranulocitose é mais comum nos primeiros meses.",
               "revisado": false
             }
           ]
@@ -6287,16 +6301,17 @@
             },
             {
               "id": "rpsiq-d4-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sintoma físico do pânico costuma assustar mais o paciente?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher vai 3 vezes ao pronto-socorro com crises súbitas e exames cardíacos normais.",
+              "enunciado": "Qual sintoma costuma levá-la à emergência?",
               "opcoes": [
                 "Dor no peito e palpitação",
-                "Coceira",
-                "Febre",
-                "Tosse seca persistente por semanas"
+                "Coceira na pele",
+                "Febre alta",
+                "Tosse seca há várias semanas"
               ],
               "resposta": "Dor no peito e palpitação",
-              "explicacao": "Por isso procuram a emergência.",
+              "explicacao": "No pânico, a dor no peito e a palpitação assustam e levam à emergência.",
               "revisado": false
             },
             {
@@ -6317,9 +6332,9 @@
             {
               "id": "rpsiq-d4-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A pregabalina pode ser usada no transtorno de ansiedade generalizada.",
+              "enunciado": "Paciente com ansiedade generalizada que não tolerou ISRS pode usar pregabalina.",
               "resposta": true,
-              "explicacao": "Opção quando ISRS não é tolerado.",
+              "explicacao": "Verdadeiro. É uma opção quando o ISRS não é tolerado.",
               "revisado": false
             },
             {
@@ -6415,16 +6430,17 @@
             },
             {
               "id": "rpsiq-d4-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio pode ajudar nos pesadelos do TEPT?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com estresse pós-traumático em terapia continua com pesadelos que acordam toda noite.",
+              "enunciado": "Qual remédio pode ajudar?",
               "opcoes": [
                 "Prazosina",
                 "Diazepam",
                 "Haloperidol",
-                "Metilfenidato à noite"
+                "Metilfenidato"
               ],
               "resposta": "Prazosina",
-              "explicacao": "Bloqueador alfa-1.",
+              "explicacao": "A prazosina, bloqueador alfa-1, pode reduzir os pesadelos.",
               "revisado": false
             },
             {
@@ -6445,9 +6461,9 @@
             {
               "id": "rpsiq-d4-l2-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Benzodiazepínicos logo após o trauma podem aumentar o risco de TEPT.",
-              "resposta": true,
-              "explicacao": "Por isso devem ser evitados.",
+              "enunciado": "Logo após um assalto, dar benzodiazepínico regular previne o estresse pós-traumático.",
+              "resposta": false,
+              "explicacao": "Falso. Benzodiazepínicos logo após o trauma podem aumentar o risco de TEPT.",
               "revisado": false
             },
             {
@@ -6528,16 +6544,17 @@
             },
             {
               "id": "rpsiq-d4-l3-q3",
-              "tipo": "multipla_escolha",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai fazer endoscopia e precisa de sedação curta.",
               "enunciado": "Qual benzodiazepínico tem meia-vida mais curta?",
               "opcoes": [
                 "Midazolam",
                 "Diazepam",
                 "Clonazepam",
-                "Clordiazepóxido em dose alta"
+                "Clordiazepóxido"
               ],
               "resposta": "Midazolam",
-              "explicacao": "Usado em procedimentos.",
+              "explicacao": "O midazolam é usado em procedimentos pela ação curta.",
               "revisado": false
             },
             {
@@ -6605,16 +6622,17 @@
             },
             {
               "id": "rpsiq-d4-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estratégia ajuda a retirar benzodiazepínico usado há anos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa alprazolam há 8 anos e quer parar.",
+              "enunciado": "Qual estratégia ajuda?",
               "opcoes": [
                 "Trocar por um de ação longa e reduzir",
                 "Parar de uma vez",
-                "Dobrar a dose",
-                "Substituir por álcool em dose baixa à noite"
+                "Dobrar a dose antes de parar",
+                "Trocar por álcool em dose baixa toda noite"
               ],
               "resposta": "Trocar por um de ação longa e reduzir",
-              "explicacao": "Redução de 10 a 25% a cada 2 semanas.",
+              "explicacao": "Reduz-se de 10 a 25% a cada 2 semanas.",
               "revisado": false
             }
           ]
@@ -6678,16 +6696,17 @@
             },
             {
               "id": "rpsiq-d5-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a mortalidade aproximada do delirium tremens sem tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Família pergunta sobre o risco do delirium tremens do paciente internado.",
+              "enunciado": "Qual é a mortalidade aproximada sem tratamento?",
               "opcoes": [
                 "Cerca de 5 a 15%",
                 "Menos de 0,01%",
                 "100%",
-                "Igual à da gripe comum"
+                "Igual à de uma gripe comum"
               ],
               "resposta": "Cerca de 5 a 15%",
-              "explicacao": "Com tratamento, cai muito.",
+              "explicacao": "Com tratamento adequado, a mortalidade cai muito.",
               "revisado": false
             },
             {
@@ -6708,9 +6727,9 @@
             {
               "id": "rpsiq-d5-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na abstinência alcoólica, o magnésio baixo deve ser corrigido.",
-              "resposta": true,
-              "explicacao": "Também potássio e fósforo.",
+              "enunciado": "Na abstinência alcoólica, o magnésio baixo pode ser ignorado se o paciente estiver tranquilo.",
+              "resposta": false,
+              "explicacao": "Falso. O magnésio baixo deve ser corrigido, junto com potássio e fósforo.",
               "revisado": false
             },
             {
@@ -6791,16 +6810,17 @@
             },
             {
               "id": "rpsiq-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estrutura cerebral é típica de lesão na encefalopatia de Wernicke?",
+              "tipo": "caso_clinico",
+              "caso": "Etilista com confusão, ataxia e nistagmo faz ressonância.",
+              "enunciado": "Qual estrutura costuma mostrar lesão?",
               "opcoes": [
                 "Corpos mamilares",
-                "Cerebelo apenas",
                 "Lobo occipital",
-                "Medula espinhal cervical"
+                "Cerebelo isolado",
+                "Medula cervical"
               ],
               "resposta": "Corpos mamilares",
-              "explicacao": "Também tálamo e periaquedutal.",
+              "explicacao": "Também tálamo e região periaquedutal.",
               "revisado": false
             },
             {
@@ -6821,9 +6841,9 @@
             {
               "id": "rpsiq-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A tiamina para Wernicke deve ser dada por via venosa em dose alta.",
-              "resposta": true,
-              "explicacao": "A absorção oral é ruim no etilista.",
+              "enunciado": "Na encefalopatia de Wernicke, tiamina por via oral em dose baixa é suficiente.",
+              "resposta": false,
+              "explicacao": "Falso. Usa-se tiamina venosa em dose alta, pois a absorção oral é ruim no etilista.",
               "revisado": false
             },
             {
@@ -6868,16 +6888,17 @@
             },
             {
               "id": "rpsiq-d5-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal ocular mais frequente na encefalopatia de Wernicke?",
+              "tipo": "caso_clinico",
+              "caso": "Etilista confuso e com marcha instável é examinado.",
+              "enunciado": "Qual sinal ocular é o mais frequente na encefalopatia de Wernicke?",
               "opcoes": [
                 "Nistagmo",
                 "Ptose",
                 "Pupila fixa",
-                "Cegueira súbita bilateral"
+                "Cegueira súbita"
               ],
               "resposta": "Nistagmo",
-              "explicacao": "Também paralisia do sexto nervo.",
+              "explicacao": "Também pode haver paralisia do sexto nervo.",
               "revisado": false
             }
           ]
@@ -6918,16 +6939,17 @@
             },
             {
               "id": "rpsiq-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio causa mal-estar intenso se o paciente beber álcool?",
+              "tipo": "caso_clinico",
+              "caso": "Homem motivado a parar de beber pede um remédio que o faça passar mal se beber.",
+              "enunciado": "Qual é esse remédio?",
               "opcoes": [
                 "Dissulfiram",
                 "Naltrexona",
                 "Acamprosato",
-                "Topiramato em dose baixa"
+                "Topiramato"
               ],
               "resposta": "Dissulfiram",
-              "explicacao": "Exige consentimento e motivação.",
+              "explicacao": "Exige consentimento e motivação; naltrexona e acamprosato reduzem a fissura.",
               "revisado": false
             },
             {
@@ -6948,9 +6970,9 @@
             {
               "id": "rpsiq-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O dissulfiram não deve ser dado sem o conhecimento do paciente.",
-              "resposta": true,
-              "explicacao": "Pode causar reação grave.",
+              "enunciado": "A esposa pode colocar dissulfiram escondido na comida do marido etilista.",
+              "resposta": false,
+              "explicacao": "Falso. Nunca se dá sem o conhecimento do paciente, pois pode causar reação grave.",
               "revisado": false
             },
             {
@@ -6995,16 +7017,17 @@
             },
             {
               "id": "rpsiq-d5-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual grupo de ajuda mútua é conhecido no alcoolismo?",
+              "tipo": "caso_clinico",
+              "caso": "Homem em abstinência do álcool quer um grupo de apoio gratuito com outras pessoas na mesma situação.",
+              "enunciado": "Qual grupo indicar?",
               "opcoes": [
                 "Alcoólicos Anônimos",
                 "Narcóticos Anônimos",
-                "Comedores Compulsivos",
-                "Grupo de apoio para cuidadores de idosos"
+                "Comedores Compulsivos Anônimos",
+                "Grupo de cuidadores de idosos"
               ],
               "resposta": "Alcoólicos Anônimos",
-              "explicacao": "Baseado em 12 passos.",
+              "explicacao": "É baseado nos 12 passos.",
               "revisado": false
             }
           ]
@@ -7053,16 +7076,17 @@
             },
             {
               "id": "rpsiq-d6-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual complicação renal pode surgir na intoxicação grave por cocaína?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de cocaína agitado e com febre tem urina escura e creatinina subindo.",
+              "enunciado": "Qual é a complicação?",
               "opcoes": [
                 "Rabdomiólise com lesão renal",
                 "Síndrome nefrótica",
-                "Cálculo",
-                "Cisto renal simples que cresce rápido"
+                "Cálculo renal",
+                "Glomerulonefrite pós-infecciosa"
               ],
               "resposta": "Rabdomiólise com lesão renal",
-              "explicacao": "Dosar CPK.",
+              "explicacao": "Dosa-se a CPK e hidrata-se bem.",
               "revisado": false
             },
             {
@@ -7083,9 +7107,9 @@
             {
               "id": "rpsiq-d6-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A cocaína pode causar AVC hemorrágico por pico de pressão.",
+              "enunciado": "Jovem que usou cocaína e teve dor de cabeça súbita e déficit pode ter AVC hemorrágico.",
               "resposta": true,
-              "explicacao": "Também isquêmico.",
+              "explicacao": "Verdadeiro. O pico de pressão da cocaína causa AVC hemorrágico e isquêmico.",
               "revisado": false
             },
             {
@@ -7130,16 +7154,17 @@
             },
             {
               "id": "rpsiq-d6-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual droga, misturada à cocaína, pode causar neutropenia grave?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário frequente de cocaína tem febre e neutrófilos muito baixos, sem outra causa.",
+              "enunciado": "Qual adulterante suspeitar?",
               "opcoes": [
                 "Levamisol",
                 "Cafeína",
                 "Lidocaína",
-                "Talco em grande quantidade"
+                "Talco"
               ],
               "resposta": "Levamisol",
-              "explicacao": "Adulterante comum.",
+              "explicacao": "O levamisol é adulterante comum e causa neutropenia grave.",
               "revisado": false
             }
           ]
@@ -7180,16 +7205,17 @@
             },
             {
               "id": "rpsiq-d6-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando iniciar buprenorfina na abstinência de opioide?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de heroína quer iniciar buprenorfina. Usou há 4 horas e ainda está sem sintomas.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Com sinais claros de abstinência",
-                "Logo após a última dose",
-                "Junto com heroína",
-                "Somente depois de 1 mês sem nenhum uso"
+                "Esperar sinais claros de abstinência",
+                "Dar a buprenorfina agora",
+                "Dar naloxona antes",
+                "Dar buprenorfina junto com heroína"
               ],
-              "resposta": "Com sinais claros de abstinência",
-              "explicacao": "Antes disso, precipita abstinência.",
+              "resposta": "Esperar sinais claros de abstinência",
+              "explicacao": "Antes da abstinência, a buprenorfina precipita abstinência.",
               "revisado": false
             },
             {
@@ -7210,9 +7236,9 @@
             {
               "id": "rpsiq-d6-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Edema pulmonar não cardiogênico é complicação da overdose de opioide.",
+              "enunciado": "Paciente com overdose de opioide que acorda com naloxona, mas segue com falta de ar e estertores, pode ter edema pulmonar não cardiogênico.",
               "resposta": true,
-              "explicacao": "Pode exigir ventilação.",
+              "explicacao": "Verdadeiro. É complicação da overdose e pode exigir ventilação.",
               "revisado": false
             },
             {
@@ -7257,8 +7283,9 @@
             },
             {
               "id": "rpsiq-d6-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sorologia rastrear em usuários de drogas injetáveis?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de drogas injetáveis inicia acompanhamento no CAPS AD.",
+              "enunciado": "Quais exames oferecer?",
               "opcoes": [
                 "HIV e hepatites B e C",
                 "Só sífilis",
@@ -7266,7 +7293,7 @@
                 "Dengue e febre amarela"
               ],
               "resposta": "HIV e hepatites B e C",
-              "explicacao": "Oferecer vacina para hepatite B.",
+              "explicacao": "Também oferecer vacina para hepatite B.",
               "revisado": false
             }
           ]
@@ -7307,16 +7334,17 @@
             },
             {
               "id": "rpsiq-d6-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alucinógeno causa nistagmo vertical e agressividade?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem após usar pó de anjo está agressivo, com nistagmo vertical e sem sentir dor.",
+              "enunciado": "Qual é a substância?",
               "opcoes": [
                 "Fenciclidina",
                 "LSD",
                 "Maconha",
-                "Psilocibina em dose baixa"
+                "Psilocibina"
               ],
               "resposta": "Fenciclidina",
-              "explicacao": "Conhecida como pó de anjo.",
+              "explicacao": "A fenciclidina causa nistagmo vertical e agressividade.",
               "revisado": false
             },
             {
@@ -7384,13 +7412,14 @@
             },
             {
               "id": "rpsiq-d6-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual intoxicação causa pele seca, retenção urinária, midríase e confusão?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tomou muitos comprimidos de antialérgico e está confuso, vermelho, com pele seca, pupilas dilatadas e bexiga cheia.",
+              "enunciado": "Qual é a síndrome?",
               "opcoes": [
                 "Anticolinérgica",
                 "Opioide",
-                "Organofosforado",
-                "Benzodiazepínico com álcool"
+                "Colinérgica por organofosforado",
+                "Serotoninérgica"
               ],
               "resposta": "Anticolinérgica",
               "explicacao": "Seco como osso, vermelho como beterraba.",
@@ -7442,16 +7471,17 @@
             },
             {
               "id": "rpsiq-d7-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o período de maior risco de suicídio após alta de internação psiquiátrica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente deprimido teve alta de internação psiquiátrica hoje.",
+              "enunciado": "Quando o risco de suicídio é maior?",
               "opcoes": [
-                "Primeiras semanas",
+                "Nas primeiras semanas após a alta",
                 "Após 10 anos",
-                "Nunca há risco",
-                "Somente após 1 ano da alta"
+                "Não há risco após a internação",
+                "Só após 1 ano da alta"
               ],
-              "resposta": "Primeiras semanas",
-              "explicacao": "Agendar retorno breve.",
+              "resposta": "Nas primeiras semanas após a alta",
+              "explicacao": "Deve-se agendar retorno breve.",
               "revisado": false
             },
             {
@@ -7472,9 +7502,9 @@
             {
               "id": "rpsiq-d7-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Ao atender tentativa de suicídio, deve-se notificar a violência autoprovocada.",
-              "resposta": true,
-              "explicacao": "Notificação compulsória imediata.",
+              "enunciado": "Tentativa de suicídio atendida no pronto-socorro não precisa ser notificada se o paciente estiver bem.",
+              "resposta": false,
+              "explicacao": "Falso. A violência autoprovocada é de notificação compulsória imediata.",
               "revisado": false
             },
             {
@@ -7519,16 +7549,17 @@
             },
             {
               "id": "rpsiq-d7-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio reduz risco de suicídio no transtorno bipolar?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar com tentativas de suicídio anteriores precisa de estabilizador.",
+              "enunciado": "Qual reduz o risco de suicídio?",
               "opcoes": [
                 "Lítio",
                 "Valproato",
                 "Lamotrigina",
-                "Carbamazepina em dose alta"
+                "Carbamazepina"
               ],
               "resposta": "Lítio",
-              "explicacao": "Também a clozapina na esquizofrenia.",
+              "explicacao": "O lítio tem efeito antissuicida; na esquizofrenia, a clozapina.",
               "revisado": false
             }
           ]
@@ -7569,16 +7600,17 @@
             },
             {
               "id": "rpsiq-d7-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antipsicótico injetável é usado na agitação com menos efeito extrapiramidal?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente agitado precisa de antipsicótico injetável e já teve distonia com haloperidol.",
+              "enunciado": "Qual opção tem menos efeito extrapiramidal?",
               "opcoes": [
                 "Olanzapina",
                 "Haloperidol",
                 "Clorpromazina",
-                "Flufenazina de depósito"
+                "Flufenazina"
               ],
               "resposta": "Olanzapina",
-              "explicacao": "Não associar com benzodiazepínico injetável.",
+              "explicacao": "Não se associa olanzapina injetável com benzodiazepínico injetável.",
               "revisado": false
             },
             {
@@ -7599,9 +7631,9 @@
             {
               "id": "rpsiq-d7-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A tranquilização rápida busca acalmar sem sedação profunda, se possível.",
-              "resposta": true,
-              "explicacao": "O paciente deve poder ser avaliado.",
+              "enunciado": "O objetivo da tranquilização rápida é deixar o paciente em sono profundo.",
+              "resposta": false,
+              "explicacao": "Falso. Busca-se acalmar sem sedação profunda, para que ele possa ser avaliado.",
               "revisado": false
             },
             {
@@ -7646,16 +7678,17 @@
             },
             {
               "id": "rpsiq-d7-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de associar olanzapina injetável com benzodiazepínico injetável?",
+              "tipo": "caso_clinico",
+              "caso": "Médico quer dar olanzapina e midazolam injetáveis juntos num paciente agitado.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Depressão cardiorrespiratória",
-                "Mania",
-                "Hipertensão",
-                "Melhora maior e sem nenhum risco"
+                "Virada maníaca",
+                "Crise hipertensiva",
+                "Síndrome serotoninérgica grave"
               ],
               "resposta": "Depressão cardiorrespiratória",
-              "explicacao": "Evitar a associação.",
+              "explicacao": "Essa associação deve ser evitada.",
               "revisado": false
             }
           ]
@@ -7696,16 +7729,17 @@
             },
             {
               "id": "rpsiq-d7-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual critério é usado para diagnosticar síndrome serotoninérgica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em sertralina e tramadol tem agitação, tremor e clônus induzível.",
+              "enunciado": "Quais critérios confirmam a síndrome serotoninérgica?",
               "opcoes": [
                 "Critérios de Hunter",
                 "Critérios de Jones",
-                "Escala de Glasgow",
-                "Critérios de Light"
+                "Critérios de Light",
+                "Escala de Glasgow"
               ],
               "resposta": "Critérios de Hunter",
-              "explicacao": "Clônus é o achado principal.",
+              "explicacao": "O clônus é o achado principal.",
               "revisado": false
             },
             {
@@ -7773,16 +7807,17 @@
             },
             {
               "id": "rpsiq-d7-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual efeito do citalopram exige ECG em idosos com doses altas?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 75 anos usa citalopram 40 mg.",
+              "enunciado": "Qual exame deve ser feito?",
               "opcoes": [
-                "QT longo",
-                "Bradicardia sinusal",
-                "Bloqueio de ramo esquerdo",
-                "Taquicardia sinusal leve e benigna"
+                "ECG, pelo risco de QT longo",
+                "Eletroencefalograma",
+                "Ecocardiograma",
+                "Raio X de tórax e espirometria"
               ],
-              "resposta": "QT longo",
-              "explicacao": "Limite de dose em idosos.",
+              "resposta": "ECG, pelo risco de QT longo",
+              "explicacao": "Em idosos, a dose de citalopram é limitada pelo QT.",
               "revisado": false
             }
           ]
@@ -7831,16 +7866,17 @@
             },
             {
               "id": "rpsiq-d8-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração laboratorial é comum na anorexia?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com anorexia faz hemograma de rotina.",
+              "enunciado": "Qual alteração é comum?",
               "opcoes": [
                 "Leucopenia",
                 "Potássio muito alto",
                 "Hemoglobina muito alta",
-                "Glicemia de jejum acima de 200"
+                "Glicemia acima de 200"
               ],
               "resposta": "Leucopenia",
-              "explicacao": "Também colesterol alto.",
+              "explicacao": "Também pode haver colesterol alto.",
               "revisado": false
             },
             {
@@ -7861,9 +7897,9 @@
             {
               "id": "rpsiq-d8-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na anorexia, a olanzapina pode ajudar no ganho de peso e na ansiedade.",
-              "resposta": true,
-              "explicacao": "Usada como coadjuvante.",
+              "enunciado": "Na anorexia, a olanzapina é o tratamento principal e substitui a terapia.",
+              "resposta": false,
+              "explicacao": "Falso. A olanzapina é só coadjuvante, ajudando no ganho de peso e na ansiedade.",
               "revisado": false
             },
             {
@@ -7908,16 +7944,17 @@
             },
             {
               "id": "rpsiq-d8-l1-q8",
-              "tipo": "multipla_escolha",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com anorexia grave e potássio de 2,5 tem desmaio.",
               "enunciado": "Qual é a causa mais comum de morte na anorexia, além do suicídio?",
               "opcoes": [
                 "Arritmia cardíaca",
                 "Câncer",
                 "Pneumonia",
-                "AVC hemorrágico extenso"
+                "AVC hemorrágico grave"
               ],
               "resposta": "Arritmia cardíaca",
-              "explicacao": "Por distúrbio eletrolítico e atrofia do coração.",
+              "explicacao": "Distúrbios de eletrólitos e atrofia do coração causam arritmias.",
               "revisado": false
             }
           ]
@@ -7958,16 +7995,17 @@
             },
             {
               "id": "rpsiq-d8-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de primeira linha na bulimia?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com bulimia, estável clinicamente, quer tratamento.",
+              "enunciado": "Qual é a primeira linha?",
               "opcoes": [
                 "Terapia cognitivo-comportamental",
                 "Antipsicótico",
                 "Internação longa",
-                "Lítio associado a benzodiazepínico"
+                "Lítio com benzodiazepínico à noite"
               ],
               "resposta": "Terapia cognitivo-comportamental",
-              "explicacao": "Fluoxetina pode ser associada.",
+              "explicacao": "A fluoxetina pode ser associada.",
               "revisado": false
             },
             {
@@ -7988,9 +8026,9 @@
             {
               "id": "rpsiq-d8-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na bulimia com uso de laxantes, pode ocorrer acidose metabólica.",
-              "resposta": true,
-              "explicacao": "Perda de bicarbonato pelas fezes.",
+              "enunciado": "Paciente com bulimia que usa muitos laxantes tende a ter alcalose metabólica.",
+              "resposta": false,
+              "explicacao": "Falso. Laxantes causam perda de bicarbonato pelas fezes e acidose; o vômito causa alcalose.",
               "revisado": false
             },
             {
@@ -8035,16 +8073,17 @@
             },
             {
               "id": "rpsiq-d8-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal oral é típico da bulimia?",
+              "tipo": "caso_clinico",
+              "caso": "Dentista nota desgaste do esmalte na face interna dos dentes da frente de uma jovem.",
+              "enunciado": "Qual hipótese levantar?",
               "opcoes": [
-                "Erosão do esmalte na face interna dos dentes",
-                "Língua azul",
-                "Gengiva sangrando",
-                "Aftas na língua por deficiência de ferro"
+                "Bulimia, por vômitos",
+                "Escovação forte",
+                "Falta de flúor",
+                "Doença celíaca com má absorção"
               ],
-              "resposta": "Erosão do esmalte na face interna dos dentes",
-              "explicacao": "O ácido gástrico corrói o esmalte.",
+              "resposta": "Bulimia, por vômitos",
+              "explicacao": "O ácido gástrico corrói o esmalte na face interna.",
               "revisado": false
             }
           ]
@@ -8085,16 +8124,17 @@
             },
             {
               "id": "rpsiq-d8-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual transtorno de personalidade tem maior risco de suicídio?",
+              "tipo": "caso_clinico",
+              "caso": "Equipe discute quais pacientes com transtorno de personalidade precisam de mais atenção ao risco de suicídio.",
+              "enunciado": "Qual tem o maior risco?",
               "opcoes": [
                 "Borderline",
                 "Obsessivo-compulsivo",
                 "Esquizoide",
-                "Dependente sem outros transtornos"
+                "Dependente"
               ],
               "resposta": "Borderline",
-              "explicacao": "Cerca de 10% morrem por suicídio.",
+              "explicacao": "Cerca de 10% dos pacientes borderline morrem por suicídio.",
               "revisado": false
             },
             {
@@ -8162,8 +8202,9 @@
             },
             {
               "id": "rpsiq-d8-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o melhor tratamento para o transtorno de personalidade borderline?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com transtorno borderline, com cortes frequentes, procura tratamento.",
+              "enunciado": "Qual é o tratamento com melhor evidência?",
               "opcoes": [
                 "Terapia comportamental dialética",
                 "Benzodiazepínico",
@@ -8235,16 +8276,17 @@
             },
             {
               "id": "rpsiq-d9-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual classe de remédio é causa frequente de delirium em idosos?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso internado ficou confuso após receber prometazina e escopolamina.",
+              "enunciado": "Qual classe de remédio está causando o delirium?",
               "opcoes": [
                 "Anticolinérgicos",
                 "Estatinas",
-                "Protetores gástricos em dose baixa",
+                "Protetores gástricos",
                 "Vitaminas do complexo B"
               ],
               "resposta": "Anticolinérgicos",
-              "explicacao": "Também benzodiazepínicos e opioides.",
+              "explicacao": "Também benzodiazepínicos e opioides causam delirium.",
               "revisado": false
             },
             {
@@ -8265,9 +8307,9 @@
             {
               "id": "rpsiq-d9-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O delirium aumenta a mortalidade e o risco de demência futura.",
-              "resposta": true,
-              "explicacao": "Não é benigno.",
+              "enunciado": "O delirium é sempre benigno e não muda o prognóstico do idoso.",
+              "resposta": false,
+              "explicacao": "Falso. Aumenta a mortalidade e o risco de demência futura.",
               "revisado": false
             },
             {
@@ -8363,16 +8405,17 @@
             },
             {
               "id": "rpsiq-d9-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o efeito colateral comum dos inibidores da acetilcolinesterase?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com Alzheimer começou donepezila e agora tem náusea e frequência cardíaca de 48.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Náuseas e bradicardia",
-                "Hipertensão",
-                "Diarreia com sangue",
-                "Ganho de peso muito rápido"
+                "Efeito da donepezila",
+                "Progressão da demência",
+                "Hipotireoidismo novo",
+                "Infarto silencioso com bloqueio"
               ],
-              "resposta": "Náuseas e bradicardia",
-              "explicacao": "Cuidado em quem tem bloqueio cardíaco.",
+              "resposta": "Efeito da donepezila",
+              "explicacao": "Inibidores da acetilcolinesterase causam náuseas e bradicardia.",
               "revisado": false
             },
             {
@@ -8393,9 +8436,9 @@
             {
               "id": "rpsiq-d9-l2-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na demência com agitação, as medidas não farmacológicas vêm antes dos remédios.",
-              "resposta": true,
-              "explicacao": "Antipsicóticos aumentam mortalidade em idosos com demência.",
+              "enunciado": "Na demência com agitação, o antipsicótico é a primeira escolha, antes de qualquer outra medida.",
+              "resposta": false,
+              "explicacao": "Falso. Medidas não farmacológicas vêm antes; antipsicóticos aumentam mortalidade nesses idosos.",
               "revisado": false
             },
             {
@@ -8491,8 +8534,9 @@
             },
             {
               "id": "rpsiq-d9-l3-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tumor pode se apresentar com depressão antes de outros sintomas?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 65 anos com depressão nova, perda de peso e dor nas costas.",
+              "enunciado": "Qual tumor clássico pode começar assim?",
               "opcoes": [
                 "Câncer de pâncreas",
                 "Câncer de pele",
@@ -8500,7 +8544,7 @@
                 "Cisto de ovário simples"
               ],
               "resposta": "Câncer de pâncreas",
-              "explicacao": "Clássico em provas.",
+              "explicacao": "A depressão pode preceder outros sintomas do câncer de pâncreas.",
               "revisado": false
             },
             {
@@ -8521,9 +8565,9 @@
             {
               "id": "rpsiq-d9-l3-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A doença de Wilson pode começar com sintomas psiquiátricos em jovens.",
+              "enunciado": "Jovem de 18 anos com psicose, tremor e transaminases altas deve ser investigado para doença de Wilson.",
               "resposta": true,
-              "explicacao": "Pesquisar anel de Kayser-Fleischer e ceruloplasmina.",
+              "explicacao": "Verdadeiro. Pesquisam-se anel de Kayser-Fleischer e ceruloplasmina.",
               "revisado": false
             },
             {
@@ -8657,9 +8701,9 @@
             {
               "id": "rpsiq-d10-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os estimulantes podem aumentar a frequência cardíaca e a pressão.",
-              "resposta": true,
-              "explicacao": "Monitorar.",
+              "enunciado": "Criança em uso de metilfenidato não precisa ter a pressão e o pulso acompanhados.",
+              "resposta": false,
+              "explicacao": "Falso. Estimulantes podem aumentar frequência e pressão, que devem ser monitoradas.",
               "revisado": false
             },
             {
@@ -8740,16 +8784,17 @@
             },
             {
               "id": "rpsiq-d10-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual condição genética é causa conhecida de autismo e deficiência intelectual em meninos?",
+              "tipo": "caso_clinico",
+              "caso": "Menino com autismo, deficiência intelectual, orelhas grandes e rosto alongado.",
+              "enunciado": "Qual pesquisa genética pedir?",
               "opcoes": [
                 "Síndrome do X frágil",
                 "Síndrome de Down",
                 "Síndrome de Turner",
-                "Síndrome de Klinefelter sem outros sinais"
+                "Síndrome de Klinefelter"
               ],
               "resposta": "Síndrome do X frágil",
-              "explicacao": "Pedir pesquisa genética.",
+              "explicacao": "O X frágil é causa conhecida de autismo e deficiência intelectual em meninos.",
               "revisado": false
             },
             {
@@ -8770,9 +8815,9 @@
             {
               "id": "rpsiq-d10-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Vacinas não causam autismo.",
-              "resposta": true,
-              "explicacao": "Muitos estudos confirmam.",
+              "enunciado": "Mãe pergunta se a vacina tríplice viral causou o autismo do filho; estudos mostram que pode ter causado.",
+              "resposta": false,
+              "explicacao": "Falso. Muitos estudos confirmam que vacinas não causam autismo.",
               "revisado": false
             },
             {
@@ -8817,16 +8862,17 @@
             },
             {
               "id": "rpsiq-d10-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o instrumento de rastreio do autismo usado entre 16 e 30 meses?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 20 meses vai à consulta de rotina; a médica quer rastrear autismo.",
+              "enunciado": "Qual instrumento usar?",
               "opcoes": [
                 "M-CHAT",
                 "Escala de Denver",
                 "CAGE",
-                "Escala de Glasgow pediátrica"
+                "Escala de Glasgow"
               ],
               "resposta": "M-CHAT",
-              "explicacao": "Respondido pelos pais.",
+              "explicacao": "O M-CHAT é respondido pelos pais entre 16 e 30 meses.",
               "revisado": false
             }
           ]
@@ -8882,16 +8928,17 @@
             },
             {
               "id": "rpsiq-d10-l3-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alerta existe para antidepressivos em menores de 25 anos?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 19 anos começa sertralina para depressão.",
+              "enunciado": "Qual alerta deve ser dado?",
               "opcoes": [
                 "Mais ideias suicidas no início",
-                "Diabetes",
-                "Câncer",
-                "Perda de cabelo definitiva e precoce"
+                "Risco de diabetes",
+                "Risco de câncer",
+                "Queda de cabelo definitiva e rápida"
               ],
               "resposta": "Mais ideias suicidas no início",
-              "explicacao": "Acompanhar de perto.",
+              "explicacao": "Em menores de 25 anos, acompanhar de perto no início.",
               "revisado": false
             },
             {
@@ -8912,9 +8959,9 @@
             {
               "id": "rpsiq-d10-l3-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Uso de álcool na adolescência aumenta o risco de dependência futura.",
-              "resposta": true,
-              "explicacao": "Quanto mais cedo, maior o risco.",
+              "enunciado": "Começar a beber cedo na adolescência não muda o risco de dependência futura.",
+              "resposta": false,
+              "explicacao": "Falso. Quanto mais cedo o uso, maior o risco de dependência.",
               "revisado": false
             },
             {
@@ -9018,16 +9065,17 @@
             },
             {
               "id": "rpsiq-d11-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo pode piorar a síndrome das pernas inquietas?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente começou mirtazapina para dormir e agora sente vontade de mexer as pernas à noite.",
+              "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "Mirtazapina",
-                "Bupropiona",
-                "Trazodona",
-                "Agomelatina em dose baixa"
+                "Piora das pernas inquietas",
+                "Ansiedade noturna",
+                "Falta de vitamina C",
+                "Efeito colateral da bupropiona"
               ],
-              "resposta": "Mirtazapina",
-              "explicacao": "Muitos antidepressivos pioram.",
+              "resposta": "Piora das pernas inquietas",
+              "explicacao": "Muitos antidepressivos, como a mirtazapina, pioram a síndrome; dosar ferritina.",
               "revisado": false
             },
             {
@@ -9048,9 +9096,9 @@
             {
               "id": "rpsiq-d11-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A restrição de sono é uma técnica eficaz da terapia para insônia.",
+              "enunciado": "Na terapia para insônia, a restrição de sono limita o tempo na cama para aumentar a pressão de sono.",
               "resposta": true,
-              "explicacao": "Aumenta a pressão de sono.",
+              "explicacao": "Verdadeiro. É uma técnica eficaz da terapia cognitivo-comportamental.",
               "revisado": false
             },
             {
@@ -9131,16 +9179,17 @@
             },
             {
               "id": "rpsiq-d11-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma crise não epiléptica psicogênica?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem crises com olhos fechados e movimentos que vão e voltam, sem confusão após.",
+              "enunciado": "Qual exame confirma crise não epiléptica?",
               "opcoes": [
                 "Vídeo-eletroencefalograma",
-                "Tomografia",
+                "Tomografia de crânio",
                 "Exame de sangue",
                 "Ressonância de coluna lombar"
               ],
               "resposta": "Vídeo-eletroencefalograma",
-              "explicacao": "Registra a crise sem atividade epiléptica.",
+              "explicacao": "Ele registra a crise sem atividade epiléptica.",
               "revisado": false
             },
             {
@@ -9161,9 +9210,9 @@
             {
               "id": "rpsiq-d11-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A belle indifférence (indiferença aos sintomas) é exigida para diagnosticar conversão.",
+              "enunciado": "Paciente com paralisia funcional que se mostra muito preocupado com o sintoma não pode ter transtorno conversivo.",
               "resposta": false,
-              "explicacao": "Não é critério nem é específica.",
+              "explicacao": "Falso. A indiferença aos sintomas não é critério nem é específica da conversão.",
               "revisado": false
             },
             {
@@ -9208,8 +9257,9 @@
             },
             {
               "id": "rpsiq-d11-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tratamento ajuda no transtorno neurológico funcional?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fraqueza funcional da perna, com diagnóstico explicado, pergunta como melhorar.",
+              "enunciado": "Qual tratamento ajuda?",
               "opcoes": [
                 "Fisioterapia e psicoterapia",
                 "Cirurgia",
@@ -9217,7 +9267,7 @@
                 "Repouso no leito por meses"
               ],
               "resposta": "Fisioterapia e psicoterapia",
-              "explicacao": "Reabilitação ativa.",
+              "explicacao": "A reabilitação ativa é a base do tratamento.",
               "revisado": false
             }
           ]
@@ -9258,16 +9308,17 @@
             },
             {
               "id": "rpsiq-d11-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que diferencia simulação de transtorno factício?",
+              "tipo": "caso_clinico",
+              "caso": "Preso finge dor para sair da cela; enfermeira injeta insulina em si mesma sem ganho evidente.",
+              "enunciado": "O que diferencia os dois?",
               "opcoes": [
-                "Na simulação há ganho externo",
-                "No factício há ganho externo",
-                "São iguais",
-                "Simulação é inconsciente e factício não"
+                "Ganho externo no primeiro",
+                "Os dois são inconscientes",
+                "Ganho externo na enfermeira",
+                "São o mesmo transtorno"
               ],
-              "resposta": "Na simulação há ganho externo",
-              "explicacao": "Ambos são intencionais.",
+              "resposta": "Ganho externo no primeiro",
+              "explicacao": "Simulação tem ganho externo; factício não; ambos são intencionais.",
               "revisado": false
             },
             {
@@ -9288,9 +9339,9 @@
             {
               "id": "rpsiq-d11-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na suspeita de factício imposto à criança, o médico deve notificar o Conselho Tutelar.",
-              "resposta": true,
-              "explicacao": "É forma de maus-tratos.",
+              "enunciado": "Na suspeita de mãe provocando doença no filho, o médico deve esperar ter certeza antes de notificar.",
+              "resposta": false,
+              "explicacao": "Falso. É forma de maus-tratos; a suspeita já justifica notificar o Conselho Tutelar.",
               "revisado": false
             },
             {
@@ -9335,8 +9386,9 @@
             },
             {
               "id": "rpsiq-d11-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o nome do transtorno factício grave com muitas internações e cirurgias?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com dezenas de internações em vários hospitais, cicatrizes de cirurgias sem achados e histórias dramáticas.",
+              "enunciado": "Qual é o nome desse quadro?",
               "opcoes": [
                 "Síndrome de Munchausen",
                 "Síndrome de Ganser",
@@ -9344,7 +9396,7 @@
                 "Síndrome de Cotard"
               ],
               "resposta": "Síndrome de Munchausen",
-              "explicacao": "Viaja de hospital em hospital.",
+              "explicacao": "É a forma grave e crônica do transtorno factício.",
               "revisado": false
             }
           ]
@@ -9408,16 +9460,17 @@
             },
             {
               "id": "rpsiq-d12-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio novo foi aprovado especificamente para depressão pós-parto?",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera com depressão pós-parto grave pergunta sobre remédios específicos para esse quadro.",
+              "enunciado": "Qual foi aprovado para isso?",
               "opcoes": [
-                "Brexanolona ou zuranolona",
+                "Zuranolona",
                 "Haloperidol",
                 "Lítio",
                 "Clonazepam em dose alta"
               ],
-              "resposta": "Brexanolona ou zuranolona",
-              "explicacao": "Moduladores do receptor GABA-A.",
+              "resposta": "Zuranolona",
+              "explicacao": "Brexanolona e zuranolona são moduladores do receptor GABA-A.",
               "revisado": false
             },
             {
@@ -9438,9 +9491,9 @@
             {
               "id": "rpsiq-d12-l1-q6",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pais também podem ter depressão no pós-parto.",
-              "resposta": true,
-              "explicacao": "Rastrear os dois.",
+              "enunciado": "Só as mães têm depressão no pós-parto; os pais não precisam ser avaliados.",
+              "resposta": false,
+              "explicacao": "Falso. Pais também podem ter depressão no pós-parto; rastrear os dois.",
               "revisado": false
             },
             {
@@ -9521,16 +9574,17 @@
             },
             {
               "id": "rpsiq-d12-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual efeito no recém-nascido pode ocorrer com ISRS no fim da gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de mãe que usou sertralina até o parto está irritado e tremendo nos primeiros dias.",
+              "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "Adaptação neonatal com irritabilidade",
+                "Adaptação neonatal ao ISRS",
                 "Malformação do coração",
-                "Surdez",
-                "Cegueira permanente nos dois olhos"
+                "Surdez congênita",
+                "Infecção congênita grave"
               ],
-              "resposta": "Adaptação neonatal com irritabilidade",
-              "explicacao": "Geralmente leve e passageira.",
+              "resposta": "Adaptação neonatal ao ISRS",
+              "explicacao": "O quadro costuma ser leve e passageiro.",
               "revisado": false
             },
             {
@@ -9551,9 +9605,9 @@
             {
               "id": "rpsiq-d12-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A carbamazepina na gestação aumenta o risco de defeito do tubo neural.",
-              "resposta": true,
-              "explicacao": "Suplementar ácido fólico.",
+              "enunciado": "A carbamazepina é segura na gestação e não exige ácido fólico.",
+              "resposta": false,
+              "explicacao": "Falso. Aumenta o risco de defeito do tubo neural; deve-se suplementar ácido fólico.",
               "revisado": false
             },
             {
@@ -9648,16 +9702,17 @@
             },
             {
               "id": "rpsiq-d12-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual fator do bebê aumenta o risco com psicofármacos no leite?",
+              "tipo": "caso_clinico",
+              "caso": "Lactante usa psicofármaco; o bebê nasceu com 32 semanas.",
+              "enunciado": "Por que esse bebê tem mais risco?",
               "opcoes": [
-                "Prematuridade",
-                "Sexo masculino",
-                "Peso alto",
-                "Mamar só durante o dia"
+                "Prematuros metabolizam pior",
+                "Meninos absorvem mais remédio",
+                "Bebês pesados acumulam mais",
+                "Mamar de dia aumenta o risco do remédio"
               ],
-              "resposta": "Prematuridade",
-              "explicacao": "Metabolizam pior os remédios.",
+              "resposta": "Prematuros metabolizam pior",
+              "explicacao": "A prematuridade aumenta o risco de efeitos no bebê.",
               "revisado": false
             },
             {
@@ -9678,9 +9733,9 @@
             {
               "id": "rpsiq-d12-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A maioria dos ISRS é compatível com a amamentação.",
-              "resposta": true,
-              "explicacao": "Com acompanhamento do bebê.",
+              "enunciado": "Mãe em uso de sertralina deve parar de amamentar.",
+              "resposta": false,
+              "explicacao": "Falso. A maioria dos ISRS, como a sertralina, é compatível com a amamentação, com acompanhamento.",
               "revisado": false
             },
             {
@@ -9725,16 +9780,17 @@
             },
             {
               "id": "rpsiq-d12-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a melhor fonte para checar remédios na amamentação?",
+              "tipo": "caso_clinico",
+              "caso": "Médico quer saber se um remédio novo é seguro na amamentação.",
+              "enunciado": "Qual fonte é mais confiável?",
               "opcoes": [
                 "Bases como LactMed",
                 "Bula antiga",
-                "Opinião de vizinhos",
-                "Fóruns sem revisão científica"
+                "Opinião de colegas",
+                "Fóruns da internet"
               ],
               "resposta": "Bases como LactMed",
-              "explicacao": "Informação atualizada.",
+              "explicacao": "Bases científicas são atualizadas.",
               "revisado": false
             }
           ]
@@ -9783,16 +9839,17 @@
             },
             {
               "id": "rpsiq-d13-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o instrumento que organiza o cuidado individual no CAPS?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário entra no CAPS e a equipe constrói com ele as metas de cuidado.",
+              "enunciado": "Como se chama esse plano?",
               "opcoes": [
                 "Projeto terapêutico singular",
                 "Prontuário de internação",
                 "Laudo pericial",
-                "Receita médica de controle especial"
+                "Receita de controle especial"
               ],
               "resposta": "Projeto terapêutico singular",
-              "explicacao": "Construído com o paciente.",
+              "explicacao": "É construído junto com o paciente.",
               "revisado": false
             },
             {
@@ -9860,16 +9917,17 @@
             },
             {
               "id": "rpsiq-d13-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é redução de danos?",
+              "tipo": "caso_clinico",
+              "caso": "Equipe entrega seringas limpas e orienta usuários que ainda não querem parar de usar drogas.",
+              "enunciado": "Qual estratégia é essa?",
               "opcoes": [
-                "Reduzir prejuízos sem exigir abstinência",
-                "Proibir todo uso",
-                "Internar todos",
-                "Punir todo uso de drogas com prisão imediata"
+                "Redução de danos",
+                "Proibição total",
+                "Internação compulsória",
+                "Prevenção quaternária"
               ],
-              "resposta": "Reduzir prejuízos sem exigir abstinência",
-              "explicacao": "Estratégia do SUS.",
+              "resposta": "Redução de danos",
+              "explicacao": "Reduz prejuízos sem exigir abstinência.",
               "revisado": false
             }
           ]
@@ -9925,24 +9983,25 @@
             },
             {
               "id": "rpsiq-d13-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quem pode pedir a alta na internação involuntária?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente internado de forma involuntária melhorou.",
+              "enunciado": "Quem pode pedir a alta?",
               "opcoes": [
-                "Familiar, responsável ou médico",
+                "Família ou médico",
                 "Só o juiz",
                 "Só o paciente",
-                "Somente o delegado responsável pelo caso"
+                "Só o delegado de polícia"
               ],
-              "resposta": "Familiar, responsável ou médico",
-              "explicacao": "Comunicar o Ministério Público.",
+              "resposta": "Família ou médico",
+              "explicacao": "A alta também é comunicada ao Ministério Público.",
               "revisado": false
             },
             {
               "id": "rpsiq-d13-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A internação compulsória é determinada pela justiça.",
-              "resposta": true,
-              "explicacao": "Considera as condições do local e a segurança.",
+              "enunciado": "A internação compulsória é decidida pela família, sem participação da justiça.",
+              "resposta": false,
+              "explicacao": "Falso. A compulsória é determinada pela justiça; a involuntária é a pedido de terceiro.",
               "revisado": false
             },
             {
@@ -9987,16 +10046,17 @@
             },
             {
               "id": "rpsiq-d13-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a regra sobre sigilo de paciente psiquiátrico?",
+              "tipo": "caso_clinico",
+              "caso": "Irmão de paciente com esquizofrenia liga pedindo o diagnóstico dele.",
+              "enunciado": "Qual é a regra de sigilo?",
               "opcoes": [
-                "Mesmo sigilo de qualquer paciente",
-                "Não há sigilo",
-                "Família sabe tudo sempre",
-                "O empregador deve ser informado de tudo"
+                "Mesma de qualquer paciente",
+                "Não há sigilo em psiquiatria",
+                "A família sabe tudo sempre",
+                "O empregador deve ser informado"
               ],
-              "resposta": "Mesmo sigilo de qualquer paciente",
-              "explicacao": "Exceções são as mesmas.",
+              "resposta": "Mesma de qualquer paciente",
+              "explicacao": "As exceções são as mesmas: dever legal, justa causa ou autorização.",
               "revisado": false
             }
           ]
@@ -10022,16 +10082,17 @@
             },
             {
               "id": "rpsiq-d13-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais elementos avaliam a capacidade de decidir?",
+              "tipo": "caso_clinico",
+              "caso": "Médico precisa avaliar se uma paciente pode recusar uma cirurgia.",
+              "enunciado": "Quais elementos avaliam a capacidade?",
               "opcoes": [
-                "Entender, avaliar, raciocinar e comunicar",
+                "Entender, raciocinar e comunicar",
                 "Idade e escolaridade",
                 "Diagnóstico psiquiátrico",
-                "Opinião da família, do vizinho e do patrão"
+                "Opinião da família e do empregador"
               ],
-              "resposta": "Entender, avaliar, raciocinar e comunicar",
-              "explicacao": "Capacidade é para cada decisão.",
+              "resposta": "Entender, raciocinar e comunicar",
+              "explicacao": "Avalia-se se entende, avalia, raciocina e comunica a escolha, para cada decisão.",
               "revisado": false
             },
             {
@@ -10067,9 +10128,9 @@
             {
               "id": "rpsiq-d13-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Ter um transtorno mental não significa automaticamente incapacidade.",
-              "resposta": true,
-              "explicacao": "A capacidade é avaliada para cada decisão.",
+              "enunciado": "Paciente com esquizofrenia é sempre incapaz de tomar decisões sobre o próprio tratamento.",
+              "resposta": false,
+              "explicacao": "Falso. Ter transtorno mental não significa incapacidade automática.",
               "revisado": false
             },
             {
@@ -10114,16 +10175,17 @@
             },
             {
               "id": "rpsiq-d13-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual documento registra a vontade do paciente sobre tratamentos futuros?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com demência inicial registra que não quer ser intubada no futuro.",
+              "enunciado": "Qual é o nome desse documento?",
               "opcoes": [
                 "Diretiva antecipada de vontade",
-                "Atestado",
+                "Atestado médico",
                 "Receita",
-                "Declaração de comparecimento à consulta"
+                "Declaração de comparecimento"
               ],
               "resposta": "Diretiva antecipada de vontade",
-              "explicacao": "Respeitada quando ele não puder decidir.",
+              "explicacao": "É respeitada quando ela não puder decidir.",
               "revisado": false
             }
           ]
@@ -10172,16 +10234,17 @@
             },
             {
               "id": "rpsiq-d14-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico pode causar síndrome serotoninérgica com ISRS?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em fluoxetina recebe linezolida para infecção e fica agitado, com tremor e clônus.",
+              "enunciado": "Por que isso ocorreu?",
               "opcoes": [
-                "Linezolida",
-                "Amoxicilina",
-                "Cefalexina",
-                "Doxiciclina em dose baixa"
+                "A linezolida age como IMAO",
+                "Alergia à linezolida",
+                "Abstinência da fluoxetina",
+                "Infecção do sistema nervoso central"
               ],
-              "resposta": "Linezolida",
-              "explicacao": "Tem efeito de IMAO.",
+              "resposta": "A linezolida age como IMAO",
+              "explicacao": "A associação pode causar síndrome serotoninérgica.",
               "revisado": false
             },
             {
@@ -10202,9 +10265,9 @@
             {
               "id": "rpsiq-d14-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O valproato aumenta o nível da lamotrigina.",
-              "resposta": true,
-              "explicacao": "Ajustar a dose.",
+              "enunciado": "Ao associar valproato, a dose de lamotrigina deve ser aumentada.",
+              "resposta": false,
+              "explicacao": "Falso. O valproato aumenta o nível da lamotrigina; a dose deve ser reduzida.",
               "revisado": false
             },
             {
@@ -10249,16 +10312,17 @@
             },
             {
               "id": "rpsiq-d14-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual analgésico evitar com IMAO pelo risco de síndrome serotoninérgica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em IMAO precisa de analgesia após cirurgia.",
+              "enunciado": "Qual analgésico evitar?",
               "opcoes": [
                 "Meperidina",
                 "Paracetamol",
                 "Dipirona",
-                "Ibuprofeno em dose baixa"
+                "Morfina em dose baixa"
               ],
               "resposta": "Meperidina",
-              "explicacao": "Também tramadol.",
+              "explicacao": "Meperidina e tramadol podem causar síndrome serotoninérgica com IMAO.",
               "revisado": false
             }
           ]
@@ -10299,16 +10363,17 @@
             },
             {
               "id": "rpsiq-d14-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antipsicótico prolonga mais o QT?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com QTc de 470 ms precisa de antipsicótico.",
+              "enunciado": "Qual deve ser evitado?",
               "opcoes": [
                 "Ziprasidona",
                 "Aripiprazol",
                 "Lurasidona",
-                "Brexpiprazol em dose baixa"
+                "Brexpiprazol"
               ],
               "resposta": "Ziprasidona",
-              "explicacao": "Também haloperidol venoso.",
+              "explicacao": "A ziprasidona prolonga mais o QT, assim como o haloperidol venoso.",
               "revisado": false
             },
             {
@@ -10329,9 +10394,9 @@
             {
               "id": "rpsiq-d14-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A venlafaxina em dose alta pode aumentar a pressão arterial.",
+              "enunciado": "Paciente hipertenso em venlafaxina em dose alta deve ter a pressão monitorada.",
               "resposta": true,
-              "explicacao": "Monitorar a pressão.",
+              "explicacao": "Verdadeiro. A venlafaxina em dose alta pode aumentar a pressão.",
               "revisado": false
             },
             {
@@ -10376,16 +10441,17 @@
             },
             {
               "id": "rpsiq-d14-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antipsicótico é preferido em paciente com diabetes e obesidade?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com esquizofrenia, diabetes e obesidade precisa de antipsicótico.",
+              "enunciado": "Qual é preferido?",
               "opcoes": [
                 "Aripiprazol",
                 "Olanzapina",
                 "Clozapina",
-                "Clorpromazina em dose alta"
+                "Clorpromazina"
               ],
               "resposta": "Aripiprazol",
-              "explicacao": "Menor risco metabólico.",
+              "explicacao": "O aripiprazol tem menor risco metabólico.",
               "revisado": false
             }
           ]
@@ -10426,16 +10492,17 @@
             },
             {
               "id": "rpsiq-d14-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo evitar em paciente com glaucoma de ângulo fechado?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com glaucoma de ângulo fechado precisa de antidepressivo.",
+              "enunciado": "Qual evitar?",
               "opcoes": [
                 "Amitriptilina",
                 "Sertralina",
                 "Escitalopram",
-                "Bupropiona em dose baixa"
+                "Bupropiona"
               ],
               "resposta": "Amitriptilina",
-              "explicacao": "Efeito anticolinérgico.",
+              "explicacao": "O efeito anticolinérgico pode precipitar crise de glaucoma.",
               "revisado": false
             },
             {
@@ -10456,9 +10523,9 @@
             {
               "id": "rpsiq-d14-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A bupropiona é contraindicada em pacientes com epilepsia.",
-              "resposta": true,
-              "explicacao": "Reduz o limiar convulsivo.",
+              "enunciado": "Paciente com epilepsia pode usar bupropiona sem risco para parar de fumar.",
+              "resposta": false,
+              "explicacao": "Falso. A bupropiona reduz o limiar convulsivo e é contraindicada na epilepsia.",
               "revisado": false
             },
             {
@@ -10503,16 +10570,17 @@
             },
             {
               "id": "rpsiq-d14-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo tem menor risco de interação em paciente com muitos remédios?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso usa 9 remédios e precisa de antidepressivo com pouca interação.",
+              "enunciado": "Qual é a melhor escolha?",
               "opcoes": [
                 "Escitalopram",
                 "Fluoxetina",
                 "Paroxetina",
-                "Fluvoxamina em dose alta"
+                "Fluvoxamina"
               ],
               "resposta": "Escitalopram",
-              "explicacao": "Pouca inibição enzimática.",
+              "explicacao": "O escitalopram tem pouca inibição enzimática.",
               "revisado": false
             }
           ]
