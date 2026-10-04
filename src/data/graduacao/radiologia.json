@@ -1863,16 +1863,17 @@
             },
             {
               "id": "radio-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre edema cardiogênico e SDRA no raio X?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com falta de ar tem raio X com infiltrado bilateral, coração grande e derrame pleural.",
+              "enunciado": "Qual é o mais provável?",
               "opcoes": [
-                "Cardiogênico tem coração grande e derrame",
-                "São iguais",
-                "A SDRA tem coração grande",
-                "A SDRA tem coração grande e derrame, e o cardiogênico não"
+                "Edema cardiogênico",
+                "SDRA",
+                "Pneumonia viral",
+                "Fibrose pulmonar sem derrame"
               ],
-              "resposta": "Cardiogênico tem coração grande e derrame",
-              "explicacao": "A clínica também ajuda.",
+              "resposta": "Edema cardiogênico",
+              "explicacao": "A SDRA costuma ter coração normal e sem derrame.",
               "revisado": false
             },
             {
@@ -1893,36 +1894,38 @@
             {
               "id": "radio-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O sinal do sulco profundo indica pneumotórax no raio X do paciente deitado.",
+              "enunciado": "No paciente intubado e deitado, o pneumotórax pode aparecer só como sulco costofrênico muito profundo.",
               "resposta": true,
-              "explicacao": "O ar se acumula na frente.",
+              "explicacao": "Verdadeiro. É o sinal do sulco profundo; o ar se acumula na frente.",
               "revisado": false
             },
             {
               "id": "radio-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal de ___ é a cunha pulmonar periférica de infarto na embolia.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com embolia tem opacidade em cunha na periferia do pulmão, com base na pleura.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "Hampton",
-                "Westermark",
-                "Kerley",
-                "Rigler"
+                "Corcova de Hampton",
+                "Sinal de Westermark",
+                "Linhas B de Kerley",
+                "Sinal de Rigler"
               ],
-              "resposta": "Hampton",
-              "explicacao": "Achado raro, mas típico.",
+              "resposta": "Corcova de Hampton",
+              "explicacao": "Indica infarto pulmonar; achado raro, mas típico.",
               "revisado": false
             },
             {
               "id": "radio-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado do raio X de tórax na embolia pulmonar?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com suspeita de embolia pulmonar faz raio X de tórax.",
+              "enunciado": "Qual é o achado mais comum?",
               "opcoes": [
-                "Geralmente normal",
-                "Sempre derrame grande",
-                "Sempre pneumotórax",
-                "Sempre consolidação"
+                "Normal",
+                "Derrame grande",
+                "Pneumotórax",
+                "Consolidação lobar extensa"
               ],
-              "resposta": "Geralmente normal",
+              "resposta": "Normal",
               "explicacao": "O raio X serve para excluir outras causas.",
               "revisado": false
             },
@@ -1989,8 +1992,9 @@
             },
             {
               "id": "radio-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame de escolha para embolia pulmonar?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Wells alto e D-dímero positivo, sem doença renal.",
+              "enunciado": "Qual exame confirma embolia?",
               "opcoes": [
                 "Angiotomografia de tórax",
                 "Raio X",
@@ -2019,29 +2023,31 @@
             {
               "id": "radio-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O enfisema centrolobular é típico do fumante e predomina nos ápices.",
-              "resposta": true,
-              "explicacao": "O panlobular predomina nas bases.",
+              "enunciado": "Fumante tem enfisema que predomina nas bases pulmonares; esse é o padrão centrolobular típico.",
+              "resposta": false,
+              "explicacao": "Falso. O centrolobular do fumante predomina nos ápices; o panlobular, das bases, sugere deficiência de alfa-1 antitripsina.",
               "revisado": false
             },
             {
               "id": "radio-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal do halo ___ (atol) pode aparecer na pneumonia organizante.",
+              "tipo": "caso_clinico",
+              "caso": "Tomografia mostra área de vidro fosco cercada por anel de consolidação.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "invertido",
-                "duplo",
-                "simples",
-                "central com cavidade"
+                "Halo invertido",
+                "Halo simples",
+                "Árvore em brotamento",
+                "Mosaico com aprisionamento aéreo"
               ],
-              "resposta": "invertido",
-              "explicacao": "É vidro fosco cercado por consolidação.",
+              "resposta": "Halo invertido",
+              "explicacao": "É o sinal do atol, visto na pneumonia organizante.",
               "revisado": false
             },
             {
               "id": "radio-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a tomografia usada no rastreio de câncer de pulmão em fumantes?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 60 anos fumou 40 maços-ano e quer rastrear câncer de pulmão.",
+              "enunciado": "Qual exame usar?",
               "opcoes": [
                 "Tomografia de baixa dose",
                 "Tomografia com contraste",
@@ -2115,8 +2121,9 @@
             },
             {
               "id": "radio-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame de imagem mostra fibrose do coração após infarto?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve infarto e o médico quer ver se há músculo viável.",
+              "enunciado": "Qual exame mostra a fibrose?",
               "opcoes": [
                 "Ressonância com realce tardio",
                 "Raio X",
@@ -2145,36 +2152,38 @@
             {
               "id": "radio-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O escore de cálcio zero indica baixo risco de eventos coronarianos.",
-              "resposta": true,
-              "explicacao": "Ajuda a decidir sobre estatina.",
+              "enunciado": "Paciente com escore de cálcio coronário zero tem alto risco de eventos e deve iniciar estatina sempre.",
+              "resposta": false,
+              "explicacao": "Falso. Escore zero indica baixo risco e ajuda a decidir não iniciar estatina.",
               "revisado": false
             },
             {
               "id": "radio-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ venoso com Doppler é o exame de escolha para trombose venosa profunda.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem perna inchada e dolorosa há 2 dias.",
+              "enunciado": "Qual exame é a escolha?",
               "opcoes": [
-                "ultrassom",
-                "raio X",
-                "tomografia",
-                "cintilografia"
+                "Doppler venoso",
+                "Raio X",
+                "Tomografia",
+                "Cintilografia"
               ],
-              "resposta": "ultrassom",
-              "explicacao": "Mostra a veia que não comprime.",
+              "resposta": "Doppler venoso",
+              "explicacao": "O ultrassom mostra a veia que não comprime.",
               "revisado": false
             },
             {
               "id": "radio-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de trombose no ultrassom de veia?",
+              "tipo": "caso_clinico",
+              "caso": "Ultrassom de veia femoral é feito em paciente com perna inchada.",
+              "enunciado": "Qual achado indica trombose?",
               "opcoes": [
-                "Veia que não se comprime",
-                "Veia que se comprime",
+                "Veia não compressível",
+                "Veia compressível",
                 "Fluxo normal",
-                "Veia que se comprime totalmente com fluxo normal"
+                "Veia que colaba totalmente com fluxo normal"
               ],
-              "resposta": "Veia que não se comprime",
+              "resposta": "Veia não compressível",
               "explicacao": "Também o trombo visível.",
               "revisado": false
             },
@@ -2249,8 +2258,9 @@
             },
             {
               "id": "radio-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame para suspeita de perfuração com raio X normal?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com úlcera tem dor abdominal súbita, mas o raio X não mostra ar livre.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
                 "Tomografia",
                 "Ressonância",
@@ -2279,37 +2289,39 @@
             {
               "id": "radio-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A tomografia identifica o ponto de transição na obstrução intestinal.",
-              "resposta": true,
-              "explicacao": "Ajuda a achar a causa.",
+              "enunciado": "Na obstrução do delgado, a tomografia não ajuda a achar o local nem a causa.",
+              "resposta": false,
+              "explicacao": "Falso. Identifica o ponto de transição e ajuda a achar a causa.",
               "revisado": false
             },
             {
               "id": "radio-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal do ___ na tomografia mostra os vasos do mesentério torcidos no volvo.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor abdominal intensa tem tomografia com vasos do mesentério torcidos.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "redemoinho",
-                "alvo",
-                "halo",
-                "anel de sinete"
+                "Redemoinho",
+                "Alvo",
+                "Halo",
+                "Anel de sinete"
               ],
-              "resposta": "redemoinho",
-              "explicacao": "Indica torção.",
+              "resposta": "Redemoinho",
+              "explicacao": "Indica volvo.",
               "revisado": false
             },
             {
               "id": "radio-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de obstrução do delgado?",
+              "tipo": "caso_clinico",
+              "caso": "Homem operado de apendicite há 10 anos tem vômitos e distensão; obstrução do delgado.",
+              "enunciado": "Qual é a causa mais provável?",
               "opcoes": [
-                "Bridas de cirurgias anteriores",
+                "Bridas",
                 "Tumor",
                 "Volvo",
-                "Hérnia interna congênita rara do mesentério"
+                "Hérnia interna congênita do mesentério"
               ],
-              "resposta": "Bridas de cirurgias anteriores",
-              "explicacao": "Em pacientes sem cirurgia, hérnia.",
+              "resposta": "Bridas",
+              "explicacao": "Sem cirurgia prévia, pensar em hérnia.",
               "revisado": false
             },
             {
@@ -2375,15 +2387,16 @@
             },
             {
               "id": "radio-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado de hemangioma no ultrassom?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem nódulo de 2 cm no fígado no ultrassom, branco e bem definido, sem sintomas.",
+              "enunciado": "Qual é o mais provável?",
               "opcoes": [
-                "Nódulo branco (hiperecogênico) definido",
-                "Nódulo escuro",
-                "Cisto",
-                "Nódulo escuro e irregular com muito fluxo no Doppler"
+                "Hemangioma",
+                "Metástase",
+                "Abscesso",
+                "Carcinoma hepatocelular"
               ],
-              "resposta": "Nódulo branco (hiperecogênico) definido",
+              "resposta": "Hemangioma",
               "explicacao": "É o tumor benigno mais comum do fígado.",
               "revisado": false
             },
@@ -2405,15 +2418,16 @@
             {
               "id": "radio-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A esteatose hepática deixa o fígado mais branco no ultrassom.",
-              "resposta": true,
-              "explicacao": "O fígado fica mais brilhante.",
+              "enunciado": "No ultrassom, a esteatose deixa o fígado mais escuro que o rim.",
+              "resposta": false,
+              "explicacao": "Falso. O fígado fica mais branco e brilhante.",
               "revisado": false
             },
             {
               "id": "radio-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sistema ___ classifica nódulos no fígado do cirrótico.",
+              "tipo": "caso_clinico",
+              "caso": "Cirrótico tem nódulo de 2 cm no fígado na ressonância.",
+              "enunciado": "Qual sistema classifica o nódulo?",
               "opcoes": [
                 "LI-RADS",
                 "BI-RADS",
@@ -2426,8 +2440,9 @@
             },
             {
               "id": "radio-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o melhor exame para coledocolitíase com intenção de tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem icterícia e cálculo no colédoco no ultrassom.",
+              "enunciado": "Qual exame trata?",
               "opcoes": [
                 "CPRE",
                 "Ultrassom",
@@ -2501,8 +2516,9 @@
             },
             {
               "id": "radio-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame para investigar câncer de próstata antes da biópsia?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem PSA de 7.",
+              "enunciado": "Qual exame fazer antes da biópsia?",
               "opcoes": [
                 "Ressonância multiparamétrica",
                 "Raio X",
@@ -2531,37 +2547,39 @@
             {
               "id": "radio-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O ultrassom transvaginal é o exame inicial para sangramento uterino anormal.",
-              "resposta": true,
-              "explicacao": "Avalia o endométrio.",
+              "enunciado": "Mulher de 55 anos com sangramento após a menopausa deve fazer tomografia como primeiro exame.",
+              "resposta": false,
+              "explicacao": "Falso. O ultrassom transvaginal é o exame inicial; avalia o endométrio.",
               "revisado": false
             },
             {
               "id": "radio-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal do ___ de fogo no Doppler sugere gravidez ectópica ou corpo lúteo.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com beta-hCG positivo tem massa ao lado do ovário com fluxo em volta no Doppler.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "anel",
-                "halo",
-                "alvo",
-                "redemoinho"
+                "Anel de fogo",
+                "Halo",
+                "Alvo",
+                "Redemoinho dos vasos mesentéricos"
               ],
-              "resposta": "anel",
-              "explicacao": "Fluxo ao redor da lesão.",
+              "resposta": "Anel de fogo",
+              "explicacao": "Sugere gravidez ectópica ou corpo lúteo.",
               "revisado": false
             },
             {
               "id": "radio-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado de hidronefrose no ultrassom?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cólica renal faz ultrassom.",
+              "enunciado": "Qual achado indica obstrução?",
               "opcoes": [
-                "Dilatação da pelve renal",
+                "Hidronefrose",
                 "Rim pequeno",
-                "Cisto",
+                "Cisto simples",
                 "Rim pequeno com cortical fina"
               ],
-              "resposta": "Dilatação da pelve renal",
-              "explicacao": "Indica obstrução.",
+              "resposta": "Hidronefrose",
+              "explicacao": "É a dilatação da pelve renal.",
               "revisado": false
             },
             {
@@ -2635,16 +2653,17 @@
             },
             {
               "id": "radio-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a sequência de ressonância que mostra AVC isquêmico em minutos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com déficit há 40 minutos tem tomografia normal.",
+              "enunciado": "Qual sequência de ressonância mostra o AVC?",
               "opcoes": [
                 "Difusão",
                 "T1",
                 "T2",
-                "FLAIR tardio"
+                "FLAIR feito na primeira hora"
               ],
               "resposta": "Difusão",
-              "explicacao": "O FLAIR altera depois de horas.",
+              "explicacao": "Altera em minutos; o FLAIR altera depois de horas.",
               "revisado": false
             },
             {
@@ -2665,29 +2684,31 @@
             {
               "id": "radio-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hemorragia subaracnóidea aparece como sangue nas cisternas e sulcos.",
+              "enunciado": "Paciente com cefaleia súbita tem sangue nas cisternas e sulcos na tomografia; isso é hemorragia subaracnóidea.",
               "resposta": true,
-              "explicacao": "Causada por aneurisma na maioria.",
+              "explicacao": "Verdadeiro. Na maioria, é por aneurisma.",
               "revisado": false
             },
             {
               "id": "radio-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal do ___ na tomografia indica sangramento ativo no hematoma cerebral.",
+              "tipo": "caso_clinico",
+              "caso": "Angiotomografia de hematoma cerebral mostra contraste saindo dentro do hematoma.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "ponto",
-                "halo",
-                "alvo",
-                "anel"
+                "Spot sign",
+                "Halo",
+                "Alvo",
+                "Sinal da corda na artéria"
               ],
-              "resposta": "ponto",
-              "explicacao": "Contraste extravasando.",
+              "resposta": "Spot sign",
+              "explicacao": "Indica sangramento ativo e risco de crescimento.",
               "revisado": false
             },
             {
               "id": "radio-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa comum de hemorragia cerebral no idoso com sangramentos na periferia?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa normotensa tem hematoma lobar e micro-hemorragias periféricas.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
                 "Angiopatia amiloide",
                 "Hipertensão",
@@ -2695,7 +2716,7 @@
                 "Trauma de crânio leve"
               ],
               "resposta": "Angiopatia amiloide",
-              "explicacao": "Lesões lobares.",
+              "explicacao": "Causa lesões lobares em idosos.",
               "revisado": false
             },
             {
@@ -2761,8 +2782,9 @@
             },
             {
               "id": "radio-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sequência diferencia abscesso de tumor necrótico?",
+              "tipo": "caso_clinico",
+              "caso": "Lesão cerebral com realce em anel pode ser abscesso ou tumor necrótico.",
+              "enunciado": "Qual sequência diferencia?",
               "opcoes": [
                 "Difusão",
                 "T1",
@@ -2791,37 +2813,39 @@
             {
               "id": "radio-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O meningioma é um tumor benigno comum que realça muito com contraste.",
-              "resposta": true,
-              "explicacao": "Preso à meninge.",
+              "enunciado": "O meningioma é um tumor maligno de dentro do cérebro que quase não realça com contraste.",
+              "resposta": false,
+              "explicacao": "Falso. É benigno, preso à meninge, e realça muito.",
               "revisado": false
             },
             {
               "id": "radio-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ dural é o espessamento da meninge ao lado do meningioma.",
+              "tipo": "caso_clinico",
+              "caso": "Ressonância mostra tumor preso à meninge com espessamento da dura ao lado.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "cauda",
-                "cabeça",
-                "ponte",
-                "ponta"
+                "Cauda dural",
+                "Cabeça dural",
+                "Ponte dural",
+                "Halo"
               ],
-              "resposta": "cauda",
-              "explicacao": "Sinal típico.",
+              "resposta": "Cauda dural",
+              "explicacao": "É típico do meningioma.",
               "revisado": false
             },
             {
               "id": "radio-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado da esclerose múltipla na ressonância?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem com neurite óptica faz ressonância.",
+              "enunciado": "Qual achado sugere esclerose múltipla?",
               "opcoes": [
-                "Lesões ovais perpendiculares aos ventrículos",
-                "Uma massa",
+                "Dedos de Dawson",
+                "Massa única",
                 "Sangramento",
-                "Uma massa única com edema e efeito de massa"
+                "Massa com edema e efeito de massa"
               ],
-              "resposta": "Lesões ovais perpendiculares aos ventrículos",
-              "explicacao": "Dedos de Dawson.",
+              "resposta": "Dedos de Dawson",
+              "explicacao": "Lesões ovais perpendiculares aos ventrículos.",
               "revisado": false
             },
             {
@@ -2887,16 +2911,17 @@
             },
             {
               "id": "radio-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado diferencia infecção de metástase na coluna?",
+              "tipo": "caso_clinico",
+              "caso": "Ressonância de coluna mostra lesão em duas vértebras com destruição do disco entre elas.",
+              "enunciado": "O que sugere?",
               "opcoes": [
-                "Infecção pega o disco; metástase costuma poupar",
-                "São iguais",
-                "A metástase pega o disco",
-                "A metástase destrói sempre o disco e a infecção nunca o atinge"
+                "Infecção",
+                "Metástase",
+                "Osteoporose",
+                "Fratura antiga sem atividade"
               ],
-              "resposta": "Infecção pega o disco; metástase costuma poupar",
-              "explicacao": "Ajuda no diagnóstico.",
+              "resposta": "Infecção",
+              "explicacao": "A infecção pega o disco; a metástase costuma poupar.",
               "revisado": false
             },
             {
@@ -2917,29 +2942,31 @@
             {
               "id": "radio-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A coluna em bambu é típica da espondilite anquilosante.",
+              "enunciado": "Homem jovem com dor lombar inflamatória tem coluna em bambu no raio X; isso sugere espondilite anquilosante.",
               "resposta": true,
-              "explicacao": "As vértebras se fundem.",
+              "explicacao": "Verdadeiro. As vértebras se fundem.",
               "revisado": false
             },
             {
               "id": "radio-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A tomografia de coluna ___ é usada no trauma com suspeita de fratura.",
+              "tipo": "caso_clinico",
+              "caso": "Motociclista de 70 anos tem dor no pescoço após acidente.",
+              "enunciado": "Qual exame fazer?",
               "opcoes": [
-                "cervical",
-                "sacral",
-                "coccígea",
-                "pélvica"
+                "Tomografia cervical",
+                "Raio X de tórax",
+                "Ultrassom",
+                "Ressonância de crânio"
               ],
-              "resposta": "cervical",
-              "explicacao": "Conforme as regras NEXUS ou canadenses.",
+              "resposta": "Tomografia cervical",
+              "explicacao": "Indicada pelas regras NEXUS ou canadenses.",
               "revisado": false
             },
             {
               "id": "radio-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o melhor exame para avaliar compressão da medula?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer tem fraqueza nas pernas e nível sensitivo.",
+              "enunciado": "Qual é o melhor exame?",
               "opcoes": [
                 "Ressonância",
                 "Raio X",
@@ -2947,7 +2974,7 @@
                 "Ultrassom"
               ],
               "resposta": "Ressonância",
-              "explicacao": "Mostra a medula.",
+              "explicacao": "Mostra a medula e a compressão.",
               "revisado": false
             },
             {
@@ -3021,15 +3048,16 @@
             },
             {
               "id": "radio-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o padrão do osteoma osteoide?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem dor na perna à noite que melhora com AAS; raio X com lesão pequena e halo de esclerose.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Lesão pequena com halo de esclerose e dor noturna",
-                "Lesão grande destrutiva",
+                "Osteoma osteoide",
+                "Osteossarcoma",
                 "Fratura",
-                "Lesão grande e destrutiva com reação periosteal agressiva"
+                "Sarcoma de Ewing"
               ],
-              "resposta": "Lesão pequena com halo de esclerose e dor noturna",
+              "resposta": "Osteoma osteoide",
               "explicacao": "É benigno.",
               "revisado": false
             },
@@ -3051,37 +3079,39 @@
             {
               "id": "radio-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O mieloma múltiplo pode não aparecer na cintilografia óssea.",
+              "enunciado": "Paciente com mieloma pode ter cintilografia óssea normal mesmo com muitas lesões.",
               "resposta": true,
-              "explicacao": "As lesões são puramente líticas.",
+              "explicacao": "Verdadeiro. As lesões são puramente líticas.",
               "revisado": false
             },
             {
               "id": "radio-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ ósseo simples é uma lesão benigna com risco de fratura.",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem fratura no úmero em lesão cística com fragmento caído dentro.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "cisto",
-                "tumor",
-                "abscesso",
-                "hematoma"
+                "Cisto ósseo simples",
+                "Tumor maligno",
+                "Abscesso",
+                "Hematoma subperiosteal calcificado"
               ],
-              "resposta": "cisto",
-              "explicacao": "Sinal do fragmento caído.",
+              "resposta": "Cisto ósseo simples",
+              "explicacao": "É o sinal do fragmento caído.",
               "revisado": false
             },
             {
               "id": "radio-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia melhor lesões de mieloma?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com mieloma precisa avaliar lesões ósseas.",
+              "enunciado": "Qual exame é melhor?",
               "opcoes": [
-                "Ressonância ou tomografia de baixa dose",
+                "Ressonância ou tomografia",
                 "Cintilografia",
                 "Ultrassom",
-                "Cintilografia óssea, que mostra bem todas as lesões do mieloma"
+                "Cintilografia óssea de corpo inteiro"
               ],
-              "resposta": "Ressonância ou tomografia de baixa dose",
-              "explicacao": "A cintilografia falha.",
+              "resposta": "Ressonância ou tomografia",
+              "explicacao": "A cintilografia falha no mieloma.",
               "revisado": false
             },
             {
@@ -3147,16 +3177,17 @@
             },
             {
               "id": "radio-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado de raio X sugere maus-tratos na criança?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses tem fraturas de costelas em fases diferentes e fratura no canto da metáfise.",
+              "enunciado": "O que sugere?",
               "opcoes": [
-                "Fraturas em fases diferentes e de canto metafisário",
-                "Clavícula ao nascer",
-                "Punho em adolescente",
-                "Fratura de punho em adolescente após cair de skate"
+                "Maus-tratos",
+                "Parto difícil",
+                "Raquitismo leve",
+                "Fratura comum de criança ativa"
               ],
-              "resposta": "Fraturas em fases diferentes e de canto metafisário",
-              "explicacao": "Investigar.",
+              "resposta": "Maus-tratos",
+              "explicacao": "Investigar e notificar.",
               "revisado": false
             },
             {
@@ -3177,34 +3208,36 @@
             {
               "id": "radio-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O sinal da vela de barco no raio X da criança é o timo normal.",
-              "resposta": true,
-              "explicacao": "Não confundir com doença.",
+              "enunciado": "Imagem em vela de barco no mediastino de um bebê é sinal de tumor e exige biópsia.",
+              "resposta": false,
+              "explicacao": "Falso. É o timo normal; não confundir com doença.",
               "revisado": false
             },
             {
               "id": "radio-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal da ___ no raio X de pescoço sugere crupe.",
+              "tipo": "caso_clinico",
+              "caso": "Criança com tosse de cachorro faz raio X do pescoço com estreitamento abaixo das cordas.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "torre",
-                "bola",
-                "vela",
-                "moeda"
+                "Torre de igreja",
+                "Polegar",
+                "Vela de barco",
+                "Moeda parada no esôfago"
               ],
-              "resposta": "torre",
-              "explicacao": "Estreitamento abaixo das cordas.",
+              "resposta": "Torre de igreja",
+              "explicacao": "Sugere crupe.",
               "revisado": false
             },
             {
               "id": "radio-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado de epiglotite no raio X de perfil do pescoço?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com febre alta e baba faz raio X de perfil do pescoço.",
+              "enunciado": "Qual é o achado?",
               "opcoes": [
                 "Sinal do polegar",
                 "Sinal da torre",
                 "Normal",
-                "Sinal da torre de igreja"
+                "Estreitamento abaixo das cordas"
               ],
               "resposta": "Sinal do polegar",
               "explicacao": "A epiglote está inchada.",
@@ -3273,16 +3306,17 @@
             },
             {
               "id": "radio-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame mostra necrose da cabeça do fêmur precoce?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com lúpus em corticoide tem dor no quadril e raio X normal.",
+              "enunciado": "Qual exame mostra necrose precoce?",
               "opcoes": [
                 "Ressonância",
                 "Raio X",
                 "Ultrassom",
-                "Raio X simples em duas posições"
+                "Raio X em duas posições"
               ],
               "resposta": "Ressonância",
-              "explicacao": "O raio X altera depois.",
+              "explicacao": "O raio X só altera depois.",
               "revisado": false
             },
             {
@@ -3303,36 +3337,38 @@
             {
               "id": "radio-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A condrocalcinose é a calcificação da cartilagem vista na pseudogota.",
+              "enunciado": "Idoso com crise no joelho tem calcificação da cartilagem no raio X; isso sugere pseudogota.",
               "resposta": true,
-              "explicacao": "Aparece no raio X.",
+              "explicacao": "Verdadeiro. É a condrocalcinose.",
               "revisado": false
             },
             {
               "id": "radio-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ultrassom pode mostrar o sinal do duplo ___ na gota.",
+              "tipo": "caso_clinico",
+              "caso": "Ultrassom do joelho de paciente com crise mostra linha branca sobre a cartilagem.",
+              "enunciado": "Qual é o sinal?",
               "opcoes": [
-                "contorno",
-                "anel",
-                "alvo",
-                "halo hipoecoico"
+                "Duplo contorno",
+                "Anel",
+                "Alvo",
+                "Sinal da tempestade de neve"
               ],
-              "resposta": "contorno",
-              "explicacao": "Cristais sobre a cartilagem.",
+              "resposta": "Duplo contorno",
+              "explicacao": "São cristais de urato; sugere gota.",
               "revisado": false
             },
             {
               "id": "radio-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado de ombro na ruptura do manguito?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso não levanta o braço; raio X com cabeça do úmero alta.",
+              "enunciado": "O que sugere?",
               "opcoes": [
-                "Cabeça do úmero alta",
-                "Normal",
+                "Ruptura do manguito",
+                "Ombro normal",
                 "Fratura",
                 "Luxação anterior com fratura"
               ],
-              "resposta": "Cabeça do úmero alta",
+              "resposta": "Ruptura do manguito",
               "explicacao": "Ressonância ou ultrassom confirmam.",
               "revisado": false
             },
@@ -3407,16 +3443,17 @@
             },
             {
               "id": "radio-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de sangramento de pelve após fratura no paciente instável?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fratura de pelve segue em choque e a tomografia mostra extravasamento arterial.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Embolização arterial ou tamponamento",
+                "Embolização arterial",
                 "Antibiótico",
                 "Raio X",
-                "Raio X de pelve repetido e observação"
+                "Repetir raio X e observar"
               ],
-              "resposta": "Embolização arterial ou tamponamento",
-              "explicacao": "Para o sangramento.",
+              "resposta": "Embolização arterial",
+              "explicacao": "O tamponamento pélvico é alternativa.",
               "revisado": false
             },
             {
@@ -3437,37 +3474,39 @@
             {
               "id": "radio-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A TIPS é um desvio dentro do fígado para tratar hipertensão portal.",
+              "enunciado": "Cirrótico com ascite refratária pode receber TIPS, um desvio dentro do fígado.",
               "resposta": true,
-              "explicacao": "Reduz varizes e ascite.",
+              "explicacao": "Verdadeiro. Reduz varizes e ascite.",
               "revisado": false
             },
             {
               "id": "radio-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O filtro de veia ___ é usado quando não se pode anticoagular paciente com trombose.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com trombose da femoral teve sangramento cerebral e não pode anticoagular.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "cava",
-                "porta",
-                "jugular",
-                "femoral"
+                "Filtro de veia cava",
+                "Filtro de veia porta",
+                "Trombólise",
+                "Varfarina em dose alta"
               ],
-              "resposta": "cava",
+              "resposta": "Filtro de veia cava",
               "explicacao": "Impede que o trombo vá ao pulmão.",
               "revisado": false
             },
             {
               "id": "radio-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento minimamente invasivo para mioma?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com mioma sintomático quer evitar cirurgia.",
+              "enunciado": "Qual é o tratamento minimamente invasivo?",
               "opcoes": [
-                "Embolização das artérias uterinas",
+                "Embolização uterina",
                 "Raio X",
                 "Antibiótico",
-                "Antibiótico oral e anti-inflamatório"
+                "Antibiótico e anti-inflamatório"
               ],
-              "resposta": "Embolização das artérias uterinas",
-              "explicacao": "Alternativa à cirurgia.",
+              "resposta": "Embolização uterina",
+              "explicacao": "É alternativa à cirurgia.",
               "revisado": false
             },
             {
@@ -3533,15 +3572,16 @@
             },
             {
               "id": "radio-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco do gadolínio em pacientes com doença renal grave?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em diálise precisa de ressonância com contraste.",
+              "enunciado": "Qual é o risco do gadolínio?",
               "opcoes": [
-                "Fibrose sistêmica nefrogênica",
+                "Fibrose nefrogênica",
                 "Alergia leve apenas",
                 "Hipoglicemia",
                 "Hipoglicemia grave nas primeiras horas"
               ],
-              "resposta": "Fibrose sistêmica nefrogênica",
+              "resposta": "Fibrose nefrogênica",
               "explicacao": "Usar agentes mais seguros.",
               "revisado": false
             },
@@ -3563,36 +3603,38 @@
             {
               "id": "radio-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A alergia a frutos do mar não contraindica o contraste iodado.",
-              "resposta": true,
-              "explicacao": "É um mito comum.",
+              "enunciado": "Paciente com alergia a camarão não pode receber contraste iodado.",
+              "resposta": false,
+              "explicacao": "Falso. É um mito; alergia a frutos do mar não contraindica o contraste.",
               "revisado": false
             },
             {
               "id": "radio-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A hidratação ___ antes do contraste ajuda a proteger os rins em risco.",
+              "tipo": "caso_clinico",
+              "caso": "Diabético com filtração de 35 vai fazer tomografia com contraste.",
+              "enunciado": "Qual medida protege o rim?",
               "opcoes": [
-                "venosa",
-                "oral apenas",
-                "gelada",
-                "com água gelada e refrigerante"
+                "Hidratação venosa",
+                "Diurético",
+                "Jejum",
+                "Água gelada e refrigerante"
               ],
-              "resposta": "venosa",
+              "resposta": "Hidratação venosa",
               "explicacao": "Em pacientes de alto risco.",
               "revisado": false
             },
             {
               "id": "radio-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado com contraste iodado e hipertireoidismo não tratado?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hipertireoidismo não tratado vai receber contraste iodado.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Pode piorar o hipertireoidismo",
-                "Melhora a tireoide",
+                "Piorar o hipertireoidismo",
+                "Melhorar a tireoide",
                 "Cura",
-                "Cuidado nenhum; o iodo cura a tireoide"
+                "Nenhum, o iodo cura a tireoide"
               ],
-              "resposta": "Pode piorar o hipertireoidismo",
+              "resposta": "Piorar o hipertireoidismo",
               "explicacao": "Avaliar antes.",
               "revisado": false
             },
@@ -3659,16 +3701,17 @@
             },
             {
               "id": "radio-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de doses altas e repetidas de radiação?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem fez 15 tomografias em 2 anos.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Mais risco de câncer",
                 "Ganho de peso",
                 "Alergia",
-                "Risco nenhum em qualquer dose"
+                "Nenhum, em qualquer dose"
               ],
               "resposta": "Mais risco de câncer",
-              "explicacao": "Em doses de diagnóstico, o risco é pequeno.",
+              "explicacao": "Em doses de diagnóstico isoladas, o risco é pequeno.",
               "revisado": false
             },
             {
@@ -3689,29 +3732,31 @@
             {
               "id": "radio-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O dosímetro mede a radiação que o profissional recebe.",
-              "resposta": true,
-              "explicacao": "Usado no trabalho.",
+              "enunciado": "O técnico de radiologia não precisa de dosímetro se usar avental de chumbo.",
+              "resposta": false,
+              "explicacao": "Falso. O dosímetro mede a radiação recebida e é obrigatório.",
               "revisado": false
             },
             {
               "id": "radio-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O avental de ___ protege a equipe na sala de raio X.",
+              "tipo": "caso_clinico",
+              "caso": "Médico vai ficar na sala durante uma radioscopia.",
+              "enunciado": "O que usar para se proteger?",
               "opcoes": [
-                "chumbo",
-                "algodão",
-                "papel",
-                "plástico"
+                "Avental de chumbo",
+                "Avental de algodão",
+                "Máscara N95",
+                "Luvas de látex"
               ],
-              "resposta": "chumbo",
+              "resposta": "Avental de chumbo",
               "explicacao": "Também o protetor de tireoide.",
               "revisado": false
             },
             {
               "id": "radio-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a dose de radiação mais alta entre os exames?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante pergunta qual exame dá mais radiação.",
+              "enunciado": "Qual dá a maior dose?",
               "opcoes": [
                 "Tomografia de abdome",
                 "Raio X de tórax",
