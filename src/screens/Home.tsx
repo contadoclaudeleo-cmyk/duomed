@@ -15,7 +15,7 @@ import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { Lapio } from '../components/Lapio'
 import { AbasNivel } from '../components/AbasModo'
 import { Botao } from '../components/Botao'
-import { IconeMateria } from '../components/IconeMateria'
+import { IconeMateria, iconeDoTema } from '../components/IconeMateria'
 
 /** Curva do caminho: cada lição se desloca um pouco para os lados */
 const deslocamentoDoNo = (indiceGlobal: number) => Math.round(Math.sin(indiceGlobal * 0.95) * 64)
@@ -215,6 +215,8 @@ export function Home() {
             const completa = feitas === unidade.licoes.length
             const cor = CORES_UNIDADE[ui % CORES_UNIDADE.length]
             const deslocamentos = unidade.licoes.map(() => deslocamentoDoNo(indiceGlobal++))
+            // Símbolo pelo assunto: cardiologia vira coração, pneumologia vira pulmão...
+            const iconeUnidade = iconeDoTema(unidade.titulo) ?? iconeDoTema(unidade.descricao) ?? materia.icone
 
             return (
               <section key={unidade.id} className="mt-8">
@@ -241,7 +243,7 @@ export function Home() {
                       {completa ? (
                         <Check className="h-7 w-7" strokeWidth={3.5} />
                       ) : (
-                        <IconeMateria nome={materia.icone} className="h-7 w-7" />
+                        <IconeMateria nome={iconeUnidade} className="h-7 w-7" />
                       )}
                     </span>
                     <div className="min-w-0 flex-1">
@@ -284,6 +286,7 @@ export function Home() {
                       status={status[licao.id]}
                       deslocamento={deslocamentos[li]}
                       cor={cor}
+                      icone={iconeDoTema(licao.titulo) ?? iconeUnidade}
                       aberto={aberta === licao.id}
                       aoAlternar={() => setAberta(aberta === licao.id ? null : licao.id)}
                       aoComecar={() => comecar(licao.id)}

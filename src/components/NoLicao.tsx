@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { BookOpen, Check, Lock, Star } from 'lucide-react'
+import { Check, Lock, Star } from 'lucide-react'
 import type { StatusLicao } from '../lib/progresso'
 import { Botao } from './Botao'
+import { IconeMateria } from './IconeMateria'
 
 interface Props {
   titulo: string
@@ -19,6 +20,8 @@ interface Props {
   recemConcluida?: boolean
   /** Cor da unidade: cada unidade da trilha tem a sua */
   cor?: CorUnidade
+  /** Ícone do assunto, mostrado nas lições liberadas */
+  icone?: string
 }
 
 export interface CorUnidade {
@@ -47,8 +50,9 @@ export function NoLicao({
   aoVerComentada,
   recemConcluida,
   cor = { cor: 'var(--color-agua)', escura: 'var(--color-agua-escura)' },
+  icone = 'livro',
 }: Props) {
-  const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : status === 'livre' ? BookOpen : Lock
+  const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : Lock
 
   return (
     // Cada nó aparece com efeito de mola quando entra na tela
@@ -101,11 +105,15 @@ export function NoLicao({
           }
           transition={{ duration: 0.06 }}
         >
-          <Icone
-            className="h-8 w-8"
-            strokeWidth={status === 'concluida' ? 3.5 : 2.5}
-            fill={status === 'atual' ? 'currentColor' : 'none'}
-          />
+          {status === 'livre' ? (
+            <IconeMateria nome={icone} className="h-8 w-8" />
+          ) : (
+            <Icone
+              className="h-8 w-8"
+              strokeWidth={status === 'concluida' ? 3.5 : 2.5}
+              fill={status === 'atual' ? 'currentColor' : 'none'}
+            />
+          )}
         </motion.button>
       </div>
 

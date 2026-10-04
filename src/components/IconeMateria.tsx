@@ -3,6 +3,7 @@ import {
   Armchair,
   Atom,
   Baby,
+  Bandage,
   Biohazard,
   Bone,
   BookOpen,
@@ -11,10 +12,10 @@ import {
   Bug,
   Dna,
   Droplet,
-  Droplets,
   Ear,
   Eye,
   FlaskConical,
+  Gauge,
   Hand,
   HeartPulse,
   House,
@@ -32,17 +33,18 @@ import {
   Stethoscope,
   Sun,
   Syringe,
+  TestTube,
   Thermometer,
   UsersRound,
-  Utensils,
   Venus,
-  Waves,
-  Wind,
-  type LucideIcon,
+  Virus,
+  Weight,
 } from 'lucide-react'
+import type { ComponentType } from 'react'
+import { Bexiga, Estomago, Figado, Pulmao, Rim, Utero, type PropsIcone } from './IconesOrgaos'
 
-// Nome usado no campo "icone" do JSON da matéria -> ícone desenhado
-const icones: Record<string, LucideIcon> = {
+// Nome usado no campo "icone" do JSON (ou escolhido pelo tema) -> ícone desenhado
+const icones: Record<string, ComponentType<PropsIcone>> = {
   osso: Bone,
   coracao: HeartPulse,
   frasco: FlaskConical,
@@ -59,12 +61,17 @@ const icones: Record<string, LucideIcon> = {
   pulso: Activity,
   escudo: ShieldPlus,
   microbio: Biohazard,
+  virus: Virus,
   inseto: Bug,
   conversa: MessageCircleHeart,
   balanca: Scale,
-  pulmao: Wind,
-  digestivo: Utensils,
-  rim: Droplets,
+  pulmao: Pulmao,
+  digestivo: Estomago,
+  estomago: Estomago,
+  figado: Figado,
+  rim: Rim,
+  bexiga: Bexiga,
+  utero: Utero,
   seringa: Syringe,
   sangue: Droplet,
   mao: Hand,
@@ -72,18 +79,110 @@ const icones: Record<string, LucideIcon> = {
   cerebro: Brain,
   mente: BrainCog,
   pele: Sun,
+  curativo: Bandage,
   laco: Ribbon,
   poltrona: Armchair,
-  ondas: Waves,
   ouvido: Ear,
   olho: Eye,
   sono: Moon,
   imagem: ScanLine,
   sirene: Siren,
   casa: House,
+  pressao: Gauge,
+  hormonio: TestTube,
+  peso: Weight,
+  livro: BookOpen,
 }
 
 export function IconeMateria({ nome, className = '' }: { nome: string; className?: string }) {
   const Icone = icones[nome] ?? BookOpen
-  return <Icone className={className} strokeWidth={2.4} aria-hidden />
+  return <Icone className={className} strokeWidth={2.4} />
+}
+
+// Palavras do título -> ícone. A ordem importa: o órgão vem antes do tipo de doença
+// (ex.: "câncer de pulmão" fica com o pulmão, não com o laço do câncer).
+const REGRAS: [RegExp, string][] = [
+  [/eletrocardio|\becg\b|arritmi|fibrilacao|flutter|taquicard|bradicard|bloqueio|sincope/, 'pulso'],
+  [/hipertens|pressao arterial/, 'pressao'],
+  [/cardi|corona|infarto|angina|valv|endocard|pericard|miocard|chagas|dor toracica/, 'coracao'],
+  [/pulm|pneumo|asma|dpoc|respirat|ventila|pleur|torac|tosse|empiema/, 'pulmao'],
+  [/renal|\brins?\b|nefr|glomerul|dialise|sodio|potassio|eletrolit|acido.base/, 'rim'],
+  [/figado|hepat|cirrose|biliar|colecist|colelit|coledoc|colangite|ictericia|pancrea|\bbaco\b|portal/, 'figado'],
+  [/\burolog|prostat|bexiga|urinar|litiase|escroto|testicul|incontinencia/, 'bexiga'],
+  [/esofag|estomag|gastr|ulcera|refluxo|digestiv|intestin|\bcolon|colorret|\breto\b|\banal\b|anorret|hemorroid|diarrei|apendic|diverticul|abdom|hernia|piloro|bariatric|delgado|volvo/, 'estomago'],
+  [/\bavc\b|cefalei|epileps|demenc|neuro|cerebr|cranio|subaracn|convuls|coma\b|nervos|autonom|degenerat/, 'cerebro'],
+  [/olho|oftalm|visao|retin|glaucoma|catarata/, 'olho'],
+  [/ouvido|otorrin|nariz|garganta|laring|sinusit|otite|audicao|via aerea|cabeca e pescoco/, 'ouvido'],
+  [/gestac|gestant|\bparto|obstetr|pre.natal|puerper|gravidez|placent|pre.eclamps/, 'gestante'],
+  [/ginec|utero|ovario|\bmama|contracep|menopaus|endometri|colo do/, 'utero'],
+  [/neonat|recem.nascid|lactente|\bbebe|crianca|pediatr|infantil|puericult|crescimento/, 'bebe'],
+  [/diabet|insulin|glic|vacin|imuniza/, 'seringa'],
+  [/tireoid|hipofis|adrenal|cushing|prolactin|feocromo|endocrin|paratireoid|acromegal|aldosteron|hormon/, 'hormonio'],
+  [/obesidade|metabolic|sindrome metabol|nutric/, 'peso'],  [/osteopor|\bosso|ossea|fratura|luxac|ortoped|coluna|quadril|joelho|ombro|lombalgia|osteo/, 'osso'],
+  [/artrit|lupus|\bgota\b|reumat|espondil|vasculit|autoimun/, 'mao'],
+  [/anemi|leucem|linfoma|hemato|coagula|hemost|sangr|hemorrag|transfus|trombo|anticoag|aort|arteri|vascular|venos|aneurism|carotid/, 'sangue'],
+  [/\bhiv\b|dengue|arbovir|viral|virus/, 'virus'],
+  [/helminto|protozoar|parasit|vetor|verme/, 'inseto'],
+  [/sepse|infec|antimicrob|bacteri|micolog|fung|malaria|leishman|leptospir|tropica|oportunist|endemia|tuberculose|antibiot/, 'microbio'],
+  [/queimadur|ferida|cicatriz/, 'curativo'],
+  [/pele|dermat|psoriase|melanoma/, 'pele'],
+  [/dislipid|lipid|biomolec|enzima|metabolismo|nitrogen|\bheme\b/, 'frasco'],
+  [/cancer|tumor|oncolog|neoplas|paliativ|quimioter|\bgist\b/, 'laco'],
+  [/emergenc|choque|parada|anafilax|intoxica|trauma|pronto.socorro|urgencia|reanima/, 'sirene'],
+  [/geriatr|idoso|queda|polifarm|fragil|beers/, 'poltrona'],
+  [/psiq|depress|ansied|esquizo|bipolar|mental|suicid|droga|alcool|dependenc|transtorno/, 'mente'],
+  [/sono|apneia/, 'sono'],
+  [/farmac|remedio|medicament|anestes|analges|prescric/, 'pilula'],
+  [/exame de imagem|radiolog|tomograf|raio.x|ultrassom/, 'imagem'],
+  [/genet|\bdna\b|heranca|cromoss|molecular|genes|membrana|mitocondr/, 'dna'],
+  [/teratogen|malforma/, 'bebe'],
+  [/epitel|tecido|musculo/, 'camadas'],
+  [/celula|histolog|embrio|patolog/, 'microscopio'],
+  [/imun|alergi/, 'escudo'],
+  [/semiolog|exame fisico|anamnese|ausculta/, 'estetoscopio'],
+  [/cirurg|perioperat|operatori/, 'bisturi'],
+  [/epidemio|\bsus\b|saude publica|vigilancia|indicador|rastreamento|comunidade|familia|prevenc|atencao primaria/, 'comunidade'],
+  [/consulta|comunicacao/, 'conversa'],
+  [/\betic|responsabilidade|legal|\blei\b|bioetic|pericia|atestado|sigilo/, 'balanca'],
+]
+
+const semAcento = (texto: string) =>
+  texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+
+// Título que começa com o nome da especialidade ganha o símbolo dela direto
+const ESPECIALIDADES: [RegExp, string][] = [
+  [/^cardiolog/, 'coracao'],
+  [/^pneumolog|^cirurgia toracica/, 'pulmao'],
+  [/^nefrolog/, 'rim'],
+  [/^urolog/, 'bexiga'],
+  [/^endocrin|^hipofise/, 'hormonio'],
+  [/^gastro/, 'estomago'],
+  [/^hepatolog|^figado/, 'figado'],
+  [/^infectolog|^doencas infecciosas/, 'microbio'],
+  [/^reumatolog/, 'mao'],
+  [/^hematolog/, 'sangue'],
+  [/^neurolog/, 'cerebro'],
+  [/^dermatolog/, 'pele'],
+  [/^geriatr/, 'poltrona'],
+  [/^oncolog/, 'laco'],
+  [/^ortoped/, 'osso'],
+  [/^psiquiatr/, 'mente'],
+  [/^pediatr|^cirurgia pediatrica/, 'bebe'],
+  [/^obstetr/, 'gestante'],
+  [/^ginecolog/, 'utero'],
+  [/^oftalmolog/, 'olho'],
+  [/^otorrin|^cabeca e pescoco/, 'ouvido'],
+  [/^emergenc|^trauma|^urgencia/, 'sirene'],
+  [/^cirurgia vascular|^vascular/, 'sangue'],
+]
+
+/** Escolhe um ícone pelo assunto do texto (título de unidade ou lição). Sem palavra conhecida, devolve null. */
+export function iconeDoTema(texto: string): string | null {
+  const t = semAcento(texto).trim()
+  for (const [regra, icone] of ESPECIALIDADES) if (regra.test(t)) return icone
+  for (const [regra, icone] of REGRAS) if (regra.test(t)) return icone
+  return null
 }
