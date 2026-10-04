@@ -1863,13 +1863,14 @@
             },
             {
               "id": "biocel-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na fibrose cística com mutação delta F508, qual é o problema principal da proteína?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com fibrose cística tem a mutação delta F508.",
+              "enunciado": "Qual é o problema principal da proteína CFTR?",
               "opcoes": [
                 "Dobra errado e não chega à membrana",
                 "Fica presa no estado aberto",
                 "Não é transcrita no núcleo",
-                "É cortada pelo proteassomo logo depois de chegar à membrana"
+                "É destruída logo após chegar à membrana"
               ],
               "resposta": "Dobra errado e não chega à membrana",
               "explicacao": "Os moduladores de CFTR ajudam a proteína a chegar à membrana.",
@@ -1893,36 +1894,38 @@
             {
               "id": "biocel-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A cólera causa diarreia por ativar o canal CFTR no intestino via AMP cíclico.",
-              "resposta": true,
-              "explicacao": "A célula secreta cloreto e água.",
+              "enunciado": "Na cólera, a diarreia ocorre porque a toxina bloqueia o canal CFTR do intestino.",
+              "resposta": false,
+              "explicacao": "Falso. A toxina aumenta o AMP cíclico e ativa o CFTR, que secreta cloreto e água.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A neurotoxina do baiacu, a ___, bloqueia canais de sódio e causa paralisia.",
+              "tipo": "caso_clinico",
+              "caso": "Homem comeu baiacu mal preparado e tem formigamento na boca e fraqueza que avança para paralisia.",
+              "enunciado": "Qual toxina e qual mecanismo?",
               "opcoes": [
-                "tetrodotoxina",
-                "toxina botulínica",
-                "tetanospasmina",
-                "conotoxina"
+                "Tetrodotoxina; bloqueia canais de sódio",
+                "Botulínica; bloqueia acetilcolina",
+                "Tetanospasmina; bloqueia glicina",
+                "Conotoxina; bloqueia canais de cálcio"
               ],
-              "resposta": "tetrodotoxina",
-              "explicacao": "A toxina botulínica bloqueia a liberação de acetilcolina.",
+              "resposta": "Tetrodotoxina; bloqueia canais de sódio",
+              "explicacao": "Sem entrada de sódio, não há potencial de ação.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como os anestésicos locais funcionam?",
+              "tipo": "caso_clinico",
+              "caso": "Dentista aplica lidocaína e o lábio fica sem sensibilidade.",
+              "enunciado": "Como o anestésico local funciona?",
               "opcoes": [
-                "Bloqueiam canais de sódio dos nervos",
-                "Abrem canais de potássio",
-                "Bloqueiam receptores de acetilcolina",
-                "Destroem a mielina do nervo de forma temporária"
+                "Bloqueia canais de sódio do nervo",
+                "Abre canais de potássio",
+                "Bloqueia receptores de acetilcolina",
+                "Destrói a mielina de forma temporária"
               ],
-              "resposta": "Bloqueiam canais de sódio dos nervos",
+              "resposta": "Bloqueia canais de sódio do nervo",
               "explicacao": "Sem o sódio entrar, não há impulso nervoso.",
               "revisado": false
             },
@@ -1989,11 +1992,12 @@
             },
             {
               "id": "biocel-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual segundo mensageiro é aumentado pelo receptor Gs?",
+              "tipo": "caso_clinico",
+              "caso": "A adrenalina se liga ao receptor beta-1 do coração, acoplado à proteína Gs.",
+              "enunciado": "Qual segundo mensageiro aumenta?",
               "opcoes": [
                 "AMP cíclico",
-                "Cálcio apenas",
+                "Apenas o cálcio",
                 "IP3",
                 "GMP cíclico"
               ],
@@ -2019,37 +2023,39 @@
             {
               "id": "biocel-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O receptor Gq ativa a fosfolipase C, que produz IP3 e DAG.",
-              "resposta": true,
-              "explicacao": "O IP3 libera cálcio dentro da célula.",
+              "enunciado": "O receptor alfa-1, acoplado a Gq, aumenta o AMP cíclico para contrair o vaso.",
+              "resposta": false,
+              "explicacao": "Falso. O Gq ativa a fosfolipase C, que produz IP3 e DAG; o IP3 libera cálcio.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A toxina da coqueluche ___ a proteína Gi, aumentando o AMP cíclico.",
+              "tipo": "caso_clinico",
+              "caso": "Na coqueluche, a toxina altera a proteína Gi das células.",
+              "enunciado": "Qual é o efeito?",
               "opcoes": [
-                "inativa",
-                "ativa",
-                "destrói",
-                "dobra"
+                "Inativa a Gi e aumenta o AMP cíclico",
+                "Ativa a Gi e reduz o AMP cíclico",
+                "Destrói o receptor",
+                "Ativa a Gs, como a toxina da cólera"
               ],
-              "resposta": "inativa",
+              "resposta": "Inativa a Gi e aumenta o AMP cíclico",
               "explicacao": "Já a toxina da cólera ativa a Gs.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de receptor é o alvo dos benzodiazepínicos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente ansioso recebe diazepam e fica mais calmo.",
+              "enunciado": "Qual receptor é o alvo?",
               "opcoes": [
                 "Canal de cloreto GABA-A",
                 "Receptor nuclear",
                 "Tirosina quinase",
-                "Receptor de glutamato do tipo NMDA"
+                "Receptor de glutamato NMDA"
               ],
               "resposta": "Canal de cloreto GABA-A",
-              "explicacao": "Eles aumentam o efeito do GABA.",
+              "explicacao": "Os benzodiazepínicos aumentam o efeito do GABA.",
               "revisado": false
             },
             {
@@ -2115,16 +2121,17 @@
             },
             {
               "id": "biocel-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença de depósito tem herança ligada ao X, com dor nas mãos e lesões de pele?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 12 anos tem dor em queimação nas mãos, manchas avermelhadas na pele e proteína na urina. O tio materno tinha o mesmo.",
+              "enunciado": "Qual é a doença?",
               "opcoes": [
                 "Doença de Fabry",
                 "Doença de Gaucher",
                 "Tay-Sachs",
-                "Hurler"
+                "Síndrome de Hurler"
               ],
               "resposta": "Doença de Fabry",
-              "explicacao": "Também causa doença renal e cardíaca.",
+              "explicacao": "É ligada ao X e também causa doença renal e cardíaca.",
               "revisado": false
             },
             {
@@ -2145,29 +2152,31 @@
             {
               "id": "biocel-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Algumas doenças lisossômicas podem ser tratadas com reposição da enzima que falta.",
-              "resposta": true,
-              "explicacao": "É usada na doença de Gaucher, por exemplo.",
+              "enunciado": "Doenças lisossômicas nunca têm tratamento específico.",
+              "resposta": false,
+              "explicacao": "Falso. Algumas, como a doença de Gaucher, são tratadas com reposição da enzima.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na doença de ___, há mancha vermelho-cereja, baço grande e células espumosas.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê com perda do desenvolvimento, fígado e baço grandes, mancha vermelho-cereja e células espumosas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Niemann-Pick",
                 "Tay-Sachs",
                 "Pompe",
-                "Gaucher tipo 1"
+                "Gaucher tipo 1 do adulto"
               ],
               "resposta": "Niemann-Pick",
-              "explicacao": "Na Tay-Sachs, não há aumento do baço.",
+              "explicacao": "Na Tay-Sachs também há mancha vermelho-cereja, mas sem baço grande.",
               "revisado": false
             },
             {
               "id": "biocel-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o padrão de herança da maioria das doenças lisossômicas?",
+              "tipo": "caso_clinico",
+              "caso": "Casal saudável tem dois filhos com doença lisossômica.",
+              "enunciado": "Qual é o padrão de herança mais provável?",
               "opcoes": [
                 "Autossômico recessivo",
                 "Autossômico dominante",
@@ -2175,7 +2184,7 @@
                 "Ligado ao Y"
               ],
               "resposta": "Autossômico recessivo",
-              "explicacao": "Hunter e Fabry são exceções ligadas ao X.",
+              "explicacao": "A maioria é recessiva; Hunter e Fabry são exceções ligadas ao X.",
               "revisado": false
             },
             {
@@ -2249,16 +2258,17 @@
             },
             {
               "id": "biocel-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é heteroplasmia?",
+              "tipo": "caso_clinico",
+              "caso": "Mãe e dois filhos têm a mesma mutação mitocondrial, mas um filho é grave e o outro quase sem sintomas.",
+              "enunciado": "O que explica a diferença?",
               "opcoes": [
-                "Mistura de mitocôndrias normais e alteradas",
+                "Heteroplasmia",
                 "Mutação no DNA do núcleo",
                 "Excesso de mitocôndrias",
-                "Falta total de mitocôndrias nas células dos músculos"
+                "Falta total de mitocôndrias nos músculos"
               ],
-              "resposta": "Mistura de mitocôndrias normais e alteradas",
-              "explicacao": "Explica por que a gravidade varia entre familiares.",
+              "resposta": "Heteroplasmia",
+              "explicacao": "A proporção de mitocôndrias alteradas varia entre pessoas e tecidos.",
               "revisado": false
             },
             {
@@ -2279,29 +2289,31 @@
             {
               "id": "biocel-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Um homem com doença do DNA mitocondrial não passa a doença para os filhos.",
-              "resposta": true,
-              "explicacao": "O espermatozoide não transmite mitocôndrias.",
+              "enunciado": "Homem com doença do DNA mitocondrial tem 50% de chance de passá-la a cada filho.",
+              "resposta": false,
+              "explicacao": "Falso. O espermatozoide não transmite mitocôndrias; o pai não passa a doença.",
               "revisado": false
             },
             {
               "id": "biocel-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é um veneno que bloqueia a cadeia respiratória no complexo IV.",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de incêndio com plástico queimado tem acidose lática grave, mesmo com saturação normal.",
+              "enunciado": "Qual veneno bloqueia a cadeia respiratória no complexo IV?",
               "opcoes": [
-                "cianeto",
-                "arsênio",
-                "chumbo",
-                "mercúrio"
+                "Cianeto",
+                "Arsênio",
+                "Chumbo",
+                "Mercúrio"
               ],
-              "resposta": "cianeto",
+              "resposta": "Cianeto",
               "explicacao": "O monóxido de carbono também bloqueia o complexo IV.",
               "revisado": false
             },
             {
               "id": "biocel-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual substância desacopla a cadeia respiratória e gera calor sem produzir ATP?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem toma remédio ilegal para emagrecer e chega com febre de 41 °C e respiração rápida.",
+              "enunciado": "Qual substância desacopla a cadeia e gera calor?",
               "opcoes": [
                 "Dinitrofenol",
                 "Cianeto",
@@ -2309,7 +2321,7 @@
                 "Monóxido de carbono"
               ],
               "resposta": "Dinitrofenol",
-              "explicacao": "A termogenina faz o mesmo na gordura marrom.",
+              "explicacao": "A energia vira calor em vez de ATP; a termogenina faz isso na gordura marrom.",
               "revisado": false
             },
             {
@@ -2407,35 +2419,37 @@
               "tipo": "verdadeiro_falso",
               "enunciado": "A radiação ionizante lesa o DNA principalmente gerando radicais livres a partir da água.",
               "resposta": true,
-              "explicacao": "Por isso é usada contra o câncer.",
+              "explicacao": "Verdadeiro. É por isso que é usada contra o câncer.",
               "revisado": false
             },
             {
               "id": "biocel-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O acúmulo de ___, pigmento de desgaste, aparece em células velhas do coração e fígado.",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia do coração de idoso mostra pigmento marrom-amarelado perto do núcleo, sem doença.",
+              "enunciado": "Qual é o pigmento?",
               "opcoes": [
-                "lipofuscina",
-                "melanina",
-                "hemossiderina",
-                "bilirrubina"
+                "Lipofuscina",
+                "Melanina",
+                "Hemossiderina",
+                "Bilirrubina"
               ],
-              "resposta": "lipofuscina",
-              "explicacao": "É um sinal de envelhecimento celular.",
+              "resposta": "Lipofuscina",
+              "explicacao": "É o pigmento de desgaste do envelhecimento celular.",
               "revisado": false
             },
             {
               "id": "biocel-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração celular é reversível na lesão leve?",
+              "tipo": "caso_clinico",
+              "caso": "Fígado de etilista após uma semana de bebedeira mostra células inchadas com gordura, sem morte celular.",
+              "enunciado": "Essa lesão é reversível?",
               "opcoes": [
-                "Inchaço e acúmulo de gordura",
-                "Ruptura do núcleo",
-                "Fragmentação do DNA",
-                "Perda da integridade da membrana"
+                "Sim, é reversível",
+                "Não, há ruptura do núcleo",
+                "Não, há fragmentação do DNA",
+                "Não, a membrana está rompida"
               ],
-              "resposta": "Inchaço e acúmulo de gordura",
-              "explicacao": "Na lesão irreversível, há dano à membrana e às mitocôndrias.",
+              "resposta": "Sim, é reversível",
+              "explicacao": "Inchaço e gordura são reversíveis; na lesão irreversível há dano à membrana e às mitocôndrias.",
               "revisado": false
             },
             {
@@ -2501,16 +2515,17 @@
             },
             {
               "id": "biocel-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio contra o câncer estabiliza os microtúbulos e impede sua desmontagem?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de mama recebe paclitaxel.",
+              "enunciado": "Como o remédio age nos microtúbulos?",
               "opcoes": [
-                "Paclitaxel",
-                "Vincristina",
-                "Metotrexato",
-                "Cisplatina"
+                "Impede a desmontagem",
+                "Impede a montagem",
+                "Inibe o folato",
+                "Liga-se ao DNA e o quebra"
               ],
-              "resposta": "Paclitaxel",
-              "explicacao": "A vincristina impede a montagem.",
+              "resposta": "Impede a desmontagem",
+              "explicacao": "A vincristina, ao contrário, impede a montagem.",
               "revisado": false
             },
             {
@@ -2552,8 +2567,9 @@
             },
             {
               "id": "biocel-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual marcador ajuda a identificar tumores de músculo?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem massa na órbita; o patologista suspeita de rabdomiossarcoma.",
+              "enunciado": "Qual marcador ajuda a confirmar origem muscular?",
               "opcoes": [
                 "Desmina",
                 "Citoqueratina",
@@ -2635,16 +2651,17 @@
             },
             {
               "id": "biocel-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de mutação causa a distrofia de Duchenne com mais frequência?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 5 anos com fraqueza e sinal de Gowers tem distrofia de Duchenne.",
+              "enunciado": "Qual tipo de mutação é mais frequente?",
               "opcoes": [
-                "Deleção que muda o quadro de leitura",
+                "Deleção que muda a leitura",
                 "Mutação silenciosa",
-                "Troca de uma base sem efeito",
-                "Expansão de repetições de trinucleotídeos"
+                "Troca de base sem efeito",
+                "Expansão de trinucleotídeos"
               ],
-              "resposta": "Deleção que muda o quadro de leitura",
-              "explicacao": "Na Becker, a deleção mantém o quadro de leitura.",
+              "resposta": "Deleção que muda a leitura",
+              "explicacao": "Na Becker, a deleção mantém o quadro de leitura e a doença é mais leve.",
               "revisado": false
             },
             {
@@ -2672,30 +2689,32 @@
             },
             {
               "id": "biocel-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome do X frágil é causada pela expansão de repetições ___ no gene FMR1.",
+              "tipo": "caso_clinico",
+              "caso": "Menino com deficiência intelectual, orelhas grandes e testículos grandes após a puberdade.",
+              "enunciado": "Qual é a alteração genética?",
               "opcoes": [
-                "CGG",
-                "CAG",
-                "GAA",
-                "CTG"
+                "Repetições CGG no gene FMR1",
+                "Repetições CAG no gene HTT",
+                "Repetições GAA na frataxina",
+                "Repetições CTG no gene DMPK"
               ],
-              "resposta": "CGG",
-              "explicacao": "É a causa hereditária mais comum de deficiência intelectual.",
+              "resposta": "Repetições CGG no gene FMR1",
+              "explicacao": "O X frágil é a causa hereditária mais comum de deficiência intelectual.",
               "revisado": false
             },
             {
               "id": "biocel-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença é causada por expansão de repetições GAA?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente tem ataxia que piora, pés cavos, cardiomiopatia e diabetes.",
+              "enunciado": "Qual é a doença e a alteração?",
               "opcoes": [
-                "Ataxia de Friedreich",
-                "Huntington",
-                "Distrofia miotônica",
-                "Síndrome do X frágil"
+                "Ataxia de Friedreich; repetições GAA",
+                "Huntington; repetições CAG",
+                "Distrofia miotônica; repetições CTG",
+                "X frágil; repetições CGG"
               ],
-              "resposta": "Ataxia de Friedreich",
-              "explicacao": "Causa ataxia, cardiomiopatia e diabetes.",
+              "resposta": "Ataxia de Friedreich; repetições GAA",
+              "explicacao": "A expansão GAA reduz a frataxina.",
               "revisado": false
             },
             {
@@ -2761,8 +2780,9 @@
             },
             {
               "id": "biocel-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "A perda de genes do cromossomo 15 herdado da mãe causa qual síndrome?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com convulsões, riso fácil e deficiência intelectual grave tem perda de genes do cromossomo 15 materno.",
+              "enunciado": "Qual é a síndrome?",
               "opcoes": [
                 "Angelman",
                 "Prader-Willi",
@@ -2770,7 +2790,7 @@
                 "Klinefelter"
               ],
               "resposta": "Angelman",
-              "explicacao": "Causa riso fácil, convulsões e deficiência intelectual.",
+              "explicacao": "A perda do 15 paterno causa Prader-Willi.",
               "revisado": false
             },
             {
@@ -2791,37 +2811,39 @@
             {
               "id": "biocel-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Gêmeos idênticos podem ter diferenças por mudanças epigenéticas ao longo da vida.",
-              "resposta": true,
-              "explicacao": "O ambiente influencia a epigenética.",
+              "enunciado": "Gêmeos idênticos sempre têm exatamente as mesmas doenças, pois têm o mesmo DNA.",
+              "resposta": false,
+              "explicacao": "Falso. Mudanças epigenéticas ao longo da vida, influenciadas pelo ambiente, criam diferenças.",
               "revisado": false
             },
             {
               "id": "biocel-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é a região do DNA onde a RNA polimerase se liga para começar a transcrição.",
+              "tipo": "caso_clinico",
+              "caso": "Mutação numa região antes do gene impede que a RNA polimerase se ligue, e o gene não é lido.",
+              "enunciado": "Qual região foi atingida?",
               "opcoes": [
-                "promotor",
-                "íntron",
-                "éxon",
-                "telômero"
+                "Promotor",
+                "Íntron",
+                "Éxon",
+                "Telômero"
               ],
-              "resposta": "promotor",
-              "explicacao": "O TATA box é um exemplo.",
+              "resposta": "Promotor",
+              "explicacao": "O TATA box é um exemplo de promotor.",
               "revisado": false
             },
             {
               "id": "biocel-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel dos fatores de transcrição?",
+              "tipo": "caso_clinico",
+              "caso": "O cortisol entra na célula, liga-se ao receptor e muda quais genes são lidos.",
+              "enunciado": "Qual é o papel desse receptor?",
               "opcoes": [
-                "Controlar quais genes são lidos",
+                "Fator de transcrição",
                 "Copiar o DNA",
-                "Cortar os íntrons do RNA",
-                "Montar as proteínas no ribossomo"
+                "Cortar íntrons do RNA",
+                "Montar proteínas no ribossomo"
               ],
-              "resposta": "Controlar quais genes são lidos",
-              "explicacao": "Os receptores de hormônios esteroides são fatores de transcrição.",
+              "resposta": "Fator de transcrição",
+              "explicacao": "Receptores de hormônios esteroides são fatores de transcrição.",
               "revisado": false
             },
             {
@@ -2887,16 +2909,17 @@
             },
             {
               "id": "biocel-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o efeito do HPV de alto risco no ciclo celular?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com HPV 16 persistente tem lesão de alto grau no colo.",
+              "enunciado": "Como o vírus altera o ciclo celular?",
               "opcoes": [
-                "Inativa p53 e Rb e libera a divisão",
+                "Inativa p53 e Rb",
                 "Aumenta p53 e para o ciclo",
                 "Ativa só a apoptose",
-                "Nenhum efeito, só causa verrugas comuns na pele"
+                "Não age no ciclo, só causa verrugas"
               ],
-              "resposta": "Inativa p53 e Rb e libera a divisão",
-              "explicacao": "As proteínas E6 e E7 fazem isso.",
+              "resposta": "Inativa p53 e Rb",
+              "explicacao": "As proteínas E6 e E7 inativam p53 e Rb e liberam a divisão.",
               "revisado": false
             },
             {
@@ -2917,36 +2940,38 @@
             {
               "id": "biocel-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O gene Ras mutado fica sempre ligado, estimulando a divisão celular.",
-              "resposta": true,
-              "explicacao": "Ele perde a capacidade de desligar.",
+              "enunciado": "Gene Ras mutado em tumor fica sempre desligado, impedindo a divisão.",
+              "resposta": false,
+              "explicacao": "Falso. O Ras mutado fica sempre ligado, estimulando a divisão celular.",
               "revisado": false
             },
             {
               "id": "biocel-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A enzima ___ é inibida pelos inibidores de CDK4/6, usados no câncer de mama.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de mama hormonal recebe palbociclibe.",
+              "enunciado": "Qual enzima o remédio inibe?",
               "opcoes": [
-                "quinase dependente de ciclina",
-                "telomerase",
-                "caspase",
-                "tirosina quinase do receptor HER2"
+                "CDK4 e CDK6",
+                "Telomerase",
+                "Caspase-3",
+                "Tirosina quinase do HER2"
               ],
-              "resposta": "quinase dependente de ciclina",
-              "explicacao": "O palbociclibe é um exemplo.",
+              "resposta": "CDK4 e CDK6",
+              "explicacao": "São quinases dependentes de ciclina; o bloqueio impede a passagem de G1 para S.",
               "revisado": false
             },
             {
               "id": "biocel-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração é característica do linfoma folicular?",
+              "tipo": "caso_clinico",
+              "caso": "Linfoma de crescimento lento tem translocação t(14;18).",
+              "enunciado": "Qual é o tumor e o efeito?",
               "opcoes": [
-                "Translocação t(14;18) com BCL-2 alto",
-                "Cromossomo Filadélfia, t(9;22)",
-                "Trissomia do cromossomo 21 adquirida",
-                "Translocação t(8;14) com MYC"
+                "Folicular; BCL-2 alto",
+                "Burkitt; MYC alto",
+                "LMC; BCR-ABL",
+                "Manto; ciclina D1 alta e MYC"
               ],
-              "resposta": "Translocação t(14;18) com BCL-2 alto",
+              "resposta": "Folicular; BCL-2 alto",
               "explicacao": "O excesso de BCL-2 impede a apoptose.",
               "revisado": false
             },
@@ -3021,16 +3046,17 @@
             },
             {
               "id": "biocel-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame é mais útil para investigar atraso no desenvolvimento sem causa definida?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com atraso do desenvolvimento e traços dismórficos tem cariótipo normal.",
+              "enunciado": "Qual é o próximo exame?",
               "opcoes": [
                 "Microarray cromossômico",
-                "Cariótipo convencional",
+                "Repetir o cariótipo convencional",
                 "Hemograma com esfregaço",
-                "Raio X do crânio e da mão"
+                "Raio X de crânio e de mão"
               ],
               "resposta": "Microarray cromossômico",
-              "explicacao": "Ele detecta pequenas perdas e ganhos de material genético.",
+              "explicacao": "Detecta pequenas perdas e ganhos de material genético.",
               "revisado": false
             },
             {
@@ -3051,23 +3077,24 @@
             {
               "id": "biocel-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O exoma sequencia as partes do DNA que codificam proteínas.",
-              "resposta": true,
-              "explicacao": "Ele é usado em doenças raras.",
+              "enunciado": "O exoma sequencia todo o DNA, incluindo as regiões que não codificam proteínas.",
+              "resposta": false,
+              "explicacao": "Falso. O exoma sequencia só as partes que codificam proteínas; o genoma inteiro é outro exame.",
               "revisado": false
             },
             {
               "id": "biocel-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A técnica de ___ em tempo real mede a quantidade de DNA ou RNA durante a amplificação.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV faz exame para medir quantas cópias do vírus há no sangue.",
+              "enunciado": "Qual técnica é usada?",
               "opcoes": [
-                "PCR",
+                "PCR em tempo real",
                 "ELISA",
                 "FISH",
-                "cariótipo"
+                "Cariótipo com bandas"
               ],
-              "resposta": "PCR",
-              "explicacao": "É usada para carga viral.",
+              "resposta": "PCR em tempo real",
+              "explicacao": "A PCR em tempo real mede a quantidade de RNA durante a amplificação.",
               "revisado": false
             },
             {
@@ -3147,16 +3174,17 @@
             },
             {
               "id": "biocel-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que acontece com metabolizadores lentos de um remédio?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente é metabolizador lento do CYP2D6 e toma metoprolol na dose habitual.",
+              "enunciado": "O que esperar?",
               "opcoes": [
-                "O remédio se acumula e dá mais efeitos",
-                "O remédio some rápido do sangue",
+                "Mais efeito e mais colaterais",
+                "O remédio some rápido",
                 "Nada muda no efeito",
-                "O remédio não faz efeito porque não é ativado nunca"
+                "O remédio não faz efeito nenhum no coração"
               ],
-              "resposta": "O remédio se acumula e dá mais efeitos",
-              "explicacao": "As enzimas CYP450 variam entre pessoas.",
+              "resposta": "Mais efeito e mais colaterais",
+              "explicacao": "O remédio acumula; as enzimas do citocromo P450 variam entre pessoas.",
               "revisado": false
             },
             {
@@ -3177,37 +3205,39 @@
             {
               "id": "biocel-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O clopidogrel precisa ser ativado pela enzima CYP2C19, e algumas pessoas respondem pouco.",
+              "enunciado": "Pessoas com variante do CYP2C19 de baixa função ativam pouco o clopidogrel e podem responder mal.",
               "resposta": true,
-              "explicacao": "É um exemplo de farmacogenética na cardiologia.",
+              "explicacao": "Verdadeiro. É um exemplo de farmacogenética na cardiologia.",
               "revisado": false
             },
             {
               "id": "biocel-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A família de enzimas ___ do fígado metaboliza a maioria dos remédios.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente começa a tomar um antifúngico e o nível de vários outros remédios sobe.",
+              "enunciado": "Qual família de enzimas foi inibida?",
               "opcoes": [
-                "citocromo P450",
-                "caspase",
-                "telomerase",
-                "glutationa S-transferase"
+                "Citocromo P450",
+                "Caspases",
+                "Telomerase",
+                "Glutationa transferase"
               ],
-              "resposta": "citocromo P450",
-              "explicacao": "Algumas são induzidas ou inibidas por outros remédios.",
+              "resposta": "Citocromo P450",
+              "explicacao": "O citocromo P450 do fígado metaboliza a maioria dos remédios.",
               "revisado": false
             },
             {
               "id": "biocel-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio é um forte indutor do citocromo P450?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher em tratamento de tuberculose engravidou mesmo tomando pílula.",
+              "enunciado": "Qual remédio explica a falha?",
               "opcoes": [
                 "Rifampicina",
                 "Cetoconazol",
                 "Claritromicina",
-                "Suco de toranja"
+                "Isoniazida"
               ],
               "resposta": "Rifampicina",
-              "explicacao": "Ele reduz o efeito de anticoncepcionais e outros remédios.",
+              "explicacao": "A rifampicina induz o citocromo P450 e reduz o efeito do anticoncepcional.",
               "revisado": false
             },
             {
@@ -3273,15 +3303,16 @@
             },
             {
               "id": "biocel-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como funcionam as vacinas de RNA mensageiro contra COVID-19?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente pergunta se a vacina de RNA mensageiro vai mudar o DNA dele.",
+              "enunciado": "Como ela funciona?",
               "opcoes": [
-                "A célula produz a proteína do vírus",
-                "Alteram o DNA da pessoa",
-                "Contêm o vírus vivo",
-                "Contêm anticorpos prontos contra o vírus"
+                "A célula faz a proteína viral",
+                "Altera o DNA da pessoa",
+                "Contém o vírus vivo",
+                "Contém anticorpos prontos contra o vírus"
               ],
-              "resposta": "A célula produz a proteína do vírus",
+              "resposta": "A célula faz a proteína viral",
               "explicacao": "O RNA não entra no núcleo e é destruído depois.",
               "revisado": false
             },
@@ -3310,30 +3341,32 @@
             },
             {
               "id": "biocel-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os remédios terminados em ___ são, geralmente, inibidores de quinase, como o imatinibe.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leucemia mieloide crônica usa imatinibe.",
+              "enunciado": "O que o final do nome indica?",
               "opcoes": [
-                "-nibe",
-                "-mabe",
-                "-olol",
-                "-pril"
+                "Inibidor de quinase",
+                "Anticorpo monoclonal",
+                "Betabloqueador",
+                "Inibidor da ECA"
               ],
-              "resposta": "-nibe",
-              "explicacao": "Os terminados em mabe são anticorpos.",
+              "resposta": "Inibidor de quinase",
+              "explicacao": "Remédios terminados em -nibe costumam ser inibidores de quinase; em -mabe, anticorpos.",
               "revisado": false
             },
             {
               "id": "biocel-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o alvo do pembrolizumabe?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com melanoma metastático recebe pembrolizumabe.",
+              "enunciado": "Qual é o alvo?",
               "opcoes": [
-                "PD-1, liberando a defesa contra o tumor",
-                "CD20 dos linfócitos B do tumor",
-                "HER2, bloqueando o crescimento",
-                "CTLA-4 dos linfócitos T reguladores"
+                "PD-1",
+                "CD20",
+                "HER2",
+                "CTLA-4 dos linfócitos reguladores"
               ],
-              "resposta": "PD-1, liberando a defesa contra o tumor",
-              "explicacao": "É uma imunoterapia de bloqueio de checkpoint.",
+              "resposta": "PD-1",
+              "explicacao": "O bloqueio de PD-1 libera a defesa contra o tumor.",
               "revisado": false
             },
             {
@@ -3407,16 +3440,17 @@
             },
             {
               "id": "biocel-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza a apoptose na microscopia?",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia mostra células encolhidas, com núcleo fragmentado e sem inflamação ao redor.",
+              "enunciado": "Qual tipo de morte celular?",
               "opcoes": [
-                "Célula encolhida, núcleo fragmentado, sem inflamação",
-                "Célula inchada e rompida, com muita inflamação",
-                "Necrose caseosa com granuloma ao redor",
-                "Calcificação distrófica com depósito de cálcio"
+                "Apoptose",
+                "Necrose com inflamação",
+                "Necrose caseosa",
+                "Calcificação distrófica"
               ],
-              "resposta": "Célula encolhida, núcleo fragmentado, sem inflamação",
-              "explicacao": "O núcleo condensado é chamado de picnose.",
+              "resposta": "Apoptose",
+              "explicacao": "O núcleo condensado é a picnose.",
               "revisado": false
             },
             {
@@ -3437,9 +3471,9 @@
             {
               "id": "biocel-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na formação dos dedos, a apoptose elimina as células entre eles.",
+              "enunciado": "Bebê com dedos unidos (sindactilia) teve falha da apoptose entre os dedos na formação.",
               "resposta": true,
-              "explicacao": "Falhas causam sindactilia.",
+              "explicacao": "Verdadeiro. A apoptose elimina as células entre os dedos durante o desenvolvimento.",
               "revisado": false
             },
             {
@@ -3458,16 +3492,17 @@
             },
             {
               "id": "biocel-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração do DNA é típica da apoptose na eletroforese?",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisador faz eletroforese do DNA de células que morreram.",
+              "enunciado": "Qual padrão indica apoptose?",
               "opcoes": [
                 "Padrão em escada",
                 "Mancha difusa",
                 "Nenhuma alteração",
-                "Uma única banda muito grande"
+                "Uma única banda grande"
               ],
               "resposta": "Padrão em escada",
-              "explicacao": "Endonucleases cortam o DNA entre nucleossomos.",
+              "explicacao": "Endonucleases cortam o DNA entre os nucleossomos.",
               "revisado": false
             },
             {
@@ -3533,16 +3568,17 @@
             },
             {
               "id": "biocel-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de necrose ocorre em diabéticos com gangrena úmida do pé?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tem pé escuro, inchado, com pus e mau cheiro.",
+              "enunciado": "Qual tipo de necrose?",
               "opcoes": [
-                "Liquefativa sobre a coagulativa",
+                "Liquefativa (gangrena úmida)",
                 "Caseosa, como na tuberculose",
-                "Fibrinoide, nas vasculites",
-                "Gordurosa enzimática do tecido"
+                "Fibrinoide, das vasculites",
+                "Gordurosa enzimática, como na pancreatite"
               ],
-              "resposta": "Liquefativa sobre a coagulativa",
-              "explicacao": "A infecção bacteriana liquefaz o tecido.",
+              "resposta": "Liquefativa (gangrena úmida)",
+              "explicacao": "A infecção bacteriana liquefaz o tecido já necrosado.",
               "revisado": false
             },
             {
@@ -3563,29 +3599,31 @@
             {
               "id": "biocel-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A calcificação distrófica ocorre em tecidos mortos, mesmo com cálcio normal no sangue.",
-              "resposta": true,
-              "explicacao": "A calcificação metastática ocorre com cálcio alto.",
+              "enunciado": "Calcificação de valva cardíaca danificada, com cálcio normal no sangue, é calcificação metastática.",
+              "resposta": false,
+              "explicacao": "Falso. É distrófica, em tecido lesado com cálcio normal; a metastática ocorre com cálcio alto.",
               "revisado": false
             },
             {
               "id": "biocel-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A calcificação ___ ocorre em tecidos normais quando o cálcio no sangue está alto.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hiperparatireoidismo e cálcio de 14 tem depósitos de cálcio em pulmões e rins normais.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "metastática",
-                "distrófica",
-                "fisiológica",
-                "caseosa"
+                "Calcificação metastática",
+                "Calcificação distrófica",
+                "Calcificação fisiológica",
+                "Necrose caseosa"
               ],
-              "resposta": "metastática",
-              "explicacao": "Ocorre no hiperparatireoidismo.",
+              "resposta": "Calcificação metastática",
+              "explicacao": "Ocorre em tecidos normais quando o cálcio no sangue está alto.",
               "revisado": false
             },
             {
               "id": "biocel-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual marcador no sangue sobe na necrose das células do músculo cardíaco?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com dor no peito há 4 horas faz exame de sangue.",
+              "enunciado": "Qual marcador sobe na necrose do músculo cardíaco?",
               "opcoes": [
                 "Troponina",
                 "Amilase",
@@ -3593,7 +3631,7 @@
                 "Fosfatase alcalina"
               ],
               "resposta": "Troponina",
-              "explicacao": "Ela é o marcador mais usado no infarto.",
+              "explicacao": "É o marcador mais usado no infarto.",
               "revisado": false
             },
             {
@@ -3659,16 +3697,17 @@
             },
             {
               "id": "biocel-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da senescência celular?",
+              "tipo": "caso_clinico",
+              "caso": "Fibroblastos de pessoa idosa param de se dividir após muitas divisões na cultura, mas seguem vivos.",
+              "enunciado": "Qual é o fenômeno?",
               "opcoes": [
-                "Parada permanente da divisão",
+                "Senescência",
                 "Divisão sem limite",
                 "Morte imediata",
-                "Mudança para outro tipo de tecido"
+                "Metaplasia"
               ],
-              "resposta": "Parada permanente da divisão",
-              "explicacao": "O encurtamento dos telômeros contribui.",
+              "resposta": "Senescência",
+              "explicacao": "O encurtamento dos telômeros contribui para a parada permanente.",
               "revisado": false
             },
             {
@@ -3689,9 +3728,9 @@
             {
               "id": "biocel-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hiperplasia do endométrio sem oposição de progesterona aumenta o risco de câncer.",
-              "resposta": true,
-              "explicacao": "É uma hiperplasia patológica.",
+              "enunciado": "Mulher que usa só estrogênio, sem progesterona, tem endométrio mais protegido contra câncer.",
+              "resposta": false,
+              "explicacao": "Falso. Estrogênio sem oposição causa hiperplasia do endométrio e aumenta o risco de câncer.",
               "revisado": false
             },
             {
@@ -3710,16 +3749,17 @@
             },
             {
               "id": "biocel-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual adaptação ocorre no esôfago com refluxo crônico?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com refluxo há 15 anos faz endoscopia com biópsia que mostra células caliciformes no esôfago.",
+              "enunciado": "Qual é a adaptação?",
               "opcoes": [
                 "Metaplasia intestinal",
                 "Atrofia da mucosa",
                 "Hipertrofia muscular",
-                "Necrose da mucosa do esôfago"
+                "Necrose da mucosa por ácido"
               ],
               "resposta": "Metaplasia intestinal",
-              "explicacao": "É o esôfago de Barrett.",
+              "explicacao": "É o esôfago de Barrett, precursor de adenocarcinoma.",
               "revisado": false
             },
             {
