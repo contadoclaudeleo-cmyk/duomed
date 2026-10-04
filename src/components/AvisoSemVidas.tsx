@@ -19,12 +19,15 @@ export function AvisoSemVidas({ aoVoltar }: { aoVoltar: () => void }) {
       <Lapio humor="erro" altura={110} />
       <h2 className="text-2xl font-extrabold">Suas vidas acabaram</h2>
       <p className="text-texto-suave">
-        Você ganha uma vida nova a cada 30 minutos. A próxima chega em{' '}
+        Você ganha uma vida nova a cada 5 minutos. A próxima chega em{' '}
         <strong className="text-texto tabular-nums">{formatarDuracao(falta)}</strong>.
         Enquanto isso, a revisão continua liberada e não gasta vidas.
       </p>
       <div className="mt-2 flex w-full flex-col gap-3">
-        <Botao larguraTotal onClick={() => navegar('/revisao', { replace: true })}>
+        <Botao larguraTotal onClick={() => navegar('/loja')}>
+          Vidas infinitas com o Plus
+        </Botao>
+        <Botao larguraTotal variante="contorno" onClick={() => navegar('/revisao', { replace: true })}>
           Revisar sem gastar vidas
         </Botao>
         <Botao larguraTotal variante="contorno" onClick={aoVoltar}>

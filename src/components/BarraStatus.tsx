@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Flame, Zap } from 'lucide-react'
+import { Flame, Plus, Zap } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
@@ -60,7 +60,17 @@ export function BarraStatus() {
               <Zap className="h-6 w-6" fill="currentColor" strokeWidth={1.5} />
             </ContadorQueSobe>
           </span>
-          <ContadorVidas />
+          {/* Vidas com o botão + que abre a loja */}
+          <Link
+            to="/loja"
+            className="flex items-center gap-1.5 rounded-xl border-2 border-borda py-1 pl-2 pr-1 transition-colors hover:bg-superficie-2"
+            aria-label="Vidas e loja"
+          >
+            <ContadorVidas />
+            <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-erro text-white shadow-[0_2px_0_0_var(--color-erro-escura)]">
+              <Plus className="h-4 w-4" strokeWidth={3.5} />
+            </span>
+          </Link>
         </div>
       </div>
     </header>
