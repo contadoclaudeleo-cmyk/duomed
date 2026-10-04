@@ -25,7 +25,7 @@ export function BarraStatus() {
 
   return (
     <header className="sticky top-0 z-20 border-b-2 border-borda bg-fundo">
-      <div className="mx-auto flex max-w-2xl items-center justify-between gap-2 px-4 py-3">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-3">
         <Link
           to="/materias"
           className="flex items-center gap-2 rounded-xl border-2 border-borda px-2.5 py-1.5 font-bold transition-colors hover:bg-superficie-2"

@@ -1,4 +1,4 @@
-import { GraduationCap, SignalHigh, SignalLow, Stethoscope } from 'lucide-react'
+import { GraduationCap, Mountain, Sprout, Stethoscope } from 'lucide-react'
 import type { ModoEstudo, NivelDificuldade } from '../types'
 import { NOMES_MODO, NOMES_NIVEL } from '../data'
 import { Abas } from './Abas'
@@ -26,8 +26,8 @@ export function AbasNivel({ valor, aoMudar }: { valor: NivelDificuldade; aoMudar
       valor={valor}
       aoMudar={aoMudar}
       opcoes={[
-        { valor: 'facil', rotulo: NOMES_NIVEL.facil, Icone: SignalLow },
-        { valor: 'dificil', rotulo: NOMES_NIVEL.dificil, Icone: SignalHigh },
+        { valor: 'facil', rotulo: NOMES_NIVEL.facil, Icone: Sprout },
+        { valor: 'dificil', rotulo: NOMES_NIVEL.dificil, Icone: Mountain },
       ]}
     />
   )

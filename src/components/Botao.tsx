@@ -16,7 +16,7 @@ const variantes: Record<Variante, string> = {
   contorno:
     'bg-superficie text-texto border-2 border-borda shadow-[0_4px_0_0_var(--borda)] hover:bg-superficie-2',
   perigo: 'bg-erro text-white shadow-[0_4px_0_0_var(--color-erro-escura)] hover:brightness-105',
-  claro: 'bg-white text-agua-texto shadow-[0_4px_0_0_rgba(0,0,0,0.15)] hover:brightness-95',
+  claro: 'bg-white text-[var(--no-escura,var(--color-agua-texto))] shadow-[0_4px_0_0_rgba(0,0,0,0.15)] hover:brightness-95',
 }
 
 const tamanhos: Record<Tamanho, string> = {

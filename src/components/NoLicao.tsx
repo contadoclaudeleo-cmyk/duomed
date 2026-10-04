@@ -17,12 +17,20 @@ interface Props {
   aoVerComentada: () => void
   /** Lição que acabou de ser concluída: comemora ao voltar para a trilha */
   recemConcluida?: boolean
+  /** Cor da unidade: cada unidade da trilha tem a sua */
+  cor?: CorUnidade
 }
 
+export interface CorUnidade {
+  cor: string
+  escura: string
+}
+
+// As cores vêm das variáveis --no e --no-escura, definidas pela unidade
 const cores: Record<StatusLicao, string> = {
-  concluida: 'bg-agua text-white shadow-[0_6px_0_0_var(--color-agua-escura)]',
-  atual: 'bg-agua text-white shadow-[0_6px_0_0_var(--color-agua-escura)]',
-  livre: 'bg-superficie text-agua-texto dark:text-menta border-[3px] border-agua shadow-[0_6px_0_0_var(--color-agua)]',
+  concluida: 'bg-(--no) text-white shadow-[0_6px_0_0_var(--no-escura)]',
+  atual: 'bg-(--no) text-white shadow-[0_6px_0_0_var(--no-escura)]',
+  livre: 'bg-superficie text-(--no-escura) dark:text-(--no) border-[3px] border-(--no) shadow-[0_6px_0_0_var(--no)]',
   bloqueada: 'bg-apagado text-apagado-texto shadow-[0_6px_0_0_var(--apagado-sombra)]',
 }
 
@@ -38,6 +46,7 @@ export function NoLicao({
   aoComecar,
   aoVerComentada,
   recemConcluida,
+  cor = { cor: 'var(--color-agua)', escura: 'var(--color-agua-escura)' },
 }: Props) {
   const Icone = status === 'concluida' ? Check : status === 'atual' ? Star : status === 'livre' ? BookOpen : Lock
 
@@ -45,7 +54,7 @@ export function NoLicao({
     // Cada nó aparece com efeito de mola quando entra na tela
     <motion.div
       className={`relative flex flex-col items-center ${aberto ? 'z-20' : ''}`}
-      style={{ x: deslocamento }}
+      style={{ x: deslocamento, ['--no' as string]: cor.cor, ['--no-escura' as string]: cor.escura }}
       initial={{ opacity: 0, scale: 0.6 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: '0px 0px -40px 0px' }}
@@ -54,7 +63,7 @@ export function NoLicao({
       {/* Balão "Começar" pulando em cima da lição atual */}
       {status === 'atual' && !aberto && (
         <motion.div
-          className="absolute -top-11 z-10 whitespace-nowrap rounded-xl border-2 border-borda bg-superficie px-3 py-1.5 text-sm font-extrabold uppercase tracking-wide text-agua-texto dark:text-menta"
+          className="absolute -top-11 z-10 whitespace-nowrap rounded-xl border-2 border-borda bg-superficie px-3 py-1.5 text-sm font-extrabold uppercase tracking-wide text-(--no-escura) shadow-sm dark:text-(--no)"
           animate={{ y: [0, -5, 0] }}
           transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
         >
@@ -63,11 +72,11 @@ export function NoLicao({
         </motion.div>
       )}
 
-      <div className={`relative rounded-full p-1.5 ${status === 'atual' ? 'border-4 border-agua/25' : 'border-4 border-transparent'}`}>
+      <div className={`relative rounded-full p-1.5 border-4 ${status === 'atual' ? 'border-[color-mix(in_srgb,var(--no)_25%,transparent)]' : 'border-transparent'}`}>
         {/* Anel que pulsa em volta da próxima lição */}
         {status === 'atual' && (
           <motion.span
-            className="pointer-events-none absolute -inset-1 rounded-full border-4 border-agua"
+            className="pointer-events-none absolute -inset-1 rounded-full border-4 border-(--no)"
             initial={{ opacity: 0.5, scale: 1 }}
             animate={{ opacity: 0, scale: 1.3 }}
             transition={{ duration: 1.8, repeat: Infinity, ease: 'easeOut' }}
@@ -108,12 +117,12 @@ export function NoLicao({
             exit={{ opacity: 0, y: -8, scale: 0.95 }}
             transition={{ duration: 0.15 }}
             className={`absolute top-full z-20 mt-3 w-64 rounded-2xl p-4 ${
-              status === 'bloqueada' ? 'border-2 border-borda bg-superficie' : 'bg-agua text-white'
+              status === 'bloqueada' ? 'border-2 border-borda bg-superficie' : 'bg-(--no) text-white shadow-lg'
             }`}
           >
             <span
               className={`absolute -top-[7px] left-1/2 h-3.5 w-3.5 -translate-x-1/2 rotate-45 ${
-                status === 'bloqueada' ? 'border-l-2 border-t-2 border-borda bg-superficie' : 'bg-agua'
+                status === 'bloqueada' ? 'border-l-2 border-t-2 border-borda bg-superficie' : 'bg-(--no)'
               }`}
             />
             <h3 className="text-lg font-extrabold">{titulo}</h3>
@@ -162,7 +171,7 @@ function Faiscas() {
             animate={{ x: Math.cos(rad) * 62, y: Math.sin(rad) * 62, scale: [0, 1.1, 0.6], opacity: [1, 1, 0] }}
             transition={{ duration: 0.9, delay: 0.55 + (i % 2) * 0.05, ease: 'easeOut' }}
           >
-            <Star className={`h-4 w-4 ${i % 2 ? 'text-laranja' : 'text-agua'}`} fill="currentColor" strokeWidth={0} />
+            <Star className={`h-4 w-4 ${i % 2 ? 'text-laranja' : 'text-(--no)'}`} fill="currentColor" strokeWidth={0} />
           </motion.span>
         )
       })}
