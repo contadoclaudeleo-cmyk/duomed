@@ -1863,16 +1863,17 @@
             },
             {
               "id": "imuno-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a profilaxia na doença granulomatosa crônica?",
+              "tipo": "caso_clinico",
+              "caso": "Menino tem abscessos e infecções por fungos repetidas; o teste de di-hidrorodamina é anormal.",
+              "enunciado": "Qual profilaxia usar?",
               "opcoes": [
-                "Sulfametoxazol, itraconazol e interferon gama",
+                "Sulfametoxazol e itraconazol",
                 "Apenas as vacinas do calendário",
-                "Apenas vitamina C em dose alta",
-                "Imunoglobulina mensal e penicilina benzatina a cada 21 dias"
+                "Vitamina C em dose alta",
+                "Imunoglobulina mensal e penicilina a cada 21 dias"
               ],
-              "resposta": "Sulfametoxazol, itraconazol e interferon gama",
-              "explicacao": "O transplante de medula pode curar.",
+              "resposta": "Sulfametoxazol e itraconazol",
+              "explicacao": "É a doença granulomatosa crônica; o interferon gama ajuda e o transplante pode curar.",
               "revisado": false
             },
             {
@@ -1893,37 +1894,39 @@
             {
               "id": "imuno-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A esplenectomia aumenta o risco de infecção grave por bactérias encapsuladas.",
-              "resposta": true,
-              "explicacao": "Pneumococo, meningococo e Haemophilus são os principais.",
+              "enunciado": "Paciente esplenectomizado após trauma tem o mesmo risco de sepse grave que a população geral.",
+              "resposta": false,
+              "explicacao": "Falso. Tem risco maior de sepse fulminante por bactérias encapsuladas.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Pacientes sem baço devem receber vacinas contra pneumococo, meningococo e ___.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem vai retirar o baço de forma programada.",
+              "enunciado": "Além de pneumococo e meningococo, qual vacina dar?",
               "opcoes": [
-                "Haemophilus influenzae tipo b",
-                "tuberculose (BCG)",
-                "febre amarela",
-                "raiva humana em esquema pré-exposição"
+                "Haemophilus tipo b",
+                "BCG",
+                "Febre amarela",
+                "Raiva humana em esquema pré-exposição"
               ],
-              "resposta": "Haemophilus influenzae tipo b",
-              "explicacao": "Também devem tratar febre como urgência.",
+              "resposta": "Haemophilus tipo b",
+              "explicacao": "Deve também tratar febre como urgência.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o germe que mais causa sepse fulminante após retirada do baço?",
+              "tipo": "caso_clinico",
+              "caso": "Homem sem baço tem febre e choque em poucas horas.",
+              "enunciado": "Qual é o germe mais provável?",
               "opcoes": [
-                "Streptococcus pneumoniae",
+                "Pneumococo",
                 "Escherichia coli",
                 "Staphylococcus epidermidis",
                 "Candida"
               ],
-              "resposta": "Streptococcus pneumoniae",
-              "explicacao": "A infecção pode matar em horas.",
+              "resposta": "Pneumococo",
+              "explicacao": "O Streptococcus pneumoniae causa sepse fulminante após esplenectomia.",
               "revisado": false
             },
             {
@@ -1989,8 +1992,9 @@
             },
             {
               "id": "imuno-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tratamento é usado na crise de angioedema hereditário?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com C4 baixo tem inchaço de lábio e laringe sem urticária, sem resposta a antialérgico.",
+              "enunciado": "Qual tratamento?",
               "opcoes": [
                 "Inibidor de C1 ou icatibanto",
                 "Antialérgico",
@@ -1998,7 +2002,7 @@
                 "Adrenalina, que sempre resolve a crise"
               ],
               "resposta": "Inibidor de C1 ou icatibanto",
-              "explicacao": "Antialérgicos e corticoides funcionam mal nesse tipo.",
+              "explicacao": "É angioedema hereditário, mediado por bradicinina.",
               "revisado": false
             },
             {
@@ -2019,15 +2023,16 @@
             {
               "id": "imuno-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O eculizumabe bloqueia o C5 e é usado na hemoglobinúria paroxística noturna.",
-              "resposta": true,
-              "explicacao": "Pacientes devem ser vacinados contra meningococo.",
+              "enunciado": "Paciente com hemoglobinúria paroxística noturna em uso de eculizumabe não precisa de vacina contra meningococo.",
+              "resposta": false,
+              "explicacao": "Falso. Bloquear o C5 aumenta muito o risco de meningococo; a vacina é obrigatória.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O exame ___ avalia toda a via clássica do complemento.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem meningites por Neisseria repetidas.",
+              "enunciado": "Qual exame avalia toda a via clássica do complemento?",
               "opcoes": [
                 "CH50",
                 "C3 isolado",
@@ -2035,21 +2040,22 @@
                 "VHS"
               ],
               "resposta": "CH50",
-              "explicacao": "Valor muito baixo sugere deficiência de algum componente.",
+              "explicacao": "Deficiências de C5 a C9 predispõem a Neisseria.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença renal tem C3 baixo por anticorpo que estabiliza a C3 convertase?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com síndrome nefrítica tem C3 baixo persistente e fator nefrítico positivo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Membranoproliferativa (depósito denso)",
+                "Doença de depósito denso",
                 "Nefropatia por IgA",
                 "Doença de lesões mínimas",
-                "Nefropatia diabética com nódulos de Kimmelstiel-Wilson"
+                "Nefropatia diabética com nódulos"
               ],
-              "resposta": "Membranoproliferativa (depósito denso)",
-              "explicacao": "O anticorpo é chamado de fator nefrítico.",
+              "resposta": "Doença de depósito denso",
+              "explicacao": "O fator nefrítico estabiliza a C3 convertase.",
               "revisado": false
             },
             {
@@ -2115,8 +2121,9 @@
             },
             {
               "id": "imuno-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual citocina causa a caquexia do câncer e de infecções crônicas?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer avançado tem grande perda de peso e de músculo.",
+              "enunciado": "Qual citocina é a principal responsável?",
               "opcoes": [
                 "TNF alfa",
                 "Interleucina 2",
@@ -2145,37 +2152,39 @@
             {
               "id": "imuno-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os bloqueadores de TNF aumentam o risco de reativar tuberculose.",
+              "enunciado": "Paciente com artrite reumatoide refratária vai iniciar infliximabe e deve antes ser testado para tuberculose latente.",
               "resposta": true,
-              "explicacao": "Faz-se teste para tuberculose latente antes de começar.",
+              "explicacao": "Verdadeiro. Bloqueadores de TNF reativam tuberculose; trata-se a latente antes.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O lipopolissacarídeo das bactérias ___ é um forte ativador da inflamação e causa choque.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pielonefrite por E. coli evolui com choque.",
+              "enunciado": "Qual componente da bactéria dispara a inflamação?",
               "opcoes": [
-                "gram-negativas",
-                "gram-positivas",
-                "anaeróbias",
-                "álcool-ácido resistentes"
+                "Lipopolissacarídeo",
+                "Peptidoglicano",
+                "Ácido teicoico",
+                "Toxina do choque tóxico"
               ],
-              "resposta": "gram-negativas",
-              "explicacao": "Ele é chamado de endotoxina.",
+              "resposta": "Lipopolissacarídeo",
+              "explicacao": "É a endotoxina das bactérias gram-negativas.",
               "revisado": false
             },
             {
               "id": "imuno-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a ação da interleucina 2?",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado usa ciclosporina para evitar rejeição.",
+              "enunciado": "Qual citocina deixa de ser produzida?",
               "opcoes": [
-                "Multiplicar os linfócitos T",
-                "Produzir IgE",
-                "Causar febre apenas",
-                "Inibir os macrófagos e os neutrófilos"
+                "Interleucina 2",
+                "Interleucina 4",
+                "TNF alfa",
+                "Interferon gama de macrófagos"
               ],
-              "resposta": "Multiplicar os linfócitos T",
-              "explicacao": "A ciclosporina reduz sua produção.",
+              "resposta": "Interleucina 2",
+              "explicacao": "A IL-2 faz os linfócitos T se multiplicarem.",
               "revisado": false
             },
             {
@@ -2249,15 +2258,16 @@
             },
             {
               "id": "imuno-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que significa a janela imunológica da hepatite B?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hepatite aguda tem HBsAg negativo, anti-HBs negativo e anti-HBc IgM positivo.",
+              "enunciado": "Qual é a fase?",
               "opcoes": [
-                "HBsAg e anti-HBs negativos, com anti-HBc IgM positivo",
-                "Todos os marcadores positivos",
-                "Só anti-HBs positivo, por vacina",
-                "HBsAg positivo por mais de 6 meses, com hepatite crônica"
+                "Janela imunológica",
+                "Vacinação prévia",
+                "Hepatite B crônica",
+                "Infecção curada há muitos anos"
               ],
-              "resposta": "HBsAg e anti-HBs negativos, com anti-HBc IgM positivo",
+              "resposta": "Janela imunológica",
               "explicacao": "Nessa fase, só o anti-HBc mostra a infecção.",
               "revisado": false
             },
@@ -2279,22 +2289,23 @@
             {
               "id": "imuno-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O aumento de 4 vezes no título de IgG entre duas amostras sugere infecção recente.",
+              "enunciado": "Paciente com febre tem IgG para dengue de 1:40 e, 2 semanas depois, 1:320; isso sugere infecção recente.",
               "resposta": true,
-              "explicacao": "É a soroconversão em amostras pareadas.",
+              "explicacao": "Verdadeiro. Aumento de 4 vezes ou mais em amostras pareadas é soroconversão.",
               "revisado": false
             },
             {
               "id": "imuno-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste de ___ da IgG ajuda a saber se a toxoplasmose da gestante é antiga ou recente.",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 10 semanas tem IgG e IgM positivos para toxoplasmose.",
+              "enunciado": "Qual exame indica se a infecção é antiga?",
               "opcoes": [
-                "avidez",
-                "aglutinação",
-                "precipitação",
-                "fixação"
+                "Avidez da IgG",
+                "Aglutinação",
+                "Precipitação",
+                "Fixação do complemento"
               ],
-              "resposta": "avidez",
+              "resposta": "Avidez da IgG",
               "explicacao": "Alta avidez indica infecção com mais de 3 a 4 meses.",
               "revisado": false
             },
@@ -2375,16 +2386,17 @@
             },
             {
               "id": "imuno-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da agamaglobulinemia de Bruton?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 1 ano tem pneumonias repetidas, sem amígdalas e sem linfócitos B.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Imunoglobulina por toda a vida",
+                "Imunoglobulina contínua",
                 "Transplante de rim",
                 "Antibiótico só nas crises",
-                "Vacinas de vírus vivo para estimular"
+                "Vacinas de vírus vivo para estimular a defesa"
               ],
-              "resposta": "Imunoglobulina por toda a vida",
-              "explicacao": "Vacinas vivas devem ser evitadas.",
+              "resposta": "Imunoglobulina contínua",
+              "explicacao": "É a agamaglobulinemia de Bruton; vacinas vivas devem ser evitadas.",
               "revisado": false
             },
             {
@@ -2412,30 +2424,32 @@
             },
             {
               "id": "imuno-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome de ___ tem abscessos frios de pele, eczema e IgE muito alta.",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem abscessos de pele sem calor, eczema, pneumonias e IgE de 5.000.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Jó (hiper-IgE)",
-                "Bruton",
-                "DiGeorge",
+                "Síndrome de Jó",
+                "Agamaglobulinemia de Bruton",
+                "Síndrome de DiGeorge",
                 "Wiskott-Aldrich"
               ],
-              "resposta": "Jó (hiper-IgE)",
-              "explicacao": "Também há alterações nos dentes e ossos.",
+              "resposta": "Síndrome de Jó",
+              "explicacao": "É a síndrome de hiper-IgE; há também alterações em dentes e ossos.",
               "revisado": false
             },
             {
               "id": "imuno-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da síndrome de Wiskott-Aldrich?",
+              "tipo": "caso_clinico",
+              "caso": "Menino tem eczema, plaquetas baixas e pequenas, e otites repetidas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Eczema, plaquetas baixas e infecções",
-                "Falta de timo",
-                "Falta de baço",
-                "Albinismo parcial com grânulos gigantes"
+                "Wiskott-Aldrich",
+                "Síndrome de DiGeorge",
+                "Asplenia",
+                "Síndrome de Chédiak-Higashi com albinismo"
               ],
-              "resposta": "Eczema, plaquetas baixas e infecções",
-              "explicacao": "A tríade ajuda no diagnóstico.",
+              "resposta": "Wiskott-Aldrich",
+              "explicacao": "A tríade é ligada ao X.",
               "revisado": false
             },
             {
@@ -2501,16 +2515,17 @@
             },
             {
               "id": "imuno-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o receptor e o correceptor que o HIV usa para entrar no linfócito?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai usar maraviroque contra o HIV.",
+              "enunciado": "Qual correceptor o remédio bloqueia?",
               "opcoes": [
-                "CD4 e CCR5 ou CXCR4",
-                "CD8 e CD28",
-                "MHC I e CD3",
-                "CD19, CD20 e receptor do complemento"
+                "CCR5",
+                "CD8",
+                "MHC I",
+                "CD19 e receptor do complemento"
               ],
-              "resposta": "CD4 e CCR5 ou CXCR4",
-              "explicacao": "Pessoas sem CCR5 funcional resistem a algumas cepas.",
+              "resposta": "CCR5",
+              "explicacao": "O HIV entra pelo CD4 com CCR5 ou CXCR4.",
               "revisado": false
             },
             {
@@ -2531,37 +2546,39 @@
             {
               "id": "imuno-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pessoas com HIV e carga viral indetectável não transmitem o vírus por via sexual.",
-              "resposta": true,
-              "explicacao": "É o conceito indetectável igual a intransmissível.",
+              "enunciado": "Pessoa com HIV, carga viral indetectável há mais de 6 meses, ainda transmite o vírus por via sexual.",
+              "resposta": false,
+              "explicacao": "Falso. Indetectável é igual a intransmissível.",
               "revisado": false
             },
             {
               "id": "imuno-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A profilaxia ___ é o uso de antirretrovirais antes da exposição para prevenir o HIV.",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem parceiro com HIV de carga detectável e relações sem preservativo.",
+              "enunciado": "Qual é a estratégia de prevenção contínua?",
               "opcoes": [
-                "pré-exposição (PrEP)",
-                "pós-exposição (PEP)",
-                "vacinal",
-                "de transmissão vertical"
+                "PrEP",
+                "PEP",
+                "Vacina contra HIV",
+                "Antibiótico profilático diário"
               ],
-              "resposta": "pré-exposição (PrEP)",
-              "explicacao": "É oferecida pelo SUS para pessoas com maior risco.",
+              "resposta": "PrEP",
+              "explicacao": "A profilaxia pré-exposição é oferecida pelo SUS.",
               "revisado": false
             },
             {
               "id": "imuno-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Até quanto tempo após a exposição deve-se iniciar a PEP para HIV?",
+              "tipo": "caso_clinico",
+              "caso": "Enfermeira se furou com agulha de paciente com HIV há 30 horas.",
+              "enunciado": "Ainda pode iniciar a PEP?",
               "opcoes": [
-                "Até 72 horas",
-                "Até 7 dias",
-                "Até 1 mês",
-                "Qualquer momento"
+                "Sim, até 72 horas",
+                "Não, passou de 2 horas",
+                "Não, passou de 24 horas",
+                "Sim, em qualquer momento do mês seguinte"
               ],
-              "resposta": "Até 72 horas",
-              "explicacao": "Quanto antes, melhor.",
+              "resposta": "Sim, até 72 horas",
+              "explicacao": "Quanto antes, melhor; o tratamento dura 28 dias.",
               "revisado": false
             },
             {
@@ -2635,16 +2652,17 @@
             },
             {
               "id": "imuno-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que pacientes em uso de betabloqueador têm anafilaxia mais difícil de tratar?",
+              "tipo": "caso_clinico",
+              "caso": "Hipertenso em uso de propranolol tem anafilaxia que não melhora com adrenalina.",
+              "enunciado": "Qual remédio usar?",
               "opcoes": [
-                "Respondem menos à adrenalina",
-                "Têm menos IgE",
-                "Têm mais plaquetas",
-                "Têm mais mastócitos que liberam histamina"
+                "Glucagon",
+                "Mais propranolol",
+                "Atropina",
+                "Furosemida venosa"
               ],
-              "resposta": "Respondem menos à adrenalina",
-              "explicacao": "O glucagon é uma alternativa nesses casos.",
+              "resposta": "Glucagon",
+              "explicacao": "O betabloqueador reduz a resposta à adrenalina; o glucagon age por outra via.",
               "revisado": false
             },
             {
@@ -2665,28 +2683,30 @@
             {
               "id": "imuno-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A dose de adrenalina intramuscular na anafilaxia em adultos é de 0,3 a 0,5 mg.",
+              "enunciado": "Adulto em anafilaxia deve receber adrenalina de 0,3 a 0,5 mg por via intramuscular na coxa.",
               "resposta": true,
-              "explicacao": "Em crianças, 0,01 mg/kg.",
+              "explicacao": "Verdadeiro. Em crianças, 0,01 mg/kg; pode repetir a cada 5 a 15 minutos.",
               "revisado": false
             },
             {
               "id": "imuno-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A anafilaxia ___ ocorre sem IgE, por ativação direta dos mastócitos, como com contrastes.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem urticária e hipotensão minutos após contraste iodado, sem exposição prévia.",
+              "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "não alérgica",
-                "alérgica",
-                "tardia",
-                "bifásica tardia"
+                "Anafilaxia não alérgica",
+                "Anafilaxia mediada por IgE",
+                "Reação tardia",
+                "Reação de hipersensibilidade tipo IV"
               ],
-              "resposta": "não alérgica",
-              "explicacao": "O tratamento é o mesmo.",
+              "resposta": "Anafilaxia não alérgica",
+              "explicacao": "Há ativação direta dos mastócitos; o tratamento é o mesmo.",
               "revisado": false
             },
             {
               "id": "imuno-d3-l1-q7",
-              "tipo": "multipla_escolha",
+              "tipo": "caso_clinico",
+              "caso": "Adulto tem inchaço de lábios e chiado após um jantar.",
               "enunciado": "Qual alimento mais causa anafilaxia em adultos?",
               "opcoes": [
                 "Frutos do mar",
@@ -2761,16 +2781,17 @@
             },
             {
               "id": "imuno-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira medida em Stevens-Johnson?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente começou carbamazepina há 2 semanas e tem bolhas na pele e feridas na boca e olhos.",
+              "enunciado": "Qual é a primeira medida?",
               "opcoes": [
-                "Suspender o remédio suspeito",
-                "Dar mais do remédio",
+                "Suspender a carbamazepina",
+                "Dobrar a dose",
                 "Dar antibiótico",
                 "Banho quente para soltar as bolhas"
               ],
-              "resposta": "Suspender o remédio suspeito",
-              "explicacao": "Os pacientes graves são tratados como grandes queimados.",
+              "resposta": "Suspender a carbamazepina",
+              "explicacao": "É Stevens-Johnson; graves são tratados como grandes queimados.",
               "revisado": false
             },
             {
@@ -2798,30 +2819,32 @@
             },
             {
               "id": "imuno-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os sinais de Nikolsky positivo e lesões em ___ sugerem Stevens-Johnson ou necrólise.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com lesões em alvo tem a pele soltando ao ser esfregada.",
+              "enunciado": "Que outra área é afetada no Stevens-Johnson?",
               "opcoes": [
-                "mucosas",
-                "unhas",
-                "cabelos",
-                "dentes"
+                "Mucosas",
+                "Unhas",
+                "Cabelos",
+                "Dentes"
               ],
-              "resposta": "mucosas",
+              "resposta": "Mucosas",
               "explicacao": "Boca, olhos e genitais são afetados.",
               "revisado": false
             },
             {
               "id": "imuno-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais remédios mais causam Stevens-Johnson?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com gota iniciou um remédio e 3 semanas depois tem necrólise epidérmica.",
+              "enunciado": "Qual é o remédio suspeito?",
               "opcoes": [
-                "Anticonvulsivantes, sulfas e alopurinol",
-                "Paracetamol em dose usual",
-                "Vitaminas",
-                "Insulina e antidiabéticos orais de uso contínuo"
+                "Alopurinol",
+                "Colchicina",
+                "Paracetamol",
+                "Vitaminas do complexo B"
               ],
-              "resposta": "Anticonvulsivantes, sulfas e alopurinol",
-              "explicacao": "Também nevirapina e alguns anti-inflamatórios.",
+              "resposta": "Alopurinol",
+              "explicacao": "Anticonvulsivantes, sulfas e alopurinol são os que mais causam.",
               "revisado": false
             },
             {
@@ -2887,8 +2910,9 @@
             },
             {
               "id": "imuno-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença tem anticorpos contra a membrana basal dos pulmões e rins?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem tosse com sangue e lesão renal rápida; biópsia com depósito linear de IgG.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Síndrome de Goodpasture",
                 "Lúpus",
@@ -2896,7 +2920,7 @@
                 "Púrpura de Henoch-Schönlein"
               ],
               "resposta": "Síndrome de Goodpasture",
-              "explicacao": "Causa sangramento pulmonar e lesão renal.",
+              "explicacao": "Os anticorpos atacam a membrana basal dos pulmões e rins.",
               "revisado": false
             },
             {
@@ -2917,9 +2941,9 @@
             {
               "id": "imuno-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A reação de Arthus é uma reação local por complexos imunes após injeção.",
+              "enunciado": "Inchaço e vermelhidão no local de uma dose de reforço de vacina, horas depois, podem ser reação de Arthus por complexos imunes.",
               "resposta": true,
-              "explicacao": "Pode ocorrer após doses repetidas de algumas vacinas.",
+              "explicacao": "Verdadeiro. É uma reação tipo III localizada.",
               "revisado": false
             },
             {
@@ -2938,8 +2962,9 @@
             },
             {
               "id": "imuno-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de hipersensibilidade explica a rejeição aguda celular do transplante?",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado renal tem rejeição aguda com infiltrado de linfócitos T no rim.",
+              "enunciado": "Qual tipo de hipersensibilidade?",
               "opcoes": [
                 "Tipo IV",
                 "Tipo I",
@@ -3021,15 +3046,16 @@
             },
             {
               "id": "imuno-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual anticorpo na gestante causa bloqueio cardíaco congênito no bebê?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido tem bloqueio cardíaco total; a mãe tem síndrome de Sjögren.",
+              "enunciado": "Qual anticorpo materno causou?",
               "opcoes": [
-                "Anti-Ro (SSA)",
+                "Anti-Ro",
                 "Anti-DNA",
                 "Anti-Sm",
                 "Anticentrômero"
               ],
-              "resposta": "Anti-Ro (SSA)",
+              "resposta": "Anti-Ro",
               "explicacao": "O bebê pode precisar de marca-passo.",
               "revisado": false
             },
@@ -3051,9 +3077,9 @@
             {
               "id": "imuno-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O anti-histona é típico do lúpus induzido por remédios.",
-              "resposta": true,
-              "explicacao": "Hidralazina e procainamida são causas.",
+              "enunciado": "Idosa em uso de hidralazina tem artrite e serosite; o esperado é anti-DNA alto e nefrite grave.",
+              "resposta": false,
+              "explicacao": "Falso. No lúpus induzido, o típico é o anti-histona, com pouca lesão renal; melhora ao suspender.",
               "revisado": false
             },
             {
@@ -3072,16 +3098,17 @@
             },
             {
               "id": "imuno-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual anticorpo se associa à granulomatose com poliangiite?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem sinusite crônica, nódulos no pulmão e glomerulonefrite.",
+              "enunciado": "Qual anticorpo é esperado?",
               "opcoes": [
-                "c-ANCA (anti-PR3)",
-                "p-ANCA (anti-MPO)",
+                "c-ANCA",
+                "p-ANCA",
                 "Anti-DNA",
                 "Anti-Ro"
               ],
-              "resposta": "c-ANCA (anti-PR3)",
-              "explicacao": "Causa lesão em vias aéreas, pulmões e rins.",
+              "resposta": "c-ANCA",
+              "explicacao": "É a granulomatose com poliangiite (anti-PR3).",
               "revisado": false
             },
             {
@@ -3147,15 +3174,16 @@
             },
             {
               "id": "imuno-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da síndrome poliglandular autoimune tipo 1?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem candidíase de repetição, cálcio baixo e depois insuficiência adrenal.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Candidíase, hipoparatireoidismo e Addison",
-                "Diabetes e Hashimoto apenas",
-                "Asma e rinite",
-                "Lúpus, artrite e anemia hemolítica autoimune"
+                "Poliglandular autoimune tipo 1",
+                "Poliglandular tipo 2",
+                "Síndrome de DiGeorge",
+                "Lúpus com anemia hemolítica autoimune"
               ],
-              "resposta": "Candidíase, hipoparatireoidismo e Addison",
+              "resposta": "Poliglandular autoimune tipo 1",
               "explicacao": "É causada por mutação no AIRE.",
               "revisado": false
             },
@@ -3177,29 +3205,31 @@
             {
               "id": "imuno-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A doença de Graves é causada por anticorpos que estimulam a tireoide.",
-              "resposta": true,
-              "explicacao": "Isso causa hipertireoidismo e bócio.",
+              "enunciado": "Mulher com bócio difuso, exoftalmia e TSH suprimido tem anticorpos que bloqueiam o receptor de TSH.",
+              "resposta": false,
+              "explicacao": "Falso. Na doença de Graves, os anticorpos estimulam o receptor e causam hipertireoidismo.",
               "revisado": false
             },
             {
               "id": "imuno-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é uma doença autoimune do músculo com anticorpos contra o receptor de acetilcolina.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem ptose e visão dupla que pioram no fim do dia.",
+              "enunciado": "Contra o que são os anticorpos?",
               "opcoes": [
-                "miastenia gravis",
-                "distrofia",
-                "polimiosite",
-                "esclerose múltipla"
+                "Receptor de acetilcolina",
+                "Aquaporina 4",
+                "Canal de cálcio",
+                "Proteína básica da mielina"
               ],
-              "resposta": "miastenia gravis",
-              "explicacao": "O timo costuma estar alterado.",
+              "resposta": "Receptor de acetilcolina",
+              "explicacao": "É miastenia gravis; o timo costuma estar alterado.",
               "revisado": false
             },
             {
               "id": "imuno-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença autoimune tem anticorpos contra a aquaporina 4?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem neurite óptica e mielite extensa; anti-aquaporina 4 positivo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Neuromielite óptica",
                 "Esclerose múltipla",
@@ -3207,7 +3237,7 @@
                 "Síndrome de Guillain-Barré"
               ],
               "resposta": "Neuromielite óptica",
-              "explicacao": "Causa neurite óptica e mielite graves.",
+              "explicacao": "As crises são mais graves que na esclerose múltipla.",
               "revisado": false
             },
             {
@@ -3273,16 +3303,17 @@
             },
             {
               "id": "imuno-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o mecanismo do micofenolato?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com nefrite lúpica inicia micofenolato.",
+              "enunciado": "Como o remédio age?",
               "opcoes": [
-                "Inibe a produção de purinas nos linfócitos",
+                "Inibe a síntese de purinas",
                 "Bloqueia o TNF",
                 "Destrói o CD20",
                 "Inibe a calcineurina e a produção de interleucina 2"
               ],
-              "resposta": "Inibe a produção de purinas nos linfócitos",
-              "explicacao": "É muito usado na nefrite lúpica.",
+              "resposta": "Inibe a síntese de purinas",
+              "explicacao": "Age principalmente nos linfócitos.",
               "revisado": false
             },
             {
@@ -3310,30 +3341,32 @@
             },
             {
               "id": "imuno-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ inibe a calcineurina e é usado em transplantes, com risco de lesão renal e tremor.",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado renal tem tremor e creatinina subindo; nível sanguíneo do remédio alto.",
+              "enunciado": "Qual imunossupressor é suspeito?",
               "opcoes": [
-                "tacrolimo",
-                "rituximabe",
-                "metotrexato",
-                "infliximabe"
+                "Tacrolimo",
+                "Rituximabe",
+                "Metotrexato",
+                "Infliximabe"
               ],
-              "resposta": "tacrolimo",
-              "explicacao": "Seu nível no sangue deve ser monitorado.",
+              "resposta": "Tacrolimo",
+              "explicacao": "É inibidor de calcineurina; o nível deve ser monitorado.",
               "revisado": false
             },
             {
               "id": "imuno-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual imunossupressor é usado em transplante e reduz o risco de alguns cânceres de pele?",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado renal tem vários cânceres de pele.",
+              "enunciado": "Qual imunossupressor reduz esse risco?",
               "opcoes": [
-                "Sirolimo (inibidor de mTOR)",
+                "Sirolimo",
                 "Ciclosporina",
                 "Azatioprina",
                 "Prednisona em dose alta contínua"
               ],
-              "resposta": "Sirolimo (inibidor de mTOR)",
-              "explicacao": "Ele tem também efeito contra a proliferação celular.",
+              "resposta": "Sirolimo",
+              "explicacao": "O inibidor de mTOR tem efeito contra a proliferação celular.",
               "revisado": false
             },
             {
@@ -3407,16 +3440,17 @@
             },
             {
               "id": "imuno-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como os tumores escapam do sistema de defesa?",
+              "tipo": "caso_clinico",
+              "caso": "Melanoma metastático responde muito ao nivolumabe.",
+              "enunciado": "Qual mecanismo de escape tumoral o remédio bloqueia?",
               "opcoes": [
-                "Expressam PD-L1 e reduzem o MHC",
-                "Aumentam o MHC",
-                "Produzem anticorpos",
-                "Não escapam, apenas crescem mais rápido"
+                "Via PD-1/PD-L1",
+                "Aumento do MHC",
+                "Produção de anticorpos",
+                "Nenhum, o tumor apenas cresce mais rápido"
               ],
-              "resposta": "Expressam PD-L1 e reduzem o MHC",
-              "explicacao": "Por isso os bloqueadores de PD-1 funcionam.",
+              "resposta": "Via PD-1/PD-L1",
+              "explicacao": "Tumores expressam PD-L1 e reduzem o MHC.",
               "revisado": false
             },
             {
@@ -3437,29 +3471,31 @@
             {
               "id": "imuno-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Tumores com muitas mutações tendem a responder melhor à imunoterapia.",
-              "resposta": true,
-              "explicacao": "Eles têm mais antígenos novos.",
+              "enunciado": "Paciente com câncer de cólon com instabilidade de microssatélites (muitas mutações) tende a responder pior à imunoterapia.",
+              "resposta": false,
+              "explicacao": "Falso. Responde melhor, pois o tumor tem mais antígenos novos.",
               "revisado": false
             },
             {
               "id": "imuno-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os antígenos ___ são proteínas presentes apenas nas células tumorais, por mutações.",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisadores criam vacina contra o câncer usando proteínas mutadas do tumor do próprio paciente.",
+              "enunciado": "Como se chamam esses alvos?",
               "opcoes": [
-                "neoantígenos",
-                "autoantígenos",
-                "haptenos",
-                "superantígenos"
+                "Neoantígenos",
+                "Autoantígenos",
+                "Haptenos",
+                "Superantígenos"
               ],
-              "resposta": "neoantígenos",
-              "explicacao": "São alvos de vacinas contra o câncer.",
+              "resposta": "Neoantígenos",
+              "explicacao": "Estão presentes apenas nas células tumorais.",
               "revisado": false
             },
             {
               "id": "imuno-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual marcador ajuda a escolher pacientes para anti-PD-1 em câncer de pulmão?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de pulmão avançado sem mutações-alvo vai iniciar anti-PD-1.",
+              "enunciado": "Qual marcador ajuda a escolher?",
               "opcoes": [
                 "PD-L1 no tumor",
                 "CEA",
@@ -3533,8 +3569,9 @@
             },
             {
               "id": "imuno-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual vacina deve ser evitada em quem usa altas doses de corticoide?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa prednisona 40 mg há 2 meses e vai viajar para área de risco.",
+              "enunciado": "Qual vacina é contraindicada?",
               "opcoes": [
                 "Febre amarela",
                 "Influenza inativada",
@@ -3570,30 +3607,32 @@
             },
             {
               "id": "imuno-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Pessoas que vão iniciar biológicos devem atualizar as vacinas ___ antes de começar.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com doença de Crohn vai iniciar um biológico.",
+              "enunciado": "Quais vacinas atualizar antes, pois depois ficam contraindicadas?",
               "opcoes": [
-                "vivas",
-                "inativadas",
-                "conjugadas",
-                "de reforço"
+                "Vacinas vivas",
+                "Vacinas inativadas",
+                "Vacinas conjugadas",
+                "Reforços de tétano"
               ],
-              "resposta": "vivas",
-              "explicacao": "Depois, elas ficam contraindicadas.",
+              "resposta": "Vacinas vivas",
+              "explicacao": "Varicela e febre amarela devem ser dadas antes.",
               "revisado": false
             },
             {
               "id": "imuno-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual grupo tem indicação de vacina contra varicela no pós-exposição?",
+              "tipo": "caso_clinico",
+              "caso": "Adulto saudável que nunca teve catapora teve contato com criança doente há 3 dias.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Suscetíveis expostos até 5 dias",
-                "Todos os idosos",
-                "Gestantes",
-                "Imunossuprimidos graves expostos"
+                "Vacina contra varicela",
+                "Imunoglobulina sempre",
+                "Nada a fazer",
+                "Aciclovir venoso por 14 dias imediatamente"
               ],
-              "resposta": "Suscetíveis expostos até 5 dias",
-              "explicacao": "Imunossuprimidos e gestantes recebem imunoglobulina.",
+              "resposta": "Vacina contra varicela",
+              "explicacao": "Suscetíveis expostos até 5 dias recebem vacina; imunossuprimidos e gestantes, imunoglobulina.",
               "revisado": false
             },
             {
@@ -3659,13 +3698,14 @@
             },
             {
               "id": "imuno-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da rejeição aguda celular?",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado renal tem creatinina subindo; a biópsia mostra rejeição aguda celular.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Pulsos de corticoide",
-                "Retirar o órgão",
+                "Retirar o rim",
                 "Antibiótico",
-                "Aumentar só o diurético"
+                "Aumentar só o diurético e observar"
               ],
               "resposta": "Pulsos de corticoide",
               "explicacao": "Casos resistentes usam timoglobulina.",
@@ -3689,36 +3729,38 @@
             {
               "id": "imuno-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A doença linfoproliferativa pós-transplante costuma estar ligada ao vírus Epstein-Barr.",
-              "resposta": true,
-              "explicacao": "É mais comum em crianças que nunca tiveram o vírus.",
+              "enunciado": "Criança transplantada que nunca teve o vírus Epstein-Barr tem menor risco de doença linfoproliferativa pós-transplante.",
+              "resposta": false,
+              "explicacao": "Falso. Tem maior risco, pois o EBV adquirido sob imunossupressão causa a doença.",
               "revisado": false
             },
             {
               "id": "imuno-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O transplante de medula ___ usa células do próprio paciente.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com mieloma tem células-tronco coletadas do próprio sangue e reinfundidas após quimioterapia.",
+              "enunciado": "Que transplante é esse?",
               "opcoes": [
-                "autólogo",
-                "alogênico",
-                "xenogênico",
-                "singênico"
+                "Autólogo",
+                "Alogênico",
+                "Xenogênico",
+                "Singênico de gêmeo idêntico"
               ],
-              "resposta": "autólogo",
+              "resposta": "Autólogo",
               "explicacao": "O alogênico usa células de outra pessoa.",
               "revisado": false
             },
             {
               "id": "imuno-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o doador ideal para transplante de medula alogênico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leucemia precisa de transplante alogênico.",
+              "enunciado": "Qual é o doador ideal?",
               "opcoes": [
-                "Irmão com HLA idêntico",
+                "Irmão HLA idêntico",
                 "Qualquer pessoa",
                 "O pai, sempre",
                 "A mãe, sempre que estiver saudável"
               ],
-              "resposta": "Irmão com HLA idêntico",
+              "resposta": "Irmão HLA idêntico",
               "explicacao": "Cada irmão tem 25% de chance de ser idêntico.",
               "revisado": false
             },

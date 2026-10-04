@@ -1863,16 +1863,17 @@
             },
             {
               "id": "histo-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na deficiência de vitamina A, o que pode ocorrer com o epitélio da conjuntiva?",
+              "tipo": "caso_clinico",
+              "caso": "Criança desnutrida tem olho seco, manchas esbranquiçadas na conjuntiva e cegueira noturna.",
+              "enunciado": "O que ocorreu com o epitélio?",
               "opcoes": [
-                "Metaplasia escamosa com olho seco",
+                "Metaplasia escamosa",
                 "Hiperplasia de cílios",
                 "Formação de microvilosidades",
                 "Aumento das células caliciformes produtoras de muco"
               ],
-              "resposta": "Metaplasia escamosa com olho seco",
-              "explicacao": "A vitamina A mantém os epitélios especializados.",
+              "resposta": "Metaplasia escamosa",
+              "explicacao": "A falta de vitamina A faz o epitélio especializado virar escamoso.",
               "revisado": false
             },
             {
@@ -1900,16 +1901,17 @@
             },
             {
               "id": "histo-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O carcinoma é o câncer de origem ___, enquanto o sarcoma vem do tecido conjuntivo.",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia de massa no pulmão mostra células com citoqueratina positiva formando glândulas.",
+              "enunciado": "Como se classifica o tumor?",
               "opcoes": [
-                "epitelial",
-                "muscular",
-                "nervosa",
-                "sanguínea"
+                "Carcinoma",
+                "Sarcoma",
+                "Linfoma",
+                "Melanoma de origem na pele"
               ],
-              "resposta": "epitelial",
-              "explicacao": "Os carcinomas são os cânceres mais comuns.",
+              "resposta": "Carcinoma",
+              "explicacao": "Carcinoma vem do epitélio; sarcoma, do tecido conjuntivo.",
               "revisado": false
             },
             {
@@ -1929,13 +1931,14 @@
             },
             {
               "id": "histo-d1-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual marcador de imuno-histoquímica identifica células epiteliais?",
+              "tipo": "caso_clinico",
+              "caso": "Tumor indiferenciado precisa de imuno-histoquímica para saber se é epitelial.",
+              "enunciado": "Qual marcador pedir?",
               "opcoes": [
                 "Citoqueratina",
                 "Vimentina",
                 "Desmina",
-                "Proteína S-100"
+                "Proteína S-100 de melanócitos"
               ],
               "resposta": "Citoqueratina",
               "explicacao": "A vimentina marca células mesenquimais.",
@@ -1989,8 +1992,9 @@
             },
             {
               "id": "histo-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula do conjuntivo participa da reação alérgica imediata com receptor para IgE?",
+              "tipo": "caso_clinico",
+              "caso": "Minutos após picada de abelha, o paciente tem urticária e chiado.",
+              "enunciado": "Qual célula com receptor para IgE liberou histamina?",
               "opcoes": [
                 "Mastócito",
                 "Plasmócito",
@@ -1998,7 +2002,7 @@
                 "Adipócito"
               ],
               "resposta": "Mastócito",
-              "explicacao": "A ligação do alérgeno libera histamina.",
+              "explicacao": "A ligação do alérgeno à IgE do mastócito libera histamina.",
               "revisado": false
             },
             {
@@ -2040,16 +2044,17 @@
             },
             {
               "id": "histo-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Que tipo de célula predomina no tecido de granulação da cicatrização?",
+              "tipo": "caso_clinico",
+              "caso": "Ferida de 7 dias tem fundo vermelho, granuloso e sangra fácil.",
+              "enunciado": "O que predomina nesse tecido?",
               "opcoes": [
                 "Fibroblastos e novos vasos",
                 "Neurônios",
                 "Osteócitos maduros",
-                "Hemácias e plaquetas apenas"
+                "Hemácias e plaquetas apenas, sem células"
               ],
               "resposta": "Fibroblastos e novos vasos",
-              "explicacao": "Também há miofibroblastos, que contraem a ferida.",
+              "explicacao": "É o tecido de granulação; os miofibroblastos contraem a ferida.",
               "revisado": false
             },
             {
@@ -2115,8 +2120,9 @@
             },
             {
               "id": "histo-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença genética tem osteoclastos que não funcionam, deixando o osso denso e frágil?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem fraturas repetidas, anemia e raio X com ossos muito densos e brancos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Osteopetrose",
                 "Osteoporose",
@@ -2124,7 +2130,7 @@
                 "Osteogênese imperfeita"
               ],
               "resposta": "Osteopetrose",
-              "explicacao": "É conhecida como doença dos ossos de mármore.",
+              "explicacao": "Os osteoclastos não funcionam; é a doença dos ossos de mármore.",
               "revisado": false
             },
             {
@@ -2152,30 +2158,25 @@
             },
             {
               "id": "histo-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A fosfatase ___ é um marcador da atividade dos osteoblastos.",
-              "opcoes": [
-                "alcalina",
-                "ácida",
-                "lática",
-                "hepática"
-              ],
-              "resposta": "alcalina",
-              "explicacao": "Ela sobe em crianças em crescimento e na doença de Paget.",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Idoso com dor óssea e fosfatase alcalina muito alta, com cálcio normal, pode ter doença de Paget.",
+              "resposta": true,
+              "explicacao": "Verdadeiro. A fosfatase alcalina marca a atividade dos osteoblastos.",
               "revisado": false
             },
             {
               "id": "histo-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de osso é formado primeiro e depois substituído pelo lamelar?",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia de calo de fratura de 2 semanas mostra osso com fibras de colágeno desorganizadas.",
+              "enunciado": "Que tipo de osso é?",
               "opcoes": [
-                "Osso imaturo (primário)",
+                "Osso imaturo",
                 "Osso cortical",
                 "Osso esponjoso",
-                "Cartilagem hialina calcificada"
+                "Cartilagem hialina calcificada e madura"
               ],
-              "resposta": "Osso imaturo (primário)",
-              "explicacao": "Ele tem fibras de colágeno desorganizadas.",
+              "resposta": "Osso imaturo",
+              "explicacao": "O osso primário é formado primeiro e depois substituído pelo lamelar.",
               "revisado": false
             },
             {
@@ -2249,15 +2250,16 @@
             },
             {
               "id": "histo-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que acontece com o músculo cardíaco após um infarto extenso?",
+              "tipo": "caso_clinico",
+              "caso": "Homem teve infarto extenso há 2 meses.",
+              "enunciado": "O que se encontra no local do músculo morto?",
               "opcoes": [
-                "Vira cicatriz de colágeno",
-                "Regenera totalmente",
-                "Vira músculo liso",
-                "Vira cartilagem com cálcio e não se contrai"
+                "Cicatriz de colágeno",
+                "Músculo regenerado",
+                "Músculo liso",
+                "Cartilagem com cálcio que se contrai"
               ],
-              "resposta": "Vira cicatriz de colágeno",
+              "resposta": "Cicatriz de colágeno",
               "explicacao": "Os cardiomiócitos quase não se dividem.",
               "revisado": false
             },
@@ -2286,30 +2288,32 @@
             },
             {
               "id": "histo-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na rabdomiólise, a destruição do músculo libera ___, que pode lesar os rins.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem após maratona no calor tem dor muscular, urina escura e CPK de 50 mil.",
+              "enunciado": "Qual substância pode lesar os rins?",
               "opcoes": [
-                "mioglobina",
-                "hemoglobina",
-                "colágeno",
-                "queratina"
+                "Mioglobina",
+                "Hemoglobina",
+                "Colágeno",
+                "Queratina"
               ],
-              "resposta": "mioglobina",
-              "explicacao": "A CPK fica muito elevada.",
+              "resposta": "Mioglobina",
+              "explicacao": "É a rabdomiólise; hidratação vigorosa protege os rins.",
               "revisado": false
             },
             {
               "id": "histo-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da distrofia de Becker em comparação com a de Duchenne?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 12 anos com panturrilhas grandes e fraqueza leve; a biópsia mostra distrofina diminuída.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Distrofina alterada, quadro mais leve",
-                "Ausência total de distrofina",
-                "Atinge só mulheres portadoras",
-                "Começa já no nascimento com fraqueza grave"
+                "Distrofia de Becker",
+                "Distrofia de Duchenne",
+                "Miastenia gravis",
+                "Atrofia muscular espinhal do lactente"
               ],
-              "resposta": "Distrofina alterada, quadro mais leve",
-              "explicacao": "A Becker começa mais tarde e evolui mais devagar.",
+              "resposta": "Distrofia de Becker",
+              "explicacao": "Na Becker, a distrofina existe mas é alterada; o quadro é mais leve e tardio.",
               "revisado": false
             },
             {
@@ -2375,8 +2379,9 @@
             },
             {
               "id": "histo-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que acontece com o axônio abaixo de um corte em um nervo periférico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente cortou o nervo mediano no punho há 1 semana.",
+              "enunciado": "O que acontece com o axônio abaixo do corte?",
               "opcoes": [
                 "Degeneração walleriana",
                 "Regeneração imediata",
@@ -2426,16 +2431,10 @@
             },
             {
               "id": "histo-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula do sistema nervoso central forma mielina para vários axônios ao mesmo tempo?",
-              "opcoes": [
-                "Oligodendrócito",
-                "Célula de Schwann",
-                "Astrócito",
-                "Micróglia"
-              ],
-              "resposta": "Oligodendrócito",
-              "explicacao": "A célula de Schwann mieliniza só um segmento de um axônio.",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na esclerose múltipla, a lesão atinge as células de Schwann, que fazem a mielina do cérebro.",
+              "resposta": false,
+              "explicacao": "Falso. No sistema nervoso central, a mielina é feita pelos oligodendrócitos; Schwann fica nos nervos periféricos.",
               "revisado": false
             },
             {
@@ -2501,16 +2500,17 @@
             },
             {
               "id": "histo-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia diretamente a produção de células na medula óssea?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem pancitopenia sem causa aparente.",
+              "enunciado": "Qual exame avalia diretamente a produção de células?",
               "opcoes": [
-                "Mielograma ou biópsia de medula",
+                "Biópsia de medula",
                 "Hemograma completo",
                 "Ferritina sérica",
-                "Contagem de reticulócitos isolada"
+                "Contagem de reticulócitos isolada no sangue"
               ],
-              "resposta": "Mielograma ou biópsia de medula",
-              "explicacao": "A biópsia mostra também a celularidade e fibrose.",
+              "resposta": "Biópsia de medula",
+              "explicacao": "Mostra também a celularidade e a fibrose.",
               "revisado": false
             },
             {
@@ -2538,22 +2538,24 @@
             },
             {
               "id": "histo-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na mononucleose, aparecem linfócitos ___, grandes e com citoplasma abundante.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com febre, dor de garganta e ínguas tem linfócitos grandes com citoplasma abundante.",
+              "enunciado": "Como se chamam essas células?",
               "opcoes": [
-                "atípicos",
-                "maduros",
-                "blásticos",
-                "plasmocitoides"
+                "Linfócitos atípicos",
+                "Linfócitos maduros",
+                "Blastos",
+                "Plasmócitos com núcleo excêntrico"
               ],
-              "resposta": "atípicos",
-              "explicacao": "Eles reagem ao vírus Epstein-Barr.",
+              "resposta": "Linfócitos atípicos",
+              "explicacao": "Reagem ao vírus Epstein-Barr na mononucleose.",
               "revisado": false
             },
             {
               "id": "histo-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula aumenta muito em infestações por vermes?",
+              "tipo": "caso_clinico",
+              "caso": "Criança da zona rural tem dor abdominal e hemograma com 25% de uma célula com grânulos alaranjados.",
+              "enunciado": "Qual célula aumentou?",
               "opcoes": [
                 "Eosinófilo",
                 "Basófilo",
@@ -2561,7 +2563,7 @@
                 "Monócito"
               ],
               "resposta": "Eosinófilo",
-              "explicacao": "Também aumenta em alergias.",
+              "explicacao": "Os eosinófilos aumentam em infestações por vermes e alergias.",
               "revisado": false
             },
             {
@@ -2635,16 +2637,17 @@
             },
             {
               "id": "histo-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula do fígado armazena vitamina A e produz fibrose quando ativada?",
+              "tipo": "caso_clinico",
+              "caso": "Alcoolista tem fígado com fibrose progressiva.",
+              "enunciado": "Qual célula, que armazena vitamina A, produz a fibrose?",
               "opcoes": [
-                "Célula estrelada (de Ito)",
+                "Célula estrelada",
                 "Célula de Kupffer",
                 "Hepatócito",
                 "Célula endotelial do sinusoide"
               ],
-              "resposta": "Célula estrelada (de Ito)",
-              "explicacao": "Ela é a principal responsável pela cirrose.",
+              "resposta": "Célula estrelada",
+              "explicacao": "A célula de Ito ativada é a principal responsável pela cirrose.",
               "revisado": false
             },
             {
@@ -2665,37 +2668,39 @@
             {
               "id": "histo-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "As células de Kupffer são macrófagos que ficam nos sinusoides do fígado.",
-              "resposta": true,
-              "explicacao": "Elas removem bactérias e restos do sangue.",
+              "enunciado": "Na biópsia de fígado com hepatite, as células de Kupffer vistas nos sinusoides são linfócitos dos ductos biliares.",
+              "resposta": false,
+              "explicacao": "Falso. São macrófagos dos sinusoides, que removem bactérias e restos do sangue.",
               "revisado": false
             },
             {
               "id": "histo-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O espaço de ___ fica entre os hepatócitos e o endotélio dos sinusoides.",
+              "tipo": "caso_clinico",
+              "caso": "Na lâmina de fígado, o patologista observa o espaço entre os hepatócitos e o endotélio do sinusoide.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "Disse",
-                "Havers",
-                "Bowman",
-                "Virchow"
+                "Espaço de Disse",
+                "Canal de Havers",
+                "Espaço de Bowman",
+                "Espaço de Virchow-Robin no cérebro"
               ],
-              "resposta": "Disse",
+              "resposta": "Espaço de Disse",
               "explicacao": "É onde ficam as células estreladas.",
               "revisado": false
             },
             {
               "id": "histo-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula das ilhotas pancreáticas produz insulina?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com diabetes tipo 1 tem destruição autoimune das ilhotas.",
+              "enunciado": "Qual célula foi destruída?",
               "opcoes": [
                 "Célula beta",
                 "Célula alfa",
                 "Célula delta",
-                "Célula acinar"
+                "Célula acinar exócrina"
               ],
               "resposta": "Célula beta",
-              "explicacao": "A célula alfa produz glucagon.",
+              "explicacao": "A célula beta produz insulina; a alfa, glucagon.",
               "revisado": false
             },
             {
@@ -2761,16 +2766,17 @@
             },
             {
               "id": "histo-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual célula da tireoide produz calcitonina?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com nódulo de tireoide tem calcitonina muito alta.",
+              "enunciado": "De qual célula vem o tumor?",
               "opcoes": [
-                "Célula parafolicular (C)",
+                "Célula parafolicular",
                 "Célula folicular",
                 "Célula oxífila",
                 "Célula principal da paratireoide"
               ],
-              "resposta": "Célula parafolicular (C)",
-              "explicacao": "O carcinoma medular da tireoide vem dessa célula.",
+              "resposta": "Célula parafolicular",
+              "explicacao": "É o carcinoma medular, que vem das células C.",
               "revisado": false
             },
             {
@@ -2798,30 +2804,32 @@
             },
             {
               "id": "histo-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na tireoidite de ___, há infiltração da tireoide por linfócitos e destruição da glândula.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com hipotireoidismo tem anti-TPO alto; a biópsia mostra muitos linfócitos e folículos destruídos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Hashimoto",
-                "De Quervain",
-                "Riedel",
-                "Graves"
+                "Tireoidite de Hashimoto",
+                "Tireoidite de De Quervain",
+                "Tireoidite de Riedel",
+                "Doença de Graves"
               ],
-              "resposta": "Hashimoto",
+              "resposta": "Tireoidite de Hashimoto",
               "explicacao": "É a causa mais comum de hipotireoidismo.",
               "revisado": false
             },
             {
               "id": "histo-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "De qual estrutura embrionária vem a adeno-hipófise?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem tumor cístico com cálcio acima da sela túrcica e perda visual.",
+              "enunciado": "De qual estrutura embrionária vem?",
               "opcoes": [
                 "Bolsa de Rathke",
                 "Tubo neural",
                 "Crista neural",
-                "Arco faríngeo"
+                "Terceiro arco faríngeo"
               ],
               "resposta": "Bolsa de Rathke",
-              "explicacao": "Restos dela podem formar o craniofaringioma.",
+              "explicacao": "Restos dela formam o craniofaringioma; ela origina a adeno-hipófise.",
               "revisado": false
             },
             {
@@ -2872,15 +2880,16 @@
             },
             {
               "id": "histo-d3-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Em qual região do linfonodo ficam principalmente os linfócitos B?",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia de linfonodo mostra folículos aumentados no córtex.",
+              "enunciado": "Que células proliferaram?",
               "opcoes": [
-                "Folículos do córtex",
-                "Paracórtex",
-                "Cordões medulares",
-                "Seio subcapsular junto à cápsula"
+                "Linfócitos B",
+                "Linfócitos T",
+                "Hemácias",
+                "Macrófagos dos seios medulares"
               ],
-              "resposta": "Folículos do córtex",
+              "resposta": "Linfócitos B",
               "explicacao": "O paracórtex é rico em linfócitos T.",
               "revisado": false
             },
@@ -2902,23 +2911,24 @@
             {
               "id": "histo-d3-l3-q4",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A polpa vermelha do baço remove hemácias velhas, e a polpa branca é tecido linfoide.",
+              "enunciado": "Paciente sem baço tem hemácias com corpúsculos de Howell-Jolly porque a polpa vermelha não remove mais restos das hemácias.",
               "resposta": true,
-              "explicacao": "O baço também guarda plaquetas.",
+              "explicacao": "Verdadeiro. A polpa vermelha filtra as hemácias; a branca é tecido linfoide.",
               "revisado": false
             },
             {
               "id": "histo-d3-l3-q5",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os corpúsculos de ___ são estruturas típicas da medula do timo.",
+              "tipo": "caso_clinico",
+              "caso": "Lâmina de massa no mediastino anterior mostra estruturas concêntricas de células epiteliais na medula.",
+              "enunciado": "Qual é o órgão?",
               "opcoes": [
-                "Hassall",
-                "Howell-Jolly",
-                "Heinz",
-                "Negri"
+                "Timo",
+                "Baço",
+                "Linfonodo",
+                "Tonsila palatina"
               ],
-              "resposta": "Hassall",
-              "explicacao": "Eles ajudam a identificar o timo nas lâminas.",
+              "resposta": "Timo",
+              "explicacao": "Os corpúsculos de Hassall são típicos da medula do timo.",
               "revisado": false
             },
             {
@@ -2938,15 +2948,16 @@
             },
             {
               "id": "histo-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual padrão histológico é típico do linfoma de Burkitt?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos tem massa abdominal que cresceu rápido. A biópsia mostra padrão em céu estrelado.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Céu estrelado",
-                "Olhos de coruja",
-                "Em paliçada",
-                "Em roseta"
+                "Linfoma de Burkitt",
+                "Linfoma de Hodgkin",
+                "Neuroblastoma",
+                "Tumor de Wilms com padrão trifásico"
               ],
-              "resposta": "Céu estrelado",
+              "resposta": "Linfoma de Burkitt",
               "explicacao": "Os macrófagos com restos celulares formam as estrelas.",
               "revisado": false
             },
@@ -3021,16 +3032,17 @@
             },
             {
               "id": "histo-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são os 4 achados da tetralogia de Fallot?",
+              "tipo": "caso_clinico",
+              "caso": "Lactente tem crises de cianose ao chorar, que melhoram ao agachar; raio X com coração em bota.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Estenose pulmonar, hipertrofia de VD, aorta cavalgada e CIV",
-                "CIA, estenose aórtica, coarctação e canal arterial aberto",
-                "Transposição, estenose mitral, forame oval e canal aberto",
-                "CIV, estenose aórtica, hipertrofia de VE e dextrocardia"
+                "Tetralogia de Fallot",
+                "Coarctação da aorta",
+                "Transposição das grandes artérias",
+                "Comunicação interatrial sem cianose"
               ],
-              "resposta": "Estenose pulmonar, hipertrofia de VD, aorta cavalgada e CIV",
-              "explicacao": "Ocorre por desvio do septo infundibular.",
+              "resposta": "Tetralogia de Fallot",
+              "explicacao": "Tem estenose pulmonar, hipertrofia de VD, aorta cavalgada e CIV.",
               "revisado": false
             },
             {
@@ -3051,37 +3063,39 @@
             {
               "id": "histo-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "No feto, o sangue oxigenado vem da placenta pela veia umbilical.",
-              "resposta": true,
-              "explicacao": "Ele passa pelo ducto venoso e chega ao átrio direito.",
+              "enunciado": "Ao estudar a circulação de um feto, o aluno conclui que o sangue mais oxigenado chega pelas artérias umbilicais.",
+              "resposta": false,
+              "explicacao": "Falso. Chega pela veia umbilical, passa pelo ducto venoso e vai ao átrio direito.",
               "revisado": false
             },
             {
               "id": "histo-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A persistência do ___ arterioso causa sopro contínuo e é mais comum em prematuros.",
+              "tipo": "caso_clinico",
+              "caso": "Prematuro de 28 semanas tem sopro contínuo e pulsos amplos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "canal",
-                "forame",
-                "seio",
-                "ducto venoso"
+                "Canal arterial persistente",
+                "Forame oval patente",
+                "Comunicação interventricular",
+                "Estenose aórtica valvar"
               ],
-              "resposta": "canal",
-              "explicacao": "A indometacina pode ajudar a fechar.",
+              "resposta": "Canal arterial persistente",
+              "explicacao": "A indometacina ou o ibuprofeno podem ajudar a fechar.",
               "revisado": false
             },
             {
               "id": "histo-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual cardiopatia se associa à síndrome de Turner?",
+              "tipo": "caso_clinico",
+              "caso": "Menina baixa, com pescoço alado, tem pressão alta nos braços e pulsos fracos nas pernas.",
+              "enunciado": "Qual cardiopatia?",
               "opcoes": [
                 "Coarctação da aorta",
                 "Tetralogia de Fallot",
                 "Transposição",
-                "Anomalia de Ebstein"
+                "Anomalia de Ebstein da tricúspide"
               ],
               "resposta": "Coarctação da aorta",
-              "explicacao": "A valva aórtica bicúspide também é comum.",
+              "explicacao": "É comum na síndrome de Turner, junto com valva aórtica bicúspide.",
               "revisado": false
             },
             {
@@ -3147,16 +3161,17 @@
             },
             {
               "id": "histo-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estrutura origina a tireoide?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem cisto na linha média do pescoço que sobe ao pôr a língua para fora.",
+              "enunciado": "Qual é a origem?",
               "opcoes": [
-                "Assoalho da faringe, pelo ducto tireoglosso",
-                "Bolsa de Rathke do teto da boca",
-                "Quarto arco faríngeo e sua bolsa",
-                "Crista neural do segundo arco branquial e da faringe"
+                "Ducto tireoglosso",
+                "Bolsa de Rathke",
+                "Quarto arco faríngeo",
+                "Fenda branquial lateral do segundo arco"
               ],
-              "resposta": "Assoalho da faringe, pelo ducto tireoglosso",
-              "explicacao": "Restos do ducto formam o cisto tireoglosso.",
+              "resposta": "Ducto tireoglosso",
+              "explicacao": "A tireoide nasce no assoalho da faringe e desce por esse ducto.",
               "revisado": false
             },
             {
@@ -3177,34 +3192,36 @@
             {
               "id": "histo-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "As paratireoides superiores vêm da 4ª bolsa faríngea, e as inferiores, da 3ª bolsa.",
+              "enunciado": "Após tireoidectomia, uma paratireoide inferior foi achada dentro do timo; isso ocorre porque ambos vêm da 3ª bolsa faríngea.",
               "resposta": true,
-              "explicacao": "As inferiores descem junto com o timo.",
+              "explicacao": "Verdadeiro. As inferiores vêm da 3ª bolsa e descem com o timo; as superiores vêm da 4ª.",
               "revisado": false
             },
             {
               "id": "histo-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome de ___ é uma falha do primeiro arco, com mandíbula pequena e palato fendido.",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido tem mandíbula muito pequena, palato fendido e língua que cai e obstrui a via aérea.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Pierre Robin",
-                "DiGeorge",
-                "Treacher Collins",
-                "Down"
+                "Sequência de Pierre Robin",
+                "Síndrome de DiGeorge",
+                "Síndrome de Down",
+                "Síndrome de Turner com pescoço alado"
               ],
-              "resposta": "Pierre Robin",
-              "explicacao": "A língua pode cair para trás e obstruir a via aérea.",
+              "resposta": "Sequência de Pierre Robin",
+              "explicacao": "Deixar o bebê de bruços ajuda a liberar a via aérea.",
               "revisado": false
             },
             {
               "id": "histo-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Os ossos da orelha média, martelo e bigorna, vêm de qual arco?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem malformação do martelo e da bigorna, com surdez de condução.",
+              "enunciado": "De qual arco vêm esses ossos?",
               "opcoes": [
                 "Primeiro arco",
                 "Segundo arco",
                 "Terceiro arco",
-                "Quarto arco"
+                "Quarto e sexto arcos"
               ],
               "resposta": "Primeiro arco",
               "explicacao": "O estribo vem do segundo arco.",
@@ -3273,16 +3290,17 @@
             },
             {
               "id": "histo-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estrutura embrionária forma os ureteres, pelve renal e ductos coletores?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido tem duplicação do ureter no ultrassom.",
+              "enunciado": "Qual estrutura embrionária se dividiu?",
               "opcoes": [
                 "Broto ureteral",
                 "Mesonefro",
                 "Seio urogenital",
-                "Úraco"
+                "Úraco ligado ao umbigo"
               ],
               "resposta": "Broto ureteral",
-              "explicacao": "O blastema metanéfrico forma os néfrons.",
+              "explicacao": "O broto forma ureter, pelve e ductos coletores; o blastema forma os néfrons.",
               "revisado": false
             },
             {
@@ -3324,8 +3342,9 @@
             },
             {
               "id": "histo-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual gene do cromossomo Y faz a gônada virar testículo?",
+              "tipo": "caso_clinico",
+              "caso": "Pessoa 46,XX tem testículos e fenótipo masculino.",
+              "enunciado": "Qual gene foi transferido para o X?",
               "opcoes": [
                 "SRY",
                 "BRCA1",
@@ -3333,7 +3352,7 @@
                 "FMR1"
               ],
               "resposta": "SRY",
-              "explicacao": "Sem ele, a gônada vira ovário.",
+              "explicacao": "O SRY faz a gônada virar testículo.",
               "revisado": false
             },
             {
@@ -3407,8 +3426,9 @@
             },
             {
               "id": "histo-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual substância no sangue materno se eleva nos defeitos abertos do tubo neural?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 16 semanas faz triagem no sangue; o bebê tem espinha bífida aberta.",
+              "enunciado": "Qual marcador estará alto?",
               "opcoes": [
                 "Alfafetoproteína",
                 "Beta-HCG",
@@ -3437,34 +3457,36 @@
             {
               "id": "histo-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A suplementação de ácido fólico antes da gestação reduz os defeitos do tubo neural.",
-              "resposta": true,
-              "explicacao": "Mulheres com filho afetado anterior usam dose maior.",
+              "enunciado": "Mulher que já teve filho com anencefalia deve usar a mesma dose de ácido fólico das outras gestantes.",
+              "resposta": false,
+              "explicacao": "Falso. Ela usa dose maior, iniciada antes da gestação.",
               "revisado": false
             },
             {
               "id": "histo-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na ___, o cérebro não se divide em dois hemisférios, podendo haver olho único.",
+              "tipo": "caso_clinico",
+              "caso": "Feto com trissomia do 13 tem olho único e cérebro sem divisão em hemisférios.",
+              "enunciado": "Qual é a malformação?",
               "opcoes": [
-                "holoprosencefalia",
-                "anencefalia",
-                "hidranencefalia",
-                "agenesia do corpo caloso"
+                "Holoprosencefalia",
+                "Anencefalia",
+                "Hidranencefalia",
+                "Agenesia isolada do corpo caloso"
               ],
-              "resposta": "holoprosencefalia",
-              "explicacao": "Está ligada à trissomia do 13.",
+              "resposta": "Holoprosencefalia",
+              "explicacao": "Falha da divisão do prosencéfalo.",
               "revisado": false
             },
             {
               "id": "histo-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual malformação tem vermis cerebelar ausente e quarto ventrículo dilatado em cisto?",
+              "tipo": "caso_clinico",
+              "caso": "Lactente com cabeça grande tem vermis cerebelar ausente e quarto ventrículo em cisto.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Dandy-Walker",
                 "Chiari tipo I",
                 "Anencefalia",
-                "Espinha bífida"
+                "Espinha bífida oculta lombar"
               ],
               "resposta": "Dandy-Walker",
               "explicacao": "Costuma causar hidrocefalia.",
@@ -3533,8 +3555,9 @@
             },
             {
               "id": "histo-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o período de maior risco para malformações graves?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tomou um remédio teratogênico e quer saber o risco de malformação grave.",
+              "enunciado": "Em qual período o risco é maior?",
               "opcoes": [
                 "Da 3ª à 8ª semana",
                 "No último mês",
@@ -3542,7 +3565,7 @@
                 "Após 20 semanas de gestação"
               ],
               "resposta": "Da 3ª à 8ª semana",
-              "explicacao": "Na primeira e segunda semanas, vale o tudo ou nada.",
+              "explicacao": "Na primeira e segunda semanas vale o tudo ou nada.",
               "revisado": false
             },
             {
@@ -3563,29 +3586,31 @@
             {
               "id": "histo-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os inibidores da ECA na gestação podem causar lesão nos rins do feto.",
-              "resposta": true,
-              "explicacao": "Eles são contraindicados na gravidez.",
+              "enunciado": "Gestante hipertensa pode manter enalapril no segundo trimestre, pois ele não afeta o feto.",
+              "resposta": false,
+              "explicacao": "Falso. Os inibidores da ECA lesam os rins do feto e são contraindicados.",
               "revisado": false
             },
             {
               "id": "histo-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A rubéola na gestação pode causar a tríade de catarata, surdez e defeito ___.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê tem catarata e surdez; a mãe teve manchas vermelhas no início da gravidez.",
+              "enunciado": "Qual outro defeito completa a tríade?",
               "opcoes": [
-                "cardíaco",
-                "renal",
-                "ósseo",
-                "intestinal"
+                "Cardíaco",
+                "Renal",
+                "Ósseo",
+                "Intestinal com atresia"
               ],
-              "resposta": "cardíaco",
-              "explicacao": "A vacinação antes da gestação previne.",
+              "resposta": "Cardíaco",
+              "explicacao": "É a rubéola congênita; a vacinação antes da gestação previne.",
               "revisado": false
             },
             {
               "id": "histo-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico na gestação mancha os dentes e afeta os ossos do feto?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante quer tratar acne com antibiótico.",
+              "enunciado": "Qual deve ser evitado por manchar dentes e afetar ossos do feto?",
               "opcoes": [
                 "Tetraciclina",
                 "Amoxicilina",
@@ -3593,7 +3618,7 @@
                 "Azitromicina"
               ],
               "resposta": "Tetraciclina",
-              "explicacao": "Por isso é contraindicado.",
+              "explicacao": "É contraindicada na gestação.",
               "revisado": false
             },
             {
@@ -3689,36 +3714,38 @@
             {
               "id": "histo-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na mola completa, o cariótipo costuma ser 46,XX, todo de origem paterna.",
-              "resposta": true,
-              "explicacao": "A mola parcial é triploide.",
+              "enunciado": "Gestante com mola hidatiforme completa terá, no cariótipo da mola, material triploide da mãe e do pai.",
+              "resposta": false,
+              "explicacao": "Falso. A completa costuma ser 46,XX todo paterno; a parcial é que é triploide.",
               "revisado": false
             },
             {
               "id": "histo-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é a membrana que envolve diretamente o feto e o líquido amniótico.",
+              "tipo": "caso_clinico",
+              "caso": "Gestante tem rotura da bolsa e perde líquido.",
+              "enunciado": "Qual membrana envolve diretamente o feto e o líquido?",
               "opcoes": [
-                "âmnio",
-                "córion",
-                "decídua",
-                "alantoide"
+                "Âmnio",
+                "Córion",
+                "Decídua",
+                "Alantoide"
               ],
-              "resposta": "âmnio",
+              "resposta": "Âmnio",
               "explicacao": "O córion fica por fora do âmnio.",
               "revisado": false
             },
             {
               "id": "histo-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que significa pouco líquido amniótico (oligoidrâmnio)?",
+              "tipo": "caso_clinico",
+              "caso": "Ultrassom de 24 semanas mostra quase nenhum líquido amniótico e bolsa íntegra.",
+              "enunciado": "O que investigar?",
               "opcoes": [
-                "Problema nos rins do feto ou na placenta",
-                "Achado sempre normal",
+                "Rins do feto ou placenta",
+                "Nada, é normal",
                 "Diabetes materno",
                 "Atresia de esôfago com dificuldade de engolir"
               ],
-              "resposta": "Problema nos rins do feto ou na placenta",
+              "resposta": "Rins do feto ou placenta",
               "explicacao": "O feto produz o líquido principalmente pela urina.",
               "revisado": false
             },
