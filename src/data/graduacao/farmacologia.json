@@ -1849,16 +1849,17 @@
             },
             {
               "id": "farm-d1-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "A dose de manutenção de um fármaco depende principalmente de qual parâmetro?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com insuficiência renal usa vancomicina e o clearance do remédio caiu pela metade.",
+              "enunciado": "O que ajustar?",
               "opcoes": [
-                "Clearance",
-                "Volume de distribuição",
-                "Apenas a meia-vida",
-                "Apenas a ligação às proteínas"
+                "A dose de manutenção",
+                "A dose de ataque",
+                "Nada, pois só a meia-vida importa",
+                "A ligação do remédio às proteínas do plasma"
               ],
-              "resposta": "Clearance",
-              "explicacao": "Para manter a concentração, é preciso repor o que é eliminado, e a eliminação depende do clearance.",
+              "resposta": "A dose de manutenção",
+              "explicacao": "A dose de manutenção repõe o que é eliminado e depende do clearance; a de ataque depende do volume de distribuição.",
               "revisado": false
             },
             {
@@ -2016,16 +2017,17 @@
             },
             {
               "id": "farm-d1-l2-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual bebida inibe a CYP3A4 do intestino e pode aumentar o nível de alguns remédios?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em sinvastatina passou a tomar um copo de suco de toranja todo dia e teve dor muscular forte.",
+              "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "Suco de toranja (grapefruit)",
-                "Leite integral",
-                "Água de coco",
-                "Chá de camomila com hortelã e gengibre"
+                "O suco inibe a CYP3A4 do intestino",
+                "O suco tem muito potássio",
+                "O suco acelera a eliminação renal",
+                "O suco dilui o remédio no estômago e no intestino"
               ],
-              "resposta": "Suco de toranja (grapefruit)",
-              "explicacao": "O efeito pode durar mais de um dia após o consumo.",
+              "resposta": "O suco inibe a CYP3A4 do intestino",
+              "explicacao": "A inibição aumenta o nível da estatina; o efeito dura mais de um dia.",
               "revisado": false
             },
             {
@@ -2088,16 +2090,17 @@
           "questoes": [
             {
               "id": "farm-d1-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração farmacocinética é típica do idoso?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 82 anos toma diazepam e fica sonolenta por dias após cada dose.",
+              "enunciado": "Qual mudança do idoso explica?",
               "opcoes": [
-                "Menos água e massa magra, mais volume para lipofílicos",
-                "Aumento da função renal",
-                "Aumento da massa muscular",
-                "Metabolismo do fígado mais rápido que no adulto jovem"
+                "Mais gordura, guardando o remédio",
+                "Rim funcionando melhor",
+                "Mais massa muscular",
+                "Fígado metabolizando mais rápido que no jovem"
               ],
-              "resposta": "Menos água e massa magra, mais volume para lipofílicos",
-              "explicacao": "Benzodiazepínicos lipofílicos ficam mais tempo no corpo do idoso.",
+              "resposta": "Mais gordura, guardando o remédio",
+              "explicacao": "O idoso tem menos água e massa magra e mais gordura; remédios lipofílicos ficam mais tempo.",
               "revisado": false
             },
             {
@@ -2165,16 +2168,17 @@
             },
             {
               "id": "farm-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os critérios de ___ listam medicamentos potencialmente inapropriados para idosos.",
+              "tipo": "caso_clinico",
+              "caso": "Médico revisa a receita de um idoso com amitriptilina, diazepam e glibenclamida.",
+              "enunciado": "Qual ferramenta lista remédios inapropriados para idosos?",
               "opcoes": [
-                "Beers",
-                "Jones",
-                "Light",
-                "Centor"
+                "Critérios de Beers",
+                "Critérios de Jones",
+                "Critérios de Light",
+                "Escore de Centor"
               ],
-              "resposta": "Beers",
-              "explicacao": "Os critérios STOPP/START são outra ferramenta usada com o mesmo objetivo.",
+              "resposta": "Critérios de Beers",
+              "explicacao": "Os critérios STOPP/START também são usados.",
               "revisado": false
             },
             {
@@ -2194,16 +2198,17 @@
             },
             {
               "id": "farm-d1-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que recém-nascidos podem ter síndrome do bebê cinzento com cloranfenicol?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido em uso de cloranfenicol fica acinzentado, hipotônico e em choque.",
+              "enunciado": "Por que isso ocorre?",
               "opcoes": [
                 "A conjugação no fígado é imatura",
-                "Têm albumina demais",
+                "Ele tem albumina demais",
                 "O rim é maduro demais",
-                "Não têm gordura para guardar o remédio"
+                "Ele não tem gordura para guardar o remédio"
               ],
               "resposta": "A conjugação no fígado é imatura",
-              "explicacao": "Sem glicuronidação adequada, o fármaco se acumula e causa colapso circulatório.",
+              "explicacao": "Sem glicuronidação, o fármaco se acumula: é a síndrome do bebê cinzento.",
               "revisado": false
             }
           ]
@@ -2277,15 +2282,16 @@
             },
             {
               "id": "farm-d2-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que a nitrofurantoína não serve para tratar pielonefrite?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com febre, dor lombar e pielonefrite pede nitrofurantoína, que usou em cistite.",
+              "enunciado": "Por que não serve?",
               "opcoes": [
-                "Não atinge concentração adequada no rim e no sangue",
+                "Não atinge nível no rim e no sangue",
                 "É muito tóxica para o rim",
                 "Não age contra E. coli",
-                "Só existe na forma venosa e não pode ser dada em casa"
+                "Só existe na forma venosa, para uso no hospital"
               ],
-              "resposta": "Não atinge concentração adequada no rim e no sangue",
+              "resposta": "Não atinge nível no rim e no sangue",
               "explicacao": "Ela se concentra apenas na urina da bexiga.",
               "revisado": false
             },
@@ -2374,8 +2380,9 @@
             },
             {
               "id": "farm-d2-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual mecanismo explica a resistência do MRSA?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com abscesso tem cultura com S. aureus resistente à oxacilina (MRSA).",
+              "enunciado": "Qual mecanismo explica a resistência?",
               "opcoes": [
                 "PBP2a alterada (gene mecA)",
                 "Produção de ESBL",
@@ -2383,7 +2390,7 @@
                 "Perda de porinas na membrana externa"
               ],
               "resposta": "PBP2a alterada (gene mecA)",
-              "explicacao": "A PBP2a tem baixa afinidade por quase todos os betalactâmicos.",
+              "explicacao": "A PBP2a tem baixa afinidade pelos betalactâmicos; usa-se vancomicina, por exemplo.",
               "revisado": false
             },
             {
@@ -2508,8 +2515,9 @@
             },
             {
               "id": "farm-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais antibióticos podem prolongar o QT e causar arritmia?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com QT longo congênito precisa de antibiótico para sinusite.",
+              "enunciado": "Quais devem ser evitados?",
               "opcoes": [
                 "Azitromicina e quinolonas",
                 "Amoxicilina",
@@ -2517,7 +2525,7 @@
                 "Fosfomicina e nitrofurantoína"
               ],
               "resposta": "Azitromicina e quinolonas",
-              "explicacao": "Em quem tem QT longo, a escolha deve ser feita com cuidado.",
+              "explicacao": "Macrolídeos e quinolonas prolongam o QT e podem causar arritmia.",
               "revisado": false
             },
             {
@@ -2574,16 +2582,17 @@
             },
             {
               "id": "farm-d2-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Que exames devem ser acompanhados no uso de aminoglicosídeos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai usar gentamicina por 10 dias.",
+              "enunciado": "O que acompanhar durante o tratamento?",
               "opcoes": [
                 "Creatinina, audição e equilíbrio",
                 "Glicemia capilar",
-                "TSH e T4",
-                "Amilase, lipase e enzimas do fígado toda semana"
+                "TSH e T4 livre",
+                "Amilase e lipase todos os dias"
               ],
               "resposta": "Creatinina, audição e equilíbrio",
-              "explicacao": "O risco aumenta com o tempo de uso e com outras drogas tóxicas ao rim.",
+              "explicacao": "Os aminoglicosídeos são tóxicos para o rim e o ouvido; o risco aumenta com o tempo de uso.",
               "revisado": false
             }
           ]
@@ -2799,9 +2808,9 @@
             {
               "id": "farm-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A amiodarona pode aumentar o nível da varfarina e da digoxina.",
-              "resposta": true,
-              "explicacao": "As doses desses remédios costumam ser reduzidas ao associar.",
+              "enunciado": "Paciente em varfarina e digoxina começa amiodarona; não é preciso ajustar nenhuma dose.",
+              "resposta": false,
+              "explicacao": "Falso. A amiodarona aumenta o nível da varfarina e da digoxina; as doses costumam ser reduzidas.",
               "revisado": false
             },
             {
@@ -2835,16 +2844,17 @@
             },
             {
               "id": "farm-d3-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado do ECG é mais típico da intoxicação digitálica?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa em digoxina tem náusea, visão amarelada e ECG alterado.",
+              "enunciado": "Qual achado do ECG indica intoxicação?",
               "opcoes": [
-                "Taquicardia atrial com bloqueio e extrassístoles",
+                "Taquicardia atrial com bloqueio",
                 "QT longo isolado",
-                "Onda T apiculada e alta",
-                "Supra de ST difuso com infra de PR, como na pericardite aguda"
+                "Onda T apiculada",
+                "Supra de ST difuso com infra de PR, como na pericardite"
               ],
-              "resposta": "Taquicardia atrial com bloqueio e extrassístoles",
-              "explicacao": "A depressão do ST em colher é efeito do digital, e não sinal de intoxicação.",
+              "resposta": "Taquicardia atrial com bloqueio",
+              "explicacao": "O ST em colher é efeito do digital, não intoxicação.",
               "revisado": false
             }
           ]
@@ -2895,8 +2905,9 @@
             },
             {
               "id": "farm-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual anticoagulante é preferido em paciente com prótese valvar mecânica?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com prótese mecânica aórtica pergunta sobre trocar de anticoagulante.",
+              "enunciado": "Qual é o preferido?",
               "opcoes": [
                 "Varfarina",
                 "Rivaroxabana",
@@ -2904,7 +2915,7 @@
                 "Apixabana"
               ],
               "resposta": "Varfarina",
-              "explicacao": "Os anticoagulantes diretos tiveram mais tromboses e sangramentos nesses pacientes.",
+              "explicacao": "Os anticoagulantes diretos tiveram mais tromboses e sangramentos com prótese mecânica.",
               "revisado": false
             },
             {
@@ -3030,8 +3041,9 @@
             },
             {
               "id": "farm-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antídoto é usado na intoxicação por metanol ou etilenoglicol?",
+              "tipo": "caso_clinico",
+              "caso": "Homem bebeu cachaça adulterada e tem visão borrada e acidose grave com ânion gap alto.",
+              "enunciado": "Qual é o antídoto?",
               "opcoes": [
                 "Fomepizol ou etanol",
                 "Naloxona venosa",
@@ -3039,7 +3051,7 @@
                 "Atropina em doses repetidas"
               ],
               "resposta": "Fomepizol ou etanol",
-              "explicacao": "Eles bloqueiam a álcool desidrogenase e impedem a formação dos metabólitos tóxicos.",
+              "explicacao": "Eles bloqueiam a álcool desidrogenase e impedem os metabólitos tóxicos do metanol.",
               "revisado": false
             },
             {
@@ -3157,8 +3169,9 @@
             },
             {
               "id": "farm-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual fármaco tem efeito comprovado na redução do suicídio no transtorno bipolar?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar com várias tentativas de suicídio precisa de estabilizador.",
+              "enunciado": "Qual tem efeito comprovado contra o suicídio?",
               "opcoes": [
                 "Lítio",
                 "Haloperidol",
@@ -3166,7 +3179,7 @@
                 "Bupropiona"
               ],
               "resposta": "Lítio",
-              "explicacao": "Esse é um dos motivos de o lítio continuar sendo primeira linha.",
+              "explicacao": "Por isso o lítio continua sendo primeira linha.",
               "revisado": false
             },
             {
@@ -3187,9 +3200,9 @@
             {
               "id": "farm-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A clozapina é o antipsicótico de escolha na esquizofrenia resistente ao tratamento.",
-              "resposta": true,
-              "explicacao": "Por causa do risco de agranulocitose, exige hemogramas frequentes.",
+              "enunciado": "Na esquizofrenia que não respondeu a dois antipsicóticos, a clozapina é contraindicada.",
+              "resposta": false,
+              "explicacao": "Falso. A clozapina é a escolha na esquizofrenia resistente, com hemogramas frequentes.",
               "revisado": false
             },
             {
@@ -3336,16 +3349,17 @@
             },
             {
               "id": "farm-d4-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O valproato pode causar lesão do fígado, pancreatite e aumento da ___ no sangue.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em valproato fica sonolento e confuso, com enzimas do fígado normais.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "amônia",
-                "ureia",
-                "glicose",
-                "creatinina"
+                "Amônia",
+                "Ureia",
+                "Glicemia",
+                "Creatinina"
               ],
-              "resposta": "amônia",
-              "explicacao": "A hiperamonemia pode causar confusão mesmo com o fígado normal.",
+              "resposta": "Amônia",
+              "explicacao": "O valproato pode causar hiperamonemia mesmo com o fígado normal.",
               "revisado": false
             },
             {
@@ -3419,16 +3433,17 @@
             },
             {
               "id": "farm-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "A partir de qual filtração glomerular a metformina deve ser suspensa?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético em metformina tem filtração glomerular de 25 mL/min.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Abaixo de 30 mL/min",
-                "Abaixo de 90 mL/min",
-                "Nunca precisa suspender",
-                "Com creatinina de 1,0 mg/dL"
+                "Suspender a metformina",
+                "Manter a dose",
+                "Dobrar a dose",
+                "Manter, pois a metformina nunca precisa ser suspensa"
               ],
-              "resposta": "Abaixo de 30 mL/min",
-              "explicacao": "Entre 30 e 45, a dose costuma ser reduzida.",
+              "resposta": "Suspender a metformina",
+              "explicacao": "Abaixo de 30, suspende-se; entre 30 e 45, reduz-se a dose.",
               "revisado": false
             },
             {
@@ -3546,8 +3561,9 @@
             },
             {
               "id": "farm-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual suplemento acompanha o metotrexato para reduzir efeitos adversos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com artrite reumatoide em metotrexato tem feridas na boca e náuseas.",
+              "enunciado": "Qual suplemento reduz esses efeitos?",
               "opcoes": [
                 "Ácido fólico",
                 "Vitamina C",
@@ -3576,9 +3592,9 @@
             {
               "id": "farm-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Antes de iniciar um anti-TNF, deve-se rastrear tuberculose latente e hepatite B.",
-              "resposta": true,
-              "explicacao": "A hepatite B pode se reativar de forma grave durante a imunossupressão.",
+              "enunciado": "Antes do anti-TNF, basta rastrear tuberculose; hepatite B não precisa ser pesquisada.",
+              "resposta": false,
+              "explicacao": "Falso. A hepatite B pode se reativar de forma grave e também deve ser rastreada.",
               "revisado": false
             },
             {
@@ -3598,16 +3614,17 @@
             },
             {
               "id": "farm-d5-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o corticoide com maior efeito mineralocorticoide entre os usados na clínica.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com doença de Addison usa hidrocortisona, mas segue com pressão baixa e potássio alto.",
+              "enunciado": "Qual remédio repõe a aldosterona?",
               "opcoes": [
-                "fludrocortisona",
-                "dexametasona",
-                "metilprednisolona",
-                "budesonida"
+                "Fludrocortisona",
+                "Dexametasona",
+                "Metilprednisolona",
+                "Budesonida"
               ],
-              "resposta": "fludrocortisona",
-              "explicacao": "Ela é usada na doença de Addison para repor a aldosterona.",
+              "resposta": "Fludrocortisona",
+              "explicacao": "A fludrocortisona tem o maior efeito mineralocorticoide.",
               "revisado": false
             },
             {
@@ -3658,8 +3675,9 @@
             },
             {
               "id": "farm-d5-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medicamento previne a cistite hemorrágica da ciclofosfamida?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai receber ciclofosfamida em dose alta.",
+              "enunciado": "Qual remédio previne a cistite hemorrágica?",
               "opcoes": [
                 "Mesna",
                 "Leucovorina",
@@ -3667,7 +3685,7 @@
                 "Amifostina"
               ],
               "resposta": "Mesna",
-              "explicacao": "O dexrazoxano é usado para proteger o coração das antraciclinas.",
+              "explicacao": "O dexrazoxano protege o coração das antraciclinas.",
               "revisado": false
             },
             {
@@ -3724,16 +3742,17 @@
             },
             {
               "id": "farm-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a profilaxia de náuseas na quimioterapia altamente emetogênica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai receber cisplatina, altamente emetogênica.",
+              "enunciado": "Qual é a profilaxia de náuseas?",
               "opcoes": [
-                "5-HT3, NK1 e dexametasona, com ou sem olanzapina",
+                "Bloqueador 5-HT3, NK1 e dexametasona",
                 "Apenas metoclopramida",
                 "Apenas omeprazol",
-                "Apenas ondansetrona na hora do vômito, sem profilaxia"
+                "Ondansetrona só se vomitar, sem profilaxia"
               ],
-              "resposta": "5-HT3, NK1 e dexametasona, com ou sem olanzapina",
-              "explicacao": "Prevenir é mais eficaz que tratar o vômito depois.",
+              "resposta": "Bloqueador 5-HT3, NK1 e dexametasona",
+              "explicacao": "Pode-se somar olanzapina; prevenir é melhor que tratar depois.",
               "revisado": false
             },
             {
