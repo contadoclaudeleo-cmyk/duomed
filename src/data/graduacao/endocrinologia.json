@@ -1863,13 +1863,14 @@
             },
             {
               "id": "endo-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a dose inicial comum de insulina basal no diabetes tipo 2?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tipo 2 de 80 kg, com metformina e glicada de 10%, vai iniciar insulina NPH à noite.",
+              "enunciado": "Qual é a dose inicial comum?",
               "opcoes": [
                 "10 UI ou 0,1 a 0,2 UI/kg",
                 "100 unidades",
                 "1 unidade",
-                "50 unidades por quilo de peso, uma vez ao dia"
+                "50 unidades por quilo, uma vez ao dia"
               ],
               "resposta": "10 UI ou 0,1 a 0,2 UI/kg",
               "explicacao": "O ajuste é feito pela glicemia de jejum.",
@@ -1900,30 +1901,32 @@
             },
             {
               "id": "endo-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O monitoramento ___ de glicose usa um sensor na pele que mede a glicose o dia todo.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com diabetes tipo 1 tem hipoglicemias noturnas que não percebe.",
+              "enunciado": "Qual tecnologia ajuda a detectar?",
               "opcoes": [
-                "contínuo",
-                "ocasional",
-                "urinário",
-                "capilar"
+                "Monitor contínuo de glicose",
+                "Glicemia só ocasional",
+                "Teste de glicose na urina",
+                "Glicemia capilar uma vez ao dia"
               ],
-              "resposta": "contínuo",
-              "explicacao": "Ajuda a ver hipoglicemias escondidas.",
+              "resposta": "Monitor contínuo de glicose",
+              "explicacao": "O sensor na pele mede a glicose o dia todo.",
               "revisado": false
             },
             {
               "id": "endo-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a vantagem dos análogos de insulina de longa ação?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa NPH e tem hipoglicemia de madrugada.",
+              "enunciado": "Qual é a vantagem de trocar por análogo de longa ação?",
               "opcoes": [
                 "Menos hipoglicemia noturna",
-                "São mais baratos",
-                "Duram 1 semana",
-                "Não precisam de nenhum ajuste de dose ao longo da vida"
+                "É mais barato",
+                "Dura 1 semana",
+                "Dispensa qualquer ajuste de dose"
               ],
               "resposta": "Menos hipoglicemia noturna",
-              "explicacao": "A glargina e a degludeca são exemplos.",
+              "explicacao": "Glargina e degludeca são exemplos.",
               "revisado": false
             },
             {
@@ -1989,16 +1992,17 @@
             },
             {
               "id": "endo-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o critério de resolução da cetoacidose?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cetoacidose após 14 horas de tratamento: glicose 170, pH 7,33, bicarbonato 16, gap 11.",
+              "enunciado": "Como interpretar?",
               "opcoes": [
-                "Glicose < 200 e bicarbonato, pH ou gap normalizados",
-                "Só glicose normal",
-                "Só melhora do vômito",
-                "Quando o paciente pedir para comer, independentemente dos exames de sangue"
+                "Cetoacidose resolvida",
+                "Ainda grave, manter tudo",
+                "Só falta a glicose normalizar",
+                "Resolve quando ele pedir comida"
               ],
-              "resposta": "Glicose < 200 e bicarbonato, pH ou gap normalizados",
-              "explicacao": "Depois se passa para insulina subcutânea.",
+              "resposta": "Cetoacidose resolvida",
+              "explicacao": "Glicose abaixo de 200 com bicarbonato, pH ou gap normalizados define a resolução.",
               "revisado": false
             },
             {
@@ -2019,9 +2023,9 @@
             {
               "id": "endo-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Ao passar da insulina venosa para a subcutânea, deve-se sobrepor por 1 a 2 horas.",
-              "resposta": true,
-              "explicacao": "Evita que a cetoacidose volte.",
+              "enunciado": "Ao passar da insulina venosa para a subcutânea, deve-se desligar a venosa antes de aplicar a subcutânea.",
+              "resposta": false,
+              "explicacao": "Falso. Deve-se sobrepor por 1 a 2 horas para a cetoacidose não voltar.",
               "revisado": false
             },
             {
@@ -2040,16 +2044,17 @@
             },
             {
               "id": "endo-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de corrigir a glicose rápido demais no estado hiperosmolar?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso em estado hiperosmolar tem glicose de 1.000 e a equipe quer baixar para 150 em 2 horas.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
                 "Edema cerebral",
                 "Hipertensão",
                 "Febre",
-                "Risco nenhum; quanto mais rápido, melhor"
+                "Nenhum, quanto mais rápido melhor"
               ],
               "resposta": "Edema cerebral",
-              "explicacao": "A queda deve ser gradual.",
+              "explicacao": "A queda da glicose e da osmolalidade deve ser gradual.",
               "revisado": false
             },
             {
@@ -2115,15 +2120,16 @@
             },
             {
               "id": "endo-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da retinopatia diabética proliferativa?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético tem neovasos na retina e sangramento no vítreo.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Laser ou injeção anti-VEGF",
+                "Laser ou anti-VEGF",
                 "Óculos",
-                "Colírio",
-                "Exercícios para os olhos e vitamina A em dose alta"
+                "Colírio lubrificante",
+                "Exercícios para os olhos e vitamina A"
               ],
-              "resposta": "Laser ou injeção anti-VEGF",
+              "resposta": "Laser ou anti-VEGF",
               "explicacao": "O controle da glicose também é essencial.",
               "revisado": false
             },
@@ -2145,37 +2151,39 @@
             {
               "id": "endo-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A dor da neuropatia diabética pode ser tratada com pregabalina ou duloxetina.",
-              "resposta": true,
-              "explicacao": "Também com amitriptilina.",
+              "enunciado": "A dor da neuropatia diabética não responde a remédios e só melhora com opioide forte.",
+              "resposta": false,
+              "explicacao": "Falso. Pregabalina, duloxetina e amitriptilina são opções eficazes.",
               "revisado": false
             },
             {
               "id": "endo-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O pé de ___ é a destruição das articulações do pé por neuropatia.",
+              "tipo": "caso_clinico",
+              "caso": "Diabético com neuropatia tem pé quente, inchado e deformado, sem ferida nem febre.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Charcot",
-                "Morton",
-                "Hallux",
-                "Paget"
+                "Pé de Charcot",
+                "Neuroma de Morton",
+                "Hálux valgo",
+                "Doença de Paget"
               ],
-              "resposta": "Charcot",
-              "explicacao": "Precisa de imobilização.",
+              "resposta": "Pé de Charcot",
+              "explicacao": "É a destruição das articulações por neuropatia e precisa de imobilização.",
               "revisado": false
             },
             {
               "id": "endo-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia a doença renal do diabetes precocemente?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético há 5 anos faz exames anuais.",
+              "enunciado": "Qual exame detecta cedo a doença renal do diabetes?",
               "opcoes": [
-                "Relação albumina e creatinina na urina",
-                "Ultrassom",
-                "Biópsia",
-                "Raio X simples de abdome em pé e deitado"
+                "Albumina na urina",
+                "Ultrassom renal",
+                "Biópsia renal",
+                "Raio X simples de abdome em pé"
               ],
-              "resposta": "Relação albumina e creatinina na urina",
-              "explicacao": "Deve ser feito todo ano.",
+              "resposta": "Albumina na urina",
+              "explicacao": "Mede-se a relação albumina/creatinina na urina todo ano, junto com a creatinina.",
               "revisado": false
             },
             {
@@ -2249,8 +2257,9 @@
             },
             {
               "id": "endo-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual suplemento pode alterar os exames da tireoide?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher sem sintomas tem TSH baixo e T4 alto, mas toma suplemento para cabelo e unhas.",
+              "enunciado": "Qual suplemento pode alterar o exame?",
               "opcoes": [
                 "Biotina",
                 "Vitamina C",
@@ -2258,7 +2267,7 @@
                 "Ômega 3"
               ],
               "resposta": "Biotina",
-              "explicacao": "Interfere no método do laboratório.",
+              "explicacao": "A biotina interfere no método do laboratório; suspender e repetir.",
               "revisado": false
             },
             {
@@ -2279,37 +2288,39 @@
             {
               "id": "endo-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na tireoidite pós-parto, pode haver hipertireoidismo seguido de hipotireoidismo.",
-              "resposta": true,
-              "explicacao": "Ocorre no primeiro ano após o parto.",
+              "enunciado": "Na tireoidite pós-parto, o hipotireoidismo sempre vem antes do hipertireoidismo.",
+              "resposta": false,
+              "explicacao": "Falso. Costuma haver hipertireoidismo primeiro e depois hipotireoidismo, no primeiro ano após o parto.",
               "revisado": false
             },
             {
               "id": "endo-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A amiodarona pode causar hipotireoidismo ou ___ por ter muito iodo.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em amiodarona há 2 anos tem palpitação, perda de peso e TSH suprimido.",
+              "enunciado": "O que a amiodarona causou?",
               "opcoes": [
-                "hipertireoidismo",
-                "diabetes",
-                "anemia",
-                "gota com crises frequentes"
+                "Hipertireoidismo",
+                "Diabetes tipo 2",
+                "Anemia",
+                "Gota com crises"
               ],
-              "resposta": "hipertireoidismo",
-              "explicacao": "Deve-se monitorar a tireoide.",
+              "resposta": "Hipertireoidismo",
+              "explicacao": "Por ter muito iodo, ela pode causar hipo ou hipertireoidismo.",
               "revisado": false
             },
             {
               "id": "endo-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a captação na cintilografia na tireoidite?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com dor no pescoço após gripe tem hipertireoidismo e VHS alto.",
+              "enunciado": "Como estará a captação na cintilografia?",
               "opcoes": [
                 "Baixa",
                 "Aumentada",
                 "Normal",
-                "Muito alta e difusa, como na doença de Graves"
+                "Muito alta e difusa"
               ],
               "resposta": "Baixa",
-              "explicacao": "Na Graves, a captação é alta.",
+              "explicacao": "Na tireoidite a captação é baixa; na Graves, alta.",
               "revisado": false
             },
             {
@@ -2375,16 +2386,17 @@
             },
             {
               "id": "endo-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que o propiltiouracil é preferido no primeiro trimestre da gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 8 semanas com Graves precisa de antitireoidiano.",
+              "enunciado": "Por que se prefere o propiltiouracil agora?",
               "opcoes": [
-                "O metimazol pode malformar o bebê",
+                "Menos malformação",
                 "É mais forte",
                 "Não passa a placenta",
-                "É mais barato e pode ser tomado só uma vez por semana"
+                "É mais barato e tomado uma vez por semana"
               ],
-              "resposta": "O metimazol pode malformar o bebê",
-              "explicacao": "Depois se troca para metimazol.",
+              "resposta": "Menos malformação",
+              "explicacao": "O metimazol pode malformar no primeiro trimestre; depois, troca-se para ele.",
               "revisado": false
             },
             {
@@ -2412,16 +2424,17 @@
             },
             {
               "id": "endo-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O mixedema ___ é um espessamento da pele na frente das pernas na doença de Graves.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com doença de Graves tem placas grossas e endurecidas na frente das pernas.",
+              "enunciado": "Qual é o achado?",
               "opcoes": [
-                "pré-tibial",
-                "facial",
-                "palmar",
-                "abdominal difuso"
+                "Mixedema pré-tibial",
+                "Celulite",
+                "Edema por insuficiência cardíaca",
+                "Erisipela de repetição"
               ],
-              "resposta": "pré-tibial",
-              "explicacao": "É raro.",
+              "resposta": "Mixedema pré-tibial",
+              "explicacao": "É manifestação rara da doença de Graves.",
               "revisado": false
             },
             {
@@ -2501,8 +2514,9 @@
             },
             {
               "id": "endo-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual marcador é usado no seguimento do câncer papilífero após tireoidectomia total?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente operada de câncer papilífero, com tireoidectomia total, faz seguimento.",
+              "enunciado": "Qual marcador acompanhar?",
               "opcoes": [
                 "Tireoglobulina",
                 "Calcitonina",
@@ -2510,7 +2524,7 @@
                 "PSA total e livre"
               ],
               "resposta": "Tireoglobulina",
-              "explicacao": "Deve ficar indetectável.",
+              "explicacao": "Deve ficar indetectável; a calcitonina é do câncer medular.",
               "revisado": false
             },
             {
@@ -2552,15 +2566,16 @@
             },
             {
               "id": "endo-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual complicação da tireoidectomia causa rouquidão?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher fica rouca após tireoidectomia.",
+              "enunciado": "Qual complicação explica?",
               "opcoes": [
-                "Lesão do nervo laríngeo recorrente",
+                "Lesão do laríngeo recorrente",
                 "Hipocalcemia",
-                "Infecção",
-                "Sangramento leve na ferida que melhora com compressão"
+                "Infecção da ferida",
+                "Sangramento leve na ferida"
               ],
-              "resposta": "Lesão do nervo laríngeo recorrente",
+              "resposta": "Lesão do laríngeo recorrente",
               "explicacao": "A laringoscopia avalia as cordas vocais.",
               "revisado": false
             },
@@ -2635,16 +2650,17 @@
             },
             {
               "id": "endo-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tumor causa síndrome de Cushing por ACTH ectópico?",
+              "tipo": "caso_clinico",
+              "caso": "Fumante com perda de peso tem Cushing de evolução rápida, potássio baixo e ACTH muito alto.",
+              "enunciado": "Qual tumor suspeitar?",
               "opcoes": [
-                "Pulmão de pequenas células e carcinoides",
+                "Pulmão de pequenas células",
                 "Adenoma de tireoide",
                 "Câncer de pele",
-                "Lipoma grande nas costas, que produz cortisol em excesso"
+                "Lipoma grande nas costas"
               ],
-              "resposta": "Pulmão de pequenas células e carcinoides",
-              "explicacao": "O quadro costuma ser rápido e grave.",
+              "resposta": "Pulmão de pequenas células",
+              "explicacao": "Carcinoides também produzem ACTH ectópico.",
               "revisado": false
             },
             {
@@ -2672,29 +2688,31 @@
             },
             {
               "id": "endo-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste de supressão com ___ 1 mg à noite é usado na triagem de Cushing.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher obesa com estrias violáceas e hipertensão faz triagem de Cushing.",
+              "enunciado": "Qual teste pode ser usado?",
               "opcoes": [
-                "dexametasona",
-                "prednisona",
-                "insulina",
-                "glicose em jejum"
+                "Dexametasona 1 mg à noite",
+                "Prednisona em dose alta",
+                "Curva de insulina",
+                "Glicose de jejum e hemoglobina glicada"
               ],
-              "resposta": "dexametasona",
-              "explicacao": "Cortisol que não cai sugere Cushing.",
+              "resposta": "Dexametasona 1 mg à noite",
+              "explicacao": "Cortisol que não cai pela manhã sugere Cushing.",
               "revisado": false
             },
             {
               "id": "endo-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da doença de Cushing?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Cushing tem ACTH alto e tumor de 7 mm na hipófise.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Cirurgia da hipófise por via nasal",
+                "Cirurgia da hipófise pelo nariz",
                 "Corticoide",
-                "Iodo",
-                "Retirada das duas suprarrenais como primeira escolha em todos os casos"
+                "Iodo radioativo",
+                "Retirar as duas adrenais como primeira escolha"
               ],
-              "resposta": "Cirurgia da hipófise por via nasal",
+              "resposta": "Cirurgia da hipófise pelo nariz",
               "explicacao": "Remédios são usados se a cirurgia falhar.",
               "revisado": false
             },
@@ -2761,16 +2779,17 @@
             },
             {
               "id": "endo-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado antes da cirurgia de feocromocitoma?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com feocromocitoma vai operar em 2 semanas.",
+              "enunciado": "Como preparar?",
               "opcoes": [
-                "Bloqueio alfa por 1 a 2 semanas antes do beta",
+                "Alfabloqueador antes do beta",
                 "Betabloqueador primeiro",
                 "Diurético",
-                "Operar logo, sem preparo, porque o remédio atrasa a cirurgia"
+                "Operar logo, sem nenhum preparo"
               ],
-              "resposta": "Bloqueio alfa por 1 a 2 semanas antes do beta",
-              "explicacao": "O betabloqueador sozinho pode causar crise grave.",
+              "resposta": "Alfabloqueador antes do beta",
+              "explicacao": "O betabloqueador sozinho pode causar crise hipertensiva grave.",
               "revisado": false
             },
             {
@@ -2791,34 +2810,36 @@
             {
               "id": "endo-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A causa mais comum de insuficiência adrenal primária em países ricos é autoimune.",
-              "resposta": true,
-              "explicacao": "No Brasil, infecções como tuberculose e paracoccidioidomicose também são causas.",
+              "enunciado": "No Brasil, só causas autoimunes levam à insuficiência adrenal primária.",
+              "resposta": false,
+              "explicacao": "Falso. Infecções como tuberculose e paracoccidioidomicose também são causas importantes.",
               "revisado": false
             },
             {
               "id": "endo-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste de estímulo com ___ avalia a capacidade da suprarrenal de produzir cortisol.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com cansaço e pele escura tem cortisol baixo pela manhã.",
+              "enunciado": "Qual teste confirma insuficiência adrenal?",
               "opcoes": [
-                "ACTH (cortrosina)",
-                "glicose",
-                "insulina",
-                "dexametasona em dose alta à noite"
+                "Estímulo com ACTH",
+                "Curva glicêmica",
+                "Teste com insulina",
+                "Dexametasona em dose alta à noite"
               ],
-              "resposta": "ACTH (cortrosina)",
-              "explicacao": "Cortisol abaixo de 18 sugere insuficiência.",
+              "resposta": "Estímulo com ACTH",
+              "explicacao": "Cortisol abaixo de 18 após a cortrosina sugere insuficiência.",
               "revisado": false
             },
             {
               "id": "endo-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a reposição na insuficiência adrenal primária?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Addison tem sódio baixo e potássio alto.",
+              "enunciado": "Qual é a reposição?",
               "opcoes": [
                 "Hidrocortisona e fludrocortisona",
                 "Só levotiroxina",
                 "Insulina",
-                "Só soro fisiológico e sal na comida, sem nenhum hormônio"
+                "Só soro e sal na comida, sem hormônio"
               ],
               "resposta": "Hidrocortisona e fludrocortisona",
               "explicacao": "A fludrocortisona repõe a aldosterona.",
@@ -2887,16 +2908,17 @@
             },
             {
               "id": "endo-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o efeito gancho na dosagem de prolactina?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com tumor de hipófise de 5 cm tem prolactina de 50, baixa para o tamanho.",
+              "enunciado": "O que pode explicar?",
               "opcoes": [
-                "Prolactina falsamente baixa em tumor grande",
-                "Prolactina alta por estresse",
-                "Erro de coleta",
-                "Prolactina alta causada por remédio para enjoo e refluxo"
+                "Efeito gancho",
+                "Estresse da coleta",
+                "Erro de laboratório comum",
+                "Remédio para enjoo"
               ],
-              "resposta": "Prolactina falsamente baixa em tumor grande",
-              "explicacao": "Dilui-se a amostra para corrigir.",
+              "resposta": "Efeito gancho",
+              "explicacao": "Em tumores grandes, a prolactina vem falsamente baixa; diluir a amostra.",
               "revisado": false
             },
             {
@@ -2917,37 +2939,39 @@
             {
               "id": "endo-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A acromegalia aumenta o risco de pólipos e câncer de cólon.",
-              "resposta": true,
-              "explicacao": "A colonoscopia é recomendada.",
+              "enunciado": "Paciente com acromegalia tem risco de câncer de cólon igual ao da população.",
+              "resposta": false,
+              "explicacao": "Falso. Há mais pólipos e câncer de cólon; a colonoscopia é recomendada.",
               "revisado": false
             },
             {
               "id": "endo-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a falta de vários hormônios da hipófise.",
+              "tipo": "caso_clinico",
+              "caso": "Após cirurgia de tumor de hipófise, a paciente tem falta de cortisol, tireoide e hormônios sexuais.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "pan-hipopituitarismo",
-                "acromegalia",
-                "prolactinoma",
-                "síndrome de Cushing"
+                "Pan-hipopituitarismo",
+                "Acromegalia",
+                "Prolactinoma",
+                "Síndrome de Cushing"
               ],
-              "resposta": "pan-hipopituitarismo",
+              "resposta": "Pan-hipopituitarismo",
               "explicacao": "A reposição começa pelo cortisol.",
               "revisado": false
             },
             {
               "id": "endo-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que se repõe cortisol antes da levotiroxina no pan-hipopituitarismo?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pan-hipopituitarismo recebeu levotiroxina primeiro e ficou em choque.",
+              "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "A levotiroxina pode precipitar crise adrenal",
-                "Por costume",
-                "Para baratear",
-                "A ordem não importa, porque os dois hormônios agem de forma independente"
+                "Precipitou crise adrenal",
+                "Alergia à levotiroxina",
+                "Excesso de iodo",
+                "Efeito comum e esperado"
               ],
-              "resposta": "A levotiroxina pode precipitar crise adrenal",
-              "explicacao": "O hormônio de tireoide acelera o uso do cortisol.",
+              "resposta": "Precipitou crise adrenal",
+              "explicacao": "O hormônio de tireoide acelera o uso do cortisol; por isso repõe-se cortisol antes.",
               "revisado": false
             },
             {
@@ -3021,16 +3045,17 @@
             },
             {
               "id": "endo-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame localiza o adenoma de paratireoide antes da cirurgia?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com hiperparatireoidismo primário vai operar.",
+              "enunciado": "Qual exame localiza o adenoma?",
               "opcoes": [
-                "Cintilografia com sestamibi e ultrassom",
-                "Raio X",
+                "Cintilografia com sestamibi",
+                "Raio X de pescoço",
                 "Hemograma",
-                "Tomografia de crânio com contraste e ressonância de sela"
+                "Tomografia de crânio com contraste"
               ],
-              "resposta": "Cintilografia com sestamibi e ultrassom",
-              "explicacao": "A localização permite cirurgia menor.",
+              "resposta": "Cintilografia com sestamibi",
+              "explicacao": "Junto com o ultrassom, permite cirurgia menor.",
               "revisado": false
             },
             {
@@ -3051,37 +3076,39 @@
             {
               "id": "endo-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A calcitonina reduz o cálcio rápido, mas o efeito dura pouco.",
-              "resposta": true,
-              "explicacao": "Usa-se junto com bisfosfonato.",
+              "enunciado": "Na hipercalcemia grave, a calcitonina sozinha mantém o cálcio baixo por semanas.",
+              "resposta": false,
+              "explicacao": "Falso. Reduz rápido, mas o efeito dura pouco; usa-se junto com bisfosfonato.",
               "revisado": false
             },
             {
               "id": "endo-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é um anticorpo que inibe os osteoclastos e trata hipercalcemia e osteoporose.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer e hipercalcemia não pode usar bisfosfonato por doença renal.",
+              "enunciado": "Qual anticorpo inibe os osteoclastos?",
               "opcoes": [
-                "denosumabe",
-                "rituximabe",
-                "infliximabe",
-                "trastuzumabe"
+                "Denosumabe",
+                "Rituximabe",
+                "Infliximabe",
+                "Trastuzumabe"
               ],
-              "resposta": "denosumabe",
-              "explicacao": "Age bloqueando o RANKL.",
+              "resposta": "Denosumabe",
+              "explicacao": "Ele bloqueia o RANKL e também trata osteoporose.",
               "revisado": false
             },
             {
               "id": "endo-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco do cálcio muito alto no coração?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com cálcio de 15 faz ECG.",
+              "enunciado": "Qual alteração é esperada?",
               "opcoes": [
-                "QT curto e arritmias",
+                "QT curto",
                 "QT longo",
-                "Infarto sempre",
-                "Efeito nenhum sobre o coração"
+                "Supra de ST",
+                "Onda U grande"
               ],
-              "resposta": "QT curto e arritmias",
-              "explicacao": "O cálcio alto encurta o QT.",
+              "resposta": "QT curto",
+              "explicacao": "O cálcio alto encurta o QT e pode causar arritmias.",
               "revisado": false
             },
             {
@@ -3147,15 +3174,16 @@
             },
             {
               "id": "endo-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual efeito raro dos bisfosfonatos afeta a mandíbula?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com mieloma em ácido zoledrônico tem osso exposto na boca após extração dentária.",
+              "enunciado": "Qual é a complicação?",
               "opcoes": [
-                "Osteonecrose de mandíbula",
+                "Osteonecrose da mandíbula",
                 "Fratura de crânio",
-                "Gengivite",
+                "Gengivite comum",
                 "Cárie em todos os dentes"
               ],
-              "resposta": "Osteonecrose de mandíbula",
+              "resposta": "Osteonecrose da mandíbula",
               "explicacao": "É mais comum em doses altas para câncer.",
               "revisado": false
             },
@@ -3177,19 +3205,20 @@
             {
               "id": "endo-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Ao parar o denosumabe, há risco de perda óssea rápida e fraturas.",
-              "resposta": true,
-              "explicacao": "Deve-se fazer transição para bisfosfonato.",
+              "enunciado": "O denosumabe pode ser suspenso de uma vez, sem risco.",
+              "resposta": false,
+              "explicacao": "Falso. Ao parar, há perda óssea rápida e fraturas; faz-se transição para bisfosfonato.",
               "revisado": false
             },
             {
               "id": "endo-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O escore ___ estima o risco de fratura em 10 anos.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 65 anos com densitometria limítrofe quer saber o risco de fratura.",
+              "enunciado": "Qual escore estima o risco em 10 anos?",
               "opcoes": [
                 "FRAX",
                 "MELD",
-                "CURB",
+                "CURB-65",
                 "Wells"
               ],
               "resposta": "FRAX",
@@ -3198,16 +3227,17 @@
             },
             {
               "id": "endo-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia a vitamina D no sangue?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com osteoporose vai avaliar a vitamina D.",
+              "enunciado": "Qual exame mostra as reservas?",
               "opcoes": [
                 "25-hidroxivitamina D",
-                "1,25-hidroxivitamina D",
+                "1,25-di-hidroxivitamina D",
                 "PTH",
-                "Cálcio"
+                "Cálcio total"
               ],
               "resposta": "25-hidroxivitamina D",
-              "explicacao": "Reflete as reservas do corpo.",
+              "explicacao": "A forma ativa pode estar normal mesmo com falta de vitamina D.",
               "revisado": false
             },
             {
@@ -3273,13 +3303,14 @@
             },
             {
               "id": "endo-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da hipocalcemia grave com tetania?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher após tireoidectomia tem cãibras, formigamento e espasmo das mãos, com cálcio de 6,5.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Gluconato de cálcio venoso",
                 "Cálcio oral apenas",
                 "Vitamina C",
-                "Observar e repetir exames no dia seguinte"
+                "Observar e repetir amanhã"
               ],
               "resposta": "Gluconato de cálcio venoso",
               "explicacao": "Depois segue com cálcio oral e vitamina D.",
@@ -3303,37 +3334,39 @@
             {
               "id": "endo-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O pseudo-hipoparatireoidismo tem PTH alto, mas os tecidos não respondem a ele.",
+              "enunciado": "Paciente com cálcio baixo, fósforo alto e PTH alto, com dedos curtos, pode ter pseudo-hipoparatireoidismo.",
               "resposta": true,
-              "explicacao": "Pode ter dedos curtos e baixa estatura.",
+              "explicacao": "Verdadeiro. O PTH é alto, mas os tecidos não respondem.",
               "revisado": false
             },
             {
               "id": "endo-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sinal de ___ é a contração do lábio ao bater no nervo facial na hipocalcemia.",
+              "tipo": "caso_clinico",
+              "caso": "Ao bater no nervo facial, à frente da orelha, o lábio do paciente contrai.",
+              "enunciado": "Qual sinal e qual distúrbio?",
               "opcoes": [
-                "Chvostek",
-                "Trousseau",
-                "Babinski",
-                "Murphy"
+                "Chvostek; hipocalcemia",
+                "Trousseau; hipercalcemia",
+                "Babinski; AVC",
+                "Murphy; colecistite"
               ],
-              "resposta": "Chvostek",
-              "explicacao": "O de Trousseau é no braço.",
+              "resposta": "Chvostek; hipocalcemia",
+              "explicacao": "O sinal de Trousseau é o espasmo da mão com o manguito.",
               "revisado": false
             },
             {
               "id": "endo-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa de raquitismo resistente à vitamina D com fósforo baixo?",
+              "tipo": "caso_clinico",
+              "caso": "Menino com pernas arqueadas tem fósforo baixo e não melhora com vitamina D. O pai tem o mesmo.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Perda de fosfato pelos rins",
+                "Perda renal de fosfato",
                 "Falta de sol",
-                "Falta de cálcio",
-                "Diabetes tipo 1 descompensado na infância"
+                "Falta de cálcio na dieta",
+                "Diabetes tipo 1 de início na infância"
               ],
-              "resposta": "Perda de fosfato pelos rins",
-              "explicacao": "É ligado ao X.",
+              "resposta": "Perda renal de fosfato",
+              "explicacao": "É o raquitismo hipofosfatêmico ligado ao X.",
               "revisado": false
             },
             {
@@ -3407,16 +3440,17 @@
             },
             {
               "id": "endo-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a contraindicação dos agonistas de GLP-1?",
+              "tipo": "caso_clinico",
+              "caso": "Obeso quer usar semaglutida; o pai teve carcinoma medular de tireoide.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Carcinoma medular de tireoide na família",
-                "Diabetes",
-                "Obesidade",
-                "Hipertensão controlada com dois remédios"
+                "Evitar agonista de GLP-1",
+                "Pode usar sem cuidado",
+                "Usar em dose dobrada",
+                "Usar só por um mês e depois parar"
               ],
-              "resposta": "Carcinoma medular de tireoide na família",
-              "explicacao": "Também NEM 2.",
+              "resposta": "Evitar agonista de GLP-1",
+              "explicacao": "História de carcinoma medular ou NEM 2 contraindica.",
               "revisado": false
             },
             {
@@ -3437,9 +3471,9 @@
             {
               "id": "endo-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A obesidade pode ser causada por doenças como hipotireoidismo e síndrome de Cushing.",
-              "resposta": true,
-              "explicacao": "Devem ser investigadas quando houver sinais.",
+              "enunciado": "Na obesidade com estrias violáceas e fraqueza proximal, não é preciso investigar Cushing.",
+              "resposta": false,
+              "explicacao": "Falso. Hipotireoidismo e Cushing devem ser investigados quando há sinais.",
               "revisado": false
             },
             {
@@ -3458,15 +3492,16 @@
             },
             {
               "id": "endo-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual paciente deve fazer cirurgia bariátrica?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com IMC de 37, diabetes e apneia não emagreceu com tratamento clínico.",
+              "enunciado": "Ela tem indicação de cirurgia bariátrica?",
               "opcoes": [
-                "IMC ≥ 40, ou ≥ 35 com doenças, após falha clínica",
-                "Qualquer IMC",
-                "Só crianças",
-                "Qualquer pessoa com IMC acima de 27 que queira emagrecer mais rápido"
+                "Sim, IMC ≥ 35 com doenças",
+                "Não, só com IMC acima de 50",
+                "Não, por ter diabetes",
+                "Sim, qualquer IMC acima de 27"
               ],
-              "resposta": "IMC ≥ 40, ou ≥ 35 com doenças, após falha clínica",
+              "resposta": "Sim, IMC ≥ 35 com doenças",
               "explicacao": "A decisão é multidisciplinar.",
               "revisado": false
             },
@@ -3533,16 +3568,17 @@
             },
             {
               "id": "endo-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do hipogonadismo masculino confirmado sem desejo de fertilidade?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 55 anos com testosterona baixa confirmada e sintomas, sem desejo de ter filhos.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Reposição de testosterona",
                 "Clomifeno sempre",
                 "Corticoide",
-                "Apenas suplementos naturais vendidos em academias"
+                "Suplementos de academia"
               ],
               "resposta": "Reposição de testosterona",
-              "explicacao": "Quem quer ter filhos não deve usar testosterona.",
+              "explicacao": "Quem quer ter filhos não deve usar testosterona, que reduz os espermatozoides.",
               "revisado": false
             },
             {
@@ -3563,37 +3599,39 @@
             {
               "id": "endo-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A falência ovariana prematura ocorre antes dos 40 anos.",
-              "resposta": true,
-              "explicacao": "Exige reposição hormonal.",
+              "enunciado": "Mulher de 36 anos sem menstruar e com FSH alto tem menopausa normal e não precisa de hormônio.",
+              "resposta": false,
+              "explicacao": "Falso. É falência ovariana prematura, antes dos 40, e exige reposição hormonal.",
               "revisado": false
             },
             {
               "id": "endo-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ginecomastia de início rápido com testículo aumentado pode indicar tumor de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 30 anos tem ginecomastia de início rápido e testículo aumentado e endurecido.",
+              "enunciado": "O que investigar?",
               "opcoes": [
-                "testículo",
-                "pulmão",
-                "fígado",
-                "rim esquerdo"
+                "Tumor de testículo",
+                "Tumor de pulmão",
+                "Doença do fígado",
+                "Doença do rim"
               ],
-              "resposta": "testículo",
-              "explicacao": "Alguns produzem hormônios.",
+              "resposta": "Tumor de testículo",
+              "explicacao": "Alguns tumores de testículo produzem hormônios, como beta-hCG.",
               "revisado": false
             },
             {
               "id": "endo-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o efeito da espironolactona no homem?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com cirrose em espironolactona tem aumento das mamas.",
+              "enunciado": "Qual é a explicação?",
               "opcoes": [
-                "Pode causar ginecomastia",
-                "Aumenta testosterona",
-                "Causa calvície",
-                "Efeito nenhum no corpo do homem"
+                "Efeito antiandrogênico",
+                "Aumento da testosterona",
+                "Calvície",
+                "Não tem efeito nenhum no homem"
               ],
-              "resposta": "Pode causar ginecomastia",
-              "explicacao": "Bloqueia os andrógenos.",
+              "resposta": "Efeito antiandrogênico",
+              "explicacao": "A espironolactona bloqueia andrógenos e pode causar ginecomastia.",
               "revisado": false
             },
             {
@@ -3659,16 +3697,17 @@
             },
             {
               "id": "endo-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a tríade de Whipple?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem tremor e confusão em jejum, glicose de 40 e melhora ao comer.",
+              "enunciado": "Qual tríade foi confirmada?",
               "opcoes": [
-                "Sintomas, glicose baixa e melhora com glicose",
-                "Febre, tosse e dor",
-                "Dor, icterícia e febre",
-                "Sede, muita urina, fome e perda de peso em poucas semanas"
+                "Tríade de Whipple",
+                "Tríade de Charcot",
+                "Tríade de Virchow",
+                "Tríade de Cushing"
               ],
-              "resposta": "Sintomas, glicose baixa e melhora com glicose",
-              "explicacao": "Confirma hipoglicemia verdadeira.",
+              "resposta": "Tríade de Whipple",
+              "explicacao": "Sintomas, glicose baixa e melhora com glicose confirmam hipoglicemia verdadeira.",
               "revisado": false
             },
             {
@@ -3689,37 +3728,39 @@
             {
               "id": "endo-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome carcinoide com rubor e diarreia costuma indicar metástase no fígado.",
-              "resposta": true,
-              "explicacao": "O fígado normalmente inativa a serotonina.",
+              "enunciado": "Paciente com tumor carcinoide de intestino, rubor e diarreia provavelmente não tem metástase no fígado.",
+              "resposta": false,
+              "explicacao": "Falso. A síndrome carcinoide costuma indicar metástase no fígado, que deixa de inativar a serotonina.",
               "revisado": false
             },
             {
               "id": "endo-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ urinário mede um produto da serotonina para diagnosticar tumor carcinoide.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com rubor facial, diarreia e chiado tem suspeita de tumor carcinoide.",
+              "enunciado": "Qual exame de urina pedir?",
               "opcoes": [
                 "5-HIAA",
                 "VMA",
-                "cortisol",
-                "metanefrina"
+                "Cortisol livre",
+                "Metanefrinas"
               ],
               "resposta": "5-HIAA",
-              "explicacao": "O 5-HIAA fica alto.",
+              "explicacao": "O 5-HIAA é produto da serotonina e fica alto.",
               "revisado": false
             },
             {
               "id": "endo-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tratamento controla os sintomas da síndrome carcinoide?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com síndrome carcinoide e metástases tem rubor e diarreia frequentes.",
+              "enunciado": "Qual tratamento controla os sintomas?",
               "opcoes": [
-                "Análogos de somatostatina, como octreotida",
+                "Octreotida",
                 "Insulina",
                 "Corticoide",
-                "Antibiótico venoso de amplo espectro por duas semanas"
+                "Antibiótico venoso"
               ],
-              "resposta": "Análogos de somatostatina, como octreotida",
-              "explicacao": "Também reduzem o crescimento do tumor.",
+              "resposta": "Octreotida",
+              "explicacao": "Os análogos de somatostatina também reduzem o crescimento do tumor.",
               "revisado": false
             },
             {
