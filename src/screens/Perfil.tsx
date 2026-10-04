@@ -1,5 +1,29 @@
 import { motion } from 'framer-motion'
-import { Award, Cloud, CloudOff, Flame, Lock, Medal, RefreshCw, Target, Zap, type LucideIcon } from 'lucide-react'
+import {
+  Award,
+  BookOpenCheck,
+  Check,
+  Cloud,
+  CloudOff,
+  Feather,
+  Flame,
+  Gauge,
+  Lock,
+  Medal,
+  MonitorSmartphone,
+  Moon,
+  Palette,
+  RefreshCw,
+  Rocket,
+  Sun,
+  Target,
+  Trash2,
+  Volume2,
+  VolumeX,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react'
+import { METAS } from '../lib/metas'
 import { useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, Tema } from '../types'
@@ -152,53 +176,54 @@ export function Perfil() {
 
       {/* Configurações */}
       <Titulo>Configurações</Titulo>
-      <div className="flex flex-col gap-5 rounded-2xl border-2 border-borda bg-superficie p-4">
-        <div>
-          <p className="mb-2 font-bold">Modo de estudo</p>
+      <div className="divide-y-2 divide-borda overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
+        <Ajuste Icone={BookOpenCheck} titulo="Modo de estudo" descricao="Matérias do curso ou preparação para a prova de residência">
           <AbasModo valor={jogo.modo} aoMudar={jogo.escolherModo} />
-        </div>
-        <div>
-          <p className="mb-2 font-bold">Nível</p>
+        </Ajuste>
+
+        <Ajuste Icone={Gauge} titulo="Nível" descricao="Trilha fácil para aprender, difícil para treinar no estilo de prova">
           <AbasNivel valor={jogo.nivel} aoMudar={jogo.definirNivel} />
           <button
             type="button"
             onClick={() => navegar('/nivelamento')}
-            className="mt-2 text-sm font-bold text-agua-texto underline-offset-4 hover:underline dark:text-menta"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-bold text-agua-texto underline-offset-4 hover:underline dark:text-menta"
           >
+            <RefreshCw className="h-4 w-4" strokeWidth={2.6} />
             Refazer o teste de nível
           </button>
-        </div>
-        <div>
-          <p className="mb-2 font-bold">Meta diária</p>
-          <Segmentado<MetaDiaria>
+        </Ajuste>
+
+        <Ajuste Icone={Target} titulo="Meta diária" descricao="Quanto você quer estudar por dia">
+          <Opcoes<MetaDiaria>
             valor={usuario.metaDiaria}
-            opcoes={[
-              [10, '10 XP'],
-              [20, '20 XP'],
-              [30, '30 XP'],
-            ]}
+            opcoes={METAS.map((m) => ({
+              valor: m.valor,
+              rotulo: m.nome,
+              detalhe: m.descricao.replace('Cerca de ', '').replace(' por dia', '/dia'),
+              Icone: ICONES_META[m.valor],
+            }))}
             aoMudar={(metaDiaria) => jogo.atualizarUsuario({ metaDiaria })}
           />
-        </div>
-        <div>
-          <p className="mb-2 font-bold">Aparência</p>
-          <Segmentado<Tema>
+        </Ajuste>
+
+        <Ajuste Icone={Palette} titulo="Aparência" descricao="Automático segue o modo do seu celular ou computador">
+          <Opcoes<Tema>
             valor={jogo.tema}
             opcoes={[
-              ['claro', 'Claro'],
-              ['escuro', 'Escuro'],
-              ['sistema', 'Automático'],
+              { valor: 'claro', rotulo: 'Claro', Icone: Sun },
+              { valor: 'escuro', rotulo: 'Escuro', Icone: Moon },
+              { valor: 'sistema', rotulo: 'Automático', Icone: MonitorSmartphone },
             ]}
             aoMudar={jogo.definirTema}
           />
-        </div>
-        <div>
-          <p className="mb-2 font-bold">Efeitos sonoros</p>
-          <Segmentado<'sim' | 'nao'>
+        </Ajuste>
+
+        <Ajuste Icone={Volume2} titulo="Efeitos sonoros" descricao="Sons de acerto, erro e fim de lição">
+          <Opcoes<'sim' | 'nao'>
             valor={jogo.sons ? 'sim' : 'nao'}
             opcoes={[
-              ['sim', 'Ligados'],
-              ['nao', 'Desligados'],
+              { valor: 'sim', rotulo: 'Ligados', Icone: Volume2 },
+              { valor: 'nao', rotulo: 'Desligados', Icone: VolumeX },
             ]}
             aoMudar={(v) => {
               jogo.definirSons(v === 'sim')
@@ -206,14 +231,24 @@ export function Perfil() {
               if (v === 'sim') tocarSom('acerto')
             }}
           />
+        </Ajuste>
+
+        <div className="flex items-center gap-3 bg-erro-fundo/40 p-4">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-erro-fundo text-erro-texto">
+            <Trash2 className="h-5 w-5" strokeWidth={2.4} />
+          </span>
+          <div className="min-w-0 flex-1">
+            <p className="font-extrabold">Apagar todo o progresso</p>
+            <p className="text-sm text-texto-suave">XP, ofensiva, conquistas e revisões. Não dá para desfazer.</p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setConfirmarReset(true)}
+            className="shrink-0 rounded-xl border-2 border-erro/40 px-3 py-2 text-sm font-extrabold text-erro-texto transition-colors hover:bg-erro-fundo"
+          >
+            Apagar
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={() => setConfirmarReset(true)}
-          className="self-start text-sm font-bold text-erro-texto underline-offset-4 hover:underline"
-        >
-          Apagar todo o progresso
-        </button>
       </div>
 
       <Modal aberto={confirmarReset} aoFechar={() => setConfirmarReset(false)}>
@@ -401,33 +436,75 @@ function Numero({
   )
 }
 
-function Segmentado<T extends string | number>({
+const ICONES_META: Record<MetaDiaria, LucideIcon> = { 10: Feather, 20: Flame, 30: Rocket }
+
+/** Um bloco das configurações: ícone, título, explicação curta e o controle embaixo */
+function Ajuste({
+  Icone,
+  titulo,
+  descricao,
+  children,
+}: {
+  Icone: LucideIcon
+  titulo: string
+  descricao: string
+  children: ReactNode
+}) {
+  return (
+    <div className="p-4">
+      <div className="mb-3 flex items-center gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-agua/10 text-agua-texto dark:text-menta">
+          <Icone className="h-5 w-5" strokeWidth={2.4} />
+        </span>
+        <div className="min-w-0">
+          <p className="font-extrabold leading-tight">{titulo}</p>
+          <p className="text-sm text-texto-suave">{descricao}</p>
+        </div>
+      </div>
+      {children}
+    </div>
+  )
+}
+
+/** Opções lado a lado em cartões com ícone; a escolhida fica destacada */
+function Opcoes<T extends string | number>({
   valor,
   opcoes,
   aoMudar,
 }: {
   valor: T
-  opcoes: [T, string][]
+  opcoes: { valor: T; rotulo: string; detalhe?: string; Icone: LucideIcon }[]
   aoMudar: (v: T) => void
 }) {
   return (
-    <div className="grid grid-flow-col gap-2" role="radiogroup">
-      {opcoes.map(([v, rotulo]) => (
-        <button
-          key={String(v)}
-          type="button"
-          role="radio"
-          aria-checked={v === valor}
-          onClick={() => aoMudar(v)}
-          className={`rounded-xl border-2 px-3 py-2 text-sm font-bold transition-colors ${
-            v === valor
-              ? 'border-agua bg-agua/10 text-agua-texto dark:text-menta'
-              : 'border-borda text-texto-suave hover:bg-superficie-2'
-          }`}
-        >
-          {rotulo}
-        </button>
-      ))}
+    <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${opcoes.length}, minmax(0, 1fr))` }} role="radiogroup">
+      {opcoes.map(({ valor: v, rotulo, detalhe, Icone }) => {
+        const ativo = v === valor
+        return (
+          <motion.button
+            key={String(v)}
+            type="button"
+            role="radio"
+            aria-checked={ativo}
+            onClick={() => aoMudar(v)}
+            whileTap={{ scale: 0.96 }}
+            className={`relative flex flex-col items-center gap-1 rounded-2xl border-2 px-2 py-3 text-center transition-colors ${
+              ativo
+                ? 'border-agua bg-agua/10 text-agua-texto shadow-[0_3px_0_0_var(--color-agua)] dark:text-menta'
+                : 'border-borda text-texto-suave shadow-[0_3px_0_0_var(--borda)] hover:bg-superficie-2'
+            }`}
+          >
+            {ativo && (
+              <span className="absolute right-1.5 top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-agua text-white">
+                <Check className="h-3 w-3" strokeWidth={4} />
+              </span>
+            )}
+            <Icone className="h-6 w-6" strokeWidth={2.4} />
+            <span className="text-sm font-extrabold">{rotulo}</span>
+            {detalhe && <span className="text-xs font-semibold leading-tight opacity-80">{detalhe}</span>}
+          </motion.button>
+        )
+      })}
     </div>
   )
 }

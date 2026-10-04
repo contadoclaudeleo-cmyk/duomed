@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, GraduationCap, Stethoscope, type LucideIcon } from 'lucide-react'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import type { MetaDiaria, ModoEstudo } from '../types'
+import { METAS } from '../lib/metas'
 import { useJogo } from '../store/useJogo'
 import { Logo } from '../components/Logo'
 import { Lapio } from '../components/Lapio'
@@ -9,12 +10,6 @@ import { Botao } from '../components/Botao'
 import { BarraProgresso } from '../components/BarraProgresso'
 import { PainelConta } from '../components/PainelConta'
 import { nomeDaConta, useConta } from '../lib/nuvem'
-
-const METAS: { valor: MetaDiaria; nome: string; descricao: string }[] = [
-  { valor: 10, nome: 'Leve', descricao: 'Cerca de 1 lição por dia' },
-  { valor: 20, nome: 'Regular', descricao: 'Cerca de 2 lições por dia' },
-  { valor: 30, nome: 'Intensa', descricao: 'Cerca de 3 lições por dia' },
-]
 
 const MODOS: { valor: ModoEstudo; nome: string; descricao: string; Icone: LucideIcon }[] = [
   {
