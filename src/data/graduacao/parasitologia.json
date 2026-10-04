@@ -1863,16 +1863,17 @@
             },
             {
               "id": "parasito-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que se dosa a G6PD antes de usar primaquina?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com malária vivax vai iniciar primaquina.",
+              "enunciado": "Qual exame fazer antes?",
               "opcoes": [
-                "Pode causar hemólise grave na deficiência",
-                "Para medir o fígado",
-                "Para medir o rim",
-                "Não precisa, a primaquina é segura para qualquer paciente"
+                "Dosagem de G6PD",
+                "Função hepática",
+                "Função renal",
+                "Nenhum, a primaquina é sempre segura"
               ],
-              "resposta": "Pode causar hemólise grave na deficiência",
-              "explicacao": "A dose pode ser ajustada conforme o resultado.",
+              "resposta": "Dosagem de G6PD",
+              "explicacao": "Na deficiência, a primaquina causa hemólise grave.",
               "revisado": false
             },
             {
@@ -1893,9 +1894,9 @@
             {
               "id": "parasito-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na malária falciparum, as hemácias infectadas grudam nos vasos e causam obstrução.",
-              "resposta": true,
-              "explicacao": "Isso explica a malária cerebral.",
+              "enunciado": "Na malária falciparum, as hemácias infectadas não grudam nos vasos, por isso não há malária cerebral.",
+              "resposta": false,
+              "explicacao": "Falso. Elas grudam nos vasos e causam obstrução, explicando a malária cerebral.",
               "revisado": false
             },
             {
@@ -1914,15 +1915,16 @@
             },
             {
               "id": "parasito-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual remédio é usado na malária vivax não complicada no Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente da Amazônia tem malária vivax sem sinais de gravidade.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Cloroquina com primaquina",
+                "Cloroquina e primaquina",
                 "Artesunato venoso",
                 "Quinina sozinha",
                 "Metronidazol com albendazol"
               ],
-              "resposta": "Cloroquina com primaquina",
+              "resposta": "Cloroquina e primaquina",
               "explicacao": "A primaquina previne recaídas.",
               "revisado": false
             },
@@ -1989,15 +1991,16 @@
             },
             {
               "id": "parasito-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do megaesôfago chagásico avançado?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Chagas tem megaesôfago avançado e não consegue engolir.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Cirurgia ou dilatação, conforme o grau",
-                "Benznidazol cura",
+                "Cirurgia ou dilatação",
+                "Benznidazol",
                 "Antibiótico",
-                "Dieta líquida para sempre, sem outra conduta"
+                "Dieta líquida para sempre"
               ],
-              "resposta": "Cirurgia ou dilatação, conforme o grau",
+              "resposta": "Cirurgia ou dilatação",
               "explicacao": "O benznidazol não reverte as lesões crônicas.",
               "revisado": false
             },
@@ -2019,29 +2022,31 @@
             {
               "id": "parasito-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A leishmaniose mucosa pode aparecer anos após a cutânea e destruir o septo nasal.",
+              "enunciado": "Paciente que teve leishmaniose cutânea há anos e agora tem destruição do septo nasal pode ter a forma mucosa.",
               "resposta": true,
-              "explicacao": "É a forma de nariz de anta.",
+              "explicacao": "Verdadeiro. É o nariz de anta.",
               "revisado": false
             },
             {
               "id": "parasito-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na leishmaniose ___, o diagnóstico pode ser feito por aspirado de medula óssea.",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem febre há 2 meses, baço enorme e pancitopenia.",
+              "enunciado": "Qual exame confirma leishmaniose visceral?",
               "opcoes": [
-                "visceral",
-                "cutânea",
-                "mucosa",
-                "cutânea difusa"
+                "Aspirado de medula",
+                "Hemocultura",
+                "Raio X",
+                "Biópsia de pele com cultura de fungo"
               ],
-              "resposta": "visceral",
+              "resposta": "Aspirado de medula",
               "explicacao": "O parasita aparece dentro dos macrófagos.",
               "revisado": false
             },
             {
               "id": "parasito-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a forma das leishmânias vista nos tecidos humanos?",
+              "tipo": "caso_clinico",
+              "caso": "Biópsia de lesão de pele mostra parasitas pequenos dentro de macrófagos.",
+              "enunciado": "Qual forma da leishmânia é essa?",
               "opcoes": [
                 "Amastigota",
                 "Promastigota",
@@ -2115,13 +2120,14 @@
             },
             {
               "id": "parasito-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma toxoplasmose no feto?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante teve toxoplasmose aguda com 20 semanas.",
+              "enunciado": "Qual exame confirma infecção do feto?",
               "opcoes": [
                 "PCR no líquido amniótico",
                 "Sorologia da mãe",
                 "Ultrassom apenas",
-                "Hemograma materno com eosinofilia"
+                "Hemograma materno com eosinófilos"
               ],
               "resposta": "PCR no líquido amniótico",
               "explicacao": "É feita após 18 semanas.",
@@ -2152,22 +2158,24 @@
             },
             {
               "id": "parasito-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A Naegleria fowleri é uma ameba de água doce quente que causa ___ grave e rápida.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem mergulhou em lago quente e, 5 dias depois, tem meningite grave e rápida.",
+              "enunciado": "Qual parasita suspeitar?",
               "opcoes": [
-                "meningoencefalite",
-                "diarreia",
-                "hepatite",
-                "pneumonia necrosante"
+                "Naegleria fowleri",
+                "Giardia",
+                "Toxoplasma",
+                "Entamoeba histolytica"
               ],
-              "resposta": "meningoencefalite",
-              "explicacao": "Entra pelo nariz durante mergulhos.",
+              "resposta": "Naegleria fowleri",
+              "explicacao": "Entra pelo nariz e causa meningoencefalite.",
               "revisado": false
             },
             {
               "id": "parasito-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual protozoário causa infecção vaginal com corrimento amarelo-esverdeado e espumoso?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem corrimento amarelo-esverdeado espumoso e colo em morango.",
+              "enunciado": "Qual é o agente?",
               "opcoes": [
                 "Trichomonas vaginalis",
                 "Giardia lamblia",
@@ -2175,7 +2183,7 @@
                 "Toxoplasma gondii"
               ],
               "resposta": "Trichomonas vaginalis",
-              "explicacao": "É transmitido por relação sexual.",
+              "explicacao": "É transmitido por relação sexual; tratar o parceiro.",
               "revisado": false
             },
             {
@@ -2249,15 +2257,16 @@
             },
             {
               "id": "parasito-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do sangramento agudo por varizes na esquistossomose?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com esquistossomose hepatoesplênica tem vômito com sangue.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ligadura endoscópica e vasoconstritor",
+                "Ligadura e vasoconstritor",
                 "Praziquantel imediato",
                 "Antibiótico apenas",
-                "Observar e transfundir só se a hemoglobina cair abaixo de 5"
+                "Observar e transfundir só com hemoglobina abaixo de 5"
               ],
-              "resposta": "Ligadura endoscópica e vasoconstritor",
+              "resposta": "Ligadura e vasoconstritor",
               "explicacao": "O praziquantel trata o verme, não as varizes.",
               "revisado": false
             },
@@ -2279,37 +2288,39 @@
             {
               "id": "parasito-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na esquistossomose hepatoesplênica, a função do fígado costuma ser preservada por anos.",
-              "resposta": true,
-              "explicacao": "Diferente da cirrose, a fibrose é periportal.",
+              "enunciado": "Paciente com esquistossomose hepatoesplênica costuma ter insuficiência do fígado precoce, como na cirrose.",
+              "resposta": false,
+              "explicacao": "Falso. A fibrose é periportal e a função do fígado costuma ser preservada por anos.",
               "revisado": false
             },
             {
               "id": "parasito-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O Schistosoma ___ causa sangue na urina e câncer de bexiga, e não existe no Brasil.",
+              "tipo": "caso_clinico",
+              "caso": "Imigrante africano tem sangue na urina e calcificação da bexiga.",
+              "enunciado": "Qual espécie de Schistosoma?",
               "opcoes": [
-                "haematobium",
-                "mansoni",
-                "japonicum",
-                "intercalatum"
+                "S. haematobium",
+                "S. mansoni",
+                "S. japonicum",
+                "S. intercalatum"
               ],
-              "resposta": "haematobium",
-              "explicacao": "É comum na África.",
+              "resposta": "S. haematobium",
+              "explicacao": "Não existe no Brasil e causa câncer de bexiga.",
               "revisado": false
             },
             {
               "id": "parasito-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado na ultrassonografia sugere esquistossomose?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente de área endêmica tem baço grande.",
+              "enunciado": "Qual achado no ultrassom sugere esquistossomose?",
               "opcoes": [
-                "Espessamento periportal (Symmers)",
+                "Fibrose periportal",
                 "Fígado nodular pequeno",
                 "Cálculo na vesícula",
-                "Rim pequeno com perda da diferenciação"
+                "Rim pequeno sem diferenciação"
               ],
-              "resposta": "Espessamento periportal (Symmers)",
-              "explicacao": "O baço costuma estar grande.",
+              "resposta": "Fibrose periportal",
+              "explicacao": "É a fibrose de Symmers.",
               "revisado": false
             },
             {
@@ -2375,16 +2386,17 @@
             },
             {
               "id": "parasito-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de puncionar um cisto hidático?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente de área rural do Sul tem cisto hepático com cistos filhos.",
+              "enunciado": "Qual é o risco de puncionar sem cuidado?",
               "opcoes": [
-                "Anafilaxia e disseminação",
-                "Nenhum risco",
+                "Anafilaxia",
+                "Hepatite viral",
                 "Febre leve",
-                "Cura imediata pela drenagem do líquido"
+                "Cura imediata do cisto"
               ],
-              "resposta": "Anafilaxia e disseminação",
-              "explicacao": "Por isso a punção é feita com técnica especial.",
+              "resposta": "Anafilaxia",
+              "explicacao": "Também disseminação; a punção usa técnica especial.",
               "revisado": false
             },
             {
@@ -2405,37 +2417,39 @@
             {
               "id": "parasito-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na teníase, as proglotes podem sair sozinhas pelo ânus.",
+              "enunciado": "Paciente que vê pedaços brancos e móveis saindo pelo ânus sozinhos pode ter teníase.",
               "resposta": true,
-              "explicacao": "É comum na Taenia saginata.",
+              "explicacao": "Verdadeiro. É comum na Taenia saginata.",
               "revisado": false
             },
             {
               "id": "parasito-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na hidatidose, os cistos ___ são cistos menores dentro do cisto principal.",
+              "tipo": "caso_clinico",
+              "caso": "Tomografia de fígado mostra cisto grande com cistos menores dentro, em favo de mel.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "filhos",
-                "irmãos",
-                "simples",
-                "calcificados"
+                "Hidatidose",
+                "Abscesso amebiano",
+                "Cisto simples",
+                "Câncer de fígado"
               ],
-              "resposta": "filhos",
-              "explicacao": "Formam aspecto de favo de mel.",
+              "resposta": "Hidatidose",
+              "explicacao": "Os cistos menores são os cistos filhos.",
               "revisado": false
             },
             {
               "id": "parasito-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da hidatidose hepática?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem cisto hidático de 8 cm no fígado.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Cirurgia ou percutânea com albendazol",
-                "Apenas antibiótico",
-                "Apenas observar",
-                "Quimioterapia e radioterapia do fígado"
+                "Cirurgia com albendazol",
+                "Antibiótico",
+                "Só observar",
+                "Quimioterapia e radioterapia"
               ],
-              "resposta": "Cirurgia ou percutânea com albendazol",
-              "explicacao": "O albendazol reduz o risco de recidiva.",
+              "resposta": "Cirurgia com albendazol",
+              "explicacao": "Ou técnica percutânea; o albendazol reduz a recidiva.",
               "revisado": false
             },
             {
@@ -2501,8 +2515,9 @@
             },
             {
               "id": "parasito-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual verme causa eosinofilia muito alta com lesão nos olhos de crianças?",
+              "tipo": "caso_clinico",
+              "caso": "Criança que brinca com filhotes de cão tem eosinofilia alta e lesão branca na retina.",
+              "enunciado": "Qual verme causa?",
               "opcoes": [
                 "Toxocara",
                 "Ascaris",
@@ -2531,23 +2546,24 @@
             {
               "id": "parasito-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A teníase costuma causar eosinofilia muito alta.",
+              "enunciado": "Paciente com teníase intestinal costuma ter eosinofilia muito alta no hemograma.",
               "resposta": false,
-              "explicacao": "A Taenia fica no intestino e quase não causa eosinofilia.",
+              "explicacao": "Falso. A Taenia fica no intestino e quase não causa eosinofilia.",
               "revisado": false
             },
             {
               "id": "parasito-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na estrongiloidíase, a ___ é muitas vezes o único sinal.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai iniciar corticoide em dose alta e tem eosinofilia sem sintomas; morou em área rural.",
+              "enunciado": "Qual verme investigar?",
               "opcoes": [
-                "eosinofilia",
-                "febre",
-                "diarreia",
-                "anemia ferropriva"
+                "Strongyloides",
+                "Taenia",
+                "Enterobius",
+                "Giardia lamblia"
               ],
-              "resposta": "eosinofilia",
-              "explicacao": "Ela deve ser investigada antes de corticoide.",
+              "resposta": "Strongyloides",
+              "explicacao": "A eosinofilia pode ser o único sinal; o corticoide causa hiperinfecção.",
               "revisado": false
             },
             {
@@ -2635,15 +2651,16 @@
             },
             {
               "id": "parasito-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que a coceira da escabiose pode continuar após o tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tratou escabiose corretamente e a coceira continua 2 semanas depois.",
+              "enunciado": "Qual é a causa provável?",
               "opcoes": [
-                "Reação alérgica aos restos do ácaro",
+                "Alergia ao ácaro morto",
                 "Falha sempre",
                 "Reinfecção sempre",
-                "Nova doença de pele que surgiu depois do tratamento"
+                "Nova doença de pele surgida depois"
               ],
-              "resposta": "Reação alérgica aos restos do ácaro",
+              "resposta": "Alergia ao ácaro morto",
               "explicacao": "Usa-se antialérgico e hidratante.",
               "revisado": false
             },
@@ -2665,36 +2682,38 @@
             {
               "id": "parasito-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os piolhos do corpo vivem nas costuras das roupas e podem transmitir doenças.",
+              "enunciado": "Pessoa em situação de rua com piolhos nas costuras das roupas pode pegar tifo e febre das trincheiras.",
               "resposta": true,
-              "explicacao": "Podem transmitir tifo e febre das trincheiras.",
+              "explicacao": "Verdadeiro. O piolho do corpo transmite essas doenças.",
               "revisado": false
             },
             {
               "id": "parasito-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na escabiose, as lesões costumam poupar o ___ em adultos.",
+              "tipo": "caso_clinico",
+              "caso": "Adulto tem coceira noturna com lesões nas mãos, punhos e cintura.",
+              "enunciado": "Qual região costuma ser poupada?",
               "opcoes": [
-                "rosto",
-                "punho",
-                "abdome",
-                "pênis"
+                "Rosto",
+                "Punho",
+                "Abdome",
+                "Pênis"
               ],
-              "resposta": "rosto",
-              "explicacao": "Em bebês, o rosto e o couro cabeludo podem ser afetados.",
+              "resposta": "Rosto",
+              "explicacao": "Em bebês, rosto e couro cabeludo podem ser afetados.",
               "revisado": false
             },
             {
               "id": "parasito-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o local típico de lesões de escabiose em homens?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem coceira noturna e família com o mesmo.",
+              "enunciado": "Qual local de lesão sugere escabiose?",
               "opcoes": [
-                "Pênis e bolsa escrotal",
+                "Pênis e escroto",
                 "Rosto",
                 "Couro cabeludo",
                 "Costas e ombros apenas"
               ],
-              "resposta": "Pênis e bolsa escrotal",
+              "resposta": "Pênis e escroto",
               "explicacao": "Nódulos genitais com coceira são sugestivos.",
               "revisado": false
             },
@@ -2761,8 +2780,9 @@
             },
             {
               "id": "parasito-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a melhor forma de combater o Aedes aegypti?",
+              "tipo": "caso_clinico",
+              "caso": "Bairro tem surto de dengue.",
+              "enunciado": "Qual é a medida mais eficaz?",
               "opcoes": [
                 "Eliminar água parada",
                 "Fumacê como única medida",
@@ -2798,22 +2818,24 @@
             },
             {
               "id": "parasito-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os mosquiteiros ___ com inseticida reduzem a malária.",
+              "tipo": "caso_clinico",
+              "caso": "Comunidade da Amazônia quer reduzir a malária.",
+              "enunciado": "Qual medida simples ajuda?",
               "opcoes": [
-                "impregnados",
-                "molhados",
-                "coloridos",
-                "de algodão"
+                "Mosquiteiro com inseticida",
+                "Mosquiteiros molhados",
+                "Antibiótico profilático",
+                "Vacina contra dengue para todos"
               ],
-              "resposta": "impregnados",
+              "resposta": "Mosquiteiro com inseticida",
               "explicacao": "São muito usados na Amazônia.",
               "revisado": false
             },
             {
               "id": "parasito-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença parasitária tem o caramujo como hospedeiro intermediário?",
+              "tipo": "caso_clinico",
+              "caso": "Crianças que nadam em lagoa com caramujos têm diarreia e baço grande.",
+              "enunciado": "Qual doença tem o caramujo como hospedeiro?",
               "opcoes": [
                 "Esquistossomose",
                 "Malária",
@@ -2917,36 +2939,38 @@
             {
               "id": "parasito-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Vermifugar cães e gatos reduz o risco de toxocaríase e larva migrans.",
-              "resposta": true,
-              "explicacao": "Também se deve recolher as fezes.",
+              "enunciado": "Vermifugar cães e gatos não muda o risco de toxocaríase e larva migrans nas pessoas.",
+              "resposta": false,
+              "explicacao": "Falso. Reduz o risco; também se deve recolher as fezes.",
               "revisado": false
             },
             {
               "id": "parasito-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A Giardia também pode ser transmitida por animais, como ___ e cães.",
+              "tipo": "caso_clinico",
+              "caso": "Campista bebeu água de rio e tem diarreia gordurosa e gases.",
+              "enunciado": "Qual parasita, também transmitido por animais, suspeitar?",
               "opcoes": [
-                "castores",
-                "peixes",
-                "aves",
-                "insetos voadores"
+                "Giardia",
+                "Ascaris",
+                "Taenia",
+                "Enterobius"
               ],
-              "resposta": "castores",
-              "explicacao": "A água de rios pode estar contaminada.",
+              "resposta": "Giardia",
+              "explicacao": "Castores e cães podem contaminar a água.",
               "revisado": false
             },
             {
               "id": "parasito-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a forma de prevenir a teníase?",
+              "tipo": "caso_clinico",
+              "caso": "Família come carne de boi mal passada de abate clandestino.",
+              "enunciado": "Qual medida previne a teníase?",
               "opcoes": [
-                "Comer carne bem cozida e inspecionada",
-                "Lavar bem as verduras",
-                "Usar calçados fechados",
-                "Usar repelente e mosquiteiro à noite em área rural"
+                "Carne bem cozida e inspecionada",
+                "Lavar verduras",
+                "Usar calçados",
+                "Repelente e mosquiteiro à noite"
               ],
-              "resposta": "Comer carne bem cozida e inspecionada",
+              "resposta": "Carne bem cozida e inspecionada",
               "explicacao": "A inspeção dos frigoríficos é importante.",
               "revisado": false
             },
@@ -3021,8 +3045,9 @@
             },
             {
               "id": "parasito-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antiparasitário é evitado no primeiro trimestre da gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 8 semanas tem ovos de Ascaris no exame de fezes, sem sintomas.",
+              "enunciado": "Qual remédio evitar agora?",
               "opcoes": [
                 "Albendazol",
                 "Paracetamol",
@@ -3051,9 +3076,9 @@
             {
               "id": "parasito-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A malária na gestação pode causar parto prematuro e baixo peso do bebê.",
-              "resposta": true,
-              "explicacao": "O falciparum é mais grave na gestação.",
+              "enunciado": "A malária na gestação não afeta o bebê, só a mãe.",
+              "resposta": false,
+              "explicacao": "Falso. Pode causar parto prematuro e baixo peso; o falciparum é mais grave.",
               "revisado": false
             },
             {
@@ -3072,16 +3097,17 @@
             },
             {
               "id": "parasito-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal medida para prevenir toxoplasmose na gestante suscetível?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com IgG negativo para toxoplasmose pergunta como se proteger.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Higiene e cuidados com a alimentação",
+                "Higiene e carne bem passada",
                 "Vacina",
                 "Antibiótico",
-                "Afastar-se de todos os animais de estimação"
+                "Afastar-se de todos os animais"
               ],
-              "resposta": "Higiene e cuidados com a alimentação",
-              "explicacao": "Comer carne bem passada e lavar bem as verduras.",
+              "resposta": "Higiene e carne bem passada",
+              "explicacao": "Lavar bem as verduras também.",
               "revisado": false
             },
             {
@@ -3147,16 +3173,17 @@
             },
             {
               "id": "parasito-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta na suboclusão intestinal por Ascaris?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem vômitos, cólica e massa abdominal; raio X com novelo de Ascaris.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Jejum, sonda, óleo mineral e depois antiparasitário",
-                "Albendazol imediato em dose alta",
+                "Jejum, sonda e óleo mineral",
+                "Albendazol imediato",
                 "Cirurgia sempre",
-                "Observar em casa e dar laxante forte duas vezes ao dia"
+                "Laxante forte em casa duas vezes ao dia"
               ],
-              "resposta": "Jejum, sonda, óleo mineral e depois antiparasitário",
-              "explicacao": "O antiparasitário pode agitar os vermes e piorar.",
+              "resposta": "Jejum, sonda e óleo mineral",
+              "explicacao": "O antiparasitário vem depois, pois pode agitar os vermes.",
               "revisado": false
             },
             {
@@ -3177,36 +3204,38 @@
             {
               "id": "parasito-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A enterobíase pode causar vulvovaginite em meninas.",
+              "enunciado": "Menina com coceira anal noturna e vulvovaginite pode ter enterobíase.",
               "resposta": true,
-              "explicacao": "O verme migra para a vagina.",
+              "explicacao": "Verdadeiro. O verme migra para a vagina.",
               "revisado": false
             },
             {
               "id": "parasito-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "As crianças que andam ___ têm mais risco de ancilostomíase e bicho geográfico.",
+              "tipo": "caso_clinico",
+              "caso": "Criança da zona rural anda descalça e tem anemia e lesões serpiginosas no pé.",
+              "enunciado": "Qual medida previne?",
               "opcoes": [
-                "descalças",
-                "de bicicleta",
-                "de ônibus",
-                "de carro"
+                "Usar calçados",
+                "Usar repelente",
+                "Ferver a água",
+                "Comer carne bem passada"
               ],
-              "resposta": "descalças",
-              "explicacao": "Calçados são uma medida simples de prevenção.",
+              "resposta": "Usar calçados",
+              "explicacao": "Previne ancilostomíase e bicho geográfico.",
               "revisado": false
             },
             {
               "id": "parasito-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o esquema de tratamento do oxiúro?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem oxiúros confirmados.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Albendazol ou mebendazol, repetido em 2 semanas",
-                "Uma dose apenas, sem repetir",
+                "Albendazol e repetir em 2 semanas",
+                "Dose única sem repetir",
                 "Metronidazol por 7 dias",
-                "Praziquantel em dose única para toda a família e os vizinhos"
+                "Praziquantel para a família e vizinhos"
               ],
-              "resposta": "Albendazol ou mebendazol, repetido em 2 semanas",
+              "resposta": "Albendazol e repetir em 2 semanas",
               "explicacao": "A repetição mata vermes que nasceram depois.",
               "revisado": false
             },
@@ -3324,8 +3353,9 @@
             },
             {
               "id": "parasito-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual parasita causa diarreia autolimitada em pessoas saudáveis e grave em HIV?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 50 tem diarreia aquosa intensa há 1 mês.",
+              "enunciado": "Qual parasita suspeitar?",
               "opcoes": [
                 "Cryptosporidium",
                 "Ascaris",
@@ -3333,7 +3363,7 @@
                 "Enterobius vermicularis"
               ],
               "resposta": "Cryptosporidium",
-              "explicacao": "Não há tratamento muito eficaz sem recuperar a imunidade.",
+              "explicacao": "Em saudáveis, a diarreia passa sozinha; no HIV, melhora com a imunidade.",
               "revisado": false
             },
             {
@@ -3407,16 +3437,17 @@
             },
             {
               "id": "parasito-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o período de incubação típico da malária falciparum?",
+              "tipo": "caso_clinico",
+              "caso": "Viajante voltou da África há 2 semanas e tem febre.",
+              "enunciado": "Qual é a incubação típica do falciparum?",
               "opcoes": [
-                "Cerca de 7 a 30 dias",
-                "Cerca de 1 dia",
-                "Cerca de 1 ano",
-                "Cerca de 3 horas após a picada"
+                "7 a 30 dias",
+                "1 dia",
+                "1 ano",
+                "3 horas após a picada"
               ],
-              "resposta": "Cerca de 7 a 30 dias",
-              "explicacao": "Pode ser mais longo no vivax.",
+              "resposta": "7 a 30 dias",
+              "explicacao": "Pode ser mais longa no vivax.",
               "revisado": false
             },
             {
@@ -3444,16 +3475,17 @@
             },
             {
               "id": "parasito-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A febre ___ do vivax aparece a cada 48 horas quando o ciclo se sincroniza.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com malária tem febre a cada 48 horas.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "terçã",
-                "quartã",
-                "diária",
-                "contínua"
+                "Febre terçã",
+                "Febre quartã",
+                "Febre diária",
+                "Febre contínua"
               ],
-              "resposta": "terçã",
-              "explicacao": "O malariae causa febre quartã.",
+              "resposta": "Febre terçã",
+              "explicacao": "É típica do vivax; o malariae causa febre quartã.",
               "revisado": false
             },
             {
@@ -3533,15 +3565,16 @@
             },
             {
               "id": "parasito-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual parasita causa dor epigástrica parecida com úlcera e diarreia, com eosinofilia?",
+              "tipo": "caso_clinico",
+              "caso": "Lavrador tem dor epigástrica parecida com úlcera, diarreia e eosinofilia.",
+              "enunciado": "Qual parasita do duodeno suspeitar?",
               "opcoes": [
-                "Strongyloides stercoralis",
-                "Enterobius vermicularis",
+                "Strongyloides",
+                "Enterobius",
                 "Taenia saginata",
                 "Trichomonas vaginalis"
               ],
-              "resposta": "Strongyloides stercoralis",
+              "resposta": "Strongyloides",
               "explicacao": "Ele vive no duodeno.",
               "revisado": false
             },
@@ -3563,9 +3596,9 @@
             {
               "id": "parasito-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O metronidazol não trata vermes, apenas protozoários e bactérias anaeróbias.",
-              "resposta": true,
-              "explicacao": "Para vermes, usam-se albendazol, ivermectina ou praziquantel.",
+              "enunciado": "Criança com ascaridíase pode ser tratada com metronidazol, que mata vermes intestinais.",
+              "resposta": false,
+              "explicacao": "Falso. O metronidazol trata protozoários e anaeróbios; para vermes, usam-se albendazol, ivermectina ou praziquantel.",
               "revisado": false
             },
             {
@@ -3584,16 +3617,17 @@
             },
             {
               "id": "parasito-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual verme pode causar apendicite ao obstruir o apêndice?",
+              "tipo": "caso_clinico",
+              "caso": "Criança operada de apendicite tem vermes pequenos e brancos no apêndice.",
+              "enunciado": "Qual verme é?",
               "opcoes": [
-                "Enterobius vermicularis",
+                "Enterobius",
                 "Taenia saginata",
                 "Schistosoma mansoni",
                 "Strongyloides stercoralis"
               ],
-              "resposta": "Enterobius vermicularis",
-              "explicacao": "É achado em algumas peças de apendicectomia.",
+              "resposta": "Enterobius",
+              "explicacao": "Pode obstruir o apêndice.",
               "revisado": false
             },
             {
@@ -3659,16 +3693,17 @@
             },
             {
               "id": "parasito-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a complicação ocular da toxoplasmose?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem visão turva e moscas volantes; fundo de olho com lesão ativa ao lado de cicatriz.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Retinocoroidite",
+                "Toxoplasmose ocular",
                 "Catarata",
                 "Glaucoma",
                 "Conjuntivite purulenta"
               ],
-              "resposta": "Retinocoroidite",
-              "explicacao": "Causa visão turva e moscas volantes.",
+              "resposta": "Toxoplasmose ocular",
+              "explicacao": "É retinocoroidite, a complicação ocular da toxoplasmose.",
               "revisado": false
             },
             {
@@ -3696,29 +3731,31 @@
             },
             {
               "id": "parasito-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A tungíase forma um nódulo branco com ponto ___ no centro.",
+              "tipo": "caso_clinico",
+              "caso": "Morador de área rural tem nódulo branco doloroso no pé com ponto preto no centro.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "preto",
-                "vermelho",
-                "azul",
-                "amarelo"
+                "Tungíase",
+                "Escabiose",
+                "Larva migrans",
+                "Verruga plantar"
               ],
-              "resposta": "preto",
+              "resposta": "Tungíase",
               "explicacao": "O ponto é a parte de trás da pulga.",
               "revisado": false
             },
             {
               "id": "parasito-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da leishmaniose cutânea simples no Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem úlcera indolor de bordas elevadas há 2 meses; biópsia com leishmânia.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Antimoniato de meglumina ou outra opção",
+                "Antimoniato de meglumina",
                 "Albendazol",
                 "Cloroquina",
-                "Apenas curativo e espera da cicatrização espontânea"
+                "Apenas curativo e espera"
               ],
-              "resposta": "Antimoniato de meglumina ou outra opção",
+              "resposta": "Antimoniato de meglumina",
               "explicacao": "Há tratamento local em alguns casos.",
               "revisado": false
             },

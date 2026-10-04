@@ -1863,16 +1863,17 @@
             },
             {
               "id": "otorrino-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica do colesteatoma?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com otites antigas tem secreção fétida contínua e massa branca perolada no ouvido.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Pele crescendo no ouvido médio e destruindo osso",
-                "Infecção viral",
+                "Colesteatoma",
+                "Otite viral",
                 "Cera",
-                "Tumor maligno que espalha para o pulmão e o fígado"
+                "Tumor maligno com metástase no pulmão"
               ],
-              "resposta": "Pele crescendo no ouvido médio e destruindo osso",
-              "explicacao": "Causa secreção fétida.",
+              "resposta": "Colesteatoma",
+              "explicacao": "É pele crescendo no ouvido médio e destruindo osso.",
               "revisado": false
             },
             {
@@ -1893,37 +1894,39 @@
             {
               "id": "otorrino-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A otite externa maligna é uma emergência em diabéticos e idosos.",
-              "resposta": true,
-              "explicacao": "Exige antibiótico venoso contra Pseudomonas.",
+              "enunciado": "Idoso diabético com dor de ouvido intensa e tecido de granulação no conduto tem otite externa simples, tratada com gotas em casa.",
+              "resposta": false,
+              "explicacao": "Falso. É suspeita de otite externa maligna, emergência que exige antibiótico venoso contra Pseudomonas.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a perfuração do tímpano que pode fechar sozinha após otite.",
+              "tipo": "caso_clinico",
+              "caso": "Criança teve otite e saiu secreção; a dor melhorou e há um furo no tímpano.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "perfuração timpânica",
-                "otosclerose",
-                "colesteatoma",
-                "mastoidite aguda com pus atrás da orelha"
+                "Evitar água no ouvido",
+                "Cirurgia imediata",
+                "Lavar o ouvido",
+                "Colocar algodão com álcool"
               ],
-              "resposta": "perfuração timpânica",
-              "explicacao": "Evitar água no ouvido.",
+              "resposta": "Evitar água no ouvido",
+              "explicacao": "A perfuração costuma fechar sozinha.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando observar sem antibiótico na otite média aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos tem otite leve de um lado, sem febre alta, há 1 dia.",
+              "enunciado": "Qual é a conduta possível?",
               "opcoes": [
-                "Acima de 2 anos, quadro leve de um lado",
-                "Bebê de 3 meses",
-                "Febre alta",
-                "Bebê de três meses com febre alta e secreção nos dois ouvidos"
+                "Observar e reavaliar em 48 h",
+                "Antibiótico venoso",
+                "Internar",
+                "Antibiótico nos dois ouvidos e tubo de ventilação"
               ],
-              "resposta": "Acima de 2 anos, quadro leve de um lado",
-              "explicacao": "Reavaliar em 48 horas.",
+              "resposta": "Observar e reavaliar em 48 h",
+              "explicacao": "Acima de 2 anos, com quadro leve, pode-se observar.",
               "revisado": false
             },
             {
@@ -2019,37 +2022,39 @@
             {
               "id": "otorrino-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A perda auditiva de um lado só com zumbido deve ser investigada para tumor.",
-              "resposta": true,
-              "explicacao": "Ressonância do ouvido interno.",
+              "enunciado": "Adulto com perda auditiva só de um lado e zumbido pode ser tratado só com vitamina, sem investigar.",
+              "resposta": false,
+              "explicacao": "Falso. Deve ser investigado com ressonância para tumor do nervo.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o exame que mede a audição em diferentes frequências.",
+              "tipo": "caso_clinico",
+              "caso": "Trabalhador de fábrica barulhenta quer saber se perdeu audição.",
+              "enunciado": "Qual exame mede a audição em frequências?",
               "opcoes": [
-                "audiometria",
-                "otoscopia",
-                "timpanometria",
-                "polissonografia"
+                "Audiometria",
+                "Otoscopia",
+                "Timpanometria",
+                "Polissonografia"
               ],
-              "resposta": "audiometria",
+              "resposta": "Audiometria",
               "explicacao": "Gera o audiograma.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da otosclerose?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher jovem tem perda auditiva de condução progressiva com tímpano normal; a mãe teve o mesmo.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Estapedotomia ou aparelho auditivo",
+                "Estapedotomia ou aparelho",
                 "Antibiótico",
                 "Corticoide",
-                "Antibiótico em gotas e lavagem do ouvido"
+                "Gotas de antibiótico e lavagem"
               ],
-              "resposta": "Estapedotomia ou aparelho auditivo",
-              "explicacao": "A cirurgia melhora a audição.",
+              "resposta": "Estapedotomia ou aparelho",
+              "explicacao": "É otosclerose; a cirurgia melhora a audição.",
               "revisado": false
             },
             {
@@ -2115,15 +2120,16 @@
             },
             {
               "id": "otorrino-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da crise de Ménière?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Ménière está em crise de vertigem e vômitos.",
+              "enunciado": "Qual é o tratamento da crise?",
               "opcoes": [
-                "Repouso e remédio para náusea e tontura",
+                "Repouso e remédio sintomático",
                 "Antibiótico",
                 "Cirurgia de urgência",
-                "Cirurgia de urgência no ouvido interno logo na primeira crise"
+                "Cirurgia do ouvido interno na primeira crise"
               ],
-              "resposta": "Repouso e remédio para náusea e tontura",
+              "resposta": "Repouso e remédio sintomático",
               "explicacao": "Na prevenção, dieta pobre em sal.",
               "revisado": false
             },
@@ -2145,37 +2151,39 @@
             {
               "id": "otorrino-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os remédios para tontura atrasam a compensação do labirinto se usados por muito tempo.",
-              "resposta": true,
-              "explicacao": "Devem ser usados por poucos dias.",
+              "enunciado": "Paciente com neurite vestibular deve usar dimenidrinato por 3 meses para compensar o labirinto.",
+              "resposta": false,
+              "explicacao": "Falso. Usados por muito tempo, atrasam a compensação; usar poucos dias.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A enxaqueca ___ causa crises de tontura, às vezes sem dor de cabeça.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com enxaqueca tem crises de tontura recorrentes, às vezes sem dor de cabeça.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "vestibular",
-                "comum",
-                "menstrual",
-                "crônica diária"
+                "Enxaqueca vestibular",
+                "Enxaqueca comum",
+                "Enxaqueca menstrual",
+                "Enxaqueca crônica diária"
               ],
-              "resposta": "vestibular",
+              "resposta": "Enxaqueca vestibular",
               "explicacao": "É causa comum de tontura recorrente.",
               "revisado": false
             },
             {
               "id": "otorrino-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame que avalia o labirinto?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tontura crônica precisa avaliar a função do labirinto.",
+              "enunciado": "Qual exame usar?",
               "opcoes": [
-                "Vecto ou impulso cefálico em vídeo",
+                "Impulso cefálico em vídeo",
                 "Raio X",
                 "Hemograma",
-                "Eletrocardiograma de repouso e raio X de tórax"
+                "Eletrocardiograma e raio X de tórax"
               ],
-              "resposta": "Vecto ou impulso cefálico em vídeo",
-              "explicacao": "Mede a função vestibular.",
+              "resposta": "Impulso cefálico em vídeo",
+              "explicacao": "A vectoeletronistagmografia também avalia.",
               "revisado": false
             },
             {
@@ -2249,8 +2257,9 @@
             },
             {
               "id": "otorrino-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa comum de sinusite de um lado só com mau cheiro?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem sinusite maxilar de um lado só, com mau cheiro, após extração de molar.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
                 "Origem dentária",
                 "Alergia",
@@ -2286,30 +2295,32 @@
             },
             {
               "id": "otorrino-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A bola ___ é um acúmulo de fungo dentro de um seio, geralmente o maxilar.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem sinusite maxilar crônica de um lado; tomografia com material denso e calcificações no seio.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "fúngica",
-                "bacteriana",
-                "viral",
-                "de muco"
+                "Bola fúngica",
+                "Sinusite bacteriana",
+                "Sinusite viral",
+                "Pólipo nasal alérgico"
               ],
-              "resposta": "fúngica",
+              "resposta": "Bola fúngica",
               "explicacao": "Tratada com cirurgia.",
               "revisado": false
             },
             {
               "id": "otorrino-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da sinusite crônica com pólipos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem obstrução nasal e perda de olfato há 1 ano; endoscopia com pólipos dos dois lados.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Corticoide nasal, lavagem e, se preciso, cirurgia",
+                "Corticoide nasal e lavagem",
                 "Antibiótico por 1 ano",
                 "Descongestionante",
-                "Descongestionante nasal por um ano e antibiótico a cada mês"
+                "Descongestionante por 1 ano e antibiótico mensal"
               ],
-              "resposta": "Corticoide nasal, lavagem e, se preciso, cirurgia",
-              "explicacao": "O dupilumabe é usado em casos graves.",
+              "resposta": "Corticoide nasal e lavagem",
+              "explicacao": "Cirurgia se preciso; dupilumabe em casos graves.",
               "revisado": false
             },
             {
@@ -2375,15 +2386,16 @@
             },
             {
               "id": "otorrino-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta no sangramento posterior grave que não para com tamponamento?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com sangramento nasal posterior segue sangrando apesar de tamponamento posterior.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ligadura ou embolização da artéria",
+                "Ligadura ou embolização",
                 "Mais tamponamento anterior",
                 "Antibiótico",
-                "Repetir o tamponamento anterior e liberar para casa"
+                "Repetir o tamponamento e liberar"
               ],
-              "resposta": "Ligadura ou embolização da artéria",
+              "resposta": "Ligadura ou embolização",
               "explicacao": "A artéria esfenopalatina é tratada.",
               "revisado": false
             },
@@ -2405,37 +2417,39 @@
             {
               "id": "otorrino-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes com tamponamento posterior devem ser internados e monitorados.",
-              "resposta": true,
-              "explicacao": "Pode haver queda de oxigênio.",
+              "enunciado": "Idoso com tamponamento nasal posterior pode ser liberado para casa no mesmo dia, sem monitorização.",
+              "resposta": false,
+              "explicacao": "Falso. Deve ser internado e monitorado, pois pode haver queda de oxigênio.",
               "revisado": false
             },
             {
               "id": "otorrino-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A telangiectasia hemorrágica hereditária também é chamada de doença de Rendu-___.",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem sangramentos nasais repetidos, pequenas manchas vermelhas nos lábios e pai com o mesmo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Osler-Weber",
-                "Wilson",
-                "Paget",
-                "Gaucher tipo 1"
+                "Rendu-Osler-Weber",
+                "Doença de Wilson",
+                "Doença de Paget",
+                "Doença de Gaucher tipo 1"
               ],
-              "resposta": "Osler-Weber",
-              "explicacao": "Pode ter malformações em pulmão e cérebro.",
+              "resposta": "Rendu-Osler-Weber",
+              "explicacao": "É a telangiectasia hemorrágica hereditária; pode ter malformações em pulmão e cérebro.",
               "revisado": false
             },
             {
               "id": "otorrino-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual cuidado previne sangramento nasal em clima seco?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem sangramentos nasais anteriores no inverno seco.",
+              "enunciado": "Qual cuidado previne?",
               "opcoes": [
-                "Umidificar o nariz com soro e vaselina",
+                "Umidificar o nariz",
                 "Assoar forte",
                 "Descongestionante",
-                "Assoar o nariz com força várias vezes ao dia"
+                "Assoar com força várias vezes ao dia"
               ],
-              "resposta": "Umidificar o nariz com soro e vaselina",
-              "explicacao": "Também umidificar o ambiente.",
+              "resposta": "Umidificar o nariz",
+              "explicacao": "Soro e vaselina; também umidificar o ambiente.",
               "revisado": false
             },
             {
@@ -2501,16 +2515,17 @@
             },
             {
               "id": "otorrino-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal sugere fístula de líquor após trauma de face?",
+              "tipo": "caso_clinico",
+              "caso": "Após trauma de face, o paciente tem líquido claro pingando do nariz ao se inclinar.",
+              "enunciado": "O que suspeitar?",
               "opcoes": [
-                "Líquido claro saindo pelo nariz",
-                "Sangue",
-                "Pus",
-                "Espirros e coceira no nariz depois do trauma"
+                "Fístula de líquor",
+                "Rinite alérgica",
+                "Sinusite",
+                "Resfriado comum após o trauma"
               ],
-              "resposta": "Líquido claro saindo pelo nariz",
-              "explicacao": "Teste da beta-2 transferrina confirma.",
+              "resposta": "Fístula de líquor",
+              "explicacao": "A beta-2 transferrina confirma.",
               "revisado": false
             },
             {
@@ -2531,29 +2546,31 @@
             {
               "id": "otorrino-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A perda de olfato pode ser um sinal precoce de doença de Parkinson.",
+              "enunciado": "Idoso com perda de olfato há anos, sem doença nasal, pode estar em fase inicial de doença de Parkinson.",
               "resposta": true,
-              "explicacao": "Surge anos antes.",
+              "explicacao": "Verdadeiro. A perda de olfato pode surgir anos antes.",
               "revisado": false
             },
             {
               "id": "otorrino-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A fratura de Le Fort tipo ___ separa toda a face do crânio.",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de acidente tem face móvel inteira em relação ao crânio.",
+              "enunciado": "Qual fratura de Le Fort?",
               "opcoes": [
-                "III",
-                "I",
-                "II",
-                "IV, a mais leve"
+                "Tipo III",
+                "Tipo I",
+                "Tipo II",
+                "Tipo IV, a mais leve"
               ],
-              "resposta": "III",
-              "explicacao": "É a mais grave.",
+              "resposta": "Tipo III",
+              "explicacao": "Separa toda a face do crânio; é a mais grave.",
               "revisado": false
             },
             {
               "id": "otorrino-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta no hematoma de septo?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente bateu o nariz; há abaulamento roxo e mole no septo dos dois lados.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Drenagem urgente",
                 "Observar",
@@ -2561,7 +2578,7 @@
                 "Gelo"
               ],
               "resposta": "Drenagem urgente",
-              "explicacao": "Evita necrose da cartilagem.",
+              "explicacao": "É hematoma de septo; evita necrose da cartilagem.",
               "revisado": false
             },
             {
@@ -2635,16 +2652,17 @@
             },
             {
               "id": "otorrino-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da síndrome de Lemierre?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem após amigdalite tem dor e inchaço no pescoço e nódulos no pulmão; hemocultura com Fusobacterium.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Jugular infectada com êmbolos ao pulmão",
+                "Síndrome de Lemierre",
                 "Abscesso dentário",
                 "Rinite",
-                "Otite média simples que melhora com analgésico em casa"
+                "Otite média simples"
               ],
-              "resposta": "Jugular infectada com êmbolos ao pulmão",
-              "explicacao": "Causada por Fusobacterium.",
+              "resposta": "Síndrome de Lemierre",
+              "explicacao": "É trombose infectada da jugular com êmbolos ao pulmão.",
               "revisado": false
             },
             {
@@ -2665,29 +2683,31 @@
             {
               "id": "otorrino-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "As infecções profundas do pescoço podem descer para o mediastino e ser fatais.",
+              "enunciado": "Paciente com abscesso cervical profundo e dor no peito pode ter infecção que desceu para o mediastino.",
               "resposta": true,
-              "explicacao": "A mediastinite exige cirurgia.",
+              "explicacao": "Verdadeiro. A mediastinite é grave e exige cirurgia.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ descendente é a infecção do mediastino vinda do pescoço.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com abscesso dentário que se espalhou no pescoço tem dor torácica e mediastino alargado.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "mediastinite",
-                "pericardite",
-                "pleurite",
-                "pneumonia"
+                "Mediastinite",
+                "Pericardite",
+                "Pleurite",
+                "Pneumonia"
               ],
-              "resposta": "mediastinite",
+              "resposta": "Mediastinite",
               "explicacao": "Tem alta mortalidade.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do abscesso periamigdaliano?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem dor de garganta forte de um lado, voz abafada, trismo e úvula desviada.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Drenagem e antibiótico",
                 "Só antibiótico oral",
@@ -2695,7 +2715,7 @@
                 "Gargarejo com água e sal"
               ],
               "resposta": "Drenagem e antibiótico",
-              "explicacao": "Pode ser puncionado.",
+              "explicacao": "É abscesso periamigdaliano; pode ser puncionado.",
               "revisado": false
             },
             {
@@ -2761,16 +2781,17 @@
             },
             {
               "id": "otorrino-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da papilomatose laríngea?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem rouquidão progressiva; laringoscopia com verrugas nas cordas vocais que voltam após retirada.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Verrugas na laringe por HPV que voltam",
-                "Câncer",
+                "Papilomatose laríngea",
+                "Câncer de laringe",
                 "Pólipo único",
-                "Câncer maligno que espalha logo para o pulmão"
+                "Nódulo vocal de professores"
               ],
-              "resposta": "Verrugas na laringe por HPV que voltam",
-              "explicacao": "Pode exigir várias cirurgias.",
+              "resposta": "Papilomatose laríngea",
+              "explicacao": "É causada pelo HPV e pode exigir várias cirurgias.",
               "revisado": false
             },
             {
@@ -2791,37 +2812,39 @@
             {
               "id": "otorrino-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A estenose da traqueia pode ocorrer após intubação prolongada.",
+              "enunciado": "Paciente que ficou 3 semanas intubado e tem estridor 1 mês depois pode ter estenose da traqueia.",
               "resposta": true,
-              "explicacao": "Causa falta de ar e estridor.",
+              "explicacao": "Verdadeiro. Causa falta de ar e estridor.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a abertura na traqueia para respirar, feita em intubação prolongada.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente está intubado há 14 dias e não consegue sair do ventilador.",
+              "enunciado": "Qual procedimento facilita o desmame?",
               "opcoes": [
-                "traqueostomia",
-                "cricotireoidostomia",
-                "gastrostomia",
-                "esofagostomia"
+                "Traqueostomia",
+                "Cricotireoidostomia",
+                "Gastrostomia",
+                "Esofagostomia"
               ],
-              "resposta": "traqueostomia",
-              "explicacao": "Facilita o desmame.",
+              "resposta": "Traqueostomia",
+              "explicacao": "É a abertura na traqueia para respirar.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o câncer de laringe com melhor prognóstico?",
+              "tipo": "caso_clinico",
+              "caso": "Fumante tem rouquidão há 1 mês; tumor pequeno na corda vocal.",
+              "enunciado": "Por que esse câncer tem bom prognóstico?",
               "opcoes": [
-                "Câncer da corda vocal (glótico)",
-                "Supraglótico",
-                "Subglótico",
-                "Todos têm exatamente o mesmo prognóstico"
+                "Rouquidão precoce",
+                "Não tem linfonodos nunca",
+                "Responde a antibiótico",
+                "Todos têm o mesmo prognóstico"
               ],
-              "resposta": "Câncer da corda vocal (glótico)",
-              "explicacao": "Causa rouquidão cedo e tem poucos linfonodos.",
+              "resposta": "Rouquidão precoce",
+              "explicacao": "O glótico causa sintoma cedo e tem poucos linfonodos.",
               "revisado": false
             },
             {
@@ -2887,15 +2910,16 @@
             },
             {
               "id": "otorrino-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do adenoma pleomórfico?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem nódulo indolor na parótida há 2 anos; punção com adenoma pleomórfico.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Cirurgia preservando o nervo facial",
+                "Cirurgia preservando o facial",
                 "Observar para sempre",
                 "Radioterapia",
-                "Observação para sempre, sem nenhum tratamento"
+                "Observação, sem nenhum tratamento"
               ],
-              "resposta": "Cirurgia preservando o nervo facial",
+              "resposta": "Cirurgia preservando o facial",
               "explicacao": "Pode recidivar se retirado incompleto.",
               "revisado": false
             },
@@ -2917,34 +2941,36 @@
             {
               "id": "otorrino-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Frey causa suor no rosto ao comer após cirurgia de parótida.",
+              "enunciado": "Paciente operado de parótida que sua no rosto ao comer tem síndrome de Frey.",
               "resposta": true,
-              "explicacao": "Por regeneração errada de nervos.",
+              "explicacao": "Verdadeiro. Ocorre por regeneração errada de nervos.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ salivar é um cálculo na glândula, mais comum na submandibular.",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem inchaço doloroso embaixo da mandíbula sempre que come.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "sialolito",
-                "sialoma",
-                "adenoma",
-                "cisto de retenção"
+                "Cálculo salivar",
+                "Caxumba",
+                "Linfoma",
+                "Abscesso dentário"
               ],
-              "resposta": "sialolito",
-              "explicacao": "Causa inchaço ao comer.",
+              "resposta": "Cálculo salivar",
+              "explicacao": "O sialolito é mais comum na submandibular.",
               "revisado": false
             },
             {
               "id": "otorrino-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença autoimune causa aumento das glândulas salivares e boca seca?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem boca e olhos secos e parótidas aumentadas; anti-Ro positivo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Síndrome de Sjögren",
                 "Lúpus",
                 "Gota",
-                "Diabetes tipo 2 descompensado"
+                "Diabetes descompensado"
               ],
               "resposta": "Síndrome de Sjögren",
               "explicacao": "Aumenta o risco de linfoma.",
@@ -3021,15 +3047,16 @@
             },
             {
               "id": "otorrino-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o marcador do câncer de orofaringe ligado ao HPV?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos, não fumante, tem câncer de amígdala.",
+              "enunciado": "Qual marcador sugere ligação com HPV?",
               "opcoes": [
-                "p16 positivo na imuno-histoquímica",
+                "p16 positivo",
                 "PSA",
                 "CEA",
-                "CA-125 e alfafetoproteína no sangue"
+                "CA-125 e alfafetoproteína"
               ],
-              "resposta": "p16 positivo na imuno-histoquímica",
+              "resposta": "p16 positivo",
               "explicacao": "Indica melhor resposta ao tratamento.",
               "revisado": false
             },
@@ -3051,37 +3078,39 @@
             {
               "id": "otorrino-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O câncer de cabeça e pescoço pode ter um segundo câncer em outro local da boca ou pulmão.",
-              "resposta": true,
-              "explicacao": "É o fenômeno da cancerização em campo.",
+              "enunciado": "Paciente curado de câncer de boca tem o mesmo risco de outro câncer na boca ou pulmão que qualquer pessoa.",
+              "resposta": false,
+              "explicacao": "Falso. Tem risco maior pela cancerização em campo.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de linfonodos do pescoço retira os linfonodos no tratamento do câncer.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de língua tem linfonodos no pescoço.",
+              "enunciado": "Qual cirurgia retira esses linfonodos?",
               "opcoes": [
-                "dissecção",
-                "biópsia",
-                "punção",
-                "drenagem simples"
+                "Esvaziamento cervical",
+                "Biópsia",
+                "Punção",
+                "Drenagem simples com dreno de penrose"
               ],
-              "resposta": "dissecção",
-              "explicacao": "Também chamada de esvaziamento cervical.",
+              "resposta": "Esvaziamento cervical",
+              "explicacao": "É a dissecção dos linfonodos do pescoço.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal efeito tardio da radioterapia na cabeça?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente fez radioterapia de cabeça há 2 anos e tem dente que caiu com osso exposto na mandíbula.",
+              "enunciado": "Qual é a complicação?",
               "opcoes": [
-                "Boca seca e necrose da mandíbula",
+                "Osteorradionecrose",
                 "Diabetes",
                 "Hipertensão",
-                "Efeito tardio nenhum depois do fim do tratamento"
+                "Nenhum efeito tardio"
               ],
-              "resposta": "Boca seca e necrose da mandíbula",
-              "explicacao": "O cuidado dentário é feito antes.",
+              "resposta": "Osteorradionecrose",
+              "explicacao": "Junto com boca seca; o cuidado dentário é feito antes.",
               "revisado": false
             },
             {
@@ -3147,13 +3176,14 @@
             },
             {
               "id": "otorrino-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a medida mais eficaz para prevenir câncer de boca?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 55 anos fuma e bebe muito.",
+              "enunciado": "Qual medida previne câncer de boca?",
               "opcoes": [
                 "Parar de fumar e beber",
                 "Escovar mais",
-                "Comer doce",
-                "Escovar os dentes três vezes ao dia com pasta clareadora"
+                "Bochechar",
+                "Pasta clareadora três vezes ao dia"
               ],
               "resposta": "Parar de fumar e beber",
               "explicacao": "Também proteger os lábios do sol.",
@@ -3177,29 +3207,31 @@
             {
               "id": "otorrino-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O exame da boca deve fazer parte da consulta de pessoas que fumam.",
-              "resposta": true,
-              "explicacao": "Detecta lesões cedo.",
+              "enunciado": "Em consulta de fumantes, não é preciso examinar a boca se não houver queixa.",
+              "resposta": false,
+              "explicacao": "Falso. O exame da boca detecta lesões cedo e deve ser feito.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a placa vermelha na boca com alto risco de câncer.",
+              "tipo": "caso_clinico",
+              "caso": "Fumante tem placa vermelha aveludada na boca que não sai ao raspar.",
+              "enunciado": "Qual é a lesão?",
               "opcoes": [
-                "eritroplasia",
-                "leucoplasia",
-                "afta",
-                "candidíase"
+                "Eritroplasia",
+                "Leucoplasia",
+                "Afta",
+                "Candidíase"
               ],
-              "resposta": "eritroplasia",
-              "explicacao": "Deve ser biopsiada.",
+              "resposta": "Eritroplasia",
+              "explicacao": "Tem alto risco de câncer; deve ser biopsiada.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual vírus está ligado ao câncer de orofaringe em jovens?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem não fumante tem câncer de orofaringe.",
+              "enunciado": "Qual vírus está ligado?",
               "opcoes": [
                 "HPV 16",
                 "Herpes simples",
@@ -3273,15 +3305,16 @@
             },
             {
               "id": "otorrino-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual cuidado antes da radioterapia da cabeça reduz complicações?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai iniciar radioterapia de cabeça e pescoço.",
+              "enunciado": "Qual cuidado reduz complicações?",
               "opcoes": [
-                "Avaliação e tratamento dentário",
+                "Avaliação dentária antes",
                 "Antibiótico",
-                "Extrair todos sempre",
-                "Extrair todos os dentes de todos os pacientes antes de começar"
+                "Extrair todos os dentes",
+                "Extrair todos de todos os pacientes antes"
               ],
-              "resposta": "Avaliação e tratamento dentário",
+              "resposta": "Avaliação dentária antes",
               "explicacao": "Dentes ruins são retirados antes.",
               "revisado": false
             },
@@ -3303,37 +3336,39 @@
             {
               "id": "otorrino-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O hipotireoidismo pode surgir após radioterapia no pescoço.",
+              "enunciado": "Paciente que fez radioterapia no pescoço pode desenvolver hipotireoidismo anos depois.",
               "resposta": true,
-              "explicacao": "Monitorar o TSH.",
+              "explicacao": "Verdadeiro. Deve-se monitorar o TSH.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a falta de saliva após radioterapia das glândulas salivares.",
+              "tipo": "caso_clinico",
+              "caso": "Após radioterapia, o paciente tem boca seca e cáries rápidas.",
+              "enunciado": "Como se chama a falta de saliva?",
               "opcoes": [
-                "xerostomia",
-                "sialorreia",
-                "disfagia",
-                "afonia"
+                "Xerostomia",
+                "Sialorreia",
+                "Disfagia",
+                "Afonia"
               ],
-              "resposta": "xerostomia",
+              "resposta": "Xerostomia",
               "explicacao": "Aumenta as cáries.",
               "revisado": false
             },
             {
               "id": "otorrino-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel do fonoaudiólogo após câncer de cabeça e pescoço?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente operado de câncer de laringe tem dificuldade para falar e engolir.",
+              "enunciado": "Qual profissional reabilita?",
               "opcoes": [
-                "Reabilitar a fala e a deglutição",
-                "Só a audição",
-                "Só a voz",
-                "Papel nenhum depois da cirurgia de câncer"
+                "Fonoaudiólogo",
+                "Ortopedista",
+                "Cardiologista",
+                "Nenhum depois da cirurgia"
               ],
-              "resposta": "Reabilitar a fala e a deglutição",
-              "explicacao": "Melhora a qualidade de vida.",
+              "resposta": "Fonoaudiólogo",
+              "explicacao": "Reabilita fala e deglutição.",
               "revisado": false
             },
             {
@@ -3407,16 +3442,17 @@
             },
             {
               "id": "otorrino-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado com sementes no ouvido?",
+              "tipo": "caso_clinico",
+              "caso": "Criança colocou um grão de feijão no ouvido.",
+              "enunciado": "Qual é o cuidado?",
               "opcoes": [
-                "Não lavar com água, pois incham",
+                "Não lavar com água",
                 "Lavar com água",
                 "Usar álcool",
-                "Lavar com bastante água morna para empurrar a semente"
+                "Lavar com água morna para empurrar"
               ],
-              "resposta": "Não lavar com água, pois incham",
-              "explicacao": "Retirar com instrumento.",
+              "resposta": "Não lavar com água",
+              "explicacao": "Sementes incham; retirar com instrumento.",
               "revisado": false
             },
             {
@@ -3437,9 +3473,9 @@
             {
               "id": "otorrino-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O mel pode ser dado a crianças maiores que engoliram bateria, enquanto vão ao hospital.",
+              "enunciado": "Criança de 3 anos que engoliu bateria de botão há 1 hora pode receber mel a caminho do hospital.",
               "resposta": true,
-              "explicacao": "Reduz a lesão no esôfago.",
+              "explicacao": "Verdadeiro. O mel reduz a lesão no esôfago.",
               "revisado": false
             },
             {
@@ -3458,16 +3494,17 @@
             },
             {
               "id": "otorrino-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal sugere corpo estranho na via aérea?",
+              "tipo": "caso_clinico",
+              "caso": "Criança engasgou com amendoim há 2 dias e agora tem tosse e chiado só à direita.",
+              "enunciado": "O que suspeitar?",
               "opcoes": [
-                "Engasgo súbito, depois tosse e chiado de um lado",
-                "Febre",
-                "Coriza",
-                "Coriza, espirros e febre baixa por três dias"
+                "Corpo estranho no brônquio",
+                "Asma",
+                "Pneumonia viral",
+                "Resfriado com coriza e febre baixa"
               ],
-              "resposta": "Engasgo súbito, depois tosse e chiado de um lado",
-              "explicacao": "Pode imitar asma.",
+              "resposta": "Corpo estranho no brônquio",
+              "explicacao": "Pode imitar asma; fazer broncoscopia.",
               "revisado": false
             },
             {
@@ -3533,16 +3570,17 @@
             },
             {
               "id": "otorrino-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a intubação mais difícil em infecções do pescoço?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com angina de Ludwig tem pescoço inchado e boca que mal abre.",
+              "enunciado": "Qual é o risco na intubação?",
               "opcoes": [
-                "Via aérea distorcida, que pode exigir via cirúrgica",
-                "Todas são fáceis",
-                "Só em crianças",
-                "Todas as intubações são fáceis nesses pacientes"
+                "Via aérea difícil",
+                "Intubação fácil",
+                "Nenhum risco",
+                "Todas as intubações são fáceis nesses casos"
               ],
-              "resposta": "Via aérea distorcida, que pode exigir via cirúrgica",
-              "explicacao": "Planejar com equipe.",
+              "resposta": "Via aérea difícil",
+              "explicacao": "Pode exigir via cirúrgica; planejar com equipe.",
               "revisado": false
             },
             {
@@ -3563,37 +3601,39 @@
             {
               "id": "otorrino-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A traqueostomia de urgência é mais difícil e demorada que a cricotireoidostomia.",
-              "resposta": true,
-              "explicacao": "A cricotireoidostomia é preferida na emergência.",
+              "enunciado": "Na emergência sem via aérea, a traqueostomia é preferida à cricotireoidostomia por ser mais rápida.",
+              "resposta": false,
+              "explicacao": "Falso. A cricotireoidostomia é mais rápida e preferida na emergência.",
               "revisado": false
             },
             {
               "id": "otorrino-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ hereditário causa inchaço sem coceira e é tratado com inibidor de C1.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem inchaço de lábios e língua sem coceira, que não melhora com antialérgico; C4 baixo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "angioedema",
-                "eczema",
-                "urticária",
-                "eritema multiforme"
+                "Angioedema hereditário",
+                "Eczema",
+                "Urticária",
+                "Eritema multiforme por herpes simples"
               ],
-              "resposta": "angioedema",
-              "explicacao": "Não responde a antialérgicos.",
+              "resposta": "Angioedema hereditário",
+              "explicacao": "É tratado com inibidor de C1.",
               "revisado": false
             },
             {
               "id": "otorrino-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual paciente tem risco de sangramento após retirada de amígdalas?",
+              "tipo": "caso_clinico",
+              "caso": "Criança operou as amígdalas há 7 dias e cospe sangue.",
+              "enunciado": "O que ocorreu?",
               "opcoes": [
-                "Qualquer um, sobretudo do 5º ao 10º dia",
-                "Só adultos",
-                "Só no dia",
-                "Somente no próprio dia da cirurgia, nunca depois"
+                "Queda da crosta",
+                "Infecção viral",
+                "Nada grave",
+                "Sangramento que só ocorre no dia da cirurgia"
               ],
-              "resposta": "Qualquer um, sobretudo do 5º ao 10º dia",
-              "explicacao": "Quando a crosta cai.",
+              "resposta": "Queda da crosta",
+              "explicacao": "O risco de sangramento é maior do 5º ao 10º dia.",
               "revisado": false
             },
             {
@@ -3659,13 +3699,14 @@
             },
             {
               "id": "otorrino-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual infecção congênita é a principal causa de surdez não genética?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê falhou no teste da orelhinha e nasceu sem sintomas.",
+              "enunciado": "Qual infecção congênita é a principal causa não genética de surdez?",
               "opcoes": [
                 "Citomegalovírus",
-                "Rubéola apenas",
+                "Rubéola",
                 "Sífilis",
-                "Toxoplasmose"
+                "Toxoplasmose congênita"
               ],
               "resposta": "Citomegalovírus",
               "explicacao": "Muitos bebês nascem sem sintomas.",
@@ -3689,36 +3730,38 @@
             {
               "id": "otorrino-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Crianças com síndrome de Down têm mais otites e perda auditiva.",
-              "resposta": true,
-              "explicacao": "Precisam de acompanhamento.",
+              "enunciado": "Crianças com síndrome de Down têm menos otites e raramente perdem audição.",
+              "resposta": false,
+              "explicacao": "Falso. Têm mais otites e perda auditiva; precisam de acompanhamento.",
               "revisado": false
             },
             {
               "id": "otorrino-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A respiração pela boca por adenoide grande pode deixar a face ___.",
+              "tipo": "caso_clinico",
+              "caso": "Criança ronca, respira pela boca e tem adenoide grande.",
+              "enunciado": "Como fica a face com o tempo?",
               "opcoes": [
-                "alongada",
-                "redonda",
-                "inchada",
-                "normal"
+                "Alongada",
+                "Redonda",
+                "Inchada",
+                "Normal"
               ],
-              "resposta": "alongada",
-              "explicacao": "Chamada de face adenoidiana.",
+              "resposta": "Alongada",
+              "explicacao": "É a face adenoidiana.",
               "revisado": false
             },
             {
               "id": "otorrino-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a idade para implante coclear em bebês com surdez profunda?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê tem surdez profunda dos dois lados sem benefício do aparelho.",
+              "enunciado": "Quando fazer o implante coclear?",
               "opcoes": [
-                "Por volta de 1 ano, ou antes",
+                "Por volta de 1 ano",
                 "Após 10 anos",
                 "Nunca",
-                "Somente depois da idade adulta"
+                "Somente na idade adulta"
               ],
-              "resposta": "Por volta de 1 ano, ou antes",
+              "resposta": "Por volta de 1 ano",
               "explicacao": "Quanto mais cedo, melhor a fala.",
               "revisado": false
             },
