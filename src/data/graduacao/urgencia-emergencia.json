@@ -1863,16 +1863,17 @@
             },
             {
               "id": "urg-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de compressão de qualidade na capnografia?",
+              "tipo": "caso_clinico",
+              "caso": "Durante a RCP, a capnografia mostra CO2 de 25 mmHg.",
+              "enunciado": "O que isso indica?",
               "opcoes": [
-                "CO2 expirado acima de 10 mmHg",
-                "CO2 zero",
-                "Saturação 100%",
-                "Saturação de 100% no dedo durante as compressões"
+                "Compressões de qualidade",
+                "Compressões ruins",
+                "Óbito",
+                "Saturação de 100% no dedo"
               ],
-              "resposta": "CO2 expirado acima de 10 mmHg",
-              "explicacao": "Um aumento súbito sugere retorno da circulação.",
+              "resposta": "Compressões de qualidade",
+              "explicacao": "Acima de 10 mmHg; aumento súbito sugere retorno da circulação.",
               "revisado": false
             },
             {
@@ -1893,36 +1894,38 @@
             {
               "id": "urg-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Após o retorno da circulação, a meta de saturação é entre 92% e 98%.",
-              "resposta": true,
-              "explicacao": "Evitar oxigênio demais.",
+              "enunciado": "Após o retorno da circulação, deve-se manter saturação de 100% com oxigênio máximo.",
+              "resposta": false,
+              "explicacao": "Falso. A meta é 92% a 98%; evitar oxigênio demais.",
               "revisado": false
             },
             {
               "id": "urg-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Após a parada, deve-se evitar a ___ para proteger o cérebro.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve retorno da circulação e segue em coma.",
+              "enunciado": "O que evitar para proteger o cérebro?",
               "opcoes": [
-                "febre",
-                "sedação",
-                "analgesia",
-                "ventilação"
+                "Febre",
+                "Sedação",
+                "Analgesia",
+                "Ventilação"
               ],
-              "resposta": "febre",
+              "resposta": "Febre",
               "explicacao": "O controle da temperatura é recomendado.",
               "revisado": false
             },
             {
               "id": "urg-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a carga do choque em desfibrilador bifásico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em fibrilação ventricular vai receber choque com desfibrilador bifásico.",
+              "enunciado": "Qual carga usar?",
               "opcoes": [
-                "120 a 200 J, conforme o aparelho",
+                "120 a 200 J",
                 "10 J",
                 "50 J",
-                "Sempre 500 J em qualquer aparelho"
+                "Sempre 500 J"
               ],
-              "resposta": "120 a 200 J, conforme o aparelho",
+              "resposta": "120 a 200 J",
               "explicacao": "Seguir o fabricante.",
               "revisado": false
             },
@@ -1989,16 +1992,17 @@
             },
             {
               "id": "urg-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a carga de cardioversão sincronizada na fibrilação atrial instável?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial tem pressão de 70 e confusão.",
+              "enunciado": "Qual carga de cardioversão sincronizada?",
               "opcoes": [
-                "120 a 200 J bifásico",
+                "120 a 200 J",
                 "10 J",
                 "360 J sempre",
-                "Sempre 360 J, em qualquer aparelho e ritmo"
+                "Sempre 360 J, em qualquer ritmo"
               ],
-              "resposta": "120 a 200 J bifásico",
-              "explicacao": "Sincronizada com o QRS.",
+              "resposta": "120 a 200 J",
+              "explicacao": "Bifásico, sincronizado com o QRS.",
               "revisado": false
             },
             {
@@ -2019,37 +2023,39 @@
             {
               "id": "urg-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A torsades de pointes é tratada com sulfato de magnésio.",
-              "resposta": true,
-              "explicacao": "Associada ao QT longo.",
+              "enunciado": "Paciente com QT longo e torsades de pointes deve receber amiodarona como primeira escolha.",
+              "resposta": false,
+              "explicacao": "Falso. O tratamento é sulfato de magnésio; a amiodarona prolonga o QT.",
               "revisado": false
             },
             {
               "id": "urg-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A taquicardia de QRS ___ e ritmo regular a 150 sugere flutter atrial.",
+              "tipo": "caso_clinico",
+              "caso": "ECG mostra taquicardia regular a 150, QRS estreito e ondas em dente de serra.",
+              "enunciado": "Qual é o ritmo?",
               "opcoes": [
-                "estreito",
-                "largo",
-                "ausente",
-                "invertido"
+                "Flutter atrial",
+                "Fibrilação ventricular",
+                "Taquicardia ventricular",
+                "Bradicardia sinusal"
               ],
-              "resposta": "estreito",
-              "explicacao": "Com ondas em dente de serra.",
+              "resposta": "Flutter atrial",
+              "explicacao": "O QRS é estreito.",
               "revisado": false
             },
             {
               "id": "urg-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de adenosina na fibrilação atrial com pré-excitação?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com Wolff-Parkinson-White tem fibrilação atrial com QRS largo e irregular.",
+              "enunciado": "Qual é o risco da adenosina?",
               "opcoes": [
-                "Pode causar fibrilação ventricular",
-                "Risco nenhum",
+                "Fibrilação ventricular",
+                "Bradicardia leve",
                 "Cura",
-                "Cura a arritmia de vez, sem nenhum risco"
+                "Cura a arritmia sem risco"
               ],
-              "resposta": "Pode causar fibrilação ventricular",
-              "explicacao": "Evitar bloqueadores do nó.",
+              "resposta": "Fibrilação ventricular",
+              "explicacao": "Evitar bloqueadores do nó; usar cardioversão ou procainamida.",
               "revisado": false
             },
             {
@@ -2115,15 +2121,16 @@
             },
             {
               "id": "urg-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual bloqueio responde mal à atropina?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem bradicardia por bloqueio AV total e não responde à atropina.",
+              "enunciado": "Por quê?",
               "opcoes": [
-                "Abaixo do nó, como Mobitz II e BAV total",
-                "Primeiro grau",
-                "Mobitz I",
-                "Bloqueio de primeiro grau com PR pouco alargado"
+                "Bloqueio abaixo do nó",
+                "Dose baixa",
+                "Bloqueio de primeiro grau",
+                "Mobitz I com PR alargado"
               ],
-              "resposta": "Abaixo do nó, como Mobitz II e BAV total",
+              "resposta": "Bloqueio abaixo do nó",
               "explicacao": "Usar marcapasso.",
               "revisado": false
             },
@@ -2145,36 +2152,38 @@
             {
               "id": "urg-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hipercalemia pode causar bradicardia grave.",
+              "enunciado": "Renal crônico com potássio de 8 e bradicardia grave deve receber cálcio venoso logo.",
               "resposta": true,
-              "explicacao": "Tratar com cálcio.",
+              "explicacao": "Verdadeiro. A hipercalemia causa bradicardia; o cálcio protege o coração.",
               "revisado": false
             },
             {
               "id": "urg-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O marcapasso ___ é feito com pás no tórax enquanto se prepara o marcapasso definitivo.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com BAV total e choque espera o marcapasso definitivo.",
+              "enunciado": "Qual medida temporária com pás no tórax?",
               "opcoes": [
-                "transcutâneo",
-                "definitivo",
-                "oral",
-                "interno permanente"
+                "Marcapasso transcutâneo",
+                "Marcapasso definitivo",
+                "Atropina oral",
+                "Cardioversão sincronizada"
               ],
-              "resposta": "transcutâneo",
-              "explicacao": "É doloroso, exige sedação.",
+              "resposta": "Marcapasso transcutâneo",
+              "explicacao": "É doloroso e exige sedação.",
               "revisado": false
             },
             {
               "id": "urg-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa de bradicardia em infarto de parede inferior?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infarto de parede inferior tem frequência de 40.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Isquemia do nó atrioventricular",
+                "Isquemia do nó AV",
                 "Hipertireoidismo",
                 "Febre",
-                "Hipertireoidismo com febre e suor"
+                "Hipertireoidismo com febre"
               ],
-              "resposta": "Isquemia do nó atrioventricular",
+              "resposta": "Isquemia do nó AV",
               "explicacao": "Costuma ser temporária.",
               "revisado": false
             },
@@ -2249,16 +2258,17 @@
             },
             {
               "id": "urg-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a contraindicação ao nitrato no infarto?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com infarto tomou sildenafila ontem.",
+              "enunciado": "Qual remédio é contraindicado?",
               "opcoes": [
-                "Sildenafila recente e infarto de VD",
-                "Dor",
-                "Hipertensão",
-                "Dor no peito com pressão alta e taquicardia"
+                "Nitrato",
+                "AAS",
+                "Heparina",
+                "Clopidogrel"
               ],
-              "resposta": "Sildenafila recente e infarto de VD",
-              "explicacao": "Pode causar queda grave da pressão.",
+              "resposta": "Nitrato",
+              "explicacao": "Pode causar queda grave da pressão; infarto de VD também contraindica.",
               "revisado": false
             },
             {
@@ -2279,37 +2289,39 @@
             {
               "id": "urg-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os critérios de Sgarbossa ajudam a diagnosticar infarto com bloqueio de ramo esquerdo.",
-              "resposta": true,
-              "explicacao": "O bloqueio dificulta a leitura.",
+              "enunciado": "Paciente com bloqueio de ramo esquerdo e dor torácica não pode ter infarto diagnosticado pelo ECG.",
+              "resposta": false,
+              "explicacao": "Falso. Os critérios de Sgarbossa ajudam a diagnosticar infarto com bloqueio de ramo esquerdo.",
               "revisado": false
             },
             {
               "id": "urg-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O infarto sem ___ de ST é tratado com anticoagulação e cateterismo conforme o risco.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor torácica tem troponina alta e ECG com infra de ST.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "supra",
-                "infra",
-                "onda",
-                "ritmo"
+                "IAM sem supra",
+                "Infarto com supra",
+                "Angina estável",
+                "Pericardite aguda viral"
               ],
-              "resposta": "supra",
-              "explicacao": "Estratificar o risco.",
+              "resposta": "IAM sem supra",
+              "explicacao": "Trata-se com anticoagulação e cateterismo conforme o risco.",
               "revisado": false
             },
             {
               "id": "urg-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a complicação mecânica do infarto com sopro novo e choque?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente no 4º dia de infarto tem sopro novo e choque súbito.",
+              "enunciado": "Qual é a complicação?",
               "opcoes": [
-                "Ruptura de músculo papilar ou do septo",
+                "Ruptura mecânica",
                 "Pericardite",
                 "Arritmia",
-                "Pericardite leve com atrito e febre baixa"
+                "Pericardite leve com febre"
               ],
-              "resposta": "Ruptura de músculo papilar ou do septo",
-              "explicacao": "É emergência cirúrgica.",
+              "resposta": "Ruptura mecânica",
+              "explicacao": "Do músculo papilar ou do septo; emergência cirúrgica.",
               "revisado": false
             },
             {
@@ -2375,16 +2387,17 @@
             },
             {
               "id": "urg-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado antes de iniciar insulina na cetoacidose?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem em cetoacidose tem potássio de 2,9.",
+              "enunciado": "Qual é a conduta antes da insulina?",
               "opcoes": [
-                "Potássio acima de 3,3",
-                "Sódio baixo",
-                "Glicose > 1000",
-                "Glicose acima de 1000 e sódio normal"
+                "Repor potássio",
+                "Iniciar insulina",
+                "Bicarbonato",
+                "Esperar a glicose passar de 1000"
               ],
-              "resposta": "Potássio acima de 3,3",
-              "explicacao": "A insulina baixa o potássio.",
+              "resposta": "Repor potássio",
+              "explicacao": "A insulina baixa o potássio; iniciar só com potássio acima de 3,3.",
               "revisado": false
             },
             {
@@ -2405,29 +2418,31 @@
             {
               "id": "urg-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A correção rápida da hiponatremia crônica pode causar desmielinização.",
-              "resposta": true,
-              "explicacao": "Corrigir no máximo 8 a 10 por dia.",
+              "enunciado": "Idosa com sódio de 110 há uma semana pode ter o sódio corrigido 20 mEq/L no primeiro dia sem risco.",
+              "resposta": false,
+              "explicacao": "Falso. Corrigir no máximo 8 a 10 por dia; mais rápido causa desmielinização.",
               "revisado": false
             },
             {
               "id": "urg-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A crise ___ é a emergência do hipertireoidismo com febre e taquicardia.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Graves tem febre de 40 °C, frequência de 160 e agitação após cirurgia.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "tireotóxica",
-                "addisoniana",
-                "hipoglicêmica",
-                "renal"
+                "Crise tireotóxica",
+                "Crise addisoniana",
+                "Hipoglicemia",
+                "Crise renal"
               ],
-              "resposta": "tireotóxica",
+              "resposta": "Crise tireotóxica",
               "explicacao": "Tratar com betabloqueador e antitireoidiano.",
               "revisado": false
             },
             {
               "id": "urg-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da crise adrenal?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em corticoide crônico parou de repente e tem choque, vômitos e sódio baixo.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Hidrocortisona e soro",
                 "Insulina",
@@ -2435,7 +2450,7 @@
                 "Insulina e diurético venoso"
               ],
               "resposta": "Hidrocortisona e soro",
-              "explicacao": "Na suspeita, não esperar exames.",
+              "explicacao": "É crise adrenal; não esperar exames.",
               "revisado": false
             },
             {
@@ -2501,16 +2516,17 @@
             },
             {
               "id": "urg-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a segunda droga no estado de mal epiléptico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente segue convulsionando após duas doses de midazolam.",
+              "enunciado": "Qual é a próxima droga?",
               "opcoes": [
-                "Fenitoína, valproato ou levetiracetam",
+                "Fenitoína ou levetiracetam",
                 "Paracetamol",
                 "Antibiótico",
-                "Paracetamol venoso e antibiótico de amplo espectro"
+                "Paracetamol e antibiótico venoso"
               ],
-              "resposta": "Fenitoína, valproato ou levetiracetam",
-              "explicacao": "Após o benzodiazepínico.",
+              "resposta": "Fenitoína ou levetiracetam",
+              "explicacao": "Valproato também é opção.",
               "revisado": false
             },
             {
@@ -2531,9 +2547,9 @@
             {
               "id": "urg-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A nimodipina previne o vasoespasmo na hemorragia subaracnóidea.",
+              "enunciado": "Paciente com hemorragia subaracnoide deve receber nimodipina para prevenir vasoespasmo.",
               "resposta": true,
-              "explicacao": "Melhora o desfecho.",
+              "explicacao": "Verdadeiro. Melhora o desfecho.",
               "revisado": false
             },
             {
@@ -2552,16 +2568,17 @@
             },
             {
               "id": "urg-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado com a pressão no AVC isquêmico sem trombólise?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com AVC isquêmico sem trombólise tem pressão de 190/105.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tolerar até 220/120",
+                "Tolerar a pressão",
                 "Baixar rápido",
-                "Manter < 120",
-                "Baixar rápido para menos de 120 de sistólica"
+                "Manter abaixo de 120",
+                "Baixar para menos de 120 de sistólica"
               ],
-              "resposta": "Tolerar até 220/120",
-              "explicacao": "Preserva o fluxo cerebral.",
+              "resposta": "Tolerar a pressão",
+              "explicacao": "Tolerar até 220/120 preserva o fluxo cerebral.",
               "revisado": false
             },
             {
@@ -2635,16 +2652,17 @@
             },
             {
               "id": "urg-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de resposta ao volume?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente séptico hipotenso; ao elevar as pernas, a pressão sobe.",
+              "enunciado": "O que indica?",
               "opcoes": [
-                "Débito ou pressão sobem ao elevar as pernas",
+                "Responde a volume",
                 "Febre",
-                "Tosse",
-                "Febre alta com tosse e chiado no peito, sem mudança na pressão"
+                "Choque cardiogênico",
+                "Precisa de diurético e restrição"
               ],
-              "resposta": "Débito ou pressão sobem ao elevar as pernas",
-              "explicacao": "Teste para avaliar.",
+              "resposta": "Responde a volume",
+              "explicacao": "É teste de fluidorresponsividade.",
               "revisado": false
             },
             {
@@ -2665,36 +2683,38 @@
             {
               "id": "urg-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O tempo até o antibiótico influencia a mortalidade na sepse.",
-              "resposta": true,
-              "explicacao": "Dar na primeira hora.",
+              "enunciado": "Na sepse, atrasar o antibiótico algumas horas para esperar culturas não muda a mortalidade.",
+              "resposta": false,
+              "explicacao": "Falso. O tempo até o antibiótico influencia a mortalidade; dar na primeira hora.",
               "revisado": false
             },
             {
               "id": "urg-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é o principal marcador de hipoperfusão na sepse.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente séptico tem pressão normal, mas está confuso e com pele fria.",
+              "enunciado": "Qual exame mostra hipoperfusão?",
               "opcoes": [
-                "lactato",
-                "sódio",
-                "potássio",
-                "cálcio"
+                "Lactato",
+                "Sódio",
+                "Potássio",
+                "Cálcio"
               ],
-              "resposta": "lactato",
+              "resposta": "Lactato",
               "explicacao": "Repetir para acompanhar.",
               "revisado": false
             },
             {
               "id": "urg-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de dar volume demais na sepse?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente séptico recebeu 6 litros de soro e agora tem crepitações e saturação caindo.",
+              "enunciado": "O que ocorreu?",
               "opcoes": [
-                "Edema pulmonar e piora",
-                "Risco nenhum",
+                "Sobrecarga de volume",
+                "Nenhum problema",
                 "Cura",
-                "Risco nenhum; quanto mais soro, melhor"
+                "Precisa de mais soro rápido"
               ],
-              "resposta": "Edema pulmonar e piora",
+              "resposta": "Sobrecarga de volume",
               "explicacao": "Avaliar resposta a cada dose.",
               "revisado": false
             },
@@ -2761,16 +2781,17 @@
             },
             {
               "id": "urg-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a hipotensão permissiva no trauma?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de facada no abdome tem pressão de 85 e vai para cirurgia.",
+              "enunciado": "Qual é a meta de pressão até controlar o sangramento?",
               "opcoes": [
-                "Sistólica de 80 a 90 até parar o sangramento",
-                "Pressão normal sempre",
+                "Sistólica de 80 a 90",
+                "Pressão normal",
                 "Pressão de 50",
-                "Pressão normal sempre, com muito soro desde o início"
+                "Pressão normal com muito soro"
               ],
-              "resposta": "Sistólica de 80 a 90 até parar o sangramento",
-              "explicacao": "Evita piorar o sangramento.",
+              "resposta": "Sistólica de 80 a 90",
+              "explicacao": "É a hipotensão permissiva.",
               "revisado": false
             },
             {
@@ -2791,37 +2812,39 @@
             {
               "id": "urg-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hipotermia, a acidose e a coagulopatia formam a tríade letal.",
-              "resposta": true,
-              "explicacao": "Prevenir as três.",
+              "enunciado": "No trauma grave, aquecer o paciente é desnecessário, pois a hipotermia protege do sangramento.",
+              "resposta": false,
+              "explicacao": "Falso. Hipotermia, acidose e coagulopatia formam a tríade letal.",
               "revisado": false
             },
             {
               "id": "urg-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O cálcio ___ cai com a transfusão maciça e deve ser reposto.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente recebeu 10 bolsas de sangue e tem tremores e QT longo.",
+              "enunciado": "O que repor?",
               "opcoes": [
-                "iônico",
-                "total",
-                "urinário",
-                "ósseo"
+                "Cálcio",
+                "Sódio",
+                "Potássio",
+                "Glicose"
               ],
-              "resposta": "iônico",
-              "explicacao": "O citrato da bolsa liga o cálcio.",
+              "resposta": "Cálcio",
+              "explicacao": "O citrato das bolsas liga o cálcio iônico.",
               "revisado": false
             },
             {
               "id": "urg-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o local de sangramento oculto no trauma?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de acidente está em choque sem sangramento externo.",
+              "enunciado": "Onde procurar?",
               "opcoes": [
-                "Tórax, abdome, pelve e ossos longos",
+                "Tórax, abdome e pelve",
                 "Cabeça",
                 "Mão",
-                "Mão e pé, por cortes pequenos que sangram muito"
+                "Cortes pequenos nas mãos"
               ],
-              "resposta": "Tórax, abdome, pelve e ossos longos",
-              "explicacao": "Procurar nesses locais.",
+              "resposta": "Tórax, abdome e pelve",
+              "explicacao": "Também ossos longos.",
               "revisado": false
             },
             {
@@ -2887,8 +2910,9 @@
             },
             {
               "id": "urg-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o inotrópico usado no choque cardiogênico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com infarto extenso tem pressão baixa e pulmões congestos.",
+              "enunciado": "Qual inotrópico usar?",
               "opcoes": [
                 "Dobutamina",
                 "Insulina",
@@ -2917,37 +2941,39 @@
             {
               "id": "urg-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A embolia pulmonar com choque é indicação de trombólise.",
+              "enunciado": "Paciente com embolia pulmonar maciça e choque, sem contraindicação, deve receber trombólise.",
               "resposta": true,
-              "explicacao": "Se não houver contraindicação.",
+              "explicacao": "Verdadeiro. É a indicação clássica.",
               "revisado": false
             },
             {
               "id": "urg-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O balão intra-___ é usado em casos selecionados de choque cardiogênico.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em choque cardiogênico após infarto vai para hemodinâmica.",
+              "enunciado": "Qual dispositivo pode ajudar?",
               "opcoes": [
-                "aórtico",
-                "venoso",
-                "gástrico",
-                "pulmonar"
+                "Balão intra-aórtico",
+                "Balão gástrico",
+                "Filtro de cava",
+                "Marcapasso transcutâneo"
               ],
-              "resposta": "aórtico",
-              "explicacao": "Ajuda o coração.",
+              "resposta": "Balão intra-aórtico",
+              "explicacao": "Usado em casos selecionados.",
               "revisado": false
             },
             {
               "id": "urg-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame à beira do leito ajuda a diferenciar o tipo de choque?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em choque sem causa clara na emergência.",
+              "enunciado": "Qual exame à beira do leito ajuda?",
               "opcoes": [
-                "Ultrassom (POCUS)",
+                "POCUS",
                 "Raio X",
                 "Ressonância",
-                "Ressonância cardíaca com contraste"
+                "Ressonância cardíaca"
               ],
-              "resposta": "Ultrassom (POCUS)",
-              "explicacao": "Avalia coração, veia cava e pulmão.",
+              "resposta": "POCUS",
+              "explicacao": "O ultrassom avalia coração, veia cava e pulmão.",
               "revisado": false
             },
             {
@@ -3021,16 +3047,17 @@
             },
             {
               "id": "urg-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a indicação de toracotomia após drenagem de hemotórax?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de facada no tórax drenou 1.700 mL de sangue ao passar o dreno.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Mais de 1500 mL na drenagem",
-                "100 mL",
-                "50 mL",
-                "Qualquer volume acima de 100 mL"
+                "Toracotomia",
+                "Observar",
+                "Novo dreno",
+                "Transfundir e repetir raio X"
               ],
-              "resposta": "Mais de 1500 mL na drenagem",
-              "explicacao": "Ou mais de 200 mL por hora.",
+              "resposta": "Toracotomia",
+              "explicacao": "Mais de 1500 mL ou mais de 200 mL/h indicam toracotomia.",
               "revisado": false
             },
             {
@@ -3051,36 +3078,38 @@
             {
               "id": "urg-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O pneumotórax aberto deve ser coberto com curativo de três pontas.",
-              "resposta": true,
-              "explicacao": "Evita entrada de ar.",
+              "enunciado": "Ferida aberta no tórax com ar entrando deve ser fechada totalmente com curativo oclusivo nos quatro lados.",
+              "resposta": false,
+              "explicacao": "Falso. Usa-se curativo de três pontas, para evitar pneumotórax hipertensivo.",
               "revisado": false
             },
             {
               "id": "urg-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tamponamento ___ é a causa de choque em ferida no coração.",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de facada no precórdio tem pressão baixa, veias do pescoço cheias e bulhas abafadas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "cardíaco",
-                "pulmonar",
-                "gástrico",
-                "renal"
+                "Tamponamento cardíaco",
+                "Pneumotórax",
+                "Hemotórax",
+                "Contusão pulmonar com hemoptise"
               ],
-              "resposta": "cardíaco",
+              "resposta": "Tamponamento cardíaco",
               "explicacao": "Exige cirurgia.",
               "revisado": false
             },
             {
               "id": "urg-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o local da descompressão com agulha no adulto?",
+              "tipo": "caso_clinico",
+              "caso": "Adulto com pneumotórax hipertensivo vai receber descompressão com agulha.",
+              "enunciado": "Onde puncionar?",
               "opcoes": [
-                "4º ou 5º espaço na linha axilar",
+                "4º ou 5º espaço axilar",
                 "2º espaço sempre",
                 "Abdome",
                 "No pescoço, acima da clavícula"
               ],
-              "resposta": "4º ou 5º espaço na linha axilar",
+              "resposta": "4º ou 5º espaço axilar",
               "explicacao": "Atualizado pelo ATLS.",
               "revisado": false
             },
@@ -3147,16 +3176,17 @@
             },
             {
               "id": "urg-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta em ferimento por arma de fogo no abdome?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem tiro no abdome com pressão normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cirurgia na maioria dos casos",
-                "Observar sempre",
+                "Cirurgia",
+                "Observar",
                 "Liberar",
-                "Observar sempre com exames seriados e liberar"
+                "Observar com exames e liberar"
               ],
-              "resposta": "Cirurgia na maioria dos casos",
-              "explicacao": "Alto risco de lesão interna.",
+              "resposta": "Cirurgia",
+              "explicacao": "Na maioria dos casos, pelo alto risco de lesão interna.",
               "revisado": false
             },
             {
@@ -3177,36 +3207,38 @@
             {
               "id": "urg-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A lesão de uretra é suspeita com sangue no meato após trauma de pelve.",
-              "resposta": true,
-              "explicacao": "Não passar sonda antes de avaliar.",
+              "enunciado": "Motociclista com fratura de pelve e sangue no meato uretral deve ter sonda passada logo para medir a diurese.",
+              "resposta": false,
+              "explicacao": "Falso. Suspeita de lesão de uretra; não passar sonda antes de avaliar.",
               "revisado": false
             },
             {
               "id": "urg-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de controle de danos faz uma cirurgia rápida para parar sangramento e contaminação.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente instável com lesões no fígado e intestino recebe cirurgia rápida para parar sangramento e contaminação.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "cirurgia",
-                "anestesia",
-                "sedação",
-                "consulta"
+                "Controle de danos",
+                "Laparotomia branca",
+                "Cirurgia eletiva",
+                "Consulta"
               ],
-              "resposta": "cirurgia",
-              "explicacao": "Correção completa depois.",
+              "resposta": "Controle de danos",
+              "explicacao": "A correção completa é feita depois.",
               "revisado": false
             },
             {
               "id": "urg-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de lesão de víscera oca no trauma?",
+              "tipo": "caso_clinico",
+              "caso": "Motorista com cinto teve trauma fechado; tomografia inicial normal, mas evolui com peritonite.",
+              "enunciado": "O que suspeitar?",
               "opcoes": [
-                "Dor abdominal com peritonite",
+                "Lesão de víscera oca",
                 "Febre só",
                 "Tosse",
-                "Febre isolada sem dor abdominal"
+                "Febre isolada sem dor"
               ],
-              "resposta": "Dor abdominal com peritonite",
+              "resposta": "Lesão de víscera oca",
               "explicacao": "A tomografia pode não mostrar no início.",
               "revisado": false
             },
@@ -3273,16 +3305,17 @@
             },
             {
               "id": "urg-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de hematoma epidural?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem bateu a cabeça, ficou bem por 1 hora e depois ficou sonolento com pupila dilatada.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Intervalo lúcido seguido de piora",
-                "Piora lenta por semanas",
-                "Febre",
-                "Piora lenta ao longo de várias semanas sem intervalo"
+                "Hematoma epidural",
+                "Hematoma subdural crônico",
+                "Concussão",
+                "Piora lenta por semanas"
               ],
-              "resposta": "Intervalo lúcido seguido de piora",
-              "explicacao": "Exige cirurgia urgente.",
+              "resposta": "Hematoma epidural",
+              "explicacao": "É o intervalo lúcido; cirurgia urgente.",
               "revisado": false
             },
             {
@@ -3303,15 +3336,16 @@
             {
               "id": "urg-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hiperventilação de rotina não é recomendada no trauma de crânio.",
-              "resposta": true,
-              "explicacao": "Só em herniação, por pouco tempo.",
+              "enunciado": "No trauma de crânio grave, a hiperventilação de rotina é recomendada para reduzir a pressão.",
+              "resposta": false,
+              "explicacao": "Falso. Só em herniação, por pouco tempo; de rotina causa isquemia.",
               "revisado": false
             },
             {
               "id": "urg-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os critérios ___ ajudam a decidir raio X ou tomografia da coluna cervical.",
+              "tipo": "caso_clinico",
+              "caso": "Motorista alerta, sem dor no pescoço e sem déficit após batida leve.",
+              "enunciado": "Quais critérios decidem a imagem cervical?",
               "opcoes": [
                 "NEXUS",
                 "Wells",
@@ -3324,16 +3358,17 @@
             },
             {
               "id": "urg-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta com suspeita de lesão da coluna?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima caiu de altura e tem dor na coluna.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Imobilizar e mover em bloco",
+                "Mover em bloco",
                 "Mexer à vontade",
                 "Sentar",
-                "Sentar a vítima para avaliar se ela consegue andar"
+                "Sentar para ver se anda"
               ],
-              "resposta": "Imobilizar e mover em bloco",
-              "explicacao": "Evita lesão da medula.",
+              "resposta": "Mover em bloco",
+              "explicacao": "Imobilizar evita lesão da medula.",
               "revisado": false
             },
             {
@@ -3407,8 +3442,9 @@
             },
             {
               "id": "urg-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual nomograma avalia a intoxicação por paracetamol?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tomou 40 comprimidos de paracetamol há 5 horas.",
+              "enunciado": "Qual nomograma avalia o risco?",
               "opcoes": [
                 "Rumack-Matthew",
                 "Glasgow",
@@ -3416,7 +3452,7 @@
                 "Parkland para queimados"
               ],
               "resposta": "Rumack-Matthew",
-              "explicacao": "Mede o nível após 4 horas.",
+              "explicacao": "Usa o nível após 4 horas para decidir a acetilcisteína.",
               "revisado": false
             },
             {
@@ -3437,34 +3473,36 @@
             {
               "id": "urg-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O flumazenil pode causar convulsão em usuários crônicos de benzodiazepínicos.",
-              "resposta": true,
-              "explicacao": "Usar com cuidado.",
+              "enunciado": "Usuário crônico de clonazepam em overdose deve receber flumazenil de rotina, sem risco.",
+              "resposta": false,
+              "explicacao": "Falso. O flumazenil pode causar convulsão nesses pacientes.",
               "revisado": false
             },
             {
               "id": "urg-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ ocular é sinal de intoxicação por metanol.",
+              "tipo": "caso_clinico",
+              "caso": "Homem bebeu cachaça adulterada e tem acidose grave e visão turva.",
+              "enunciado": "Qual achado é típico do metanol?",
               "opcoes": [
-                "cegueira",
-                "vermelhidão",
-                "coceira",
-                "dor leve"
+                "Cegueira",
+                "Vermelhidão",
+                "Coceira",
+                "Dor leve"
               ],
-              "resposta": "cegueira",
-              "explicacao": "Pela lesão do nervo óptico.",
+              "resposta": "Cegueira",
+              "explicacao": "Por lesão do nervo óptico.",
               "revisado": false
             },
             {
               "id": "urg-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da intoxicação por lítio grave?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com lítio de 4,5 está confuso e com lesão renal.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Hemodiálise",
                 "Carvão ativado",
                 "Naloxona",
-                "Carvão ativado em doses repetidas"
+                "Carvão ativado repetido"
               ],
               "resposta": "Hemodiálise",
               "explicacao": "O carvão não adsorve lítio.",
@@ -3533,16 +3571,17 @@
             },
             {
               "id": "urg-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a complicação da picada de cascavel?",
+              "tipo": "caso_clinico",
+              "caso": "Lavrador picado por cascavel tem visão turva, ptose e urina escura.",
+              "enunciado": "Qual complicação temer?",
               "opcoes": [
-                "Insuficiência renal por lesão muscular",
+                "Lesão renal",
                 "Infecção só",
                 "Hipertensão",
-                "Hipertensão arterial leve sem outras alterações"
+                "Hipertensão leve"
               ],
-              "resposta": "Insuficiência renal por lesão muscular",
-              "explicacao": "Hidratar bem.",
+              "resposta": "Lesão renal",
+              "explicacao": "A lesão muscular causa insuficiência renal; hidratar bem.",
               "revisado": false
             },
             {
@@ -3563,37 +3602,39 @@
             {
               "id": "urg-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A insolação causa febre acima de 40 °C e confusão.",
+              "enunciado": "Trabalhador no sol com temperatura de 41 °C e confusão tem insolação, uma emergência.",
               "resposta": true,
-              "explicacao": "É emergência.",
+              "explicacao": "Verdadeiro. Exige resfriamento rápido.",
               "revisado": false
             },
             {
               "id": "urg-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ ativo com água fria é o tratamento da insolação.",
+              "tipo": "caso_clinico",
+              "caso": "Corredor desmaiou no calor com temperatura de 41 °C.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "resfriamento",
-                "aquecimento",
-                "repouso",
-                "jejum"
+                "Resfriamento ativo",
+                "Aquecimento",
+                "Repouso",
+                "Antitérmico oral e repouso"
               ],
-              "resposta": "resfriamento",
-              "explicacao": "Quanto antes, melhor.",
+              "resposta": "Resfriamento ativo",
+              "explicacao": "Com água fria; o antitérmico não funciona.",
               "revisado": false
             },
             {
               "id": "urg-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que não fazer em picada de cobra?",
+              "tipo": "caso_clinico",
+              "caso": "Homem foi picado por jararaca no pé.",
+              "enunciado": "O que não fazer?",
               "opcoes": [
-                "Torniquete e cortar o local",
+                "Torniquete",
                 "Lavar",
                 "Elevar",
-                "Levar o paciente ao hospital"
+                "Levar ao hospital"
               ],
-              "resposta": "Torniquete e cortar o local",
-              "explicacao": "Pioram o quadro.",
+              "resposta": "Torniquete",
+              "explicacao": "Torniquete e cortar o local pioram o quadro.",
               "revisado": false
             },
             {
@@ -3659,16 +3700,17 @@
             },
             {
               "id": "urg-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Durante a reposição de soro no queimado adulto, qual diurese indica volume adequado?",
+              "tipo": "caso_clinico",
+              "caso": "Adulto com 40% de queimadura recebe soro.",
+              "enunciado": "Qual diurese indica volume adequado?",
               "opcoes": [
                 "0,5 mL/kg/h",
                 "5 mL/kg/h",
                 "0,1 mL/kg/h",
-                "Pelo menos 5 mL/kg/h, mesmo com edema"
+                "Pelo menos 5 mL/kg/h"
               ],
               "resposta": "0,5 mL/kg/h",
-              "explicacao": "Ajustar o soro.",
+              "explicacao": "Ajustar o soro conforme a diurese.",
               "revisado": false
             },
             {
@@ -3689,37 +3731,39 @@
             {
               "id": "urg-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A queimadura circular no tórax pode dificultar a respiração e exigir escarotomia.",
+              "enunciado": "Paciente com queimadura circular no tórax e dificuldade para ventilar pode precisar de escarotomia.",
               "resposta": true,
-              "explicacao": "Corte para liberar.",
+              "explicacao": "Verdadeiro. O corte libera a expansão do tórax.",
               "revisado": false
             },
             {
               "id": "urg-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o corte da pele queimada para liberar a circulação.",
+              "tipo": "caso_clinico",
+              "caso": "Queimado tem perna com queimadura circular, fria e sem pulso.",
+              "enunciado": "Qual procedimento?",
               "opcoes": [
-                "escarotomia",
-                "traqueostomia",
-                "amputação",
-                "toracotomia"
+                "Escarotomia",
+                "Traqueostomia",
+                "Amputação",
+                "Toracotomia"
               ],
-              "resposta": "escarotomia",
-              "explicacao": "Feita em queimaduras circulares.",
+              "resposta": "Escarotomia",
+              "explicacao": "É o corte da pele queimada para liberar a circulação.",
               "revisado": false
             },
             {
               "id": "urg-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o critério de transferência para centro de queimados?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem queimadura de segundo grau nas mãos e face.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Face, mãos, genitais ou queimadura extensa",
-                "Queimadura pequena",
-                "Primeiro grau",
-                "Queimadura pequena de primeiro grau no braço"
+                "Centro de queimados",
+                "Pomada",
+                "Curativo em casa",
+                "Pomada e retorno em uma semana"
               ],
-              "resposta": "Face, mãos, genitais ou queimadura extensa",
-              "explicacao": "Exige cuidado especializado.",
+              "resposta": "Centro de queimados",
+              "explicacao": "Face, mãos, genitais ou extensas exigem cuidado especializado.",
               "revisado": false
             },
             {

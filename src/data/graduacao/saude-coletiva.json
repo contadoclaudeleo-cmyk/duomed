@@ -1863,16 +1863,17 @@
             },
             {
               "id": "scol-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Em um surto, 40 pessoas adoeceram e 2 morreram. Qual é a letalidade?",
+              "tipo": "caso_clinico",
+              "caso": "Em um surto de leptospirose, 40 pessoas adoeceram e 2 morreram.",
+              "enunciado": "Qual é a letalidade?",
               "opcoes": [
                 "5%",
                 "2%",
                 "40%",
-                "20%"
+                "20% dos moradores da cidade"
               ],
               "resposta": "5%",
-              "explicacao": "2 dividido por 40.",
+              "explicacao": "São 2 mortes divididas por 40 doentes.",
               "revisado": false
             },
             {
@@ -1893,36 +1894,38 @@
             {
               "id": "scol-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A mortalidade proporcional mostra quanto uma causa representa do total de mortes.",
-              "resposta": true,
-              "explicacao": "Não mede o risco na população.",
+              "enunciado": "Se 30% das mortes de uma cidade são por doença cardíaca, isso mede o risco de cada morador morrer do coração.",
+              "resposta": false,
+              "explicacao": "Falso. É a mortalidade proporcional; mostra a parte do total de mortes, não o risco na população.",
               "revisado": false
             },
             {
               "id": "scol-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A taxa ___ por idade permite comparar populações com estruturas etárias diferentes.",
+              "tipo": "caso_clinico",
+              "caso": "Cidade A tem muitos idosos e cidade B, muitos jovens; a A tem mais mortes por 1.000.",
+              "enunciado": "Como comparar de forma justa?",
               "opcoes": [
-                "padronizada",
-                "bruta",
-                "geral",
-                "de letalidade"
+                "Taxa padronizada",
+                "Taxa bruta",
+                "Taxa geral",
+                "Letalidade de cada doença em separado"
               ],
-              "resposta": "padronizada",
-              "explicacao": "Sem padronizar, uma cidade de idosos parece ter mais mortes.",
+              "resposta": "Taxa padronizada",
+              "explicacao": "Padronizar por idade; sem isso, a cidade de idosos parece ter mais mortes.",
               "revisado": false
             },
             {
               "id": "scol-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que comparar mortalidade bruta entre uma cidade jovem e uma de idosos pode enganar?",
+              "tipo": "caso_clinico",
+              "caso": "Cidade de aposentados tem mortalidade bruta maior que uma cidade universitária.",
+              "enunciado": "Por que isso pode enganar?",
               "opcoes": [
-                "A estrutura de idade é diferente",
-                "Os dados são sempre falsos",
+                "Idades diferentes",
+                "Dados falsos",
                 "Não engana",
-                "Porque a cidade jovem tem mais hospitais"
+                "A cidade jovem tem mais hospitais"
               ],
-              "resposta": "A estrutura de idade é diferente",
+              "resposta": "Idades diferentes",
               "explicacao": "É preciso padronizar por idade.",
               "revisado": false
             },
@@ -2019,37 +2022,39 @@
             {
               "id": "scol-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A especificidade não depende da prevalência da doença.",
-              "resposta": true,
-              "explicacao": "Os valores preditivos é que dependem.",
+              "enunciado": "Um teste usado em população com prevalência maior passa a ter especificidade maior.",
+              "resposta": false,
+              "explicacao": "Falso. A especificidade não depende da prevalência; os valores preditivos é que mudam.",
               "revisado": false
             },
             {
               "id": "scol-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O valor preditivo ___ é a chance de não ter a doença quando o teste é negativo.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com teste negativo pergunta qual a chance de realmente não ter a doença.",
+              "enunciado": "Qual medida responde?",
               "opcoes": [
-                "negativo",
-                "positivo",
-                "especificidade",
-                "sensibilidade"
+                "Valor preditivo negativo",
+                "Valor preditivo positivo",
+                "Especificidade",
+                "Sensibilidade"
               ],
-              "resposta": "negativo",
+              "resposta": "Valor preditivo negativo",
               "explicacao": "Ele aumenta quando a prevalência é baixa.",
               "revisado": false
             },
             {
               "id": "scol-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica de um bom programa de rastreamento?",
+              "tipo": "caso_clinico",
+              "caso": "Município quer criar um programa de rastreamento.",
+              "enunciado": "Qual doença é boa candidata?",
               "opcoes": [
-                "Doença importante, teste aceitável e tratamento precoce",
-                "Doença rara e sem tratamento",
-                "Teste caro e doloroso",
-                "Qualquer doença, desde que o exame seja moderno e preciso"
+                "Comum, com teste e tratamento",
+                "Rara e sem tratamento",
+                "Com teste caro e doloroso",
+                "Qualquer uma, se o exame for moderno"
               ],
-              "resposta": "Doença importante, teste aceitável e tratamento precoce",
-              "explicacao": "São os critérios de Wilson e Jungner.",
+              "resposta": "Comum, com teste e tratamento",
+              "explicacao": "Doença importante, teste aceitável e tratamento precoce: critérios de Wilson e Jungner.",
               "revisado": false
             },
             {
@@ -2145,37 +2150,39 @@
             {
               "id": "scol-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O período de incubação ajuda a identificar o agente de um surto alimentar.",
+              "enunciado": "Pessoas que vomitam 2 horas após uma festa provavelmente tiveram toxina pré-formada no alimento.",
               "resposta": true,
-              "explicacao": "Toxinas pré-formadas agem em poucas horas.",
+              "explicacao": "Verdadeiro. O período de incubação curto ajuda a identificar o agente.",
               "revisado": false
             },
             {
               "id": "scol-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A taxa de ___ é a incidência em um surto curto.",
+              "tipo": "caso_clinico",
+              "caso": "Num casamento, 100 pessoas comeram maionese e 30 adoeceram.",
+              "enunciado": "Qual medida é essa de 30%?",
               "opcoes": [
-                "ataque",
-                "letalidade",
-                "natalidade",
-                "prevalência"
+                "Taxa de ataque",
+                "Letalidade",
+                "Natalidade",
+                "Prevalência de doença crônica"
               ],
-              "resposta": "ataque",
-              "explicacao": "Ela é calculada entre os expostos.",
+              "resposta": "Taxa de ataque",
+              "explicacao": "É a incidência em um surto curto, calculada entre os expostos.",
               "revisado": false
             },
             {
               "id": "scol-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o período de incubação típico da toxina estafilocócica em alimentos?",
+              "tipo": "caso_clinico",
+              "caso": "Convidados vomitam muito 3 horas após comer doce com creme.",
+              "enunciado": "Qual agente é mais provável?",
               "opcoes": [
-                "1 a 6 horas",
-                "3 a 5 dias",
-                "2 semanas",
-                "1 mês"
+                "Toxina estafilocócica",
+                "Salmonella",
+                "Hepatite A",
+                "Rotavírus com diarreia por uma semana"
               ],
-              "resposta": "1 a 6 horas",
-              "explicacao": "Os vômitos começam rápido.",
+              "resposta": "Toxina estafilocócica",
+              "explicacao": "A incubação típica é de 1 a 6 horas.",
               "revisado": false
             },
             {
@@ -2249,16 +2256,17 @@
             },
             {
               "id": "scol-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal limitação do estudo transversal?",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisa mede, num mesmo dia, uso de celular e ansiedade em estudantes e acha associação.",
+              "enunciado": "Qual é a limitação?",
               "opcoes": [
-                "Não mostra o que veio primeiro",
+                "Não mostra o que veio antes",
                 "Não mede prevalência",
                 "É muito caro",
-                "Precisa acompanhar as pessoas por muitos anos"
+                "Exige acompanhar por anos"
               ],
-              "resposta": "Não mostra o que veio primeiro",
-              "explicacao": "Por isso não prova causa.",
+              "resposta": "Não mostra o que veio antes",
+              "explicacao": "É estudo transversal; não prova causa.",
               "revisado": false
             },
             {
@@ -2279,37 +2287,39 @@
             {
               "id": "scol-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A metanálise combina resultados de vários estudos para aumentar a precisão.",
-              "resposta": true,
-              "explicacao": "A qualidade depende dos estudos incluídos.",
+              "enunciado": "Uma metanálise de estudos ruins gera conclusão confiável, pois junta muitos pacientes.",
+              "resposta": false,
+              "explicacao": "Falso. A qualidade da metanálise depende dos estudos incluídos.",
               "revisado": false
             },
             {
               "id": "scol-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "No ensaio clínico, a ___ distribui os pacientes ao acaso entre os grupos.",
+              "tipo": "caso_clinico",
+              "caso": "Num ensaio clínico, um computador sorteia quem recebe o remédio ou o placebo.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "randomização",
-                "estratificação",
-                "seleção",
-                "padronização"
+                "Randomização",
+                "Estratificação",
+                "Seleção",
+                "Padronização"
               ],
-              "resposta": "randomização",
-              "explicacao": "Ela equilibra fatores de confusão conhecidos e desconhecidos.",
+              "resposta": "Randomização",
+              "explicacao": "Equilibra fatores de confusão conhecidos e desconhecidos.",
               "revisado": false
             },
             {
               "id": "scol-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estudo está no topo da pirâmide de evidências?",
+              "tipo": "caso_clinico",
+              "caso": "Médico quer a melhor evidência sobre um tratamento.",
+              "enunciado": "Qual tipo de estudo está no topo?",
               "opcoes": [
-                "Revisão sistemática de ensaios clínicos",
-                "Relato de caso isolado",
+                "Revisão sistemática",
+                "Relato de caso",
                 "Opinião de especialista",
-                "Estudo em animais de laboratório com muitos dados"
+                "Estudo em animais com muitos dados"
               ],
-              "resposta": "Revisão sistemática de ensaios clínicos",
-              "explicacao": "Relatos de caso estão na base.",
+              "resposta": "Revisão sistemática",
+              "explicacao": "De ensaios clínicos; relatos de caso estão na base.",
               "revisado": false
             },
             {
@@ -2375,16 +2385,17 @@
             },
             {
               "id": "scol-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que a propaganda de remédios prefere mostrar a redução relativa do risco?",
+              "tipo": "caso_clinico",
+              "caso": "Propaganda diz que remédio reduz infarto em 50%; o risco caiu de 2% para 1%.",
+              "enunciado": "Por que se mostra o 50%?",
               "opcoes": [
-                "Porque parece maior",
-                "Porque é mais correta",
-                "Porque é a única medida",
+                "Parece maior",
+                "É mais correto",
+                "É a única medida",
                 "Não há motivo"
               ],
-              "resposta": "Porque parece maior",
-              "explicacao": "A redução absoluta mostra melhor o benefício real.",
+              "resposta": "Parece maior",
+              "explicacao": "A redução absoluta, de 1%, mostra melhor o benefício real.",
               "revisado": false
             },
             {
@@ -2405,37 +2416,39 @@
             {
               "id": "scol-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Um intervalo de confiança estreito indica estimativa mais precisa.",
-              "resposta": true,
-              "explicacao": "Estudos maiores costumam ter intervalos mais estreitos.",
+              "enunciado": "Um estudo pequeno tende a ter intervalo de confiança mais estreito que um estudo grande.",
+              "resposta": false,
+              "explicacao": "Falso. Estudos maiores costumam ter intervalos mais estreitos e estimativas mais precisas.",
               "revisado": false
             },
             {
               "id": "scol-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O valor de ___ menor que 0,05 é chamado de estatisticamente significativo por convenção.",
+              "tipo": "caso_clinico",
+              "caso": "Estudo mostra que remédio reduz a pressão em 1 mmHg, com p = 0,01.",
+              "enunciado": "O que significa p menor que 0,05?",
               "opcoes": [
-                "p",
-                "alfa",
-                "beta",
-                "n"
+                "Significância estatística",
+                "Importância clínica",
+                "Efeito grande",
+                "Que o remédio cura a hipertensão de vez"
               ],
-              "resposta": "p",
-              "explicacao": "Ele não mede a importância clínica.",
+              "resposta": "Significância estatística",
+              "explicacao": "O valor de p não mede a importância clínica.",
               "revisado": false
             },
             {
               "id": "scol-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Um resultado estatisticamente significativo é sempre clinicamente importante?",
+              "tipo": "caso_clinico",
+              "caso": "Estudo com 50 mil pessoas mostra queda de 1 mmHg na pressão, com p < 0,001.",
+              "enunciado": "O resultado é clinicamente importante?",
               "opcoes": [
-                "Não; diferença pequena pode ser significativa",
+                "Não necessariamente",
                 "Sim, sempre",
                 "Nunca",
-                "Só quando o estudo tem menos de cem pacientes"
+                "Só se o estudo tiver menos de 100 pacientes"
               ],
-              "resposta": "Não; diferença pequena pode ser significativa",
-              "explicacao": "É preciso olhar o tamanho do efeito.",
+              "resposta": "Não necessariamente",
+              "explicacao": "Diferença pequena pode ser significativa; olhar o tamanho do efeito.",
               "revisado": false
             },
             {
@@ -2501,16 +2514,17 @@
             },
             {
               "id": "scol-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se controla a confusão na análise dos dados?",
+              "tipo": "caso_clinico",
+              "caso": "Estudo acha que café causa câncer de pulmão, mas quem bebe café também fuma mais.",
+              "enunciado": "Como controlar isso na análise?",
               "opcoes": [
-                "Estratificação e análise multivariada",
-                "Aumentando o p",
-                "Excluindo mulheres",
-                "Não é possível controlar depois de coletar os dados"
+                "Estratificação ou multivariada",
+                "Aumentar o p",
+                "Excluir mulheres",
+                "Não é possível depois de coletar"
               ],
-              "resposta": "Estratificação e análise multivariada",
-              "explicacao": "Também se usa pareamento no desenho.",
+              "resposta": "Estratificação ou multivariada",
+              "explicacao": "O fumo é fator de confusão; o pareamento também ajuda no desenho.",
               "revisado": false
             },
             {
@@ -2552,16 +2566,17 @@
             },
             {
               "id": "scol-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é regressão à média?",
+              "tipo": "caso_clinico",
+              "caso": "Pacientes com pressão muito alta numa medida têm valores menores na seguinte, sem remédio.",
+              "enunciado": "O que explica isso?",
               "opcoes": [
-                "Valores extremos tendem à média em nova medida",
+                "Regressão à média",
+                "Efeito do remédio",
                 "Erro de digitação",
-                "Tipo de câncer",
-                "Medida de efeito usada em ensaios com dois grupos"
+                "Efeito placebo do aparelho"
               ],
-              "resposta": "Valores extremos tendem à média em nova medida",
-              "explicacao": "Pode parecer efeito de tratamento sem ser.",
+              "resposta": "Regressão à média",
+              "explicacao": "Valores extremos tendem à média; pode parecer efeito de tratamento.",
               "revisado": false
             },
             {
@@ -2635,16 +2650,17 @@
             },
             {
               "id": "scol-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta diante de suspeita de violência doméstica contra mulher?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher atendida com hematomas conta que o companheiro a agride.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Acolher, tratar e notificar no SINAN",
+                "Acolher, tratar e notificar",
                 "Não registrar",
-                "Chamar a polícia sem consentimento sempre",
+                "Polícia sem consentimento",
                 "Dar alta"
               ],
-              "resposta": "Acolher, tratar e notificar no SINAN",
-              "explicacao": "A notificação é obrigatória e sigilosa.",
+              "resposta": "Acolher, tratar e notificar",
+              "explicacao": "A notificação no SINAN é obrigatória e sigilosa.",
               "revisado": false
             },
             {
@@ -2665,15 +2681,16 @@
             {
               "id": "scol-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A notificação de doença compulsória deve ser feita mesmo apenas com suspeita.",
-              "resposta": true,
-              "explicacao": "Não é preciso esperar confirmação.",
+              "enunciado": "Caso suspeito de sarampo só deve ser notificado depois da confirmação pelo laboratório.",
+              "resposta": false,
+              "explicacao": "Falso. A notificação deve ser feita já na suspeita.",
               "revisado": false
             },
             {
               "id": "scol-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ registra os óbitos no Brasil a partir da declaração de óbito.",
+              "tipo": "caso_clinico",
+              "caso": "Médico preenche a declaração de óbito de um paciente.",
+              "enunciado": "Qual sistema recebe essa informação?",
               "opcoes": [
                 "SIM",
                 "SINAN",
@@ -2686,8 +2703,9 @@
             },
             {
               "id": "scol-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sistema registra internações no SUS?",
+              "tipo": "caso_clinico",
+              "caso": "Gestor quer saber quantas internações por pneumonia houve no SUS.",
+              "enunciado": "Qual sistema consultar?",
               "opcoes": [
                 "SIH",
                 "SIM",
@@ -2695,7 +2713,7 @@
                 "SINASC"
               ],
               "resposta": "SIH",
-              "explicacao": "Ele é usado também para pagamento.",
+              "explicacao": "Também é usado para pagamento.",
               "revisado": false
             },
             {
@@ -2761,16 +2779,17 @@
             },
             {
               "id": "scol-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é bloqueio vacinal?",
+              "tipo": "caso_clinico",
+              "caso": "Criança tem sarampo confirmado e a equipe vacina os vizinhos e colegas de escola.",
+              "enunciado": "Como se chama essa ação?",
               "opcoes": [
-                "Vacinar os contatos para interromper a transmissão",
-                "Proibir vacinas",
-                "Vacinar só idosos",
-                "Vacinar só os animais domésticos da região afetada"
+                "Bloqueio vacinal",
+                "Campanha de rotina",
+                "Quarentena",
+                "Vacinação só dos idosos"
               ],
-              "resposta": "Vacinar os contatos para interromper a transmissão",
-              "explicacao": "É usado no sarampo e na meningite C.",
+              "resposta": "Bloqueio vacinal",
+              "explicacao": "Interrompe a transmissão; usada no sarampo e na meningite C.",
               "revisado": false
             },
             {
@@ -2791,36 +2810,38 @@
             {
               "id": "scol-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A eliminação de uma doença é diferente da erradicação.",
-              "resposta": true,
-              "explicacao": "A erradicação é a extinção mundial do agente.",
+              "enunciado": "O Brasil eliminou a transmissão local da rubéola; isso significa que o vírus foi extinto no mundo.",
+              "resposta": false,
+              "explicacao": "Falso. Eliminação é regional; erradicação é a extinção mundial do agente.",
               "revisado": false
             },
             {
               "id": "scol-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ epidêmico é o limite acima do qual o número de casos indica epidemia.",
+              "tipo": "caso_clinico",
+              "caso": "Os casos de dengue de uma cidade passaram do limite esperado para a época.",
+              "enunciado": "Como se chama esse limite?",
               "opcoes": [
-                "limiar",
-                "índice",
-                "teto",
-                "gráfico"
+                "Limiar epidêmico",
+                "Índice",
+                "Teto",
+                "Taxa de letalidade da dengue"
               ],
-              "resposta": "limiar",
+              "resposta": "Limiar epidêmico",
               "explicacao": "É calculado com dados de anos anteriores.",
               "revisado": false
             },
             {
               "id": "scol-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a medida mais eficaz contra a tuberculose em uma comunidade?",
+              "tipo": "caso_clinico",
+              "caso": "Comunidade tem muitos casos de tuberculose.",
+              "enunciado": "Qual é a medida mais eficaz?",
               "opcoes": [
-                "Diagnosticar e tratar os doentes até a cura",
+                "Diagnosticar e tratar até a cura",
                 "BCG em adultos",
                 "Isolar todos",
-                "Antibiótico para todos os moradores da comunidade"
+                "Antibiótico para todos os moradores"
               ],
-              "resposta": "Diagnosticar e tratar os doentes até a cura",
+              "resposta": "Diagnosticar e tratar até a cura",
               "explicacao": "O tratamento interrompe a transmissão.",
               "revisado": false
             },
@@ -2887,15 +2908,16 @@
             },
             {
               "id": "scol-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual informação da declaração de nascido vivo é usada como indicador de pré-natal?",
+              "tipo": "caso_clinico",
+              "caso": "Gestor quer avaliar o pré-natal pelas declarações de nascido vivo.",
+              "enunciado": "Qual dado usar?",
               "opcoes": [
-                "Número de consultas de pré-natal",
+                "Número de consultas",
                 "Nome do médico",
                 "Peso da mãe",
-                "Endereço do hospital onde ocorreu o parto"
+                "Endereço do hospital do parto"
               ],
-              "resposta": "Número de consultas de pré-natal",
+              "resposta": "Número de consultas",
               "explicacao": "O ideal é 7 ou mais consultas.",
               "revisado": false
             },
@@ -2917,29 +2939,31 @@
             {
               "id": "scol-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O médico que atende o paciente deve preencher a declaração de óbito em morte natural.",
-              "resposta": true,
-              "explicacao": "Em morte violenta, o IML é responsável.",
+              "enunciado": "Paciente atropelado que morreu no hospital deve ter a declaração de óbito feita pelo médico assistente.",
+              "resposta": false,
+              "explicacao": "Falso. Em morte violenta, o IML é responsável; o assistente faz em morte natural.",
               "revisado": false
             },
             {
               "id": "scol-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ básica de morte é a doença que iniciou a cadeia de eventos.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diabético teve infecção no pé, sepse e morreu.",
+              "enunciado": "Qual é a causa básica de morte?",
               "opcoes": [
-                "causa",
-                "hora",
-                "data",
-                "razão"
+                "Diabetes",
+                "Sepse",
+                "Parada cardíaca",
+                "Infecção no pé"
               ],
-              "resposta": "causa",
-              "explicacao": "É ela que entra nas estatísticas.",
+              "resposta": "Diabetes",
+              "explicacao": "É a doença que iniciou a cadeia e entra nas estatísticas.",
               "revisado": false
             },
             {
               "id": "scol-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sistema registra a situação vacinal da população?",
+              "tipo": "caso_clinico",
+              "caso": "Equipe quer achar crianças com vacina atrasada no território.",
+              "enunciado": "Qual sistema usar?",
               "opcoes": [
                 "SI-PNI",
                 "SIM",
@@ -3021,16 +3045,17 @@
             },
             {
               "id": "scol-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre eficácia e efetividade?",
+              "tipo": "caso_clinico",
+              "caso": "Vacina protegeu 95% no ensaio, mas só 70% na população, por falhas de conservação.",
+              "enunciado": "O que mede o 70%?",
               "opcoes": [
-                "Eficácia em condições ideais; efetividade na vida real",
-                "São a mesma coisa",
-                "Efetividade é medida em laboratório",
-                "Eficácia é o custo do programa e a efetividade é o resultado final"
+                "Efetividade",
+                "Eficácia",
+                "Eficiência",
+                "Custo do programa"
               ],
-              "resposta": "Eficácia em condições ideais; efetividade na vida real",
-              "explicacao": "A eficiência considera também o custo.",
+              "resposta": "Efetividade",
+              "explicacao": "Eficácia é em condições ideais; a eficiência considera o custo.",
               "revisado": false
             },
             {
@@ -3051,36 +3076,38 @@
             {
               "id": "scol-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os indicadores de processo medem o que foi feito, como número de consultas.",
-              "resposta": true,
-              "explicacao": "Os de resultado medem a mudança na saúde.",
+              "enunciado": "A queda da mortalidade infantil é um indicador de processo.",
+              "resposta": false,
+              "explicacao": "Falso. É indicador de resultado; processo mede o que foi feito, como número de consultas.",
               "revisado": false
             },
             {
               "id": "scol-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A avaliação de Donabedian divide a qualidade em estrutura, processo e ___.",
+              "tipo": "caso_clinico",
+              "caso": "Auditoria avalia prédio, consultas feitas e mortes evitadas numa maternidade.",
+              "enunciado": "Qual modelo usa?",
               "opcoes": [
-                "resultado",
-                "custo",
-                "lucro",
-                "satisfação"
+                "Donabedian",
+                "Leavell e Clark",
+                "Dahlgren",
+                "Wilson e Jungner"
               ],
-              "resposta": "resultado",
-              "explicacao": "É muito usada em serviços de saúde.",
+              "resposta": "Donabedian",
+              "explicacao": "Estrutura, processo e resultado.",
               "revisado": false
             },
             {
               "id": "scol-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é um exemplo de indicador de resultado?",
+              "tipo": "caso_clinico",
+              "caso": "Município quer mostrar o impacto do programa de saúde da família.",
+              "enunciado": "Qual indicador de resultado usar?",
               "opcoes": [
-                "Redução da mortalidade infantil",
-                "Número de vacinas compradas",
+                "Mortalidade infantil",
+                "Vacinas compradas",
                 "Número de médicos",
-                "Horário de funcionamento da unidade"
+                "Horário da unidade"
               ],
-              "resposta": "Redução da mortalidade infantil",
+              "resposta": "Mortalidade infantil",
               "explicacao": "Resultados mostram impacto na saúde.",
               "revisado": false
             },
@@ -3147,8 +3174,9 @@
             },
             {
               "id": "scol-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o prazo legal para iniciar o tratamento do câncer no SUS após o diagnóstico?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher teve câncer de mama confirmado na biópsia.",
+              "enunciado": "Qual é o prazo legal para iniciar o tratamento no SUS?",
               "opcoes": [
                 "Até 60 dias",
                 "Até 1 ano",
@@ -3184,8 +3212,9 @@
             },
             {
               "id": "scol-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o documento que lista os remédios oferecidos pelo SUS.",
+              "tipo": "caso_clinico",
+              "caso": "Médico da unidade quer saber se um remédio é fornecido pelo SUS.",
+              "enunciado": "Qual documento consultar?",
               "opcoes": [
                 "RENAME",
                 "RENASES",
@@ -3198,16 +3227,17 @@
             },
             {
               "id": "scol-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel da CONITEC?",
+              "tipo": "caso_clinico",
+              "caso": "Laboratório pede que um remédio novo seja oferecido pelo SUS.",
+              "enunciado": "Quem avalia a incorporação?",
               "opcoes": [
-                "Avaliar a incorporação de tecnologias no SUS",
-                "Fiscalizar restaurantes",
-                "Formar médicos",
-                "Atender pacientes com doenças raras nos hospitais"
+                "CONITEC",
+                "Vigilância sanitária",
+                "Conselho de Medicina",
+                "Hospital de referência estadual"
               ],
-              "resposta": "Avaliar a incorporação de tecnologias no SUS",
-              "explicacao": "Ela avalia eficácia, segurança e custo.",
+              "resposta": "CONITEC",
+              "explicacao": "Avalia eficácia, segurança e custo.",
               "revisado": false
             },
             {
@@ -3273,15 +3303,16 @@
             },
             {
               "id": "scol-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é o apoio matricial?",
+              "tipo": "caso_clinico",
+              "caso": "Psiquiatra vai à unidade básica discutir casos com a equipe de saúde da família.",
+              "enunciado": "Como se chama?",
               "opcoes": [
-                "Especialistas que apoiam e discutem casos com a equipe",
-                "Uma cirurgia",
-                "Um exame de sangue",
-                "Uma vacina aplicada nas unidades de saúde da família"
+                "Apoio matricial",
+                "Encaminhamento",
+                "Contrarreferência",
+                "Auditoria"
               ],
-              "resposta": "Especialistas que apoiam e discutem casos com a equipe",
+              "resposta": "Apoio matricial",
               "explicacao": "Amplia a capacidade da atenção primária.",
               "revisado": false
             },
@@ -3303,37 +3334,39 @@
             {
               "id": "scol-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Países com atenção primária forte têm melhores resultados de saúde e custos menores.",
-              "resposta": true,
-              "explicacao": "É uma conclusão de vários estudos.",
+              "enunciado": "Países com atenção primária forte gastam mais e têm resultados de saúde piores.",
+              "resposta": false,
+              "explicacao": "Falso. Têm melhores resultados e custos menores.",
               "revisado": false
             },
             {
               "id": "scol-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é a ferramenta que representa graficamente a família e suas relações.",
+              "tipo": "caso_clinico",
+              "caso": "Equipe desenha a família com três gerações e suas doenças e conflitos.",
+              "enunciado": "Qual ferramenta usa?",
               "opcoes": [
-                "genograma",
-                "ecomapa",
-                "prontuário",
-                "fluxograma"
+                "Genograma",
+                "Ecomapa",
+                "Prontuário",
+                "Fluxograma"
               ],
-              "resposta": "genograma",
+              "resposta": "Genograma",
               "explicacao": "O ecomapa mostra as relações com a comunidade.",
               "revisado": false
             },
             {
               "id": "scol-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o objetivo da visita domiciliar?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso acamado não consegue ir à unidade.",
+              "enunciado": "Qual é a estratégia?",
               "opcoes": [
-                "Conhecer o contexto e cuidar de quem não vai à unidade",
-                "Fiscalizar as famílias",
-                "Vender produtos",
-                "Cobrar a presença dos pacientes nas consultas marcadas"
+                "Visita domiciliar",
+                "Fiscalização",
+                "Ignorar",
+                "Cobrar presença nas consultas"
               ],
-              "resposta": "Conhecer o contexto e cuidar de quem não vai à unidade",
-              "explicacao": "É fundamental para acamados.",
+              "resposta": "Visita domiciliar",
+              "explicacao": "Permite conhecer o contexto e cuidar de quem não vai à unidade.",
               "revisado": false
             },
             {
@@ -3407,8 +3440,9 @@
             },
             {
               "id": "scol-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual inquérito monitora fatores de risco por telefone nas capitais?",
+              "tipo": "caso_clinico",
+              "caso": "Ministério quer saber a proporção de fumantes nas capitais por ligação telefônica.",
+              "enunciado": "Qual inquérito usa?",
               "opcoes": [
                 "VIGITEL",
                 "SIM",
@@ -3437,37 +3471,39 @@
             {
               "id": "scol-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O Guia Alimentar para a População Brasileira recomenda evitar ultraprocessados.",
-              "resposta": true,
-              "explicacao": "É considerado um dos melhores guias do mundo.",
+              "enunciado": "O Guia Alimentar brasileiro recomenda basear a dieta em produtos ultraprocessados enriquecidos.",
+              "resposta": false,
+              "explicacao": "Falso. Recomenda alimentos in natura e evitar ultraprocessados.",
               "revisado": false
             },
             {
               "id": "scol-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "As doenças crônicas não ___ são as principais causas de morte no mundo.",
+              "tipo": "caso_clinico",
+              "caso": "Doenças cardíacas, câncer e diabetes são as principais causas de morte no mundo.",
+              "enunciado": "Como se chamam?",
               "opcoes": [
-                "transmissíveis",
-                "evitáveis",
-                "tratáveis",
-                "de notificação"
+                "DCNT",
+                "Infecciosas",
+                "Negligenciadas",
+                "De notificação compulsória imediata"
               ],
-              "resposta": "transmissíveis",
-              "explicacao": "Incluem doenças cardíacas, câncer e diabetes.",
+              "resposta": "DCNT",
+              "explicacao": "São as doenças crônicas não transmissíveis.",
               "revisado": false
             },
             {
               "id": "scol-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a estratégia populacional de Geoffrey Rose?",
+              "tipo": "caso_clinico",
+              "caso": "Governo reduz o sal dos pães para toda a população, com pequena queda de pressão em cada um.",
+              "enunciado": "Qual estratégia é essa?",
               "opcoes": [
-                "Pequena redução de risco em todos gera grande benefício",
-                "Tratar só os de alto risco",
-                "Não fazer nada",
-                "Focar só na genética e nos exames de alto custo para poucos"
+                "Populacional de Rose",
+                "Alto risco",
+                "Individual",
+                "Focar só na genética de poucas famílias"
               ],
-              "resposta": "Pequena redução de risco em todos gera grande benefício",
-              "explicacao": "É o paradoxo da prevenção.",
+              "resposta": "Populacional de Rose",
+              "explicacao": "Pequena redução em todos gera grande benefício: o paradoxo da prevenção.",
               "revisado": false
             },
             {
@@ -3533,16 +3569,17 @@
             },
             {
               "id": "scol-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre isolamento e quarentena?",
+              "tipo": "caso_clinico",
+              "caso": "Durante surto, doentes ficam separados e contatos sem sintomas ficam em casa por 14 dias.",
+              "enunciado": "Como se chamam as medidas?",
               "opcoes": [
-                "Isolamento separa doentes; quarentena, expostos",
+                "Isolamento e quarentena",
                 "São iguais",
-                "Quarentena é para doentes",
-                "Isolamento dura sempre exatamente quarenta dias"
+                "Quarentena e isolamento",
+                "Vacinação e bloqueio"
               ],
-              "resposta": "Isolamento separa doentes; quarentena, expostos",
-              "explicacao": "Ambos reduzem a transmissão.",
+              "resposta": "Isolamento e quarentena",
+              "explicacao": "Isolamento separa doentes; quarentena, expostos.",
               "revisado": false
             },
             {
@@ -3563,37 +3600,39 @@
             {
               "id": "scol-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A Emergência de Saúde Pública de Importância Internacional é declarada pela OMS.",
-              "resposta": true,
-              "explicacao": "Segue o Regulamento Sanitário Internacional.",
+              "enunciado": "A Emergência de Saúde Pública de Importância Internacional é declarada pelo Ministério da Saúde de cada país.",
+              "resposta": false,
+              "explicacao": "Falso. É declarada pela OMS, seguindo o Regulamento Sanitário Internacional.",
               "revisado": false
             },
             {
               "id": "scol-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a disseminação de notícias falsas que prejudica a resposta à saúde pública.",
+              "tipo": "caso_clinico",
+              "caso": "Na pandemia, notícias falsas sobre vacinas se espalharam e reduziram a adesão.",
+              "enunciado": "Como se chama o fenômeno?",
               "opcoes": [
-                "infodemia",
-                "epidemia",
-                "endemia",
-                "pandemia"
+                "Infodemia",
+                "Epidemia",
+                "Endemia",
+                "Pandemia"
               ],
-              "resposta": "infodemia",
-              "explicacao": "Afeta a adesão a vacinas e medidas.",
+              "resposta": "Infodemia",
+              "explicacao": "Prejudica a resposta à saúde pública.",
               "revisado": false
             },
             {
               "id": "scol-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel da comunicação de risco em emergências?",
+              "tipo": "caso_clinico",
+              "caso": "Secretaria precisa informar a população durante um surto.",
+              "enunciado": "Qual é o papel da comunicação de risco?",
               "opcoes": [
-                "Informar com clareza para orientar a população",
+                "Informar com clareza",
                 "Esconder dados",
-                "Assustar a população",
-                "Falar só com os profissionais de saúde dos hospitais"
+                "Assustar",
+                "Falar só com profissionais"
               ],
-              "resposta": "Informar com clareza para orientar a população",
-              "explicacao": "A confiança é fundamental.",
+              "resposta": "Informar com clareza",
+              "explicacao": "Orienta a população; a confiança é fundamental.",
               "revisado": false
             },
             {
@@ -3659,16 +3698,17 @@
             },
             {
               "id": "scol-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é letramento em saúde?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente sabe ler, mas não entende a receita nem como tomar os remédios.",
+              "enunciado": "O que está baixo?",
               "opcoes": [
-                "Capacidade de entender e usar informações de saúde",
-                "Saber ler qualquer texto",
-                "Fazer medicina",
-                "Saber usar computador e celular para marcar consultas"
+                "Letramento em saúde",
+                "Escolaridade",
+                "Renda",
+                "Memória por demência avançada"
               ],
-              "resposta": "Capacidade de entender e usar informações de saúde",
-              "explicacao": "Baixo letramento piora os resultados.",
+              "resposta": "Letramento em saúde",
+              "explicacao": "É a capacidade de entender e usar informações de saúde.",
               "revisado": false
             },
             {
@@ -3689,37 +3729,39 @@
             {
               "id": "scol-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Prontuário eletrônico integrado ajuda a coordenar o cuidado entre serviços.",
-              "resposta": true,
-              "explicacao": "Evita exames repetidos e erros.",
+              "enunciado": "Prontuário eletrônico integrado entre serviços aumenta exames repetidos e erros.",
+              "resposta": false,
+              "explicacao": "Falso. Ajuda a coordenar o cuidado e evita exames repetidos.",
               "revisado": false
             },
             {
               "id": "scol-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A Lei Geral de ___ de Dados regula o uso de informações pessoais, incluindo de saúde.",
+              "tipo": "caso_clinico",
+              "caso": "Hospital quer usar dados de pacientes num aplicativo.",
+              "enunciado": "Qual lei regula o uso?",
               "opcoes": [
-                "Proteção",
-                "Venda",
-                "Coleta",
-                "Divulgação"
+                "LGPD",
+                "Lei Maria da Penha",
+                "ECA",
+                "Lei do Ato Médico"
               ],
-              "resposta": "Proteção",
-              "explicacao": "Dados de saúde são sensíveis.",
+              "resposta": "LGPD",
+              "explicacao": "A Lei Geral de Proteção de Dados trata dados de saúde como sensíveis.",
               "revisado": false
             },
             {
               "id": "scol-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é um risco da inteligência artificial na saúde?",
+              "tipo": "caso_clinico",
+              "caso": "Hospital usa IA treinada só com dados de pessoas brancas para ler exames de pele.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Reproduzir vieses dos dados e decidir de forma injusta",
+                "Viés nos resultados",
                 "Nenhum risco",
                 "Sempre acerta",
-                "Substituir todas as vacinas e os exames de rastreio"
+                "Substituir as vacinas da população"
               ],
-              "resposta": "Reproduzir vieses dos dados e decidir de forma injusta",
-              "explicacao": "É preciso avaliar e supervisionar.",
+              "resposta": "Viés nos resultados",
+              "explicacao": "Pode decidir de forma injusta; é preciso avaliar e supervisionar.",
               "revisado": false
             },
             {
