@@ -12,7 +12,7 @@ import { AbasModo } from '../components/AbasModo'
 
 const SUBTITULOS = {
   graduacao: 'Matérias do curso de medicina, do básico ao clínico.',
-  residencia: 'As cinco grandes áreas cobradas nas provas de residência, com foco em casos clínicos.',
+  residencia: 'As grandes áreas cobradas nas provas de residência, com foco em casos clínicos.',
 }
 
 const CICLOS: { ciclo: CicloCurso; titulo: string }[] = [

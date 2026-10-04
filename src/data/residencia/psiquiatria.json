@@ -1,0 +1,5063 @@
+{
+  "id": "psiquiatria-residencia",
+  "nome": "Psiquiatria",
+  "descricao": "Depressão, psicoses, dependência química e emergências psiquiátricas",
+  "icone": "mente",
+  "ordem": 6,
+  "unidades": [
+    {
+      "id": "rpsiq-u1",
+      "titulo": "Depressão",
+      "descricao": "Diagnóstico e tratamento do transtorno depressivo",
+      "licoes": [
+        {
+          "id": "rpsiq-u1-l1",
+          "titulo": "Diagnóstico de depressão",
+          "questoes": [
+            {
+              "id": "rpsiq-u1-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo mínimo de sintomas para diagnosticar episódio depressivo maior?",
+              "opcoes": [
+                "2 semanas",
+                "3 dias",
+                "6 meses",
+                "1 ano seguido sem melhora"
+              ],
+              "resposta": "2 semanas",
+              "explicacao": "É o critério do DSM-5.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Para o diagnóstico de depressão maior, é obrigatório ter humor deprimido ou perda de interesse (anedonia).",
+              "resposta": true,
+              "explicacao": "Pelo menos um dos dois precisa estar presente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A perda da capacidade de sentir prazer se chama ___.",
+              "opcoes": [
+                "anedonia",
+                "apatia",
+                "abulia",
+                "alogia do pensamento"
+              ],
+              "resposta": "anedonia",
+              "explicacao": "É um dos sintomas centrais da depressão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma ao grupo da depressão.",
+              "pares": [
+                {
+                  "esquerda": "Insônia terminal",
+                  "direita": "Sono"
+                },
+                {
+                  "esquerda": "Perda de peso",
+                  "direita": "Apetite"
+                },
+                {
+                  "esquerda": "Lentificação",
+                  "direita": "Psicomotor"
+                },
+                {
+                  "esquerda": "Ideia de morte",
+                  "direita": "Pensamento"
+                }
+              ],
+              "explicacao": "São os sintomas do critério A.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quantos sintomas, no total, são exigidos para episódio depressivo maior?",
+              "opcoes": [
+                "Pelo menos 5",
+                "Pelo menos 2",
+                "Apenas 1",
+                "Pelo menos 8 dos 9 sintomas"
+              ],
+              "resposta": "Pelo menos 5",
+              "explicacao": "Um deles deve ser humor deprimido ou anedonia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 35 anos há 1 mês com tristeza, choro fácil, perda de interesse, insônia, cansaço e culpa excessiva. Nega uso de drogas e tem TSH normal.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": [
+                "Episódio depressivo maior",
+                "Luto normal",
+                "Transtorno de ansiedade generalizada",
+                "Hipotireoidismo subclínico mascarado"
+              ],
+              "resposta": "Episódio depressivo maior",
+              "explicacao": "Tem mais de 5 sintomas por mais de 2 semanas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antes de diagnosticar depressão, convém afastar causas clínicas como hipotireoidismo e uso de substâncias.",
+              "resposta": true,
+              "explicacao": "Pedir TSH e investigar remédios e drogas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que diferencia o luto normal da depressão?",
+              "opcoes": [
+                "No luto, a autoestima costuma ficar preservada",
+                "No luto não há tristeza",
+                "O luto dura sempre mais de 2 anos",
+                "Na depressão a tristeza vem em ondas ligadas à lembrança"
+              ],
+              "resposta": "No luto, a autoestima costuma ficar preservada",
+              "explicacao": "Culpa intensa e desvalia sugerem depressão.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u1-l2",
+          "titulo": "Antidepressivos",
+          "questoes": [
+            {
+              "id": "rpsiq-u1-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a classe de antidepressivo de primeira escolha na maioria dos casos?",
+              "opcoes": [
+                "ISRS",
+                "Tricíclicos",
+                "IMAO",
+                "Antipsicóticos de primeira geração"
+              ],
+              "resposta": "ISRS",
+              "explicacao": "Têm boa tolerância e segurança.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os antidepressivos começam a fazer efeito pleno após cerca de 2 a 4 semanas.",
+              "resposta": true,
+              "explicacao": "Avisar o paciente para não desistir cedo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A sertralina e a fluoxetina são exemplos de ___.",
+              "opcoes": [
+                "ISRS",
+                "tricíclicos",
+                "IMAO",
+                "estabilizadores do humor"
+              ],
+              "resposta": "ISRS",
+              "explicacao": "Inibidores seletivos da recaptação de serotonina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada antidepressivo à característica.",
+              "pares": [
+                {
+                  "esquerda": "Bupropiona",
+                  "direita": "Menos efeito sexual"
+                },
+                {
+                  "esquerda": "Mirtazapina",
+                  "direita": "Aumenta o apetite e o sono"
+                },
+                {
+                  "esquerda": "Amitriptilina",
+                  "direita": "Perigosa em superdosagem"
+                },
+                {
+                  "esquerda": "Venlafaxina",
+                  "direita": "Pode subir a pressão"
+                }
+              ],
+              "explicacao": "Escolher pelo perfil do paciente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na depressão maior, por quanto tempo manter o antidepressivo após a remissão do primeiro episódio?",
+              "opcoes": [
+                "De 6 a 12 meses",
+                "Por 1 semana",
+                "Por 1 mês",
+                "Suspender logo que os sintomas desaparecerem"
+              ],
+              "resposta": "De 6 a 12 meses",
+              "explicacao": "Reduz o risco de recaída.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 40 anos com depressão começou sertralina há 10 dias e diz que ainda não melhorou, mas tolera bem.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Manter a dose e reavaliar",
+                "Trocar por outro ISRS hoje",
+                "Associar lítio já",
+                "Suspender e iniciar um tricíclico em dose alta"
+              ],
+              "resposta": "Manter a dose e reavaliar",
+              "explicacao": "O efeito leva semanas para aparecer.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A suspensão abrupta da paroxetina pode causar síndrome de descontinuação.",
+              "resposta": true,
+              "explicacao": "Retirar aos poucos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o efeito colateral comum dos ISRS no início do tratamento?",
+              "opcoes": [
+                "Náusea e ansiedade passageira",
+                "Ganho de peso imediato",
+                "Boca seca intensa e retenção urinária",
+                "Hipotensão grave"
+              ],
+              "resposta": "Náusea e ansiedade passageira",
+              "explicacao": "Costuma melhorar em poucas semanas.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u1-l3",
+          "titulo": "Depressão no idoso e distimia",
+          "questoes": [
+            {
+              "id": "rpsiq-u1-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo mínimo de sintomas para o transtorno depressivo persistente (distimia) no adulto?",
+              "opcoes": [
+                "2 anos",
+                "2 semanas",
+                "6 meses",
+                "1 mês de sintomas leves"
+              ],
+              "resposta": "2 anos",
+              "explicacao": "Humor deprimido na maior parte dos dias.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No idoso, a depressão pode se apresentar com queixas de memória e parecer demência.",
+              "resposta": true,
+              "explicacao": "Chamada de pseudodemência depressiva.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O idoso deprimido que responde \"não sei\" às perguntas de memória sugere ___ depressiva.",
+              "opcoes": [
+                "pseudodemência",
+                "demência vascular",
+                "doença de Alzheimer",
+                "delirium hiperativo"
+              ],
+              "resposta": "pseudodemência",
+              "explicacao": "O demenciado tenta esconder as falhas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao quadro.",
+              "pares": [
+                {
+                  "esquerda": "Início súbito e queixa da memória",
+                  "direita": "Pseudodemência"
+                },
+                {
+                  "esquerda": "Início lento e esconde as falhas",
+                  "direita": "Demência"
+                },
+                {
+                  "esquerda": "Humor baixo há 2 anos",
+                  "direita": "Distimia"
+                },
+                {
+                  "esquerda": "Sintomas após perda de alguém",
+                  "direita": "Luto"
+                }
+              ],
+              "explicacao": "Diferenciar muda o tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antidepressivo evitar no idoso por efeitos anticolinérgicos?",
+              "opcoes": [
+                "Amitriptilina",
+                "Sertralina",
+                "Escitalopram",
+                "Mirtazapina em dose baixa à noite"
+              ],
+              "resposta": "Amitriptilina",
+              "explicacao": "Causa confusão, quedas e retenção urinária.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 78 anos, viúva há 1 ano, com perda de peso, insônia, desinteresse e queixa de esquecimento que começou junto com a tristeza.",
+              "enunciado": "Qual é a hipótese mais provável?",
+              "opcoes": [
+                "Depressão no idoso",
+                "Doença de Alzheimer avançada",
+                "Delirium",
+                "Demência frontotemporal de início tardio"
+              ],
+              "resposta": "Depressão no idoso",
+              "explicacao": "Tratar a depressão pode melhorar a memória.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A escala de depressão geriátrica (GDS) é usada para rastrear depressão em idosos.",
+              "resposta": true,
+              "explicacao": "Tem versões curtas de 15 perguntas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u1-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal risco da depressão não tratada no idoso?",
+              "opcoes": [
+                "Suicídio",
+                "Diabetes",
+                "Asma",
+                "Aumento do colesterol sem outra consequência"
+              ],
+              "resposta": "Suicídio",
+              "explicacao": "Homens idosos têm alta taxa de suicídio.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u2",
+      "titulo": "Transtorno bipolar",
+      "descricao": "Mania, hipomania e estabilizadores do humor",
+      "licoes": [
+        {
+          "id": "rpsiq-u2-l1",
+          "titulo": "Mania e hipomania",
+          "questoes": [
+            {
+              "id": "rpsiq-u2-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração mínima de um episódio de mania?",
+              "opcoes": [
+                "1 semana",
+                "1 dia",
+                "1 mês",
+                "2 semanas seguidas sem dormir"
+              ],
+              "resposta": "1 semana",
+              "explicacao": "Ou qualquer duração se precisar internar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na hipomania não há sintomas psicóticos nem prejuízo grave do funcionamento.",
+              "resposta": true,
+              "explicacao": "Se houver, é mania.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O transtorno bipolar tipo ___ exige pelo menos um episódio de mania.",
+              "opcoes": [
+                "I",
+                "II",
+                "III",
+                "ciclotímico leve"
+              ],
+              "resposta": "I",
+              "explicacao": "O tipo II tem hipomania e depressão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma da mania à descrição.",
+              "pares": [
+                {
+                  "esquerda": "Grandiosidade",
+                  "direita": "Acha que tem poderes especiais"
+                },
+                {
+                  "esquerda": "Fuga de ideias",
+                  "direita": "Pensamento acelerado"
+                },
+                {
+                  "esquerda": "Logorreia",
+                  "direita": "Fala sem parar"
+                },
+                {
+                  "esquerda": "Menor necessidade de sono",
+                  "direita": "Dorme 2 horas e não se cansa"
+                }
+              ],
+              "explicacao": "O mnemônico ajuda a lembrar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração mínima de um episódio de hipomania?",
+              "opcoes": [
+                "4 dias",
+                "1 dia",
+                "2 semanas",
+                "1 mês com sintomas leves"
+              ],
+              "resposta": "4 dias",
+              "explicacao": "Mais curto e mais leve que a mania.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 25 anos há 10 dias dorme 2 horas por noite, gastou todo o salário, fala sem parar e diz que vai ser presidente.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Episódio maníaco",
+                "Esquizofrenia",
+                "Uso de maconha",
+                "Transtorno de personalidade narcisista"
+              ],
+              "resposta": "Episódio maníaco",
+              "explicacao": "Bipolar tipo I.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ciclotimia tem oscilações leves de humor por pelo menos 2 anos.",
+              "resposta": true,
+              "explicacao": "Sem preencher critérios completos de mania ou depressão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual droga pode causar quadro parecido com mania?",
+              "opcoes": [
+                "Cocaína",
+                "Opioides",
+                "Benzodiazepínicos",
+                "Álcool em pequena quantidade no jantar"
+              ],
+              "resposta": "Cocaína",
+              "explicacao": "Afastar uso de substâncias.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u2-l2",
+          "titulo": "Estabilizadores de humor e lítio",
+          "questoes": [
+            {
+              "id": "rpsiq-u2-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o estabilizador de humor clássico que reduz o risco de suicídio?",
+              "opcoes": [
+                "Lítio",
+                "Fluoxetina",
+                "Diazepam",
+                "Haloperidol em dose baixa"
+              ],
+              "resposta": "Lítio",
+              "explicacao": "Efeito antissuicida comprovado.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O lítio tem janela terapêutica estreita e precisa de dosagem no sangue.",
+              "resposta": true,
+              "explicacao": "Faixa usual de 0,6 a 1,2 mEq/L.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O lítio pode causar ___ e por isso se dosa o TSH.",
+              "opcoes": [
+                "hipotireoidismo",
+                "hipertireoidismo",
+                "diabetes tipo 1",
+                "anemia ferropriva"
+              ],
+              "resposta": "hipotireoidismo",
+              "explicacao": "Também afeta o rim.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada estabilizador ao efeito adverso.",
+              "pares": [
+                {
+                  "esquerda": "Lítio",
+                  "direita": "Tremor e diabetes insípido"
+                },
+                {
+                  "esquerda": "Valproato",
+                  "direita": "Toxicidade hepática"
+                },
+                {
+                  "esquerda": "Carbamazepina",
+                  "direita": "Agranulocitose"
+                },
+                {
+                  "esquerda": "Lamotrigina",
+                  "direita": "Síndrome de Stevens-Johnson"
+                }
+              ],
+              "explicacao": "Monitorar com exames.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estabilizador é contraindicado na gestação por risco de defeito do tubo neural?",
+              "opcoes": [
+                "Valproato",
+                "Lamotrigina",
+                "Lítio em dose baixa",
+                "Quetiapina"
+              ],
+              "resposta": "Valproato",
+              "explicacao": "Evitar em mulheres que podem engravidar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente bipolar em uso de lítio começou hidroclorotiazida e agora tem tremor grosseiro, confusão e diarreia.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Intoxicação por lítio",
+                "Mania",
+                "AVC",
+                "Infecção urinária com febre baixa"
+              ],
+              "resposta": "Intoxicação por lítio",
+              "explicacao": "Tiazídico eleva o nível do lítio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Anti-inflamatórios e diuréticos podem aumentar o nível de lítio no sangue.",
+              "resposta": true,
+              "explicacao": "Também a desidratação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estabilizador é mais útil para prevenir depressão bipolar?",
+              "opcoes": [
+                "Lamotrigina",
+                "Carbamazepina",
+                "Valproato",
+                "Haloperidol de depósito"
+              ],
+              "resposta": "Lamotrigina",
+              "explicacao": "Pouco efeito na mania.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u2-l3",
+          "titulo": "Bipolar em situações especiais",
+          "questoes": [
+            {
+              "id": "rpsiq-u2-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco de usar antidepressivo sozinho no paciente bipolar?",
+              "opcoes": [
+                "Virada maníaca",
+                "Hipotireoidismo",
+                "Anemia",
+                "Melhora definitiva e cura"
+              ],
+              "resposta": "Virada maníaca",
+              "explicacao": "Sempre associar estabilizador.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Uma depressão que começa na adolescência, com histórico familiar de bipolar, aumenta a suspeita de bipolaridade.",
+              "resposta": true,
+              "explicacao": "Perguntar sempre sobre mania no passado.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Antes de iniciar antidepressivo, sempre perguntar sobre episódios prévios de ___.",
+              "opcoes": [
+                "mania",
+                "asma",
+                "alergia",
+                "enxaqueca na infância"
+              ],
+              "resposta": "mania",
+              "explicacao": "Evita tratar bipolar como unipolar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação à conduta.",
+              "pares": [
+                {
+                  "esquerda": "Mania aguda grave",
+                  "direita": "Antipsicótico e estabilizador"
+                },
+                {
+                  "esquerda": "Depressão bipolar",
+                  "direita": "Quetiapina ou lamotrigina"
+                },
+                {
+                  "esquerda": "Gestante bipolar",
+                  "direita": "Evitar valproato"
+                },
+                {
+                  "esquerda": "Intoxicação por lítio grave",
+                  "direita": "Hemodiálise"
+                }
+              ],
+              "explicacao": "O tratamento depende da fase.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antipsicótico tem indicação para depressão bipolar?",
+              "opcoes": [
+                "Quetiapina",
+                "Haloperidol",
+                "Clorpromazina",
+                "Flufenazina de depósito"
+              ],
+              "resposta": "Quetiapina",
+              "explicacao": "Também a lurasidona.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos com depressão recorrente conta que, há 2 anos, ficou 1 semana sem dormir, fazendo compras e muito eufórica.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno bipolar tipo I",
+                "Depressão unipolar recorrente",
+                "Distimia",
+                "Transtorno de personalidade borderline grave"
+              ],
+              "resposta": "Transtorno bipolar tipo I",
+              "explicacao": "Uma mania basta para o tipo I.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A ciclagem rápida tem 4 ou mais episódios de humor em 1 ano.",
+              "resposta": true,
+              "explicacao": "Responde pior ao lítio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u2-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame pedir antes de iniciar lítio?",
+              "opcoes": [
+                "Função renal e TSH",
+                "Apenas colesterol",
+                "Eletroencefalograma",
+                "Tomografia de crânio e ressonância"
+              ],
+              "resposta": "Função renal e TSH",
+              "explicacao": "Também teste de gravidez em mulheres.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u3",
+      "titulo": "Esquizofrenia e psicoses",
+      "descricao": "Sintomas, antipsicóticos e outras psicoses",
+      "licoes": [
+        {
+          "id": "rpsiq-u3-l1",
+          "titulo": "Sintomas da esquizofrenia",
+          "questoes": [
+            {
+              "id": "rpsiq-u3-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo mínimo de sinais da doença para diagnosticar esquizofrenia?",
+              "opcoes": [
+                "6 meses",
+                "1 semana",
+                "1 mês",
+                "2 anos com sintomas contínuos"
+              ],
+              "resposta": "6 meses",
+              "explicacao": "Com pelo menos 1 mês de sintomas ativos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Alucinações auditivas são as mais comuns na esquizofrenia.",
+              "resposta": true,
+              "explicacao": "Vozes que comentam ou conversam.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Embotamento afetivo, pobreza do discurso e isolamento são sintomas ___.",
+              "opcoes": [
+                "negativos",
+                "positivos",
+                "cognitivos",
+                "afetivos maníacos"
+              ],
+              "resposta": "negativos",
+              "explicacao": "Respondem pior aos antipsicóticos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma ao tipo.",
+              "pares": [
+                {
+                  "esquerda": "Delírio de perseguição",
+                  "direita": "Positivo"
+                },
+                {
+                  "esquerda": "Apatia e isolamento",
+                  "direita": "Negativo"
+                },
+                {
+                  "esquerda": "Falha de atenção e memória",
+                  "direita": "Cognitivo"
+                },
+                {
+                  "esquerda": "Tristeza e desesperança",
+                  "direita": "Afetivo"
+                }
+              ],
+              "explicacao": "Os positivos melhoram mais com remédio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em que fase da vida a esquizofrenia costuma começar?",
+              "opcoes": [
+                "Fim da adolescência e início da vida adulta",
+                "Infância",
+                "Após os 60 anos",
+                "Logo após o nascimento do primeiro filho, na maioria das vezes"
+              ],
+              "resposta": "Fim da adolescência e início da vida adulta",
+              "explicacao": "Homens costumam começar mais cedo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 20 anos há 8 meses ouve vozes que comentam suas ações, acha que a TV fala dele e se isolou da família.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": [
+                "Esquizofrenia",
+                "Transtorno bipolar",
+                "Depressão",
+                "Transtorno de personalidade esquizoide sem psicose"
+              ],
+              "resposta": "Esquizofrenia",
+              "explicacao": "Mais de 6 meses com sintomas psicóticos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Uso de maconha na adolescência aumenta o risco de esquizofrenia.",
+              "resposta": true,
+              "explicacao": "Principalmente em quem tem predisposição.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um fator de bom prognóstico na esquizofrenia?",
+              "opcoes": [
+                "Início agudo com fator desencadeante",
+                "Início insidioso",
+                "Sintomas negativos",
+                "Início precoce na infância com isolamento"
+              ],
+              "resposta": "Início agudo com fator desencadeante",
+              "explicacao": "Também sintomas afetivos e bom funcionamento prévio.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u3-l2",
+          "titulo": "Antipsicóticos",
+          "questoes": [
+            {
+              "id": "rpsiq-u3-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o mecanismo principal dos antipsicóticos típicos?",
+              "opcoes": [
+                "Bloqueio de receptores D2",
+                "Inibição da MAO",
+                "Aumento de serotonina",
+                "Bloqueio do canal de sódio cardíaco"
+              ],
+              "resposta": "Bloqueio de receptores D2",
+              "explicacao": "Atuam na via mesolímbica.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Os antipsicóticos atípicos têm mais risco de ganho de peso e diabetes.",
+              "resposta": true,
+              "explicacao": "Principalmente olanzapina e clozapina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A inquietação motora com vontade de andar causada por antipsicótico se chama ___.",
+              "opcoes": [
+                "acatisia",
+                "distonia",
+                "discinesia",
+                "parkinsonismo tardio"
+              ],
+              "resposta": "acatisia",
+              "explicacao": "Melhora com propranolol.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada efeito extrapiramidal ao momento.",
+              "pares": [
+                {
+                  "esquerda": "Distonia aguda",
+                  "direita": "Primeiras horas ou dias"
+                },
+                {
+                  "esquerda": "Acatisia",
+                  "direita": "Primeiros dias a semanas"
+                },
+                {
+                  "esquerda": "Parkinsonismo",
+                  "direita": "Semanas"
+                },
+                {
+                  "esquerda": "Discinesia tardia",
+                  "direita": "Meses a anos"
+                }
+              ],
+              "explicacao": "A tardia pode ser irreversível.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antipsicótico causa mais aumento de prolactina?",
+              "opcoes": [
+                "Risperidona",
+                "Quetiapina",
+                "Clozapina",
+                "Aripiprazol em dose baixa"
+              ],
+              "resposta": "Risperidona",
+              "explicacao": "Pode causar galactorreia e amenorreia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem iniciou haloperidol ontem e chega com o pescoço torto e os olhos virados para cima.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Biperideno",
+                "Aumentar o haloperidol",
+                "Diazepam e observar",
+                "Suspender todos os remédios e dar alta"
+              ],
+              "resposta": "Biperideno",
+              "explicacao": "Distonia aguda responde a anticolinérgico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O haloperidol é um antipsicótico típico de alta potência.",
+              "resposta": true,
+              "explicacao": "Mais efeito extrapiramidal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antipsicótico tem menor risco metabólico?",
+              "opcoes": [
+                "Aripiprazol",
+                "Olanzapina",
+                "Clozapina",
+                "Clorpromazina em dose alta"
+              ],
+              "resposta": "Aripiprazol",
+              "explicacao": "Também a ziprasidona.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u3-l3",
+          "titulo": "Outras psicoses",
+          "questoes": [
+            {
+              "id": "rpsiq-u3-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração do transtorno psicótico breve?",
+              "opcoes": [
+                "De 1 dia a 1 mês",
+                "Mais de 6 meses",
+                "De 1 a 6 meses",
+                "Mais de 2 anos sem remissão"
+              ],
+              "resposta": "De 1 dia a 1 mês",
+              "explicacao": "Volta ao funcionamento normal depois.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O transtorno esquizofreniforme dura entre 1 e 6 meses.",
+              "resposta": true,
+              "explicacao": "Se passar de 6 meses, vira esquizofrenia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "No transtorno ___, há delírio sem alucinações marcantes e o funcionamento fica preservado.",
+              "opcoes": [
+                "delirante persistente",
+                "esquizoafetivo",
+                "esquizofreniforme",
+                "psicótico breve com estressor"
+              ],
+              "resposta": "delirante persistente",
+              "explicacao": "O delírio costuma ser plausível, como ciúme.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quadro à duração.",
+              "pares": [
+                {
+                  "esquerda": "Psicótico breve",
+                  "direita": "Menos de 1 mês"
+                },
+                {
+                  "esquerda": "Esquizofreniforme",
+                  "direita": "De 1 a 6 meses"
+                },
+                {
+                  "esquerda": "Esquizofrenia",
+                  "direita": "Mais de 6 meses"
+                },
+                {
+                  "esquerda": "Delirante",
+                  "direita": "Pelo menos 1 mês de delírio"
+                }
+              ],
+              "explicacao": "A duração separa os diagnósticos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que caracteriza o transtorno esquizoafetivo?",
+              "opcoes": [
+                "Psicose junto com episódios de humor",
+                "Só delírio de ciúme",
+                "Psicose após drogas",
+                "Alucinações apenas ao adormecer, sem humor alterado"
+              ],
+              "resposta": "Psicose junto com episódios de humor",
+              "explicacao": "Com período de psicose sem sintomas de humor.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos acredita, há 1 ano, que a esposa o trai, sem provas. Trabalha normalmente e não tem alucinações.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno delirante",
+                "Esquizofrenia",
+                "Demência",
+                "Transtorno bipolar com mania psicótica"
+              ],
+              "resposta": "Transtorno delirante",
+              "explicacao": "Delírio de ciúme é um tipo clássico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Toda primeira crise psicótica deve ter causas clínicas e drogas investigadas.",
+              "resposta": true,
+              "explicacao": "Exames, imagem quando indicada e toxicológico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u3-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é rotina no primeiro surto psicótico?",
+              "opcoes": [
+                "Exames de sangue e toxicológico",
+                "Biópsia cerebral",
+                "Eletroneuromiografia",
+                "Cateterismo cardíaco de urgência"
+              ],
+              "resposta": "Exames de sangue e toxicológico",
+              "explicacao": "Afastar causas orgânicas.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u4",
+      "titulo": "Ansiedade",
+      "descricao": "Ansiedade generalizada, pânico, fobias, TOC e TEPT",
+      "licoes": [
+        {
+          "id": "rpsiq-u4-l1",
+          "titulo": "Transtorno de ansiedade generalizada",
+          "questoes": [
+            {
+              "id": "rpsiq-u4-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo mínimo de sintomas para o transtorno de ansiedade generalizada?",
+              "opcoes": [
+                "6 meses",
+                "2 semanas",
+                "1 mês",
+                "2 anos com crises diárias"
+              ],
+              "resposta": "6 meses",
+              "explicacao": "Preocupação excessiva na maioria dos dias.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No TAG, a preocupação é difícil de controlar e envolve vários assuntos do dia a dia.",
+              "resposta": true,
+              "explicacao": "Trabalho, saúde, família e dinheiro.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O tratamento de primeira linha do TAG é ISRS ou IRSN associado a ___.",
+              "opcoes": [
+                "psicoterapia",
+                "benzodiazepínico para sempre",
+                "antipsicótico",
+                "lítio"
+              ],
+              "resposta": "psicoterapia",
+              "explicacao": "A terapia cognitivo-comportamental tem boa evidência.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma do TAG ao sistema.",
+              "pares": [
+                {
+                  "esquerda": "Tensão muscular",
+                  "direita": "Corpo"
+                },
+                {
+                  "esquerda": "Irritabilidade",
+                  "direita": "Humor"
+                },
+                {
+                  "esquerda": "Dificuldade de concentrar",
+                  "direita": "Cognição"
+                },
+                {
+                  "esquerda": "Sono ruim",
+                  "direita": "Sono"
+                }
+              ],
+              "explicacao": "São sintomas associados à preocupação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que evitar benzodiazepínico como tratamento prolongado do TAG?",
+              "opcoes": [
+                "Risco de dependência e tolerância",
+                "São muito caros",
+                "Causam mania",
+                "Não têm nenhum efeito sobre a ansiedade"
+              ],
+              "resposta": "Risco de dependência e tolerância",
+              "explicacao": "Usar só por pouco tempo, se preciso.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos há 1 ano se preocupa com tudo, tem tensão muscular, cansaço e dorme mal. Não tem crises súbitas.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno de ansiedade generalizada",
+                "Transtorno de pânico",
+                "Fobia social",
+                "Transtorno obsessivo-compulsivo grave"
+              ],
+              "resposta": "Transtorno de ansiedade generalizada",
+              "explicacao": "Preocupação difusa e persistente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Hipertireoidismo e cafeína em excesso podem simular ansiedade.",
+              "resposta": true,
+              "explicacao": "Investigar causas clínicas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio não benzodiazepínico pode ser usado no TAG?",
+              "opcoes": [
+                "Buspirona",
+                "Haloperidol",
+                "Carbamazepina",
+                "Lítio em dose baixa"
+              ],
+              "resposta": "Buspirona",
+              "explicacao": "Não causa dependência.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u4-l2",
+          "titulo": "Pânico e fobias",
+          "questoes": [
+            {
+              "id": "rpsiq-u4-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que define o ataque de pânico?",
+              "opcoes": [
+                "Medo intenso súbito com pico em minutos",
+                "Tristeza por 2 semanas",
+                "Preocupação diária",
+                "Medo constante e leve que dura vários meses seguidos"
+              ],
+              "resposta": "Medo intenso súbito com pico em minutos",
+              "explicacao": "Com palpitação, falta de ar e medo de morrer.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No transtorno de pânico, existe medo persistente de ter novas crises.",
+              "resposta": true,
+              "explicacao": "Chamado de ansiedade antecipatória.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O medo de lugares de onde é difícil sair, como ônibus e multidões, se chama ___.",
+              "opcoes": [
+                "agorafobia",
+                "claustrofobia",
+                "fobia social",
+                "acrofobia de altura"
+              ],
+              "resposta": "agorafobia",
+              "explicacao": "Frequentemente acompanha o pânico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada fobia ao medo.",
+              "pares": [
+                {
+                  "esquerda": "Fobia social",
+                  "direita": "Ser avaliado pelos outros"
+                },
+                {
+                  "esquerda": "Agorafobia",
+                  "direita": "Lugares sem saída fácil"
+                },
+                {
+                  "esquerda": "Fobia específica",
+                  "direita": "Objeto ou situação definida"
+                },
+                {
+                  "esquerda": "Claustrofobia",
+                  "direita": "Lugares fechados"
+                }
+              ],
+              "explicacao": "O tratamento é exposição gradual.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento de escolha da fobia específica?",
+              "opcoes": [
+                "Terapia de exposição",
+                "Antipsicótico",
+                "Lítio",
+                "Benzodiazepínico diário por anos"
+              ],
+              "resposta": "Terapia de exposição",
+              "explicacao": "A exposição gradual dessensibiliza.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos teve 4 crises súbitas de palpitação, falta de ar e medo de morrer. ECG e exames normais. Agora evita sair sozinha.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno de pânico com agorafobia",
+                "Infarto",
+                "TAG",
+                "Fobia social com medo de falar em público"
+              ],
+              "resposta": "Transtorno de pânico com agorafobia",
+              "explicacao": "Afastadas causas cardíacas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O betabloqueador pode ajudar na ansiedade de desempenho, como falar em público.",
+              "resposta": true,
+              "explicacao": "Controla tremor e taquicardia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento de manutenção do transtorno de pânico?",
+              "opcoes": [
+                "ISRS e terapia cognitivo-comportamental",
+                "Benzodiazepínico isolado",
+                "Antipsicótico",
+                "Haloperidol de depósito por um ano, sem terapia"
+              ],
+              "resposta": "ISRS e terapia cognitivo-comportamental",
+              "explicacao": "Começar com dose baixa.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u4-l3",
+          "titulo": "TOC e TEPT",
+          "questoes": [
+            {
+              "id": "rpsiq-u4-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que são obsessões no TOC?",
+              "opcoes": [
+                "Pensamentos intrusivos que causam angústia",
+                "Atos repetitivos",
+                "Alucinações",
+                "Ideias de grandeza que o paciente acha agradáveis"
+              ],
+              "resposta": "Pensamentos intrusivos que causam angústia",
+              "explicacao": "As compulsões tentam aliviar a angústia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No TOC, o paciente geralmente reconhece que os pensamentos são excessivos.",
+              "resposta": true,
+              "explicacao": "Diferente do delírio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O TOC costuma precisar de doses ___ de ISRS do que a depressão.",
+              "opcoes": [
+                "maiores",
+                "menores",
+                "iguais",
+                "muito menores e por pouco tempo"
+              ],
+              "resposta": "maiores",
+              "explicacao": "E demora mais para responder.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma do TEPT ao grupo.",
+              "pares": [
+                {
+                  "esquerda": "Pesadelos com o trauma",
+                  "direita": "Revivência"
+                },
+                {
+                  "esquerda": "Evitar o local",
+                  "direita": "Evitação"
+                },
+                {
+                  "esquerda": "Sobressalto fácil",
+                  "direita": "Hiperexcitação"
+                },
+                {
+                  "esquerda": "Culpa e humor negativo",
+                  "direita": "Alteração do humor"
+                }
+              ],
+              "explicacao": "Duram mais de 1 mês.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tempo mínimo para diagnosticar TEPT após o trauma?",
+              "opcoes": [
+                "Mais de 1 mês de sintomas",
+                "2 dias",
+                "1 semana",
+                "Só depois de 1 ano do evento traumático"
+              ],
+              "resposta": "Mais de 1 mês de sintomas",
+              "explicacao": "Antes disso, é transtorno de estresse agudo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher assaltada há 2 meses tem pesadelos, evita a rua do assalto e se assusta com qualquer barulho.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Estresse pós-traumático",
+                "Transtorno de pânico",
+                "Fobia específica",
+                "Transtorno de estresse agudo leve"
+              ],
+              "resposta": "Estresse pós-traumático",
+              "explicacao": "Sintomas por mais de 1 mês.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clomipramina é um tricíclico com boa eficácia no TOC.",
+              "resposta": true,
+              "explicacao": "Opção quando o ISRS falha.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u4-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a psicoterapia indicada para o TOC?",
+              "opcoes": [
+                "Exposição com prevenção de resposta",
+                "Psicanálise",
+                "Hipnose",
+                "Terapia de apoio sem exposição ao medo"
+              ],
+              "resposta": "Exposição com prevenção de resposta",
+              "explicacao": "Tipo de terapia cognitivo-comportamental.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u5",
+      "titulo": "Álcool",
+      "descricao": "Dependência, abstinência e complicações",
+      "licoes": [
+        {
+          "id": "rpsiq-u5-l1",
+          "titulo": "Uso nocivo e dependência",
+          "questoes": [
+            {
+              "id": "rpsiq-u5-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual questionário rápido rastreia problemas com álcool?",
+              "opcoes": [
+                "CAGE",
+                "MEEM",
+                "PHQ-9",
+                "Escala de Glasgow para coma"
+              ],
+              "resposta": "CAGE",
+              "explicacao": "Duas respostas positivas sugerem problema.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Tolerância e abstinência são sinais de dependência.",
+              "resposta": true,
+              "explicacao": "Junto com perda de controle e prejuízos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O exame de sangue que sobe com uso crônico de álcool é a ___.",
+              "opcoes": [
+                "gama-GT",
+                "amilase",
+                "troponina",
+                "creatinofosfoquinase total"
+              ],
+              "resposta": "gama-GT",
+              "explicacao": "Também o VCM aumentado.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada letra do CAGE à pergunta.",
+              "pares": [
+                {
+                  "esquerda": "C",
+                  "direita": "Já sentiu que deveria cortar a bebida"
+                },
+                {
+                  "esquerda": "A",
+                  "direita": "Ficou aborrecido com críticas"
+                },
+                {
+                  "esquerda": "G",
+                  "direita": "Sentiu culpa por beber"
+                },
+                {
+                  "esquerda": "E",
+                  "direita": "Bebe ao acordar"
+                }
+              ],
+              "explicacao": "Cada sim vale 1 ponto.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a intervenção indicada na atenção primária para uso de risco?",
+              "opcoes": [
+                "Intervenção breve",
+                "Internação compulsória",
+                "Dissulfiram sem consentimento",
+                "Encaminhar à polícia"
+              ],
+              "resposta": "Intervenção breve",
+              "explicacao": "Conversa curta e motivacional.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos responde sim a 3 perguntas do CAGE, tem gama-GT alta e VCM de 102.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Dependência de álcool",
+                "Anemia ferropriva",
+                "Hepatite viral",
+                "Hipotireoidismo com macrocitose leve"
+              ],
+              "resposta": "Dependência de álcool",
+              "explicacao": "Avaliar e propor tratamento.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A entrevista motivacional respeita a autonomia e trabalha a ambivalência do paciente.",
+              "resposta": true,
+              "explicacao": "Evita confronto.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual estágio de mudança o paciente ainda não pensa em parar de beber?",
+              "opcoes": [
+                "Pré-contemplação",
+                "Contemplação",
+                "Ação",
+                "Manutenção da abstinência"
+              ],
+              "resposta": "Pré-contemplação",
+              "explicacao": "Modelo de Prochaska e DiClemente.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u5-l2",
+          "titulo": "Abstinência e delirium tremens",
+          "questoes": [
+            {
+              "id": "rpsiq-u5-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando costuma começar a abstinência alcoólica?",
+              "opcoes": [
+                "De 6 a 24 horas após a última dose",
+                "Após 2 semanas",
+                "Após 1 mês",
+                "Somente após 10 dias seguidos sem beber nada"
+              ],
+              "resposta": "De 6 a 24 horas após a última dose",
+              "explicacao": "O delirium tremens surge entre 48 e 96 horas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O delirium tremens tem confusão, alucinações visuais e instabilidade autonômica.",
+              "resposta": true,
+              "explicacao": "É uma emergência com risco de morte.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O remédio de escolha na abstinência alcoólica é o ___.",
+              "opcoes": [
+                "benzodiazepínico",
+                "haloperidol",
+                "antidepressivo",
+                "betabloqueador isolado"
+              ],
+              "resposta": "benzodiazepínico",
+              "explicacao": "Diazepam é o mais usado.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quadro ao tempo após parar de beber.",
+              "pares": [
+                {
+                  "esquerda": "Tremor e ansiedade",
+                  "direita": "6 a 24 horas"
+                },
+                {
+                  "esquerda": "Alucinose e convulsão",
+                  "direita": "12 a 48 horas"
+                },
+                {
+                  "esquerda": "Delirium tremens",
+                  "direita": "48 a 96 horas"
+                },
+                {
+                  "esquerda": "Fim dos sintomas leves",
+                  "direita": "Cerca de 5 a 7 dias"
+                }
+              ],
+              "explicacao": "A escala CIWA ajuda a guiar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual benzodiazepínico preferir em hepatopatas graves?",
+              "opcoes": [
+                "Lorazepam",
+                "Diazepam",
+                "Clonazepam",
+                "Clordiazepóxido em dose alta"
+              ],
+              "resposta": "Lorazepam",
+              "explicacao": "Não depende do metabolismo hepático oxidativo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem internado há 3 dias para cirurgia fica agitado, suado, com tremor, taquicardia e vê insetos na parede. Bebia muito todos os dias.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Delirium tremens",
+                "Esquizofrenia",
+                "AVC",
+                "Reação à anestesia sem gravidade"
+              ],
+              "resposta": "Delirium tremens",
+              "explicacao": "Benzodiazepínico e suporte.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na abstinência, deve-se dar tiamina antes da glicose.",
+              "resposta": true,
+              "explicacao": "Previne a encefalopatia de Wernicke.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual escala avalia a gravidade da abstinência alcoólica?",
+              "opcoes": [
+                "CIWA-Ar",
+                "Glasgow",
+                "APGAR",
+                "Escala de Braden para úlcera"
+              ],
+              "resposta": "CIWA-Ar",
+              "explicacao": "Guia a dose de benzodiazepínico.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u5-l3",
+          "titulo": "Wernicke-Korsakoff e complicações",
+          "questoes": [
+            {
+              "id": "rpsiq-u5-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a tríade da encefalopatia de Wernicke?",
+              "opcoes": [
+                "Confusão, ataxia e oftalmoplegia",
+                "Febre, rigidez e confusão",
+                "Cefaleia, vômito e febre",
+                "Tremor, rigidez e lentidão dos movimentos"
+              ],
+              "resposta": "Confusão, ataxia e oftalmoplegia",
+              "explicacao": "Poucos pacientes têm a tríade completa.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A encefalopatia de Wernicke é causada por falta de tiamina (vitamina B1).",
+              "resposta": true,
+              "explicacao": "Comum no alcoolismo e na desnutrição.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na síndrome de Korsakoff, o paciente inventa histórias para preencher falhas de memória, o que se chama ___.",
+              "opcoes": [
+                "confabulação",
+                "alucinação",
+                "delírio",
+                "pseudologia fantástica"
+              ],
+              "resposta": "confabulação",
+              "explicacao": "É amnésia anterógrada grave.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada complicação do álcool ao órgão.",
+              "pares": [
+                {
+                  "esquerda": "Pancreatite",
+                  "direita": "Pâncreas"
+                },
+                {
+                  "esquerda": "Cirrose",
+                  "direita": "Fígado"
+                },
+                {
+                  "esquerda": "Cardiomiopatia dilatada",
+                  "direita": "Coração"
+                },
+                {
+                  "esquerda": "Neuropatia periférica",
+                  "direita": "Nervos"
+                }
+              ],
+              "explicacao": "O álcool atinge vários órgãos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento da encefalopatia de Wernicke?",
+              "opcoes": [
+                "Tiamina endovenosa em dose alta",
+                "Glicose sozinha",
+                "Haloperidol",
+                "Diazepam e observação em casa"
+              ],
+              "resposta": "Tiamina endovenosa em dose alta",
+              "explicacao": "Iniciar logo, mesmo só com suspeita.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Etilista desnutrido chega confuso, andando de forma desequilibrada e com movimentos oculares alterados.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Tiamina endovenosa",
+                "Glicose sem tiamina",
+                "Tomografia e aguardar",
+                "Haloperidol e contenção mecânica"
+              ],
+              "resposta": "Tiamina endovenosa",
+              "explicacao": "Tiamina antes da glicose.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na síndrome de Korsakoff, a memória costuma se recuperar totalmente.",
+              "resposta": false,
+              "explicacao": "O prejuízo geralmente é permanente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u5-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio ajuda a manter a abstinência do álcool, reduzindo a fissura?",
+              "opcoes": [
+                "Naltrexona",
+                "Diazepam contínuo",
+                "Haloperidol",
+                "Fluoxetina em dose alta"
+              ],
+              "resposta": "Naltrexona",
+              "explicacao": "Também o acamprosato.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u6",
+      "titulo": "Outras drogas",
+      "descricao": "Cocaína, opioides, maconha e benzodiazepínicos",
+      "licoes": [
+        {
+          "id": "rpsiq-u6-l1",
+          "titulo": "Cocaína e crack",
+          "questoes": [
+            {
+              "id": "rpsiq-u6-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o mecanismo da cocaína?",
+              "opcoes": [
+                "Bloqueia a recaptação de dopamina",
+                "Bloqueio de receptor opioide",
+                "Ativação do GABA",
+                "Inibição da acetilcolinesterase em todo o cérebro"
+              ],
+              "resposta": "Bloqueia a recaptação de dopamina",
+              "explicacao": "Causa euforia e efeito simpático intenso.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A cocaína pode causar infarto mesmo em jovens sem doença coronariana.",
+              "resposta": true,
+              "explicacao": "Por vasoespasmo e trombose.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na intoxicação por cocaína com hipertensão, deve-se evitar ___ isolado.",
+              "opcoes": [
+                "betabloqueador",
+                "benzodiazepínico",
+                "nitrato",
+                "bloqueador de canal de cálcio"
+              ],
+              "resposta": "betabloqueador",
+              "explicacao": "Pode piorar o vasoespasmo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado ao uso de cocaína.",
+              "pares": [
+                {
+                  "esquerda": "Pupilas dilatadas",
+                  "direita": "Midríase"
+                },
+                {
+                  "esquerda": "Coração acelerado",
+                  "direita": "Taquicardia"
+                },
+                {
+                  "esquerda": "Febre alta",
+                  "direita": "Hipertermia"
+                },
+                {
+                  "esquerda": "Agitação e paranoia",
+                  "direita": "Efeito no cérebro"
+                }
+              ],
+              "explicacao": "É uma síndrome simpaticomimética.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento inicial da agitação por cocaína?",
+              "opcoes": [
+                "Benzodiazepínico",
+                "Haloperidol em dose alta",
+                "Propranolol",
+                "Naloxona endovenosa em bolus"
+              ],
+              "resposta": "Benzodiazepínico",
+              "explicacao": "Reduz agitação, pressão e risco de convulsão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 22 anos chega agitado, com dor no peito, pressão 180 x 110, pupilas dilatadas e suor após uma festa.",
+              "enunciado": "Qual é a hipótese mais provável?",
+              "opcoes": [
+                "Intoxicação por cocaína",
+                "Intoxicação por opioide",
+                "Abstinência de maconha",
+                "Crise de pânico sem relação com drogas"
+              ],
+              "resposta": "Intoxicação por cocaína",
+              "explicacao": "Investigar isquemia com ECG e troponina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Após parar o uso pesado de cocaína, pode surgir fase de depressão e muito sono (crash).",
+              "resposta": true,
+              "explicacao": "Atenção ao risco de suicídio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a única abordagem com boa evidência na dependência de cocaína?",
+              "opcoes": [
+                "Psicoterapia e acompanhamento",
+                "Metadona",
+                "Naltrexona",
+                "Dissulfiram com álcool junto"
+              ],
+              "resposta": "Psicoterapia e acompanhamento",
+              "explicacao": "Não há remédio aprovado específico.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u6-l2",
+          "titulo": "Opioides",
+          "questoes": [
+            {
+              "id": "rpsiq-u6-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a tríade da intoxicação por opioide?",
+              "opcoes": [
+                "Miose, rebaixamento e depressão respiratória",
+                "Midríase, febre e agitação",
+                "Diarreia, suor e bocejos",
+                "Taquicardia, hipertensão e pupilas grandes"
+              ],
+              "resposta": "Miose, rebaixamento e depressão respiratória",
+              "explicacao": "A depressão respiratória mata.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A naloxona reverte a intoxicação por opioide, mas tem efeito curto.",
+              "resposta": true,
+              "explicacao": "Pode ser preciso repetir doses.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O antídoto da intoxicação por opioide é a ___.",
+              "opcoes": [
+                "naloxona",
+                "naltrexona oral",
+                "flumazenil",
+                "atropina"
+              ],
+              "resposta": "naloxona",
+              "explicacao": "Usada por via venosa, muscular ou nasal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal ao quadro de opioide.",
+              "pares": [
+                {
+                  "esquerda": "Pupila puntiforme",
+                  "direita": "Intoxicação"
+                },
+                {
+                  "esquerda": "Bocejos, coriza e pupila dilatada",
+                  "direita": "Abstinência"
+                },
+                {
+                  "esquerda": "Respiração lenta",
+                  "direita": "Intoxicação grave"
+                },
+                {
+                  "esquerda": "Náusea e prisão de ventre",
+                  "direita": "Efeito comum do uso crônico"
+                }
+              ],
+              "explicacao": "A abstinência é sofrida, mas raramente fatal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio substitutivo é usado no tratamento da dependência de opioides?",
+              "opcoes": [
+                "Metadona",
+                "Naloxona",
+                "Diazepam",
+                "Haloperidol de depósito mensal"
+              ],
+              "resposta": "Metadona",
+              "explicacao": "Também a buprenorfina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem encontrado sonolento, respirando 6 vezes por minuto e com pupilas puntiformes.",
+              "enunciado": "Qual é a conduta inicial?",
+              "opcoes": [
+                "Ventilar e dar naloxona",
+                "Dar flumazenil",
+                "Lavagem gástrica sem proteção",
+                "Aguardar acordar sozinho na maca"
+              ],
+              "resposta": "Ventilar e dar naloxona",
+              "explicacao": "Suporte ventilatório primeiro.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A abstinência de opioide causa pupilas dilatadas, diarreia, cólicas e piloereção.",
+              "resposta": true,
+              "explicacao": "Sintomas opostos aos da intoxicação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual opioide sintético muito potente tem causado muitas mortes por overdose?",
+              "opcoes": [
+                "Fentanil",
+                "Codeína",
+                "Tramadol",
+                "Morfina em xarope infantil"
+              ],
+              "resposta": "Fentanil",
+              "explicacao": "Pode precisar de várias doses de naloxona.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u6-l3",
+          "titulo": "Maconha, benzodiazepínicos e tabaco",
+          "questoes": [
+            {
+              "id": "rpsiq-u6-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o achado típico logo após fumar maconha?",
+              "opcoes": [
+                "Olhos vermelhos e aumento do apetite",
+                "Pupilas puntiformes",
+                "Bradicardia grave",
+                "Convulsões repetidas e febre muito alta"
+              ],
+              "resposta": "Olhos vermelhos e aumento do apetite",
+              "explicacao": "Também taquicardia e lentidão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O flumazenil reverte a intoxicação por benzodiazepínico, mas pode causar convulsão.",
+              "resposta": true,
+              "explicacao": "Principalmente em usuários crônicos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os vômitos cíclicos que melhoram com banho quente em usuários crônicos de maconha formam a síndrome de ___ canabinoide.",
+              "opcoes": [
+                "hiperêmese",
+                "abstinência",
+                "serotonina",
+                "hipertermia maligna"
+              ],
+              "resposta": "hiperêmese",
+              "explicacao": "Melhora ao parar o uso.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada remédio à cessação do tabagismo.",
+              "pares": [
+                {
+                  "esquerda": "Adesivo de nicotina",
+                  "direita": "Reposição"
+                },
+                {
+                  "esquerda": "Bupropiona",
+                  "direita": "Antidepressivo"
+                },
+                {
+                  "esquerda": "Vareniclina",
+                  "direita": "Agonista parcial nicotínico"
+                },
+                {
+                  "esquerda": "Goma de nicotina",
+                  "direita": "Reposição de ação rápida"
+                }
+              ],
+              "explicacao": "Junto com abordagem comportamental.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco da retirada abrupta de benzodiazepínico usado por muito tempo?",
+              "opcoes": [
+                "Convulsão",
+                "Hipertensão leve",
+                "Diarreia",
+                "Melhora imediata do sono e da ansiedade"
+              ],
+              "resposta": "Convulsão",
+              "explicacao": "Retirar aos poucos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idosa usa clonazepam há 10 anos para dormir e quer parar.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Reduzir a dose aos poucos",
+                "Suspender hoje",
+                "Trocar por haloperidol",
+                "Manter para sempre sem discutir"
+              ],
+              "resposta": "Reduzir a dose aos poucos",
+              "explicacao": "Retirada gradual em semanas a meses.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A intoxicação isolada por benzodiazepínico por via oral raramente mata.",
+              "resposta": true,
+              "explicacao": "O risco aumenta com álcool e opioides.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u6-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento mais eficaz para parar de fumar?",
+              "opcoes": [
+                "Remédio com abordagem comportamental",
+                "Só força de vontade",
+                "Cigarro eletrônico",
+                "Benzodiazepínico diário durante toda a abstinência"
+              ],
+              "resposta": "Remédio com abordagem comportamental",
+              "explicacao": "A combinação dobra a chance de sucesso.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u7",
+      "titulo": "Emergências psiquiátricas",
+      "descricao": "Suicídio, agitação e efeitos graves de remédios",
+      "licoes": [
+        {
+          "id": "rpsiq-u7-l1",
+          "titulo": "Risco de suicídio",
+          "questoes": [
+            {
+              "id": "rpsiq-u7-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de risco para suicídio?",
+              "opcoes": [
+                "Tentativa prévia",
+                "Ser mulher",
+                "Ter filhos",
+                "Morar perto da família"
+              ],
+              "resposta": "Tentativa prévia",
+              "explicacao": "Também transtorno mental e uso de álcool.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Perguntar diretamente sobre ideias de suicídio não aumenta o risco.",
+              "resposta": true,
+              "explicacao": "Ao contrário, ajuda a proteger.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Ter plano, acesso a meios e intenção indica risco ___ de suicídio.",
+              "opcoes": [
+                "alto",
+                "baixo",
+                "ausente",
+                "moderado e sem urgência"
+              ],
+              "resposta": "alto",
+              "explicacao": "Pede proteção imediata.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada item ao tipo de fator.",
+              "pares": [
+                {
+                  "esquerda": "Tentativa anterior",
+                  "direita": "Fator de risco mais forte"
+                },
+                {
+                  "esquerda": "Desesperança",
+                  "direita": "Fator de risco psicológico"
+                },
+                {
+                  "esquerda": "Rede de apoio",
+                  "direita": "Fator de proteção social"
+                },
+                {
+                  "esquerda": "Arma em casa",
+                  "direita": "Acesso a meio letal"
+                }
+              ],
+              "explicacao": "Avaliar os dois lados.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual grupo tem maior taxa de suicídio consumado?",
+              "opcoes": [
+                "Homens",
+                "Mulheres",
+                "Crianças",
+                "Gestantes saudáveis com apoio"
+              ],
+              "resposta": "Homens",
+              "explicacao": "As mulheres tentam mais, os homens morrem mais.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos, recém-separado e desempregado, diz que comprou veneno e pensa em se matar esta semana.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Não deixar sozinho e encaminhar para emergência",
+                "Marcar retorno em 1 mês",
+                "Dar antidepressivo e liberar",
+                "Pedir que ligue se piorar e liberar sozinho"
+              ],
+              "resposta": "Não deixar sozinho e encaminhar para emergência",
+              "explicacao": "Risco alto exige proteção imediata.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Restringir o acesso a meios letais reduz o risco de suicídio.",
+              "resposta": true,
+              "explicacao": "Como armas e remédios em grande quantidade.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a doença psiquiátrica mais associada ao suicídio?",
+              "opcoes": [
+                "Depressão",
+                "TOC",
+                "Fobia específica",
+                "Transtorno de déficit de atenção na infância"
+              ],
+              "resposta": "Depressão",
+              "explicacao": "Também bipolar, esquizofrenia e álcool.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u7-l2",
+          "titulo": "Agitação psicomotora",
+          "questoes": [
+            {
+              "id": "rpsiq-u7-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o primeiro passo diante de paciente agitado?",
+              "opcoes": [
+                "Abordagem verbal com segurança",
+                "Contenção mecânica imediata",
+                "Sedação endovenosa sem conversa",
+                "Deixar sozinho em uma sala trancada até se acalmar"
+              ],
+              "resposta": "Abordagem verbal com segurança",
+              "explicacao": "Tentar acalmar antes de medicar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Antes de atribuir agitação a doença psiquiátrica, deve-se afastar causas clínicas.",
+              "resposta": true,
+              "explicacao": "Hipoglicemia, hipóxia, intoxicação e infecção.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A associação clássica para tranquilização rápida é haloperidol com ___.",
+              "opcoes": [
+                "prometazina",
+                "fluoxetina",
+                "lítio",
+                "carbamazepina"
+              ],
+              "resposta": "prometazina",
+              "explicacao": "Também se usa midazolam.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada causa de agitação ao exame.",
+              "pares": [
+                {
+                  "esquerda": "Hipoglicemia",
+                  "direita": "Glicemia capilar"
+                },
+                {
+                  "esquerda": "Hipóxia",
+                  "direita": "Oximetria"
+                },
+                {
+                  "esquerda": "Intoxicação",
+                  "direita": "Toxicológico"
+                },
+                {
+                  "esquerda": "Infecção",
+                  "direita": "Hemograma"
+                }
+              ],
+              "explicacao": "Exames simples evitam erros graves.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a regra da contenção mecânica?",
+              "opcoes": [
+                "Só como último recurso, com registro e vigilância",
+                "Usar em todo paciente agitado",
+                "Pode durar dias sem reavaliar",
+                "Pode ser feita sem prescrição nem registro em prontuário"
+              ],
+              "resposta": "Só como último recurso, com registro e vigilância",
+              "explicacao": "Reavaliar com frequência.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 30 anos com esquizofrenia está agitado e ameaça a equipe, sem aceitar remédio oral.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Haloperidol com prometazina no músculo",
+                "Fluoxetina oral",
+                "Lítio intravenoso",
+                "Alta imediata com retorno marcado para daqui a uma semana"
+              ],
+              "resposta": "Haloperidol com prometazina no músculo",
+              "explicacao": "Tranquilização rápida com segurança.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O delirium é uma causa comum de agitação em pacientes internados.",
+              "resposta": true,
+              "explicacao": "Tratar a causa de base.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sedativo evitar em agitação por intoxicação alcoólica grave?",
+              "opcoes": [
+                "Benzodiazepínico em dose alta",
+                "Haloperidol em dose baixa",
+                "Observação",
+                "Hidratação venosa e glicose com tiamina"
+              ],
+              "resposta": "Benzodiazepínico em dose alta",
+              "explicacao": "Soma depressão respiratória.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u7-l3",
+          "titulo": "Efeitos graves de psicofármacos",
+          "questoes": [
+            {
+              "id": "rpsiq-u7-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o quadro da síndrome neuroléptica maligna?",
+              "opcoes": [
+                "Febre, rigidez, confusão e CPK alta",
+                "Miose e bradipneia",
+                "Diarreia e clônus",
+                "Tremor fino e boca seca sem febre"
+              ],
+              "resposta": "Febre, rigidez, confusão e CPK alta",
+              "explicacao": "Causada por antipsicóticos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A síndrome serotoninérgica tem clônus, hiper-reflexia, diarreia e agitação.",
+              "resposta": true,
+              "explicacao": "Pode surgir ao associar remédios serotoninérgicos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O antídoto usado na síndrome serotoninérgica grave é a ___.",
+              "opcoes": [
+                "ciproeptadina",
+                "naloxona",
+                "atropina",
+                "fisostigmina"
+              ],
+              "resposta": "ciproeptadina",
+              "explicacao": "Também suspender os remédios.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à síndrome.",
+              "pares": [
+                {
+                  "esquerda": "Rigidez em cano de chumbo",
+                  "direita": "Neuroléptica maligna"
+                },
+                {
+                  "esquerda": "Clônus e diarreia",
+                  "direita": "Serotoninérgica"
+                },
+                {
+                  "esquerda": "Febre e rigidez após anestesia",
+                  "direita": "Hipertermia maligna"
+                },
+                {
+                  "esquerda": "Pele seca, retenção urinária e midríase",
+                  "direita": "Anticolinérgica"
+                }
+              ],
+              "explicacao": "Diferenciar muda a conduta.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio pode ser usado na síndrome neuroléptica maligna?",
+              "opcoes": [
+                "Bromocriptina ou dantrolene",
+                "Haloperidol",
+                "Fluoxetina",
+                "Mais antipsicótico em dose dobrada"
+              ],
+              "resposta": "Bromocriptina ou dantrolene",
+              "explicacao": "Suspender o antipsicótico e dar suporte.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em fluoxetina recebeu tramadol e ficou agitado, com febre, tremor, clônus e diarreia.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome serotoninérgica",
+                "Síndrome neuroléptica maligna",
+                "Abstinência de opioide",
+                "Crise de pânico com hiperventilação"
+              ],
+              "resposta": "Síndrome serotoninérgica",
+              "explicacao": "Tramadol também é serotoninérgico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A clozapina pode causar agranulocitose e exige hemograma periódico.",
+              "resposta": true,
+              "explicacao": "Monitorar os neutrófilos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u7-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o risco da superdosagem de tricíclicos?",
+              "opcoes": [
+                "Arritmia com QRS alargado",
+                "Apenas sono",
+                "Hipertensão leve",
+                "Melhora do humor sem efeitos colaterais"
+              ],
+              "resposta": "Arritmia com QRS alargado",
+              "explicacao": "Tratar com bicarbonato de sódio.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u8",
+      "titulo": "Transtornos alimentares",
+      "descricao": "Anorexia, bulimia e compulsão",
+      "licoes": [
+        {
+          "id": "rpsiq-u8-l1",
+          "titulo": "Anorexia nervosa",
+          "questoes": [
+            {
+              "id": "rpsiq-u8-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que caracteriza a anorexia nervosa?",
+              "opcoes": [
+                "Restrição alimentar, baixo peso e medo de engordar",
+                "Comer muito e vomitar com peso normal",
+                "Comer coisas que não são alimento",
+                "Comer pouco por tristeza, sem medo de engordar"
+              ],
+              "resposta": "Restrição alimentar, baixo peso e medo de engordar",
+              "explicacao": "Com distorção da imagem corporal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A amenorreia não é mais obrigatória para o diagnóstico de anorexia no DSM-5.",
+              "resposta": true,
+              "explicacao": "Foi retirada dos critérios.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na anorexia, a percepção errada do próprio corpo se chama distorção da ___ corporal.",
+              "opcoes": [
+                "imagem",
+                "massa",
+                "composição",
+                "temperatura"
+              ],
+              "resposta": "imagem",
+              "explicacao": "O paciente se acha gordo mesmo magro.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à anorexia.",
+              "pares": [
+                {
+                  "esquerda": "Lanugem",
+                  "direita": "Pelos finos no corpo"
+                },
+                {
+                  "esquerda": "Bradicardia",
+                  "direita": "Coração lento"
+                },
+                {
+                  "esquerda": "Osteoporose",
+                  "direita": "Perda óssea"
+                },
+                {
+                  "esquerda": "Hipotermia",
+                  "direita": "Temperatura baixa"
+                }
+              ],
+              "explicacao": "São adaptações à fome.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual transtorno psiquiátrico tem uma das maiores taxas de mortalidade?",
+              "opcoes": [
+                "Anorexia nervosa",
+                "Fobia social",
+                "TOC",
+                "Transtorno de ansiedade generalizada leve"
+              ],
+              "resposta": "Anorexia nervosa",
+              "explicacao": "Por complicações clínicas e suicídio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 15 anos com IMC 15, exercício diário de 3 horas, contando calorias e dizendo que está gorda.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Anorexia nervosa",
+                "Bulimia",
+                "Depressão",
+                "Hipertireoidismo com perda de peso"
+              ],
+              "resposta": "Anorexia nervosa",
+              "explicacao": "Avaliar sinais vitais e eletrólitos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O tratamento da anorexia envolve recuperação nutricional, psicoterapia e família.",
+              "resposta": true,
+              "explicacao": "A terapia familiar ajuda em adolescentes.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um critério de internação na anorexia?",
+              "opcoes": [
+                "Frequência cardíaca abaixo de 40",
+                "IMC de 19",
+                "Recusa de doce",
+                "Exercício leve uma vez por semana"
+              ],
+              "resposta": "Frequência cardíaca abaixo de 40",
+              "explicacao": "Também distúrbio eletrolítico grave.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u8-l2",
+          "titulo": "Bulimia e compulsão",
+          "questoes": [
+            {
+              "id": "rpsiq-u8-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que diferencia a bulimia da compulsão alimentar?",
+              "opcoes": [
+                "Compensação, como vômito",
+                "Peso muito baixo",
+                "Ausência de compulsão",
+                "Bulimia acontece apenas em homens adultos"
+              ],
+              "resposta": "Compensação, como vômito",
+              "explicacao": "Na compulsão, não há compensação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na bulimia, o peso costuma ser normal ou pouco acima.",
+              "resposta": true,
+              "explicacao": "Diferente da anorexia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O calo no dorso da mão por provocar vômito se chama sinal de ___.",
+              "opcoes": [
+                "Russell",
+                "Murphy",
+                "Trousseau",
+                "Chvostek"
+              ],
+              "resposta": "Russell",
+              "explicacao": "Comum na bulimia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à bulimia.",
+              "pares": [
+                {
+                  "esquerda": "Parótidas aumentadas",
+                  "direita": "Glândulas"
+                },
+                {
+                  "esquerda": "Erosão do esmalte",
+                  "direita": "Dentes"
+                },
+                {
+                  "esquerda": "Potássio baixo",
+                  "direita": "Sangue"
+                },
+                {
+                  "esquerda": "Calo na mão",
+                  "direita": "Sinal de Russell"
+                }
+              ],
+              "explicacao": "Por vômitos repetidos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antidepressivo tem evidência na bulimia?",
+              "opcoes": [
+                "Fluoxetina",
+                "Bupropiona",
+                "Amitriptilina",
+                "Lítio com antipsicótico"
+              ],
+              "resposta": "Fluoxetina",
+              "explicacao": "A bupropiona é contraindicada por risco de convulsão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 20 anos, peso normal, come grandes quantidades escondida e depois vomita, 3 vezes por semana há 6 meses.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Bulimia nervosa",
+                "Anorexia",
+                "Compulsão alimentar",
+                "Gastrite com vômitos frequentes"
+              ],
+              "resposta": "Bulimia nervosa",
+              "explicacao": "Com compensação e peso normal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O transtorno de compulsão alimentar está associado à obesidade.",
+              "resposta": true,
+              "explicacao": "Sem comportamentos compensatórios.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o distúrbio eletrolítico mais perigoso na bulimia?",
+              "opcoes": [
+                "Potássio baixo",
+                "Sódio alto",
+                "Cálcio alto",
+                "Fósforo alto com febre"
+              ],
+              "resposta": "Potássio baixo",
+              "explicacao": "Pode causar arritmias.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u8-l3",
+          "titulo": "Realimentação e complicações",
+          "questoes": [
+            {
+              "id": "rpsiq-u8-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é a síndrome de realimentação?",
+              "opcoes": [
+                "Queda de fósforo e potássio ao voltar a comer",
+                "Ganho de peso rápido e saudável",
+                "Diarreia por lactose",
+                "Melhora de todos os exames de sangue em poucos dias de dieta"
+              ],
+              "resposta": "Queda de fósforo e potássio ao voltar a comer",
+              "explicacao": "Pode causar arritmia e insuficiência cardíaca.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A realimentação na anorexia grave deve ser feita com monitoramento dos eletrólitos.",
+              "resposta": true,
+              "explicacao": "Principalmente nos primeiros dias.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O eletrólito que mais cai na síndrome de realimentação é o ___.",
+              "opcoes": [
+                "fósforo",
+                "sódio",
+                "cloro",
+                "cálcio iônico"
+              ],
+              "resposta": "fósforo",
+              "explicacao": "Repor e monitorar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada complicação ao sistema na anorexia.",
+              "pares": [
+                {
+                  "esquerda": "Bradicardia",
+                  "direita": "Coração"
+                },
+                {
+                  "esquerda": "Osteopenia",
+                  "direita": "Ossos"
+                },
+                {
+                  "esquerda": "Amenorreia",
+                  "direita": "Hormônios"
+                },
+                {
+                  "esquerda": "Constipação",
+                  "direita": "Intestino"
+                }
+              ],
+              "explicacao": "Melhoram com a recuperação do peso.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual paciente tem maior risco de síndrome de realimentação?",
+              "opcoes": [
+                "Muito desnutrido e sem comer há dias",
+                "Obeso comendo pouco",
+                "Atleta",
+                "Adulto bem nutrido após jejum de uma noite"
+              ],
+              "resposta": "Muito desnutrido e sem comer há dias",
+              "explicacao": "Começar com calorias menores.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com anorexia grave internada há 3 dias para nutrição fica fraca, com edema e arritmia. Fósforo muito baixo.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Síndrome de realimentação",
+                "Anorexia piorando",
+                "Infecção",
+                "Reação alérgica à dieta enteral"
+              ],
+              "resposta": "Síndrome de realimentação",
+              "explicacao": "Repor fósforo e reduzir a dieta.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A osteoporose da anorexia pode não se recuperar totalmente.",
+              "resposta": true,
+              "explicacao": "Principalmente se começou na adolescência.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u8-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a meta inicial de ganho de peso na internação por anorexia?",
+              "opcoes": [
+                "Cerca de 0,5 a 1 kg por semana",
+                "5 kg por semana",
+                "Sem ganho",
+                "10 kg no primeiro mês de internação"
+              ],
+              "resposta": "Cerca de 0,5 a 1 kg por semana",
+              "explicacao": "Ganho gradual e seguro.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u9",
+      "titulo": "Transtornos de personalidade",
+      "descricao": "Grupos, borderline e abordagem",
+      "licoes": [
+        {
+          "id": "rpsiq-u9-l1",
+          "titulo": "Grupos de personalidade",
+          "questoes": [
+            {
+              "id": "rpsiq-u9-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual grupo de transtornos de personalidade é o dos \"estranhos e excêntricos\"?",
+              "opcoes": [
+                "Grupo A",
+                "Grupo B",
+                "Grupo C",
+                "Grupo D"
+              ],
+              "resposta": "Grupo A",
+              "explicacao": "Paranoide, esquizoide e esquizotípico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O grupo C reúne os transtornos ansiosos e medrosos.",
+              "resposta": true,
+              "explicacao": "Evitativo, dependente e obsessivo-compulsivo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O grupo ___ reúne os transtornos dramáticos e emocionais.",
+              "opcoes": [
+                "B",
+                "A",
+                "C",
+                "D"
+              ],
+              "resposta": "B",
+              "explicacao": "Antissocial, borderline, histriônico e narcisista.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada transtorno de personalidade ao traço principal.",
+              "pares": [
+                {
+                  "esquerda": "Paranoide",
+                  "direita": "Desconfiança"
+                },
+                {
+                  "esquerda": "Esquizoide",
+                  "direita": "Isolamento sem desejo de contato"
+                },
+                {
+                  "esquerda": "Histriônico",
+                  "direita": "Busca de atenção"
+                },
+                {
+                  "esquerda": "Dependente",
+                  "direita": "Precisa que cuidem dele"
+                }
+              ],
+              "explicacao": "O padrão é duradouro e rígido.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Desde quando os traços de personalidade costumam aparecer?",
+              "opcoes": [
+                "Adolescência ou início da vida adulta",
+                "Após os 50 anos",
+                "Somente após trauma",
+                "Somente na velhice, depois de aposentar"
+              ],
+              "resposta": "Adolescência ou início da vida adulta",
+              "explicacao": "São estáveis ao longo do tempo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 40 anos sempre viveu sozinho, sem interesse em amigos ou namoro, e parece indiferente a elogios ou críticas.",
+              "enunciado": "Qual é o transtorno de personalidade?",
+              "opcoes": [
+                "Esquizoide",
+                "Esquizotípico",
+                "Evitativo",
+                "Paranoide com delírios estruturados"
+              ],
+              "resposta": "Esquizoide",
+              "explicacao": "Não sofre com o isolamento.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No transtorno de personalidade evitativa, a pessoa deseja contato, mas evita por medo de rejeição.",
+              "resposta": true,
+              "explicacao": "Diferente do esquizoide.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual transtorno de personalidade tem perfeccionismo e rigidez com regras?",
+              "opcoes": [
+                "Obsessivo-compulsivo",
+                "Histriônico",
+                "Borderline",
+                "Antissocial com agressividade"
+              ],
+              "resposta": "Obsessivo-compulsivo",
+              "explicacao": "Diferente do TOC, não há obsessões verdadeiras.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u9-l2",
+          "titulo": "Borderline e antissocial",
+          "questoes": [
+            {
+              "id": "rpsiq-u9-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica central do transtorno borderline?",
+              "opcoes": [
+                "Instabilidade do humor e das relações",
+                "Isolamento social",
+                "Desconfiança",
+                "Perfeccionismo extremo com o trabalho e as regras"
+              ],
+              "resposta": "Instabilidade do humor e das relações",
+              "explicacao": "Com impulsividade e medo de abandono.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A automutilação é comum no transtorno de personalidade borderline.",
+              "resposta": true,
+              "explicacao": "Também tentativas de suicídio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A psicoterapia com melhor evidência no borderline é a terapia ___ dialética.",
+              "opcoes": [
+                "comportamental",
+                "psicanalítica",
+                "de família",
+                "breve de apoio"
+              ],
+              "resposta": "comportamental",
+              "explicacao": "Ensina regulação emocional.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada transtorno ao traço.",
+              "pares": [
+                {
+                  "esquerda": "Borderline",
+                  "direita": "Medo intenso de abandono"
+                },
+                {
+                  "esquerda": "Antissocial",
+                  "direita": "Desrespeito às regras"
+                },
+                {
+                  "esquerda": "Narcisista",
+                  "direita": "Grandiosidade"
+                },
+                {
+                  "esquerda": "Histriônico",
+                  "direita": "Sedução e dramatização"
+                }
+              ],
+              "explicacao": "Todos do grupo B.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a idade mínima para diagnosticar transtorno de personalidade antissocial?",
+              "opcoes": [
+                "18 anos",
+                "10 anos",
+                "15 anos",
+                "30 anos de idade"
+              ],
+              "resposta": "18 anos",
+              "explicacao": "Com transtorno de conduta antes dos 15.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 24 anos com relações intensas e instáveis, cortes nos braços, raiva intensa e sensação crônica de vazio.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno de personalidade borderline",
+                "Bipolar tipo I",
+                "Esquizofrenia",
+                "Transtorno de personalidade esquizoide"
+              ],
+              "resposta": "Transtorno de personalidade borderline",
+              "explicacao": "Padrão estável desde a adolescência.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No transtorno antissocial, há falta de remorso após ferir os outros.",
+              "resposta": true,
+              "explicacao": "Também mentira e impulsividade.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento principal dos transtornos de personalidade?",
+              "opcoes": [
+                "Psicoterapia",
+                "Antipsicótico de depósito",
+                "Lítio",
+                "Internação longa obrigatória"
+              ],
+              "resposta": "Psicoterapia",
+              "explicacao": "Remédios só para sintomas específicos.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u9-l3",
+          "titulo": "Abordagem dos transtornos de personalidade",
+          "questoes": [
+            {
+              "id": "rpsiq-u9-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual atitude ajuda no atendimento de paciente borderline?",
+              "opcoes": [
+                "Limites claros e consistência",
+                "Prometer disponibilidade total",
+                "Ignorar as queixas",
+                "Mudar as regras sempre que o paciente pedir"
+              ],
+              "resposta": "Limites claros e consistência",
+              "explicacao": "Evitar divisão da equipe.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Transtornos de personalidade frequentemente coexistem com depressão e uso de drogas.",
+              "resposta": true,
+              "explicacao": "Tratar as comorbidades.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Quando o paciente vê alguns membros da equipe como totalmente bons e outros como totalmente maus, ocorre a ___.",
+              "opcoes": [
+                "clivagem",
+                "projeção",
+                "negação",
+                "sublimação"
+              ],
+              "resposta": "clivagem",
+              "explicacao": "Mecanismo de defesa comum no borderline.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada mecanismo de defesa à descrição.",
+              "pares": [
+                {
+                  "esquerda": "Projeção",
+                  "direita": "Atribuir ao outro o próprio sentimento"
+                },
+                {
+                  "esquerda": "Negação",
+                  "direita": "Recusar a realidade"
+                },
+                {
+                  "esquerda": "Sublimação",
+                  "direita": "Canalizar para algo aceito"
+                },
+                {
+                  "esquerda": "Racionalização",
+                  "direita": "Justificar com lógica"
+                }
+              ],
+              "explicacao": "Alguns são mais maduros que outros.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o mecanismo de defesa considerado maduro?",
+              "opcoes": [
+                "Sublimação",
+                "Clivagem",
+                "Projeção",
+                "Negação psicótica da realidade"
+              ],
+              "resposta": "Sublimação",
+              "explicacao": "Também humor e altruísmo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com transtorno de personalidade paranoide acha que o médico quer prejudicá-lo.",
+              "enunciado": "Qual é a melhor postura?",
+              "opcoes": [
+                "Ser claro, profissional e transparente",
+                "Discutir e provar que ele está errado",
+                "Ser muito íntimo",
+                "Evitar explicar os exames e as condutas"
+              ],
+              "resposta": "Ser claro, profissional e transparente",
+              "explicacao": "Transparência reduz a desconfiança.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O transtorno de personalidade esquizotípico tem crenças estranhas e pensamento mágico.",
+              "resposta": true,
+              "explicacao": "Sem psicose franca.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u9-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio pode ajudar na instabilidade afetiva do borderline?",
+              "opcoes": [
+                "Estabilizador de humor",
+                "Benzodiazepínico contínuo",
+                "Opioide",
+                "Estimulante como metilfenidato"
+              ],
+              "resposta": "Estabilizador de humor",
+              "explicacao": "Usado como coadjuvante da terapia.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u10",
+      "titulo": "Neuropsiquiatria",
+      "descricao": "Delirium, demências e diagnóstico diferencial",
+      "licoes": [
+        {
+          "id": "rpsiq-u10-l1",
+          "titulo": "Delirium",
+          "questoes": [
+            {
+              "id": "rpsiq-u10-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a característica central do delirium?",
+              "opcoes": [
+                "Atenção alterada, aguda e flutuante",
+                "Perda lenta da memória",
+                "Tristeza persistente",
+                "Alucinações auditivas sem nenhuma confusão mental"
+              ],
+              "resposta": "Atenção alterada, aguda e flutuante",
+              "explicacao": "É uma emergência médica.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O delirium hipoativo é comum em idosos e muitas vezes passa despercebido.",
+              "resposta": true,
+              "explicacao": "Parece sonolência ou apatia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O instrumento à beira do leito para diagnosticar delirium é o ___.",
+              "opcoes": [
+                "CAM",
+                "MEEM",
+                "CAGE",
+                "PHQ-9"
+              ],
+              "resposta": "CAM",
+              "explicacao": "Confusion Assessment Method.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada grupo de causas de delirium a um exemplo.",
+              "pares": [
+                {
+                  "esquerda": "Infecção",
+                  "direita": "Infecção urinária"
+                },
+                {
+                  "esquerda": "Remédio",
+                  "direita": "Anticolinérgico"
+                },
+                {
+                  "esquerda": "Metabólica",
+                  "direita": "Hiponatremia"
+                },
+                {
+                  "esquerda": "Abstinência",
+                  "direita": "Álcool"
+                }
+              ],
+              "explicacao": "Procurar a causa sempre.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento principal do delirium?",
+              "opcoes": [
+                "Tratar a causa e medidas gerais",
+                "Benzodiazepínico para todos",
+                "Contenção mecânica",
+                "Antidepressivo diário por seis meses seguidos"
+              ],
+              "resposta": "Tratar a causa e medidas gerais",
+              "explicacao": "Orientação, sono e óculos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 80 anos operado do fêmur fica confuso à noite, desatento e agitado, com melhora pela manhã.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Delirium",
+                "Doença de Alzheimer",
+                "Esquizofrenia",
+                "Depressão com sintomas psicóticos"
+              ],
+              "resposta": "Delirium",
+              "explicacao": "Curso flutuante é típico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Benzodiazepínicos podem piorar o delirium, exceto na abstinência alcoólica.",
+              "resposta": true,
+              "explicacao": "Preferir antipsicótico em dose baixa se necessário.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medida previne delirium em idosos internados?",
+              "opcoes": [
+                "Orientação, sono e mobilização precoce",
+                "Contenção no leito",
+                "Luz acesa a noite toda",
+                "Sedação contínua com benzodiazepínico"
+              ],
+              "resposta": "Orientação, sono e mobilização precoce",
+              "explicacao": "Também óculos e aparelho auditivo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u10-l2",
+          "titulo": "Demências",
+          "questoes": [
+            {
+              "id": "rpsiq-u10-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença responde pela maioria dos casos de demência?",
+              "opcoes": [
+                "Doença de Alzheimer",
+                "Demência vascular",
+                "Corpos de Lewy",
+                "Demência frontotemporal hereditária"
+              ],
+              "resposta": "Doença de Alzheimer",
+              "explicacao": "Começa com perda de memória recente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na demência com corpos de Lewy, há alucinações visuais e parkinsonismo.",
+              "resposta": true,
+              "explicacao": "Sensível a antipsicóticos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Os remédios inibidores da ___ são usados na doença de Alzheimer leve a moderada.",
+              "opcoes": [
+                "acetilcolinesterase",
+                "MAO",
+                "recaptação de dopamina",
+                "dopa descarboxilase"
+              ],
+              "resposta": "acetilcolinesterase",
+              "explicacao": "Donepezila, rivastigmina e galantamina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada demência ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Alzheimer",
+                  "direita": "Memória recente"
+                },
+                {
+                  "esquerda": "Vascular",
+                  "direita": "Piora em degraus"
+                },
+                {
+                  "esquerda": "Frontotemporal",
+                  "direita": "Mudança de comportamento"
+                },
+                {
+                  "esquerda": "Corpos de Lewy",
+                  "direita": "Alucinações visuais"
+                }
+              ],
+              "explicacao": "O padrão orienta o diagnóstico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais exames pedir na investigação de demência?",
+              "opcoes": [
+                "Vitamina B12, TSH e imagem do crânio",
+                "Só eletrocardiograma",
+                "Biópsia cerebral",
+                "Apenas teste de gravidez e glicemia"
+              ],
+              "resposta": "Vitamina B12, TSH e imagem do crânio",
+              "explicacao": "Afastar causas reversíveis.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos ficou desinibido, faz piadas impróprias e gasta dinheiro sem controle. Memória pouco afetada.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Demência frontotemporal",
+                "Alzheimer",
+                "Depressão",
+                "Demência vascular com piora em degraus"
+              ],
+              "resposta": "Demência frontotemporal",
+              "explicacao": "Começa mais cedo e muda o comportamento.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A memantina é usada na doença de Alzheimer moderada a grave.",
+              "resposta": true,
+              "explicacao": "Antagonista do receptor NMDA.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tríade sugere hidrocefalia de pressão normal?",
+              "opcoes": [
+                "Marcha alterada, incontinência e demência",
+                "Febre, cefaleia, vômitos e rigidez de nuca",
+                "Tremor, rigidez e lentidão",
+                "Alucinação, delírio e insônia"
+              ],
+              "resposta": "Marcha alterada, incontinência e demência",
+              "explicacao": "Pode melhorar com derivação.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u10-l3",
+          "titulo": "Delirium, demência e depressão",
+          "questoes": [
+            {
+              "id": "rpsiq-u10-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual quadro tem início agudo e atenção muito alterada?",
+              "opcoes": [
+                "Delirium",
+                "Demência",
+                "Depressão",
+                "Transtorno de personalidade"
+              ],
+              "resposta": "Delirium",
+              "explicacao": "A demência começa lentamente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Um paciente com demência tem maior risco de desenvolver delirium.",
+              "resposta": true,
+              "explicacao": "A demência é fator de risco.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Na ___, o nível de consciência costuma estar alterado.",
+              "opcoes": [
+                "delirium",
+                "demência inicial",
+                "depressão",
+                "distimia"
+              ],
+              "resposta": "delirium",
+              "explicacao": "Na demência inicial, a consciência é normal.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada característica ao quadro.",
+              "pares": [
+                {
+                  "esquerda": "Início agudo",
+                  "direita": "Delirium"
+                },
+                {
+                  "esquerda": "Início lento",
+                  "direita": "Demência"
+                },
+                {
+                  "esquerda": "Humor triste e queixa de memória",
+                  "direita": "Depressão"
+                },
+                {
+                  "esquerda": "Curso flutuante",
+                  "direita": "Delirium com piora à noite"
+                }
+              ],
+              "explicacao": "Avaliar o tempo de início.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a melhor fonte para saber o início dos sintomas cognitivos?",
+              "opcoes": [
+                "Familiar ou cuidador próximo",
+                "Apenas o paciente",
+                "Exame de imagem",
+                "Exame de sangue com marcadores"
+              ],
+              "resposta": "Familiar ou cuidador próximo",
+              "explicacao": "O acompanhante conta a evolução.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com demência leve, estável há 2 anos, ficou sonolenta e confusa em 2 dias. Tem febre e urina turva.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Delirium por infecção urinária",
+                "Progressão da demência",
+                "Depressão",
+                "Novo AVC com afasia de expressão"
+              ],
+              "resposta": "Delirium por infecção urinária",
+              "explicacao": "Tratar a infecção.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na depressão, o paciente costuma se queixar muito da memória.",
+              "resposta": true,
+              "explicacao": "Já na demência, ele tende a minimizar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u10-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual teste rápido avalia a cognição no consultório?",
+              "opcoes": [
+                "Miniexame do estado mental",
+                "CAGE",
+                "Escala de Hamilton",
+                "Escala de risco cardiovascular"
+              ],
+              "resposta": "Miniexame do estado mental",
+              "explicacao": "Pontuação ajustada pela escolaridade.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u11",
+      "titulo": "Infância e adolescência",
+      "descricao": "TDAH, autismo e conduta",
+      "licoes": [
+        {
+          "id": "rpsiq-u11-l1",
+          "titulo": "TDAH",
+          "questoes": [
+            {
+              "id": "rpsiq-u11-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Até que idade os sintomas do TDAH devem ter começado?",
+              "opcoes": [
+                "Antes dos 12 anos",
+                "Antes dos 3 anos",
+                "Após os 18 anos",
+                "Somente após entrar na faculdade"
+              ],
+              "resposta": "Antes dos 12 anos",
+              "explicacao": "Os sintomas aparecem na infância.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Para diagnosticar TDAH, os sintomas devem aparecer em pelo menos dois ambientes.",
+              "resposta": true,
+              "explicacao": "Como casa e escola.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O remédio de primeira linha no TDAH é o ___.",
+              "opcoes": [
+                "metilfenidato",
+                "haloperidol",
+                "lítio",
+                "carbonato de cálcio"
+              ],
+              "resposta": "metilfenidato",
+              "explicacao": "É um psicoestimulante.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sintoma ao grupo do TDAH.",
+              "pares": [
+                {
+                  "esquerda": "Perde objetos com frequência",
+                  "direita": "Desatenção"
+                },
+                {
+                  "esquerda": "Não para sentado",
+                  "direita": "Hiperatividade"
+                },
+                {
+                  "esquerda": "Interrompe os outros",
+                  "direita": "Impulsividade"
+                },
+                {
+                  "esquerda": "Não termina tarefas",
+                  "direita": "Desatenção persistente"
+                }
+              ],
+              "explicacao": "Há apresentações combinadas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um efeito colateral comum do metilfenidato?",
+              "opcoes": [
+                "Perda de apetite e insônia",
+                "Ganho de peso",
+                "Sonolência excessiva",
+                "Queda grave da pressão e desmaios frequentes"
+              ],
+              "resposta": "Perda de apetite e insônia",
+              "explicacao": "Acompanhar peso e altura.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos, segundo pais e professora, não para quieto, interrompe todos, não termina tarefas e perde o material desde os 5 anos.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "TDAH",
+                "Autismo",
+                "Deficiência intelectual",
+                "Transtorno opositor desafiador sem desatenção"
+              ],
+              "resposta": "TDAH",
+              "explicacao": "Sintomas em casa e na escola há anos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O TDAH pode persistir na vida adulta.",
+              "resposta": true,
+              "explicacao": "A hiperatividade costuma diminuir.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual comorbidade é frequente no TDAH?",
+              "opcoes": [
+                "Transtornos de aprendizagem",
+                "Esquizofrenia",
+                "Demência",
+                "Anorexia na primeira infância"
+              ],
+              "resposta": "Transtornos de aprendizagem",
+              "explicacao": "Também transtorno opositor desafiador.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u11-l2",
+          "titulo": "Transtorno do espectro autista",
+          "questoes": [
+            {
+              "id": "rpsiq-u11-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os dois grupos de sintomas do autismo?",
+              "opcoes": [
+                "Comunicação social e repetição",
+                "Desatenção e hiperatividade",
+                "Tristeza e ansiedade",
+                "Alucinação e delírio que começam na infância"
+              ],
+              "resposta": "Comunicação social e repetição",
+              "explicacao": "Começam no início do desenvolvimento.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O rastreamento do autismo pode ser feito com o M-CHAT entre 16 e 30 meses.",
+              "resposta": true,
+              "explicacao": "Questionário respondido pelos pais.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Andar na ponta dos pés, enfileirar objetos e repetir falas são comportamentos ___.",
+              "opcoes": [
+                "repetitivos",
+                "psicóticos",
+                "depressivos",
+                "ansiosos de separação"
+              ],
+              "resposta": "repetitivos",
+              "explicacao": "Fazem parte do critério B.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada sinal ao grupo do autismo.",
+              "pares": [
+                {
+                  "esquerda": "Pouco contato visual",
+                  "direita": "Comunicação social"
+                },
+                {
+                  "esquerda": "Ecolalia",
+                  "direita": "Linguagem repetitiva"
+                },
+                {
+                  "esquerda": "Rigidez com rotinas",
+                  "direita": "Comportamento restrito"
+                },
+                {
+                  "esquerda": "Sensibilidade a barulho",
+                  "direita": "Alteração sensorial"
+                }
+              ],
+              "explicacao": "O quadro é muito variável.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento principal do autismo?",
+              "opcoes": [
+                "Intervenção comportamental precoce",
+                "Antipsicótico para todos",
+                "Dieta sem glúten obrigatória",
+                "Antibiótico para limpar o intestino"
+              ],
+              "resposta": "Intervenção comportamental precoce",
+              "explicacao": "Quanto mais cedo, melhor.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 2 anos não aponta, não responde ao nome, enfileira carrinhos e fica muito irritado se a rotina muda.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Transtorno do espectro autista",
+                "Surdez isolada",
+                "TDAH",
+                "Atraso de fala por pouco estímulo"
+              ],
+              "resposta": "Transtorno do espectro autista",
+              "explicacao": "Encaminhar para avaliação e testar a audição.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A risperidona pode ser usada para irritabilidade e agressividade no autismo.",
+              "resposta": true,
+              "explicacao": "Não trata os sintomas centrais.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame deve ser feito em toda criança com atraso de fala?",
+              "opcoes": [
+                "Avaliação auditiva",
+                "Tomografia de crânio",
+                "Eletroencefalograma",
+                "Exame de fezes com pesquisa de vermes"
+              ],
+              "resposta": "Avaliação auditiva",
+              "explicacao": "Surdez pode simular autismo.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u11-l3",
+          "titulo": "Conduta e outros transtornos da infância",
+          "questoes": [
+            {
+              "id": "rpsiq-u11-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que caracteriza o transtorno opositor desafiador?",
+              "opcoes": [
+                "Raiva, desobediência e desafio a adultos",
+                "Violência grave e crueldade",
+                "Isolamento",
+                "Medo de sair de casa e ir para a escola"
+              ],
+              "resposta": "Raiva, desobediência e desafio a adultos",
+              "explicacao": "Sem violação grave de direitos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O transtorno de conduta pode evoluir para personalidade antissocial na vida adulta.",
+              "resposta": true,
+              "explicacao": "Por isso a intervenção precoce é importante.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A perda de urina à noite após os 5 anos, sem causa orgânica, se chama ___.",
+              "opcoes": [
+                "enurese",
+                "encoprese",
+                "incontinência de esforço",
+                "poliúria noturna"
+              ],
+              "resposta": "enurese",
+              "explicacao": "Alarme noturno é o tratamento mais eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada transtorno à descrição.",
+              "pares": [
+                {
+                  "esquerda": "Enurese",
+                  "direita": "Perda de urina"
+                },
+                {
+                  "esquerda": "Encoprese",
+                  "direita": "Perda de fezes"
+                },
+                {
+                  "esquerda": "Tique",
+                  "direita": "Movimento rápido repetido"
+                },
+                {
+                  "esquerda": "Mutismo seletivo",
+                  "direita": "Não fala em certos lugares"
+                }
+              ],
+              "explicacao": "Comuns na infância.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que define a síndrome de Tourette?",
+              "opcoes": [
+                "Tiques motores e vocais há mais de 1 ano",
+                "Só tiques motores por 1 mês",
+                "Hiperatividade",
+                "Convulsões repetidas na infância, com febre alta"
+              ],
+              "resposta": "Tiques motores e vocais há mais de 1 ano",
+              "explicacao": "Começa antes dos 18 anos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 13 anos fere animais, rouba, mata aulas e agrediu colegas várias vezes no último ano.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno de conduta",
+                "Transtorno opositor",
+                "TDAH",
+                "Depressão na adolescência sem outros sintomas"
+              ],
+              "resposta": "Transtorno de conduta",
+              "explicacao": "Viola direitos dos outros e regras.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na ansiedade de separação, a criança tem medo excessivo de se afastar dos pais.",
+              "resposta": true,
+              "explicacao": "Pode recusar ir à escola.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u11-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o tratamento inicial da enurese após os 5 anos?",
+              "opcoes": [
+                "Medidas comportamentais e alarme",
+                "Cirurgia",
+                "Antibiótico",
+                "Antipsicótico em dose baixa à noite"
+              ],
+              "resposta": "Medidas comportamentais e alarme",
+              "explicacao": "A desmopressina é outra opção.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u12",
+      "titulo": "Sono e sintomas somáticos",
+      "descricao": "Insônia, somatização e simulação",
+      "licoes": [
+        {
+          "id": "rpsiq-u12-l1",
+          "titulo": "Insônia",
+          "questoes": [
+            {
+              "id": "rpsiq-u12-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na insônia crônica do adulto, qual tratamento vem primeiro?",
+              "opcoes": [
+                "Terapia cognitivo-comportamental",
+                "Benzodiazepínico contínuo",
+                "Álcool à noite",
+                "Zolpidem todas as noites por anos"
+              ],
+              "resposta": "Terapia cognitivo-comportamental",
+              "explicacao": "Inclui higiene do sono e controle de estímulos.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Usar o celular na cama pode piorar a insônia.",
+              "resposta": true,
+              "explicacao": "A luz e o estímulo atrasam o sono.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Ir para a cama só com sono e sair dela se não dormir em 20 minutos é a técnica de controle de ___.",
+              "opcoes": [
+                "estímulos",
+                "respiração",
+                "peso",
+                "temperatura"
+              ],
+              "resposta": "estímulos",
+              "explicacao": "Associa a cama ao sono.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada distúrbio do sono à descrição.",
+              "pares": [
+                {
+                  "esquerda": "Narcolepsia",
+                  "direita": "Ataques de sono e cataplexia"
+                },
+                {
+                  "esquerda": "Apneia obstrutiva",
+                  "direita": "Ronco e pausas na respiração"
+                },
+                {
+                  "esquerda": "Pernas inquietas",
+                  "direita": "Vontade de mexer as pernas à noite"
+                },
+                {
+                  "esquerda": "Sonambulismo",
+                  "direita": "Andar dormindo"
+                }
+              ],
+              "explicacao": "Investigar com história e polissonografia.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a duração mínima para diagnosticar insônia crônica?",
+              "opcoes": [
+                "3 meses",
+                "1 semana",
+                "1 ano",
+                "2 noites por mês, em qualquer período"
+              ],
+              "resposta": "3 meses",
+              "explicacao": "Pelo menos 3 noites por semana.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 40 anos dorme mal há 6 meses, fica na cama mexendo no celular e toma café à noite.",
+              "enunciado": "Qual é a primeira conduta?",
+              "opcoes": [
+                "Orientar higiene do sono",
+                "Iniciar zolpidem",
+                "Clonazepam diário",
+                "Polissonografia e encaminhar ao neurologista"
+              ],
+              "resposta": "Orientar higiene do sono",
+              "explicacao": "Mudanças de hábito vêm primeiro.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A deficiência de ferro pode causar síndrome das pernas inquietas.",
+              "resposta": true,
+              "explicacao": "Dosar a ferritina.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal é típico da narcolepsia?",
+              "opcoes": [
+                "Cataplexia",
+                "Ronco alto",
+                "Febre noturna",
+                "Falta de ar ao deitar"
+              ],
+              "resposta": "Cataplexia",
+              "explicacao": "Perda súbita do tônus com emoções.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u12-l2",
+          "titulo": "Sintomas somáticos e conversão",
+          "questoes": [
+            {
+              "id": "rpsiq-u12-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que caracteriza o transtorno de sintomas somáticos?",
+              "opcoes": [
+                "Preocupação excessiva com sintomas físicos",
+                "Simular sintomas por dinheiro",
+                "Sintomas inventados para ser cuidado",
+                "Sintomas neurológicos sem nenhuma preocupação com eles"
+              ],
+              "resposta": "Preocupação excessiva com sintomas físicos",
+              "explicacao": "Gera sofrimento e muita procura por serviços.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No transtorno conversivo, há sintomas neurológicos sem lesão que os explique.",
+              "resposta": true,
+              "explicacao": "Como paralisia ou crises não epilépticas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A pessoa com medo intenso de ter doença grave, sem sintomas importantes, tem transtorno de ansiedade de ___.",
+              "opcoes": [
+                "doença",
+                "separação",
+                "desempenho",
+                "pânico noturno"
+              ],
+              "resposta": "doença",
+              "explicacao": "Antigo nome: hipocondria.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quadro somático à sua marca principal.",
+              "pares": [
+                {
+                  "esquerda": "Conversivo",
+                  "direita": "Sintoma neurológico sem lesão"
+                },
+                {
+                  "esquerda": "Factício",
+                  "direita": "Produz sintomas para ser paciente"
+                },
+                {
+                  "esquerda": "Simulação",
+                  "direita": "Inventa sintomas por ganho externo"
+                },
+                {
+                  "esquerda": "Ansiedade de doença",
+                  "direita": "Medo de ter doença grave"
+                }
+              ],
+              "explicacao": "Diferenciar é essencial.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a melhor abordagem no transtorno de sintomas somáticos?",
+              "opcoes": [
+                "Consultas regulares com o mesmo médico",
+                "Muitos exames a cada consulta",
+                "Dizer que é tudo invenção",
+                "Encaminhar a vários especialistas ao mesmo tempo"
+              ],
+              "resposta": "Consultas regulares com o mesmo médico",
+              "explicacao": "Evita exames e procedimentos desnecessários.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 25 anos perde a força da perna após discussão em casa. Exame neurológico com achados inconsistentes e ressonância normal.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Transtorno conversivo",
+                "AVC",
+                "Simulação",
+                "Esclerose múltipla em surto inicial"
+              ],
+              "resposta": "Transtorno conversivo",
+              "explicacao": "Não é intencional.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No transtorno conversivo, o paciente produz os sintomas de propósito.",
+              "resposta": false,
+              "explicacao": "Os sintomas não são intencionais.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal sugere fraqueza funcional na perna?",
+              "opcoes": [
+                "Sinal de Hoover positivo",
+                "Babinski",
+                "Reflexos abolidos",
+                "Atrofia muscular grave em poucos dias"
+              ],
+              "resposta": "Sinal de Hoover positivo",
+              "explicacao": "A perna \"fraca\" empurra quando a outra levanta.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u12-l3",
+          "titulo": "Factício e simulação",
+          "questoes": [
+            {
+              "id": "rpsiq-u12-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a motivação no transtorno factício?",
+              "opcoes": [
+                "Assumir o papel de doente",
+                "Ganhar dinheiro",
+                "Fugir da prisão",
+                "Conseguir afastamento do trabalho por um mês"
+              ],
+              "resposta": "Assumir o papel de doente",
+              "explicacao": "Sem ganho externo evidente.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na simulação, os sintomas são produzidos de propósito para obter ganho externo.",
+              "resposta": true,
+              "explicacao": "Não é considerada transtorno mental.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Quando a mãe produz sintomas no filho para ter atenção, chama-se transtorno factício ___.",
+              "opcoes": [
+                "imposto a outro",
+                "por procuração reversa",
+                "conversivo",
+                "somático infantil"
+              ],
+              "resposta": "imposto a outro",
+              "explicacao": "Antiga síndrome de Munchausen por procuração.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada situação ao diagnóstico.",
+              "pares": [
+                {
+                  "esquerda": "Injeta insulina para ter hipoglicemia",
+                  "direita": "Factício"
+                },
+                {
+                  "esquerda": "Finge dor para ter atestado",
+                  "direita": "Simulação"
+                },
+                {
+                  "esquerda": "Paralisia após trauma emocional",
+                  "direita": "Conversivo"
+                },
+                {
+                  "esquerda": "Mãe provoca febre no filho",
+                  "direita": "Factício imposto a outro"
+                }
+              ],
+              "explicacao": "O ganho e a intenção diferenciam.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado sugere uso escondido de insulina?",
+              "opcoes": [
+                "Insulina alta com peptídeo C baixo",
+                "Peptídeo C alto",
+                "Glicose alta",
+                "Insulina baixa com peptídeo C muito alto"
+              ],
+              "resposta": "Insulina alta com peptídeo C baixo",
+              "explicacao": "A insulina de fora não tem peptídeo C.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Enfermeira de 30 anos com hipoglicemias repetidas, insulina alta e peptídeo C baixo. Não é diabética.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Transtorno factício",
+                "Insulinoma",
+                "Simulação",
+                "Diabetes tipo 1 de início tardio"
+              ],
+              "resposta": "Transtorno factício",
+              "explicacao": "Insulinoma teria peptídeo C alto.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A síndrome de Munchausen é a forma grave e crônica do transtorno factício.",
+              "resposta": true,
+              "explicacao": "Com muitas internações e cirurgias.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u12-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta no transtorno factício confirmado?",
+              "opcoes": [
+                "Abordar sem confronto e acompanhar",
+                "Denunciar à polícia",
+                "Dar alta sem conversar",
+                "Fazer mais cirurgias e exames invasivos para confirmar"
+              ],
+              "resposta": "Abordar sem confronto e acompanhar",
+              "explicacao": "Confrontos agressivos levam ao abandono.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u13",
+      "titulo": "Saúde mental da mulher",
+      "descricao": "Gestação, pós-parto e lactação",
+      "licoes": [
+        {
+          "id": "rpsiq-u13-l1",
+          "titulo": "Tristeza materna e depressão pós-parto",
+          "questoes": [
+            {
+              "id": "rpsiq-u13-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando costuma surgir a tristeza materna (baby blues)?",
+              "opcoes": [
+                "Nos primeiros dias após o parto",
+                "Após 6 meses",
+                "Durante a gestação",
+                "Somente depois de 1 ano do parto"
+              ],
+              "resposta": "Nos primeiros dias após o parto",
+              "explicacao": "Melhora sozinha em até 2 semanas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O baby blues não precisa de remédio, só de apoio.",
+              "resposta": true,
+              "explicacao": "Se passar de 2 semanas, pensar em depressão.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A escala de ___ é usada para rastrear depressão pós-parto.",
+              "opcoes": [
+                "Edimburgo",
+                "Glasgow",
+                "Hamilton",
+                "Apgar materno"
+              ],
+              "resposta": "Edimburgo",
+              "explicacao": "Tem 10 perguntas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada quadro ao tempo de início.",
+              "pares": [
+                {
+                  "esquerda": "Baby blues",
+                  "direita": "Primeiros dias"
+                },
+                {
+                  "esquerda": "Depressão pós-parto",
+                  "direita": "Até semanas ou meses"
+                },
+                {
+                  "esquerda": "Psicose puerperal",
+                  "direita": "Primeiras 2 semanas"
+                },
+                {
+                  "esquerda": "Depressão na gestação",
+                  "direita": "Antes do parto"
+                }
+              ],
+              "explicacao": "O tempo ajuda a diferenciar.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de risco para depressão pós-parto?",
+              "opcoes": [
+                "Depressão anterior",
+                "Parto normal",
+                "Primeiro filho menino",
+                "Amamentação exclusiva por seis meses"
+              ],
+              "resposta": "Depressão anterior",
+              "explicacao": "Também falta de apoio e estresse.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher no 3º dia após o parto chora fácil e se sente insegura, mas cuida bem do bebê e dorme quando pode.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Tristeza materna (baby blues)",
+                "Depressão pós-parto",
+                "Psicose puerperal",
+                "Transtorno bipolar com mania puerperal"
+              ],
+              "resposta": "Tristeza materna (baby blues)",
+              "explicacao": "Apoio e orientação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A depressão pós-parto pode prejudicar o vínculo e o desenvolvimento do bebê.",
+              "resposta": true,
+              "explicacao": "Tratar é importante para os dois.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antidepressivo é seguro na amamentação?",
+              "opcoes": [
+                "Sertralina",
+                "Lítio",
+                "Doxepina",
+                "Fluoxetina em dose muito alta"
+              ],
+              "resposta": "Sertralina",
+              "explicacao": "Passa pouco para o leite.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u13-l2",
+          "titulo": "Psicose puerperal",
+          "questoes": [
+            {
+              "id": "rpsiq-u13-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual doença de base está mais ligada à psicose puerperal?",
+              "opcoes": [
+                "Transtorno bipolar",
+                "Hipotireoidismo",
+                "Asma",
+                "Diabetes gestacional controlado"
+              ],
+              "resposta": "Transtorno bipolar",
+              "explicacao": "Muitas vezes é a primeira manifestação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A psicose puerperal é uma emergência psiquiátrica.",
+              "resposta": true,
+              "explicacao": "Risco de suicídio e de infanticídio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A psicose puerperal costuma começar nas primeiras ___ após o parto.",
+              "opcoes": [
+                "2 semanas",
+                "6 meses",
+                "24 horas",
+                "2 anos e meio"
+              ],
+              "resposta": "2 semanas",
+              "explicacao": "Início rápido.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada achado à psicose puerperal.",
+              "pares": [
+                {
+                  "esquerda": "Confusão",
+                  "direita": "Alteração da consciência"
+                },
+                {
+                  "esquerda": "Delírio sobre o bebê",
+                  "direita": "Conteúdo psicótico"
+                },
+                {
+                  "esquerda": "Insônia grave",
+                  "direita": "Sintoma inicial"
+                },
+                {
+                  "esquerda": "Humor instável",
+                  "direita": "Componente afetivo"
+                }
+              ],
+              "explicacao": "Internar costuma ser necessário.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a conduta na psicose puerperal?",
+              "opcoes": [
+                "Internação e tratamento psiquiátrico",
+                "Alta com orientação",
+                "Esperar passar",
+                "Só aumentar as visitas da família em casa"
+              ],
+              "resposta": "Internação e tratamento psiquiátrico",
+              "explicacao": "Proteger a mãe e o bebê.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher 7 dias após o parto não dorme, está confusa e diz que o bebê é um demônio e precisa ser salvo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Internação de urgência",
+                "Orientar e liberar",
+                "Antidepressivo e retorno em 1 mês",
+                "Manter sozinha em casa com o bebê"
+              ],
+              "resposta": "Internação de urgência",
+              "explicacao": "Risco de infanticídio.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Mulheres com bipolaridade têm alto risco de recaída no pós-parto.",
+              "resposta": true,
+              "explicacao": "Planejar a prevenção ainda na gestação.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tratamento é rápido e seguro na psicose puerperal grave?",
+              "opcoes": [
+                "Eletroconvulsoterapia",
+                "Psicanálise",
+                "Fitoterápico",
+                "Apenas observação domiciliar"
+              ],
+              "resposta": "Eletroconvulsoterapia",
+              "explicacao": "Resposta rápida e eficaz.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u13-l3",
+          "titulo": "Psicofármacos na gestação e lactação",
+          "questoes": [
+            {
+              "id": "rpsiq-u13-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estabilizador de humor tem maior risco de malformações?",
+              "opcoes": [
+                "Valproato",
+                "Lamotrigina",
+                "Lítio",
+                "Quetiapina em dose baixa"
+              ],
+              "resposta": "Valproato",
+              "explicacao": "Defeitos do tubo neural e menor QI.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O lítio na gestação está associado à anomalia de Ebstein.",
+              "resposta": true,
+              "explicacao": "O risco absoluto é baixo.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "Ao usar lítio na gestação, deve-se fazer ___ fetal.",
+              "opcoes": [
+                "ecocardiograma",
+                "ressonância",
+                "biópsia",
+                "amniocentese de rotina"
+              ],
+              "resposta": "ecocardiograma",
+              "explicacao": "Avaliar o coração do bebê.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada psicofármaco ao risco quando usado na gestação.",
+              "pares": [
+                {
+                  "esquerda": "Valproato",
+                  "direita": "Tubo neural"
+                },
+                {
+                  "esquerda": "Lítio",
+                  "direita": "Anomalia de Ebstein"
+                },
+                {
+                  "esquerda": "Paroxetina",
+                  "direita": "Malformação cardíaca"
+                },
+                {
+                  "esquerda": "Benzodiazepínico no fim",
+                  "direita": "Bebê hipotônico"
+                }
+              ],
+              "explicacao": "Pesar risco e benefício.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual ISRS se evita no início da gestação por risco cardíaco?",
+              "opcoes": [
+                "Paroxetina",
+                "Sertralina",
+                "Escitalopram",
+                "Fluoxetina em dose baixa"
+              ],
+              "resposta": "Paroxetina",
+              "explicacao": "Sertralina é a preferida.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 8 semanas com depressão grave, em uso de sertralina, quer parar o remédio por medo.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Manter, pois o risco de parar é maior",
+                "Parar hoje",
+                "Trocar por valproato",
+                "Trocar por lítio e benzodiazepínico"
+              ],
+              "resposta": "Manter, pois o risco de parar é maior",
+              "explicacao": "Depressão não tratada também faz mal ao bebê.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A depressão não tratada na gestação aumenta o risco de parto prematuro.",
+              "resposta": true,
+              "explicacao": "E de baixo peso ao nascer.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u13-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antipsicótico tem mais dados de segurança na gestação?",
+              "opcoes": [
+                "Haloperidol",
+                "Clozapina",
+                "Olanzapina em dose alta",
+                "Risperidona de depósito"
+              ],
+              "resposta": "Haloperidol",
+              "explicacao": "Também a quetiapina.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rpsiq-u14",
+      "titulo": "Saúde mental no SUS e ética",
+      "descricao": "RAPS, internação e tratamentos",
+      "licoes": [
+        {
+          "id": "rpsiq-u14-l1",
+          "titulo": "Reforma psiquiátrica e RAPS",
+          "questoes": [
+            {
+              "id": "rpsiq-u14-l1-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual lei é a base da reforma psiquiátrica no Brasil?",
+              "opcoes": [
+                "Lei 10.216 de 2001",
+                "Lei 8.080 de 1990",
+                "Lei 8.142 de 1990",
+                "Lei Maria da Penha"
+              ],
+              "resposta": "Lei 10.216 de 2001",
+              "explicacao": "Protege os direitos das pessoas com transtorno mental.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A RAPS prioriza o cuidado em liberdade, na comunidade.",
+              "resposta": true,
+              "explicacao": "Hospital psiquiátrico deixa de ser o centro.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O CAPS ___ atende pessoas com problemas pelo uso de álcool e drogas.",
+              "opcoes": [
+                "AD",
+                "i",
+                "I",
+                "III"
+              ],
+              "resposta": "AD",
+              "explicacao": "O CAPSi atende crianças e adolescentes.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada serviço à função.",
+              "pares": [
+                {
+                  "esquerda": "CAPS III",
+                  "direita": "Funciona 24 horas"
+                },
+                {
+                  "esquerda": "CAPSi",
+                  "direita": "Crianças e adolescentes"
+                },
+                {
+                  "esquerda": "CAPS AD",
+                  "direita": "Álcool e drogas"
+                },
+                {
+                  "esquerda": "Residência terapêutica",
+                  "direita": "Moradia de egressos de internação longa"
+                }
+              ],
+              "explicacao": "Fazem parte da RAPS.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a porta de entrada preferencial para saúde mental no SUS?",
+              "opcoes": [
+                "Atenção primária",
+                "Hospital psiquiátrico",
+                "Delegacia",
+                "Pronto-socorro de hospital universitário"
+              ],
+              "resposta": "Atenção primária",
+              "explicacao": "A maioria dos casos é cuidada ali.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q6",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 35 anos com esquizofrenia teve alta de internação longa e não tem família nem onde morar.",
+              "enunciado": "Qual serviço da RAPS indicar?",
+              "opcoes": [
+                "Residência terapêutica",
+                "Hospital psiquiátrico",
+                "Albergue sem acompanhamento",
+                "Internação de longa permanência de novo"
+              ],
+              "resposta": "Residência terapêutica",
+              "explicacao": "Moradia com apoio na comunidade.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O programa De Volta para Casa dá auxílio financeiro a egressos de internação psiquiátrica longa.",
+              "resposta": true,
+              "explicacao": "Ajuda na reinserção social.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l1-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual serviço atende crianças com transtornos mentais graves no SUS?",
+              "opcoes": [
+                "CAPSi",
+                "CAPS AD",
+                "UPA",
+                "Unidade de terapia intensiva neonatal"
+              ],
+              "resposta": "CAPSi",
+              "explicacao": "Equipe multiprofissional.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u14-l2",
+          "titulo": "Internação involuntária e direitos",
+          "questoes": [
+            {
+              "id": "rpsiq-u14-l2-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os tipos de internação psiquiátrica pela Lei 10.216?",
+              "opcoes": [
+                "Voluntária, involuntária e compulsória",
+                "Só voluntária",
+                "Só compulsória",
+                "Voluntária e por pedido de qualquer vizinho"
+              ],
+              "resposta": "Voluntária, involuntária e compulsória",
+              "explicacao": "A compulsória é por ordem judicial.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A internação involuntária é feita sem consentimento, a pedido de terceiro, com laudo médico.",
+              "resposta": true,
+              "explicacao": "Comunicada ao Ministério Público em 72 horas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "A internação determinada pela justiça é chamada de ___.",
+              "opcoes": [
+                "compulsória",
+                "voluntária",
+                "involuntária",
+                "eletiva"
+              ],
+              "resposta": "compulsória",
+              "explicacao": "Ordem do juiz.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada tipo de internação à característica.",
+              "pares": [
+                {
+                  "esquerda": "Voluntária",
+                  "direita": "Com consentimento"
+                },
+                {
+                  "esquerda": "Involuntária",
+                  "direita": "A pedido de terceiro"
+                },
+                {
+                  "esquerda": "Compulsória",
+                  "direita": "Determinada pela justiça"
+                },
+                {
+                  "esquerda": "Alta da involuntária",
+                  "direita": "A pedido da família ou do médico"
+                }
+              ],
+              "explicacao": "Todas exigem laudo médico.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em quanto tempo a internação involuntária deve ser comunicada ao Ministério Público?",
+              "opcoes": [
+                "72 horas",
+                "7 dias",
+                "30 dias",
+                "Apenas na alta do paciente"
+              ],
+              "resposta": "72 horas",
+              "explicacao": "O mesmo vale para a alta.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q6",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com mania grave, sem crítica, gastando todos os bens e agredindo familiares, recusa internação. A família pede ajuda.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Internação involuntária com laudo médico",
+                "Alta e retorno",
+                "Pedir ordem judicial antes de qualquer conduta",
+                "Aguardar o paciente aceitar por vontade própria"
+              ],
+              "resposta": "Internação involuntária com laudo médico",
+              "explicacao": "Comunicar ao Ministério Público.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A pessoa internada tem direito a ser tratada com respeito e a receber informações sobre o tratamento.",
+              "resposta": true,
+              "explicacao": "Direitos garantidos pela lei.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l2-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o objetivo da internação psiquiátrica segundo a lei?",
+              "opcoes": [
+                "Reinserção social do paciente",
+                "Isolar da sociedade",
+                "Punir",
+                "Manter internado o máximo de tempo possível"
+              ],
+              "resposta": "Reinserção social do paciente",
+              "explicacao": "Só quando os recursos fora do hospital não bastarem.",
+              "revisado": false
+            }
+          ]
+        },
+        {
+          "id": "rpsiq-u14-l3",
+          "titulo": "Eletroconvulsoterapia e psicoterapias",
+          "questoes": [
+            {
+              "id": "rpsiq-u14-l3-q1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a indicação clássica da eletroconvulsoterapia?",
+              "opcoes": [
+                "Depressão grave com risco de suicídio",
+                "Ansiedade leve",
+                "Insônia",
+                "Transtorno de personalidade sem outra doença"
+              ],
+              "resposta": "Depressão grave com risco de suicídio",
+              "explicacao": "Também catatonia e depressão psicótica.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q2",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A eletroconvulsoterapia é feita sob anestesia geral e com relaxante muscular.",
+              "resposta": true,
+              "explicacao": "É segura e eficaz.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q3",
+              "tipo": "completar_lacuna",
+              "enunciado": "O efeito colateral mais comum da eletroconvulsoterapia é a perda temporária de ___.",
+              "opcoes": [
+                "memória",
+                "visão",
+                "audição",
+                "força nas pernas"
+              ],
+              "resposta": "memória",
+              "explicacao": "Costuma melhorar em semanas.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q4",
+              "tipo": "associar_pares",
+              "enunciado": "Associe cada psicoterapia à base.",
+              "pares": [
+                {
+                  "esquerda": "Cognitivo-comportamental",
+                  "direita": "Pensamentos e comportamentos"
+                },
+                {
+                  "esquerda": "Psicodinâmica",
+                  "direita": "Conflitos inconscientes"
+                },
+                {
+                  "esquerda": "Interpessoal",
+                  "direita": "Relações e papéis"
+                },
+                {
+                  "esquerda": "Comportamental dialética",
+                  "direita": "Regulação emocional"
+                }
+              ],
+              "explicacao": "Escolher conforme o caso.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual condição é a indicação mais urgente de eletroconvulsoterapia?",
+              "opcoes": [
+                "Catatonia grave sem comer",
+                "Fobia de avião",
+                "Tabagismo",
+                "Insônia leve de início recente, sem outros sintomas"
+              ],
+              "resposta": "Catatonia grave sem comer",
+              "explicacao": "Resposta rápida em dias.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q6",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com depressão psicótica, sem comer nem beber há 4 dias e sem resposta a remédios.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Eletroconvulsoterapia",
+                "Trocar o antidepressivo e esperar 4 semanas",
+                "Psicoterapia isolada",
+                "Alta com retorno no ambulatório em um mês"
+              ],
+              "resposta": "Eletroconvulsoterapia",
+              "explicacao": "Risco de vida exige resposta rápida.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q7",
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A eletroconvulsoterapia pode ser usada na gestação.",
+              "resposta": true,
+              "explicacao": "É opção segura em casos graves.",
+              "revisado": false
+            },
+            {
+              "id": "rpsiq-u14-l3-q8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual benzodiazepínico é usado no teste e tratamento da catatonia?",
+              "opcoes": [
+                "Lorazepam",
+                "Clonazepam oral diário",
+                "Midazolam nasal",
+                "Diazepam retal"
+              ],
+              "resposta": "Lorazepam",
+              "explicacao": "Melhora rápida confirma o diagnóstico.",
+              "revisado": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
