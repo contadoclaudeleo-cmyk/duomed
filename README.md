@@ -8,7 +8,7 @@ Tem dois modos de estudo, que a pessoa escolhe no cadastro e pode trocar no perf
   - **Ciclo básico (14):** Anatomia, Histologia e Embriologia, Biologia Celular, Genética, Fisiologia, Bioquímica, Imunologia, Microbiologia, Parasitologia, Patologia, Farmacologia, Saúde Coletiva, Psicologia Médica, Bioética e Medicina Legal.
   - **Ciclo clínico (23):** Semiologia, Cardiologia, Pneumologia, Gastroenterologia, Nefrologia, Endocrinologia, Hematologia, Reumatologia, Infectologia, Neurologia, Psiquiatria, Dermatologia, Oncologia, Geriatria, Clínica Cirúrgica, Ortopedia, Urologia, Otorrinolaringologia, Oftalmologia, Anestesiologia, Radiologia, Pediatria e Ginecologia e Obstetrícia.
   - **Internato (2):** Urgência e Emergência e Medicina de Família e Comunidade.
-- **Residência:** as cinco grandes áreas das provas de residência (Clínica Médica, Cirurgia Geral, Pediatria, Ginecologia e Obstetrícia e Medicina Preventiva), com foco em casos clínicos.
+- **Residência:** as grandes áreas das provas de residência (Clínica Médica, Cirurgia Geral, Pediatria, Ginecologia e Obstetrícia, Medicina Preventiva e Psiquiatria), com foco em casos clínicos.
 
 Cada matéria tem **duas trilhas**:
 
@@ -17,7 +17,9 @@ Cada matéria tem **duas trilhas**:
 
 Logo depois do cadastro, a pessoa faz um **teste de nível** com 8 questões de matérias variadas. Quem acerta 6 ou mais recebe a sugestão do nível difícil, mas sempre pode escolher. O nível pode ser trocado a qualquer momento na trilha ou no perfil, e o teste pode ser refeito pelo perfil.
 
-**Conteúdo atual:** 12.720 questões em 1.590 lições (cada lição tem 8 questões). Na graduação, cada matéria tem 15 lições no nível fácil e 15 no difícil (1.170 lições). Na residência, cada área tem 42 em cada nível (420 lições).
+**Conteúdo atual:** 13.680 questões em 1.710 lições (cada lição tem 8 questões). Na graduação, cada matéria tem 15 lições no nível fácil e 15 no difícil (1.170 lições). Na residência, cada área tem pelo menos 42 lições em cada nível (540 lições); Clínica Médica tem 54 (com geriatria, oncologia clínica, dermatologia, hipófise e adrenal) e Cirurgia tem 48 (com ortopedia).
+
+As alternativas são escritas com tamanhos parecidos, para que a certa não seja sempre a mais longa. Evite alternativas de enfeite como "Nada" ou "Nenhum".
 
 Primeira versão (MVP): roda inteira no navegador e salva o progresso no próprio aparelho (localStorage). Não precisa de servidor.
 
