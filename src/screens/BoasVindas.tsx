@@ -41,7 +41,8 @@ export function BoasVindas() {
   const [modo, setModo] = useState<ModoEstudo | null>(null)
   const [semestre, setSemestre] = useState<number | null>(null)
   const [meta, setMeta] = useState<MetaDiaria | null>(null)
-  const [verConta, setVerConta] = useState(false)
+  // Tela de conta aberta no início: criar conta nova ou entrar numa existente
+  const [verConta, setVerConta] = useState<'criar' | 'entrar' | null>(null)
   const sessao = useConta((s) => s.sessao)
   const carregado = useConta((s) => s.carregado)
   const seguiuCadastro = useRef(false)
@@ -51,7 +52,7 @@ export function BoasVindas() {
   useEffect(() => {
     if (!sessao || !carregado || seguiuCadastro.current) return
     seguiuCadastro.current = true
-    setVerConta(false)
+    setVerConta(null)
     setNome((atual) => atual || nomeDaConta(sessao))
     setIndice(1)
   }, [sessao, carregado])
@@ -90,16 +91,20 @@ export function BoasVindas() {
       <div className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-8 pt-5">
         <button
           type="button"
-          onClick={() => setVerConta(false)}
+          onClick={() => setVerConta(null)}
           className="self-start rounded-lg p-1 text-texto-suave hover:bg-superficie-2"
           aria-label="Voltar"
         >
           <ArrowLeft className="h-6 w-6" strokeWidth={2.6} />
         </button>
         <div className="pt-6">
-          <Fala>Que bom te ver de novo! Entre para recuperar seu progresso.</Fala>
+          <Fala>
+            {verConta === 'criar'
+              ? 'Crie sua conta para salvar seu progresso e estudar em qualquer aparelho.'
+              : 'Que bom te ver de novo! Entre para recuperar seu progresso.'}
+          </Fala>
           <div className="mt-6">
-            <PainelConta abaInicial="entrar" />
+            <PainelConta abaInicial={verConta} />
           </div>
         </div>
       </div>
@@ -123,10 +128,10 @@ export function BoasVindas() {
           </motion.p>
         </div>
         <div className="flex flex-col gap-3">
-          <Botao larguraTotal onClick={avancar}>
-            Começar
+          <Botao larguraTotal onClick={() => setVerConta('criar')}>
+            Criar conta
           </Botao>
-          <Botao larguraTotal variante="contorno" onClick={() => setVerConta(true)}>
+          <Botao larguraTotal variante="contorno" onClick={() => setVerConta('entrar')}>
             Já tenho uma conta
           </Botao>
         </div>
@@ -137,14 +142,17 @@ export function BoasVindas() {
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-8 pt-5">
       <div className="flex items-center gap-4">
-        <button
-          type="button"
-          onClick={() => setIndice(indice - 1)}
-          className="rounded-lg p-1 text-texto-suave hover:bg-superficie-2"
-          aria-label="Voltar"
-        >
-          <ArrowLeft className="h-6 w-6" strokeWidth={2.6} />
-        </button>
+        {/* Quem já entrou na conta não volta para a tela inicial */}
+        {!(sessao && indice === 1) && (
+          <button
+            type="button"
+            onClick={() => setIndice(indice - 1)}
+            className="rounded-lg p-1 text-texto-suave hover:bg-superficie-2"
+            aria-label="Voltar"
+          >
+            <ArrowLeft className="h-6 w-6" strokeWidth={2.6} />
+          </button>
+        )}
         <BarraProgresso valor={indice / (passos.length - 1)} rotulo="Progresso do cadastro" />
       </div>
 
