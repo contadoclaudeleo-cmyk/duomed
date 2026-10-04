@@ -1863,15 +1863,16 @@
             },
             {
               "id": "micro-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico é usado no MRSA comunitário em infecções de pele leves?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem furúnculo pequeno drenado; cultura com MRSA comunitário, sem febre.",
+              "enunciado": "Qual antibiótico oral usar?",
               "opcoes": [
-                "Sulfametoxazol e trimetoprima",
+                "Sulfametoxazol-trimetoprima",
                 "Penicilina G cristalina",
                 "Amoxicilina",
                 "Cefalexina em dose dobrada por 14 dias"
               ],
-              "resposta": "Sulfametoxazol e trimetoprima",
+              "resposta": "Sulfametoxazol-trimetoprima",
               "explicacao": "Clindamicina e doxiciclina também são opções.",
               "revisado": false
             },
@@ -1893,37 +1894,39 @@
             {
               "id": "micro-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A faringite estreptocócica deve ser tratada para prevenir a febre reumática.",
-              "resposta": true,
-              "explicacao": "A penicilina benzatina é o tratamento clássico.",
+              "enunciado": "Criança com faringite e teste rápido positivo para estreptococo pode ficar sem antibiótico, pois a febre reumática não depende do tratamento.",
+              "resposta": false,
+              "explicacao": "Falso. Trata-se para prevenir febre reumática; a penicilina benzatina é o clássico.",
               "revisado": false
             },
             {
               "id": "micro-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste da ___ diferencia o Streptococcus pneumoniae (sensível) do viridans (resistente).",
+              "tipo": "caso_clinico",
+              "caso": "Laboratório isolou um coco gram-positivo alfa-hemolítico de líquor e precisa separá-lo do viridans.",
+              "enunciado": "Qual teste usar?",
               "opcoes": [
-                "optoquina",
-                "bacitracina",
-                "catalase",
-                "coagulase"
+                "Optoquina",
+                "Bacitracina",
+                "Catalase",
+                "Coagulase"
               ],
-              "resposta": "optoquina",
-              "explicacao": "O pneumococo também é solúvel em bile.",
+              "resposta": "Optoquina",
+              "explicacao": "O pneumococo é sensível à optoquina e solúvel em bile.",
               "revisado": false
             },
             {
               "id": "micro-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual estreptococo é rastreado na gestante entre 35 e 37 semanas?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 36 semanas faz swab vaginal e retal.",
+              "enunciado": "Qual germe se pesquisa?",
               "opcoes": [
-                "Streptococcus agalactiae (grupo B)",
+                "Estreptococo do grupo B",
                 "Streptococcus pyogenes",
                 "Pneumococo",
                 "Streptococcus viridans da boca e dos dentes"
               ],
-              "resposta": "Streptococcus agalactiae (grupo B)",
-              "explicacao": "Se positivo, recebe antibiótico no parto.",
+              "resposta": "Estreptococo do grupo B",
+              "explicacao": "Se positivo, ela recebe antibiótico no parto.",
               "revisado": false
             },
             {
@@ -1989,13 +1992,14 @@
             },
             {
               "id": "micro-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da febre tifoide?",
+              "tipo": "caso_clinico",
+              "caso": "Viajante tem febre alta há 10 dias, pulso lento e manchas rosadas no abdome; hemocultura com Salmonella Typhi.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Ceftriaxona ou azitromicina",
                 "Penicilina benzatina",
                 "Metronidazol",
-                "Antibiótico não é necessário, só hidratação"
+                "Nenhum antibiótico, só hidratação"
               ],
               "resposta": "Ceftriaxona ou azitromicina",
               "explicacao": "O cloranfenicol é usado em alguns locais.",
@@ -2026,8 +2030,9 @@
             },
             {
               "id": "micro-d1-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ causa a doença dos legionários, com pneumonia, confusão e diarreia.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso após hotel com ar-condicionado tem pneumonia, confusão, diarreia e sódio baixo.",
+              "enunciado": "Qual germe?",
               "opcoes": [
                 "Legionella",
                 "Klebsiella",
@@ -2035,21 +2040,22 @@
                 "Bordetella"
               ],
               "resposta": "Legionella",
-              "explicacao": "O antígeno na urina ajuda no diagnóstico.",
+              "explicacao": "O antígeno urinário ajuda no diagnóstico.",
               "revisado": false
             },
             {
               "id": "micro-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual germe causa meningite em adultos alcoólatras e idosos, além de pneumococo?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 70 anos tem meningite bacteriana.",
+              "enunciado": "Por que se associa ampicilina ao esquema?",
               "opcoes": [
-                "Listeria monocytogenes",
-                "Escherichia coli K1",
-                "Salmonella",
-                "Neisseria gonorrhoeae disseminada"
+                "Cobrir Listeria",
+                "Cobrir E. coli",
+                "Cobrir Salmonella",
+                "Cobrir Neisseria gonorrhoeae disseminada"
               ],
-              "resposta": "Listeria monocytogenes",
-              "explicacao": "Por isso se adiciona ampicilina no esquema.",
+              "resposta": "Cobrir Listeria",
+              "explicacao": "A Listeria atinge idosos, alcoólatras e imunossuprimidos.",
               "revisado": false
             },
             {
@@ -2115,16 +2121,17 @@
             },
             {
               "id": "micro-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o esquema de penicilina para a sífilis recente (primária)?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem úlcera genital indolor há 1 semana; VDRL e teste treponêmico positivos.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Benzatina 2,4 milhões, dose única",
+                "Benzatina dose única",
                 "Azitromicina por 3 dias",
                 "Aciclovir",
                 "Benzatina semanal por 3 semanas seguidas"
               ],
-              "resposta": "Benzatina 2,4 milhões, dose única",
-              "explicacao": "Na sífilis tardia, são três doses.",
+              "resposta": "Benzatina dose única",
+              "explicacao": "É sífilis primária; na tardia são três doses.",
               "revisado": false
             },
             {
@@ -2145,29 +2152,31 @@
             {
               "id": "micro-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A clamídia não tratada pode causar infertilidade feminina.",
-              "resposta": true,
-              "explicacao": "Ela causa doença inflamatória pélvica.",
+              "enunciado": "Mulher com clamídia sem sintomas não precisa tratar, pois a infecção não afeta a fertilidade.",
+              "resposta": false,
+              "explicacao": "Falso. A clamídia não tratada causa doença inflamatória pélvica e infertilidade.",
               "revisado": false
             },
             {
               "id": "micro-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A sífilis ___ pode causar alterações neurológicas e cardíacas anos depois da infecção.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem marcha instável, perda da sensibilidade profunda e pupila que não reage à luz.",
+              "enunciado": "Qual fase da sífilis?",
               "opcoes": [
-                "terciária",
-                "primária",
-                "secundária",
-                "latente recente"
+                "Terciária",
+                "Primária",
+                "Secundária",
+                "Latente recente"
               ],
-              "resposta": "terciária",
-              "explicacao": "Inclui aortite e tabes dorsalis.",
+              "resposta": "Terciária",
+              "explicacao": "Inclui tabes dorsalis e aortite.",
               "revisado": false
             },
             {
               "id": "micro-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame acompanha a resposta ao tratamento da sífilis?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tratou sífilis há 6 meses.",
+              "enunciado": "Qual exame acompanha a resposta?",
               "opcoes": [
                 "VDRL com títulos",
                 "Teste treponêmico",
@@ -2249,15 +2258,16 @@
             },
             {
               "id": "micro-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a forma de transmissão da tuberculose?",
+              "tipo": "caso_clinico",
+              "caso": "Família de paciente com tuberculose pulmonar bacilífera pergunta como a doença passa.",
+              "enunciado": "Qual é a resposta?",
               "opcoes": [
-                "Aerossóis no ar",
-                "Água contaminada",
-                "Alimentos",
+                "Pelo ar",
+                "Pela água",
+                "Pelos alimentos",
                 "Picada de mosquito ou de carrapato"
               ],
-              "resposta": "Aerossóis no ar",
+              "resposta": "Pelo ar",
               "explicacao": "Só a forma pulmonar ou laríngea transmite.",
               "revisado": false
             },
@@ -2279,36 +2289,38 @@
             {
               "id": "micro-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A tuberculose miliar mostra pequenos nódulos espalhados pelos pulmões.",
-              "resposta": true,
-              "explicacao": "Ocorre por disseminação pelo sangue.",
+              "enunciado": "Paciente com HIV e tuberculose miliar tem raio X com uma única cavidade grande no ápice.",
+              "resposta": false,
+              "explicacao": "Falso. A miliar mostra pequenos nódulos espalhados, por disseminação pelo sangue.",
               "revisado": false
             },
             {
               "id": "micro-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tratamento da tuberculose usa rifampicina, isoniazida, pirazinamida e ___.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com tuberculose pulmonar nova vai iniciar o tratamento.",
+              "enunciado": "Qual é o esquema inicial?",
               "opcoes": [
-                "etambutol",
-                "amoxicilina",
-                "penicilina",
-                "metronidazol"
+                "RIPE",
+                "Amoxicilina",
+                "Penicilina",
+                "Metronidazol e ciprofloxacino"
               ],
-              "resposta": "etambutol",
-              "explicacao": "A isoniazida pode causar neuropatia, prevenida com piridoxina.",
+              "resposta": "RIPE",
+              "explicacao": "Rifampicina, isoniazida, pirazinamida e etambutol.",
               "revisado": false
             },
             {
               "id": "micro-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual efeito colateral da rifampicina deve ser avisado ao paciente?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente iniciou tratamento de tuberculose e se assusta com a urina alaranjada.",
+              "enunciado": "Qual remédio causa isso?",
               "opcoes": [
-                "Urina e lágrima alaranjadas",
-                "Urina verde",
-                "Perda de cabelo",
-                "Neurite periférica com dormência nos pés"
+                "Rifampicina",
+                "Isoniazida",
+                "Pirazinamida",
+                "Etambutol, que também altera a visão"
               ],
-              "resposta": "Urina e lágrima alaranjadas",
+              "resposta": "Rifampicina",
               "explicacao": "Também reduz o efeito de anticoncepcionais.",
               "revisado": false
             },
@@ -2375,16 +2387,17 @@
             },
             {
               "id": "micro-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se transmite a hanseníase?",
+              "tipo": "caso_clinico",
+              "caso": "Esposa de paciente com hanseníase multibacilar que já iniciou o tratamento pergunta sobre contágio.",
+              "enunciado": "Como a hanseníase se transmite?",
               "opcoes": [
-                "Vias aéreas, em contato prolongado",
+                "Vias aéreas, contato longo",
                 "Picada de inseto",
                 "Água contaminada",
-                "Toque rápido na pele das manchas do doente"
+                "Toque rápido nas manchas do doente"
               ],
-              "resposta": "Vias aéreas, em contato prolongado",
-              "explicacao": "Após o início do tratamento, o paciente deixa de transmitir.",
+              "resposta": "Vias aéreas, contato longo",
+              "explicacao": "Após iniciar o tratamento, o paciente deixa de transmitir.",
               "revisado": false
             },
             {
@@ -2405,9 +2418,9 @@
             {
               "id": "micro-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O Mycobacterium marinum causa lesões na pele de quem cuida de aquários.",
+              "enunciado": "Dono de aquário com nódulos em fila no braço pode ter infecção por Mycobacterium marinum.",
               "resposta": true,
-              "explicacao": "É o granuloma do aquário.",
+              "explicacao": "Verdadeiro. É o granuloma do aquário.",
               "revisado": false
             },
             {
@@ -2426,16 +2439,17 @@
             },
             {
               "id": "micro-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual micobactéria está na vacina BCG?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido recebe vacina intradérmica no braço direito na maternidade.",
+              "enunciado": "Qual micobactéria ela contém?",
               "opcoes": [
-                "Mycobacterium bovis atenuado",
-                "Mycobacterium tuberculosis morto",
-                "Mycobacterium leprae",
-                "Mycobacterium avium inativado pelo calor"
+                "M. bovis atenuado",
+                "M. tuberculosis morto",
+                "M. leprae",
+                "M. avium inativado pelo calor"
               ],
-              "resposta": "Mycobacterium bovis atenuado",
-              "explicacao": "O nome vem de Bacilo de Calmette e Guérin.",
+              "resposta": "M. bovis atenuado",
+              "explicacao": "BCG significa Bacilo de Calmette e Guérin.",
               "revisado": false
             },
             {
@@ -2501,11 +2515,12 @@
             },
             {
               "id": "micro-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da leptospirose grave?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após enchente tem icterícia rubínica, lesão renal e sangramento pulmonar.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Penicilina ou ceftriaxona",
-                "Doxiciclina sempre",
+                "Doxiciclina oral",
                 "Metronidazol",
                 "Apenas hidratação, sem antibiótico"
               ],
@@ -2531,29 +2546,31 @@
             {
               "id": "micro-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A doença de Lyme é transmitida por carrapatos e causa uma mancha em alvo.",
+              "enunciado": "Paciente com mancha vermelha em alvo após picada de carrapato pode ter doença de Lyme.",
               "resposta": true,
-              "explicacao": "É rara no Brasil, mas existe uma doença parecida.",
+              "explicacao": "Verdadeiro. É rara no Brasil, mas existe uma doença parecida.",
               "revisado": false
             },
             {
               "id": "micro-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é o antibiótico de escolha para a maioria das doenças por riquétsias.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos com febre maculosa grave após carrapato-estrela.",
+              "enunciado": "Qual antibiótico usar?",
               "opcoes": [
-                "doxiciclina",
-                "amoxicilina",
-                "cefalexina",
-                "metronidazol"
+                "Doxiciclina",
+                "Amoxicilina",
+                "Cefalexina",
+                "Metronidazol"
               ],
-              "resposta": "doxiciclina",
-              "explicacao": "Deve ser usado mesmo em crianças nos casos graves.",
+              "resposta": "Doxiciclina",
+              "explicacao": "Deve ser usada mesmo em crianças nos casos graves.",
               "revisado": false
             },
             {
               "id": "micro-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual germe causa pneumonia com anemia hemolítica por crioaglutininas?",
+              "tipo": "caso_clinico",
+              "caso": "Estudante tem pneumonia arrastada com tosse seca e anemia hemolítica; crioaglutininas positivas.",
+              "enunciado": "Qual germe?",
               "opcoes": [
                 "Mycoplasma pneumoniae",
                 "Pneumococo",
@@ -2635,15 +2652,16 @@
             },
             {
               "id": "micro-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma infecção ativa pela hepatite C?",
+              "tipo": "caso_clinico",
+              "caso": "Doador de sangue tem anti-HCV positivo.",
+              "enunciado": "Qual exame confirma infecção ativa?",
               "opcoes": [
-                "RNA do vírus (carga viral)",
-                "Anti-HCV apenas",
+                "RNA do vírus",
+                "Repetir anti-HCV",
                 "ALT",
                 "Bilirrubina direta e fosfatase alcalina"
               ],
-              "resposta": "RNA do vírus (carga viral)",
+              "resposta": "RNA do vírus",
               "explicacao": "O anti-HCV pode ficar positivo após a cura.",
               "revisado": false
             },
@@ -2665,37 +2683,39 @@
             {
               "id": "micro-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A hepatite A raramente se torna crônica.",
-              "resposta": true,
-              "explicacao": "Pode ser grave em adultos e em quem tem doença do fígado.",
+              "enunciado": "Criança com hepatite A aguda deve ser acompanhada por anos, pois a hepatite A costuma ficar crônica.",
+              "resposta": false,
+              "explicacao": "Falso. A hepatite A raramente cronifica; pode ser grave em adultos e em quem tem doença do fígado.",
               "revisado": false
             },
             {
               "id": "micro-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é um antiviral de ação direta usado na hepatite C.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hepatite C crônica vai iniciar tratamento por 12 semanas.",
+              "enunciado": "Qual remédio faz parte do esquema?",
               "opcoes": [
-                "sofosbuvir",
-                "aciclovir",
-                "oseltamivir",
-                "zidovudina"
+                "Sofosbuvir",
+                "Aciclovir",
+                "Oseltamivir",
+                "Zidovudina"
               ],
-              "resposta": "sofosbuvir",
-              "explicacao": "Tratamentos de 8 a 12 semanas curam a maioria.",
+              "resposta": "Sofosbuvir",
+              "explicacao": "Os antivirais de ação direta curam a maioria.",
               "revisado": false
             },
             {
               "id": "micro-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco da reativação da hepatite B?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HBsAg negativo e anti-HBc positivo vai iniciar rituximabe para linfoma.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Ocorre com quimioterapia e imunossupressores",
-                "Ocorre com vacinas",
-                "Ocorre com exercício",
-                "Não existe, a hepatite B curada não volta nunca mais"
+                "Reativar a hepatite B",
+                "Hepatite A",
+                "Nenhum risco",
+                "Nenhum, a hepatite B curada não volta"
               ],
-              "resposta": "Ocorre com quimioterapia e imunossupressores",
-              "explicacao": "Deve-se rastrear antes desses tratamentos.",
+              "resposta": "Reativar a hepatite B",
+              "explicacao": "Deve-se rastrear e fazer profilaxia antiviral.",
               "revisado": false
             },
             {
@@ -2761,16 +2781,17 @@
             },
             {
               "id": "micro-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a vacina contra o herpes-zóster recomendada para idosos?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 65 anos quer prevenir herpes-zóster.",
+              "enunciado": "Qual vacina é recomendada?",
               "opcoes": [
                 "Vacina recombinante",
                 "Vacina da catapora infantil",
                 "BCG",
-                "Não existe"
+                "Nenhuma, não existe"
               ],
               "resposta": "Vacina recombinante",
-              "explicacao": "Ela reduz o zóster e a dor após o zóster.",
+              "explicacao": "Reduz o zóster e a dor após o zóster.",
               "revisado": false
             },
             {
@@ -2798,30 +2819,32 @@
             },
             {
               "id": "micro-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ pós-herpética é a dor que persiste meses após o zóster.",
+              "tipo": "caso_clinico",
+              "caso": "Idosa teve zóster no tórax há 4 meses e ainda tem dor em queimação no local.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "neuralgia",
-                "cefaleia",
-                "artralgia",
-                "mialgia"
+                "Neuralgia pós-herpética",
+                "Cefaleia",
+                "Artralgia",
+                "Infarto do miocárdio de parede anterior"
               ],
-              "resposta": "neuralgia",
+              "resposta": "Neuralgia pós-herpética",
               "explicacao": "É mais comum em idosos.",
               "revisado": false
             },
             {
               "id": "micro-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal sugere herpes-zóster com risco no olho?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem zóster na testa com vesículas na ponta do nariz.",
+              "enunciado": "O que esse sinal indica?",
               "opcoes": [
-                "Lesão na ponta do nariz (Hutchinson)",
-                "Lesão no tórax",
-                "Lesão na perna",
-                "Febre baixa com dor na região lombar"
+                "Risco no olho",
+                "Risco nos rins",
+                "Risco no fígado",
+                "Nada, é sinal de cura rápida"
               ],
-              "resposta": "Lesão na ponta do nariz (Hutchinson)",
-              "explicacao": "O nervo nasociliar inerva a ponta do nariz e o olho.",
+              "resposta": "Risco no olho",
+              "explicacao": "É o sinal de Hutchinson, pelo nervo nasociliar.",
               "revisado": false
             },
             {
@@ -2887,16 +2910,17 @@
             },
             {
               "id": "micro-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual vírus causa a síndrome mão-pé-boca?",
+              "tipo": "caso_clinico",
+              "caso": "Criança da creche tem feridas na boca e bolhas nas mãos e pés.",
+              "enunciado": "Qual vírus causa?",
               "opcoes": [
-                "Coxsackie (enterovírus)",
+                "Coxsackie",
                 "Herpes simples tipo 1",
-                "Vírus do sarampo",
+                "Sarampo",
                 "Parvovírus B19 do eritema infeccioso"
               ],
-              "resposta": "Coxsackie (enterovírus)",
-              "explicacao": "É comum em creches.",
+              "resposta": "Coxsackie",
+              "explicacao": "É a síndrome mão-pé-boca.",
               "revisado": false
             },
             {
@@ -2917,29 +2941,31 @@
             {
               "id": "micro-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A raiva é quase sempre fatal após o início dos sintomas.",
-              "resposta": true,
-              "explicacao": "Por isso a profilaxia após a exposição é tão importante.",
+              "enunciado": "Paciente com raiva já com sintomas costuma sobreviver se receber vacina e soro nesse momento.",
+              "resposta": false,
+              "explicacao": "Falso. Após os sintomas, a raiva é quase sempre fatal; por isso a profilaxia após a exposição é vital.",
               "revisado": false
             },
             {
               "id": "micro-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O vírus da ___ causa encefalite e é transmitido por mamíferos, com hidrofobia.",
+              "tipo": "caso_clinico",
+              "caso": "Homem mordido por morcego há 1 mês tem agitação e espasmos ao tentar beber água.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "raiva",
-                "dengue",
-                "zika",
-                "influenza"
+                "Raiva",
+                "Dengue",
+                "Tétano",
+                "Influenza"
               ],
-              "resposta": "raiva",
+              "resposta": "Raiva",
               "explicacao": "O medo de água ocorre por espasmos ao engolir.",
               "revisado": false
             },
             {
               "id": "micro-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual vírus causa paralisia flácida e é prevenido pela vacina gotinha?",
+              "tipo": "caso_clinico",
+              "caso": "Criança não vacinada tem febre e fraqueza flácida de uma perna, sem perda de sensibilidade.",
+              "enunciado": "Qual vírus suspeitar?",
               "opcoes": [
                 "Poliovírus",
                 "Sarampo",
@@ -2947,7 +2973,7 @@
                 "Influenza"
               ],
               "resposta": "Poliovírus",
-              "explicacao": "O Brasil está livre da pólio desde 1989.",
+              "explicacao": "A vacina previne; o Brasil está livre da pólio desde 1989.",
               "revisado": false
             },
             {
@@ -3021,8 +3047,9 @@
             },
             {
               "id": "micro-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame no sangue ajuda no diagnóstico da aspergilose invasiva?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leucemia e neutropenia longa tem febre e nódulo com sinal do halo na tomografia.",
+              "enunciado": "Qual exame no sangue ajuda?",
               "opcoes": [
                 "Galactomanana",
                 "Antígeno criptocócico",
@@ -3030,7 +3057,7 @@
                 "Beta-HCG"
               ],
               "resposta": "Galactomanana",
-              "explicacao": "A tomografia pode mostrar o sinal do halo.",
+              "explicacao": "Sugere aspergilose invasiva.",
               "revisado": false
             },
             {
@@ -3051,37 +3078,39 @@
             {
               "id": "micro-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A pneumocistose é tratada com sulfametoxazol e trimetoprima em dose alta.",
-              "resposta": true,
-              "explicacao": "Casos graves recebem corticoide associado.",
+              "enunciado": "Paciente com HIV e pneumocistose deve ser tratado com fluconazol, já que o Pneumocystis é um fungo.",
+              "resposta": false,
+              "explicacao": "Falso. O tratamento é sulfametoxazol e trimetoprima em dose alta; graves recebem corticoide.",
               "revisado": false
             },
             {
               "id": "micro-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A candidíase ___ é a infecção do esôfago comum em pessoas com HIV, com dor ao engolir.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV e CD4 de 80 tem dor ao engolir e placas brancas na boca.",
+              "enunciado": "Qual é o diagnóstico provável?",
               "opcoes": [
-                "esofágica",
-                "oral",
-                "vaginal",
-                "intertriginosa"
+                "Candidíase esofágica",
+                "Refluxo",
+                "Câncer de esôfago",
+                "Úlcera por remédio no estômago"
               ],
-              "resposta": "esofágica",
-              "explicacao": "O tratamento é com fluconazol.",
+              "resposta": "Candidíase esofágica",
+              "explicacao": "Trata-se com fluconazol.",
               "revisado": false
             },
             {
               "id": "micro-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da histoplasmose disseminada grave?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com HIV avançado tem febre, pancitopenia e Histoplasma no sangue, em choque.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Anfotericina B, depois itraconazol",
+                "Anfotericina B",
                 "Fluconazol apenas",
                 "Observar",
                 "Penicilina cristalina por 14 dias na veia"
               ],
-              "resposta": "Anfotericina B, depois itraconazol",
-              "explicacao": "É comum em HIV avançado.",
+              "resposta": "Anfotericina B",
+              "explicacao": "Depois segue com itraconazol.",
               "revisado": false
             },
             {
@@ -3147,8 +3176,9 @@
             },
             {
               "id": "micro-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da esporotricose cutânea?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher arranhada por gato tem nódulos em fila subindo pelo braço.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Itraconazol",
                 "Penicilina",
@@ -3156,7 +3186,7 @@
                 "Nistatina"
               ],
               "resposta": "Itraconazol",
-              "explicacao": "O tratamento dura meses.",
+              "explicacao": "É esporotricose; o tratamento dura meses.",
               "revisado": false
             },
             {
@@ -3177,15 +3207,16 @@
             {
               "id": "micro-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os gatos com esporotricose devem ser tratados e não devem ser abandonados.",
-              "resposta": true,
-              "explicacao": "Abandonar espalha a doença.",
+              "enunciado": "O gato com esporotricose deve ser abandonado longe de casa para proteger a família.",
+              "resposta": false,
+              "explicacao": "Falso. Deve ser tratado; abandonar espalha a doença.",
               "revisado": false
             },
             {
               "id": "micro-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é a forma de fungo vista na paracoccidioidomicose, com brotos em roda de leme.",
+              "tipo": "caso_clinico",
+              "caso": "Lavrador fumante tem lesões na boca e no pulmão; o exame mostra fungo com brotos em roda de leme.",
+              "enunciado": "Qual é o agente?",
               "opcoes": [
                 "Paracoccidioides",
                 "Cryptococcus",
@@ -3198,8 +3229,9 @@
             },
             {
               "id": "micro-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual micose subcutânea forma grãos e fístulas no pé?",
+              "tipo": "caso_clinico",
+              "caso": "Lavrador descalço tem pé inchado com fístulas que drenam grãos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Micetoma",
                 "Pitiríase",
@@ -3273,16 +3305,17 @@
             },
             {
               "id": "micro-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o antifúngico de escolha para candidemia em paciente grave?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em choque na UTI tem Candida na hemocultura.",
+              "enunciado": "Qual antifúngico iniciar?",
               "opcoes": [
-                "Equinocandina (micafungina)",
+                "Micafungina",
                 "Nistatina",
                 "Griseofulvina",
-                "Terbinafina por via oral em dose alta"
+                "Terbinafina oral em dose alta"
               ],
-              "resposta": "Equinocandina (micafungina)",
-              "explicacao": "Depois pode-se trocar para fluconazol.",
+              "resposta": "Micafungina",
+              "explicacao": "É uma equinocandina; depois pode trocar para fluconazol.",
               "revisado": false
             },
             {
@@ -3303,32 +3336,34 @@
             {
               "id": "micro-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A Candida krusei é naturalmente resistente ao fluconazol.",
-              "resposta": true,
-              "explicacao": "A Candida auris é outra espécie preocupante.",
+              "enunciado": "Paciente com candidemia por Candida krusei deve ser tratado com fluconazol, que é o mais eficaz contra ela.",
+              "resposta": false,
+              "explicacao": "Falso. A C. krusei é naturalmente resistente ao fluconazol.",
               "revisado": false
             },
             {
               "id": "micro-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é o antifúngico de escolha na aspergilose invasiva.",
+              "tipo": "caso_clinico",
+              "caso": "Transplantado de medula tem aspergilose invasiva confirmada.",
+              "enunciado": "Qual antifúngico é a escolha?",
               "opcoes": [
-                "voriconazol",
-                "fluconazol",
-                "nistatina",
-                "terbinafina"
+                "Voriconazol",
+                "Fluconazol",
+                "Nistatina",
+                "Terbinafina"
               ],
-              "resposta": "voriconazol",
+              "resposta": "Voriconazol",
               "explicacao": "Pode causar alterações visuais.",
               "revisado": false
             },
             {
               "id": "micro-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antifúngico é usado apenas de forma local, por não ser absorvido?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê tem placas brancas na boca (sapinho).",
+              "enunciado": "Qual antifúngico de uso local, não absorvido, usar?",
               "opcoes": [
                 "Nistatina",
-                "Fluconazol",
+                "Fluconazol venoso",
                 "Anfotericina",
                 "Voriconazol"
               ],
@@ -3407,8 +3442,9 @@
             },
             {
               "id": "micro-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico pode causar ruptura do tendão de Aquiles?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso em uso de prednisona tratou infecção urinária e agora tem dor súbita no calcanhar.",
+              "enunciado": "Qual antibiótico ele usou?",
               "opcoes": [
                 "Ciprofloxacino",
                 "Amoxicilina",
@@ -3416,7 +3452,7 @@
                 "Cefalexina oral"
               ],
               "resposta": "Ciprofloxacino",
-              "explicacao": "O risco é maior em idosos e com corticoide.",
+              "explicacao": "As quinolonas podem romper o tendão de Aquiles.",
               "revisado": false
             },
             {
@@ -3437,9 +3473,9 @@
             {
               "id": "micro-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A vancomicina não age em bactérias gram-negativas.",
-              "resposta": true,
-              "explicacao": "Ela não atravessa a membrana externa.",
+              "enunciado": "Paciente com pneumonia por Pseudomonas pode ser tratado só com vancomicina, que cobre gram-negativos.",
+              "resposta": false,
+              "explicacao": "Falso. A vancomicina não atravessa a membrana externa e não age em gram-negativos.",
               "revisado": false
             },
             {
@@ -3458,8 +3494,9 @@
             },
             {
               "id": "micro-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico é contraindicado em gestantes e crianças por afetar dentes e ossos?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 5 anos tem acne e a mãe quer um antibiótico oral.",
+              "enunciado": "Qual evitar por manchar dentes?",
               "opcoes": [
                 "Tetraciclina",
                 "Amoxicilina",
@@ -3467,7 +3504,7 @@
                 "Cefalexina"
               ],
               "resposta": "Tetraciclina",
-              "explicacao": "Causa manchas nos dentes.",
+              "explicacao": "Também é contraindicada na gestação.",
               "revisado": false
             },
             {
@@ -3533,8 +3570,9 @@
             },
             {
               "id": "micro-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico não deve ser usado em pneumonia por MRSA, apesar de agir no germe?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com pneumonia por MRSA.",
+              "enunciado": "Qual antibiótico não serve, apesar de agir no germe?",
               "opcoes": [
                 "Daptomicina",
                 "Vancomicina",
@@ -3563,22 +3601,23 @@
             {
               "id": "micro-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O descalonamento é trocar para antibiótico de espectro menor após o resultado da cultura.",
+              "enunciado": "Paciente em meropenem tem cultura com E. coli sensível a ceftriaxona; trocar para ceftriaxona é descalonamento.",
               "resposta": true,
-              "explicacao": "Reduz resistência e efeitos colaterais.",
+              "explicacao": "Verdadeiro. Reduz resistência e efeitos colaterais.",
               "revisado": false
             },
             {
               "id": "micro-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é um efeito colateral da linezolida com uso prolongado, com queda das plaquetas.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa linezolida há 4 semanas para osteomielite e as plaquetas caíram.",
+              "enunciado": "Qual é o efeito colateral?",
               "opcoes": [
-                "mielossupressão",
-                "hepatite",
-                "nefrite",
-                "ototoxicidade grave"
+                "Mielossupressão",
+                "Hepatite",
+                "Nefrite",
+                "Ototoxicidade grave e permanente"
               ],
-              "resposta": "mielossupressão",
+              "resposta": "Mielossupressão",
               "explicacao": "Também pode causar síndrome serotoninérgica.",
               "revisado": false
             },
@@ -3659,8 +3698,9 @@
             },
             {
               "id": "micro-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antibiótico é seguro para tratar infecção urinária na gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 20 semanas tem cistite.",
+              "enunciado": "Qual antibiótico é seguro?",
               "opcoes": [
                 "Cefalexina",
                 "Ciprofloxacino",
@@ -3689,37 +3729,39 @@
             {
               "id": "micro-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Em infecções com abscesso, a drenagem é essencial, e só o antibiótico costuma falhar.",
-              "resposta": true,
-              "explicacao": "O antibiótico penetra mal no pus.",
+              "enunciado": "Paciente com abscesso glúteo de 5 cm pode ser tratado só com antibiótico, sem drenagem.",
+              "resposta": false,
+              "explicacao": "Falso. A drenagem é essencial; o antibiótico penetra mal no pus.",
               "revisado": false
             },
             {
               "id": "micro-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ infecciosa precisa de hemoculturas e ecocardiograma, e o tratamento dura semanas.",
+              "tipo": "caso_clinico",
+              "caso": "Usuário de drogas tem febre há 3 semanas e sopro novo.",
+              "enunciado": "Quais exames pedir primeiro?",
               "opcoes": [
-                "endocardite",
-                "faringite",
-                "otite",
-                "pielonefrite aguda"
+                "Hemoculturas e eco",
+                "Só hemograma",
+                "Raio X de tórax",
+                "Urina tipo 1 e cultura de urina"
               ],
-              "resposta": "endocardite",
-              "explicacao": "Os critérios de Duke orientam o diagnóstico.",
+              "resposta": "Hemoculturas e eco",
+              "explicacao": "Suspeita de endocardite; os critérios de Duke orientam.",
               "revisado": false
             },
             {
               "id": "micro-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a profilaxia antibiótica antes de cirurgia limpa com prótese?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente vai colocar prótese de quadril.",
+              "enunciado": "Qual é a profilaxia antibiótica?",
               "opcoes": [
-                "Cefazolina em dose única antes da incisão",
+                "Cefazolina antes da incisão",
                 "Meropenem por 7 dias",
                 "Sem profilaxia",
-                "Vancomicina por 14 dias depois da cirurgia de prótese"
+                "Vancomicina por 14 dias depois da cirurgia"
               ],
-              "resposta": "Cefazolina em dose única antes da incisão",
-              "explicacao": "A dose deve ser dada até 60 minutos antes.",
+              "resposta": "Cefazolina antes da incisão",
+              "explicacao": "Dose única até 60 minutos antes.",
               "revisado": false
             },
             {
