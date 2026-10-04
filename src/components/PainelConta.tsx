@@ -13,6 +13,7 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
   const [erro, setErro] = useState<string | null>(null)
   const [aviso, setAviso] = useState<string | null>(null)
   const erroGoogle = useConta((s) => s.erro)
+  const googleAtivo = useConta((s) => s.googleAtivo)
 
   async function tentar(acao: () => Promise<unknown>) {
     setErro(null)
@@ -37,21 +38,25 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <button
-        type="button"
-        disabled={enviando}
-        onClick={() => tentar(entrarComGoogle)}
-        className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border-2 border-borda bg-superficie font-extrabold shadow-[0_4px_0_0_var(--borda)] transition-[transform,box-shadow] duration-75 hover:bg-superficie-2 active:translate-y-1 active:shadow-none disabled:opacity-60"
-      >
-        <LogoGoogle />
-        Continuar com Google
-      </button>
+      {googleAtivo && (
+        <>
+          <button
+            type="button"
+            disabled={enviando}
+            onClick={() => tentar(entrarComGoogle)}
+            className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border-2 border-borda bg-superficie font-extrabold shadow-[0_4px_0_0_var(--borda)] transition-[transform,box-shadow] duration-75 hover:bg-superficie-2 active:translate-y-1 active:shadow-none disabled:opacity-60"
+          >
+            <LogoGoogle />
+            Continuar com Google
+          </button>
 
-      <div className="flex items-center gap-3 text-xs font-bold uppercase text-texto-suave">
-        <span className="h-0.5 flex-1 bg-borda" />
-        ou com e-mail
-        <span className="h-0.5 flex-1 bg-borda" />
-      </div>
+          <div className="flex items-center gap-3 text-xs font-bold uppercase text-texto-suave">
+            <span className="h-0.5 flex-1 bg-borda" />
+            ou com e-mail
+            <span className="h-0.5 flex-1 bg-borda" />
+          </div>
+        </>
+      )}
 
       <div className="grid grid-cols-2 gap-2" role="tablist">
         {(

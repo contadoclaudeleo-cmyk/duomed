@@ -8,8 +8,8 @@ import { createClient } from '@supabase/supabase-js'
 // Nunca coloque aqui a chave "secret" (service_role).
 // ============================================================
 
-const URL_SUPABASE = import.meta.env.VITE_SUPABASE_URL ?? 'https://dkdizfpywyvpxhfpiivr.supabase.co'
-const CHAVE_PUBLICA = import.meta.env.VITE_SUPABASE_KEY ?? 'sb_publishable_c_9vKOgIV1Ks2bXY1ajHJg_io3htXyu'
+export const URL_SUPABASE = import.meta.env.VITE_SUPABASE_URL ?? 'https://dkdizfpywyvpxhfpiivr.supabase.co'
+export const CHAVE_PUBLICA = import.meta.env.VITE_SUPABASE_KEY ?? 'sb_publishable_c_9vKOgIV1Ks2bXY1ajHJg_io3htXyu'
 
 export const supabase = createClient(URL_SUPABASE, CHAVE_PUBLICA, {
   auth: {

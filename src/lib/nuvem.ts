@@ -1,6 +1,6 @@
 import type { Session } from '@supabase/supabase-js'
 import { create } from 'zustand'
-import { supabase } from './supabase'
+import { CHAVE_PUBLICA, supabase, URL_SUPABASE } from './supabase'
 import { mesclarProgresso } from './mesclar'
 import { dadosDoJogo, useJogo, type DadosJogo } from '../store/useJogo'
 
@@ -20,6 +20,8 @@ interface EstadoConta {
   erro: string | null
   /** true depois da primeira junção com a nuvem nesta abertura do app */
   carregado: boolean
+  /** O botão do Google só aparece quando o login com Google está ligado no Supabase */
+  googleAtivo: boolean
 }
 
 export const useConta = create<EstadoConta>(() => ({
@@ -27,6 +29,7 @@ export const useConta = create<EstadoConta>(() => ({
   status: 'sem-conta',
   erro: null,
   carregado: false,
+  googleAtivo: false,
 }))
 
 const ESPERA_ENVIO_MS = 2_000
@@ -164,6 +167,12 @@ function traduzirErro(mensagem: string): string {
  * Trata a volta do login com Google, acompanha a sessão e mantém a nuvem em dia.
  */
 export function iniciarNuvem() {
+  // Quais formas de login estão ligadas no painel do Supabase
+  fetch(`${URL_SUPABASE}/auth/v1/settings`, { headers: { apikey: CHAVE_PUBLICA } })
+    .then((r) => r.json())
+    .then((config) => useConta.setState({ googleAtivo: config?.external?.google === true }))
+    .catch(() => {})
+
   // Volta do Google: a URL traz ?code=... (ou ?error=...). Lê e limpa antes do roteador mexer na URL.
   const url = new URL(window.location.href)
   const codigo = url.searchParams.get('code')
