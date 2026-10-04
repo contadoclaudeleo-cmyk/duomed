@@ -1863,8 +1863,9 @@
             },
             {
               "id": "neuro-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal complicação do trombolítico no AVC?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente recebeu alteplase por AVC e 2 horas depois tem cefaleia, vômitos e piora neurológica.",
+              "enunciado": "O que suspeitar?",
               "opcoes": [
                 "Sangramento cerebral",
                 "Alergia",
@@ -1872,7 +1873,7 @@
                 "Arritmia ventricular grave"
               ],
               "resposta": "Sangramento cerebral",
-              "explicacao": "Ocorre em cerca de 6% dos casos.",
+              "explicacao": "É a principal complicação do trombolítico, em cerca de 6% dos casos.",
               "revisado": false
             },
             {
@@ -1893,37 +1894,39 @@
             {
               "id": "neuro-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A tenecteplase é uma alternativa à alteplase no AVC isquêmico.",
+              "enunciado": "No AVC isquêmico, a tenecteplase pode substituir a alteplase e é dada em bolus único.",
               "resposta": true,
-              "explicacao": "É dada em bolus único.",
+              "explicacao": "Verdadeiro. É uma alternativa mais prática.",
               "revisado": false
             },
             {
               "id": "neuro-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A angiotomografia identifica a ___ de grande vaso, indicando trombectomia.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com AVC há 3 horas tem NIHSS de 18; angiotomografia mostra oclusão da cerebral média proximal.",
+              "enunciado": "Qual é a conduta além do trombolítico?",
               "opcoes": [
-                "oclusão",
-                "hemorragia",
-                "calcificação",
-                "malformação"
+                "Trombectomia",
+                "Só observar",
+                "Craniotomia",
+                "Anticoagulação plena com heparina venosa"
               ],
-              "resposta": "oclusão",
-              "explicacao": "É feita logo após a tomografia.",
+              "resposta": "Trombectomia",
+              "explicacao": "A oclusão de grande vaso indica trombectomia mecânica.",
               "revisado": false
             },
             {
               "id": "neuro-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por quanto tempo evitar antiagregante e anticoagulante após trombólise?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente recebeu trombolítico por AVC há 6 horas e tem fibrilação atrial.",
+              "enunciado": "Quando iniciar antitrombótico?",
               "opcoes": [
-                "24 horas",
-                "1 semana",
-                "1 mês",
+                "Após 24 h e nova imagem",
+                "Imediatamente",
+                "Só após 1 mês",
                 "Não é preciso esperar nenhum tempo"
               ],
-              "resposta": "24 horas",
-              "explicacao": "Depois de nova imagem sem sangramento.",
+              "resposta": "Após 24 h e nova imagem",
+              "explicacao": "Depois de imagem sem sangramento.",
               "revisado": false
             },
             {
@@ -1989,16 +1992,17 @@
             },
             {
               "id": "neuro-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a síndrome de Wallenberg?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem tontura súbita, rouquidão, dificuldade para engolir, Horner à direita e perda de dor no rosto direito e no corpo esquerdo.",
+              "enunciado": "Qual é a síndrome?",
               "opcoes": [
-                "Lesão lateral do bulbo: tontura, rouquidão e dor cruzada",
-                "Lesão do lobo frontal",
-                "Cerebelo isolado",
-                "Lesão da medula cervical com fraqueza nos quatro membros"
+                "Wallenberg",
+                "Weber",
+                "Brown-Séquard",
+                "Lesão da medula cervical com fraqueza"
               ],
-              "resposta": "Lesão lateral do bulbo: tontura, rouquidão e dor cruzada",
-              "explicacao": "Ocorre por oclusão da vertebral ou da cerebelar posterior inferior.",
+              "resposta": "Wallenberg",
+              "explicacao": "É lesão lateral do bulbo, por oclusão da vertebral ou cerebelar posterior inferior.",
               "revisado": false
             },
             {
@@ -2019,9 +2023,9 @@
             {
               "id": "neuro-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O teste HINTS ajuda a diferenciar AVC de labirintite na tontura aguda.",
-              "resposta": true,
-              "explicacao": "Avalia nistagmo, desvio do olhar e impulso da cabeça.",
+              "enunciado": "Paciente com tontura contínua, nistagmo que muda de lado e impulso cefálico normal provavelmente tem labirintite.",
+              "resposta": false,
+              "explicacao": "Falso. Esse padrão do HINTS sugere AVC.",
               "revisado": false
             },
             {
@@ -2040,15 +2044,16 @@
             },
             {
               "id": "neuro-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa de AVC em crianças com anemia falciforme?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos com anemia falciforme teve AVC isquêmico.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Lesão das grandes artérias cerebrais",
+                "Lesão das grandes artérias",
                 "Hipertensão",
                 "Diabetes",
-                "Tabagismo passivo dos pais dentro de casa por anos"
+                "Tabagismo passivo dos pais dentro de casa"
               ],
-              "resposta": "Lesão das grandes artérias cerebrais",
+              "resposta": "Lesão das grandes artérias",
               "explicacao": "O doppler transcraniano identifica o risco.",
               "revisado": false
             },
@@ -2115,15 +2120,16 @@
             },
             {
               "id": "neuro-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se trata o aneurisma após hemorragia subaracnoide?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hemorragia subaracnoide tem aneurisma de comunicante anterior na angiografia.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Embolização com molas ou clipagem",
+                "Embolização ou clipagem",
                 "Só observação",
                 "Anticoagulação",
-                "Anticoagulação plena e repouso, sem tratar o aneurisma"
+                "Anticoagulação e repouso, sem tratar o aneurisma"
               ],
-              "resposta": "Embolização com molas ou clipagem",
+              "resposta": "Embolização ou clipagem",
               "explicacao": "Deve ser feito nas primeiras 72 horas.",
               "revisado": false
             },
@@ -2145,29 +2151,31 @@
             {
               "id": "neuro-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O hematoma epidural pode ter intervalo lúcido antes da piora.",
+              "enunciado": "Jovem que bateu a cabeça, acordou bem e piorou 2 horas depois pode ter hematoma epidural.",
               "resposta": true,
-              "explicacao": "É uma emergência cirúrgica.",
+              "explicacao": "Verdadeiro. É o intervalo lúcido; emergência cirúrgica.",
               "revisado": false
             },
             {
               "id": "neuro-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A angiopatia ___ amiloide causa sangramentos no lobo do cérebro em idosos.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso normotenso tem segundo sangramento lobar; ressonância com micro-hemorragias corticais.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "cerebral",
-                "renal",
-                "cardíaca",
-                "pulmonar"
+                "Angiopatia amiloide",
+                "Hipertensão",
+                "Aneurisma",
+                "Trauma leve de cabeça"
               ],
-              "resposta": "cerebral",
-              "explicacao": "Pode causar hemorragias repetidas.",
+              "resposta": "Angiopatia amiloide",
+              "explicacao": "Causa hemorragias lobares repetidas em idosos.",
               "revisado": false
             },
             {
               "id": "neuro-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o escore usado para prever a mortalidade da hemorragia intracerebral?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com hemorragia intracerebral chega com Glasgow 8 e hematoma de 40 mL.",
+              "enunciado": "Qual escore prevê a mortalidade?",
               "opcoes": [
                 "Escore ICH",
                 "NIHSS",
@@ -2249,15 +2257,16 @@
             },
             {
               "id": "neuro-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de estado de mal em quem tem epilepsia?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente epiléptico controlado há anos chega em estado de mal.",
+              "enunciado": "Qual é a causa mais provável?",
               "opcoes": [
-                "Parar ou esquecer o remédio",
+                "Parou o remédio",
                 "Febre",
                 "Comida",
                 "Exercício físico leve feito pela manhã"
               ],
-              "resposta": "Parar ou esquecer o remédio",
+              "resposta": "Parou o remédio",
               "explicacao": "A adesão é fundamental.",
               "revisado": false
             },
@@ -2279,9 +2288,9 @@
             {
               "id": "neuro-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O estado de mal não convulsivo pode se apresentar só com confusão.",
+              "enunciado": "Paciente na UTI que segue confuso após convulsão pode estar em estado de mal não convulsivo, confirmado pelo eletroencefalograma.",
               "resposta": true,
-              "explicacao": "O eletroencefalograma confirma.",
+              "explicacao": "Verdadeiro. Pode se apresentar só com confusão.",
               "revisado": false
             },
             {
@@ -2300,8 +2309,9 @@
             },
             {
               "id": "neuro-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual anticonvulsivante tem menos interações e é bastante usado?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com muitos remédios tem crises focais e precisa de anticonvulsivante.",
+              "enunciado": "Qual tem menos interações?",
               "opcoes": [
                 "Levetiracetam",
                 "Fenitoína",
@@ -2375,16 +2385,17 @@
             },
             {
               "id": "neuro-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual escala avalia o nível de consciência?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de trauma abre os olhos à dor, fala palavras soltas e localiza a dor.",
+              "enunciado": "Qual escala avalia isso?",
               "opcoes": [
-                "Escala de coma de Glasgow",
+                "Glasgow",
                 "NIHSS",
                 "Rankin",
-                "Apgar de recém-nascido no primeiro minuto"
+                "Apgar de recém-nascido"
               ],
-              "resposta": "Escala de coma de Glasgow",
-              "explicacao": "Vai de 3 a 15.",
+              "resposta": "Glasgow",
+              "explicacao": "Vai de 3 a 15; aqui são 2 + 3 + 5 = 10.",
               "revisado": false
             },
             {
@@ -2405,37 +2416,39 @@
             {
               "id": "neuro-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome do encarceramento tem consciência preservada, mas paralisia quase total.",
-              "resposta": true,
-              "explicacao": "O paciente só mexe os olhos.",
+              "enunciado": "Paciente com AVC na ponte que só mexe os olhos e responde a comandos com piscadas está em coma.",
+              "resposta": false,
+              "explicacao": "Falso. É a síndrome do encarceramento: consciente, com paralisia quase total.",
               "revisado": false
             },
             {
               "id": "neuro-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A morte ___ é a perda irreversível de todas as funções do cérebro.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em coma sem reflexos de tronco, apneia confirmada e exame complementar sem fluxo cerebral.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "encefálica",
-                "cerebral parcial",
-                "clínica",
-                "aparente"
+                "Morte encefálica",
+                "Coma reversível",
+                "Estado vegetativo",
+                "Síndrome do encarceramento"
               ],
-              "resposta": "encefálica",
+              "resposta": "Morte encefálica",
               "explicacao": "Segue protocolo específico.",
               "revisado": false
             },
             {
               "id": "neuro-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre estado vegetativo e coma?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente após parada abre os olhos, tem ciclos de sono, mas não interage nem segue comandos.",
+              "enunciado": "Qual é o estado?",
               "opcoes": [
-                "No vegetativo há sono e vigília, sem consciência",
-                "São iguais",
-                "No coma há ciclos de sono",
-                "No estado vegetativo, a pessoa está consciente mas não consegue falar"
+                "Estado vegetativo",
+                "Coma",
+                "Morte encefálica",
+                "Consciente mas sem conseguir falar"
               ],
-              "resposta": "No vegetativo há sono e vigília, sem consciência",
-              "explicacao": "Ocorre após lesões graves.",
+              "resposta": "Estado vegetativo",
+              "explicacao": "Há sono e vigília, sem consciência.",
               "revisado": false
             },
             {
@@ -2501,16 +2514,17 @@
             },
             {
               "id": "neuro-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medida reduz a pressão intracraniana?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com trauma de crânio tem hipertensão intracraniana na UTI.",
+              "enunciado": "Qual medida simples ajuda?",
               "opcoes": [
-                "Cabeceira a 30 graus e cabeça reta",
+                "Cabeceira a 30 graus",
                 "Cabeça baixa",
-                "Aumentar a febre",
-                "Deitar com a cabeça mais baixa que o corpo e dar muito soro"
+                "Deixar a febre",
+                "Deitar com a cabeça mais baixa que o corpo"
               ],
-              "resposta": "Cabeceira a 30 graus e cabeça reta",
-              "explicacao": "Também controle da dor e da febre.",
+              "resposta": "Cabeceira a 30 graus",
+              "explicacao": "Também cabeça reta e controle da dor e da febre.",
               "revisado": false
             },
             {
@@ -2531,37 +2545,39 @@
             {
               "id": "neuro-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A punção lombar é contraindicada quando há massa com efeito de massa no cérebro.",
-              "resposta": true,
-              "explicacao": "Pode causar herniação.",
+              "enunciado": "Paciente com febre, papiledema e tumor com desvio da linha média deve fazer punção lombar antes da tomografia.",
+              "resposta": false,
+              "explicacao": "Falso. Com efeito de massa, a punção é contraindicada pelo risco de herniação.",
               "revisado": false
             },
             {
               "id": "neuro-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A hidrocefalia ___ ocorre quando o líquor não consegue passar, como por tumor.",
+              "tipo": "caso_clinico",
+              "caso": "Criança com tumor de fossa posterior tem ventrículos laterais e terceiro ventrículo dilatados.",
+              "enunciado": "Qual tipo de hidrocefalia?",
               "opcoes": [
-                "obstrutiva",
-                "comunicante",
-                "de pressão normal",
-                "congênita"
+                "Obstrutiva",
+                "Comunicante",
+                "De pressão normal",
+                "Congênita"
               ],
-              "resposta": "obstrutiva",
-              "explicacao": "Pode precisar de derivação.",
+              "resposta": "Obstrutiva",
+              "explicacao": "O líquor não consegue passar; pode precisar de derivação.",
               "revisado": false
             },
             {
               "id": "neuro-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a hiperventilação usada na hipertensão intracraniana?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sinais de herniação aguarda a cirurgia.",
+              "enunciado": "Como usar a hiperventilação?",
               "opcoes": [
                 "Breve, como ponte",
-                "Prolongada por dias",
+                "Por vários dias",
                 "Nunca usar",
-                "Sempre, por vários dias seguidos, como tratamento principal"
+                "Sempre, como tratamento principal"
               ],
               "resposta": "Breve, como ponte",
-              "explicacao": "A hiperventilação longa pode causar isquemia.",
+              "explicacao": "A hiperventilação longa causa isquemia.",
               "revisado": false
             },
             {
@@ -2635,16 +2651,17 @@
             },
             {
               "id": "neuro-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sintoma do comportamento é comum na demência avançada?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com Alzheimer avançado fica agitada e agressiva à tarde.",
+              "enunciado": "Qual é a primeira medida?",
               "opcoes": [
-                "Agitação e agressividade",
-                "Euforia",
-                "Melhora da memória",
-                "Ganho de força e de disposição"
+                "Medidas não farmacológicas",
+                "Haloperidol em dose alta",
+                "Contenção",
+                "Benzodiazepínico todas as noites por tempo indefinido"
               ],
-              "resposta": "Agitação e agressividade",
-              "explicacao": "Primeiro se tentam medidas não farmacológicas.",
+              "resposta": "Medidas não farmacológicas",
+              "explicacao": "Ambiente calmo, rotina e busca de dor ou infecção.",
               "revisado": false
             },
             {
@@ -2665,37 +2682,39 @@
             {
               "id": "neuro-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os antipsicóticos aumentam a mortalidade em idosos com demência.",
-              "resposta": true,
-              "explicacao": "Devem ser usados com cautela e por pouco tempo.",
+              "enunciado": "Os antipsicóticos são seguros em idosos com demência e podem ser usados por anos sem risco.",
+              "resposta": false,
+              "explicacao": "Falso. Aumentam a mortalidade; usar com cautela e por pouco tempo.",
               "revisado": false
             },
             {
               "id": "neuro-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A doença de ___-Jakob é uma demência rápida por príon, com mioclonias.",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 60 anos tem demência que piora em semanas, mioclonias e EEG com complexos periódicos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Creutzfeldt",
+                "Creutzfeldt-Jakob",
                 "Alzheimer",
-                "Pick",
-                "Lewy-Parkinson"
+                "Demência vascular",
+                "Demência com corpos de Lewy"
               ],
-              "resposta": "Creutzfeldt",
-              "explicacao": "Leva à morte em meses.",
+              "resposta": "Creutzfeldt-Jakob",
+              "explicacao": "É doença por príon, fatal em meses.",
               "revisado": false
             },
             {
               "id": "neuro-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da demência frontotemporal?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 55 anos passou a falar palavrões, gastar demais e comer compulsivamente; memória preservada.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Personalidade mudada e desinibição",
-                "Perda de memória inicial",
-                "Tremor",
-                "Alucinações visuais muito detalhadas desde o começo, com quedas frequentes"
+                "Demência frontotemporal",
+                "Alzheimer",
+                "Demência vascular",
+                "Demência com corpos de Lewy e alucinações"
               ],
-              "resposta": "Personalidade mudada e desinibição",
-              "explicacao": "Começa mais cedo, entre 45 e 65 anos.",
+              "resposta": "Demência frontotemporal",
+              "explicacao": "Começa mais cedo, com personalidade mudada e desinibição.",
               "revisado": false
             },
             {
@@ -2761,16 +2780,17 @@
             },
             {
               "id": "neuro-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a síndrome perigosa ao parar a levodopa de repente?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Parkinson internado ficou sem levodopa 2 dias e tem febre, rigidez e CPK alta.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Quadro parecido com a neuroléptica maligna",
-                "Melhora",
+                "Síndrome de hiperpirexia",
+                "Melhora da doença",
                 "Convulsão",
-                "Nenhuma síndrome; pode parar a levodopa de uma vez sem problema"
+                "Nenhum problema, pode parar de uma vez"
               ],
-              "resposta": "Quadro parecido com a neuroléptica maligna",
-              "explicacao": "Causa febre, rigidez e lesão muscular.",
+              "resposta": "Síndrome de hiperpirexia",
+              "explicacao": "É parecida com a neuroléptica maligna; reiniciar a levodopa.",
               "revisado": false
             },
             {
@@ -2791,37 +2811,39 @@
             {
               "id": "neuro-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A atrofia de múltiplos sistemas causa parkinsonismo com falência autonômica grave.",
+              "enunciado": "Paciente com parkinsonismo, hipotensão ortostática grave e resposta ruim à levodopa pode ter atrofia de múltiplos sistemas.",
               "resposta": true,
-              "explicacao": "Responde mal à levodopa.",
+              "explicacao": "Verdadeiro. Há falência autonômica grave.",
               "revisado": false
             },
             {
               "id": "neuro-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome neuroléptica ___ causa febre, rigidez e confusão após antipsicóticos.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente psicótico recebeu haloperidol e tem febre de 40 °C, rigidez em cano de chumbo e confusão.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "maligna",
-                "benigna",
-                "leve",
-                "crônica"
+                "Síndrome neuroléptica maligna",
+                "Síndrome serotoninérgica",
+                "Meningite",
+                "Hipertermia por calor ambiental"
               ],
-              "resposta": "maligna",
+              "resposta": "Síndrome neuroléptica maligna",
               "explicacao": "A CPK fica muito alta.",
               "revisado": false
             },
             {
               "id": "neuro-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antipsicótico é preferido para alucinações no Parkinson?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com Parkinson tem alucinações visuais.",
+              "enunciado": "Qual antipsicótico usar?",
               "opcoes": [
-                "Quetiapina ou clozapina",
+                "Quetiapina",
                 "Haloperidol",
                 "Risperidona em dose alta",
                 "Clorpromazina"
               ],
-              "resposta": "Quetiapina ou clozapina",
-              "explicacao": "Têm menos efeito sobre o movimento.",
+              "resposta": "Quetiapina",
+              "explicacao": "Quetiapina ou clozapina têm menos efeito no movimento.",
               "revisado": false
             },
             {
@@ -2938,16 +2960,17 @@
             },
             {
               "id": "neuro-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sintoma é comum e incapacitante na esclerose múltipla?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com esclerose múltipla estável diz que não consegue trabalhar por cansaço extremo.",
+              "enunciado": "Qual sintoma é esse?",
               "opcoes": [
                 "Fadiga",
-                "Febre",
-                "Tosse",
-                "Diarreia"
+                "Depressão",
+                "Surto novo",
+                "Anemia grave por falta de ferro"
               ],
               "resposta": "Fadiga",
-              "explicacao": "Também espasticidade e bexiga neurogênica.",
+              "explicacao": "É comum e incapacitante; também há espasticidade e bexiga neurogênica.",
               "revisado": false
             },
             {
@@ -3021,16 +3044,17 @@
             },
             {
               "id": "neuro-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado do líquor na síndrome de Guillain-Barré?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem tem fraqueza que sobe das pernas e arreflexia após diarreia.",
+              "enunciado": "Qual achado no líquor?",
               "opcoes": [
-                "Proteína alta com poucas células",
+                "Proteína alta, poucas células",
                 "Muitas células e glicose baixa",
                 "Sangue",
-                "Normal sempre"
+                "Normal sempre, em todos os casos"
               ],
-              "resposta": "Proteína alta com poucas células",
-              "explicacao": "É a dissociação albuminocitológica.",
+              "resposta": "Proteína alta, poucas células",
+              "explicacao": "É a dissociação albuminocitológica do Guillain-Barré.",
               "revisado": false
             },
             {
@@ -3051,37 +3075,39 @@
             {
               "id": "neuro-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A variante de Miller Fisher tem ataxia, perda de reflexos e paralisia dos olhos.",
+              "enunciado": "Paciente com ataxia, arreflexia e paralisia dos olhos após gripe pode ter variante de Miller Fisher, com anti-GQ1b.",
               "resposta": true,
-              "explicacao": "Associa-se ao anticorpo anti-GQ1b.",
+              "explicacao": "Verdadeiro. É uma variante do Guillain-Barré.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A polineuropatia do doente ___ ocorre em pacientes de UTI com sepse prolongada.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente na UTI há 3 semanas com sepse tem fraqueza difusa e não sai do ventilador.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "crítico",
-                "crônico",
-                "leve",
-                "idoso"
+                "Polineuropatia do doente crítico",
+                "Guillain-Barré",
+                "Miastenia gravis",
+                "AVC de tronco com síndrome do encarceramento"
               ],
-              "resposta": "crítico",
+              "resposta": "Polineuropatia do doente crítico",
               "explicacao": "Dificulta o desmame do ventilador.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da compressão medular por metástase?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com câncer de próstata tem dor nas costas e fraqueza nas pernas; ressonância com compressão medular.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Corticoide e radioterapia ou cirurgia",
+                "Corticoide e radioterapia",
                 "Analgésico apenas",
                 "Antibiótico",
-                "Analgésico e fisioterapia, com ressonância em algumas semanas"
+                "Analgésico e ressonância em algumas semanas"
               ],
-              "resposta": "Corticoide e radioterapia ou cirurgia",
-              "explicacao": "O tempo define a recuperação.",
+              "resposta": "Corticoide e radioterapia",
+              "explicacao": "Ou cirurgia; o tempo define a recuperação.",
               "revisado": false
             },
             {
@@ -3147,16 +3173,17 @@
             },
             {
               "id": "neuro-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da polirradiculoneuropatia desmielinizante inflamatória crônica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem fraqueza e arreflexia que pioram há 4 meses; líquor com proteína alta.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Corticoide, imunoglobulina ou plasmaférese",
+                "Corticoide ou imunoglobulina",
                 "Antibiótico",
                 "Cirurgia",
-                "Apenas fisioterapia e vitaminas, sem imunoterapia"
+                "Só fisioterapia e vitaminas, sem imunoterapia"
               ],
-              "resposta": "Corticoide, imunoglobulina ou plasmaférese",
-              "explicacao": "É parecida com o Guillain-Barré, mas dura mais de 8 semanas.",
+              "resposta": "Corticoide ou imunoglobulina",
+              "explicacao": "É a PIDC; parecida com Guillain-Barré, mas dura mais de 8 semanas.",
               "revisado": false
             },
             {
@@ -3177,29 +3204,31 @@
             {
               "id": "neuro-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A neuropatia por quimioterapia é comum com vincristina e cisplatina.",
-              "resposta": true,
-              "explicacao": "Pode limitar a dose.",
+              "enunciado": "Paciente com linfoma em vincristina e dormência nas mãos e pés não tem relação com a quimioterapia.",
+              "resposta": false,
+              "explicacao": "Falso. Vincristina e cisplatina causam neuropatia e podem limitar a dose.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome do ___ do carpo é a compressão do nervo mediano no punho.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher acorda com formigamento nos 3 primeiros dedos; Phalen positivo.",
+              "enunciado": "Qual nervo está comprimido?",
               "opcoes": [
-                "túnel",
-                "canal",
-                "arco",
-                "sulco"
+                "Mediano",
+                "Ulnar",
+                "Radial",
+                "Fibular comum"
               ],
-              "resposta": "túnel",
-              "explicacao": "Causa formigamento à noite.",
+              "resposta": "Mediano",
+              "explicacao": "É a síndrome do túnel do carpo.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o nervo afetado na meralgia parestésica?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante obesa com cinto apertado tem ardência na lateral da coxa, sem fraqueza.",
+              "enunciado": "Qual nervo está afetado?",
               "opcoes": [
                 "Cutâneo femoral lateral",
                 "Ciático",
@@ -3207,7 +3236,7 @@
                 "Ulnar no cotovelo, por apoio prolongado"
               ],
               "resposta": "Cutâneo femoral lateral",
-              "explicacao": "Causa ardência na lateral da coxa.",
+              "explicacao": "É a meralgia parestésica.",
               "revisado": false
             },
             {
@@ -3273,16 +3302,17 @@
             },
             {
               "id": "neuro-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da esclerose lateral amiotrófica?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tem fraqueza com atrofia, fasciculações e reflexos vivos; diagnóstico de ELA.",
+              "enunciado": "Qual remédio usar?",
               "opcoes": [
-                "Riluzol, edaravone e equipe multiprofissional",
+                "Riluzol",
                 "Corticoide",
                 "Antibiótico",
-                "Cirurgia na medula para retirar os neurônios doentes"
+                "Cirurgia na medula para retirar neurônios"
               ],
-              "resposta": "Riluzol, edaravone e equipe multiprofissional",
-              "explicacao": "Inclui suporte respiratório e nutricional.",
+              "resposta": "Riluzol",
+              "explicacao": "Junto com equipe multiprofissional e suporte respiratório e nutricional.",
               "revisado": false
             },
             {
@@ -3303,29 +3333,31 @@
             {
               "id": "neuro-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A ventilação não invasiva aumenta a sobrevida na esclerose lateral amiotrófica.",
-              "resposta": true,
-              "explicacao": "Também melhora a qualidade de vida.",
+              "enunciado": "Paciente com ELA e falta de ar ao deitar não se beneficia de ventilação não invasiva.",
+              "resposta": false,
+              "explicacao": "Falso. A ventilação não invasiva aumenta a sobrevida e a qualidade de vida.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A miopatia ___ causa fraqueza muscular em quem usa corticoide por tempo longo.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente usa prednisona 40 mg há 6 meses e tem fraqueza nas coxas; CPK normal.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "por corticoide",
-                "inflamatória",
-                "viral",
-                "alcoólica crônica"
+                "Miopatia por corticoide",
+                "Polimiosite",
+                "Miosite viral",
+                "Miopatia alcoólica crônica"
               ],
-              "resposta": "por corticoide",
+              "resposta": "Miopatia por corticoide",
               "explicacao": "A CPK costuma ser normal.",
               "revisado": false
             },
             {
               "id": "neuro-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a doença do neurônio motor que afeta bebês e tem tratamentos novos?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses é molinho, não sustenta a cabeça e tem fasciculações na língua.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Atrofia muscular espinhal",
                 "Esclerose lateral amiotrófica",
@@ -3333,7 +3365,7 @@
                 "Miastenia"
               ],
               "resposta": "Atrofia muscular espinhal",
-              "explicacao": "O diagnóstico precoce é importante.",
+              "explicacao": "Há tratamentos novos; o diagnóstico precoce é importante.",
               "revisado": false
             },
             {
@@ -3392,8 +3424,9 @@
             },
             {
               "id": "neuro-d5-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual manobra trata a vertigem posicional paroxística benigna?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem tontura rotatória de segundos ao deitar ou virar na cama; Dix-Hallpike positivo à direita.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Manobra de Epley",
                 "Manobra de Valsalva",
@@ -3407,36 +3440,38 @@
             {
               "id": "neuro-d5-l1-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A manobra de Dix-Hallpike provoca vertigem e nistagmo na vertigem posicional.",
-              "resposta": true,
-              "explicacao": "É o teste diagnóstico.",
+              "enunciado": "Na vertigem posicional paroxística benigna, a manobra de Dix-Hallpike é normal e não provoca nistagmo.",
+              "resposta": false,
+              "explicacao": "Falso. A manobra provoca vertigem e nistagmo; é o teste diagnóstico.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A doença de ___ tem vertigem, zumbido, sensação de ouvido cheio e perda auditiva.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem crises de vertigem por horas com zumbido, ouvido cheio e perda auditiva flutuante.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Ménière",
-                "Parkinson",
-                "Bell",
-                "Wilson"
+                "Doença de Ménière",
+                "Vertigem posicional",
+                "Neurite vestibular",
+                "Paralisia de Bell"
               ],
-              "resposta": "Ménière",
+              "resposta": "Doença de Ménière",
               "explicacao": "Dieta com pouco sal ajuda.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado sugere AVC em vez de labirintite?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso hipertenso tem tontura contínua há 6 horas.",
+              "enunciado": "Qual achado sugere AVC?",
               "opcoes": [
-                "Impulso cefálico normal e nistagmo que muda de lado",
-                "Impulso alterado",
+                "Nistagmo que muda de lado",
+                "Impulso cefálico alterado",
                 "Melhora rápida",
-                "Ausência total de nistagmo com melhora rápida ao deitar"
+                "Nistagmo unidirecional com surdez prévia"
               ],
-              "resposta": "Impulso cefálico normal e nistagmo que muda de lado",
+              "resposta": "Nistagmo que muda de lado",
               "explicacao": "O HINTS é mais sensível que a tomografia no início.",
               "revisado": false
             },
@@ -3458,22 +3493,23 @@
             {
               "id": "neuro-d5-l1-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Os remédios para tontura devem ser usados por pouco tempo, pois atrasam a adaptação.",
-              "resposta": true,
-              "explicacao": "A reabilitação vestibular ajuda.",
+              "enunciado": "Paciente com neurite vestibular deve usar meclizina por meses para se recuperar mais rápido.",
+              "resposta": false,
+              "explicacao": "Falso. Os remédios devem ser usados por pouco tempo, pois atrasam a adaptação; a reabilitação vestibular ajuda.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a sensação de que o ambiente gira, diferente de desmaio ou instabilidade.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente diz que sente o quarto girando.",
+              "enunciado": "Como se chama esse sintoma?",
               "opcoes": [
-                "vertigem",
-                "síncope",
-                "lipotimia",
-                "ataxia"
+                "Vertigem",
+                "Síncope",
+                "Lipotimia",
+                "Ataxia"
               ],
-              "resposta": "vertigem",
+              "resposta": "Vertigem",
               "explicacao": "Indica origem vestibular.",
               "revisado": false
             }
@@ -3510,51 +3546,54 @@
             },
             {
               "id": "neuro-d5-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de primeira linha da insônia crônica?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tem dificuldade para dormir há 1 ano, 4 noites por semana.",
+              "enunciado": "Qual é a primeira linha?",
               "opcoes": [
-                "Terapia cognitivo-comportamental para insônia",
+                "Terapia cognitivo-comportamental",
                 "Benzodiazepínico por anos",
                 "Álcool",
-                "Remédio para dormir todas as noites, sem prazo para parar"
+                "Remédio para dormir todas as noites, sem prazo"
               ],
-              "resposta": "Terapia cognitivo-comportamental para insônia",
+              "resposta": "Terapia cognitivo-comportamental",
               "explicacao": "Os remédios são de uso curto.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l2-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome das pernas inquietas pode estar ligada à falta de ferro.",
+              "enunciado": "Paciente com pernas inquietas e ferritina de 20 pode melhorar com reposição de ferro.",
               "resposta": true,
-              "explicacao": "Repor ferro pode melhorar.",
+              "explicacao": "Verdadeiro. A falta de ferro está ligada à síndrome.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a perda súbita da força muscular com emoção, típica da narcolepsia.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com sonolência diurna cai ao rir, sem perder a consciência.",
+              "enunciado": "Como se chama esse episódio?",
               "opcoes": [
-                "cataplexia",
-                "catalepsia",
-                "convulsão",
-                "síncope"
+                "Cataplexia",
+                "Catalepsia",
+                "Convulsão",
+                "Síncope"
               ],
-              "resposta": "cataplexia",
-              "explicacao": "A pessoa fica consciente.",
+              "resposta": "Cataplexia",
+              "explicacao": "É típica da narcolepsia.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da síncope vasovagal?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem desmaia ao ver sangue, com suor e náusea antes, e acorda logo.",
+              "enunciado": "Qual é o tipo de síncope?",
               "opcoes": [
-                "Desmaio em pé ou na emoção, com suor e náusea",
-                "Desmaio ao esforço",
-                "Convulsão longa",
-                "Desmaio deitado, sem aviso, com palpitação e dor no peito"
+                "Vasovagal",
+                "Cardíaca",
+                "Ortostática",
+                "Arrítmica grave com morte súbita"
               ],
-              "resposta": "Desmaio em pé ou na emoção, com suor e náusea",
+              "resposta": "Vasovagal",
               "explicacao": "É benigna na maioria.",
               "revisado": false
             },
@@ -3576,23 +3615,24 @@
             {
               "id": "neuro-d5-l2-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na crise epiléptica, a confusão após o evento é mais longa que na síncope.",
-              "resposta": true,
-              "explicacao": "Também pode haver mordedura da língua.",
+              "enunciado": "Paciente que desmaiou e ficou 20 minutos confuso, com mordedura lateral da língua, provavelmente teve síncope vasovagal.",
+              "resposta": false,
+              "explicacao": "Falso. Confusão longa e mordedura sugerem crise epiléptica.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síncope ___ ocorre ao levantar rápido, por queda da pressão.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso desidratado desmaia ao levantar rápido da cama.",
+              "enunciado": "Qual é o tipo de síncope?",
               "opcoes": [
-                "ortostática",
-                "vasovagal",
-                "cardíaca",
-                "situacional"
+                "Ortostática",
+                "Vasovagal",
+                "Cardíaca",
+                "Situacional"
               ],
-              "resposta": "ortostática",
-              "explicacao": "Comum em idosos e desidratados.",
+              "resposta": "Ortostática",
+              "explicacao": "A pressão cai ao ficar em pé.",
               "revisado": false
             }
           ]
@@ -3643,16 +3683,17 @@
             },
             {
               "id": "neuro-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa da encefalopatia de Wernicke?",
+              "tipo": "caso_clinico",
+              "caso": "Alcoolista tem confusão, marcha instável e paralisia dos olhos.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
                 "Falta de tiamina",
                 "Excesso de sal",
                 "Falta de ferro",
-                "Vírus herpes no lobo temporal"
+                "Herpes no lobo temporal"
               ],
               "resposta": "Falta de tiamina",
-              "explicacao": "Comum em alcoólatras e após bariátrica.",
+              "explicacao": "É a encefalopatia de Wernicke; dar tiamina antes da glicose.",
               "revisado": false
             },
             {
@@ -3673,37 +3714,39 @@
             {
               "id": "neuro-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Korsakoff causa perda grave de memória e invenção de histórias.",
+              "enunciado": "Alcoolista que inventa histórias para preencher falhas de memória após Wernicke tem síndrome de Korsakoff.",
               "resposta": true,
-              "explicacao": "É sequela da falta de tiamina.",
+              "explicacao": "Verdadeiro. É sequela da falta de tiamina.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A mielinólise ___ é a lesão do tronco por correção rápida do sódio.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sódio de 108 corrigido para 128 em 24 h fica com paralisia e dificuldade de falar dias depois.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "pontina",
-                "cortical",
-                "medular",
-                "periférica"
+                "Mielinólise pontina",
+                "AVC cortical",
+                "Mielite",
+                "Neuropatia periférica"
               ],
-              "resposta": "pontina",
-              "explicacao": "Causa paralisia e dificuldade de falar.",
+              "resposta": "Mielinólise pontina",
+              "explicacao": "A correção rápida do sódio lesa o tronco.",
               "revisado": false
             },
             {
               "id": "neuro-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a síndrome que causa febre, rigidez e confusão após antipsicóticos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em haloperidol tem febre, rigidez e confusão.",
+              "enunciado": "Quais remédios usar?",
               "opcoes": [
-                "Síndrome neuroléptica maligna",
-                "Síndrome serotoninérgica",
-                "Meningite",
-                "Encefalite viral por herpes no lobo temporal"
+                "Dantroleno ou bromocriptina",
+                "Mais haloperidol",
+                "Antibiótico",
+                "Antidepressivo ISRS em dose alta"
               ],
-              "resposta": "Síndrome neuroléptica maligna",
-              "explicacao": "O dantroleno e a bromocriptina são usados.",
+              "resposta": "Dantroleno ou bromocriptina",
+              "explicacao": "É a síndrome neuroléptica maligna; suspender o antipsicótico.",
               "revisado": false
             },
             {
