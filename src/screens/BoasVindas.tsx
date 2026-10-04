@@ -1,12 +1,14 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, GraduationCap, Stethoscope, type LucideIcon } from 'lucide-react'
-import { useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import type { MetaDiaria, ModoEstudo } from '../types'
 import { useJogo } from '../store/useJogo'
 import { Logo } from '../components/Logo'
 import { Lapio } from '../components/Lapio'
 import { Botao } from '../components/Botao'
 import { BarraProgresso } from '../components/BarraProgresso'
+import { PainelConta } from '../components/PainelConta'
+import { nomeDaConta, useConta } from '../lib/nuvem'
 
 const METAS: { valor: MetaDiaria; nome: string; descricao: string }[] = [
   { valor: 10, nome: 'Leve', descricao: 'Cerca de 1 lição por dia' },
@@ -39,6 +41,20 @@ export function BoasVindas() {
   const [modo, setModo] = useState<ModoEstudo | null>(null)
   const [semestre, setSemestre] = useState<number | null>(null)
   const [meta, setMeta] = useState<MetaDiaria | null>(null)
+  const [verConta, setVerConta] = useState(false)
+  const sessao = useConta((s) => s.sessao)
+  const carregado = useConta((s) => s.carregado)
+  const seguiuCadastro = useRef(false)
+
+  // Entrou numa conta que ainda não tem progresso: segue o cadastro, já com o nome do Google.
+  // Se a conta já tiver progresso, a nuvem preenche o usuário e o app sai desta tela sozinho.
+  useEffect(() => {
+    if (!sessao || !carregado || seguiuCadastro.current) return
+    seguiuCadastro.current = true
+    setVerConta(false)
+    setNome((atual) => atual || nomeDaConta(sessao))
+    setIndice(1)
+  }, [sessao, carregado])
 
   // Quem estuda para residência não precisa informar o semestre
   const passos: Passo[] = ['inicio', 'nome', 'modo', ...(modo === 'residencia' ? [] : ['semestre' as const]), 'meta']
@@ -59,6 +75,37 @@ export function BoasVindas() {
     criarUsuario(nome, modo === 'residencia' ? null : semestre, meta!, modo!)
   }
 
+  // Voltando do Google ou entrando: espera a nuvem responder
+  if (sessao && !carregado) {
+    return (
+      <div className="flex min-h-dvh flex-col items-center justify-center gap-4 px-6 text-center">
+        <Lapio altura={120} />
+        <p className="text-lg font-bold text-texto-suave">Carregando sua conta...</p>
+      </div>
+    )
+  }
+
+  if (passo === 'inicio' && verConta) {
+    return (
+      <div className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-8 pt-5">
+        <button
+          type="button"
+          onClick={() => setVerConta(false)}
+          className="self-start rounded-lg p-1 text-texto-suave hover:bg-superficie-2"
+          aria-label="Voltar"
+        >
+          <ArrowLeft className="h-6 w-6" strokeWidth={2.6} />
+        </button>
+        <div className="pt-6">
+          <Fala>Que bom te ver de novo! Entre para recuperar seu progresso.</Fala>
+          <div className="mt-6">
+            <PainelConta abaInicial="entrar" />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   if (passo === 'inicio') {
     return (
       <div className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-8 pt-16">
@@ -75,9 +122,14 @@ export function BoasVindas() {
             Medicina em lições curtas, um pouco todo dia.
           </motion.p>
         </div>
-        <Botao larguraTotal onClick={avancar}>
-          Começar
-        </Botao>
+        <div className="flex flex-col gap-3">
+          <Botao larguraTotal onClick={avancar}>
+            Começar
+          </Botao>
+          <Botao larguraTotal variante="contorno" onClick={() => setVerConta(true)}>
+            Já tenho uma conta
+          </Botao>
+        </div>
       </div>
     )
   }

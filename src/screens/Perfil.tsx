@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Award, Flame, Lock, Medal, Target, Zap, type LucideIcon } from 'lucide-react'
+import { Award, Cloud, CloudOff, Flame, Lock, Medal, RefreshCw, Target, Zap, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, Tema } from '../types'
@@ -17,11 +17,16 @@ import { Modal } from '../components/Modal'
 import { AbasModo, AbasNivel } from '../components/AbasModo'
 import { NumeroAnimado } from '../components/Animacoes'
 import { tocarSom } from '../lib/sons'
+import { PainelConta } from '../components/PainelConta'
+import { apagarConta, apagarProgressoNaNuvem, sair, useConta } from '../lib/nuvem'
 
 export function Perfil() {
   const navegar = useNavigate()
   const jogo = useJogo()
   const [confirmarReset, setConfirmarReset] = useState(false)
+  const [apagando, setApagando] = useState(false)
+  const [erroReset, setErroReset] = useState<string | null>(null)
+  const logado = useConta((s) => !!s.sessao)
   const usuario = jogo.usuario!
   const nivel = nivelDoXp(jogo.xpTotal)
   const ofensiva = ofensivaVigente(jogo.ofensiva)
@@ -141,6 +146,10 @@ export function Perfil() {
         })}
       </div>
 
+      {/* Conta e nuvem */}
+      <Titulo>Conta</Titulo>
+      <SecaoConta />
+
       {/* Configurações */}
       <Titulo>Configurações</Titulo>
       <div className="flex flex-col gap-5 rounded-2xl border-2 border-borda bg-superficie p-4">
@@ -210,18 +219,145 @@ export function Perfil() {
       <Modal aberto={confirmarReset} aoFechar={() => setConfirmarReset(false)}>
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-xl font-extrabold">Apagar tudo?</h2>
-          <p className="text-texto-suave">XP, ofensiva, conquistas e revisões serão apagados deste aparelho. Não dá para desfazer.</p>
+          <p className="text-texto-suave">
+            XP, ofensiva, conquistas e revisões serão apagados {logado ? 'deste aparelho e da sua conta' : 'deste aparelho'}.
+            Não dá para desfazer.
+          </p>
+          {erroReset && <p className="text-sm font-bold text-erro-texto">{erroReset}</p>}
           <Botao
             larguraTotal
             variante="perigo"
-            onClick={() => {
-              jogo.resetarTudo()
-              navegar('/boas-vindas', { replace: true })
+            disabled={apagando}
+            onClick={async () => {
+              setErroReset(null)
+              setApagando(true)
+              try {
+                // Com conta, apaga também a cópia da nuvem (senão ela voltaria na próxima sincronização)
+                if (logado) await apagarProgressoNaNuvem()
+                jogo.resetarTudo()
+                navegar('/boas-vindas', { replace: true })
+              } catch (e) {
+                setErroReset(e instanceof Error ? e.message : 'Não deu certo. Tente de novo.')
+              } finally {
+                setApagando(false)
+              }
             }}
           >
             Apagar progresso
           </Botao>
           <Botao larguraTotal variante="contorno" onClick={() => setConfirmarReset(false)}>
+            Cancelar
+          </Botao>
+        </div>
+      </Modal>
+    </div>
+  )
+}
+
+/** Criar conta, ver se o progresso está salvo na nuvem, sair ou apagar a conta */
+function SecaoConta() {
+  const navegar = useNavigate()
+  const sessao = useConta((s) => s.sessao)
+  const status = useConta((s) => s.status)
+  const [abrirConta, setAbrirConta] = useState(false)
+  const [confirmarApagar, setConfirmarApagar] = useState(false)
+  const [ocupado, setOcupado] = useState(false)
+  const [erro, setErro] = useState<string | null>(null)
+
+  // Ao entrar pela janela do perfil, ela fecha sozinha
+  if (sessao && abrirConta) setAbrirConta(false)
+
+  async function executar(acao: () => Promise<void>) {
+    setErro(null)
+    setOcupado(true)
+    try {
+      await acao()
+      navegar('/boas-vindas', { replace: true })
+    } catch (e) {
+      setErro(e instanceof Error ? e.message : 'Não deu certo. Tente de novo.')
+    } finally {
+      setOcupado(false)
+    }
+  }
+
+  if (!sessao) {
+    return (
+      <div className="flex flex-col gap-3 rounded-2xl border-2 border-borda bg-superficie p-4">
+        <div className="flex items-start gap-3">
+          <CloudOff className="mt-0.5 h-6 w-6 shrink-0 text-texto-suave" strokeWidth={2.4} aria-hidden />
+          <div>
+            <p className="font-extrabold">Seu progresso está só neste aparelho</p>
+            <p className="text-sm text-texto-suave">
+              Crie uma conta para salvar na nuvem e continuar no celular ou no computador.
+            </p>
+          </div>
+        </div>
+        <Botao larguraTotal onClick={() => setAbrirConta(true)}>
+          Criar conta ou entrar
+        </Botao>
+        <Modal aberto={abrirConta} aoFechar={() => setAbrirConta(false)}>
+          <h2 className="mb-4 text-center text-xl font-extrabold">Salvar meu progresso</h2>
+          <PainelConta />
+        </Modal>
+      </div>
+    )
+  }
+
+  const textoStatus = {
+    'sem-conta': '',
+    sincronizando: 'Sincronizando...',
+    salvo: 'Progresso salvo na nuvem',
+    offline: 'Sem internet: salva quando a conexão voltar',
+  }[status]
+  const IconeStatus = status === 'offline' ? CloudOff : status === 'sincronizando' ? RefreshCw : Cloud
+
+  return (
+    <div className="flex flex-col gap-3 rounded-2xl border-2 border-borda bg-superficie p-4">
+      <div className="flex items-start gap-3">
+        <IconeStatus
+          className={`mt-0.5 h-6 w-6 shrink-0 ${status === 'offline' ? 'text-laranja' : 'text-agua'} ${
+            status === 'sincronizando' ? 'animate-spin' : ''
+          }`}
+          strokeWidth={2.4}
+          aria-hidden
+        />
+        <div className="min-w-0">
+          <p className="truncate font-extrabold">{sessao.user.email}</p>
+          <p className="text-sm text-texto-suave" aria-live="polite">
+            {textoStatus}
+          </p>
+        </div>
+      </div>
+      {erro && <p className="text-sm font-bold text-erro-texto">{erro}</p>}
+      <div className="flex flex-wrap gap-x-5 gap-y-2">
+        <button
+          type="button"
+          disabled={ocupado}
+          onClick={() => executar(sair)}
+          className="text-sm font-bold text-agua-texto underline-offset-4 hover:underline dark:text-menta"
+        >
+          Sair da conta
+        </button>
+        <button
+          type="button"
+          onClick={() => setConfirmarApagar(true)}
+          className="text-sm font-bold text-erro-texto underline-offset-4 hover:underline"
+        >
+          Apagar minha conta
+        </button>
+      </div>
+
+      <Modal aberto={confirmarApagar} aoFechar={() => setConfirmarApagar(false)}>
+        <div className="flex flex-col gap-4 text-center">
+          <h2 className="text-xl font-extrabold">Apagar a conta?</h2>
+          <p className="text-texto-suave">
+            A conta e todo o progresso salvo nela serão apagados para sempre, em todos os aparelhos. Não dá para desfazer.
+          </p>
+          {erro && <p className="text-sm font-bold text-erro-texto">{erro}</p>}
+          <Botao larguraTotal variante="perigo" disabled={ocupado} onClick={() => executar(apagarConta)}>
+            Apagar conta
+          </Botao>
+          <Botao larguraTotal variante="contorno" onClick={() => setConfirmarApagar(false)}>
             Cancelar
           </Botao>
         </div>

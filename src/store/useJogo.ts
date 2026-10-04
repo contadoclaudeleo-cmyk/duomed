@@ -30,7 +30,7 @@ import { verificarConquistas } from '../lib/conquistas'
 // As regras de jogo ficam em src/lib; aqui só juntamos as peças.
 // ============================================================
 
-interface DadosJogo {
+export interface DadosJogo {
   usuario: Usuario | null
   xpTotal: number
   vidas: number
@@ -80,7 +80,7 @@ interface AcoesJogo {
   resetarTudo: () => void
 }
 
-const estadoInicial = (): DadosJogo => ({
+export const estadoInicial = (): DadosJogo => ({
   usuario: null,
   xpTotal: 0,
   vidas: VIDAS_MAX,
@@ -271,11 +271,14 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         return dados
       },
       // Salva só os dados do jogador (sem o resultado temporário e sem as funções)
-      partialize: (estado): DadosJogo => {
-        const dados: Record<string, unknown> = {}
-        for (const chave of Object.keys(estadoInicial())) dados[chave] = estado[chave as keyof DadosJogo]
-        return dados as unknown as DadosJogo
-      },
+      partialize: (estado): DadosJogo => dadosDoJogo(estado),
     },
   ),
 )
+
+/** Só os dados do jogador, sem funções nem estado temporário (é o que vai para a nuvem) */
+export function dadosDoJogo(estado: DadosJogo): DadosJogo {
+  const dados: Record<string, unknown> = {}
+  for (const chave of Object.keys(estadoInicial())) dados[chave] = estado[chave as keyof DadosJogo]
+  return dados as unknown as DadosJogo
+}
