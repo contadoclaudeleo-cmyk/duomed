@@ -1863,16 +1863,17 @@
             },
             {
               "id": "hemato-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel da hepcidina na anemia de doença crônica?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com artrite reumatoide ativa tem anemia, ferro sérico baixo e ferritina alta.",
+              "enunciado": "Qual substância explica o quadro?",
               "opcoes": [
-                "Bloqueia a absorção e a saída do ferro",
-                "Aumenta a absorção",
-                "Produz hemácias",
-                "Destrói as hemácias velhas no baço e no fígado"
+                "Hepcidina",
+                "Eritropoetina",
+                "Transferrina",
+                "Vitamina B12 em excesso no sangue"
               ],
-              "resposta": "Bloqueia a absorção e a saída do ferro",
-              "explicacao": "A inflamação aumenta a hepcidina.",
+              "resposta": "Hepcidina",
+              "explicacao": "A inflamação aumenta a hepcidina, que bloqueia a absorção e a saída do ferro.",
               "revisado": false
             },
             {
@@ -1893,37 +1894,39 @@
             {
               "id": "hemato-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na intoxicação por chumbo, há pontilhado basófilo nas hemácias.",
+              "enunciado": "Pintor de casas antigas com dor abdominal e neuropatia tem hemácias com pontilhado basófilo; isso sugere intoxicação por chumbo.",
               "resposta": true,
-              "explicacao": "Também dor abdominal e neuropatia.",
+              "explicacao": "Verdadeiro. O chumbo causa anemia, dor abdominal e neuropatia.",
               "revisado": false
             },
             {
               "id": "hemato-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ferritina abaixo de ___ ng/mL confirma falta de ferro com alta precisão.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com menstruação intensa, cansada, tem hemoglobina 10,5 e ferritina 12 ng/mL.",
+              "enunciado": "Qual é a interpretação?",
               "opcoes": [
-                "30",
-                "300",
-                "1.000",
-                "100"
+                "Falta de ferro",
+                "Ferro normal",
+                "Sobrecarga de ferro",
+                "Anemia por doença crônica com ferro alto"
               ],
-              "resposta": "30",
-              "explicacao": "Em inflamação, o corte é maior.",
+              "resposta": "Falta de ferro",
+              "explicacao": "Ferritina abaixo de 30 confirma deficiência de ferro com alta precisão.",
               "revisado": false
             },
             {
               "id": "hemato-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a melhor opção para tratar falta de ferro em doença renal crônica em diálise?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em hemodiálise tem anemia e ferritina de 80, em uso de eritropoetina.",
+              "enunciado": "Qual é a melhor reposição de ferro?",
               "opcoes": [
                 "Ferro venoso",
                 "Ferro oral apenas",
                 "Transfusão sempre",
-                "Dieta rica em carne vermelha"
+                "Dieta rica em carne vermelha e feijão"
               ],
               "resposta": "Ferro venoso",
-              "explicacao": "Junto com eritropoetina.",
+              "explicacao": "Na diálise, o ferro oral funciona mal; o venoso é preferido.",
               "revisado": false
             },
             {
@@ -1989,16 +1992,17 @@
             },
             {
               "id": "hemato-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da síndrome hemolítico-urêmica atípica?",
+              "tipo": "caso_clinico",
+              "caso": "Adulto sem diarreia tem anemia hemolítica, plaquetas baixas e lesão renal; ADAMTS13 normal.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Eculizumabe",
-                "Plasmaférese sempre",
                 "Antibiótico",
-                "Transfusão de plaquetas diária"
+                "Transfusão de plaquetas diária",
+                "Esplenectomia"
               ],
               "resposta": "Eculizumabe",
-              "explicacao": "Bloqueia o complemento.",
+              "explicacao": "É SHU atípica, por ativação do complemento; o eculizumabe bloqueia o complemento.",
               "revisado": false
             },
             {
@@ -2019,9 +2023,9 @@
             {
               "id": "hemato-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A anemia hemolítica autoimune pode ser causada por linfoma e lúpus.",
-              "resposta": true,
-              "explicacao": "Deve-se investigar causas secundárias.",
+              "enunciado": "Paciente com anemia hemolítica autoimune nova não precisa investigar linfoma nem lúpus, pois a doença é sempre primária.",
+              "resposta": false,
+              "explicacao": "Falso. Linfoma, leucemia linfoide crônica e lúpus são causas secundárias que devem ser investigadas.",
               "revisado": false
             },
             {
@@ -2040,16 +2044,17 @@
             },
             {
               "id": "hemato-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame diferencia a coagulação intravascular disseminada da PTT?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com sepse tem plaquetas baixas e esquizócitos. INR alargado e fibrinogênio baixo.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Na CIVD, coagulação alterada e fibrinogênio baixo",
-                "Plaquetas",
-                "Hemoglobina",
-                "Bilirrubina indireta e reticulócitos, que só sobem na PTT"
+                "CIVD",
+                "PTT",
+                "Púrpura imune",
+                "Deficiência isolada de vitamina B12"
               ],
-              "resposta": "Na CIVD, coagulação alterada e fibrinogênio baixo",
-              "explicacao": "Na PTT, a coagulação costuma ser normal.",
+              "resposta": "CIVD",
+              "explicacao": "Na PTT, a coagulação costuma ser normal; na CIVD, fica alterada e o fibrinogênio cai.",
               "revisado": false
             },
             {
@@ -2115,16 +2120,17 @@
             },
             {
               "id": "hemato-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a meta da exsanguineotransfusão no AVC da anemia falciforme?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com anemia falciforme tem AVC isquêmico.",
+              "enunciado": "Qual é a meta da exsanguineotransfusão?",
               "opcoes": [
                 "Hemoglobina S abaixo de 30%",
-                "Hemoglobina em 15",
+                "Hemoglobina acima de 15",
                 "Aumentar a hemoglobina S",
                 "Elevar as plaquetas acima de 500 mil"
               ],
               "resposta": "Hemoglobina S abaixo de 30%",
-              "explicacao": "Evita novos AVCs.",
+              "explicacao": "Reduzir a hemoglobina S evita novos AVCs.",
               "revisado": false
             },
             {
@@ -2145,9 +2151,9 @@
             {
               "id": "hemato-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A crise aplástica na anemia falciforme é causada principalmente pelo parvovírus B19.",
+              "enunciado": "Criança falciforme com queda brusca da hemoglobina e reticulócitos quase zero tem crise aplástica, em geral por parvovírus B19.",
               "resposta": true,
-              "explicacao": "Os reticulócitos ficam muito baixos.",
+              "explicacao": "Verdadeiro. O parvovírus para a produção de hemácias por alguns dias.",
               "revisado": false
             },
             {
@@ -2166,15 +2172,16 @@
             },
             {
               "id": "hemato-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento curativo da anemia falciforme?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com anemia falciforme grave tem irmão HLA idêntico.",
+              "enunciado": "Qual tratamento pode curar?",
               "opcoes": [
-                "Transplante de medula óssea",
+                "Transplante de medula",
                 "Hidroxiureia",
                 "Ácido fólico",
                 "Transfusões mensais por toda a vida"
               ],
-              "resposta": "Transplante de medula óssea",
+              "resposta": "Transplante de medula",
               "explicacao": "Terapias gênicas também estão surgindo.",
               "revisado": false
             },
@@ -2249,16 +2256,17 @@
             },
             {
               "id": "hemato-d2-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de sangramento grave em paciente com hemofilia A?",
+              "tipo": "caso_clinico",
+              "caso": "Menino com hemofilia A chega com sangramento muscular grande na coxa.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Reposição do fator VIII",
-                "Plasma apenas",
+                "Fator VIII",
                 "Vitamina K",
-                "Transfusão de plaquetas"
+                "Transfusão de plaquetas",
+                "Plasma fresco apenas, sem concentrado"
               ],
-              "resposta": "Reposição do fator VIII",
-              "explicacao": "Também se usa emicizumabe na prevenção.",
+              "resposta": "Fator VIII",
+              "explicacao": "Repõe-se o fator que falta; o emicizumabe é usado na prevenção.",
               "revisado": false
             },
             {
@@ -2286,29 +2294,31 @@
             },
             {
               "id": "hemato-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A desmopressina libera fator de von Willebrand e fator ___ dos estoques.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com doença de von Willebrand tipo 1 vai extrair um dente.",
+              "enunciado": "Qual remédio libera o fator dos estoques?",
               "opcoes": [
-                "VIII",
-                "IX",
-                "VII",
-                "X ativado"
+                "Desmopressina",
+                "Varfarina",
+                "Heparina",
+                "Vitamina K por via oral"
               ],
-              "resposta": "VIII",
-              "explicacao": "Útil em formas leves.",
+              "resposta": "Desmopressina",
+              "explicacao": "Libera fator de von Willebrand e fator VIII; é útil em formas leves.",
               "revisado": false
             },
             {
               "id": "hemato-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira medida em paciente com sangramento grave em uso de varfarina?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso em uso de varfarina tem hemorragia cerebral e INR de 6.",
+              "enunciado": "Qual é a primeira medida?",
               "opcoes": [
-                "Complexo protrombínico e vitamina K venosa",
+                "Complexo protrombínico e vitamina K",
                 "Apenas suspender",
-                "Plaquetas",
+                "Transfusão de plaquetas",
                 "Suspender a varfarina e esperar o INR baixar sozinho em alguns dias"
               ],
-              "resposta": "Complexo protrombínico e vitamina K venosa",
+              "resposta": "Complexo protrombínico e vitamina K",
               "explicacao": "O complexo age mais rápido que o plasma.",
               "revisado": false
             },
@@ -2375,16 +2385,17 @@
             },
             {
               "id": "hemato-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual anticoagulante não deve ser usado na síndrome antifosfolípide de alto risco?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com síndrome antifosfolípide triplo positiva teve trombose arterial.",
+              "enunciado": "Qual anticoagulante evitar?",
               "opcoes": [
-                "Anticoagulantes orais diretos",
+                "Rivaroxabana",
                 "Varfarina",
                 "Heparina",
                 "Heparina de baixo peso molecular na gestação"
               ],
-              "resposta": "Anticoagulantes orais diretos",
-              "explicacao": "A varfarina é preferida.",
+              "resposta": "Rivaroxabana",
+              "explicacao": "Os anticoagulantes orais diretos têm mais tromboses nesse grupo; a varfarina é preferida.",
               "revisado": false
             },
             {
@@ -2405,37 +2416,39 @@
             {
               "id": "hemato-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes internados de alto risco devem receber prevenção de trombose.",
-              "resposta": true,
-              "explicacao": "O escore de Padua ajuda a avaliar.",
+              "enunciado": "Idoso internado com pneumonia, acamado e com insuficiência cardíaca não precisa de prevenção de trombose.",
+              "resposta": false,
+              "explicacao": "Falso. É paciente de alto risco (escore de Padua alto) e deve receber profilaxia.",
               "revisado": false
             },
             {
               "id": "hemato-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A trombose de veia ___ causa dor abdominal e ascite, chamada de síndrome de Budd-Chiari.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com policitemia vera tem dor abdominal, fígado grande e ascite.",
+              "enunciado": "Qual veia está trombosada?",
               "opcoes": [
-                "hepática",
-                "renal",
-                "porta",
-                "cava superior"
+                "Hepática",
+                "Renal",
+                "Jugular",
+                "Cava superior"
               ],
-              "resposta": "hepática",
-              "explicacao": "Associada a doenças mieloproliferativas.",
+              "resposta": "Hepática",
+              "explicacao": "É a síndrome de Budd-Chiari, associada a doenças mieloproliferativas.",
               "revisado": false
             },
             {
               "id": "hemato-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando investigar trombofilia hereditária?",
+              "tipo": "caso_clinico",
+              "caso": "Quatro pacientes tiveram trombose venosa.",
+              "enunciado": "Em qual há indicação de investigar trombofilia hereditária?",
               "opcoes": [
-                "Jovem, sítio incomum ou família afetada",
-                "Em todos os casos",
-                "Nunca",
-                "Só em idosos acima de 80 anos com câncer avançado"
+                "Jovem com trombose cerebral",
+                "Idoso com trombose após cirurgia de quadril",
+                "Paciente com câncer",
+                "Mulher após fratura imobilizada"
               ],
-              "resposta": "Jovem, sítio incomum ou família afetada",
-              "explicacao": "Não muda a conduta na maioria dos casos.",
+              "resposta": "Jovem com trombose cerebral",
+              "explicacao": "Investiga-se em jovens, sítios incomuns ou famílias afetadas.",
               "revisado": false
             },
             {
@@ -2531,37 +2544,39 @@
             {
               "id": "hemato-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A trombocitemia essencial tem mutações como JAK2, CALR ou MPL.",
+              "enunciado": "Paciente com plaquetas de 900 mil persistentes e mutação JAK2 pode ter trombocitemia essencial.",
               "resposta": true,
-              "explicacao": "Aumenta o risco de trombose.",
+              "explicacao": "Verdadeiro. JAK2, CALR ou MPL estão presentes na maioria dos casos.",
               "revisado": false
             },
             {
               "id": "hemato-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os remédios ___ como AAS e clopidogrel aumentam o sangramento por afetar as plaquetas.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso em uso de AAS e clopidogrel após stent vai fazer uma biópsia.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "antiagregantes",
-                "anticoagulantes",
-                "antibióticos",
-                "antitérmicos"
+                "Sangramento",
+                "Trombose venosa",
+                "Hipoglicemia",
+                "Alergia ao anestésico local"
               ],
-              "resposta": "antiagregantes",
-              "explicacao": "Devem ser considerados antes de cirurgias.",
+              "resposta": "Sangramento",
+              "explicacao": "Os antiagregantes afetam as plaquetas e aumentam o sangramento.",
               "revisado": false
             },
             {
               "id": "hemato-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame é necessário na suspeita de trombocitopenia por heparina?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em heparina há 7 dias tem plaquetas caindo de 250 mil para 90 mil e trombose na perna.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "Anticorpo anti-PF4 e escore 4T",
+                "Anticorpo anti-PF4",
                 "Hemograma apenas",
                 "INR",
                 "D-dímero e ultrassom das pernas, sem outros exames"
               ],
-              "resposta": "Anticorpo anti-PF4 e escore 4T",
-              "explicacao": "O escore estima a probabilidade.",
+              "resposta": "Anticorpo anti-PF4",
+              "explicacao": "Junto com o escore 4T; suspender a heparina.",
               "revisado": false
             },
             {
@@ -2635,16 +2650,17 @@
             },
             {
               "id": "hemato-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual alteração genética define a leucemia promielocítica aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com sangramento e CIVD tem promielócitos com bastonetes de Auer.",
+              "enunciado": "Qual alteração genética confirma?",
               "opcoes": [
-                "Translocação 15;17 (PML-RARA)",
+                "t(15;17)",
                 "Cromossomo Filadélfia",
                 "Trissomia 21",
                 "Translocação 8;14 com ativação do MYC"
               ],
-              "resposta": "Translocação 15;17 (PML-RARA)",
-              "explicacao": "É alvo do ácido retinoico.",
+              "resposta": "t(15;17)",
+              "explicacao": "É a leucemia promielocítica (PML-RARA), tratada com ácido retinoico.",
               "revisado": false
             },
             {
@@ -2686,8 +2702,9 @@
             },
             {
               "id": "hemato-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal causa de morte na indução da leucemia aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leucemia aguda está na quimioterapia de indução.",
+              "enunciado": "Qual é a principal causa de morte nessa fase?",
               "opcoes": [
                 "Infecção e sangramento",
                 "Infarto",
@@ -2695,7 +2712,7 @@
                 "Diabetes descompensado pelo corticoide"
               ],
               "resposta": "Infecção e sangramento",
-              "explicacao": "O suporte é fundamental.",
+              "explicacao": "O suporte com antibiótico e transfusão é fundamental.",
               "revisado": false
             },
             {
@@ -2791,37 +2808,39 @@
             {
               "id": "hemato-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A mielofibrose primária causa hemácias em lágrima e medula seca à punção.",
-              "resposta": true,
-              "explicacao": "A biópsia mostra fibrose.",
+              "enunciado": "Paciente com baço enorme, hemácias em lágrima e punção de medula seca provavelmente tem leucemia linfoide crônica.",
+              "resposta": false,
+              "explicacao": "Falso. O quadro é de mielofibrose primária; a biópsia mostra fibrose.",
               "revisado": false
             },
             {
               "id": "hemato-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é um inibidor de JAK usado na mielofibrose para reduzir o baço e os sintomas.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com mielofibrose tem baço enorme, suores e perda de peso.",
+              "enunciado": "Qual remédio reduz o baço e os sintomas?",
               "opcoes": [
-                "ruxolitinibe",
-                "imatinibe",
-                "rituximabe",
-                "trastuzumabe"
+                "Ruxolitinibe",
+                "Imatinibe",
+                "Rituximabe",
+                "Trastuzumabe"
               ],
-              "resposta": "ruxolitinibe",
-              "explicacao": "Também é usado na policitemia vera.",
+              "resposta": "Ruxolitinibe",
+              "explicacao": "É um inibidor de JAK, também usado na policitemia vera.",
               "revisado": false
             },
             {
               "id": "hemato-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual paciente com policitemia vera deve receber hidroxiureia?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 68 anos com policitemia vera já teve um AVC.",
+              "enunciado": "Além da flebotomia e do AAS, o que fazer?",
               "opcoes": [
-                "Acima de 60 anos ou trombose prévia",
-                "Todos",
-                "Só mulheres",
-                "Só jovens abaixo de 30 anos sem nenhuma trombose"
+                "Hidroxiureia",
+                "Só observação",
+                "Antibiótico",
+                "Transfusão de hemácias mensal"
               ],
-              "resposta": "Acima de 60 anos ou trombose prévia",
-              "explicacao": "São os pacientes de alto risco.",
+              "resposta": "Hidroxiureia",
+              "explicacao": "Acima de 60 anos ou trombose prévia é alto risco e indica citorredução.",
               "revisado": false
             },
             {
@@ -2887,16 +2906,17 @@
             },
             {
               "id": "hemato-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento moderno da leucemia linfoide crônica que precisa de tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com leucemia linfoide crônica tem anemia progressiva e precisa tratar; tem deleção do TP53.",
+              "enunciado": "Qual tratamento é preferido?",
               "opcoes": [
-                "Inibidores de BTK, como ibrutinibe, ou venetoclax",
-                "Quimioterapia intensa sempre",
+                "Ibrutinibe",
+                "Quimioterapia intensa",
                 "Cirurgia",
-                "Retirada de todos os linfonodos aumentados e radioterapia no corpo todo"
+                "Retirada de todos os linfonodos e radioterapia"
               ],
-              "resposta": "Inibidores de BTK, como ibrutinibe, ou venetoclax",
-              "explicacao": "A mutação do TP53 orienta a escolha.",
+              "resposta": "Ibrutinibe",
+              "explicacao": "Com TP53 alterado, usam-se inibidores de BTK ou venetoclax, não quimioterapia.",
               "revisado": false
             },
             {
@@ -2917,9 +2937,9 @@
             {
               "id": "hemato-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A leucemia de células pilosas tem pancitopenia, baço grande e células com projeções.",
+              "enunciado": "Homem com pancitopenia, baço grande e linfócitos com projeções finas tem leucemia de células pilosas.",
               "resposta": true,
-              "explicacao": "Responde bem à cladribina.",
+              "explicacao": "Verdadeiro. Responde muito bem à cladribina.",
               "revisado": false
             },
             {
@@ -2938,16 +2958,17 @@
             },
             {
               "id": "hemato-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o marcador típico da leucemia linfoide crônica na citometria?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem linfocitose de 30 mil com células pequenas e manchas de Gumprecht.",
+              "enunciado": "Qual marcador na citometria confirma LLC?",
               "opcoes": [
-                "CD5 e CD23 positivos em células B",
+                "CD5 e CD23",
                 "CD34",
                 "CD3 isolado",
-                "CD117 e mieloperoxidase em células mieloides imaturas"
+                "CD117 e mieloperoxidase em células imaturas"
               ],
-              "resposta": "CD5 e CD23 positivos em células B",
-              "explicacao": "Ajuda a diferenciar de outros linfomas.",
+              "resposta": "CD5 e CD23",
+              "explicacao": "Células B com CD5 e CD23 são típicas da LLC.",
               "revisado": false
             },
             {
@@ -3021,16 +3042,17 @@
             },
             {
               "id": "hemato-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame é usado para estadiamento e resposta no linfoma?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com linfoma de Hodgkin recém-diagnosticado vai estadiar a doença.",
+              "enunciado": "Qual exame usar?",
               "opcoes": [
                 "PET-CT",
                 "Raio X",
                 "Ultrassom",
-                "Hemograma"
+                "Hemograma com contagem de linfócitos"
               ],
               "resposta": "PET-CT",
-              "explicacao": "Mostra as áreas com doença ativa.",
+              "explicacao": "O PET-CT mostra as áreas ativas e avalia a resposta.",
               "revisado": false
             },
             {
@@ -3051,15 +3073,16 @@
             {
               "id": "hemato-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O linfoma de Hodgkin tem alta taxa de cura, mesmo em fases avançadas.",
-              "resposta": true,
-              "explicacao": "Mas o tratamento pode ter efeitos tardios.",
+              "enunciado": "Jovem com linfoma de Hodgkin em estágio IV não tem chance de cura.",
+              "resposta": false,
+              "explicacao": "Falso. Mesmo avançado, o Hodgkin tem alta taxa de cura.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O linfoma de células T do adulto está associado ao vírus ___.",
+              "tipo": "caso_clinico",
+              "caso": "Adulto da Bahia tem linfócitos em flor, cálcio alto e lesões de pele.",
+              "enunciado": "Qual vírus está associado?",
               "opcoes": [
                 "HTLV-1",
                 "HIV",
@@ -3067,20 +3090,21 @@
                 "HPV de alto risco"
               ],
               "resposta": "HTLV-1",
-              "explicacao": "É comum em algumas regiões do Brasil.",
+              "explicacao": "É o linfoma/leucemia de células T do adulto.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o linfoma mais comum em pessoas com HIV?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com HIV e CD4 baixo tem massa abdominal que cresce rápido.",
+              "enunciado": "Qual linfoma é mais provável?",
               "opcoes": [
-                "Linfoma difuso de grandes células B",
+                "Difuso de grandes células B",
                 "Hodgkin",
                 "Folicular",
                 "Linfoma MALT do estômago ligado ao Helicobacter"
               ],
-              "resposta": "Linfoma difuso de grandes células B",
+              "resposta": "Difuso de grandes células B",
               "explicacao": "O linfoma primário do sistema nervoso também ocorre.",
               "revisado": false
             },
@@ -3147,16 +3171,17 @@
             },
             {
               "id": "hemato-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do mieloma em pacientes elegíveis?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos, saudável, tem mieloma recém-diagnosticado.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Novos remédios e transplante autólogo",
+                "Indução e transplante autólogo",
                 "Cirurgia",
                 "Radioterapia apenas",
-                "Retirada cirúrgica das lesões ósseas e observação sem remédios"
+                "Retirada cirúrgica das lesões ósseas sem remédios"
               ],
-              "resposta": "Novos remédios e transplante autólogo",
-              "explicacao": "Usam-se bortezomibe, lenalidomida e daratumumabe.",
+              "resposta": "Indução e transplante autólogo",
+              "explicacao": "Usam-se bortezomibe, lenalidomida e daratumumabe antes do transplante.",
               "revisado": false
             },
             {
@@ -3177,37 +3202,39 @@
             {
               "id": "hemato-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes com mieloma devem evitar anti-inflamatórios e contraste quando possível.",
-              "resposta": true,
-              "explicacao": "Pelo risco de lesão renal.",
+              "enunciado": "Paciente com mieloma e dor óssea pode usar anti-inflamatório à vontade e fazer tomografia com contraste sem cuidado.",
+              "resposta": false,
+              "explicacao": "Falso. Deve evitá-los quando possível, pelo risco de lesão renal.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é uma doença de depósito de cadeias leves que afeta coração, rins e nervos.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente tem insuficiência cardíaca, proteinúria, neuropatia e cadeia leve lambda no sangue.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "amiloidose AL",
-                "sarcoidose",
-                "hemocromatose",
-                "gota"
+                "Amiloidose AL",
+                "Sarcoidose",
+                "Hemocromatose",
+                "Gota"
               ],
-              "resposta": "amiloidose AL",
-              "explicacao": "Pode acompanhar o mieloma.",
+              "resposta": "Amiloidose AL",
+              "explicacao": "O depósito de cadeias leves afeta coração, rins e nervos.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre mieloma e gamopatia monoclonal de significado indeterminado?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso tem pico monoclonal de 1 g/dL, sem anemia, cálcio normal, rins normais e sem lesões ósseas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Na gamopatia, sem lesão de órgão e proteína baixa",
-                "São iguais",
-                "A gamopatia é mais grave",
-                "O mieloma não tem proteína monoclonal no sangue nem na urina"
+                "Gamopatia monoclonal (MGUS)",
+                "Mieloma múltiplo",
+                "Leucemia linfoide crônica",
+                "Amiloidose AL com lesão de coração e rins"
               ],
-              "resposta": "Na gamopatia, sem lesão de órgão e proteína baixa",
-              "explicacao": "A gamopatia precisa de seguimento.",
+              "resposta": "Gamopatia monoclonal (MGUS)",
+              "explicacao": "Sem lesão de órgão e com proteína baixa; precisa de seguimento.",
               "revisado": false
             },
             {
@@ -3273,16 +3300,17 @@
             },
             {
               "id": "hemato-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual infecção viral é monitorada após transplante de medula?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente 40 dias após transplante alogênico de medula tem febre e PCR viral positiva no sangue.",
+              "enunciado": "Qual vírus é monitorado de rotina?",
               "opcoes": [
                 "Citomegalovírus",
-                "Influenza apenas",
+                "Influenza",
                 "Rinovírus",
-                "HPV"
+                "Papilomavírus humano"
               ],
               "resposta": "Citomegalovírus",
-              "explicacao": "A reativação pode ser grave.",
+              "explicacao": "A reativação do CMV pode ser grave.",
               "revisado": false
             },
             {
@@ -3303,29 +3331,31 @@
             {
               "id": "hemato-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O efeito do enxerto contra a leucemia ajuda a curar no transplante alogênico.",
-              "resposta": true,
-              "explicacao": "As células do doador atacam o câncer.",
+              "enunciado": "No transplante alogênico, as células do doador não têm nenhum efeito contra a leucemia.",
+              "resposta": false,
+              "explicacao": "Falso. O efeito do enxerto contra a leucemia ajuda a curar.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O registro nacional de doadores de medula óssea no Brasil é o ___.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem saudável de 25 anos quer ser doador de medula óssea.",
+              "enunciado": "Onde se cadastra?",
               "opcoes": [
                 "REDOME",
-                "REDOX",
                 "SINAN",
-                "SUS Medula"
+                "SUS Medula",
+                "Registro de doadores de órgãos após a morte"
               ],
               "resposta": "REDOME",
-              "explicacao": "Qualquer pessoa saudável de 18 a 35 anos pode se cadastrar.",
+              "explicacao": "É o registro nacional; pessoas de 18 a 35 anos podem se cadastrar.",
               "revisado": false
             },
             {
               "id": "hemato-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a chance de um irmão ser HLA idêntico?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com leucemia tem um irmão e precisa de transplante.",
+              "enunciado": "Qual é a chance de o irmão ser HLA idêntico?",
               "opcoes": [
                 "25%",
                 "50%",
@@ -3407,15 +3437,16 @@
             },
             {
               "id": "hemato-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o protocolo de transfusão maciça no trauma?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de trauma em choque hemorrágico grave precisa de muitas bolsas.",
+              "enunciado": "Como fazer a transfusão maciça?",
               "opcoes": [
-                "Hemácias, plasma e plaquetas perto de 1:1:1",
+                "Hemácias, plasma e plaquetas 1:1:1",
                 "Só hemácias",
                 "Só cristaloide",
-                "Vários litros de soro fisiológico antes de qualquer hemocomponente"
+                "Vários litros de soro antes de qualquer hemocomponente"
               ],
-              "resposta": "Hemácias, plasma e plaquetas perto de 1:1:1",
+              "resposta": "Hemácias, plasma e plaquetas 1:1:1",
               "explicacao": "Junto com ácido tranexâmico.",
               "revisado": false
             },
@@ -3444,30 +3475,32 @@
             },
             {
               "id": "hemato-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A sobrecarga de ___ após transfusões repetidas é tratada com quelantes.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com talassemia maior recebe transfusões há anos e tem ferritina de 3.000.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "ferro",
-                "cálcio",
-                "potássio",
-                "sódio"
+                "Quelante de ferro",
+                "Ferro oral",
+                "Cálcio",
+                "Mais transfusões para baixar a ferritina"
               ],
-              "resposta": "ferro",
-              "explicacao": "Comum em talassemia e anemia falciforme.",
+              "resposta": "Quelante de ferro",
+              "explicacao": "A sobrecarga de ferro lesa coração, fígado e glândulas.",
               "revisado": false
             },
             {
               "id": "hemato-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que fazer antes de transfundir um paciente?",
+              "tipo": "caso_clinico",
+              "caso": "A bolsa de sangue chega à enfermaria para um paciente internado.",
+              "enunciado": "O que fazer antes de instalar?",
               "opcoes": [
-                "Tipagem, prova cruzada e conferir a identificação",
-                "Só pedir o sangue",
+                "Conferir identificação e prova cruzada",
                 "Só medir a pressão",
-                "Pedir a bolsa pelo telefone e instalar sem conferir o nome do paciente"
+                "Aquecer a bolsa no micro-ondas",
+                "Instalar logo, sem conferir o nome do paciente para ganhar tempo"
               ],
-              "resposta": "Tipagem, prova cruzada e conferir a identificação",
-              "explicacao": "A dupla checagem evita erros.",
+              "resposta": "Conferir identificação e prova cruzada",
+              "explicacao": "A dupla checagem evita erros graves.",
               "revisado": false
             },
             {
@@ -3533,16 +3566,17 @@
             },
             {
               "id": "hemato-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual paciente com neutropenia febril pode ser tratado em casa?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de mama tem febre e neutrófilos de 400, mas está estável, com MASCC alto e mora perto.",
+              "enunciado": "Qual é a conduta possível?",
               "opcoes": [
-                "Baixo risco pelo MASCC e hospital perto",
-                "Todos",
-                "Só crianças",
-                "Pacientes com pressão baixa e confusão, que querem ficar em casa"
+                "Antibiótico oral em casa",
+                "Internar em UTI",
+                "Observar sem antibiótico",
+                "Suspender a quimioterapia para sempre e dar alta"
               ],
-              "resposta": "Baixo risco pelo MASCC e hospital perto",
-              "explicacao": "Exige seguimento próximo.",
+              "resposta": "Antibiótico oral em casa",
+              "explicacao": "Baixo risco pelo MASCC permite tratamento ambulatorial com seguimento próximo.",
               "revisado": false
             },
             {
@@ -3563,37 +3597,39 @@
             {
               "id": "hemato-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes com risco de lise tumoral devem receber hidratação antes da quimioterapia.",
-              "resposta": true,
-              "explicacao": "A prevenção é essencial.",
+              "enunciado": "Paciente com linfoma volumoso e ácido úrico alto deve iniciar a quimioterapia sem hidratação prévia.",
+              "resposta": false,
+              "explicacao": "Falso. Há risco de lise tumoral; a hidratação e a prevenção são essenciais.",
               "revisado": false
             },
             {
               "id": "hemato-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é contraindicada na deficiência de G6PD por causar hemólise.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com risco de lise tumoral tem deficiência de G6PD.",
+              "enunciado": "Qual remédio é contraindicado?",
               "opcoes": [
-                "rasburicase",
-                "alopurinol",
-                "hidratação",
-                "furosemida"
+                "Rasburicase",
+                "Alopurinol",
+                "Soro fisiológico",
+                "Bicarbonato em dose baixa"
               ],
-              "resposta": "rasburicase",
-              "explicacao": "Nesse caso usa-se alopurinol.",
+              "resposta": "Rasburicase",
+              "explicacao": "A rasburicase causa hemólise na deficiência de G6PD.",
               "revisado": false
             },
             {
               "id": "hemato-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o fator de crescimento usado para acelerar a recuperação dos neutrófilos?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente teve neutropenia febril grave no ciclo anterior de quimioterapia.",
+              "enunciado": "Qual remédio acelera a recuperação dos neutrófilos?",
               "opcoes": [
-                "Filgrastim (G-CSF)",
+                "Filgrastim",
                 "Eritropoetina",
                 "Trombopoetina",
                 "Insulina de ação rápida"
               ],
-              "resposta": "Filgrastim (G-CSF)",
-              "explicacao": "Reduz o tempo de neutropenia.",
+              "resposta": "Filgrastim",
+              "explicacao": "É o G-CSF; reduz o tempo de neutropenia.",
               "revisado": false
             },
             {
@@ -3659,16 +3695,17 @@
             },
             {
               "id": "hemato-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando se dá a imunoglobulina anti-D na gestante Rh negativo?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante Rh negativo, com Coombs indireto negativo, está com 28 semanas.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Com 28 semanas e até 72 h após parto Rh+",
-                "Nunca",
-                "Só no 1º trimestre",
-                "Só se o bebê for Rh negativo, logo depois do nascimento"
+                "Imunoglobulina anti-D",
+                "Nada até o parto",
+                "Transfusão",
+                "Só dar se o bebê nascer Rh negativo"
               ],
-              "resposta": "Com 28 semanas e até 72 h após parto Rh+",
-              "explicacao": "Previne a sensibilização.",
+              "resposta": "Imunoglobulina anti-D",
+              "explicacao": "Repete-se até 72 h após o parto se o bebê for Rh positivo; previne a sensibilização.",
               "revisado": false
             },
             {
@@ -3689,37 +3726,39 @@
             {
               "id": "hemato-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A falta de ferro em crianças pode afetar o desenvolvimento e a aprendizagem.",
-              "resposta": true,
-              "explicacao": "A suplementação é recomendada no primeiro ano.",
+              "enunciado": "A falta de ferro em crianças pequenas não afeta o desenvolvimento, só causa cansaço.",
+              "resposta": false,
+              "explicacao": "Falso. Pode afetar o desenvolvimento e a aprendizagem; a suplementação é recomendada.",
               "revisado": false
             },
             {
               "id": "hemato-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O leite de ___ integral antes de 1 ano é causa comum de anemia ferropriva infantil.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 10 meses toma 1 litro de leite de vaca por dia e está pálida.",
+              "enunciado": "Qual é a causa provável?",
               "opcoes": [
-                "vaca",
-                "peito",
-                "cabra apenas",
-                "soja"
+                "Anemia por falta de ferro",
+                "Leucemia",
+                "Anemia falciforme",
+                "Anemia por falta de vitamina C"
               ],
-              "resposta": "vaca",
-              "explicacao": "Tem pouco ferro e causa perdas pelo intestino.",
+              "resposta": "Anemia por falta de ferro",
+              "explicacao": "O leite de vaca tem pouco ferro e causa perdas pelo intestino.",
               "revisado": false
             },
             {
               "id": "hemato-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a leucemia mais comum em crianças?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos tem palidez, manchas roxas, dor óssea e blastos no sangue.",
+              "enunciado": "Qual leucemia é mais provável?",
               "opcoes": [
-                "Leucemia linfoide aguda",
-                "Leucemia mieloide crônica",
-                "Leucemia linfoide crônica",
-                "Leucemia promielocítica"
+                "Linfoide aguda",
+                "Mieloide crônica",
+                "Linfoide crônica",
+                "Promielocítica"
               ],
-              "resposta": "Leucemia linfoide aguda",
-              "explicacao": "Tem mais de 85% de cura.",
+              "resposta": "Linfoide aguda",
+              "explicacao": "É a mais comum na infância, com mais de 85% de cura.",
               "revisado": false
             },
             {
