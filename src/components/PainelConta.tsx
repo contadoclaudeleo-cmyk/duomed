@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { criarConta, entrarComEmail, entrarComGoogle, useConta } from '../lib/nuvem'
 import { Botao } from './Botao'
+import { arquivoPublico } from '../lib/caminho'
 
 type Aba = 'entrar' | 'criar'
 
@@ -127,7 +128,15 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
 
       <p className="text-center text-xs text-texto-suave">
         Guardamos só seu e-mail e seu progresso, para você continuar de qualquer aparelho. Você pode apagar a conta
-        quando quiser, no perfil.
+        quando quiser, no perfil.{' '}
+        <a
+          href={arquivoPublico('privacidade.html')}
+          target="_blank"
+          rel="noreferrer"
+          className="font-bold text-agua-texto underline underline-offset-2 dark:text-menta"
+        >
+          Política de privacidade
+        </a>
       </p>
     </div>
   )
