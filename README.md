@@ -228,7 +228,7 @@ No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide
 | Ofensiva | Dias seguidos batendo a meta diária (10, 20 ou 30 XP). Zera se pular um dia. | `src/lib/ofensiva.ts` |
 | Revisão | Duas filas. **Erros:** questão errada entra na hora e, a cada acerto na revisão, volta depois de 1, 3 e 7 dias; no acerto seguinte sai da fila. **Acertos:** questão acertada na lição volta depois de 3 e 7 dias e depois sai. Errou, vai para os erros e volta ao começo. | `src/lib/revisao.ts` |
 | Conquistas | Primeira lição, lição perfeita, unidade completa, 7 dias de ofensiva, 100 questões | `src/lib/conquistas.ts` |
-| Ranking | Liga semanal com 14 jogadores fictícios que reinicia toda segunda | `src/lib/ranking.ts` |
+| Ranking | Ranking semanal com os jogadores reais que têm conta (primeiro nome + inicial e XP da semana). Reinicia toda segunda. Precisa da função do arquivo `supabase/ranking.sql` instalada no Supabase | `src/lib/ranking.ts`, `supabase/ranking.sql` |
 | Resolução | Depois de responder uma questão, o comentário (campo `explicacao`) fica escondido. Ele só aparece se a pessoa tocar em "Ver resolução". | `src/components/PainelFeedback.tsx` |
 | Revisão comentada | Ao fim de cada lição ou revisão, o botão "Ver revisão comentada" mostra cada questão com a resposta certa, o que a pessoa marcou e o comentário (campo `explicacao`). Nas lições já concluídas da trilha, o balão da lição também abre o gabarito comentado. | `src/screens/RevisaoComentada.tsx` |
 | Trilha | Na graduação, cada lição libera a próxima. Na residência, todas as lições ficam liberadas (tudo cai na mesma prova) e a trilha tem botões para trocar de área; a próxima lição pendente fica destacada como sugestão. | `src/lib/progresso.ts` |
