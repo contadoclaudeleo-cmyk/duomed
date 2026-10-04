@@ -1863,16 +1863,17 @@
             },
             {
               "id": "psiq-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo é perigoso em overdose?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem ingeriu 30 comprimidos de amitriptilina e tem QRS largo e convulsão.",
+              "enunciado": "Qual remédio usar?",
               "opcoes": [
-                "Tricíclicos, como amitriptilina",
-                "Sertralina",
-                "Fluoxetina",
-                "Escitalopram em dose baixa pela manhã"
+                "Bicarbonato de sódio",
+                "Flumazenil",
+                "Naloxona",
+                "Fisostigmina em bolus rápido"
               ],
-              "resposta": "Tricíclicos, como amitriptilina",
-              "explicacao": "Causam arritmias e convulsões.",
+              "resposta": "Bicarbonato de sódio",
+              "explicacao": "Os tricíclicos são perigosos em overdose.",
               "revisado": false
             },
             {
@@ -1893,37 +1894,39 @@
             {
               "id": "psiq-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Antidepressivos não devem ser parados de repente, pela síndrome de descontinuação.",
-              "resposta": true,
-              "explicacao": "Causa tontura, irritação e sintomas de gripe.",
+              "enunciado": "Paciente pode parar a paroxetina de uma vez, sem sintomas, pois antidepressivos não causam síndrome de descontinuação.",
+              "resposta": false,
+              "explicacao": "Falso. Parar de repente causa tontura, irritação e sintomas de gripe.",
               "revisado": false
             },
             {
               "id": "psiq-d1-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na depressão ___, a eletroconvulsoterapia tem resposta rápida e alta.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com depressão grave tem delírio de que está apodrecendo e parou de comer.",
+              "enunciado": "Qual tratamento tem resposta rápida?",
               "opcoes": [
-                "psicótica",
-                "leve",
-                "sazonal",
-                "atípica com aumento de apetite"
+                "Eletroconvulsoterapia",
+                "Só psicoterapia",
+                "Exercício",
+                "Fluoxetina em dose baixa"
               ],
-              "resposta": "psicótica",
-              "explicacao": "Também em risco de suicídio alto.",
+              "resposta": "Eletroconvulsoterapia",
+              "explicacao": "É depressão psicótica; também se usa em risco de suicídio alto.",
               "revisado": false
             },
             {
               "id": "psiq-d1-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco dos antidepressivos em jovens no início do tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 16 anos vai iniciar antidepressivo.",
+              "enunciado": "O que vigiar nas primeiras semanas?",
               "opcoes": [
-                "Mais ideias suicidas no início; vigiar de perto",
-                "Risco nenhum",
+                "Ideias suicidas",
                 "Euforia",
-                "Risco nenhum, porque antidepressivos só fazem bem para jovens"
+                "Ganho de altura",
+                "Nada, só fazem bem"
               ],
-              "resposta": "Mais ideias suicidas no início; vigiar de perto",
-              "explicacao": "O benefício supera o risco com acompanhamento.",
+              "resposta": "Ideias suicidas",
+              "explicacao": "O benefício supera o risco com acompanhamento próximo.",
               "revisado": false
             },
             {
@@ -1989,13 +1992,14 @@
             },
             {
               "id": "psiq-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da intoxicação grave por lítio?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente em lítio tem confusão, tremor grosseiro e nível de 4,0 com lesão renal.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
                 "Hemodiálise",
                 "Mais lítio",
-                "Diurético tiazídico",
-                "Diurético tiazídico para eliminar o lítio pela urina"
+                "Tiazídico",
+                "Tiazídico para eliminar pela urina"
               ],
               "resposta": "Hemodiálise",
               "explicacao": "A hidratação ajuda nos casos leves.",
@@ -2019,9 +2023,9 @@
             {
               "id": "psiq-d1-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A lamotrigina é útil na prevenção da depressão bipolar.",
+              "enunciado": "Paciente bipolar com depressões recorrentes pode usar lamotrigina, aumentando a dose devagar.",
               "resposta": true,
-              "explicacao": "Deve ser aumentada devagar.",
+              "explicacao": "Verdadeiro. A subida lenta reduz o risco de lesão grave de pele.",
               "revisado": false
             },
             {
@@ -2040,16 +2044,17 @@
             },
             {
               "id": "psiq-d1-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da mania aguda grave?",
+              "tipo": "caso_clinico",
+              "caso": "Homem não dorme há 4 dias, gasta todo o dinheiro e acha que é enviado de Deus.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Antipsicótico e estabilizador de humor",
+                "Antipsicótico e estabilizador",
                 "Antidepressivo",
-                "Benzodiazepínico apenas",
-                "Antidepressivo em dose alta para equilibrar o humor"
+                "Só benzodiazepínico",
+                "Antidepressivo em dose alta"
               ],
-              "resposta": "Antipsicótico e estabilizador de humor",
-              "explicacao": "Pode exigir internação.",
+              "resposta": "Antipsicótico e estabilizador",
+              "explicacao": "É mania aguda grave; pode exigir internação.",
               "revisado": false
             },
             {
@@ -2115,13 +2120,14 @@
             },
             {
               "id": "psiq-d1-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo é considerado seguro na amamentação?",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera com depressão quer continuar amamentando.",
+              "enunciado": "Qual antidepressivo é seguro?",
               "opcoes": [
                 "Sertralina",
                 "Lítio",
                 "Ácido valproico",
-                "Nenhum antidepressivo é permitido"
+                "Nenhum é permitido"
               ],
               "resposta": "Sertralina",
               "explicacao": "Passa pouco para o leite.",
@@ -2145,36 +2151,38 @@
             {
               "id": "psiq-d1-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A escala de Edimburgo rastreia depressão pós-parto.",
+              "enunciado": "A escala de Edimburgo é usada para rastrear depressão pós-parto.",
               "resposta": true,
-              "explicacao": "É simples e validada.",
+              "explicacao": "Verdadeiro. É simples e validada.",
               "revisado": false
             },
             {
               "id": "psiq-d1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A melancolia da ___ (baby blues) é leve e passa em até 2 semanas após o parto.",
+              "tipo": "caso_clinico",
+              "caso": "Puérpera de 4 dias chora fácil, mas cuida bem do bebê e dorme.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "maternidade",
-                "gestação",
-                "infância",
-                "velhice avançada"
+                "Baby blues",
+                "Depressão pós-parto",
+                "Psicose pós-parto",
+                "Transtorno bipolar"
               ],
-              "resposta": "maternidade",
-              "explicacao": "Não precisa de remédio.",
+              "resposta": "Baby blues",
+              "explicacao": "É leve e passa em até 2 semanas, sem remédio.",
               "revisado": false
             },
             {
               "id": "psiq-d1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o efeito da depressão no prognóstico do diabetes?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético deprimido parou de tomar os remédios e a glicada subiu.",
+              "enunciado": "Qual é o efeito da depressão?",
               "opcoes": [
-                "Piora a adesão e o controle da glicose",
+                "Piora a adesão e a glicose",
                 "Melhora",
                 "Cura o diabetes",
-                "Melhora o controle da glicose, porque a pessoa come menos"
+                "Melhora porque come menos"
               ],
-              "resposta": "Piora a adesão e o controle da glicose",
+              "resposta": "Piora a adesão e a glicose",
               "explicacao": "Tratar a depressão ajuda o diabetes.",
               "revisado": false
             },
@@ -2279,37 +2287,39 @@
             {
               "id": "psiq-d2-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A buspirona é uma opção não viciante para ansiedade generalizada.",
+              "enunciado": "Paciente com ansiedade generalizada e histórico de dependência pode usar buspirona, que não vicia.",
               "resposta": true,
-              "explicacao": "Demora semanas para agir.",
+              "explicacao": "Verdadeiro. Demora semanas para agir.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A terapia de ___ expõe o paciente aos poucos ao que teme, reduzindo o medo.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com fobia de elevador tem medo intenso só de pensar nisso.",
+              "enunciado": "Qual terapia é muito eficaz?",
               "opcoes": [
-                "exposição",
-                "sono",
-                "grupo",
-                "dieta sem açúcar"
+                "Exposição gradual",
+                "Sono",
+                "Grupo de oração",
+                "Dieta sem açúcar"
               ],
-              "resposta": "exposição",
-              "explicacao": "É muito eficaz em fobias.",
+              "resposta": "Exposição gradual",
+              "explicacao": "Expõe aos poucos ao que teme, reduzindo o medo.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a comorbidade comum dos transtornos de ansiedade?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com transtorno de pânico bebe todas as noites \"para relaxar\".",
+              "enunciado": "Qual comorbidade é comum?",
               "opcoes": [
-                "Depressão e uso de álcool",
+                "Uso de álcool",
                 "Diabetes",
                 "Câncer",
-                "Nenhuma outra doença costuma aparecer junto"
+                "Nenhuma outra doença"
               ],
-              "resposta": "Depressão e uso de álcool",
-              "explicacao": "Devem ser avaliadas juntas.",
+              "resposta": "Uso de álcool",
+              "explicacao": "Depressão também; devem ser avaliadas juntas.",
               "revisado": false
             },
             {
@@ -2375,16 +2385,17 @@
             },
             {
               "id": "psiq-d2-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre estresse agudo e pós-traumático?",
+              "tipo": "caso_clinico",
+              "caso": "Vítima de assalto tem pesadelos e evita a rua há 2 semanas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Agudo: 3 dias a 1 mês; TEPT: mais de 1 mês",
-                "São iguais",
-                "O agudo dura anos",
-                "O agudo dura anos e o pós-traumático passa em poucos dias"
+                "Estresse agudo",
+                "TEPT",
+                "Ansiedade generalizada",
+                "Fobia social com início na infância"
               ],
-              "resposta": "Agudo: 3 dias a 1 mês; TEPT: mais de 1 mês",
-              "explicacao": "O apoio precoce ajuda.",
+              "resposta": "Estresse agudo",
+              "explicacao": "Dura de 3 dias a 1 mês; acima disso, é TEPT.",
               "revisado": false
             },
             {
@@ -2405,37 +2416,39 @@
             {
               "id": "psiq-d2-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O TOC pode começar na infância, e a família pode participar dos rituais.",
-              "resposta": true,
-              "explicacao": "A orientação familiar é parte do tratamento.",
+              "enunciado": "No TOC infantil, a família não participa dos rituais e não precisa de orientação.",
+              "resposta": false,
+              "explicacao": "Falso. A família pode participar dos rituais; a orientação familiar faz parte do tratamento.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O transtorno ___ corporal é a preocupação excessiva com defeitos que os outros não veem.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem acha o nariz deformado, ninguém vê defeito e já fez 3 cirurgias.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "dismórfico",
-                "alimentar",
-                "obsessivo",
-                "ansioso"
+                "Dismorfia corporal",
+                "Anorexia",
+                "TOC clássico",
+                "Ansiedade generalizada com pânico"
               ],
-              "resposta": "dismórfico",
-              "explicacao": "Pode levar a muitas cirurgias.",
+              "resposta": "Dismorfia corporal",
+              "explicacao": "É a preocupação excessiva com defeitos que os outros não veem.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sintoma diferencia o TOC de preocupações comuns?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher lava as mãos 3 horas por dia e chega atrasada ao trabalho.",
+              "enunciado": "O que diferencia TOC de preocupação comum?",
               "opcoes": [
-                "Sofrimento e mais de 1 hora por dia",
-                "Ter alguma preocupação",
+                "Sofrimento e tempo gasto",
+                "Ter preocupação",
                 "Gostar de organização",
-                "Gostar de deixar a casa arrumada e ser caprichoso no trabalho"
+                "Ser caprichoso no trabalho"
               ],
-              "resposta": "Sofrimento e mais de 1 hora por dia",
-              "explicacao": "O prejuízo na vida é o critério.",
+              "resposta": "Sofrimento e tempo gasto",
+              "explicacao": "Mais de 1 hora por dia com prejuízo é critério.",
               "revisado": false
             },
             {
@@ -2501,16 +2514,17 @@
             },
             {
               "id": "psiq-d2-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da simulação?",
+              "tipo": "caso_clinico",
+              "caso": "Réu passa a dizer que ouve vozes só após ser preso, e os sintomas mudam conforme quem pergunta.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Sintomas conscientes para ganho externo",
-                "É inconsciente",
-                "Não tem ganho",
-                "Sintomas inconscientes, sem nenhum ganho, como numa psicose"
+                "Simulação",
+                "Esquizofrenia",
+                "Transtorno factício",
+                "Delirium"
               ],
-              "resposta": "Sintomas conscientes para ganho externo",
-              "explicacao": "Ex.: afastamento ou indenização.",
+              "resposta": "Simulação",
+              "explicacao": "Sintomas conscientes para ganho externo.",
               "revisado": false
             },
             {
@@ -2531,37 +2545,39 @@
             {
               "id": "psiq-d2-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Antidepressivos ajudam em vários quadros de dor crônica.",
+              "enunciado": "Paciente com fibromialgia pode se beneficiar de duloxetina ou amitriptilina.",
               "resposta": true,
-              "explicacao": "Como a duloxetina e a amitriptilina.",
+              "explicacao": "Verdadeiro. Antidepressivos ajudam em vários quadros de dor crônica.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ganho ___ é o benefício que o paciente obtém dos sintomas, como atenção ou afastamento.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com dor lombar recebe muita atenção da família e fica afastado do trabalho.",
+              "enunciado": "Como se chama esse benefício?",
               "opcoes": [
-                "secundário",
-                "primário",
-                "financeiro apenas",
-                "inexistente em qualquer caso"
+                "Ganho secundário",
+                "Ganho primário",
+                "Ganho financeiro",
+                "Inexistente em qualquer caso"
               ],
-              "resposta": "secundário",
+              "resposta": "Ganho secundário",
               "explicacao": "Pode manter os sintomas sem ser intencional.",
               "revisado": false
             },
             {
               "id": "psiq-d2-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco dos exames repetidos em quem tem ansiedade de doença?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com medo de câncer faz tomografias todo mês.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Aumentam a ansiedade e os achados sem valor",
-                "Curam a ansiedade",
-                "Diminuem os sintomas",
-                "Curam a ansiedade, porque os exames normais tranquilizam para sempre"
+                "Mais ansiedade",
+                "Cura a ansiedade",
+                "Diminui os sintomas",
+                "Tranquiliza para sempre o paciente"
               ],
-              "resposta": "Aumentam a ansiedade e os achados sem valor",
-              "explicacao": "Achados incidentais geram mais medo.",
+              "resposta": "Mais ansiedade",
+              "explicacao": "Achados incidentais sem valor geram mais medo.",
               "revisado": false
             },
             {
@@ -2635,16 +2651,17 @@
             },
             {
               "id": "psiq-d3-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a vantagem do antipsicótico de depósito (injetável mensal)?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com esquizofrenia recai sempre que esquece os remédios.",
+              "enunciado": "Qual é a vantagem do antipsicótico de depósito?",
               "opcoes": [
                 "Melhora a adesão",
-                "Mais barato sempre",
+                "Mais barato",
                 "Sem efeitos",
-                "Efeito imediato"
+                "Efeito imediato e sem nenhum efeito colateral"
               ],
               "resposta": "Melhora a adesão",
-              "explicacao": "Útil em quem esquece ou recusa os remédios.",
+              "explicacao": "É injetável mensal.",
               "revisado": false
             },
             {
@@ -2665,37 +2682,39 @@
             {
               "id": "psiq-d3-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A acatisia é a inquietação intensa causada por antipsicóticos.",
+              "enunciado": "Paciente em haloperidol que não consegue ficar parado e anda o tempo todo pode ter acatisia.",
               "resposta": true,
-              "explicacao": "O propranolol pode ajudar.",
+              "explicacao": "Verdadeiro. O propranolol pode ajudar.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ com a família reduz recaídas na esquizofrenia.",
+              "tipo": "caso_clinico",
+              "caso": "Família de paciente com esquizofrenia briga muito e critica o paciente.",
+              "enunciado": "Qual intervenção reduz recaídas?",
               "opcoes": [
-                "psicoeducação",
-                "briga",
-                "separação",
-                "internação prolongada"
+                "Psicoeducação familiar",
+                "Separação",
+                "Internação longa",
+                "Mais remédio, sem conversar com a família"
               ],
-              "resposta": "psicoeducação",
-              "explicacao": "Ensina a lidar com a doença.",
+              "resposta": "Psicoeducação familiar",
+              "explicacao": "Ensina a família a lidar com a doença.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal causa de morte precoce em pessoas com esquizofrenia?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos com esquizofrenia, obeso e fumante.",
+              "enunciado": "Qual é a principal causa de morte precoce nesse grupo?",
               "opcoes": [
-                "Doença cardiovascular e suicídio",
-                "Acidentes apenas",
+                "Doença cardiovascular",
+                "Acidentes",
                 "Câncer de pele",
-                "Câncer de pele por exposição ao sol"
+                "Infecções de pele por falta de higiene"
               ],
-              "resposta": "Doença cardiovascular e suicídio",
-              "explicacao": "Vivem em média 15 a 20 anos menos.",
+              "resposta": "Doença cardiovascular",
+              "explicacao": "Junto com suicídio; vivem 15 a 20 anos menos.",
               "revisado": false
             },
             {
@@ -2761,16 +2780,17 @@
             },
             {
               "id": "psiq-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal sugere causa orgânica em uma psicose?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 70 anos sem doença psiquiátrica tem alucinações visuais e confusão há 2 dias.",
+              "enunciado": "O que sugere?",
               "opcoes": [
-                "Início súbito, idade alta, confusão e alucinação visual",
-                "Início na adolescência",
-                "Vozes comentando",
-                "Vozes que comentam os atos e delírio de perseguição na adolescência"
+                "Causa orgânica",
+                "Esquizofrenia",
+                "Depressão",
+                "Transtorno de personalidade"
               ],
-              "resposta": "Início súbito, idade alta, confusão e alucinação visual",
-              "explicacao": "Exigem investigação.",
+              "resposta": "Causa orgânica",
+              "explicacao": "Início súbito, idade alta e alucinação visual exigem investigação.",
               "revisado": false
             },
             {
@@ -2791,37 +2811,39 @@
             {
               "id": "psiq-d3-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O uso de corticoide em dose alta pode causar mania ou psicose.",
-              "resposta": true,
-              "explicacao": "Os sintomas melhoram ao reduzir a dose.",
+              "enunciado": "Paciente em prednisona 60 mg que fica eufórico e sem dormir não pode ter relação com o corticoide.",
+              "resposta": false,
+              "explicacao": "Falso. O corticoide em dose alta pode causar mania ou psicose; melhora ao reduzir.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O transtorno psicótico ___ dura menos de 1 mês e volta ao normal.",
+              "tipo": "caso_clinico",
+              "caso": "Após a morte do pai, jovem fica com delírios por 10 dias e volta ao normal.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "breve",
-                "crônico",
-                "grave",
-                "persistente"
+                "Psicose breve",
+                "Esquizofrenia",
+                "Transtorno delirante",
+                "Psicose persistente de longa duração"
               ],
-              "resposta": "breve",
-              "explicacao": "Pode ser desencadeado por estresse.",
+              "resposta": "Psicose breve",
+              "explicacao": "O transtorno psicótico breve dura menos de 1 mês.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o transtorno delirante?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos tem certeza de que a esposa o trai, sem provas; trabalha normalmente e não tem alucinações.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Delírio fixo, sem alucinações, com vida preservada",
+                "Transtorno delirante",
                 "Esquizofrenia",
                 "Mania",
-                "Demência com perda de memória e alucinações visuais"
+                "Demência com alucinações"
               ],
-              "resposta": "Delírio fixo, sem alucinações, com vida preservada",
-              "explicacao": "Exemplo: ciúme patológico.",
+              "resposta": "Transtorno delirante",
+              "explicacao": "É o ciúme patológico; a vida fica preservada.",
               "revisado": false
             },
             {
@@ -2887,15 +2909,16 @@
             },
             {
               "id": "psiq-d3-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco da contenção física prolongada?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente agitado está contido no leito há 12 horas, sem reavaliação.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Trombose, lesões e morte súbita",
+                "Trombose e morte súbita",
                 "Melhora",
                 "Cura",
-                "Risco nenhum; pode durar quanto tempo for preciso"
+                "Nenhum, pode durar o quanto for preciso"
               ],
-              "resposta": "Trombose, lesões e morte súbita",
+              "resposta": "Trombose e morte súbita",
               "explicacao": "Exige monitorização e registro.",
               "revisado": false
             },
@@ -2917,37 +2940,39 @@
             {
               "id": "psiq-d3-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A cetamina e o midazolam podem ser usados em agitação grave em ambiente controlado.",
+              "enunciado": "Na agitação grave em ambiente controlado e monitorado, cetamina ou midazolam podem ser usados.",
               "resposta": true,
-              "explicacao": "Exigem monitorização.",
+              "explicacao": "Verdadeiro. Exigem monitorização.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A técnica de ___ verbal usa calma, escuta e espaço para acalmar o paciente agitado.",
+              "tipo": "caso_clinico",
+              "caso": "Paciente agitado grita na emergência.",
+              "enunciado": "Qual é o primeiro passo?",
               "opcoes": [
-                "desescalada",
-                "contenção",
-                "punição",
-                "isolamento"
+                "Desescalada verbal",
+                "Contenção",
+                "Punição",
+                "Isolamento em quarto fechado"
               ],
-              "resposta": "desescalada",
-              "explicacao": "É o primeiro passo.",
+              "resposta": "Desescalada verbal",
+              "explicacao": "Usa calma, escuta e espaço.",
               "revisado": false
             },
             {
               "id": "psiq-d3-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira coisa a avaliar em um paciente agitado?",
+              "tipo": "caso_clinico",
+              "caso": "Homem diabético chega agitado e confuso.",
+              "enunciado": "O que avaliar primeiro?",
               "opcoes": [
-                "Segurança e causas orgânicas, como hipoglicemia",
+                "Glicemia e segurança",
                 "O diagnóstico psiquiátrico",
                 "O convênio",
-                "O convênio e a forma de pagamento antes de qualquer atendimento"
+                "A forma de pagamento"
               ],
-              "resposta": "Segurança e causas orgânicas, como hipoglicemia",
-              "explicacao": "A glicemia é obrigatória.",
+              "resposta": "Glicemia e segurança",
+              "explicacao": "Causas orgânicas, como hipoglicemia, vêm antes.",
               "revisado": false
             },
             {
@@ -3021,16 +3046,17 @@
             },
             {
               "id": "psiq-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual benzodiazepínico é preferido em pacientes com doença do fígado?",
+              "tipo": "caso_clinico",
+              "caso": "Alcoolista com cirrose está em abstinência.",
+              "enunciado": "Qual benzodiazepínico é preferido?",
               "opcoes": [
-                "Lorazepam ou oxazepam",
+                "Lorazepam",
                 "Diazepam",
                 "Clonazepam",
                 "Alprazolam de liberação lenta"
               ],
-              "resposta": "Lorazepam ou oxazepam",
-              "explicacao": "Não dependem tanto do fígado.",
+              "resposta": "Lorazepam",
+              "explicacao": "Lorazepam e oxazepam dependem menos do fígado.",
               "revisado": false
             },
             {
@@ -3051,15 +3077,16 @@
             {
               "id": "psiq-d4-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O delirium tremens tem mortalidade alta sem tratamento.",
-              "resposta": true,
-              "explicacao": "Exige UTI muitas vezes.",
+              "enunciado": "O delirium tremens é benigno e passa sozinho em casa, sem risco de morte.",
+              "resposta": false,
+              "explicacao": "Falso. Tem mortalidade alta sem tratamento e muitas vezes exige UTI.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A escala ___ avalia a gravidade da abstinência alcoólica.",
+              "tipo": "caso_clinico",
+              "caso": "Alcoolista internado tem tremor e sudorese no 2º dia.",
+              "enunciado": "Qual escala guia a dose de benzodiazepínico?",
               "opcoes": [
                 "CIWA-Ar",
                 "Glasgow",
@@ -3067,21 +3094,22 @@
                 "PHQ-9"
               ],
               "resposta": "CIWA-Ar",
-              "explicacao": "Guia a dose de benzodiazepínico.",
+              "explicacao": "Avalia a gravidade da abstinência.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal sugere encefalopatia de Wernicke?",
+              "tipo": "caso_clinico",
+              "caso": "Alcoolista desnutrido tem confusão, marcha instável e nistagmo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Confusão, marcha instável e olhos alterados",
-                "Febre",
-                "Tosse",
-                "Febre alta, tosse com catarro amarelo e diarreia"
+                "Encefalopatia de Wernicke",
+                "Pneumonia",
+                "Gripe",
+                "Gastroenterite com febre e diarreia"
               ],
-              "resposta": "Confusão, marcha instável e olhos alterados",
-              "explicacao": "Nem todos têm a tríade.",
+              "resposta": "Encefalopatia de Wernicke",
+              "explicacao": "Nem todos têm a tríade; dar tiamina.",
               "revisado": false
             },
             {
@@ -3147,15 +3175,16 @@
             },
             {
               "id": "psiq-d4-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco de dar naloxona em dose alta a dependente de opioide?",
+              "tipo": "caso_clinico",
+              "caso": "Usuário crônico de heroína em overdose recebe 2 mg de naloxona de uma vez.",
+              "enunciado": "Qual é o risco?",
               "opcoes": [
-                "Abstinência súbita e agitação",
-                "Risco nenhum",
+                "Abstinência súbita",
+                "Nenhum risco",
                 "Sono",
-                "Sono profundo e respiração lenta"
+                "Respiração lenta e sono profundo"
               ],
-              "resposta": "Abstinência súbita e agitação",
+              "resposta": "Abstinência súbita",
               "explicacao": "Usar dose baixa e repetir se necessário.",
               "revisado": false
             },
@@ -3177,37 +3206,39 @@
             {
               "id": "psiq-d4-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A abstinência de opioides é muito desconfortável, mas raramente fatal.",
-              "resposta": true,
-              "explicacao": "Diferente da abstinência de álcool e benzodiazepínicos.",
+              "enunciado": "A abstinência de opioides tem a mesma mortalidade que a de álcool.",
+              "resposta": false,
+              "explicacao": "Falso. É muito desconfortável, mas raramente fatal, diferente da de álcool.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é um opioide sintético muito potente ligado a muitas mortes por overdose.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem usou um comprimido falsificado e parou de respirar; o exame mostra um opioide muito potente.",
+              "enunciado": "Qual é o provável?",
               "opcoes": [
-                "fentanil",
-                "tramadol",
-                "codeína",
-                "morfina oral"
+                "Fentanil",
+                "Tramadol",
+                "Codeína",
+                "Morfina oral"
               ],
-              "resposta": "fentanil",
+              "resposta": "Fentanil",
               "explicacao": "Pequenas quantidades matam.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a característica da intoxicação por maconha sintética?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem usou maconha sintética e tem agitação, psicose e convulsão.",
+              "enunciado": "O que é típico dessa droga?",
               "opcoes": [
-                "Agitação, psicose e convulsões piores que a comum",
+                "Efeitos piores e imprevisíveis",
                 "Sono leve",
                 "Só fome",
-                "Efeito mais leve que a maconha comum, só com sono e fome"
+                "Efeito mais leve que a maconha comum"
               ],
-              "resposta": "Agitação, psicose e convulsões piores que a comum",
-              "explicacao": "É imprevisível.",
+              "resposta": "Efeitos piores e imprevisíveis",
+              "explicacao": "É mais perigosa que a maconha comum.",
               "revisado": false
             },
             {
@@ -3273,15 +3304,16 @@
             },
             {
               "id": "psiq-d4-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o benefício de parar de fumar em 1 ano?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos parou de fumar há 1 ano.",
+              "enunciado": "O que aconteceu com o risco de infarto?",
               "opcoes": [
-                "O risco de infarto cai pela metade",
-                "Só melhora a pele",
-                "Cura o câncer",
-                "Benefício nenhum; o dano do cigarro é permanente"
+                "Caiu pela metade",
+                "Ficou igual",
+                "Aumentou",
+                "Nada, o dano é permanente"
               ],
-              "resposta": "O risco de infarto cai pela metade",
+              "resposta": "Caiu pela metade",
               "explicacao": "Os benefícios começam em horas.",
               "revisado": false
             },
@@ -3303,36 +3335,38 @@
             {
               "id": "psiq-d4-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O cigarro eletrônico também causa dependência e danos ao pulmão.",
-              "resposta": true,
-              "explicacao": "Não é proibido apenas por moda.",
+              "enunciado": "O cigarro eletrônico não causa dependência nem lesão pulmonar.",
+              "resposta": false,
+              "explicacao": "Falso. Causa dependência e danos ao pulmão.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O jogo ___ é um vício comportamental com prejuízo financeiro e familiar.",
+              "tipo": "caso_clinico",
+              "caso": "Homem perdeu as economias em apostas online e mente à família.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "patológico",
-                "social",
-                "recreativo",
-                "ocasional"
+                "Jogo patológico",
+                "Jogo social",
+                "Jogo recreativo",
+                "Mania"
               ],
-              "resposta": "patológico",
+              "resposta": "Jogo patológico",
               "explicacao": "Também chamado de transtorno do jogo.",
               "revisado": false
             },
             {
               "id": "psiq-d4-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do transtorno do jogo?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com transtorno do jogo quer tratamento.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Terapia cognitivo-comportamental e grupos",
+                "TCC e grupos",
                 "Antibiótico",
                 "Cirurgia",
-                "Antibiótico venoso e cirurgia cerebral de urgência"
+                "Antibiótico venoso e cirurgia cerebral"
               ],
-              "resposta": "Terapia cognitivo-comportamental e grupos",
+              "resposta": "TCC e grupos",
               "explicacao": "Bloquear o acesso a apostas ajuda.",
               "revisado": false
             },
@@ -3407,16 +3441,17 @@
             },
             {
               "id": "psiq-d5-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal físico sugere bulimia?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de peso normal tem calos no dorso da mão e parótidas aumentadas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Calos nas mãos e parótidas grandes",
-                "Cabelo grosso",
-                "Ganho de músculos",
-                "Cabelo grosso e brilhante, com unhas fortes"
+                "Bulimia",
+                "Anorexia",
+                "Caxumba",
+                "Hipotireoidismo"
               ],
-              "resposta": "Calos nas mãos e parótidas grandes",
-              "explicacao": "Também erosão dos dentes.",
+              "resposta": "Bulimia",
+              "explicacao": "Também há erosão dos dentes.",
               "revisado": false
             },
             {
@@ -3437,34 +3472,36 @@
             {
               "id": "psiq-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O suicídio em adolescentes pode ser precedido por mudanças de comportamento e isolamento.",
+              "enunciado": "Adolescente que se isola e doa seus objetos favoritos pode estar em risco de suicídio.",
               "resposta": true,
-              "explicacao": "Pais e escola devem estar atentos.",
+              "explicacao": "Verdadeiro. Pais e escola devem estar atentos a mudanças de comportamento.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l1-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O transtorno do espectro ___ exige intervenções precoces de terapia e apoio escolar.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos tem diagnóstico de autismo.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "autista",
-                "ansioso",
-                "bipolar",
-                "psicótico"
+                "Intervenção precoce",
+                "Esperar a escola",
+                "Remédio só",
+                "Internação em hospital psiquiátrico"
               ],
-              "resposta": "autista",
-              "explicacao": "Não tem cura, mas o desenvolvimento melhora.",
+              "resposta": "Intervenção precoce",
+              "explicacao": "Terapias e apoio escolar melhoram o desenvolvimento.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l1-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo é aprovado para depressão em adolescentes?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 15 anos com depressão moderada não melhorou com psicoterapia.",
+              "enunciado": "Qual antidepressivo é aprovado?",
               "opcoes": [
                 "Fluoxetina",
                 "Amitriptilina",
                 "Paroxetina",
-                "Nenhum antidepressivo é aprovado"
+                "Nenhum é aprovado"
               ],
               "resposta": "Fluoxetina",
               "explicacao": "Com acompanhamento próximo.",
@@ -3533,16 +3570,17 @@
             },
             {
               "id": "psiq-d5-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando a eletroconvulsoterapia pode ser usada na gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 28 semanas tem depressão psicótica com risco de suicídio, sem resposta a remédios.",
+              "enunciado": "Pode fazer eletroconvulsoterapia?",
               "opcoes": [
-                "Depressão grave ou psicose com risco, se remédios falham",
-                "Nunca",
-                "Sempre",
-                "Nunca, porque a ECT é proibida em qualquer fase da gravidez"
+                "Sim, com cuidados",
+                "Não, nunca",
+                "Só após o parto",
+                "Não, é proibida na gravidez"
               ],
-              "resposta": "Depressão grave ou psicose com risco, se remédios falham",
-              "explicacao": "É segura com cuidados.",
+              "resposta": "Sim, com cuidados",
+              "explicacao": "É segura e útil na depressão grave ou psicose com risco.",
               "revisado": false
             },
             {
@@ -3563,37 +3601,39 @@
             {
               "id": "psiq-d5-l2-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A psicose pós-parto está muito ligada ao transtorno bipolar.",
-              "resposta": true,
-              "explicacao": "O risco é alto em quem já tem bipolaridade.",
+              "enunciado": "Puérpera com transtorno bipolar tem baixo risco de psicose pós-parto.",
+              "resposta": false,
+              "explicacao": "Falso. A psicose pós-parto está muito ligada ao transtorno bipolar; o risco é alto.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l2-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "O uso de ___ na gestação pode causar síndrome alcoólica fetal.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê tem face com lábio superior fino, filtro liso e baixo peso; a mãe bebeu na gravidez.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "álcool",
-                "ferro",
-                "ácido fólico",
-                "vitamina D"
+                "Síndrome alcoólica fetal",
+                "Síndrome de Down",
+                "Rubéola congênita",
+                "Hipotireoidismo congênito"
               ],
-              "resposta": "álcool",
-              "explicacao": "Não há dose segura.",
+              "resposta": "Síndrome alcoólica fetal",
+              "explicacao": "Não há dose segura de álcool na gestação.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l2-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o cuidado com o bebê de mãe que usou antidepressivo no fim da gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante usou sertralina até o parto.",
+              "enunciado": "Qual é o cuidado com o bebê?",
               "opcoes": [
-                "Observar adaptação leve nos primeiros dias",
+                "Observar nos primeiros dias",
                 "Internar 1 mês",
                 "Suspender amamentação",
-                "Internar o bebê na UTI por um mês e suspender a amamentação"
+                "UTI por um mês e sem amamentar"
               ],
-              "resposta": "Observar adaptação leve nos primeiros dias",
-              "explicacao": "Os sintomas costumam ser leves.",
+              "resposta": "Observar nos primeiros dias",
+              "explicacao": "Pode haver adaptação leve; os sintomas costumam ser leves.",
               "revisado": false
             },
             {
@@ -3659,16 +3699,17 @@
             },
             {
               "id": "psiq-d5-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é a reforma psiquiátrica brasileira?",
+              "tipo": "caso_clinico",
+              "caso": "Estudante pergunta sobre a política de saúde mental no Brasil desde 2001.",
+              "enunciado": "O que propôs a reforma psiquiátrica?",
               "opcoes": [
-                "Troca dos hospícios por cuidado na comunidade",
+                "Cuidado na comunidade",
                 "Mais manicômios",
                 "Fim do tratamento",
-                "Aumento dos manicômios e internação longa de todos os pacientes"
+                "Internação longa de todos"
               ],
-              "resposta": "Troca dos hospícios por cuidado na comunidade",
-              "explicacao": "Valoriza o cuidado em liberdade.",
+              "resposta": "Cuidado na comunidade",
+              "explicacao": "Trocou os hospícios por cuidado em liberdade.",
               "revisado": false
             },
             {
@@ -3689,37 +3730,39 @@
             {
               "id": "psiq-d5-l3-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O sigilo pode ser quebrado se o paciente ameaçar matar uma pessoa específica.",
-              "resposta": true,
-              "explicacao": "É justa causa para proteger a vítima.",
+              "enunciado": "Paciente que ameaça matar a ex-esposa, de forma concreta, tem o sigilo protegido mesmo assim.",
+              "resposta": false,
+              "explicacao": "Falso. É justa causa para quebrar o sigilo e proteger a vítima.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os serviços ___ terapêuticos acolhem pessoas que ficaram anos em hospitais psiquiátricos.",
+              "tipo": "caso_clinico",
+              "caso": "Homem ficou 30 anos internado em hospital psiquiátrico e recebeu alta sem família.",
+              "enunciado": "Onde pode morar?",
               "opcoes": [
-                "residenciais",
-                "hospitalares",
-                "prisionais",
-                "escolares"
+                "Residência terapêutica",
+                "Hospital",
+                "Presídio",
+                "Abrigo em hospital geral para sempre"
               ],
-              "resposta": "residenciais",
-              "explicacao": "Fazem parte da reinserção social.",
+              "resposta": "Residência terapêutica",
+              "explicacao": "Os serviços residenciais terapêuticos fazem parte da reinserção social.",
               "revisado": false
             },
             {
               "id": "psiq-d5-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel do CAPS AD?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com uso pesado de crack quer ajuda no território.",
+              "enunciado": "Qual serviço procurar?",
               "opcoes": [
-                "Cuidar de quem tem problema com álcool e drogas",
-                "Atender crianças com câncer",
-                "Fazer cirurgias",
-                "Vender remédios controlados sem receita para quem pedir no balcão"
+                "CAPS AD",
+                "CAPS infantil",
+                "Centro cirúrgico",
+                "Farmácia sem receita"
               ],
-              "resposta": "Cuidar de quem tem problema com álcool e drogas",
-              "explicacao": "Funciona com equipe multiprofissional.",
+              "resposta": "CAPS AD",
+              "explicacao": "Cuida de quem tem problema com álcool e drogas, com equipe multiprofissional.",
               "revisado": false
             },
             {
