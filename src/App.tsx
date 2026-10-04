@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom'
 import { useJogo } from './store/useJogo'
+import { useConta } from './lib/nuvem'
+import { ContaObrigatoria } from './screens/ContaObrigatoria'
 import { Layout } from './components/Layout'
 import { BoasVindas } from './screens/BoasVindas'
 import { Home } from './screens/Home'
@@ -73,12 +75,16 @@ export function App() {
   )
 }
 
-/** Sem cadastro, todas as telas mandam para as boas-vindas */
+/** Sem cadastro, todas as telas mandam para as boas-vindas. A conta é obrigatória. */
 function ExigeUsuario() {
   const temUsuario = useJogo((s) => !!s.usuario)
   const testePendente = useJogo((s) => s.testeNivelPendente)
+  const logado = useConta((s) => !!s.sessao)
+  const verificada = useConta((s) => s.verificada)
   const { pathname } = useLocation()
   if (!temUsuario) return <Navigate to="/boas-vindas" replace />
+  // Quem começou antes da conta ser obrigatória entra agora; o progresso do aparelho vai junto
+  if (verificada && !logado) return <ContaObrigatoria />
   // Logo após o cadastro, a pessoa passa pelo teste de nível (pode pular)
   if (testePendente && pathname !== '/nivelamento') return <Navigate to="/nivelamento" replace />
   return <Outlet />

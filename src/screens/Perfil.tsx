@@ -41,7 +41,6 @@ import { Modal } from '../components/Modal'
 import { AbasModo, AbasNivel } from '../components/AbasModo'
 import { NumeroAnimado } from '../components/Animacoes'
 import { tocarSom } from '../lib/sons'
-import { PainelConta } from '../components/PainelConta'
 import { apagarConta, apagarProgressoNaNuvem, sair, useConta } from '../lib/nuvem'
 
 export function Perfil() {
@@ -294,13 +293,9 @@ function SecaoConta() {
   const navegar = useNavigate()
   const sessao = useConta((s) => s.sessao)
   const status = useConta((s) => s.status)
-  const [abrirConta, setAbrirConta] = useState(false)
   const [confirmarApagar, setConfirmarApagar] = useState(false)
   const [ocupado, setOcupado] = useState(false)
   const [erro, setErro] = useState<string | null>(null)
-
-  // Ao entrar pela janela do perfil, ela fecha sozinha
-  if (sessao && abrirConta) setAbrirConta(false)
 
   async function executar(acao: () => Promise<void>) {
     setErro(null)
@@ -315,28 +310,8 @@ function SecaoConta() {
     }
   }
 
-  if (!sessao) {
-    return (
-      <div className="flex flex-col gap-3 rounded-2xl border-2 border-borda bg-superficie p-4">
-        <div className="flex items-start gap-3">
-          <CloudOff className="mt-0.5 h-6 w-6 shrink-0 text-texto-suave" strokeWidth={2.4} aria-hidden />
-          <div>
-            <p className="font-extrabold">Seu progresso está só neste aparelho</p>
-            <p className="text-sm text-texto-suave">
-              Crie uma conta para salvar na nuvem e continuar no celular ou no computador.
-            </p>
-          </div>
-        </div>
-        <Botao larguraTotal onClick={() => setAbrirConta(true)}>
-          Criar conta ou entrar
-        </Botao>
-        <Modal aberto={abrirConta} aoFechar={() => setAbrirConta(false)}>
-          <h2 className="mb-4 text-center text-xl font-extrabold">Salvar meu progresso</h2>
-          <PainelConta />
-        </Modal>
-      </div>
-    )
-  }
+  // A conta é obrigatória (ver App.tsx); sem sessão aqui, nada a mostrar
+  if (!sessao) return null
 
   const textoStatus = {
     'sem-conta': '',

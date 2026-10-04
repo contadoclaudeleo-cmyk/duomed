@@ -22,6 +22,8 @@ interface EstadoConta {
   carregado: boolean
   /** O botão do Google só aparece quando o login com Google está ligado no Supabase */
   googleAtivo: boolean
+  /** true depois que o app descobriu se há alguém logado (lê a sessão guardada no aparelho) */
+  verificada: boolean
 }
 
 export const useConta = create<EstadoConta>(() => ({
@@ -30,6 +32,7 @@ export const useConta = create<EstadoConta>(() => ({
   erro: null,
   carregado: false,
   googleAtivo: false,
+  verificada: false,
 }))
 
 const ESPERA_ENVIO_MS = 2_000
@@ -193,6 +196,7 @@ export function iniciarNuvem() {
     const contaNova = !!sessao && antes?.user.id !== sessao.user.id
     useConta.setState({
       sessao,
+      verificada: true,
       status: sessao ? useConta.getState().status : 'sem-conta',
       // Conta recém-conectada: espera a primeira junção com a nuvem
       carregado: sessao ? !contaNova && useConta.getState().carregado : true,

@@ -5,9 +5,6 @@ import { useJogo } from '../store/useJogo'
 import { buscarRanking, diasParaFimDaSemana, xpDaSemana, type ResultadoRanking } from '../lib/ranking'
 import { enviarAgora, useConta } from '../lib/nuvem'
 import { useAgora } from '../lib/hooks'
-import { Botao } from '../components/Botao'
-import { Modal } from '../components/Modal'
-import { PainelConta } from '../components/PainelConta'
 import { Lapio } from '../components/Lapio'
 
 const CORES_AVATAR = ['bg-[#8b5cf6]', 'bg-laranja', 'bg-[#3b82f6]', 'bg-[#ec4899]', 'bg-[#0f766e]', 'bg-[#64748b]']
@@ -30,7 +27,6 @@ export function Ranking() {
   const agora = useAgora(60_000)
   const dias = diasParaFimDaSemana(agora)
   const meuXp = xpDaSemana(xpPorDia, agora)
-  const [abrirConta, setAbrirConta] = useState(false)
   const [ranking, setRanking] = useState<ResultadoRanking | null>(null)
   const [carregando, setCarregando] = useState(false)
   const [erro, setErro] = useState(false)
@@ -77,68 +73,44 @@ export function Ranking() {
         <span className="text-lg font-extrabold text-laranja-escura dark:text-laranja">{meuXp} XP</span>
       </div>
 
-      {!logado && (
-        <div className="mt-6 flex flex-col items-center gap-3 rounded-2xl border-2 border-borda bg-superficie p-6 text-center">
-          <Lapio altura={90} />
-          <p className="text-lg font-extrabold">Entre no ranking</p>
-          <p className="max-w-80 text-texto-suave">
-            O ranking mostra quem tem conta no DuoMed. Crie a sua para competir com outros estudantes e salvar seu progresso.
-          </p>
-          <Botao tamanho="md" onClick={() => setAbrirConta(true)}>
-            Criar conta ou entrar
-          </Botao>
+      <div className="mt-6 flex items-center justify-between">
+        <p className="flex items-center gap-2 text-sm font-bold text-texto-suave">
+          <UsersRound className="h-4 w-4" strokeWidth={2.6} />
+          {ranking
+            ? `${ranking.participantes} ${ranking.participantes === 1 ? 'estudante pontuou' : 'estudantes pontuaram'} nesta semana`
+            : 'Carregando…'}
+        </p>
+        <button
+          type="button"
+          onClick={carregar}
+          disabled={carregando}
+          className="flex items-center gap-1.5 rounded-xl px-2 py-1 text-sm font-bold text-agua-texto hover:bg-superficie-2 disabled:opacity-50 dark:text-menta"
+        >
+          <RefreshCw className={`h-4 w-4 ${carregando ? 'animate-spin' : ''}`} strokeWidth={2.6} />
+          Atualizar
+        </button>
+      </div>
+
+      {erro && (
+        <div className="mt-3 rounded-2xl border-2 border-borda bg-superficie p-4 text-center">
+          <p className="font-bold">Não deu para carregar o ranking.</p>
+          <p className="text-sm text-texto-suave">Confira a internet e toque em Atualizar.</p>
         </div>
       )}
 
-      {logado && (
-        <>
-          <div className="mt-6 flex items-center justify-between">
-            <p className="flex items-center gap-2 text-sm font-bold text-texto-suave">
-              <UsersRound className="h-4 w-4" strokeWidth={2.6} />
-              {ranking
-                ? `${ranking.participantes} ${ranking.participantes === 1 ? 'estudante pontuou' : 'estudantes pontuaram'} nesta semana`
-                : 'Carregando…'}
-            </p>
-            <button
-              type="button"
-              onClick={carregar}
-              disabled={carregando}
-              className="flex items-center gap-1.5 rounded-xl px-2 py-1 text-sm font-bold text-agua-texto hover:bg-superficie-2 disabled:opacity-50 dark:text-menta"
-            >
-              <RefreshCw className={`h-4 w-4 ${carregando ? 'animate-spin' : ''}`} strokeWidth={2.6} />
-              Atualizar
-            </button>
-          </div>
+      {!erro && ranking && <ListaRanking ranking={ranking} />}
 
-          {erro && (
-            <div className="mt-3 rounded-2xl border-2 border-borda bg-superficie p-4 text-center">
-              <p className="font-bold">Não deu para carregar o ranking.</p>
-              <p className="text-sm text-texto-suave">Confira a internet e toque em Atualizar.</p>
-            </div>
-          )}
-
-          {!erro && ranking && <ListaRanking ranking={ranking} />}
-
-          {!erro && !ranking && carregando && (
-            <div className="mt-3 flex flex-col gap-2" aria-hidden>
-              {[0, 1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-14 animate-pulse rounded-2xl bg-superficie-2" />
-              ))}
-            </div>
-          )}
-        </>
+      {!erro && !ranking && carregando && (
+        <div className="mt-3 flex flex-col gap-2" aria-hidden>
+          {[0, 1, 2, 3, 4].map((i) => (
+            <div key={i} className="h-14 animate-pulse rounded-2xl bg-superficie-2" />
+          ))}
+        </div>
       )}
 
       <p className="mt-4 text-center text-xs text-texto-suave">
         No ranking aparecem só o primeiro nome, a inicial do sobrenome e o XP da semana.
       </p>
-
-      {!logado && (
-        <Modal aberto={abrirConta} aoFechar={() => setAbrirConta(false)}>
-          <h2 className="mb-4 text-center text-xl font-extrabold">Entrar no ranking</h2>
-          <PainelConta />
-        </Modal>
-      )}
     </div>
   )
 }
