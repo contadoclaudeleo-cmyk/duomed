@@ -215,7 +215,6 @@ export function Home() {
             const completa = feitas === unidade.licoes.length
             const cor = CORES_UNIDADE[ui % CORES_UNIDADE.length]
             const deslocamentos = unidade.licoes.map(() => deslocamentoDoNo(indiceGlobal++))
-            const media = deslocamentos.reduce((a, b) => a + b, 0) / deslocamentos.length
 
             return (
               <section key={unidade.id} className="mt-8">
@@ -275,17 +274,6 @@ export function Home() {
                     status={unidade.licoes.map((l) => status[l.id])}
                     cor={cor.cor}
                   />
-
-                  {/* Lápio acompanhando a trilha, do lado onde sobra espaço */}
-                  {unidade.licoes.length >= 3 && ui % 2 === 0 && (
-                    <div
-                      className="pointer-events-none absolute top-1/2 hidden -translate-y-1/2 sm:block"
-                      style={media >= 0 ? { right: 'calc(50% + 150px)' } : { left: 'calc(50% + 150px)' }}
-                      aria-hidden
-                    >
-                      <Lapio altura={110} />
-                    </div>
-                  )}
 
                   {unidade.licoes.map((licao, li) => (
                     <NoLicao
