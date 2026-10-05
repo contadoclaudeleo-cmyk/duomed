@@ -8,7 +8,7 @@
 export const PRECO_MENSAL = 9.99
 export const PRECO_PRIMEIRO_MES = 4.99
 export const PRECO_ANUAL = 49.99
-export const PRECO_RECARGA = 1.99
+export const PRECO_RECARGA = 5.99 // mínimo da Kiwify para pagamento único
 
 export type IdPlano = 'anual' | 'mensal'
 
