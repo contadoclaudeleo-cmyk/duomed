@@ -34,6 +34,8 @@ export interface FeedbackAdmin {
   tipo: 'sugestao' | 'problema' | 'conteudo' | 'elogio'
   nota: number | null
   mensagem: string
+  /** Preenchido quando veio do botão "Reportar erro" de uma questão */
+  questao_id?: string | null
 }
 
 export interface OnlineAdmin {

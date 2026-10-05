@@ -17,8 +17,11 @@ export interface Feedback {
 
 export const MAX_CARACTERES = 2000
 
-export async function enviarFeedback(tipo: TipoFeedback, mensagem: string, nota: number | null) {
-  const { error } = await supabase.from('feedbacks').insert({ tipo, mensagem: mensagem.trim(), nota })
+/** questaoId: quando o feedback é "Reportar erro" de uma questão específica */
+export async function enviarFeedback(tipo: TipoFeedback, mensagem: string, nota: number | null, questaoId?: string) {
+  const { error } = await supabase
+    .from('feedbacks')
+    .insert({ tipo, mensagem: mensagem.trim(), nota, ...(questaoId ? { questao_id: questaoId } : {}) })
   if (error) throw new Error('Não deu para enviar. Confira a internet e tente de novo.')
 }
 

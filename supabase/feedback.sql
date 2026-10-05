@@ -13,6 +13,7 @@ create table if not exists public.feedbacks (
   tipo text not null check (tipo in ('sugestao', 'problema', 'conteudo', 'elogio')),
   nota smallint check (nota between 1 and 5),
   mensagem text not null check (char_length(mensagem) between 3 and 2000),
+  questao_id text,
   criado_em timestamptz not null default now()
 );
 

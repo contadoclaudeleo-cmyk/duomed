@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
-import { Check, ChevronDown, Lightbulb, X } from 'lucide-react'
+import { BookOpen, Check, ChevronDown, Flag, Lightbulb, X } from 'lucide-react'
 import { useState } from 'react'
 import { Botao } from './Botao'
 import { Lapio } from './Lapio'
+import { Modal } from './Modal'
+import { fontesDaQuestao } from '../data/fontes'
+import { enviarFeedback } from '../lib/feedback'
 
 interface Props {
+  questaoId: string
   acertou: boolean
   explicacao: string
   respostaCorreta: string
@@ -26,13 +30,27 @@ const CORES_NOTA = {
 const ELOGIOS = ['Muito bem!', 'Mandou bem!', 'Exato!', 'Isso mesmo!', 'Perfeito!']
 
 /** Faixa que sobe da parte de baixo depois de verificar a resposta */
-export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinuar, avaliacao, aoAvaliar }: Props) {
+export function PainelFeedback({
+  questaoId,
+  acertou,
+  explicacao,
+  respostaCorreta,
+  aoContinuar,
+  avaliacao,
+  aoAvaliar,
+}: Props) {
   const [elogio] = useState(() => ELOGIOS[Math.floor(Math.random() * ELOGIOS.length)])
   const titulo = acertou ? elogio : 'Não foi dessa vez'
   // O comentário só aparece se a pessoa pedir
   const [mostrarResolucao, setMostrarResolucao] = useState(false)
+  const [reportar, setReportar] = useState(false)
+  const fontes = fontesDaQuestao(questaoId)
 
   return (
+    <>
+    <Modal aberto={reportar} aoFechar={() => setReportar(false)}>
+      <ReportarErro questaoId={questaoId} aoFechar={() => setReportar(false)} />
+    </Modal>
     <motion.div
       initial={{ y: '100%' }}
       animate={{ y: 0 }}
@@ -88,14 +106,30 @@ export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinu
                 aria-hidden
               />
             </button>
+            <button
+              type="button"
+              onClick={() => setReportar(true)}
+              className="ml-2 mt-2 inline-flex items-center gap-1 rounded-xl px-2 py-1.5 text-xs font-bold text-texto-suave hover:bg-black/5"
+            >
+              <Flag className="h-3.5 w-3.5" strokeWidth={2.6} aria-hidden />
+              Reportar erro
+            </button>
             {mostrarResolucao && (
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: -4 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mt-2 max-h-40 overflow-y-auto text-sm leading-relaxed text-texto"
+                className="mt-2 max-h-48 overflow-y-auto text-sm leading-relaxed text-texto"
               >
-                {explicacao}
-              </motion.p>
+                <p>{explicacao}</p>
+                {fontes.length > 0 && (
+                  <p className="mt-2 flex gap-1.5 text-xs text-texto-suave">
+                    <BookOpen className="mt-0.5 h-3.5 w-3.5 shrink-0" strokeWidth={2.6} aria-hidden />
+                    <span>
+                      <strong>Bibliografia da matéria:</strong> {fontes.join('; ')}. Questão ainda não revisada por médico.
+                    </span>
+                  </p>
+                )}
+              </motion.div>
             )}
           </div>
         </div>
@@ -128,5 +162,61 @@ export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinu
         )}
       </div>
     </motion.div>
+    </>
+  )
+}
+
+/** Janela para avisar que a questão tem erro (vai para os feedbacks do Painel) */
+function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: () => void }) {
+  const [texto, setTexto] = useState('')
+  const [estado, setEstado] = useState<'escrevendo' | 'enviando' | 'enviado'>('escrevendo')
+  const [erro, setErro] = useState<string | null>(null)
+
+  async function enviar() {
+    setErro(null)
+    setEstado('enviando')
+    try {
+      await enviarFeedback('conteudo', texto, null, questaoId)
+      setEstado('enviado')
+    } catch (e) {
+      setErro(e instanceof Error ? e.message : 'Não deu certo. Tente de novo.')
+      setEstado('escrevendo')
+    }
+  }
+
+  if (estado === 'enviado') {
+    return (
+      <div className="flex flex-col items-center gap-3 text-center">
+        <Lapio humor="festa" altura={90} />
+        <h2 className="text-xl font-extrabold">Obrigado!</h2>
+        <p className="text-texto-suave">Vamos conferir esta questão e corrigir se for o caso.</p>
+        <Botao larguraTotal onClick={aoFechar}>
+          Voltar para a questão
+        </Botao>
+      </div>
+    )
+  }
+
+  return (
+    <div className="flex flex-col gap-3" onKeyDown={(e) => e.stopPropagation()}>
+      <h2 className="text-center text-xl font-extrabold">Reportar erro na questão</h2>
+      <p className="text-center text-sm text-texto-suave">
+        O que está errado? Se souber, diga a resposta certa e de onde ela vem (livro, diretriz, prova).
+      </p>
+      <textarea
+        value={texto}
+        onChange={(e) => setTexto(e.target.value.slice(0, 2000))}
+        rows={5}
+        placeholder="Ex.: a resposta certa é B, segundo a diretriz da SBC de 2020..."
+        className="w-full resize-none rounded-2xl border-2 border-borda bg-superficie p-3 text-sm font-semibold outline-none focus:border-agua"
+      />
+      {erro && <p className="text-center text-sm font-bold text-erro-texto">{erro}</p>}
+      <Botao larguraTotal disabled={texto.trim().length < 3 || estado === 'enviando'} onClick={enviar}>
+        {estado === 'enviando' ? 'Enviando...' : 'Enviar'}
+      </Botao>
+      <Botao larguraTotal variante="contorno" onClick={aoFechar}>
+        Cancelar
+      </Botao>
+    </div>
   )
 }

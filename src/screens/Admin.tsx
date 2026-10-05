@@ -33,6 +33,7 @@ import {
   type ResumoAdmin,
 } from '../lib/admin'
 import { Abas } from '../components/Abas'
+import { buscarQuestao } from '../data'
 import { Lapio } from '../components/Lapio'
 
 type Aba = 'geral' | 'horarios' | 'feedbacks'
@@ -394,6 +395,7 @@ function ListaFeedbacks({ feedbacks }: { feedbacks: FeedbackAdmin[] }) {
                     {new Date(f.criado_em).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })}
                   </span>
                 </div>
+                {f.questao_id && <QuestaoReportada id={f.questao_id} />}
                 <p className="whitespace-pre-wrap">{f.mensagem}</p>
                 <p className="mt-2 text-xs font-semibold text-texto-suave">
                   {f.nome ?? 'Sem nome'} · {f.email}
@@ -403,6 +405,22 @@ function ListaFeedbacks({ feedbacks }: { feedbacks: FeedbackAdmin[] }) {
           })}
         </ul>
       )}
+    </div>
+  )
+}
+
+/** Mostra de qual questão é o "Reportar erro", com o enunciado e a resposta do app */
+function QuestaoReportada({ id }: { id: string }) {
+  const local = buscarQuestao(id)
+  if (!local) return <p className="mb-2 text-xs font-bold text-texto-suave">Questão {id} (não encontrada)</p>
+  const { questao, materia, unidade } = local
+  return (
+    <div className="mb-2 rounded-xl bg-superficie-2 p-3 text-sm">
+      <p className="text-xs font-extrabold uppercase tracking-wide text-texto-suave">
+        {materia.nome} · {unidade.titulo} · {id}
+      </p>
+      <p className="mt-1 font-semibold">{questao.enunciado}</p>
+      <p className="mt-1 text-xs text-texto-suave">Explicação no app: {questao.explicacao}</p>
     </div>
   )
 }

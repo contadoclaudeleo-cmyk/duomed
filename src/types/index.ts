@@ -88,6 +88,8 @@ export interface Unidade {
   descricao: string
   /** Trilha em que a unidade aparece. Se faltar, é 'facil'. */
   nivel?: NivelDificuldade
+  /** Bibliografia desta unidade (tem prioridade sobre a da matéria) */
+  fontes?: string[]
   licoes: Licao[]
 }
 
@@ -106,6 +108,8 @@ export interface MateriaJson {
   icone: string
   ordem: number
   ciclo?: CicloCurso
+  /** Bibliografia da matéria (se faltar, usa a lista de src/data/fontes.ts) */
+  fontes?: string[]
   /** Matéria sem unidades aparece como "em breve" */
   unidades: Unidade[]
 }

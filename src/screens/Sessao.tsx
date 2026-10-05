@@ -207,6 +207,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
         {verificada ? (
           <PainelFeedback
             key={item.questao.id}
+            questaoId={item.questao.id}
             acertou={acertou}
             explicacao={item.questao.explicacao}
             respostaCorreta={textoRespostaCorreta(item.questao, resposta)}
