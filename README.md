@@ -269,3 +269,8 @@ O código já está preparado para trocar o localStorage por um banco de dados:
 - Segredo (Supabase > Edge Functions > Secrets): `KIWIFY_WEBHOOK_TOKEN` = token do webhook criado na Kiwify.
 - Na Kiwify (Apps > Webhooks): URL `https://dkdizfpywyvpxhfpiivr.supabase.co/functions/v1/kiwify-webhook`, eventos de compra aprovada, assinatura renovada, reembolso e chargeback.
 - Assinatura (Plus) = produto de assinatura; pacote de 50 vidas (R$ 5,99) = produto de pagamento único.
+
+## Estatísticas e feedbacks
+
+- `supabase/estatisticas.sql`: o app chama `registrar_acesso()` ao abrir e a cada minuto. No Supabase, veja `painel.resumo` (online agora, entraram hoje, contas novas, total), `painel.por_dia` (últimos 30 dias) e `painel.online_agora`. O esquema `painel` não é acessível pelo app.
+- `supabase/feedback.sql`: tabela `feedbacks` da aba Feedback (cada pessoa só envia e vê os seus).

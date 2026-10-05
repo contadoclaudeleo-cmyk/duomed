@@ -232,4 +232,22 @@ export function iniciarNuvem() {
     else enviarAgora()
   })
   window.addEventListener('online', () => sincronizar())
+
+  // "Estou aqui": a cada minuto, com o app aberto, avisa o servidor (estatísticas de online e acessos do dia)
+  setTimeout(registrarAcesso, 3_000)
+  setInterval(registrarAcesso, INTERVALO_PRESENCA_MS)
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') registrarAcesso()
+  })
+}
+
+const INTERVALO_PRESENCA_MS = 60_000
+
+/** Marca que a pessoa está usando o app agora (ver supabase/estatisticas.sql) */
+function registrarAcesso() {
+  if (!useConta.getState().sessao || document.visibilityState !== 'visible') return
+  supabase.rpc('registrar_acesso').then(
+    () => {},
+    () => {},
+  )
 }
