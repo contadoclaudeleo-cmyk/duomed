@@ -274,3 +274,4 @@ O código já está preparado para trocar o localStorage por um banco de dados:
 
 - `supabase/estatisticas.sql`: o app chama `registrar_acesso()` ao abrir e a cada minuto. No Supabase, veja `painel.resumo` (online agora, entraram hoje, contas novas, total), `painel.por_dia` (últimos 30 dias) e `painel.online_agora`. O esquema `painel` não é acessível pelo app.
 - `supabase/feedback.sql`: tabela `feedbacks` da aba Feedback (cada pessoa só envia e vê os seus).
+- `supabase/admin.sql`: Painel do administrador dentro do app (rota `/admin`, atalho no Perfil). Só e-mails da tabela `admins` acessam. Mostra online agora, acessos por dia, mapa de dia da semana x horário e todos os feedbacks.

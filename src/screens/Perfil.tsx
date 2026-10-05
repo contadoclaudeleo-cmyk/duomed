@@ -15,6 +15,7 @@ import {
   Moon,
   Palette,
   RefreshCw,
+  ShieldCheck,
   Rocket,
   Sun,
   Target,
@@ -25,8 +26,9 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import { METAS } from '../lib/metas'
+import { ehAdmin } from '../lib/admin'
 import { materiasDoSemestre } from '../data/semestres'
-import { useState, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { MetaDiaria, Tema } from '../types'
 import { materiaDisponivel, materiasDoModo } from '../data'
@@ -52,6 +54,11 @@ export function Perfil() {
   const [apagando, setApagando] = useState(false)
   const [erroReset, setErroReset] = useState<string | null>(null)
   const logado = useConta((s) => !!s.sessao)
+  // Só a conta administradora vê o atalho para o Painel
+  const [admin, setAdmin] = useState(false)
+  useEffect(() => {
+    if (logado) ehAdmin().then(setAdmin)
+  }, [logado])
   const usuario = jogo.usuario!
   const nivel = nivelDoXp(jogo.xpTotal)
   const ofensiva = ofensivaVigente(jogo.ofensiva)
@@ -172,6 +179,20 @@ export function Perfil() {
       </div>
 
       {/* Conta e nuvem */}
+      {admin && (
+        <button
+          type="button"
+          onClick={() => navegar('/admin')}
+          className="mt-8 flex w-full items-center gap-3 rounded-2xl border-2 border-agua bg-agua/10 p-4 text-left font-bold transition-colors hover:bg-agua/15"
+        >
+          <ShieldCheck className="h-7 w-7 shrink-0 text-agua" />
+          <span className="flex-1">
+            <span className="block font-extrabold">Painel do administrador</span>
+            <span className="block text-sm font-semibold text-texto-suave">Online, acessos por dia e horário, e feedbacks</span>
+          </span>
+        </button>
+      )}
+
       <Titulo>Conta</Titulo>
       <SecaoConta />
 
