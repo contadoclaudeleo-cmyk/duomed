@@ -34,5 +34,5 @@ export const ANUAL_POR_MES = PRECO_ANUAL / 12
 export const LINKS_KIWIFY: Record<IdPlano | 'recarga', string> = {
   anual: 'https://pay.kiwify.com.br/oMvMMsF',
   mensal: 'https://pay.kiwify.com.br/rIf8hCv',
-  recarga: '',
+  recarga: 'https://pay.kiwify.com.br/BQb89D1',
 }
