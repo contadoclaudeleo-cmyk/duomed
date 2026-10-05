@@ -30,7 +30,7 @@ export const ANUAL_POR_MES = PRECO_ANUAL / 12
  * Enquanto estiver vazio, o botão mostra "pagamento em breve".
  */
 export const LINKS_KIWIFY: Record<IdPlano | 'recarga', string> = {
-  anual: '',
-  mensal: '',
+  anual: 'https://pay.kiwify.com.br/oMvMMsF',
+  mensal: 'https://pay.kiwify.com.br/rIf8hCv',
   recarga: '',
 }
