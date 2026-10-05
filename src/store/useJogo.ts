@@ -19,7 +19,7 @@ import { armazenamento } from '../lib/armazenamento'
 import { buscarLicao, buscarMateria, primeiraMateriaDoModo } from '../data'
 import { materiasDoSemestre } from '../data/semestres'
 import { chaveDia } from '../lib/datas'
-import { perderVida, recarregarVidas, VIDAS_MAX } from '../lib/vidas'
+import { perderVida, recarregarVidas, VIDAS_INICIAIS, VIDAS_MAX } from '../lib/vidas'
 import { ehPlus } from '../lib/plus'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
 import { atualizarOfensiva } from '../lib/ofensiva'
@@ -120,6 +120,9 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           // Na graduação, começa pela primeira matéria do semestre da pessoa
           materiaAtual: ((modo === 'graduacao' && materiasDoSemestre(semestre)[0]) || primeiraMateriaDoModo(modo)).id,
           testeNivelPendente: true,
+          // Boas-vindas: começa com 10 vidas (depois a recarga só vai até 5)
+          vidas: VIDAS_INICIAIS,
+          ultimaRecargaVida: Date.now(),
         }),
 
       atualizarUsuario: (dados) => {

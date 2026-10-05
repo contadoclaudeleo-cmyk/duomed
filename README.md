@@ -222,7 +222,7 @@ No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide
 
 | Mecânica | Regra | Onde mudar |
 | --- | --- | --- |
-| Vidas | Começa com 5, perde 1 por erro em lição, recupera 1 a cada 5 minutos. O botão + ao lado do coração abre a loja (DuoMed Plus e recarga; preços em src/lib/planos.ts, pagamento ainda não ligado). Sem vidas, só a revisão fica liberada. | `src/lib/vidas.ts` |
+| Vidas | Começa com 10 (boas-vindas), perde 1 por erro em lição, recupera 1 a cada 15 minutos até 5. O botão + ao lado do coração abre a loja (DuoMed Plus e pacote de 50 vidas; preços em src/lib/planos.ts). Sem vidas, só a revisão fica liberada. | `src/lib/vidas.ts` |
 | XP | 10 por lição concluída, +5 se não errar nada, +2 por caso clínico acertado. A revisão segue a mesma regra. | `src/lib/xp.ts` |
 | Níveis | Sobe um nível a cada 100 XP | `src/lib/xp.ts` |
 | Ofensiva | Dias seguidos batendo a meta diária (10, 20 ou 30 XP). Zera se pular um dia. | `src/lib/ofensiva.ts` |

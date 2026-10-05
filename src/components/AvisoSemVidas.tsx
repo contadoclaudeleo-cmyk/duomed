@@ -19,7 +19,7 @@ export function AvisoSemVidas({ aoVoltar }: { aoVoltar: () => void }) {
       <Lapio humor="erro" altura={110} />
       <h2 className="text-2xl font-extrabold">Suas vidas acabaram</h2>
       <p className="text-texto-suave">
-        Você ganha uma vida nova a cada 5 minutos. A próxima chega em{' '}
+        Você ganha uma vida nova a cada 15 minutos. A próxima chega em{' '}
         <strong className="text-texto tabular-nums">{formatarDuracao(falta)}</strong>.
         Enquanto isso, a revisão continua liberada e não gasta vidas.
       </p>

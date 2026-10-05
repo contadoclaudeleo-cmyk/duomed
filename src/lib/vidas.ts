@@ -3,17 +3,20 @@ import { UM_MINUTO } from './datas'
 // ============================================================
 // Vidas
 // O jogador começa com 5 vidas e perde 1 a cada erro em lição.
-// A cada 5 minutos recupera 1 vida, até o máximo de 5.
+// Quem acabou de criar a conta começa com 10 vidas.
+// A cada 15 minutos recupera 1 vida, até o máximo de 5.
 // Vidas compradas (pacote de 50) podem passar de 5; a recarga só volta a
 // contar quando ficar abaixo de 5.
 //
 // Em vez de um cronômetro rodando, guardamos só um timestamp:
-// "ultimaRecarga" = o momento a partir do qual contamos os 5 minutos.
+// "ultimaRecarga" = o momento a partir do qual contamos os 15 minutos.
 // Assim a recarga funciona mesmo com o app fechado.
 // ============================================================
 
 export const VIDAS_MAX = 5
-export const TEMPO_RECARGA_MS = 5 * UM_MINUTO
+export const TEMPO_RECARGA_MS = 15 * UM_MINUTO
+/** Quem acabou de criar a conta ganha 10 vidas de boas-vindas (a recarga depois só vai até 5) */
+export const VIDAS_INICIAIS = 10
 
 export interface EstadoVidas {
   vidas: number

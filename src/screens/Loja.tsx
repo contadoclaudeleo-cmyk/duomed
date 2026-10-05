@@ -206,7 +206,7 @@ export function Loja() {
 
             <p className="mt-3 flex items-start gap-2 text-sm text-texto-suave">
               <RotateCcw className="mt-0.5 h-4 w-4 shrink-0" />
-              De graça: cada vida volta sozinha em 5 minutos, e a revisão nunca gasta vidas.
+              De graça: cada vida volta sozinha em 15 minutos, e a revisão nunca gasta vidas.
             </p>
           </div>
         </>
@@ -237,7 +237,7 @@ function JanelaCompra({ tipo, aoCancelar }: { tipo: IdPlano | 'recarga'; aoCance
         <Lapio humor="festa" altura={100} />
         <h2 className="text-xl font-extrabold">Pagamento chegando em breve!</h2>
         <p className="text-texto-suave">
-          Estamos finalizando o pagamento por PIX e cartão. Enquanto isso, suas vidas recarregam sozinhas a cada 5 minutos.
+          Estamos finalizando o pagamento por PIX e cartão. Enquanto isso, suas vidas recarregam sozinhas a cada 15 minutos.
         </p>
         <Botao larguraTotal onClick={aoCancelar}>
           Entendi

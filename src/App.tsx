@@ -13,6 +13,7 @@ import { Revisao } from './screens/Revisao'
 import { RevisaoPratica } from './screens/RevisaoPratica'
 import { Ranking } from './screens/Ranking'
 import { Loja } from './screens/Loja'
+import { Feedback } from './screens/Feedback'
 import { Perfil } from './screens/Perfil'
 import { Nivelamento } from './screens/Nivelamento'
 import { RevisaoComentada } from './screens/RevisaoComentada'
@@ -63,6 +64,7 @@ export function App() {
           <Route path="ranking" element={<Ranking />} />
           <Route path="perfil" element={<Perfil />} />
           <Route path="loja" element={<Loja />} />
+          <Route path="feedback" element={<Feedback />} />
         </Route>
         {/* Telas em tela cheia */}
         <Route path="licao/:licaoId" element={<Licao />} />

@@ -1,4 +1,4 @@
-import { House, RotateCcw, Trophy, UserRound, type LucideIcon } from 'lucide-react'
+import { House, MessageSquareHeart, RotateCcw, Trophy, UserRound, type LucideIcon } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
@@ -20,6 +20,7 @@ const ITENS: ItemNav[] = [
   { para: '/', rotulo: 'Trilha', Icone: House },
   { para: '/revisao', rotulo: 'Revisão', Icone: RotateCcw },
   { para: '/ranking', rotulo: 'Ranking', Icone: Trophy },
+  { para: '/feedback', rotulo: 'Feedback', Icone: MessageSquareHeart },
   { para: '/perfil', rotulo: 'Perfil', Icone: UserRound },
 ]
 
@@ -85,7 +86,7 @@ function LinkNav({ item, contador, lateral }: { item: ItemNav; contador: number;
       end={para === '/'}
       className={({ isActive }) =>
         `relative flex items-center rounded-xl border-2 font-bold transition-colors ${
-          lateral ? 'gap-4 px-3 py-2.5 text-sm uppercase tracking-wide' : 'flex-col gap-0.5 px-3 py-1.5 text-[11px]'
+          lateral ? 'gap-4 px-3 py-2.5 text-sm uppercase tracking-wide' : 'flex-col gap-0.5 px-2 py-1.5 text-[11px]'
         } ${
           isActive
             ? 'border-agua/40 bg-agua/10 text-agua-texto dark:text-menta'
