@@ -14,8 +14,8 @@ create table if not exists public.admins (
 alter table public.admins enable row level security;
 -- Sem regras: ninguém lê nem altera pelo app
 
--- >>> TROQUE pelo e-mail que você usa para entrar no DuoMed <<<
-insert into public.admins (email) values ('SEU_EMAIL_AQUI') on conflict do nothing;
+-- E-mail do administrador (o mesmo usado para entrar no DuoMed)
+insert into public.admins (email) values ('leogonveloso@gmail.com') on conflict do nothing;
 
 create or replace function public.eh_admin()
 returns boolean
