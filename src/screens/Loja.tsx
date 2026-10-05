@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowLeft, Check, Clock, Heart, Infinity as Infinito, RotateCcw, Sparkles, Zap } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
+import { carregarPlus, ehPlus, iniciarPagamento, usarRecarga, usePlus } from '../lib/plus'
 import { useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { useAgora } from '../lib/hooks'
@@ -33,11 +34,35 @@ const VANTAGENS = [
 export function Loja() {
   const navegar = useNavigate()
   const [plano, setPlano] = useState<IdPlano>('anual')
-  const [aviso, setAviso] = useState(false)
+  // Compra em andamento: abre a janela que pede nome e CPF
+  const [compra, setCompra] = useState<IdPlano | 'recarga' | null>(null)
+  const [usando, setUsando] = useState(false)
   const vidas = useJogo((s) => s.vidas)
   const ultimaRecarga = useJogo((s) => s.ultimaRecargaVida)
+  const encherVidas = useJogo((s) => s.encherVidas)
   const agora = useAgora(1000)
   const falta = tempoParaProximaVida({ vidas, ultimaRecarga }, agora)
+  const validoAte = usePlus((p) => p.validoAte)
+  const recargas = usePlus((p) => p.recargas)
+  const plus = validoAte !== null && validoAte > agora
+
+  // Ao abrir a loja (e ao voltar da página de pagamento), confere se o pagamento já caiu
+  useEffect(() => {
+    const conferir = () => carregarPlus().then(() => ehPlus() && useJogo.getState().encherVidas())
+    conferir()
+    const aoVoltar = () => document.visibilityState === 'visible' && conferir()
+    document.addEventListener('visibilitychange', aoVoltar)
+    return () => document.removeEventListener('visibilitychange', aoVoltar)
+  }, [])
+
+  async function gastarRecarga() {
+    setUsando(true)
+    try {
+      if (await usarRecarga()) encherVidas()
+    } finally {
+      setUsando(false)
+    }
+  }
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-5">
@@ -90,46 +115,63 @@ export function Loja() {
         </ul>
       </motion.div>
 
+      {plus ? (
+        <div className="mt-6 flex items-center gap-3 rounded-2xl border-2 border-[#7c3aed] bg-[#7c3aed]/10 p-4">
+          <Sparkles className="h-7 w-7 shrink-0 text-[#7c3aed]" />
+          <div>
+            <p className="font-extrabold">Você é Plus!</p>
+            <p className="text-sm text-texto-suave">
+              Vidas infinitas até {new Date(validoAte!).toLocaleDateString('pt-BR')}. A renovação é automática.
+            </p>
+          </div>
+        </div>
+      ) : (
+        <>
       {/* Planos */}
-      <h2 className="mb-3 mt-7 text-xl font-extrabold">Escolha seu plano</h2>
-      <div className="flex flex-col gap-4" role="radiogroup" aria-label="Plano">
-        <CartaoPlano
-          ativo={plano === 'anual'}
-          aoEscolher={() => setPlano('anual')}
-          faixa="Mais vantajoso"
-          titulo="Plano anual"
-          selo={`-${DESCONTO_ANUAL}%`}
-          preco={reais(PRECO_ANUAL)}
-          periodo="/ano"
-          riscado={reais(ANO_NO_MENSAL)}
-          detalhe={`Só ${reais(ANUAL_POR_MES)} por mês. Economize ${reais(ANO_NO_MENSAL - PRECO_ANUAL)} no ano.`}
-        />
-        <CartaoPlano
-          ativo={plano === 'mensal'}
-          aoEscolher={() => setPlano('mensal')}
-          faixa="Promoção de boas-vindas"
-          faixaCor="laranja"
-          titulo="Plano mensal"
-          selo={`-${DESCONTO_PRIMEIRO_MES}% no 1º mês`}
-          preco={reais(PRECO_PRIMEIRO_MES)}
-          periodo="no 1º mês"
-          riscado={reais(PRECO_MENSAL)}
-          detalhe={`Depois, ${reais(PRECO_MENSAL)} por mês. Cancele quando quiser.`}
-        />
-      </div>
+        <h2 className="mb-3 mt-7 text-xl font-extrabold">Escolha seu plano</h2>
+        <div className="flex flex-col gap-4" role="radiogroup" aria-label="Plano">
+          <CartaoPlano
+            ativo={plano === 'anual'}
+            aoEscolher={() => setPlano('anual')}
+            faixa="Mais vantajoso"
+            titulo="Plano anual"
+            selo={`-${DESCONTO_ANUAL}%`}
+            preco={reais(PRECO_ANUAL)}
+            periodo="/ano"
+            riscado={reais(ANO_NO_MENSAL)}
+            detalhe={`Só ${reais(ANUAL_POR_MES)} por mês. Economize ${reais(ANO_NO_MENSAL - PRECO_ANUAL)} no ano.`}
+          />
+          <CartaoPlano
+            ativo={plano === 'mensal'}
+            aoEscolher={() => setPlano('mensal')}
+            faixa="Promoção de boas-vindas"
+            faixaCor="laranja"
+            titulo="Plano mensal"
+            selo={`-${DESCONTO_PRIMEIRO_MES}% no 1º mês`}
+            preco={reais(PRECO_PRIMEIRO_MES)}
+            periodo="no 1º mês"
+            riscado={reais(PRECO_MENSAL)}
+            detalhe={`Depois, ${reais(PRECO_MENSAL)} por mês. Cancele quando quiser.`}
+          />
+        </div>
+  
+        <div className="mt-5">
+          <Botao larguraTotal onClick={() => setCompra(plano)}>
+            {plano === 'anual' ? `Assinar por ${reais(PRECO_ANUAL)}/ano` : `Começar por ${reais(PRECO_PRIMEIRO_MES)}`}
+          </Botao>
+          <p className="mt-2 text-center text-xs text-texto-suave">
+            {plano === 'anual'
+              ? `Equivale a ${DESCONTO_ANUAL}% de desconto em relação a pagar o mensal por 12 meses.`
+              : `${reais(PRECO_PRIMEIRO_MES)} no primeiro mês e ${reais(PRECO_MENSAL)} nos seguintes.`}
+          </p>
+        </div>
+  
+        </>
+      )}
 
-      <div className="mt-5">
-        <Botao larguraTotal onClick={() => setAviso(true)}>
-          {plano === 'anual' ? `Assinar por ${reais(PRECO_ANUAL)}/ano` : `Começar por ${reais(PRECO_PRIMEIRO_MES)}`}
-        </Botao>
-        <p className="mt-2 text-center text-xs text-texto-suave">
-          {plano === 'anual'
-            ? `Equivale a ${DESCONTO_ANUAL}% de desconto em relação a pagar o mensal por 12 meses.`
-            : `${reais(PRECO_PRIMEIRO_MES)} no primeiro mês e ${reais(PRECO_MENSAL)} nos seguintes.`}
-        </p>
-      </div>
-
-      {/* Recarga avulsa */}
+      {/* Recarga avulsa (quem é Plus não precisa) */}
+      {!plus && (
+      <>
       <h2 className="mb-3 mt-8 text-xl font-extrabold">Recarregar vidas</h2>
       <div className="rounded-2xl border-2 border-borda bg-superficie p-4">
         <div className="flex items-center justify-between gap-3">
@@ -163,32 +205,117 @@ export function Loja() {
           <button
             type="button"
             disabled={vidas >= VIDAS_MAX}
-            onClick={() => setAviso(true)}
+            onClick={() => setCompra('recarga')}
             className="shrink-0 rounded-xl bg-erro px-3 py-2 text-sm font-extrabold text-white shadow-[0_3px_0_0_var(--color-erro-escura)] transition-transform active:translate-y-0.5 active:shadow-none disabled:bg-apagado disabled:text-apagado-texto disabled:shadow-none"
           >
             {reais(PRECO_RECARGA)}
           </button>
         </div>
 
+        {/* Recargas já pagas e guardadas */}
+        {recargas > 0 && (
+          <div className="mt-3 flex items-center gap-3 rounded-xl border-2 border-erro/40 p-3">
+            <Heart className="h-6 w-6 shrink-0 text-erro" fill="currentColor" strokeWidth={0} />
+            <p className="flex-1 text-sm font-bold">
+              Você tem {recargas} {recargas === 1 ? 'recarga guardada' : 'recargas guardadas'}
+            </p>
+            <button
+              type="button"
+              disabled={usando || vidas >= VIDAS_MAX}
+              onClick={gastarRecarga}
+              className="shrink-0 rounded-xl border-2 border-erro px-3 py-1.5 text-sm font-extrabold text-erro disabled:border-borda disabled:text-apagado-texto"
+            >
+              {usando ? 'Usando...' : 'Usar agora'}
+            </button>
+          </div>
+        )}
+
         <p className="mt-3 flex items-start gap-2 text-sm text-texto-suave">
           <RotateCcw className="mt-0.5 h-4 w-4 shrink-0" />
           De graça: cada vida volta sozinha em 5 minutos, e a revisão nunca gasta vidas.
         </p>
       </div>
+      </>
+      )}
 
-      <Modal aberto={aviso} aoFechar={() => setAviso(false)}>
-        <div className="flex flex-col items-center gap-3 text-center">
-          <Lapio humor="festa" altura={100} />
-          <h2 className="text-xl font-extrabold">Pagamento chegando em breve!</h2>
-          <p className="text-texto-suave">
-            Estamos finalizando o pagamento por PIX e cartão. Enquanto isso, suas vidas recarregam sozinhas a cada 5 minutos.
-          </p>
-          <Botao larguraTotal onClick={() => setAviso(false)}>
-            Entendi
-          </Botao>
-        </div>
+      <Modal aberto={compra !== null} aoFechar={() => setCompra(null)}>
+        {compra && <JanelaCompra tipo={compra} aoCancelar={() => setCompra(null)} />}
       </Modal>
     </div>
+  )
+}
+
+const DESCRICAO_COMPRA = {
+  anual: `DuoMed Plus anual: ${reais(PRECO_ANUAL)} por ano`,
+  mensal: `DuoMed Plus mensal: ${reais(PRECO_PRIMEIRO_MES)} no 1º mês, depois ${reais(PRECO_MENSAL)} por mês`,
+  recarga: `Recarga completa de vidas: ${reais(PRECO_RECARGA)}`,
+}
+
+/** "12345678901" vira "123.456.789-01" enquanto a pessoa digita */
+function mascaraCpf(valor: string) {
+  const n = valor.replace(/\D/g, '').slice(0, 11)
+  return n
+    .replace(/^(\d{3})(\d)/, '$1.$2')
+    .replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3')
+    .replace(/\.(\d{3})(\d{1,2})$/, '.$1-$2')
+}
+
+/** Pede nome e CPF (o Asaas exige para emitir a cobrança) e leva para a fatura */
+function JanelaCompra({ tipo, aoCancelar }: { tipo: IdPlano | 'recarga'; aoCancelar: () => void }) {
+  const [nome, setNome] = useState('')
+  const [cpf, setCpf] = useState('')
+  const [erro, setErro] = useState<string | null>(null)
+  const [enviando, setEnviando] = useState(false)
+
+  async function pagar(e: FormEvent) {
+    e.preventDefault()
+    setErro(null)
+    setEnviando(true)
+    try {
+      const url = await iniciarPagamento(tipo, nome, cpf)
+      // Vai para a fatura do Asaas (PIX, cartão ou boleto). Ao voltar, a loja confere o pagamento.
+      window.location.href = url
+    } catch (falha) {
+      setErro(falha instanceof Error ? falha.message : 'Não deu certo. Tente de novo.')
+      setEnviando(false)
+    }
+  }
+
+  return (
+    <form onSubmit={pagar} className="flex flex-col gap-3">
+      <div className="flex flex-col items-center gap-2 text-center">
+        <Lapio humor="festa" altura={80} />
+        <h2 className="text-xl font-extrabold">Quase lá!</h2>
+        <p className="text-sm font-bold">{DESCRICAO_COMPRA[tipo]}</p>
+        <p className="text-sm text-texto-suave">
+          O pagamento é feito pelo Asaas, com PIX, cartão ou boleto. Ele pede seu nome completo e CPF para emitir a cobrança.
+        </p>
+      </div>
+      <input
+        value={nome}
+        onChange={(e) => setNome(e.target.value)}
+        placeholder="Nome completo"
+        autoComplete="name"
+        className="rounded-2xl border-2 border-borda bg-superficie px-4 py-3 font-semibold outline-none focus:border-agua"
+      />
+      <input
+        value={cpf}
+        onChange={(e) => setCpf(mascaraCpf(e.target.value))}
+        placeholder="CPF"
+        inputMode="numeric"
+        className="rounded-2xl border-2 border-borda bg-superficie px-4 py-3 font-semibold tabular-nums outline-none focus:border-agua"
+      />
+      {erro && <p className="text-center text-sm font-bold text-erro-texto">{erro}</p>}
+      <Botao larguraTotal type="submit" disabled={enviando || !nome.trim() || cpf.replace(/\D/g, '').length !== 11}>
+        {enviando ? 'Abrindo pagamento...' : 'Ir para o pagamento'}
+      </Botao>
+      <Botao larguraTotal variante="contorno" type="button" onClick={aoCancelar}>
+        Cancelar
+      </Botao>
+      <p className="text-center text-xs text-texto-suave">
+        Não guardamos seu CPF: ele vai direto para o Asaas. Cancele a assinatura quando quiser.
+      </p>
+    </form>
   )
 }
 

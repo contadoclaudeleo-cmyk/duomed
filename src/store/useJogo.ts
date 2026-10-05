@@ -20,6 +20,7 @@ import { buscarLicao, buscarMateria, primeiraMateriaDoModo } from '../data'
 import { materiasDoSemestre } from '../data/semestres'
 import { chaveDia } from '../lib/datas'
 import { perderVida, recarregarVidas, VIDAS_MAX } from '../lib/vidas'
+import { ehPlus } from '../lib/plus'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
 import { atualizarOfensiva } from '../lib/ofensiva'
 import { registrarAcertoNaLicao, registrarAcertoNaRevisao, registrarErroNaFila } from '../lib/revisao'
@@ -72,6 +73,8 @@ interface AcoesJogo {
   atualizarUsuario: (dados: Partial<Usuario>) => void
   definirTema: (tema: Tema) => void
   definirSons: (sons: boolean) => void
+  /** Volta para o máximo de vidas (recarga comprada) */
+  encherVidas: () => void
   escolherMateria: (materiaId: string) => void
   escolherModo: (modo: ModoEstudo) => void
   definirNivel: (nivel: NivelDificuldade) => void
@@ -129,6 +132,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       definirNivel: (nivel) => set({ nivel, testeNivelPendente: false }),
 
       // Escolher uma matéria também troca o modo, se ela for do outro modo
+      encherVidas: () => set({ vidas: VIDAS_MAX, ultimaRecargaVida: Date.now() }),
+
       escolherMateria: (materiaAtual) =>
         set({ materiaAtual, modo: buscarMateria(materiaAtual)?.modo ?? get().modo }),
 
@@ -159,7 +164,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
         // Vidas: só se perde vida errando em lição. Revisão nunca gasta vida.
         let vidas = { vidas: s.vidas, ultimaRecarga: s.ultimaRecargaVida }
-        if (!acertou && modo === 'licao') vidas = perderVida(vidas, agora)
+        // Quem é Plus tem vidas infinitas
+        if (!acertou && modo === 'licao' && !ehPlus(agora)) vidas = perderVida(vidas, agora)
 
         set({
           questoesRespondidas: s.questoesRespondidas + 1,

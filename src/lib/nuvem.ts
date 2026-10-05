@@ -2,6 +2,7 @@ import type { Session } from '@supabase/supabase-js'
 import { create } from 'zustand'
 import { CHAVE_PUBLICA, supabase, URL_SUPABASE } from './supabase'
 import { mesclarProgresso } from './mesclar'
+import { carregarPlus, ehPlus, limparPlus } from './plus'
 import { dadosDoJogo, useJogo, type DadosJogo } from '../store/useJogo'
 
 // ============================================================
@@ -84,6 +85,10 @@ export async function sincronizar() {
     aplicandoNuvem = false
     if (juntos.usuario) await enviar(sessao.user.id, juntos)
     useConta.setState({ status: 'salvo', carregado: true })
+    // Situação do Plus e das recargas compradas
+    await carregarPlus()
+    // Plus tem vidas infinitas: enche o coração se estava vazio
+    if (ehPlus()) useJogo.getState().encherVidas()
   } catch {
     aplicandoNuvem = false
     useConta.setState({ status: 'offline', carregado: true })
@@ -123,6 +128,7 @@ export async function criarConta(email: string, senha: string): Promise<boolean>
 export async function sair() {
   await enviarAgora()
   await supabase.auth.signOut()
+  limparPlus()
   useJogo.getState().resetarTudo()
 }
 

@@ -259,3 +259,12 @@ O código já está preparado para trocar o localStorage por um banco de dados:
 
 - **Progresso do jogador:** todo o salvamento passa por `src/lib/armazenamento.ts`. Basta criar uma versão desse arquivo que leia e grave no Supabase (com login), mantendo os mesmos três métodos.
 - **Conteúdo:** todas as telas pegam lições e questões por `src/data/index.ts`. Para buscar do Supabase, só esse arquivo muda.
+
+## Pagamentos (DuoMed Plus e recargas, pelo Asaas)
+
+- Preços: `src/lib/planos.ts` e `supabase/functions/pagamento/index.ts` (mantenha iguais).
+- Banco: rode `supabase/plus.sql` no SQL Editor do Supabase.
+- Funções do servidor (Supabase > Edge Functions): `pagamento` (com verificação de JWT) e `asaas-webhook` (com "Enforce JWT verification" desligado).
+- Segredos (Supabase > Edge Functions > Secrets): `ASAAS_API_KEY`, `ASAAS_URL` (`https://sandbox.asaas.com/api/v3` nos testes, `https://api.asaas.com/v3` para valer) e `ASAAS_WEBHOOK_TOKEN`.
+- No Asaas (Integrações > Webhooks): URL `https://dkdizfpywyvpxhfpiivr.supabase.co/functions/v1/asaas-webhook`, com o mesmo token de `ASAAS_WEBHOOK_TOKEN`, eventos de cobranças.
+- A chave do Asaas nunca vai no código do app nem no GitHub: só nos segredos do Supabase.
