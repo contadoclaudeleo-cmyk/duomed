@@ -75,6 +75,8 @@ interface AcoesJogo {
   definirSons: (sons: boolean) => void
   /** Volta para o máximo de vidas (recarga comprada) */
   encherVidas: () => void
+  /** Soma vidas compradas (pode passar de 5) */
+  ganharVidas: (quantas: number) => void
   escolherMateria: (materiaId: string) => void
   escolherModo: (modo: ModoEstudo) => void
   definirNivel: (nivel: NivelDificuldade) => void
@@ -133,6 +135,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
       // Escolher uma matéria também troca o modo, se ela for do outro modo
       encherVidas: () => set({ vidas: VIDAS_MAX, ultimaRecargaVida: Date.now() }),
+
+      ganharVidas: (quantas) => set((s) => ({ vidas: s.vidas + quantas, ultimaRecargaVida: Date.now() })),
 
       escolherMateria: (materiaAtual) =>
         set({ materiaAtual, modo: buscarMateria(materiaAtual)?.modo ?? get().modo }),

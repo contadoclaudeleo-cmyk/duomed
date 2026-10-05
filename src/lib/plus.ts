@@ -4,7 +4,7 @@ import { supabase } from './supabase'
 import { LINKS_KIWIFY, type IdPlano } from './planos'
 
 // ============================================================
-// DuoMed Plus (vidas infinitas) e recargas compradas.
+// DuoMed Plus (vidas infinitas) e pacotes de vidas comprados.
 // Quem decide se a pessoa é Plus é o servidor (tabela "assinaturas",
 // preenchida pelo aviso de pagamento da Kiwify). O app só lê e guarda
 // uma cópia no aparelho para funcionar sem internet.
@@ -13,14 +13,15 @@ import { LINKS_KIWIFY, type IdPlano } from './planos'
 interface EstadoPlus {
   /** Até quando a pessoa é Plus (milissegundos), ou null */
   validoAte: number | null
-  /** Recargas de vidas compradas e ainda não usadas */
-  recargas: number
+  /** Vidas que acabaram de chegar de uma compra (mostra a comemoração; 0 = nada) */
+  vidasRecebidas: number
 }
 
 export const usePlus = create<EstadoPlus>()(
-  persist((): EstadoPlus => ({ validoAte: null, recargas: 0 }), {
+  persist((): EstadoPlus => ({ validoAte: null, vidasRecebidas: 0 }), {
     name: 'duomed-plus',
     storage: createJSONStorage(() => localStorage),
+    partialize: (s) => ({ validoAte: s.validoAte }) as EstadoPlus,
   }),
 )
 
@@ -30,19 +31,28 @@ export const ehPlus = (agora = Date.now()) => {
   return ate !== null && ate > agora
 }
 
-/** Busca na nuvem a situação do Plus e das recargas */
+/** Busca na nuvem se a pessoa é Plus */
 export async function carregarPlus() {
-  const { data, error } = await supabase.from('assinaturas').select('valido_ate, recargas').maybeSingle()
+  const { data, error } = await supabase.from('assinaturas').select('valido_ate').maybeSingle()
   if (error) return
-  usePlus.setState({
-    validoAte: data?.valido_ate ? Date.parse(data.valido_ate) : null,
-    recargas: data?.recargas ?? 0,
-  })
+  usePlus.setState({ validoAte: data?.valido_ate ? Date.parse(data.valido_ate) : null })
+}
+
+/**
+ * Pega as vidas compradas que ainda não chegaram no app (e zera o saldo na nuvem).
+ * Devolve quantas são; quem chama soma nas vidas do jogo.
+ */
+export async function resgatarVidas(): Promise<number> {
+  const { data, error } = await supabase.rpc('resgatar_vidas')
+  if (error) return 0
+  const quantas = Number(data ?? 0)
+  if (quantas > 0) usePlus.setState({ vidasRecebidas: quantas })
+  return quantas
 }
 
 /** Ao sair da conta, o Plus sai junto */
 export function limparPlus() {
-  usePlus.setState({ validoAte: null, recargas: 0 })
+  usePlus.setState({ validoAte: null, vidasRecebidas: 0 })
 }
 
 /**
@@ -56,12 +66,4 @@ export function linkDeCompra(tipo: IdPlano | 'recarga', userId: string, email?: 
   url.searchParams.set('sck', userId)
   if (email) url.searchParams.set('email', email)
   return url.toString()
-}
-
-/** Gasta uma recarga guardada. Devolve true se deu certo. */
-export async function usarRecarga(): Promise<boolean> {
-  const { data, error } = await supabase.rpc('usar_recarga')
-  if (error) throw new Error('Não deu para usar a recarga. Confira a internet.')
-  await carregarPlus()
-  return data === true
 }

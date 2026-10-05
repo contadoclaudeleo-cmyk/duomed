@@ -4,6 +4,8 @@ import { UM_MINUTO } from './datas'
 // Vidas
 // O jogador começa com 5 vidas e perde 1 a cada erro em lição.
 // A cada 5 minutos recupera 1 vida, até o máximo de 5.
+// Vidas compradas (pacote de 50) podem passar de 5; a recarga só volta a
+// contar quando ficar abaixo de 5.
 //
 // Em vez de um cronômetro rodando, guardamos só um timestamp:
 // "ultimaRecarga" = o momento a partir do qual contamos os 5 minutos.
@@ -20,7 +22,8 @@ export interface EstadoVidas {
 
 /** Aplica as recargas que aconteceram desde ultimaRecarga até agora */
 export function recarregarVidas(estado: EstadoVidas, agora = Date.now()): EstadoVidas {
-  if (estado.vidas >= VIDAS_MAX) return { vidas: VIDAS_MAX, ultimaRecarga: agora }
+  // Acima do máximo (vidas compradas), nada recarrega e nada se perde
+  if (estado.vidas >= VIDAS_MAX) return { vidas: estado.vidas, ultimaRecarga: agora }
 
   const recargas = Math.floor((agora - estado.ultimaRecarga) / TEMPO_RECARGA_MS)
   if (recargas <= 0) return estado

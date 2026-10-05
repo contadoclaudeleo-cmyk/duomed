@@ -5,6 +5,10 @@ import { useJogo } from '../store/useJogo'
 import { questoesParaRevisar } from '../lib/revisao'
 import { useAgora } from '../lib/hooks'
 import { Logo } from './Logo'
+import { Modal } from './Modal'
+import { Lapio } from './Lapio'
+import { Botao } from './Botao'
+import { usePlus } from '../lib/plus'
 
 interface ItemNav {
   para: string
@@ -25,6 +29,8 @@ export function Layout() {
   const agora = useAgora(30_000)
   const pendentes = questoesParaRevisar(fila, agora).length
   const { pathname } = useLocation()
+  // Vidas que acabaram de chegar de uma compra
+  const vidasRecebidas = usePlus((p) => p.vidasRecebidas)
 
   return (
     <div className="min-h-dvh md:flex">
@@ -47,6 +53,17 @@ export function Layout() {
           <Outlet />
         </motion.div>
       </main>
+
+      <Modal aberto={vidasRecebidas > 0} aoFechar={() => usePlus.setState({ vidasRecebidas: 0 })}>
+        <div className="flex flex-col items-center gap-3 text-center">
+          <Lapio humor="festa" altura={110} />
+          <h2 className="text-2xl font-extrabold">Você ganhou {vidasRecebidas} vidas! ❤️</h2>
+          <p className="text-texto-suave">Obrigado pela compra. As vidas já estão no seu coração, é só estudar.</p>
+          <Botao larguraTotal onClick={() => usePlus.setState({ vidasRecebidas: 0 })}>
+            Bora estudar
+          </Botao>
+        </div>
+      </Modal>
 
       {/* Barra inferior no celular */}
       <nav className="pb-seguro fixed inset-x-0 bottom-0 z-30 border-t-2 border-borda bg-fundo md:hidden">

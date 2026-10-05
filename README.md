@@ -268,4 +268,4 @@ O código já está preparado para trocar o localStorage por um banco de dados:
 - Função do servidor (Supabase > Edge Functions): `kiwify-webhook`, com "Enforce JWT verification" desligado.
 - Segredo (Supabase > Edge Functions > Secrets): `KIWIFY_WEBHOOK_TOKEN` = token do webhook criado na Kiwify.
 - Na Kiwify (Apps > Webhooks): URL `https://dkdizfpywyvpxhfpiivr.supabase.co/functions/v1/kiwify-webhook`, eventos de compra aprovada, assinatura renovada, reembolso e chargeback.
-- Assinatura (Plus) = produto de assinatura; recarga = produto de pagamento único.
+- Assinatura (Plus) = produto de assinatura; pacote de 50 vidas (R$ 5,99) = produto de pagamento único.

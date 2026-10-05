@@ -1,5 +1,5 @@
 -- ============================================================
--- DuoMed Plus (vidas infinitas) e recargas de vidas, vendidos pela Kiwify.
+-- DuoMed Plus (vidas infinitas) e pacotes de 50 vidas, vendidos pela Kiwify.
 -- Cole tudo no Supabase em: SQL Editor > New query > Run.
 --
 -- Quem escreve nestas tabelas é só a função do servidor
@@ -7,12 +7,12 @@
 -- O app só LÊ a própria linha de "assinaturas": não consegue se dar Plus.
 -- ============================================================
 
--- Situação de cada pessoa: até quando é Plus e quantas recargas tem guardadas
+-- Situação de cada pessoa: até quando é Plus e quantas vidas compradas ainda não chegaram no app
 create table if not exists public.assinaturas (
   user_id uuid primary key references auth.users (id) on delete cascade,
   plano text,
   valido_ate timestamptz,
-  recargas integer not null default 0,
+  vidas_compradas integer not null default 0,
   assinatura_kiwify text,
   atualizado_em timestamptz not null default now()
 );
@@ -32,24 +32,27 @@ create table if not exists public.pagamentos_processados (
 alter table public.pagamentos_processados enable row level security;
 -- Sem regras: o app não lê nem escreve aqui, só o servidor
 
--- Gasta uma recarga guardada. Devolve true se tinha recarga para usar.
-create or replace function public.usar_recarga()
-returns boolean
-language sql
+-- Entrega as vidas compradas: devolve quantas eram e zera o saldo (o app soma nas vidas)
+create or replace function public.resgatar_vidas()
+returns integer
+language plpgsql
 security definer
 set search_path = public
 as $$
-  with usada as (
-    update assinaturas
-    set recargas = recargas - 1, atualizado_em = now()
-    where user_id = auth.uid() and recargas > 0
-    returning 1
-  )
-  select exists (select 1 from usada);
+declare
+  quantas integer;
+begin
+  select vidas_compradas into quantas from assinaturas where user_id = auth.uid() for update;
+  if quantas is null or quantas <= 0 then
+    return 0;
+  end if;
+  update assinaturas set vidas_compradas = 0, atualizado_em = now() where user_id = auth.uid();
+  return quantas;
+end;
 $$;
 
-revoke all on function public.usar_recarga() from public, anon;
-grant execute on function public.usar_recarga() to authenticated;
+revoke all on function public.resgatar_vidas() from public, anon;
+grant execute on function public.resgatar_vidas() to authenticated;
 
 -- Acha a conta pelo e-mail usado na compra (só o servidor pode chamar)
 create or replace function public.usuario_por_email(email_compra text)

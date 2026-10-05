@@ -2,7 +2,8 @@ import type { Session } from '@supabase/supabase-js'
 import { create } from 'zustand'
 import { CHAVE_PUBLICA, supabase, URL_SUPABASE } from './supabase'
 import { mesclarProgresso } from './mesclar'
-import { carregarPlus, ehPlus, limparPlus } from './plus'
+import { VIDAS_MAX } from './vidas'
+import { carregarPlus, ehPlus, limparPlus, resgatarVidas } from './plus'
 import { dadosDoJogo, useJogo, type DadosJogo } from '../store/useJogo'
 
 // ============================================================
@@ -85,14 +86,21 @@ export async function sincronizar() {
     aplicandoNuvem = false
     if (juntos.usuario) await enviar(sessao.user.id, juntos)
     useConta.setState({ status: 'salvo', carregado: true })
-    // Situação do Plus e das recargas compradas
-    await carregarPlus()
-    // Plus tem vidas infinitas: enche o coração se estava vazio
-    if (ehPlus()) useJogo.getState().encherVidas()
+    // Situação do Plus e das vidas compradas
+    await atualizarCompras()
   } catch {
     aplicandoNuvem = false
     useConta.setState({ status: 'offline', carregado: true })
   }
+}
+
+/** Confere o Plus e entrega as vidas compradas que ainda não chegaram */
+export async function atualizarCompras() {
+  await carregarPlus()
+  // Plus tem vidas infinitas: enche o coração se estava vazio
+  if (ehPlus() && useJogo.getState().vidas < VIDAS_MAX) useJogo.getState().encherVidas()
+  const vidas = await resgatarVidas()
+  if (vidas > 0) useJogo.getState().ganharVidas(vidas)
 }
 
 // ---------- Ações de conta ----------

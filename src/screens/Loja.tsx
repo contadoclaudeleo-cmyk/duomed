@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import { ArrowLeft, Check, Clock, Heart, Infinity as Infinito, RotateCcw, Sparkles, Zap } from 'lucide-react'
+import { ArrowLeft, Check, Clock, Heart, Infinity as Infinito, RotateCcw, Sparkles } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { carregarPlus, ehPlus, linkDeCompra, usarRecarga, usePlus } from '../lib/plus'
-import { useConta } from '../lib/nuvem'
+import { linkDeCompra, usePlus } from '../lib/plus'
+import { atualizarCompras, useConta } from '../lib/nuvem'
 import { useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { useAgora } from '../lib/hooks'
@@ -17,6 +17,7 @@ import {
   PRECO_MENSAL,
   PRECO_PRIMEIRO_MES,
   PRECO_RECARGA,
+  VIDAS_POR_PACOTE,
   reais,
   type IdPlano,
 } from '../lib/planos'
@@ -31,39 +32,29 @@ const VANTAGENS = [
   'Apoie um app feito por e para estudantes',
 ]
 
-/** Loja: DuoMed Plus (vidas infinitas) e recarga de vidas */
+/** Loja: DuoMed Plus (vidas infinitas) e pacote de vidas */
 export function Loja() {
   const navegar = useNavigate()
   const [plano, setPlano] = useState<IdPlano>('anual')
-  // Compra em andamento: abre a janela que pede nome e CPF
+  // Compra em andamento: abre a janela que leva para a Kiwify
   const [compra, setCompra] = useState<IdPlano | 'recarga' | null>(null)
-  const [usando, setUsando] = useState(false)
   const vidas = useJogo((s) => s.vidas)
   const ultimaRecarga = useJogo((s) => s.ultimaRecargaVida)
-  const encherVidas = useJogo((s) => s.encherVidas)
   const agora = useAgora(1000)
   const falta = tempoParaProximaVida({ vidas, ultimaRecarga }, agora)
   const validoAte = usePlus((p) => p.validoAte)
-  const recargas = usePlus((p) => p.recargas)
   const plus = validoAte !== null && validoAte > agora
 
   // Ao abrir a loja (e ao voltar da página de pagamento), confere se o pagamento já caiu
   useEffect(() => {
-    const conferir = () => carregarPlus().then(() => ehPlus() && useJogo.getState().encherVidas())
+    const conferir = () => {
+      atualizarCompras()
+    }
     conferir()
     const aoVoltar = () => document.visibilityState === 'visible' && conferir()
     document.addEventListener('visibilitychange', aoVoltar)
     return () => document.removeEventListener('visibilitychange', aoVoltar)
   }, [])
-
-  async function gastarRecarga() {
-    setUsando(true)
-    try {
-      if (await usarRecarga()) encherVidas()
-    } finally {
-      setUsando(false)
-    }
-  }
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-5">
@@ -170,73 +161,55 @@ export function Loja() {
         </>
       )}
 
-      {/* Recarga avulsa (quem é Plus não precisa) */}
+      {/* Pacote de vidas avulso (quem é Plus não precisa) */}
       {!plus && (
-      <>
-      <h2 className="mb-3 mt-8 text-xl font-extrabold">Recarregar vidas</h2>
-      <div className="rounded-2xl border-2 border-borda bg-superficie p-4">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex gap-1" aria-label={`${vidas} de ${VIDAS_MAX} vidas`}>
-            {Array.from({ length: VIDAS_MAX }, (_, i) => (
-              <Heart
-                key={i}
-                className={`h-7 w-7 ${i < vidas ? 'text-erro' : 'text-apagado'}`}
-                fill="currentColor"
-                strokeWidth={0}
-              />
-            ))}
-          </div>
-          {vidas < VIDAS_MAX ? (
-            <span className="flex items-center gap-1 text-sm font-bold text-texto-suave tabular-nums">
-              <Clock className="h-4 w-4" /> +1 em {formatarDuracao(falta)}
-            </span>
-          ) : (
-            <span className="text-sm font-bold text-acerto-texto">Vidas cheias!</span>
-          )}
-        </div>
+        <>
+          <h2 className="mb-3 mt-8 text-xl font-extrabold">Comprar vidas</h2>
+          <div className="rounded-2xl border-2 border-borda bg-superficie p-4">
+            <div className="flex items-center justify-between gap-3">
+              <span className="flex items-center gap-2 text-lg font-extrabold">
+                <Heart className="h-7 w-7 text-erro" fill="currentColor" strokeWidth={0} />
+                {vidas} {vidas === 1 ? 'vida' : 'vidas'} agora
+              </span>
+              {vidas < VIDAS_MAX && (
+                <span className="flex items-center gap-1 text-sm font-bold text-texto-suave tabular-nums">
+                  <Clock className="h-4 w-4" /> +1 em {formatarDuracao(falta)}
+                </span>
+              )}
+            </div>
 
-        <div className="mt-4 flex items-center gap-3 rounded-xl bg-superficie-2 p-3">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-erro/15 text-erro">
-            <Zap className="h-6 w-6" fill="currentColor" strokeWidth={0} />
-          </span>
-          <div className="min-w-0 flex-1">
-            <p className="font-extrabold">Recarga completa</p>
-            <p className="text-sm text-texto-suave">Volta para {VIDAS_MAX} vidas na hora</p>
-          </div>
-          <button
-            type="button"
-            disabled={vidas >= VIDAS_MAX}
-            onClick={() => setCompra('recarga')}
-            className="shrink-0 rounded-xl bg-erro px-3 py-2 text-sm font-extrabold text-white shadow-[0_3px_0_0_var(--color-erro-escura)] transition-transform active:translate-y-0.5 active:shadow-none disabled:bg-apagado disabled:text-apagado-texto disabled:shadow-none"
-          >
-            {reais(PRECO_RECARGA)}
-          </button>
-        </div>
+            <div className="relative mt-4 overflow-hidden rounded-2xl border-[3px] border-erro bg-superficie shadow-[0_4px_0_0_var(--color-erro-escura)]">
+              <div className="bg-erro px-4 py-1.5 text-center text-xs font-extrabold uppercase tracking-widest text-white">
+                Pagamento único
+              </div>
+              <div className="flex items-center gap-4 p-4">
+                <span className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-erro/15">
+                  <Heart className="h-12 w-12 text-erro" fill="currentColor" strokeWidth={0} />
+                  <span className="absolute text-sm font-extrabold text-white">+{VIDAS_POR_PACOTE}</span>
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-lg font-extrabold">Pacote de {VIDAS_POR_PACOTE} vidas</p>
+                  <p className="text-sm text-texto-suave">Somam às suas vidas e não vencem</p>
+                  <p className="mt-1 text-2xl font-extrabold">{reais(PRECO_RECARGA)}</p>
+                </div>
+              </div>
+              <div className="px-4 pb-4">
+                <button
+                  type="button"
+                  onClick={() => setCompra('recarga')}
+                  className="w-full rounded-2xl bg-erro py-3 text-sm font-extrabold uppercase tracking-wide text-white shadow-[0_4px_0_0_var(--color-erro-escura)] transition-transform active:translate-y-1 active:shadow-none"
+                >
+                  Comprar {VIDAS_POR_PACOTE} vidas
+                </button>
+              </div>
+            </div>
 
-        {/* Recargas já pagas e guardadas */}
-        {recargas > 0 && (
-          <div className="mt-3 flex items-center gap-3 rounded-xl border-2 border-erro/40 p-3">
-            <Heart className="h-6 w-6 shrink-0 text-erro" fill="currentColor" strokeWidth={0} />
-            <p className="flex-1 text-sm font-bold">
-              Você tem {recargas} {recargas === 1 ? 'recarga guardada' : 'recargas guardadas'}
+            <p className="mt-3 flex items-start gap-2 text-sm text-texto-suave">
+              <RotateCcw className="mt-0.5 h-4 w-4 shrink-0" />
+              De graça: cada vida volta sozinha em 5 minutos, e a revisão nunca gasta vidas.
             </p>
-            <button
-              type="button"
-              disabled={usando || vidas >= VIDAS_MAX}
-              onClick={gastarRecarga}
-              className="shrink-0 rounded-xl border-2 border-erro px-3 py-1.5 text-sm font-extrabold text-erro disabled:border-borda disabled:text-apagado-texto"
-            >
-              {usando ? 'Usando...' : 'Usar agora'}
-            </button>
           </div>
-        )}
-
-        <p className="mt-3 flex items-start gap-2 text-sm text-texto-suave">
-          <RotateCcw className="mt-0.5 h-4 w-4 shrink-0" />
-          De graça: cada vida volta sozinha em 5 minutos, e a revisão nunca gasta vidas.
-        </p>
-      </div>
-      </>
+        </>
       )}
 
       <Modal aberto={compra !== null} aoFechar={() => setCompra(null)}>
@@ -249,7 +222,7 @@ export function Loja() {
 const DESCRICAO_COMPRA = {
   anual: `DuoMed Plus anual: ${reais(PRECO_ANUAL)} por ano`,
   mensal: `DuoMed Plus mensal: ${reais(PRECO_PRIMEIRO_MES)} no 1º mês, depois ${reais(PRECO_MENSAL)} por mês`,
-  recarga: `Recarga completa de vidas: ${reais(PRECO_RECARGA)}`,
+  recarga: `Pacote de ${VIDAS_POR_PACOTE} vidas: ${reais(PRECO_RECARGA)}`,
 }
 
 /** Confirma a compra e leva para o checkout da Kiwify (lá a pessoa paga com PIX, cartão ou boleto) */

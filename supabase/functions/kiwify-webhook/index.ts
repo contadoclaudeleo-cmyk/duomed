@@ -1,6 +1,6 @@
 // ============================================================
 // Função "kiwify-webhook": a Kiwify chama este endereço a cada
-// venda, renovação, reembolso etc. Aqui liberamos o Plus ou a recarga.
+// venda, renovação, reembolso etc. Aqui liberamos o Plus ou o pacote de vidas.
 //
 // No Supabase, deixe "Enforce JWT verification" DESLIGADO
 // (quem chama é a Kiwify, não o app).
@@ -16,6 +16,8 @@ import { createClient } from 'npm:@supabase/supabase-js@2'
 
 // Dias de folga depois da data da próxima cobrança, para a renovação não cortar o Plus antes da hora
 const FOLGA_DIAS = 3
+// Vidas do pacote avulso (mesmo número de src/lib/planos.ts)
+const VIDAS_POR_PACOTE = 50
 const UM_DIA = 24 * 60 * 60 * 1000
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
@@ -86,13 +88,13 @@ Deno.serve(async (req) => {
 
     if (evento === 'order_approved' || evento === 'subscription_renewed') {
       if (!ehAssinatura) {
-        // Compra avulsa = recarga de vidas
+        // Compra avulsa = pacote de vidas (o app busca e soma nas vidas)
         await admin.from('assinaturas').upsert({
           user_id: userId,
-          recargas: (conta?.recargas ?? 0) + 1,
+          vidas_compradas: (conta?.vidas_compradas ?? 0) + VIDAS_POR_PACOTE,
           atualizado_em: agora.toISOString(),
         })
-        return texto('recarga liberada')
+        return texto('vidas liberadas')
       }
 
       // Plus vale até a próxima cobrança (+ folga). Sem essa data, conta 1 mês ou 1 ano a partir de hoje.
@@ -117,7 +119,11 @@ Deno.serve(async (req) => {
       } else {
         await admin
           .from('assinaturas')
-          .upsert({ user_id: userId, recargas: Math.max(0, (conta?.recargas ?? 0) - 1), atualizado_em: agora.toISOString() })
+          .upsert({
+            user_id: userId,
+            vidas_compradas: Math.max(0, (conta?.vidas_compradas ?? 0) - VIDAS_POR_PACOTE),
+            atualizado_em: agora.toISOString(),
+          })
       }
       return texto('estorno registrado')
     }

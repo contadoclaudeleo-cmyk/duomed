@@ -6,9 +6,11 @@
 // ============================================================
 
 export const PRECO_MENSAL = 9.99
-export const PRECO_PRIMEIRO_MES = 4.99
+export const PRECO_PRIMEIRO_MES = 5.99
 export const PRECO_ANUAL = 49.99
 export const PRECO_RECARGA = 5.99 // mínimo da Kiwify para pagamento único
+/** Vidas que vêm no pacote avulso (mesmo número de supabase/functions/kiwify-webhook) */
+export const VIDAS_POR_PACOTE = 50
 
 export type IdPlano = 'anual' | 'mensal'
 
