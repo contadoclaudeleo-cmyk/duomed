@@ -226,7 +226,7 @@ No modo Graduação, o campo `ciclo` (`basico`, `clinico` ou `internato`) decide
 | XP | 10 por lição concluída, +5 se não errar nada, +2 por caso clínico acertado. A revisão segue a mesma regra. | `src/lib/xp.ts` |
 | Níveis | Sobe um nível a cada 100 XP | `src/lib/xp.ts` |
 | Ofensiva | Dias seguidos batendo a meta diária (10, 20 ou 30 XP). Zera se pular um dia. | `src/lib/ofensiva.ts` |
-| Revisão | Duas filas. **Erros:** questão errada entra na hora e, a cada acerto na revisão, volta depois de 1, 3 e 7 dias; no acerto seguinte sai da fila. **Acertos:** questão acertada na lição volta depois de 3 e 7 dias e depois sai. Errou, vai para os erros e volta ao começo. | `src/lib/revisao.ts` |
+| Revisão | Repetição espaçada no estilo do Anki (SM-2). Cada questão tem facilidade (2,5 no início) e intervalo. Depois de acertar na revisão, a pessoa escolhe Difícil/Bom/Fácil (Enter = Bom); 1º acerto volta em 1 dia, 2º em 6 dias, depois intervalo x facilidade. Errou, volta ao começo. Acima de 180 dias, sai da fila. Acertos de lição entram e voltam em 3 dias. | `src/lib/revisao.ts` |
 | Conquistas | Primeira lição, lição perfeita, unidade completa, 7 dias de ofensiva, 100 questões | `src/lib/conquistas.ts` |
 | Ranking | Ranking semanal com os jogadores reais que têm conta (primeiro nome + inicial e XP da semana). Reinicia toda segunda. Precisa da função do arquivo `supabase/ranking.sql` instalada no Supabase | `src/lib/ranking.ts`, `supabase/ranking.sql` |
 | Resolução | Depois de responder uma questão, o comentário (campo `explicacao`) fica escondido. Ele só aparece se a pessoa tocar em "Ver resolução". | `src/components/PainelFeedback.tsx` |

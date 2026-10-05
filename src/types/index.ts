@@ -146,8 +146,13 @@ export interface Ofensiva {
 
 export interface ItemRevisao {
   questaoId: string
-  /** Quantas vezes já acertou na revisão (0 a 3) */
+  /** Acertos seguidos (o mesmo que "repeticoes"; mantido para o progresso antigo) */
   etapa: number
+  /** SM-2 (Anki): facilidade, intervalo atual em dias, acertos seguidos e quantas vezes errou */
+  facilidade?: number
+  intervalo?: number
+  repeticoes?: number
+  lapsos?: number
   /** Timestamp a partir do qual a questão volta a aparecer */
   proximaEm: number
   adicionadaEm: number

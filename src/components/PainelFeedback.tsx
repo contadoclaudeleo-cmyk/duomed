@@ -9,12 +9,24 @@ interface Props {
   explicacao: string
   respostaCorreta: string
   aoContinuar: () => void
+  /**
+   * Revisão no estilo Anki: depois de acertar, em vez de só "Continuar",
+   * a pessoa escolhe Difícil, Bom ou Fácil (cada um mostra quando a questão volta).
+   */
+  avaliacao?: { nota: 'dificil' | 'bom' | 'facil'; rotulo: string; prazo: string }[]
+  aoAvaliar?: (nota: 'dificil' | 'bom' | 'facil') => void
+}
+
+const CORES_NOTA = {
+  dificil: 'bg-laranja shadow-[0_4px_0_0_var(--color-laranja-escura)]',
+  bom: 'bg-agua shadow-[0_4px_0_0_var(--color-agua-escura)]',
+  facil: 'bg-[#3b82f6] shadow-[0_4px_0_0_#1d4ed8]',
 }
 
 const ELOGIOS = ['Muito bem!', 'Mandou bem!', 'Exato!', 'Isso mesmo!', 'Perfeito!']
 
 /** Faixa que sobe da parte de baixo depois de verificar a resposta */
-export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinuar }: Props) {
+export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinuar, avaliacao, aoAvaliar }: Props) {
   const [elogio] = useState(() => ELOGIOS[Math.floor(Math.random() * ELOGIOS.length)])
   const titulo = acertou ? elogio : 'Não foi dessa vez'
   // O comentário só aparece se a pessoa pedir
@@ -87,9 +99,33 @@ export function PainelFeedback({ acertou, explicacao, respostaCorreta, aoContinu
             )}
           </div>
         </div>
-        <Botao variante={acertou ? 'primario' : 'perigo'} onClick={aoContinuar} className="w-full sm:w-44">
-          Continuar
-        </Botao>
+        {acertou && avaliacao && aoAvaliar ? (
+          <div className="w-full sm:w-auto">
+            <p className="mb-2 text-center text-xs font-extrabold uppercase tracking-wide text-acerto-texto sm:text-right">
+              Como foi? A questão volta em…
+            </p>
+            <div className="grid grid-cols-3 gap-2 sm:w-96">
+              {avaliacao.map(({ nota, rotulo, prazo }) => (
+                <button
+                  key={nota}
+                  type="button"
+                  onClick={() => {
+                    aoAvaliar(nota)
+                    aoContinuar()
+                  }}
+                  className={`flex flex-col items-center rounded-2xl px-2 py-2.5 font-extrabold text-white transition-transform active:translate-y-1 active:shadow-none ${CORES_NOTA[nota]}`}
+                >
+                  <span className="text-sm uppercase tracking-wide">{rotulo}</span>
+                  <span className="text-xs font-bold opacity-90">{prazo}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <Botao variante={acertou ? 'primario' : 'perigo'} onClick={aoContinuar} className="w-full sm:w-44">
+            Continuar
+          </Botao>
+        )}
       </div>
     </motion.div>
   )

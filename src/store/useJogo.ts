@@ -23,7 +23,13 @@ import { perderVida, recarregarVidas, VIDAS_INICIAIS, VIDAS_MAX } from '../lib/v
 import { ehPlus } from '../lib/plus'
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from '../lib/xp'
 import { atualizarOfensiva } from '../lib/ofensiva'
-import { registrarAcertoNaLicao, registrarAcertoNaRevisao, registrarErroNaFila } from '../lib/revisao'
+import {
+  avaliarNaFila,
+  registrarAcertoNaLicao,
+  registrarAcertoNaRevisao,
+  registrarErroNaFila,
+  type NotaRevisao,
+} from '../lib/revisao'
 import { verificarConquistas } from '../lib/conquistas'
 
 // ============================================================
@@ -82,6 +88,8 @@ interface AcoesJogo {
   definirNivel: (nivel: NivelDificuldade) => void
   sincronizarVidas: () => void
   responder: (dados: { questao: Questao; materiaId: string; acertou: boolean; modo: ModoSessao }) => void
+  /** Troca a nota da última resposta de revisão (Difícil, Bom ou Fácil) */
+  avaliarRevisao: (questaoId: string, nota: NotaRevisao) => void
   concluirSessao: (dados: ConclusaoSessao) => ResultadoSessao
   resetarTudo: () => void
 }
@@ -106,6 +114,15 @@ export const estadoInicial = (): DadosJogo => ({
   tema: 'sistema',
   sons: true,
 })
+
+/**
+ * Como cada questão estava na fila antes da última resposta (não é salvo).
+ * Serve para recalcular quando a pessoa escolhe Difícil/Bom/Fácil depois de acertar.
+ */
+const antesDaResposta = new Map<string, ItemRevisao | undefined>()
+
+/** Estado da questão na fila antes da última resposta (para mostrar os prazos nos botões) */
+export const itemAntesDaResposta = (questaoId: string) => antesDaResposta.get(questaoId)
 
 export const useJogo = create<DadosJogo & AcoesJogo>()(
   persist(
@@ -165,6 +182,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
         // Fila de revisão: erro entra (ou volta ao início); acerto na revisão avança
         let filaRevisao = s.filaRevisao
+        // Guarda como a questão estava, para a pessoa poder trocar a nota (Difícil/Bom/Fácil) logo depois
+        antesDaResposta.set(questao.id, s.filaRevisao[questao.id])
         if (!acertou) filaRevisao = registrarErroNaFila(filaRevisao, questao.id, agora)
         else if (modo === 'revisao') filaRevisao = registrarAcertoNaRevisao(filaRevisao, questao.id, agora)
         else if (modo === 'licao') filaRevisao = registrarAcertoNaLicao(filaRevisao, questao.id, agora)
@@ -188,6 +207,16 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           vidas: vidas.vidas,
           ultimaRecargaVida: vidas.ultimaRecarga,
         })
+      },
+
+      // Na revisão, depois de acertar: a pessoa escolhe Difícil, Bom ou Fácil (o padrão já aplicado é Bom)
+      avaliarRevisao: (questaoId, nota) => {
+        if (!antesDaResposta.has(questaoId)) return
+        const anterior = antesDaResposta.get(questaoId)
+        const base = { ...get().filaRevisao }
+        if (anterior) base[questaoId] = anterior
+        else delete base[questaoId]
+        set({ filaRevisao: avaliarNaFila(base, questaoId, nota) })
       },
 
       // Chamado quando o jogador termina todas as questões de uma sessão

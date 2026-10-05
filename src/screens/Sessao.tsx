@@ -3,7 +3,8 @@ import { ClipboardCheck, Flame, RotateCcw, X } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { ModoSessao, Questao as TQuestao, Resposta } from '../types'
-import { useJogo } from '../store/useJogo'
+import { itemAntesDaResposta, useJogo } from '../store/useJogo'
+import { diasAteVoltar, textoDoPrazo } from '../lib/revisao'
 import { corrigir, respostaCompleta, textoRespostaCorreta } from '../lib/correcao'
 import type { RespostaDada } from '../lib/xp'
 import { BarraProgresso } from '../components/BarraProgresso'
@@ -210,6 +211,16 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
             explicacao={item.questao.explicacao}
             respostaCorreta={textoRespostaCorreta(item.questao, resposta)}
             aoContinuar={continuar}
+            {...(modo === 'revisao' && acertou
+              ? {
+                  avaliacao: (['dificil', 'bom', 'facil'] as const).map((nota) => ({
+                    nota,
+                    rotulo: nota === 'dificil' ? 'Difícil' : nota === 'bom' ? 'Bom' : 'Fácil',
+                    prazo: textoDoPrazo(diasAteVoltar(itemAntesDaResposta(item.questao.id), nota)),
+                  })),
+                  aoAvaliar: (nota: 'dificil' | 'bom' | 'facil') => useJogo.getState().avaliarRevisao(item.questao.id, nota),
+                }
+              : {})}
           />
         ) : (
           <div className="pb-seguro border-t-2 border-borda">

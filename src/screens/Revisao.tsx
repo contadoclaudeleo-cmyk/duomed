@@ -52,14 +52,19 @@ export function Revisao() {
       <div className="mt-10 w-full rounded-2xl border-2 border-borda p-4 text-left text-sm text-texto-suave">
         <p className="mb-1 font-extrabold text-texto">Como funciona</p>
         <p>
-          <strong className="text-texto">Erros:</strong> a questão errada pode ser revisada na hora. Cada acerto empurra
-          ela para mais longe: volta depois de 1 dia, de 3 dias e de 7 dias. Acertou de novo, ela sai da fila.
+          Igual ao Anki: depois de acertar uma revisão, você diz como foi, <strong className="text-texto">Difícil</strong>,{' '}
+          <strong className="text-texto">Bom</strong> ou <strong className="text-texto">Fácil</strong>. Cada botão mostra
+          quando a questão volta. O que é fácil vai ficando cada vez mais espaçado (1 dia, 6 dias, 2 semanas, 1 mês...), e o
+          que é difícil volta mais cedo.
         </p>
         <p className="mt-2">
-          <strong className="text-texto">Acertos:</strong> a questão acertada na lição volta depois de 3 dias e depois de
-          7 dias. Acertou as duas vezes, ela sai da fila.
+          <strong className="text-texto">Erros:</strong> a questão errada pode ser revisada na hora.{' '}
+          <strong className="text-texto">Acertos:</strong> a questão acertada na lição volta depois de 3 dias.
         </p>
-        <p className="mt-2">Errou em qualquer momento, a questão vai para os erros e começa do zero.</p>
+        <p className="mt-2">
+          Errou em qualquer momento, a questão volta para o começo. Quando ela só voltaria depois de 6 meses, sai da fila:
+          está dominada.
+        </p>
       </div>
     </div>
   )

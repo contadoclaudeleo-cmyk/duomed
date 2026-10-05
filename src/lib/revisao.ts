@@ -2,79 +2,136 @@ import type { ItemRevisao, OrigemRevisao } from '../types'
 import { UM_DIA } from './datas'
 
 // ============================================================
-// Revisão com repetição espaçada (versão simples)
+// Revisão com repetição espaçada no estilo do Anki (algoritmo SM-2)
 //
-// 1. Errou uma questão: ela entra na fila e já pode ser revisada.
-// 2. Acertou na revisão: ela volta depois de 1 dia.
-// 3. Acertou de novo: volta depois de 3 dias.
-// 4. Acertou de novo: volta depois de 7 dias.
-// 5. Acertou mais uma vez: sai da fila (questão dominada).
-// Se errar em qualquer etapa, volta para o começo.
+// Cada questão da fila tem uma "facilidade" (começa em 2,5) e um
+// intervalo em dias. Na revisão, depois de acertar, a pessoa diz
+// como foi: Difícil, Bom ou Fácil.
 //
-// Acertos também são revisados, para o conteúdo não ser esquecido:
-// questão acertada na lição entra direto na etapa 2 e volta
-// depois de 3 dias. Acertou de novo, volta em 7 dias e depois sai.
-// Se errar, vira uma questão de erro e começa do zero.
+// - Errou: volta para o começo (pode revisar de novo já) e fica
+//   um pouco "mais difícil" (facilidade cai 0,2).
+// - 1º acerto: volta em 1 dia (Fácil: 4 dias).
+// - 2º acerto: volta em 6 dias (Difícil: 3, Fácil: 8).
+// - Depois: intervalo × facilidade (Bom), × 1,2 (Difícil)
+//   ou × facilidade × 1,3 (Fácil). Difícil tira 0,15 da facilidade
+//   e Fácil soma 0,15.
+// - Quando o próximo intervalo passaria de 180 dias, a questão
+//   sai da fila: está dominada.
+//
+// Acertos na lição também entram, para o conteúdo não ser esquecido:
+// já contam como 1º acerto e voltam em 3 dias.
 // ============================================================
 
-/** Intervalos depois de cada acerto na revisão, em dias */
-export const INTERVALOS_DIAS = [1, 3, 7]
+export type NotaRevisao = 'errei' | 'dificil' | 'bom' | 'facil'
+
+export const FACILIDADE_INICIAL = 2.5
+const FACILIDADE_MINIMA = 1.3
+/** Intervalo a partir do qual a questão é considerada dominada e sai da fila */
+const DIAS_DOMINADA = 180
 export const MAX_QUESTOES_POR_REVISAO = 10
 
 type Fila = Record<string, ItemRevisao>
 
 export const origemDoItem = (item: ItemRevisao): OrigemRevisao => item.origem ?? 'erro'
 
-/** Questão errada (em lição ou revisão): entra na fila, ou volta para a etapa 0 */
-export function registrarErroNaFila(fila: Fila, questaoId: string, agora = Date.now()): Fila {
+/** Itens antigos (da versão 1, 3 e 7 dias) ganham os campos do SM-2 */
+function comoSm2(item: ItemRevisao) {
+  return {
+    facilidade: item.facilidade ?? FACILIDADE_INICIAL,
+    intervalo: item.intervalo ?? [0, 1, 3, 7][Math.min(item.etapa, 3)],
+    repeticoes: item.repeticoes ?? item.etapa,
+    lapsos: item.lapsos ?? 0,
+  }
+}
+
+/** Em quantos dias a questão volta com essa nota (null = dominada, sai da fila) */
+export function diasAteVoltar(item: ItemRevisao | undefined, nota: NotaRevisao): number | null {
+  if (nota === 'errei') return 0
+  const { facilidade, intervalo, repeticoes } = item ? comoSm2(item) : { facilidade: FACILIDADE_INICIAL, intervalo: 0, repeticoes: 0 }
+  const novaFacilidade = ajustarFacilidade(facilidade, nota)
+  let dias: number
+  if (repeticoes === 0) dias = nota === 'facil' ? 4 : 1
+  else if (repeticoes === 1) dias = nota === 'dificil' ? 3 : nota === 'bom' ? 6 : 8
+  else {
+    const fator = nota === 'dificil' ? 1.2 : nota === 'bom' ? novaFacilidade : novaFacilidade * 1.3
+    dias = Math.max(intervalo + 1, Math.round(intervalo * fator))
+  }
+  return dias > DIAS_DOMINADA ? null : dias
+}
+
+function ajustarFacilidade(facilidade: number, nota: NotaRevisao) {
+  const delta = nota === 'errei' ? -0.2 : nota === 'dificil' ? -0.15 : nota === 'facil' ? 0.15 : 0
+  return Math.max(FACILIDADE_MINIMA, Math.round((facilidade + delta) * 100) / 100)
+}
+
+/** Aplica a nota a uma questão da fila. Devolve a fila nova (a questão sai se ficou dominada). */
+export function avaliarNaFila(fila: Fila, questaoId: string, nota: NotaRevisao, agora = Date.now()): Fila {
+  const item = fila[questaoId]
+  const atual = item ? comoSm2(item) : { facilidade: FACILIDADE_INICIAL, intervalo: 0, repeticoes: 0, lapsos: 0 }
+  const dias = diasAteVoltar(item, nota)
+
+  if (dias === null) {
+    const resto = { ...fila }
+    delete resto[questaoId]
+    return resto
+  }
+
+  const errou = nota === 'errei'
+  const repeticoes = errou ? 0 : atual.repeticoes + 1
   return {
     ...fila,
     [questaoId]: {
       questaoId,
-      etapa: 0,
-      proximaEm: agora,
-      adicionadaEm: fila[questaoId]?.adicionadaEm ?? agora,
-      origem: 'erro',
+      etapa: repeticoes,
+      repeticoes,
+      intervalo: dias,
+      facilidade: ajustarFacilidade(atual.facilidade, nota),
+      lapsos: atual.lapsos + (errou ? 1 : 0),
+      proximaEm: agora + dias * UM_DIA,
+      adicionadaEm: item?.adicionadaEm ?? agora,
+      // Quem errou passa a ser questão de erro; quem acertou mantém a origem
+      origem: errou ? 'erro' : (item?.origem ?? 'acerto'),
     },
   }
 }
 
-/** Questão acertada na lição: entra na fila para reforço, se ainda não estiver lá */
+/** Questão errada (em lição ou revisão): entra na fila, ou volta para o começo */
+export function registrarErroNaFila(fila: Fila, questaoId: string, agora = Date.now()): Fila {
+  return avaliarNaFila(fila, questaoId, 'errei', agora)
+}
+
+/** Questão acertada na lição: entra na fila para reforço (volta em 3 dias), se ainda não estiver lá */
 export function registrarAcertoNaLicao(fila: Fila, questaoId: string, agora = Date.now()): Fila {
   if (fila[questaoId]) return fila
   return {
     ...fila,
     [questaoId]: {
       questaoId,
-      // Pula a etapa de 1 dia: volta em 3 dias, depois em 7, e sai
-      etapa: 2,
-      proximaEm: agora + INTERVALOS_DIAS[1] * UM_DIA,
+      etapa: 1,
+      repeticoes: 1,
+      intervalo: 3,
+      facilidade: FACILIDADE_INICIAL,
+      lapsos: 0,
+      proximaEm: agora + 3 * UM_DIA,
       adicionadaEm: agora,
       origem: 'acerto',
     },
   }
 }
 
-/** Questão acertada durante uma revisão: avança de etapa ou sai da fila */
-export function registrarAcertoNaRevisao(fila: Fila, questaoId: string, agora = Date.now()): Fila {
-  const item = fila[questaoId]
-  if (!item) return fila
+/** Questão acertada durante uma revisão (nota "Bom", a não ser que a pessoa escolha outra) */
+export function registrarAcertoNaRevisao(fila: Fila, questaoId: string, agora = Date.now(), nota: NotaRevisao = 'bom'): Fila {
+  if (!fila[questaoId]) return fila
+  return avaliarNaFila(fila, questaoId, nota, agora)
+}
 
-  if (item.etapa >= INTERVALOS_DIAS.length) {
-    // Já passou por 1, 3 e 7 dias: questão dominada
-    const resto = { ...fila }
-    delete resto[questaoId]
-    return resto
-  }
-
-  return {
-    ...fila,
-    [questaoId]: {
-      ...item,
-      proximaEm: agora + INTERVALOS_DIAS[item.etapa] * UM_DIA,
-      etapa: item.etapa + 1,
-    },
-  }
+/** "1 d", "6 d", "2 meses"... para mostrar nos botões de nota */
+export function textoDoPrazo(dias: number | null): string {
+  if (dias === null) return 'dominada'
+  if (dias === 0) return 'agora'
+  if (dias < 30) return `${dias} ${dias === 1 ? 'dia' : 'dias'}`
+  const meses = Math.round(dias / 30)
+  return `${meses} ${meses === 1 ? 'mês' : 'meses'}`
 }
 
 /** Questões que já podem ser revisadas agora, das mais antigas para as mais novas */
