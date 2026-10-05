@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { ArrowLeft, Check, Clock, Heart, Infinity as Infinito, RotateCcw, Sparkles, Zap } from 'lucide-react'
-import { useEffect, useState, type FormEvent } from 'react'
-import { carregarPlus, ehPlus, iniciarPagamento, usarRecarga, usePlus } from '../lib/plus'
+import { useEffect, useState } from 'react'
+import { carregarPlus, ehPlus, linkDeCompra, usarRecarga, usePlus } from '../lib/plus'
+import { useConta } from '../lib/nuvem'
 import { useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { useAgora } from '../lib/hooks'
@@ -251,71 +252,50 @@ const DESCRICAO_COMPRA = {
   recarga: `Recarga completa de vidas: ${reais(PRECO_RECARGA)}`,
 }
 
-/** "12345678901" vira "123.456.789-01" enquanto a pessoa digita */
-function mascaraCpf(valor: string) {
-  const n = valor.replace(/\D/g, '').slice(0, 11)
-  return n
-    .replace(/^(\d{3})(\d)/, '$1.$2')
-    .replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3')
-    .replace(/\.(\d{3})(\d{1,2})$/, '.$1-$2')
-}
-
-/** Pede nome e CPF (o Asaas exige para emitir a cobrança) e leva para a fatura */
+/** Confirma a compra e leva para o checkout da Kiwify (lá a pessoa paga com PIX, cartão ou boleto) */
 function JanelaCompra({ tipo, aoCancelar }: { tipo: IdPlano | 'recarga'; aoCancelar: () => void }) {
-  const [nome, setNome] = useState('')
-  const [cpf, setCpf] = useState('')
-  const [erro, setErro] = useState<string | null>(null)
-  const [enviando, setEnviando] = useState(false)
+  const sessao = useConta((s) => s.sessao)
+  const email = sessao?.user.email
+  const link = sessao ? linkDeCompra(tipo, sessao.user.id, email) : null
 
-  async function pagar(e: FormEvent) {
-    e.preventDefault()
-    setErro(null)
-    setEnviando(true)
-    try {
-      const url = await iniciarPagamento(tipo, nome, cpf)
-      // Vai para a fatura do Asaas (PIX, cartão ou boleto). Ao voltar, a loja confere o pagamento.
-      window.location.href = url
-    } catch (falha) {
-      setErro(falha instanceof Error ? falha.message : 'Não deu certo. Tente de novo.')
-      setEnviando(false)
-    }
+  if (!link) {
+    return (
+      <div className="flex flex-col items-center gap-3 text-center">
+        <Lapio humor="festa" altura={100} />
+        <h2 className="text-xl font-extrabold">Pagamento chegando em breve!</h2>
+        <p className="text-texto-suave">
+          Estamos finalizando o pagamento por PIX e cartão. Enquanto isso, suas vidas recarregam sozinhas a cada 5 minutos.
+        </p>
+        <Botao larguraTotal onClick={aoCancelar}>
+          Entendi
+        </Botao>
+      </div>
+    )
   }
 
   return (
-    <form onSubmit={pagar} className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3">
       <div className="flex flex-col items-center gap-2 text-center">
         <Lapio humor="festa" altura={80} />
         <h2 className="text-xl font-extrabold">Quase lá!</h2>
         <p className="text-sm font-bold">{DESCRICAO_COMPRA[tipo]}</p>
         <p className="text-sm text-texto-suave">
-          O pagamento é feito pelo Asaas, com PIX, cartão ou boleto. Ele pede seu nome completo e CPF para emitir a cobrança.
+          Você vai para a página segura da Kiwify, onde paga com PIX, cartão ou boleto. Assim que o pagamento cair, é
+          liberado aqui no app.
         </p>
       </div>
-      <input
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-        placeholder="Nome completo"
-        autoComplete="name"
-        className="rounded-2xl border-2 border-borda bg-superficie px-4 py-3 font-semibold outline-none focus:border-agua"
-      />
-      <input
-        value={cpf}
-        onChange={(e) => setCpf(mascaraCpf(e.target.value))}
-        placeholder="CPF"
-        inputMode="numeric"
-        className="rounded-2xl border-2 border-borda bg-superficie px-4 py-3 font-semibold tabular-nums outline-none focus:border-agua"
-      />
-      {erro && <p className="text-center text-sm font-bold text-erro-texto">{erro}</p>}
-      <Botao larguraTotal type="submit" disabled={enviando || !nome.trim() || cpf.replace(/\D/g, '').length !== 11}>
-        {enviando ? 'Abrindo pagamento...' : 'Ir para o pagamento'}
+      {email && (
+        <p className="rounded-2xl bg-laranja/15 p-3 text-center text-sm font-semibold text-laranja-escura dark:text-laranja">
+          Use o mesmo e-mail da sua conta: <strong className="break-all">{email}</strong>
+        </p>
+      )}
+      <Botao larguraTotal onClick={() => (window.location.href = link)}>
+        Ir para o pagamento
       </Botao>
-      <Botao larguraTotal variante="contorno" type="button" onClick={aoCancelar}>
+      <Botao larguraTotal variante="contorno" onClick={aoCancelar}>
         Cancelar
       </Botao>
-      <p className="text-center text-xs text-texto-suave">
-        Não guardamos seu CPF: ele vai direto para o Asaas. Cancele a assinatura quando quiser.
-      </p>
-    </form>
+    </div>
   )
 }
 

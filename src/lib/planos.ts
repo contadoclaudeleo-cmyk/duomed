@@ -1,8 +1,8 @@
 // ============================================================
 // Planos do DuoMed Plus (vidas infinitas) e recarga avulsa de vidas.
 // Os preços ficam todos aqui; as porcentagens de desconto são calculadas.
-// O pagamento ainda não está ligado: a loja mostra os planos e avisa que
-// o pagamento chega em breve (ver screens/Loja.tsx).
+// O pagamento é feito na Kiwify (links abaixo); quem libera o Plus é
+// a função supabase/functions/kiwify-webhook.
 // ============================================================
 
 export const PRECO_MENSAL = 9.99
@@ -24,3 +24,13 @@ export const ANO_NO_MENSAL = PRECO_MENSAL * 12
 export const DESCONTO_ANUAL = desconto(PRECO_ANUAL, ANO_NO_MENSAL)
 export const DESCONTO_PRIMEIRO_MES = desconto(PRECO_PRIMEIRO_MES, PRECO_MENSAL)
 export const ANUAL_POR_MES = PRECO_ANUAL / 12
+
+/**
+ * Links de checkout da Kiwify (copie de cada produto/plano no painel da Kiwify).
+ * Enquanto estiver vazio, o botão mostra "pagamento em breve".
+ */
+export const LINKS_KIWIFY: Record<IdPlano | 'recarga', string> = {
+  anual: '',
+  mensal: '',
+  recarga: '',
+}

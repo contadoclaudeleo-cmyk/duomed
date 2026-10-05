@@ -1,13 +1,12 @@
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
-import { FunctionsHttpError } from '@supabase/supabase-js'
 import { supabase } from './supabase'
-import type { IdPlano } from './planos'
+import { LINKS_KIWIFY, type IdPlano } from './planos'
 
 // ============================================================
 // DuoMed Plus (vidas infinitas) e recargas compradas.
 // Quem decide se a pessoa é Plus é o servidor (tabela "assinaturas",
-// preenchida pelo aviso de pagamento do Asaas). O app só lê e guarda
+// preenchida pelo aviso de pagamento da Kiwify). O app só lê e guarda
 // uma cópia no aparelho para funcionar sem internet.
 // ============================================================
 
@@ -46,19 +45,17 @@ export function limparPlus() {
   usePlus.setState({ validoAte: null, recargas: 0 })
 }
 
-/** Cria a cobrança no Asaas e devolve o link da fatura */
-export async function iniciarPagamento(tipo: IdPlano | 'recarga', nome: string, cpf: string): Promise<string> {
-  const { data, error } = await supabase.functions.invoke('pagamento', { body: { tipo, nome, cpf } })
-  if (error) {
-    // A função devolve { erro } com a explicação; tenta mostrar essa mensagem
-    if (error instanceof FunctionsHttpError) {
-      const corpo = await error.context.json().catch(() => null)
-      if (corpo?.erro) throw new Error(corpo.erro)
-    }
-    throw new Error('Não deu para abrir o pagamento. Confira a internet e tente de novo.')
-  }
-  if (!data?.url) throw new Error(data?.erro ?? 'Não deu para abrir o pagamento.')
-  return data.url as string
+/**
+ * Link do checkout da Kiwify com a conta da pessoa marcada (sck),
+ * para o servidor saber de quem é a compra quando a Kiwify avisar.
+ */
+export function linkDeCompra(tipo: IdPlano | 'recarga', userId: string, email?: string): string | null {
+  const base = LINKS_KIWIFY[tipo]
+  if (!base) return null
+  const url = new URL(base)
+  url.searchParams.set('sck', userId)
+  if (email) url.searchParams.set('email', email)
+  return url.toString()
 }
 
 /** Gasta uma recarga guardada. Devolve true se deu certo. */
