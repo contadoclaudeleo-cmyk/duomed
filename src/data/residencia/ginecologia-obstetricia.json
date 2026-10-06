@@ -93,17 +93,19 @@
             },
             {
               "id": "go-u1-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual suplemento, iniciado antes da concepção, reduz defeitos do tubo neural?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 23 anos em situação de rua fuma 4 cigarros por dia, o primeiro à tarde. Gostaria de parar, mas já tentou e não conseguiu.",
+              "enunciado": "Qual é a primeira abordagem?",
               "opcoes": [
-                "Ácido fólico",
-                "Sulfato ferroso",
-                "Vitamina A",
-                "Cálcio"
+                "Entender as tentativas anteriores e orientar estratégias",
+                "Falar dos riscos e mandar ao grupo",
+                "Encaminhar ao alto risco",
+                "Avaliar Fagerström e notificar a assistência social"
               ],
-              "resposta": "Ácido fólico",
-              "explicacao": "O ideal é começar pelo menos 30 dias antes da concepção e manter até o fim do primeiro trimestre.",
-              "revisado": false
+              "resposta": "Entender as tentativas anteriores e orientar estratégias",
+              "explicacao": "Abordagem comportamental vem primeiro.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u1-l1-q7",
@@ -263,28 +265,19 @@
           "questoes": [
             {
               "id": "go-u1-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de sangramento ao seu quadro típico.",
-              "pares": [
-                {
-                  "esquerda": "Placenta prévia",
-                  "direita": "Sangramento indolor, vermelho vivo e de repetição"
-                },
-                {
-                  "esquerda": "Descolamento prematuro de placenta",
-                  "direita": "Dor, útero hipertônico e sangue escuro"
-                },
-                {
-                  "esquerda": "Rotura uterina",
-                  "direita": "Dor súbita e subida da apresentação, comum após cesáreas"
-                },
-                {
-                  "esquerda": "Vasa prévia",
-                  "direita": "Sangramento na rotura das membranas, com sofrimento fetal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Hipertensa de 33 semanas com sangramento escuro, dor, útero tenso, BCF 102 e 3 cm de dilatação.",
+              "enunciado": "Qual é a conduta agora?",
+              "opcoes": [
+                "Analgesia de parto",
+                "Avaliar a vitalidade",
+                "Amniotomia imediata",
+                "Inibir o trabalho de parto"
               ],
-              "explicacao": "Na vasa prévia o sangue perdido é fetal, por isso o feto entra em sofrimento rapidamente.",
-              "revisado": false
+              "resposta": "Amniotomia imediata",
+              "explicacao": "Descolamento de placenta; a amniotomia reduz a pressão e acelera o parto.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u1-l3-q2",
@@ -1139,25 +1132,35 @@
             },
             {
               "id": "go-u4-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O primeiro exame na mulher com amenorreia secundária é o teste de gravidez.",
-              "resposta": true,
-              "explicacao": "A gravidez é a causa mais comum de falta de menstruação.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 43 anos sem menstruar há 60 dias, gravidez negativa, mamas doloridas. Toma sulpirida para depressão há 4 meses.",
+              "enunciado": "Qual é a principal hipótese?",
+              "opcoes": [
+                "Falência ovariana",
+                "Gravidez psicológica",
+                "SOP",
+                "Bloqueio das gonadotrofinas"
+              ],
+              "resposta": "Bloqueio das gonadotrofinas",
+              "explicacao": "A sulpirida eleva a prolactina, que inibe o GnRH.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u4-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A amenorreia ___ é a ausência de menstruação aos 15 anos em uma menina com desenvolvimento sexual presente.",
+              "tipo": "caso_clinico",
+              "caso": "Atleta de 23 anos sem menstruar há 2 anos, com fratura de estresse e massa óssea baixa. Já ajustou treino e dieta.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "primária",
-                "secundária",
-                "hipotalâmica",
-                "funcional"
+                "Anticoncepcional hormonal combinado",
+                "Bisfosfonato",
+                "Cálcio em dose alta",
+                "Musculação"
               ],
-              "resposta": "primária",
-              "explicacao": "Se não houver desenvolvimento das mamas aos 13 anos, também se investiga.",
-              "revisado": false
+              "resposta": "Anticoncepcional hormonal combinado",
+              "explicacao": "Tríade da atleta: o essencial é corrigir o déficit de energia.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u4-l1-q5",
@@ -2289,28 +2292,19 @@
           "questoes": [
             {
               "id": "go-u7-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada distocia à causa.",
-              "pares": [
-                {
-                  "esquerda": "Distocia funcional",
-                  "direita": "Contrações ineficientes"
-                },
-                {
-                  "esquerda": "Distocia de trajeto",
-                  "direita": "Pelve estreita"
-                },
-                {
-                  "esquerda": "Distocia fetal",
-                  "direita": "Bebê grande ou mal posicionado"
-                },
-                {
-                  "esquerda": "Distocia de ombro",
-                  "direita": "Ombro preso após sair a cabeça"
-                }
+              "tipo": "caso_clinico",
+              "caso": "No parto, a cabeça saiu e voltou contra o períneo, e o ombro não desprende.",
+              "enunciado": "Qual é a primeira manobra?",
+              "opcoes": [
+                "Anteriorizar o dorso",
+                "Fraturar a clavícula",
+                "Hiperfletir as coxas da mãe",
+                "Zavanelli"
               ],
-              "explicacao": "Os 3 P: força, passagem e passageiro.",
-              "revisado": false
+              "resposta": "Hiperfletir as coxas da mãe",
+              "explicacao": "Manobra de McRoberts.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u7-l2-q2",
@@ -3002,17 +2996,19 @@
             },
             {
               "id": "go-u9-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o valor do índice de líquido amniótico que define oligoidrâmnio?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 40 semanas com líquido amniótico de 4,6 cm, feto bem e colo com 2 cm, grosso e posterior.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Abaixo de 5 cm",
-                "Acima de 25 cm",
-                "10 cm",
-                "15 cm"
+                "Ocitocina",
+                "Reavaliar em 48 horas",
+                "Cesárea",
+                "Preparo do colo com prostaglandina"
               ],
-              "resposta": "Abaixo de 5 cm",
-              "explicacao": "Ou maior bolsão abaixo de 2 cm.",
-              "revisado": false
+              "resposta": "Preparo do colo com prostaglandina",
+              "explicacao": "Oligoâmnio no termo indica parto.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u9-l2-q3",
@@ -3725,16 +3721,17 @@
             {
               "id": "go-u11-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tumor pélvico mais comum em mulheres?",
+              "enunciado": "Na histerectomia abdominal, após fechar a cúpula vaginal, qual é o próximo passo?",
               "opcoes": [
-                "Mioma uterino",
-                "Cisto de ovário",
-                "Câncer de endométrio",
-                "Pólipo"
+                "Suturar os ligamentos uterossacros à cúpula",
+                "Fixar os pubovesicocervicais",
+                "Fixar os ligamentos redondos",
+                "Suturar o infundíbulo pélvico"
               ],
-              "resposta": "Mioma uterino",
-              "explicacao": "Mais em mulheres negras.",
-              "revisado": false
+              "resposta": "Suturar os ligamentos uterossacros à cúpula",
+              "explicacao": "Previne o prolapso de cúpula.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u11-l2-q3",
@@ -3881,17 +3878,19 @@
             },
             {
               "id": "go-u11-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento inicial da dor por endometriose?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 18 anos com cólica forte que começa um dia antes da menstruação, exame normal.",
+              "enunciado": "Qual é o tratamento inicial?",
               "opcoes": [
-                "Anti-inflamatório e pílula ou progestagênio",
-                "Cirurgia sempre",
-                "Antibiótico",
-                "Cirurgia em todos os casos logo no diagnóstico"
+                "Gestrinona",
+                "Azitromicina",
+                "DIU de progesterona",
+                "Ácido mefenâmico"
               ],
-              "resposta": "Anti-inflamatório e pílula ou progestagênio",
-              "explicacao": "Supressão hormonal.",
-              "revisado": false
+              "resposta": "Ácido mefenâmico",
+              "explicacao": "Dismenorreia primária responde a anti-inflamatório.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u11-l3-q6",
@@ -3977,11 +3976,18 @@
             },
             {
               "id": "go-u12-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A bexiga hiperativa é tratada com anticolinérgicos ou mirabegrona.",
-              "resposta": true,
-              "explicacao": "Junto com treinamento vesical.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Nos exercícios de Kegel para incontinência de esforço, que músculo se exercita?",
+              "opcoes": [
+                "Esfíncter externo da bexiga",
+                "Pubococcígeo",
+                "Obturador interno",
+                "Detrusor"
+              ],
+              "resposta": "Pubococcígeo",
+              "explicacao": "Faz parte do levantador do ânus.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-u12-l1-q4",
@@ -7118,18 +7124,18 @@
             },
             {
               "id": "go-d6-l2-q4",
-              "tipo": "caso_clinico",
-              "caso": "Mulher em indução de ovulação tem distensão abdominal, ganho de peso e falta de ar.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na fertilização in vitro com muitos folículos e ovários muito aumentados, qual é a principal complicação?",
               "opcoes": [
-                "Hiperestimulação ovariana",
-                "Gravidez ectópica",
-                "Apendicite",
-                "Ganho de peso normal da indução"
+                "Endometrite",
+                "Ascite e derrame pleural",
+                "Ooforite",
+                "Gemelaridade"
               ],
-              "resposta": "Hiperestimulação ovariana",
-              "explicacao": "Casos graves precisam de internação.",
-              "revisado": false
+              "resposta": "Ascite e derrame pleural",
+              "explicacao": "Síndrome de hiperestímulo ovariano.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-d6-l2-q5",
@@ -8785,32 +8791,33 @@
             {
               "id": "go-d10-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 35 semanas com náusea, dor abdominal, hipoglicemia, insuficiência hepática e coagulopatia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Gestante de 9 semanas com vômitos intensos, FC 124, potássio 3,0, alcalose metabólica e TSH 0,02 com T4 normal.",
+              "enunciado": "Além de antiemético e hidratação, o que prescrever?",
               "opcoes": [
-                "Esteatose hepática aguda da gestação",
-                "Colestase",
-                "Hepatite A",
-                "HELLP sem hipoglicemia nem coagulopatia"
+                "Bicarbonato",
+                "Oxigênio",
+                "Potássio venoso",
+                "Diurético"
               ],
-              "resposta": "Esteatose hepática aguda da gestação",
-              "explicacao": "Parto imediato.",
-              "revisado": false
+              "resposta": "Potássio venoso",
+              "explicacao": "Vômitos causam alcalose e perda de potássio.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-d10-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 35 semanas tem náuseas, icterícia, glicose de 50 e coagulação alterada.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Após estabilizar essa gestante com hiperêmese e TSH baixo, qual é a conduta?",
               "opcoes": [
-                "Esteatose hepática aguda",
-                "Síndrome HELLP",
-                "Hepatite A",
-                "Colestase intra-hepática da gestação"
+                "Repetir o TSH",
+                "Propiltiouracil",
+                "Propranolol",
+                "Levotiroxina"
               ],
-              "resposta": "Esteatose hepática aguda",
-              "explicacao": "A hipoglicemia e a falência hepática maior sugerem esteatose aguda; ambas exigem parto.",
-              "revisado": false
+              "resposta": "Repetir o TSH",
+              "explicacao": "O hCG suprime o TSH de forma transitória.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "go-d10-l3-q4",

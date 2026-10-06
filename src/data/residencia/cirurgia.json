@@ -272,11 +272,19 @@
             },
             {
               "id": "cir-u1-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Hérnia encarcerada é a que não reduz; estrangulada é quando há comprometimento vascular.",
-              "resposta": true,
-              "explicacao": "A hérnia estrangulada é emergência cirúrgica pelo risco de necrose da alça.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idoso com obstrução intestinal, distensão e vômitos vai para laparotomia.",
+              "enunciado": "Como manejar a via aérea na anestesia?",
+              "opcoes": [
+                "Ventilar com máscara e pressão positiva",
+                "Pré-oxigenar e fazer sequência rápida",
+                "Máscara laríngea",
+                "Máscara com cânula de Guedel"
+              ],
+              "resposta": "Pré-oxigenar e fazer sequência rápida",
+              "explicacao": "Estômago cheio, risco alto de aspiração.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u1-l3-q3",
@@ -788,17 +796,19 @@
             },
             {
               "id": "cir-u3-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na coledocolitíase, o cálculo costuma ser retirado por ___, e depois se faz a colecistectomia.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher operada por colecistite aguda com cálculo impactado e muita inflamação ao redor.",
+              "enunciado": "Por quanto tempo manter antibiótico?",
               "opcoes": [
-                "CPRE",
-                "radioterapia",
-                "laparotomia sempre",
-                "punção do fígado"
+                "Até 24 horas",
+                "72 horas",
+                "5 dias",
+                "7 dias"
               ],
-              "resposta": "CPRE",
-              "explicacao": "A CPRE abre a papila e retira o cálculo pelo endoscópio.",
-              "revisado": false
+              "resposta": "Até 24 horas",
+              "explicacao": "Retirada a vesícula, o foco foi controlado.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u3-l1-q5",
@@ -890,11 +900,19 @@
             },
             {
               "id": "cir-u3-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A alimentação pela boca ou por sonda deve começar cedo na pancreatite, assim que tolerada.",
-              "resposta": true,
-              "explicacao": "Alimentar o intestino reduz infecções e complicações.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 31 anos teve pancreatite leve. Ultrassom sem cálculos e sem dilatação da via biliar. Não bebe.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Ecoendoscopia",
+                "Colecistectomia",
+                "Ácido ursodesoxicólico",
+                "Tomografia"
+              ],
+              "resposta": "Ecoendoscopia",
+              "explicacao": "Procura microcálculos não vistos no ultrassom.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u3-l2-q4",
@@ -2620,28 +2638,19 @@
           "questoes": [
             {
               "id": "cir-u8-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado da isquemia aguda aos 6 P.",
-              "pares": [
-                {
-                  "esquerda": "Dor",
-                  "direita": "Pain"
-                },
-                {
-                  "esquerda": "Palidez",
-                  "direita": "Pallor"
-                },
-                {
-                  "esquerda": "Ausência de pulso",
-                  "direita": "Pulselessness"
-                },
-                {
-                  "esquerda": "Paralisia",
-                  "direita": "Paralysis"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 60 anos com dor súbita no flanco esquerdo, quase desmaiou e tem massa pulsátil dolorosa, mas está estável.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Aneurisma de aorta roto tamponado",
+                "Dissecção da aorta abdominal",
+                "Trombose da aorta",
+                "Aneurisma crescendo"
               ],
-              "explicacao": "Também parestesia e frio (poiquilotermia).",
-              "revisado": false
+              "resposta": "Aneurisma de aorta roto tamponado",
+              "explicacao": "O sangue ficou contido no retroperitônio por ora.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u8-l2-q2",
@@ -3328,28 +3337,19 @@
           "questoes": [
             {
               "id": "cir-u10-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada critério de Light ao exsudato.",
-              "pares": [
-                {
-                  "esquerda": "Proteína do líquido dividida pela do sangue",
-                  "direita": "Acima de 0,5"
-                },
-                {
-                  "esquerda": "LDH do líquido dividido pelo do sangue",
-                  "direita": "Acima de 0,6"
-                },
-                {
-                  "esquerda": "LDH do líquido",
-                  "direita": "Acima de dois terços do limite normal"
-                },
-                {
-                  "esquerda": "Transudato",
-                  "direita": "Nenhum critério presente"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem com câncer de reto avançado tem derrame pleural neoplásico que voltou 4 semanas após punção. Pulmão expandiu bem antes.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Repetir a punção",
+                "Dreno e pleurodese",
+                "Dreno até reduzir o débito",
+                "Pleurectomia"
               ],
-              "explicacao": "Um critério já indica exsudato.",
-              "revisado": false
+              "resposta": "Dreno e pleurodese",
+              "explicacao": "Pulmão que expande permite pleurodese.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u10-l2-q2",
@@ -4186,17 +4186,19 @@
             },
             {
               "id": "cir-u12-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tempo crítico para salvar o testículo torcido?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 28 anos com testículo direito duro e 5 vezes maior há 2 meses. Ultrassom: massa sólida heterogênea com necrose.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Até 6 horas",
-                "48 horas",
-                "1 semana",
-                "Não há pressa nenhuma"
+                "AFP, DHL e beta-hCG e orquiectomia por via inguinal",
+                "CEA e biópsia por agulha",
+                "AFP, DHL, beta-hCG e biópsia",
+                "CEA e orquiectomia"
               ],
-              "resposta": "Até 6 horas",
-              "explicacao": "Depois disso a perda aumenta.",
-              "revisado": false
+              "resposta": "AFP, DHL e beta-hCG e orquiectomia por via inguinal",
+              "explicacao": "Biópsia pelo escroto é proibida.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u12-l3-q3",
@@ -4529,17 +4531,19 @@
             },
             {
               "id": "cir-u13-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual síndrome se associa à atresia duodenal?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido a termo baba muito e a sonda orogástrica não passa.",
+              "enunciado": "Qual exame pedir agora?",
               "opcoes": [
-                "Síndrome de Down",
-                "Turner",
-                "Marfan",
-                "Klinefelter com testículos pequenos"
+                "Broncoscopia",
+                "Tomografia com contraste",
+                "Ultrassom",
+                "Radiografia de abdome"
               ],
-              "resposta": "Síndrome de Down",
-              "explicacao": "Pesquisar cardiopatia.",
-              "revisado": false
+              "resposta": "Radiografia de abdome",
+              "explicacao": "Ar no estômago indica fístula traqueoesofágica distal.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u13-l3-q3",
@@ -5466,11 +5470,19 @@
             },
             {
               "id": "cir-u16-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na lombalgia aguda sem sinais de alarme, não é preciso exame de imagem.",
-              "resposta": true,
-              "explicacao": "Manter-se ativo ajuda.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 65 anos com lombalgia forte irradiando para as duas pernas, fraqueza nos pés, reflexos abolidos, anestesia em sela, disfunção erétil e bexiga palpável.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Síndrome da cauda equina; ressonância lombossacra",
+                "Compressão da medula torácica",
+                "Guillain-Barré",
+                "Metástase cervical"
+              ],
+              "resposta": "Síndrome da cauda equina; ressonância lombossacra",
+              "explicacao": "Emergência cirúrgica.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-u16-l2-q3",
@@ -5727,17 +5739,19 @@
             },
             {
               "id": "cir-d1-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "No politraumatizado em choque hemorrágico, qual é a proporção recomendada na transfusão maciça?",
+              "tipo": "caso_clinico",
+              "caso": "Atropelado por trem, intubado, sem murmúrio e hipertimpânico à esquerda, PA 70 x 40, FAST positivo no abdome, pupila direita dilatada e perna amputada sangrando.",
+              "enunciado": "Qual é a sequência correta?",
               "opcoes": [
-                "Plasma, plaquetas e hemácias perto de 1:1:1",
-                "Só hemácias",
-                "Só cristaloide",
-                "Apenas cristaloide em grande volume até a pressão normalizar"
+                "Dreno, torniquete, tomografia e laparotomia",
+                "Tomografia, dreno, laparotomia e torniquete",
+                "Dreno, torniquete, laparotomia e tomografia de crânio",
+                "Torniquete, dreno, tomografia e laparotomia"
               ],
-              "resposta": "Plasma, plaquetas e hemácias perto de 1:1:1",
-              "explicacao": "O ácido tranexâmico em até 3 horas também reduz a mortalidade.",
-              "revisado": false
+              "resposta": "Dreno, torniquete, laparotomia e tomografia de crânio",
+              "explicacao": "Primeiro o que mata mais rápido; a tomografia espera a estabilidade.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-d1-l1-q4",
@@ -6545,17 +6559,19 @@
             },
             {
               "id": "cir-d3-l1-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na hérnia de hiato do tipo ___, o estômago sobe ao lado do esôfago, com a junção no lugar, e há risco de volvo gástrico.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 46 anos com regurgitação noturna, disfagia para sólidos e perda de peso, sem melhora com pantoprazol. Esofagograma com afilamento em bico de pássaro.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "paraesofágica (tipo II)",
-                "deslizante (tipo I)",
-                "fisiológica",
-                "congênita de Bochdalek"
+                "Esofagectomia",
+                "Hiatoplastia e fundoplicatura parcial",
+                "Hiatoplastia e fundoplicatura total",
+                "Cardiomiotomia e fundoplicatura parcial"
               ],
-              "resposta": "paraesofágica (tipo II)",
-              "explicacao": "Hérnias paraesofágicas com sintomas costumam ser operadas.",
-              "revisado": false
+              "resposta": "Cardiomiotomia e fundoplicatura parcial",
+              "explicacao": "Cirurgia de Heller com Dor ou Toupet.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-d3-l1-q8",
@@ -6802,17 +6818,19 @@
             },
             {
               "id": "cir-d3-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A hipoglicemia que surge horas após as refeições, meses ou anos depois do bypass, é chamada de dumping ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher operada de bypass gástrico há 2 meses tem disfagia e regurgitação de sólidos que pioram há 1 mês.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "tardio",
-                "precoce",
-                "noturno",
-                "inverso"
+                "Bulimia",
+                "Hérnia interna",
+                "Estenose da enteroenteroanastomose",
+                "Estenose da gastroenteroanastomose"
               ],
-              "resposta": "tardio",
-              "explicacao": "É causada por pico exagerado de insulina após absorção rápida de açúcar.",
-              "revisado": false
+              "resposta": "Estenose da gastroenteroanastomose",
+              "explicacao": "Trata-se com dilatação endoscópica.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-d3-l3-q8",
@@ -8412,17 +8430,18 @@
             {
               "id": "cir-d8-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com câncer colorretal operado tem 2 metástases no fígado ressecáveis.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Cirrótico por hepatite C curada, Child A, sem varizes, tem nódulo de 3,5 cm com realce arterial e lavagem tardia. AFP normal.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Ressecção hepática com quimioterapia",
-                "Só paliativo",
-                "Transplante",
-                "Apenas cuidados paliativos, sem tentar cura"
+                "AFP normal exclui carcinoma",
+                "A função preservada permite hepatectomia parcial",
+                "A biópsia é essencial",
+                "O transplante está contraindicado"
               ],
-              "resposta": "Ressecção hepática com quimioterapia",
-              "explicacao": "Pode curar parte dos pacientes.",
-              "revisado": false
+              "resposta": "A função preservada permite hepatectomia parcial",
+              "explicacao": "O padrão de imagem já define o diagnóstico.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-d8-l1-q2",
@@ -8573,17 +8592,18 @@
             {
               "id": "cir-d8-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Após colecistectomia, a colangiografia mostra secção do ducto hepático comum.",
-              "enunciado": "Qual classificação se usa para descrever e orientar o reparo?",
+              "caso": "Idoso na UTI por pneumonia, em noradrenalina, tem dor no hipocôndrio direito. Tomografia: vesícula distendida, inflamada, com cálculo no infundíbulo. APACHE II de 19.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Strasberg ou Bismuth",
-                "Child-Pugh",
-                "Ranson",
-                "Hinchey para diverticulite"
+                "CPRE com papilotomia",
+                "Colecistectomia aberta",
+                "Colecistectomia por vídeo",
+                "Drenagem percutânea da vesícula"
               ],
-              "resposta": "Strasberg ou Bismuth",
-              "explicacao": "Essas classificações descrevem as lesões de via biliar.",
-              "revisado": false
+              "resposta": "Drenagem percutânea da vesícula",
+              "explicacao": "Em paciente muito grave, a colecistostomia é a ponte.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cir-d8-l2-q4",

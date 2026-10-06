@@ -321,16 +321,17 @@
             {
               "id": "prev-u1-l3-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Como se calcula o número necessário para tratar (NNT)?",
+              "enunciado": "Estudo comparou mortalidade infantil entre municípios que receberam e não receberam o Mais Médicos. Que tipo de estudo é esse?",
               "opcoes": [
-                "1 dividido pela redução absoluta do risco",
-                "1 dividido pelo risco relativo",
-                "Risco relativo menos 1",
-                "1 dividido pela redução relativa do risco"
+                "Coorte prospectiva",
+                "Ecológico",
+                "Coorte retrospectiva",
+                "Transversal"
               ],
-              "resposta": "1 dividido pela redução absoluta do risco",
-              "explicacao": "O NNT diz quantas pessoas precisam ser tratadas para evitar um evento. Quanto menor, mais eficaz o tratamento.",
-              "revisado": false
+              "resposta": "Ecológico",
+              "explicacao": "A unidade é o município.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u1-l3-q7",
@@ -1552,50 +1553,51 @@
             },
             {
               "id": "prev-u5-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada princípio da bioética à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Autonomia",
-                  "direita": "Respeitar as escolhas do paciente informado"
-                },
-                {
-                  "esquerda": "Beneficência",
-                  "direita": "Agir para o bem do paciente"
-                },
-                {
-                  "esquerda": "Não maleficência",
-                  "direita": "Não causar dano"
-                },
-                {
-                  "esquerda": "Justiça",
-                  "direita": "Distribuir recursos de forma equitativa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com depressão, em processo de divórcio, pede cópia do seu prontuário e dos prontuários dos filhos para o processo de guarda.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Dar o dela e o dos filhos só com autorização do pai",
+                "Dar o dela e o dos filhos só com ordem judicial",
+                "Dar o dela e o dos filhos com a autorização por escrito dela",
+                "Dar após consultar o pai"
               ],
-              "explicacao": "São os quatro princípios de Beauchamp e Childress.",
-              "revisado": false
+              "resposta": "Dar o dela e o dos filhos com a autorização por escrito dela",
+              "explicacao": "Ela é responsável legal pelos filhos.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u5-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O Código de Ética Médica proíbe o médico de abandonar o paciente sob seus cuidados.",
-              "resposta": true,
-              "explicacao": "Ele pode deixar de atender se houver motivo justo, garantindo a continuidade do cuidado.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 23 anos com 10 semanas de gravidez decidiu interromper a gestação e já pesquisou remédios na internet.",
+              "enunciado": "Como acolhê-la?",
+              "opcoes": [
+                "Acolher a decisão e orientar sobre os riscos dos métodos",
+                "Sugerir que fale com o ex-namorado",
+                "Dizer que precisa notificar a justiça",
+                "Dizer que o Código de Ética impede outras ações"
+              ],
+              "resposta": "Acolher a decisão e orientar sobre os riscos dos métodos",
+              "explicacao": "Redução de danos, mantendo o sigilo.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u5-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O documento em que o paciente registra antecipadamente os cuidados que quer ou não receber é chamado de diretivas antecipadas de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com câncer sem cura tem milhões de seguidores e a família pressiona o hospital nas redes por um remédio sem eficácia para o seu caso.",
+              "enunciado": "Qual deve ser a postura da instituição?",
               "opcoes": [
-                "vontade",
-                "tratamento",
-                "internação",
-                "alta hospitalar"
+                "Não divulgar dados da paciente sem autorização, mesmo já públicos",
+                "Divulgar detalhes para evitar desinformação",
+                "Não há regra clara",
+                "Incentivar a equipe a esclarecer nas redes"
               ],
-              "resposta": "vontade",
-              "explicacao": "A Resolução CFM 1.995/2012 trata desse tema.",
-              "revisado": false
+              "resposta": "Não divulgar dados da paciente sem autorização, mesmo já públicos",
+              "explicacao": "O sigilo continua valendo.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u5-l2-q5",
@@ -2023,6 +2025,21 @@
               "explicacao": "Pergunta aberta, sem ameaça ou julgamento, cria vínculo.",
               "revisado": false,
               "fonte": "USP-SP 2023"
+            },
+            {
+              "id": "prev-u6-l2-q9",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o método clínico centrado na pessoa, o que é correto?",
+              "opcoes": [
+                "Organiza a consulta considerando o médico e a pessoa, em casos agudos ou crônicos",
+                "Coloca as vontades da pessoa acima de tudo",
+                "Começa entendendo o contexto distante",
+                "Só busca a demanda oculta"
+              ],
+              "resposta": "Organiza a consulta considerando o médico e a pessoa, em casos agudos ou crônicos",
+              "explicacao": "É um modelo de parceria.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             }
           ]
         },
@@ -2234,17 +2251,18 @@
             {
               "id": "prev-u7-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Médico atende criança com paralisia flácida aguda.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem com doença meningocócica mora com esposa e 2 filhos e trabalha num escritório com 5 adultos.",
+              "enunciado": "Como fazer a quimioprofilaxia?",
               "opcoes": [
-                "Notificar já como suspeita de pólio",
-                "Esperar exames",
-                "No fim do mês",
-                "Esperar os exames e notificar só no fim do mês"
+                "Todos de casa e do trabalho",
+                "Casa com rifampicina e vacina no trabalho",
+                "Casa e profissionais de saúde com qualquer contato",
+                "Todos que moram com ele, com rifampicina"
               ],
-              "resposta": "Notificar já como suspeita de pólio",
-              "explicacao": "Vigilância da pólio.",
-              "revisado": false
+              "resposta": "Todos que moram com ele, com rifampicina",
+              "explicacao": "Colegas de trabalho não são contatos íntimos.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u7-l1-q7",
@@ -2307,11 +2325,18 @@
             },
             {
               "id": "prev-u7-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A curva epidêmica de fonte comum pontual tem subida rápida e pico único.",
-              "resposta": true,
-              "explicacao": "Todos expostos ao mesmo tempo.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o instrumento para saber se há uma epidemia?",
+              "opcoes": [
+                "Comparar a prevalência com anos anteriores",
+                "Comparar a incidência com cidades vizinhas",
+                "Comparar a incidência atual com a de anos anteriores",
+                "Comparar a prevalência com vizinhos"
+              ],
+              "resposta": "Comparar a incidência atual com a de anos anteriores",
+              "explicacao": "Diagrama de controle com a incidência esperada.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u7-l2-q4",
@@ -2416,11 +2441,18 @@
             },
             {
               "id": "prev-u7-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Vacinas vivas atenuadas são contraindicadas em imunodeprimidos graves.",
-              "resposta": true,
-              "explicacao": "Risco de doença vacinal.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a coqueluche continua com muitos casos apesar da boa cobertura vacinal?",
+              "opcoes": [
+                "A vacina é pouco imunogênica",
+                "Cepas escapam da vacina",
+                "Os casos se concentram em menores de 1 ano antes de completarem o esquema",
+                "A biologia molecular aumentou os diagnósticos"
+              ],
+              "resposta": "Os casos se concentram em menores de 1 ano antes de completarem o esquema",
+              "explicacao": "Por isso se vacina a gestante com dTpa.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u7-l3-q4",
@@ -2895,11 +2927,19 @@
             },
             {
               "id": "prev-u9-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Risco relativo igual a 1 indica ausência de associação.",
-              "resposta": true,
-              "explicacao": "Maior que 1 é fator de risco.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Em 14 anos, houve 8 melanomas em 800 usuários diários de protetor e 16 em 800 controles.",
+              "enunciado": "Quantos precisam usar protetor para evitar 1 melanoma?",
+              "opcoes": [
+                "10",
+                "32",
+                "64",
+                "100"
+              ],
+              "resposta": "100",
+              "explicacao": "Redução absoluta de 1%.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u9-l1-q4",
@@ -3457,11 +3497,18 @@
             },
             {
               "id": "prev-u10-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os usuários ocupam 50% das vagas nos conselhos de saúde.",
-              "resposta": true,
-              "explicacao": "Paridade.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o controle social no SUS, o que é correto?",
+              "opcoes": [
+                "Sindicatos não podem compor conselhos",
+                "Prestadores conveniados podem participar",
+                "Conferências surgiram em 1988",
+                "Um terço para cada segmento"
+              ],
+              "resposta": "Prestadores conveniados podem participar",
+              "explicacao": "Usuários têm 50% das vagas; as conferências existem desde 1941.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u10-l3-q4",
@@ -3842,16 +3889,17 @@
             {
               "id": "prev-u11-l3-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a estratégia de cuidado para usuários de drogas no SUS?",
+              "enunciado": "Qual definição sobre diversidade sexual está correta?",
               "opcoes": [
-                "Redução de danos",
-                "Só abstinência forçada",
-                "Prisão",
-                "Abstinência forçada em comunidade fechada"
+                "Orientação sexual é com quem a pessoa transa",
+                "Identidade de gênero é autodeclarada; ex.: homem cis, mulher trans, travesti",
+                "Identidade de gênero é definida pela sociedade",
+                "Orientação sexual é como a pessoa se expressa"
               ],
-              "resposta": "Redução de danos",
-              "explicacao": "Respeita a pessoa.",
-              "revisado": false
+              "resposta": "Identidade de gênero é autodeclarada; ex.: homem cis, mulher trans, travesti",
+              "explicacao": "Orientação é por quem a pessoa sente atração.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-u11-l3-q6",
@@ -6785,18 +6833,18 @@
           "questoes": [
             {
               "id": "prev-d5-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente teve contato com água de enchente e agora tem febre, dor na panturrilha, olhos vermelhos e icterícia.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a esquistossomose, o que é correto?",
               "opcoes": [
-                "Leptospirose (síndrome de Weil)",
-                "Hepatite A",
-                "Dengue",
-                "Malária por falciparum grave e cerebral"
+                "Os ovos saem nas fezes por toda a vida",
+                "As cinco espécies estão no Brasil",
+                "Envolve helminto, humano e vetor",
+                "A cercária penetra ativamente pela pele íntegra"
               ],
-              "resposta": "Leptospirose (síndrome de Weil)",
-              "explicacao": "A forma grave tem icterícia, insuficiência renal e sangramento pulmonar.",
-              "revisado": false
+              "resposta": "A cercária penetra ativamente pela pele íntegra",
+              "explicacao": "O caramujo é hospedeiro intermediário, não vetor.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-d5-l3-q2",
@@ -7461,18 +7509,18 @@
             },
             {
               "id": "prev-d7-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Ensaio clínico com 20% de eventos no grupo controle e 10% no grupo tratado.",
-              "enunciado": "Qual é a redução relativa de risco?",
+              "tipo": "multipla_escolha",
+              "enunciado": "A CoronaVac teve eficácia de 50,7% no Brasil, 83,5% na Turquia e efetividade de 65,9% no Chile. O que explica a diferença?",
               "opcoes": [
-                "50%",
-                "10%",
-                "20%",
-                "100%"
+                "Desenhos e objetivos diferentes",
+                "Os três ensaios não se comparam",
+                "A diferença não é significativa",
+                "Vacina atenuada tem baixo desempenho"
               ],
-              "resposta": "50%",
-              "explicacao": "10% dividido por 20%.",
-              "revisado": false
+              "resposta": "Desenhos e objetivos diferentes",
+              "explicacao": "Eficácia é de ensaio; efetividade, de mundo real.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-d7-l2-q3",
@@ -9054,18 +9102,18 @@
             },
             {
               "id": "prev-d11-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Prefeitura quer contar gastos para atingir o mínimo de 15% em saúde.",
-              "enunciado": "Qual gasto não pode entrar nessa conta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a relação público-privada na saúde, o que é correto?",
               "opcoes": [
-                "Merenda escolar",
-                "Remédios do SUS",
-                "Salários dos profissionais do SUS",
-                "Vigilância epidemiológica"
+                "Planos de saúde não são dedutíveis no imposto",
+                "Filantrópicos atendem 80% SUS obrigatoriamente",
+                "Usuário de plano não pode pegar remédio no SUS",
+                "O SUS é ressarcido só pelos procedimentos cobertos no contrato"
               ],
-              "resposta": "Merenda escolar",
-              "explicacao": "A Lei Complementar 141 exclui merenda e saneamento sem decisão do conselho.",
-              "revisado": false
+              "resposta": "O SUS é ressarcido só pelos procedimentos cobertos no contrato",
+              "explicacao": "Planos são dedutíveis no imposto de renda.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "prev-d11-l2-q4",

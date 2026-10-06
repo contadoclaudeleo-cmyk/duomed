@@ -95,17 +95,19 @@
             },
             {
               "id": "ped-u1-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual destas é uma contraindicação verdadeira às vacinas de vírus vivo atenuado?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses internado desde o nascimento por atresia duodenal recebeu BCG e hepatite B.",
+              "enunciado": "Quais vacinas dar agora?",
               "opcoes": [
-                "Imunodeficiência grave ou corticoide imunossupressor",
-                "Febre baixa",
-                "Uso de antibiótico",
-                "Prematuridade e uso de antibiótico na semana da vacina"
+                "Pneumocócica, tetravalente, VIP e rotavírus",
+                "Pneumocócica, pentavalente e VIP",
+                "Pneumocócica, meningo C, rotavírus e palivizumabe",
+                "Pneumocócica e pentavalente"
               ],
-              "resposta": "Imunodeficiência grave ou corticoide imunossupressor",
-              "explicacao": "Gestação também contraindica vacinas vivas. As outras situações não impedem a vacinação.",
-              "revisado": false
+              "resposta": "Pneumocócica, pentavalente e VIP",
+              "explicacao": "Rotavírus não é dado em bebê internado.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u1-l1-q7",
@@ -411,17 +413,19 @@
             },
             {
               "id": "ped-u2-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "Se, após os passos iniciais, o bebê não respira ou tem frequência cardíaca abaixo de ___ bpm, inicia-se ventilação com pressão positiva.",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 38 semanas, após os passos iniciais, está em apneia com FC de 80.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "100",
-                "60",
-                "160",
-                "40"
+                "Adrenalina e volume",
+                "Ventilação com pressão positiva em ar ambiente (21%)",
+                "Oxigênio 100% em máscara aberta",
+                "Massagem cardíaca"
               ],
-              "resposta": "100",
-              "explicacao": "A ventilação é o procedimento mais importante da reanimação neonatal.",
-              "revisado": false
+              "resposta": "Ventilação com pressão positiva em ar ambiente (21%)",
+              "explicacao": "No bebê a termo, a ventilação começa com 21% de oxigênio.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u2-l1-q4",
@@ -999,36 +1003,35 @@
             },
             {
               "id": "ped-u3-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Em bebês que usam fralda, a urina colhida por saco coletor serve para confirmar infecção urinária.",
-              "resposta": false,
-              "explicacao": "O saco coletor contamina muito e só serve para excluir infecção quando o resultado é negativo.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 8 meses com febre sem foco e urina com leucócitos começou amoxicilina-clavulanato. Está sem febre, mas surgiram manchas no tronco. A urocultura deu negativa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Manter e dar anti-histamínico",
+                "Trocar por não betalactâmico",
+                "Suspender o antibiótico",
+                "Repetir a urina"
+              ],
+              "resposta": "Suspender o antibiótico",
+              "explicacao": "Sem infecção urinária, não há o que tratar.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u3-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada forma de coletar urina ao seu uso.",
-              "pares": [
-                {
-                  "esquerda": "Saco coletor",
-                  "direita": "Só exclui infecção quando negativo"
-                },
-                {
-                  "esquerda": "Sondagem vesical",
-                  "direita": "Confirma infecção em quem usa fralda"
-                },
-                {
-                  "esquerda": "Punção suprapúbica",
-                  "direita": "Padrão-ouro em bebês pequenos"
-                },
-                {
-                  "esquerda": "Jato médio",
-                  "direita": "Crianças que já controlam a urina"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 2 anos e meio teve pneumonia com UTI, 3 otites, celulite e sinusite com celulite periorbitária em 6 meses, e não ganhou peso nem altura.",
+              "enunciado": "Qual é a conduta prioritária?",
+              "opcoes": [
+                "Orientar alimentação e investigar ferro",
+                "Explicar que é normal na creche",
+                "Investigar tireoide e GH",
+                "Hemograma, imunoglobulinas, complemento e encaminhar ao imunologista"
               ],
-              "explicacao": "A coleta adequada evita tratamentos e exames desnecessários.",
-              "revisado": false
+              "resposta": "Hemograma, imunoglobulinas, complemento e encaminhar ao imunologista",
+              "explicacao": "Infecções graves e parada de crescimento sugerem imunodeficiência.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u3-l3-q4",
@@ -2573,25 +2576,34 @@
             },
             {
               "id": "ped-u8-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "É normal o bebê ainda não sustentar a cabeça aos 4 meses.",
-              "resposta": false,
-              "explicacao": "Falso. Aos 4 meses o bebê deve sustentar a cabeça; se não sustenta, avaliar atraso motor.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 11 meses, prematuro de 35 semanas, imita palmas, faz pinça, balbucia e fica em pé com apoio, mas não engatinha.",
+              "enunciado": "Como está o desenvolvimento?",
+              "opcoes": [
+                "Atrasado pela prematuridade",
+                "Atraso motor, fisioterapia",
+                "Adequado para a idade",
+                "Atraso motor e de fala"
+              ],
+              "resposta": "Adequado para a idade",
+              "explicacao": "Engatinhar não é marco obrigatório.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u8-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A criança deve falar frases de duas palavras por volta dos ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "A mãe fala com o bebê de 2 meses de forma infantilizada (\"manhês\"). Como avaliar?",
               "opcoes": [
-                "2 anos",
-                "6 meses",
-                "4 anos",
-                "1 ano"
+                "Desnecessário",
+                "Adequado, mostra bom vínculo",
+                "Prejudica a fala",
+                "Inadequado"
               ],
-              "resposta": "2 anos",
-              "explicacao": "Atraso de linguagem exige avaliação.",
-              "revisado": false
+              "resposta": "Adequado, mostra bom vínculo",
+              "explicacao": "Estimula a linguagem.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u8-l1-q5",
@@ -2996,28 +3008,19 @@
           "questoes": [
             {
               "id": "ped-u9-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada púrpura à característica.",
-              "pares": [
-                {
-                  "esquerda": "PTI",
-                  "direita": "Plaquetas baixas após virose"
-                },
-                {
-                  "esquerda": "Púrpura de Henoch-Schönlein",
-                  "direita": "Púrpura palpável nas pernas com plaquetas normais"
-                },
-                {
-                  "esquerda": "Hemofilia",
-                  "direita": "Sangramento nas articulações"
-                },
-                {
-                  "esquerda": "Meningococcemia",
-                  "direita": "Febre e manchas que se espalham"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 1 ano e meio com hemofilia A grave caiu da cama há 1 hora, vomitou 3 vezes e tem hematoma na nuca, mas está alerta.",
+              "enunciado": "Qual é a sequência correta?",
+              "opcoes": [
+                "Tomografia e fator VIII só se sangrar",
+                "Observar 6 horas",
+                "Fator VIII para 100% e depois tomografia",
+                "Alta com dose dobrada"
               ],
-              "explicacao": "Diferenciar.",
-              "revisado": false
+              "resposta": "Fator VIII para 100% e depois tomografia",
+              "explicacao": "Na hemofilia, repõe-se o fator antes de qualquer exame.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-u9-l2-q2",
@@ -10011,17 +10014,18 @@
             {
               "id": "ped-d13-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido falhou na triagem auditiva e a mãe teve virose na gestação.",
-              "enunciado": "Qual exame confirma CMV congênito?",
+              "caso": "Recém-nascido de 19 dias, mãe sem pré-natal, tem pálpebras inchadas, olhos vermelhos e secreção purulenta há 1 dia.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "PCR na urina até 3 semanas",
-                "Sorologia aos 6 meses",
-                "Raio X de crânio",
-                "Sorologia materna no pós-parto imediato"
+                "Conjuntivite por clamídia",
+                "Conjuntivite química",
+                "Conjuntivite gonocócica",
+                "Obstrução do ducto lacrimal"
               ],
-              "resposta": "PCR na urina até 3 semanas",
-              "explicacao": "PCR na urina ou saliva; depois de 3 semanas não se distingue de infecção adquirida.",
-              "revisado": false
+              "resposta": "Conjuntivite por clamídia",
+              "explicacao": "A gonocócica surge nos primeiros 5 dias; a de clamídia, de 5 a 14 dias ou depois.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "ped-d13-l3-q4",

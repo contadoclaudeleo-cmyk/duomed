@@ -2301,17 +2301,18 @@
             {
               "id": "cm-u20-l6-q3",
               "tipo": "caso_clinico",
-              "caso": "Hipertenso de 45 anos tem potássio baixo sem usar diurético.",
-              "enunciado": "Qual exame pedir para rastrear a causa?",
+              "caso": "Homem de 48 anos usa captopril há 6 anos desde uma medida de 180 x 100 com dor de cabeça no pronto-socorro. Desde então a PA fica em 130 x 80 e os exames são normais.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Relação aldosterona e renina",
-                "Cortisol salivar noturno",
-                "TSH e T4 livre",
-                "Metanefrinas plasmáticas"
+                "Manter e pedir exames",
+                "Suspender e acompanhar a pressão",
+                "Checar adesão e pedir exames",
+                "Reduzir a dose e pedir ECG"
               ],
-              "resposta": "Relação aldosterona e renina",
-              "explicacao": "Pensar em hiperaldosteronismo primário.",
-              "revisado": false
+              "resposta": "Suspender e acompanhar a pressão",
+              "explicacao": "O diagnóstico nunca foi confirmado; dor aguda eleva a pressão.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u20-l6-q4",
@@ -4329,17 +4330,18 @@
             {
               "id": "cm-u22-l6-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem trabalhou 20 anos com jateamento de areia. Nódulos nos lobos superiores e linfonodos com calcificação em casca de ovo.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Auxiliar de limpeza de hospital tem tosse e falta de ar durante o dia, que melhoram à noite e somem nos fins de semana. Sibilos discretos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Silicose",
-                "Asbestose",
-                "Sarcoidose",
-                "Tuberculose miliar"
+                "Medir o pico de fluxo no trabalho e em casa",
+                "Afastar por 1 semana e dar prednisona",
+                "Tomografia e broncodilatador longo",
+                "Salbutamol e mudar de setor"
               ],
-              "resposta": "Silicose",
-              "explicacao": "Silicose aumenta o risco de tuberculose.",
-              "revisado": false
+              "resposta": "Medir o pico de fluxo no trabalho e em casa",
+              "explicacao": "Confirma a relação com o trabalho antes de decidir.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u22-l6-q2",
@@ -6250,28 +6252,19 @@
           "questoes": [
             {
               "id": "cm-u12-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada arbovirose ao achado típico.",
-              "pares": [
-                {
-                  "esquerda": "Dengue",
-                  "direita": "Febre alta e risco de choque"
-                },
-                {
-                  "esquerda": "Chikungunya",
-                  "direita": "Dor articular intensa e duradoura"
-                },
-                {
-                  "esquerda": "Zika",
-                  "direita": "Manchas com coceira e conjuntivite"
-                },
-                {
-                  "esquerda": "Febre amarela",
-                  "direita": "Icterícia e sangramentos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 17 anos com febre, dor de cabeça e no corpo há 4 dias, levemente desidratado, PA normal, prova do laço e NS1 negativos.",
+              "enunciado": "Além de antitérmico e afastamento, o que fazer?",
+              "opcoes": [
+                "RT-PCR para covid, hidratação oral, hemograma e notificar covid",
+                "Teste de antígeno, soro venoso no PS e notificar",
+                "Teste de antígeno, soro venoso na UBS",
+                "RT-PCR para covid, hidratação oral e notificar dengue e covid"
               ],
-              "explicacao": "Todas transmitidas por mosquito.",
-              "revisado": false
+              "resposta": "RT-PCR para covid, hidratação oral e notificar dengue e covid",
+              "explicacao": "NS1 negativo no 4º dia não exclui dengue.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u12-l1-q2",
@@ -6625,11 +6618,19 @@
             },
             {
               "id": "cm-u7-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na artrite reumatoide, a rigidez matinal costuma durar mais de 1 hora.",
-              "resposta": true,
-              "explicacao": "Na artrose, a rigidez é curta.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Costureira de 50 anos com dor nas interfalangeanas proximais e metacarpofalangeanas há 6 meses, sem inchaço, pior ao fim do dia, rigidez matinal de 20 minutos e perda de peso.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Radiografia de mãos não entra na investigação",
+                "A investigação inicial inclui dosar TSH",
+                "FR positivo exclui artrite psoriásica",
+                "Rigidez de 20 minutos sugere doença inflamatória"
+              ],
+              "resposta": "A investigação inicial inclui dosar TSH",
+              "explicacao": "Hipotireoidismo causa dor articular; rigidez inflamatória dura mais de 1 hora.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u7-l1-q3",
@@ -7348,11 +7349,19 @@
             },
             {
               "id": "cm-u9-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A trombólise venosa no AVC isquêmico pode ser feita até 4,5 horas do início dos sintomas.",
-              "resposta": true,
-              "explicacao": "Seguindo critérios de inclusão.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 62 anos com hemiplegia esquerda, desvio do olhar e negligência há 5 horas e meia. NIHSS 16, tomografia sem sangramento e ASPECTS 8.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Angio-RM e trombectomia se oclusão de carótida cervical",
+                "Angiotomografia e trombectomia se oclusão da cerebral média",
+                "Angiotomografia e trombólise intra-arterial",
+                "Angio-RM e trombólise venosa"
+              ],
+              "resposta": "Angiotomografia e trombectomia se oclusão da cerebral média",
+              "explicacao": "Fora da janela de trombólise, ainda cabe trombectomia.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u9-l1-q3",
@@ -7820,17 +7829,19 @@
             },
             {
               "id": "cm-u14-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento inicial da anafilaxia?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com insuficiência respiratória será intubado. Está com PA 60 x 30 e FC 120.",
+              "enunciado": "Qual droga usar para a indução?",
               "opcoes": [
-                "Adrenalina intramuscular",
-                "Anti-histamínico oral",
-                "Corticoide oral",
-                "Anti-histamínico oral e observação em casa"
+                "Fentanil",
+                "Midazolam",
+                "Propofol",
+                "Etomidato"
               ],
-              "resposta": "Adrenalina intramuscular",
-              "explicacao": "Repetir se necessário.",
-              "revisado": false
+              "resposta": "Etomidato",
+              "explicacao": "É o que menos derruba a pressão.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u14-l2-q3",
@@ -8686,17 +8697,19 @@
             },
             {
               "id": "cm-u16-l3-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "A escala de ___ avalia a funcionalidade do paciente em cuidados paliativos.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso acamado com demência avançada, sem se comunicar há 1 ano, chega em choque e com respiração ruidosa. A filha entende que é o fim da vida e não quer sofrimento.",
+              "enunciado": "Qual é a conduta sobre a alimentação?",
               "opcoes": [
-                "Karnofsky",
-                "Glasgow",
-                "Apgar",
-                "Child-Pugh"
+                "Sonda nasoenteral",
+                "Soro de expansão e manutenção",
+                "Dieta assistida pela boca",
+                "Manter sem dieta e sem soro"
               ],
-              "resposta": "Karnofsky",
-              "explicacao": "Também a escala PPS.",
-              "revisado": false
+              "resposta": "Manter sem dieta e sem soro",
+              "explicacao": "Na fase final, hidratação e dieta podem aumentar o desconforto.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u16-l3-q4",
@@ -8907,17 +8920,19 @@
           "questoes": [
             {
               "id": "cm-u17-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o agente mais comum da erisipela?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 28 anos com coceira nas virilhas há 1 mês, vermelhidão e descamação. Exame micológico com hifas artrosporadas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Estreptococo",
-                "Estafilococo",
-                "Pseudomonas",
-                "Fungo do gênero Candida"
+                "Tinea negra",
+                "Tinea crural",
+                "Candidíase",
+                "Piedra branca"
               ],
-              "resposta": "Estreptococo",
-              "explicacao": "Placa vermelha com borda bem definida.",
-              "revisado": false
+              "resposta": "Tinea crural",
+              "explicacao": "Na candidíase aparecem pseudo-hifas e lesões satélites.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-u17-l2-q2",
@@ -13278,17 +13293,18 @@
             {
               "id": "cm-d4-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com cetoacidose recebe insulina e hidratação. A glicemia caiu para 220 mg/dL, mas o pH ainda é 7,20 e o ânion gap está alto.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Diabética de 25 anos com vômitos, desidratação, glicose 440, pH 7,21, bicarbonato 13 e potássio 2,8. Já começou a receber soro.",
+              "enunciado": "O que fazer com a insulina agora?",
               "opcoes": [
-                "Manter a insulina e somar soro glicosado",
-                "Suspender a insulina",
-                "Dar bicarbonato",
-                "Suspender a insulina e dar alta para casa"
+                "Insulina regular em bomba",
+                "Insulina em bolus venoso",
+                "Insulina subcutânea",
+                "Ainda não dar insulina"
               ],
-              "resposta": "Manter a insulina e somar soro glicosado",
-              "explicacao": "A insulina é mantida até fechar o ânion gap, e o soro glicosado evita hipoglicemia.",
-              "revisado": false
+              "resposta": "Ainda não dar insulina",
+              "explicacao": "Com potássio abaixo de 3,3, repor antes, pois a insulina o derruba mais.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-d4-l1-q2",
@@ -13959,17 +13975,18 @@
             {
               "id": "cm-d13-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher usa alendronato há 7 anos e vai fazer extração dentária.",
-              "enunciado": "Qual efeito adverso raro se deve lembrar?",
+              "caso": "Mulher de 60 anos com osteopenia passou a tomar 40 mil unidades de vitamina D por dia por conta própria.",
+              "enunciado": "Qual é a consequência a longo prazo?",
               "opcoes": [
-                "Osteonecrose da mandíbula",
-                "Ganho de peso",
-                "Hipertensão arterial",
-                "Hipotireoidismo e queda de cabelo"
+                "Mais massa óssea",
+                "Hipotensão",
+                "Nefrocalcinose",
+                "Hipocalcemia"
               ],
-              "resposta": "Osteonecrose da mandíbula",
-              "explicacao": "Os bisfosfonatos podem causar osteonecrose da mandíbula e fratura atípica de fêmur; por isso se faz pausa no tratamento.",
-              "revisado": false
+              "resposta": "Nefrocalcinose",
+              "explicacao": "O excesso causa hipercalcemia e cálcio nos rins.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-d13-l3-q4",
@@ -15900,17 +15917,18 @@
             {
               "id": "cm-d12-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente internado há 10 dias em ventilação mecânica com febre e infiltrado novo.",
-              "enunciado": "Qual é a cobertura empírica?",
+              "caso": "Mulher de 34 anos com febre, confusão, crises com movimentos de mastigação, edema no lobo temporal e EEG com descargas periódicas lateralizadas.",
+              "enunciado": "Qual é a hipótese e o exame confirmatório?",
               "opcoes": [
-                "Contra Pseudomonas e, se risco, MRSA",
-                "Amoxicilina",
-                "Antifúngico só",
-                "Amoxicilina oral, porque é pneumonia simples"
+                "Encefalite autoimune; anti-NMDA",
+                "Encefalite herpética; PCR para herpes no líquor",
+                "Endocardite com êmbolos; hemoculturas",
+                "Neurotoxoplasmose; ressonância"
               ],
-              "resposta": "Contra Pseudomonas e, se risco, MRSA",
-              "explicacao": "Pneumonia associada à ventilação.",
-              "revisado": false
+              "resposta": "Encefalite herpética; PCR para herpes no líquor",
+              "explicacao": "Aciclovir deve começar já na suspeita.",
+              "revisado": false,
+              "fonte": "USP-SP 2022"
             },
             {
               "id": "cm-d12-l3-q2",
