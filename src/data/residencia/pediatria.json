@@ -151,28 +151,19 @@
             },
             {
               "id": "ped-u1-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada marco do desenvolvimento à idade aproximada em que surge.",
-              "pares": [
-                {
-                  "esquerda": "Sorriso social",
-                  "direita": "Cerca de 2 meses"
-                },
-                {
-                  "esquerda": "Sustenta a cabeça",
-                  "direita": "Cerca de 3 a 4 meses"
-                },
-                {
-                  "esquerda": "Senta sem apoio",
-                  "direita": "Cerca de 6 a 7 meses"
-                },
-                {
-                  "esquerda": "Anda sem apoio",
-                  "direita": "Cerca de 12 a 15 meses"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Prematura de 32 semanas nasceu com 1.300 g. Com 56 dias, pesa 2.800 g em aleitamento exclusivo.",
+              "enunciado": "Como está o ganho de peso?",
+              "opcoes": [
+                "Insuficiente; fórmula e perfil de ferro",
+                "Insuficiente; complemento após o peito",
+                "Adequado; manter aleitamento e seguimento mensal",
+                "Adequado, mas complementar"
               ],
-              "explicacao": "Há variação normal entre crianças. A Caderneta da Criança traz os marcos e as idades limite para cada um.",
-              "revisado": false
+              "resposta": "Adequado; manter aleitamento e seguimento mensal",
+              "explicacao": "Ganhou cerca de 27 g por dia.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u1-l2-q3",
@@ -271,11 +262,19 @@
             },
             {
               "id": "ped-u1-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na bronquiolite, o uso rotineiro de broncodilatador e corticoide é recomendado.",
-              "resposta": false,
-              "explicacao": "O tratamento é de suporte: hidratação, desobstrução nasal e oxigênio se a saturação estiver baixa. Broncodilatador e corticoide não mudam a evolução.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 1 mês caiu do trocador. Chega com Glasgow 7, FR 8 e saturação de 89%, com boa perfusão e PA normal.",
+              "enunciado": "Qual exame é o esperado?",
+              "opcoes": [
+                "pH 7,28 com PaCO2 de 55",
+                "Hemoglobina de 5",
+                "TTPA muito alargado",
+                "Lactato muito alto"
+              ],
+              "resposta": "pH 7,28 com PaCO2 de 55",
+              "explicacao": "Respira pouco: acidose respiratória. Queda grave de trocador sugere investigar maus-tratos.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u1-l3-q3",
@@ -692,17 +691,18 @@
             {
               "id": "ped-u2-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "O teste do pezinho de um bebê mostra TSH elevado.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Recém-nascido de 11 dias perdeu 12% do peso, teve hipoglicemia e tem sódio 126 e potássio 6,8.",
+              "enunciado": "Qual alteração o teste do pezinho deve mostrar?",
               "opcoes": [
-                "Confirmar no sangue e iniciar levotiroxina já",
-                "Repetir com 1 ano",
-                "Observar",
-                "Dar iodo em gotas e repetir o teste com um ano de idade"
+                "Falta de TREC e KREC",
+                "Deficiência de 21-hidroxilase",
+                "Deficiência de carnitina",
+                "Alteração da CFTR"
               ],
-              "resposta": "Confirmar no sangue e iniciar levotiroxina já",
-              "explicacao": "O hipotireoidismo congênito tratado cedo evita a deficiência intelectual.",
-              "revisado": false
+              "resposta": "Deficiência de 21-hidroxilase",
+              "explicacao": "Hiperplasia adrenal perdedora de sal.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u2-l3-q6",
@@ -1123,28 +1123,19 @@
             },
             {
               "id": "ped-u4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de baixa estatura à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Baixa estatura familiar",
-                  "direita": "Idade óssea igual à idade real"
-                },
-                {
-                  "esquerda": "Atraso constitucional",
-                  "direita": "Idade óssea atrasada e pais com puberdade tardia"
-                },
-                {
-                  "esquerda": "Falta de hormônio do crescimento",
-                  "direita": "Idade óssea atrasada e crescimento muito lento"
-                },
-                {
-                  "esquerda": "Puberdade precoce",
-                  "direita": "Idade óssea avançada"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 15 anos sem mamas ou menstruação, baixa estatura. LH e FSH baixos e estradiol indetectável.",
+              "enunciado": "Qual é a hipótese mais provável?",
+              "opcoes": [
+                "Hiperprolactinemia",
+                "Disgenesia gonadal",
+                "Hiperplasia adrenal congênita",
+                "Insensibilidade androgênica"
               ],
-              "explicacao": "A idade óssea é avaliada pela radiografia da mão e do punho.",
-              "revisado": false
+              "resposta": "Hiperprolactinemia",
+              "explicacao": "Gonadotrofinas baixas indicam causa central; a disgenesia teria FSH alto.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u4-l1-q3",
@@ -1655,17 +1646,18 @@
             {
               "id": "ped-u5-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 10 meses com febre há 1 dia teve convulsão generalizada de 3 minutos. Agora está acordado, ativo e sem sinais meníngeos.",
+              "caso": "Menina de 14 meses, vacinada, teve convulsão generalizada de 4 minutos com febre de 39,5 °C há 1 dia, sem outros sintomas. Está bem. Pai e irmão tiveram convulsão febril.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Achar o foco, orientar e não iniciar anticonvulsivante",
-                "Punção em todos",
-                "Fenobarbital contínuo",
-                "Iniciar fenobarbital contínuo e fazer tomografia de urgência"
+                "Eletrólitos, glicemia e hemograma",
+                "Urina tipo 1 e urocultura por sonda",
+                "Ultrassom transfontanela e EEG",
+                "Observar 24 horas sem exames"
               ],
-              "resposta": "Achar o foco, orientar e não iniciar anticonvulsivante",
-              "explicacao": "Explicar o que fazer numa nova crise tranquiliza muito os pais.",
-              "revisado": false
+              "resposta": "Urina tipo 1 e urocultura por sonda",
+              "explicacao": "É convulsão febril simples; investigar o foco da febre.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u5-l2-q6",
@@ -1743,11 +1735,19 @@
             },
             {
               "id": "ped-u5-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O carvão ativado é o tratamento de escolha na intoxicação por ferro.",
-              "resposta": false,
-              "explicacao": "Falso. Ferro, lítio e álcoois não se ligam bem ao carvão ativado.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menino de 4 anos alérgico a amendoim comeu um doce com amendoim e só tem placas de urticária no corpo, sem outros sintomas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Adrenalina intramuscular",
+                "Alta com anti-histamínico e corticoide",
+                "Observar no hospital e dar anti-histamínico",
+                "Lavagem gástrica"
+              ],
+              "resposta": "Observar no hospital e dar anti-histamínico",
+              "explicacao": "Sem acometer outros sistemas não é anafilaxia, mas pode evoluir.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u5-l3-q4",
@@ -2863,28 +2863,19 @@
           "questoes": [
             {
               "id": "ped-u9-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada complicação da anemia falciforme ao quadro.",
-              "pares": [
-                {
-                  "esquerda": "Crise vaso-oclusiva",
-                  "direita": "Dor óssea intensa"
-                },
-                {
-                  "esquerda": "Sequestro esplênico",
-                  "direita": "Baço grande e anemia súbita"
-                },
-                {
-                  "esquerda": "Síndrome torácica aguda",
-                  "direita": "Dor no peito e infiltrado"
-                },
-                {
-                  "esquerda": "Crise aplástica",
-                  "direita": "Parvovírus e reticulócitos baixos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 2 anos com anemia falciforme (Hb basal 8,5) tem febre, palidez, Hb 4,5 e reticulócitos de 0,1%. Baço não aumentou.",
+              "enunciado": "Qual é o mecanismo?",
+              "opcoes": [
+                "Sequestro no baço",
+                "Sepse por germe encapsulado",
+                "Hemólise intensa",
+                "Parada temporária da produção da medula"
               ],
-              "explicacao": "Complicações graves.",
-              "revisado": false
+              "resposta": "Parada temporária da produção da medula",
+              "explicacao": "Crise aplásica, geralmente pelo parvovírus B19.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u9-l1-q2",
@@ -3099,28 +3090,19 @@
           "questoes": [
             {
               "id": "ped-u9-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada câncer infantil ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Leucemia linfoide aguda",
-                  "direita": "Palidez, petéquias e dor óssea"
-                },
-                {
-                  "esquerda": "Neuroblastoma",
-                  "direita": "Massa abdominal que cruza a linha média"
-                },
-                {
-                  "esquerda": "Tumor de Wilms",
-                  "direita": "Massa renal que não cruza a linha média"
-                },
-                {
-                  "esquerda": "Retinoblastoma",
-                  "direita": "Reflexo branco no olho"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 10 anos em quimioterapia está há 3 semanas abatido, dorme o dia todo, irritado, sem querer sair da cama ou interagir.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Privação sensorial; dar alta",
+                "Ajustamento à doença, sem investigar",
+                "Avaliação psiquiátrica por suspeita de depressão",
+                "Transfundir e ver se melhora"
               ],
-              "explicacao": "Sinais de alerta.",
-              "revisado": false
+              "resposta": "Avaliação psiquiátrica por suspeita de depressão",
+              "explicacao": "Depressão é comum em crianças com câncer.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u9-l3-q2",
@@ -3946,17 +3928,19 @@
           "questoes": [
             {
               "id": "ped-u12-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Por que a criança com tuberculose pulmonar costuma ser negativa no escarro?",
+              "tipo": "caso_clinico",
+              "caso": "Pai e mãe começaram tratamento de tuberculose pulmonar há 7 dias. A filha de 26 dias está bem e mamando.",
+              "enunciado": "Qual é a conduta para a bebê?",
               "opcoes": [
-                "Doença paucibacilar",
-                "Não tem tuberculose",
-                "Erro de exame",
-                "Erro do laboratório"
+                "Prova tuberculínica",
+                "Tratar infecção latente",
+                "IGRA",
+                "Radiografia de tórax"
               ],
-              "resposta": "Doença paucibacilar",
-              "explicacao": "Diagnóstico por escore.",
-              "revisado": false
+              "resposta": "Tratar infecção latente",
+              "explicacao": "Recém-nascido exposto recebe tratamento preventivo e depois faz a prova.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-u12-l1-q2",
@@ -5942,17 +5926,19 @@
             },
             {
               "id": "ped-d3-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a relação entre compressões e ventilações na reanimação pediátrica com dois socorristas?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 7 anos teve alta da UTI há 2 dias após infecção urinária grave, com sonda e cateter central. Volta com febre, letargia, FC 140, PA 90 x 40 e pulsos amplos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "15 compressões para 2 ventilações",
-                "30 para 2",
-                "3 para 1",
-                "5 compressões para cada ventilação"
+                "Volume e antibiótico amplo para germe hospitalar",
+                "Soro de manutenção e ceftriaxona",
+                "Esperar lactato e coagulação",
+                "Esperar a urina"
               ],
-              "resposta": "15 compressões para 2 ventilações",
-              "explicacao": "Com um socorrista, a relação é 30 para 2.",
-              "revisado": false
+              "resposta": "Volume e antibiótico amplo para germe hospitalar",
+              "explicacao": "Choque séptico quente em quem saiu do hospital.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-d3-l2-q4",
@@ -8677,17 +8663,18 @@
             {
               "id": "ped-d10-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Derrame com septações e pus em criança.",
+              "caso": "Menina de 9 anos com pneumonia necrotizante por pneumococo sensível, derrame drenado, segue com picos de febre no 6º dia, mas em bom estado e precisando de menos oxigênio.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Drenagem e fibrinolítico ou toracoscopia",
-                "Só antibiótico",
-                "Corticoide",
-                "Apenas antibiótico oral e corticoide em casa"
+                "Trocar por cefepime e vancomicina",
+                "Nova avaliação da cirurgia",
+                "Repetir a tomografia",
+                "Manter antibiótico e suporte"
               ],
-              "resposta": "Drenagem e fibrinolítico ou toracoscopia",
-              "explicacao": "Empiema.",
-              "revisado": false
+              "resposta": "Manter antibiótico e suporte",
+              "explicacao": "Na pneumonia necrotizante, a febre demora a sumir.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-d10-l2-q3",
@@ -9187,17 +9174,18 @@
             {
               "id": "ped-d11-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Menina de 7 anos com mamas e LH basal alto.",
-              "enunciado": "Qual é o exame de imagem?",
+              "caso": "Menina de 6 anos com mamas M2 progressivas e crescimento acelerado, estatura z +3, exame neurológico normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
+                "Cariótipo",
+                "Hormônio de crescimento",
                 "Ressonância de crânio",
-                "Raio X de tórax",
-                "Ultrassom de rim",
-                "Raio X de tórax e ultrassom de rins"
+                "Ultrassom pélvico"
               ],
               "resposta": "Ressonância de crânio",
-              "explicacao": "Excluir lesão do sistema nervoso.",
-              "revisado": false
+              "explicacao": "Puberdade precoce central pede imagem do sistema nervoso.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "ped-d11-l3-q2",

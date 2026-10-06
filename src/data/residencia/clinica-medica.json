@@ -62,28 +62,19 @@
             },
             {
               "id": "cm-u1-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classe de anti-hipertensivo ao seu efeito adverso típico.",
-              "pares": [
-                {
-                  "esquerda": "IECA",
-                  "direita": "Tosse seca"
-                },
-                {
-                  "esquerda": "Bloqueador de canal de cálcio diidropiridínico",
-                  "direita": "Edema de membros inferiores"
-                },
-                {
-                  "esquerda": "Tiazídico",
-                  "direita": "Hipocalemia"
-                },
-                {
-                  "esquerda": "Espironolactona",
-                  "direita": "Ginecomastia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 43 anos com diabetes e sobrepeso teve PA de 148 x 92 na triagem.",
+              "enunciado": "Qual é o próximo passo no consultório?",
+              "opcoes": [
+                "Polissonografia",
+                "MAPA",
+                "Reavaliar no retorno",
+                "Conferir o tamanho do manguito"
               ],
-              "explicacao": "A tosse do IECA vem do acúmulo de bradicinina. Se ocorrer, troca-se por um BRA, que não causa tosse.",
-              "revisado": false
+              "resposta": "Conferir o tamanho do manguito",
+              "explicacao": "Manguito pequeno em braço largo superestima a pressão.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u1-l1-q5",
@@ -1803,17 +1794,19 @@
           "questoes": [
             {
               "id": "cm-u20-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Fora a isquemia, qual causa de cardiomiopatia dilatada é marcante nas regiões endêmicas do Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 47 anos bebe 8 latas de cerveja por dia e tem falta de ar ao deitar, edema e refluxo hepatojugular. Eco: FE de 43%, ventrículo esquerdo dilatado e sem isquemia no estresse.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Doença de Chagas",
-                "Amiloidose",
-                "Sarcoidose",
+                "Amiloidose ATTR",
+                "Cardiomiopatia alcoólica",
+                "Cardiomiopatia cirrótica",
                 "Hemocromatose"
               ],
-              "resposta": "Doença de Chagas",
-              "explicacao": "Tem pior prognóstico que as outras causas.",
-              "revisado": false
+              "resposta": "Cardiomiopatia alcoólica",
+              "explicacao": "Parar de beber pode recuperar a função.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u20-l2-q2",
@@ -3250,17 +3243,19 @@
           "questoes": [
             {
               "id": "cm-u21-l2-q1",
-              "tipo": "completar_lacuna",
-              "enunciado": "Pneumonia hospitalar é a que surge ___ horas ou mais após a internação.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso internado há 8 dias tem febre, tosse produtiva e pressão limítrofe. Uma hemocultura deu S. epidermidis em um frasco; as outras são negativas.",
+              "enunciado": "Qual antibiótico usar?",
               "opcoes": [
-                "48",
-                "6",
-                "12",
-                "24"
+                "Ceftriaxona e azitromicina",
+                "Piperacilina-tazobactam",
+                "Vancomicina",
+                "Oxacilina"
               ],
-              "resposta": "48",
-              "explicacao": "Antes disso, considerar como comunitária.",
-              "revisado": false
+              "resposta": "Piperacilina-tazobactam",
+              "explicacao": "S. epidermidis em um frasco é contaminação; trata-se a pneumonia hospitalar.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u21-l2-q2",
@@ -4590,17 +4585,19 @@
             },
             {
               "id": "cm-u4-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual complicação acontece quando a hiponatremia crônica é corrigida rápido demais?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com diarreia aquosa há 4 dias, mucosas secas, sódio 128 e bicarbonato 29. O filho tem o mesmo quadro.",
+              "enunciado": "Qual mecanismo participa da hiponatremia?",
               "opcoes": [
-                "Desmielinização osmótica",
-                "Edema cerebral",
-                "Hipercalemia",
-                "Hipoglicemia grave e convulsão"
+                "Secreção inapropriada de ADH",
+                "Liberação de peptídeo natriurético",
+                "Elevação da aldosterona",
+                "Perda de potássio nas fezes"
               ],
-              "resposta": "Desmielinização osmótica",
-              "explicacao": "Ela pode causar paralisia, dificuldade para falar e engolir, dias depois da correção.",
-              "revisado": false
+              "resposta": "Elevação da aldosterona",
+              "explicacao": "Na hipovolemia, aldosterona e ADH sobem de forma apropriada.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u4-l2-q3",
@@ -5041,17 +5038,18 @@
             {
               "id": "cm-u5-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem de 55 anos que usa anti-inflamatório tem fezes pretas, tontura, frequência de 115 bpm e PA de 95/60 mmHg.",
-              "enunciado": "Qual é a primeira conduta?",
+              "caso": "Homem com esquistossomose hepatoesplênica tem duas varizes de esôfago grossas que nunca sangraram.",
+              "enunciado": "Qual é a conduta agora?",
               "opcoes": [
-                "Estabilizar com acessos e reposição, depois endoscopia",
-                "Endoscopia antes de tudo",
-                "Omeprazol e alta",
-                "Endoscopia imediata antes de qualquer acesso venoso ou reposição"
+                "Albumina",
+                "Carvedilol",
+                "Paracentese",
+                "Restringir água"
               ],
-              "resposta": "Estabilizar com acessos e reposição, depois endoscopia",
-              "explicacao": "Primeiro se estabiliza o paciente. A endoscopia é feita em até 24 horas na maioria dos casos.",
-              "revisado": false
+              "resposta": "Carvedilol",
+              "explicacao": "Betabloqueador previne o primeiro sangramento.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u5-l3-q2",
@@ -5292,17 +5290,19 @@
           "questoes": [
             {
               "id": "cm-u18-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na prática, qual é a causa mais frequente de síndrome de Cushing?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com insuficiência adrenal em hidrocortisona tem resfriado com febre de 38,3 °C e está bem.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Uso de corticoide",
-                "Tumor de hipófise",
-                "Tumor de adrenal",
-                "Câncer de pulmão com ACTH ectópico"
+                "Manter a dose em casa",
+                "Manter a dose e internar",
+                "Aumentar a hidrocortisona e observar em casa",
+                "Aumentar a dose e internar"
               ],
-              "resposta": "Uso de corticoide",
-              "explicacao": "Causa exógena.",
-              "revisado": false
+              "resposta": "Aumentar a hidrocortisona e observar em casa",
+              "explicacao": "Regra do dia de doença: dobrar ou triplicar a dose.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u18-l2-q2",
@@ -6511,11 +6511,19 @@
             },
             {
               "id": "cm-u12-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A bacteriúria sem sintomas não deve ser tratada na maioria dos adultos.",
-              "resposta": true,
-              "explicacao": "Exceto gestantes e antes de cirurgias urológicas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 35 anos em PrEP tem cólica e diarreia com mau cheiro há 20 dias, sem sangue ou febre.",
+              "enunciado": "Qual pesquisa nas fezes fazer?",
+              "opcoes": [
+                "Calprotectina",
+                "Sangue oculto",
+                "Giardia lamblia",
+                "Microsporídio"
+              ],
+              "resposta": "Giardia lamblia",
+              "explicacao": "Microsporídio é de imunossuprimidos; PrEP não reduz a imunidade.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u12-l3-q4",
@@ -7102,11 +7110,19 @@
             },
             {
               "id": "cm-u8-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A leucemia promielocítica aguda é tratada com ácido transretinoico (ATRA).",
-              "resposta": true,
-              "explicacao": "É emergência pelo risco de sangramento.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 35 anos com calafrios e coceira há 3 meses, inchaço no rosto ao acordar, FC 112 e linfonodo cervical firme e indolor de 2,5 cm.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Sorologia de mononucleose",
+                "Amoxicilina-clavulanato",
+                "Biópsia do linfonodo",
+                "Prednisona por 5 dias"
+              ],
+              "resposta": "Biópsia do linfonodo",
+              "explicacao": "Sintomas B e linfonodo suspeito sugerem linfoma.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u8-l2-q4",
@@ -7667,28 +7683,19 @@
           "questoes": [
             {
               "id": "cm-u14-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à definição.",
-              "pares": [
-                {
-                  "esquerda": "Urgência hipertensiva",
-                  "direita": "Pressão alta sem lesão aguda de órgão"
-                },
-                {
-                  "esquerda": "Emergência hipertensiva",
-                  "direita": "Pressão alta com lesão aguda de órgão"
-                },
-                {
-                  "esquerda": "Pseudocrise",
-                  "direita": "Pressão alta por dor ou ansiedade"
-                },
-                {
-                  "esquerda": "Hipertensão maligna",
-                  "direita": "Retinopatia com hemorragias e papiledema"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem em hemodiálise, internado, tem várias medidas de 180 x 120 mmHg e só sua cefaleia de sempre.",
+              "enunciado": "Qual dado do exame é fundamental para a conduta?",
+              "opcoes": [
+                "Fundo de olho",
+                "Peso corporal",
+                "Circunferência do pescoço",
+                "Sopro abdominal"
               ],
-              "explicacao": "A lesão de órgão define a gravidade.",
-              "revisado": false
+              "resposta": "Peso corporal",
+              "explicacao": "No dialítico, a pressão alta costuma ser excesso de volume.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u14-l1-q2",
@@ -8167,17 +8174,19 @@
             },
             {
               "id": "cm-u15-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "A lista de ___ reúne remédios potencialmente inapropriados para pessoas idosas.",
+              "tipo": "caso_clinico",
+              "caso": "Após 14 dias internado por infarto, homem de 62 anos tem tremor de repouso, rigidez e lentidão nos dois lados.",
+              "enunciado": "Qual remédio é o provável culpado?",
               "opcoes": [
-                "Beers",
-                "Wells",
-                "Light",
-                "Ranson"
+                "Clonazepam",
+                "Carvedilol",
+                "Bromoprida",
+                "Losartana"
               ],
-              "resposta": "Beers",
-              "explicacao": "Atualizados periodicamente.",
-              "revisado": false
+              "resposta": "Bromoprida",
+              "explicacao": "Antieméticos antidopaminérgicos causam parkinsonismo.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u15-l2-q4",
@@ -8388,17 +8397,19 @@
           "questoes": [
             {
               "id": "cm-u16-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de síndrome da veia cava superior?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de mama e metástases ósseas tem sonolência, náuseas, vômitos, piora da constipação e desidratação.",
+              "enunciado": "Qual é a principal hipótese?",
               "opcoes": [
-                "Câncer de pulmão",
-                "Trombose por cateter",
-                "Bócio",
-                "Aneurisma de aorta torácica"
+                "Metástase hepática",
+                "Metástase cerebral",
+                "Hipercalcemia",
+                "Hiponatremia"
               ],
-              "resposta": "Câncer de pulmão",
-              "explicacao": "Seguido de linfoma.",
-              "revisado": false
+              "resposta": "Hipercalcemia",
+              "explicacao": "Tratar com hidratação e bisfosfonato.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u16-l1-q2",
@@ -9003,11 +9014,19 @@
             },
             {
               "id": "cm-u17-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O melanoma é o câncer de pele com maior risco de metástase.",
-              "resposta": true,
-              "explicacao": "Por isso o diagnóstico precoce é vital.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 58 anos com coceira no corpo todo há 7 meses, sem lesões, exames normais. Usa hidroclorotiazida, metformina, dapagliflozina, sinvastatina e tramadol.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Hidratante e corticoide tópico",
+                "Trocar o tramadol por analgésico simples",
+                "Gabapentina",
+                "Anti-histamínico por 15 dias"
+              ],
+              "resposta": "Trocar o tramadol por analgésico simples",
+              "explicacao": "Opioides são causa comum de prurido.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-u17-l3-q3",
@@ -15063,17 +15082,18 @@
             {
               "id": "cm-d11-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Pancreatite aguda há 5 semanas com coleção encapsulada de 6 cm sem sintomas.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem com hipotireoidismo precisa de 225 mcg de levotiroxina, tem cólicas e fezes amolecidas há 8 meses e anemia microcítica. Enterotomografia normal.",
+              "enunciado": "O que a biópsia do intestino mostraria?",
               "opcoes": [
-                "Observar, sem drenar",
-                "Drenagem imediata",
-                "Cirurgia",
-                "Drenagem imediata por cirurgia aberta"
+                "Granuloma",
+                "H. pylori",
+                "Infiltrado linfocítico",
+                "Infiltrado eosinofílico"
               ],
-              "resposta": "Observar, sem drenar",
-              "explicacao": "Pseudocisto assintomático não precisa de drenagem.",
-              "revisado": false
+              "resposta": "Infiltrado linfocítico",
+              "explicacao": "Doença celíaca: má absorção de ferro e do hormônio.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cm-d11-l3-q2",

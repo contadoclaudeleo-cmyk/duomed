@@ -782,11 +782,19 @@
             },
             {
               "id": "cir-u3-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A maioria das pessoas com cálculos na vesícula sem sintomas não precisa de cirurgia.",
-              "resposta": true,
-              "explicacao": "Há exceções, como vesícula em porcelana e cálculos muito grandes.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 39 anos com cólica no hipocôndrio direito há 2 dias, sem febre, icterícia leve, enzimas canaliculares altas e PCR normal.",
+              "enunciado": "Qual é a principal hipótese?",
+              "opcoes": [
+                "Cólica biliar",
+                "Colangite",
+                "Coledocolitíase",
+                "Colecistite aguda"
+              ],
+              "resposta": "Coledocolitíase",
+              "explicacao": "Sem febre ou inflamação, não é colangite nem colecistite.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u3-l1-q4",
@@ -1138,17 +1146,19 @@
             },
             {
               "id": "cir-u4-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tratamento clínico do refluxo é feito com ___ da bomba de prótons.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 65 anos com hérnia de hiato tipo III volumosa só tinha empachamento, que sumiu com omeprazol e domperidona.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "inibidores",
-                "estimulantes",
-                "bloqueadores H1",
-                "ativadores"
+                "Manometria e pHmetria",
+                "Hiatoplastia com fundoplicatura",
+                "Hiatoplastia com bypass",
+                "Seguimento sem cirurgia por ora"
               ],
-              "resposta": "inibidores",
-              "explicacao": "Eles funcionam melhor quando tomados cerca de 30 minutos antes do café da manhã.",
-              "revisado": false
+              "resposta": "Seguimento sem cirurgia por ora",
+              "explicacao": "Hérnia mista com sintomas leves e controlados pode ser acompanhada.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u4-l1-q5",
@@ -2088,17 +2098,19 @@
             },
             {
               "id": "cir-u6-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A saída de muito líquido rosado pela ferida do abdome pode anunciar a ___ da aponeurose.",
+              "tipo": "caso_clinico",
+              "caso": "Um dia após colecistectomia, mulher vomita muito e tem dor controlada com dipirona e tramadol. Abdome sem peritonite e exames sem colestase ou pancreatite.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "deiscência",
-                "infecção urinária",
-                "atelectasia",
-                "trombose"
+                "Suspender tramadol e passar sonda",
+                "Suspender tramadol e dar ondansetrona",
+                "Tomografia",
+                "Colangiorressonância"
               ],
-              "resposta": "deiscência",
-              "explicacao": "Se as alças aparecem na ferida (evisceração), a cirurgia é urgente.",
-              "revisado": false
+              "resposta": "Suspender tramadol e dar ondansetrona",
+              "explicacao": "O tramadol causa muita náusea.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u6-l3-q5",
@@ -4159,28 +4171,19 @@
           "questoes": [
             {
               "id": "cir-u12-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de dor aguda na bolsa escrotal ao quadro típico.",
-              "pares": [
-                {
-                  "esquerda": "Torção de testículo",
-                  "direita": "Dor súbita em adolescente"
-                },
-                {
-                  "esquerda": "Orquiepididimite",
-                  "direita": "Dor gradual com febre"
-                },
-                {
-                  "esquerda": "Torção do apêndice testicular",
-                  "direita": "Ponto azulado"
-                },
-                {
-                  "esquerda": "Hérnia encarcerada",
-                  "direita": "Massa que vem do canal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 27 anos com dor e aumento do testículo há 15 dias e ardência ao urinar. Sexo sem preservativo. Doppler: testículo aumentado com mais fluxo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ciprofloxacino e azitromicina",
+                "Ceftriaxona e doxiciclina por 10 dias",
+                "PET-CT e marcadores",
+                "Tomografia e marcadores"
               ],
-              "explicacao": "A torção é emergência.",
-              "revisado": false
+              "resposta": "Ceftriaxona e doxiciclina por 10 dias",
+              "explicacao": "Orquiepididimite por IST.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u12-l3-q2",
@@ -4784,11 +4787,18 @@
             },
             {
               "id": "cir-u14-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A profilaxia antibiótica não deve passar de 24 horas na maioria das cirurgias.",
-              "resposta": true,
-              "explicacao": "Uso prolongado aumenta resistência.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico profilático usar numa retossigmoidectomia?",
+              "opcoes": [
+                "Cefoxitina",
+                "Cefuroxima",
+                "Cefazolina",
+                "Ceftriaxona"
+              ],
+              "resposta": "Cefoxitina",
+              "explicacao": "Cobre gram-negativos e anaeróbios do cólon.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u14-l2-q4",
@@ -4878,17 +4888,19 @@
             },
             {
               "id": "cir-u14-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a necessidade diária de água de um adulto?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com câncer de pâncreas, peso ideal de 70 kg, perdeu 10% do peso e fará quimioterapia antes da cirurgia.",
+              "enunciado": "Quais são as metas de calorias e proteína?",
               "opcoes": [
-                "Cerca de 30 a 35 mL/kg",
-                "5 mL/kg",
-                "100 mL/kg",
-                "Um litro fixo para qualquer peso"
+                "2.000 calorias e 100 g de proteína",
+                "2.000 calorias e 200 g",
+                "3.000 calorias e 200 g",
+                "3.000 calorias e 100 g"
               ],
-              "resposta": "Cerca de 30 a 35 mL/kg",
-              "explicacao": "Ajustar às perdas.",
-              "revisado": false
+              "resposta": "2.000 calorias e 100 g de proteína",
+              "explicacao": "Cerca de 30 kcal e 1,5 g de proteína por kg.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u14-l3-q3",
@@ -5457,17 +5469,19 @@
           "questoes": [
             {
               "id": "cir-u16-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na atenção primária, qual é a origem mais frequente da dor lombar?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 40 anos com lombalgia que irradia para a perna, nota 10, que a impede de trabalhar. Obesa, fumante e usa benzodiazepínico.",
+              "enunciado": "Qual fator aumenta o risco de a dor ficar crônica?",
               "opcoes": [
-                "Mecânica inespecífica",
-                "Câncer",
-                "Infecção",
-                "Fratura por osteoporose grave"
+                "Dor intensa com incapacidade",
+                "IMC acima de 35",
+                "Tabagismo",
+                "Insônia com benzodiazepínico"
               ],
-              "resposta": "Mecânica inespecífica",
-              "explicacao": "Melhora em semanas.",
-              "revisado": false
+              "resposta": "Dor intensa com incapacidade",
+              "explicacao": "Dor e incapacidade iniciais predizem cronificação.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-u16-l2-q2",
@@ -6784,11 +6798,19 @@
             },
             {
               "id": "cir-d3-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Após cirurgia bariátrica, a absorção de alguns remédios pode mudar, e formas de liberação prolongada podem funcionar mal.",
-              "resposta": true,
-              "explicacao": "Também deve-se evitar anti-inflamatórios pelo risco de úlcera.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Um dia após bypass gástrico, mulher está descorada, com FC 130, PA 100 x 80 e abdome tranquilo.",
+              "enunciado": "Qual é a principal hipótese?",
+              "opcoes": [
+                "Hérnia interna",
+                "Atelectasia",
+                "Deiscência da anastomose",
+                "Sangramento da anastomose"
+              ],
+              "resposta": "Sangramento da anastomose",
+              "explicacao": "Palidez e taquicardia precoces sugerem sangramento.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-d3-l3-q6",
@@ -8562,17 +8584,18 @@
             {
               "id": "cir-d8-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente após colecistectomia por vídeo tem icterícia e dor no 3º dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Homem operado de bypass gástrico há 2 anos tem cálculos na vesícula e no colédoco.",
+              "enunciado": "Qual é a melhor sequência?",
               "opcoes": [
-                "Lesão ou obstrução da via biliar",
-                "Normal",
-                "Hepatite",
-                "Evolução normal da cirurgia por vídeo"
+                "Colecistectomia e colangiografia transparieto-hepática",
+                "Colecistectomia com exploração do colédoco",
+                "CPRE e colecistectomia",
+                "Litotripsia e colecistectomia"
               ],
-              "resposta": "Lesão ou obstrução da via biliar",
-              "explicacao": "Investigar com colangiorressonância.",
-              "revisado": false
+              "resposta": "Colecistectomia com exploração do colédoco",
+              "explicacao": "Após o bypass, o duodeno fica fora do alcance da endoscopia comum.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-d8-l2-q3",
@@ -8847,17 +8870,18 @@
             {
               "id": "cir-d9-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com peritonite fecal por diverticulite perfurada, em choque.",
-              "enunciado": "Qual é a cirurgia?",
+              "caso": "Homem com diverticulite e abscesso pericólico de 2 cm, estável e sem peritonite.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cirurgia de Hartmann",
-                "Antibiótico só",
-                "Drenagem percutânea",
-                "Apenas antibiótico venoso e drenagem por agulha"
+                "Antibiótico",
+                "Colostomia",
+                "Retossigmoidectomia",
+                "Drenagem percutânea"
               ],
-              "resposta": "Cirurgia de Hartmann",
-              "explicacao": "Hinchey IV.",
-              "revisado": false
+              "resposta": "Antibiótico",
+              "explicacao": "Abscessos menores que 3 a 4 cm se tratam com antibiótico.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-d9-l1-q4",
@@ -10511,17 +10535,18 @@
             {
               "id": "cir-d13-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com salivação excessiva, engasgo ao mamar e sonda que enrola no raio X.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Criança de 1 ano, um dia após trocar o esôfago por cólon, está gemente, em choque e com secreção vinhosa e fétida pela gastrostomia.",
+              "enunciado": "Qual é a complicação?",
               "opcoes": [
-                "Atresia de esôfago",
-                "Refluxo",
-                "Normal",
-                "Estenose de piloro"
+                "Deiscência da anastomose",
+                "Pneumotórax",
+                "Perfuração do cólon",
+                "Necrose do cólon"
               ],
-              "resposta": "Atresia de esôfago",
-              "explicacao": "Pesquisar VACTERL.",
-              "revisado": false
+              "resposta": "Necrose do cólon",
+              "explicacao": "Falta de sangue no cólon interposto.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-d13-l2-q2",
@@ -10922,17 +10947,18 @@
             {
               "id": "cir-d14-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Melanoma com espessura de Breslow de 1,5 mm.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 67 anos com melanoma na perna, Breslow de 4,5 mm e ulcerado.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Ampliar margem e pesquisar linfonodo sentinela",
-                "Só ampliação",
-                "Quimioterapia",
-                "Apenas quimioterapia sistêmica sem cirurgia"
+                "Margem de 1 cm e linfonodo sentinela",
+                "Margem de 2 cm e linfonodo sentinela",
+                "Ultrassom e ressonância",
+                "Tomografias de estadiamento"
               ],
-              "resposta": "Ampliar margem e pesquisar linfonodo sentinela",
-              "explicacao": "Estadiar os linfonodos.",
-              "revisado": false
+              "resposta": "Margem de 2 cm e linfonodo sentinela",
+              "explicacao": "Acima de 2 mm, margem de 2 cm.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "cir-d14-l2-q3",

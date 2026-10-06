@@ -746,17 +746,19 @@
           "questoes": [
             {
               "id": "go-u3-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento inicial do diabetes gestacional?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 40 semanas com diabetes gestacional em NPH 12-6-0-6 e regular 4-4-2-0 será induzida e vai receber dieta.",
+              "enunciado": "Qual insulina prescrever no dia?",
               "opcoes": [
-                "Dieta e atividade física",
-                "Insulina imediata",
-                "Sulfonilureia",
-                "Interromper a gestação"
+                "NPH 4 de manhã e regular conforme glicemia",
+                "NPH 6-3-0-3 e regular 4-2-2-0",
+                "Manter tudo e soro glicosado",
+                "Só regular conforme glicemia"
               ],
-              "resposta": "Dieta e atividade física",
-              "explicacao": "A maioria das gestantes controla a glicemia só com essas medidas.",
-              "revisado": false
+              "resposta": "NPH 4 de manhã e regular conforme glicemia",
+              "explicacao": "Reduz-se a dose basal pelo risco de hipoglicemia.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u3-l1-q2",
@@ -861,17 +863,19 @@
           "questoes": [
             {
               "id": "go-u3-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Em geral, entre quantas semanas o corticoide antenatal é indicado para amadurecer o pulmão do bebê?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 34 semanas e 3 dias em trabalho de parto, 3 cm de dilatação, sem pesquisa de estreptococo B.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Entre 24 e 34 semanas",
-                "Entre 8 e 12 semanas",
-                "Entre 37 e 40 semanas",
-                "Após 41 semanas"
+                "Escopolamina e reavaliar",
+                "Betametasona e inibir o parto",
+                "Ampicilina venosa e conduzir o parto",
+                "Sulfato de magnésio e cesárea"
               ],
-              "resposta": "Entre 24 e 34 semanas",
-              "explicacao": "Ele reduz a síndrome do desconforto respiratório, a hemorragia cerebral e a mortalidade neonatal.",
-              "revisado": false
+              "resposta": "Ampicilina venosa e conduzir o parto",
+              "explicacao": "Com 34 semanas não se inibe; estreptococo desconhecido em prematuro recebe profilaxia.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u3-l2-q2",
@@ -1361,25 +1365,34 @@
             },
             {
               "id": "go-u4-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Mulheres com mais de 35 anos que fumam 15 ou mais cigarros por dia não devem usar métodos com estrogênio.",
-              "resposta": true,
-              "explicacao": "O risco de infarto e trombose fica muito alto.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Pelo método de Billings, como é o muco do período fértil?",
+              "opcoes": [
+                "Transparente, elástico e escorregadio",
+                "Espesso, opaco e sem aderir",
+                "Opaco com pouca elasticidade",
+                "Branco e grumoso"
+              ],
+              "resposta": "Transparente, elástico e escorregadio",
+              "explicacao": "Parece clara de ovo.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u4-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A contracepção de emergência com ___ deve ser usada o quanto antes, de preferência em até 72 horas após a relação.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com lúpus e síndrome antifosfolípide, duas tromboses e em varfarina, quer contracepção.",
+              "enunciado": "Qual é a opção mais segura?",
               "opcoes": [
-                "levonorgestrel",
-                "estradiol",
-                "misoprostol",
-                "ocitocina em comprimido"
+                "DIU de cobre",
+                "DIU com levonorgestrel",
+                "Pílula combinada",
+                "Adesivo combinado"
               ],
-              "resposta": "levonorgestrel",
-              "explicacao": "Ela atrasa a ovulação e não é abortiva.",
-              "revisado": false
+              "resposta": "DIU com levonorgestrel",
+              "explicacao": "Sem estrogênio e reduz o sangramento da varfarina.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u4-l3-q5",
@@ -1463,28 +1476,19 @@
             },
             {
               "id": "go-u5-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado do colo do útero à sua interpretação.",
-              "pares": [
-                {
-                  "esquerda": "NIC 1",
-                  "direita": "Lesão de baixo grau que costuma regredir"
-                },
-                {
-                  "esquerda": "NIC 2 e NIC 3",
-                  "direita": "Lesões precursoras de alto grau"
-                },
-                {
-                  "esquerda": "Zona de transformação",
-                  "direita": "Local onde surge a maioria das lesões"
-                },
-                {
-                  "esquerda": "Teste de Schiller positivo",
-                  "direita": "Área que não cora com iodo e deve ser biopsiada"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 36 anos com HIV, carga viral indetectável e CD4 de 830, teve duas citologias normais.",
+              "enunciado": "Como rastrear o câncer de colo?",
+              "opcoes": [
+                "Citologia anual",
+                "Citologia e HPV a cada 3 anos",
+                "Colposcopia anual",
+                "HPV a cada 5 anos"
               ],
-              "explicacao": "O câncer de colo é quase sempre causado pelo HPV.",
-              "revisado": false
+              "resposta": "Citologia anual",
+              "explicacao": "Imunossuprimidas têm rastreio mais frequente.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u5-l1-q3",
@@ -1949,11 +1953,19 @@
             },
             {
               "id": "go-u6-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na doença inflamatória pélvica, o parceiro sexual também deve ser tratado.",
-              "resposta": true,
-              "explicacao": "Sem isso, a reinfecção é muito comum.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 24 anos com cervicite mucopurulenta e teste positivo para gonococo e clamídia.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Doxiciclina isolada",
+                "Ceftriaxona e doxiciclina",
+                "Ceftriaxona 500 mg e azitromicina 1 g",
+                "Azitromicina em duas doses"
+              ],
+              "resposta": "Ceftriaxona 500 mg e azitromicina 1 g",
+              "explicacao": "Tratar também as parcerias.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u6-l2-q4",
@@ -2076,17 +2088,19 @@
             },
             {
               "id": "go-u6-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A terapia hormonal é contraindicada em mulheres com história de câncer de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 52 anos com fogachos, suor à noite e sono ruim, ainda menstruando.",
+              "enunciado": "Qual é o manejo inicial?",
               "opcoes": [
-                "mama",
-                "pele não melanoma",
-                "estômago",
-                "tireoide"
+                "Pedir dosagens hormonais",
+                "Iniciar terapia hormonal",
+                "Iniciar antidepressivo",
+                "Avaliar intensidade e orientar estilo de vida"
               ],
-              "resposta": "mama",
-              "explicacao": "Também é contraindicada após trombose, AVC e infarto e em doença hepática grave.",
-              "revisado": false
+              "resposta": "Avaliar intensidade e orientar estilo de vida",
+              "explicacao": "O diagnóstico é clínico.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u6-l3-q5",
@@ -3672,28 +3686,18 @@
           "questoes": [
             {
               "id": "go-u11-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de mioma ao sintoma.",
-              "pares": [
-                {
-                  "esquerda": "Submucoso",
-                  "direita": "Sangramento menstrual aumentado"
-                },
-                {
-                  "esquerda": "Intramural",
-                  "direita": "Útero aumentado"
-                },
-                {
-                  "esquerda": "Subseroso",
-                  "direita": "Compressão de órgãos vizinhos"
-                },
-                {
-                  "esquerda": "Pediculado",
-                  "direita": "Torção e dor"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o objetivo do DIU de levonorgestrel no sangramento por miomas?",
+              "opcoes": [
+                "Reduzir o fluxo de sangue ao útero",
+                "Bloquear a ovulação",
+                "Diminuir os miomas",
+                "Atrofiar o endométrio"
               ],
-              "explicacao": "A localização define os sintomas.",
-              "revisado": false
+              "resposta": "Atrofiar o endométrio",
+              "explicacao": "Ele não reduz o tamanho dos miomas.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u11-l2-q2",
@@ -3822,11 +3826,19 @@
             },
             {
               "id": "go-u11-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A endometriose é causa comum de infertilidade.",
-              "resposta": true,
-              "explicacao": "Também dor pélvica.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 29 anos com endometriose peritoneal teve as lesões retiradas por laparoscopia. Tem cólica e fluxo excessivo.",
+              "enunciado": "Qual é a melhor conduta agora?",
+              "opcoes": [
+                "Anti-inflamatório",
+                "Pílula combinada",
+                "DIU de progestagênio",
+                "Análogo de GnRH"
+              ],
+              "resposta": "DIU de progestagênio",
+              "explicacao": "Reduz recidiva e o fluxo.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u11-l3-q4",
@@ -3908,28 +3920,19 @@
           "questoes": [
             {
               "id": "go-u12-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de incontinência ao sintoma.",
-              "pares": [
-                {
-                  "esquerda": "Esforço",
-                  "direita": "Perde urina ao tossir"
-                },
-                {
-                  "esquerda": "Urgência",
-                  "direita": "Vontade súbita e perda"
-                },
-                {
-                  "esquerda": "Mista",
-                  "direita": "Os dois"
-                },
-                {
-                  "esquerda": "Transbordamento",
-                  "direita": "Bexiga cheia que vaza"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 64 anos perde urina com urgência e também ao pegar o neto. Urodinâmica confirma.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Uretrotomia",
+                "Colpouretropexia",
+                "Estrogênio tópico",
+                "Anticolinérgico"
               ],
-              "explicacao": "O tipo define o tratamento.",
-              "revisado": false
+              "resposta": "Anticolinérgico",
+              "explicacao": "Na incontinência mista, trata-se primeiro a urgência.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u12-l1-q2",
@@ -4026,28 +4029,19 @@
           "questoes": [
             {
               "id": "go-u12-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada prolapso ao órgão.",
-              "pares": [
-                {
-                  "esquerda": "Cistocele",
-                  "direita": "Bexiga"
-                },
-                {
-                  "esquerda": "Retocele",
-                  "direita": "Reto"
-                },
-                {
-                  "esquerda": "Histerocele",
-                  "direita": "Útero"
-                },
-                {
-                  "esquerda": "Enterocele",
-                  "direita": "Intestino delgado"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 58 anos sente peso na vagina e precisa ajudar com o dedo para evacuar. Parede posterior passa 2 cm do hímen e o colo 1 cm.",
+              "enunciado": "Qual é a melhor conduta a considerar primeiro?",
+              "opcoes": [
+                "Pessário e fisioterapia pélvica",
+                "Laser de CO2",
+                "Histerectomia vaginal com perineorrafia",
+                "Colpocleise"
               ],
-              "explicacao": "Defeitos do assoalho pélvico.",
-              "revisado": false
+              "resposta": "Pessário e fisioterapia pélvica",
+              "explicacao": "Tratamento conservador é opção inicial.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u12-l2-q2",
@@ -4160,11 +4154,19 @@
             },
             {
               "id": "go-u12-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A infecção urinária de repetição é definida por 3 episódios em 1 ano ou 2 em 6 meses.",
-              "resposta": true,
-              "explicacao": "Avaliar profilaxia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 26 anos com DIU de cobre tem ardência e urgência para urinar há 3 dias, sem febre ou corrimento.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ciprofloxacino após urocultura",
+                "Ceftriaxona",
+                "Sulfametoxazol após urocultura",
+                "Nitrofurantoína sem exames"
+              ],
+              "resposta": "Nitrofurantoína sem exames",
+              "explicacao": "Cistite simples se trata empiricamente.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u12-l3-q3",
@@ -4498,42 +4500,35 @@
           "questoes": [
             {
               "id": "go-u13-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada profilaxia ao prazo após violência sexual.",
-              "pares": [
-                {
-                  "esquerda": "Contracepção de emergência",
-                  "direita": "Até 5 dias"
-                },
-                {
-                  "esquerda": "PEP para HIV",
-                  "direita": "Até 72 horas"
-                },
-                {
-                  "esquerda": "Vacina da hepatite B",
-                  "direita": "Iniciar se não vacinada"
-                },
-                {
-                  "esquerda": "Antibióticos para IST",
-                  "direita": "Esquema curto no atendimento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com gravidez compatível com a data de um estupro por conhecido quer interromper a gestação.",
+              "enunciado": "Qual afirmação é correta?",
+              "opcoes": [
+                "Pode interromper com o relato circunstanciado",
+                "É tarde, fazer pré-natal",
+                "Precisa de boletim de ocorrência",
+                "Não há relação, garantir pré-natal"
               ],
-              "explicacao": "Atendimento urgente.",
-              "revisado": false
+              "resposta": "Pode interromper com o relato circunstanciado",
+              "explicacao": "A lei não exige boletim de ocorrência.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u13-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "O atendimento à vítima de violência sexual depende de boletim de ocorrência?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 17 anos chega 80 horas após violência sexual, com teste rápido de HIV negativo.",
+              "enunciado": "Sobre a profilaxia do HIV, o que fazer?",
               "opcoes": [
-                "Não",
-                "Sim",
-                "Só para maiores",
-                "Só para menores"
+                "Iniciar por 28 dias",
+                "Não iniciar, o prazo é de 72 horas",
+                "Não indicar porque o teste é negativo",
+                "Esperar 7 dias"
               ],
-              "resposta": "Não",
-              "explicacao": "O atendimento é garantido.",
-              "revisado": false
+              "resposta": "Não iniciar, o prazo é de 72 horas",
+              "explicacao": "Ainda oferecer outras profilaxias e acompanhamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-u13-l3-q3",
@@ -5640,28 +5635,19 @@
             },
             {
               "id": "go-d2-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa dos 4 Ts da hemorragia pós-parto à situação.",
-              "pares": [
-                {
-                  "esquerda": "Tônus",
-                  "direita": "Útero amolecido após parto prolongado"
-                },
-                {
-                  "esquerda": "Trauma",
-                  "direita": "Laceração do canal de parto"
-                },
-                {
-                  "esquerda": "Tecido",
-                  "direita": "Restos de placenta"
-                },
-                {
-                  "esquerda": "Trombina",
-                  "direita": "Distúrbio da coagulação"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Após parto de bebê de 4 kg, multípara tem atonia e em 4 minutos PA 76 x 54 e FC 120.",
+              "enunciado": "Do ponto de vista hemodinâmico, o que fazer?",
+              "opcoes": [
+                "Manter ringer lactato",
+                "Avaliar transfusão pelo hematócrito",
+                "Iniciar transfusão maciça",
+                "Noradrenalina"
               ],
-              "explicacao": "O tônus é a causa mais comum.",
-              "revisado": false
+              "resposta": "Iniciar transfusão maciça",
+              "explicacao": "Índice de choque acima de 1,4 pede sangue já.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-d2-l3-q3",
@@ -8516,17 +8502,18 @@
             {
               "id": "go-d10-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Gestante com prótese valvar mecânica.",
-              "enunciado": "Qual é a anticoagulação?",
+              "caso": "Gestante de 30 semanas, obesa, com prolapso mitral, tem cansaço aos pequenos esforços e coração disparado. Descorada 1+, FC 108 e sopro sistólico ejetivo suave.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "HBPM ajustada ou varfarina, conforme fase e dose",
-                "AAS só",
-                "Rivaroxabana",
-                "Rivaroxabana oral em dose plena durante toda a gestação"
+                "Estenose aórtica",
+                "Anemia sintomática",
+                "Arritmia supraventricular",
+                "Ansiedade"
               ],
-              "resposta": "HBPM ajustada ou varfarina, conforme fase e dose",
-              "explicacao": "Varfarina é teratogênica no primeiro trimestre.",
-              "revisado": false
+              "resposta": "Anemia sintomática",
+              "explicacao": "Sopro ejetivo de fluxo é comum na gestação e na anemia.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-d10-l1-q3",
@@ -8759,17 +8746,18 @@
             {
               "id": "go-d10-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 32 semanas com coceira nas palmas e plantas, sem lesões, e ácidos biliares altos.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "caso": "Gestante de 10 semanas com vômitos há 10 dias, perdeu 5 kg, cetonúria, TSH 0,05 com T4 livre normal e transaminases pouco altas.",
+              "enunciado": "Qual é a interpretação e a conduta?",
               "opcoes": [
-                "Colestase; ursodiol e parto programado",
-                "Alergia; anti-histamínico",
-                "Hepatite; antiviral",
-                "Alergia de pele; anti-histamínico oral e alta sem exames"
+                "Cetoacidose; gasometria",
+                "Hiperêmese com hipertireoidismo transitório; hidratação e antieméticos",
+                "Hepatite por dimenidrinato; corticoide",
+                "Graves; propiltiouracil"
               ],
-              "resposta": "Colestase; ursodiol e parto programado",
-              "explicacao": "Risco de morte fetal.",
-              "revisado": false
+              "resposta": "Hiperêmese com hipertireoidismo transitório; hidratação e antieméticos",
+              "explicacao": "O hCG estimula a tireoide no 1º trimestre.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "go-d10-l3-q2",

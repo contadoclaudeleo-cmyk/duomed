@@ -305,17 +305,18 @@
             },
             {
               "id": "prev-u1-l3-q5",
-              "tipo": "completar_lacuna",
-              "enunciado": "No ensaio clínico, o ___ impede que participantes e avaliadores saibam qual tratamento cada pessoa recebe.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais estudos servem para: 1) comparar frequência de TEPT pós-parto em serviços públicos e privados; 2) investigar abuso na infância como causa; 3) ver se o TEPT aumenta ideação suicida anos depois?",
               "opcoes": [
-                "cegamento",
-                "pareamento",
-                "ajuste estatístico",
-                "seguimento"
+                "Coorte, caso-controle e ensaio",
+                "Descritivo, coorte e caso-controle",
+                "Transversal, descritivo e coorte",
+                "Transversal, caso-controle e coorte"
               ],
-              "resposta": "cegamento",
-              "explicacao": "O cegamento reduz o viés de aferição. A randomização, por sua vez, controla os fatores de confusão.",
-              "revisado": false
+              "resposta": "Transversal, caso-controle e coorte",
+              "explicacao": "Prevalência, exposição passada e desfecho futuro.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u1-l3-q6",
@@ -370,16 +371,17 @@
             {
               "id": "prev-u2-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Como se calcula o coeficiente de mortalidade infantil?",
+              "enunciado": "Por que padronizar por idade a mortalidade por covid entre raças em São Paulo?",
               "opcoes": [
-                "Óbitos < 1 ano ÷ nascidos vivos × 1.000",
-                "Óbitos < 5 anos ÷ população",
-                "Óbitos neonatais ÷ partos",
-                "Nascidos vivos divididos pela população total do município, vezes cem mil"
+                "Pela menor expectativa de vida dos homens",
+                "Pela menor mortalidade das mulheres",
+                "Porque as populações têm proporções diferentes de idosos",
+                "Para corrigir desigualdades sociais"
               ],
-              "resposta": "Óbitos < 1 ano ÷ nascidos vivos × 1.000",
-              "explicacao": "É um dos indicadores que melhor refletem as condições de vida de um país.",
-              "revisado": false
+              "resposta": "Porque as populações têm proporções diferentes de idosos",
+              "explicacao": "A população branca é mais envelhecida.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u2-l1-q2",
@@ -960,28 +962,19 @@
           "questoes": [
             {
               "id": "prev-u3-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada viés à sua descrição.",
-              "pares": [
-                {
-                  "esquerda": "Viés de seleção",
-                  "direita": "Grupos estudados diferentes da população de interesse"
-                },
-                {
-                  "esquerda": "Viés de memória",
-                  "direita": "Doentes lembram mais das exposições passadas"
-                },
-                {
-                  "esquerda": "Viés de confusão",
-                  "direita": "Uma terceira variável explica a associação"
-                },
-                {
-                  "esquerda": "Viés de aferição",
-                  "direita": "Erro na forma de medir exposição ou desfecho"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Numa coorte, gestantes deprimidas tiveram risco relativo de 2,5 de depressão pós-parto. As que não responderam no pós-parto eram mais deprimidas.",
+              "enunciado": "Se elas fossem incluídas, o que aconteceria com a associação?",
+              "opcoes": [
+                "Ficaria igual",
+                "Aumentaria",
+                "Diminuiria",
+                "Impossível prever"
               ],
-              "explicacao": "O viés de memória é típico dos estudos de caso-controle.",
-              "revisado": false
+              "resposta": "Aumentaria",
+              "explicacao": "A perda seletiva subestimou o efeito.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u3-l3-q2",
@@ -1211,28 +1204,19 @@
             },
             {
               "id": "prev-u4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada rastreamento à população indicada no Brasil.",
-              "pares": [
-                {
-                  "esquerda": "Citologia do colo do útero",
-                  "direita": "Mulheres de 25 a 64 anos"
-                },
-                {
-                  "esquerda": "Pesquisa de sangue oculto nas fezes",
-                  "direita": "Adultos a partir de 50 anos"
-                },
-                {
-                  "esquerda": "Rastreamento de diabetes",
-                  "direita": "Adultos com hipertensão ou excesso de peso"
-                },
-                {
-                  "esquerda": "Teste do pezinho",
-                  "direita": "Recém-nascidos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 67 anos, sem riscos, fez citologias normais aos 61 e 64 anos e mamografia aos 65.",
+              "enunciado": "O que pedir agora?",
+              "opcoes": [
+                "Só mamografia",
+                "Só citologia",
+                "Mamografia e citologia",
+                "Nada"
               ],
-              "explicacao": "As faixas exatas podem mudar com novas diretrizes.",
-              "revisado": false
+              "resposta": "Só mamografia",
+              "explicacao": "A citologia para aos 64 com dois exames normais; a mamografia vai até 69.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u4-l2-q3",
@@ -2070,11 +2054,18 @@
             },
             {
               "id": "prev-u6-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O SAMU faz parte da Rede de Atenção às Urgências e Emergências.",
-              "resposta": true,
-              "explicacao": "Ele atende chamados pelo número 192.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as equipes multiprofissionais da APS (eMulti), qual afirmação é correta?",
+              "opcoes": [
+                "Não fazem teleconsulta",
+                "Também ficam em UPA e ambulatórios",
+                "Podem ter cardiologista, dermatologista e psiquiatra",
+                "São pagas só pelo município"
+              ],
+              "resposta": "Podem ter cardiologista, dermatologista e psiquiatra",
+              "explicacao": "Apoiam as equipes de Saúde da Família.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u6-l3-q4",
@@ -2219,16 +2210,17 @@
             {
               "id": "prev-u7-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o objetivo da notificação compulsória?",
+              "enunciado": "Por que a esporotricose humana passou a ser de notificação compulsória em 2025?",
               "opcoes": [
-                "Desencadear controle e conhecer a situação",
-                "Punir o paciente",
-                "Cobrar impostos",
-                "Punir o paciente e cobrar multa da família"
+                "Crescimento, risco de disseminação, população vulnerável e possibilidade de intervenção",
+                "Só por afetar áreas urbanas com gatos",
+                "Por ser grave e muito transmissível entre humanos",
+                "Por ordem direta da OMS"
               ],
-              "resposta": "Desencadear controle e conhecer a situação",
-              "explicacao": "Base da vigilância.",
-              "revisado": false
+              "resposta": "Crescimento, risco de disseminação, população vulnerável e possibilidade de intervenção",
+              "explicacao": "Transmitida principalmente por gatos.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u7-l1-q6",
@@ -2510,16 +2502,17 @@
             {
               "id": "prev-u8-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame de escolha para diagnóstico de tuberculose pulmonar no SUS?",
+              "enunciado": "Qual indicador avalia a qualidade da assistência à tuberculose?",
               "opcoes": [
-                "Teste rápido molecular (TRM-TB)",
-                "Raio X",
-                "Prova tuberculínica",
-                "Hemograma completo e raio X de tórax"
+                "Incidência da forma pulmonar",
+                "Prevalência da forma pulmonar",
+                "Proporção de abandono do tratamento",
+                "Proporção da forma miliar"
               ],
-              "resposta": "Teste rápido molecular (TRM-TB)",
-              "explicacao": "Também detecta resistência à rifampicina.",
-              "revisado": false
+              "resposta": "Proporção de abandono do tratamento",
+              "explicacao": "Abandono acima de 5% indica falha no acompanhamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u8-l1-q2",
@@ -3229,11 +3222,18 @@
             },
             {
               "id": "prev-u10-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Gastos com merenda escolar não contam como ações de saúde para o mínimo constitucional.",
-              "resposta": true,
-              "explicacao": "A Lei Complementar 141 define o que conta.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os gastos diretos das famílias com saúde no Brasil, qual afirmação é correta?",
+              "opcoes": [
+                "Planos de saúde são a maior parte",
+                "O peso na renda cresce com a renda",
+                "Mais da metade do gasto total é direto",
+                "Remédios são a maior parte, e pesam mais nos mais pobres"
+              ],
+              "resposta": "Remédios são a maior parte, e pesam mais nos mais pobres",
+              "explicacao": "Os mais pobres gastam mais proporcionalmente com remédios.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-u10-l1-q3",
@@ -5525,18 +5525,18 @@
           "questoes": [
             {
               "id": "prev-d2-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Num estudo caso-controle, mães de bebês com malformação lembram mais de remédios usados na gestação que mães de bebês saudáveis.",
-              "enunciado": "Qual é o viés?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Num caso-controle sobre fumo e câncer de pulmão, os controles negam mais o fumo. O que acontece com o odds ratio?",
               "opcoes": [
-                "Viés de memória",
-                "Viés de seleção",
-                "Viés de publicação",
-                "Confusão"
+                "Fica superestimado",
+                "Fica subestimado",
+                "Não muda",
+                "Não dá para saber"
               ],
-              "resposta": "Viés de memória",
-              "explicacao": "É comum em estudos de caso-controle.",
-              "revisado": false
+              "resposta": "Fica superestimado",
+              "explicacao": "Controles parecem menos expostos do que são.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-d2-l2-q2",
@@ -7491,17 +7491,18 @@
             {
               "id": "prev-d7-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Ensaio com 2 grupos de 100: 20 eventos no controle e 10 no tratamento.",
-              "enunciado": "Qual é o NNT?",
+              "caso": "Ensaio de metformina na covid: tempo de recuperação com razão de 0,96 (IC 0,89 a 1,03); eventos graves com razão de 2,5 (IC 0,65 a 9,66).",
+              "enunciado": "Qual é a conclusão?",
               "opcoes": [
-                "10",
-                "20",
-                "5",
-                "100"
+                "Os dados favorecem a metformina",
+                "A metformina piorou os pacientes",
+                "Houve mais eventos adversos significativos",
+                "Não se pode rejeitar a hipótese nula"
               ],
-              "resposta": "10",
-              "explicacao": "Redução absoluta de 10%.",
-              "revisado": false
+              "resposta": "Não se pode rejeitar a hipótese nula",
+              "explicacao": "Todos os intervalos incluem o 1.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-d7-l2-q2",
@@ -8711,17 +8712,18 @@
             {
               "id": "prev-d10-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido sem sintomas, de mãe com sífilis tratada com azitromicina na gestação.",
-              "enunciado": "Como classificar para vigilância?",
+              "caso": "Gestante colheu VDRL com 14 semanas, mas o resultado não chegou ao prontuário. Com 28 semanas, VDRL 1:64; o bebê nasceu com sífilis congênita.",
+              "enunciado": "Qual atributo falhou?",
               "opcoes": [
-                "Caso de sífilis congênita",
-                "Não é caso, pois o bebê está bem",
-                "Caso só da mãe",
-                "Caso só se o bebê tiver sintomas"
+                "Acesso",
+                "Equidade",
+                "Universalidade",
+                "Coordenação do cuidado"
               ],
-              "resposta": "Caso de sífilis congênita",
-              "explicacao": "Mãe não tratada ou tratada de forma inadequada (sem penicilina) define caso de sífilis congênita.",
-              "revisado": false
+              "resposta": "Coordenação do cuidado",
+              "explicacao": "A informação se perdeu entre os serviços.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-d10-l2-q4",
@@ -8961,18 +8963,18 @@
             },
             {
               "id": "prev-d11-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Hospital filantrópico conveniado atende pelo SUS.",
-              "enunciado": "Qual é a participação privada no SUS?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Contratar hospitais privados para ampliar o acesso do SUS é, pela lei, uma participação de caráter",
               "opcoes": [
-                "Complementar, preferindo filantrópicas",
-                "Proibida",
-                "Principal",
-                "Principal, com prioridade para empresas com fins lucrativos"
+                "Suplementar",
+                "Complementar",
+                "Subsidiário",
+                "Organização social"
               ],
-              "resposta": "Complementar, preferindo filantrópicas",
-              "explicacao": "Constituição.",
-              "revisado": false
+              "resposta": "Complementar",
+              "explicacao": "Suplementar é a saúde dos planos de saúde.",
+              "revisado": false,
+              "fonte": "USP-SP 2026"
             },
             {
               "id": "prev-d11-l1-q3",
