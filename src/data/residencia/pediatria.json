@@ -395,11 +395,18 @@
             },
             {
               "id": "ped-u2-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No recém-nascido a termo com boa vitalidade, o cordão deve ser clampeado após pelo menos 1 minuto.",
-              "resposta": true,
-              "explicacao": "O clampeamento tardio aumenta as reservas de ferro do bebê.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Na massagem cardíaca do recém-nascido intubado, qual é a relação e o oxigênio?",
+              "opcoes": [
+                "3 para 1 dessincronizada com 60%",
+                "3 compressões para 1 ventilação com 100%",
+                "15 para 2 com 100%",
+                "30 para 2 com 60%"
+              ],
+              "resposta": "3 compressões para 1 ventilação com 100%",
+              "explicacao": "Ajusta-se o oxigênio pela saturação depois.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u2-l1-q3",
@@ -500,17 +507,19 @@
           "questoes": [
             {
               "id": "ped-u2-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como deve ser considerada a icterícia que surge nas primeiras 24 horas de vida?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 36 horas, icterícia até o umbigo, bilirrubina 7 (quase toda indireta). Mãe A negativo e bebê B positivo, Coombs negativo.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Sempre patológica, exige investigar",
-                "Fisiológica",
-                "Normal em prematuro",
-                "Sinal de boa amamentação nos primeiros dias"
+                "Fisiológica, por pouca glicuronil transferase",
+                "Fisiológica, por menos circulação êntero-hepática",
+                "Doença hemolítica ABO",
+                "Doença hemolítica Rh"
               ],
-              "resposta": "Sempre patológica, exige investigar",
-              "explicacao": "Nesse período, a causa mais comum é a hemólise por incompatibilidade de grupo sanguíneo.",
-              "revisado": false
+              "resposta": "Fisiológica, por pouca glicuronil transferase",
+              "explicacao": "Coombs negativo e nível baixo para a idade.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u2-l2-q2",
@@ -666,17 +675,19 @@
             },
             {
               "id": "ped-u2-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste do coraçãozinho é alterado se a saturação for menor que 95% ou se a diferença entre os membros for de ___ ou mais.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 5 meses tem olhos grandes desde o nascimento, lacrimeja muito, não tolera luz e uma córnea ficou esbranquiçada.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "3%",
-                "10%",
-                "1%",
-                "20%"
+                "Catarata",
+                "Glaucoma congênito",
+                "Toxoplasmose",
+                "Obstrução lacrimal"
               ],
-              "resposta": "3%",
-              "explicacao": "Com resultado alterado, repete-se após 1 hora e, se persistir, faz-se ecocardiograma.",
-              "revisado": false
+              "resposta": "Glaucoma congênito",
+              "explicacao": "Urgência oftalmológica.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u2-l3-q5",
@@ -2047,28 +2058,19 @@
           "questoes": [
             {
               "id": "ped-u6-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à síndrome ou doença.",
-              "pares": [
-                {
-                  "esquerda": "Proteinúria maciça e edema",
-                  "direita": "Síndrome nefrótica"
-                },
-                {
-                  "esquerda": "Hematúria, hipertensão e edema",
-                  "direita": "Síndrome nefrítica"
-                },
-                {
-                  "esquerda": "Albumina baixa e colesterol alto",
-                  "direita": "Exames típicos da nefrótica"
-                },
-                {
-                  "esquerda": "Complemento C3 baixo por algumas semanas",
-                  "direita": "Glomerulonefrite pós-estreptocócica"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos com síndrome nefrótica descompensada, albumina 1,5, tem dor abdominal intensa com descompressão dolorosa.",
+              "enunciado": "Qual é o mecanismo da complicação?",
+              "opcoes": [
+                "Menos opsonização por perda de imunoglobulinas na urina",
+                "Aumento da pressão oncótica",
+                "Infusão de albumina",
+                "Perda de proteínas C e S"
               ],
-              "explicacao": "Na nefrítica, o problema principal é a inflamação; na nefrótica, a perda de proteína.",
-              "revisado": false
+              "resposta": "Menos opsonização por perda de imunoglobulinas na urina",
+              "explicacao": "Peritonite bacteriana espontânea por pneumococo.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u6-l3-q2",
@@ -2410,28 +2412,19 @@
           "questoes": [
             {
               "id": "ped-u7-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença à característica.",
-              "pares": [
-                {
-                  "esquerda": "Alergia à proteína do leite de vaca",
-                  "direita": "Reação imune à proteína"
-                },
-                {
-                  "esquerda": "Intolerância à lactose",
-                  "direita": "Falta da enzima lactase"
-                },
-                {
-                  "esquerda": "Doença celíaca",
-                  "direita": "Reação ao glúten"
-                },
-                {
-                  "esquerda": "Fibrose cística",
-                  "direita": "Má absorção de gordura"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 3 meses tem sangue vivo nas fezes uma semana após trocar o peito por leite de vaca. Está bem. Não pode voltar ao peito exclusivo.",
+              "enunciado": "Qual fórmula usar?",
+              "opcoes": [
+                "Soja",
+                "Extensamente hidrolisada",
+                "Aminoácidos",
+                "Sem lactose"
               ],
-              "explicacao": "Doenças diferentes.",
-              "revisado": false
+              "resposta": "Extensamente hidrolisada",
+              "explicacao": "Aminoácidos ficam para casos graves ou sem resposta.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u7-l3-q2",
@@ -2550,17 +2543,19 @@
             },
             {
               "id": "ped-u8-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Até quando o reflexo de Moro deve desaparecer?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 20 dias, exame normal e reflexo vermelho presente, tem desvio convergente dos dois olhos por 3 segundos às vezes.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Até 4 a 6 meses",
-                "1 mês",
-                "2 anos",
-                "Nunca desaparece"
+                "Oftalmologista",
+                "Ultrassom transfontanela",
+                "Fundo de olho",
+                "Observar"
               ],
-              "resposta": "Até 4 a 6 meses",
-              "explicacao": "A persistência é sinal de alerta.",
-              "revisado": false
+              "resposta": "Observar",
+              "explicacao": "Desvio intermitente é normal nos primeiros meses.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u8-l1-q3",
@@ -3245,11 +3240,19 @@
             },
             {
               "id": "ped-u10-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O tratamento principal da bronquiolite é antibiótico e corticoide.",
-              "resposta": false,
-              "explicacao": "Falso. É de suporte: oxigênio se necessário, hidratação e lavagem nasal.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Há um quarto de isolamento e um quarto com 2 leitos. Três crianças com bronquiolite: uma por vírus sincicial, uma por parainfluenza e uma por influenza.",
+              "enunciado": "Como alocar?",
+              "opcoes": [
+                "Isolamento para parainfluenza",
+                "Isolamento para vírus sincicial",
+                "Isolamento com gotículas para influenza",
+                "Internar só duas"
+              ],
+              "resposta": "Isolamento com gotículas para influenza",
+              "explicacao": "Sincicial e parainfluenza pedem precaução de contato.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-u10-l1-q3",
@@ -5691,17 +5694,18 @@
             {
               "id": "ped-d2-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança com anemia falciforme tem bochechas vermelhas, cansaço intenso, hemoglobina de 4 e reticulócitos quase zero.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Menino de 3 anos, 36 horas sem febre após 5 dias de dengue, tem dor abdominal contínua, muitos vômitos e quase desmaiou.",
+              "enunciado": "Qual hemograma é o mais esperado?",
               "opcoes": [
-                "Crise aplástica por parvovírus",
-                "Sequestro esplênico agudo",
-                "Crise hemolítica por infecção",
-                "Crise vaso-oclusiva com dor"
+                "Leucocitose com desvio e plaquetas 110 mil",
+                "Pancitopenia com blastos",
+                "Eosinofilia de 30%",
+                "Hematócrito alto, leucócitos baixos e plaquetas 70 mil"
               ],
-              "resposta": "Crise aplástica por parvovírus",
-              "explicacao": "O parvovírus B19 para a produção de hemácias por alguns dias.",
-              "revisado": false
+              "resposta": "Hematócrito alto, leucócitos baixos e plaquetas 70 mil",
+              "explicacao": "Hemoconcentração indica extravasamento de plasma.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-d2-l3-q4",
@@ -7598,17 +7602,18 @@
             {
               "id": "ped-d7-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido de 4 semanas com icterícia, fezes claras e bilirrubina direta alta.",
-              "enunciado": "Qual é a conduta urgente?",
+              "caso": "Bebê de 4 meses com icterícia desde 20 dias, fezes sem cor, fígado endurecido, baço grande e ascite. Biópsia com proliferação de ductos e fibrose.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Investigar atresia de vias biliares",
-                "Fototerapia",
-                "Aguardar",
-                "Fototerapia em casa e suspender a amamentação"
+                "Cisto de colédoco; cirurgia",
+                "Cisto de colédoco; transplante",
+                "Atresia biliar; cirurgia de Kasai",
+                "Atresia biliar; transplante hepático"
               ],
-              "resposta": "Investigar atresia de vias biliares",
-              "explicacao": "Cirurgia de Kasai antes de 60 dias.",
-              "revisado": false
+              "resposta": "Atresia biliar; transplante hepático",
+              "explicacao": "Kasai funciona antes de 2 meses; tarde e com fibrose, transplante.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-d7-l3-q2",
@@ -8656,17 +8661,18 @@
             {
               "id": "ped-d10-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança com pneumonia há 5 dias em amoxicilina, febre persistente e macicez na base.",
-              "enunciado": "O que suspeitar?",
+              "caso": "Bebê de 8 meses com tosse e febre, letárgico, gemente, FR 88, saturação de 90% em máscara, PA 85 x 40 e tiragem importante.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Derrame pleural parapneumônico",
-                "Asma",
-                "Normal",
-                "Resistência simples ao antibiótico, sem complicação"
+                "Pneumonia; intubar mantendo a máscara até tudo estar pronto",
+                "Pneumonia; cateter de alto fluxo",
+                "Bronquiolite; intubar com bolsa-valva-máscara",
+                "Bronquiolite; cateter de alto fluxo"
               ],
-              "resposta": "Derrame pleural parapneumônico",
-              "explicacao": "Fazer ultrassom.",
-              "revisado": false
+              "resposta": "Pneumonia; intubar mantendo a máscara até tudo estar pronto",
+              "explicacao": "Falência respiratória iminente pede intubação.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "ped-d10-l2-q2",

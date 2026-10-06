@@ -1233,28 +1233,19 @@
             },
             {
               "id": "go-u4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tratamento ao seu objetivo na síndrome dos ovários policísticos.",
-              "pares": [
-                {
-                  "esquerda": "Anticoncepcional combinado",
-                  "direita": "Regular o ciclo e reduzir o excesso de andrógenos"
-                },
-                {
-                  "esquerda": "Letrozol",
-                  "direita": "Induzir a ovulação"
-                },
-                {
-                  "esquerda": "Perda de peso",
-                  "direita": "Melhorar a ovulação e o metabolismo"
-                },
-                {
-                  "esquerda": "Metformina",
-                  "direita": "Melhorar a resistência à insulina"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 26 anos com ciclos longos, pelos em excesso e acne. Testosterona e 17-hidroxiprogesterona altas.",
+              "enunciado": "Qual é o tratamento para a causa?",
+              "opcoes": [
+                "Metformina",
+                "Prednisolona",
+                "Espironolactona",
+                "Anticoncepcional combinado"
               ],
-              "explicacao": "O tratamento depende do objetivo da mulher: regular o ciclo, tratar a pele ou engravidar.",
-              "revisado": false
+              "resposta": "Prednisolona",
+              "explicacao": "Hiperplasia adrenal não clássica: o corticoide reduz o estímulo do ACTH.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u4-l2-q3",
@@ -1831,17 +1822,19 @@
             },
             {
               "id": "go-u6-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da vaginose bacteriana?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 24 anos com coceira, dor e corrimento branco em grumos. pH vaginal 4, muitos lactobacilos, células epiteliais destruídas e sem fungos.",
+              "enunciado": "Qual é o tratamento vaginal?",
               "opcoes": [
-                "Metronidazol",
-                "Fluconazol",
-                "Aciclovir",
-                "Penicilina"
+                "Ácido acético",
+                "Clotrimazol",
+                "Probiótico",
+                "Bicarbonato de sódio"
               ],
-              "resposta": "Metronidazol",
-              "explicacao": "O tratamento do parceiro não é necessário na vaginose bacteriana.",
-              "revisado": false
+              "resposta": "Bicarbonato de sódio",
+              "explicacao": "Vaginose citolítica: excesso de lactobacilos; o bicarbonato sobe o pH.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u6-l1-q3",
@@ -2067,11 +2060,19 @@
             },
             {
               "id": "go-u6-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Mulheres com útero que usam estrogênio devem associar progestagênio para proteger o endométrio.",
-              "resposta": true,
-              "explicacao": "Estrogênio sozinho aumenta o risco de câncer de endométrio.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 54 anos tratada de câncer de mama, em uso de inibidor de aromatase, tem fogachos intensos e insônia.",
+              "enunciado": "Qual é o tratamento mais adequado?",
+              "opcoes": [
+                "Tamoxifeno",
+                "Gestrinona",
+                "Gabapentina",
+                "Isoflavona"
+              ],
+              "resposta": "Gabapentina",
+              "explicacao": "Hormônio e fitoestrogênio são evitados após câncer de mama.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u6-l3-q4",
@@ -3080,11 +3081,19 @@
             },
             {
               "id": "go-u9-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A indução do parto com 41 semanas reduz a morte fetal.",
-              "resposta": true,
-              "explicacao": "Recomendação atual.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Terceira gestação, dois partos normais, 40 semanas e 5 dias. Colo médio, 4 cm, cabeça alta. Perfil biofísico 10 e líquido normal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Misoprostol",
+                "Ocitocina",
+                "Cesárea",
+                "Reavaliar em 48 horas"
+              ],
+              "resposta": "Ocitocina",
+              "explicacao": "Com colo favorável, induz-se com ocitocina.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u9-l3-q3",
@@ -3568,17 +3577,19 @@
             },
             {
               "id": "go-u11-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tumor benigno de mama mais comum em mulheres jovens?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 27 anos tem dor forte nas duas mamas 15 dias antes da menstruação, sem melhora com analgésicos. Exame normal.",
+              "enunciado": "Qual é o tratamento mais eficaz?",
               "opcoes": [
-                "Fibroadenoma",
-                "Papiloma",
-                "Lipoma",
-                "Tumor filoides"
+                "Vitamina E",
+                "Tamoxifeno",
+                "Espironolactona",
+                "Progesterona natural"
               ],
-              "resposta": "Fibroadenoma",
-              "explicacao": "Bem delimitado e móvel.",
-              "revisado": false
+              "resposta": "Tamoxifeno",
+              "explicacao": "Usado em mastalgia cíclica grave que não cede.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u11-l1-q3",
@@ -4260,28 +4271,19 @@
           "questoes": [
             {
               "id": "go-u13-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à fase da puberdade.",
-              "pares": [
-                {
-                  "esquerda": "Telarca",
-                  "direita": "Início das mamas"
-                },
-                {
-                  "esquerda": "Pubarca",
-                  "direita": "Início dos pelos"
-                },
-                {
-                  "esquerda": "Menarca",
-                  "direita": "Primeira menstruação"
-                },
-                {
-                  "esquerda": "Estirão",
-                  "direita": "Crescimento rápido"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 16 anos nunca menstruou, é baixa, tem mamas Tanner 2, útero pequeno e gônadas de volume muito reduzido.",
+              "enunciado": "Qual é o cariótipo provável?",
+              "opcoes": [
+                "45,X",
+                "46,XY",
+                "47,XXY",
+                "46,XX com trissomia 21"
               ],
-              "explicacao": "Ordem habitual.",
-              "revisado": false
+              "resposta": "45,X",
+              "explicacao": "Síndrome de Turner: baixa estatura e falência ovariana.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-u13-l1-q2",
@@ -8498,17 +8500,18 @@
             {
               "id": "go-d10-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Gestante com estenose mitral reumática e falta de ar com 28 semanas.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Gestante de 33 semanas com falta de ar, estertores, FC 118 e sopro diastólico mitral com reforço pré-sistólico. Está com contrações e 4 cm de dilatação.",
+              "enunciado": "Qual é a escolha imediata?",
               "opcoes": [
-                "Betabloqueador e diurético se preciso",
-                "Cirurgia imediata",
-                "Interromper",
-                "Interromper a gestação e fazer cirurgia valvar imediata"
+                "Terbutalina",
+                "Metildopa",
+                "Furosemida",
+                "Sulfato de magnésio"
               ],
-              "resposta": "Betabloqueador e diurético se preciso",
-              "explicacao": "Melhorar o enchimento do ventrículo.",
-              "revisado": false
+              "resposta": "Furosemida",
+              "explicacao": "Estenose mitral com congestão; terbutalina pioraria a taquicardia.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "go-d10-l1-q2",

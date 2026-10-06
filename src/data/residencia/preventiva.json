@@ -290,11 +290,18 @@
             },
             {
               "id": "prev-u1-l3-q4",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Estudos transversais são os mais adequados para estabelecer a relação temporal entre causa e efeito.",
-              "resposta": false,
-              "explicacao": "Como medem tudo no mesmo momento, não mostram o que veio primeiro. São bons para estimar prevalência.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Municípios com maior cobertura de transferência de renda tiveram menos casos novos de hanseníase. Que tipo de estudo é esse?",
+              "opcoes": [
+                "Coorte",
+                "Ecológico",
+                "Transversal",
+                "Caso-controle"
+              ],
+              "resposta": "Ecológico",
+              "explicacao": "A unidade de análise é o município.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u1-l3-q5",
@@ -1079,28 +1086,19 @@
           "questoes": [
             {
               "id": "prev-u4-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada ação ao nível de prevenção.",
-              "pares": [
-                {
-                  "esquerda": "Vacinação",
-                  "direita": "Prevenção primária"
-                },
-                {
-                  "esquerda": "Mamografia de rastreamento",
-                  "direita": "Prevenção secundária"
-                },
-                {
-                  "esquerda": "Reabilitação após AVC",
-                  "direita": "Prevenção terciária"
-                },
-                {
-                  "esquerda": "Evitar exames e tratamentos desnecessários",
-                  "direita": "Prevenção quaternária"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Pai leva a filha de 1 ano para vacinar e conta que ela tem diarreia há 3 dias. Ela recebe a vacina, soro de reidratação e orientação.",
+              "enunciado": "Quais níveis de prevenção foram feitos?",
+              "opcoes": [
+                "Só primária",
+                "Primária e secundária",
+                "Secundária e terciária",
+                "Quaternária"
               ],
-              "explicacao": "A prevenção quaternária protege o paciente do excesso de intervenção médica.",
-              "revisado": false
+              "resposta": "Primária e secundária",
+              "explicacao": "Vacina é primária; tratar cedo a diarreia é secundária.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u4-l1-q2",
@@ -1998,16 +1996,17 @@
             {
               "id": "prev-u6-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "O que é o ecomapa?",
+              "enunciado": "Do que depende o sucesso de uma equipe interprofissional?",
               "opcoes": [
-                "Relações da família com escola, trabalho e igreja",
-                "Mapa de doenças",
-                "Tipo de exame",
-                "Mapa de doenças da cidade, com casos por bairro"
+                "Somar as especialidades técnicas",
+                "Articulação e interação entre os membros",
+                "Apagar as diferenças entre profissões",
+                "Hierarquia formal"
               ],
-              "resposta": "Relações da família com escola, trabalho e igreja",
-              "explicacao": "Ele mostra apoios e fontes de estresse.",
-              "revisado": false
+              "resposta": "Articulação e interação entre os membros",
+              "explicacao": "A colaboração é o centro do trabalho em equipe.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u6-l2-q7",
@@ -2055,28 +2054,19 @@
             },
             {
               "id": "prev-u6-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada serviço ao seu nível ou papel na rede.",
-              "pares": [
-                {
-                  "esquerda": "Unidade básica de saúde",
-                  "direita": "Atenção primária"
-                },
-                {
-                  "esquerda": "UPA 24 horas",
-                  "direita": "Urgência e emergência de média complexidade"
-                },
-                {
-                  "esquerda": "Hospital de referência",
-                  "direita": "Atenção especializada e alta complexidade"
-                },
-                {
-                  "esquerda": "Central de regulação",
-                  "direita": "Organizar o acesso aos serviços"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com colesterol alto foi à UBS perto da casa da mãe para acompanhamento e foi orientada a procurar a UBS do próprio bairro.",
+              "enunciado": "A recepção acertou?",
+              "opcoes": [
+                "Acertou, pela longitudinalidade",
+                "Acertou, quem não é cadastrado não é atendido",
+                "Errou, o SUS é universal",
+                "Errou, deve atender familiares dos moradores"
               ],
-              "explicacao": "A regulação busca garantir o acesso conforme a necessidade.",
-              "revisado": false
+              "resposta": "Acertou, pela longitudinalidade",
+              "explicacao": "Sem urgência, o vínculo com a equipe do território é melhor.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u6-l3-q3",
@@ -2212,17 +2202,19 @@
             },
             {
               "id": "prev-u7-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sistema que recebe as notificações é o ___.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem levou um soco ao ser agredido por beijar o namorado em público.",
+              "enunciado": "Qual é a conduta sobre a violência?",
               "opcoes": [
-                "SINAN",
-                "SIM",
-                "SINASC",
-                "SIH"
+                "Boletim de ocorrência e notificar se ele concordar",
+                "Notificar mesmo sem a vontade dele, citando motivação LGBTfóbica",
+                "Notificar citando a orientação sexual",
+                "Não notificar"
               ],
-              "resposta": "SINAN",
-              "explicacao": "Sistema de Informação de Agravos de Notificação.",
-              "revisado": false
+              "resposta": "Notificar mesmo sem a vontade dele, citando motivação LGBTfóbica",
+              "explicacao": "Violência por homofobia é de notificação compulsória.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u7-l1-q5",
@@ -2417,16 +2409,17 @@
             {
               "id": "prev-u7-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual vacina do calendário infantil é dada ao nascer junto com a BCG?",
+              "enunciado": "Sobre as vacinas da dengue, qual afirmação é correta?",
               "opcoes": [
-                "Hepatite B",
-                "Tríplice viral",
-                "Febre amarela",
-                "Rotavírus"
+                "A Dengvaxia teve uso limitado por baixa eficácia",
+                "A Qdenga pode ser usada por todos a partir de 1 ano",
+                "A Butantan-DV não mostrou eficácia contra todos os sorotipos",
+                "Nenhuma vacina teve risco de resposta exacerbada"
               ],
-              "resposta": "Hepatite B",
-              "explicacao": "Nas primeiras 24 horas.",
-              "revisado": false
+              "resposta": "A Butantan-DV não mostrou eficácia contra todos os sorotipos",
+              "explicacao": "A Dengvaxia foi limitada pelo risco em quem nunca teve dengue.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u7-l3-q3",
@@ -3222,16 +3215,17 @@
             {
               "id": "prev-u10-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o percentual mínimo de receita que os municípios devem aplicar em saúde?",
+              "enunciado": "Pelas Contas-Satélites de Saúde do IBGE, qual afirmação é correta?",
               "opcoes": [
-                "15%",
-                "12%",
-                "5%",
-                "30%"
+                "O gasto do SUS em % do PIB supera o de países europeus",
+                "Serviços privados recebem a maior parte, mais de 60%",
+                "Remédios são mais da metade do gasto das famílias",
+                "A saúde gera menos de 3% dos empregos"
               ],
-              "resposta": "15%",
-              "explicacao": "Estados aplicam 12%.",
-              "revisado": false
+              "resposta": "Serviços privados recebem a maior parte, mais de 60%",
+              "explicacao": "O gasto público no Brasil é proporcionalmente baixo.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u10-l1-q2",
@@ -3818,39 +3812,50 @@
             },
             {
               "id": "prev-u11-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual serviço atende pessoas com transtornos mentais graves no território?",
+              "tipo": "caso_clinico",
+              "caso": "Na visita, a agente comunitária pergunta ao idoso com sequela de AVC se prefere responder ou deixar a filha falar, e pergunta a ele mesmo sobre raça/cor.",
+              "enunciado": "Quais determinantes de vulnerabilidade social foram considerados?",
               "opcoes": [
-                "CAPS",
-                "UPA",
-                "Hospital psiquiátrico isolado",
-                "SAMU"
+                "Capacitismo e acesso",
+                "Racismo e capacitismo",
+                "Racismo e etnocentrismo",
+                "Etnocentrismo e acesso"
               ],
-              "resposta": "CAPS",
-              "explicacao": "Substitui o modelo manicomial.",
-              "revisado": false
+              "resposta": "Racismo e capacitismo",
+              "explicacao": "Respeitou a autonomia e a autodeclaração.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u11-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A Lei 10.216 trata da reforma psiquiátrica no Brasil.",
-              "resposta": true,
-              "explicacao": "Direitos das pessoas com transtorno mental.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher sem moradia fixa, profissional do sexo, com HIV, chega à UBS com febre à tarde, cansaço e tosse. Não mora na área.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Mandar ao Consultório na Rua",
+                "Mandar ao pronto-socorro",
+                "Colher sorologias e esperar",
+                "Acolher e avaliar imediatamente"
+              ],
+              "resposta": "Acolher e avaliar imediatamente",
+              "explicacao": "Pode ser tuberculose; não morar na área não impede atendimento.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u11-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O CAPS ___ atende usuários de álcool e drogas.",
+              "tipo": "multipla_escolha",
+              "enunciado": "No caso da mulher sem moradia, profissional do sexo, com HIV e sintomas de tuberculose, qual vulnerabilidade chama atenção?",
               "opcoes": [
-                "AD",
-                "i",
-                "III",
-                "I"
+                "Programática",
+                "Social, pela ocupação e condições de vida",
+                "Individual, pelos sintomas",
+                "Individual, pela ocupação"
               ],
-              "resposta": "AD",
-              "explicacao": "CAPSi é infantojuvenil.",
-              "revisado": false
+              "resposta": "Social, pela ocupação e condições de vida",
+              "explicacao": "A vulnerabilidade social envolve contexto e acesso.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-u11-l3-q5",
@@ -6177,18 +6182,18 @@
           "questoes": [
             {
               "id": "prev-d4-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Uma unidade decide atender mais as pessoas com maior necessidade, mesmo que demore para as outras.",
-              "enunciado": "Qual princípio do SUS é esse?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais fatores ajudam a explicar a criação do SUS em 1988?",
               "opcoes": [
-                "Equidade",
-                "Universalidade",
-                "Integralidade",
-                "Hierarquização"
+                "Desmobilização dos movimentos sociais",
+                "Crise só do setor privado",
+                "Crise previdenciária, mobilização social e participação popular",
+                "Crise das instituições democráticas"
               ],
-              "resposta": "Equidade",
-              "explicacao": "Equidade é tratar de forma desigual os desiguais.",
-              "revisado": false
+              "resposta": "Crise previdenciária, mobilização social e participação popular",
+              "explicacao": "A Reforma Sanitária e a redemocratização foram centrais.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-d4-l1-q2",
@@ -8545,17 +8550,18 @@
             {
               "id": "prev-d10-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Gestante com HBsAg positivo.",
-              "enunciado": "Qual é a conduta para o bebê?",
+              "caso": "Em 2017, os casos de hepatite A em São Paulo subiram de 64 para 786, quase todos em homens jovens.",
+              "enunciado": "Qual foi a via principal?",
               "opcoes": [
-                "Vacina e imunoglobulina em 12 a 24 h",
-                "Só vacina aos 2 meses",
-                "Cesárea",
-                "Só vacina aos dois meses e evitar a amamentação"
+                "Parenteral",
+                "Água",
+                "Alimentos",
+                "Sexual oro-anal"
               ],
-              "resposta": "Vacina e imunoglobulina em 12 a 24 h",
-              "explicacao": "Previne transmissão.",
-              "revisado": false
+              "resposta": "Sexual oro-anal",
+              "explicacao": "Surto ligado a práticas sexuais, prevenível com vacina.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-d10-l1-q2",
@@ -8689,17 +8695,18 @@
             {
               "id": "prev-d10-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Gestante tratada com penicilina, mas parceiro não tratado.",
-              "enunciado": "Qual é o risco?",
+              "caso": "Homem tem manchas nas palmas e no tronco e ínguas no pescoço, 3 meses após sexo oral sem proteção. A esposa está grávida de 3 meses.",
+              "enunciado": "Qual é a interpretação?",
               "opcoes": [
-                "Reinfecção",
-                "Risco nenhum",
-                "Cura garantida",
-                "Cura garantida da gestante"
+                "Sífilis primária, já transmitida",
+                "Sífilis secundária com pouca transmissão",
+                "Sífilis secundária, com alta transmissão",
+                "Sífilis terciária com alta transmissão"
               ],
-              "resposta": "Reinfecção",
-              "explicacao": "Tratar o parceiro.",
-              "revisado": false
+              "resposta": "Sífilis secundária, com alta transmissão",
+              "explicacao": "Testar e tratar a esposa logo.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "prev-d10-l2-q3",

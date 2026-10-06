@@ -159,28 +159,19 @@
             },
             {
               "id": "cm-u1-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada exame ao ponto de corte diagnóstico de diabetes.",
-              "pares": [
-                {
-                  "esquerda": "Glicemia de jejum",
-                  "direita": "≥ 126 mg/dL"
-                },
-                {
-                  "esquerda": "Hemoglobina glicada",
-                  "direita": "≥ 6,5%"
-                },
-                {
-                  "esquerda": "TOTG com 75 g",
-                  "direita": "≥ 200 mg/dL após 2 horas"
-                },
-                {
-                  "esquerda": "Glicemia ao acaso",
-                  "direita": "≥ 200 mg/dL com sintomas clássicos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher teve glicemia de 203 internada por colecistite e recebeu transfusão. Seis semanas depois: glicemia de jejum 133 e glicada 5,4%.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Já é diabetes",
+                "Repetir a glicada agora",
+                "Fazer teste oral de tolerância à glicose",
+                "É só hiperglicemia de estresse"
               ],
-              "explicacao": "Sem sintomas, o diagnóstico precisa de dois exames alterados. Com sintomas clássicos e glicemia ao acaso ≥ 200 mg/dL, um exame basta.",
-              "revisado": false
+              "resposta": "Fazer teste oral de tolerância à glicose",
+              "explicacao": "A transfusão falseia a glicada para baixo.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u1-l2-q3",
@@ -388,17 +379,18 @@
             {
               "id": "cm-u2-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem de 65 anos tem falta de ar aos pequenos esforços, precisa de dois travesseiros para dormir e tem edema nas pernas. O ecocardiograma mostra fração de ejeção de 30%.",
-              "enunciado": "Qual conjunto de medicamentos reduz a mortalidade?",
+              "caso": "Homem com IC de fração de ejeção 35% usa sacubitril-valsartana, carvedilol, espironolactona, empagliflozina e furosemida. Após 1 ano, sem sintomas e FE de 54%.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Betabloqueador, ARNI/IECA, espironolactona e iSGLT2",
-                "Diltiazem e digoxina",
-                "Furosemida isolada",
-                "Anti-inflamatório e diurético de alça em dose alta, sem outros remédios"
+                "Reduzir as doses",
+                "Suspender o tratamento",
+                "Trocar por hidralazina e nitrato",
+                "Manter tudo como está"
               ],
-              "resposta": "Betabloqueador, ARNI/IECA, espironolactona e iSGLT2",
-              "explicacao": "São os quatro pilares da insuficiência cardíaca com fração de ejeção reduzida. A furosemida alivia a congestão, mas não reduz mortalidade.",
-              "revisado": false
+              "resposta": "Manter tudo como está",
+              "explicacao": "Suspender faz a função piorar de novo.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u2-l1-q2",
@@ -2048,17 +2040,19 @@
           "questoes": [
             {
               "id": "cm-u20-l4-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de síncope?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 42 anos sentiu calor e suor logo após treinar e desmaiou por 1 minuto, voltando bem. ECG normal.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Vasovagal (reflexa)",
-                "Arritmia ventricular",
-                "Estenose aórtica",
-                "AVC isquêmico"
+                "Hipoglicemia",
+                "Crise epiléptica",
+                "Síncope vasovagal",
+                "Wolff-Parkinson-White"
               ],
-              "resposta": "Vasovagal (reflexa)",
-              "explicacao": "Geralmente benigna.",
-              "revisado": false
+              "resposta": "Síncope vasovagal",
+              "explicacao": "Pródromo e recuperação rápida, logo após o esforço.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u20-l4-q2",
@@ -3634,11 +3628,19 @@
             },
             {
               "id": "cm-u21-l5-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vareniclina é o remédio isolado mais eficaz para parar de fumar.",
-              "resposta": true,
-              "explicacao": "Age no receptor nicotínico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Durante a crise de asma do filho, você percebe que o pai cheira a cigarro e confirma que ele fuma.",
+              "enunciado": "Pela entrevista motivacional, qual é a próxima pergunta?",
+              "opcoes": [
+                "Você já pensou em parar de fumar?",
+                "Você já pensou nos riscos de fumar?",
+                "Quantos cigarros você fuma por dia?",
+                "Sabia que o cigarro piora a asma?"
+              ],
+              "resposta": "Você já pensou em parar de fumar?",
+              "explicacao": "Pergunta aberta sobre mudança, sem julgamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u21-l5-q3",
@@ -4573,17 +4575,18 @@
             {
               "id": "cm-u4-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 70 anos em uso de hidroclorotiazida está confusa, com sódio de 118 mEq/L, sem convulsões.",
-              "enunciado": "Qual é o cuidado essencial ao corrigir o sódio?",
+              "caso": "Idosa de 71 anos com náusea e cansaço há 1 mês. Sem edema ou desidratação. Sódio 126, osmolalidade 255 e sódio urinário 60. Usa anlodipino, enalapril, sertralina e clonazepam.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Subir no máximo 8 a 10 mEq/L em 24 h",
-                "Chegar a 140 em 6 h",
-                "Dar água livre",
-                "Corrigir até 140 nas primeiras seis horas com salina"
+                "Soro a 3%",
+                "Soro fisiológico",
+                "Suspender clonazepam",
+                "Suspender sertralina"
               ],
-              "resposta": "Subir no máximo 8 a 10 mEq/L em 24 h",
-              "explicacao": "Na hiponatremia crônica, a correção rápida pode causar lesão neurológica grave.",
-              "revisado": false
+              "resposta": "Suspender sertralina",
+              "explicacao": "SIADH por ISRS, comum em idosos.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u4-l2-q2",
@@ -4941,28 +4944,19 @@
             },
             {
               "id": "cm-u5-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada complicação da cirrose ao seu tratamento.",
-              "pares": [
-                {
-                  "esquerda": "Ascite volumosa e tensa",
-                  "direita": "Paracentese de alívio com albumina"
-                },
-                {
-                  "esquerda": "Peritonite bacteriana espontânea",
-                  "direita": "Cefalosporina de 3ª geração e albumina"
-                },
-                {
-                  "esquerda": "Encefalopatia hepática",
-                  "direita": "Lactulose"
-                },
-                {
-                  "esquerda": "Varizes grandes que nunca sangraram",
-                  "direita": "Betabloqueador não seletivo ou ligadura"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 62 anos com ascite nova. Líquido com proteína 3,1, albumina 2,3 (sérica 3,3), 257 células e citologia negativa.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Começar espironolactona",
+                "Pedir ecocardiograma",
+                "Pedir ADA no líquido",
+                "Albumina venosa"
               ],
-              "explicacao": "A albumina na peritonite reduz o risco de síndrome hepatorrenal.",
-              "revisado": false
+              "resposta": "Pedir ADA no líquido",
+              "explicacao": "Gradiente abaixo de 1,1 com proteína alta: pensar em tuberculose peritoneal.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u5-l2-q3",
@@ -5769,17 +5763,19 @@
           "questoes": [
             {
               "id": "cm-u10-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são as duas causas mais comuns de pancreatite aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 53 anos com queimação no estômago há 6 meses, exames, ultrassom e endoscopia normais, H. pylori negativo e sem melhora com 12 semanas de omeprazol.",
+              "enunciado": "Qual é a melhor opção?",
               "opcoes": [
-                "Cálculos biliares e álcool",
-                "Remédios e trauma",
-                "Vírus e tumores",
-                "Triglicerídeos altos e cálcio alto"
+                "Bupropiona",
+                "Amitriptilina",
+                "Esomeprazol contínuo",
+                "Hidróxido de magnésio"
               ],
-              "resposta": "Cálculos biliares e álcool",
-              "explicacao": "Juntas causam a maioria.",
-              "revisado": false
+              "resposta": "Amitriptilina",
+              "explicacao": "Dispepsia funcional refratária: tricíclico em dose baixa.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u10-l3-q2",
@@ -6499,17 +6495,19 @@
             },
             {
               "id": "cm-u12-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre erisipela e celulite?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 22 anos com sinusites e pneumonias de repetição desde a adolescência, diarreias frequentes e baço aumentado.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "Erisipela é superficial e bem delimitada",
-                "Celulite é mais superficial",
-                "São iguais",
-                "A celulite é mais superficial e a erisipela não tem febre"
+                "FAN",
+                "Dosagem de imunoglobulinas",
+                "Mielograma",
+                "Citometria de fluxo"
               ],
-              "resposta": "Erisipela é superficial e bem delimitada",
-              "explicacao": "A erisipela tem borda elevada.",
-              "revisado": false
+              "resposta": "Dosagem de imunoglobulinas",
+              "explicacao": "Pensar em imunodeficiência comum variável.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u12-l3-q3",
@@ -7088,28 +7086,19 @@
             },
             {
               "id": "cm-u8-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada neoplasia hematológica ao achado que mais cai em prova.",
-              "pares": [
-                {
-                  "esquerda": "Leucemia mieloide crônica",
-                  "direita": "Cromossomo Philadelphia"
-                },
-                {
-                  "esquerda": "Leucemia promielocítica",
-                  "direita": "Coagulação intravascular"
-                },
-                {
-                  "esquerda": "Linfoma de Hodgkin",
-                  "direita": "Células de Reed-Sternberg"
-                },
-                {
-                  "esquerda": "Mieloma",
-                  "direita": "Proteína monoclonal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos com febre, sangramento vaginal intenso e petéquias. Hb 6,2, reticulócitos baixos, leucócitos 1.100, neutrófilos 440 e plaquetas 8.000.",
+              "enunciado": "Qual é a hipótese e a conduta?",
+              "opcoes": [
+                "PTT; plasmaférese",
+                "Aplasia; imunossupressão logo após biópsia",
+                "Leucemia aguda; transfusão, antibiótico e estudo da medula",
+                "Tuberculose medular; esquema RIPE"
               ],
-              "explicacao": "Achados que caem em prova.",
-              "revisado": false
+              "resposta": "Leucemia aguda; transfusão, antibiótico e estudo da medula",
+              "explicacao": "Neutropenia febril exige antibiótico já.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u8-l2-q3",
@@ -7551,17 +7540,19 @@
           "questoes": [
             {
               "id": "cm-u9-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira conduta na crise convulsiva que dura mais de 5 minutos?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 78 anos com confusão que flutua, vê crianças pela casa, se debate no sono, tem lentidão e passos curtos.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Benzodiazepínico",
-                "Fenitoína primeiro",
-                "Aguardar",
-                "Tomografia de crânio antes de qualquer remédio"
+                "Depressão psicótica; olanzapina",
+                "Parkinson; levodopa",
+                "Frontotemporal; quetiapina",
+                "Corpos de Lewy; rivastigmina"
               ],
-              "resposta": "Benzodiazepínico",
-              "explicacao": "É estado de mal epiléptico.",
-              "revisado": false
+              "resposta": "Corpos de Lewy; rivastigmina",
+              "explicacao": "Anticolinesterásico melhora cognição e alucinações.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u9-l3-q2",
@@ -8633,17 +8624,19 @@
           "questoes": [
             {
               "id": "cm-u16-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Em que momento os cuidados paliativos devem ser oferecidos?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com insuficiência cardíaca teve 5 internações no ano e tem falta de ar sentado mesmo com tratamento otimizado. Lúcido.",
+              "enunciado": "Qual é o seguimento?",
               "opcoes": [
-                "Desde o diagnóstico de doença grave",
-                "Só nos últimos dias",
-                "Só quando acabar a quimioterapia",
-                "Somente após a família pedir"
+                "Falar só com a família",
+                "Iniciar cuidados paliativos e diretivas antecipadas com ele",
+                "Só reabilitação, ainda sem paliativos",
+                "Internar em serviço de paliativos"
               ],
-              "resposta": "Desde o diagnóstico de doença grave",
-              "explicacao": "Junto com o tratamento da doença.",
-              "revisado": false
+              "resposta": "Iniciar cuidados paliativos e diretivas antecipadas com ele",
+              "explicacao": "Paciente lúcido participa das decisões.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u16-l3-q2",
@@ -8994,17 +8987,19 @@
           "questoes": [
             {
               "id": "cm-u17-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o câncer de pele mais comum?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem começou fenitoína há 5 semanas. Tem febre, manchas infiltradas no rosto e no tronco, ínguas, eosinófilos 3.500, transaminases e creatinina altas.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Carcinoma basocelular",
-                "Melanoma",
-                "Carcinoma espinocelular",
-                "Linfoma cutâneo de células T"
+                "Sífilis secundária; penicilina",
+                "Hepatite autoimune; azatioprina",
+                "Reação a medicamento (DRESS); suspender e dar corticoide",
+                "Mononucleose; suporte"
               ],
-              "resposta": "Carcinoma basocelular",
-              "explicacao": "Raramente dá metástase.",
-              "revisado": false
+              "resposta": "Reação a medicamento (DRESS); suspender e dar corticoide",
+              "explicacao": "Suspender o anticonvulsivante aromático é o passo principal.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-u17-l3-q2",
@@ -13901,17 +13896,18 @@
             {
               "id": "cm-d13-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Mulher com fratura vertebral por baixa energia e T-score de -2,0.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher de 60 anos usa terapia hormonal, alendronato, vitamina D e cálcio.",
+              "enunciado": "Qual procedimento pode ter o resultado prejudicado?",
               "opcoes": [
-                "Osteoporose (fratura de fragilidade)",
-                "Osteopenia apenas",
-                "Normal",
-                "Osteomalácia por falta de vitamina D"
+                "Litotripsia",
+                "Cirurgia refrativa",
+                "Cirurgia de varizes",
+                "Implante dentário"
               ],
-              "resposta": "Osteoporose (fratura de fragilidade)",
-              "explicacao": "A fratura define o diagnóstico.",
-              "revisado": false
+              "resposta": "Implante dentário",
+              "explicacao": "Bisfosfonato pode causar osteonecrose da mandíbula.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d13-l3-q3",
@@ -15332,17 +15328,18 @@
             {
               "id": "cm-d6-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com HIV e CD4 de 50 tem cefaleia, febre e confusão. A pressão de abertura do líquor é de 35 cmH2O e a tinta da China é positiva.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Mulher com lúpus, em prednisona e azatioprina, tem febre, falta de ar, saturação de 88% e fígado e baço aumentados há 4 semanas.",
+              "enunciado": "Quais são as duas hipóteses mais prováveis?",
               "opcoes": [
-                "Anfotericina com flucitosina e punções de alívio",
-                "Fluconazol em dose baixa",
-                "Só corticoide",
-                "Iniciar antirretroviral no mesmo dia e fluconazol em dose baixa"
+                "Linfoma ou doença de Still",
+                "Tuberculose ou histoplasmose",
+                "Sarcoidose ou pneumocistose",
+                "Endocardite ou doença de Gaucher"
               ],
-              "resposta": "Anfotericina com flucitosina e punções de alívio",
-              "explicacao": "Na meningite criptocócica, o antirretroviral é iniciado após 4 a 6 semanas.",
-              "revisado": false
+              "resposta": "Tuberculose ou histoplasmose",
+              "explicacao": "Imunossupressão favorece infecções disseminadas.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d6-l2-q2",
@@ -16246,17 +16243,18 @@
             {
               "id": "cm-d7-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem com monoartrite aguda do joelho, febre e líquido com 80 mil leucócitos, maioria neutrófilos.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem tratado de bacteremia por S. aureus sensível tem derrame nos dois joelhos. Líquido com 61 mil células, 93% neutrófilos e cristais.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Artrite séptica: antibiótico e drenagem",
-                "Colchicina",
-                "Corticoide intra-articular",
-                "Corticoide dentro da articulação e colchicina"
+                "Gota; colchicina",
+                "Condrocalcinose; prednisona",
+                "Artrite reativa; metotrexato",
+                "Artrite séptica; lavagem e oxacilina"
               ],
-              "resposta": "Artrite séptica: antibiótico e drenagem",
-              "explicacao": "Até a cultura sair.",
-              "revisado": false
+              "resposta": "Artrite séptica; lavagem e oxacilina",
+              "explicacao": "Cristais não excluem infecção.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d7-l3-q2",
@@ -16383,17 +16381,18 @@
             {
               "id": "cm-d8-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Idoso com anemia macrocítica, perda de sensibilidade nos pés e língua lisa.",
-              "enunciado": "Qual é a causa provável?",
+              "caso": "Jovem com anemia falciforme, transfundida várias vezes desde a infância, tem síndrome torácica aguda e vai receber 2 bolsas de hemácias.",
+              "enunciado": "Além da filtração, o que fazer com a bolsa?",
               "opcoes": [
-                "Deficiência de vitamina B12",
-                "Deficiência de ferro",
-                "Doença crônica",
-                "Talassemia menor herdada dos pais"
+                "Irradiar",
+                "Leucodepletar só",
+                "Fenotipagem estendida",
+                "Lavar com soro"
               ],
-              "resposta": "Deficiência de vitamina B12",
-              "explicacao": "Pensar em anemia perniciosa.",
-              "revisado": false
+              "resposta": "Fenotipagem estendida",
+              "explicacao": "Reduz a formação de anticorpos contra hemácias.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d8-l1-q2",
@@ -16641,17 +16640,18 @@
             {
               "id": "cm-d8-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente usando heparina há 7 dias tem queda de 60% das plaquetas e trombose nova.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem com prótese mitral, em uso de varfarina, tem melena volumosa. Hb 6,3 e INR 5,1.",
+              "enunciado": "Além de repor volume, o que fazer antes da endoscopia?",
               "opcoes": [
-                "Suspender toda heparina e usar outro anticoagulante",
-                "Transfundir plaquetas",
-                "Trocar para enoxaparina",
-                "Transfundir plaquetas e manter a heparina na mesma dose"
+                "Só vitamina K",
+                "Fibrinogênio",
+                "Plaquetas",
+                "Complexo protrombínico"
               ],
-              "resposta": "Suspender toda heparina e usar outro anticoagulante",
-              "explicacao": "Trombocitopenia induzida por heparina.",
-              "revisado": false
+              "resposta": "Complexo protrombínico",
+              "explicacao": "Reverte em minutos; a vitamina K age em horas e é dada junto.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d8-l3-q2",
@@ -17050,17 +17050,18 @@
             {
               "id": "cm-d9-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Mulher com visão dupla e queda da pálpebra que pioram no fim do dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Uma semana após dengue, homem tem fraqueza nos 4 membros, sem reflexos, paralisia facial dos dois lados e líquor com proteína 150 e 1 célula.",
+              "enunciado": "Quais complicações são frequentes nesse quadro?",
               "opcoes": [
-                "Miastenia gravis",
-                "Esclerose múltipla",
-                "AVC",
-                "Botulismo"
+                "Insuficiência respiratória e disautonomia",
+                "Insuficiência respiratória e meningoencefalite",
+                "Crise epiléptica e disautonomia",
+                "Crise epiléptica e meningoencefalite"
               ],
-              "resposta": "Miastenia gravis",
-              "explicacao": "Pedir anticorpo antirreceptor de acetilcolina.",
-              "revisado": false
+              "resposta": "Insuficiência respiratória e disautonomia",
+              "explicacao": "Guillain-Barré: monitorar capacidade vital e arritmias.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cm-d9-l3-q3",

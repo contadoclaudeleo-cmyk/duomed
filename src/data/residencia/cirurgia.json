@@ -623,17 +623,19 @@
           "questoes": [
             {
               "id": "cir-u2-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual hematoma intracraniano aparece em forma de crescente na tomografia e é comum em idosos?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 78 anos bateu a cabeça há 2 horas, sem perder a consciência, Glasgow 15 e corte na testa.",
+              "enunciado": "Após a sutura, qual é a conduta?",
               "opcoes": [
-                "Subdural",
-                "Epidural",
-                "Hemorragia subaracnóidea",
-                "Contusão"
+                "Tomografia de crânio",
+                "Ultrassom do nervo óptico",
+                "Reavaliação em 24 horas",
+                "Internação por 24 horas"
               ],
-              "resposta": "Subdural",
-              "explicacao": "Ele vem da ruptura de veias que ligam o cérebro aos seios venosos.",
-              "revisado": false
+              "resposta": "Tomografia de crânio",
+              "explicacao": "Idade acima de 65 anos indica tomografia no trauma leve.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u2-l3-q2",
@@ -764,28 +766,19 @@
             },
             {
               "id": "cir-u3-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada quadro biliar à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Cólica biliar",
-                  "direita": "Dor no hipocôndrio direito que passa em até 6 horas"
-                },
-                {
-                  "esquerda": "Colecistite aguda",
-                  "direita": "Dor contínua, febre e Murphy positivo"
-                },
-                {
-                  "esquerda": "Coledocolitíase",
-                  "direita": "Icterícia e enzimas canaliculares elevadas"
-                },
-                {
-                  "esquerda": "Colangite",
-                  "direita": "Febre, icterícia e dor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 37 anos, sem sintomas, tem vesícula com muitos microcálculos.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Observar por não ter sintomas",
+                "Observar por não ter outras doenças",
+                "Colangiorressonância antes",
+                "Retirar a vesícula"
               ],
-              "explicacao": "A colangite é a mais grave, por ser uma infecção em via biliar obstruída.",
-              "revisado": false
+              "resposta": "Retirar a vesícula",
+              "explicacao": "Microcálculos aumentam o risco de pancreatite.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u3-l1-q3",
@@ -1493,11 +1486,19 @@
             },
             {
               "id": "cir-u5-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O rastreamento do câncer colorretal em pessoas de risco habitual começa por volta dos 45 a 50 anos.",
-              "resposta": true,
-              "explicacao": "Pode ser feito com pesquisa de sangue oculto nas fezes ou colonoscopia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer do cólon direito e quatro metástases no fígado tem obstrução intestinal, mas está estável.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Colostomia em alça",
+                "Stent no cólon",
+                "Retirar o tumor com linfadenectomia",
+                "Retirar o tumor sem linfadenectomia"
+              ],
+              "resposta": "Retirar o tumor com linfadenectomia",
+              "explicacao": "No cólon direito, a colectomia resolve a obstrução.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u5-l1-q4",
@@ -1833,28 +1834,19 @@
             },
             {
               "id": "cir-u6-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classe ASA à sua descrição.",
-              "pares": [
-                {
-                  "esquerda": "ASA I",
-                  "direita": "Paciente saudável"
-                },
-                {
-                  "esquerda": "ASA II",
-                  "direita": "Doença sistêmica leve"
-                },
-                {
-                  "esquerda": "ASA III",
-                  "direita": "Doença sistêmica grave"
-                },
-                {
-                  "esquerda": "ASA IV",
-                  "direita": "Doença grave com ameaça constante à vida"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer gástrico e indicação de gastrectomia tem trombose venosa extensa na perna.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Operar já, com enoxaparina",
+                "Operar já, com filtro de cava",
+                "Adiar e passar filtro de cava",
+                "Adiar 4 semanas, com enoxaparina suspensa 12 h antes"
               ],
-              "explicacao": "Um hipertenso bem controlado costuma ser ASA II.",
-              "revisado": false
+              "resposta": "Adiar 4 semanas, com enoxaparina suspensa 12 h antes",
+              "explicacao": "O risco de nova trombose cai após o primeiro mês.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u6-l1-q3",
@@ -2080,11 +2072,19 @@
             },
             {
               "id": "cir-u6-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A deiscência de anastomose intestinal costuma aparecer entre o 5º e o 7º dia após a cirurgia.",
-              "resposta": true,
-              "explicacao": "Febre, dor e taquicardia nesse período devem levantar a suspeita.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "No 6º dia após reconstrução intestinal longa, paciente está bem, sem febre, com abdome distendido, ruídos diminuídos, sonda drenando mais de 1 litro por dia e PCR caindo.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Íleo paralítico",
+                "Gastroparesia",
+                "Obstrução por brida",
+                "Deiscência da anastomose"
+              ],
+              "resposta": "Íleo paralítico",
+              "explicacao": "Sem sinais de infecção e PCR caindo, a fístula é menos provável.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u6-l3-q4",
@@ -2399,17 +2399,19 @@
             },
             {
               "id": "cir-u7-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta na hérnia estrangulada?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 63 anos com DPOC tem abaulamento duro e doloroso na virilha há 8 horas, distensão e vômitos, sem peritonite.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Cirurgia de urgência",
-                "Redução manual sempre",
-                "Observação",
-                "Antibiótico"
+                "Laparoscopia",
+                "Inguinotomia",
+                "Laparotomia mediana",
+                "Redução manual"
               ],
-              "resposta": "Cirurgia de urgência",
-              "explicacao": "Pode ter necrose do intestino.",
-              "revisado": false
+              "resposta": "Inguinotomia",
+              "explicacao": "Hérnia encarcerada com obstrução: cirurgia pela virilha.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u7-l3-q3",
@@ -3700,17 +3702,19 @@
             },
             {
               "id": "cir-u11-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tumor benigno do fígado pode sangrar e virar câncer?",
+              "tipo": "caso_clinico",
+              "caso": "Cirrótico por hepatite C, Child B, com varizes que sangraram, tem 2 nódulos de 3 e 2 cm com realce arterial e lavagem tardia.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Adenoma hepático",
-                "Hemangioma",
-                "Hiperplasia nodular focal",
-                "Cisto simples"
+                "Transplante hepático",
+                "Hepatectomia regrada",
+                "Hepatectomia não regrada",
+                "Só quimioterapia"
               ],
-              "resposta": "Adenoma hepático",
-              "explicacao": "Suspender o anticoncepcional.",
-              "revisado": false
+              "resposta": "Transplante hepático",
+              "explicacao": "Carcinoma hepatocelular dentro de Milão em cirrótico com hipertensão portal.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u11-l2-q3",
@@ -4398,28 +4402,19 @@
           "questoes": [
             {
               "id": "cir-u13-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Hérnia inguinal na criança",
-                  "direita": "Cirurgia eletiva logo"
-                },
-                {
-                  "esquerda": "Hérnia umbilical",
-                  "direita": "Observar até 4 a 5 anos"
-                },
-                {
-                  "esquerda": "Criptorquidia",
-                  "direita": "Cirurgia entre 6 e 18 meses"
-                },
-                {
-                  "esquerda": "Hidrocele comunicante",
-                  "direita": "Cirurgia se persistir"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses tem testículo direito que não se palpa no escroto nem na virilha.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Avaliação do cirurgião já",
+                "Endocrinologista",
+                "Observar e reavaliar",
+                "Ultrassom"
               ],
-              "explicacao": "A idade define o momento.",
-              "revisado": false
+              "resposta": "Observar e reavaliar",
+              "explicacao": "Pode descer até os 6 meses; se não, cirurgia.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-u13-l2-q2",
@@ -5707,42 +5702,33 @@
             {
               "id": "cir-d1-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Motociclista tem trauma de face com sangue na boca, roncos e Glasgow de 7. Há suspeita de lesão cervical.",
-              "enunciado": "Qual é a conduta na via aérea?",
+              "caso": "Homem caiu de 6 metros. Está intubado, PA 90 x 60, FC 120 e FAST com líquido entre fígado e rim.",
+              "enunciado": "O que justifica transfundir sangue, plasma e plaquetas?",
               "opcoes": [
-                "Intubar em sequência rápida, com coluna estabilizada",
-                "Máscara e observar",
-                "Nasotraqueal às cegas",
-                "Aguardar a tomografia de coluna antes de mexer na via aérea"
+                "Trauma de crânio e mecanismo",
+                "Trauma de crânio e pressão",
+                "FAST positivo e pressão baixa",
+                "FAST positivo e mecanismo"
               ],
-              "resposta": "Intubar em sequência rápida, com coluna estabilizada",
-              "explicacao": "Se a intubação falhar, a cricotireoidostomia cirúrgica é a via de resgate.",
-              "revisado": false
+              "resposta": "FAST positivo e pressão baixa",
+              "explicacao": "É choque hemorrágico de origem abdominal.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classe de choque hemorrágico do ATLS ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Classe I",
-                  "direita": "Perda de até 15%, sinais vitais quase normais"
-                },
-                {
-                  "esquerda": "Classe II",
-                  "direita": "Perda de 15% a 30%, taquicardia com pressão mantida"
-                },
-                {
-                  "esquerda": "Classe III",
-                  "direita": "Perda de 30% a 40%, hipotensão e confusão"
-                },
-                {
-                  "esquerda": "Classe IV",
-                  "direita": "Perda acima de 40%, risco imediato de morte"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio eletrolítico se espera após transfundir vários hemoderivados no trauma?",
+              "opcoes": [
+                "Hipercalcemia",
+                "Hiperpotassemia",
+                "Hipocalcemia",
+                "Hipopotassemia"
               ],
-              "explicacao": "O déficit de bases ajuda a estimar a gravidade.",
-              "revisado": false
+              "resposta": "Hipocalcemia",
+              "explicacao": "O citrato das bolsas se liga ao cálcio.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d1-l1-q3",
@@ -6112,28 +6098,19 @@
             },
             {
               "id": "cir-d2-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classificação de Hinchey da diverticulite à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Hinchey I",
-                  "direita": "Antibiótico"
-                },
-                {
-                  "esquerda": "Hinchey II",
-                  "direita": "Drenagem percutânea do abscesso"
-                },
-                {
-                  "esquerda": "Hinchey III",
-                  "direita": "Lavagem ou ressecção por peritonite purulenta"
-                },
-                {
-                  "esquerda": "Hinchey IV",
-                  "direita": "Ressecção de urgência por peritonite fecal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher diabética com apendicite de 6 dias, peritonite difusa e choque séptico. É uma infecção da comunidade.",
+              "enunciado": "Qual antibiótico usar?",
+              "opcoes": [
+                "Meropenem com vancomicina",
+                "Ertapenem com teicoplanina",
+                "Ceftriaxona com metronidazol",
+                "Ceftazidima-avibactam"
               ],
-              "explicacao": "A cirurgia de Hartmann ainda é muito usada na peritonite fecal.",
-              "revisado": false
+              "resposta": "Ceftriaxona com metronidazol",
+              "explicacao": "Cobre gram-negativos e anaeróbios da comunidade.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d2-l1-q3",
@@ -6567,17 +6544,18 @@
             {
               "id": "cir-d3-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança ingeriu uma bateria de botão, que está parada no esôfago na radiografia.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 52 anos com queimação no peito há 3 anos, esofagite grau A e hérnia de hiato de 2 cm, sem melhora completa com omeprazol 2 vezes ao dia.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Retirada endoscópica de emergência",
-                "Esperar sair nas fezes",
-                "Laxante",
-                "Provocar vômito e esperar sair nas fezes"
+                "Trocar o IBP e associar procinético",
+                "Manometria e pHmetria",
+                "Cirurgia antirrefluxo",
+                "Amitriptilina e psicoterapia"
               ],
-              "resposta": "Retirada endoscópica de emergência",
-              "explicacao": "A bateria causa queimadura do esôfago em poucas horas.",
-              "revisado": false
+              "resposta": "Manometria e pHmetria",
+              "explicacao": "Antes de qualquer cirurgia, confirmar refluxo e motilidade.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d3-l1-q7",
@@ -6791,17 +6769,18 @@
             {
               "id": "cir-d3-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "No 2º dia após gastrectomia vertical, paciente tem taquicardia de 125, febre e dor no ombro esquerdo.",
-              "enunciado": "Qual é a principal hipótese?",
+              "caso": "Um dia após bypass gástrico, obesa está deitada, com FC 113, saturação 92% e murmúrio diminuído nas bases. Abdome tranquilo.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Fístula da linha de grampeamento",
-                "Pneumonia",
-                "Ansiedade",
-                "Dor normal da cirurgia, sem gravidade"
+                "Protocolo de sepse e UTI",
+                "Angiotomografia de tórax",
+                "Analgesia e fisioterapia",
+                "Tomografia de abdome"
               ],
-              "resposta": "Fístula da linha de grampeamento",
-              "explicacao": "Taquicardia persistente é o sinal mais precoce de fístula após bariátrica.",
-              "revisado": false
+              "resposta": "Analgesia e fisioterapia",
+              "explicacao": "Atelectasia é comum; vigiar sinais de fístula.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d3-l3-q5",
@@ -8567,17 +8546,18 @@
             {
               "id": "cir-d8-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com febre, icterícia, dor no hipocôndrio direito, confusão e pressão baixa.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 42 anos com icterícia, febre, dor no hipocôndrio direito, PA 100 x 60 e leucocitose. Bilirrubina direta alta, cálculos na vesícula e via biliar dilatada para 1,1 cm.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Antibiótico, suporte e CPRE de urgência",
-                "Colecistectomia imediata",
-                "Observar",
-                "Colecistectomia imediata sem drenar a via biliar antes"
+                "Colangiorressonância",
+                "Colangiografia endoscópica (CPRE)",
+                "Colecistectomia com colangiografia",
+                "Colecistostomia percutânea"
               ],
-              "resposta": "Antibiótico, suporte e CPRE de urgência",
-              "explicacao": "Pêntade de Reynolds.",
-              "revisado": false
+              "resposta": "Colangiografia endoscópica (CPRE)",
+              "explicacao": "Colangite aguda pede drenagem da via biliar.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d8-l2-q2",
@@ -9611,17 +9591,18 @@
             {
               "id": "cir-d11-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Punção de nódulo com resultado Bethesda VI.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem de 27 anos tem nódulo de tireoide de 2,1 cm, sólido, hipoecoico, mais alto que largo e com microcalcificações (TI-RADS 5).",
+              "enunciado": "Qual é a próxima conduta?",
               "opcoes": [
-                "Cirurgia",
-                "Repetir punção",
-                "Observar",
-                "Iodo"
+                "Ablação por radiofrequência",
+                "Tireoidectomia parcial",
+                "Ultrassom em 6 meses",
+                "Punção com agulha fina"
               ],
-              "resposta": "Cirurgia",
-              "explicacao": "Maligno.",
-              "revisado": false
+              "resposta": "Punção com agulha fina",
+              "explicacao": "TI-RADS 5 a partir de 1 cm vai para punção.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d11-l1-q2",
@@ -10925,18 +10906,18 @@
           "questoes": [
             {
               "id": "cir-d14-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Lesão pigmentada com bordas irregulares, várias cores e crescimento.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No laudo de um melanoma, quais fatores têm maior impacto no prognóstico?",
               "opcoes": [
-                "Biópsia excisional com margem pequena",
-                "Raspagem",
-                "Laser",
-                "Raspagem superficial e laser sem análise"
+                "Índice mitótico e tipo histológico",
+                "Índice mitótico e invasão perineural",
+                "Breslow e margem lateral comprometida",
+                "Breslow e ulceração"
               ],
-              "resposta": "Biópsia excisional com margem pequena",
-              "explicacao": "Avaliar a espessura de Breslow.",
-              "revisado": false
+              "resposta": "Breslow e ulceração",
+              "explicacao": "Definem o T do estadiamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2025"
             },
             {
               "id": "cir-d14-l2-q2",
