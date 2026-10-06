@@ -17,16 +17,17 @@
             {
               "id": "prev-u1-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual lei dispõe sobre a participação da comunidade e as transferências de recursos financeiros no SUS?",
+              "enunciado": "Sobre os princípios do SUS, avalie: I. Integralidade une prevenção, cura, promoção e reabilitação. II. Regionalização significa concentrar serviços nas grandes cidades. III. Conselhos e conferências garantem a participação social. Quais estão corretas?",
               "opcoes": [
-                "Lei 8.142/1990",
-                "Lei 8.080/1990",
-                "Lei 9.656/1998",
-                "Lei 13.979/2020"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Lei 8.142/1990",
-              "explicacao": "A Lei 8.142 criou as conferências e os conselhos de saúde e regulou os repasses fundo a fundo.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "Regionalização organiza redes em regiões, não centraliza.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u1-l1-q2",
@@ -134,28 +135,18 @@
           "questoes": [
             {
               "id": "prev-u1-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Sensibilidade",
-                  "direita": "Proporção de doentes com teste positivo"
-                },
-                {
-                  "esquerda": "Especificidade",
-                  "direita": "Proporção de não doentes com teste negativo"
-                },
-                {
-                  "esquerda": "Valor preditivo positivo",
-                  "direita": "Chance de ter a doença se o teste deu positivo"
-                },
-                {
-                  "esquerda": "Valor preditivo negativo",
-                  "direita": "Chance de não ter a doença se o teste deu negativo"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é um teste padrão-ouro?",
+              "opcoes": [
+                "Teste com sensibilidade de 100%",
+                "Teste com especificidade de 100%",
+                "Referência para avaliar outros testes",
+                "Teste com acurácia de 100%"
               ],
-              "explicacao": "Sensibilidade e especificidade são do teste. Os valores preditivos dependem também da prevalência da doença.",
-              "revisado": false
+              "resposta": "Referência para avaliar outros testes",
+              "explicacao": "Nenhum teste é perfeito; o padrão-ouro é o melhor disponível.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u1-l2-q2",
@@ -253,42 +244,33 @@
           "questoes": [
             {
               "id": "prev-u1-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de estudo à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Coorte",
-                  "direita": "Parte da exposição e acompanha quem adoece"
-                },
-                {
-                  "esquerda": "Caso-controle",
-                  "direita": "Parte da doença e investiga exposições passadas"
-                },
-                {
-                  "esquerda": "Transversal",
-                  "direita": "Mede exposição e doença no mesmo momento"
-                },
-                {
-                  "esquerda": "Ensaio clínico randomizado",
-                  "direita": "O pesquisador sorteia quem recebe a intervenção"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "No estudo de caso-controle, qual é o maior cuidado para evitar viés de seleção?",
+              "opcoes": [
+                "Controles que representem a população de onde vieram os casos",
+                "Controles de população com muita doença",
+                "Usar um só critério de exposição",
+                "Excluir quem já foi exposto"
               ],
-              "explicacao": "O caso-controle é ótimo para doenças raras. A coorte é melhor para estudar exposições raras e calcular incidência.",
-              "revisado": false
+              "resposta": "Controles que representem a população de onde vieram os casos",
+              "explicacao": "Controles devem ser comparáveis aos casos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u1-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual medida de associação é típica do estudo de caso-controle?",
+              "enunciado": "O que diferencia a coorte histórica do caso-controle?",
               "opcoes": [
-                "Odds ratio",
-                "Risco relativo",
-                "Incidência",
-                "Prevalência"
+                "A coorte histórica estuda melhor doenças raras",
+                "A coorte calcula odds ratio e o caso-controle, risco relativo",
+                "A coorte parte da exposição já registrada; o caso-controle parte do desfecho",
+                "Os dois escolhem participantes do mesmo jeito"
               ],
-              "resposta": "Odds ratio",
-              "explicacao": "Como o caso-controle não acompanha expostos ao longo do tempo, não calcula incidência nem risco relativo diretamente.",
-              "revisado": false
+              "resposta": "A coorte parte da exposição já registrada; o caso-controle parte do desfecho",
+              "explicacao": "O caso-controle é melhor para doenças raras e calcula odds ratio.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u1-l3-q3",
@@ -863,16 +845,17 @@
             {
               "id": "prev-u3-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que é o erro tipo I (alfa)?",
+              "enunciado": "Quais são erros comuns ao interpretar o valor-p? I. Achar que p pequeno significa relevância clínica. II. Achar que p mede o tamanho do efeito. III. Achar que p é a chance de a hipótese nula ser verdadeira.",
               "opcoes": [
-                "Concluir que há diferença quando não há",
-                "Não ver diferença que existe",
-                "Errar a média",
-                "Não detectar uma diferença que existe de verdade na população"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Concluir que há diferença quando não há",
-              "explicacao": "O nível de significância, geralmente 5%, é a chance aceita de cometer esse erro.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "O valor-p é a chance do resultado se a hipótese nula fosse verdadeira.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u3-l2-q2",
@@ -1345,28 +1328,19 @@
           "questoes": [
             {
               "id": "prev-u4-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada viés do rastreamento à sua descrição.",
-              "pares": [
-                {
-                  "esquerda": "Viés de tempo de antecipação",
-                  "direita": "Sobrevida parece maior só porque o diagnóstico foi antes"
-                },
-                {
-                  "esquerda": "Viés de duração",
-                  "direita": "Rastreamento detecta mais doenças lentas e menos agressivas"
-                },
-                {
-                  "esquerda": "Sobrediagnóstico",
-                  "direita": "Detecta doenças que nunca causariam problemas"
-                },
-                {
-                  "esquerda": "Viés de voluntário",
-                  "direita": "Quem aceita o rastreamento costuma ser mais saudável"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Num rastreamento de câncer de bexiga, a mortalidade não mudou, mas quem foi diagnosticado pelo rastreio viveu 5 anos após o diagnóstico, contra 2 anos dos diagnosticados por sintomas.",
+              "enunciado": "Qual é a explicação mais provável?",
+              "opcoes": [
+                "O rastreio aumentou a sobrevida de verdade",
+                "Viés de antecipação do diagnóstico",
+                "O estudo prova que o rastreio funciona",
+                "Diagnóstico precoce sempre melhora o resultado"
               ],
-              "explicacao": "Por isso a mortalidade, e não a sobrevida, é o melhor desfecho para avaliar rastreamentos.",
-              "revisado": false
+              "resposta": "Viés de antecipação do diagnóstico",
+              "explicacao": "O diagnóstico só veio antes; a morte veio na mesma época.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u4-l3-q2",
@@ -1836,49 +1810,47 @@
             {
               "id": "prev-u6-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a composição mínima de uma equipe de Saúde da Família?",
+              "enunciado": "Pela Política Nacional de Atenção Básica, qual é uma atribuição específica do médico da Saúde da Família?",
               "opcoes": [
-                "Médico, enfermeiro, técnico de enfermagem e ACS",
-                "Médico e recepcionista",
-                "Especialista e dentista",
-                "Médico especialista, dentista e psicólogo, sem agentes comunitários"
+                "Manter os protocolos da unidade atualizados",
+                "Acompanhar a população ao longo do tempo",
+                "Indicar internação e seguir acompanhando a pessoa",
+                "Fazer educação em saúde com a comunidade"
               ],
-              "resposta": "Médico, enfermeiro, técnico de enfermagem e ACS",
-              "explicacao": "A equipe de saúde bucal pode ser incorporada.",
-              "revisado": false
+              "resposta": "Indicar internação e seguir acompanhando a pessoa",
+              "explicacao": "As outras são atribuições comuns a toda a equipe.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u6-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada atributo derivado da atenção primária à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Orientação familiar",
-                  "direita": "Considerar o contexto da família no cuidado"
-                },
-                {
-                  "esquerda": "Orientação comunitária",
-                  "direita": "Conhecer as necessidades da comunidade"
-                },
-                {
-                  "esquerda": "Competência cultural",
-                  "direita": "Adaptar o cuidado às características culturais"
-                },
-                {
-                  "esquerda": "Coordenação",
-                  "direita": "Integrar os diferentes serviços usados pelo paciente"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual afirmação sobre a Atenção Primária à Saúde é correta?",
+              "opcoes": [
+                "Coordenar o cuidado entre os níveis de atenção é um grande desafio",
+                "A Saúde da Família existe para reduzir custos e restringir acesso",
+                "O cuidado centrado na pessoa ignora família e comunidade",
+                "A APS deve ser centralizada e hierárquica"
               ],
-              "explicacao": "A coordenação é atributo essencial; os outros três são derivados.",
-              "revisado": false
+              "resposta": "Coordenar o cuidado entre os níveis de atenção é um grande desafio",
+              "explicacao": "Coordenação é um dos atributos essenciais da APS.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u6-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A atenção primária deve ser a porta de entrada preferencial do SUS.",
-              "resposta": true,
-              "explicacao": "Ela resolve a maior parte dos problemas de saúde da população.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o território na Atenção Primária, avalie: I. É a área de uma equipe, com responsabilidade dividida entre serviço e população. II. Muda com o tempo, junto com a saúde de quem vive nele. III. Tem dimensões econômica, política, cultural e epidemiológica. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
+              ],
+              "resposta": "I, II e III",
+              "explicacao": "O território é vivo, não só um mapa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u6-l1-q4",
@@ -2199,28 +2171,18 @@
           "questoes": [
             {
               "id": "prev-u7-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada agravo notificável à principal ação que a notificação desencadeia.",
-              "pares": [
-                {
-                  "esquerda": "Sarampo",
-                  "direita": "Bloqueio vacinal dos contatos"
-                },
-                {
-                  "esquerda": "Tuberculose",
-                  "direita": "Avaliação dos contatos"
-                },
-                {
-                  "esquerda": "Raiva humana",
-                  "direita": "Investigação do animal agressor"
-                },
-                {
-                  "esquerda": "Dengue",
-                  "direita": "Controle de criadouros"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual dupla é de notificação compulsória imediata, em até 24 horas?",
+              "opcoes": [
+                "Tuberculose e intoxicação exógena",
+                "Esquistossomose e HIV",
+                "Raiva humana e rubéola congênita",
+                "Sífilis e dengue sem gravidade"
               ],
-              "explicacao": "A notificação gera ação.",
-              "revisado": false
+              "resposta": "Raiva humana e rubéola congênita",
+              "explicacao": "As outras são de notificação semanal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u7-l1-q2",
@@ -2921,28 +2883,18 @@
           "questoes": [
             {
               "id": "prev-u9-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida de associação ao cálculo.",
-              "pares": [
-                {
-                  "esquerda": "Risco relativo",
-                  "direita": "Incidência nos expostos dividida pela dos não expostos"
-                },
-                {
-                  "esquerda": "Odds ratio",
-                  "direita": "Chance nos casos dividida pela dos controles"
-                },
-                {
-                  "esquerda": "Risco atribuível",
-                  "direita": "Diferença de incidências"
-                },
-                {
-                  "esquerda": "NNT",
-                  "direita": "1 dividido pela redução absoluta de risco"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Um tratamento tem número necessário para tratar (NNT) de 12 para prevenir AVC. O que isso significa?",
+              "opcoes": [
+                "Tratar 12 garante que nenhum terá AVC",
+                "Tratar 12 evita um AVC",
+                "O remédio protege 12% dos pacientes",
+                "O risco de cada um cai 12%"
               ],
-              "explicacao": "Medidas de prova.",
-              "revisado": false
+              "resposta": "Tratar 12 evita um AVC",
+              "explicacao": "NNT é 1 dividido pela redução absoluta do risco.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u9-l1-q2",
@@ -3518,28 +3470,12 @@
           "questoes": [
             {
               "id": "prev-u10-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada instância de participação social no SUS ao seu papel ou composição.",
-              "pares": [
-                {
-                  "esquerda": "Conselho de Saúde",
-                  "direita": "Permanente e deliberativo"
-                },
-                {
-                  "esquerda": "Conferência de Saúde",
-                  "direita": "A cada 4 anos para avaliar e propor"
-                },
-                {
-                  "esquerda": "Usuários",
-                  "direita": "Metade das vagas"
-                },
-                {
-                  "esquerda": "Trabalhadores",
-                  "direita": "Um quarto das vagas"
-                }
-              ],
-              "explicacao": "Lei 8.142.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O Conselho Nacional de Saúde é deliberativo e permanente e reúne usuários, trabalhadores, gestores e prestadores.",
+              "resposta": true,
+              "explicacao": "Metade das vagas é dos usuários.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-u10-l3-q2",
@@ -7700,18 +7636,18 @@
           "questoes": [
             {
               "id": "prev-d7-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Gráfico de floresta mostra diamante final que não cruza a linha de efeito nulo.",
-              "enunciado": "Como interpretar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Num forest plot, um estudo aparece com quadrado pequeno e intervalo de confiança largo. O que isso sugere?",
               "opcoes": [
-                "Efeito combinado significativo",
-                "Sem efeito",
-                "Erro",
-                "Heterogeneidade alta entre os estudos incluídos"
+                "Tem grande peso no resultado",
+                "Amostra pequena e pouca precisão",
+                "É o mais significativo",
+                "Mostra efeito muito grande"
               ],
-              "resposta": "Efeito combinado significativo",
-              "explicacao": "Diamante é o resultado combinado.",
-              "revisado": false
+              "resposta": "Amostra pequena e pouca precisão",
+              "explicacao": "O tamanho do quadrado reflete o peso do estudo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-d7-l3-q2",
@@ -7837,18 +7773,18 @@
           "questoes": [
             {
               "id": "prev-d8-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Teste com sensibilidade de 90% e especificidade de 80%.",
-              "enunciado": "Qual é a razão de verossimilhança positiva?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que significa razão de verossimilhança positiva igual a 1? I. O teste não muda a probabilidade da doença. II. O teste não serve para confirmar a doença. III. Sensibilidade e especificidade são iguais.",
               "opcoes": [
-                "4,5",
-                "1,1",
-                "0,125",
-                "9"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "4,5",
-              "explicacao": "0,9 dividido por 0,2.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "RV+ = sensibilidade / (1 - especificidade); 1 não quer dizer que sejam iguais.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-d8-l1-q2",
@@ -7967,17 +7903,18 @@
             {
               "id": "prev-d8-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Dois testes: área sob a curva ROC de 0,95 e de 0,65.",
-              "enunciado": "Qual é melhor?",
+              "caso": "Dois testes rápidos feitos em paralelo para infecção grave deram resultados diferentes: um positivo e um negativo.",
+              "enunciado": "Como interpretar?",
               "opcoes": [
-                "O de 0,95",
-                "O de 0,65",
-                "São iguais",
-                "Nenhum dos dois serve"
+                "Negativo, pois um foi negativo",
+                "Positivo, pois em paralelo basta um positivo",
+                "Fazer um terceiro teste obrigatoriamente",
+                "Sem infecção, pois discordaram"
               ],
-              "resposta": "O de 0,95",
-              "explicacao": "Mais perto de 1, melhor.",
-              "revisado": false
+              "resposta": "Positivo, pois em paralelo basta um positivo",
+              "explicacao": "Testes em paralelo aumentam a sensibilidade.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "prev-d8-l2-q2",

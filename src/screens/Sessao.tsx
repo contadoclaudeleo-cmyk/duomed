@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ClipboardCheck, Flame, RotateCcw, X } from 'lucide-react'
+import { ClipboardCheck, FileText, Flame, RotateCcw, X } from 'lucide-react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { ModoSessao, Questao as TQuestao, Resposta } from '../types'
@@ -191,6 +191,12 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
               exit={{ opacity: 0, x: -32 }}
               transition={{ duration: 0.2 }}
             >
+              {item.questao.fonte && (
+                <span className="mb-3 inline-flex items-center gap-1.5 rounded-full border-2 border-borda px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-texto-suave">
+                  <FileText className="h-3.5 w-3.5" strokeWidth={2.6} aria-hidden />
+                  {item.questao.fonte}
+                </span>
+              )}
               <Questao
                 questao={item.questao}
                 resposta={resposta}

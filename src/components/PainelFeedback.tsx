@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { BookOpen, Check, ChevronDown, Flag, Lightbulb, X } from 'lucide-react'
+import { BookOpen, Check, ChevronDown, FileText, Flag, Lightbulb, X } from 'lucide-react'
 import { useState } from 'react'
 import { Botao } from './Botao'
 import { Lapio } from './Lapio'
 import { Modal } from './Modal'
-import { fontesDaQuestao } from '../data/fontes'
+import { fontesDaQuestao, provaDaQuestao } from '../data/fontes'
 import { enviarFeedback } from '../lib/feedback'
 
 interface Props {
@@ -45,6 +45,7 @@ export function PainelFeedback({
   const [mostrarResolucao, setMostrarResolucao] = useState(false)
   const [reportar, setReportar] = useState(false)
   const fontes = fontesDaQuestao(questaoId)
+  const prova = provaDaQuestao(questaoId)
 
   return (
     <>
@@ -121,6 +122,14 @@ export function PainelFeedback({
                 className="mt-2 max-h-48 overflow-y-auto text-sm leading-relaxed text-texto"
               >
                 <p>{explicacao}</p>
+                {prova && (
+                  <p className="mt-2 flex gap-1.5 text-xs text-texto-suave">
+                    <FileText className="mt-0.5 h-3.5 w-3.5 shrink-0" strokeWidth={2.6} aria-hidden />
+                    <span>
+                      <strong>Adaptada da prova:</strong> {prova}. A resposta segue o gabarito oficial.
+                    </span>
+                  </p>
+                )}
                 {fontes.length > 0 && (
                   <p className="mt-2 flex gap-1.5 text-xs text-texto-suave">
                     <BookOpen className="mt-0.5 h-3.5 w-3.5 shrink-0" strokeWidth={2.6} aria-hidden />

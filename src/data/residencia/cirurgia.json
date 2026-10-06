@@ -145,17 +145,19 @@
           "questoes": [
             {
               "id": "cir-u1-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a sequência clássica de sintomas da apendicite aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com fibrilação atrial e colecistectomia antiga tem dor que começou no epigástrio e foi para a fossa ilíaca direita, febre baixa, vômitos e Blumberg positivo.",
+              "enunciado": "Qual é a hipótese mais provável?",
               "opcoes": [
-                "Dor no umbigo que vai à fossa ilíaca direita, depois náusea e febre",
-                "Febre alta, dor difusa e náusea",
-                "Diarreia e dor à esquerda",
-                "Vômitos primeiro, depois dor epigástrica forte que irradia em faixa para o dorso"
+                "Síndrome do intestino irritável",
+                "Doença de Crohn",
+                "Trombose mesentérica",
+                "Apendicite aguda"
               ],
-              "resposta": "Dor no umbigo que vai à fossa ilíaca direita, depois náusea e febre",
-              "explicacao": "A dor visceral inicial é periumbilical. Quando o peritônio parietal é irritado, ela se localiza na fossa ilíaca direita.",
-              "revisado": false
+              "resposta": "Apendicite aguda",
+              "explicacao": "A migração da dor sugere apendicite; na isquemia, a dor é maior que o achado no exame.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u1-l2-q2",
@@ -265,16 +267,17 @@
             {
               "id": "cir-u1-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de obstrução do intestino delgado em adultos?",
+              "enunciado": "Sobre a obstrução intestinal, qual afirmação é correta?",
               "opcoes": [
-                "Bridas pós-operatórias",
-                "Hérnias",
-                "Tumores",
-                "Volvo de intestino delgado"
+                "Crohn em crise com obstrução exige cirurgia logo",
+                "A hidratação inicial deve ser mínima",
+                "Drenar um abscesso pode resolver a obstrução",
+                "Enterite por radiação se trata sempre com cirurgia"
               ],
-              "resposta": "Bridas pós-operatórias",
-              "explicacao": "Aderências de cirurgias abdominais prévias são a causa principal. No intestino grosso, a causa mais comum é o câncer colorretal.",
-              "revisado": false
+              "resposta": "Drenar um abscesso pode resolver a obstrução",
+              "explicacao": "No Crohn em crise e na enterite actínica, tenta-se primeiro tratamento clínico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u1-l3-q2",
@@ -755,16 +758,17 @@
             {
               "id": "cir-u3-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tipo de cálculo biliar mais comum no Ocidente?",
+              "enunciado": "Qual achado indica retirar a vesícula por pólipo?",
               "opcoes": [
-                "Colesterol",
-                "Pigmento preto",
-                "Pigmento marrom",
-                "Oxalato de cálcio"
+                "Câncer de via biliar na família",
+                "Pólipo de 10 mm ou mais",
+                "Pólipos no cólon",
+                "Muitos pólipos pequenos"
               ],
-              "resposta": "Colesterol",
-              "explicacao": "Os cálculos de pigmento preto são associados à hemólise crônica.",
-              "revisado": false
+              "resposta": "Pólipo de 10 mm ou mais",
+              "explicacao": "Pólipos grandes têm mais risco de câncer.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u3-l1-q2",
@@ -1118,42 +1122,27 @@
           "questoes": [
             {
               "id": "cir-u4-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são os sintomas típicos da doença do refluxo?",
-              "opcoes": [
-                "Queimação atrás do esterno e regurgitação",
-                "Dificuldade para engolir e emagrecimento",
-                "Vômito com sangue",
-                "Dor na parte baixa do abdome"
-              ],
-              "resposta": "Queimação atrás do esterno e regurgitação",
-              "explicacao": "Dificuldade para engolir e emagrecimento são sinais de alarme.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na hérnia de hiato, a pressão positiva dentro do tórax empurra o estômago para cima.",
+              "resposta": false,
+              "explicacao": "A pressão no tórax é negativa e \"puxa\" o estômago; a do abdome é positiva.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sintoma esofágico à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Pirose",
-                  "direita": "Queimação atrás do esterno"
-                },
-                {
-                  "esquerda": "Regurgitação",
-                  "direita": "Retorno do conteúdo do estômago à boca"
-                },
-                {
-                  "esquerda": "Disfagia",
-                  "direita": "Dificuldade para engolir"
-                },
-                {
-                  "esquerda": "Odinofagia",
-                  "direita": "Dor ao engolir"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame é o padrão-ouro para diagnosticar a doença do refluxo?",
+              "opcoes": [
+                "Endoscopia digestiva alta",
+                "pHmetria de 24 horas",
+                "Esofagograma com bário",
+                "Cintilografia do esôfago"
               ],
-              "explicacao": "A odinofagia sugere esofagite intensa, inclusive por infecção ou remédios.",
-              "revisado": false
+              "resposta": "pHmetria de 24 horas",
+              "explicacao": "Mede o ácido no esôfago ao longo do dia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u4-l1-q3",
@@ -1237,42 +1226,34 @@
           "questoes": [
             {
               "id": "cir-u4-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são as duas principais causas de úlcera péptica?",
+              "tipo": "caso_clinico",
+              "caso": "Homem adulto tem vômitos de comida da véspera e diagnóstico de estenose do piloro.",
+              "enunciado": "Qual é a causa mais provável?",
               "opcoes": [
-                "H. pylori e anti-inflamatórios",
-                "Estresse e café",
-                "Álcool e pimenta",
-                "Cigarro, leite e comidas muito condimentadas"
+                "Câncer gástrico",
+                "Úlcera péptica duodenal",
+                "Pólipo gástrico",
+                "Bezoar gástrico"
               ],
-              "resposta": "H. pylori e anti-inflamatórios",
-              "explicacao": "O estresse físico grave, como em UTI, também pode causar úlceras.",
-              "revisado": false
+              "resposta": "Úlcera péptica duodenal",
+              "explicacao": "A cicatriz da úlcera estreita o piloro.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada complicação da úlcera ao seu quadro.",
-              "pares": [
-                {
-                  "esquerda": "Perfuração",
-                  "direita": "Dor súbita intensa e ar livre no abdome"
-                },
-                {
-                  "esquerda": "Hemorragia",
-                  "direita": "Vômito com sangue ou fezes pretas"
-                },
-                {
-                  "esquerda": "Obstrução do piloro",
-                  "direita": "Vômitos de alimentos comidos horas antes"
-                },
-                {
-                  "esquerda": "Penetração",
-                  "direita": "Dor que vai para as costas, no pâncreas"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Na hemorragia digestiva por úlcera, qual localização tem mais risco de voltar a sangrar?",
+              "opcoes": [
+                "Grande curvatura do estômago",
+                "Parede anterior do bulbo",
+                "Parede posterior do bulbo",
+                "Antro gástrico perto do piloro"
               ],
-              "explicacao": "A hemorragia é a complicação mais comum.",
-              "revisado": false
+              "resposta": "Parede posterior do bulbo",
+              "explicacao": "Fica sobre a artéria gastroduodenal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u4-l2-q3",
@@ -1483,16 +1464,17 @@
             {
               "id": "cir-u5-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a lesão precursora mais comum do câncer colorretal?",
+              "enunciado": "No adulto, onde é mais comum a obstrução do cólon por câncer?",
               "opcoes": [
-                "Pólipo adenomatoso",
-                "Pólipo hiperplásico pequeno",
-                "Hemorroida",
-                "Divertículo"
+                "Ângulo hepático",
+                "Ângulo esplênico",
+                "Cólon transverso",
+                "Cólon esquerdo"
               ],
-              "resposta": "Pólipo adenomatoso",
-              "explicacao": "Retirar pólipos na colonoscopia previne o câncer.",
-              "revisado": false
+              "resposta": "Cólon esquerdo",
+              "explicacao": "Tem luz menor e fezes mais sólidas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u5-l1-q2",
@@ -2084,28 +2066,19 @@
           "questoes": [
             {
               "id": "cir-u6-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada período após a cirurgia à causa mais comum de febre.",
-              "pares": [
-                {
-                  "esquerda": "Primeiras 48 horas",
-                  "direita": "Resposta inflamatória e atelectasia"
-                },
-                {
-                  "esquerda": "Do 3º ao 5º dia",
-                  "direita": "Infecção urinária ou pneumonia"
-                },
-                {
-                  "esquerda": "Do 5º ao 7º dia",
-                  "direita": "Infecção da ferida operatória"
-                },
-                {
-                  "esquerda": "Após o 7º dia",
-                  "direita": "Abscesso ou trombose venosa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos, durante adenoidectomia, tem febre de 41 °C, rigidez e queda do débito cardíaco. Recebe dantrolene.",
+              "enunciado": "Qual foi o gatilho?",
+              "opcoes": [
+                "Translocação bacteriana",
+                "Infarto agudo do miocárdio",
+                "Hipertermia maligna pela succinilcolina",
+                "Coagulação intravascular disseminada"
               ],
-              "explicacao": "É uma regra prática; o exame do paciente é que define a causa.",
-              "revisado": false
+              "resposta": "Hipertermia maligna pela succinilcolina",
+              "explicacao": "Também pode ser causada por anestésicos inalatórios.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u6-l3-q2",
@@ -2328,28 +2301,18 @@
           "questoes": [
             {
               "id": "cir-u7-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada hérnia ao conteúdo ou local.",
-              "pares": [
-                {
-                  "esquerda": "Hérnia de Richter",
-                  "direita": "Só parte da parede do intestino"
-                },
-                {
-                  "esquerda": "Hérnia de Littré",
-                  "direita": "Divertículo de Meckel"
-                },
-                {
-                  "esquerda": "Hérnia de Spiegel",
-                  "direita": "Borda lateral do reto abdominal"
-                },
-                {
-                  "esquerda": "Hérnia obturadora",
-                  "direita": "Idosa magra com dor na coxa"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "De fora para dentro, quais são os três músculos largos da parede abdominal lateral?",
+              "opcoes": [
+                "Oblíquo externo, oblíquo interno e transverso",
+                "Oblíquo interno, oblíquo externo e transverso",
+                "Transverso, oblíquo interno e oblíquo externo",
+                "Oblíquo externo, transverso e oblíquo interno"
               ],
-              "explicacao": "Nomes que caem em prova.",
-              "revisado": false
+              "resposta": "Oblíquo externo, oblíquo interno e transverso",
+              "explicacao": "Depois vêm a fáscia transversalis, a gordura pré-peritoneal e o peritônio.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u7-l2-q2",
@@ -2807,42 +2770,34 @@
           "questoes": [
             {
               "id": "cir-u8-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença venosa ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Varizes",
-                  "direita": "Veias dilatadas e tortuosas"
-                },
-                {
-                  "esquerda": "Insuficiência venosa crônica",
-                  "direita": "Manchas escuras e inchaço"
-                },
-                {
-                  "esquerda": "Úlcera venosa",
-                  "direita": "Ferida perto do tornozelo interno"
-                },
-                {
-                  "esquerda": "Trombose venosa profunda",
-                  "direita": "Perna inchada e dolorosa"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado NÃO aumenta a suspeita de trombose venosa profunda no escore de Wells?",
+              "opcoes": [
+                "Edema de toda a perna",
+                "Celulite na mesma perna",
+                "Veias colaterais superficiais",
+                "Dor ao palpar as veias profundas"
               ],
-              "explicacao": "Doenças comuns.",
-              "revisado": false
+              "resposta": "Celulite na mesma perna",
+              "explicacao": "Outra explicação tão provável quanto a trombose tira pontos do escore.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u8-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento principal da úlcera venosa?",
+              "tipo": "caso_clinico",
+              "caso": "Paciente no pós-operatório de cirurgia grande tem inchaço na perna direita e dor na panturrilha que piora ao dobrar o pé para cima.",
+              "enunciado": "Qual é a hipótese mais provável?",
               "opcoes": [
-                "Compressão elástica",
-                "Antibiótico",
-                "Repouso absoluto",
-                "Cirurgia de varizes em todos os casos, sem compressão"
+                "Lesão por mobilização excessiva",
+                "Oclusão arterial aguda",
+                "Trombose venosa profunda",
+                "Tromboangeíte obliterante"
               ],
-              "resposta": "Compressão elástica",
-              "explicacao": "Junto com cuidado da ferida.",
-              "revisado": false
+              "resposta": "Trombose venosa profunda",
+              "explicacao": "Dor ao dorsifletir o pé é o sinal de Homans.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u8-l3-q3",
@@ -2932,17 +2887,19 @@
           "questoes": [
             {
               "id": "cir-u9-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o primeiro exame no nódulo de tireoide palpável?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 18 anos tem nódulo sólido de 2,5 cm na tireoide, com TSH normal.",
+              "enunciado": "Qual é o melhor exame para investigar?",
               "opcoes": [
-                "TSH e ultrassom",
-                "Cintilografia sempre",
-                "Tomografia",
-                "Biópsia sem ultrassom"
+                "Cintilografia de tireoide",
+                "Tomografia com contraste",
+                "Punção aspirativa com agulha fina",
+                "Cirurgia com congelação"
               ],
-              "resposta": "TSH e ultrassom",
-              "explicacao": "O TSH baixo sugere nódulo quente.",
-              "revisado": false
+              "resposta": "Punção aspirativa com agulha fina",
+              "explicacao": "TSH normal e nódulo sólido grande pedem punção.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u9-l1-q2",
@@ -3891,16 +3848,17 @@
             {
               "id": "cir-u11-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual vacina deve ser dada antes de esplenectomia eletiva?",
+              "enunciado": "Sobre infecção grave depois da retirada do baço, avalie: I. O germe mais comum é o pneumococo. II. O risco existe só no primeiro ano. III. A mortalidade é maior em quem tirou o baço por trauma do que por doença do sangue. Quais estão corretas?",
               "opcoes": [
-                "Pneumococo, meningococo e Haemophilus",
-                "BCG",
-                "Febre amarela",
-                "BCG e febre amarela na mesma semana"
+                "Apenas I",
+                "Apenas II",
+                "Apenas III",
+                "Apenas I e III"
               ],
-              "resposta": "Pneumococo, meningococo e Haemophilus",
-              "explicacao": "Pelo menos 2 semanas antes.",
-              "revisado": false
+              "resposta": "Apenas I",
+              "explicacao": "O risco dura a vida toda e é maior nas doenças hematológicas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u11-l3-q2",
@@ -4973,28 +4931,18 @@
           "questoes": [
             {
               "id": "cir-u14-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada solução à característica.",
-              "pares": [
-                {
-                  "esquerda": "Soro fisiológico 0,9%",
-                  "direita": "Isotônico com cloro alto"
-                },
-                {
-                  "esquerda": "Ringer lactato",
-                  "direita": "Mais parecido com o plasma"
-                },
-                {
-                  "esquerda": "Soro glicosado 5%",
-                  "direita": "Água livre"
-                },
-                {
-                  "esquerda": "Salina 3%",
-                  "direita": "Hipertônico"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são as necessidades diárias básicas de sódio e de potássio no pós-operatório em jejum?",
+              "opcoes": [
+                "1 e 3 mEq/kg/dia",
+                "2 e 1 mEq/kg/dia",
+                "3 e 1,5 mEq/kg/dia",
+                "5 e 4 mEq/kg/dia"
               ],
-              "explicacao": "Escolher conforme o paciente.",
-              "revisado": false
+              "resposta": "2 e 1 mEq/kg/dia",
+              "explicacao": "Cerca de 2 mEq/kg de sódio e 1 de potássio por dia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-u14-l3-q2",
@@ -6604,58 +6552,48 @@
           "questoes": [
             {
               "id": "cir-d3-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente de 40 anos tem disfagia para sólidos e líquidos há 2 anos, regurgitação e emagrecimento. O esofagograma mostra esôfago dilatado com afilamento em bico de pássaro.",
-              "enunciado": "Qual é o exame que confirma e o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o esôfago de Barrett, qual afirmação é correta?",
               "opcoes": [
-                "Manometria; Heller com fundoplicatura ou POEM",
-                "Endoscopia; IBP",
-                "pHmetria; fundoplicatura total",
-                "Tomografia; esofagectomia total como primeira escolha"
+                "Ablação por radiofrequência pode eliminar displasia de alto grau",
+                "Todo adenocarcinoma exige esofagectomia",
+                "Crioterapia causa estenose com muita frequência",
+                "O risco absoluto de câncer é muito alto"
               ],
-              "resposta": "Manometria; Heller com fundoplicatura ou POEM",
-              "explicacao": "No Brasil, a doença de Chagas é uma causa importante de megaesôfago.",
-              "revisado": false
+              "resposta": "Ablação por radiofrequência pode eliminar displasia de alto grau",
+              "explicacao": "Câncer precoce intramucoso pode ser tratado por endoscopia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d3-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada distúrbio do esôfago à característica.",
-              "pares": [
-                {
-                  "esquerda": "Acalasia",
-                  "direita": "Esfíncter inferior que não relaxa e aperistalse"
-                },
-                {
-                  "esquerda": "Espasmo esofagiano difuso",
-                  "direita": "Contrações simultâneas, com imagem em saca-rolhas"
-                },
-                {
-                  "esquerda": "Divertículo de Zenker",
-                  "direita": "Halitose e regurgitação de alimento não digerido"
-                },
-                {
-                  "esquerda": "Esofagite eosinofílica",
-                  "direita": "Disfagia e impactação alimentar em jovem com alergias"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre quem engoliu soda cáustica, qual afirmação é correta?",
+              "opcoes": [
+                "O exame físico revela tudo e dispensa endoscopia",
+                "A endoscopia é mais segura depois de 48 horas",
+                "Corticoide de rotina não previne estenose",
+                "Esofagectomia é a escolha em toda úlcera circunferencial"
               ],
-              "explicacao": "A esofagite eosinofílica mostra anéis e sulcos na endoscopia.",
-              "revisado": false
+              "resposta": "Corticoide de rotina não previne estenose",
+              "explicacao": "A endoscopia se faz nas primeiras 24 horas; depois disso aumenta o risco de perfuração.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d3-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Homem com refluxo antigo faz endoscopia com biópsia que mostra esôfago de Barrett com displasia de alto grau, sem lesão visível invasiva.",
-              "enunciado": "Qual é o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a hérnia de hiato paraesofágica, qual afirmação é correta?",
               "opcoes": [
-                "Ressecção endoscópica ou ablação",
-                "Só inibidor de bomba",
-                "Endoscopia de controle em 3 anos",
-                "Esofagectomia, mesmo sem câncer invasivo"
+                "Causa saciedade precoce, disfagia e dor no peito",
+                "A decisão de operar nunca depende dos sintomas",
+                "No tipo II, a junção esofagogástrica fica acima do diafragma",
+                "No tipo III, só outras vísceras sobem pelo hiato"
               ],
-              "resposta": "Ressecção endoscópica ou ablação",
-              "explicacao": "A terapia endoscópica é o padrão; a esofagectomia fica para câncer que passa da mucosa.",
-              "revisado": false
+              "resposta": "Causa saciedade precoce, disfagia e dor no peito",
+              "explicacao": "No tipo II a junção fica no lugar; o tipo IV leva outras vísceras.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d3-l1-q4",
@@ -6860,28 +6798,18 @@
           "questoes": [
             {
               "id": "cir-d3-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada indicação ou técnica à característica na cirurgia bariátrica.",
-              "pares": [
-                {
-                  "esquerda": "IMC de 40 ou mais",
-                  "direita": "Indicação mesmo sem comorbidades"
-                },
-                {
-                  "esquerda": "IMC de 35 com diabetes",
-                  "direita": "Indicação por comorbidade"
-                },
-                {
-                  "esquerda": "Bypass gástrico em Y de Roux",
-                  "direita": "Restritiva e disabsortiva"
-                },
-                {
-                  "esquerda": "Gastrectomia vertical (sleeve)",
-                  "direita": "Restritiva, pode piorar o refluxo"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os hormônios do intestino e a cirurgia bariátrica, qual afirmação é correta?",
+              "opcoes": [
+                "A grelina vem das células parietais",
+                "O GLP-1 deixa o estômago esvaziar mais devagar",
+                "O PYY diminui depois do bypass gástrico",
+                "A grelina não influencia o NPY"
               ],
-              "explicacao": "As indicações exigem falha do tratamento clínico.",
-              "revisado": false
+              "resposta": "O GLP-1 deixa o estômago esvaziar mais devagar",
+              "explicacao": "Por isso o GLP-1 dá saciedade; o PYY aumenta após o bypass.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d3-l3-q2",
@@ -8821,17 +8749,18 @@
             {
               "id": "cir-d8-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com icterícia indolor, vesícula palpável e massa na cabeça do pâncreas.",
-              "enunciado": "Qual é o diagnóstico e a cirurgia?",
+              "caso": "Idosa sem sintomas tem nódulo de 12 mm, muito vascularizado, na cabeça do pâncreas, sugestivo de tumor neuroendócrino não funcionante.",
+              "enunciado": "Qual afirmação é correta?",
               "opcoes": [
-                "Câncer de cabeça de pâncreas; Whipple",
-                "Pancreatite; observar",
-                "Cálculo; CPRE só",
-                "Cisto de pâncreas; drenagem endoscópica e alta"
+                "Quase sempre faz parte de síndrome genética",
+                "A cromogranina A ajuda no diagnóstico",
+                "Sempre deve ser operado, pois é maligno",
+                "Nunca dá metástase e pode ser ignorado"
               ],
-              "resposta": "Câncer de cabeça de pâncreas; Whipple",
-              "explicacao": "Sinal de Courvoisier.",
-              "revisado": false
+              "resposta": "A cromogranina A ajuda no diagnóstico",
+              "explicacao": "A maioria é esporádica; tumores pequenos podem ser acompanhados.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d8-l3-q2",
@@ -10933,17 +10862,18 @@
             {
               "id": "cir-d14-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com câncer gástrico distal sem metástases.",
-              "enunciado": "Qual é a cirurgia?",
+              "caso": "Homem de 72 anos com sangramento digestivo tem lesão submucosa ulcerada no estômago. A tomografia sugere GIST de 8 cm e a biópsia endoscópica não mostrou tumor.",
+              "enunciado": "Sobre esse tumor, qual afirmação é correta?",
               "opcoes": [
-                "Gastrectomia subtotal com D2",
-                "Gastrectomia total sempre",
-                "Só quimioterapia",
-                "Gastrectomia total em todos os casos, sem linfadenectomia"
+                "Biópsia por punção percutânea é o melhor caminho",
+                "A imuno-histoquímica é essencial para o diagnóstico",
+                "Linfonodos são o principal fator de prognóstico",
+                "Profundidade na parede define a sobrevida"
               ],
-              "resposta": "Gastrectomia subtotal com D2",
-              "explicacao": "Margens adequadas.",
-              "revisado": false
+              "resposta": "A imuno-histoquímica é essencial para o diagnóstico",
+              "explicacao": "CD117 e DOG1 confirmam; o prognóstico depende de tamanho e mitoses.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cir-d14-l1-q2",

@@ -17,6 +17,8 @@ interface QuestaoBase {
   explicacao: string
   /** Fica false até o conteúdo passar por revisão médica */
   revisado: boolean
+  /** Prova de onde a questão foi adaptada, ex.: "AMRIGS 2025" */
+  fonte?: string
 }
 
 export interface QuestaoMultiplaEscolha extends QuestaoBase {

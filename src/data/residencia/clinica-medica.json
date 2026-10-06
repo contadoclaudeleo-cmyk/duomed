@@ -17,24 +17,33 @@
             {
               "id": "cm-u1-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Na medida de consultório, repetida em ocasiões diferentes, qual valor define hipertensão arterial no adulto?",
+              "enunciado": "Sobre hipertensão arterial, avalie: I. Quando disponíveis, a MAPA ou a MRPA ajudam a confirmar o diagnóstico fora do consultório. II. Ter tido pré-eclâmpsia é fator de risco para hipertensão no futuro. III. Uma única medida de 150 x 95 mmHg no consultório já confirma o diagnóstico. Quais estão corretas?",
               "opcoes": [
-                "PA ≥ 140/90 mmHg",
-                "PA ≥ 130/80 mmHg",
-                "PA ≥ 120/80 mmHg",
-                "PA ≥ 160/100 mmHg"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "PA ≥ 140/90 mmHg",
-              "explicacao": "A diretriz brasileira define hipertensão por PA sistólica ≥ 140 e/ou diastólica ≥ 90 mmHg em medidas repetidas no consultório, ou por MAPA e MRPA.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "O diagnóstico exige medidas repetidas ou medida fora do consultório; a pré-eclâmpsia aumenta o risco cardiovascular da mulher.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u1-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na urgência hipertensiva, sem lesão aguda de órgão-alvo, a pressão deve ser reduzida gradualmente, em 24 a 48 horas, com medicação oral.",
-              "resposta": true,
-              "explicacao": "Sem lesão aguda de órgão-alvo, a redução rápida não traz benefício e pode causar isquemia. A emergência hipertensiva é que exige droga venosa e redução imediata.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 62 anos, hipertenso, diabético e com depressão, tem inchaço nos dois tornozelos.",
+              "enunciado": "Qual remédio é a causa mais provável?",
+              "opcoes": [
+                "Losartana",
+                "Fluoxetina",
+                "Anlodipino",
+                "Metformina"
+              ],
+              "resposta": "Anlodipino",
+              "explicacao": "Edema maleolar é efeito comum dos bloqueadores de canal de cálcio.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u1-l1-q3",
@@ -136,16 +145,17 @@
             {
               "id": "cm-u1-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual valor de glicemia de jejum, confirmado em nova medida, faz o diagnóstico de diabetes?",
+              "enunciado": "Sobre o diabetes, avalie: I. A hemoglobina glicada mostra a média da glicose das últimas 3 semanas. II. A meta geral de glicada é abaixo de 7%, sem causar hipoglicemias graves. III. Em idosos frágeis ou com expectativa de vida limitada, uma meta abaixo de 8% é aceitável. Quais estão corretas?",
               "opcoes": [
-                "≥ 126 mg/dL",
-                "≥ 100 mg/dL",
-                "≥ 140 mg/dL",
-                "≥ 200 mg/dL"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "≥ 126 mg/dL",
-              "explicacao": "Entre 100 e 125 mg/dL considera-se pré-diabetes (glicemia de jejum alterada).",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "A glicada reflete cerca de 3 meses, não 3 semanas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u1-l2-q2",
@@ -261,16 +271,17 @@
             {
               "id": "cm-u1-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Em que momento da dengue costumam surgir os sinais de alarme?",
+              "enunciado": "Sobre a dengue, avalie: I. Nos primeiros dias, pesquisa-se o vírus (como NS1); a partir do 6º dia, pesquisam-se anticorpos. II. O tratamento inclui hidratação, repouso e antibiótico de rotina. III. Combater o mosquito Aedes aegypti é a principal forma de prevenção. Quais estão corretas?",
               "opcoes": [
-                "Na defervescência, do 3º ao 7º dia",
-                "Nas primeiras 24 h",
-                "Depois do 14º dia",
-                "Antes de começar a febre, no período de incubação"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Na defervescência, do 3º ao 7º dia",
-              "explicacao": "É a fase crítica: com a queda da febre, o aumento da permeabilidade capilar pode levar a extravasamento plasmático e choque.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "Dengue é viral: o tratamento é de suporte, sem antibiótico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u1-l3-q2",
@@ -994,28 +1005,18 @@
           "questoes": [
             {
               "id": "cm-u11-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada remédio à ação na dislipidemia.",
-              "pares": [
-                {
-                  "esquerda": "Estatina",
-                  "direita": "Reduz LDL"
-                },
-                {
-                  "esquerda": "Ezetimiba",
-                  "direita": "Reduz absorção do colesterol"
-                },
-                {
-                  "esquerda": "Fibrato",
-                  "direita": "Reduz triglicerídeos"
-                },
-                {
-                  "esquerda": "Inibidor de PCSK9",
-                  "direita": "Reduz muito o LDL"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o HDL colesterol, avalie: I. HDL alto costuma se associar a menor risco cardiovascular. II. HDL muito alto por algumas doenças genéticas pode não proteger o coração. III. Tabagismo e sedentarismo costumam elevar o HDL. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "A estatina é a base.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "Fumo e sedentarismo baixam o HDL; atividade física e álcool o elevam.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u11-l3-q2",
@@ -2528,16 +2529,17 @@
             {
               "id": "cm-u3-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal causa de DPOC no Brasil?",
+              "enunciado": "Sobre a DPOC, avalie: I. Obstrução é definida por VEF1/CVF abaixo de 80%. II. Deve-se dosar alfa-1 antitripsina no enfisema das bases que começa antes dos 40 anos. III. A teofilina reduz a falta de ar, mas a toxicidade limita o uso. Quais estão corretas?",
               "opcoes": [
-                "Tabagismo",
-                "Asma",
-                "Tuberculose",
-                "Poluição dos carros"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Tabagismo",
-              "explicacao": "A exposição à fumaça de fogão a lenha também é causa importante em algumas regiões.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "O ponto de corte é 0,70 após broncodilatador.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u3-l2-q2",
@@ -4821,18 +4823,18 @@
           "questoes": [
             {
               "id": "cm-u5-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 45 anos tem cansaço, ganho de peso, pele seca e intestino preso. O TSH é 18 e o T4 livre está baixo.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o tratamento do hipotireoidismo, avalie: I. No idoso cardiopata, começa-se com a dose plena de levotiroxina. II. O TSH é dosado de novo cerca de 6 semanas após iniciar ou mudar a dose. III. Rifampicina e anticonvulsivantes podem aumentar a dose necessária de levotiroxina. Quais estão corretas?",
               "opcoes": [
-                "Hipotireoidismo primário; levotiroxina",
-                "Hipertireoidismo; metimazol",
-                "Central; TSH",
-                "Hipertireoidismo subclínico; metimazol em dose baixa"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Hipotireoidismo primário; levotiroxina",
-              "explicacao": "A dose é ajustada pelo TSH, dosado após 6 a 8 semanas.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "No idoso e no cardiopata, começa-se com dose baixa e aumenta-se devagar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u5-l1-q2",
@@ -5664,42 +5666,33 @@
           "questoes": [
             {
               "id": "cm-u10-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada característica à doença.",
-              "pares": [
-                {
-                  "esquerda": "Doença de Crohn",
-                  "direita": "Acomete da boca ao ânus com lesões salteadas"
-                },
-                {
-                  "esquerda": "Retocolite ulcerativa",
-                  "direita": "Contínua a partir do reto"
-                },
-                {
-                  "esquerda": "Fístulas",
-                  "direita": "Mais comuns na Crohn"
-                },
-                {
-                  "esquerda": "Colangite esclerosante",
-                  "direita": "Mais associada à retocolite"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a retocolite ulcerativa, avalie: I. Crises leves e moderadas podem ser tratadas com derivados do 5-ASA, como a mesalazina. II. Quem não responde ao 5-ASA recebe corticoide para induzir a remissão. III. Na forma grave sem resposta ao corticoide, a ciclosporina é uma opção. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "Diferenciar muda o tratamento.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Infliximabe também é opção de resgate.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u10-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sintoma típico da retocolite ulcerativa?",
+              "enunciado": "Qual característica é da doença de Crohn?",
               "opcoes": [
-                "Diarreia com sangue e muco",
-                "Constipação",
-                "Vômitos",
-                "Dor no ombro direito ao comer gordura"
+                "Inflamação limitada à mucosa",
+                "Sempre causada por infecção",
+                "Inflamação de todas as camadas da parede",
+                "Acomete apenas o íleo terminal"
               ],
-              "resposta": "Diarreia com sangue e muco",
-              "explicacao": "Também urgência para evacuar.",
-              "revisado": false
+              "resposta": "Inflamação de todas as camadas da parede",
+              "explicacao": "É transmural e pode ir da boca ao ânus, por isso causa fístulas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u10-l2-q3",
@@ -5908,16 +5901,17 @@
             {
               "id": "cm-u6-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Como a sepse é definida atualmente (Sepsis-3)?",
+              "enunciado": "Sobre a síndrome da resposta inflamatória sistêmica (SIRS), qual é a afirmação correta?",
               "opcoes": [
-                "Disfunção orgânica por resposta desregulada à infecção",
-                "Febre com leucocitose",
-                "Bactéria no sangue",
-                "Qualquer infecção com febre, taquicardia e leucócitos acima de 12 mil"
+                "Um critério isolado já define sepse",
+                "Troponina e creatinina confirmam a SIRS",
+                "Pode ocorrer sem infecção, como na pancreatite",
+                "Sempre causa hipotensão que não responde a volume"
               ],
-              "resposta": "Disfunção orgânica por resposta desregulada à infecção",
-              "explicacao": "A disfunção orgânica é medida pelo aumento de 2 ou mais pontos no SOFA.",
-              "revisado": false
+              "resposta": "Pode ocorrer sem infecção, como na pancreatite",
+              "explicacao": "Queimaduras e pancreatite também causam SIRS.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u6-l1-q2",
@@ -6385,42 +6379,33 @@
           "questoes": [
             {
               "id": "cm-u12-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença à transmissão.",
-              "pares": [
-                {
-                  "esquerda": "Leptospirose",
-                  "direita": "Urina de rato em enchente"
-                },
-                {
-                  "esquerda": "Malária",
-                  "direita": "Mosquito Anopheles"
-                },
-                {
-                  "esquerda": "Leishmaniose visceral",
-                  "direita": "Mosquito-palha"
-                },
-                {
-                  "esquerda": "Esquistossomose",
-                  "direita": "Caramujo em água doce"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a leptospirose, avalie: I. A bactéria só entra no corpo por feridas na pele. II. A incubação vai de 1 a 30 dias, em geral 7 a 14. III. O antibiótico pode ser dado em qualquer fase, mas funciona melhor na primeira semana. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "A história de exposição ajuda.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "Também entra por mucosas e pela pele íntegra que ficou muito tempo na água.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u12-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal clássico da leptospirose?",
+              "enunciado": "Sobre a malária, avalie: I. A gota espessa é o exame mais usado para confirmar o diagnóstico. II. A sorologia não serve para diagnosticar a doença aguda e só atrasa o tratamento. III. Quem tem deficiência de G6PD não deve usar primaquina. Quais estão corretas?",
               "opcoes": [
-                "Dor forte na panturrilha",
-                "Dor no ombro",
-                "Manchas na boca",
-                "Rigidez de nuca com fotofobia"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Dor forte na panturrilha",
-              "explicacao": "Junto com olhos vermelhos.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "A primaquina causa hemólise na deficiência de G6PD.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u12-l2-q3",
@@ -6628,17 +6613,19 @@
           "questoes": [
             {
               "id": "cm-u7-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o padrão articular típico da artrite reumatoide?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos tem dor no corpo todo há 1 ano, cansaço e sono ruim. Não há articulações inchadas, e os exames de sangue e de imagem são normais.",
+              "enunciado": "Qual é a principal hipótese?",
               "opcoes": [
-                "Poliartrite simétrica de pequenas articulações",
-                "Monoartrite de joelho",
-                "Grandes, assimétrica",
-                "Artrite assimétrica de grandes articulações das pernas"
+                "Artrite reumatoide",
+                "Polimialgia reumática",
+                "Fibromialgia",
+                "Lúpus eritematoso sistêmico"
               ],
-              "resposta": "Poliartrite simétrica de pequenas articulações",
-              "explicacao": "Poupa as interfalangianas distais.",
-              "revisado": false
+              "resposta": "Fibromialgia",
+              "explicacao": "Dor difusa crônica sem inflamação nos exames, mais comum em mulheres.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u7-l1-q2",
@@ -6989,28 +6976,18 @@
           "questoes": [
             {
               "id": "cm-u8-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada anemia ao tamanho das hemácias.",
-              "pares": [
-                {
-                  "esquerda": "Ferropriva",
-                  "direita": "Microcítica"
-                },
-                {
-                  "esquerda": "Megaloblástica",
-                  "direita": "Macrocítica"
-                },
-                {
-                  "esquerda": "Anemia de doença crônica",
-                  "direita": "Normocítica ou microcítica"
-                },
-                {
-                  "esquerda": "Hemorragia aguda",
-                  "direita": "Normocítica"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual exame sugere mais anemia hemolítica?",
+              "opcoes": [
+                "Bilirrubina indireta alta",
+                "Reticulócitos baixos",
+                "Hemácias em alvo",
+                "Ferritina alta"
               ],
-              "explicacao": "O VCM orienta a investigação.",
-              "revisado": false
+              "resposta": "Bilirrubina indireta alta",
+              "explicacao": "Também sobem reticulócitos e LDH, e a haptoglobina cai.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u8-l1-q2",
@@ -7829,28 +7806,18 @@
           "questoes": [
             {
               "id": "cm-u14-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de choque ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Hipovolêmico",
-                  "direita": "Jugulares vazias"
-                },
-                {
-                  "esquerda": "Cardiogênico",
-                  "direita": "Jugulares cheias e crepitações"
-                },
-                {
-                  "esquerda": "Séptico",
-                  "direita": "Extremidades quentes no início"
-                },
-                {
-                  "esquerda": "Anafilático",
-                  "direita": "Urticária e chiado"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o angioedema, qual afirmação é correta?",
+              "opcoes": [
+                "O hereditário vem da falta de C3",
+                "O causado por IECA responde bem a anti-histamínico",
+                "O mediado por bradicinina melhora com corticoide",
+                "Dosar o inibidor de C1 ajuda no diagnóstico do hereditário"
               ],
-              "explicacao": "O exame orienta o tratamento.",
-              "revisado": false
+              "resposta": "Dosar o inibidor de C1 ajuda no diagnóstico do hereditário",
+              "explicacao": "O angioedema por bradicinina, como o do IECA, não responde a anti-histamínico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u14-l2-q2",
@@ -8191,16 +8158,17 @@
             {
               "id": "cm-u15-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Entre as consequências das quedas no idoso, qual é a mais grave e frequente?",
+              "enunciado": "Qual particularidade do idoso exige atenção especial?",
               "opcoes": [
-                "Fratura de quadril",
-                "Rinite",
-                "Gastrite",
-                "Dor de cabeça leve e passageira"
+                "Metaboliza remédios mais rápido e precisa de mais dose",
+                "Sente menos dor e não precisa de analgésico",
+                "Polifarmácia, com risco de interações",
+                "Melhora da memória, que facilita a adesão"
               ],
-              "resposta": "Fratura de quadril",
-              "explicacao": "Tem alta mortalidade em 1 ano.",
-              "revisado": false
+              "resposta": "Polifarmácia, com risco de interações",
+              "explicacao": "O idoso tem metabolismo mais lento e mais efeitos adversos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-u15-l2-q2",
@@ -13921,18 +13889,18 @@
           "questoes": [
             {
               "id": "cm-d13-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 65 anos com T-score de -3,0 no colo do fêmur.",
-              "enunciado": "Qual é o tratamento de primeira linha?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a osteoporose, avalie: I. O raloxifeno reduz fraturas vertebrais, mas não as de outros locais. II. T-score de -2,5 ou menos na coluna ou no fêmur indica tratamento com remédio. III. Todas as mulheres na pós-menopausa devem tomar vitamina D em dose muito alta, acima de 50.000 UI por semana. Quais estão corretas?",
               "opcoes": [
-                "Bisfosfonato com cálcio e vitamina D",
-                "Só cálcio",
-                "Corticoide",
-                "Apenas cálcio oral sem nenhum outro remédio"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Bisfosfonato com cálcio e vitamina D",
-              "explicacao": "Osteoporose.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "Vitamina D se repõe conforme a necessidade, não em dose alta para todas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-d13-l3-q2",
@@ -17080,18 +17048,18 @@
           "questoes": [
             {
               "id": "cm-d9-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com fraqueza ascendente nas pernas e ausência de reflexos 2 semanas após diarreia.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Bandas oligoclonais no líquor sugerem fortemente qual doença?",
               "opcoes": [
-                "Guillain-Barré; imunoglobulina ou plasmaférese",
-                "Miastenia; piridostigmina",
-                "AVC; trombólise",
-                "Hipocalemia; reposição de potássio oral e alta para casa"
+                "Doença de Alzheimer",
+                "Esclerose múltipla",
+                "Linfoma de células B",
+                "Meningite viral"
               ],
-              "resposta": "Guillain-Barré; imunoglobulina ou plasmaférese",
-              "explicacao": "Monitorar a respiração.",
-              "revisado": false
+              "resposta": "Esclerose múltipla",
+              "explicacao": "Mostram produção de anticorpos dentro do sistema nervoso.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "cm-d9-l3-q2",

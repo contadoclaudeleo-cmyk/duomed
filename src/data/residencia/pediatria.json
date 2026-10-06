@@ -17,16 +17,17 @@
             {
               "id": "ped-u1-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Quais vacinas o recém-nascido recebe ao nascer, pelo calendário do PNI?",
+              "enunciado": "Sobre o seguimento do prematuro, qual afirmação está ERRADA?",
               "opcoes": [
-                "BCG e hepatite B",
-                "BCG e pentavalente",
-                "Hepatite B e rotavírus",
-                "Tríplice viral e BCG"
+                "O seguimento começa antes da alta",
+                "Crescimento exagerado da cabeça pode indicar pior prognóstico",
+                "Ganho muito rápido aumenta o risco cardiovascular futuro",
+                "As vacinas seguem a idade corrigida"
               ],
-              "resposta": "BCG e hepatite B",
-              "explicacao": "A vacina da hepatite B deve ser dada de preferência nas primeiras 24 horas de vida.",
-              "revisado": false
+              "resposta": "As vacinas seguem a idade corrigida",
+              "explicacao": "As vacinas seguem a idade cronológica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u1-l1-q2",
@@ -255,16 +256,17 @@
             {
               "id": "ped-u1-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal agente da bronquiolite viral aguda?",
+              "enunciado": "Sobre a escala de coma de Glasgow, avalie: I. Serve para coma traumático e não traumático. II. Avalia olhos, fala, movimento e padrão respiratório. III. A nota mínima é 3 e significa que o paciente morreu. Quais estão corretas?",
               "opcoes": [
-                "Vírus sincicial respiratório",
-                "Influenza",
-                "Adenovírus",
-                "Rinovírus humano C com coriza intensa"
+                "Apenas I",
+                "Apenas II",
+                "Apenas III",
+                "Apenas I e II"
               ],
-              "resposta": "Vírus sincicial respiratório",
-              "explicacao": "A bronquiolite atinge sobretudo menores de 2 anos, com pico no outono e no inverno.",
-              "revisado": false
+              "resposta": "Apenas I",
+              "explicacao": "São só 3 parâmetros (ocular, verbal e motor); nota 3 é coma profundo, não morte.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u1-l3-q2",
@@ -376,17 +378,19 @@
           "questoes": [
             {
               "id": "ped-u2-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são as três perguntas feitas logo ao nascimento?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 38 semanas, mãe com teste rápido de sífilis positivo, nasce chorando forte, com bom tônus e ainda arroxeado, no colo da mãe.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Termo? Respira ou chora? Tônus em flexão?",
-                "Peso, sexo e Apgar",
-                "Cor, choro e reflexos",
-                "A mãe fez pré-natal? Tem sífilis? Tem HIV? Qual o tipo de sangue?"
+                "Estímulo tátil e clampeamento imediato",
+                "Clampeamento imediato e berço aquecido",
+                "Clampeamento com 30 segundos e mamar",
+                "Clampeamento após 60 segundos, pele a pele e observação"
               ],
-              "resposta": "Termo? Respira ou chora? Tônus em flexão?",
-              "explicacao": "Se as três respostas forem sim, o bebê fica no colo da mãe, em contato pele a pele.",
-              "revisado": false
+              "resposta": "Clampeamento após 60 segundos, pele a pele e observação",
+              "explicacao": "Bebê com boa vitalidade fica com a mãe; sífilis não muda isso.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u2-l1-q2",
@@ -614,42 +618,35 @@
           "questoes": [
             {
               "id": "ped-u2-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada teste de triagem ao que ele detecta.",
-              "pares": [
-                {
-                  "esquerda": "Teste do pezinho",
-                  "direita": "Doenças metabólicas, hormonais e hemoglobinopatias"
-                },
-                {
-                  "esquerda": "Teste do olhinho",
-                  "direita": "Catarata congênita e outras alterações do reflexo vermelho"
-                },
-                {
-                  "esquerda": "Teste da orelhinha",
-                  "direita": "Deficiência auditiva"
-                },
-                {
-                  "esquerda": "Teste do coraçãozinho",
-                  "direita": "Cardiopatias congênitas críticas"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 37 semanas, com 26 horas de vida, fez teste do coraçãozinho: 89% na mão direita e 92% no pé.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Pedir ecocardiograma",
+                "Pedir eletrocardiograma",
+                "Repetir o teste em 1 hora",
+                "Nada, a diferença é de 3%"
               ],
-              "explicacao": "Todos são obrigatórios e gratuitos no SUS.",
-              "revisado": false
+              "resposta": "Pedir ecocardiograma",
+              "explicacao": "Saturação de 89% ou menos em qualquer membro já pede eco.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u2-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o período ideal para coletar o teste do pezinho?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido a termo, com 20 horas de vida, ainda não urinou. Exame normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Do 3º ao 5º dia de vida",
-                "Nas primeiras 12 h",
-                "Após 30 dias",
-                "Somente aos seis meses de vida"
+                "Aguardar, a primeira urina pode demorar",
+                "Passar sonda vesical",
+                "Colher urina por sonda em 6 horas",
+                "Ultrassom renal com 24 horas"
               ],
-              "resposta": "Do 3º ao 5º dia de vida",
-              "explicacao": "Coletar cedo demais pode gerar resultados falsos em algumas doenças.",
-              "revisado": false
+              "resposta": "Aguardar, a primeira urina pode demorar",
+              "explicacao": "A maioria urina em 24 horas, mas pode levar até 48.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u2-l3-q3",
@@ -1583,42 +1580,34 @@
           "questoes": [
             {
               "id": "ped-u5-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a faixa de idade típica da convulsão febril?",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 3 anos com quadro de meningite bacteriana aguda. Glicemia de 90 mg/dL.",
+              "enunciado": "Qual líquor é o mais típico?",
               "opcoes": [
-                "Entre 6 meses e 5 anos",
-                "De 6 a 12 anos",
-                "Adolescência",
-                "Apenas em recém-nascidos"
+                "3 células, glicose 70 e proteína 20",
+                "1.000 células com 80% de neutrófilos, glicose 10 e proteína 180",
+                "80 células com linfócitos, glicose 74 e proteína 40",
+                "100 células, glicose 80 e proteína 80"
               ],
-              "resposta": "Entre 6 meses e 5 anos",
-              "explicacao": "Há forte tendência familiar.",
-              "revisado": false
+              "resposta": "1.000 células com 80% de neutrófilos, glicose 10 e proteína 180",
+              "explicacao": "Muitos neutrófilos, glicose baixa e proteína alta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u5-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado na criança com febre à sua interpretação.",
-              "pares": [
-                {
-                  "esquerda": "Crise generalizada com menos de 15 minutos",
-                  "direita": "Convulsão febril simples"
-                },
-                {
-                  "esquerda": "Crise focal ou prolongada",
-                  "direita": "Convulsão febril complexa"
-                },
-                {
-                  "esquerda": "Rigidez de nuca com febre",
-                  "direita": "Suspeita de meningite"
-                },
-                {
-                  "esquerda": "Manchas que não somem à pressão, com febre",
-                  "direita": "Suspeita de meningococcemia"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Criança de 2 anos com febre teve uma convulsão. O que é preciso para chamar de convulsão febril simples? I. Crise generalizada, sem crise sem febre antes. II. Menos de 15 minutos, sem déficit neurológico prévio. III. Não repetir em 24 horas e sem infecção do sistema nervoso.",
+              "opcoes": [
+                "Apenas I",
+                "Apenas II",
+                "Apenas III",
+                "I, II e III"
               ],
-              "explicacao": "A convulsão febril complexa pede avaliação mais detalhada.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Se faltar um critério, é complexa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u5-l2-q3",
@@ -1703,16 +1692,17 @@
             {
               "id": "ped-u5-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual medida é contraindicada na ingestão de soda cáustica?",
+              "enunciado": "Após enchentes, qual acidente com cobra é o mais comum em crianças no Brasil?",
               "opcoes": [
-                "Provocar vômito",
-                "Avaliar a via aérea",
-                "Fazer endoscopia nas primeiras 24 horas",
-                "Manter em jejum"
+                "Laquético (surucucu)",
+                "Elapídico (coral)",
+                "Crotálico (cascavel)",
+                "Botrópico (jararaca)"
               ],
-              "resposta": "Provocar vômito",
-              "explicacao": "O vômito expõe o esôfago novamente ao cáustico e piora as lesões.",
-              "revisado": false
+              "resposta": "Botrópico (jararaca)",
+              "explicacao": "Responde pela grande maioria dos acidentes.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u5-l3-q2",
@@ -1828,28 +1818,18 @@
           "questoes": [
             {
               "id": "ped-u6-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada cardiopatia à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Comunicação interventricular",
-                  "direita": "Cardiopatia congênita mais comum"
-                },
-                {
-                  "esquerda": "Tetralogia de Fallot",
-                  "direita": "Cardiopatia cianótica mais comum após o período neonatal"
-                },
-                {
-                  "esquerda": "Transposição das grandes artérias",
-                  "direita": "Cianose grave logo ao nascer"
-                },
-                {
-                  "esquerda": "Persistência do canal arterial",
-                  "direita": "Sopro contínuo em maquinaria"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "No lactente com tetralogia de Fallot, por que acontecem as crises de hipóxia?",
+              "opcoes": [
+                "Excesso de fluxo pelo canal arterial",
+                "Pouco fluxo para o pulmão por estenose infundibular",
+                "Shunt da esquerda para a direita no septo",
+                "Músculo fraco no ventrículo direito"
               ],
-              "explicacao": "Cardiopatias críticas podem ser detectadas pelo teste do coraçãozinho.",
-              "revisado": false
+              "resposta": "Pouco fluxo para o pulmão por estenose infundibular",
+              "explicacao": "O espasmo do infundíbulo desvia o sangue azul para a aorta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u6-l1-q2",
@@ -2789,28 +2769,18 @@
           "questoes": [
             {
               "id": "ped-u8-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada condição do neurodesenvolvimento à característica principal.",
-              "pares": [
-                {
-                  "esquerda": "Transtorno do espectro autista",
-                  "direita": "Dificuldade social e comportamentos repetitivos"
-                },
-                {
-                  "esquerda": "TDAH",
-                  "direita": "Desatenção e hiperatividade"
-                },
-                {
-                  "esquerda": "Paralisia cerebral",
-                  "direita": "Lesão cerebral não progressiva com alteração motora"
-                },
-                {
-                  "esquerda": "Deficiência intelectual",
-                  "direita": "Limitação cognitiva e adaptativa"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o transtorno do espectro autista, qual afirmação é correta?",
+              "opcoes": [
+                "Não se diagnostica antes dos 2 anos",
+                "Há exame de sangue que confirma",
+                "Irmão com TEA ou atraso na comunicação pedem investigação",
+                "A triagem M-CHAT é feita aos 36 e 48 meses"
               ],
-              "explicacao": "Diferenciar.",
-              "revisado": false
+              "resposta": "Irmão com TEA ou atraso na comunicação pedem investigação",
+              "explicacao": "O diagnóstico é clínico; o M-CHAT é feito entre 16 e 30 meses.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u8-l3-q2",
@@ -4594,17 +4564,19 @@
           "questoes": [
             {
               "id": "ped-u13-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a deficiência enzimática mais comum na hiperplasia adrenal congênita?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido tem falo de 2,3 cm, saliências labioescrotais fundidas e gônadas que não se palpam.",
+              "enunciado": "Qual é a causa mais comum de genitália atípica?",
               "opcoes": [
-                "21-hidroxilase",
-                "11-beta-hidroxilase",
-                "17-alfa-hidroxilase",
-                "Aromatase"
+                "Distúrbio ovotesticular XX",
+                "Hiperplasia adrenal congênita XX",
+                "Hiperplasia adrenal congênita XY",
+                "Disgenesia gonadal mista"
               ],
-              "resposta": "21-hidroxilase",
-              "explicacao": "Mais de 90% dos casos.",
-              "revisado": false
+              "resposta": "Hiperplasia adrenal congênita XX",
+              "explicacao": "Falta de 21-hidroxilase virilizando a menina.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-u13-l3-q2",
@@ -5728,18 +5700,18 @@
           "questoes": [
             {
               "id": "ped-d2-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos tem febre alta por 3 dias que some, e então aparecem manchas rosadas no tronco.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Criança de 2 anos e 12 kg com febre há 4 dias, dor atrás dos olhos, petéquias, sangramento nasal e sonolência, sem sinais de choque. Avalie: I. Sonolência e sangramento de mucosa são sinais de alarme da dengue. II. O NS1 até o 5º dia ajuda a confirmar. III. A hidratação de manutenção dessa criança é de 25 mL por hora. Quais estão corretas?",
               "opcoes": [
-                "Exantema súbito (herpesvírus 6)",
-                "Sarampo",
-                "Rubéola",
-                "Escarlatina por estreptococo do grupo A"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Exantema súbito (herpesvírus 6)",
-              "explicacao": "A febre alta pode causar convulsão febril.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "Por Holliday-Segar, 12 kg precisam de cerca de 1.100 mL/dia, uns 46 mL/h.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025"
             },
             {
               "id": "ped-d2-l3-q2",

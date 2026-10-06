@@ -74,5 +74,10 @@ export function fontesDaQuestao(questaoId: string): string[] {
   return local.unidade.fontes ?? local.materia.fontes ?? FONTES[local.materia.id] ?? []
 }
 
+/** Prova de residência de onde a questão foi adaptada (quando houver) */
+export function provaDaQuestao(questaoId: string): string | undefined {
+  return buscarQuestao(questaoId)?.questao.fonte
+}
+
 /** Lista para conferir se toda matéria tem bibliografia (usado no validador) */
 export const MATERIAS_COM_FONTES = Object.keys(FONTES)
