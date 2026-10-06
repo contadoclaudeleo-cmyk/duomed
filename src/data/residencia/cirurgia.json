@@ -3935,24 +3935,33 @@
             {
               "id": "cir-u12-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tipo de cálculo urinário mais comum?",
+              "enunciado": "Sobre a litíase por oxalato de cálcio, o que é correto?",
               "opcoes": [
-                "Oxalato de cálcio",
-                "Ácido úrico",
-                "Estruvita",
-                "Cistina hereditária"
+                "Fósforo alto aumenta o risco",
+                "Hidratação venosa volumosa na cólica",
+                "Tiazídico deve ser evitado",
+                "Citrato de potássio é boa opção"
               ],
-              "resposta": "Oxalato de cálcio",
-              "explicacao": "Visível no raio X.",
-              "revisado": false
+              "resposta": "Citrato de potássio é boa opção",
+              "explicacao": "Tiazídico reduz o cálcio urinário e também ajuda.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u12-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Cálculos de até 5 mm costumam sair sozinhos.",
-              "resposta": true,
-              "explicacao": "Remédios podem ajudar.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com cálculos de 2 a 4 mm no rim e no ureter tem cólicas moderadas repetidas.",
+              "enunciado": "Qual é o tratamento clínico?",
+              "opcoes": [
+                "Citrato de potássio e tansulosina",
+                "Furosemida e IECA",
+                "Restringir cálcio",
+                "Magnésio"
+              ],
+              "resposta": "Citrato de potássio e tansulosina",
+              "explicacao": "A tansulosina ajuda a expelir cálculos ureterais pequenos.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "cir-u12-l1-q3",
@@ -4052,42 +4061,34 @@
           "questoes": [
             {
               "id": "cir-u12-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença da próstata ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Hiperplasia benigna",
-                  "direita": "Próstata aumentada e lisa"
-                },
-                {
-                  "esquerda": "Câncer",
-                  "direita": "Nódulo endurecido"
-                },
-                {
-                  "esquerda": "Prostatite aguda",
-                  "direita": "Febre e próstata muito dolorosa"
-                },
-                {
-                  "esquerda": "Retenção urinária",
-                  "direita": "Bexiga cheia e dor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 55 anos internado por infecção urinária febril melhorou com ceftriaxona. O PSA subiu de 2 para 18 e a E. coli é sensível a tudo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Alta com antibiótico oral por 14 a 21 dias",
+                "Alta com 7 dias",
+                "Biópsia de próstata",
+                "RM de próstata"
               ],
-              "explicacao": "O toque retal ajuda.",
-              "revisado": false
+              "resposta": "Alta com antibiótico oral por 14 a 21 dias",
+              "explicacao": "Prostatite aguda; o PSA cai após o tratamento.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u12-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento inicial da hiperplasia prostática com sintomas?",
+              "enunciado": "Para a prostatite bacteriana aguda por E. coli sensível, qual antibiótico oral usar na alta?",
               "opcoes": [
-                "Alfabloqueador",
-                "Cirurgia imediata",
-                "Antibiótico",
-                "Cirurgia imediata em todos os casos"
+                "Ciprofloxacino",
+                "Fosfomicina",
+                "Nitrofurantoína",
+                "Amoxicilina"
               ],
-              "resposta": "Alfabloqueador",
-              "explicacao": "Melhora o jato urinário.",
-              "revisado": false
+              "resposta": "Ciprofloxacino",
+              "explicacao": "Quinolona penetra bem na próstata.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u12-l2-q3",
@@ -4889,25 +4890,35 @@
             },
             {
               "id": "cir-u14-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O excesso de soro fisiológico pode causar acidose hiperclorêmica.",
-              "resposta": true,
-              "explicacao": "Ringer causa menos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Cinco dias após grande ressecção intestinal, paciente desnutrido (perdeu 12%, NRS-2002 de 6) segue com íleo e vômitos.",
+              "enunciado": "Qual é a conduta nutricional?",
+              "opcoes": [
+                "Dieta enteral por sonda já",
+                "Esperar o íleo passar",
+                "Nutrição parenteral total",
+                "Gastrostomia"
+              ],
+              "resposta": "Nutrição parenteral total",
+              "explicacao": "Desnutrido sem poder usar o intestino precisa de parenteral.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A dieta ___ é preferida quando o intestino funciona.",
+              "tipo": "caso_clinico",
+              "caso": "Homem com diverticulite e abscesso perdeu 4 kg, come pouco, mas aceita líquidos. Será drenado.",
+              "enunciado": "Qual é a conduta nutricional?",
               "opcoes": [
-                "enteral",
-                "parenteral",
-                "zero",
-                "líquida"
+                "NRS-2002 e parenteral total",
+                "Sonda pós-pilórica e dieta oligomérica",
+                "Harris-Benedict e enteral polimérica",
+                "NRS-2002 e suplementar proteína por via oral"
               ],
-              "resposta": "enteral",
-              "explicacao": "Mantém a barreira intestinal.",
-              "revisado": false
+              "resposta": "NRS-2002 e suplementar proteína por via oral",
+              "explicacao": "Usa-se a via oral sempre que possível.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l3-q5",
@@ -6835,17 +6846,18 @@
             {
               "id": "cir-d3-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com obesidade grau III, diabetes e refluxo importante vai escolher a técnica bariátrica.",
-              "enunciado": "Qual é a técnica preferida?",
+              "caso": "Mulher operada de bypass gástrico há 18 meses está bem e usa polivitamínico e B12.",
+              "enunciado": "Como seguir?",
               "opcoes": [
-                "Bypass gástrico em Y de Roux",
-                "Gastrectomia vertical",
-                "Banda gástrica",
-                "Balão intragástrico por seis meses"
+                "Dispensar exames",
+                "Manter ferro, cálcio com vitamina D, B12 e polivitamínico e exames semestrais",
+                "Zinco e tiamina só se sintomas",
+                "Só hemograma e ferritina"
               ],
-              "resposta": "Bypass gástrico em Y de Roux",
-              "explicacao": "O bypass melhora o refluxo, e a gastrectomia vertical pode piorá-lo.",
-              "revisado": false
+              "resposta": "Manter ferro, cálcio com vitamina D, B12 e polivitamínico e exames semestrais",
+              "explicacao": "Deficiências podem surgir anos depois.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         }
@@ -8724,17 +8736,18 @@
             {
               "id": "cir-d8-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com pseudocisto de 8 cm que comprime o estômago e causa dor após 8 semanas.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Dois meses após pancreatite, homem com leve desconforto tem coleção cística de 7 cm de parede fina.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Drenagem endoscópica para o estômago",
-                "Observar sempre",
-                "Ressecção do pâncreas",
-                "Ressecção de todo o pâncreas com baço"
+                "Manejo conservador",
+                "Antibiótico",
+                "Cirurgia",
+                "Cistogastrostomia"
               ],
-              "resposta": "Drenagem endoscópica para o estômago",
-              "explicacao": "Cisto maduro com sintomas.",
-              "revisado": false
+              "resposta": "Manejo conservador",
+              "explicacao": "Pseudocisto sem sintomas importantes pode ser observado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d8-l3-q4",
@@ -10005,17 +10018,18 @@
             {
               "id": "cir-d12-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com cálculo ureteral de 6 mm, febre de 39 °C e hidronefrose.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Gestante de 10 semanas com febre, dor e hidronefrose direita por cálculo de 9 mm na pelve renal. Já recebe ceftriaxona.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Desobstruir já (duplo J ou nefrostomia) e antibiótico",
-                "Terapia expulsiva",
-                "Litotripsia imediata",
-                "Terapia expulsiva com tansulosina e analgésico em casa"
+                "Nefrostomia",
+                "Litotripsia",
+                "Só soro e observar",
+                "Soro e tansulosina"
               ],
-              "resposta": "Desobstruir já (duplo J ou nefrostomia) e antibiótico",
-              "explicacao": "Rim infectado obstruído.",
-              "revisado": false
+              "resposta": "Nefrostomia",
+              "explicacao": "Rim obstruído e infectado precisa ser drenado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d12-l1-q2",
