@@ -134,17 +134,25 @@
           "questoes": [
             {
               "id": "rpsiq-u1-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a classe de antidepressivo de primeira escolha na maioria dos casos?",
-              "opcoes": [
-                "ISRS",
-                "Tricíclicos",
-                "IMAO",
-                "Antipsicóticos de primeira geração"
+              "tipo": "associar_pares",
+              "enunciado": "Associe o efeito da amitriptilina ao seu mecanismo.",
+              "pares": [
+                {
+                  "esquerda": "Anticolinérgico",
+                  "direita": "Boca seca, visão turva e intestino preso"
+                },
+                {
+                  "esquerda": "Bloqueio alfa-1",
+                  "direita": "Tontura ao levantar"
+                },
+                {
+                  "esquerda": "Anti-histamínico",
+                  "direita": "Sonolência e mais apetite"
+                }
               ],
-              "resposta": "ISRS",
-              "explicacao": "Têm boa tolerância e segurança.",
-              "revisado": false
+              "explicacao": "Por isso o tricíclico é ruim para idosos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-u1-l2-q2",
@@ -3286,11 +3294,18 @@
             },
             {
               "id": "rpsiq-u10-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No idoso, o delirium sempre aparece com agitação intensa, o que facilita o diagnóstico.",
-              "resposta": false,
-              "explicacao": "Falso. O delirium hipoativo é comum e passa despercebido, parecendo sonolência ou apatia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o delirium, avalie: I. As marcas são falta de atenção e alteração da consciência. II. Evolui ao longo de meses. III. Clonazepam é a escolha para o sono no delirium agitado. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I",
+                "Apenas III",
+                "Apenas II e III",
+                "I, II e III"
+              ],
+              "resposta": "Apenas I",
+              "explicacao": "Começa em horas ou dias e benzodiazepínico piora o quadro.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-u10-l1-q3",
@@ -3882,16 +3897,17 @@
             {
               "id": "rpsiq-u11-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza o transtorno opositor desafiador?",
+              "enunciado": "Sobre o transtorno opositor desafiador, avalie: I. Humor raivoso, desafio ou vingança por pelo menos 6 meses. II. Pode não aparecer no consultório, pois surge mais com pessoas conhecidas. III. Sintomas em vários ambientes indicam gravidade. IV. O humor irritável é o que mais prediz transtorno de conduta. Quais estão corretas?",
               "opcoes": [
-                "Raiva, desobediência e desafio a adultos",
-                "Violência grave e crueldade",
-                "Isolamento",
-                "Medo de sair de casa e ir para a escola"
+                "Apenas I e II",
+                "Apenas III e IV",
+                "Apenas I, II e III",
+                "I, II, III e IV"
               ],
-              "resposta": "Raiva, desobediência e desafio a adultos",
-              "explicacao": "Sem violação grave de direitos.",
-              "revisado": false
+              "resposta": "Apenas I, II e III",
+              "explicacao": "O comportamento desafiador é que prediz conduta; o irritável prediz depressão e ansiedade.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-u11-l3-q2",
@@ -4382,11 +4398,19 @@
             },
             {
               "id": "rpsiq-u13-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O baby blues não precisa de remédio, só de apoio.",
-              "resposta": true,
-              "explicacao": "Se passar de 2 semanas, pensar em depressão.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos tem irritação, choro fácil, cansaço e insônia uma semana antes da menstruação, que somem com o fluxo, prejudicando o trabalho há mais de 1 ano.",
+              "enunciado": "Em que fase do ciclo isso ocorre?",
+              "opcoes": [
+                "Folicular",
+                "Ovulatória",
+                "Menstrual",
+                "Lútea"
+              ],
+              "resposta": "Lútea",
+              "explicacao": "Transtorno disfórico pré-menstrual.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-u13-l1-q3",
@@ -4487,16 +4511,17 @@
             {
               "id": "rpsiq-u13-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual doença de base está mais ligada à psicose puerperal?",
+              "enunciado": "A psicose puerperal, com confusão, delírios e agitação nas 2 primeiras semanas após o parto, está mais ligada a qual transtorno?",
               "opcoes": [
-                "Transtorno bipolar",
-                "Hipotireoidismo",
-                "Asma",
-                "Diabetes gestacional controlado"
+                "Esquizofrenia",
+                "Depressão maior",
+                "Transtorno obsessivo-compulsivo",
+                "Transtorno bipolar"
               ],
               "resposta": "Transtorno bipolar",
-              "explicacao": "Muitas vezes é a primeira manifestação.",
-              "revisado": false
+              "explicacao": "É emergência psiquiátrica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-u13-l2-q2",
@@ -7068,17 +7093,18 @@
             {
               "id": "rpsiq-d6-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Jovem após uso de cocaína tem dor no peito e supradesnivelamento de ST.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Jovem usou muita cocaína há 1 hora. Está agitado, com pressão de 180 x 110, suor, pupilas dilatadas e alucinações.",
+              "enunciado": "Qual afirmação é correta?",
               "opcoes": [
-                "Tratar como infarto e dar benzodiazepínico",
-                "Betabloqueador isolado",
-                "Só observar",
-                "Alta após melhora da dor com analgésico"
+                "Usuários de cocaína têm menos distonia por antipsicótico",
+                "Propranolol controla a pressão",
+                "Diazepam intramuscular é a escolha",
+                "Benzodiazepínicos são primeira escolha para a agitação"
               ],
-              "resposta": "Tratar como infarto e dar benzodiazepínico",
-              "explicacao": "Evitar betabloqueador na fase aguda.",
-              "revisado": false
+              "resposta": "Benzodiazepínicos são primeira escolha para a agitação",
+              "explicacao": "Betabloqueador pode piorar a hipertensão; diazepam IM absorve mal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-d6-l1-q2",
@@ -8382,17 +8408,18 @@
             {
               "id": "rpsiq-d9-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 75 anos com perda de memória recente há 2 anos, piora lenta, se perde no bairro e repete perguntas.",
-              "enunciado": "Qual é o diagnóstico mais provável?",
+              "caso": "Homem de 75 anos com declínio cognitivo de 1 ano, desatenção, dificuldade espacial, memória preservada, alucinações visuais nítidas, flutuações, parkinsonismo e piora grave com risperidona. Há anos se debate durante o sono.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
                 "Doença de Alzheimer",
-                "Demência vascular",
-                "Delirium",
-                "Demência frontotemporal de início tardio"
+                "Demência da doença de Parkinson",
+                "Demência com corpos de Lewy",
+                "Delirium por antipsicótico"
               ],
-              "resposta": "Doença de Alzheimer",
-              "explicacao": "Início lento com memória recente.",
-              "revisado": false
+              "resposta": "Demência com corpos de Lewy",
+              "explicacao": "Na de Parkinson, o motor vem mais de 1 ano antes da demência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-d9-l2-q2",
@@ -8647,18 +8674,18 @@
           "questoes": [
             {
               "id": "rpsiq-d10-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Menino de 9 anos com TDAH começou metilfenidato e perdeu 3 kg em 2 meses.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre psicoestimulantes no TDAH, qual afirmação é correta?",
               "opcoes": [
-                "Ajustar as refeições e acompanhar",
-                "Suspender e não tratar",
-                "Dobrar a dose",
-                "Trocar por antipsicótico em dose alta à noite"
+                "Todos devem parar nos fins de semana",
+                "Aumentam o risco de uso de drogas",
+                "O efeito fica só na escola",
+                "Também melhoram irritabilidade, autoestima e relações"
               ],
-              "resposta": "Ajustar as refeições e acompanhar",
-              "explicacao": "Dar o remédio após o café da manhã.",
-              "revisado": false
+              "resposta": "Também melhoram irritabilidade, autoestima e relações",
+              "explicacao": "Tratar o TDAH não aumenta o risco de dependência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "rpsiq-d10-l1-q2",

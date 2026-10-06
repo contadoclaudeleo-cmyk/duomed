@@ -46,11 +46,19 @@
             },
             {
               "id": "prev-u1-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "As conferências de saúde se reúnem a cada 4 anos, e os conselhos de saúde são permanentes e deliberativos.",
-              "resposta": true,
-              "explicacao": "Ambos existem nas três esferas de governo: municipal, estadual e federal.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher diabética mudou de bairro e a nova UBS não teve acesso ao seu histórico; na UPA, repetiram exames e recomeçaram o tratamento. Ela diz que os serviços não se comunicam.",
+              "enunciado": "Qual princípio do SUS foi violado?",
+              "opcoes": [
+                "Equidade",
+                "Universalidade",
+                "Integralidade",
+                "Regionalização"
+              ],
+              "resposta": "Integralidade",
+              "explicacao": "O cuidado foi fragmentado.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u1-l1-q4",
@@ -267,17 +275,18 @@
             {
               "id": "prev-u1-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Pesquisadores acompanham 2.000 fumantes e 2.000 não fumantes, todos sem câncer no início, durante 10 anos, e comparam a incidência de câncer de pulmão entre os grupos.",
-              "enunciado": "Qual é o tipo de estudo?",
+              "caso": "Gestantes foram classificadas no 1º trimestre como fumantes ou não e acompanhadas até o parto para comparar partos prematuros.",
+              "enunciado": "Qual é o desenho do estudo?",
               "opcoes": [
-                "Coorte prospectiva",
                 "Caso-controle",
                 "Transversal",
-                "Ensaio clínico randomizado"
+                "Ensaio clínico",
+                "Coorte"
               ],
-              "resposta": "Coorte prospectiva",
-              "explicacao": "Parte-se da exposição (fumar ou não) e acompanha-se no tempo. O pesquisador não decide quem fuma, então não é ensaio clínico.",
-              "revisado": false
+              "resposta": "Coorte",
+              "explicacao": "Parte da exposição e segue até o desfecho.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u1-l3-q4",
@@ -1545,17 +1554,19 @@
           "questoes": [
             {
               "id": "prev-u5-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando o médico pode quebrar o sigilo profissional?",
+              "tipo": "caso_clinico",
+              "caso": "Cirurgião prometeu abdome liso e sem cicatriz visível. A paciente assinou o consentimento, mas ficou com cicatrizes e flacidez e foi ao CRM.",
+              "enunciado": "Sobre a conduta do médico, o que é correto?",
               "opcoes": [
-                "Motivo justo, dever legal ou consentimento escrito",
-                "Quando a família pedir",
-                "Nas redes sociais",
-                "Sempre que a família pedir, mesmo sem o paciente concordar"
+                "Houve infração: é proibido prometer resultado",
+                "O consentimento assinado afasta a infração",
+                "A infração é a frustração da paciente",
+                "Só é infração se omitiu riscos"
               ],
-              "resposta": "Motivo justo, dever legal ou consentimento escrito",
-              "explicacao": "Exemplos de dever legal são as doenças de notificação compulsória.",
-              "revisado": false
+              "resposta": "Houve infração: é proibido prometer resultado",
+              "explicacao": "O Código de Ética veda garantir resultados.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u5-l2-q2",
@@ -1851,17 +1862,18 @@
             {
               "id": "prev-u6-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Um paciente atendido por vários especialistas recebe remédios que interagem entre si.",
-              "enunciado": "Qual atributo da atenção primária deve ser fortalecido?",
+              "caso": "O enfermeiro da ESF acolheu uma mulher com depressão, iniciou orientações e encaminhou ao médico, que iniciou antidepressivo; os dois combinaram acompanhamento conjunto.",
+              "enunciado": "Como avaliar a conduta?",
               "opcoes": [
-                "Coordenação do cuidado",
-                "Primeiro contato",
-                "Universalidade",
-                "Hierarquização apenas"
+                "O enfermeiro passou dos limites",
+                "Enfermeiro não pode atuar em saúde mental",
+                "O enfermeiro agiu dentro de suas competências",
+                "O médico não podia prescrever sem psiquiatra"
               ],
-              "resposta": "Coordenação do cuidado",
-              "explicacao": "O médico de família organiza e integra o cuidado.",
-              "revisado": false
+              "resposta": "O enfermeiro agiu dentro de suas competências",
+              "explicacao": "Depressão moderada é tratada na APS.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u6-l1-q6",
@@ -1954,32 +1966,34 @@
             },
             {
               "id": "prev-u6-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A demora ___ é uma ferramenta que consiste em aguardar e observar a evolução de sintomas inespecíficos, com segurança.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 62 anos com enfisema é acompanhada há 5 anos pela mesma equipe, recebe visitas, é encaminhada sem perder o vínculo e participa de grupos.",
+              "enunciado": "Quais atributos da APS aparecem?",
               "opcoes": [
-                "permitida",
-                "negada",
-                "infinita",
-                "obrigatória"
+                "Integralidade, regionalização e territorialização",
+                "Universalidade, longitudinalidade e equidade",
+                "Equidade, acesso e universalidade",
+                "Longitudinalidade, integralidade e coordenação"
               ],
-              "resposta": "permitida",
-              "explicacao": "Ela evita exames desnecessários em quadros que tendem a melhorar sozinhos.",
-              "revisado": false
+              "resposta": "Longitudinalidade, integralidade e coordenação",
+              "explicacao": "Vínculo ao longo do tempo, cuidado completo e articulação com a rede.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u6-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com dor de cabeça leve há 3 dias, sem sinais de alarme, pede tomografia.",
-              "enunciado": "Qual é uma conduta adequada na atenção primária?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são componentes do método clínico centrado na pessoa? I. Fortalecer a relação médico-paciente. II. Conhecer o contexto da pessoa. III. Construir um plano em comum. IV. Focar só em sinais e sintomas objetivos.",
               "opcoes": [
-                "Explicar, usar a demora permitida e reavaliar",
-                "Tomografia já",
-                "Neurologista urgente",
-                "Pedir tomografia de imediato e encaminhar ao neurologista com urgência"
+                "Apenas I e II",
+                "Apenas I, II e III",
+                "Apenas II e IV",
+                "I, II, III e IV"
               ],
-              "resposta": "Explicar, usar a demora permitida e reavaliar",
-              "explicacao": "Sinais de alarme mudariam a conduta, como febre, déficit neurológico ou dor súbita intensa.",
-              "revisado": false
+              "resposta": "Apenas I, II e III",
+              "explicacao": "Explora também a experiência da doença, não só sinais objetivos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u6-l2-q6",
@@ -2027,16 +2041,17 @@
             {
               "id": "prev-u6-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o papel da atenção primária nas redes de atenção à saúde?",
+              "enunciado": "Sobre a atenção domiciliar, avalie: I. Serve para quem tem limitação de mobilidade, buscando reabilitação. II. A internação domiciliar é para pacientes instáveis em ventilação avançada. III. O acompanhamento domiciliar é para quem precisa de cuidados periódicos ou paliativos. Quais estão corretas?",
               "opcoes": [
-                "Centro de comunicação e coordenação do cuidado",
-                "Só emergências",
-                "Só cirurgias",
-                "Apenas exames de alta complexidade e cirurgias eletivas"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Centro de comunicação e coordenação do cuidado",
-              "explicacao": "A rede é organizada de forma horizontal, com a atenção primária no centro.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "Paciente instável precisa de hospital.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u6-l3-q2",
@@ -2182,11 +2197,18 @@
             },
             {
               "id": "prev-u7-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A notificação deve ser feita já na suspeita, sem esperar confirmação.",
-              "resposta": true,
-              "explicacao": "Agiliza as medidas de controle.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual dupla é de notificação imediata, mesmo sem confirmação?",
+              "opcoes": [
+                "Malária em área endêmica e febre amarela silvestre",
+                "Óbito por arbovirose e zika em gestante",
+                "Hanseníase e leptospirose rural",
+                "Hanseníase virchowiana e influenza A"
+              ],
+              "resposta": "Óbito por arbovirose e zika em gestante",
+              "explicacao": "Malária em área endêmica é semanal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u7-l1-q4",
@@ -2870,17 +2892,19 @@
             },
             {
               "id": "prev-u9-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medida de associação é usada em estudos de caso-controle?",
+              "tipo": "caso_clinico",
+              "caso": "Em 12 meses, 10% dos usuários de um novo anti-inflamatório tiveram úlcera, contra 5% no grupo controle.",
+              "enunciado": "Qual é o número necessário para causar dano?",
               "opcoes": [
-                "Odds ratio",
-                "Risco relativo",
-                "Incidência",
-                "NNT"
+                "5",
+                "10",
+                "20",
+                "50"
               ],
-              "resposta": "Odds ratio",
-              "explicacao": "Não se mede incidência.",
-              "revisado": false
+              "resposta": "20",
+              "explicacao": "1 dividido por 0,05.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u9-l1-q3",
@@ -2963,28 +2987,19 @@
           "questoes": [
             {
               "id": "prev-u9-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada critério de Bradford Hill ao significado.",
-              "pares": [
-                {
-                  "esquerda": "Temporalidade",
-                  "direita": "Causa vem antes do efeito"
-                },
-                {
-                  "esquerda": "Força",
-                  "direita": "Associação grande"
-                },
-                {
-                  "esquerda": "Gradiente",
-                  "direita": "Mais exposição, mais doença"
-                },
-                {
-                  "esquerda": "Plausibilidade",
-                  "direita": "Mecanismo biológico"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Estudo transversal com 2.000 homens achou correlação entre vitamina D e testosterona (p < 0,01). Um médico concluiu que repor vitamina D aumenta a testosterona.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "A significância prova a causa",
+                "Estudo transversal não permite afirmar causa",
+                "O p prova o mecanismo",
+                "Todos com testosterona baixa devem repor"
               ],
-              "explicacao": "Critérios de causalidade.",
-              "revisado": false
+              "resposta": "Estudo transversal não permite afirmar causa",
+              "explicacao": "Exposição e desfecho foram medidos ao mesmo tempo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u9-l2-q2",
@@ -3452,16 +3467,17 @@
             {
               "id": "prev-u10-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual lei trata da participação da comunidade no SUS?",
+              "enunciado": "Sobre os Conselhos de Saúde, avalie: I. São deliberativos e permanentes em cada esfera. II. Garantem paridade entre usuários e os demais segmentos. III. Aprovam o Plano Municipal de Saúde. Quais estão corretas?",
               "opcoes": [
-                "Lei 8.142 de 1990",
-                "Lei 8.080",
-                "Constituição só",
-                "Lei Complementar 141 de 2012"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Lei 8.142 de 1990",
-              "explicacao": "Também transferências.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Usuários ocupam metade das vagas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-u10-l3-q3",
@@ -7766,17 +7782,18 @@
             {
               "id": "prev-d8-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem probabilidade pré-teste de 30% e faz exame com razão de verossimilhança positiva de 15, que vem positivo.",
-              "enunciado": "O que acontece com a probabilidade?",
+              "caso": "Adolescente com suspeita de meningite bacteriana, probabilidade pré-teste de 40%. Um teste com razão de verossimilhança negativa de 0,01 veio negativo.",
+              "enunciado": "Qual é a interpretação?",
               "opcoes": [
-                "Sobe muito",
-                "Não muda",
-                "Cai muito",
-                "Sobe pouco, sem valor clínico"
+                "Tratar mesmo assim pela gravidade",
+                "O teste negativo reduz muito a probabilidade",
+                "Repetir o teste, pois a sensibilidade é baixa",
+                "O teste é pouco útil com suspeita alta"
               ],
-              "resposta": "Sobe muito",
-              "explicacao": "RV positiva acima de 10 muda muito a probabilidade e quase confirma.",
-              "revisado": false
+              "resposta": "O teste negativo reduz muito a probabilidade",
+              "explicacao": "A probabilidade cai para menos de 1%.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-d8-l1-q4",
@@ -8010,18 +8027,18 @@
             },
             {
               "id": "prev-d8-l3-q2",
-              "tipo": "caso_clinico",
-              "caso": "Em 1.000 pessoas com prevalência de 10%, sensibilidade de 80% e especificidade de 90%.",
-              "enunciado": "Quantos verdadeiros positivos?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um teste de hepatite B tem VPP de 40% na população geral e de 85% em grupos de risco, com sensibilidade e especificidade iguais. Por quê?",
               "opcoes": [
-                "80",
-                "100",
-                "90",
-                "800"
+                "O teste fica mais acurado nos grupos de risco",
+                "Grupos de risco têm mais falsos negativos",
+                "O valor preditivo depende da prevalência",
+                "Viés de verificação nos grupos de risco"
               ],
-              "resposta": "80",
-              "explicacao": "80% de 100 doentes.",
-              "revisado": false
+              "resposta": "O valor preditivo depende da prevalência",
+              "explicacao": "Mais prevalência, maior VPP.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "prev-d8-l3-q3",

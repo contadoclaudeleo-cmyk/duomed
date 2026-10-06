@@ -137,16 +137,17 @@
             {
               "id": "ped-u1-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Até que idade é recomendado o aleitamento materno exclusivo?",
+              "enunciado": "Quais são sinais de boa pega? I. Cabeça e tronco alinhados. II. Bochechas encovadas. III. Lábio inferior virado para fora. IV. Bochechas tocando o seio. V. Mais aréola visível acima da boca.",
               "opcoes": [
-                "6 meses",
-                "4 meses",
-                "12 meses",
-                "2 anos"
+                "Apenas I, II e IV",
+                "Apenas I, III e V",
+                "Apenas III, IV e V",
+                "I, II, III, IV e V"
               ],
-              "resposta": "6 meses",
-              "explicacao": "Depois dos 6 meses, introduz-se a alimentação complementar, mantendo o aleitamento até 2 anos ou mais.",
-              "revisado": false
+              "resposta": "Apenas I, III e V",
+              "explicacao": "Bochecha encovada indica sucção errada.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u1-l2-q2",
@@ -744,28 +745,18 @@
           "questoes": [
             {
               "id": "ped-u3-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença ao seu achado característico.",
-              "pares": [
-                {
-                  "esquerda": "Sarampo",
-                  "direita": "Manchas de Koplik na mucosa da boca"
-                },
-                {
-                  "esquerda": "Escarlatina",
-                  "direita": "Pele áspera e língua em framboesa"
-                },
-                {
-                  "esquerda": "Eritema infeccioso",
-                  "direita": "Bochechas vermelhas como se tivessem levado tapas"
-                },
-                {
-                  "esquerda": "Exantema súbito",
-                  "direita": "Febre alta que some quando aparecem as manchas"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o sarampo, avalie: I. O tratamento inclui vitamina A e antibiótico contra o vírus. II. A resposta imune é essencial para eliminar o vírus. III. A IgM não aparece em reexposição ou revacinação e marca a infecção primária. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "Reconhecer esses sinais evita exames desnecessários.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "Antibiótico não age em vírus; só se houver infecção bacteriana.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u3-l1-q2",
@@ -978,17 +969,19 @@
           "questoes": [
             {
               "id": "ped-u3-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o agente mais comum de infecção urinária em crianças?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 9 meses com segunda infecção urinária febril. Uretrocistografia: refluxo vesicoureteral grau II nos dois lados.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Escherichia coli",
-                "Proteus",
-                "Enterococo",
-                "Staphylococcus saprophyticus"
+                "Profilaxia 3 vezes por semana",
+                "Uretrocistografias periódicas",
+                "Cirurgia do refluxo",
+                "Suspender a profilaxia"
               ],
-              "resposta": "Escherichia coli",
-              "explicacao": "Em meninos não circuncidados pequenos, o Proteus também é comum.",
-              "revisado": false
+              "resposta": "Suspender a profilaxia",
+              "explicacao": "Refluxo de baixo grau não se beneficia de profilaxia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u3-l3-q2",
@@ -1723,28 +1716,19 @@
             },
             {
               "id": "ped-u5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intoxicação ao seu antídoto.",
-              "pares": [
-                {
-                  "esquerda": "Opioides",
-                  "direita": "Naloxona"
-                },
-                {
-                  "esquerda": "Benzodiazepínicos",
-                  "direita": "Flumazenil"
-                },
-                {
-                  "esquerda": "Ferro",
-                  "direita": "Deferoxamina"
-                },
-                {
-                  "esquerda": "Organofosforados",
-                  "direita": "Atropina"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 13 anos tomou 20 comprimidos de diazepam. Chega respirando bem, hipotenso e com Glasgow 6.",
+              "enunciado": "O que é mais eficaz para reverter o coma?",
+              "opcoes": [
+                "Intubar",
+                "Soro hipertônico",
+                "Flumazenil venoso",
+                "Naloxona venosa"
               ],
-              "explicacao": "O antídoto não substitui o suporte de via aérea, respiração e circulação.",
-              "revisado": false
+              "resposta": "Flumazenil venoso",
+              "explicacao": "Cuidado: em usuário crônico ou com tricíclico pode causar convulsão.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u5-l3-q3",
@@ -2189,28 +2173,19 @@
           "questoes": [
             {
               "id": "ped-u7-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada plano de hidratação da OMS ao quadro.",
-              "pares": [
-                {
-                  "esquerda": "Plano A",
-                  "direita": "Sem desidratação, tratar em casa"
-                },
-                {
-                  "esquerda": "Plano B",
-                  "direita": "Desidratação, soro oral na unidade"
-                },
-                {
-                  "esquerda": "Plano C",
-                  "direita": "Desidratação grave, soro na veia"
-                },
-                {
-                  "esquerda": "Fase de manutenção",
-                  "direita": "Repor perdas contínuas"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Escolar de 16 kg com disenteria e febre está desidratado, mas sem taquicardia, sonolência ou enchimento capilar lento.",
+              "enunciado": "Onde e com o que reidratar?",
+              "opcoes": [
+                "Na unidade de saúde, com soro de reidratação oral",
+                "Em casa, com soro de reidratação oral",
+                "Na UTI, com ringer venoso",
+                "Na emergência, com soro fisiológico venoso"
               ],
-              "explicacao": "Classificação do Ministério da Saúde.",
-              "revisado": false
+              "resposta": "Na unidade de saúde, com soro de reidratação oral",
+              "explicacao": "É o plano B: reidratação oral supervisionada.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u7-l1-q2",
@@ -2323,11 +2298,19 @@
             },
             {
               "id": "ped-u7-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O refluxo fisiológico do lactente costuma piorar depois de 1 ano de idade.",
-              "resposta": false,
-              "explicacao": "Falso. Ele costuma melhorar até 12 a 18 meses.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina de 5 anos tem dor ao evacuar e fezes enormes há 6 meses, massa na fossa ilíaca esquerda e calcinha suja.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Probióticos",
+                "Ultrassom",
+                "Laxante osmótico",
+                "Internar para enemas"
+              ],
+              "resposta": "Laxante osmótico",
+              "explicacao": "Constipação funcional com escape; o polietilenoglicol também desimpacta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u7-l2-q3",
@@ -2660,42 +2643,34 @@
           "questoes": [
             {
               "id": "ped-u8-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada síndrome epiléptica à característica.",
-              "pares": [
-                {
-                  "esquerda": "Síndrome de West",
-                  "direita": "Espasmos e hipsarritmia"
-                },
-                {
-                  "esquerda": "Ausência infantil",
-                  "direita": "Olhar parado e ponta-onda de 3 Hz"
-                },
-                {
-                  "esquerda": "Rolândica",
-                  "direita": "Crises noturnas na face, benigna"
-                },
-                {
-                  "esquerda": "Lennox-Gastaut",
-                  "direita": "Várias crises e deficiência intelectual"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 6 meses com espasmos rápidos do tronco e flexão de braços e pernas, ao adormecer ou acordar. EEG com hipsarritmia.",
+              "enunciado": "Qual é a síndrome?",
+              "opcoes": [
+                "West",
+                "Ohtahara",
+                "Epilepsia neonatal familiar",
+                "Dravet"
               ],
-              "explicacao": "Síndromes de prova.",
-              "revisado": false
+              "resposta": "West",
+              "explicacao": "Espasmos, hipsarritmia e atraso formam a tríade.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u8-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da síndrome de West?",
+              "enunciado": "Quais são os remédios de primeira linha para crise de ausência típica?",
               "opcoes": [
-                "ACTH ou vigabatrina",
-                "Fenitoína",
-                "Carbamazepina",
-                "Carbamazepina em dose alta"
+                "Etossuximida, valproato e lamotrigina",
+                "Etossuximida, valproato e oxcarbazepina",
+                "Etossuximida, oxcarbazepina e lamotrigina",
+                "Valproato, lamotrigina e oxcarbazepina"
               ],
-              "resposta": "ACTH ou vigabatrina",
-              "explicacao": "Urgência neurológica.",
-              "revisado": false
+              "resposta": "Etossuximida, valproato e lamotrigina",
+              "explicacao": "Oxcarbazepina e carbamazepina pioram a ausência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u8-l2-q3",
@@ -3254,17 +3229,19 @@
           "questoes": [
             {
               "id": "ped-u10-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual vírus causa a maioria das bronquiolites do lactente no inverno?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 8 meses com coriza e febre há 3 dias, respiração rápida, saturação de 89% e sibilos difusos, sem sinais de choque.",
+              "enunciado": "Qual é o manejo inicial?",
               "opcoes": [
-                "Vírus sincicial respiratório",
-                "Influenza",
-                "Adenovírus",
-                "Bactérias como pneumococo e hemófilo"
+                "Cateter de oxigênio com 100% de oxigênio",
+                "Ampicilina venosa",
+                "Salbutamol com corticoide",
+                "Lavagem nasal com soro e oxigênio"
               ],
-              "resposta": "Vírus sincicial respiratório",
-              "explicacao": "Mais no inverno.",
-              "revisado": false
+              "resposta": "Lavagem nasal com soro e oxigênio",
+              "explicacao": "Bronquiolite: suporte; broncodilatador e corticoide não ajudam.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u10-l1-q2",
@@ -3615,28 +3592,18 @@
           "questoes": [
             {
               "id": "ped-u11-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tema do HEEADSSS ao assunto.",
-              "pares": [
-                {
-                  "esquerda": "Home",
-                  "direita": "Casa e família"
-                },
-                {
-                  "esquerda": "Education",
-                  "direita": "Escola"
-                },
-                {
-                  "esquerda": "Drugs",
-                  "direita": "Drogas"
-                },
-                {
-                  "esquerda": "Suicide",
-                  "direita": "Humor e risco de suicídio"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Na consulta do adolescente, qual situação exige quebrar o sigilo?",
+              "opcoes": [
+                "Menino de 13 anos com dúvida de identidade de gênero",
+                "Menino de 15 anos com uso de álcool cada vez maior",
+                "Menina de 13 anos começando pílula",
+                "Menina de 15 anos iniciando vida sexual"
               ],
-              "explicacao": "Roteiro de entrevista.",
-              "revisado": false
+              "resposta": "Menino de 15 anos com uso de álcool cada vez maior",
+              "explicacao": "Quebra-se quando há risco à vida ou à saúde.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u11-l1-q2",
@@ -4094,28 +4061,19 @@
           "questoes": [
             {
               "id": "ped-u12-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à conduta no recém-nascido.",
-              "pares": [
-                {
-                  "esquerda": "Mãe com HIV",
-                  "direita": "Antirretroviral profilático"
-                },
-                {
-                  "esquerda": "Mãe com sífilis não tratada",
-                  "direita": "Investigar e tratar"
-                },
-                {
-                  "esquerda": "Mãe com hepatite B",
-                  "direita": "Vacina e imunoglobulina"
-                },
-                {
-                  "esquerda": "Mãe com tuberculose ativa",
-                  "direita": "Avaliar o bebê e fazer profilaxia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 8 dias trata sífilis congênita com penicilina cristalina. VDRL no líquor não reagente e ossos normais. Perdeu o acesso venoso.",
+              "enunciado": "Como terminar o tratamento?",
+              "opcoes": [
+                "Penicilina benzatina em dose única",
+                "Penicilina procaína até completar 10 dias",
+                "Penicilina procaína até 14 dias",
+                "Acesso central e cristalina até 10 dias"
               ],
-              "explicacao": "Cuidados ao nascer.",
-              "revisado": false
+              "resposta": "Penicilina procaína até completar 10 dias",
+              "explicacao": "O tratamento total é de 10 dias.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-u12-l2-q2",
@@ -7777,17 +7735,18 @@
             {
               "id": "ped-d8-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança convulsionando há 7 minutos sem acesso venoso.",
-              "enunciado": "Qual é a primeira medida?",
+              "caso": "Menino de 7 anos foi achado de madrugada babando, sem conseguir falar, com dormência na boca. EEG com pontas centrotemporais que pioram no sono.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Midazolam intranasal ou bucal",
-                "Fenitoína oral",
-                "Aguardar",
-                "Fenitoína oral e aguardar a crise passar"
+                "Terror noturno",
+                "Epilepsia rolândica",
+                "Landau-Kleffner",
+                "Isquemia transitória"
               ],
-              "resposta": "Midazolam intranasal ou bucal",
-              "explicacao": "Benzodiazepínico.",
-              "revisado": false
+              "resposta": "Epilepsia rolândica",
+              "explicacao": "Benigna e costuma sumir na adolescência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-d8-l1-q2",
@@ -8065,18 +8024,18 @@
             },
             {
               "id": "ped-d8-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 6 anos com vômitos matinais, dor de cabeça e marcha instável. Ressonância com tumor na fossa posterior.",
-              "enunciado": "Qual é o tumor maligno mais provável?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Criança de 4 anos em coma com postura de decorticação. Avalie: I. Braços em flexão e pernas em extensão. II. Indica lesão acima do tentório. III. Pode indicar herniação transtentorial.",
               "opcoes": [
-                "Meduloblastoma",
-                "Glioblastoma",
-                "Meningioma",
-                "Craniofaringioma"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Meduloblastoma",
-              "explicacao": "O meduloblastoma é o tumor cerebral maligno mais comum em crianças.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "A descerebração indica lesão mais baixa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-d8-l3-q4",
@@ -8978,18 +8937,18 @@
             },
             {
               "id": "ped-d11-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Criança em tratamento de cetoacidose fica sonolenta, com dor de cabeça e bradicardia.",
-              "enunciado": "Qual é a hipótese e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na cetoacidose da criança, o edema cerebral costuma aparecer como",
               "opcoes": [
-                "Edema cerebral; manitol ou salina hipertônica",
-                "Hipoglicemia; glicose",
-                "Melhora",
-                "Infecção do sistema nervoso; antibiótico e punção lombar"
+                "Efeito da insulina contínua",
+                "Efeito do volume dado com cautela",
+                "Efeito do potássio em excesso",
+                "Piora da consciência nas primeiras 12 horas"
               ],
-              "resposta": "Edema cerebral; manitol ou salina hipertônica",
-              "explicacao": "Complicação grave.",
-              "revisado": false
+              "resposta": "Piora da consciência nas primeiras 12 horas",
+              "explicacao": "Cefaleia, bradicardia e queda da consciência são sinais de alerta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-d11-l1-q3",
@@ -9092,18 +9051,18 @@
           "questoes": [
             {
               "id": "ped-d11-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascida com genitália ambígua, vômitos e sódio baixo no 10º dia.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na crise adrenal do lactente com sódio baixo e potássio alto, qual é a causa mais provável de parada cardíaca?",
               "opcoes": [
-                "HAC perdedora de sal",
-                "Estenose de piloro",
-                "Normal",
-                "Sepse neonatal tardia"
+                "Desidratação dos neurônios pela hiponatremia",
+                "Edema cerebral pela hipercalemia",
+                "Fibrilação ventricular pela hipercalemia",
+                "Hipóxia pela curva da hemoglobina"
               ],
-              "resposta": "HAC perdedora de sal",
-              "explicacao": "Hidrocortisona e soro.",
-              "revisado": false
+              "resposta": "Fibrilação ventricular pela hipercalemia",
+              "explicacao": "O potássio alto causa arritmias fatais.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-d11-l2-q2",
@@ -10012,17 +9971,18 @@
             {
               "id": "ped-d13-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com microcefalia, calcificações periventriculares e falha no teste da orelhinha.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Gestante de 39 semanas em trabalho de parto tem triagem positiva para HTLV no pré-natal.",
+              "enunciado": "Qual é a medida mais eficaz para proteger o bebê?",
               "opcoes": [
-                "Citomegalovírus congênito",
-                "Toxoplasmose",
-                "Rubéola",
-                "Achado normal sem infecção"
+                "Cesárea",
+                "Clampeamento imediato do cordão",
+                "Zidovudina para o bebê",
+                "Contraindicar a amamentação"
               ],
-              "resposta": "Citomegalovírus congênito",
-              "explicacao": "Valganciclovir em casos sintomáticos.",
-              "revisado": false
+              "resposta": "Contraindicar a amamentação",
+              "explicacao": "O HTLV passa principalmente pelo leite.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "ped-d13-l3-q2",

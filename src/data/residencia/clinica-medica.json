@@ -47,18 +47,18 @@
             },
             {
               "id": "cm-u1-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 58 anos, hipertenso sem tratamento, chega com PA 220/130 mmHg e dor torácica súbita e lancinante que irradia para o dorso. Os pulsos dos membros superiores estão assimétricos.",
-              "enunciado": "Qual é a hipótese diagnóstica principal?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a medida da pressão, avalie: I. Manguito pequeno subestima a pressão. II. A sistólica e a diastólica são o primeiro e o quinto sons de Korotkoff. III. Em artérias mais distais, a sistólica tende a subir e a diastólica a cair. Quais estão corretas?",
               "opcoes": [
-                "Dissecção aguda de aorta",
-                "Urgência hipertensiva",
-                "Pseudocrise hipertensiva",
-                "Pericardite aguda"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Dissecção aguda de aorta",
-              "explicacao": "É uma emergência hipertensiva. A conduta inclui betabloqueador venoso para baixar rapidamente a frequência cardíaca e a PA, e avaliação cirúrgica com angiotomografia.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "Manguito pequeno superestima a pressão.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u1-l1-q4",
@@ -2895,16 +2895,17 @@
             {
               "id": "cm-u13-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o achado da sarcoidose no raio X?",
+              "enunciado": "Qual doença intersticial costuma responder bem só ao corticoide?",
               "opcoes": [
-                "Linfonodos hilares dos dois lados",
-                "Cavidade",
-                "Derrame grande",
-                "Cavidade no ápice com derrame grande"
+                "Pneumoconiose",
+                "Asbestose",
+                "Sarcoidose",
+                "Fibrose por radiação"
               ],
-              "resposta": "Linfonodos hilares dos dois lados",
-              "explicacao": "Granulomas sem necrose.",
-              "revisado": false
+              "resposta": "Sarcoidose",
+              "explicacao": "As fibroses estabelecidas respondem mal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u13-l2-q2",
@@ -3619,16 +3620,17 @@
             {
               "id": "cm-u21-l5-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Como se calcula a carga tabágica?",
+              "enunciado": "Fumante com Fagerström 7 quer parar nas próximas semanas. Avalie: I. Iniciar bupropiona no dia em que parar de fumar. II. Abordagem comportamental com remédio é o mais eficaz. III. Clonidina e nortriptilina são segunda linha, com mais efeitos adversos. Quais estão corretas?",
               "opcoes": [
-                "Maços por dia vezes anos de fumo",
-                "Cigarros por dia somados aos anos",
-                "Anos de fumo divididos pela idade atual",
-                "Número de tentativas de parar de fumar"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Maços por dia vezes anos de fumo",
-              "explicacao": "É o maço-ano.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "A bupropiona começa cerca de 1 semana antes da data de parada.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u21-l5-q2",
@@ -4461,28 +4463,18 @@
           "questoes": [
             {
               "id": "cm-u4-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de lesão renal aguda a um exemplo.",
-              "pares": [
-                {
-                  "esquerda": "Pré-renal",
-                  "direita": "Desidratação por diarreia"
-                },
-                {
-                  "esquerda": "Intrínseca tubular",
-                  "direita": "Necrose tubular aguda após choque"
-                },
-                {
-                  "esquerda": "Pós-renal",
-                  "direita": "Retenção urinária por hiperplasia de próstata"
-                },
-                {
-                  "esquerda": "Intersticial",
-                  "direita": "Reação a antibiótico ou anti-inflamatório"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a crise renal da esclerodermia, qual afirmação é correta?",
+              "opcoes": [
+                "O anticentrômero indica alto risco",
+                "O tratamento de escolha é IECA",
+                "Sempre começa com crise hipertensiva",
+                "A urina mostra proteinúria maciça e sangue visível"
               ],
-              "explicacao": "Identificar o tipo orienta o tratamento.",
-              "revisado": false
+              "resposta": "O tratamento de escolha é IECA",
+              "explicacao": "O risco é maior com anti-RNA polimerase III e uso de corticoide.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u4-l1-q2",
@@ -5425,16 +5417,17 @@
             {
               "id": "cm-u18-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o quadro típico do hiperaldosteronismo primário?",
+              "enunciado": "Sobre o feocromocitoma, avalie: I. Afeta homens e mulheres igualmente, mais entre 30 e 50 anos. II. Anti-hipertensivos e antidiabéticos orais costumam dar falso positivo nas metanefrinas. III. Após o tratamento, as metanefrinas devem ser dosadas todo ano por toda a vida. Quais estão corretas?",
               "opcoes": [
-                "Hipertensão com potássio baixo",
-                "Hipotensão e potássio alto",
-                "Hipoglicemia",
-                "Pele escura e pressão baixa em pé"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Hipertensão com potássio baixo",
-              "explicacao": "Mas o potássio pode ser normal.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "Pode voltar anos depois, por isso o seguimento é longo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u18-l3-q2",
@@ -5916,24 +5909,18 @@
             },
             {
               "id": "cm-u6-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada item do qSOFA ao seu critério.",
-              "pares": [
-                {
-                  "esquerda": "Frequência respiratória",
-                  "direita": "22 ou mais"
-                },
-                {
-                  "esquerda": "Pressão sistólica",
-                  "direita": "100 mmHg ou menos"
-                },
-                {
-                  "esquerda": "Estado mental",
-                  "direita": "Alterado"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes NÃO contribui para a falência de órgãos na sepse?",
+              "opcoes": [
+                "Inflamação desregulada com dano às células",
+                "Lesão do endotélio da microcirculação",
+                "Falha das mitocôndrias por estresse oxidativo",
+                "Queda da produção de óxido nítrico"
               ],
-              "explicacao": "O qSOFA sinaliza maior risco, mas não deve ser usado sozinho para diagnosticar sepse.",
-              "revisado": false
+              "resposta": "Queda da produção de óxido nítrico",
+              "explicacao": "Na sepse o óxido nítrico aumenta e dilata os vasos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u6-l1-q3",
@@ -6497,28 +6484,18 @@
           "questoes": [
             {
               "id": "cm-u12-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada infecção ao antibiótico comum.",
-              "pares": [
-                {
-                  "esquerda": "Cistite não complicada",
-                  "direita": "Nitrofurantoína ou fosfomicina"
-                },
-                {
-                  "esquerda": "Erisipela",
-                  "direita": "Penicilina"
-                },
-                {
-                  "esquerda": "Pielonefrite",
-                  "direita": "Ceftriaxona ou quinolona"
-                },
-                {
-                  "esquerda": "Celulite com abscesso",
-                  "direita": "Drenagem e antibiótico"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a influenza A, qual afirmação é correta?",
+              "opcoes": [
+                "Sua virulência é previsível e não causa pandemias",
+                "O isolamento da covid não mudou sua circulação",
+                "O genoma segmentado e os reservatórios em aves e mamíferos favorecem pandemias",
+                "A vacinação em massa não previne a doença"
               ],
-              "explicacao": "Seguir protocolos locais.",
-              "revisado": false
+              "resposta": "O genoma segmentado e os reservatórios em aves e mamíferos favorecem pandemias",
+              "explicacao": "O rearranjo de genes cria cepas novas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u12-l3-q2",
@@ -7002,16 +6979,17 @@
             {
               "id": "cm-u8-l1-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma estoque baixo de ferro?",
+              "enunciado": "Sobre reticulócitos na anemia, avalie: I. Reticulócitos altos, corrigidos, sugerem sangramento ou hemólise. II. Falta de ferro ou folato pode impedir a resposta mesmo com sangramento. III. O percentual de reticulócitos dispensa correção pelo grau de anemia. Quais estão corretas?",
               "opcoes": [
-                "Ferritina baixa",
-                "Ferro sérico alto",
-                "VCM alto",
-                "Reticulócitos altos"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Ferritina baixa",
-              "explicacao": "A ferritina sobe na inflamação.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "Corrige-se pelo hematócrito para não superestimar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u8-l1-q3",
@@ -7340,16 +7318,17 @@
             {
               "id": "cm-u9-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o primeiro exame no paciente com suspeita de AVC?",
+              "enunciado": "Sobre o AVC, qual afirmação é correta?",
               "opcoes": [
-                "Tomografia de crânio sem contraste",
-                "Ressonância com contraste",
-                "Punção lombar",
-                "Eletroencefalograma e punção lombar"
+                "Pressão acima de 185 x 110 apesar do tratamento não impede trombólise",
+                "O AAS é o antiplaquetário com eficácia comprovada na fase aguda",
+                "Anticoagulação de rotina trata o AVC aterotrombótico",
+                "AAS com clopidogrel após AVC menor não ajuda"
               ],
-              "resposta": "Tomografia de crânio sem contraste",
-              "explicacao": "Exclui sangramento rapidamente.",
-              "revisado": false
+              "resposta": "O AAS é o antiplaquetário com eficácia comprovada na fase aguda",
+              "explicacao": "A dupla por 21 dias após AVC menor reduz recorrência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u9-l1-q2",
@@ -7458,27 +7437,24 @@
             {
               "id": "cm-u9-l2-q1",
               "tipo": "associar_pares",
-              "enunciado": "Associe cada cefaleia primária ao padrão clínico descrito.",
+              "enunciado": "Associe cada cefaleia à sua descrição.",
               "pares": [
                 {
-                  "esquerda": "Enxaqueca",
-                  "direita": "Latejante, de um lado, com náusea e fotofobia"
-                },
-                {
                   "esquerda": "Tensional",
-                  "direita": "Em aperto dos dois lados"
+                  "direita": "Sem vômito, latejamento ou piora ao se mexer"
                 },
                 {
                   "esquerda": "Em salvas",
-                  "direita": "Dor no olho com lacrimejamento"
+                  "direita": "Dor atrás do olho, excruciante e explosiva"
                 },
                 {
-                  "esquerda": "Por uso excessivo de remédio",
-                  "direita": "Diária em quem usa muito analgésico"
+                  "esquerda": "Migrânea",
+                  "direita": "Crises de um lado, latejantes, de 4 a 72 horas"
                 }
               ],
-              "explicacao": "O padrão orienta o tratamento.",
-              "revisado": false
+              "explicacao": "A salva vem com lacrimejamento e coriza do mesmo lado.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u9-l2-q2",
@@ -8174,11 +8150,29 @@
             },
             {
               "id": "cm-u15-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Benzodiazepínicos aumentam o risco de quedas em idosos.",
-              "resposta": true,
-              "explicacao": "Também antipsicóticos e anti-hipertensivos.",
-              "revisado": false
+              "tipo": "associar_pares",
+              "enunciado": "Associe o remédio ao nutriente que ele prejudica.",
+              "pares": [
+                {
+                  "esquerda": "Penicilamina",
+                  "direita": "Zinco"
+                },
+                {
+                  "esquerda": "Omeprazol",
+                  "direita": "Vitamina B12"
+                },
+                {
+                  "esquerda": "Colestiramina",
+                  "direita": "Vitamina D"
+                },
+                {
+                  "esquerda": "Isoniazida",
+                  "direita": "Piridoxina"
+                }
+              ],
+              "explicacao": "Isoniazida exige vitamina B6 para evitar neuropatia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-u15-l2-q3",
@@ -13497,18 +13491,18 @@
           "questoes": [
             {
               "id": "cm-d4-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com câncer de mama tem cálcio de 15 mg/dL, confusão e insuficiência renal leve.",
-              "enunciado": "Qual é a sequência de tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o diabetes insípido, qual afirmação é correta?",
               "opcoes": [
-                "Soro, calcitonina e bisfosfonato (ou denosumabe)",
-                "Furosemida antes do soro",
-                "Cálcio oral",
-                "Furosemida antes de hidratar e restrição de líquidos"
+                "O nefrogênico vem da falta de vasopressina do hipotálamo",
+                "A polidipsia primária é falta de vasopressina",
+                "Ácido úrico acima de 5 favorece diabetes insípido em vez de polidipsia",
+                "O nefrogênico é comum na isquemia cerebral grave"
               ],
-              "resposta": "Soro, calcitonina e bisfosfonato (ou denosumabe)",
-              "explicacao": "O denosumabe é opção quando a função renal limita o bisfosfonato.",
-              "revisado": false
+              "resposta": "Ácido úrico acima de 5 favorece diabetes insípido em vez de polidipsia",
+              "explicacao": "No nefrogênico o rim não responde à vasopressina.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-d4-l3-q2",
@@ -14814,18 +14808,18 @@
           "questoes": [
             {
               "id": "cm-d11-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com HBsAg positivo, HBeAg negativo, carga viral alta e transaminases elevadas.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença hepática gordurosa não alcoólica, qual afirmação é correta?",
               "opcoes": [
-                "Tratar com tenofovir ou entecavir",
-                "Observar",
-                "Interferon sempre",
-                "Interferon sempre, por um ano, como única opção"
+                "ALT maior que AST tem valor prognóstico",
+                "Ferritina pouco alta, FAN e antimúsculo liso positivos são comuns",
+                "A cirrose por esteato-hepatite não dá câncer",
+                "Hepatite B ou C não interferem no diagnóstico"
               ],
-              "resposta": "Tratar com tenofovir ou entecavir",
-              "explicacao": "Hepatite B crônica ativa.",
-              "revisado": false
+              "resposta": "Ferritina pouco alta, FAN e antimúsculo liso positivos são comuns",
+              "explicacao": "Precisa excluir outras causas, como vírus e álcool.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-d11-l1-q2",
@@ -16132,28 +16126,18 @@
           "questoes": [
             {
               "id": "cm-d7-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada vasculite ao achado típico.",
-              "pares": [
-                {
-                  "esquerda": "Arterite de células gigantes",
-                  "direita": "Idoso com cefaleia e claudicação da mandíbula"
-                },
-                {
-                  "esquerda": "Takayasu",
-                  "direita": "Mulher jovem sem pulso nos braços"
-                },
-                {
-                  "esquerda": "Granulomatose com poliangiite",
-                  "direita": "Sinusite, pulmão e rim com c-ANCA"
-                },
-                {
-                  "esquerda": "Púrpura de Henoch-Schönlein",
-                  "direita": "Púrpura palpável e dor abdominal"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as crioglobulinemias, avalie: I. A tipo I é monoclonal e ligada a mieloma. II. Os tipos II e III podem causar vasculite de pequenos vasos. III. A hepatite B causa 80% das crioglobulinemias mistas. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "O tamanho do vaso orienta.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "A grande causa é a hepatite C.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-d7-l2-q2",
@@ -18373,17 +18357,18 @@
             {
               "id": "cm-d17-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com psoríase extensa (mais de 10% do corpo) sem melhora com cremes.",
-              "enunciado": "Qual é o próximo passo?",
+              "caso": "Gestante de 12 semanas tem várias pápulas e pústulas pouco dolorosas com cravos na vulva e no períneo, sem abscesso ou fístula.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
               "opcoes": [
-                "Fototerapia ou remédio sistêmico",
-                "Mais corticoide tópico",
-                "Antibiótico",
-                "Corticoide oral em dose alta por meses"
+                "Acne vulgar; antibiótico oral",
+                "Acne vulgar; antibiótico tópico",
+                "Hidradenite supurativa; antibiótico oral",
+                "Hidradenite supurativa; antibiótico tópico"
               ],
-              "resposta": "Fototerapia ou remédio sistêmico",
-              "explicacao": "Metotrexato é uma opção.",
-              "revisado": false
+              "resposta": "Hidradenite supurativa; antibiótico tópico",
+              "explicacao": "Forma leve se trata com clindamicina tópica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cm-d17-l1-q2",
