@@ -139,7 +139,7 @@
                 "Teste com sensibilidade de 100%",
                 "Teste com especificidade de 100%",
                 "Referência para avaliar outros testes",
-                "Teste com acurácia de 100%"
+                "Teste com acurácia perfeita, de 100%"
               ],
               "resposta": "Referência para avaliar outros testes",
               "explicacao": "Nenhum teste é perfeito; o padrão-ouro é o melhor disponível.",
@@ -247,12 +247,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "No estudo de caso-controle, qual é o maior cuidado para evitar viés de seleção?",
               "opcoes": [
-                "Controles que representem a população de onde vieram os casos",
+                "Controles da mesma população dos casos",
                 "Controles de população com muita doença",
                 "Usar um só critério de exposição",
-                "Excluir quem já foi exposto"
+                "Excluir todos que já foram expostos antes"
               ],
-              "resposta": "Controles que representem a população de onde vieram os casos",
+              "resposta": "Controles da mesma população dos casos",
               "explicacao": "Controles devem ser comparáveis aos casos.",
               "revisado": false,
               "fonte": "AMRIGS 2025"
@@ -262,12 +262,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que diferencia a coorte histórica do caso-controle?",
               "opcoes": [
-                "A coorte histórica estuda melhor doenças raras",
+                "A coorte histórica estuda melhor as doenças raras",
                 "A coorte calcula odds ratio e o caso-controle, risco relativo",
-                "A coorte parte da exposição já registrada; o caso-controle parte do desfecho",
-                "Os dois escolhem participantes do mesmo jeito"
+                "A coorte parte da exposição; o caso-controle, do desfecho",
+                "Os dois escolhem os participantes da mesma forma"
               ],
-              "resposta": "A coorte parte da exposição já registrada; o caso-controle parte do desfecho",
+              "resposta": "A coorte parte da exposição; o caso-controle, do desfecho",
               "explicacao": "O caso-controle é melhor para doenças raras e calcula odds ratio.",
               "revisado": false,
               "fonte": "AMRIGS 2025"
@@ -375,11 +375,11 @@
               "enunciado": "Por que padronizar por idade a mortalidade por covid entre raças em São Paulo?",
               "opcoes": [
                 "Pela menor expectativa de vida dos homens",
-                "Pela menor mortalidade das mulheres",
-                "Porque as populações têm proporções diferentes de idosos",
-                "Para corrigir desigualdades sociais"
+                "Pela menor mortalidade das mulheres na covid",
+                "Proporções diferentes de idosos",
+                "Para corrigir as desigualdades sociais no cálculo"
               ],
-              "resposta": "Porque as populações têm proporções diferentes de idosos",
+              "resposta": "Proporções diferentes de idosos",
               "explicacao": "A população branca é mais envelhecida.",
               "revisado": false,
               "fonte": "USP-SP 2026"
@@ -864,12 +864,12 @@
               "caso": "Estudo testou se a endometriose piora com a idade. Encontrou correlação de Spearman de -0,023 (IC 95% de -0,12 a 0,08) e p de 0,9.",
               "enunciado": "O que se conclui?",
               "opcoes": [
-                "A doença é progressiva com a idade",
-                "A doença melhora perto da menopausa",
-                "Houve correlação em 90% dos casos",
-                "Não se demonstrou correlação entre idade e estádio"
+                "A endometriose é progressiva com a idade",
+                "O estádio melhora perto da menopausa",
+                "Houve correlação positiva em 90% dos casos",
+                "Não se mostrou correlação idade-estádio"
               ],
-              "resposta": "Não se demonstrou correlação entre idade e estádio",
+              "resposta": "Não se mostrou correlação idade-estádio",
               "explicacao": "O intervalo inclui o zero e o p é alto.",
               "revisado": false,
               "fonte": "AMRIGS 2024"
@@ -1559,10 +1559,10 @@
               "opcoes": [
                 "Dar o dela e o dos filhos só com autorização do pai",
                 "Dar o dela e o dos filhos só com ordem judicial",
-                "Dar o dela e o dos filhos com a autorização por escrito dela",
-                "Dar após consultar o pai"
+                "Dar todos com a autorização escrita dela",
+                "Dar o dela e o dos filhos após consultar o pai"
               ],
-              "resposta": "Dar o dela e o dos filhos com a autorização por escrito dela",
+              "resposta": "Dar todos com a autorização escrita dela",
               "explicacao": "Ela é responsável legal pelos filhos.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -1573,12 +1573,12 @@
               "caso": "Jovem de 23 anos com 10 semanas de gravidez decidiu interromper a gestação e já pesquisou remédios na internet.",
               "enunciado": "Como acolhê-la?",
               "opcoes": [
-                "Acolher a decisão e orientar sobre os riscos dos métodos",
-                "Sugerir que fale com o ex-namorado",
+                "Acolher e orientar sobre os riscos",
+                "Sugerir que converse com o ex-namorado",
                 "Dizer que precisa notificar a justiça",
                 "Dizer que o Código de Ética impede outras ações"
               ],
-              "resposta": "Acolher a decisão e orientar sobre os riscos dos métodos",
+              "resposta": "Acolher e orientar sobre os riscos",
               "explicacao": "Redução de danos, mantendo o sigilo.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -1589,12 +1589,12 @@
               "caso": "Adolescente com câncer sem cura tem milhões de seguidores e a família pressiona o hospital nas redes por um remédio sem eficácia para o seu caso.",
               "enunciado": "Qual deve ser a postura da instituição?",
               "opcoes": [
-                "Não divulgar dados da paciente sem autorização, mesmo já públicos",
-                "Divulgar detalhes para evitar desinformação",
-                "Não há regra clara",
-                "Incentivar a equipe a esclarecer nas redes"
+                "Não divulgar dados sem autorização",
+                "Divulgar detalhes para evitar a desinformação",
+                "Não há regra clara quando o caso já é público",
+                "Incentivar a equipe a esclarecer pelas redes"
               ],
-              "resposta": "Não divulgar dados da paciente sem autorização, mesmo já públicos",
+              "resposta": "Não divulgar dados sem autorização",
               "explicacao": "O sigilo continua valendo.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -1907,12 +1907,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual destas é uma atribuição comum a todos os profissionais da Atenção Básica?",
               "opcoes": [
-                "Estratificar o risco dos doentes crônicos",
-                "Participar da territorialização e do mapeamento da área",
+                "Estratificar o risco dos doentes crônicos da área",
+                "Participar da territorialização da área",
                 "Encaminhar a outros serviços e seguir o plano",
                 "Fazer acolhimento com classificação de risco"
               ],
-              "resposta": "Participar da territorialização e do mapeamento da área",
+              "resposta": "Participar da territorialização da área",
               "explicacao": "Conhecer o território é tarefa de toda a equipe.",
               "revisado": false,
               "fonte": "AMRIGS 2024"
@@ -2031,12 +2031,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre o método clínico centrado na pessoa, o que é correto?",
               "opcoes": [
-                "Organiza a consulta considerando o médico e a pessoa, em casos agudos ou crônicos",
+                "Organiza a consulta com médico e pessoa",
                 "Coloca as vontades da pessoa acima de tudo",
-                "Começa entendendo o contexto distante",
-                "Só busca a demanda oculta"
+                "Começa entendendo o contexto próximo e distante",
+                "Busca só a demanda oculta, em consultas agendadas"
               ],
-              "resposta": "Organiza a consulta considerando o médico e a pessoa, em casos agudos ou crônicos",
+              "resposta": "Organiza a consulta com médico e pessoa",
               "explicacao": "É um modelo de parceria.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -2083,12 +2083,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre as equipes multiprofissionais da APS (eMulti), qual afirmação é correta?",
               "opcoes": [
-                "Não fazem teleconsulta",
-                "Também ficam em UPA e ambulatórios",
-                "Podem ter cardiologista, dermatologista e psiquiatra",
-                "São pagas só pelo município"
+                "Não fazem teleconsulta nem atendimento remoto",
+                "Também ficam em UPAs e ambulatórios de especialidade",
+                "Podem ter cardiologista e psiquiatra",
+                "O custeio é responsabilidade só do município"
               ],
-              "resposta": "Podem ter cardiologista, dermatologista e psiquiatra",
+              "resposta": "Podem ter cardiologista e psiquiatra",
               "explicacao": "Apoiam as equipes de Saúde da Família.",
               "revisado": false,
               "fonte": "USP-SP 2026"
@@ -2224,11 +2224,11 @@
               "enunciado": "Qual é a conduta sobre a violência?",
               "opcoes": [
                 "Boletim de ocorrência e notificar se ele concordar",
-                "Notificar mesmo sem a vontade dele, citando motivação LGBTfóbica",
-                "Notificar citando a orientação sexual",
-                "Não notificar"
+                "Notificar mesmo sem a vontade dele",
+                "Notificar especificando a orientação homossexual",
+                "Não notificar, pois é violência comunitária em adulto"
               ],
-              "resposta": "Notificar mesmo sem a vontade dele, citando motivação LGBTfóbica",
+              "resposta": "Notificar mesmo sem a vontade dele",
               "explicacao": "Violência por homofobia é de notificação compulsória.",
               "revisado": false,
               "fonte": "USP-SP 2025"
@@ -2238,12 +2238,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que a esporotricose humana passou a ser de notificação compulsória em 2025?",
               "opcoes": [
-                "Crescimento, risco de disseminação, população vulnerável e possibilidade de intervenção",
-                "Só por afetar áreas urbanas com gatos",
+                "Crescimento, disseminação e vulnerabilidade",
+                "Só por afetar áreas urbanas com muitos gatos domésticos",
                 "Por ser grave e muito transmissível entre humanos",
-                "Por ordem direta da OMS"
+                "Por determinação direta da Organização Mundial da Saúde"
               ],
-              "resposta": "Crescimento, risco de disseminação, população vulnerável e possibilidade de intervenção",
+              "resposta": "Crescimento, disseminação e vulnerabilidade",
               "explicacao": "Transmitida principalmente por gatos.",
               "revisado": false,
               "fonte": "USP-SP 2026"
@@ -2297,12 +2297,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre a epidemia de mpox de 2022, o que é correto?",
               "opcoes": [
-                "A concentração em HSH era esperada",
-                "A rápida disseminação sugere circulação prévia não detectada",
-                "Transmite-se principalmente por sêmen",
-                "O clado 1 causou a disseminação global"
+                "A concentração de casos em HSH já era esperada",
+                "Já circulava sem ser detectada",
+                "A transmissão é principalmente por sêmen",
+                "O clado 1 causou a disseminação global de 2022"
               ],
-              "resposta": "A rápida disseminação sugere circulação prévia não detectada",
+              "resposta": "Já circulava sem ser detectada",
               "explicacao": "A transmissão é principalmente por contato íntimo pele a pele.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -2313,12 +2313,12 @@
               "caso": "Três casos de meningite grave em jovens que foram à mesma festa de calouros.",
               "enunciado": "Como confirmar que há um surto?",
               "opcoes": [
-                "Examinar todos os participantes",
-                "Comparar com a ocorrência em anos anteriores",
-                "Inquérito sorológico",
-                "Esperar mais casos"
+                "Examinar todos os participantes da festa",
+                "Comparar com anos anteriores",
+                "Inquérito sorológico dos participantes",
+                "Esperar a ocorrência de mais casos"
               ],
-              "resposta": "Comparar com a ocorrência em anos anteriores",
+              "resposta": "Comparar com anos anteriores",
               "explicacao": "Surto é ocorrência acima do esperado.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -2328,12 +2328,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual é o instrumento para saber se há uma epidemia?",
               "opcoes": [
-                "Comparar a prevalência com anos anteriores",
+                "Comparar a prevalência com a de anos anteriores",
                 "Comparar a incidência com cidades vizinhas",
-                "Comparar a incidência atual com a de anos anteriores",
-                "Comparar a prevalência com vizinhos"
+                "Comparar a incidência com anos anteriores",
+                "Comparar a prevalência com as cidades vizinhas"
               ],
-              "resposta": "Comparar a incidência atual com a de anos anteriores",
+              "resposta": "Comparar a incidência com anos anteriores",
               "explicacao": "Diagrama de controle com a incidência esperada.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -2414,12 +2414,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre a vacinação do adulto no SUS, qual afirmação é correta?",
               "opcoes": [
-                "Pneumocócica 23 para todos acima de 60, a cada 5 anos",
-                "Difteria, tétano e febre amarela são vírus vivos",
+                "Pneumocócica 23 para todos acima de 60 anos, a cada 5 anos",
+                "Difteria, tétano e febre amarela são de vírus vivos",
                 "Febre amarela em 2 doses com 10 anos de intervalo",
-                "dT em 3 doses com 60 dias de intervalo e reforço em 5 anos se ferimento grave"
+                "dT: 3 doses e reforço em 5 anos se ferimento grave"
               ],
-              "resposta": "dT em 3 doses com 60 dias de intervalo e reforço em 5 anos se ferimento grave",
+              "resposta": "dT: 3 doses e reforço em 5 anos se ferimento grave",
               "explicacao": "Febre amarela é dose única no adulto; só ela é de vírus vivo.",
               "revisado": false,
               "fonte": "AMRIGS 2024"
@@ -2431,10 +2431,10 @@
               "opcoes": [
                 "A Dengvaxia teve uso limitado por baixa eficácia",
                 "A Qdenga pode ser usada por todos a partir de 1 ano",
-                "A Butantan-DV não mostrou eficácia contra todos os sorotipos",
+                "A Butantan-DV não cobriu todos os sorotipos",
                 "Nenhuma vacina teve risco de resposta exacerbada"
               ],
-              "resposta": "A Butantan-DV não mostrou eficácia contra todos os sorotipos",
+              "resposta": "A Butantan-DV não cobriu todos os sorotipos",
               "explicacao": "A Dengvaxia foi limitada pelo risco em quem nunca teve dengue.",
               "revisado": false,
               "fonte": "USP-SP 2025"
@@ -2444,12 +2444,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Por que a coqueluche continua com muitos casos apesar da boa cobertura vacinal?",
               "opcoes": [
-                "A vacina é pouco imunogênica",
-                "Cepas escapam da vacina",
-                "Os casos se concentram em menores de 1 ano antes de completarem o esquema",
-                "A biologia molecular aumentou os diagnósticos"
+                "A vacina é pouco imunogênica por ser bacteriana",
+                "Predominam cepas que escapam da vacina",
+                "Casos se concentram em bebês não vacinados",
+                "A biologia molecular passou a achar mais casos"
               ],
-              "resposta": "Os casos se concentram em menores de 1 ano antes de completarem o esquema",
+              "resposta": "Casos se concentram em bebês não vacinados",
               "explicacao": "Por isso se vacina a gestante com dTpa.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -2539,10 +2539,10 @@
               "opcoes": [
                 "Incidência da forma pulmonar",
                 "Prevalência da forma pulmonar",
-                "Proporção de abandono do tratamento",
-                "Proporção da forma miliar"
+                "Proporção de abandono",
+                "Proporção da forma miliar entre os casos"
               ],
-              "resposta": "Proporção de abandono do tratamento",
+              "resposta": "Proporção de abandono",
               "explicacao": "Abandono acima de 5% indica falha no acompanhamento.",
               "revisado": false,
               "fonte": "USP-SP 2026"
@@ -2931,9 +2931,9 @@
               "caso": "Em 14 anos, houve 8 melanomas em 800 usuários diários de protetor e 16 em 800 controles.",
               "enunciado": "Quantos precisam usar protetor para evitar 1 melanoma?",
               "opcoes": [
-                "10",
-                "32",
-                "64",
+                "10 pessoas",
+                "32 pessoas",
+                "64 pessoas",
                 "100"
               ],
               "resposta": "100",
@@ -3266,12 +3266,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre os gastos diretos das famílias com saúde no Brasil, qual afirmação é correta?",
               "opcoes": [
-                "Planos de saúde são a maior parte",
-                "O peso na renda cresce com a renda",
-                "Mais da metade do gasto total é direto",
-                "Remédios são a maior parte, e pesam mais nos mais pobres"
+                "Planos de saúde são a maior parte desse gasto",
+                "O peso na renda cresce conforme a renda sobe",
+                "Mais da metade do gasto total em saúde é direto",
+                "Remédios, pesando mais nos pobres"
               ],
-              "resposta": "Remédios são a maior parte, e pesam mais nos mais pobres",
+              "resposta": "Remédios, pesando mais nos pobres",
               "explicacao": "Os mais pobres gastam mais proporcionalmente com remédios.",
               "revisado": false,
               "fonte": "USP-SP 2026"
@@ -3367,12 +3367,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "O que os relatórios da CONITEC devem conter?",
               "opcoes": [
-                "Eficiência e aspectos ambientais",
-                "Eficácia e segurança apenas",
-                "Eficácia, segurança e custo-efetividade",
-                "Eficácia, acurácia, efetividade, segurança, custo-efetividade e impacto orçamentário"
+                "Eficiência, impacto econômico e aspectos ambientais",
+                "Eficácia, segurança e aspectos organizacionais",
+                "Eficácia, acurácia, efetividade, segurança e custo-efetividade",
+                "Os mesmos e mais o impacto orçamentário"
               ],
-              "resposta": "Eficácia, acurácia, efetividade, segurança, custo-efetividade e impacto orçamentário",
+              "resposta": "Os mesmos e mais o impacto orçamentário",
               "explicacao": "Exigências da Lei 12.401/2011.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -3382,12 +3382,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Para uma terapia gênica cara entrar no SUS, o que é necessário?",
               "opcoes": [
-                "A ANVISA avaliar custo-efetividade",
-                "A CONITEC avaliar efetividade, custo-efetividade e impacto orçamentário",
-                "A CONITEC autorizar a comercialização",
-                "A ANVISA avaliar impacto orçamentário"
+                "A ANVISA avaliar eficácia, segurança e custo-efetividade",
+                "Avaliação pela CONITEC",
+                "A CONITEC avaliar e autorizar a comercialização",
+                "A ANVISA avaliar efetividade e impacto no orçamento"
               ],
-              "resposta": "A CONITEC avaliar efetividade, custo-efetividade e impacto orçamentário",
+              "resposta": "Avaliação pela CONITEC",
               "explicacao": "A ANVISA registra; a CONITEC recomenda a incorporação.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -3876,12 +3876,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "No caso da mulher sem moradia, profissional do sexo, com HIV e sintomas de tuberculose, qual vulnerabilidade chama atenção?",
               "opcoes": [
-                "Programática",
-                "Social, pela ocupação e condições de vida",
-                "Individual, pelos sintomas",
-                "Individual, pela ocupação"
+                "Programática, pelo seguimento difícil",
+                "Social",
+                "Individual, pelos sintomas de coinfecção",
+                "Individual, pela atividade ocupacional"
               ],
-              "resposta": "Social, pela ocupação e condições de vida",
+              "resposta": "Social",
               "explicacao": "A vulnerabilidade social envolve contexto e acesso.",
               "revisado": false,
               "fonte": "USP-SP 2025"
@@ -3891,12 +3891,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Qual definição sobre diversidade sexual está correta?",
               "opcoes": [
-                "Orientação sexual é com quem a pessoa transa",
-                "Identidade de gênero é autodeclarada; ex.: homem cis, mulher trans, travesti",
+                "Orientação sexual é com quem a pessoa tem relações",
+                "Identidade de gênero é autodeclarada",
                 "Identidade de gênero é definida pela sociedade",
                 "Orientação sexual é como a pessoa se expressa"
               ],
-              "resposta": "Identidade de gênero é autodeclarada; ex.: homem cis, mulher trans, travesti",
+              "resposta": "Identidade de gênero é autodeclarada",
               "explicacao": "Orientação é por quem a pessoa sente atração.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -3958,11 +3958,11 @@
               "enunciado": "O que é correto?",
               "opcoes": [
                 "A amamentação é a principal ação de promoção",
-                "Atividades educativas no pré-natal são promoção da saúde",
-                "Não envolvem a educação",
+                "É promoção da saúde",
+                "Não envolve a área da educação",
                 "Promoção na gestação é só vigilância do peso"
               ],
-              "resposta": "Atividades educativas no pré-natal são promoção da saúde",
+              "resposta": "É promoção da saúde",
               "explicacao": "Educação em saúde é estratégia central de promoção.",
               "revisado": false,
               "fonte": "USP-SP 2024"
@@ -3972,12 +3972,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais são exemplos de ações de promoção da saúde?",
               "opcoes": [
-                "Desarmamento, cultura e vacinação",
-                "Aleitamento, lei do sódio e medir peso",
-                "Autocuidado, preservativo e sorologias",
-                "Menos poluição, incentivo à atividade física e direitos humanos"
+                "Desarmamento, cultura popular e vacinação",
+                "Aleitamento, lei do sódio e medir peso e altura",
+                "Autocuidado, preservativo e sorologias para IST",
+                "Menos poluição, atividade física e direitos"
               ],
-              "resposta": "Menos poluição, incentivo à atividade física e direitos humanos",
+              "resposta": "Menos poluição, atividade física e direitos",
               "explicacao": "Vacina, preservativo e sorologia são prevenção.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -5572,12 +5572,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais critérios definem uma variável de confusão?",
               "opcoes": [
-                "Fator de risco presente na população",
-                "Associada ao desfecho e à exposição, sem estar no caminho causal",
-                "Associada à exposição só nos sem desfecho",
-                "Fator de risco que está no caminho causal"
+                "Ser fator de risco presente na população geral",
+                "Associar-se à exposição e ao desfecho, fora do caminho causal",
+                "Associar-se à exposição só entre os sem desfecho",
+                "Ser fator de risco que está no caminho causal"
               ],
-              "resposta": "Associada ao desfecho e à exposição, sem estar no caminho causal",
+              "resposta": "Associar-se à exposição e ao desfecho, fora do caminho causal",
               "explicacao": "Se estiver no caminho causal, é variável intermediária.",
               "revisado": false,
               "fonte": "USP-SP 2023"
@@ -6204,12 +6204,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Quais fatores ajudam a explicar a criação do SUS em 1988?",
               "opcoes": [
-                "Desmobilização dos movimentos sociais",
-                "Crise só do setor privado",
-                "Crise previdenciária, mobilização social e participação popular",
-                "Crise das instituições democráticas"
+                "Desmobilização dos movimentos sociais por saúde",
+                "Crise exclusiva do setor privado de saúde",
+                "Crise previdenciária e mobilização social",
+                "Crise das instituições democráticas do país"
               ],
-              "resposta": "Crise previdenciária, mobilização social e participação popular",
+              "resposta": "Crise previdenciária e mobilização social",
               "explicacao": "A Reforma Sanitária e a redemocratização foram centrais.",
               "revisado": false,
               "fonte": "USP-SP 2025"
@@ -6588,12 +6588,12 @@
               "caso": "Homem com tuberculose tem teste rápido molecular com resistência à rifampicina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Repetir exames e manter só na UBS",
-                "Repetir exames e isolar em hospital",
-                "Iniciar esquema para resistente na UBS",
-                "Repetir exames, encaminhar à referência e manter vínculo com a UBS"
+                "Repetir exames e manter o seguimento só na UBS",
+                "Repetir exames e isolar em hospital especializado",
+                "Iniciar esquema para resistente na própria UBS",
+                "Encaminhar à referência, mantendo a UBS"
               ],
-              "resposta": "Repetir exames, encaminhar à referência e manter vínculo com a UBS",
+              "resposta": "Encaminhar à referência, mantendo a UBS",
               "explicacao": "TB resistente é tratada em serviço de referência.",
               "revisado": false,
               "fonte": "USP-SP 2024"
@@ -6837,11 +6837,11 @@
               "enunciado": "Sobre a esquistossomose, o que é correto?",
               "opcoes": [
                 "Os ovos saem nas fezes por toda a vida",
-                "As cinco espécies estão no Brasil",
-                "Envolve helminto, humano e vetor",
-                "A cercária penetra ativamente pela pele íntegra"
+                "As cinco espécies que infectam humanos estão no Brasil",
+                "Envolve o helminto, o ser humano e um vetor",
+                "A cercária penetra pela pele íntegra"
               ],
-              "resposta": "A cercária penetra ativamente pela pele íntegra",
+              "resposta": "A cercária penetra pela pele íntegra",
               "explicacao": "O caramujo é hospedeiro intermediário, não vetor.",
               "revisado": false,
               "fonte": "USP-SP 2022"
@@ -7102,12 +7102,12 @@
               "caso": "Duas UBS tratam tuberculose. A perda de seguimento foi de 12% numa e 18% na outra.",
               "enunciado": "O que se pode concluir?",
               "opcoes": [
-                "A primeira é melhor",
-                "A primeira é mais integral",
-                "É preciso saber as taxas de cura",
-                "É preciso ajustar pelas características dos pacientes"
+                "A assistência do primeiro serviço é melhor",
+                "O primeiro serviço é mais integral",
+                "É preciso conhecer as taxas de cura",
+                "Ajustar pelas características dos pacientes"
               ],
-              "resposta": "É preciso ajustar pelas características dos pacientes",
+              "resposta": "Ajustar pelas características dos pacientes",
               "explicacao": "Populações diferentes podem explicar a diferença.",
               "revisado": false,
               "fonte": "USP-SP 2024"
@@ -7230,12 +7230,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Como entender a pandemia de covid em perspectiva histórica?",
               "opcoes": [
-                "Ligada ao contexto, à circulação de pessoas e às desigualdades",
-                "Explicada principalmente pela fisiopatologia",
-                "A tecnologia neutralizou as desigualdades",
-                "Fatores sociais não pesaram"
+                "Ligada ao contexto e às desigualdades",
+                "Explicada principalmente pela fisiopatologia da doença",
+                "A tecnologia neutralizou o efeito das desigualdades",
+                "Os fatores sociais e culturais não pesaram"
               ],
-              "resposta": "Ligada ao contexto, à circulação de pessoas e às desigualdades",
+              "resposta": "Ligada ao contexto e às desigualdades",
               "explicacao": "As epidemias revelam e aprofundam desigualdades.",
               "revisado": false,
               "fonte": "USP-SP 2024"
@@ -7780,8 +7780,8 @@
               "opcoes": [
                 "Especificidade",
                 "Razão de verossimilhança",
-                "Sensibilidade",
-                "Valor preditivo"
+                "Sensibilidade do teste",
+                "Valor preditivo positivo"
               ],
               "resposta": "Razão de verossimilhança",
               "explicacao": "Não depende da prevalência.",
@@ -8557,9 +8557,9 @@
               "caso": "Em 2017, os casos de hepatite A em São Paulo subiram de 64 para 786, quase todos em homens jovens.",
               "enunciado": "Qual foi a via principal?",
               "opcoes": [
-                "Parenteral",
-                "Água",
-                "Alimentos",
+                "Parenteral, por uso de drogas",
+                "Ambiental, por água contaminada",
+                "Fecal-oral, por alimentos",
                 "Sexual oro-anal"
               ],
               "resposta": "Sexual oro-anal",
@@ -8687,12 +8687,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre a sífilis na Atenção Primária, qual afirmação é correta?",
               "opcoes": [
-                "O VDRL é treponêmico",
-                "O VDRL fica positivo cerca de 2 semanas após o cancro e é mais alto na fase secundária",
+                "O VDRL é um teste treponêmico",
+                "VDRL positiva 2 semanas após o cancro",
                 "A penicilina benzatina não deve ser aplicada na UBS",
                 "A latente tardia se trata com dose única de 2,4 milhões"
               ],
-              "resposta": "O VDRL fica positivo cerca de 2 semanas após o cancro e é mais alto na fase secundária",
+              "resposta": "VDRL positiva 2 semanas após o cancro",
               "explicacao": "Latente tardia e terciária: 3 doses semanais.",
               "revisado": false,
               "fonte": "AMRIGS 2024"
@@ -8719,9 +8719,9 @@
               "caso": "Gestante colheu VDRL com 14 semanas, mas o resultado não chegou ao prontuário. Com 28 semanas, VDRL 1:64; o bebê nasceu com sífilis congênita.",
               "enunciado": "Qual atributo falhou?",
               "opcoes": [
-                "Acesso",
-                "Equidade",
-                "Universalidade",
+                "Acesso aos serviços",
+                "Equidade na atenção",
+                "Universalidade do sistema",
                 "Coordenação do cuidado"
               ],
               "resposta": "Coordenação do cuidado",
@@ -9075,12 +9075,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre o financiamento da saúde no Brasil, o que é correto?",
               "opcoes": [
-                "Gasto privado é metade do público",
+                "O gasto privado é metade do gasto público",
                 "Remédios são pagos principalmente pelo SUS",
-                "A atenção especializada é paga principalmente pela União",
+                "A União paga a maior parte da especializada",
                 "Municípios pagam a maior parte das internações"
               ],
-              "resposta": "A atenção especializada é paga principalmente pela União",
+              "resposta": "A União paga a maior parte da especializada",
               "explicacao": "O gasto privado supera o público no Brasil.",
               "revisado": false,
               "fonte": "USP-SP 2024"
@@ -9105,12 +9105,12 @@
               "tipo": "multipla_escolha",
               "enunciado": "Sobre a relação público-privada na saúde, o que é correto?",
               "opcoes": [
-                "Planos de saúde não são dedutíveis no imposto",
-                "Filantrópicos atendem 80% SUS obrigatoriamente",
-                "Usuário de plano não pode pegar remédio no SUS",
-                "O SUS é ressarcido só pelos procedimentos cobertos no contrato"
+                "Planos de saúde não podem ser deduzidos do imposto",
+                "Filantrópicos precisam atender 80% pelo SUS",
+                "Usuário de plano não pode retirar remédio no SUS",
+                "O ressarcimento cobre só o que está no contrato"
               ],
-              "resposta": "O SUS é ressarcido só pelos procedimentos cobertos no contrato",
+              "resposta": "O ressarcimento cobre só o que está no contrato",
               "explicacao": "Planos são dedutíveis no imposto de renda.",
               "revisado": false,
               "fonte": "USP-SP 2022"
