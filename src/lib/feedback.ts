@@ -22,6 +22,8 @@ export async function enviarFeedback(tipo: TipoFeedback, mensagem: string, nota:
   const { error } = await supabase
     .from('feedbacks')
     .insert({ tipo, mensagem: mensagem.trim(), nota, ...(questaoId ? { questao_id: questaoId } : {}) })
+  if (error?.message.includes('limite de feedbacks'))
+    throw new Error('Você já enviou muitas mensagens nesta hora. Tente de novo mais tarde.')
   if (error) throw new Error('Não deu para enviar. Confira a internet e tente de novo.')
 }
 

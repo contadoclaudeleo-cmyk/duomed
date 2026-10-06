@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite'
+import { createHash } from 'node:crypto'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -6,6 +7,43 @@ import { VitePWA } from 'vite-plugin-pwa'
 // Pasta onde o app fica publicado. No computador é "/".
 // No GitHub Pages é "/duomed/" (definido em .github/workflows/publicar.yml).
 const base = process.env.BASE_PATH ?? '/'
+
+/**
+ * Segurança: Content Security Policy (CSP), uma lista do que a página pode carregar.
+ * Se alguém conseguir injetar um script estranho, o navegador bloqueia.
+ * Só entra na versão publicada (no computador o Vite precisa de scripts próprios).
+ * O script do tema, que fica dentro do index.html, é liberado pelo hash dele.
+ */
+function politicaDeSeguranca(): Plugin {
+  return {
+    name: 'duomed-csp',
+    apply: 'build',
+    transformIndexHtml: {
+      order: 'post',
+      handler(html) {
+        const hashes = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(
+          ([, codigo]) => `'sha256-${createHash('sha256').update(codigo).digest('base64')}'`,
+        )
+        const supabase = 'https://dkdizfpywyvpxhfpiivr.supabase.co'
+        const regras = [
+          "default-src 'self'",
+          `script-src 'self' ${hashes.join(' ')}`,
+          "style-src 'self' 'unsafe-inline'",
+          "img-src 'self' data: blob:",
+          "font-src 'self' data:",
+          "media-src 'self' data: blob:",
+          `connect-src 'self' ${supabase}`,
+          "worker-src 'self'",
+          "manifest-src 'self'",
+          "object-src 'none'",
+          "base-uri 'self'",
+          "form-action 'self'",
+        ].join('; ')
+        return html.replace('<head>', `<head>\n    <meta http-equiv="Content-Security-Policy" content="${regras}" />`)
+      },
+    },
+  }
+}
 
 export default defineConfig({
   base,
@@ -21,6 +59,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    politicaDeSeguranca(),
     VitePWA({
       registerType: 'autoUpdate',
       // Guarda tudo no aparelho para o app abrir sem internet

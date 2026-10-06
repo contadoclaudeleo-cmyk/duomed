@@ -166,7 +166,7 @@ function traduzirErro(mensagem: string): string {
   const m = mensagem.toLowerCase()
   if (m.includes('invalid login credentials')) return 'E-mail ou senha incorretos.'
   if (m.includes('already registered') || m.includes('already been registered')) return 'Já existe uma conta com esse e-mail. Tente entrar.'
-  if (m.includes('password should be') || m.includes('at least 6')) return 'A senha precisa ter pelo menos 6 caracteres.'
+  if (m.includes('password should be') || m.includes('at least')) return 'A senha precisa ter pelo menos 8 caracteres.'
   if (m.includes('email not confirmed')) return 'Confirme seu e-mail antes de entrar.'
   if (m.includes('unable to validate email') || m.includes('invalid format') || m.includes('email address') && m.includes('invalid'))
     return 'Esse e-mail não parece válido.'

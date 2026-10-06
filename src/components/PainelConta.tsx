@@ -108,10 +108,10 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
           type="password"
           autoComplete={aba === 'criar' ? 'new-password' : 'current-password'}
           required
-          minLength={6}
+          minLength={aba === 'criar' ? 8 : undefined}
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
-          placeholder={aba === 'criar' ? 'Crie uma senha (mínimo 6 caracteres)' : 'Sua senha'}
+          placeholder={aba === 'criar' ? 'Crie uma senha (mínimo 8 caracteres)' : 'Sua senha'}
           aria-label="Senha"
           className="w-full rounded-2xl border-2 border-borda bg-superficie px-4 py-3.5 font-semibold outline-none transition-colors placeholder:text-apagado-texto focus:border-agua"
         />
