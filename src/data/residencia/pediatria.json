@@ -650,11 +650,18 @@
             },
             {
               "id": "ped-u2-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O teste do coraçãozinho é feito com oximetria no membro superior direito e em um dos membros inferiores.",
-              "resposta": true,
-              "explicacao": "É feito entre 24 e 48 horas de vida, antes da alta.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela Sociedade Brasileira de Pediatria, o que é preciso para a alta do recém-nascido após 48 horas? I. Sinais vitais estáveis por 4 horas. II. Urina e fezes presentes. III. Peso de 2.000 g ou mais. IV. Testes da orelhinha, olhinho e coraçãozinho feitos.",
+              "opcoes": [
+                "Apenas I e III",
+                "Apenas II e IV",
+                "Apenas II, III e IV",
+                "I, II, III e IV"
+              ],
+              "resposta": "Apenas II e IV",
+              "explicacao": "Os sinais vitais devem estar estáveis por 12 horas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u2-l3-q4",
@@ -1098,16 +1105,17 @@
             {
               "id": "ped-u4-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de baixa estatura em crianças saudáveis?",
+              "enunciado": "Que tipo de hipogonadismo há nas síndromes de Turner e de Klinefelter?",
               "opcoes": [
-                "Baixa estatura familiar ou atraso constitucional",
-                "Falta de GH",
-                "Hipotireoidismo",
-                "Síndrome de Turner com pescoço alado e linfedema ao nascer"
+                "Hipogonadotrófico e hipergonadotrófico",
+                "Hipergonadotrófico nas duas",
+                "Hipergonadotrófico e hipogonadotrófico",
+                "Hipogonadotrófico nas duas"
               ],
-              "resposta": "Baixa estatura familiar ou atraso constitucional",
-              "explicacao": "São variantes normais do crescimento e não precisam de tratamento.",
-              "revisado": false
+              "resposta": "Hipergonadotrófico nas duas",
+              "explicacao": "Nas duas a gônada falha e o FSH e o LH sobem.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u4-l1-q2",
@@ -1611,25 +1619,34 @@
             },
             {
               "id": "ped-u5-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Após a primeira convulsão febril simples, deve-se iniciar anticonvulsivante contínuo.",
-              "resposta": false,
-              "explicacao": "Falso. Não é necessário; ela tem bom prognóstico e não causa lesão cerebral.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos com meningite. Líquor com 1.100 células, maioria neutrófilos, glicose 15 (glicemia 90) e proteína 200.",
+              "enunciado": "Qual é o tipo de meningite?",
+              "opcoes": [
+                "Bacteriana aguda",
+                "Viral",
+                "Química",
+                "Fúngica"
+              ],
+              "resposta": "Bacteriana aguda",
+              "explicacao": "Glicose no líquor menor que 40% da glicemia sugere bactéria.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u5-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na meningite bacteriana, o líquor tem muitos neutrófilos, proteína alta e ___ baixa.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes NÃO é sinal de irritação meníngea?",
               "opcoes": [
-                "glicose",
-                "ureia",
-                "creatinina",
-                "bilirrubina"
+                "Rigidez de nuca",
+                "Kernig",
+                "Brudzinski",
+                "Lázaro"
               ],
-              "resposta": "glicose",
-              "explicacao": "As bactérias consomem a glicose do líquor.",
-              "revisado": false
+              "resposta": "Lázaro",
+              "explicacao": "O sinal de Lázaro é um reflexo da morte encefálica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u5-l2-q5",
@@ -2290,17 +2307,19 @@
           "questoes": [
             {
               "id": "ped-u7-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que diferencia refluxo fisiológico de doença do refluxo no lactente?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses, em aleitamento exclusivo, crescendo bem, golfa depois das mamadas.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Na doença há complicação, como pouco ganho",
-                "Volume do vômito",
-                "Idade",
-                "Apenas o volume do vômito e a idade do bebê no momento"
+                "Tranquilizar e manter o aleitamento exclusivo",
+                "Trocar para fórmula antirrefluxo",
+                "Prescrever antiácido",
+                "Pedir pHmetria"
               ],
-              "resposta": "Na doença há complicação, como pouco ganho",
-              "explicacao": "O regurgitador feliz não precisa de remédio.",
-              "revisado": false
+              "resposta": "Tranquilizar e manter o aleitamento exclusivo",
+              "explicacao": "É o regurgitador feliz: refluxo fisiológico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u7-l2-q2",
@@ -2533,28 +2552,18 @@
           "questoes": [
             {
               "id": "ped-u8-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada idade da puericultura ao marco esperado do desenvolvimento.",
-              "pares": [
-                {
-                  "esquerda": "2 meses",
-                  "direita": "Sorriso social"
-                },
-                {
-                  "esquerda": "6 meses",
-                  "direita": "Senta com apoio"
-                },
-                {
-                  "esquerda": "9 meses",
-                  "direita": "Pinça e engatinha"
-                },
-                {
-                  "esquerda": "12 meses",
-                  "direita": "Anda com apoio e fala palavras"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela Caderneta da Criança, em que idade se espera que o bebê busque objetos, passe de uma mão para a outra, faça pinça completa e fale jargão?",
+              "opcoes": [
+                "4 a 6, 6 a 9, 9 a 12 e 9 a 12 meses",
+                "4 a 6, 6 a 9, 9 a 12 e 6 a 9 meses",
+                "6 a 9, 4 a 6, 6 a 9 e 9 a 12 meses",
+                "6 a 9, 4 a 6, 6 a 9 e 6 a 9 meses"
               ],
-              "explicacao": "Atraso exige avaliação.",
-              "revisado": false
+              "resposta": "4 a 6, 6 a 9, 9 a 12 e 9 a 12 meses",
+              "explicacao": "Pinça completa e jargão vêm perto de 1 ano.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u8-l1-q2",
@@ -4691,28 +4700,18 @@
           "questoes": [
             {
               "id": "ped-u14-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada faixa etária pediátrica ao tipo de acidente mais frequente.",
-              "pares": [
-                {
-                  "esquerda": "Lactente",
-                  "direita": "Quedas e sufocação"
-                },
-                {
-                  "esquerda": "Pré-escolar",
-                  "direita": "Intoxicações e afogamento"
-                },
-                {
-                  "esquerda": "Escolar",
-                  "direita": "Atropelamento"
-                },
-                {
-                  "esquerda": "Adolescente",
-                  "direita": "Trânsito e violência"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre acidentes na infância, avalie: I. São a principal causa de morte a partir de 1 ano. II. Variam com idade, ambiente e desenvolvimento. III. Até 9 meses, o bebê vai virado para frente no carro. IV. Andadores protegem contra acidentes. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas II e III",
+                "Apenas III e IV",
+                "I, II, III e IV"
               ],
-              "explicacao": "Prevenção por idade.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "O bebê vai de costas para o painel e andadores causam quedas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-u14-l1-q2",
@@ -5445,17 +5444,18 @@
             {
               "id": "ped-d2-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 20 dias tem febre de 38,5 °C sem foco aparente.",
+              "caso": "Criança de 30 meses, vacinada e saudável, com febre de até 38,2 °C há 4 dias, abatida só nos picos. Exame cuidadoso sem foco.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Internar, colher sangue, urina e líquor e antibiótico",
-                "Antitérmico e alta",
-                "Observar 48 h",
-                "Apenas exame de urina e observar em casa por 48 horas"
+                "Painel viral, sem necessidade de urina",
+                "Investigar causas não infecciosas",
+                "Antitérmico e voltar se surgirem sinais de gravidade",
+                "Hemocultura por bacteremia oculta"
               ],
-              "resposta": "Internar, colher sangue, urina e líquor e antibiótico",
-              "explicacao": "Menores de 28 dias com febre são considerados de alto risco.",
-              "revisado": false
+              "resposta": "Antitérmico e voltar se surgirem sinais de gravidade",
+              "explicacao": "Bom estado e vacinas em dia: observar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d2-l1-q2",
@@ -5573,17 +5573,18 @@
             {
               "id": "ped-d2-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança de 4 anos com febre, vômitos, rigidez de nuca e manchas roxas que não somem à pressão está hipotensa.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Bebê de 2 meses com vômitos, recusa de mamar, febre e fontanela abaulada. Líquor com 340 células (82% neutrófilos), proteína 280 e glicose 26 (glicemia 284).",
+              "enunciado": "Qual é o agente mais provável?",
               "opcoes": [
-                "Antibiótico já e reanimar, sem esperar a punção",
-                "Punção antes de tudo",
-                "Tomografia antes",
-                "Tomografia de crânio antes de qualquer antibiótico ou soro"
+                "Escherichia coli",
+                "Streptococcus pneumoniae",
+                "Citomegalovírus",
+                "Staphylococcus aureus"
               ],
-              "resposta": "Antibiótico já e reanimar, sem esperar a punção",
-              "explicacao": "A meningococcemia pode matar em horas.",
-              "revisado": false
+              "resposta": "Escherichia coli",
+              "explicacao": "Abaixo de 3 meses: estreptococo do grupo B, E. coli e Listeria.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d2-l2-q2",
@@ -5715,28 +5716,19 @@
             },
             {
               "id": "ped-d2-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença exantemática ao sinal típico.",
-              "pares": [
-                {
-                  "esquerda": "Sarampo",
-                  "direita": "Manchas de Koplik na boca"
-                },
-                {
-                  "esquerda": "Escarlatina",
-                  "direita": "Língua em framboesa e pele em lixa"
-                },
-                {
-                  "esquerda": "Eritema infeccioso",
-                  "direita": "Bochechas vermelhas como esbofeteadas"
-                },
-                {
-                  "esquerda": "Rubéola",
-                  "direita": "Linfonodos atrás da orelha e na nuca"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 5 anos com dengue, vômitos, dor abdominal à palpação, fígado 4 cm abaixo da costela e prova do laço positiva. Sem choque.",
+              "enunciado": "Onde acompanhar?",
+              "opcoes": [
+                "Ambulatório",
+                "Leito de observação",
+                "Leito de internação",
+                "Leito de emergência"
               ],
-              "explicacao": "A rubéola na gestação pode causar malformações graves.",
-              "revisado": false
+              "resposta": "Leito de internação",
+              "explicacao": "Sinais de alarme são grupo C: internação.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d2-l3-q3",
@@ -5964,43 +5956,27 @@
           "questoes": [
             {
               "id": "ped-d3-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Lactente com febre, extremidades frias, tempo de enchimento capilar de 5 segundos e taquicardia.",
-              "enunciado": "Qual é a conduta inicial?",
-              "opcoes": [
-                "Bolus de 10 a 20 mL/kg e antibiótico na 1ª hora",
-                "Só antitérmico",
-                "Esperar exames",
-                "Apenas antitérmico e esperar o resultado dos exames"
-              ],
-              "resposta": "Bolus de 10 a 20 mL/kg e antibiótico na 1ª hora",
-              "explicacao": "O excesso de volume pode causar edema de pulmão; reavaliar após cada bolus.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na sepse da criança, colhem-se hemoculturas antes do antibiótico, desde que isso não atrase o tratamento.",
+              "resposta": true,
+              "explicacao": "O lactato ajuda, mas não é obrigatório para suspeitar de sepse.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada ritmo de parada cardíaca pediátrica à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Assistolia",
-                  "direita": "Adrenalina e massagem"
-                },
-                {
-                  "esquerda": "Fibrilação ventricular",
-                  "direita": "Desfibrilação com 2 J/kg"
-                },
-                {
-                  "esquerda": "Atividade elétrica sem pulso",
-                  "direita": "Adrenalina e buscar causas"
-                },
-                {
-                  "esquerda": "Bradicardia com pulso e má perfusão",
-                  "direita": "Ventilação e massagem se FC abaixo de 60"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a parada cardíaca na criança, avalie: I. A causa mais comum é doença do coração. II. As vias preferidas para remédios são venosa e intraóssea. III. A adrenalina é a droga padrão. IV. Evitar febre e hipóxia é importante após a reanimação. Quais estão corretas?",
+              "opcoes": [
+                "Apenas II, III e IV",
+                "Apenas I, II e III",
+                "Apenas III e IV",
+                "Apenas I e II"
               ],
-              "explicacao": "A parada cardíaca em crianças costuma vir de problema respiratório.",
-              "revisado": false
+              "resposta": "Apenas II, III e IV",
+              "explicacao": "Na criança a parada costuma ser respiratória ou por choque.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d3-l2-q3",
@@ -8058,33 +8034,34 @@
           "questoes": [
             {
               "id": "ped-d8-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 6 anos com dor de cabeça pela manhã, vômitos e marcha desequilibrada.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são sinais de hipertensão intracraniana? I. Papiledema. II. Rebaixamento da consciência. III. Déficit neurológico focal.",
               "opcoes": [
-                "Tumor de fossa posterior",
-                "Enxaqueca",
-                "Gastroenterite",
-                "Gastroenterite viral com desidratação"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Tumor de fossa posterior",
-              "explicacao": "Ressonância urgente.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Também cefaleia, vômitos e tríade de Cushing.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d8-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Lactente com perímetro cefálico crescendo rápido, fontanela tensa e olhar em sol poente.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Recém-nascido tem mancha vinho em metade do rosto, incluindo a região dos olhos. Suspeita de Sturge-Weber.",
+              "enunciado": "Qual exame é o mais indicado?",
               "opcoes": [
-                "Hidrocefalia",
-                "Normal",
-                "Desnutrição",
-                "Craniossinostose"
+                "Biópsia da mancha",
+                "Eletroencefalograma",
+                "Tomografia de crânio",
+                "Ressonância de crânio com contraste"
               ],
-              "resposta": "Hidrocefalia",
-              "explicacao": "Derivação.",
-              "revisado": false
+              "resposta": "Ressonância de crânio com contraste",
+              "explicacao": "Procura a malformação vascular das meninges.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d8-l3-q3",
@@ -8986,17 +8963,18 @@
             {
               "id": "ped-d11-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança de 9 anos com cetoacidose, pH 7,05 e glicose de 500.",
-              "enunciado": "Qual é a hidratação inicial?",
+              "caso": "Criança de 1 ano em coma, sem febre, respiração de Kussmaul, glicose 600 e acidose com ânion gap alto.",
+              "enunciado": "Por que o fósforo pode cair perigosamente no tratamento?",
               "opcoes": [
-                "Soro fisiológico 10 a 20 mL/kg na 1ª hora",
-                "60 mL/kg rápido",
-                "Soro glicosado",
-                "60 mL/kg de soro rápido e insulina em bolus"
+                "Por falta de insulina do coma hiperosmolar",
+                "Pela insulina do tratamento, como na realimentação",
+                "Pelo bicarbonato dado sempre",
+                "Pelo cálcio alto da cetoacidose"
               ],
-              "resposta": "Soro fisiológico 10 a 20 mL/kg na 1ª hora",
-              "explicacao": "Cuidado com edema cerebral.",
-              "revisado": false
+              "resposta": "Pela insulina do tratamento, como na realimentação",
+              "explicacao": "A insulina leva o fósforo para dentro das células.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "ped-d11-l1-q2",

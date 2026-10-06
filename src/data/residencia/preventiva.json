@@ -31,28 +31,18 @@
             },
             {
               "id": "prev-u1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada princípio ou diretriz do SUS ao seu significado.",
-              "pares": [
-                {
-                  "esquerda": "Universalidade",
-                  "direita": "Acesso garantido a todas as pessoas"
-                },
-                {
-                  "esquerda": "Equidade",
-                  "direita": "Tratar desigualmente os desiguais"
-                },
-                {
-                  "esquerda": "Integralidade",
-                  "direita": "Cuidado completo, da prevenção à reabilitação"
-                },
-                {
-                  "esquerda": "Participação da comunidade",
-                  "direita": "Conselhos e conferências de saúde"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o SUS, avalie: I. Descentralização é organizar níveis de complexidade crescente. II. Participação social é a população ajudar a formular as políticas. III. O setor privado pode ser contratado quando o público não bastar. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "Universalidade, equidade e integralidade são princípios doutrinários. Descentralização, regionalização, hierarquização e participação social são diretrizes organizativas.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "Descentralização é passar poder e responsabilidade aos municípios.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u1-l1-q3",
@@ -150,17 +140,19 @@
             },
             {
               "id": "prev-u1-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Para rastrear uma doença grave e tratável, prefere-se um teste com alta:",
+              "tipo": "caso_clinico",
+              "caso": "Um monitor de pulso com defeito sempre mostra menos de 100 bpm. Acerta quem tem frequência normal, mas nunca detecta taquicardia.",
+              "enunciado": "Qual é a sensibilidade e a especificidade?",
               "opcoes": [
-                "Sensibilidade",
-                "Especificidade",
-                "Prevalência",
-                "Letalidade"
+                "Sensibilidade 100% e especificidade zero",
+                "Sensibilidade 50% e especificidade 50%",
+                "Sensibilidade zero e especificidade 100%",
+                "Sensibilidade zero e especificidade zero"
               ],
-              "resposta": "Sensibilidade",
-              "explicacao": "Teste sensível deixa escapar poucos doentes; se der negativo, descarta a doença. Os positivos são confirmados depois com um teste específico.",
-              "revisado": false
+              "resposta": "Sensibilidade zero e especificidade 100%",
+              "explicacao": "Não acha nenhum doente, mas acerta todos os sadios.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u1-l2-q3",
@@ -725,28 +717,18 @@
           "questoes": [
             {
               "id": "prev-u3-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida estatística à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Média",
-                  "direita": "Soma dos valores dividida pelo número de valores"
-                },
-                {
-                  "esquerda": "Mediana",
-                  "direita": "Valor do meio quando os dados estão em ordem"
-                },
-                {
-                  "esquerda": "Moda",
-                  "direita": "Valor que mais se repete"
-                },
-                {
-                  "esquerda": "Desvio padrão",
-                  "direita": "Quanto os valores se afastam da média"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual resultado tem maior precisão?",
+              "opcoes": [
+                "Média 3.050 g e desvio-padrão 200 g",
+                "Média 3.150 g e desvio-padrão 350 g",
+                "Média 3.200 g e desvio-padrão 100 g",
+                "Média 3.300 g e desvio-padrão 250 g"
               ],
-              "explicacao": "Em dados com valores extremos, a mediana representa melhor o centro.",
-              "revisado": false
+              "resposta": "Média 3.200 g e desvio-padrão 100 g",
+              "explicacao": "Menor dispersão, maior precisão.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u3-l1-q2",
@@ -859,36 +841,34 @@
             },
             {
               "id": "prev-u3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada conceito dos testes de hipótese à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Erro tipo I",
-                  "direita": "Falso positivo do estudo"
-                },
-                {
-                  "esquerda": "Erro tipo II",
-                  "direita": "Falso negativo do estudo"
-                },
-                {
-                  "esquerda": "Poder do estudo",
-                  "direita": "Chance de detectar uma diferença que existe"
-                },
-                {
-                  "esquerda": "Valor de p",
-                  "direita": "Probabilidade de achar o resultado se não houvesse diferença real"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Estudo testou se a endometriose piora com a idade. Encontrou correlação de Spearman de -0,023 (IC 95% de -0,12 a 0,08) e p de 0,9.",
+              "enunciado": "O que se conclui?",
+              "opcoes": [
+                "A doença é progressiva com a idade",
+                "A doença melhora perto da menopausa",
+                "Houve correlação em 90% dos casos",
+                "Não se demonstrou correlação entre idade e estádio"
               ],
-              "explicacao": "O poder é igual a 1 menos beta.",
-              "revisado": false
+              "resposta": "Não se demonstrou correlação entre idade e estádio",
+              "explicacao": "O intervalo inclui o zero e o p é alto.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u3-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Aumentar o tamanho da amostra aumenta o poder do estudo.",
-              "resposta": true,
-              "explicacao": "Estudos pequenos podem não encontrar efeitos reais.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Para estudar a prevalência de uma doença comum e de uma rara na mesma população, como deve ser a amostra?",
+              "opcoes": [
+                "Menor para a doença comum",
+                "Maior para a doença comum",
+                "Igual para as duas",
+                "Impossível de definir"
+              ],
+              "resposta": "Menor para a doença comum",
+              "explicacao": "Doença rara precisa de mais gente para achar casos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u3-l2-q4",
@@ -1209,17 +1189,18 @@
           "questoes": [
             {
               "id": "prev-u4-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais critérios uma doença deve cumprir para valer a pena rastreá-la?",
+              "tipo": "completar_lacuna",
+              "enunciado": "Pelo Ministério da Saúde, o rastreamento do câncer colorretal em risco médio vai dos ___ aos 75 anos.",
               "opcoes": [
-                "Importante, fase pré-clínica, teste aceitável e tratar cedo ajuda",
-                "Rara e sem tratamento",
-                "Teste caro e invasivo",
-                "Ser rara, sem tratamento eficaz e com teste caro e invasivo para detectar"
+                "50",
+                "40",
+                "45",
+                "60"
               ],
-              "resposta": "Importante, fase pré-clínica, teste aceitável e tratar cedo ajuda",
-              "explicacao": "São os critérios de Wilson e Jungner.",
-              "revisado": false
+              "resposta": "50",
+              "explicacao": "Sociedades americanas já começam aos 45.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u4-l2-q2",
@@ -1854,17 +1835,18 @@
             },
             {
               "id": "prev-u6-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O agente comunitário de ___ é o profissional que faz a ligação entre a equipe e as famílias do território.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a equipe de Saúde da Família, avalie: I. É a estratégia prioritária para expandir e qualificar a Atenção Básica. II. Cada agente comunitário cobre no máximo 750 pessoas. III. A equipe mínima inclui obrigatoriamente dentista e técnico de saúde bucal. Quais estão corretas?",
               "opcoes": [
-                "saúde",
-                "trânsito",
-                "segurança",
-                "endemias"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "saúde",
-              "explicacao": "Ele mora na comunidade em que trabalha.",
-              "revisado": false
+              "resposta": "Apenas I e II",
+              "explicacao": "A saúde bucal é recomendada, mas não faz parte da equipe mínima.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u6-l1-q5",
@@ -1927,49 +1909,48 @@
             {
               "id": "prev-u6-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que é o genograma?",
+              "enunciado": "Qual destas é uma atribuição comum a todos os profissionais da Atenção Básica?",
               "opcoes": [
-                "Desenho da família em gerações, com relações e doenças",
-                "Mapa do território",
-                "Lista de remédios",
-                "Mapa do território com as ruas e os serviços de saúde do bairro"
+                "Estratificar o risco dos doentes crônicos",
+                "Participar da territorialização e do mapeamento da área",
+                "Encaminhar a outros serviços e seguir o plano",
+                "Fazer acolhimento com classificação de risco"
               ],
-              "resposta": "Desenho da família em gerações, com relações e doenças",
-              "explicacao": "Ele ajuda a entender padrões de doença e de relação familiar.",
-              "revisado": false
+              "resposta": "Participar da territorialização e do mapeamento da área",
+              "explicacao": "Conhecer o território é tarefa de toda a equipe.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada ferramenta à sua utilidade.",
-              "pares": [
-                {
-                  "esquerda": "Genograma",
-                  "direita": "Mostrar a estrutura e as doenças da família"
-                },
-                {
-                  "esquerda": "Ecomapa",
-                  "direita": "Mostrar as relações da família com a comunidade"
-                },
-                {
-                  "esquerda": "Método clínico centrado na pessoa",
-                  "direita": "Explorar a experiência da doença pelo paciente"
-                },
-                {
-                  "esquerda": "Ciclo de vida familiar",
-                  "direita": "Entender as fases e crises esperadas da família"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 56 anos trabalha das 8 às 17 horas e não consegue ir à UBS, que não abre fora desse horário.",
+              "enunciado": "Qual atributo da APS está faltando?",
+              "opcoes": [
+                "Longitudinalidade",
+                "Acessibilidade",
+                "Integralidade",
+                "Coordenação"
               ],
-              "explicacao": "Essas ferramentas ajudam na abordagem familiar.",
-              "revisado": false
+              "resposta": "Acessibilidade",
+              "explicacao": "Acesso de primeiro contato inclui horários que a pessoa consiga usar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u6-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O método clínico centrado na pessoa considera a doença e também a experiência do paciente com ela.",
-              "resposta": true,
-              "explicacao": "Ele inclui sentimentos, ideias, efeitos na vida e expectativas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a APS, avalie: I. Assume a continuidade do cuidado da pessoa e da comunidade. II. Ligar para o hospital para planejar a alta de um paciente é coordenação do cuidado. III. Muitas internações por condições sensíveis indicam APS de pouco acesso ou baixa qualidade. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
+              ],
+              "resposta": "I, II e III",
+              "explicacao": "Condições sensíveis são as que a APS deveria evitar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u6-l2-q4",
@@ -2187,16 +2168,17 @@
             {
               "id": "prev-u7-l1-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Quem é obrigado a notificar doenças de notificação compulsória?",
+              "enunciado": "Qual dupla é de notificação compulsória imediata?",
               "opcoes": [
-                "Médicos e todos os profissionais de saúde",
-                "Só o médico",
-                "Só o hospital",
-                "Somente o hospital, por meio do setor de epidemiologia"
+                "Tuberculose e leishmaniose visceral",
+                "Chagas crônica e esquistossomose",
+                "Febre amarela e botulismo",
+                "Hanseníase e hepatites virais"
               ],
-              "resposta": "Médicos e todos os profissionais de saúde",
-              "explicacao": "Também responsáveis por escolas e laboratórios.",
-              "revisado": false
+              "resposta": "Febre amarela e botulismo",
+              "explicacao": "Doenças com risco de surto grave pedem aviso em 24 horas.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u7-l1-q3",
@@ -2397,28 +2379,18 @@
           "questoes": [
             {
               "id": "prev-u7-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada vacina do calendário infantil ao tipo de antígeno.",
-              "pares": [
-                {
-                  "esquerda": "BCG",
-                  "direita": "Bactéria viva atenuada"
-                },
-                {
-                  "esquerda": "Tríplice viral",
-                  "direita": "Vírus vivo atenuado"
-                },
-                {
-                  "esquerda": "Pentavalente",
-                  "direita": "Inativada e conjugada"
-                },
-                {
-                  "esquerda": "Febre amarela",
-                  "direita": "Vírus vivo atenuado em dose única"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a vacinação do adulto no SUS, qual afirmação é correta?",
+              "opcoes": [
+                "Pneumocócica 23 para todos acima de 60, a cada 5 anos",
+                "Difteria, tétano e febre amarela são vírus vivos",
+                "Febre amarela em 2 doses com 10 anos de intervalo",
+                "dT em 3 doses com 60 dias de intervalo e reforço em 5 anos se ferimento grave"
               ],
-              "explicacao": "Vacinas vivas têm contraindicações.",
-              "revisado": false
+              "resposta": "dT em 3 doses com 60 dias de intervalo e reforço em 5 anos se ferimento grave",
+              "explicacao": "Febre amarela é dose única no adulto; só ela é de vírus vivo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u7-l3-q2",
@@ -3815,28 +3787,18 @@
           "questoes": [
             {
               "id": "prev-u11-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada população à política do SUS.",
-              "pares": [
-                {
-                  "esquerda": "População de rua",
-                  "direita": "Consultório na Rua"
-                },
-                {
-                  "esquerda": "Indígenas",
-                  "direita": "Subsistema de saúde indígena"
-                },
-                {
-                  "esquerda": "População LGBTQIA+",
-                  "direita": "Política de saúde integral"
-                },
-                {
-                  "esquerda": "Pessoas privadas de liberdade",
-                  "direita": "Política de atenção no sistema prisional"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre sofrimento psíquico, avalie: I. LGBTQIA+, pessoas negras e mulheres têm mais risco de sofrimento mental. II. Sofrimento ligado a raça e gênero deve ir só para serviço especializado. III. Queixas vagas e faltas a consultas podem esconder violência doméstica. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "Equidade.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "A APS deve acolher esses casos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-u11-l3-q2",
@@ -7788,18 +7750,18 @@
             },
             {
               "id": "prev-d8-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Exame com sensibilidade de 90% e especificidade de 80% deu resultado negativo.",
-              "enunciado": "Qual é a razão de verossimilhança negativa?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual medida diz quantas vezes um resultado é mais provável em doentes do que em sadios e muda a probabilidade pós-teste?",
               "opcoes": [
-                "0,125",
-                "4,5",
-                "1,125",
-                "0,9"
+                "Especificidade",
+                "Razão de verossimilhança",
+                "Sensibilidade",
+                "Valor preditivo"
               ],
-              "resposta": "0,125",
-              "explicacao": "0,1 dividido por 0,8.",
-              "revisado": false
+              "resposta": "Razão de verossimilhança",
+              "explicacao": "Não depende da prevalência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-d8-l1-q3",
@@ -8033,17 +7995,18 @@
             {
               "id": "prev-d8-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Teste com sensibilidade 90% e especificidade 90% em população com prevalência de 1%.",
-              "enunciado": "O que esperar do valor preditivo positivo?",
+              "caso": "Risco de síndrome de Down de 1%. O teste tem sensibilidade de 90% e 5% de falsos positivos. O resultado deu positivo.",
+              "enunciado": "Qual é a chance de o bebê ter a síndrome?",
               "opcoes": [
-                "Baixo, com muitos falsos positivos",
-                "Alto",
-                "90%",
-                "Alto, igual à sensibilidade de 90% do teste"
+                "Entre 10 e 20%",
+                "Entre 45 e 55%",
+                "Entre 85 e 95%",
+                "Entre 95 e 100%"
               ],
-              "resposta": "Baixo, com muitos falsos positivos",
-              "explicacao": "Prevalência baixa reduz o VPP.",
-              "revisado": false
+              "resposta": "Entre 10 e 20%",
+              "explicacao": "Em 1.000: 9 verdadeiros positivos e cerca de 50 falsos; 9 em 59 é cerca de 15%.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-d8-l3-q2",
@@ -8693,18 +8656,18 @@
           "questoes": [
             {
               "id": "prev-d10-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Município com aumento de sífilis congênita.",
-              "enunciado": "Qual é a principal ação?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a sífilis na Atenção Primária, qual afirmação é correta?",
               "opcoes": [
-                "Testar e tratar gestantes e parceiros",
-                "Só tratar o bebê",
-                "Vacinar",
-                "Tratar apenas os bebês após o nascimento, na maternidade"
+                "O VDRL é treponêmico",
+                "O VDRL fica positivo cerca de 2 semanas após o cancro e é mais alto na fase secundária",
+                "A penicilina benzatina não deve ser aplicada na UBS",
+                "A latente tardia se trata com dose única de 2,4 milhões"
               ],
-              "resposta": "Testar e tratar gestantes e parceiros",
-              "explicacao": "Prevenção na gestação.",
-              "revisado": false
+              "resposta": "O VDRL fica positivo cerca de 2 semanas após o cancro e é mais alto na fase secundária",
+              "explicacao": "Latente tardia e terciária: 3 doses semanais.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-d10-l2-q2",
@@ -8959,18 +8922,18 @@
           "questoes": [
             {
               "id": "prev-d11-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Município quer cobrar consulta no SUS.",
-              "enunciado": "Pode?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a NOAS-SUS 01/2002, avalie: I. Ampliou o papel dos municípios na Atenção Básica. II. Colocou a regionalização como estratégia para mais equidade. III. Fortaleceu a capacidade de gestão do SUS. Quais estão corretas?",
               "opcoes": [
-                "Não, o SUS é gratuito",
-                "Sim",
-                "Sim, metade",
-                "Só de quem tem dinheiro ou plano de saúde"
+                "Apenas I e II",
+                "Apenas I e III",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "resposta": "Não, o SUS é gratuito",
-              "explicacao": "Universalidade e gratuidade.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Criou o Plano Diretor de Regionalização.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "prev-d11-l1-q2",

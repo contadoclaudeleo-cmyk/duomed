@@ -31,36 +31,34 @@
             },
             {
               "id": "go-u1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada exame do pré-natal ao seu objetivo.",
-              "pares": [
-                {
-                  "esquerda": "TOTG 75 g entre 24 e 28 semanas",
-                  "direita": "Diagnóstico de diabetes gestacional"
-                },
-                {
-                  "esquerda": "Tipagem ABO e fator Rh",
-                  "direita": "Prevenção da aloimunização Rh"
-                },
-                {
-                  "esquerda": "Ultrassonografia de 11 a 14 semanas",
-                  "direita": "Medida da translucência nucal"
-                },
-                {
-                  "esquerda": "Sorologia para toxoplasmose",
-                  "direita": "Identificar gestante suscetível"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 22 semanas, sem queixas e com exame normal, na unidade básica.",
+              "enunciado": "Quando marcar a próxima consulta?",
+              "opcoes": [
+                "Em 7 dias",
+                "Em 15 dias",
+                "Em 20 dias",
+                "Em 30 dias"
               ],
-              "explicacao": "A gestante suscetível à toxoplasmose recebe orientações de prevenção e repete a sorologia ao longo da gestação.",
-              "revisado": false
+              "resposta": "Em 30 dias",
+              "explicacao": "Mensal até 28 semanas, quinzenal até 36 e semanal depois.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u1-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Puérpera Rh negativo não sensibilizada deve receber imunoglobulina anti-D em até 72 horas após o parto, se o recém-nascido for Rh positivo.",
-              "resposta": true,
-              "explicacao": "A imunoglobulina também é indicada após sangramentos, abortamentos e procedimentos invasivos na gestação.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Em que período após a concepção o tubo neural se fecha?",
+              "opcoes": [
+                "14 a 21 dias",
+                "21 a 28 dias",
+                "28 a 35 dias",
+                "35 a 42 dias"
+              ],
+              "resposta": "21 a 28 dias",
+              "explicacao": "Por isso o ácido fólico deve começar antes de engravidar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u1-l1-q4",
@@ -137,16 +135,17 @@
             {
               "id": "go-u1-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "A pré-eclâmpsia surge a partir de qual idade gestacional?",
+              "enunciado": "Além da pressão de 140 x 90 após 20 semanas, o que pode definir pré-eclâmpsia? I. Proteinúria acima de 300 mg em 24 horas. II. Creatinina acima de 1,1. III. Transaminases acima do dobro do normal.",
               "opcoes": [
-                "Após 20 semanas",
-                "Após 12 semanas",
-                "Após 28 semanas",
-                "Após 37 semanas"
+                "Apenas I",
+                "Apenas II",
+                "Apenas I e III",
+                "I, II e III"
               ],
-              "resposta": "Após 20 semanas",
-              "explicacao": "Hipertensão antes de 20 semanas sugere hipertensão crônica. A exceção é a doença trofoblástica, que pode causar pré-eclâmpsia precoce.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Lesão de órgão define pré-eclâmpsia mesmo sem proteinúria.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u1-l2-q2",
@@ -1130,28 +1129,18 @@
             },
             {
               "id": "go-u4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fase do ciclo ao hormônio que predomina.",
-              "pares": [
-                {
-                  "esquerda": "Fase folicular",
-                  "direita": "Estradiol"
-                },
-                {
-                  "esquerda": "Ovulação",
-                  "direita": "Pico de LH"
-                },
-                {
-                  "esquerda": "Fase lútea",
-                  "direita": "Progesterona"
-                },
-                {
-                  "esquerda": "Menstruação",
-                  "direita": "Queda de estrogênio e progesterona"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando investigar amenorreia primária? I. Aos 15 anos com caracteres sexuais presentes. II. Sem menstruar 5 anos após o início das mamas. III. Aos 13 anos sem nenhum caractere sexual.",
+              "opcoes": [
+                "Apenas I",
+                "Apenas II",
+                "Apenas I e II",
+                "I, II e III"
               ],
-              "explicacao": "A fase lútea dura cerca de 14 dias em quase todas as mulheres.",
-              "revisado": false
+              "resposta": "I, II e III",
+              "explicacao": "Qualquer um dos três já pede investigação.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u4-l1-q3",
@@ -1481,16 +1470,17 @@
             {
               "id": "go-u5-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Pela diretriz brasileira com citologia, qual é a faixa de idade do rastreamento?",
+              "enunciado": "Em qual mulher a junção escamocolunar costuma ficar mais para dentro do canal do colo?",
               "opcoes": [
-                "Dos 25 aos 64 anos, após início da vida sexual",
-                "Dos 15 aos 25",
-                "Só após os 50",
-                "Desde a primeira menstruação, todo ano, até o fim da vida"
+                "Menina de 12 anos",
+                "Nulípara de 21 anos",
+                "Multípara de 21 anos",
+                "Mulher de 50 anos na menopausa"
               ],
-              "resposta": "Dos 25 aos 64 anos, após início da vida sexual",
-              "explicacao": "Antes dos 25 anos, as lesões costumam regredir sozinhas.",
-              "revisado": false
+              "resposta": "Mulher de 50 anos na menopausa",
+              "explicacao": "Por isso a colposcopia pode ser insatisfatória na menopausa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u5-l1-q2",
@@ -1721,41 +1711,32 @@
             {
               "id": "go-u5-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sintoma mais comum do câncer de endométrio?",
+              "enunciado": "Sobre massas no ovário, qual afirmação está ERRADA?",
               "opcoes": [
-                "Sangramento após a menopausa",
-                "Dor pélvica",
-                "Corrimento",
-                "Aumento do abdome com ascite"
+                "Carcinoma de células claras é uma causa maligna",
+                "Corpo lúteo hemorrágico e endometrioma são benignos",
+                "Câncer de cólon e de estômago podem dar metástase no ovário",
+                "Gravidez ectópica sempre é tratada com cirurgia"
               ],
-              "resposta": "Sangramento após a menopausa",
-              "explicacao": "Todo sangramento após a menopausa precisa de investigação.",
-              "revisado": false
+              "resposta": "Gravidez ectópica sempre é tratada com cirurgia",
+              "explicacao": "A ectópica pode ser tratada com metotrexato ou só observação em casos selecionados.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fator à sua relação com o câncer de endométrio.",
-              "pares": [
-                {
-                  "esquerda": "Obesidade",
-                  "direita": "Excesso de estrogênio produzido pela gordura"
-                },
-                {
-                  "esquerda": "Tamoxifeno",
-                  "direita": "Efeito de estrogênio no endométrio"
-                },
-                {
-                  "esquerda": "Anticoncepcional combinado",
-                  "direita": "Proteção pelo progestagênio"
-                },
-                {
-                  "esquerda": "Síndrome de Lynch",
-                  "direita": "Risco hereditário"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são causas pouco comuns de sangramento após a menopausa? I. Atrofia do endométrio. II. Pólipos endometriais. III. Câncer de endométrio.",
+              "opcoes": [
+                "Apenas I",
+                "Apenas II",
+                "Apenas II e III",
+                "I, II e III"
               ],
-              "explicacao": "A exposição ao estrogênio sem progesterona é o principal mecanismo.",
-              "revisado": false
+              "resposta": "Apenas II e III",
+              "explicacao": "A atrofia é a causa mais comum.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u5-l3-q3",
@@ -1980,28 +1961,19 @@
             },
             {
               "id": "go-u6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada úlcera genital ao seu agente.",
-              "pares": [
-                {
-                  "esquerda": "Úlcera única, dura e indolor",
-                  "direita": "Sífilis"
-                },
-                {
-                  "esquerda": "Várias úlceras dolorosas e bolhas",
-                  "direita": "Herpes genital"
-                },
-                {
-                  "esquerda": "Úlcera dolorosa de fundo sujo",
-                  "direita": "Cancroide"
-                },
-                {
-                  "esquerda": "Gânglio inchado que fistuliza",
-                  "direita": "Linfogranuloma venéreo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 23 anos tem pápula única rosada na vulva, com depressão no centro como um umbigo, sem dor ou coceira.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Molusco contagioso",
+                "Pediculose",
+                "Condiloma",
+                "Cancro duro"
               ],
-              "explicacao": "Toda úlcera genital deve levar a testar sífilis e HIV.",
-              "revisado": false
+              "resposta": "Molusco contagioso",
+              "explicacao": "Causado por poxvírus.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u6-l2-q3",
@@ -2212,28 +2184,18 @@
           "questoes": [
             {
               "id": "go-u7-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tempo do mecanismo do parto ao movimento.",
-              "pares": [
-                {
-                  "esquerda": "Insinuação",
-                  "direita": "Cabeça passa pelo estreito superior"
-                },
-                {
-                  "esquerda": "Descida",
-                  "direita": "Cabeça avança pela pelve"
-                },
-                {
-                  "esquerda": "Rotação interna",
-                  "direita": "Occipital gira para frente"
-                },
-                {
-                  "esquerda": "Desprendimento",
-                  "direita": "Cabeça sai por extensão"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a recomendação para o clampeamento do cordão?",
+              "opcoes": [
+                "Clampear a 1 cm do abdome do bebê",
+                "Usar uma só pinça e cortar do lado do bebê",
+                "Usar uma só pinça e cortar do lado da placenta",
+                "Esperar 30 a 60 segundos nos bebês vigorosos"
               ],
-              "explicacao": "Movimentos da apresentação cefálica.",
-              "revisado": false
+              "resposta": "Esperar 30 a 60 segundos nos bebês vigorosos",
+              "explicacao": "O clampeamento tardio melhora as reservas de ferro.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u7-l1-q2",
@@ -2448,28 +2410,18 @@
           "questoes": [
             {
               "id": "go-u7-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intervenção obstétrica à situação em que é indicada.",
-              "pares": [
-                {
-                  "esquerda": "Fórcipe",
-                  "direita": "Período expulsivo prolongado com cabeça baixa"
-                },
-                {
-                  "esquerda": "Vácuo extrator",
-                  "direita": "Ajudar a saída com cabeça baixa"
-                },
-                {
-                  "esquerda": "Cesárea",
-                  "direita": "Desproporção ou sofrimento sem condições de parto"
-                },
-                {
-                  "esquerda": "Episiotomia",
-                  "direita": "Casos selecionados"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fórcipe corrige o assinclitismo e faz grandes rotações?",
+              "opcoes": [
+                "Simpson",
+                "Kielland",
+                "Barton",
+                "Piper"
               ],
-              "explicacao": "Indicações de prova.",
-              "revisado": false
+              "resposta": "Kielland",
+              "explicacao": "Piper é para a cabeça derradeira no parto pélvico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-u7-l3-q2",
@@ -5594,18 +5546,18 @@
           "questoes": [
             {
               "id": "go-d2-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 33 semanas tem sangramento vermelho vivo, sem dor, útero relaxado e feto bem.",
-              "enunciado": "Qual é a hipótese e o que não fazer?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Acretismo placentário descoberto numa cesárea de emergência. Avalie: I. Abrir o útero fora da área da placenta. II. Tirar a placenta com a mão com cuidado. III. Fazer histerectomia com a placenta no lugar.",
               "opcoes": [
-                "Placenta prévia; não fazer toque",
-                "Descolamento; toque",
-                "Normal; alta",
-                "Parto imediato sem nenhuma avaliação por ultrassom"
+                "Apenas I",
+                "Apenas II",
+                "Apenas I e III",
+                "I, II e III"
               ],
-              "resposta": "Placenta prévia; não fazer toque",
-              "explicacao": "A ultrassonografia confirma a posição da placenta.",
-              "revisado": false
+              "resposta": "Apenas I e III",
+              "explicacao": "Tentar descolar a placenta causa hemorragia grave.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-d2-l2-q2",
@@ -7153,17 +7105,18 @@
             {
               "id": "go-d6-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Casal tenta engravidar há 1 ano sem sucesso, e a mulher tem 30 anos.",
-              "enunciado": "Qual é a investigação inicial?",
+              "caso": "Mulher de 25 anos tenta engravidar há 6 meses. Ciclos regulares, IMC 28, usa maconha à noite e toma 5 xícaras de café por dia. O médico mandou esperar 1 ano e manter tudo igual.",
+              "enunciado": "Como avaliar a conduta?",
               "opcoes": [
-                "Espermograma, ovulação e trompas",
-                "Só a mulher",
-                "Esperar 5 anos",
-                "Fertilização in vitro sem nenhum exame do casal"
+                "Correta em tudo",
+                "Só faltou mandar perder peso e fazer terapia",
+                "Esperar 1 ano é certo, mas devia orientar peso, parar maconha e reduzir café",
+                "Errada, devia encaminhar para infertilidade já"
               ],
-              "resposta": "Espermograma, ovulação e trompas",
-              "explicacao": "Acima de 35 anos, a investigação começa após 6 meses.",
-              "revisado": false
+              "resposta": "Esperar 1 ano é certo, mas devia orientar peso, parar maconha e reduzir café",
+              "explicacao": "Abaixo de 35 anos, investiga-se após 1 ano, mas hábitos devem ser corrigidos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "go-d6-l2-q2",

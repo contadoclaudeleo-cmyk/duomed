@@ -285,28 +285,18 @@
             },
             {
               "id": "cm-u1-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada grupo de estadiamento da dengue à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Grupo A",
-                  "direita": "Sem sinais de alarme e sem condições especiais"
-                },
-                {
-                  "esquerda": "Grupo B",
-                  "direita": "Sangramento de pele ou condição especial, sem sinais de alarme"
-                },
-                {
-                  "esquerda": "Grupo C",
-                  "direita": "Presença de sinais de alarme"
-                },
-                {
-                  "esquerda": "Grupo D",
-                  "direita": "Sinais de choque ou sangramento grave"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes NÃO é sinal de alarme da dengue?",
+              "opcoes": [
+                "Derrame pleural ou ascite",
+                "Fígado aumentado e tontura ao levantar",
+                "Queda do hematócrito e cólica leve",
+                "Sangramento de mucosa e irritabilidade"
               ],
-              "explicacao": "Condições especiais incluem gestantes, menores de 2 anos, maiores de 65 anos, comorbidades e risco social. Grupos C e D precisam de hidratação venosa.",
-              "revisado": false
+              "resposta": "Queda do hematócrito e cólica leve",
+              "explicacao": "O alarme é hematócrito subindo e dor abdominal intensa e contínua.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u1-l3-q3",
@@ -636,18 +626,18 @@
           "questoes": [
             {
               "id": "cm-u2-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 60 anos tem dor no peito há 40 minutos e ECG com supradesnivelamento de ST em DII, DIII e aVF. O hospital não tem hemodinâmica, e o mais próximo fica a 3 horas.",
-              "enunciado": "Qual é a estratégia de reperfusão?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando manter dupla antiagregação plaquetária? I. Para sempre na doença arterial periférica. II. Por pelo menos 12 meses após infarto tratado com angioplastia. III. Para sempre no diabético que teve AVC isquêmico.",
               "opcoes": [
-                "Trombólise, se não houver contraindicação",
-                "Transferir para angioplastia de qualquer forma",
-                "Apenas AAS e observação",
-                "Cirurgia de revascularização imediata"
+                "Apenas I",
+                "Apenas II",
+                "Apenas I e II",
+                "I, II e III"
               ],
-              "resposta": "Trombólise, se não houver contraindicação",
-              "explicacao": "Quando a angioplastia não é possível em até 120 minutos, a trombólise deve ser feita, de preferência em até 30 minutos da chegada.",
-              "revisado": false
+              "resposta": "Apenas II",
+              "explicacao": "Fora desses casos, usa-se em geral um antiagregante só.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u2-l3-q2",
@@ -1939,18 +1929,29 @@
           "questoes": [
             {
               "id": "cm-u20-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Jovem com dor no peito que piora ao deitar e melhora inclinado para frente. Atrito pericárdico e supra de ST difuso.",
-              "enunciado": "Qual é o tratamento?",
-              "opcoes": [
-                "Anti-inflamatório em dose alta com colchicina",
-                "Trombólise na emergência",
-                "Anticoagulação plena",
-                "Corticoide em dose alta como primeira escolha"
+              "tipo": "associar_pares",
+              "enunciado": "Associe a alteração do pulso venoso jugular à doença.",
+              "pares": [
+                {
+                  "esquerda": "Descenso Y ausente",
+                  "direita": "Tamponamento cardíaco"
+                },
+                {
+                  "esquerda": "Onda A aumentada",
+                  "direita": "Estenose tricúspide"
+                },
+                {
+                  "esquerda": "Onda V gigante",
+                  "direita": "Insuficiência tricúspide"
+                },
+                {
+                  "esquerda": "Descenso Y proeminente",
+                  "direita": "Pericardite constritiva"
+                }
               ],
-              "resposta": "Anti-inflamatório em dose alta com colchicina",
-              "explicacao": "Colchicina reduz a recorrência.",
-              "revisado": false
+              "explicacao": "No tamponamento o enchimento é limitado o tempo todo; na constrição, só no fim.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u20-l3-q2",
@@ -2410,16 +2411,17 @@
             {
               "id": "cm-u3-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Segundo o GINA, qual é o tratamento de controle preferido para adolescentes e adultos com asma?",
+              "enunciado": "Na asma não controlada só com corticoide inalatório, o que se acrescenta?",
               "opcoes": [
-                "Corticoide inalatório com formoterol",
-                "Salbutamol isolado",
-                "Teofilina",
-                "Salbutamol isolado sempre que precisar, sem corticoide"
+                "Corticoide oral contínuo",
+                "Montelucaste",
+                "Beta-2-agonista de longa duração",
+                "Tiotrópio"
               ],
-              "resposta": "Corticoide inalatório com formoterol",
-              "explicacao": "O corticoide inalatório trata a inflamação, que é a base da asma.",
-              "revisado": false
+              "resposta": "Beta-2-agonista de longa duração",
+              "explicacao": "A dupla corticoide com LABA é o passo seguinte.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u3-l1-q2",
@@ -4697,28 +4699,18 @@
           "questoes": [
             {
               "id": "cm-u4-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada alteração do ECG ao distúrbio.",
-              "pares": [
-                {
-                  "esquerda": "Onda T apiculada",
-                  "direita": "Hipercalemia"
-                },
-                {
-                  "esquerda": "Onda U proeminente",
-                  "direita": "Hipocalemia"
-                },
-                {
-                  "esquerda": "QRS largo com padrão sinusoidal",
-                  "direita": "Hipercalemia grave"
-                },
-                {
-                  "esquerda": "Onda T achatada",
-                  "direita": "Hipocalemia leve"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Avalie: I. A secreção inadequada de ADH causa hipernatremia. II. Leucócitos acima de 100.000 podem dar falsa hipercalemia. III. A síndrome de realimentação causa fósforo alto. IV. Hipercalcemia é o distúrbio eletrolítico mais comum nas síndromes paraneoplásicas. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I e II",
+                "Apenas II e IV",
+                "Apenas I, II e III",
+                "Apenas I, II e IV"
               ],
-              "explicacao": "O padrão sinusoidal antecede a parada cardíaca.",
-              "revisado": false
+              "resposta": "Apenas II e IV",
+              "explicacao": "SIADH causa sódio baixo e a realimentação derruba o fósforo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u4-l3-q2",
@@ -4943,16 +4935,17 @@
             {
               "id": "cm-u5-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual achado no líquido ascítico define peritonite bacteriana espontânea?",
+              "enunciado": "Sobre a ascite, avalie: I. Restringir sal e água é fundamental para todos. II. A espironolactona funciona melhor que o diurético de alça. III. Na carcinomatose, repõe-se albumina quando se tiram mais de 5 litros. Quais estão corretas?",
               "opcoes": [
-                "Neutrófilos acima de 250 por mm³",
-                "Proteína acima de 3 g/dL",
-                "Glicose baixa",
-                "Leucócitos acima de 10 por mm³"
+                "Apenas I",
+                "Apenas II",
+                "Apenas I e III",
+                "I, II e III"
               ],
-              "resposta": "Neutrófilos acima de 250 por mm³",
-              "explicacao": "O tratamento começa sem esperar a cultura.",
-              "revisado": false
+              "resposta": "Apenas II",
+              "explicacao": "Água só se restringe com sódio abaixo de 125; a albumina é para a ascite da cirrose.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u5-l2-q2",
@@ -5188,24 +5181,32 @@
             {
               "id": "cm-u18-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tumor de hipófise mais comum?",
+              "enunciado": "Sobre a hipófise, avalie: I. A maioria dos hormônios da adeno-hipófise depende de estímulo do hipotálamo, mas a prolactina é controlada por inibição. II. Se a haste for lesada, a prolactina sobe e os outros hormônios caem.",
               "opcoes": [
-                "Prolactinoma",
-                "Somatotropinoma",
-                "Corticotropinoma",
-                "Tireotropinoma"
+                "Todas estão corretas",
+                "Todas estão incorretas",
+                "Apenas I está correta",
+                "Apenas II está correta"
               ],
-              "resposta": "Prolactinoma",
-              "explicacao": "Produz prolactina.",
-              "revisado": false
+              "resposta": "Todas estão corretas",
+              "explicacao": "A dopamina do hipotálamo inibe a prolactina.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u18-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Remédios como antipsicóticos e metoclopramida podem aumentar a prolactina.",
-              "resposta": true,
-              "explicacao": "Investigar antes de pensar em tumor.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Um paciente com hemianopsia bitemporal tem lesão em qual lugar?",
+              "opcoes": [
+                "Lobo temporal",
+                "Quiasma óptico",
+                "Trato óptico",
+                "Lobo parietal"
+              ],
+              "resposta": "Quiasma óptico",
+              "explicacao": "Típico do tumor de hipófise que cresce para cima.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u18-l1-q3",
@@ -6017,16 +6018,17 @@
             {
               "id": "cm-u6-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o esquema inicial preferencial de antirretrovirais no Brasil para a maioria dos adultos?",
+              "enunciado": "Qual antirretroviral pode causar reação de hipersensibilidade fatal se reintroduzido em quem já teve febre ou manchas com ele?",
               "opcoes": [
-                "Tenofovir, lamivudina e dolutegravir",
-                "Zidovudina isolada",
-                "Efavirenz isolado",
-                "Lopinavir com ritonavir isolado, sem outro remédio"
+                "Abacavir",
+                "Dolutegravir",
+                "Efavirenz",
+                "Rilpivirina"
               ],
-              "resposta": "Tenofovir, lamivudina e dolutegravir",
-              "explicacao": "O esquema é feito com poucos comprimidos por dia e tem boa tolerância.",
-              "revisado": false
+              "resposta": "Abacavir",
+              "explicacao": "Pesquisa-se o HLA-B*5701 antes de usar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u6-l2-q2",
@@ -6409,11 +6411,18 @@
             },
             {
               "id": "cm-u12-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Weil é a forma grave da leptospirose, com icterícia, insuficiência renal e sangramento.",
-              "resposta": true,
-              "explicacao": "Exige internação.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a febre maculosa, avalie: I. É causada por vírus transmitido pelo carrapato-estrela. II. Os sintomas surgem de 2 a 14 dias após a picada. III. O tratamento é só de suporte. Quais estão corretas?",
+              "opcoes": [
+                "Apenas I",
+                "Apenas II",
+                "Apenas II e III",
+                "I, II e III"
+              ],
+              "resposta": "Apenas II",
+              "explicacao": "É uma bactéria (Rickettsia) e se trata com doxiciclina logo na suspeita.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u12-l2-q4",
@@ -6734,16 +6743,17 @@
             {
               "id": "cm-u7-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o anticorpo mais sensível para o lúpus?",
+              "enunciado": "Em quem tem dor nas articulações, qual resultado de FAN sugere mais doença reumatológica?",
               "opcoes": [
-                "FAN",
-                "Anti-Sm",
-                "Anti-CCP",
-                "ANCA"
+                "FAN 1:160 citoplasmático fibrilar linear em jovem com cefaleia",
+                "FAN 1:640 nuclear pontilhado grosso em quem tem cansaço",
+                "FAN 1:320 citoplasmático polar em quem usa isotretinoína",
+                "FAN 1:160 citoplasmático filamentar após infecção recente"
               ],
-              "resposta": "FAN",
-              "explicacao": "FAN negativo torna o lúpus improvável.",
-              "revisado": false
+              "resposta": "FAN 1:640 nuclear pontilhado grosso em quem tem cansaço",
+              "explicacao": "Título alto e padrão nuclear pesam mais; padrões citoplasmáticos em título baixo são comuns em pessoas saudáveis.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u7-l2-q2",
@@ -7084,17 +7094,19 @@
           "questoes": [
             {
               "id": "cm-u8-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual leucemia é mais comum em idosos e muitas vezes não tem sintomas?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 78 anos com coceira há 1 mês e perda de 2 kg. Leucócitos 13.500 com 40% de linfócitos, plaquetas 128.000 e vitamina B12 acima de 2.000.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Leucemia linfoide crônica",
-                "Leucemia linfoide aguda",
-                "Leucemia mieloide aguda",
-                "Leucemia mieloide crônica"
+                "Tranquilizar e indicar hidratante",
+                "Investigar doença linfoproliferativa",
+                "Repetir os exames por erro provável",
+                "Dar anti-histamínico e reavaliar"
               ],
-              "resposta": "Leucemia linfoide crônica",
-              "explicacao": "Achado de linfocitose no hemograma.",
-              "revisado": false
+              "resposta": "Investigar doença linfoproliferativa",
+              "explicacao": "Coceira com perda de peso e alterações no sangue no idoso pede investigação.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u8-l2-q2",
@@ -7914,28 +7926,18 @@
           "questoes": [
             {
               "id": "cm-u14-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intoxicação vista no pronto-socorro ao antídoto específico.",
-              "pares": [
-                {
-                  "esquerda": "Paracetamol",
-                  "direita": "N-acetilcisteína"
-                },
-                {
-                  "esquerda": "Opioide",
-                  "direita": "Naloxona"
-                },
-                {
-                  "esquerda": "Organofosforado",
-                  "direita": "Atropina"
-                },
-                {
-                  "esquerda": "Metanol",
-                  "direita": "Fomepizol ou etanol"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual quelante se usa na intoxicação crônica por mercúrio no adulto?",
+              "opcoes": [
+                "Deferoxamina",
+                "Azul da Prússia",
+                "Ácido dimercaptossuccínico",
+                "EDTA"
               ],
-              "explicacao": "Os antídotos salvam vidas.",
-              "revisado": false
+              "resposta": "Ácido dimercaptossuccínico",
+              "explicacao": "Deferoxamina é para ferro e azul da Prússia para tálio.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024"
             },
             {
               "id": "cm-u14-l3-q2",
