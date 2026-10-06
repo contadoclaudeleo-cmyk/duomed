@@ -47,40 +47,51 @@
             },
             {
               "id": "ped-u1-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vacina rotavírus tem idade máxima: a primeira dose não pode ser dada após 3 meses e 15 dias de vida.",
-              "resposta": true,
-              "explicacao": "Os limites existem pelo risco de intussuscepção em idades maiores. A segunda dose vai até 7 meses e 29 dias.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses ficou mole, sem resposta e com lábios roxos 5 horas após as vacinas. Recuperou-se em minutos e está bem.",
+              "enunciado": "Sobre a investigação, o que é correto?",
+              "opcoes": [
+                "ECG e EEG",
+                "Ultrassom transfontanela",
+                "Líquor e coqueluche",
+                "Não precisa de mais investigação"
+              ],
+              "resposta": "Não precisa de mais investigação",
+              "explicacao": "Episódio hipotônico-hiporresponsivo pós-vacina é benigno.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-u1-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A vacina ___ protege contra as formas graves da tuberculose, como a meníngea e a miliar.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses e 10 dias só tomou BCG e hepatite B.",
+              "enunciado": "Qual vacina não pode ser dada hoje?",
               "opcoes": [
-                "BCG",
-                "VIP",
-                "pentavalente",
-                "tríplice viral"
+                "Pentavalente",
+                "Pneumocócica",
+                "Rotavírus",
+                "Poliomielite"
               ],
-              "resposta": "BCG",
-              "explicacao": "A BCG não impede a infecção, mas reduz muito as formas graves em crianças.",
-              "revisado": false
+              "resposta": "Rotavírus",
+              "explicacao": "A primeira dose de rotavírus vai até 3 meses e 15 dias.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-u1-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 4 meses com resfriado leve, sem febre há 2 dias e em bom estado geral, chega à unidade para as vacinas de rotina.",
+              "caso": "Bebê de 35 dias tem úlcera de 0,8 cm no local da BCG e um gânglio axilar móvel e indolor de 2,5 cm.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Vacinar normalmente",
-                "Adiar todas as vacinas por 30 dias",
-                "Adiar até a tosse desaparecer",
-                "Aplicar só as vacinas inativadas"
+                "Isoniazida",
+                "Acompanhar",
+                "Cefalexina",
+                "Punção do gânglio"
               ],
-              "resposta": "Vacinar normalmente",
-              "explicacao": "Doença leve sem febre não é contraindicação. Adiar vacinas sem motivo é uma das maiores causas de atraso vacinal.",
-              "revisado": false
+              "resposta": "Acompanhar",
+              "explicacao": "É a evolução esperada da BCG.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-u1-l1-q6",
@@ -698,16 +709,17 @@
             {
               "id": "ped-u2-l3-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual vitamina todo recém-nascido recebe na sala de parto?",
+              "enunciado": "Quando colher o teste do pezinho para fenilcetonúria?",
               "opcoes": [
-                "Vitamina K",
-                "Vitamina A",
-                "Vitamina D",
-                "Vitamina B12"
+                "Só no ambulatório",
+                "Antes da primeira mamada",
+                "Após 48 horas de vida",
+                "Não é necessário"
               ],
-              "resposta": "Vitamina K",
-              "explicacao": "Ela previne a doença hemorrágica do recém-nascido.",
-              "revisado": false
+              "resposta": "Após 48 horas de vida",
+              "explicacao": "O bebê precisa ter ingerido proteína.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-u2-l3-q7",
@@ -2781,11 +2793,19 @@
             },
             {
               "id": "ped-u8-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No autismo, é melhor esperar a criança fazer 5 anos para iniciar a intervenção.",
-              "resposta": false,
-              "explicacao": "Falso. A intervenção precoce melhora o prognóstico; quanto antes, melhor.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos com encefalopatia, traqueostomia e gastrostomia tem pneumonias de repetição, baba muito e engole mal.",
+              "enunciado": "O que acrescentar para reduzir as pneumonias?",
+              "opcoes": [
+                "Amoxicilina profilática",
+                "Procinético e bloqueador H2",
+                "Colírio de atropina por via oral",
+                "Benzodiazepínico"
+              ],
+              "resposta": "Colírio de atropina por via oral",
+              "explicacao": "Reduz a saliva aspirada.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-u8-l3-q4",
@@ -9975,17 +9995,18 @@
             {
               "id": "ped-d13-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com calcificações difusas, hidrocefalia e coriorretinite.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Gestante com 7 semanas tinha IgM e IgG para toxoplasmose com alta avidez. Bebê nasceu normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Sulfadiazina, pirimetamina e folínico por 1 ano",
-                "Penicilina",
-                "Aciclovir",
-                "Penicilina cristalina por dez dias e aciclovir"
+                "Investigação completa antes de tratar",
+                "Sorologia do cordão",
+                "Tratar por 1 ano",
+                "Cuidados de rotina"
               ],
-              "resposta": "Sulfadiazina, pirimetamina e folínico por 1 ano",
-              "explicacao": "Toxoplasmose congênita.",
-              "revisado": false
+              "resposta": "Cuidados de rotina",
+              "explicacao": "Alta avidez no início da gestação indica infecção antiga.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "ped-d13-l3-q3",

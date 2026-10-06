@@ -1493,25 +1493,34 @@
             },
             {
               "id": "go-u5-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No rastreamento com citologia, após dois exames anuais normais, o intervalo passa a ser de 3 anos.",
-              "resposta": true,
-              "explicacao": "O teste de DNA-HPV permite intervalos maiores.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Em homem trans com vagina, em uso de testosterona, como fica a citologia?",
+              "opcoes": [
+                "Menos células superficiais e mais acurácia",
+                "Mais células superficiais e menos acurácia",
+                "Menos células basais e mais acurácia",
+                "Mais células basais e menos acurácia"
+              ],
+              "resposta": "Mais células basais e menos acurácia",
+              "explicacao": "A testosterona deixa o epitélio atrófico.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u5-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O rastreamento do câncer de colo do útero no Brasil está migrando para o teste de DNA do ___, que é mais sensível.",
+              "tipo": "caso_clinico",
+              "caso": "Pessoa não binária transmasculina de 28 anos, em uso de testosterona e com secura vaginal, quer fazer o Papanicolau.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "HPV",
-                "HIV",
-                "herpes",
-                "HTLV"
+                "Recomendado; estrogênio é contraindicado",
+                "Recomendado; sem estrogênio ou lubrificante",
+                "Recomendado; pode usar estrogênio tópico antes e lubrificante à base de água",
+                "Não recomendado"
               ],
-              "resposta": "HPV",
-              "explicacao": "O teste molecular detecta os tipos de alto risco do vírus.",
-              "revisado": false
+              "resposta": "Recomendado; pode usar estrogênio tópico antes e lubrificante à base de água",
+              "explicacao": "O rastreio segue as regras de quem tem colo.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u5-l1-q5",
@@ -1714,25 +1723,35 @@
             },
             {
               "id": "go-u5-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Não existe rastreamento populacional eficaz para o câncer de ovário.",
-              "resposta": true,
-              "explicacao": "Por isso a maioria é descoberta em fase avançada.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos, em investigação de infertilidade, tem adenocarcinoma de endométrio grau 1 restrito ao endométrio e quer ter filhos.",
+              "enunciado": "Qual tratamento considerar?",
+              "opcoes": [
+                "Braquiterapia",
+                "Estrogênio em dose alta",
+                "Ablação do endométrio",
+                "Progestagênio em dose alta"
+              ],
+              "resposta": "Progestagênio em dose alta",
+              "explicacao": "Preserva o útero em casos muito selecionados.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u5-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O marcador ___ é usado na avaliação de massas suspeitas no ovário e no acompanhamento do câncer de ovário.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 60 anos, 10 anos após a menopausa, tem pouco sangramento. Histeroscopia normal e biópsia com atrofia.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "CA-125",
-                "CEA",
-                "PSA",
-                "AFP e beta-hCG"
+                "Terapia hormonal combinada",
+                "Só estrogênio",
+                "Seguimento habitual",
+                "Ablação endometrial"
               ],
-              "resposta": "CA-125",
-              "explicacao": "Ele também sobe na endometriose, em miomas e na gestação.",
-              "revisado": false
+              "resposta": "Seguimento habitual",
+              "explicacao": "A atrofia é a causa mais comum.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u5-l3-q5",
@@ -2873,17 +2892,19 @@
             },
             {
               "id": "go-u9-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando é melhor determinar a corionicidade?",
+              "tipo": "caso_clinico",
+              "caso": "Gêmeos dicoriônicos com 33 semanas e bolsa rota há 4 dias. O primeiro está pélvico. Contrações e 3 cm de dilatação.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "No primeiro trimestre",
-                "No parto",
-                "Com 30 semanas",
-                "Somente no momento do parto"
+                "Cesárea",
+                "Conduzir o parto normal",
+                "Antiespasmódico e reavaliar",
+                "Inibir o trabalho de parto"
               ],
-              "resposta": "No primeiro trimestre",
-              "explicacao": "Sinais do lambda e do T.",
-              "revisado": false
+              "resposta": "Cesárea",
+              "explicacao": "Primeiro gemelar não cefálico indica cesárea.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u9-l1-q3",
@@ -4051,17 +4072,19 @@
             },
             {
               "id": "go-u12-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sistema de classificação do prolapso?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 60 anos com dois partos precisa colocar o dedo na vagina para evacuar. Paredes anterior e posterior descem ao esforço, sem perda urinária.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "POP-Q",
-                "Bethesda",
-                "FIGO",
-                "Gleason"
+                "Colporrafia anterior",
+                "Colporrafia posterior (fáscia retovaginal)",
+                "Rafia do transverso do períneo",
+                "Colpossacrofixação"
               ],
-              "resposta": "POP-Q",
-              "explicacao": "Pontos medidos na vagina.",
-              "revisado": false
+              "resposta": "Colporrafia posterior (fáscia retovaginal)",
+              "explicacao": "A queixa é da retocele.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u12-l2-q3",
@@ -4538,11 +4561,19 @@
             },
             {
               "id": "go-u13-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A notificação de violência é compulsória.",
-              "resposta": true,
-              "explicacao": "Em menores, comunicar ao Conselho Tutelar.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 17 anos está grávida após o namorado ter relação com ela desacordada e alcoolizada. Não deseja a gestação.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Explicar o aborto legal e exigir boletim de ocorrência",
+                "Iniciar pré-natal e contar aos responsáveis",
+                "Explicar violência e aborto legal, notificar e planejar com ela",
+                "Pré-natal e avaliar se houve consentimento"
+              ],
+              "resposta": "Explicar violência e aborto legal, notificar e planejar com ela",
+              "explicacao": "Relação com pessoa sem capacidade de consentir é estupro.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-u13-l3-q4",
@@ -5658,17 +5689,18 @@
             {
               "id": "go-d2-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Puérpera com pré-eclâmpsia grave e pressão 170 x 110 tem atonia uterina após a ocitocina.",
-              "enunciado": "Qual uterotônico deve ser evitado?",
+              "caso": "Pré-eclâmpsia grave com descolamento de placenta. Após cesárea, útero amolecido mesmo com massagem e ocitocina.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Metilergometrina",
-                "Ocitocina em infusão",
+                "Ergotamina",
+                "Balão de Bakri",
                 "Misoprostol",
-                "Ácido tranexâmico"
+                "Sutura de B-Lynch"
               ],
-              "resposta": "Metilergometrina",
-              "explicacao": "A metilergometrina causa vasoconstrição e é contraindicada na hipertensão grave.",
-              "revisado": false
+              "resposta": "Misoprostol",
+              "explicacao": "Ergotamina é contraindicada na hipertensão.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d2-l3-q4",
@@ -7071,18 +7103,18 @@
             },
             {
               "id": "go-d6-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Casal com infertilidade: a histerossalpingografia mostra as duas trompas obstruídas; sêmen normal.",
-              "enunciado": "Qual técnica é indicada?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulher usou clomifeno do 3º ao 7º dia do ciclo. Como deve estar o muco no 14º dia?",
               "opcoes": [
-                "Fertilização in vitro",
-                "Inseminação intrauterina",
-                "Indução de ovulação",
-                "Relação programada no período fértil"
+                "Branco e pegajoso",
+                "Transparente e elástico",
+                "Com sangue e viscoso",
+                "Amarelado e líquido"
               ],
-              "resposta": "Fertilização in vitro",
-              "explicacao": "A inseminação exige pelo menos uma trompa funcionando.",
-              "revisado": false
+              "resposta": "Transparente e elástico",
+              "explicacao": "Indica estrogênio alto antes da ovulação.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d6-l2-q4",
@@ -7693,32 +7725,34 @@
             {
               "id": "go-d8-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 30 semanas com bebê no percentil 2 e diástole zero na artéria umbilical, ducto venoso normal.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Hipertensa crônica de 42 anos com 37 semanas e feto no percentil 7. No plano de parto, quer esperar o trabalho de parto até 42 semanas.",
+              "enunciado": "O que não pode ser atendido?",
               "opcoes": [
-                "Corticoide e parto até 32-34 semanas, com vigilância",
-                "Parto imediato sempre",
-                "Repetir em 1 mês",
-                "Repetir o Doppler só daqui a um mês e esperar o termo"
+                "Contato pele a pele",
+                "Parto vaginal",
+                "Clampeamento pelo companheiro",
+                "Esperar o trabalho de parto espontâneo"
               ],
-              "resposta": "Corticoide e parto até 32-34 semanas, com vigilância",
-              "explicacao": "Diástole zero: parto até 34 semanas.",
-              "revisado": false
+              "resposta": "Esperar o trabalho de parto espontâneo",
+              "explicacao": "Restrição de crescimento com hipertensão indica parto com 37 semanas.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d8-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 28 semanas com ducto venoso com onda a reversa.",
+              "caso": "Essa gestante com feto pequeno e hipertensão crônica está com 2 cm, colo grosso e posterior, sem contrações.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Corticoide, magnésio e parto",
-                "Aguardar",
-                "Repetir em 2 semanas",
-                "Repetir o Doppler em duas semanas e aguardar"
+                "Ocitocina",
+                "Amniotomia",
+                "Preparo do colo com prostaglandina",
+                "Cesárea"
               ],
-              "resposta": "Corticoide, magnésio e parto",
-              "explicacao": "Sinal de descompensação fetal.",
-              "revisado": false
+              "resposta": "Preparo do colo com prostaglandina",
+              "explicacao": "Colo desfavorável pede preparo; vigiar a vitalidade.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d8-l1-q3",
@@ -8515,43 +8549,34 @@
             },
             {
               "id": "go-d10-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com hipertensão pulmonar grave quer engravidar.",
-              "enunciado": "Qual é a orientação?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulher com prótese mitral metálica em varfarina quer engravidar. Qual é a orientação?",
               "opcoes": [
-                "Contraindicar a gestação",
-                "Pode engravidar sem riscos",
-                "Engravidar e usar sildenafila",
-                "Engravidar após 6 meses de remédio"
+                "Varfarina, varfarina e enoxaparina após 36 semanas",
+                "Enoxaparina, enoxaparina e varfarina após 36 semanas",
+                "Varfarina, enoxaparina e varfarina após 36 semanas",
+                "Enoxaparina no 1º trimestre, varfarina no 2º e enoxaparina após 36 semanas"
               ],
-              "resposta": "Contraindicar a gestação",
-              "explicacao": "A hipertensão pulmonar grave tem mortalidade materna muito alta.",
-              "revisado": false
+              "resposta": "Enoxaparina no 1º trimestre, varfarina no 2º e enoxaparina após 36 semanas",
+              "explicacao": "Varfarina no 1º trimestre causa embriopatia.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d10-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à anticoagulação na gestação.",
-              "pares": [
-                {
-                  "esquerda": "Trombose venosa na gestação",
-                  "direita": "Heparina de baixo peso"
-                },
-                {
-                  "esquerda": "Síndrome antifosfolípide com abortos",
-                  "direita": "Heparina e AAS"
-                },
-                {
-                  "esquerda": "Prótese mecânica",
-                  "direita": "Anticoagulação plena"
-                },
-                {
-                  "esquerda": "Puerpério de alto risco",
-                  "direita": "Heparina profilática"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 31 semanas com falta de ar súbita e dor no peito. Saturação 98% e ultrassom pulmonar normal.",
+              "enunciado": "Qual é o exame mais adequado para começar?",
+              "opcoes": [
+                "Angiotomografia",
+                "Radiografia de tórax",
+                "Ultrassom das pernas",
+                "D-dímero"
               ],
-              "explicacao": "Heparina não atravessa a placenta.",
-              "revisado": false
+              "resposta": "Ultrassom das pernas",
+              "explicacao": "Trombose na perna confirma tromboembolismo sem radiação.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "go-d10-l1-q5",

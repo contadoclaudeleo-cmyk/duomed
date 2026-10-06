@@ -630,36 +630,35 @@
             },
             {
               "id": "cir-u2-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à sua interpretação.",
-              "pares": [
-                {
-                  "esquerda": "Tríade de Cushing",
-                  "direita": "Hipertensão, bradicardia e respiração irregular"
-                },
-                {
-                  "esquerda": "Sinal de Battle",
-                  "direita": "Mancha roxa atrás da orelha"
-                },
-                {
-                  "esquerda": "Olhos de guaxinim",
-                  "direita": "Manchas roxas ao redor dos olhos"
-                },
-                {
-                  "esquerda": "Rinorreia clara após trauma",
-                  "direita": "Fístula de líquor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Motociclista com trauma de crânio está intubado. Tomografia com edema difuso, sem lesão focal ou sinais de hipertensão intracraniana.",
+              "enunciado": "Quais medidas tomar na sala de trauma?",
+              "opcoes": [
+                "Hipotermia, hipotensão permissiva e monitorizar PIC",
+                "Hiperventilação, hipotermia e manitol",
+                "Tiopental, fenitoína e temperatura",
+                "Cabeceira elevada, controle de temperatura e pescoço neutro"
               ],
-              "explicacao": "Battle, olhos de guaxinim e fístula de líquor sugerem fratura da base do crânio. A tríade de Cushing indica hipertensão intracraniana.",
-              "revisado": false
+              "resposta": "Cabeceira elevada, controle de temperatura e pescoço neutro",
+              "explicacao": "Medidas gerais protegem o cérebro; hipotensão piora o prognóstico.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cir-u2-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Pela regra dos nove, cada membro superior de um adulto corresponde a 9% da superfície do corpo.",
-              "resposta": true,
-              "explicacao": "Cada perna corresponde a 18%, e a parte da frente do tronco também a 18%.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 kg teve queimadura de segundo grau por álcool no rosto, braços e tórax, somando 10% do corpo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Internar e manter as bolhas",
+                "Internar, desbridar as bolhas e fazer curativos",
+                "Ambulatório e manter as bolhas",
+                "Ambulatório e desbridar"
+              ],
+              "resposta": "Internar, desbridar as bolhas e fazer curativos",
+              "explicacao": "Queimadura de face indica internação.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cir-u2-l3-q4",
@@ -1842,11 +1841,19 @@
             },
             {
               "id": "cir-u6-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Em cirurgias eletivas, o jejum costuma ser de 6 a 8 horas para sólidos e de 2 horas para líquidos claros.",
-              "resposta": true,
-              "explicacao": "Jejuns longos demais não trazem benefício e aumentam o desconforto.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com câncer gástrico estenosante será operado. Teve stent coronário há 7 meses e usa AAS, clopidogrel e metformina.",
+              "enunciado": "O que fazer com clopidogrel e metformina?",
+              "opcoes": [
+                "Suspender o clopidogrel 5 dias antes e manter a metformina",
+                "Suspender o clopidogrel 5 dias antes e a metformina 2 dias antes",
+                "Manter o clopidogrel e suspender a metformina",
+                "Manter os dois"
+              ],
+              "resposta": "Suspender o clopidogrel 5 dias antes e a metformina 2 dias antes",
+              "explicacao": "O AAS é mantido para proteger o stent.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cir-u6-l1-q4",
@@ -4638,16 +4645,17 @@
             {
               "id": "cir-u14-l1-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de fechamento é usado em ferida limpa recente?",
+              "enunciado": "Qual fio usar para suturar a cúpula vaginal na histerectomia?",
               "opcoes": [
-                "Primeira intenção",
-                "Segunda intenção",
-                "Terceira intenção",
-                "Deixar aberta para fechar sozinha"
+                "Poliéster",
+                "Náilon",
+                "Poliglactina",
+                "Polipropileno"
               ],
-              "resposta": "Primeira intenção",
-              "explicacao": "Bordas aproximadas com sutura.",
-              "revisado": false
+              "resposta": "Poliglactina",
+              "explicacao": "Fio absorvível para mucosa.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cir-u14-l1-q3",

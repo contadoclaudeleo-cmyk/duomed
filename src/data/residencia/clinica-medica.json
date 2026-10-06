@@ -483,17 +483,19 @@
           "questoes": [
             {
               "id": "cm-u2-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual escore estima o risco de AVC na fibrilação atrial?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 78 anos, hipertenso e com AVC prévio, tem palpitações. ECG mostra fibrilação atrial. Usa AAS.",
+              "enunciado": "Qual é o plano?",
               "opcoes": [
-                "CHA2DS2-VASc",
-                "HAS-BLED",
-                "Wells",
-                "CURB-65 para pneumonia"
+                "Anticoagulante oral em dose plena",
+                "Aumentar o AAS",
+                "Amiodarona",
+                "Betabloqueador em dose máxima"
               ],
-              "resposta": "CHA2DS2-VASc",
-              "explicacao": "O HAS-BLED estima o risco de sangramento e ajuda a corrigir fatores modificáveis.",
-              "revisado": false
+              "resposta": "Anticoagulante oral em dose plena",
+              "explicacao": "CHA2DS2-VASc alto; AAS não previne AVC na FA.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u2-l2-q2",
@@ -1933,17 +1935,19 @@
             },
             {
               "id": "cm-u20-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a tríade de Beck do tamponamento?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com derrame pleural neoplásico piora a falta de ar e fica com PA 80 x 40 e turgência jugular. Eco: derrame pericárdico com colapso do ventrículo direito.",
+              "enunciado": "Qual é a conduta imediata?",
               "opcoes": [
-                "Hipotensão, turgência jugular e bulhas abafadas",
-                "Febre, sopro novo e anemia",
-                "Hipertensão, bradicardia e respiração irregular",
-                "Dor, palidez e ausência de pulso"
+                "Trombólise",
+                "Drenagem torácica",
+                "Cateterismo",
+                "Pericardiocentese"
               ],
-              "resposta": "Hipotensão, turgência jugular e bulhas abafadas",
-              "explicacao": "Mostra o coração comprimido.",
-              "revisado": false
+              "resposta": "Pericardiocentese",
+              "explicacao": "Tamponamento cardíaco.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u20-l3-q3",
@@ -2280,17 +2284,19 @@
             },
             {
               "id": "cm-u20-l6-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o quarto remédio preferido na hipertensão resistente?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 33 anos com hipertensão, potássio de 2,9 confirmado sem diurético, segue com PA 150 x 92 mesmo com mudanças de estilo de vida.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Espironolactona",
-                "Hidralazina",
-                "Clonidina",
-                "Minoxidil"
+                "Investigar e manter só estilo de vida",
+                "Investigar causa secundária e iniciar remédio",
+                "Não investigar e manter estilo de vida",
+                "Não investigar e iniciar remédio"
               ],
-              "resposta": "Espironolactona",
-              "explicacao": "Melhor efeito nos estudos.",
-              "revisado": false
+              "resposta": "Investigar causa secundária e iniciar remédio",
+              "explicacao": "Hipocalemia espontânea sugere hiperaldosteronismo.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u20-l6-q3",
@@ -2995,28 +3001,19 @@
           "questoes": [
             {
               "id": "cm-u13-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de tosse crônica ao tratamento.",
-              "pares": [
-                {
-                  "esquerda": "Gotejamento pós-nasal",
-                  "direita": "Corticoide nasal"
-                },
-                {
-                  "esquerda": "Asma",
-                  "direita": "Corticoide inalatório"
-                },
-                {
-                  "esquerda": "Refluxo",
-                  "direita": "Inibidor de bomba"
-                },
-                {
-                  "esquerda": "IECA",
-                  "direita": "Trocar por BRA"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 38 anos, IMC 34, ronca, tem sono durante o dia e a esposa vê pausas na respiração.",
+              "enunciado": "Qual é a terapia de escolha?",
+              "opcoes": [
+                "CPAP",
+                "Elevar a cabeceira",
+                "Exercício antes de dormir",
+                "Aparelho intraoral"
               ],
-              "explicacao": "São as causas mais comuns.",
-              "revisado": false
+              "resposta": "CPAP",
+              "explicacao": "Placa oral fica para casos leves ou intolerância.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u13-l3-q2",
@@ -3737,17 +3734,19 @@
           "questoes": [
             {
               "id": "cm-u22-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sintoma mais comum do tromboembolismo pulmonar?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher obesa de 65 anos com dor torácica e falta de ar súbitas, taquicardia e perna esquerda bem mais inchada.",
+              "enunciado": "Qual destes é o principal fator de risco?",
               "opcoes": [
-                "Dispneia súbita",
-                "Hemoptise volumosa",
-                "Febre alta com calafrios",
-                "Dor abdominal em cólica"
+                "Insuficiência venosa",
+                "Idade avançada",
+                "Internação recente por IC ou fibrilação atrial",
+                "Viagem longa de avião"
               ],
-              "resposta": "Dispneia súbita",
-              "explicacao": "A taquicardia é o achado mais comum no ECG.",
-              "revisado": false
+              "resposta": "Internação recente por IC ou fibrilação atrial",
+              "explicacao": "Internação é um dos maiores fatores de risco de trombose.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u22-l1-q2",
@@ -7004,11 +7003,18 @@
             },
             {
               "id": "cm-u8-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A deficiência de vitamina B12 pode causar alterações neurológicas.",
-              "resposta": true,
-              "explicacao": "O ácido fólico não causa.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulher com anemia (Hb 10,1). Qual dupla de achado e causa está correta?",
+              "opcoes": [
+                "Promielócitos e falta de folato",
+                "Haptoglobina baixa e falta de ferro",
+                "Reticulócitos altos e hemólise",
+                "VCM alto e talassemia maior"
+              ],
+              "resposta": "Reticulócitos altos e hemólise",
+              "explicacao": "Haptoglobina baixa também sugere hemólise.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u8-l1-q4",
@@ -7922,17 +7928,19 @@
             },
             {
               "id": "cm-u14-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a síndrome do organofosforado?",
+              "tipo": "caso_clinico",
+              "caso": "Homem ingeriu algo e tem suor, bradicardia, pupilas pequenas, hipotensão e muita secreção nos brônquios.",
+              "enunciado": "Qual substância daria efeito parecido?",
               "opcoes": [
-                "Colinérgica, com secreções e miose",
-                "Anticolinérgica",
-                "Simpaticomimética",
-                "Anticolinérgica, com pele seca e pupilas dilatadas"
+                "Loperamida",
+                "Rivastigmina",
+                "Escopolamina",
+                "Imipramina"
               ],
-              "resposta": "Colinérgica, com secreções e miose",
-              "explicacao": "Comum em áreas rurais.",
-              "revisado": false
+              "resposta": "Rivastigmina",
+              "explicacao": "Síndrome colinérgica, como no organofosforado.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u14-l3-q3",
@@ -8022,17 +8030,19 @@
           "questoes": [
             {
               "id": "cm-u15-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na residência, qual é a finalidade da avaliação geriátrica ampla?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com demência está há dias mais sonolenta, desatenta e com pensamento desorganizado, além de edema e estertores.",
+              "enunciado": "Qual afirmação é correta?",
               "opcoes": [
-                "Avaliar função, cognição, humor e social",
-                "Só medir a pressão",
-                "Pedir muitos exames",
-                "Avaliar apenas a doença principal do idoso"
+                "É delirium, marcador de maior mortalidade",
+                "Pedir à filha autorização para intubar",
+                "Ela vai morrer em horas ou dias",
+                "É piora da demência e contraindica antibiótico"
               ],
-              "resposta": "Avaliar função, cognição, humor e social",
-              "explicacao": "Planeja o cuidado de forma completa.",
-              "revisado": false
+              "resposta": "É delirium, marcador de maior mortalidade",
+              "explicacao": "Delirium pede busca de causa, como infecção.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u15-l1-q2",
@@ -8524,17 +8534,19 @@
           "questoes": [
             {
               "id": "cm-u16-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se define neutropenia febril?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com melanoma em imunoterapia anti-PD-L1 tem falta de ar, saturação de 85% e opacidades bilaterais novas na tomografia, sem febre.",
+              "enunciado": "Qual é a conduta além do oxigênio?",
               "opcoes": [
-                "Febre com neutrófilos abaixo de 500",
-                "Febre com leucócitos acima de 10 mil",
-                "Febre isolada",
-                "Neutrófilos abaixo de 5 mil sem febre"
+                "UTI, pesquisa de vírus, corticoide em dose alta e antibiótico",
+                "Enfermaria e radioterapia",
+                "UTI e corticoide em dose baixa",
+                "Enfermaria e corticoide em dose baixa"
               ],
-              "resposta": "Febre com neutrófilos abaixo de 500",
-              "explicacao": "Ou abaixo de 1.000 com queda prevista.",
-              "revisado": false
+              "resposta": "UTI, pesquisa de vírus, corticoide em dose alta e antibiótico",
+              "explicacao": "Pneumonite pela imunoterapia grave pede corticoide em dose alta.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u16-l2-q2",
@@ -8658,11 +8670,19 @@
             },
             {
               "id": "cm-u16-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A morfina é segura para tratar falta de ar no fim de vida.",
-              "resposta": true,
-              "explicacao": "Em doses ajustadas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com câncer de pâncreas progredindo apesar da 2ª linha de quimioterapia pergunta sobre outros tratamentos e estudos clínicos.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Adiar as notícias",
+                "Perguntar o que ela entende e espera",
+                "Dizer que só resta paliativo",
+                "Chamar a família para decidir"
+              ],
+              "resposta": "Perguntar o que ela entende e espera",
+              "explicacao": "Primeiro passo de comunicar más notícias.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-u16-l3-q3",
@@ -15228,17 +15248,18 @@
             {
               "id": "cm-d6-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com febre, sopro novo e hemoculturas positivas para S. aureus. O ecocardiograma mostra vegetação de 12 mm na mitral com insuficiência grave e insuficiência cardíaca.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 34 anos com febre, cefaleia, confusão e crise com olhar fixo e mastigação. Ressonância com sinal alterado no lobo temporal e ínsula.",
+              "enunciado": "Qual líquor é compatível?",
               "opcoes": [
-                "Antibiótico e cirurgia valvar precoce",
-                "Só antibiótico por 2 semanas",
-                "Anticoagulação",
-                "Apenas antibiótico oral por duas semanas e alta"
+                "1.200 células com neutrófilos e glicose 18",
+                "100 células com neutrófilos e proteína 500",
+                "30 células com linfócitos, hemácias e glicose normal",
+                "200 células e glicose 1"
               ],
-              "resposta": "Antibiótico e cirurgia valvar precoce",
-              "explicacao": "Insuficiência cardíaca por destruição valvar é a principal indicação de cirurgia na endocardite.",
-              "revisado": false
+              "resposta": "30 células com linfócitos, hemácias e glicose normal",
+              "explicacao": "Encefalite herpética: tratar logo com aciclovir.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-d6-l1-q2",
@@ -17096,17 +17117,18 @@
             {
               "id": "cm-d9-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com Guillain-Barré, fraqueza que sobe, internado e ainda conversando.",
-              "enunciado": "Qual exame indica a necessidade de intubação?",
+              "caso": "Mulher de 32 anos com formigamento que subiu até o umbigo, fraqueza nas pernas, retenção urinária, Babinski, reflexos vivos e nível sensitivo.",
+              "enunciado": "Qual é o diagnóstico e o exame de urgência?",
               "opcoes": [
-                "Capacidade vital abaixo de 20 mL/kg",
-                "Saturação de oxigênio abaixo de 99%",
-                "Raio X de tórax normal",
-                "Gasometria normal, que já afasta o risco"
+                "Neuroesquistossomose; RM lombar",
+                "Falta de B12; dosar B12",
+                "Guillain-Barré; líquor",
+                "Mielite transversa; RM da coluna torácica"
               ],
-              "resposta": "Capacidade vital abaixo de 20 mL/kg",
-              "explicacao": "A capacidade vital cai antes da gasometria alterar; abaixo de 20 mL/kg indica intubação.",
-              "revisado": false
+              "resposta": "Mielite transversa; RM da coluna torácica",
+              "explicacao": "Nível sensitivo e sinais de primeiro neurônio indicam lesão da medula.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "cm-d9-l3-q4",

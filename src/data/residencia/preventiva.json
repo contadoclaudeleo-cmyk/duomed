@@ -1994,26 +1994,35 @@
             },
             {
               "id": "prev-u6-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A visita domiciliar deve ser feita só quando o paciente pagar uma taxa extra.",
-              "resposta": false,
-              "explicacao": "Falso. É ferramenta da equipe para acamados e para conhecer o contexto familiar, sem custo.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "O médico pergunta \"como tem passado?\", deixa a paciente falar e responde \"entendo\" e \"puxa\".",
+              "enunciado": "Quais técnicas usou?",
+              "opcoes": [
+                "Pergunta aberta e encorajamentos curtos",
+                "Encorajamentos para dirigir ao diagnóstico",
+                "Reflexão em espelho e paráfrase",
+                "Pergunta focal e encorajamentos"
+              ],
+              "resposta": "Pergunta aberta e encorajamentos curtos",
+              "explicacao": "Perguntas abertas no início favorecem a narrativa.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u6-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Família tem uma idosa com demência, a filha cuidadora está esgotada e um neto desempregado.",
-              "enunciado": "Qual abordagem ajuda a entender e apoiar essa família?",
+              "caso": "Gestante com sífilis falta às consultas de pré-natal. A equipe faz visita domiciliar.",
+              "enunciado": "Qual é a melhor frase inicial da médica?",
               "opcoes": [
-                "Abordagem familiar com genograma, ecomapa e apoio",
-                "Tratar só a idosa",
-                "Especialistas para todos",
-                "Tratar só a idosa e encaminhar toda a família a especialistas diferentes"
+                "\"O que tem acontecido? Podemos facilitar sua vinda?\"",
+                "\"Se não vier, vamos chamar o Conselho Tutelar.\"",
+                "\"Seu namorado está impedindo você?\"",
+                "\"Seu bebê pode nascer com problemas, por isso venha.\""
               ],
-              "resposta": "Abordagem familiar com genograma, ecomapa e apoio",
-              "explicacao": "O adoecimento de um membro afeta toda a família.",
-              "revisado": false
+              "resposta": "\"O que tem acontecido? Podemos facilitar sua vinda?\"",
+              "explicacao": "Pergunta aberta, sem ameaça ou julgamento, cria vínculo.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             }
           ]
         },
@@ -2267,42 +2276,34 @@
           "questoes": [
             {
               "id": "prev-u7-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada etapa da investigação de surto à ação.",
-              "pares": [
-                {
-                  "esquerda": "Confirmar o surto",
-                  "direita": "Comparar com o número esperado"
-                },
-                {
-                  "esquerda": "Definir caso",
-                  "direita": "Critérios de pessoa, lugar e tempo"
-                },
-                {
-                  "esquerda": "Curva epidêmica",
-                  "direita": "Gráfico de casos no tempo"
-                },
-                {
-                  "esquerda": "Medidas de controle",
-                  "direita": "Interromper a transmissão"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a epidemia de mpox de 2022, o que é correto?",
+              "opcoes": [
+                "A concentração em HSH era esperada",
+                "A rápida disseminação sugere circulação prévia não detectada",
+                "Transmite-se principalmente por sêmen",
+                "O clado 1 causou a disseminação global"
               ],
-              "explicacao": "Passos clássicos.",
-              "revisado": false
+              "resposta": "A rápida disseminação sugere circulação prévia não detectada",
+              "explicacao": "A transmissão é principalmente por contato íntimo pele a pele.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u7-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é um surto?",
+              "tipo": "caso_clinico",
+              "caso": "Três casos de meningite grave em jovens que foram à mesma festa de calouros.",
+              "enunciado": "Como confirmar que há um surto?",
               "opcoes": [
-                "Casos acima do esperado em local e tempo restritos",
-                "Qualquer caso",
-                "Doença endêmica",
-                "Qualquer caso isolado de doença rara no país, em qualquer época"
+                "Examinar todos os participantes",
+                "Comparar com a ocorrência em anos anteriores",
+                "Inquérito sorológico",
+                "Esperar mais casos"
               ],
-              "resposta": "Casos acima do esperado em local e tempo restritos",
-              "explicacao": "Em grupo restrito.",
-              "revisado": false
+              "resposta": "Comparar com a ocorrência em anos anteriores",
+              "explicacao": "Surto é ocorrência acima do esperado.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u7-l2-q3",
@@ -3237,28 +3238,18 @@
             },
             {
               "id": "prev-u10-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada esfera ao percentual mínimo em saúde.",
-              "pares": [
-                {
-                  "esquerda": "Municípios",
-                  "direita": "15%"
-                },
-                {
-                  "esquerda": "Estados",
-                  "direita": "12%"
-                },
-                {
-                  "esquerda": "União",
-                  "direita": "Regra própria definida por lei"
-                },
-                {
-                  "esquerda": "Distrito Federal",
-                  "direita": "Pode somar regras de estado e município"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Comparando os gastos com saúde do Brasil com outros países, o que é correto?",
+              "opcoes": [
+                "O gasto privado é maior que em outros sistemas universais",
+                "O gasto per capita é alto",
+                "O gasto supera o da América Latina por causa do SUS",
+                "Predomina o gasto público"
               ],
-              "explicacao": "Lei Complementar 141.",
-              "revisado": false
+              "resposta": "O gasto privado é maior que em outros sistemas universais",
+              "explicacao": "Mais da metade do gasto em saúde no Brasil é privado.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u10-l1-q4",
@@ -3333,42 +3324,33 @@
           "questoes": [
             {
               "id": "prev-u10-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada instrumento de planejamento do SUS à função.",
-              "pares": [
-                {
-                  "esquerda": "Plano de Saúde",
-                  "direita": "Planejamento de 4 anos"
-                },
-                {
-                  "esquerda": "Programação Anual de Saúde",
-                  "direita": "Ações do ano"
-                },
-                {
-                  "esquerda": "Relatório Anual de Gestão",
-                  "direita": "Prestação de contas"
-                },
-                {
-                  "esquerda": "Plano Plurianual",
-                  "direita": "Orçamento de 4 anos do governo"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que os relatórios da CONITEC devem conter?",
+              "opcoes": [
+                "Eficiência e aspectos ambientais",
+                "Eficácia e segurança apenas",
+                "Eficácia, segurança e custo-efetividade",
+                "Eficácia, acurácia, efetividade, segurança, custo-efetividade e impacto orçamentário"
               ],
-              "explicacao": "Instrumentos de gestão.",
-              "revisado": false
+              "resposta": "Eficácia, acurácia, efetividade, segurança, custo-efetividade e impacto orçamentário",
+              "explicacao": "Exigências da Lei 12.401/2011.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u10-l2-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Quem aprova o Plano Municipal de Saúde?",
+              "enunciado": "Para uma terapia gênica cara entrar no SUS, o que é necessário?",
               "opcoes": [
-                "Conselho Municipal de Saúde",
-                "Prefeito sozinho",
-                "Ministério",
-                "O prefeito sozinho, sem consulta"
+                "A ANVISA avaliar custo-efetividade",
+                "A CONITEC avaliar efetividade, custo-efetividade e impacto orçamentário",
+                "A CONITEC autorizar a comercialização",
+                "A ANVISA avaliar impacto orçamentário"
               ],
-              "resposta": "Conselho Municipal de Saúde",
-              "explicacao": "Participação social.",
-              "revisado": false
+              "resposta": "A CONITEC avaliar efetividade, custo-efetividade e impacto orçamentário",
+              "explicacao": "A ANVISA registra; a CONITEC recomenda a incorporação.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u10-l2-q3",
@@ -3939,11 +3921,18 @@
             },
             {
               "id": "prev-u12-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Renda, educação e moradia influenciam a saúde.",
-              "resposta": true,
-              "explicacao": "São determinantes sociais.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são exemplos de ações de promoção da saúde?",
+              "opcoes": [
+                "Desarmamento, cultura e vacinação",
+                "Aleitamento, lei do sódio e medir peso",
+                "Autocuidado, preservativo e sorologias",
+                "Menos poluição, incentivo à atividade física e direitos humanos"
+              ],
+              "resposta": "Menos poluição, incentivo à atividade física e direitos humanos",
+              "explicacao": "Vacina, preservativo e sorologia são prevenção.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u12-l1-q3",
@@ -4883,28 +4872,18 @@
           "questoes": [
             {
               "id": "prev-u14-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada exposição no trabalho à doença ocupacional que ela causa.",
-              "pares": [
-                {
-                  "esquerda": "Ruído",
-                  "direita": "Perda auditiva induzida por ruído"
-                },
-                {
-                  "esquerda": "Sílica",
-                  "direita": "Silicose"
-                },
-                {
-                  "esquerda": "Benzeno",
-                  "direita": "Leucemia"
-                },
-                {
-                  "esquerda": "Movimentos repetitivos",
-                  "direita": "LER/DORT"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a atribuição da ANVISA no registro de agrotóxicos?",
+              "opcoes": [
+                "Análise de custo-benefício",
+                "Dossiê ambiental",
+                "Dossiê agronômico",
+                "Dossiê toxicológico"
               ],
-              "explicacao": "Doenças do trabalho.",
-              "revisado": false
+              "resposta": "Dossiê toxicológico",
+              "explicacao": "O ambiental é do IBAMA e o agronômico, do Ministério da Agricultura.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-u14-l3-q2",
@@ -5542,28 +5521,18 @@
             },
             {
               "id": "prev-d2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada viés à situação.",
-              "pares": [
-                {
-                  "esquerda": "Viés de seleção",
-                  "direita": "Grupos diferentes desde o início"
-                },
-                {
-                  "esquerda": "Viés de aferição",
-                  "direita": "Medida feita de forma diferente nos grupos"
-                },
-                {
-                  "esquerda": "Viés do trabalhador sadio",
-                  "direita": "Trabalhadores parecem mais saudáveis que a população"
-                },
-                {
-                  "esquerda": "Viés de publicação",
-                  "direita": "Estudos negativos não são publicados"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais critérios definem uma variável de confusão?",
+              "opcoes": [
+                "Fator de risco presente na população",
+                "Associada ao desfecho e à exposição, sem estar no caminho causal",
+                "Associada à exposição só nos sem desfecho",
+                "Fator de risco que está no caminho causal"
               ],
-              "explicacao": "O funnel plot ajuda a detectar viés de publicação.",
-              "revisado": false
+              "resposta": "Associada ao desfecho e à exposição, sem estar no caminho causal",
+              "explicacao": "Se estiver no caminho causal, é variável intermediária.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-d2-l2-q3",
@@ -6199,43 +6168,34 @@
             },
             {
               "id": "prev-d4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada princípio do SUS ao significado.",
-              "pares": [
-                {
-                  "esquerda": "Universalidade",
-                  "direita": "Acesso a todos"
-                },
-                {
-                  "esquerda": "Integralidade",
-                  "direita": "Cuidado em todos os níveis"
-                },
-                {
-                  "esquerda": "Equidade",
-                  "direita": "Mais para quem mais precisa"
-                },
-                {
-                  "esquerda": "Participação social",
-                  "direita": "Conselhos e conferências de saúde"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Um acidentado grave atendido antes dos outros no pronto-socorro e um distrito sanitário especial para indígenas representam qual princípio do SUS?",
+              "opcoes": [
+                "Descentralização",
+                "Acesso",
+                "Equidade",
+                "Hierarquização"
               ],
-              "explicacao": "Universalidade, integralidade e equidade são os princípios doutrinários.",
-              "revisado": false
+              "resposta": "Equidade",
+              "explicacao": "Tratar diferente quem tem necessidades diferentes.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-d4-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Conselheiro municipal quer saber qual lei garante os conselhos e as conferências de saúde.",
-              "enunciado": "Qual é a lei?",
+              "caso": "Pacientes com câncer colorretal são rastreados, mas não conseguem chegar à cirurgia, radioterapia ou quimioterapia.",
+              "enunciado": "Qual princípio do SUS é ignorado?",
               "opcoes": [
-                "Lei 8.142 de 1990",
-                "Lei 8.080 de 1990",
-                "Lei 12.871 de 2013",
-                "Lei Complementar 141 de 2012"
+                "Universalidade",
+                "Hierarquização",
+                "Integralidade",
+                "Regionalização"
               ],
-              "resposta": "Lei 8.142 de 1990",
-              "explicacao": "A 8.142 trata da participação da comunidade e das transferências; a 8.080, da organização do SUS.",
-              "revisado": false
+              "resposta": "Integralidade",
+              "explicacao": "O cuidado precisa continuar em todos os níveis.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-d4-l1-q4",
@@ -8723,28 +8683,19 @@
             },
             {
               "id": "prev-d10-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada teste da sífilis ao uso.",
-              "pares": [
-                {
-                  "esquerda": "Teste treponêmico",
-                  "direita": "Confirma contato, fica positivo para sempre"
-                },
-                {
-                  "esquerda": "VDRL",
-                  "direita": "Acompanha o tratamento"
-                },
-                {
-                  "esquerda": "Teste rápido",
-                  "direita": "Triagem na unidade"
-                },
-                {
-                  "esquerda": "Queda de 2 diluições",
-                  "direita": "Resposta ao tratamento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante tratada de sífilis teve VDRL 1:64, depois 1:8 e agora 1:32. O namorado atual, com quem se relaciona há 3 semanas, teve teste negativo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Duas doses nela e dose única nele",
+                "Três doses nela e dose única nele",
+                "Três doses nos dois",
+                "Dose única nela e dose única nele"
               ],
-              "explicacao": "Uso dos testes.",
-              "revisado": false
+              "resposta": "Dose única nela e dose única nele",
+              "explicacao": "Subir 2 diluições indica reinfecção recente; o parceiro exposto recebe tratamento presuntivo.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-d10-l2-q5",
@@ -9088,18 +9039,18 @@
             },
             {
               "id": "prev-d11-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Estado com receita de 1 bilhão.",
-              "enunciado": "Mínimo em saúde?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os planos de saúde no Brasil, o que é correto?",
               "opcoes": [
-                "120 milhões",
-                "150 milhões",
-                "50 milhões",
-                "200 milhões"
+                "O SUS deve ser ressarcido quando atende usuário de plano",
+                "A ANS define um reajuste único para todos os planos",
+                "Os planos individuais são a maior fatia",
+                "Seguros têm mais beneficiários que cooperativas"
               ],
-              "resposta": "120 milhões",
-              "explicacao": "12%.",
-              "revisado": false
+              "resposta": "O SUS deve ser ressarcido quando atende usuário de plano",
+              "explicacao": "A ANS só define o reajuste dos planos individuais.",
+              "revisado": false,
+              "fonte": "USP-SP 2023"
             },
             {
               "id": "prev-d11-l2-q3",
