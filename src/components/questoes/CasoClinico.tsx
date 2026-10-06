@@ -14,9 +14,9 @@ export function CasoClinico({ questao, resposta, aoResponder, verificada }: Prop
             +2 XP
           </span>
         </div>
-        <p className="leading-relaxed">{questao.caso}</p>
+        <p className="whitespace-pre-line leading-relaxed">{questao.caso}</p>
       </div>
-      <h2 className="text-lg font-bold leading-snug sm:text-xl">{questao.enunciado}</h2>
+      <h2 className="whitespace-pre-line text-lg font-bold leading-snug sm:text-xl">{questao.enunciado}</h2>
       <ListaOpcoes
         idQuestao={questao.id}
         opcoes={questao.opcoes}

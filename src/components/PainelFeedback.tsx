@@ -126,7 +126,7 @@ export function PainelFeedback({
                   <p className="mt-2 flex gap-1.5 text-xs text-texto-suave">
                     <FileText className="mt-0.5 h-3.5 w-3.5 shrink-0" strokeWidth={2.6} aria-hidden />
                     <span>
-                      <strong>Adaptada da prova:</strong> {prova}. A resposta segue o gabarito oficial.
+                      <strong>Adaptada da prova:</strong> {prova}.
                     </span>
                   </p>
                 )}

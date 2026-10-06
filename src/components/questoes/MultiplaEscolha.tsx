@@ -5,7 +5,7 @@ import type { PropsQuestao } from './tipos'
 export function MultiplaEscolha({ questao, resposta, aoResponder, verificada }: PropsQuestao<QuestaoMultiplaEscolha>) {
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-xl font-bold leading-snug sm:text-2xl">{questao.enunciado}</h2>
+      <h2 className="whitespace-pre-line text-xl font-bold leading-snug sm:text-2xl">{questao.enunciado}</h2>
       <ListaOpcoes
         idQuestao={questao.id}
         opcoes={questao.opcoes}
