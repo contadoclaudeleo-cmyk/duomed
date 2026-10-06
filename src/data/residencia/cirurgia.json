@@ -384,28 +384,19 @@
           "questoes": [
             {
               "id": "cir-u2-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada lesão torácica à sua conduta.",
-              "pares": [
-                {
-                  "esquerda": "Pneumotórax hipertensivo",
-                  "direita": "Descompressão imediata"
-                },
-                {
-                  "esquerda": "Hemotórax maciço",
-                  "direita": "Drenagem torácica e avaliação para toracotomia"
-                },
-                {
-                  "esquerda": "Pneumotórax aberto",
-                  "direita": "Curativo de três pontas"
-                },
-                {
-                  "esquerda": "Tamponamento cardíaco",
-                  "direita": "Descompressão do pericárdio e cirurgia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Facada no 7º espaço intercostal direito com hemotórax maciço. Na toracotomia, ligou-se uma artéria intercostal e a cavidade, incluindo o diafragma, foi bem inspecionada sem outras lesões.",
+              "enunciado": "Qual é a conduta agora?",
+              "opcoes": [
+                "Laparotomia",
+                "Laparoscopia",
+                "Lesões abdominais podem ser descartadas",
+                "Tomografia de abdome"
               ],
-              "explicacao": "Essas lesões matam rápido e são tratadas ainda no atendimento primário.",
-              "revisado": false
+              "resposta": "Lesões abdominais podem ser descartadas",
+              "explicacao": "Diafragma íntegro afasta lesão abdominal por essa facada.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u2-l1-q2",
@@ -995,28 +986,19 @@
             },
             {
               "id": "cir-u3-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Câncer de cabeça de pâncreas",
-                  "direita": "Icterícia indolor e vesícula palpável"
-                },
-                {
-                  "esquerda": "Tumor de Klatskin",
-                  "direita": "Vias biliares dentro do fígado dilatadas e vesícula murcha"
-                },
-                {
-                  "esquerda": "Tumor da ampola de Vater",
-                  "direita": "Icterícia que pode oscilar e sangramento oculto"
-                },
-                {
-                  "esquerda": "Câncer de cauda de pâncreas",
-                  "direita": "Diagnóstico tardio, sem icterícia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 66 anos, fumante e diabético, com icterícia e coceira há 15 dias e massa indolor palpável no hipocôndrio direito.",
+              "enunciado": "Onde está o tumor mais provável?",
+              "opcoes": [
+                "Junção dos hepáticos",
+                "Região periampular",
+                "Ducto hepático",
+                "Vesícula biliar"
               ],
-              "explicacao": "O tumor de Klatskin é um colangiocarcinoma na junção dos ductos hepáticos.",
-              "revisado": false
+              "resposta": "Região periampular",
+              "explicacao": "Vesícula palpável e indolor com icterícia: sinal de Courvoisier.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u3-l3-q3",
@@ -3001,17 +2983,19 @@
             },
             {
               "id": "cir-u9-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual câncer de tireoide se associa à NEM 2?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher tratada de carcinoma papilífero com iodo tem nódulo cístico de 2 cm no pescoço e linfonodos heterogêneos do mesmo lado.",
+              "enunciado": "Qual é a principal hipótese?",
               "opcoes": [
-                "Medular",
-                "Papilífero",
-                "Folicular",
-                "Anaplásico"
+                "Cisto branquial",
+                "Cisto epidérmico",
+                "Granuloma",
+                "Metástase do carcinoma papilífero"
               ],
-              "resposta": "Medular",
-              "explicacao": "Pesquisar mutação RET.",
-              "revisado": false
+              "resposta": "Metástase do carcinoma papilífero",
+              "explicacao": "Metástase do papilífero costuma ser cística.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u9-l2-q3",
@@ -3730,11 +3714,19 @@
             },
             {
               "id": "cir-u11-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O tumor benigno mais frequente do fígado, achado comum em exames, é o hemangioma.",
-              "resposta": true,
-              "explicacao": "Geralmente não precisa de tratamento.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 26 anos usa pílula há 5 anos e tem nódulo hepático de 4,8 cm com gordura e sem captar contraste hepatoespecífico.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Adenoma; parar a pílula e acompanhar",
+                "Adenoma; parar a pílula e operar",
+                "Hiperplasia nodular; operar",
+                "Hiperplasia nodular; acompanhar"
+              ],
+              "resposta": "Adenoma; parar a pílula e acompanhar",
+              "explicacao": "Adenoma acima de 5 cm ou que cresce vai para cirurgia.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u11-l2-q4",
@@ -4514,28 +4506,19 @@
           "questoes": [
             {
               "id": "cir-u13-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada malformação congênita do recém-nascido ao achado que a sugere.",
-              "pares": [
-                {
-                  "esquerda": "Atresia de esôfago",
-                  "direita": "Saliva espumosa e sonda que não passa"
-                },
-                {
-                  "esquerda": "Atresia duodenal",
-                  "direita": "Sinal da dupla bolha"
-                },
-                {
-                  "esquerda": "Doença de Hirschsprung",
-                  "direita": "Atraso na eliminação do mecônio"
-                },
-                {
-                  "esquerda": "Gastrosquise",
-                  "direita": "Intestino fora sem membrana à direita do umbigo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de mãe com polidrâmnio tem cianose ao mamar, desconforto e muita saliva com 1 hora de vida.",
+              "enunciado": "Como confirmar a principal hipótese?",
+              "opcoes": [
+                "Intubar e fazer radiografia",
+                "Oximetria e eco",
+                "Glicemia e triagem metabólica",
+                "Passar sonda orogástrica e fazer radiografia"
               ],
-              "explicacao": "Diagnóstico precoce salva vidas.",
-              "revisado": false
+              "resposta": "Passar sonda orogástrica e fazer radiografia",
+              "explicacao": "A sonda para no coto do esôfago na atresia.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u13-l3-q2",
@@ -4639,28 +4622,18 @@
           "questoes": [
             {
               "id": "cir-u14-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fase da cicatrização de uma ferida operatória ao que ocorre nela.",
-              "pares": [
-                {
-                  "esquerda": "Inflamatória",
-                  "direita": "Primeiros dias com neutrófilos"
-                },
-                {
-                  "esquerda": "Proliferativa",
-                  "direita": "Tecido de granulação e colágeno"
-                },
-                {
-                  "esquerda": "Remodelação",
-                  "direita": "Colágeno se organiza por meses"
-                },
-                {
-                  "esquerda": "Hemostasia",
-                  "direita": "Coágulo e plaquetas"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual anestésico usar no bloqueio na base do dedo para suturar um corte?",
+              "opcoes": [
+                "Ropivacaína",
+                "Benzocaína",
+                "Lidocaína sem vasoconstritor",
+                "Bupivacaína com vasoconstritor"
               ],
-              "explicacao": "Fases da cicatrização.",
-              "revisado": false
+              "resposta": "Lidocaína sem vasoconstritor",
+              "explicacao": "Vasoconstritor em dedo traz risco de isquemia.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-u14-l1-q2",
@@ -6360,28 +6333,19 @@
             },
             {
               "id": "cir-d2-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de isquemia mesentérica à característica.",
-              "pares": [
-                {
-                  "esquerda": "Embolia arterial",
-                  "direita": "Início súbito em paciente com fibrilação atrial"
-                },
-                {
-                  "esquerda": "Trombose arterial",
-                  "direita": "Paciente com aterosclerose e angina abdominal prévia"
-                },
-                {
-                  "esquerda": "Trombose venosa mesentérica",
-                  "direita": "Estado de hipercoagulabilidade e início mais lento"
-                },
-                {
-                  "esquerda": "Isquemia não oclusiva",
-                  "direita": "Choque ou uso de vasopressor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher na unidade coronariana há 20 dias, com dobutamina e noradrenalina, tem distensão, dor difusa leve, leucocitose e PCR subindo muito.",
+              "enunciado": "Qual é a principal hipótese?",
+              "opcoes": [
+                "Síndrome de Ogilvie",
+                "Pancreatite necro-hemorrágica",
+                "Isquemia mesentérica não oclusiva",
+                "Abscesso subfrênico"
               ],
-              "explicacao": "A angiotomografia é o exame de escolha.",
-              "revisado": false
+              "resposta": "Isquemia mesentérica não oclusiva",
+              "explicacao": "Baixo débito e vasoconstritores reduzem o fluxo intestinal.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-d2-l3-q3",
@@ -6815,17 +6779,18 @@
             {
               "id": "cir-d3-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente após bypass tem vômitos repetidos, confusão e dificuldade para andar, com movimentos anormais dos olhos.",
-              "enunciado": "Qual é a deficiência?",
+              "caso": "Mulher operada de bypass gástrico há 4 anos tem cansaço, queda de cabelo, palidez e unhas fracas.",
+              "enunciado": "Qual é a hipótese e o tratamento?",
               "opcoes": [
-                "Tiamina (Wernicke)",
-                "Vitamina D",
-                "Ferro",
-                "Zinco e selênio da dieta"
+                "Anemia ferropriva; ferro venoso",
+                "Falta de B12; complexo B oral",
+                "Falta de folato; polivitamínico",
+                "Falta de proteína; suplemento"
               ],
-              "resposta": "Tiamina (Wernicke)",
-              "explicacao": "A tiamina deve ser dada antes de soro glicosado.",
-              "revisado": false
+              "resposta": "Anemia ferropriva; ferro venoso",
+              "explicacao": "O duodeno, onde se absorve ferro, fica fora do trânsito.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-d3-l3-q7",
@@ -8886,17 +8851,18 @@
             {
               "id": "cir-d9-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Homem de 55 anos tratado de diverticulite não complicada com antibiótico está bem. Nunca fez colonoscopia.",
-              "enunciado": "Quando fazer a colonoscopia?",
+              "caso": "Idoso operado de obstrução por câncer de sigmoide com metástases ficou 4 horas em cirurgia com droga vasoativa. Fez-se colostomia, sem anastomose.",
+              "enunciado": "Qual é a justificativa?",
               "opcoes": [
-                "Após 6 a 8 semanas",
-                "No mesmo dia da alta",
-                "Não precisa fazer",
-                "Só se tiver nova crise em um ano"
+                "Câncer obstrutivo",
+                "Instabilidade hemodinâmica",
+                "Falta de preparo do cólon",
+                "Metástases"
               ],
-              "resposta": "Após 6 a 8 semanas",
-              "explicacao": "A colonoscopia afasta câncer e é feita depois que a inflamação passa.",
-              "revisado": false
+              "resposta": "Instabilidade hemodinâmica",
+              "explicacao": "Choque aumenta muito o risco de fístula.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cir-d9-l1-q5",

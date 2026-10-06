@@ -31,28 +31,19 @@
             },
             {
               "id": "ped-u1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada vacina à idade da primeira dose no calendário infantil.",
-              "pares": [
-                {
-                  "esquerda": "Pentavalente",
-                  "direita": "2 meses"
-                },
-                {
-                  "esquerda": "Meningocócica C",
-                  "direita": "3 meses"
-                },
-                {
-                  "esquerda": "Febre amarela",
-                  "direita": "9 meses"
-                },
-                {
-                  "esquerda": "Tríplice viral",
-                  "direita": "12 meses"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mãe pede ibuprofeno para dar antes das vacinas dos 2 meses e evitar febre.",
+              "enunciado": "O que o médico deve fazer?",
+              "opcoes": [
+                "Trocar por dipirona",
+                "Trocar por paracetamol",
+                "Prescrever ibuprofeno",
+                "Desaconselhar antitérmico preventivo"
               ],
-              "explicacao": "Aos 2 meses também começam VIP, rotavírus e pneumocócica 10-valente.",
-              "revisado": false
+              "resposta": "Desaconselhar antitérmico preventivo",
+              "explicacao": "Pode reduzir a resposta à vacina.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u1-l1-q3",
@@ -1464,25 +1455,34 @@
           "questoes": [
             {
               "id": "ped-u5-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o remédio de resgate na crise de asma da criança?",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 3 anos com sibilos, tiragem importante e saturação de 93% em máscara. Já teve 3 crises com internação em 6 meses e tem dermatite atópica.",
+              "enunciado": "Além do corticoide, o que dar primeiro?",
               "opcoes": [
-                "Salbutamol com espaçador",
-                "Corticoide inalatório isolado",
-                "Antibiótico",
-                "Anti-histamínico oral e xarope para tosse"
+                "Alto fluxo e beta-2 venoso",
+                "Beta-2 agonista e ipratrópio inalatórios",
+                "Beta-2 venoso e intubação",
+                "BIPAP e depois inalação"
               ],
-              "resposta": "Salbutamol com espaçador",
-              "explicacao": "O espaçador melhora muito a chegada do remédio aos pulmões.",
-              "revisado": false
+              "resposta": "Beta-2 agonista e ipratrópio inalatórios",
+              "explicacao": "Broncodilatador inalado é a base da crise.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u5-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Crianças pequenas devem usar a bombinha direto na boca, sem espaçador.",
-              "resposta": false,
-              "explicacao": "Falso. Recomenda-se o espaçador com máscara; a partir de 4 a 6 anos, muitas usam o espaçador com bocal.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Na alta dessa menina de 3 anos com crises graves de repetição, como deve ser o corticoide inalatório?",
+              "opcoes": [
+                "Não está indicado",
+                "Associado a LABA",
+                "Em dose baixa",
+                "Associado a antileucotrieno"
+              ],
+              "resposta": "Em dose baixa",
+              "explicacao": "Crises frequentes indicam controle de manutenção.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u5-l1-q3",
@@ -1751,17 +1751,19 @@
             },
             {
               "id": "ped-u5-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ ativado pode ser usado na primeira hora após a ingestão de muitas substâncias, se a via aérea estiver protegida.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 10 meses engasgou com amendoim e chega tossindo muito, com estridor e rosto vermelho.",
+              "enunciado": "Qual é a prioridade?",
               "opcoes": [
-                "carvão",
-                "sal",
-                "leite",
-                "açúcar"
+                "Broncoscopia",
+                "Golpes nas costas e compressões",
+                "Manobra de Heimlich",
+                "Ventilar com bolsa e máscara"
               ],
-              "resposta": "carvão",
-              "explicacao": "Ele prende a substância no intestino e reduz a absorção.",
-              "revisado": false
+              "resposta": "Broncoscopia",
+              "explicacao": "Tossindo, a obstrução é parcial: não fazer manobras.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u5-l3-q5",
@@ -2763,17 +2765,19 @@
             },
             {
               "id": "ped-u8-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o rastreio de autismo aos 18 e 24 meses?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos com paralisia cerebral grave, gastrostomia, dor por espasticidade e 5 internações por pneumonia.",
+              "enunciado": "Sobre os cuidados paliativos, o que é correto?",
               "opcoes": [
-                "M-CHAT",
-                "Denver",
-                "Apgar",
-                "Glasgow"
+                "Só se os pais aceitarem abreviar a vida",
+                "Ela é elegível para acompanhamento conjunto com paliativos",
+                "Não cabe, pois a doença não é terminal",
+                "Só se a equipe transferir o caso"
               ],
-              "resposta": "M-CHAT",
-              "explicacao": "Questionário aos pais.",
-              "revisado": false
+              "resposta": "Ela é elegível para acompanhamento conjunto com paliativos",
+              "explicacao": "Paliativo não é só fim de vida, e é feito junto com o tratamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u8-l3-q3",
@@ -3106,17 +3110,19 @@
             },
             {
               "id": "ped-u9-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Entre todos os cânceres da infância, qual é o mais frequente?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos com leucemia em indução, quimioterapia há 4 dias, tem febre de 39 °C e dor de garganta, em bom estado.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Leucemia linfoide aguda",
-                "Neuroblastoma",
-                "Wilms",
-                "Osteossarcoma do joelho"
+                "Alta com oseltamivir",
+                "Alta com quinolona",
+                "Internar com cefepime após culturas e exames",
+                "Internar com ceftriaxona só se exames alterados"
               ],
-              "resposta": "Leucemia linfoide aguda",
-              "explicacao": "Seguido dos tumores cerebrais.",
-              "revisado": false
+              "resposta": "Internar com cefepime após culturas e exames",
+              "explicacao": "Presumir neutropenia febril.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u9-l3-q3",
@@ -3592,17 +3598,19 @@
             },
             {
               "id": "ped-u11-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Em que situação o médico pode quebrar o sigilo da consulta do adolescente?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 15 anos com relações consentidas e uso irregular de preservativo, teste de gravidez e de IST negativos. Não quer que os pais saibam.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Risco de vida para ele ou outros",
-                "Sempre que os pais pedirem",
-                "Nunca",
-                "Sempre que os pais pedirem, por curiosidade"
+                "Contar a um adulto por ter menos de 16 anos",
+                "Notificar o Conselho Tutelar",
+                "Oferecer contraceptivo e PrEP e marcar retorno, sem contar",
+                "Só iniciar com autorização dos pais"
               ],
-              "resposta": "Risco de vida para ele ou outros",
-              "explicacao": "Explicar as regras no início.",
-              "revisado": false
+              "resposta": "Oferecer contraceptivo e PrEP e marcar retorno, sem contar",
+              "explicacao": "O sigilo vale quando não há risco grave.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u11-l1-q3",
@@ -3685,42 +3693,35 @@
           "questoes": [
             {
               "id": "ped-u11-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada evento ao sexo na puberdade.",
-              "pares": [
-                {
-                  "esquerda": "Telarca",
-                  "direita": "Primeiro sinal nas meninas"
-                },
-                {
-                  "esquerda": "Aumento dos testículos",
-                  "direita": "Primeiro sinal nos meninos"
-                },
-                {
-                  "esquerda": "Estirão nas meninas",
-                  "direita": "Mais cedo"
-                },
-                {
-                  "esquerda": "Ginecomastia",
-                  "direita": "Comum e passageira nos meninos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menina de 9 anos tinha broto mamário aos 8 anos e agora tem mama e aréola maiores, sem separação do contorno.",
+              "enunciado": "Como classificar?",
+              "opcoes": [
+                "M2, pode menstruar a qualquer momento",
+                "M2, crescendo 6 a 10 cm por ano",
+                "M3, no pico do estirão",
+                "M3, menstruará em 2 anos e meio"
               ],
-              "explicacao": "Sequência normal.",
-              "revisado": false
+              "resposta": "M3, no pico do estirão",
+              "explicacao": "Na menina, o estirão acontece cedo, em M2 a M3.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u11-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a idade de puberdade precoce no menino?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 9 anos tem testículo menor que 4 mL e sem pelos pubianos.",
+              "enunciado": "Como classificar?",
               "opcoes": [
-                "Antes dos 9 anos",
-                "Antes dos 13",
-                "Antes dos 15",
-                "Antes dos 11 anos"
+                "G0 P0",
+                "G1 P1, ainda sem puberdade",
+                "Atrasado",
+                "Começará pelo aumento do pênis"
               ],
-              "resposta": "Antes dos 9 anos",
-              "explicacao": "Investigar.",
-              "revisado": false
+              "resposta": "G1 P1, ainda sem puberdade",
+              "explicacao": "A puberdade masculina começa com testículo de 4 mL, entre 9 e 14 anos.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-u11-l2-q3",
@@ -5127,17 +5128,18 @@
             {
               "id": "ped-d1-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido de 4 dias, a termo, tem bilirrubina de 22 mg/dL, acima da linha de fototerapia, e está sugando bem.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Prematuro de 25 semanas e 800 g, em soro com glicose e aminoácidos, tem convulsão com 15 horas de vida. Glicemia normal.",
+              "enunciado": "Qual é o tratamento da causa metabólica provável?",
               "opcoes": [
-                "Fototerapia intensiva, preparando exsanguíneo se não cair",
-                "Suspender o aleitamento",
-                "Só sol",
-                "Suspender o aleitamento e expor ao sol em casa, com alta"
+                "Ringer lactato",
+                "Gluconato de cálcio a 10%",
+                "Aumentar o soro glicosado",
+                "Sulfato de magnésio"
               ],
-              "resposta": "Fototerapia intensiva, preparando exsanguíneo se não cair",
-              "explicacao": "Valores próximos da linha de exsanguíneo exigem atenção máxima.",
-              "revisado": false
+              "resposta": "Gluconato de cálcio a 10%",
+              "explicacao": "Hipocalcemia precoce é comum no prematuro.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-d1-l2-q2",
@@ -5533,43 +5535,34 @@
             },
             {
               "id": "ped-d2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada líquor ao tipo de meningite.",
-              "pares": [
-                {
-                  "esquerda": "Neutrófilos, glicose baixa e proteína alta",
-                  "direita": "Bacteriana"
-                },
-                {
-                  "esquerda": "Linfócitos, glicose normal e proteína pouco alta",
-                  "direita": "Viral"
-                },
-                {
-                  "esquerda": "Linfócitos, glicose baixa e proteína muito alta",
-                  "direita": "Tuberculosa"
-                },
-                {
-                  "esquerda": "Líquor com tinta da China positiva",
-                  "direita": "Criptocócica"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Após controlar a convulsão, a menina de 2 anos com febre e vômitos está sem resposta, com enchimento capilar de 5 segundos e pulsos finos.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Flumazenil",
+                "Intubar sem sedação",
+                "Ringer lactato 20 mL/kg e antibiótico",
+                "Soro 60 mL/kg sem antibiótico"
               ],
-              "explicacao": "No início da meningite viral, pode haver neutrófilos.",
-              "revisado": false
+              "resposta": "Ringer lactato 20 mL/kg e antibiótico",
+              "explicacao": "Choque séptico com suspeita de meningite.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-d2-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com febre, rigidez de nuca e líquor turvo com neutrófilos.",
-              "enunciado": "Qual é o antibiótico empírico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a convulsão dessa menina de 2 anos com febre, prostração e crises longas e repetidas, o que é correto?",
               "opcoes": [
-                "Ceftriaxona",
-                "Ampicilina e gentamicina",
-                "Penicilina benzatina",
-                "Amoxicilina oral em dose alta"
+                "Não precisa investigar",
+                "Precisa colher líquor",
+                "Precisa só de EEG",
+                "Só investigar se repetir"
               ],
-              "resposta": "Ceftriaxona",
-              "explicacao": "Acima de 3 meses, ceftriaxona; associar vancomicina se houver suspeita de pneumococo resistente.",
-              "revisado": false
+              "resposta": "Precisa colher líquor",
+              "explicacao": "Convulsão complexa com prostração pede afastar meningite.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-d2-l2-q4",
@@ -7742,17 +7735,18 @@
             {
               "id": "ped-d8-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança com convulsão que persiste após 2 doses de benzodiazepínico.",
-              "enunciado": "Qual é o próximo passo?",
+              "caso": "Menina de 2 anos com febre tem convulsão que não para, sem acesso venoso.",
+              "enunciado": "Qual droga e via usar?",
               "opcoes": [
-                "Fenitoína, levetiracetam ou fenobarbital venoso",
-                "Mais 5 doses de benzodiazepínico",
-                "Antibiótico",
-                "Mais cinco doses seguidas de benzodiazepínico, sem outro remédio"
+                "Midazolam intramuscular",
+                "Diazepam intramuscular",
+                "Midazolam intraósseo",
+                "Diazepam intraósseo"
               ],
-              "resposta": "Fenitoína, levetiracetam ou fenobarbital venoso",
-              "explicacao": "Segunda linha.",
-              "revisado": false
+              "resposta": "Midazolam intramuscular",
+              "explicacao": "Diazepam IM absorve mal; midazolam IM ou nasal é rápido.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "ped-d8-l1-q3",

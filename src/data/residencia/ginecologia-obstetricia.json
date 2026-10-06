@@ -78,18 +78,18 @@
             },
             {
               "id": "go-u1-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 20 semanas tem teste rápido para sífilis reagente e VDRL de 1:16. Não sabe quando se infectou e não tem alergia a penicilina.",
-              "enunciado": "Qual é o tratamento correto?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Gestante de 41 anos já tomou a vacina da gripe. Quais vacinas orientar no pré-natal?",
               "opcoes": [
-                "Benzatina 2,4 milhões UI semanal por 3 semanas",
-                "Benzatina 2,4 milhões em dose única",
-                "Doxiciclina 14 dias",
-                "Azitromicina em dose única e tratar o parceiro só depois do parto"
+                "Tríplice viral, covid e dTpa",
+                "Hepatite B, covid e dTpa",
+                "Hepatite B, tríplice viral e dTpa",
+                "Hepatite B, tríplice viral e covid"
               ],
-              "resposta": "Benzatina 2,4 milhões UI semanal por 3 semanas",
-              "explicacao": "Sífilis de duração desconhecida é tratada como latente tardia. A parceria sexual também deve ser tratada, e o VDRL é acompanhado mensalmente na gestação.",
-              "revisado": false
+              "resposta": "Hepatite B, covid e dTpa",
+              "explicacao": "Vacina de vírus vivo, como a tríplice viral, é contraindicada.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u1-l1-q6",
@@ -151,11 +151,18 @@
             },
             {
               "id": "go-u1-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A proteinúria não é obrigatória para diagnosticar pré-eclâmpsia quando há sinais de lesão de órgão-alvo.",
-              "resposta": true,
-              "explicacao": "Plaquetopenia, alteração hepática ou renal, edema agudo de pulmão e sintomas neurológicos fecham o diagnóstico mesmo sem proteinúria.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Gestante com hipertensão crônica em metildopa, sem intercorrências. Quando programar o parto?",
+              "opcoes": [
+                "34 semanas",
+                "36 semanas",
+                "37 semanas",
+                "40 semanas"
+              ],
+              "resposta": "37 semanas",
+              "explicacao": "Hipertensa em uso de remédio: entre 37 e 39 semanas.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u1-l2-q3",
@@ -879,28 +886,19 @@
             },
             {
               "id": "go-u3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medicamento ao seu uso no trabalho de parto prematuro.",
-              "pares": [
-                {
-                  "esquerda": "Betametasona",
-                  "direita": "Amadurecer o pulmão do bebê"
-                },
-                {
-                  "esquerda": "Sulfato de magnésio",
-                  "direita": "Proteger o cérebro do bebê antes de 32 semanas"
-                },
-                {
-                  "esquerda": "Nifedipino",
-                  "direita": "Inibir as contrações"
-                },
-                {
-                  "esquerda": "Ampicilina ou penicilina",
-                  "direita": "Prevenir infecção pelo estreptococo do grupo B"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 32 semanas com rotura prematura das membranas confirmada.",
+              "enunciado": "Como usar a ampicilina?",
+              "opcoes": [
+                "Esperar a pesquisa do estreptococo B",
+                "48 horas, sem repetir no trabalho de parto",
+                "48 horas e repetir se entrar em trabalho de parto",
+                "7 dias e repetir no trabalho de parto"
               ],
-              "explicacao": "Inibir as contrações serve principalmente para dar tempo ao corticoide.",
-              "revisado": false
+              "resposta": "48 horas e repetir se entrar em trabalho de parto",
+              "explicacao": "Antibiótico de latência e profilaxia do estreptococo no parto.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u3-l2-q3",
@@ -1397,31 +1395,34 @@
             {
               "id": "go-u4-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Puérpera que amamenta há 3 semanas quer um método hormonal.",
-              "enunciado": "Qual é uma opção adequada?",
+              "caso": "Gestante de 24 anos com 35 semanas, um aborto anterior e nenhum filho vivo, não quer mais filhos.",
+              "enunciado": "Sobre a laqueadura, o que é correto?",
               "opcoes": [
-                "Só progestagênio, como desogestrel ou implante",
-                "Pílula combinada",
-                "Adesivo com estrogênio",
-                "Pílula combinada em dose alta logo após o parto"
+                "Pode ser oferecida, mas não no pós-parto imediato",
+                "Precisa do consentimento do parceiro",
+                "Não pode, pois não tem 2 filhos vivos",
+                "Não pode, pela idade"
               ],
-              "resposta": "Só progestagênio, como desogestrel ou implante",
-              "explicacao": "O estrogênio pode reduzir o leite e aumenta o risco de trombose no pós-parto.",
-              "revisado": false
+              "resposta": "Pode ser oferecida, mas não no pós-parto imediato",
+              "explicacao": "A lei exige 21 anos ou 2 filhos e 60 dias entre o pedido e a cirurgia.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u4-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o método reversível mais eficaz?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 24 anos quer contracepção e tem cefaleia intensa que começa 2 dias antes da menstruação, sem sintomas visuais.",
+              "enunciado": "Qual é a melhor opção?",
               "opcoes": [
-                "Implante subdérmico",
-                "Camisinha",
-                "Coito interrompido",
-                "Tabelinha"
+                "Preservativo",
+                "DIU de cobre",
+                "Pílula só de progestagênio contínua",
+                "Pílula combinada cíclica"
               ],
-              "resposta": "Implante subdérmico",
-              "explicacao": "Ele dura até 3 anos e não depende de lembrar de tomar.",
-              "revisado": false
+              "resposta": "Pílula só de progestagênio contínua",
+              "explicacao": "Sem pausa, evita a queda hormonal que dispara a enxaqueca menstrual.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u4-l3-q7",
@@ -1588,28 +1589,18 @@
             },
             {
               "id": "go-u5-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada categoria BI-RADS à conduta.",
-              "pares": [
-                {
-                  "esquerda": "BI-RADS 1 ou 2",
-                  "direita": "Rastreamento de rotina"
-                },
-                {
-                  "esquerda": "BI-RADS 3",
-                  "direita": "Controle em 6 meses"
-                },
-                {
-                  "esquerda": "BI-RADS 4",
-                  "direita": "Biópsia"
-                },
-                {
-                  "esquerda": "BI-RADS 0",
-                  "direita": "Exames complementares"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulher em uso de inibidor de aromatase após câncer de mama tem efeitos colaterais do remédio. Qual medicamento é adequado?",
+              "opcoes": [
+                "Bisfosfonato",
+                "Enoxaparina",
+                "Omeprazol",
+                "Espironolactona"
               ],
-              "explicacao": "BI-RADS 5 indica achado altamente suspeito de câncer.",
-              "revisado": false
+              "resposta": "Bisfosfonato",
+              "explicacao": "O inibidor de aromatase causa perda óssea.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u5-l2-q3",
@@ -2105,31 +2096,33 @@
             {
               "id": "go-u6-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 52 anos, com menopausa há 1 ano, tem ondas de calor intensas e nenhuma contraindicação.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 55 anos com ardência, dor na relação e corrimento amarelado. pH 5, aminas negativas, células parabasais e leucócitos.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Terapia hormonal, antes dos 60 ou até 10 anos da menopausa",
-                "Nunca usar hormônio",
-                "Só antidepressivo",
-                "Nunca usar hormônio em nenhuma mulher, só antidepressivo"
+                "Clindamicina vaginal",
+                "Metronidazol vaginal",
+                "Progesterona vaginal",
+                "Estradiol vaginal"
               ],
-              "resposta": "Terapia hormonal, antes dos 60 ou até 10 anos da menopausa",
-              "explicacao": "Nessa janela, os benefícios superam os riscos para a maioria das mulheres.",
-              "revisado": false
+              "resposta": "Estradiol vaginal",
+              "explicacao": "Vaginite atrófica.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u6-l3-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia a osteoporose?",
+              "enunciado": "Qual é a vantagem da terapia hormonal por via transdérmica?",
               "opcoes": [
-                "Densitometria óssea",
-                "Radiografia da mão",
-                "Ultrassonografia",
-                "Cálcio no sangue"
+                "Controla melhor os fogachos",
+                "Tem menos risco de trombose",
+                "Protege mais o endométrio",
+                "Tem menos risco de câncer de mama"
               ],
-              "resposta": "Densitometria óssea",
-              "explicacao": "Ela mede a densidade dos ossos da coluna e do quadril.",
-              "revisado": false
+              "resposta": "Tem menos risco de trombose",
+              "explicacao": "Não passa pelo fígado.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u6-l3-q7",
@@ -2526,17 +2519,19 @@
             },
             {
               "id": "go-u8-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a medida mais precisa para datar a gestação?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 37 semanas, obesa, com altura uterina de 41 cm e cabeça ainda móvel.",
+              "enunciado": "Qual é a melhor conduta?",
               "opcoes": [
-                "Comprimento cabeça-nádega no 1º trimestre",
-                "Fêmur no terceiro",
-                "Abdome",
-                "Altura uterina medida no terceiro trimestre"
+                "Analgesia e reavaliar",
+                "Ultrassom para estimar o peso fetal",
+                "Aguardar o parto",
+                "Afastamento do trabalho"
               ],
-              "resposta": "Comprimento cabeça-nádega no 1º trimestre",
-              "explicacao": "Erro de poucos dias.",
-              "revisado": false
+              "resposta": "Ultrassom para estimar o peso fetal",
+              "explicacao": "Altura uterina grande sugere macrossomia ou excesso de líquido.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u8-l1-q3",
@@ -3607,11 +3602,18 @@
             },
             {
               "id": "go-u11-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A mastalgia cíclica raramente indica câncer.",
-              "resposta": true,
-              "explicacao": "Tranquilizar e orientar.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Como palpar as mamas?",
+              "opcoes": [
+                "Sentada com os braços acima da cabeça",
+                "Sentada com as mãos na cintura",
+                "Deitada com os braços acima da cabeça",
+                "Deitada com os braços ao longo do corpo"
+              ],
+              "resposta": "Deitada com os braços acima da cabeça",
+              "explicacao": "Assim a mama se espalha sobre o tórax.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u11-l1-q4",
@@ -3842,17 +3844,19 @@
             },
             {
               "id": "go-u11-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o útero aumentado e doloroso com sangramento intenso e cólica.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem de 20 anos com cólica menstrual intensa e dor no fundo de saco posterior ao toque. Sem massas.",
+              "enunciado": "Qual é a conduta agora?",
               "opcoes": [
-                "adenomiose",
-                "endometriose",
-                "miomatose",
-                "pólipo"
+                "DIU de progesterona",
+                "Anticoncepcional combinado",
+                "Ressonância pélvica",
+                "Ultrassom com preparo intestinal"
               ],
-              "resposta": "adenomiose",
-              "explicacao": "Ressonância ajuda.",
-              "revisado": false
+              "resposta": "Anticoncepcional combinado",
+              "explicacao": "Suspeita de endometriose pode ser tratada empiricamente.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u11-l3-q5",
@@ -3936,17 +3940,19 @@
             },
             {
               "id": "go-u12-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na mulher com perda urinária aos esforços, qual é o primeiro tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher operada de incontinência há 3 meses perde urina em pequena quantidade e tem massa cística dolorosa acima do púbis.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Fisioterapia do assoalho pélvico",
-                "Cirurgia",
-                "Antibiótico",
-                "Cirurgia com sling logo no primeiro atendimento"
+                "Sondagem vesical",
+                "Urina e urocultura",
+                "Ultrassom pélvico",
+                "Punção guiada"
               ],
-              "resposta": "Fisioterapia do assoalho pélvico",
-              "explicacao": "Exercícios de Kegel.",
-              "revisado": false
+              "resposta": "Sondagem vesical",
+              "explicacao": "Retenção com transbordamento após cirurgia de sling.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-u12-l1-q3",
@@ -6286,17 +6292,18 @@
             {
               "id": "go-d4-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 30 anos com sangramento uterino intenso há 2 dias, estável, sem gravidez nem lesão estrutural.",
-              "enunciado": "Qual é o tratamento inicial?",
+              "caso": "Mulher de 40 anos com cirrose Child B tem menstruação intensa e longa há 6 meses. Exame normal.",
+              "enunciado": "Qual remédio oral usar para controlar o sangramento?",
               "opcoes": [
-                "Hormônio em dose alta ou tranexâmico",
-                "Histerectomia de urgência",
-                "Curetagem obrigatória",
-                "Somente ferro oral e observação em casa"
+                "Estradiol",
+                "Progesterona",
+                "Ácido tranexâmico",
+                "Ácido mefenâmico"
               ],
-              "resposta": "Hormônio em dose alta ou tranexâmico",
-              "explicacao": "Usam-se pílula ou estrogênio em dose alta, ou tranexâmico; instáveis podem precisar de curetagem.",
-              "revisado": false
+              "resposta": "Ácido tranexâmico",
+              "explicacao": "Hormônios e anti-inflamatórios são ruins no hepatopata.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-d4-l2-q4",
@@ -7048,28 +7055,19 @@
             },
             {
               "id": "go-d6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada exame da infertilidade ao que avalia.",
-              "pares": [
-                {
-                  "esquerda": "Espermograma",
-                  "direita": "Fator masculino"
-                },
-                {
-                  "esquerda": "Histerossalpingografia",
-                  "direita": "Trompas e cavidade uterina"
-                },
-                {
-                  "esquerda": "Progesterona na fase lútea",
-                  "direita": "Ovulação"
-                },
-                {
-                  "esquerda": "Hormônio antimülleriano",
-                  "direita": "Reserva ovariana"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos quer engravidar e tem ciclos de 36 a 46 dias.",
+              "enunciado": "O que pode induzir ovulação regular?",
+              "opcoes": [
+                "GnRH por 5 dias",
+                "Clomifeno por 5 dias a partir do 5º dia",
+                "Estrogênio por 5 dias",
+                "Progesterona por 10 dias"
               ],
-              "explicacao": "O fator masculino responde por cerca de metade dos casos.",
-              "revisado": false
+              "resposta": "Clomifeno por 5 dias a partir do 5º dia",
+              "explicacao": "O letrozol também é opção, sobretudo na SOP.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "go-d6-l2-q3",

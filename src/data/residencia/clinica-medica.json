@@ -166,17 +166,19 @@
             },
             {
               "id": "cm-u1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "No diabetes tipo 2 sem contraindicações, qual é o fármaco inicial clássico?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 60 anos com lúpus, diabetes e hipertensão: glicada 8,3%, albuminúria 120, LDL 114, PA 142 x 88 e T-score -2,8 no fêmur. Usa metformina, gliclazida e sinvastatina.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Metformina",
-                "Glibenclamida",
-                "Insulina NPH",
-                "Acarbose"
+                "Enalapril, atorvastatina, NPH à noite e alendronato",
+                "Anlodipino, rosuvastatina, mais gliclazida e denosumabe",
+                "Losartana, mais sinvastatina e alendronato",
+                "Losartana, mais sinvastatina e zoledronato"
               ],
-              "resposta": "Metformina",
-              "explicacao": "A metformina é barata, não causa hipoglicemia isolada e não engorda. Em doença cardiovascular ou renal estabelecida, associa-se iSGLT2 ou agonista de GLP-1.",
-              "revisado": false
+              "resposta": "Enalapril, atorvastatina, NPH à noite e alendronato",
+              "explicacao": "IECA pela albuminúria, estatina potente e insulina pela glicada alta.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u1-l2-q4",
@@ -385,28 +387,19 @@
             },
             {
               "id": "cm-u2-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classe funcional da NYHA à sua descrição.",
-              "pares": [
-                {
-                  "esquerda": "Classe I",
-                  "direita": "Sem limitação nas atividades habituais"
-                },
-                {
-                  "esquerda": "Classe II",
-                  "direita": "Sintomas nas atividades habituais"
-                },
-                {
-                  "esquerda": "Classe III",
-                  "direita": "Sintomas em esforços menores que os habituais"
-                },
-                {
-                  "esquerda": "Classe IV",
-                  "direita": "Sintomas em repouso"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher diabética com IC e FE de 33%, já com carvedilol, enalapril, espironolactona e furosemida, tem falta de ar aos médios esforços.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Ivabradina ou mais espironolactona",
+                "Bisoprolol e mais furosemida",
+                "Sacubitril com enalapril e menos carvedilol",
+                "Associar iSGLT2 ou trocar enalapril por sacubitril-valsartana"
               ],
-              "explicacao": "A classe funcional orienta o tratamento e o prognóstico.",
-              "revisado": false
+              "resposta": "Associar iSGLT2 ou trocar enalapril por sacubitril-valsartana",
+              "explicacao": "Completar os pilares do tratamento.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u2-l1-q3",
@@ -2271,17 +2264,19 @@
           "questoes": [
             {
               "id": "cm-u20-l6-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que é hipertensão resistente?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher hipertensa em enalapril 40 mg, clortalidona e anlodipino 10 mg mantém PA de 148 x 88 com potássio normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Pressão sem controle com 3 remédios, um deles diurético",
-                "Pressão alta em uma única medida",
-                "Pressão sem controle com 1 remédio em dose baixa por 1 mês",
-                "Pressão alta só no consultório"
+                "Clonidina",
+                "Espironolactona",
+                "Hidralazina",
+                "Trocar por losartana"
               ],
-              "resposta": "Pressão sem controle com 3 remédios, um deles diurético",
-              "explicacao": "Os 3 em dose plena. Exige excluir má adesão antes.",
-              "revisado": false
+              "resposta": "Espironolactona",
+              "explicacao": "Quarta droga na hipertensão resistente.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u20-l6-q2",
@@ -4706,17 +4701,19 @@
             },
             {
               "id": "cm-u4-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira medida na hipercalemia com alterações no ECG?",
+              "tipo": "caso_clinico",
+              "caso": "Homem tetraplégico há 4 dias por acidente é intubado com fentanil, etomidato e succinilcolina e logo entra em assistolia.",
+              "enunciado": "Qual é a principal hipótese?",
               "opcoes": [
-                "Gluconato de cálcio venoso",
-                "Furosemida oral",
-                "Dieta pobre em K",
-                "Dieta pobre em potássio e furosemida oral"
+                "Hipóxia pelo fentanil",
+                "Tromboembolismo pulmonar",
+                "Hiperpotassemia pela succinilcolina",
+                "Choque pelo etomidato"
               ],
-              "resposta": "Gluconato de cálcio venoso",
-              "explicacao": "O cálcio não baixa o potássio, mas protege o coração em minutos.",
-              "revisado": false
+              "resposta": "Hiperpotassemia pela succinilcolina",
+              "explicacao": "Após lesão medular, queimadura ou imobilização, a succinilcolina libera muito potássio.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u4-l3-q3",
@@ -5779,11 +5776,19 @@
             },
             {
               "id": "cm-u10-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O diagnóstico de pancreatite exige 2 de 3 critérios: dor típica, enzimas 3 vezes o normal e imagem.",
-              "resposta": true,
-              "explicacao": "Critérios de Atlanta.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 48 anos com queimação no estômago, melhora parcial com omeprazol e anemia microcítica.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Dobrar o omeprazol",
+                "Manter e esperar 8 semanas",
+                "Endoscopia",
+                "Tratar H. pylori às cegas"
+              ],
+              "resposta": "Endoscopia",
+              "explicacao": "Anemia é sinal de alarme.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u10-l3-q3",
@@ -7463,17 +7468,19 @@
             },
             {
               "id": "cm-u9-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da crise de cefaleia em salvas?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 43 anos com crises de vertigem de minutos a horas, zumbido, ouvido cheio e audição que oscila no lado direito. Exame normal fora da crise.",
+              "enunciado": "Qual é o diagnóstico e o exame?",
               "opcoes": [
-                "Oxigênio a 100% e triptano",
-                "Paracetamol",
-                "Antibiótico",
-                "Paracetamol oral e repouso"
+                "VPPB",
+                "Vertigem central",
+                "Tontura psicogênica",
+                "Doença de Ménière; audiometria"
               ],
-              "resposta": "Oxigênio a 100% e triptano",
-              "explicacao": "Funciona em minutos.",
-              "revisado": false
+              "resposta": "Doença de Ménière; audiometria",
+              "explicacao": "A audiometria mostra perda nos graves.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-u9-l2-q3",
@@ -12993,17 +13000,18 @@
             {
               "id": "cm-d3-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Diabético tem filtração glomerular de 40 mL/min e relação albumina/creatinina urinária de 600 mg/g.",
-              "enunciado": "Qual combinação reduz a progressão da doença renal?",
+              "caso": "Mulher diabética com doença renal crônica precisará de hemodiálise nos próximos dias e ainda não tem acesso.",
+              "enunciado": "Qual acesso instalar?",
               "opcoes": [
-                "IECA ou BRA máximos e iSGLT2",
-                "Só controlar a glicose",
-                "Anti-inflamatório",
-                "Apenas controlar a glicose e usar diurético isolado"
+                "Cateter de longa permanência tunelizado",
+                "Cateter totalmente implantado",
+                "Fístula arteriovenosa",
+                "Fístula com prótese"
               ],
-              "resposta": "IECA ou BRA máximos e iSGLT2",
-              "explicacao": "A finerenona também reduz progressão em diabéticos com albuminúria.",
-              "revisado": false
+              "resposta": "Cateter de longa permanência tunelizado",
+              "explicacao": "A fístula demora semanas para amadurecer.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-d3-l2-q2",
@@ -16927,46 +16935,48 @@
             {
               "id": "cm-d9-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com hemorragia subaracnóidea há 5 dias piora com novo déficit.",
-              "enunciado": "Qual é a complicação provável?",
+              "caso": "Homem em coma, intubado: flete os braços e estende as pernas à dor e tem pupilas médias e fixas.",
+              "enunciado": "Onde está a lesão?",
               "opcoes": [
-                "Vasoespasmo",
-                "Ressangramento só",
-                "Hidrocefalia sempre",
-                "Enxaqueca"
+                "Bulbo",
+                "Ponte",
+                "Córtex difuso",
+                "Mesencéfalo"
               ],
-              "resposta": "Vasoespasmo",
-              "explicacao": "Pico entre o 4º e o 14º dia.",
-              "revisado": false
+              "resposta": "Mesencéfalo",
+              "explicacao": "Pupilas médio-fixas indicam lesão mesencefálica.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-d9-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Mulher obesa com cefaleia, papiledema e visão turva, tomografia normal e pressão do líquor alta.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Nesse paciente com lesão no mesencéfalo, o que acontece ao colocar água fria no ouvido direito?",
               "opcoes": [
-                "Hipertensão intracraniana idiopática",
-                "Enxaqueca",
-                "Tumor",
-                "Meningite bacteriana aguda com febre"
+                "Olhos desviam para a esquerda",
+                "Olhos desviam para a direita, de forma tônica",
+                "Olhos desviam para cima",
+                "Nenhuma resposta"
               ],
-              "resposta": "Hipertensão intracraniana idiopática",
-              "explicacao": "Tratar com acetazolamida e perda de peso.",
-              "revisado": false
+              "resposta": "Olhos desviam para a direita, de forma tônica",
+              "explicacao": "Com a ponte íntegra, os olhos vão para o lado da água fria, sem a fase rápida.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-d9-l2-q3",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame quando a tomografia é normal e a suspeita de hemorragia subaracnóidea é alta?",
+              "enunciado": "Sem tratamento, como evolui o exame desse paciente com lesão no mesencéfalo?",
               "opcoes": [
-                "Punção lombar",
-                "Ressonância de coluna",
-                "Eletroencefalograma",
-                "Eletroencefalograma e ressonância de coluna"
+                "Sem resposta motora, pupilas médio-fixas e sem reflexo oculocefálico",
+                "Sem resposta, pupilas puntiformes e reflexo desconjugado",
+                "Extensão nos 4 membros e sem reflexo",
+                "Extensão e pupilas puntiformes"
               ],
-              "resposta": "Punção lombar",
-              "explicacao": "Procurar xantocromia.",
-              "revisado": false
+              "resposta": "Sem resposta motora, pupilas médio-fixas e sem reflexo oculocefálico",
+              "explicacao": "A herniação desce até o bulbo.",
+              "revisado": false,
+              "fonte": "USP-SP 2024"
             },
             {
               "id": "cm-d9-l2-q4",
