@@ -369,24 +369,33 @@
             {
               "id": "cir-u1-l3-q7",
               "tipo": "multipla_escolha",
-              "enunciado": "Na obstrução intestinal, qual achado sugere sofrimento de alça?",
+              "enunciado": "Nódulo de 1 cm no ápice de um divertículo de Meckel. Qual é a lesão mais provável?",
               "opcoes": [
-                "Dor contínua com febre, taquicardia e leucocitose",
-                "Ruídos aumentados",
-                "Distensão leve",
-                "Cólicas intermitentes com ruídos aumentados e distensão leve"
+                "Leiomioma",
+                "Adenocarcinoma",
+                "Mucosa gástrica",
+                "Carcinoide"
               ],
-              "resposta": "Dor contínua com febre, taquicardia e leucocitose",
-              "explicacao": "Quando a dor deixa de ser em cólica e passa a ser contínua, com sinais sistêmicos ou peritonite, a cirurgia é urgente.",
-              "revisado": false
+              "resposta": "Carcinoide",
+              "explicacao": "Tumor mais comum do Meckel.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u1-l3-q8",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Toda obstrução de delgado por bridas deve ser operada logo, mesmo sem sinais de sofrimento de alça.",
-              "resposta": false,
-              "explicacao": "Falso. Sem sofrimento de alça, tenta-se jejum, hidratação e sonda nasogástrica; boa parte resolve sem cirurgia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com retocolite tem enterorragia volumosa e instabilidade que persiste.",
+              "enunciado": "Qual é a cirurgia?",
+              "opcoes": [
+                "Colectomia e ileorretoanastomose",
+                "Proctocolectomia com ileostomia",
+                "Bolsa ileal",
+                "Colectomia subtotal e ileostomia"
+              ],
+              "resposta": "Colectomia subtotal e ileostomia",
+              "explicacao": "Na urgência, deixar o reto.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         }
@@ -498,26 +507,34 @@
             },
             {
               "id": "cir-u2-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A contusão pulmonar atinge o pior momento logo no atendimento inicial e depois só melhora.",
-              "resposta": false,
-              "explicacao": "Falso. Ela costuma piorar nas primeiras 24 a 48 horas, por isso o paciente precisa ser observado.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O hemotórax tardio, de 2 a 40 dias após o trauma, costuma vir de onde?",
+              "opcoes": [
+                "Esterno",
+                "Pulmão",
+                "Intercostal direta",
+                "Fratura de costela"
+              ],
+              "resposta": "Fratura de costela",
+              "explicacao": "A ponta óssea lesa vasos depois.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u2-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com facada no precórdio está hipotenso, com jugulares distendidas e bulhas abafadas, e não melhora com volume.",
-              "enunciado": "Qual é o tratamento definitivo?",
+              "caso": "Baleado no tórax direito, PA 70 x 50, sem murmúrio e timpânico, fala entrecortada.",
+              "enunciado": "Qual é o tratamento agora?",
               "opcoes": [
-                "Toracotomia ou esternotomia para reparar o coração",
-                "Só drenar o tórax",
-                "Liberar",
-                "Apenas drenagem do tórax e observação na UTI, com mais volume"
+                "Intubar",
+                "Máscara e transfusão maciça",
+                "Dreno e transfusão",
+                "Máscara não reinalante e drenagem torácica"
               ],
-              "resposta": "Toracotomia ou esternotomia para reparar o coração",
-              "explicacao": "A punção do pericárdio pode ser uma ponte, mas a lesão precisa ser reparada.",
-              "revisado": false
+              "resposta": "Máscara não reinalante e drenagem torácica",
+              "explicacao": "Pneumotórax hipertensivo: descomprimir.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         },
@@ -1870,25 +1887,33 @@
             },
             {
               "id": "cir-u5-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A regra de Goodsall ajuda a prever o trajeto da fístula pela posição do orifício na pele.",
-              "resposta": true,
-              "explicacao": "Orifícios atrás do ânus tendem a ter trajeto curvo até a linha média posterior.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre abscessos e fístulas perianais, o que é correto?",
+              "opcoes": [
+                "Raramente viram fístula",
+                "A TC vale mais que o exame sob anestesia",
+                "A prioridade é a cura antes da sepse",
+                "O abscesso se trata com drenagem, não com antibiótico"
+              ],
+              "resposta": "O abscesso se trata com drenagem, não com antibiótico",
+              "explicacao": "Controle da sepse vem primeiro.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u5-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Em fístulas complexas, usa-se um ___ (seton) para drenar e preservar o esfíncter.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença hemorroidária, o que é correto?",
               "opcoes": [
-                "sedenho",
-                "grampo",
-                "dreno de tórax",
-                "stent"
+                "Ambulatorial resolve graus III e IV",
+                "Operar grávidas e imunodeprimidos",
+                "Fibras são pouco eficazes",
+                "Retenção, sangramento, estenose e incontinência são complicações da cirurgia"
               ],
-              "resposta": "sedenho",
-              "explicacao": "Cortar todo o esfíncter de uma vez causaria incontinência.",
-              "revisado": false
+              "resposta": "Retenção, sangramento, estenose e incontinência são complicações da cirurgia",
+              "explicacao": "Medidas clínicas são a base.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u5-l3-q5",
@@ -2699,11 +2724,19 @@
             },
             {
               "id": "cir-u7-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "As técnicas de hérnia inguinal com tensão têm menos recidiva do que as técnicas com tela.",
-              "resposta": false,
-              "explicacao": "Falso. As técnicas com tela têm menor recidiva.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Hérnia inguinal encarcerada com divertículo de delgado isquêmico no saco.",
+              "enunciado": "Que hérnia é?",
+              "opcoes": [
+                "Amyand",
+                "Richter",
+                "Spiegel",
+                "Littré"
+              ],
+              "resposta": "Littré",
+              "explicacao": "Contém o divertículo de Meckel.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u7-l3-q8",
@@ -3065,25 +3098,35 @@
             },
             {
               "id": "cir-u8-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Tromboflebite superficial perto da junção safeno-femoral nunca precisa de anticoagulação.",
-              "resposta": false,
-              "explicacao": "Falso. Exige avaliação para anticoagulação, pelo risco de passar para a veia profunda.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com varizes C5, safena insuficiente e forame oval patente.",
+              "enunciado": "Qual tratamento é contraindicado?",
+              "opcoes": [
+                "Safenectomia",
+                "Radiofrequência",
+                "Laser",
+                "Espuma de polidocanol"
+              ],
+              "resposta": "Espuma de polidocanol",
+              "explicacao": "Risco de embolia paradoxal.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u8-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O escore de ___ estima a probabilidade de trombose venosa profunda.",
+              "tipo": "caso_clinico",
+              "caso": "Prótese de diálise obstruída após hipotensão, sem infecção.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Wells",
-                "Glasgow",
-                "Child",
-                "Alvarado"
+                "Cateter",
+                "Trocar a prótese",
+                "Prótese no outro braço",
+                "Trombectomia e angiografia"
               ],
-              "resposta": "Wells",
-              "explicacao": "Junto com o D-dímero.",
-              "revisado": false
+              "resposta": "Trombectomia e angiografia",
+              "explicacao": "Corrige a causa.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         }
@@ -3432,25 +3475,35 @@
             },
             {
               "id": "cir-u9-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A sialolitíase é mais comum na glândula parótida.",
-              "resposta": false,
-              "explicacao": "Falso. É mais comum na submandibular, que tem saliva mais espessa.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com úlceras de repetição, cálculos renais, cálcio de 14,5, PTH alto e nódulos pancreáticos.",
+              "enunciado": "Qual NEM?",
+              "opcoes": [
+                "2A",
+                "2B",
+                "3",
+                "NEM 1"
+              ],
+              "resposta": "NEM 1",
+              "explicacao": "Paratireoide, pâncreas e hipófise.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u9-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tumor de ___ da parótida é benigno, bilateral e comum em fumantes.",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 62 anos com nódulo de 3 cm, endurecido, no triângulo carotídeo.",
+              "enunciado": "Qual é a suspeita?",
               "opcoes": [
-                "Warthin",
-                "Wilms",
-                "Klatskin",
-                "Pancoast"
+                "Paraganglioma",
+                "Anomalia congênita",
+                "Reacional",
+                "Neoplasia maligna"
               ],
-              "resposta": "Warthin",
-              "explicacao": "Segundo tumor mais comum.",
-              "revisado": false
+              "resposta": "Neoplasia maligna",
+              "explicacao": "Linfonodo metastático até prova.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         }
@@ -3640,32 +3693,35 @@
             },
             {
               "id": "cir-u10-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado do líquido pleural indica derrame parapneumônico complicado?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com cavidade pós-tuberculose e hemoptise pequena vai operar.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "pH abaixo de 7,2",
-                "pH de 7,6",
-                "Glicose alta",
-                "Líquido claro com glicose alta"
+                "Vídeo é contraindicado",
+                "Mortalidade acima de 10%",
+                "Embolização substitui",
+                "Avaliar e recuperar a nutrição antes"
               ],
-              "resposta": "pH abaixo de 7,2",
-              "explicacao": "Exige drenagem.",
-              "revisado": false
+              "resposta": "Avaliar e recuperar a nutrição antes",
+              "explicacao": "Melhora o resultado.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u10-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com pneumonia há 10 dias tem febre persistente e derrame com pus.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Diabética epiléptica com febre e cavidade no lobo inferior esquerdo.",
+              "enunciado": "Qual hipótese tratar já?",
               "opcoes": [
-                "Drenar o tórax e manter antibiótico",
-                "Só antibiótico",
-                "Diurético",
-                "Só antibiótico oral em casa por mais duas semanas"
+                "Histoplasmose",
+                "Sequestro",
+                "Câncer",
+                "Abscesso pulmonar"
               ],
-              "resposta": "Drenar o tórax e manter antibiótico",
-              "explicacao": "É empiema.",
-              "revisado": false
+              "resposta": "Abscesso pulmonar",
+              "explicacao": "Aspiração nas crises.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u10-l2-q7",
@@ -4864,25 +4920,33 @@
             {
               "id": "cir-u13-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido que não elimina mecônio em 48 horas e tem distensão.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê de 28 dias com icterícia que piora, fezes brancas e colúria.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Doença de Hirschsprung",
-                "Normal",
-                "Gastroenterite",
-                "Hérnia inguinal encarcerada"
+                "Cisto de colédoco",
+                "Fisiológica",
+                "Cálculo",
+                "Atresia das vias biliares"
               ],
-              "resposta": "Doença de Hirschsprung",
-              "explicacao": "Fazer biópsia retal.",
-              "revisado": false
+              "resposta": "Atresia das vias biliares",
+              "explicacao": "Urgência para Kasai.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u13-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A hérnia diafragmática congênita é mais comum do lado direito.",
-              "resposta": false,
-              "explicacao": "Falso. É mais comum do lado esquerdo e causa hipoplasia pulmonar.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando operar as afecções inguinoescrotais?",
+              "opcoes": [
+                "Hidrocele comunicante no 1º mês",
+                "Criptorquidia após 2 anos",
+                "Prematuro antes de 3 meses",
+                "Hérnia inguinal do recém-nascido o quanto antes"
+              ],
+              "resposta": "Hérnia inguinal do recém-nascido o quanto antes",
+              "explicacao": "Risco de encarcerar.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u13-l3-q8",
@@ -6291,18 +6355,18 @@
             },
             {
               "id": "cir-d1-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com fratura instável de pelve continua hipotenso após cinta pélvica e transfusão, FAST negativo.",
-              "enunciado": "Qual é o próximo passo?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é hemotórax retido?",
               "opcoes": [
-                "Angioembolização ou tamponamento pré-peritoneal",
-                "Laparotomia",
-                "Mais cristaloide",
-                "Mais cristaloide em grande volume e observação na UTI"
+                "100 mL de coágulo na TC",
+                "300 mL após 24 h",
+                "Um terço que não sai em menos de 24 h",
+                "Um terço do espaço pleural que o dreno não tira após 72 h"
               ],
-              "resposta": "Angioembolização ou tamponamento pré-peritoneal",
-              "explicacao": "O sangramento pélvico vem principalmente de veias e artérias da pelve.",
-              "revisado": false
+              "resposta": "Um terço do espaço pleural que o dreno não tira após 72 h",
+              "explicacao": "Indica videotoracoscopia.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         },
@@ -6344,17 +6408,18 @@
             {
               "id": "cir-d1-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Idosa de 78 anos que usa varfarina bateu a cabeça ao cair da própria altura. Está lúcida, Glasgow 15, sem vômitos.",
+              "caso": "Queimado em face e pescoço em ambiente fechado, com voz rouca.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tomografia de crânio, pelo anticoagulante e idade",
-                "Alta com orientação, pois o Glasgow é 15",
-                "Observar 2 horas e liberar sem exame",
-                "Raio X de crânio e alta se não houver fratura"
+                "Intubar só se saturar mal",
+                "Evitar oxigênio a 100%",
+                "Escarotomia da face",
+                "Considerar intubação preventiva"
               ],
-              "resposta": "Tomografia de crânio, pelo anticoagulante e idade",
-              "explicacao": "Idade avançada e anticoagulante indicam tomografia mesmo no TCE leve, pelas regras como a canadense.",
-              "revisado": false
+              "resposta": "Considerar intubação preventiva",
+              "explicacao": "Edema de via aérea pode fechar.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d1-l3-q4",
@@ -8417,32 +8482,33 @@
             {
               "id": "cir-d7-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com fratura de pelve segue instável após cinta e transfusão, FAST negativo.",
-              "enunciado": "Qual é o próximo passo?",
+              "caso": "Roda de carro passou sobre a coxa, com equimose e pulsos presentes.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Angioembolização ou tamponamento pré-peritoneal",
-                "Laparotomia exploradora",
-                "Raio X repetido",
-                "Raio X de pelve repetido e mais cristaloide"
+                "Antibiótico precoce",
+                "Pulso fraco vem da ruptura femoral",
+                "Radiografar já",
+                "Avaliar a perfusão da pele e reavaliar em 24 e 48 h"
               ],
-              "resposta": "Angioembolização ou tamponamento pré-peritoneal",
-              "explicacao": "Controlar sangramento pélvico.",
-              "revisado": false
+              "resposta": "Avaliar a perfusão da pele e reavaliar em 24 e 48 h",
+              "explicacao": "Risco de desenluvamento.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d7-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Motociclista com fratura de pelve tem sangue saindo pelo meato uretral.",
-              "enunciado": "Qual é a conduta antes de sondar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fratura de mandíbula mais causa insuficiência respiratória?",
               "opcoes": [
-                "Uretrografia retrógrada",
-                "Passar sonda vesical logo",
-                "Tomografia de crânio",
-                "Sonda e lavagem da bexiga"
+                "Corpo unilateral",
+                "Côndilos",
+                "Dentoalveolares",
+                "Parassínfise bilateral"
               ],
-              "resposta": "Uretrografia retrógrada",
-              "explicacao": "Sangue no meato sugere lesão de uretra; não se passa sonda antes da uretrografia.",
-              "revisado": false
+              "resposta": "Parassínfise bilateral",
+              "explicacao": "A língua cai para trás.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d7-l1-q4",
@@ -9867,17 +9933,18 @@
             {
               "id": "cir-d10-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Diabético tem pé inchado, quente, com flutuação na planta e febre.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Após anticoagular suspeita de TVP pós-fisioterapia, a dor e o volume da perna pioram.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Drenagem cirúrgica e antibiótico",
-                "Só antibiótico oral",
-                "Só curativo diário",
-                "Elevação do pé e retorno em 1 semana"
+                "Trombose progressiva",
+                "Trombose refratária",
+                "Oclusão arterial",
+                "Síndrome da pedrada com hematoma; fasciotomia e drenagem"
               ],
-              "resposta": "Drenagem cirúrgica e antibiótico",
-              "explicacao": "Abscesso no pé diabético é urgência e exige drenagem.",
-              "revisado": false
+              "resposta": "Síndrome da pedrada com hematoma; fasciotomia e drenagem",
+              "explicacao": "Ruptura muscular.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d10-l3-q4",
@@ -10421,43 +10488,34 @@
             },
             {
               "id": "cir-d12-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada cálculo ao tratamento preferido.",
-              "pares": [
-                {
-                  "esquerda": "Cálculo renal até 2 cm",
-                  "direita": "Litotripsia extracorpórea ou ureteroscopia"
-                },
-                {
-                  "esquerda": "Cálculo maior de 2 cm",
-                  "direita": "Nefrolitotripsia percutânea"
-                },
-                {
-                  "esquerda": "Cálculo ureteral distal pequeno",
-                  "direita": "Tratamento expulsivo"
-                },
-                {
-                  "esquerda": "Cálculo de ácido úrico",
-                  "direita": "Alcalinização da urina"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre prevenir cálculos renais, o que é correto?",
+              "opcoes": [
+                "Citrato para todos",
+                "Evitar frutas cítricas",
+                "Reduzir o cálcio",
+                "Cálcio alimentar adequado reduz a absorção de oxalato"
               ],
-              "explicacao": "Tamanho e local orientam.",
-              "revisado": false
+              "resposta": "Cálcio alimentar adequado reduz a absorção de oxalato",
+              "explicacao": "Restringir cálcio aumenta o risco.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d12-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente com infecções de repetição e cálculo coraliforme.",
-              "enunciado": "Qual é o tipo?",
+              "caso": "Mulher com cólica renal e urina escura, estável.",
+              "enunciado": "Após analgesia, o que fazer?",
               "opcoes": [
-                "Estruvita",
-                "Ácido úrico",
-                "Cistina",
-                "Oxalato"
+                "Antibiótico",
+                "RM",
+                "Raio X e ultrassom",
+                "Exames e TC sem contraste"
               ],
-              "resposta": "Estruvita",
-              "explicacao": "Germes produtores de urease.",
-              "revisado": false
+              "resposta": "Exames e TC sem contraste",
+              "explicacao": "Padrão-ouro.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d12-l1-q6",
@@ -10700,17 +10758,18 @@
             {
               "id": "cir-d12-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Homem ouve estalo durante relação, com dor e pênis inchado em berinjela.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Queda de 3 metros há 4 dias, hematúria e exclusão renal esquerda na TC.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Cirurgia de urgência",
-                "Gelo",
-                "Antibiótico",
-                "Gelo no local e anti-inflamatório em casa"
+                "Trombose venosa; nefrectomia",
+                "Trombólise",
+                "Revascularizar",
+                "Trombose da artéria renal; observação"
               ],
-              "resposta": "Cirurgia de urgência",
-              "explicacao": "Fratura de pênis.",
-              "revisado": false
+              "resposta": "Trombose da artéria renal; observação",
+              "explicacao": "Tarde para salvar o rim.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d12-l3-q6",
@@ -10831,32 +10890,34 @@
             {
               "id": "cir-d13-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido de 3 dias com vômito verde e distensão leve.",
-              "enunciado": "Qual é o exame?",
+              "caso": "Bebê de 27 dias piora rápido com vômitos biliosos, sangue nas fezes e abdome tenso.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Estudo contrastado do trato superior",
-                "Ultrassom de rim",
-                "Raio X de tórax",
-                "Raio X de tórax e ultrassom dos rins"
+                "Volvo; trânsito",
+                "Intussuscepção; cirurgia",
+                "Intussuscepção; enema",
+                "Volvo de intestino médio; cirurgia de urgência"
               ],
-              "resposta": "Estudo contrastado do trato superior",
-              "explicacao": "Má rotação com volvo.",
-              "revisado": false
+              "resposta": "Volvo de intestino médio; cirurgia de urgência",
+              "explicacao": "Vômito bilioso no bebê é volvo até prova.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d13-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança de 10 anos com dor que começou no umbigo e migrou para a fossa ilíaca direita.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê de 25 dias com vômitos de leite coalhado em jato, desidratado.",
+              "enunciado": "Qual é a hipótese e a conduta inicial?",
               "opcoes": [
-                "Apendicite aguda",
-                "Gastroenterite",
-                "Infecção urinária",
-                "Normal"
+                "Atresia",
+                "Atresia de esôfago",
+                "Refluxo",
+                "Estenose de piloro; hidratar e corrigir eletrólitos"
               ],
-              "resposta": "Apendicite aguda",
-              "explicacao": "O escore pediátrico ajuda.",
-              "revisado": false
+              "resposta": "Estenose de piloro; hidratar e corrigir eletrólitos",
+              "explicacao": "Alcalose hipoclorêmica.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d13-l1-q7",
