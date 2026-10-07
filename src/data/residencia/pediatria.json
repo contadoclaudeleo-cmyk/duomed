@@ -2081,25 +2081,35 @@
             },
             {
               "id": "ped-u6-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medicamento pode fechar o canal arterial em prematuros?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 3 meses com taquipneia, baixo ganho de peso e sopro contínuo na borda esternal esquerda alta.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Ibuprofeno ou indometacina",
-                "Prostaglandina",
-                "Adrenalina",
-                "Prostaglandina E1 em infusão"
+                "Coarctação",
+                "Forame oval",
+                "Atresia pulmonar",
+                "Canal arterial"
               ],
-              "resposta": "Ibuprofeno ou indometacina",
-              "explicacao": "Eles bloqueiam a prostaglandina, que mantém o canal aberto.",
-              "revisado": false
+              "resposta": "Canal arterial",
+              "explicacao": "Sopro em maquinaria.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-u6-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A comunicação interventricular pequena pode fechar sozinha nos primeiros anos de vida.",
-              "resposta": true,
-              "explicacao": "Muitas nunca precisam de cirurgia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina com Turner, hipertensão difícil e pulsos fracos nas pernas.",
+              "enunciado": "Qual o diagnóstico?",
+              "opcoes": [
+                "Canal arterial",
+                "Forame oval",
+                "Atresia pulmonar",
+                "Coarctação da aorta"
+              ],
+              "resposta": "Coarctação da aorta",
+              "explicacao": "PA maior nos braços.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-u6-l1-q8",
@@ -3521,25 +3531,34 @@
             },
             {
               "id": "ped-u9-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O neuroblastoma pode causar olhos de guaxinim e movimentos oculares anormais.",
-              "resposta": true,
-              "explicacao": "Opsoclonia-mioclonia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com massa no mediastino, derrame pleural e 95 mil leucócitos com blastos.",
+              "enunciado": "Como diagnosticar?",
+              "opcoes": [
+                "Biópsia do mediastino",
+                "Toracocentese",
+                "Biópsia de linfonodo",
+                "Imunofenotipagem do sangue"
+              ],
+              "resposta": "Imunofenotipagem do sangue",
+              "explicacao": "Menos invasivo.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-u9-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de catecolaminas na urina ajuda no diagnóstico do neuroblastoma.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO é fator de risco para lise tumoral?",
               "opcoes": [
-                "dosagem",
-                "ausência",
-                "queda",
-                "proteína"
+                "Pouca urina",
+                "Ácido úrico alto",
+                "IRA",
+                "LMC em fase crônica"
               ],
-              "resposta": "dosagem",
-              "explicacao": "Ácido vanilmandélico.",
-              "revisado": false
+              "resposta": "LMC em fase crônica",
+              "explicacao": "Baixa carga tumoral.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             }
           ]
         }
@@ -5324,31 +5343,35 @@
             },
             {
               "id": "ped-u14-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A chupeta na hora de ___ pode reduzir o risco de morte súbita.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê internado cai do berço de 70 cm, chora e fica bem.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "dormir",
-                "comer",
-                "brincar",
-                "tomar banho"
+                "TC",
+                "RX de crânio",
+                "Advertir a mãe",
+                "Registrar, notificar evento e observar"
               ],
-              "resposta": "dormir",
-              "explicacao": "Depois que a amamentação estiver estabelecida.",
-              "revisado": false
+              "resposta": "Registrar, notificar evento e observar",
+              "explicacao": "Segurança do paciente.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-u14-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o pico de idade da morte súbita do lactente?",
+              "tipo": "caso_clinico",
+              "caso": "Criança que chora com raiva, para de respirar, fica roxa, desmaia e acorda logo.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Entre 2 e 4 meses",
-                "Ao nascer",
-                "Com 2 anos",
-                "Depois de um ano"
+                "ECG",
+                "EEG",
+                "Internar",
+                "Alta com orientações"
               ],
-              "resposta": "Entre 2 e 4 meses",
-              "explicacao": "Primeiro ano de vida.",
-              "revisado": false
+              "resposta": "Alta com orientações",
+              "explicacao": "Perda de fôlego.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-u14-l3-q6",
@@ -6431,57 +6454,49 @@
             {
               "id": "ped-d3-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos tomou vários comprimidos de paracetamol da avó há 2 horas, sem sintomas.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Adolescente agitado, delirante, com pupila dilatada, PA 170x120 e FC 160.",
+              "enunciado": "Qual a droga?",
               "opcoes": [
-                "Dosar com 4 h e N-acetilcisteína pelo nomograma",
-                "Liberar sem exames",
-                "Lavagem obrigatória",
-                "Liberar sem exames e esperar aparecerem sintomas"
+                "Morfina",
+                "Droga K",
+                "Fluoxetina",
+                "Cocaína"
               ],
-              "resposta": "Dosar com 4 h e N-acetilcisteína pelo nomograma",
-              "explicacao": "Os sintomas da lesão do fígado aparecem só após 24 a 72 horas.",
-              "revisado": false
+              "resposta": "Cocaína",
+              "explicacao": "Simpatomimética.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d3-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intoxicação ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Organofosforado",
-                  "direita": "Salivação, miose e bradicardia"
-                },
-                {
-                  "esquerda": "Antidepressivo tricíclico",
-                  "direita": "QRS alargado e convulsão"
-                },
-                {
-                  "esquerda": "Ferro",
-                  "direita": "Vômitos com sangue e radiografia com comprimidos"
-                },
-                {
-                  "esquerda": "Salicilato",
-                  "direita": "Respiração rápida e acidose metabólica"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente sonolento, salivando e com dificuldade de respirar.",
+              "enunciado": "Qual a droga?",
+              "opcoes": [
+                "Cocaína",
+                "Morfina",
+                "Fluoxetina",
+                "Drogas K"
               ],
-              "explicacao": "O bicarbonato é usado na intoxicação por tricíclico.",
-              "revisado": false
+              "resposta": "Drogas K",
+              "explicacao": "Canabinoide sintético.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d3-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos bebeu soda cáustica há 30 minutos, está babando e com lesões na boca.",
-              "enunciado": "Qual medida está contraindicada?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Criança tomou muito paracetamol há 45 minutos. Como descontaminar?",
               "opcoes": [
-                "Carvão ativado",
-                "Endoscopia nas primeiras 24 horas",
-                "Jejum e analgesia",
-                "Avaliação da via aérea"
+                "Vômito",
+                "Ipeca",
+                "Lavagem",
+                "Carvão ativado"
               ],
               "resposta": "Carvão ativado",
-              "explicacao": "O carvão é contraindicado em cáusticos e não funciona para ferro, lítio e álcool.",
-              "revisado": false
+              "explicacao": "Até 1 a 2 horas.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d3-l3-q4",
@@ -7433,18 +7448,18 @@
             },
             {
               "id": "ped-d6-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança com anemia falciforme tem dor no peito, febre e infiltrado novo na radiografia.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que agente faz pensar em doença granulomatosa crônica?",
               "opcoes": [
-                "Síndrome torácica aguda",
-                "Pneumonia simples",
-                "Asma",
-                "Embolia pulmonar por trombose"
+                "Enterococo",
+                "Pneumococo",
+                "E. coli",
+                "Staphylococcus"
               ],
-              "resposta": "Síndrome torácica aguda",
-              "explicacao": "Pode precisar de transfusão.",
-              "revisado": false
+              "resposta": "Staphylococcus",
+              "explicacao": "Catalase positivo.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d6-l1-q7",
@@ -8259,17 +8274,18 @@
             {
               "id": "ped-d8-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Adolescente com abalos nos braços pela manhã, ao acordar, após noite sem dormir.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menino de 3 anos após gripe, sem febre, mancando e com quadril doloroso à mobilização.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Epilepsia mioclônica juvenil",
-                "Ausência",
-                "Rolândica",
-                "Comportamento normal por cansaço"
+                "Perthes",
+                "Pioartrite",
+                "Epifisiólise",
+                "Sinovite transitória"
               ],
-              "resposta": "Epilepsia mioclônica juvenil",
-              "explicacao": "Tratar com valproato ou levetiracetam.",
-              "revisado": false
+              "resposta": "Sinovite transitória",
+              "explicacao": "Benigna e pós-viral.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             }
           ]
         },
@@ -8980,43 +8996,34 @@
             },
             {
               "id": "ped-d10-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intervenção à recomendação na bronquiolite.",
-              "pares": [
-                {
-                  "esquerda": "Oxigênio",
-                  "direita": "Se saturação abaixo de 90%"
-                },
-                {
-                  "esquerda": "Lavagem nasal",
-                  "direita": "Recomendada"
-                },
-                {
-                  "esquerda": "Broncodilatador",
-                  "direita": "Não de rotina"
-                },
-                {
-                  "esquerda": "Corticoide",
-                  "direita": "Não recomendado"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê com bronquiolite por VSR, saturação 87%.",
+              "enunciado": "O que prescrever?",
+              "opcoes": [
+                "Corticoide e salbutamol",
+                "Furosemida",
+                "Metilprednisolona",
+                "Oxigênio e lavagem nasal"
               ],
-              "explicacao": "Diretrizes.",
-              "revisado": false
+              "resposta": "Oxigênio e lavagem nasal",
+              "explicacao": "Suporte.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d10-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Lactente com bronquiolite e febre alta no 5º dia após melhora inicial.",
-              "enunciado": "O que suspeitar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que precaução usar na bronquiolite por VSR?",
               "opcoes": [
-                "Infecção bacteriana secundária (otite, pneumonia)",
-                "Normal",
-                "Asma",
-                "Evolução normal da bronquiolite, sem investigar"
+                "Aerossóis",
+                "Nenhuma",
+                "Só padrão",
+                "Contato e gotículas"
               ],
-              "resposta": "Infecção bacteriana secundária (otite, pneumonia)",
-              "explicacao": "Reavaliar.",
-              "revisado": false
+              "resposta": "Contato e gotículas",
+              "explicacao": "VSR fica nas superfícies.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "ped-d10-l1-q6",
