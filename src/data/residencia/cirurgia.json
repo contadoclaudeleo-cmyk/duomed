@@ -2869,39 +2869,50 @@
             {
               "id": "cir-u8-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Fumante de 65 anos com dor na panturrilha ao andar 200 metros que passa ao parar.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher com câncer de mama receberá quimioterapia vesicante a cada 15 dias por 4 meses.",
+              "enunciado": "Qual acesso?",
               "opcoes": [
-                "Doença arterial periférica com claudicação",
-                "Trombose venosa",
-                "Ciática",
-                "Varizes com insuficiência venosa crônica e inchaço"
+                "Semi-implantado de alto fluxo",
+                "Semi-implantado de baixo fluxo",
+                "Periférico",
+                "Cateter totalmente implantado com reservatório"
               ],
-              "resposta": "Doença arterial periférica com claudicação",
-              "explicacao": "Medir o índice tornozelo-braquial.",
-              "revisado": false
+              "resposta": "Cateter totalmente implantado com reservatório",
+              "explicacao": "Uso intermitente prolongado.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u8-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Em diabéticos, o índice tornozelo-braquial costuma vir falsamente baixo.",
-              "resposta": false,
-              "explicacao": "Falso. Artérias calcificadas dão valor falsamente alto; usa-se o índice hálux-braquial.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Diabética com fístula braquiocefálica tem dor e frio nos dedos que pioram na diálise.",
+              "enunciado": "Qual é a causa e a conduta?",
+              "opcoes": [
+                "Neurite isquêmica",
+                "Neuropatia diabética",
+                "Lesão nervosa",
+                "Síndrome do roubo; proximalizar a anastomose"
+              ],
+              "resposta": "Síndrome do roubo; proximalizar a anastomose",
+              "explicacao": "Preserva o acesso.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u8-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ crítica de membro inclui dor de repouso, úlcera ou gangrena.",
+              "tipo": "caso_clinico",
+              "caso": "Operário com oclusão da artéria braquial após cateterismo, sem sintomas.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "isquemia",
-                "trombose",
-                "infecção",
-                "inflamação"
+                "Heparina e observar",
+                "Reparar só se tiver sintomas",
+                "Trombólise",
+                "Explorar e reparar já"
               ],
-              "resposta": "isquemia",
-              "explicacao": "Risco de amputação.",
-              "revisado": false
+              "resposta": "Explorar e reparar já",
+              "explicacao": "Trabalho braçal exige fluxo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -3860,68 +3871,78 @@
             },
             {
               "id": "cir-u10-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sistema ___ estadia o câncer de pulmão.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual achado tomográfico sugere câncer em nódulo pulmonar?",
               "opcoes": [
-                "TNM",
-                "Breslow",
-                "Gleason",
-                "Dukes"
+                "Calcificação em pipoca",
+                "Gordura",
+                "Calcificação total",
+                "Contornos espiculados"
               ],
-              "resposta": "TNM",
-              "explicacao": "Tumor, linfonodo e metástase.",
-              "revisado": false
+              "resposta": "Contornos espiculados",
+              "explicacao": "Os outros sugerem benignidade.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u10-l3-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual tipo de câncer de pulmão raramente é operado?",
+              "enunciado": "Sobre câncer de pulmão e tabagismo, o que é correto?",
               "opcoes": [
-                "Pequenas células",
-                "Adenocarcinoma inicial",
-                "Epidermoide inicial",
-                "Carcinoide típico"
+                "50% dos não pequenas células em nunca fumantes",
+                "Pequenas células mais em ex-fumantes",
+                "Adenocarcinoma mais com cigarro sem filtro",
+                "Só 2,5% dos pequenas células ocorrem em nunca fumantes"
               ],
-              "resposta": "Pequenas células",
-              "explicacao": "Tratado com quimioterapia.",
-              "revisado": false
+              "resposta": "Só 2,5% dos pequenas células ocorrem em nunca fumantes",
+              "explicacao": "Fortemente ligado ao fumo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u10-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Fumante com nódulo de 2,5 cm no pulmão, sem linfonodos ou metástases, e boa função pulmonar.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Câncer de pulmão de 2,1 cm sem linfonodos. Qual ressecção?",
               "opcoes": [
-                "Cirurgia com intenção de cura",
-                "Observar",
-                "Quimioterapia só",
-                "Observar e repetir a tomografia em dois anos"
+                "Segmentectomia",
+                "Cunha com 1 cm",
+                "Cunha com 2 cm",
+                "Lobectomia"
               ],
-              "resposta": "Cirurgia com intenção de cura",
-              "explicacao": "Câncer inicial.",
-              "revisado": false
+              "resposta": "Lobectomia",
+              "explicacao": "Acima de 2 cm.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u10-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O carcinoide brônquico é um tumor de crescimento muito rápido, tratado só com quimioterapia.",
-              "resposta": false,
-              "explicacao": "Falso. É um tumor neuroendócrino de crescimento lento, tratado com cirurgia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são indicações principais de transplante de pulmão?",
+              "opcoes": [
+                "Com adenocarcinoma lepídico",
+                "Bronquiectasia localizada",
+                "Com câncer",
+                "DPOC, pneumonia intersticial idiopática e fibrose cística"
+              ],
+              "resposta": "DPOC, pneumonia intersticial idiopática e fibrose cística",
+              "explicacao": "Doenças terminais.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u10-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A cirurgia torácica videoassistida é chamada de ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que considerar em lesões do mediastino médio?",
               "opcoes": [
-                "VATS",
-                "ERCP",
-                "TIPS",
-                "PEG"
+                "Timoma, cisto e cisto entérico",
+                "Timoma e linfoma",
+                "Cisto, linfoma e timoma",
+                "Cisto broncogênico, linfoma e cisto entérico"
               ],
-              "resposta": "VATS",
-              "explicacao": "Menos dor e alta mais rápida.",
-              "revisado": false
+              "resposta": "Cisto broncogênico, linfoma e cisto entérico",
+              "explicacao": "Timoma é anterior.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -4543,17 +4564,18 @@
             },
             {
               "id": "cir-u12-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A retenção urinária aguda é tratada com ___ vesical.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a fisiologia da micção, o que é correto?",
               "opcoes": [
-                "cateterismo",
-                "cirurgia",
-                "antibiótico",
-                "dieta"
+                "Esvaziar ativa o simpático",
+                "Encher ativa o parassimpático",
+                "Esvaziar estimula beta-3",
+                "No enchimento, o simpático ativa receptores beta-3"
               ],
-              "resposta": "cateterismo",
-              "explicacao": "Aliviar a bexiga.",
-              "revisado": false
+              "resposta": "No enchimento, o simpático ativa receptores beta-3",
+              "explicacao": "Relaxa o detrusor.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -4689,78 +4711,81 @@
           "questoes": [
             {
               "id": "cir-u13-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada urgência cirúrgica do lactente ao achado clássico.",
-              "pares": [
-                {
-                  "esquerda": "Estenose hipertrófica do piloro",
-                  "direita": "Oliva palpável e vômito em jato"
-                },
-                {
-                  "esquerda": "Invaginação intestinal",
-                  "direita": "Fezes em geleia de framboesa"
-                },
-                {
-                  "esquerda": "Má rotação com volvo",
-                  "direita": "Vômito bilioso no recém-nascido"
-                },
-                {
-                  "esquerda": "Divertículo de Meckel",
-                  "direita": "Sangramento indolor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê com vômitos em jato não biliosos, fome voraz, ondas no epigástrio e oliva palpável.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Duplicação",
+                "Pâncreas anular",
+                "Refluxo",
+                "Estenose hipertrófica de piloro"
               ],
-              "explicacao": "Doenças cirúrgicas da criança.",
-              "revisado": false
+              "resposta": "Estenose hipertrófica de piloro",
+              "explicacao": "Oliva pilórica.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u13-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o distúrbio metabólico da estenose de piloro?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com enterorragia maciça e ultrassom normal.",
+              "enunciado": "Como confirmar?",
               "opcoes": [
-                "Alcalose metabólica hipoclorêmica e hipocalêmica",
-                "Acidose metabólica",
-                "Hiperpotassemia",
-                "Acidose metabólica com potássio alto e cloro alto"
+                "Mielograma",
+                "Endoscopia",
+                "TC e RM",
+                "Cintilografia com tecnécio"
               ],
-              "resposta": "Alcalose metabólica hipoclorêmica e hipocalêmica",
-              "explicacao": "Corrigir antes da cirurgia.",
-              "revisado": false
+              "resposta": "Cintilografia com tecnécio",
+              "explicacao": "Mucosa gástrica ectópica do Meckel.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u13-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A estenose de piloro surge geralmente entre 2 e 8 semanas de vida.",
-              "resposta": true,
-              "explicacao": "Mais em meninos primogênitos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é obrigatório em qualquer cirurgia de atresia intestinal?",
+              "opcoes": [
+                "Estomia",
+                "Ressecar o coto",
+                "Apendicectomia",
+                "Procurar outras obstruções distais"
+              ],
+              "resposta": "Procurar outras obstruções distais",
+              "explicacao": "Podem ser múltiplas.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u13-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A cirurgia da estenose de piloro é a ___ de Ramstedt.",
+              "tipo": "caso_clinico",
+              "caso": "Menino operado por suspeita de apendicite tem secreção turva e apêndice normal.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "piloromiotomia",
-                "gastrectomia",
-                "jejunostomia",
-                "colostomia"
+                "Gastroenterite",
+                "PBE",
+                "Apêndice duplo",
+                "Diverticulite de Meckel"
               ],
-              "resposta": "piloromiotomia",
-              "explicacao": "Corta o músculo.",
-              "revisado": false
+              "resposta": "Diverticulite de Meckel",
+              "explicacao": "Procurar no íleo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u13-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da invaginação sem sinais de perfuração?",
+              "enunciado": "Recém-nascido com vômitos biliosos desde o nascimento. Quais hipóteses?",
               "opcoes": [
-                "Redução com enema guiado por imagem",
-                "Cirurgia sempre",
-                "Antibiótico",
-                "Cirurgia aberta em todos os casos, mesmo sem perfuração"
+                "Atresia de esôfago e megacólon",
+                "Piloro e atresia ileal",
+                "Membrana antral",
+                "Suboclusão duodenal e atresia jejunal"
               ],
-              "resposta": "Redução com enema guiado por imagem",
-              "explicacao": "Funciona na maioria.",
-              "revisado": false
+              "resposta": "Suboclusão duodenal e atresia jejunal",
+              "explicacao": "Obstrução após a papila.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u13-l1-q6",
@@ -5712,11 +5737,19 @@
             },
             {
               "id": "cir-u15-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A artrite séptica é uma emergência e exige drenagem da articulação.",
-              "resposta": true,
-              "explicacao": "Destrói a cartilagem rápido.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Diabética séptica com necrose úmida no calcanhar, crepitação no pé e perna, pulsos presentes.",
+              "enunciado": "Qual conduta após o antibiótico?",
+              "opcoes": [
+                "Transfemoral",
+                "Papaína",
+                "Só desbridar",
+                "Amputação transtibial"
+              ],
+              "resposta": "Amputação transtibial",
+              "explicacao": "Infecção grave com gás.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u15-l3-q3",
@@ -6548,17 +6581,18 @@
             },
             {
               "id": "cir-d1-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Em vítima de incêndio em local fechado com cefaleia e confusão, deve-se dar oxigênio a 100% e suspeitar de intoxicação por monóxido de carbono e por ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando o volume calculado pela fórmula de Parkland precisa mudar?",
               "opcoes": [
-                "cianeto",
-                "chumbo",
-                "arsênio",
-                "mercúrio"
+                "Queimadura de 1º grau extensa",
+                "TCE",
+                "Trauma torácico",
+                "Queimaduras de 2º e 3º graus acima de 50%"
               ],
-              "resposta": "cianeto",
-              "explicacao": "A hidroxocobalamina é o antídoto do cianeto.",
-              "revisado": false
+              "resposta": "Queimaduras de 2º e 3º graus acima de 50%",
+              "explicacao": "O cálculo é limitado a 50%.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d1-l3-q8",
@@ -8102,47 +8136,48 @@
             },
             {
               "id": "cir-d5-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com miastenia gravis e timoma tem massa de 5 cm no mediastino anterior.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o empiema, o que é correto?",
               "opcoes": [
-                "Timectomia",
-                "Apenas piridostigmina",
-                "Radioterapia isolada",
-                "Observar"
+                "Fase I pede decorticação",
+                "Fase II pede toracostomia aberta",
+                "Fase III resolve com dreno",
+                "Na fase fibrinopurulenta, a videotoracoscopia costuma resolver"
               ],
-              "resposta": "Timectomia",
-              "explicacao": "A timectomia também pode melhorar a miastenia.",
-              "revisado": false
+              "resposta": "Na fase fibrinopurulenta, a videotoracoscopia costuma resolver",
+              "explicacao": "Fase crônica pede decorticação.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d5-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tumor do sulco ___ do pulmão invade o plexo braquial e a cadeia simpática, causando dor no ombro e síndrome de Horner.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a mediastinite descendente necrosante, o que é correto?",
               "opcoes": [
-                "superior (Pancoast)",
-                "inferior",
-                "médio",
-                "lateral do lobo médio"
+                "Anaeróbios isolados",
+                "Operar só após 72 h",
+                "Mais em mulheres",
+                "O foco dentário é o mais comum"
               ],
-              "resposta": "superior (Pancoast)",
-              "explicacao": "O tratamento costuma combinar quimiorradioterapia e cirurgia.",
-              "revisado": false
+              "resposta": "O foco dentário é o mais comum",
+              "explicacao": "Flora mista; operar cedo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d5-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com derrame pleural maligno recorrente e pulmão que não expande após drenagem.",
-              "enunciado": "Qual é a opção?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o tratamento do pneumotórax, o que é correto?",
               "opcoes": [
-                "Cateter pleural de longa permanência",
-                "Pleurodese com talco",
-                "Decorticação",
-                "Pleurodese com talco mesmo com o pulmão sem expandir"
+                "Secundário sempre drena",
+                "Pigtail é proibido no trauma",
+                "Intubado sempre faz broncoscopia",
+                "No espontâneo primário, a cirurgia reduz a recorrência"
               ],
-              "resposta": "Cateter pleural de longa permanência",
-              "explicacao": "A pleurodese não funciona se o pulmão não encosta na parede.",
-              "revisado": false
+              "resposta": "No espontâneo primário, a cirurgia reduz a recorrência",
+              "explicacao": "Indicada em recidiva.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -9808,17 +9843,18 @@
             {
               "id": "cir-d10-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Após embolectomia de isquemia de 8 horas, paciente tem perna tensa e dor ao mexer o pé.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Idosa com dor pós-prandial há 1 ano, emagrecida, agora com oclusão calcificada da mesentérica superior e sofrimento de alças.",
+              "enunciado": "Qual é a etiologia e a conduta?",
               "opcoes": [
-                "Fasciotomia",
-                "Analgésico",
-                "Elevar a perna",
-                "Analgésico forte e elevar a perna"
+                "Embolia; Fogarty",
+                "Trombose; anticoagular e observar",
+                "Trombose; Fogarty",
+                "Trombose; revascularizar por via aberta ou endovascular"
               ],
-              "resposta": "Fasciotomia",
-              "explicacao": "Síndrome de reperfusão.",
-              "revisado": false
+              "resposta": "Trombose; revascularizar por via aberta ou endovascular",
+              "explicacao": "Precisa de ponte ou stent.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d10-l1-q6",
@@ -10480,25 +10516,34 @@
             {
               "id": "cir-d11-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com angioedema e edema de língua progressivo.",
+              "caso": "Diabético 3 dias após tratamento de canal tem edema da hemiface e pescoço, sem coleção.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Via aérea precoce, pronto para via cirúrgica",
-                "Observar",
-                "Antialérgico só",
-                "Antialérgico oral e aguardar o inchaço melhorar sozinho em casa"
+                "Corticoide e alta",
+                "TC e alta se sem coleção",
+                "Antibiótico oral",
+                "Internar, TC e antibiótico de amplo espectro"
               ],
-              "resposta": "Via aérea precoce, pronto para via cirúrgica",
-              "explicacao": "A anatomia piora.",
-              "revisado": false
+              "resposta": "Internar, TC e antibiótico de amplo espectro",
+              "explicacao": "Risco de infecção profunda.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d11-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Paciente na UTI intubado há 2 semanas pode fazer traqueostomia percutânea à beira do leito.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. A técnica percutânea, guiada por broncoscopia, é feita na UTI.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com trauma orbital tem inchaço da pálpebra ao assoar o nariz, diplopia e parestesia da gengiva.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Náusea pelo hematoma",
+                "Diplopia não é urgência",
+                "Parestesia por edema na fissura",
+                "O ar entrou pela comunicação entre órbita e seio maxilar"
+              ],
+              "resposta": "O ar entrou pela comunicação entre órbita e seio maxilar",
+              "explicacao": "Fratura do assoalho.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d11-l3-q8",
