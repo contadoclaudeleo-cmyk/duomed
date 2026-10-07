@@ -1269,17 +1269,19 @@
             },
             {
               "id": "prev-u4-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame é usado para rastrear câncer de pulmão em pessoas de alto risco, onde o programa existe?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos teme câncer: o pai teve câncer de esôfago e o tio, de rim.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tomografia de tórax com baixa dose",
-                "Radiografia de tórax",
-                "Citologia do escarro",
-                "Radiografia de tórax anual e citologia do escarro"
+                "TC e colonoscopia",
+                "Endoscopia e TC",
+                "Endoscopia e colonoscopia",
+                "Não rastrear esses dois cânceres"
               ],
-              "resposta": "Tomografia de tórax com baixa dose",
-              "explicacao": "O alto risco inclui fumantes com carga tabágica elevada.",
-              "revisado": false
+              "resposta": "Não rastrear esses dois cânceres",
+              "explicacao": "Não há rastreio para eles; colonoscopia pela idade é outra questão.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-u4-l2-q7",
@@ -1329,16 +1331,17 @@
             {
               "id": "prev-u4-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o melhor desfecho para avaliar se um programa de rastreamento funciona?",
+              "enunciado": "Qual é o melhor critério para rastrear uma doença?",
               "opcoes": [
-                "Redução da mortalidade pela doença",
-                "Aumento da sobrevida após o diagnóstico",
-                "Número de casos detectados",
-                "Número de exames feitos"
+                "Alta prevalência e baixa letalidade",
+                "Exame barato",
+                "Poucos incidentalomas",
+                "Tratamento eficaz na fase sem sintomas"
               ],
-              "resposta": "Redução da mortalidade pela doença",
-              "explicacao": "A sobrevida pode aumentar só por causa dos vieses.",
-              "revisado": false
+              "resposta": "Tratamento eficaz na fase sem sintomas",
+              "explicacao": "Sem isso, rastrear não muda o desfecho.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-u4-l3-q3",
@@ -1671,16 +1674,17 @@
             {
               "id": "prev-u5-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Quem deve preencher a declaração de óbito em morte natural com assistência médica?",
+              "enunciado": "Paciente com DRC dialítica após COVID grave morre de infecção do cateter. Tem diabetes e hipertensão controlados. Como preencher a DO?",
               "opcoes": [
-                "O médico que assistia o paciente",
-                "O agente funerário",
-                "O cartório",
-                "A família, junto com o agente funerário"
+                "Causa básica: diabetes",
+                "Contribuinte: COVID",
+                "Sem contribuintes",
+                "Causa básica COVID-19; contribuintes hipertensão e diabetes"
               ],
-              "resposta": "O médico que assistia o paciente",
-              "explicacao": "Na falta dele, o substituto ou o plantonista.",
-              "revisado": false
+              "resposta": "Causa básica COVID-19; contribuintes hipertensão e diabetes",
+              "explicacao": "A COVID iniciou a cadeia até a morte.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-u5-l3-q2",
@@ -5597,16 +5601,17 @@
             {
               "id": "prev-d2-l2-q3",
               "tipo": "multipla_escolha",
-              "enunciado": "Um estudo mostra associação entre café e câncer de pulmão, mas os bebedores de café fumam mais. Qual é o problema?",
+              "enunciado": "Estudo observacional comparou traqueostomia precoce e tardia, incluindo só quem foi traqueostomizado entre 4 e 21 dias. Qual viés?",
               "opcoes": [
-                "Confusão pelo tabagismo",
-                "Viés de memória",
-                "Viés de publicação",
-                "Acaso puro sem explicação"
+                "Perda de seguimento",
+                "Confusão",
+                "Medida",
+                "Seleção"
               ],
-              "resposta": "Confusão pelo tabagismo",
-              "explicacao": "O fator de confusão se associa à exposição e ao desfecho.",
-              "revisado": false
+              "resposta": "Seleção",
+              "explicacao": "Quem morreu cedo nunca entrou no grupo tardio.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d2-l2-q4",
@@ -6997,28 +7002,18 @@
             },
             {
               "id": "prev-d6-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada teste ao tipo de dado.",
-              "pares": [
-                {
-                  "esquerda": "Qui-quadrado",
-                  "direita": "Comparar proporções"
-                },
-                {
-                  "esquerda": "Teste t",
-                  "direita": "Comparar médias de dois grupos"
-                },
-                {
-                  "esquerda": "ANOVA",
-                  "direita": "Comparar médias de três ou mais grupos"
-                },
-                {
-                  "esquerda": "Correlação de Pearson",
-                  "direita": "Relação entre duas variáveis contínuas"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Estudo conta o número de infecções respiratórias em um ano após uma vacina. Qual modelo usar?",
+              "opcoes": [
+                "Linear",
+                "Logístico",
+                "Cox",
+                "Poisson"
               ],
-              "explicacao": "A correlação não prova causalidade.",
-              "revisado": false
+              "resposta": "Poisson",
+              "explicacao": "Contagem de eventos no tempo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d6-l1-q3",
@@ -7566,18 +7561,18 @@
             },
             {
               "id": "prev-d7-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Ensaio com 30% de perdas no grupo tratamento.",
-              "enunciado": "Qual é o problema?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Suplemento reduziu 3 mm a menos a perda do reto femoral (IC 1 a 5 mm; p = 0,04). O que concluir?",
               "opcoes": [
-                "Viés de atrito comprometendo a validade",
-                "Problema nenhum",
-                "Melhor resultado",
-                "Aumenta o poder do estudo e melhora o resultado"
+                "É clínico e estatístico",
+                "Amostra maior aumentaria a relevância",
+                "Há 96% de chance de benefício",
+                "É estatístico, mas a relevância é duvidosa"
               ],
-              "resposta": "Viés de atrito comprometendo a validade",
-              "explicacao": "Perdas grandes distorcem.",
-              "revisado": false
+              "resposta": "É estatístico, mas a relevância é duvidosa",
+              "explicacao": "3 mm pode não importar ao paciente.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d7-l2-q6",
@@ -7808,28 +7803,18 @@
             },
             {
               "id": "prev-d8-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada razão de verossimilhança ao efeito.",
-              "pares": [
-                {
-                  "esquerda": "RV positiva acima de 10",
-                  "direita": "Grande aumento da probabilidade"
-                },
-                {
-                  "esquerda": "RV negativa abaixo de 0,1",
-                  "direita": "Grande redução da probabilidade"
-                },
-                {
-                  "esquerda": "RV igual a 1",
-                  "direita": "Teste inútil"
-                },
-                {
-                  "esquerda": "RV positiva de 2",
-                  "direita": "Pequeno aumento"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Probabilidade de hemorragia alta de 45%; ao exame saem coágulos pelo ânus. Qual a nova probabilidade?",
+              "opcoes": [
+                "1%",
+                "12%",
+                "32%",
+                "4%"
               ],
-              "explicacao": "Interpretação.",
-              "revisado": false
+              "resposta": "4%",
+              "explicacao": "O achado tem razão de verossimilhança muito baixa.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d8-l1-q5",
@@ -10150,32 +10135,34 @@
             {
               "id": "prev-d14-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Idoso de 85 anos frágil com demência avançada.",
-              "enunciado": "Qual é a conduta sobre rastreio de câncer colorretal?",
+              "caso": "Mulher assintomática tem CA 19-9 discretamente alto num check-up e está ansiosa.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Não rastrear",
-                "Colonoscopia anual",
-                "Tomografia",
-                "PSA"
+                "Ressonância",
+                "Repetir em 3 meses",
+                "TC e colonoscopia",
+                "Não investigar câncer"
               ],
-              "resposta": "Não rastrear",
-              "explicacao": "Benefício não supera riscos.",
-              "revisado": false
+              "resposta": "Não investigar câncer",
+              "explicacao": "Marcador não serve para rastreio.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d14-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Médico decide não pedir exames de rotina sem indicação para uma jovem saudável, para evitar cascata de exames.",
-              "enunciado": "Qual nível de prevenção é esse?",
+              "caso": "Jovem atleta assintomático, sem história familiar, quer liberação para esportes.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "Prevenção quaternária",
-                "Prevenção primária",
-                "Prevenção secundária",
-                "Prevenção terciária"
+                "Teste ergométrico",
+                "Eco",
+                "Espirometria",
+                "Nenhum"
               ],
-              "resposta": "Prevenção quaternária",
-              "explicacao": "É evitar intervenções desnecessárias, conceito de Jamoulle.",
-              "revisado": false
+              "resposta": "Nenhum",
+              "explicacao": "Entre as opções, nenhum está indicado.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "prev-d14-l1-q4",

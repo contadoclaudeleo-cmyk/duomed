@@ -257,17 +257,19 @@
             },
             {
               "id": "cm-u1-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual classe causa glicosúria e reduz eventos cardiovasculares e progressão da doença renal?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético internado na UTI por angina instável tem glicemia de 234.",
+              "enunciado": "Qual é o manejo?",
               "opcoes": [
-                "Inibidores da SGLT2",
-                "Sulfonilureias",
-                "Inibidores da DPP-4",
-                "Tiazolidinedionas"
+                "Perto de 100 com insulina IV",
+                "Perto de 100 com SC",
+                "140 a 180 com SC",
+                "140 a 180 com insulina venosa"
               ],
-              "resposta": "Inibidores da SGLT2",
-              "explicacao": "Empagliflozina e dapagliflozina bloqueiam a reabsorção de glicose no túbulo proximal. Também reduzem internação por insuficiência cardíaca.",
-              "revisado": false
+              "resposta": "140 a 180 com insulina venosa",
+              "explicacao": "Paciente crítico.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -339,31 +341,35 @@
             },
             {
               "id": "cm-u1-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medicamento deve ser evitado em pacientes com suspeita de dengue?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com febre, cefaleia e mialgia há 2 dias e plaquetas de 50 mil, sem sangramento.",
+              "enunciado": "Qual analgésico evitar?",
               "opcoes": [
-                "AINE e AAS",
-                "Dipirona",
+                "Nenhum serve",
                 "Paracetamol",
-                "Sais de reidratação oral em grande volume"
+                "Pode qualquer um",
+                "Naproxeno"
               ],
-              "resposta": "AINE e AAS",
-              "explicacao": "AINEs e AAS aumentam o risco de sangramento. Para febre e dor usam-se dipirona ou paracetamol.",
-              "revisado": false
+              "resposta": "Naproxeno",
+              "explicacao": "Anti-inflamatório aumenta o risco de sangrar.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u1-l3-q6",
-              "tipo": "completar_lacuna",
-              "enunciado": "A prova do ___ positiva indica fragilidade capilar e coloca o paciente sem sinais de alarme no grupo B.",
+              "tipo": "caso_clinico",
+              "caso": "Homem com febre abrupta, dor retro-orbitária e leve exantema há 3 dias.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "laço",
-                "Romberg",
-                "Blumberg",
-                "Lasègue"
+                "Hemocultura",
+                "Líquor",
+                "VDRL",
+                "NS1"
               ],
-              "resposta": "laço",
-              "explicacao": "A prova do laço deve ser feita em todo paciente sem sangramento espontâneo e sem sinais de alarme.",
-              "revisado": false
+              "resposta": "NS1",
+              "explicacao": "Até o 5º dia de dengue.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u1-l3-q7",
@@ -2497,28 +2503,19 @@
             },
             {
               "id": "cm-u3-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado da crise de asma ao seu significado.",
-              "pares": [
-                {
-                  "esquerda": "Tórax silencioso",
-                  "direita": "Crise muito grave"
-                },
-                {
-                  "esquerda": "Fala só palavras soltas",
-                  "direita": "Crise grave"
-                },
-                {
-                  "esquerda": "PaCO2 normal ou alta durante a crise",
-                  "direita": "Cansaço e risco de parada"
-                },
-                {
-                  "esquerda": "Pico de fluxo acima de 75% após tratamento",
-                  "direita": "Boa resposta"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Asmático usa só broncodilatador de resgate, tem crises 4 vezes por semana e acorda 1 a 2 vezes por mês.",
+              "enunciado": "Qual é a terapia?",
+              "opcoes": [
+                "Corticoide-formoterol só no alívio",
+                "Corticoide médio e resgate",
+                "Corticoide-formoterol médio só no alívio",
+                "Corticoide-formoterol em dose baixa, manutenção e resgate"
               ],
-              "explicacao": "Na crise, a PaCO2 deveria estar baixa pela respiração acelerada. Se não está, o paciente está cansando.",
-              "revisado": false
+              "resposta": "Corticoide-formoterol em dose baixa, manutenção e resgate",
+              "explicacao": "Etapa 3 da GINA.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u3-l1-q4",
@@ -2688,17 +2685,18 @@
             {
               "id": "cm-u3-l2-q7",
               "tipo": "caso_clinico",
-              "caso": "Paciente com exacerbação de DPOC tem pH 7,28, PaCO2 de 70 mmHg e está sonolento, mas desperta quando chamado.",
-              "enunciado": "Qual é o suporte ventilatório indicado?",
+              "caso": "Dois ex-fumantes com DPOC: um com cianose, estase jugular e edema; outro só com cianose discreta.",
+              "enunciado": "O segundo tende a ter mais alto o quê?",
               "opcoes": [
-                "Ventilação não invasiva",
-                "Intubação obrigatória e imediata",
-                "Oxigênio em alto fluxo sem monitorar",
-                "Apenas nebulização"
+                "Hemoglobina",
+                "Pressão pulmonar",
+                "Bicarbonato",
+                "PaO2"
               ],
-              "resposta": "Ventilação não invasiva",
-              "explicacao": "A ventilação não invasiva reduz intubação e mortalidade na acidose respiratória da DPOC.",
-              "revisado": false
+              "resposta": "PaO2",
+              "explicacao": "O primeiro tem cor pulmonale e hipoxemia crônica.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u3-l2-q8",
@@ -2851,50 +2849,50 @@
             },
             {
               "id": "cm-u13-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O carcinoma de pequenas células está muito ligado ao fumo e cresce rápido.",
-              "resposta": true,
-              "explicacao": "Geralmente tratado com quimioterapia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Fumante pesada com massa hilar de 6 cm, sódio de 119 e urina concentrada, euvolêmica.",
+              "enunciado": "Qual é a conduta para o sódio?",
+              "opcoes": [
+                "Furosemida",
+                "Salina 3%",
+                "Soro fisiológico",
+                "Restrição hídrica"
+              ],
+              "resposta": "Restrição hídrica",
+              "explicacao": "SIADH sem sintomas graves.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada síndrome paraneoplásica ao câncer de pulmão.",
-              "pares": [
-                {
-                  "esquerda": "Hiponatremia por ADH",
-                  "direita": "Pequenas células"
-                },
-                {
-                  "esquerda": "Cálcio alto por PTHrP",
-                  "direita": "Epidermoide"
-                },
-                {
-                  "esquerda": "Lambert-Eaton",
-                  "direita": "Pequenas células, fraqueza que melhora com esforço"
-                },
-                {
-                  "esquerda": "Osteoartropatia",
-                  "direita": "Baqueteamento e dor óssea"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Nessa fumante com massa central e SIADH, qual é o tipo histológico provável?",
+              "enunciado": "Lepídico",
+              "opcoes": [
+                "Adenocarcinoma",
+                "Epidermoide",
+                "Pequenas células"
               ],
-              "explicacao": "Podem ser o primeiro sinal.",
-              "revisado": false
+              "resposta": "Pequenas células",
+              "explicacao": "Tumor neuroendócrino central.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tumor de ___ no ápice do pulmão pode causar síndrome de Horner.",
+              "tipo": "caso_clinico",
+              "caso": "Fumante com fraqueza proximal que melhora após contração mantida, boca seca e hiporreflexia.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Pancoast",
-                "Wilms",
-                "Klatskin",
-                "Krukenberg"
+                "Miastenia e timoma",
+                "Guillain-Barré",
+                "Dermatomiosite",
+                "Lambert-Eaton e câncer de pulmão"
               ],
-              "resposta": "Pancoast",
-              "explicacao": "Comprime o plexo braquial.",
-              "revisado": false
+              "resposta": "Lambert-Eaton e câncer de pulmão",
+              "explicacao": "Facilitação após esforço.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l1-q5",
@@ -3002,31 +3000,35 @@
             },
             {
               "id": "cm-u13-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na sarcoidose, a enzima conversora de ___ costuma estar alta.",
+              "tipo": "caso_clinico",
+              "caso": "Homem com artralgia, febre e suor, granuloma sem necrose na biópsia e linfonodos mediastinais captantes.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "angiotensina",
-                "amilase",
-                "lipase",
-                "creatinoquinase"
+                "Micose",
+                "Tuberculose",
+                "Carcinoma",
+                "Sarcoidose"
               ],
-              "resposta": "angiotensina",
-              "explicacao": "Não é diagnóstica sozinha.",
-              "revisado": false
+              "resposta": "Sarcoidose",
+              "explicacao": "Granuloma não necrosante sem germes.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o padrão da espirometria nas doenças intersticiais?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher que cria pássaros e tem mofo em casa tem dispneia, vidro fosco e bronquiectasias de tração. Usa nitrofurantoína há 2 meses.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Restritivo",
-                "Obstrutivo",
-                "Normal sempre",
-                "Misto sempre"
+                "Suspender nitrofurantoína",
+                "Antifibrótico",
+                "Pulso de corticoide",
+                "Afastar das exposições"
               ],
-              "resposta": "Restritivo",
-              "explicacao": "Volumes pulmonares reduzidos.",
-              "revisado": false
+              "resposta": "Afastar das exposições",
+              "explicacao": "Pneumonite de hipersensibilidade.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l2-q6",
@@ -3155,25 +3157,34 @@
             {
               "id": "cm-u13-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Homem obeso que ronca alto, acorda cansado e cochila dirigindo.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Mulher com IMC 34, PaCO2 50, bicarbonato 28, cor pulmonale e espirometria restritiva leve.",
+              "enunciado": "O que mais ajuda no longo prazo?",
               "opcoes": [
-                "Apneia obstrutiva do sono",
-                "Depressão",
-                "Hipotireoidismo",
-                "Narcolepsia com cataplexia"
+                "Oxigênio",
+                "Anticoagulante",
+                "Corticoide e LABA",
+                "CPAP"
               ],
-              "resposta": "Apneia obstrutiva do sono",
-              "explicacao": "Pedir polissonografia.",
-              "revisado": false
+              "resposta": "CPAP",
+              "explicacao": "Hipoventilação da obesidade.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No adulto, tosse crônica é a que dura mais de 3 semanas.",
-              "resposta": false,
-              "explicacao": "Falso. Tosse crônica no adulto dura mais de 8 semanas; de 3 a 8 é subaguda.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Hipertenso com ronco, IAH de 54 e sem sonolência.",
+              "enunciado": "Sobre o CPAP, o que é correto?",
+              "opcoes": [
+                "Reduz infarto",
+                "Reduz AVC",
+                "Não está indicado",
+                "Melhora a qualidade de vida"
+              ],
+              "resposta": "Melhora a qualidade de vida",
+              "explicacao": "Os estudos não mostraram redução de eventos.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u13-l3-q8",
@@ -3219,11 +3230,19 @@
             },
             {
               "id": "cm-u21-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na prova broncodilatadora, aumento do VEF1 de 12% e 200 mL é considerado resposta significativa.",
-              "resposta": true,
-              "explicacao": "Comum na asma, mas pode ocorrer na DPOC.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com virose tem saturação que cai de 96% para 88% ao andar 20 metros, com raio X normal.",
+              "enunciado": "Qual exame deve estar alterado?",
+              "opcoes": [
+                "Eco",
+                "VEF1/CVF",
+                "Cintilografia",
+                "Difusão do monóxido de carbono"
+              ],
+              "resposta": "Difusão do monóxido de carbono",
+              "explicacao": "Pneumonia viral intersticial inicial.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u21-l1-q3",
@@ -5841,17 +5860,19 @@
             },
             {
               "id": "cm-u10-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A hepatite autoimune tem anticorpo antimúsculo ___ e gamaglobulina alta.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher obesa com esteatose, ALT alta, ferritina de 1.900, saturação de 47% e HFE negativo.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "liso",
-                "estriado",
-                "cardíaco",
-                "esquelético"
+                "Hemocromatose não HFE",
+                "Flebotomia de prova",
+                "Quelante",
+                "RM para medir ferro hepático"
               ],
-              "resposta": "liso",
-              "explicacao": "Tratada com corticoide.",
-              "revisado": false
+              "resposta": "RM para medir ferro hepático",
+              "explicacao": "Ferritina alta da síndrome metabólica.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -6224,26 +6245,35 @@
             },
             {
               "id": "cm-u6-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na sepse, o antibiótico deve esperar a coleta de hemoculturas, mesmo que isso atrase o tratamento.",
-              "resposta": false,
-              "explicacao": "Falso. Colhem-se hemoculturas antes, desde que não atrase o antibiótico, que deve começar na primeira hora.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idosa após internação com antibiótico tem diarreia, febre, taquicardia e abdome distendido.",
+              "enunciado": "Qual exame das fezes ajuda mais?",
+              "opcoes": [
+                "Cultura",
+                "Leucócitos",
+                "Calprotectina",
+                "Glutamato desidrogenase"
+              ],
+              "resposta": "Glutamato desidrogenase",
+              "explicacao": "Triagem para C. difficile.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u6-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente em choque séptico precisa de doses cada vez maiores de noradrenalina.",
-              "enunciado": "Qual medida adicional é indicada?",
+              "caso": "Paciente em diálise com MSSA no sangue e cateter positivando antes, estável.",
+              "enunciado": "Além de suspender ceftazidima, o que fazer?",
               "opcoes": [
-                "Somar vasopressina e pensar em hidrocortisona",
-                "Suspender a noradrenalina",
-                "Bicarbonato",
-                "Suspender a noradrenalina e dar bicarbonato e diurético"
+                "Oxacilina e lock",
+                "Vancomicina e lock",
+                "Manter vancomicina e tirar o cateter",
+                "Cefazolina e retirar o cateter"
               ],
-              "resposta": "Somar vasopressina e pensar em hidrocortisona",
-              "explicacao": "A hidrocortisona é indicada no choque que precisa de doses crescentes de vasopressor.",
-              "revisado": false
+              "resposta": "Cefazolina e retirar o cateter",
+              "explicacao": "S. aureus exige remover.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -6696,17 +6726,18 @@
             {
               "id": "cm-u12-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente que voltou da Amazônia há 10 dias com febre a cada 48 horas e calafrios.",
-              "enunciado": "O que investigar?",
+              "caso": "Jovem vai fazer turismo de 15 dias na Amazônia.",
+              "enunciado": "Qual profilaxia de malária indicar?",
               "opcoes": [
-                "Malária",
-                "Dengue",
-                "Gripe",
-                "Tuberculose"
+                "Doxiciclina",
+                "Mefloquina",
+                "Atovaquona-proguanil",
+                "Nenhuma, em geral, no Brasil"
               ],
-              "resposta": "Malária",
-              "explicacao": "Fazer gota espessa.",
-              "revisado": false
+              "resposta": "Nenhuma, em geral, no Brasil",
+              "explicacao": "Orienta-se proteção e busca rápida de diagnóstico.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u12-l2-q7",
@@ -7199,17 +7230,18 @@
             {
               "id": "cm-u7-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Homem de 50 anos com dor intensa, vermelhidão e calor no primeiro dedo do pé, que começou de madrugada após churrasco e cerveja.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher com asma grave, sinusite, eosinofilia de 25% e mononeurite múltipla.",
+              "enunciado": "Além de corticoide, o que usar?",
               "opcoes": [
-                "Gota aguda (podagra)",
-                "Celulite",
-                "Artrite séptica",
-                "Artrose do primeiro dedo"
+                "Rituximabe",
+                "Azatioprina",
+                "Ciclosporina",
+                "Ciclofosfamida"
               ],
-              "resposta": "Gota aguda (podagra)",
-              "explicacao": "Confirmar com punção se possível.",
-              "revisado": false
+              "resposta": "Ciclofosfamida",
+              "explicacao": "Mononeurite indica doença grave.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u7-l3-q7",
@@ -7608,11 +7640,19 @@
             },
             {
               "id": "cm-u8-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os anticoagulantes orais diretos substituem a varfarina com segurança em válvula mecânica.",
-              "resposta": false,
-              "explicacao": "Falso. Em válvula mecânica eles não são indicados; usa-se varfarina.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com linfoma tem TEP segmentar achado na TC de estadiamento.",
+              "enunciado": "Sobre anticoagular, o que é correto?",
+              "opcoes": [
+                "Seis meses e parar",
+                "AAS basta",
+                "Não precisa",
+                "Manter enquanto a doença estiver ativa"
+              ],
+              "resposta": "Manter enquanto a doença estiver ativa",
+              "explicacao": "TEP incidental se trata como sintomático.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u8-l3-q8",
@@ -7689,17 +7729,19 @@
             },
             {
               "id": "cm-u9-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A causa mais comum de AVC cardioembólico é a fibrilação ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com vertigem, hemiataxia, miose e disfagia à esquerda há 2,5 horas, NIHSS 3, oclusão de V4 esquerda.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "atrial",
-                "ventricular",
-                "sinusal",
-                "juncional"
+                "Anticoagular",
+                "Trombectomia",
+                "Antiagregar",
+                "Trombólise"
               ],
-              "resposta": "atrial",
-              "explicacao": "Prevenção com anticoagulação.",
-              "revisado": false
+              "resposta": "Trombólise",
+              "explicacao": "Síndrome de Wallenberg dentro da janela.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u9-l1-q5",
@@ -7861,11 +7903,19 @@
             },
             {
               "id": "cm-u9-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os triptanos são seguros em pacientes com doença coronariana.",
-              "resposta": false,
-              "explicacao": "Falso. São contraindicados, pois causam vasoconstrição.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Uma semana após cesárea, mulher tem cefaleia que surge ao sentar e melhora ao deitar.",
+              "enunciado": "Qual exame diagnostica?",
+              "opcoes": [
+                "Angiotomografia",
+                "Punção lombar",
+                "Angiorressonância venosa",
+                "RM de crânio"
+              ],
+              "resposta": "RM de crânio",
+              "explicacao": "Mostra sinais de hipotensão liquórica.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u9-l2-q8",
@@ -8046,17 +8096,19 @@
             },
             {
               "id": "cm-u14-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na emergência hipertensiva, quanto baixar a pressão na primeira hora?",
+              "tipo": "caso_clinico",
+              "caso": "Homem emagrecido e confuso com PA de 230 x 142, creatinina 2,3 e papiledema.",
+              "enunciado": "Qual é a conduta para o emagrecimento?",
               "opcoes": [
-                "Até 25%",
-                "50%",
-                "Normalizar",
-                "Normalizar a pressão para 120/80 na primeira hora"
+                "Hipoglicemiante",
+                "Colonoscopia",
+                "TC de tórax e abdome",
+                "Controlar a pressão"
               ],
-              "resposta": "Até 25%",
-              "explicacao": "Exceto dissecção de aorta.",
-              "revisado": false
+              "resposta": "Controlar a pressão",
+              "explicacao": "Hipertensão maligna causa perda de peso.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u14-l1-q3",
@@ -8635,25 +8687,34 @@
             },
             {
               "id": "cm-u15-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Polifarmácia costuma ser definida como uso de 2 ou mais remédios.",
-              "resposta": false,
-              "explicacao": "Falso. Costuma ser 5 ou mais remédios, o que aumenta interações e efeitos adversos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com suores noturnos há 2 semanas, sem outros sintomas e exame normal.",
+              "enunciado": "Qual remédio perguntar?",
+              "opcoes": [
+                "Sinvastatina",
+                "Amoxicilina",
+                "Salbutamol",
+                "Venlafaxina"
+              ],
+              "resposta": "Venlafaxina",
+              "explicacao": "Antidepressivos causam sudorese.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u15-l2-q8",
               "tipo": "multipla_escolha",
-              "enunciado": "O que é cascata de prescrição?",
+              "enunciado": "Qual orientação de horário NÃO deve ser mudada?",
               "opcoes": [
-                "Tratar efeito adverso como doença nova",
-                "Usar remédio genérico",
-                "Dar remédio na hora certa",
-                "Seguir a receita do especialista sem mudar"
+                "Levotiroxina em jejum cedo",
+                "B12 intramuscular",
+                "Ferro em três tomadas",
+                "Metformina junto às refeições"
               ],
-              "resposta": "Tratar efeito adverso como doença nova",
-              "explicacao": "Exemplo: dar levodopa para tremor causado por metoclopramida.",
-              "revisado": false
+              "resposta": "Metformina junto às refeições",
+              "explicacao": "Reduz efeitos digestivos.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -8981,17 +9042,19 @@
             },
             {
               "id": "cm-u16-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual sinal na pele pode indicar câncer gástrico?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem em quimioterapia para tumor de testículo tem febre, odinofagia e choque.",
+              "enunciado": "Qual é o antibiótico?",
               "opcoes": [
-                "Acantose nigricans súbita",
-                "Acne",
-                "Vitiligo",
-                "Sardas que aparecem desde a infância"
+                "Meropenem",
+                "Meropenem e linezolida",
+                "Piperacilina",
+                "Vancomicina e piperacilina-tazobactam"
               ],
-              "resposta": "Acantose nigricans súbita",
-              "explicacao": "Também o sinal de Leser-Trélat.",
-              "revisado": false
+              "resposta": "Vancomicina e piperacilina-tazobactam",
+              "explicacao": "Instabilidade justifica cobrir gram-positivos.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-u16-l2-q6",
@@ -9149,17 +9212,19 @@
             },
             {
               "id": "cm-u16-l3-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a diferença entre eutanásia e ortotanásia?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com câncer de pâncreas tem dor em faixa que piora apesar de dipirona e tramadol.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Eutanásia antecipa a morte",
-                "São iguais",
-                "Ortotanásia antecipa a morte",
-                "Eutanásia é permitida no Brasil"
+                "Fentanil e clorpromazina",
+                "Ibuprofeno e radioterapia",
+                "Gabapentina e alcoolização do plexo",
+                "Trocar tramadol por morfina e associar gabapentina"
               ],
-              "resposta": "Eutanásia antecipa a morte",
-              "explicacao": "A ortotanásia é aceita pelo CFM.",
-              "revisado": false
+              "resposta": "Trocar tramadol por morfina e associar gabapentina",
+              "explicacao": "Subir o degrau da analgesia.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -9601,42 +9666,35 @@
             },
             {
               "id": "cm-d1-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação a uma contraindicação à trombólise.",
-              "pares": [
-                {
-                  "esquerda": "AVC hemorrágico prévio",
-                  "direita": "Contraindicação absoluta"
-                },
-                {
-                  "esquerda": "AVC isquêmico há 2 meses",
-                  "direita": "Contraindicação absoluta nos últimos 3 meses"
-                },
-                {
-                  "esquerda": "Suspeita de dissecção da aorta",
-                  "direita": "Contraindicação absoluta pelo risco de ruptura"
-                },
-                {
-                  "esquerda": "Pressão de 190/110 na chegada",
-                  "direita": "Contraindicação relativa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem com edema agudo melhorou na ventilação não invasiva, mas o ECG mostra supra de ST de V1 a V4.",
+              "enunciado": "Qual é a conduta no suporte ventilatório?",
+              "opcoes": [
+                "Manter VNI",
+                "Cateter de alto fluxo",
+                "Máscara",
+                "Intubar"
               ],
-              "explicacao": "O risco de sangramento intracraniano pesa em todas as decisões.",
-              "revisado": false
+              "resposta": "Intubar",
+              "explicacao": "Vai para angioplastia primária.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d1-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Paciente com infarto sem supradesnivelamento tem instabilidade elétrica, com taquicardia ventricular recorrente e dor que não cede. Quando deve ser feito o cateterismo?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com DRC e FA rápida tem troponina de 0,9 que era 0,7 há um mês.",
+              "enunciado": "Qual é a interpretação?",
               "opcoes": [
-                "Imediatamente, em até 2 horas",
-                "Em até 72 horas",
-                "Após a alta",
-                "Somente depois da alta, de forma eletiva"
+                "Lesão aguda",
+                "Infarto",
+                "Só DRC",
+                "Lesão miocárdica crônica"
               ],
-              "resposta": "Imediatamente, em até 2 horas",
-              "explicacao": "Instabilidade hemodinâmica ou elétrica e dor refratária indicam estratégia invasiva imediata.",
-              "revisado": false
+              "resposta": "Lesão miocárdica crônica",
+              "explicacao": "Variação menor que 20%.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d1-l1-q5",
@@ -9780,17 +9838,18 @@
             {
               "id": "cm-d1-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com insuficiência cardíaca de fração reduzida, em ritmo sinusal, com QRS de 160 ms e bloqueio de ramo esquerdo, segue com sintomas apesar do tratamento otimizado.",
-              "enunciado": "Qual terapia considerar?",
+              "caso": "Homem com IC de FE 33%, classe II, em enalapril, carvedilol e espironolactona.",
+              "enunciado": "O que adicionar?",
               "opcoes": [
-                "Ressincronização cardíaca",
-                "Marcapasso simples de câmara única",
-                "Digoxina em dose alta",
-                "Diltiazem"
+                "Ivabradina",
+                "Nada",
+                "Sacubitril-valsartana no lugar",
+                "Dapagliflozina"
               ],
-              "resposta": "Ressincronização cardíaca",
-              "explicacao": "A ressincronização melhora sintomas e reduz a mortalidade nesses pacientes.",
-              "revisado": false
+              "resposta": "Dapagliflozina",
+              "explicacao": "Quarto pilar do tratamento.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d1-l2-q7",
@@ -9998,17 +10057,18 @@
             {
               "id": "cm-d10-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 35 anos com estenose mitral reumática grave, sintomática, valva móvel, pouca calcificação e sem trombo no átrio.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Idosa com IC de FE 52%, sopro aórtico, área valvar de 1,4 cm² e gradiente médio de 25.",
+              "enunciado": "Sobre a TAVI, o que é correto?",
               "opcoes": [
-                "Valvuloplastia mitral por balão",
-                "Troca valvar por prótese mecânica",
-                "Apenas remédios",
-                "Troca valvar aberta em todos os casos"
+                "Depende do escore de cálcio",
+                "Depende do cateterismo",
+                "Depende do eco com dobutamina",
+                "Não está indicada"
               ],
-              "resposta": "Valvuloplastia mitral por balão",
-              "explicacao": "Com anatomia favorável (escore de Wilkins baixo), a valvuloplastia por balão é a escolha.",
-              "revisado": false
+              "resposta": "Não está indicada",
+              "explicacao": "A estenose é moderada.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d10-l1-q4",
@@ -10618,17 +10678,18 @@
             {
               "id": "cm-d19-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Fibrilação atrial com FC de 150, pressão de 70 x 40 e confusão mental.",
+              "caso": "Homem com palpitação, dor torácica, FC 228, PA 106 x 62 e enchimento capilar de 5 segundos.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cardioversão elétrica sincronizada imediata",
-                "Anticoagular por 3 semanas antes",
-                "Digoxina IV e reavaliar",
-                "Amiodarona oral em dose de ataque e reavaliar amanhã"
+                "Amiodarona",
+                "Adenosina",
+                "Cateterismo",
+                "Cardioversão elétrica"
               ],
-              "resposta": "Cardioversão elétrica sincronizada imediata",
-              "explicacao": "Instável não espera.",
-              "revisado": false
+              "resposta": "Cardioversão elétrica",
+              "explicacao": "Taquicardia com má perfusão.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d19-l3-q2",
@@ -11297,17 +11358,18 @@
             {
               "id": "cm-d20-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com câncer de pulmão tem hipotensão, turgência jugular e grande derrame pericárdico.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Durante valvoplastia mitral por balão, mulher fica agitada, hipotensa, com turgência jugular e extremidades frias.",
+              "enunciado": "Qual é a causa?",
               "opcoes": [
-                "Pericardiocentese e depois janela pericárdica",
-                "Diurético em dose alta",
-                "Quimioterapia antes de tudo, sem drenar o líquido",
-                "Observar e repetir o eco"
+                "Comunicação interatrial",
+                "Insuficiência mitral aguda",
+                "TEP",
+                "Tamponamento"
               ],
-              "resposta": "Pericardiocentese e depois janela pericárdica",
-              "explicacao": "Derrame neoplásico tende a voltar.",
-              "revisado": false
+              "resposta": "Tamponamento",
+              "explicacao": "Perfuração durante a punção do septo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d20-l3-q4",
@@ -11567,17 +11629,18 @@
             {
               "id": "cm-d20-l5-q4",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 28 anos com hipertensão por displasia fibromuscular da artéria renal.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Diabético obeso com DRC segue com PA alta em casa usando enalapril, clortalidona e anlodipino em dose plena. Potássio 4,2.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Angioplastia com balão",
-                "Cirurgia aberta como primeira escolha",
-                "Somente remédios por toda a vida",
-                "Nefrectomia"
+                "Atenolol",
+                "Clonidina",
+                "Nada",
+                "Espironolactona"
               ],
-              "resposta": "Angioplastia com balão",
-              "explicacao": "Resposta muito boa à angioplastia.",
-              "revisado": false
+              "resposta": "Espironolactona",
+              "explicacao": "Quarto remédio da hipertensão resistente.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d20-l5-q5",
@@ -13671,17 +13734,18 @@
             {
               "id": "cm-d3-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com síndrome de Sjögren tem hipocalemia, acidose com ânion gap normal, urina com pH 6,5 e cálculos renais.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher com sódio de 115 convulsionou, recebeu 150 mL de salina 3% e convulsionou de novo.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Acidose tubular renal distal (tipo 1)",
-                "ATR proximal",
-                "Diarreia",
-                "Cetoacidose diabética leve com glicemia alta"
+                "Repetir até sódio de 120",
+                "Fenitoína e 500 mL de salina",
+                "Levetiracetam e soro fisiológico",
+                "Repetir 150 mL até 3 vezes"
               ],
-              "resposta": "Acidose tubular renal distal (tipo 1)",
-              "explicacao": "Na acidose tubular distal, o rim não acidifica a urina.",
-              "revisado": false
+              "resposta": "Repetir 150 mL até 3 vezes",
+              "explicacao": "Meta de subir 4 a 6 mEq/L.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d3-l3-q7",
@@ -13975,17 +14039,18 @@
             {
               "id": "cm-d4-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Puérpera teve hemorragia grave no parto e não consegue amamentar, com cansaço e frio.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Idoso com hipotireoidismo em imunoterapia está em coma, FC 40, temperatura 32 °C e FR 8.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Síndrome de Sheehan (hipófise)",
-                "Depressão pós-parto",
-                "Hipotireoidismo primário",
-                "Anemia isolada pela perda de sangue no parto"
+                "Conferência familiar",
+                "Morfina",
+                "TC e aquecimento ativo",
+                "Intubar, aquecer passivo, levotiroxina e hidrocortisona"
               ],
-              "resposta": "Síndrome de Sheehan (hipófise)",
-              "explicacao": "A falta de prolactina impede a produção de leite.",
-              "revisado": false
+              "resposta": "Intubar, aquecer passivo, levotiroxina e hidrocortisona",
+              "explicacao": "Coma mixedematoso.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -14843,17 +14908,18 @@
             {
               "id": "cm-d18-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Hipertenso com potássio baixo tem hiperaldosteronismo confirmado. O cateterismo das adrenais mostra produção dos dois lados.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Jovem com nódulo adrenal de 3 cm, homogêneo e 20 UH.",
+              "enunciado": "O que mais sugere malignidade?",
               "opcoes": [
-                "Espironolactona",
-                "Retirar as duas adrenais",
-                "Betabloqueador isolado",
-                "Diurético tiazídico em dose alta"
+                "Homogeneidade",
+                "Tamanho",
+                "Vascularização",
+                "Densidade alta"
               ],
-              "resposta": "Espironolactona",
-              "explicacao": "Na hiperplasia bilateral, trata-se com antagonista mineralocorticoide; a cirurgia é para adenoma de um lado.",
-              "revisado": false
+              "resposta": "Densidade alta",
+              "explicacao": "Adenoma tem menos de 10 UH.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d18-l3-q4",
@@ -15195,17 +15261,18 @@
             {
               "id": "cm-d5-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com colite ulcerativa extensa há 10 anos pergunta sobre rastreamento.",
-              "enunciado": "Qual é a orientação?",
+              "caso": "Homem com parotidites de repetição e ducto pancreático dilatado.",
+              "enunciado": "Qual exame confirma?",
               "opcoes": [
-                "Colonoscopia de vigilância com biópsias",
-                "Sem rastreamento",
-                "Só após os 70",
-                "Tomografia anual de abdome e colonoscopia só após os 70 anos"
+                "Ultrassom de parótida",
+                "ANCA",
+                "Colangiorressonância",
+                "IgG e subclasses"
               ],
-              "resposta": "Colonoscopia de vigilância com biópsias",
-              "explicacao": "O risco aumenta com a extensão e o tempo de doença.",
-              "revisado": false
+              "resposta": "IgG e subclasses",
+              "explicacao": "Doença relacionada a IgG4.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -15216,17 +15283,18 @@
             {
               "id": "cm-d5-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem anemia, reticulócitos altos, LDH alta, haptoglobina baixa e Coombs direto positivo para IgG.",
-              "enunciado": "Qual é o diagnóstico e o tratamento inicial?",
+              "caso": "Homem com anemia microcítica e biópsia duodenal com atrofia de vilos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hemolítica autoimune quente; corticoide",
-                "Ferropriva; ferro",
-                "Esferocitose; esplenectomia",
-                "Talassemia; transfusões crônicas e quelante de ferro"
+                "Corticoide",
+                "Colonoscopia",
+                "Sangue oculto",
+                "Dieta sem glúten"
               ],
-              "resposta": "Hemolítica autoimune quente; corticoide",
-              "explicacao": "Investigar causas como lúpus, linfoma e remédios.",
-              "revisado": false
+              "resposta": "Dieta sem glúten",
+              "explicacao": "Doença celíaca.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d5-l3-q2",
@@ -16650,32 +16718,34 @@
             {
               "id": "cm-d7-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Paciente com artrite reumatoide de longa data tem olhos e boca secos.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Homem com miosite melhorou e depois piorou da fraqueza após 2 meses de prednisona alta, com CPK normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Sjögren secundária",
-                "Lúpus",
-                "Rinite",
-                "Desidratação por beber pouca água"
+                "Procurar câncer",
+                "Ciclofosfamida",
+                "Novo pulso",
+                "Reduzir o corticoide"
               ],
-              "resposta": "Sjögren secundária",
-              "explicacao": "Pedir anti-Ro e anti-La.",
-              "revisado": false
+              "resposta": "Reduzir o corticoide",
+              "explicacao": "Miopatia por corticoide.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d7-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Mulher com tromboses venosas de repetição e 3 abortos, com anticoagulante lúpico positivo em duas dosagens com 12 semanas de intervalo.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Mulher com lúpus, hemólise, plaquetas baixas, proteinúria nefrótica e derrame pleural bilateral.",
+              "enunciado": "Como deve ser o líquido pleural?",
               "opcoes": [
-                "Anticoagulação prolongada com varfarina",
-                "AAS só",
-                "Corticoide",
-                "Apenas AAS em dose baixa por três meses"
+                "ADA 80",
+                "Neutrófilos",
+                "Linfócitos",
+                "Proteína de 1,5"
               ],
-              "resposta": "Anticoagulação prolongada com varfarina",
-              "explicacao": "Síndrome antifosfolípide.",
-              "revisado": false
+              "resposta": "Proteína de 1,5",
+              "explicacao": "Transudato pela hipoalbuminemia.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -17999,26 +18069,34 @@
             },
             {
               "id": "cm-d14-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No choque séptico, uma vez colhido o primeiro lactato, não é preciso repeti-lo.",
-              "resposta": false,
-              "explicacao": "Falso. O lactato deve ser repetido; a queda indica melhora da perfusão.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com pielonefrite em choque, confusa, livedo e enchimento de 6 s, usou norfloxacino.",
+              "enunciado": "Qual antibiótico iniciar?",
+              "opcoes": [
+                "Ceftazidima-avibactam",
+                "Piperacilina",
+                "Meropenem",
+                "Ceftriaxona"
+              ],
+              "resposta": "Ceftriaxona",
+              "explicacao": "Sem fator de risco para resistência hospitalar.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d14-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com choque e ultrassom com ventrículo direito dilatado e veia cava cheia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Essa mulher em choque séptico por pielonefrite precisa de qual manejo inicial?",
+              "enunciado": "Volume e noradrenalina após 1 hora",
               "opcoes": [
-                "Embolia pulmonar maciça",
-                "Hipovolemia",
-                "Sepse",
-                "Coração normal com veia cava cheia"
+                "500 mL e noradrenalina após cateter central",
+                "500 mL e esperar",
+                "Até 30 mL/kg e noradrenalina periférica junto"
               ],
-              "resposta": "Embolia pulmonar maciça",
-              "explicacao": "Considerar trombólise.",
-              "revisado": false
+              "resposta": "Até 30 mL/kg e noradrenalina periférica junto",
+              "explicacao": "Não atrasar o vasopressor.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -18109,17 +18187,18 @@
             {
               "id": "cm-d14-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com acidose metabólica grave, ânion gap alto e visão turva após beber bebida falsificada.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Homem com ptose, diplopia, pupilas dilatadas e tetraparesia descendente precisou de ventilação.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Intoxicação por metanol",
-                "Etanol",
-                "Cetoacidose",
-                "Intoxicação por lítio"
+                "Imunoglobulina",
+                "Pulso de corticoide",
+                "Piridostigmina",
+                "Antitoxina botulínica"
               ],
-              "resposta": "Intoxicação por metanol",
-              "explicacao": "Tratar com fomepizol e diálise.",
-              "revisado": false
+              "resposta": "Antitoxina botulínica",
+              "explicacao": "Pupilas dilatadas sugerem botulismo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d14-l3-q7",
@@ -18270,17 +18349,18 @@
             {
               "id": "cm-d15-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Idoso de 82 anos caiu no banheiro. A filha conta que ele \"apagou\" antes de cair e acordou sozinho.",
-              "enunciado": "Qual é a prioridade da investigação?",
+              "caso": "Após diarreia, jovem tem diplopia, ataxia que piora ao fechar os olhos, arreflexia e oftalmoparesia completa.",
+              "enunciado": "O que é mais provável nos exames?",
               "opcoes": [
-                "Investigar síncope, com ECG e avaliação cardíaca",
-                "Adaptar o banheiro e liberar",
-                "Fisioterapia de marcha apenas",
-                "Raio X da bacia e alta se não houver fratura"
+                "Decremento na estimulação repetitiva",
+                "Hipersinal medular",
+                "CPK alta",
+                "Proteína alta com células normais no líquor"
               ],
-              "resposta": "Investigar síncope, com ECG e avaliação cardíaca",
-              "explicacao": "Perda de consciência antes da queda indica síncope, com risco de causa cardíaca.",
-              "revisado": false
+              "resposta": "Proteína alta com células normais no líquor",
+              "explicacao": "Síndrome de Miller Fisher.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -18455,17 +18535,18 @@
             {
               "id": "cm-d15-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Idoso acamado tem ferida no sacro com gordura visível no fundo, sem osso nem músculo expostos.",
-              "enunciado": "Qual é o estágio da úlcera?",
+              "caso": "Idosa extubada há 6 horas fica agitada, hipertensa e com dor no baixo ventre, mesmo com sonda vesical.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Estágio 3",
-                "Estágio 1",
-                "Estágio 2",
-                "Estágio 4, com osso exposto"
+                "Haloperidol",
+                "Dexmedetomidina",
+                "Morfina",
+                "Retirar a sonda vesical"
               ],
-              "resposta": "Estágio 3",
-              "explicacao": "Gordura exposta é estágio 3; músculo ou osso, estágio 4.",
-              "revisado": false
+              "resposta": "Retirar a sonda vesical",
+              "explicacao": "Sonda obstruída e bexiga cheia.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cm-d15-l3-q4",
@@ -18807,17 +18888,18 @@
             {
               "id": "cm-d16-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com leucemia, neutropenia há 3 semanas, tem febre que não cede com antibiótico e tomografia com nódulo cercado de vidro fosco.",
-              "enunciado": "Qual é o agente provável e o tratamento?",
+              "caso": "Mulher com leucemia, neutropenia e cateter tem febre e choque; hemoculturas com coco gram-positivo catalase-negativo.",
+              "enunciado": "Qual é o agente?",
               "opcoes": [
-                "Aspergillus; voriconazol",
-                "Candida; fluconazol",
-                "Cryptococcus; anfotericina com flucitosina",
-                "Pneumococo; amoxicilina em dose alta"
+                "S. aureus",
+                "S. epidermidis",
+                "Enterococo",
+                "Streptococcus viridans"
               ],
-              "resposta": "Aspergillus; voriconazol",
-              "explicacao": "Nódulo com sinal do halo em neutropenia prolongada sugere aspergilose.",
-              "revisado": false
+              "resposta": "Streptococcus viridans",
+              "explicacao": "Ligado à mucosite.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },

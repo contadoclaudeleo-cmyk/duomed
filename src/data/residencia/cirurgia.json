@@ -1531,17 +1531,18 @@
             {
               "id": "cir-u5-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Homem de 62 anos tem anemia por falta de ferro sem causa aparente.",
-              "enunciado": "Qual exame é obrigatório?",
+              "caso": "Homem com adenocarcinoma de retossigmoide que não deixa passar o colonoscópio vai operar.",
+              "enunciado": "Como estadiar?",
               "opcoes": [
-                "Colonoscopia e endoscopia alta",
-                "Apenas ferro oral",
-                "Tomografia de crânio",
-                "Apenas ferro oral e repetir o hemograma em seis meses"
+                "TC e CEA",
+                "PET e CEA",
+                "PET e RM de crânio",
+                "TC de tórax, abdome e pelve e colonoscopia após a cirurgia"
               ],
-              "resposta": "Colonoscopia e endoscopia alta",
-              "explicacao": "Em homens e em mulheres após a menopausa, a anemia ferropriva pode ser o primeiro sinal de câncer no intestino.",
-              "revisado": false
+              "resposta": "TC de tórax, abdome e pelve e colonoscopia após a cirurgia",
+              "explicacao": "O cólon acima não foi visto.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u5-l1-q6",
@@ -3123,28 +3124,18 @@
           "questoes": [
             {
               "id": "cir-u9-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada massa cervical à característica.",
-              "pares": [
-                {
-                  "esquerda": "Cisto tireoglosso",
-                  "direita": "Linha média, sobe ao engolir"
-                },
-                {
-                  "esquerda": "Cisto branquial",
-                  "direita": "Lateral, na borda do esternocleidomastoideo"
-                },
-                {
-                  "esquerda": "Higroma cístico",
-                  "direita": "Linfático, em bebês"
-                },
-                {
-                  "esquerda": "Linfonodo metastático",
-                  "direita": "Endurecido em adulto fumante"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Linfonodo supraclavicular esquerdo endurecido de 3 cm. Para onde dirigir a investigação?",
+              "opcoes": [
+                "Pulmão, fígado e esôfago",
+                "Fígado, vesícula e esôfago",
+                "Estômago, fígado e pâncreas",
+                "Rins, gônadas e estômago"
               ],
-              "explicacao": "A idade e o local orientam.",
-              "revisado": false
+              "resposta": "Rins, gônadas e estômago",
+              "explicacao": "Linfonodo de Virchow drena o abdome.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u9-l3-q2",
@@ -5011,17 +5002,19 @@
           "questoes": [
             {
               "id": "cir-u15-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira conduta diante de fratura de membro com deformidade?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa no 2º dia após prótese de quadril teve uma queda.",
+              "enunciado": "Qual profilaxia de trombose?",
               "opcoes": [
-                "Imobilizar e checar o pulso",
-                "Tentar correr com o paciente",
-                "Massagear o local",
-                "Aplicar calor e esperar a dor melhorar sozinha"
+                "Enoxaparina até a alta",
+                "Varfarina por 14 dias",
+                "Apixabana por 10 dias",
+                "Rivaroxabana por 35 dias"
               ],
-              "resposta": "Imobilizar e checar o pulso",
-              "explicacao": "Avaliar a circulação antes e depois.",
-              "revisado": false
+              "resposta": "Rivaroxabana por 35 dias",
+              "explicacao": "Profilaxia prolongada na artroplastia de quadril.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-u15-l1-q2",
@@ -7752,47 +7745,50 @@
             {
               "id": "cir-d6-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com apneia do sono não tratada vai ser operado.",
-              "enunciado": "Qual é o cuidado?",
+              "caso": "Homem com IC fará esofagectomia curativa.",
+              "enunciado": "Qual profilaxia de trombose?",
               "opcoes": [
-                "Avaliar via aérea, CPAP depois e poupar opioides",
-                "Cuidado nenhum",
-                "Intubar 1 semana",
-                "Manter intubado por uma semana na UTI depois da cirurgia"
+                "Compressão e enoxaparina 12/12 h",
+                "Enoxaparina por 10 dias",
+                "Enoxaparina 28 dias",
+                "Compressão pneumática e enoxaparina 40 mg ao dia por 28 dias"
               ],
-              "resposta": "Avaliar via aérea, CPAP depois e poupar opioides",
-              "explicacao": "Esses pacientes têm mais complicações respiratórias após a anestesia.",
-              "revisado": false
+              "resposta": "Compressão pneumática e enoxaparina 40 mg ao dia por 28 dias",
+              "explicacao": "Cirurgia oncológica abdominal maior.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d6-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Na avaliação pré-anestésica, o paciente abre a boca e só se vê o palato duro, sem a úvula.",
-              "enunciado": "Qual escala foi usada e o que indica?",
+              "caso": "Ele usa enalapril, carvedilol, dapagliflozina, AAS e atorvastatina.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Mallampati IV: intubação difícil",
-                "Glasgow 4: coma",
-                "Aldrete 4: alta da sala",
-                "Ramsay 4: sedação moderada, sem risco"
+                "Suspender AAS 7 dias",
+                "Suspender carvedilol",
+                "Suspender estatina",
+                "Suspender a dapagliflozina 3 dias antes"
               ],
-              "resposta": "Mallampati IV: intubação difícil",
-              "explicacao": "A escala de Mallampati estima a dificuldade de intubação.",
-              "revisado": false
+              "resposta": "Suspender a dapagliflozina 3 dias antes",
+              "explicacao": "Risco de cetoacidose euglicêmica.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "cir-d6-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com hipertermia, rigidez muscular e aumento de CO2 expirado durante anestesia com sevoflurano e succinilcolina.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "caso": "Sobre o risco cardíaco desse homem com IC estável.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Hipertermia maligna; parar o gatilho e dantroleno",
-                "Sepse; antibiótico",
-                "Alergia; adrenalina",
-                "Febre normal da cirurgia; antitérmico e aprofundar a anestesia"
+                "UTI e troponina só com sintomas",
+                "Cateterismo",
+                "Eco de estresse",
+                "UTI com troponina e ECG diários até o 3º dia"
               ],
-              "resposta": "Hipertermia maligna; parar o gatilho e dantroleno",
-              "explicacao": "É uma emergência genética ligada ao receptor de rianodina.",
-              "revisado": false
+              "resposta": "UTI com troponina e ECG diários até o 3º dia",
+              "explicacao": "Detecta lesão miocárdica silenciosa.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
