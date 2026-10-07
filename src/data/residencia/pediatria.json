@@ -111,26 +111,34 @@
             },
             {
               "id": "ped-u1-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No SUS, a vacina contra HPV é indicada apenas para meninas de 9 a 14 anos.",
-              "resposta": false,
-              "explicacao": "Falso. Ela é indicada para meninas e meninos de 9 a 14 anos, e previne cânceres de colo, ânus, pênis e orofaringe.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos com falciforme recebeu VPC10 completa.",
+              "enunciado": "Qual esquema pneumocócico agora?",
+              "opcoes": [
+                "Só VPP23",
+                "Repetir VPC10",
+                "VPC13 e esperar 5 anos",
+                "Duas VPC13 com 8 semanas e VPP23 depois"
+              ],
+              "resposta": "Duas VPC13 com 8 semanas e VPP23 depois",
+              "explicacao": "Asplenia funcional.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u1-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mãe de um recém-nascido prematuro de 32 semanas, hoje com 2 meses de vida e 3 kg, pergunta se as vacinas devem esperar.",
-              "enunciado": "Qual é a orientação correta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Criança com leucemia em quimioterapia. Que vacinas evitar?",
               "opcoes": [
-                "Seguir o calendário pela idade cronológica",
-                "Corrigir pela prematuridade",
-                "Esperar 6 meses",
-                "Esperar a criança completar um ano e pesar mais de 10 kg"
+                "Todas",
+                "BCG reforço",
+                "Tríplice viral liberada",
+                "As de vírus ou bactérias vivas atenuadas"
               ],
-              "resposta": "Seguir o calendário pela idade cronológica",
-              "explicacao": "Prematuros são vacinados pela idade cronológica. A exceção clássica é a BCG, aplicada quando o bebê atinge 2 kg.",
-              "revisado": false
+              "resposta": "As de vírus ou bactérias vivas atenuadas",
+              "explicacao": "Inativadas podem ser dadas.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             }
           ]
         },
@@ -171,40 +179,51 @@
             },
             {
               "id": "ped-u1-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O recém-nascido a termo costuma recuperar o peso de nascimento entre o 10º e o 15º dia de vida.",
-              "resposta": true,
-              "explicacao": "A perda de até 10% do peso nos primeiros dias é fisiológica. Perdas maiores ou recuperação tardia pedem avaliação da amamentação.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mãe de bebê de 5 meses e 3 semanas em aleitamento exclusivo quer começar comida salgada.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Começar e reduzir o peito",
+                "Suco antes",
+                "Esperar 9 meses",
+                "Manter exclusivo até 6 meses e depois introduzir"
+              ],
+              "resposta": "Manter exclusivo até 6 meses e depois introduzir",
+              "explicacao": "Recomendação atual.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u1-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A criança costuma dobrar o peso de nascimento por volta dos ___ meses e triplicá-lo com 1 ano.",
+              "tipo": "caso_clinico",
+              "caso": "Avó quer liquidificar a comida do bebê de 8 meses.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "5",
-                "2",
-                "9",
-                "12"
+                "Liquidificar até 9 anos",
+                "Peneirar até 7 meses",
+                "Pastoso até 1 ano",
+                "Amassar e aumentar a consistência aos poucos"
               ],
-              "resposta": "5",
-              "explicacao": "O ganho de peso é mais rápido nos primeiros meses e vai desacelerando ao longo do primeiro ano.",
-              "revisado": false
+              "resposta": "Amassar e aumentar a consistência aos poucos",
+              "explicacao": "Estimula a mastigação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u1-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Puérpera de 3 semanas com febre, dor e vermelhidão em um quadrante de uma das mamas. Ela pergunta se deve parar de amamentar.",
-              "enunciado": "Qual é a orientação correta?",
+              "caso": "Puérpera em RIPE há 5 dias, usando codeína, com herpes ativo na aréola esquerda.",
+              "enunciado": "Qual é a conduta na amamentação?",
               "opcoes": [
-                "Manter a amamentação e esvaziar bem a mama",
-                "Suspender a amamentação até o fim do antibiótico",
-                "Amamentar só na mama saudável e descartar o leite da outra",
-                "Suspender a amamentação de vez"
+                "Suspender tudo",
+                "Manter as duas mamas",
+                "Parar por 2 semanas",
+                "Não usar a mama com herpes, manter a outra, trocar a codeína e seguir o RIPE"
               ],
-              "resposta": "Manter a amamentação e esvaziar bem a mama",
-              "explicacao": "Na mastite, o esvaziamento da mama faz parte do tratamento. Associa-se antibiótico compatível com a amamentação e analgésico.",
-              "revisado": false
+              "resposta": "Não usar a mama com herpes, manter a outra, trocar a codeína e seguir o RIPE",
+              "explicacao": "Codeína pode deprimir o bebê.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u1-l2-q6",
@@ -282,24 +301,19 @@
             },
             {
               "id": "ped-u1-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada plano de hidratação à situação em que é usado.",
-              "pares": [
-                {
-                  "esquerda": "Plano A",
-                  "direita": "Sem desidratação, tratamento em casa"
-                },
-                {
-                  "esquerda": "Plano B",
-                  "direita": "Com desidratação, reidratação oral na unidade"
-                },
-                {
-                  "esquerda": "Plano C",
-                  "direita": "Desidratação grave, hidratação venosa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino com dengue, vômitos persistentes e dor abdominal, perfusão ok.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Esperar NS1",
+                "Hidratação oral",
+                "20 mL/kg em 20 min",
+                "10 mL/kg de soro na 1ª hora e exames"
               ],
-              "explicacao": "No plano B, a criança recebe solução de reidratação oral na unidade e é reavaliada até sair da desidratação.",
-              "revisado": false
+              "resposta": "10 mL/kg de soro na 1ª hora e exames",
+              "explicacao": "Grupo C.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u1-l3-q4",
@@ -429,28 +443,19 @@
             },
             {
               "id": "ped-u2-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à conduta na reanimação neonatal.",
-              "pares": [
-                {
-                  "esquerda": "Apneia após os passos iniciais",
-                  "direita": "Ventilação com pressão positiva por máscara"
-                },
-                {
-                  "esquerda": "FC abaixo de 60 após ventilação adequada",
-                  "direita": "Massagem cardíaca junto com ventilação"
-                },
-                {
-                  "esquerda": "FC abaixo de 60 após massagem e ventilação",
-                  "direita": "Adrenalina"
-                },
-                {
-                  "esquerda": "Bebê com boa vitalidade",
-                  "direita": "Contato pele a pele com a mãe"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de cesárea eletiva com taquipneia leve e raio X com hiperinsuflação e estrias hilares.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Saturação a 100%",
+                "Mais comum com mais idade gestacional",
+                "Falta de surfactante",
+                "Benigno, ocorre em 1 a 2%"
               ],
-              "explicacao": "A maioria dos bebês que precisam de ajuda melhora só com ventilação bem feita.",
-              "revisado": false
+              "resposta": "Benigno, ocorre em 1 a 2%",
+              "explicacao": "Taquipneia transitória.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u2-l1-q5",
@@ -528,36 +533,34 @@
             },
             {
               "id": "ped-u2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de icterícia neonatal à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Fisiológica",
-                  "direita": "Surge após 24 horas e some em 1 a 2 semanas"
-                },
-                {
-                  "esquerda": "Do leite materno",
-                  "direita": "Prolongada, em bebê que mama e cresce bem"
-                },
-                {
-                  "esquerda": "Por incompatibilidade Rh ou ABO",
-                  "direita": "Precoce e com hemólise"
-                },
-                {
-                  "esquerda": "Colestática",
-                  "direita": "Fezes claras e urina escura"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o cuidado correto com a pele do recém-nascido?",
+              "opcoes": [
+                "Retirar todo o vérnix",
+                "Banho imediato",
+                "Álcool para o coto cair",
+                "Não remover o vérnix precocemente"
               ],
-              "explicacao": "A icterícia do leite materno não exige suspender a amamentação na maioria dos casos.",
-              "revisado": false
+              "resposta": "Não remover o vérnix precocemente",
+              "explicacao": "Barreira natural.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u2-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Fezes claras e urina escura em bebê com icterícia prolongada exigem investigação urgente de atresia de vias biliares.",
-              "resposta": true,
-              "explicacao": "A cirurgia de Kasai tem melhor resultado antes de 60 dias de vida.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 3 dias com pústulas amareladas sobre base vermelha pelo corpo.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Eritema infeccioso",
+                "Acne",
+                "Impetigo",
+                "Eritema tóxico"
+              ],
+              "resposta": "Eritema tóxico",
+              "explicacao": "Benigno.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u2-l2-q4",
@@ -727,11 +730,18 @@
             },
             {
               "id": "ped-u2-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A profilaxia da conjuntivite neonatal só é feita se o bebê tiver secreção nos olhos.",
-              "resposta": false,
-              "explicacao": "Falso. É feita em todos, na primeira hora de vida, para prevenir gonococo e clamídia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que repetir o teste do pezinho colhido com 24 h de vida?",
+              "opcoes": [
+                "TSH falsamente alto",
+                "Para infecções",
+                "Só aminoácidos mudam",
+                "Antes de 48 h pode dar falso negativo; repetir entre 3º e 5º dia"
+              ],
+              "resposta": "Antes de 48 h pode dar falso negativo; repetir entre 3º e 5º dia",
+              "explicacao": "Precisa da ingestão de leite.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u2-l3-q8",
@@ -778,17 +788,19 @@
             },
             {
               "id": "ped-u3-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o agente do exantema súbito (roséola)?",
+              "tipo": "caso_clinico",
+              "caso": "Lactente com febre, tosse, coriza, conjuntivite, manchas de Koplik e exantema maculopapular.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Herpes-vírus humano 6",
-                "Parvovírus B19",
-                "Sarampo",
-                "Estreptococo do grupo A"
+                "Pouco contagioso",
+                "Sem isolamento após exantema",
+                "Ribavirina",
+                "Otite média é complicação comum em crianças pequenas"
               ],
-              "resposta": "Herpes-vírus humano 6",
-              "explicacao": "É comum entre 6 meses e 2 anos e pode causar convulsão febril.",
-              "revisado": false
+              "resposta": "Otite média é complicação comum em crianças pequenas",
+              "explicacao": "Sarampo; dar vitamina A.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u3-l1-q3",
@@ -872,46 +884,51 @@
           "questoes": [
             {
               "id": "ped-u3-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Segundo a OMS, qual é o sinal clínico mais sensível de pneumonia em crianças?",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 3 anos com otite média aguda e alergia leve a penicilina (exantema).",
+              "enunciado": "Qual antibiótico?",
               "opcoes": [
-                "Respiração rápida",
-                "Febre",
-                "Tosse",
-                "Estertores na ausculta"
+                "Eritromicina",
+                "Amoxicilina-clavulanato",
+                "Azitromicina",
+                "Cefuroxima"
               ],
-              "resposta": "Respiração rápida",
-              "explicacao": "Contar a frequência respiratória por 1 minuto é essencial na avaliação.",
-              "revisado": false
+              "resposta": "Cefuroxima",
+              "explicacao": "Reação não grave permite cefalosporina.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada idade ao limite de respiração rápida segundo a OMS.",
-              "pares": [
-                {
-                  "esquerda": "Menos de 2 meses",
-                  "direita": "60 ou mais por minuto"
-                },
-                {
-                  "esquerda": "De 2 a 11 meses",
-                  "direita": "50 ou mais por minuto"
-                },
-                {
-                  "esquerda": "De 1 a 4 anos",
-                  "direita": "40 ou mais por minuto"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com febre, tiragem e infiltrado alveolar no lobo inferior direito.",
+              "enunciado": "Qual é o diagnóstico e o manejo?",
+              "opcoes": [
+                "Bronquiolite",
+                "Asma",
+                "Mycoplasma",
+                "Pneumonia bacteriana; amoxicilina"
               ],
-              "explicacao": "A contagem deve ser feita com a criança calma, de preferência dormindo.",
-              "revisado": false
+              "resposta": "Pneumonia bacteriana; amoxicilina",
+              "explicacao": "Primeira escolha.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u3-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na pneumonia sem gravidade em crianças, a amoxicilina oral é o tratamento de primeira escolha.",
-              "resposta": true,
-              "explicacao": "O pneumococo é o principal agente bacteriano.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com pneumonia e hemocultura com pneumococo sensível.",
+              "enunciado": "O que é correto na troca para via oral?",
+              "opcoes": [
+                "Ampicilina vai falhar",
+                "Clavulanato 50 mg/kg",
+                "Associar clindamicina",
+                "Amoxicilina 90 a 100 mg/kg/dia"
+              ],
+              "resposta": "Amoxicilina 90 a 100 mg/kg/dia",
+              "explicacao": "Dose alta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u3-l2-q4",
@@ -1225,79 +1242,82 @@
           "questoes": [
             {
               "id": "ped-u4-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Pela OMS, qual indicador define obesidade em crianças acima de 5 anos?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos come pouco e seletivo, mas cresce bem.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "IMC para a idade acima de escore z +2",
-                "Peso acima de 30 kg",
-                "Só a cintura",
-                "IMC acima de 30, como no adulto, em qualquer idade"
+                "Suplemento e 2 refeições",
+                "Sonda",
+                "Antidepressivo",
+                "Não insistir, rotina de refeições e expor a novos alimentos"
               ],
-              "resposta": "IMC para a idade acima de escore z +2",
-              "explicacao": "Em crianças, usam-se as curvas de IMC por idade e sexo, e não os valores do adulto.",
-              "revisado": false
+              "resposta": "Não insistir, rotina de refeições e expor a novos alimentos",
+              "explicacao": "Comportamento comum.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada forma de desnutrição à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Marasmo",
-                  "direita": "Emagrecimento extremo, sem edema"
-                },
-                {
-                  "esquerda": "Kwashiorkor",
-                  "direita": "Edema, cabelo fino e descolorido e lesões de pele"
-                },
-                {
-                  "esquerda": "Desnutrição aguda",
-                  "direita": "Peso baixo para a altura"
-                },
-                {
-                  "esquerda": "Desnutrição crônica",
-                  "direita": "Altura baixa para a idade"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos com dieta pobre em carne, apetite ruim, infecções e cicatrização lenta.",
+              "enunciado": "Qual é a deficiência e a conduta?",
+              "opcoes": [
+                "Ferro",
+                "Vitamina C",
+                "Selênio",
+                "Zinco; história e resposta ao tratamento"
               ],
-              "explicacao": "A desnutrição crônica compromete o crescimento de forma duradoura.",
-              "revisado": false
+              "resposta": "Zinco; história e resposta ao tratamento",
+              "explicacao": "Não há bom exame laboratorial.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na desnutrição grave, a realimentação deve ser rápida e com muitas calorias desde o primeiro dia.",
-              "resposta": false,
-              "explicacao": "Falso. Deve ser lenta, para evitar a síndrome de realimentação.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Menina de 9 anos com IMC em escore Z +3. Qual é o diagnóstico?",
+              "opcoes": [
+                "Peso adequado",
+                "Sobrepeso",
+                "Obesidade grave",
+                "Obesidade"
+              ],
+              "resposta": "Obesidade",
+              "explicacao": "Z acima de +2 em maiores de 5 anos; acima de +3 é grave.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O edema do kwashiorkor acontece principalmente por falta de ___ na dieta.",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 11 anos com obesidade e família pedindo remédio.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "proteínas",
-                "carboidratos",
-                "ferro",
-                "vitamina C"
+                "Orlistate",
+                "Bariátrica",
+                "Dieta cetogênica",
+                "Mudar o ambiente obesogênico e reavaliar"
               ],
-              "resposta": "proteínas",
-              "explicacao": "Com pouca proteína, a albumina cai e o líquido sai dos vasos.",
-              "revisado": false
+              "resposta": "Mudar o ambiente obesogênico e reavaliar",
+              "explicacao": "Remédio pode vir depois.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos tem edema nos pés, cabelo descolorido e irritação. A dieta tem pouca proteína.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Criança de 2 anos com desnutrição grave e edema.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "Kwashiorkor",
-                "Marasmo",
-                "Síndrome nefrótica, necessariamente",
-                "Hipotireoidismo"
+                "Dieta hiperproteica já",
+                "Albumina e diurético",
+                "Jejum e parenteral",
+                "Corrigir eletrólitos e infecções, realimentar devagar e vigiar realimentação"
               ],
-              "resposta": "Kwashiorkor",
-              "explicacao": "Apesar do edema, a criança está gravemente desnutrida.",
-              "revisado": false
+              "resposta": "Corrigir eletrólitos e infecções, realimentar devagar e vigiar realimentação",
+              "explicacao": "Protocolo da OMS.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l2-q6",
@@ -1344,42 +1364,34 @@
           "questoes": [
             {
               "id": "ped-u4-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a anemia mais comum na infância?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 14 meses com Hb 9,8, VCM 68 e ferritina 9.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Anemia ferropriva",
-                "Anemia falciforme",
-                "Talassemia",
-                "Anemia megaloblástica"
+                "Ferro 3 mg/kg por 1 mês",
+                "Só dieta",
+                "Ferro venoso",
+                "Ferro 3 a 5 mg/kg e manter 3 meses após normalizar"
               ],
-              "resposta": "Anemia ferropriva",
-              "explicacao": "Ela prejudica o desenvolvimento, o aprendizado e a imunidade.",
-              "revisado": false
+              "resposta": "Ferro 3 a 5 mg/kg e manter 3 meses após normalizar",
+              "explicacao": "Repor o estoque.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u4-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao tipo de anemia.",
-              "pares": [
-                {
-                  "esquerda": "Hemácias pequenas com ferritina baixa",
-                  "direita": "Anemia ferropriva"
-                },
-                {
-                  "esquerda": "Hemácias pequenas com ferritina normal e eletroforese alterada",
-                  "direita": "Talassemia"
-                },
-                {
-                  "esquerda": "Hemácias grandes",
-                  "direita": "Falta de B12 ou de folato"
-                },
-                {
-                  "esquerda": "Hemácias em forma de foice",
-                  "direita": "Anemia falciforme"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Prematuro de 35 semanas com 2.080 g. Como fazer o ferro profilático?",
+              "opcoes": [
+                "1 mg/kg aos 30 dias",
+                "1 mg/kg aos 90 dias",
+                "2 mg/kg aos 90 dias",
+                "2 mg/kg/dia a partir de 30 dias"
               ],
-              "explicacao": "Tratar talassemia com ferro sem necessidade pode causar sobrecarga.",
-              "revisado": false
+              "resposta": "2 mg/kg/dia a partir de 30 dias",
+              "explicacao": "Baixo peso.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u4-l3-q3",
@@ -1501,28 +1513,19 @@
             },
             {
               "id": "ped-u5-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à gravidade da crise de asma na criança.",
-              "pares": [
-                {
-                  "esquerda": "Fala frases completas",
-                  "direita": "Crise leve"
-                },
-                {
-                  "esquerda": "Fala palavras soltas e está agitada",
-                  "direita": "Crise grave"
-                },
-                {
-                  "esquerda": "Sonolência e cianose",
-                  "direita": "Risco de parada respiratória"
-                },
-                {
-                  "esquerda": "Saturação acima de 95% após broncodilatador",
-                  "direita": "Boa resposta ao tratamento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Asmático de 7 anos com crise, fala entrecortada, tiragem e saturação de 93%.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Só corticoide oral",
+                "Antibiótico",
+                "Adrenalina IM e intubar",
+                "Salbutamol repetido, oxigênio se abaixo de 94% e reavaliar"
               ],
-              "explicacao": "Sonolência na crise é sinal de cansaço e retenção de CO2.",
-              "revisado": false
+              "resposta": "Salbutamol repetido, oxigênio se abaixo de 94% e reavaliar",
+              "explicacao": "Primeira linha.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u5-l1-q4",
@@ -1676,25 +1679,34 @@
             },
             {
               "id": "ped-u5-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o antibiótico empírico da meningite bacteriana em crianças acima de 3 meses?",
+              "tipo": "caso_clinico",
+              "caso": "Criança em crise convulsiva há 12 min que persiste após diazepam retal e midazolam venoso.",
+              "enunciado": "Qual é a próxima conduta?",
               "opcoes": [
-                "Ceftriaxona",
-                "Amoxicilina oral",
-                "Azitromicina",
-                "Vancomicina oral"
+                "Mais benzodiazepínico e esperar",
+                "Antitérmico",
+                "Punção lombar",
+                "Fenitoína 15 a 20 mg/kg com suporte"
               ],
-              "resposta": "Ceftriaxona",
-              "explicacao": "Em algumas situações, associa-se vancomicina venosa pelo risco de pneumococo resistente.",
-              "revisado": false
+              "resposta": "Fenitoína 15 a 20 mg/kg com suporte",
+              "explicacao": "Estado de mal.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u5-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Contatos íntimos de doença meningocócica devem receber quimioprofilaxia, por exemplo com rifampicina.",
-              "resposta": true,
-              "explicacao": "A profilaxia deve ser feita o quanto antes.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença meningocócica, o que é correto?",
+              "opcoes": [
+                "B é o principal no Brasil",
+                "Transmissível até o fim do tratamento",
+                "Ciprofloxacino é 1ª escolha",
+                "Incubação média de 4 dias (2 a 10)"
+              ],
+              "resposta": "Incubação média de 4 dias (2 a 10)",
+              "explicacao": "Rifampicina na profilaxia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u5-l2-q8",
@@ -1783,17 +1795,18 @@
             {
               "id": "ped-u5-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos é retirada de uma piscina após quase se afogar. Agora respira, tosse e está sonolenta.",
+              "caso": "Criança ingeriu amitriptilina, está sonolenta, taquicárdica e com QRS de 0,14 s.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Observar no hospital, O2 e monitorar",
-                "Alta imediata",
-                "Provocar vômito",
-                "Liberar logo e provocar vômito para tirar a água"
+                "Ipeca",
+                "Lavagem isolada",
+                "Diálise",
+                "Carvão ativado e bicarbonato venoso"
               ],
-              "resposta": "Observar no hospital, O2 e monitorar",
-              "explicacao": "O pulmão pode piorar nas horas seguintes, mesmo que a criança pareça bem.",
-              "revisado": false
+              "resposta": "Carvão ativado e bicarbonato venoso",
+              "explicacao": "Bicarbonato protege o coração.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u5-l3-q6",
@@ -1956,42 +1969,35 @@
           "questoes": [
             {
               "id": "ped-u6-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a complicação mais grave da doença de Kawasaki?",
+              "tipo": "caso_clinico",
+              "caso": "Menina com artrite migratória, febre e sopro mitral após dor de garganta.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "Aneurismas das coronárias",
-                "Insuficiência renal",
-                "AVC",
-                "Hepatite fulminante com icterícia"
+                "Imunoglobulina",
+                "Azitromicina e corticoide",
+                "Azitromicina e AINE",
+                "Benzatina, anti-inflamatório e seguimento cardiológico"
               ],
-              "resposta": "Aneurismas das coronárias",
-              "explicacao": "O tratamento precoce reduz muito esse risco.",
-              "revisado": false
+              "resposta": "Benzatina, anti-inflamatório e seguimento cardiológico",
+              "explicacao": "Febre reumática.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença ao seu tratamento.",
-              "pares": [
-                {
-                  "esquerda": "Doença de Kawasaki",
-                  "direita": "Imunoglobulina venosa e AAS"
-                },
-                {
-                  "esquerda": "Febre reumática aguda",
-                  "direita": "Penicilina benzatina e anti-inflamatório"
-                },
-                {
-                  "esquerda": "Coreia de Sydenham",
-                  "direita": "Tratamento dos sintomas e profilaxia com penicilina"
-                },
-                {
-                  "esquerda": "Faringite estreptocócica",
-                  "direita": "Amoxicilina por 10 dias"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menina de 11 anos com febre baixa, dor no braço ao esforço, pulso esquerdo fraco e VHS alto.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Cardite reumática",
+                "Lúpus",
+                "Kawasaki",
+                "Arterite de Takayasu"
               ],
-              "explicacao": "A doença de Kawasaki é uma das poucas situações em que se usa AAS em crianças.",
-              "revisado": false
+              "resposta": "Arterite de Takayasu",
+              "explicacao": "Vasculite de grandes vasos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u6-l2-q3",
@@ -2091,17 +2097,19 @@
             },
             {
               "id": "ped-u6-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de síndrome nefrótica em crianças?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 5 anos com edema, urina espumosa, proteinúria nefrótica, albumina 1,8 e colesterol alto.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Doença por lesões mínimas",
-                "Glomeruloesclerose segmentar e focal",
-                "Glomerulopatia membranosa",
-                "Nefropatia por IgA"
+                "ITU",
+                "Pós-estreptocócica",
+                "IgA",
+                "Síndrome nefrótica"
               ],
-              "resposta": "Doença por lesões mínimas",
-              "explicacao": "Ela é mais comum entre 2 e 6 anos.",
-              "revisado": false
+              "resposta": "Síndrome nefrótica",
+              "explicacao": "Lesão mínima é a causa mais comum.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u6-l3-q3",
@@ -2208,25 +2216,35 @@
             },
             {
               "id": "ped-u7-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de desidratação grave na criança?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 18 meses com diarreia, olhos fundos e turgor diminuído, alerta.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Letargia e não conseguir beber",
-                "Sede",
-                "Choro",
-                "Sede intensa com choro forte"
+                "Soro venoso e jejum",
+                "Antibiótico",
+                "Probiótico e sem leite",
+                "SRO 50 a 100 mL/kg em 4 a 6 h"
               ],
-              "resposta": "Letargia e não conseguir beber",
-              "explicacao": "Indica plano C.",
-              "revisado": false
+              "resposta": "SRO 50 a 100 mL/kg em 4 a 6 h",
+              "explicacao": "Plano B.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u7-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A criança com diarreia aguda deve ficar em jejum até a diarreia passar.",
-              "resposta": false,
-              "explicacao": "Falso. Deve continuar se alimentando, com a dieta habitual e o leite materno.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Lactente de 10 kg com diarreia, sem lágrimas, mucosa seca, prega lenta e bebendo avidamente.",
+              "enunciado": "Qual é o manejo?",
+              "opcoes": [
+                "Soro venoso 30 mL/kg em 1 h",
+                "50 mL/kg em 2 h",
+                "70 mL/kg em 5 h",
+                "SRO 75 mL/kg em 4 horas"
+              ],
+              "resposta": "SRO 75 mL/kg em 4 horas",
+              "explicacao": "Plano B.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u7-l1-q4",
@@ -2445,68 +2463,82 @@
             },
             {
               "id": "ped-u7-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a forma mais comum de alergia ao leite no lactente?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 11 meses com eczema pruriginoso recorrente usando sabonetes perfumados.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Proctocolite com sangue nas fezes",
-                "Anafilaxia",
-                "Asma",
-                "Dermatite isolada sem outros sintomas"
+                "Antibiótico",
+                "Anti-histamínico contínuo",
+                "Corticoide oral",
+                "Emolientes sem perfume, banhos curtos e corticoide tópico leve"
               ],
-              "resposta": "Proctocolite com sangue nas fezes",
-              "explicacao": "Lactente bem com estrias de sangue.",
-              "revisado": false
+              "resposta": "Emolientes sem perfume, banhos curtos e corticoide tópico leve",
+              "explicacao": "Dermatite atópica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u7-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na alergia à proteína do leite de vaca, a amamentação deve ser suspensa.",
-              "resposta": false,
-              "explicacao": "Falso. A mãe pode fazer dieta sem leite e continuar amamentando.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses com sangue nas fezes melhorou parcialmente com exclusão de leite pela mãe.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Prick test",
+                "Fórmula de soja",
+                "Endoscopia",
+                "Manter a exclusão e fazer teste de provocação em 2 a 4 semanas"
+              ],
+              "resposta": "Manter a exclusão e fazer teste de provocação em 2 a 4 semanas",
+              "explicacao": "Confirma o diagnóstico.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u7-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A fórmula ___ é usada em lactentes com alergia à proteína do leite que não mamam no peito.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses em fórmula com fezes com sangue e muco, choro e baixo ganho de peso.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "extensamente hidrolisada",
-                "de soja sempre",
-                "comum",
-                "de leite de cabra integral"
+                "IgE; aminoácidos",
+                "IgE; hidrolisada",
+                "Não IgE; aminoácidos",
+                "APLV não IgE; fórmula extensamente hidrolisada"
               ],
-              "resposta": "extensamente hidrolisada",
-              "explicacao": "Ou de aminoácidos nos casos graves.",
-              "revisado": false
+              "resposta": "APLV não IgE; fórmula extensamente hidrolisada",
+              "explicacao": "Primeira escolha.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u7-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o rastreio da doença celíaca?",
+              "tipo": "caso_clinico",
+              "caso": "Sobre a cólica do lactente, o que é correto?",
+              "enunciado": "Teste com hidrolisada",
               "opcoes": [
-                "Antitransglutaminase IgA com IgA total",
-                "Raio X",
-                "Ultrassom",
-                "Raio X de abdome e ultrassom de alças intestinais"
+                "É o sinal mais comum de APLV",
+                "Ganho de peso ruim",
+                "Certos probióticos reduzem o choro"
               ],
-              "resposta": "Antitransglutaminase IgA com IgA total",
-              "explicacao": "Confirmar com biópsia.",
-              "revisado": false
+              "resposta": "Certos probióticos reduzem o choro",
+              "explicacao": "Melhora por volta de 3 a 4 meses.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u7-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos com diarreia crônica, barriga grande, perna fina e baixo ganho de peso.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Criança com urticária sem angioedema uma hora após ibuprofeno.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Doença celíaca",
-                "Verminose só",
-                "Normal",
-                "Refluxo gastroesofágico"
+                "Anafilaxia",
+                "Exantema viral",
+                "Eritema multiforme",
+                "Urticária aguda; anti-histamínico de 2ª geração"
               ],
-              "resposta": "Doença celíaca",
-              "explicacao": "Investigar.",
-              "revisado": false
+              "resposta": "Urticária aguda; anti-histamínico de 2ª geração",
+              "explicacao": "Sinais vitais normais.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u7-l3-q7",
@@ -2608,16 +2640,17 @@
             {
               "id": "ped-u8-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira avaliação no atraso de linguagem?",
+              "enunciado": "Aos 6 meses, o que se espera do bebê?",
               "opcoes": [
-                "Audição",
-                "Ressonância",
-                "Eletroencefalograma",
-                "Ressonância de crânio com sedação"
+                "Pinça",
+                "Procurar objeto escondido",
+                "Dar tchau",
+                "Sentar apoiando nas mãos"
               ],
-              "resposta": "Audição",
-              "explicacao": "Surdez atrasa a fala.",
-              "revisado": false
+              "resposta": "Sentar apoiando nas mãos",
+              "explicacao": "A pinça vem perto de 9 a 10 meses.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u8-l1-q6",
@@ -2821,46 +2854,50 @@
             },
             {
               "id": "ped-u8-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tipo ___ é a forma mais comum de paralisia cerebral.",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos desatento, inquieto e impulsivo na escola, exame normal.",
+              "enunciado": "Qual é o diagnóstico provável?",
               "opcoes": [
-                "espástico",
-                "atáxico",
-                "discinético",
-                "misto"
+                "Opositor",
+                "Autismo",
+                "Ansiedade",
+                "TDAH"
               ],
-              "resposta": "espástico",
-              "explicacao": "Tônus aumentado.",
-              "revisado": false
+              "resposta": "TDAH",
+              "explicacao": "Sintomas em vários contextos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u8-l3-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de primeira linha do TDAH em idade escolar?",
+              "enunciado": "Menino de 3 anos e meio sem contato visual, ecolalia e rigidez com rotinas. O que caracteriza o TEA?",
               "opcoes": [
-                "Metilfenidato com abordagem comportamental",
-                "Antibiótico",
-                "Benzodiazepínico",
-                "Benzodiazepínico à noite e antibiótico por um mês"
+                "Atraso motor global",
+                "Atraso só de linguagem",
+                "Desatenção e impulsividade",
+                "Prejuízo social, comportamentos repetitivos e interesses restritos"
               ],
-              "resposta": "Metilfenidato com abordagem comportamental",
-              "explicacao": "Estimulante.",
-              "revisado": false
+              "resposta": "Prejuízo social, comportamentos repetitivos e interesses restritos",
+              "explicacao": "Critérios do DSM-5.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u8-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos não olha nos olhos, não aponta e alinha brinquedos.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menino de 2 anos sem contato visual, fala pouco, não imita e é seletivo.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Transtorno do espectro autista",
-                "Surdez só",
-                "Normal",
-                "TDAH com hiperatividade e impulsividade"
+                "SNAP-IV confirma",
+                "Mais comum em meninas",
+                "M-CHAT aos 9 meses",
+                "Investigar X-frágil, a alteração genética mais comum"
               ],
-              "resposta": "Transtorno do espectro autista",
-              "explicacao": "Avaliação especializada.",
-              "revisado": false
+              "resposta": "Investigar X-frágil, a alteração genética mais comum",
+              "explicacao": "M-CHAT é entre 16 e 30 meses.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u8-l3-q7",
@@ -3024,17 +3061,19 @@
             },
             {
               "id": "ped-u9-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a conduta na PTI com plaquetas de 20 mil sem sangramento?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 7 anos com púrpura palpável em pernas e nádegas, dor abdominal e hematúria.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Observação",
-                "Esplenectomia",
-                "Transfusão",
-                "Quimioterapia"
+                "PTI",
+                "PTT",
+                "Kawasaki",
+                "Vasculite por IgA; analgesia e vigiar o rim"
               ],
-              "resposta": "Observação",
-              "explicacao": "A maioria melhora sozinha.",
-              "revisado": false
+              "resposta": "Vasculite por IgA; analgesia e vigiar o rim",
+              "explicacao": "Henoch-Schönlein.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u9-l2-q3",
@@ -3267,42 +3306,35 @@
             },
             {
               "id": "ped-u10-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fator ao risco na bronquiolite.",
-              "pares": [
-                {
-                  "esquerda": "Prematuridade",
-                  "direita": "Maior risco de gravidade"
-                },
-                {
-                  "esquerda": "Cardiopatia congênita",
-                  "direita": "Maior risco"
-                },
-                {
-                  "esquerda": "Idade abaixo de 3 meses",
-                  "direita": "Risco de apneia"
-                },
-                {
-                  "esquerda": "Aleitamento materno",
-                  "direita": "Proteção"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Lactente de 7 meses com bronquiolite, saturação de 91% e tiragem.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Antibiótico e corticoide",
+                "Adrenalina e broncodilatador",
+                "Prednisona",
+                "Internar com oxigênio e hidratação"
               ],
-              "explicacao": "Identificar os de risco.",
-              "revisado": false
+              "resposta": "Internar com oxigênio e hidratação",
+              "explicacao": "Suporte.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u10-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é o anticorpo usado para prevenir infecção grave por vírus sincicial em bebês de risco.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 4 meses com coriza, sibilos, FR 60 e saturação de 93%.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "palivizumabe",
-                "rituximabe",
-                "infliximabe",
-                "omalizumabe"
+                "Laringite; adrenalina",
+                "Bronquiolite; beta-2",
+                "Bronquiolite; beta-2 e corticoide",
+                "Bronquiolite; suporte com hidratação e oxigênio se preciso"
               ],
-              "resposta": "palivizumabe",
-              "explicacao": "Ou nirsevimabe.",
-              "revisado": false
+              "resposta": "Bronquiolite; suporte com hidratação e oxigênio se preciso",
+              "explicacao": "Sem broncodilatador de rotina.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u10-l1-q5",
@@ -3481,28 +3513,19 @@
           "questoes": [
             {
               "id": "ped-u10-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à fibrose cística.",
-              "pares": [
-                {
-                  "esquerda": "Íleo meconial",
-                  "direita": "Recém-nascido"
-                },
-                {
-                  "esquerda": "Infecções pulmonares de repetição",
-                  "direita": "Pulmão"
-                },
-                {
-                  "esquerda": "Fezes gordurosas",
-                  "direita": "Pâncreas"
-                },
-                {
-                  "esquerda": "Suor salgado",
-                  "direita": "Pele"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 3 meses com tosse em acessos, guincho, cianose e 75 mil leucócitos, intubado.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Isolar 24 h",
+                "Sem profilaxia nos contatos",
+                "Esperar confirmação",
+                "A hiperleucocitose piora a hipertensão pulmonar e pode exigir exsanguineotransfusão"
               ],
-              "explicacao": "Doença de vários órgãos.",
-              "revisado": false
+              "resposta": "A hiperleucocitose piora a hipertensão pulmonar e pode exigir exsanguineotransfusão",
+              "explicacao": "Coqueluche grave.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u10-l3-q2",
@@ -3827,42 +3850,34 @@
           "questoes": [
             {
               "id": "ped-u11-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada risco à abordagem.",
-              "pares": [
-                {
-                  "esquerda": "Uso de álcool",
-                  "direita": "Entrevista motivacional"
-                },
-                {
-                  "esquerda": "Ideação suicida",
-                  "direita": "Avaliar risco e não deixar sozinho"
-                },
-                {
-                  "esquerda": "Gravidez",
-                  "direita": "Acolher e pré-natal"
-                },
-                {
-                  "esquerda": "Bullying",
-                  "direita": "Envolver escola e família"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a PrEP para adolescentes, o que é correto?",
+              "opcoes": [
+                "Precisa dos pais",
+                "Jovens não são prioridade",
+                "Uso semanal",
+                "É recomendada acima de 15 anos"
               ],
-              "explicacao": "Abordagem acolhedora.",
-              "revisado": false
+              "resposta": "É recomendada acima de 15 anos",
+              "explicacao": "Dose diária.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u11-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sinal de alerta para suicídio no adolescente?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 16 anos em relação abusiva teve relação sem lembrar e usou contracepção de emergência.",
+              "enunciado": "Em qual situação NÃO há quebra de sigilo?",
               "opcoes": [
-                "Falar em morrer e se isolar",
-                "Gostar de esportes",
-                "Notas boas",
-                "Gostar de esportes e ter notas boas"
+                "Abuso sexual",
+                "HIV",
+                "Depressão grave",
+                "Uso de contracepção de emergência"
               ],
-              "resposta": "Falar em morrer e se isolar",
-              "explicacao": "Perguntar diretamente.",
-              "revisado": false
+              "resposta": "Uso de contracepção de emergência",
+              "explicacao": "Os outros podem exigir quebra.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u11-l3-q3",
@@ -3968,36 +3983,35 @@
             },
             {
               "id": "ped-u12-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na criança, a tuberculose é diagnosticada principalmente pela baciloscopia do escarro.",
-              "resposta": false,
-              "explicacao": "Falso. A criança tem poucos bacilos; usa-se o escore do Ministério da Saúde, com clínica, raio X, contato, prova tuberculínica e nutrição.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina de 6 anos com tosse e febre há 3 semanas, infiltrado apical, PPD 12 mm e baciloscopia negativa.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Latente; isoniazida",
+                "Miliar",
+                "Pneumonia bacteriana",
+                "Tuberculose primária; RHZ 2 meses e RH 4 meses"
+              ],
+              "resposta": "Tuberculose primária; RHZ 2 meses e RH 4 meses",
+              "explicacao": "Esquema para menores de 10 anos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u12-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada item do escore de tuberculose infantil ao que avalia.",
-              "pares": [
-                {
-                  "esquerda": "Contato com adulto com tuberculose",
-                  "direita": "Exposição"
-                },
-                {
-                  "esquerda": "Prova tuberculínica",
-                  "direita": "Infecção"
-                },
-                {
-                  "esquerda": "Raio X",
-                  "direita": "Doença pulmonar"
-                },
-                {
-                  "esquerda": "Estado nutricional",
-                  "direita": "Desnutrição"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 7 anos com linfonodo cervical de 4 cm e biópsia com necrose caseosa.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Sulfametoxazol",
+                "Claritromicina",
+                "RIPE",
+                "Rifampicina, isoniazida e pirazinamida"
               ],
-              "explicacao": "Soma dos pontos.",
-              "revisado": false
+              "resposta": "Rifampicina, isoniazida e pirazinamida",
+              "explicacao": "Menores de 10 anos sem etambutol.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u12-l1-q4",
@@ -4088,17 +4102,19 @@
             },
             {
               "id": "ped-u12-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da neurossífilis congênita?",
+              "tipo": "caso_clinico",
+              "caso": "Mãe tratada com benzatina em 3 doses no início do pré-natal, VDRL caiu de 1:128 para 1:8 no parto; bebê normal com VDRL 1:4.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Penicilina cristalina por 10 dias",
                 "Benzatina dose única",
-                "Azitromicina",
-                "Penicilina benzatina em dose única e alta"
+                "Cristalina 10 dias",
+                "Punção e raio X",
+                "Criança exposta, sem tratamento imediato"
               ],
-              "resposta": "Penicilina cristalina por 10 dias",
-              "explicacao": "Líquor alterado.",
-              "revisado": false
+              "resposta": "Criança exposta, sem tratamento imediato",
+              "explicacao": "Seguir com VDRL.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-u12-l2-q3",
@@ -4181,28 +4197,19 @@
           "questoes": [
             {
               "id": "ped-u12-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada parasita ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Áscaris",
-                  "direita": "Obstrução intestinal por novelo"
-                },
-                {
-                  "esquerda": "Ancilostomídeo",
-                  "direita": "Anemia por perda de sangue"
-                },
-                {
-                  "esquerda": "Giárdia",
-                  "direita": "Diarreia e má absorção"
-                },
-                {
-                  "esquerda": "Enterobius",
-                  "direita": "Coceira anal noturna"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança com prurido anal noturno e pequenos vermes brancos.",
+              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "opcoes": [
+                "Giárdia",
+                "Ancilóstomo",
+                "Áscaris",
+                "Enterobíase; mebendazol repetido em 15 dias"
               ],
-              "explicacao": "Parasitas comuns.",
-              "revisado": false
+              "resposta": "Enterobíase; mebendazol repetido em 15 dias",
+              "explicacao": "Tratar a família.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u12-l3-q2",
@@ -4424,17 +4431,19 @@
           "questoes": [
             {
               "id": "ped-u13-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como é feito o diagnóstico do hipotireoidismo congênito?",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido de 20 dias com TSH alto e T4 livre baixo, sonolento, pele seca e icterícia prolongada.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Teste do pezinho com TSH",
-                "Sintomas ao nascer",
-                "Raio X",
-                "Sintomas claros logo ao nascer"
+                "Central",
+                "Hashimoto",
+                "Subclínico",
+                "Hipotireoidismo congênito; levotiroxina já"
               ],
-              "resposta": "Teste do pezinho com TSH",
-              "explicacao": "A maioria não tem sintomas ao nascer.",
-              "revisado": false
+              "resposta": "Hipotireoidismo congênito; levotiroxina já",
+              "explicacao": "Proteger o cérebro.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u13-l2-q2",
@@ -4684,17 +4693,19 @@
             },
             {
               "id": "ped-u14-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a orientação para o transporte do bebê no carro?",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 4 anos se queimou com água fervente há 20 minutos, bolhas íntegras.",
+              "enunciado": "Qual é a conduta imediata?",
               "opcoes": [
-                "Bebê conforto de costas, no banco de trás",
-                "No colo",
-                "Banco da frente",
-                "No colo da mãe, no banco da frente, com cinto"
+                "Romper bolhas",
+                "Gelo",
+                "Álcool",
+                "Água corrente em temperatura ambiente por 10 a 20 min"
               ],
-              "resposta": "Bebê conforto de costas, no banco de trás",
-              "explicacao": "Lei brasileira.",
-              "revisado": false
+              "resposta": "Água corrente em temperatura ambiente por 10 a 20 min",
+              "explicacao": "Interrompe a lesão.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u14-l1-q3",
@@ -4895,28 +4906,19 @@
           "questoes": [
             {
               "id": "ped-u14-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida à prevenção da morte súbita do lactente.",
-              "pares": [
-                {
-                  "esquerda": "Dormir de barriga para cima",
-                  "direita": "Principal medida"
-                },
-                {
-                  "esquerda": "Berço sem travesseiros e brinquedos",
-                  "direita": "Evita sufocação"
-                },
-                {
-                  "esquerda": "Não fumar",
-                  "direita": "Reduz risco"
-                },
-                {
-                  "esquerda": "Amamentação",
-                  "direita": "Proteção"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menina de 3 anos dorme à 1h vendo tablet e acorda às 6h30, cansada e irritada.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Polissonografia",
+                "Melatonina",
+                "Nada",
+                "Horários fixos, sem telas à noite e rotina antes de dormir"
               ],
-              "explicacao": "Orientações para os pais.",
-              "revisado": false
+              "resposta": "Horários fixos, sem telas à noite e rotina antes de dormir",
+              "explicacao": "Higiene do sono.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-u14-l3-q2",
@@ -5022,42 +5024,34 @@
             {
               "id": "ped-d1-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido a termo nasce sem chorar, hipotônico, com líquido meconial.",
-              "enunciado": "Qual é o primeiro passo?",
+              "caso": "Recém-nascido flácido e apneico; após 30 s de ventilação eficaz em ar ambiente, FC 50 e tórax expandindo.",
+              "enunciado": "Qual é a próxima conduta?",
               "opcoes": [
-                "Mesa de reanimação: posicionar, aspirar se preciso e secar",
-                "Intubar para aspirar a traqueia",
-                "Adrenalina",
-                "Intubar e aspirar a traqueia de rotina antes de secar e posicionar"
+                "Ventilar mais 30 s em ar",
+                "Subir a pressão e repetir",
+                "Intubar e oxigênio a 40%",
+                "Oxigênio a 100% e compressões 3:1"
               ],
-              "resposta": "Mesa de reanimação: posicionar, aspirar se preciso e secar",
-              "explicacao": "A aspiração traqueal de rotina no mecônio não é mais recomendada.",
-              "revisado": false
+              "resposta": "Oxigênio a 100% e compressões 3:1",
+              "explicacao": "FC abaixo de 60 após ventilação eficaz.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado da reanimação neonatal à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Apneia ou FC abaixo de 100 após passos iniciais",
-                  "direita": "Ventilação com pressão positiva"
-                },
-                {
-                  "esquerda": "FC abaixo de 60 após ventilação adequada",
-                  "direita": "Massagem cardíaca com ventilação"
-                },
-                {
-                  "esquerda": "FC abaixo de 60 após massagem e ventilação",
-                  "direita": "Adrenalina"
-                },
-                {
-                  "esquerda": "FC acima de 100 com respiração regular",
-                  "direita": "Cuidados de rotina e observação"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido com mecônio espesso, apneico e FC 50 após os passos iniciais.",
+              "enunciado": "Qual é a primeira conduta?",
+              "opcoes": [
+                "Intubar para aspirar",
+                "Compressões e adrenalina",
+                "Intubar e comprimir",
+                "Ventilação com pressão positiva em ar ambiente"
               ],
-              "explicacao": "O primeiro minuto de vida é o minuto de ouro.",
-              "revisado": false
+              "resposta": "Ventilação com pressão positiva em ar ambiente",
+              "explicacao": "Ventilar primeiro.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d1-l1-q3",
@@ -5166,42 +5160,35 @@
             },
             {
               "id": "ped-d1-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de icterícia neonatal à característica.",
-              "pares": [
-                {
-                  "esquerda": "Fisiológica",
-                  "direita": "Surge após 24 horas e desaparece em até 2 semanas"
-                },
-                {
-                  "esquerda": "Por doença hemolítica",
-                  "direita": "Surge nas primeiras 24 horas"
-                },
-                {
-                  "esquerda": "Do leite materno",
-                  "direita": "Prolongada em bebê que mama bem e ganha peso"
-                },
-                {
-                  "esquerda": "Colestática",
-                  "direita": "Bilirrubina direta alta, acolia e colúria"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido a termo assintomático com glicemia de 34 nas primeiras 2 horas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Glicose venosa",
+                "Repetir em 6 h",
+                "Fórmula por sonda",
+                "Mamar já e repetir em 30 min"
               ],
-              "explicacao": "A icterícia nas primeiras 24 horas sempre é patológica.",
-              "revisado": false
+              "resposta": "Mamar já e repetir em 30 min",
+              "explicacao": "Assintomático começa pelo leite.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d1-l2-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença deve ser suspeitada em bebê de 3 semanas com icterícia, fezes claras e urina escura?",
+              "tipo": "caso_clinico",
+              "caso": "Filho de diabética, GIG, assintomático com glicemia de 28 nas 2 horas de vida.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "Atresia de vias biliares",
-                "Icterícia fisiológica",
-                "Icterícia do leite materno",
-                "Incompatibilidade ABO"
+                "Repetir em 3 h",
+                "UTI e glicose venosa",
+                "Glicose oral",
+                "Leite materno ou fórmula e nova glicemia em 30 min"
               ],
-              "resposta": "Atresia de vias biliares",
-              "explicacao": "A cirurgia de Kasai deve ser feita antes de 60 dias para melhores resultados.",
-              "revisado": false
+              "resposta": "Leite materno ou fórmula e nova glicemia em 30 min",
+              "explicacao": "Assintomático começa pela dieta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d1-l2-q4",
@@ -5429,28 +5416,18 @@
             },
             {
               "id": "ped-d2-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada faixa etária com febre sem sinais à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Menor de 28 dias",
-                  "direita": "Internar, coletar culturas e líquor, antibiótico"
-                },
-                {
-                  "esquerda": "De 29 a 60 dias com bom estado",
-                  "direita": "Exames e decisão conforme o risco"
-                },
-                {
-                  "esquerda": "De 3 a 36 meses com bom estado",
-                  "direita": "Exame de urina e seguimento"
-                },
-                {
-                  "esquerda": "Qualquer idade com toxemia",
-                  "direita": "Internar e investigar"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando suspeitar de imunodeficiência primária?",
+              "opcoes": [
+                "Uma meningite",
+                "Sem cicatriz de BCG",
+                "Duas otites no ano",
+                "Diarreia crônica"
               ],
-              "explicacao": "Os critérios de baixo risco variam entre protocolos.",
-              "revisado": false
+              "resposta": "Diarreia crônica",
+              "explicacao": "Sinal de alerta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d2-l1-q3",
@@ -5709,18 +5686,18 @@
             },
             {
               "id": "ped-d2-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 10 anos tem dor de garganta, febre, linfonodos aumentados no pescoço, baço grande e fica com manchas após tomar amoxicilina.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual classe de antibiótico mais se liga à colite pseudomembranosa em crianças?",
               "opcoes": [
-                "Mononucleose infecciosa",
-                "Faringite estreptocócica",
-                "Alergia à amoxicilina",
-                "Rubéola"
+                "Quinolonas",
+                "Glicopeptídeos",
+                "Aminoglicosídeos",
+                "Lincosamidas"
               ],
-              "resposta": "Mononucleose infecciosa",
-              "explicacao": "Deve-se evitar esporte de contato pelo risco de ruptura do baço.",
-              "revisado": false
+              "resposta": "Lincosamidas",
+              "explicacao": "Clindamicina.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d2-l3-q5",
@@ -5959,54 +5936,66 @@
             {
               "id": "ped-d3-l2-q4",
               "tipo": "caso_clinico",
-              "caso": "Criança em choque séptico continua hipotensa após 60 mL/kg de soro.",
-              "enunciado": "Qual é a próxima medida?",
+              "caso": "Criança de 7 anos desmaia no futebol em TV sem pulso; após 2 min de RCP, ritmo segue igual.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Vasopressor (adrenalina ou noradrenalina)",
-                "Mais 60 mL/kg de soro",
-                "Diurético",
-                "Mais 60 mL/kg de soro rápido e diurético de alça venoso"
+                "Adrenalina",
+                "Amiodarona antes",
+                "Mais 2 min",
+                "Choque de 2 J/kg e retomar RCP"
               ],
-              "resposta": "Vasopressor (adrenalina ou noradrenalina)",
-              "explicacao": "Choque refratário ao volume exige drogas vasoativas.",
-              "revisado": false
+              "resposta": "Choque de 2 J/kg e retomar RCP",
+              "explicacao": "Ritmo chocável.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d3-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na criança grave em choque ou convulsão, a glicemia só precisa ser medida se ela for diabética.",
-              "resposta": false,
-              "explicacao": "Falso. A glicemia deve ser medida e corrigida em toda criança grave, pois a reserva é pequena.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos com febre, galope, fígado aumentado, PA 71 x 48 e extremidades frias.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "20 mL/kg em 5 min",
+                "30 mL/kg",
+                "Vasoativo antes",
+                "10 mL/kg em 20 minutos"
+              ],
+              "resposta": "10 mL/kg em 20 minutos",
+              "explicacao": "Choque com sinais cardiogênicos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d3-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente vítima de afogamento é retirado da água sem respirar e com pulso.",
-              "enunciado": "Qual é a primeira medida?",
+              "caso": "Criança de 5 anos com intoxicação por organofosforado, FC 45 mesmo após ventilar.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ventilações de resgate",
-                "Massagem cardíaca imediata",
-                "Manobra de Heimlich",
-                "Posição lateral"
+                "Intubar com cetamina",
+                "Intubar com propofol",
+                "RCP e adrenalina",
+                "RCP de alta qualidade e atropina"
               ],
-              "resposta": "Ventilações de resgate",
-              "explicacao": "No afogamento, a hipóxia é a causa da parada.",
-              "revisado": false
+              "resposta": "RCP de alta qualidade e atropina",
+              "explicacao": "Bradicardia colinérgica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d3-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na reanimação pediátrica, a dose de adrenalina é de ___ mg/kg, repetida a cada 3 a 5 minutos.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos após acidente com Glasgow 6, bradicardia e PA de 150 x 100.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "0,01",
-                "0,1",
-                "1",
-                "10 mg por quilo"
+                "Trendelenburg",
+                "Dexametasona",
+                "Punção lombar",
+                "Intubar, cabeceira a 30°, hiperventilação breve e manitol"
               ],
-              "resposta": "0,01",
-              "explicacao": "Na solução 1:10.000, corresponde a 0,1 mL/kg.",
-              "revisado": false
+              "resposta": "Intubar, cabeceira a 30°, hiperventilação breve e manitol",
+              "explicacao": "Tríade de Cushing.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d3-l2-q8",
@@ -6424,18 +6413,18 @@
           "questoes": [
             {
               "id": "ped-d4-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com desnutrição grave tem edema, pele descamando e cabelo descolorido.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre cálcio na adolescência, o que é correto?",
               "opcoes": [
-                "Kwashiorkor",
-                "Marasmo",
-                "Obesidade",
-                "Doença celíaca com diarreia"
+                "Bebê precisa de 1.000 mg",
+                "Limite de 1.500",
+                "20% da massa óssea vem na adolescência",
+                "A necessidade é de 1.300 mg/dia"
               ],
-              "resposta": "Kwashiorkor",
-              "explicacao": "Na reidratação, deve-se usar soro específico com cuidado.",
-              "revisado": false
+              "resposta": "A necessidade é de 1.300 mg/dia",
+              "explicacao": "Cerca de 40% da massa óssea.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d4-l3-q2",
@@ -6818,72 +6807,66 @@
             {
               "id": "ped-d5-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 5 semanas, menino, tem vômitos em jato sem bile, fome após vomitar e massa em oliva no abdome.",
-              "enunciado": "Qual é o distúrbio metabólico e a conduta?",
+              "caso": "Recém-nascido com salivação, cianose ao mamar, sonda enovelada no mediastino e gás no abdome.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Alcalose hipoclorêmica e hipocalêmica; corrigir e operar",
-                "Acidose; cirurgia já",
-                "Normal",
-                "Hipercalemia com acidose; diálise e cirurgia imediata"
+                "Hérnia diafragmática",
+                "Onfalocele",
+                "Íleo meconial",
+                "Atresia de esôfago com fístula distal; aspiração contínua e cirurgia"
               ],
-              "resposta": "Alcalose hipoclorêmica e hipocalêmica; corrigir e operar",
-              "explicacao": "A cirurgia é a piloromiotomia, feita após corrigir os eletrólitos.",
-              "revisado": false
+              "resposta": "Atresia de esôfago com fístula distal; aspiração contínua e cirurgia",
+              "explicacao": "Suspender a via oral.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao diagnóstico cirúrgico.",
-              "pares": [
-                {
-                  "esquerda": "Vômito com bile no recém-nascido",
-                  "direita": "Má-rotação com volvo"
-                },
-                {
-                  "esquerda": "Dupla bolha na radiografia",
-                  "direita": "Atresia de duodeno"
-                },
-                {
-                  "esquerda": "Sem eliminação de mecônio em 48 horas",
-                  "direita": "Doença de Hirschsprung"
-                },
-                {
-                  "esquerda": "Sangue nas fezes indolor em criança de 2 anos",
-                  "direita": "Divertículo de Meckel"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança com dor migratória para fossa ilíaca direita, febre, defesa; ultrassom com apêndice normal e linfonodos grandes.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Gastroenterite",
+                "Henoch-Schönlein",
+                "Intussuscepção",
+                "Adenite mesentérica; observar e analgesia"
               ],
-              "explicacao": "Vômito com bile no recém-nascido é emergência até prova contrária.",
-              "revisado": false
+              "resposta": "Adenite mesentérica; observar e analgesia",
+              "explicacao": "Apêndice normal no ultrassom.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d5-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido vomita bile nas primeiras horas e a radiografia mostra dupla bolha.",
-              "enunciado": "Qual síndrome se associa a esse quadro?",
+              "caso": "Menino de 8 anos com glande roxa e inchada e prepúcio preso atrás dela.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Síndrome de Down",
-                "Síndrome de Turner",
-                "Síndrome de Marfan",
-                "Síndrome de Klinefelter"
+                "Fimose",
+                "Balanite",
+                "Hidrocele",
+                "Parafimose"
               ],
-              "resposta": "Síndrome de Down",
-              "explicacao": "A atresia de duodeno se associa à síndrome de Down.",
-              "revisado": false
+              "resposta": "Parafimose",
+              "explicacao": "Reduzir com urgência.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d5-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 9 meses tem crises de choro com pernas encolhidas, vômitos e fezes em geleia de framboesa.",
-              "enunciado": "Qual é o tratamento inicial se estável?",
+              "caso": "Bebê de 2 meses com constipação desde o nascimento e evacuação explosiva após toque.",
+              "enunciado": "Qual exame confirma?",
               "opcoes": [
-                "Redução por enema guiado por imagem",
-                "Cirurgia imediata",
-                "Antibiótico",
-                "Laxante oral e antibiótico em casa"
+                "Raio X",
+                "Ultrassom",
+                "Manometria",
+                "Biópsia retal"
               ],
-              "resposta": "Redução por enema guiado por imagem",
-              "explicacao": "A cirurgia fica para falha do enema ou perfuração.",
-              "revisado": false
+              "resposta": "Biópsia retal",
+              "explicacao": "Hirschsprung.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d5-l3-q5",
@@ -7081,58 +7064,50 @@
           "questoes": [
             {
               "id": "ped-d6-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 4 anos tem palidez, febre, petéquias, dor nos ossos e baço grande.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre cuidados paliativos pediátricos, o que é correto?",
               "opcoes": [
-                "Leucemia linfoide aguda",
-                "Púrpura imune",
-                "Anemia ferropriva",
-                "Mononucleose infecciosa"
+                "Escada igual à do adulto",
+                "Morfina oral na mesma dose",
+                "Náusea não tem tolerância",
+                "Na extubação paliativa a criança pode morrer em minutos, horas ou sobreviver"
               ],
-              "resposta": "Leucemia linfoide aguda",
-              "explicacao": "O mielograma confirma o diagnóstico.",
-              "revisado": false
+              "resposta": "Na extubação paliativa a criança pode morrer em minutos, horas ou sobreviver",
+              "explicacao": "Comunicar com empatia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor infantil ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Neuroblastoma",
-                  "direita": "Massa abdominal com olhos roxos"
-                },
-                {
-                  "esquerda": "Retinoblastoma",
-                  "direita": "Reflexo branco no olho"
-                },
-                {
-                  "esquerda": "Meduloblastoma",
-                  "direita": "Ataxia e vômitos matinais"
-                },
-                {
-                  "esquerda": "Osteossarcoma",
-                  "direita": "Dor no joelho em adolescente"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Prevenção da lise tumoral na leucemia com hiperleucocitose e ácido úrico alto.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Soro com potássio",
+                "Evitar hidratar",
+                "Corrigir cálcio rápido",
+                "Considerar rasburicase"
               ],
-              "explicacao": "O teste do olhinho ajuda a detectar o retinoblastoma.",
-              "revisado": false
+              "resposta": "Considerar rasburicase",
+              "explicacao": "Reduz o ácido úrico.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d6-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 4 anos com palidez, febre, manchas roxas e dor nos ossos.",
-              "enunciado": "Qual é a hipótese principal?",
+              "caso": "Criança de 2 anos com perda de peso, PA alta e massa abdominal que cruza a linha média.",
+              "enunciado": "Qual é a suspeita?",
               "opcoes": [
-                "Leucemia",
-                "Tumor de Wilms",
-                "Neuroblastoma",
-                "Linfoma de Hodgkin"
+                "Hepatoblastoma",
+                "Hodgkin",
+                "Wilms",
+                "Neuroblastoma"
               ],
-              "resposta": "Leucemia",
-              "explicacao": "A leucemia é o câncer mais comum na infância.",
-              "revisado": false
+              "resposta": "Neuroblastoma",
+              "explicacao": "Wilms raramente cruza.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d6-l2-q4",
@@ -7210,17 +7185,18 @@
             {
               "id": "ped-d6-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança de 18 meses tem convulsão generalizada de 3 minutos durante febre, e após volta ao normal.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Adolescente obeso de 12 anos com dor no quadril há 3 meses e perda da rotação interna.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Tratar a febre, buscar a causa e orientar",
-                "TC e EEG de rotina",
-                "Anticonvulsivante contínuo",
-                "Tomografia, eletroencefalograma e anticonvulsivante contínuo"
+                "Perthes",
+                "Sinovite transitória",
+                "Osteoartrite",
+                "Epifisiólise proximal do fêmur"
               ],
-              "resposta": "Tratar a febre, buscar a causa e orientar",
-              "explicacao": "A convulsão febril simples tem bom prognóstico.",
-              "revisado": false
+              "resposta": "Epifisiólise proximal do fêmur",
+              "explicacao": "Típica do adolescente obeso.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d6-l3-q2",
@@ -7620,17 +7596,18 @@
             {
               "id": "ped-d7-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança de 6 anos com hepatite aguda, icterícia e sem vacina.",
-              "enunciado": "Qual é a hipótese mais provável?",
+              "caso": "Criança de 9 anos com hepatite aguda, transaminases acima de 1.000 e coagulação normal.",
+              "enunciado": "Qual diferencial e exame?",
               "opcoes": [
-                "Hepatite A",
-                "Hepatite C",
-                "Hepatite B crônica",
-                "Wilson"
+                "Wilson",
+                "Autoimune",
+                "Paracetamol",
+                "Mononucleose; IgM anti-VCA"
               ],
-              "resposta": "Hepatite A",
-              "explicacao": "Transmissão fecal-oral.",
-              "revisado": false
+              "resposta": "Mononucleose; IgM anti-VCA",
+              "explicacao": "Causa comum de hepatite aguda.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d7-l3-q3",
@@ -7773,43 +7750,34 @@
             },
             {
               "id": "ped-d8-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com febre teve convulsão que começou só no braço direito e durou 20 minutos.",
-              "enunciado": "Como classificar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em quais doenças o canabidiol foi aprovado e efetivo?",
               "opcoes": [
-                "Convulsão febril complexa",
-                "Convulsão febril simples",
-                "Epilepsia já confirmada",
-                "Crise de perda de fôlego"
+                "Dravet, autismo e AME",
+                "Dravet, Lennox e autismo",
+                "Lennox, esclerose tuberosa e Pompe",
+                "Dravet, Lennox-Gastaut e esclerose tuberosa"
               ],
-              "resposta": "Convulsão febril complexa",
-              "explicacao": "Focal, longa ou repetida em 24 horas define a complexa, que pede mais investigação.",
-              "revisado": false
+              "resposta": "Dravet, Lennox-Gastaut e esclerose tuberosa",
+              "explicacao": "Epilepsias refratárias.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d8-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de crise na criança ao exame.",
-              "pares": [
-                {
-                  "esquerda": "Hipoglicemia",
-                  "direita": "Glicemia capilar"
-                },
-                {
-                  "esquerda": "Meningite",
-                  "direita": "Punção lombar"
-                },
-                {
-                  "esquerda": "Hiponatremia",
-                  "direita": "Sódio"
-                },
-                {
-                  "esquerda": "Trauma de crânio",
-                  "direita": "Tomografia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menina de 1 ano com convulsão de 3 minutos durante febre de resfriado, exame normal.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Meningite; punção",
+                "Epilepsia; EEG",
+                "Tumor; TC",
+                "Convulsão febril; orientar e observar"
               ],
-              "explicacao": "Procurar causa tratável.",
-              "revisado": false
+              "resposta": "Convulsão febril; orientar e observar",
+              "explicacao": "Crise simples.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d8-l1-q5",
@@ -8139,48 +8107,50 @@
           "questoes": [
             {
               "id": "ped-d9-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança falciforme com dor no peito, febre, saturação de 89% e infiltrado novo.",
-              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Após DTP, febre de 38,5 e dor local por 48 h. O que é correto?",
               "opcoes": [
-                "Torácica aguda; O2, antibiótico e transfusão",
-                "Pneumonia simples; amoxicilina",
-                "Asma; broncodilatador",
-                "Pneumonia simples; amoxicilina oral em casa com retorno em três dias"
+                "Anafilaxia é comum",
+                "Convulsão contraindica tudo",
+                "Encefalopatia é benigna",
+                "São eventos esperados e não contraindicam outras doses"
               ],
-              "resposta": "Torácica aguda; O2, antibiótico e transfusão",
-              "explicacao": "Emergência.",
-              "revisado": false
+              "resposta": "São eventos esperados e não contraindicam outras doses",
+              "explicacao": "Autolimitados.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d9-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança falciforme de 2 anos com palidez súbita, baço muito aumentado e hemoglobina de 4.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Teste do pezinho com padrão FSA.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Sequestro esplênico agudo",
-                "Crise aplástica",
-                "Hemólise",
-                "Hemólise leve sem gravidade"
+                "Traço; nada",
+                "Erro do laboratório",
+                "Hidroxiureia urgente",
+                "Doença falciforme; penicilina profilática e centro de referência"
               ],
-              "resposta": "Sequestro esplênico agudo",
-              "explicacao": "Transfusão urgente.",
-              "revisado": false
+              "resposta": "Doença falciforme; penicilina profilática e centro de referência",
+              "explicacao": "Hemoglobina S com beta-talassemia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d9-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 6 anos com anemia falciforme tem Doppler transcraniano com velocidade alta.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Criança de 3 anos com anemia aguda, icterícia, reticulócitos altos e Coombs direto positivo após virose.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Iniciar transfusão crônica",
-                "Transfundir só nas crises de dor",
-                "Repetir o Doppler em 5 anos",
-                "Iniciar anticoagulação plena"
+                "Haptoglobina alta",
+                "Não investigar",
+                "Crise aplástica",
+                "Anemia hemolítica autoimune; corticoide e investigar causas"
               ],
-              "resposta": "Iniciar transfusão crônica",
-              "explicacao": "A transfusão crônica previne o AVC; também se indica após AVC prévio.",
-              "revisado": false
+              "resposta": "Anemia hemolítica autoimune; corticoide e investigar causas",
+              "explicacao": "Haptoglobina baixa.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d9-l1-q4",
@@ -8268,33 +8238,33 @@
           "questoes": [
             {
               "id": "ped-d9-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança com PTI, plaquetas de 5 mil e sangramento nasal volumoso.",
-              "enunciado": "Qual é o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Surto de varicela na creche: quem recebe vacina pós-exposição? Artur 8 m, Betina 10 m, Caio 1 ano em prednisolona alta, Dandara 1 ano, Eduardo 7 m.",
               "opcoes": [
-                "Imunoglobulina ou corticoide",
-                "Observação",
-                "Esplenectomia imediata",
-                "Esplenectomia imediata e transfusão de plaquetas"
+                "Betina, Caio e Dandara",
+                "Artur, Betina, Dandara e Eduardo",
+                "Só Dandara",
+                "Betina e Dandara"
               ],
-              "resposta": "Imunoglobulina ou corticoide",
-              "explicacao": "Sangramento importante.",
-              "revisado": false
+              "resposta": "Betina e Dandara",
+              "explicacao": "A partir de 9 meses e sem imunossupressão.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d9-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Criança com púrpura palpável nas pernas, dor articular, dor abdominal e hematúria.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o calendário vacinal, o que é correto?",
               "opcoes": [
-                "Henoch-Schönlein (vasculite por IgA)",
-                "PTI",
-                "Leucemia",
-                "Meningococcemia com choque e febre alta"
+                "Covid não junto com outras",
+                "Covid começa aos 2 anos",
+                "Febre amarela a partir de 6 meses",
+                "HPV é dose única de 9 a 14 anos"
               ],
-              "resposta": "Henoch-Schönlein (vasculite por IgA)",
-              "explicacao": "Acompanhar a função renal.",
-              "revisado": false
+              "resposta": "HPV é dose única de 9 a 14 anos",
+              "explicacao": "Esquema atual.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d9-l2-q3",
@@ -8963,17 +8933,18 @@
             {
               "id": "ped-d11-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 8 anos com cetoacidose recebeu a expansão inicial de soro.",
-              "enunciado": "Como iniciar a insulina?",
+              "caso": "Adolescente com DM1 tem glicemia 420, pH 7,15, bicarbonato 10 e cetonas.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Infusão de 0,05 a 0,1 UI/kg/h, sem bolus",
-                "Bolus de 1 UI/kg",
-                "Insulina oral",
-                "Bolus de 0,5 UI/kg e repetir de hora em hora"
+                "Hipoglicemia",
+                "Acidose lática",
+                "Hiperosmolar",
+                "Cetoacidose; soro isotônico e insulina regular após hidratar"
               ],
-              "resposta": "Infusão de 0,05 a 0,1 UI/kg/h, sem bolus",
-              "explicacao": "Na criança, não se faz bolus inicial de insulina.",
-              "revisado": false
+              "resposta": "Cetoacidose; soro isotônico e insulina regular após hidratar",
+              "explicacao": "Reposição de fluidos primeiro.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d11-l1-q4",
@@ -9207,17 +9178,18 @@
             {
               "id": "ped-d11-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Menino de 6 anos com pelos pubianos, pênis aumentado e testículos pequenos.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menina de 6 anos com mamas, pelos, idade óssea avançada e LH puberal no teste.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Puberdade precoce periférica (adrenal)",
-                "Central",
-                "Normal",
-                "Síndrome de Klinefelter com testículos pequenos"
+                "Periférica",
+                "Adrenarca",
+                "Telarca isolada",
+                "Puberdade precoce central; análogo de GnRH"
               ],
-              "resposta": "Puberdade precoce periférica (adrenal)",
-              "explicacao": "Testículos pequenos indicam fonte periférica.",
-              "revisado": false
+              "resposta": "Puberdade precoce central; análogo de GnRH",
+              "explicacao": "Eixo ativado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d11-l3-q3",
@@ -9344,32 +9316,34 @@
             {
               "id": "ped-d12-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Lactente com cansaço ao mamar, suor e sopro holossistólico, com 2 meses.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Recém-nascido com cianose que não melhora com O2 a 100%, sem sopro e raio X normal.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "CIV grande",
-                "Normal",
-                "Estenose pulmonar",
-                "Coarctação da aorta com pulsos fracos"
+                "Atresia tricúspide; diurético",
+                "Coarctação; inotrópico",
+                "Fallot; betabloqueador",
+                "Transposição; prostaglandina E1 e eco urgente"
               ],
-              "resposta": "CIV grande",
-              "explicacao": "Hiperfluxo pulmonar.",
-              "revisado": false
+              "resposta": "Transposição; prostaglandina E1 e eco urgente",
+              "explicacao": "Manter o canal aberto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d12-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 1 ano com cianose que piora ao chorar e melhora quando ela se agacha.",
-              "enunciado": "Qual é a cardiopatia mais provável?",
+              "caso": "Criança de 2 anos com taquidispneia, sudorese nas mamadas, baixo ganho de peso, hepatomegalia e cardiomegalia com hiperfluxo.",
+              "enunciado": "Qual é a causa provável?",
               "opcoes": [
-                "Tetralogia de Fallot",
-                "Transposição das grandes artérias",
-                "Comunicação interatrial",
-                "Comunicação interventricular pequena"
+                "Miocardite",
+                "Hipertrófica",
+                "Coarctação",
+                "CIV ampla"
               ],
-              "resposta": "Tetralogia de Fallot",
-              "explicacao": "É a cardiopatia cianótica mais comum após o período neonatal.",
-              "revisado": false
+              "resposta": "CIV ampla",
+              "explicacao": "Hiperfluxo pulmonar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d12-l1-q4",
@@ -9724,17 +9698,18 @@
             {
               "id": "ped-d13-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Prematuro de 29 semanas com gemido, retração e raio X em vidro moído.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "caso": "Prematuro de 34 semanas com gemência, tiragem, saturação 86% e raio X reticulogranular com broncogramas.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Membrana hialina; CPAP e surfactante",
-                "Taquipneia transitória",
+                "Taquipneia transitória; cateter",
                 "Pneumonia; antibiótico",
-                "Taquipneia transitória; só observação sem oxigênio"
+                "Aspiração meconial; intubar",
+                "Doença da membrana hialina; CPAP e avaliar surfactante"
               ],
-              "resposta": "Membrana hialina; CPAP e surfactante",
+              "resposta": "Doença da membrana hialina; CPAP e avaliar surfactante",
               "explicacao": "Falta de surfactante.",
-              "revisado": false
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d13-l1-q2",
@@ -9853,17 +9828,18 @@
             {
               "id": "ped-d13-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido de 12 horas, mãe com febre no parto e bolsa rota há 24 horas, com taquipneia.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Recém-nascido de 5 dias, mãe com febre intraparto e bolsa rota, agora hipotérmico, hipoativo, perfusão ruim e bastões altos.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "Hemocultura, ampicilina e gentamicina",
-                "Observar",
-                "Fototerapia",
-                "Fototerapia e observação na maternidade"
+                "Choque hipovolêmico",
+                "Enterocolite",
+                "Meningite; adiar antibiótico",
+                "Sepse neonatal tardia; ampicilina e gentamicina após culturas"
               ],
-              "resposta": "Hemocultura, ampicilina e gentamicina",
-              "explicacao": "Sepse precoce.",
-              "revisado": false
+              "resposta": "Sepse neonatal tardia; ampicilina e gentamicina após culturas",
+              "explicacao": "Iniciar já.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d13-l2-q2",
@@ -10029,28 +10005,19 @@
             },
             {
               "id": "ped-d13-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada infecção congênita ao achado ósseo ou de pele.",
-              "pares": [
-                {
-                  "esquerda": "Sífilis",
-                  "direita": "Periostite e lesões nas palmas"
-                },
-                {
-                  "esquerda": "Rubéola",
-                  "direita": "Púrpura em bolinho de mirtilo"
-                },
-                {
-                  "esquerda": "Varicela",
-                  "direita": "Cicatrizes e membros malformados"
-                },
-                {
-                  "esquerda": "Zika",
-                  "direita": "Artrogripose"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido com microcefalia grave, artrogripose, calcificações corticais e mãe com exantema na gestação; sorologias TORCHS negativas.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "CMV; ganciclovir",
+                "Toxoplasmose",
+                "Rubéola",
+                "Zika congênita; acompanhamento multiprofissional e estimulação"
               ],
-              "explicacao": "Achados de prova.",
-              "revisado": false
+              "resposta": "Zika congênita; acompanhamento multiprofissional e estimulação",
+              "explicacao": "Calcificações corticais.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d13-l3-q5",
@@ -10122,17 +10089,18 @@
             {
               "id": "ped-d14-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Adolescente de 15 anos com perda de 15% do peso, amenorreia e bradicardia de 45.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Menina de 13 anos sem vida sexual com mono-like e úlceras vulvares em beijo, linfócitos atípicos.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Internar para realimentar com cuidado",
-                "Liberar",
-                "Dieta livre em casa",
-                "Dieta livre em casa com muita comida desde o primeiro dia"
+                "Herpes",
+                "Sífilis",
+                "Behçet",
+                "Úlcera de Lipschutz"
               ],
-              "resposta": "Internar para realimentar com cuidado",
-              "explicacao": "Anorexia com instabilidade.",
-              "revisado": false
+              "resposta": "Úlcera de Lipschutz",
+              "explicacao": "Associada ao EBV.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "ped-d14-l1-q2",
@@ -10380,17 +10348,18 @@
             {
               "id": "ped-d14-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Pais Testemunhas de Jeová recusam transfusão para criança com hemorragia grave.",
+              "caso": "Adolescente maduro de 16 anos teve preservativo rompido e pede sigilo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Transfundir se risco iminente de morte",
-                "Respeitar e não transfundir",
-                "Esperar ordem judicial",
-                "Esperar a ordem judicial, mesmo com a criança morrendo"
+                "Avisar os pais",
+                "Recusar exames",
+                "Conselho tutelar",
+                "Manter sigilo, acolher, pedir exames de IST e orientar"
               ],
-              "resposta": "Transfundir se risco iminente de morte",
-              "explicacao": "O direito à vida prevalece.",
-              "revisado": false
+              "resposta": "Manter sigilo, acolher, pedir exames de IST e orientar",
+              "explicacao": "Autonomia do adolescente.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "ped-d14-l3-q2",
