@@ -1941,17 +1941,18 @@
             {
               "id": "cir-u6-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente colocou stent farmacológico há 1 mês e quer operar uma hérnia inguinal sem urgência.",
+              "caso": "Homem com angioplastia há 3 anos, sem sintomas e com boa capacidade, vai operar hérnia umbilical. Usa AAS e estatina.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Adiar até completar a dupla antiagregação",
-                "Suspender e operar",
-                "Trocar por varfarina",
-                "Suspender os dois antiagregantes e operar na mesma semana"
+                "Manter o AAS",
+                "Suspender o AAS",
+                "Manter AAS e iniciar betabloqueador",
+                "Suspender AAS e iniciar betabloqueador"
               ],
-              "resposta": "Adiar até completar a dupla antiagregação",
-              "explicacao": "Suspender os antiagregantes cedo aumenta muito o risco de trombose do stent.",
-              "revisado": false
+              "resposta": "Manter o AAS",
+              "explicacao": "Prevenção secundária: não suspender.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             }
           ]
         },
@@ -3751,17 +3752,19 @@
             },
             {
               "id": "cir-u11-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os critérios de ___ orientam o transplante no carcinoma hepatocelular.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com lesão hepática suspeita de adenoma de 4 cm achada no ultrassom.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Milão",
-                "Ranson",
-                "Child",
-                "Light"
+                "Biópsia",
+                "Ultrassom em 6 meses",
+                "Ressecção",
+                "Ressonância magnética"
               ],
-              "resposta": "Milão",
-              "explicacao": "Um nódulo até 5 cm ou até 3 de 3 cm.",
-              "revisado": false
+              "resposta": "Ressonância magnética",
+              "explicacao": "Confirmar e caracterizar o subtipo.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-u11-l2-q5",
@@ -4928,17 +4931,19 @@
             },
             {
               "id": "cir-u14-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a vantagem da realimentação precoce após cirurgia?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com ressecção extensa de intestino delgado tem lesões vermelhas descamativas no rosto, mãos e virilha e queda de cabelo.",
+              "enunciado": "Qual é a deficiência?",
               "opcoes": [
-                "Recuperação mais rápida",
-                "Mais íleo",
-                "Mais infecção",
-                "Mais íleo e mais infecção da ferida"
+                "Ferro",
+                "Cobre",
+                "Vitamina E",
+                "Zinco"
               ],
-              "resposta": "Recuperação mais rápida",
-              "explicacao": "Parte do projeto ACERTO.",
-              "revisado": false
+              "resposta": "Zinco",
+              "explicacao": "Acrodermatite por falta de zinco.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-u14-l3-q6",
@@ -7652,57 +7657,49 @@
             {
               "id": "cir-d6-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com fibrilação atrial e CHA2DS2-VASc de 3 usa varfarina e fará colectomia eletiva.",
-              "enunciado": "Qual é a conduta com a anticoagulação?",
+              "caso": "Mulher com IMC 45 fará bypass gástrico de 3 horas.",
+              "enunciado": "Qual profilaxia de trombose?",
               "opcoes": [
-                "Suspender 5 dias antes, em geral sem ponte",
-                "Manter a varfarina",
-                "Suspender 1 dia antes",
-                "Ponte com heparina obrigatória em todos os casos"
+                "Enoxaparina 40 mg ao dia por 28 dias",
+                "Heparina 5.000 a cada 12 h",
+                "Heparina 7.500 a cada 8 h por 28 dias",
+                "Enoxaparina 40 mg a cada 12 h por 10 dias"
               ],
-              "resposta": "Suspender 5 dias antes, em geral sem ponte",
-              "explicacao": "A ponte com heparina aumenta sangramento sem reduzir eventos na maioria dos pacientes com fibrilação atrial.",
-              "revisado": false
+              "resposta": "Enoxaparina 40 mg a cada 12 h por 10 dias",
+              "explicacao": "Obesidade grave pede dose maior.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d6-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à conduta perioperatória.",
-              "pares": [
-                {
-                  "esquerda": "Usuário crônico de corticoide",
-                  "direita": "Dose extra de corticoide na cirurgia"
-                },
-                {
-                  "esquerda": "Diabético com insulina",
-                  "direita": "Reduzir a insulina basal e controlar a glicose"
-                },
-                {
-                  "esquerda": "Prótese valvar mecânica mitral",
-                  "direita": "Ponte com heparina"
-                },
-                {
-                  "esquerda": "Usuário de inibidor da SGLT2",
-                  "direita": "Suspender alguns dias antes"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Ela usa metformina, dapagliflozina e sitagliptina. Além de suspender a metformina no dia, o que fazer?",
+              "enunciado": "Suspender as duas 24 h antes",
+              "opcoes": [
+                "Dapagliflozina 24 h antes",
+                "Dapagliflozina 3 dias e sitagliptina 24 h antes",
+                "Dapagliflozina 3 dias antes; manter sitagliptina"
               ],
-              "explicacao": "O controle glicêmico excessivamente rígido aumenta hipoglicemia.",
-              "revisado": false
+              "resposta": "Dapagliflozina 3 dias antes; manter sitagliptina",
+              "explicacao": "Risco de cetoacidose euglicêmica.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d6-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Três cirurgias marcadas: hernioplastia com tela, colecistectomia eletiva e retirada de lipoma pequeno.",
-              "enunciado": "Em quais está indicada a profilaxia antibiótica?",
+              "caso": "Mulher com várias cirurgias por queimadura tem urticária e falta de ar ao comer banana e abacate.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hernioplastia e colecistectomia",
-                "Nas três, por 7 dias",
-                "Só na retirada do lipoma",
-                "Em nenhuma, pois todas são cirurgias limpas"
+                "Ser a última cirurgia do dia",
+                "Corticoide antes",
+                "Anti-histamínico 3 dias antes",
+                "Sala livre de látex"
               ],
-              "resposta": "Hernioplastia e colecistectomia",
-              "explicacao": "Limpas com prótese e limpo-contaminadas recebem dose única até 60 minutos antes da incisão.",
-              "revisado": false
+              "resposta": "Sala livre de látex",
+              "explicacao": "Síndrome látex-fruta.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d6-l1-q4",
@@ -10033,17 +10030,18 @@
             {
               "id": "cir-d12-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com cálculo renal de 2,5 cm na pelve renal.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Homem com diarreia crônica e alcoolismo tem cálculos renais e perda progressiva da função renal.",
+              "enunciado": "Qual exame deve estar alterado?",
               "opcoes": [
-                "Nefrolitotripsia percutânea",
-                "Terapia expulsiva",
-                "Litotripsia extracorpórea",
-                "Terapia expulsiva com muita água por meses"
+                "Ácido úrico",
+                "Cálcio",
+                "Citrato",
+                "Oxalato urinário"
               ],
-              "resposta": "Nefrolitotripsia percutânea",
-              "explicacao": "Cálculo grande.",
-              "revisado": false
+              "resposta": "Oxalato urinário",
+              "explicacao": "Hiperoxalúria entérica.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d12-l1-q3",
@@ -11731,17 +11729,18 @@
             {
               "id": "cir-d16-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem de 45 anos com dor lombar, anestesia em sela e retenção urinária após esforço.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Idosa com dor lombar que irradia para nádegas e coxas, precisa parar a cada 200 metros, pior ao descer ladeiras.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Ressonância urgente e cirurgia",
-                "Analgésico e alta",
-                "Fisioterapia",
-                "Repouso e retorno em 2 semanas"
+                "Espondilolistese torácica",
+                "Falta de B12",
+                "Doença arterial",
+                "Estenose do canal lombar"
               ],
-              "resposta": "Ressonância urgente e cirurgia",
-              "explicacao": "Síndrome da cauda equina.",
-              "revisado": false
+              "resposta": "Estenose do canal lombar",
+              "explicacao": "Piora com a extensão da coluna.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d16-l2-q2",

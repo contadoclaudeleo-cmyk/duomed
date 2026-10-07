@@ -32,11 +32,19 @@
             },
             {
               "id": "rpsiq-u1-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Para o diagnóstico de depressão maior, é obrigatório ter humor deprimido ou perda de interesse (anedonia).",
-              "resposta": true,
-              "explicacao": "Pelo menos um dos dois precisa estar presente.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Viúva há 2 anos perdeu o interesse pela casa, fica triste na maior parte dos dias e melhora com os netos.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "Mirtazapina",
+                "Amitriptilina",
+                "Encaminhar",
+                "Aplicar escala de depressão"
+              ],
+              "resposta": "Aplicar escala de depressão",
+              "explicacao": "Confirmar o diagnóstico antes de tratar.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "rpsiq-u1-l1-q3",
@@ -3359,17 +3367,19 @@
             },
             {
               "id": "rpsiq-u10-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O instrumento à beira do leito para diagnosticar delirium é o ___.",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com demência leve, um dia após prótese de joelho, está confusa, desatenta e acha que querem envenená-la.",
+              "enunciado": "Qual é o tratamento inicial?",
               "opcoes": [
-                "CAM",
-                "MEEM",
-                "CAGE",
-                "PHQ-9"
+                "Benzodiazepínico",
+                "Contenção",
+                "Anticolinesterásico",
+                "Antipsicótico"
               ],
-              "resposta": "CAM",
-              "explicacao": "Confusion Assessment Method.",
-              "revisado": false
+              "resposta": "Antipsicótico",
+              "explicacao": "Delirium hiperativo com sintomas psicóticos.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "rpsiq-u10-l1-q4",
@@ -7683,17 +7693,18 @@
             {
               "id": "rpsiq-d7-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Idoso internado agitado e confuso. Glicemia de 40.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem intubado na UTI fica muito agitado e arrancou o acesso; a fala não acalma.",
+              "enunciado": "Qual é a conduta imediata?",
               "opcoes": [
-                "Glicose venosa",
-                "Haloperidol",
-                "Contenção",
-                "Diazepam e observação na enfermaria"
+                "Contenção e haloperidol",
+                "Midazolam e dexmedetomidina",
+                "Haloperidol e dexmedetomidina",
+                "Contenção e haloperidol com midazolam IM"
               ],
-              "resposta": "Glicose venosa",
-              "explicacao": "Afastar causa clínica sempre.",
-              "revisado": false
+              "resposta": "Contenção e haloperidol com midazolam IM",
+              "explicacao": "Controle rápido e seguro.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "rpsiq-d7-l2-q2",

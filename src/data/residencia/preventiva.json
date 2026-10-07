@@ -1221,11 +1221,19 @@
             },
             {
               "id": "prev-u4-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O rastreamento populacional de câncer de próstata com PSA não é recomendado pelo Ministério da Saúde.",
-              "resposta": true,
-              "explicacao": "Os riscos de excesso de diagnóstico e tratamento superam os benefícios na população geral.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 60 anos assintomática em primeira consulta.",
+              "enunciado": "Além de diabetes, lipídios, mama e cólon, o que rastrear?",
+              "opcoes": [
+                "Doppler de carótidas",
+                "Ultrassom de tireoide",
+                "Vitamina D",
+                "Sífilis"
+              ],
+              "resposta": "Sífilis",
+              "explicacao": "Rastreio de IST é recomendado.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-u4-l2-q4",
@@ -5426,18 +5434,18 @@
           "questoes": [
             {
               "id": "prev-d2-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Pesquisadores escolhem 200 pacientes com câncer de pulmão e 400 sem a doença e perguntam sobre exposição ao amianto.",
-              "enunciado": "Qual é o desenho?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulheres têm PCR, LDL e Lp(a) dosados no início e são seguidas por 30 anos. Qual é o desenho?",
               "opcoes": [
-                "Caso-controle",
                 "Coorte",
-                "Ensaio clínico",
-                "Transversal"
+                "Caso-controle",
+                "Transversal",
+                "Ecológico"
               ],
-              "resposta": "Caso-controle",
-              "explicacao": "Esse desenho é ótimo para doenças raras.",
-              "revisado": false
+              "resposta": "Coorte",
+              "explicacao": "Parte da exposição e segue até o desfecho.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d2-l1-q2",
@@ -6970,18 +6978,18 @@
           "questoes": [
             {
               "id": "prev-d6-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Um estudo compara a pressão média de dois grupos independentes com distribuição normal.",
-              "enunciado": "Qual teste estatístico usar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como classificar valores de PCR, LDL e Lp(a)?",
               "opcoes": [
-                "Teste t de Student",
-                "Qui-quadrado",
-                "Mann-Whitney obrigatório",
-                "Correlação"
+                "Categóricas",
+                "Ordinais",
+                "Quantitativas discretas",
+                "Quantitativas contínuas"
               ],
-              "resposta": "Teste t de Student",
-              "explicacao": "O Mann-Whitney é usado quando a distribuição não é normal.",
-              "revisado": false
+              "resposta": "Quantitativas contínuas",
+              "explicacao": "Podem assumir qualquer valor numa faixa.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d6-l1-q2",
@@ -7364,33 +7372,33 @@
           "questoes": [
             {
               "id": "prev-d7-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Estudo acompanha 100 pacientes com câncer; 60 estão vivos após 5 anos.",
-              "enunciado": "Qual é a sobrevida em 5 anos?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Numa coorte, LDL, PCR e Lp(a) tiveram HR acima de 1 com IC sem cruzar 1. O que concluir?",
               "opcoes": [
-                "60%",
-                "40%",
-                "100%",
-                "5%"
+                "A Lp(a) causa eventos",
+                "É preciso o valor de p",
+                "Já é recomendado dosar",
+                "Os marcadores têm valor prognóstico"
               ],
-              "resposta": "60%",
-              "explicacao": "Proporção de vivos no período.",
-              "revisado": false
+              "resposta": "Os marcadores têm valor prognóstico",
+              "explicacao": "Coorte mostra associação, não causa.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d7-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Curva de Kaplan-Meier mostra queda em degraus ao longo do tempo.",
-              "enunciado": "O que cada degrau representa?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Numa coorte de 30 anos sobre eventos cardiovasculares, o que considerar ao estimar a incidência acumulada?",
               "opcoes": [
-                "Ocorrência de um evento, como óbito",
-                "Inclusão de pacientes",
-                "Perda de seguimento",
-                "Inclusão de novos pacientes no estudo"
+                "Viés de seleção",
+                "Modificação de efeito",
+                "Desfecho composto",
+                "Risco competitivo"
               ],
-              "resposta": "Ocorrência de um evento, como óbito",
-              "explicacao": "Censuras aparecem como marcas.",
-              "revisado": false
+              "resposta": "Risco competitivo",
+              "explicacao": "Morrer de outra causa impede o evento.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d7-l1-q3",
@@ -8041,18 +8049,18 @@
             },
             {
               "id": "prev-d8-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Um teste é usado num hospital de referência e depois numa população saudável, com prevalência bem menor.",
-              "enunciado": "O que acontece com o valor preditivo negativo?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um escore tem sensibilidade de 99% e especificidade de 90% para eventos graves, que ocorrem em 0,2% dos casos de dor torácica. Qual é o problema de aplicá-lo em todos?",
               "opcoes": [
-                "Aumenta",
-                "Diminui",
-                "Não muda",
-                "Fica igual a zero"
+                "Calibração ruim",
+                "Viés de disponibilidade",
+                "Valor preditivo negativo baixo",
+                "Excesso de diagnósticos"
               ],
-              "resposta": "Aumenta",
-              "explicacao": "Com prevalência menor, fica mais fácil excluir a doença.",
-              "revisado": false
+              "resposta": "Excesso de diagnósticos",
+              "explicacao": "Com prevalência baixa, quase todos os positivos são falsos.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d8-l3-q4",
@@ -8278,17 +8286,18 @@
             {
               "id": "prev-d9-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Criança com anafilaxia após dose anterior de uma vacina.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Adolescente com otites e sinusites de repetição, giardíase e pneumonia grave; suspeita de imunodeficiência.",
+              "enunciado": "Quais vacinas são contraindicadas?",
               "opcoes": [
-                "Contraindicar novas doses e notificar",
-                "Repetir",
-                "Dobrar a dose",
-                "Repetir a dose com antialérgico antes e observar"
+                "Dupla adulto e hepatite B",
+                "HPV e pneumocócica",
+                "Covid e influenza",
+                "Tríplice viral e dengue"
               ],
-              "resposta": "Contraindicar novas doses e notificar",
-              "explicacao": "Evento adverso grave.",
-              "revisado": false
+              "resposta": "Tríplice viral e dengue",
+              "explicacao": "Vacinas vivas atenuadas.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d9-l2-q2",
@@ -8738,17 +8747,18 @@
             {
               "id": "prev-d10-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Gestante com VDRL 1:2 e treponêmico positivo, tratamento antigo documentado.",
-              "enunciado": "Qual é a interpretação?",
+              "caso": "Homem sem sintomas tem VDRL 1/32 e teste treponêmico reagente; esposa negativa.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cicatriz sorológica",
-                "Sífilis ativa",
-                "Erro do exame",
-                "Sífilis ativa que precisa de novo tratamento"
+                "Líquor e benzatina 3 doses",
+                "Líquor e dose única",
+                "Sem líquor, dose única",
+                "Sem líquor, benzatina semanal por 3 semanas"
               ],
-              "resposta": "Cicatriz sorológica",
-              "explicacao": "Títulos baixos estáveis.",
-              "revisado": false
+              "resposta": "Sem líquor, benzatina semanal por 3 semanas",
+              "explicacao": "Sífilis latente de duração ignorada.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "prev-d10-l2-q6",
