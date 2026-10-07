@@ -109,26 +109,33 @@
             },
             {
               "id": "go-u1-l1-q7",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 26 semanas faz TOTG com 75 g de glicose: jejum 88 mg/dL, 1 hora 190 mg/dL e 2 horas 140 mg/dL.",
-              "enunciado": "Como interpretar o resultado?",
+              "tipo": "multipla_escolha",
+              "enunciado": "A mortalidade materna é expressa por quantos nascidos vivos?",
               "opcoes": [
-                "Diabetes gestacional: um valor alterado basta",
-                "Exame normal",
-                "Repetir em 4 semanas",
-                "Diabetes prévio à gestação, que exige insulina em dose alta logo"
+                "1.000",
+                "10.000",
+                "100",
+                "100.000"
               ],
-              "resposta": "Diabetes gestacional: um valor alterado basta",
-              "explicacao": "Os pontos de corte são jejum ≥ 92, 1 hora ≥ 180 e 2 horas ≥ 153 mg/dL. A primeira conduta é dieta e atividade física.",
-              "revisado": false
+              "resposta": "100.000",
+              "explicacao": "Até 42 dias pós-parto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u1-l1-q8",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vacina dTpa na gestação só é indicada para quem nunca tomou vacina contra tétano.",
-              "resposta": false,
-              "explicacao": "Falso. É recomendada a toda gestante a partir da 20ª semana, em toda gestação, para proteger o bebê contra coqueluche.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "A mortalidade perinatal é expressa por quantos nascimentos?",
+              "opcoes": [
+                "100",
+                "10.000",
+                "100.000",
+                "1.000 nascidos vivos e mortos"
+              ],
+              "resposta": "1.000 nascidos vivos e mortos",
+              "explicacao": "Óbitos fetais e neonatais precoces.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             }
           ]
         },
@@ -762,32 +769,33 @@
             },
             {
               "id": "go-u3-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada momento ao alvo de glicemia capilar na gestante.",
-              "pares": [
-                {
-                  "esquerda": "Jejum",
-                  "direita": "Menor que 95 mg/dL"
-                },
-                {
-                  "esquerda": "1 hora após a refeição",
-                  "direita": "Menor que 140 mg/dL"
-                },
-                {
-                  "esquerda": "2 horas após a refeição",
-                  "direita": "Menor que 120 mg/dL"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que causa eritema palmar e telangiectasias na gravidez?",
+              "opcoes": [
+                "Progesterona",
+                "Cortisol",
+                "hCG",
+                "Estrogênio"
               ],
-              "explicacao": "Se a glicemia ficar acima das metas, inicia-se medicação.",
-              "revisado": false
+              "resposta": "Estrogênio",
+              "explicacao": "Efeito vascular.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u3-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Quando a dieta não controla o diabetes gestacional, a insulina é a primeira escolha de medicação.",
-              "resposta": true,
-              "explicacao": "A metformina pode ser uma alternativa em algumas situações.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que o muco cervical não cristaliza na gravidez?",
+              "opcoes": [
+                "Estrogênio",
+                "hCG",
+                "Lactogênio",
+                "Progesterona"
+              ],
+              "resposta": "Progesterona",
+              "explicacao": "Muco espesso.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u3-l1-q4",
@@ -1180,25 +1188,34 @@
             },
             {
               "id": "go-u4-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual teste avalia se há estrogênio suficiente e se o caminho de saída do sangue está livre?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com amenorreia primária, mamas e pelos normais, hormônios normais e cariótipo XX.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Teste da progesterona",
-                "Teste do pezinho",
-                "Teste de Schiller",
-                "Teste rápido de gravidez na urina"
+                "Turner",
+                "Morris",
+                "Disgenesia gonadal",
+                "Rokitansky"
               ],
-              "resposta": "Teste da progesterona",
-              "explicacao": "Se houver sangramento após a progesterona, o útero foi estimulado por estrogênio.",
-              "revisado": false
+              "resposta": "Rokitansky",
+              "explicacao": "Agenesia mülleriana.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u4-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Asherman é a falência precoce dos ovários.",
-              "resposta": false,
-              "explicacao": "Falso. São aderências dentro do útero após curetagem, que causam amenorreia; tratam-se por histeroscopia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Como é a síndrome de Morris?",
+              "opcoes": [
+                "XX com testículos",
+                "XXY sem mamas",
+                "Tem útero",
+                "XY, testículos e fenótipo feminino"
+              ],
+              "resposta": "XY, testículos e fenótipo feminino",
+              "explicacao": "Insensibilidade a andrógenos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u4-l1-q8",
@@ -1430,26 +1447,33 @@
             },
             {
               "id": "go-u4-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O DIU é contraindicado em mulheres que nunca tiveram filhos.",
-              "resposta": false,
-              "explicacao": "Falso. Pode ser usado por nulíparas e por adolescentes.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que significa categoria 2 da OMS para anticoncepção?",
+              "opcoes": [
+                "Sem restrição",
+                "Riscos superam benefícios",
+                "Contraindicado",
+                "Benefício supera risco, com seguimento"
+              ],
+              "resposta": "Benefício supera risco, com seguimento",
+              "explicacao": "Pode usar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u4-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher que usa pílula combinada começa rifampicina para tratar tuberculose.",
-              "enunciado": "Qual é a orientação?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que a pílula combinada melhora a acne?",
               "opcoes": [
-                "Outro método: a rifampicina reduz a pílula",
-                "Nada muda",
-                "Dobrar a pílula",
-                "Parar a rifampicina e manter a pílula na mesma dose"
+                "Estrogênio ocupa o receptor",
+                "Baixa a prolactina",
+                "Suprime a adrenal",
+                "Aumenta a SHBG"
               ],
-              "resposta": "Outro método: a rifampicina reduz a pílula",
-              "explicacao": "O DIU de cobre ou o injetável trimestral não sofrem essa interação.",
-              "revisado": false
+              "resposta": "Aumenta a SHBG",
+              "explicacao": "Menos androgênio livre.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             }
           ]
         }
@@ -1618,10 +1642,11 @@
             {
               "id": "go-u5-l2-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Mutações em BRCA1 e BRCA2 aumentam o risco de câncer de mama e de ovário.",
+              "enunciado": "Câncer de mama em portadora de BRCA1 costuma ser receptor hormonal negativo.",
               "resposta": true,
-              "explicacao": "Portadoras podem fazer rastreamento mais intenso e cirurgias preventivas.",
-              "revisado": false
+              "explicacao": "Cerca de 80%.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u5-l2-q4",
@@ -1760,17 +1785,18 @@
             {
               "id": "go-u5-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 62 anos tem sangramento vaginal 10 anos após a menopausa. A ultrassonografia mostra endométrio de 12 mm.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 38 anos com hiperplasia endometrial sem atipia quer engravidar em 1 ano.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Biópsia do endométrio por histeroscopia",
-                "Observar",
-                "Reposição hormonal",
-                "Reposição hormonal e observação por um ano antes de qualquer exame"
+                "Histerectomia",
+                "Ablação",
+                "Biópsia a cada 3 meses",
+                "Progestagênio ou DIU hormonal e rever"
               ],
-              "resposta": "Biópsia do endométrio por histeroscopia",
-              "explicacao": "Após a menopausa, endométrio espesso com sangramento exige biópsia.",
-              "revisado": false
+              "resposta": "Progestagênio ou DIU hormonal e rever",
+              "explicacao": "Trata e preserva fertilidade.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u5-l3-q6",
@@ -1983,17 +2009,18 @@
             },
             {
               "id": "go-u6-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A doença inflamatória pélvica é causada principalmente por ___ e gonococo.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são critérios adicionais da DIP?",
               "opcoes": [
-                "clamídia",
-                "cândida",
-                "HPV",
-                "herpes genital"
+                "Dor à mobilização do colo",
+                "Abscesso no ultrassom",
+                "Endometrite na biópsia",
+                "Febre, secreção purulenta e peri-hepatite"
               ],
-              "resposta": "clamídia",
-              "explicacao": "Ela começa no colo do útero e sobe para o útero e as tubas.",
-              "revisado": false
+              "resposta": "Febre, secreção purulenta e peri-hepatite",
+              "explicacao": "Os outros são mínimos ou definitivos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u6-l2-q5",
@@ -2149,11 +2176,18 @@
             },
             {
               "id": "go-u6-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O estrogênio pela pele (transdérmico) tem mais risco de trombose que o estrogênio oral.",
-              "resposta": false,
-              "explicacao": "Falso. O transdérmico tem menor risco, porque não passa primeiro pelo fígado.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "De onde vem a tibolona?",
+              "opcoes": [
+                "17-OH-progesterona",
+                "Estradiol",
+                "Cortisol",
+                "19-nortestosterona"
+              ],
+              "resposta": "19-nortestosterona",
+              "explicacao": "Ação estrogênica, progestínica e androgênica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u6-l3-q8",
@@ -2201,75 +2235,92 @@
             {
               "id": "go-u7-l1-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a variedade de posição mais comum no parto?",
+              "enunciado": "Quanto se tira do conjugado diagonal para ter o verdadeiro?",
               "opcoes": [
-                "Occipitoanterior",
-                "Occipitoposterior",
-                "Transversa",
-                "Face"
+                "0,5 cm",
+                "1 cm",
+                "2,5 cm",
+                "1,5 cm"
               ],
-              "resposta": "Occipitoanterior",
-              "explicacao": "Facilita o parto.",
-              "revisado": false
+              "resposta": "1,5 cm",
+              "explicacao": "Regra de Smellie.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O plano zero de De Lee corresponde às espinhas isquiáticas.",
-              "resposta": true,
-              "explicacao": "Referência para a altura da apresentação.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bacia dá distocia que piora com a descida?",
+              "opcoes": [
+                "Ginecoide",
+                "Antropoide",
+                "Platipeloide",
+                "Androide"
+              ],
+              "resposta": "Androide",
+              "explicacao": "Afunila.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a relação entre a parte do bebê que se apresenta e a pelve materna.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que pressão torna a contração palpável e depois dolorosa?",
               "opcoes": [
-                "apresentação",
-                "situação",
-                "atitude",
-                "posição da cabeça"
+                "10 e 15",
+                "30 e 35",
+                "15 e 20",
+                "20 e 25 mmHg"
               ],
-              "resposta": "apresentação",
-              "explicacao": "Pode ser cefálica, pélvica ou córmica.",
-              "revisado": false
+              "resposta": "20 e 25 mmHg",
+              "explicacao": "Limiar de dor.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o diâmetro da pelve medido pela conjugata diagonal?",
+              "enunciado": "Qual o ponto de referência na apresentação de face?",
               "opcoes": [
-                "Do promontório à borda inferior do púbis",
-                "Entre as espinhas isquiáticas",
-                "Entre os ísquios",
-                "Entre as cristas ilíacas, medido por fora da pelve"
+                "Bregma",
+                "Glabela",
+                "Occipício",
+                "Mento"
               ],
-              "resposta": "Do promontório à borda inferior do púbis",
-              "explicacao": "Avaliação clínica da pelve.",
-              "revisado": false
+              "resposta": "Mento",
+              "explicacao": "Deflexão de 3º grau.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "No toque, a fontanela pequena (lambda) está anterior e à esquerda.",
-              "enunciado": "Qual é a variedade de posição?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual a linha de orientação da deflexão de 2º grau (fronte)?",
               "opcoes": [
-                "Occipitoesquerda anterior",
-                "Occipitodireita posterior",
-                "Occipitossacra",
-                "Occipitopúbica"
+                "Sagital",
+                "Facial",
+                "Sagitometópica",
+                "Sutura metópica"
               ],
-              "resposta": "Occipitoesquerda anterior",
-              "explicacao": "A fontanela posterior indica o occipital.",
-              "revisado": false
+              "resposta": "Sutura metópica",
+              "explicacao": "Apresentação de fronte.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A deflexão da cabeça fetal é o que reduz o diâmetro que passa pela pelve.",
-              "resposta": false,
-              "explicacao": "Falso. É a flexão que reduz o diâmetro, deixando passar o suboccipitobregmático.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto gira na rotação interna uma variedade esquerda anterior (BEA)?",
+              "opcoes": [
+                "90°",
+                "135°",
+                "0°",
+                "45°"
+              ],
+              "resposta": "45°",
+              "explicacao": "Variedades anteriores giram 45°.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l1-q8",
@@ -2418,16 +2469,17 @@
             {
               "id": "go-u7-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a condição para aplicar o fórcipe?",
+              "enunciado": "A artéria uterina e a ovariana vêm de:",
               "opcoes": [
-                "Dilatação total e cabeça insinuada",
-                "Colo com 5 cm",
-                "Bolsa íntegra",
-                "Colo com cinco centímetros e cabeça ainda alta"
+                "Ilíaca comum e externa",
+                "Aorta e ilíaca interna",
+                "Ilíaca externa",
+                "Ilíaca interna e aorta"
               ],
-              "resposta": "Dilatação total e cabeça insinuada",
-              "explicacao": "Senão, cesárea.",
-              "revisado": false
+              "resposta": "Ilíaca interna e aorta",
+              "explicacao": "Anatomia pélvica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u7-l3-q3",
@@ -3635,17 +3687,18 @@
             },
             {
               "id": "go-u11-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tumor ___ é benigno na maioria, mas cresce rápido e recorre.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual a causa mais comum de descarga papilar sanguinolenta antes dos 50 anos?",
               "opcoes": [
-                "filoides",
-                "fibroadenoma",
-                "papiloma",
-                "lipoma"
+                "Câncer",
+                "Ectasia",
+                "Mastite",
+                "Papiloma intraductal"
               ],
-              "resposta": "filoides",
-              "explicacao": "Retirar com margens.",
-              "revisado": false
+              "resposta": "Papiloma intraductal",
+              "explicacao": "Uniductal e unilateral.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u11-l1-q5",
@@ -3736,25 +3789,33 @@
             },
             {
               "id": "go-u11-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os miomas diminuem após a menopausa.",
-              "resposta": true,
-              "explicacao": "Dependem de hormônio.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde agem os análogos do GnRH?",
+              "opcoes": [
+                "Hipotálamo",
+                "Neuro-hipófise",
+                "Ovário",
+                "Adeno-hipófise"
+              ],
+              "resposta": "Adeno-hipófise",
+              "explicacao": "Ocupam o receptor.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u11-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ histeroscópica retira mioma submucoso.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Mioma submucoso tipo 1 tem quanto na cavidade?",
               "opcoes": [
-                "miomectomia",
-                "histerectomia",
-                "ablação",
-                "conização"
+                "Todo",
+                "25%",
+                "70% intramural",
+                "Cerca de metade"
               ],
-              "resposta": "miomectomia",
-              "explicacao": "Preserva o útero.",
-              "revisado": false
+              "resposta": "Cerca de metade",
+              "explicacao": "Tipo 0 é todo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u11-l2-q5",
@@ -3895,26 +3956,27 @@
             },
             {
               "id": "go-u11-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 30 anos com cólica intensa, dor na relação e cisto de ovário com conteúdo espesso.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Endometriose com endometrioma",
-                "Mioma",
-                "Câncer",
-                "Cisto simples funcional do ovário"
-              ],
-              "resposta": "Endometriose com endometrioma",
-              "explicacao": "Cisto de chocolate.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Uma teoria do endometrioma é a invaginação do córtex ovariano onde houve implante.",
+              "resposta": true,
+              "explicacao": "Teoria da invaginação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u11-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O dienogeste é um estrogênio usado para piorar o crescimento do endométrio.",
-              "resposta": false,
-              "explicacao": "Falso. É um progestagênio eficaz no tratamento da endometriose.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que parede o útero com adenomiose costuma ter mais acometida?",
+              "opcoes": [
+                "Anterior",
+                "Fundo",
+                "Colo",
+                "Posterior"
+              ],
+              "resposta": "Posterior",
+              "explicacao": "Mas é difusa.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u11-l3-q8",
@@ -4009,39 +4071,47 @@
             {
               "id": "go-u12-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia a incontinência antes da cirurgia?",
+              "enunciado": "O que a cistometria avalia?",
               "opcoes": [
-                "Estudo urodinâmico",
-                "Ultrassom",
-                "Raio X",
-                "Tomografia de pelve com contraste"
+                "Só fluxo urinário",
+                "Só a uretra",
+                "Pressão abdominal",
+                "Pressão vesical, capacidade e contrações do detrusor"
               ],
-              "resposta": "Estudo urodinâmico",
-              "explicacao": "Em casos complexos.",
-              "revisado": false
+              "resposta": "Pressão vesical, capacidade e contrações do detrusor",
+              "explicacao": "Fase de enchimento.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u12-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 50 anos perde urina ao rir e espirrar.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual a fístula urinária mais comum após cirurgia ginecológica?",
               "opcoes": [
-                "Incontinência de esforço",
-                "Bexiga hiperativa",
-                "Infecção",
-                "Incontinência por transbordamento"
+                "Ureterovaginal",
+                "Uretrovaginal",
+                "Retovaginal",
+                "Vesicovaginal"
               ],
-              "resposta": "Incontinência de esforço",
-              "explicacao": "Fisioterapia primeiro.",
-              "revisado": false
+              "resposta": "Vesicovaginal",
+              "explicacao": "Após histerectomia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u12-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O diário miccional não tem utilidade na avaliação da incontinência.",
-              "resposta": false,
-              "explicacao": "Falso. Ele registra volume e perdas e ajuda no diagnóstico.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual músculo forma a maior parte do diafragma pélvico?",
+              "opcoes": [
+                "Transverso",
+                "Obturador",
+                "Piriforme",
+                "Levantador do ânus"
+              ],
+              "resposta": "Levantador do ânus",
+              "explicacao": "Iliococcígeo, pubococcígeo, puborretal.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u12-l1-q8",
@@ -4327,17 +4397,12 @@
             },
             {
               "id": "go-u13-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a idade que define puberdade precoce na menina?",
-              "opcoes": [
-                "Antes dos 8 anos",
-                "Antes dos 12",
-                "Antes dos 14",
-                "Antes dos 10 anos"
-              ],
-              "resposta": "Antes dos 8 anos",
-              "explicacao": "Telarca antes dos 8.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na síndrome de Turner, inicia-se estrogênio e progestagênio na puberdade.",
+              "resposta": true,
+              "explicacao": "Induz caracteres sexuais.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u13-l1-q3",
@@ -4586,17 +4651,19 @@
             },
             {
               "id": "go-u13-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A interrupção da gestação por ___ é permitida por lei no Brasil.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher estuprada há 6 horas com pequeno sangramento genital.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "estupro",
-                "escolha",
-                "desemprego",
-                "idade"
+                "Mandar ao IML sem examinar",
+                "Exigir boletim antes",
+                "Examinar com outro médico",
+                "Examinar, tratar, profilaxias e contracepção"
               ],
-              "resposta": "estupro",
-              "explicacao": "Sem exigência de boletim.",
-              "revisado": false
+              "resposta": "Examinar, tratar, profilaxias e contracepção",
+              "explicacao": "Atendimento não depende de BO.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u13-l3-q5",
@@ -4680,36 +4747,33 @@
             },
             {
               "id": "go-u14-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O câncer de ovário costuma ser diagnosticado em fase avançada.",
-              "resposta": true,
-              "explicacao": "Sintomas vagos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são tumores de células germinativas do ovário?",
+              "opcoes": [
+                "Mucinoso e granulosa",
+                "Tecoma e fibroma",
+                "Endometrioide",
+                "Teratoma, disgerminoma e coriocarcinoma"
+              ],
+              "resposta": "Teratoma, disgerminoma e coriocarcinoma",
+              "explicacao": "Germinativos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u14-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de tumor ovariano ao marcador sérico que costuma elevar.",
-              "pares": [
-                {
-                  "esquerda": "Epitelial",
-                  "direita": "CA-125"
-                },
-                {
-                  "esquerda": "Disgerminoma",
-                  "direita": "LDH"
-                },
-                {
-                  "esquerda": "Tumor do seio endodérmico",
-                  "direita": "Alfafetoproteína"
-                },
-                {
-                  "esquerda": "Tumor da granulosa",
-                  "direita": "Inibina"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o tumor de ovário mais comum em crianças e adolescentes?",
+              "opcoes": [
+                "Disgerminoma",
+                "Granulosa",
+                "Seroso",
+                "Teratoma maduro"
               ],
-              "explicacao": "Marcadores tumorais.",
-              "revisado": false
+              "resposta": "Teratoma maduro",
+              "explicacao": "Germinativo benigno.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-u14-l1-q4",
@@ -5146,58 +5210,48 @@
           "questoes": [
             {
               "id": "go-d1-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 26 semanas tem glicemia de 2 horas no teste oral de 160 mg/dL.",
-              "enunciado": "Qual é o diagnóstico e o primeiro tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto ferro uma gravidez normal exige?",
               "opcoes": [
-                "Diabetes gestacional; dieta e exercício",
-                "Diabetes prévio; insulina já",
-                "Normal",
-                "Hipoglicemia; comer açúcar várias vezes ao dia"
+                "500 mg",
+                "1.500 mg",
+                "2.000 mg",
+                "1.000 mg"
               ],
-              "resposta": "Diabetes gestacional; dieta e exercício",
-              "explicacao": "Se as metas não forem atingidas em 1 a 2 semanas, inicia-se insulina.",
-              "revisado": false
+              "resposta": "1.000 mg",
+              "explicacao": "Suplementar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d1-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada valor do teste oral de glicose (75 g) ao critério de diabetes gestacional.",
-              "pares": [
-                {
-                  "esquerda": "Jejum",
-                  "direita": "92 mg/dL ou mais"
-                },
-                {
-                  "esquerda": "1 hora",
-                  "direita": "180 mg/dL ou mais"
-                },
-                {
-                  "esquerda": "2 horas",
-                  "direita": "153 mg/dL ou mais"
-                },
-                {
-                  "esquerda": "Glicemia de jejum de 126 ou mais",
-                  "direita": "Diabetes prévio (franco)"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o ganho de peso para gestante com IMC normal?",
+              "opcoes": [
+                "5 a 9 kg",
+                "7 a 11 kg",
+                "12,5 a 18 kg",
+                "11,3 a 15,9 kg"
               ],
-              "explicacao": "Basta um valor alterado para o diagnóstico.",
-              "revisado": false
+              "resposta": "11,3 a 15,9 kg",
+              "explicacao": "IOM.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d1-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 9 semanas com doença de Graves, tremor, frequência 120 e T4 livre muito alto.",
-              "enunciado": "Qual é o remédio de escolha agora?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quanto a gestante precisa a mais de calorias no 3º trimestre?",
               "opcoes": [
-                "Propiltiouracil",
-                "Metimazol",
-                "Iodo radioativo",
-                "Levotiroxina em dose baixa"
+                "85 kcal",
+                "150 kcal",
+                "300 kcal",
+                "Cerca de 475 kcal"
               ],
-              "resposta": "Propiltiouracil",
-              "explicacao": "No primeiro trimestre usa-se propiltiouracil, pelo risco de malformação do metimazol; depois troca-se para metimazol.",
-              "revisado": false
+              "resposta": "Cerca de 475 kcal",
+              "explicacao": "Aumenta ao longo da gestação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d1-l2-q4",
@@ -6808,18 +6862,18 @@
           "questoes": [
             {
               "id": "go-d5-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 60 anos, obesa, tem sangramento após a menopausa e endométrio de 12 mm.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando fazer a histeroscopia na mulher que menstrua?",
               "opcoes": [
-                "Biópsia do endométrio por histeroscopia",
-                "Observação",
-                "Reposição hormonal",
-                "Reposição hormonal e observação por mais um ano"
+                "Fase lútea",
+                "Ovulação",
+                "Pré-menstrual",
+                "Primeira fase do ciclo"
               ],
-              "resposta": "Biópsia do endométrio por histeroscopia",
-              "explicacao": "O câncer de endométrio é o mais comum dos ginecológicos em países ricos.",
-              "revisado": false
+              "resposta": "Primeira fase do ciclo",
+              "explicacao": "Endométrio fino.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d5-l3-q2",
@@ -7135,11 +7189,19 @@
             },
             {
               "id": "go-d6-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Mulher de 42 anos com ciclos regulares tem a mesma chance de engravidar por mês que uma de 25 anos.",
-              "resposta": false,
-              "explicacao": "Falso. A idade é o principal fator que reduz a fertilidade, pela queda da reserva e da qualidade dos óvulos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com 3 abortos de 14 semanas e útero septado.",
+              "enunciado": "Qual a conduta?",
+              "opcoes": [
+                "FIV",
+                "Laparoscopia",
+                "Desistir",
+                "Ressecção histeroscópica do septo"
+              ],
+              "resposta": "Ressecção histeroscópica do septo",
+              "explicacao": "Melhora a gestação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d6-l2-q6",
@@ -7589,18 +7651,18 @@
           "questoes": [
             {
               "id": "go-d7-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 36 semanas com bebê pélvico, sem contraindicações.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual a apresentação pélvica mais comum no termo?",
               "opcoes": [
-                "Oferecer versão cefálica externa",
-                "Cesárea imediata",
-                "Indução",
-                "Cesárea imediata com 36 semanas, sem tentar versão"
+                "Completa",
+                "De pés",
+                "De joelhos",
+                "Agripina (incompleta)"
               ],
-              "resposta": "Oferecer versão cefálica externa",
-              "explicacao": "Feita perto de 36 a 37 semanas.",
-              "revisado": false
+              "resposta": "Agripina (incompleta)",
+              "explicacao": "Pernas estendidas.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d7-l3-q2",
@@ -8582,56 +8644,63 @@
             },
             {
               "id": "go-d10-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Gestante com perna esquerda inchada e dolorosa com 30 semanas.",
-              "enunciado": "Qual é o exame?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando a pressão arterial cai mais na gravidez?",
               "opcoes": [
-                "Ultrassom Doppler venoso",
-                "D-dímero só",
-                "Raio X",
-                "Apenas D-dímero e raio X da perna"
+                "1º trimestre",
+                "3º trimestre",
+                "Pós-parto",
+                "2º trimestre"
               ],
-              "resposta": "Ultrassom Doppler venoso",
-              "explicacao": "D-dímero sobe na gestação.",
-              "revisado": false
+              "resposta": "2º trimestre",
+              "explicacao": "Vasodilatação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d10-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Puérpera com falta de ar súbita e taquicardia no 5º dia após cesárea.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hormônio hipofisário fica baixo toda a gravidez?",
               "opcoes": [
-                "Embolia pulmonar",
-                "Ansiedade",
-                "Anemia",
-                "Pneumonia bacteriana hospitalar"
+                "Prolactina",
+                "TSH",
+                "ACTH",
+                "FSH"
               ],
-              "resposta": "Embolia pulmonar",
-              "explicacao": "Fazer angiotomografia.",
-              "revisado": false
+              "resposta": "FSH",
+              "explicacao": "Suprimido pelos esteroides.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d10-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Mulher no 2º mês após o parto com falta de ar e fração de ejeção de 30% pode ter cardiomiopatia periparto.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Ela surge no fim da gestação ou nos meses após o parto.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Até quanto vai a creatinina normal na gravidez?",
+              "opcoes": [
+                "0,5",
+                "1,2",
+                "1,5",
+                "0,9 mg/dL"
+              ],
+              "resposta": "0,9 mg/dL",
+              "explicacao": "Filtração aumenta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d10-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Gestante com síndrome antifosfolípide e 2 perdas fetais anteriores.",
-              "enunciado": "Qual é o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO muda na respiração da gestante?",
               "opcoes": [
-                "AAS e heparina de baixo peso",
-                "Corticoide só",
-                "Varfarina",
-                "Varfarina durante toda a gestação, sem AAS"
+                "Volume corrente",
+                "Volume residual",
+                "Capacidade inspiratória",
+                "Capacidade vital"
               ],
-              "resposta": "AAS e heparina de baixo peso",
-              "explicacao": "Melhora o resultado.",
-              "revisado": false
+              "resposta": "Capacidade vital",
+              "explicacao": "Corrente aumenta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             }
           ]
         },
@@ -9563,17 +9632,18 @@
             {
               "id": "go-d12-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher com dor súbita em fossa ilíaca direita, vômitos e massa ovariana de 7 cm com pouco fluxo.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Jovem com torção de cisto de ovário, arroxeado, na laparoscopia.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Laparoscopia de urgência para destorcer",
-                "Observar",
-                "Antibiótico",
-                "Antibiótico venoso e observação por 48 horas"
+                "Retirar o anexo",
+                "Puncionar torcido",
+                "Retirar cápsula torcida",
+                "Distorcer e observar"
               ],
-              "resposta": "Laparoscopia de urgência para destorcer",
-              "explicacao": "Torção anexial.",
-              "revisado": false
+              "resposta": "Distorcer e observar",
+              "explicacao": "Ovário costuma recuperar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d12-l3-q2",
@@ -10223,18 +10293,12 @@
           "questoes": [
             {
               "id": "go-d14-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Idosa com carcinoma de vulva de 3 cm a 2 cm da linha média.",
-              "enunciado": "Qual é a conduta?",
-              "opcoes": [
-                "Ressecção ampla e linfonodo sentinela",
-                "Quimioterapia só",
-                "Vulvectomia radical sempre",
-                "Vulvectomia radical bilateral em todos os casos, sem sentinela"
-              ],
-              "resposta": "Ressecção ampla e linfonodo sentinela",
-              "explicacao": "Cirurgia menos agressiva.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O líquen escleroso aumenta o risco de câncer escamoso da vulva.",
+              "resposta": true,
+              "explicacao": "Seguir de perto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "go-d14-l2-q2",
