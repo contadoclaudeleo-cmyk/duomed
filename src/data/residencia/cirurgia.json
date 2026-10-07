@@ -6602,18 +6602,12 @@
             },
             {
               "id": "cir-d1-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com queimadura elétrica de alta voltagem tem pequenas lesões na pele, mas urina escura e CPK alta.",
-              "enunciado": "O que isso indica?",
-              "opcoes": [
-                "Lesão muscular profunda, com risco de rabdomiólise",
-                "Queimadura leve",
-                "Sem gravidade",
-                "Queimadura leve, sem gravidade, que só precisa de curativo"
-              ],
-              "resposta": "Lesão muscular profunda, com risco de rabdomiólise",
-              "explicacao": "A área queimada na pele subestima muito a lesão interna.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na queimadura, a síndrome compartimental vem da pele rígida e do edema.",
+              "resposta": true,
+              "explicacao": "Escarotomia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025"
             }
           ]
         }
@@ -7671,17 +7665,18 @@
             {
               "id": "cir-d4-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Homem jovem com doença de Crohn tem fístula perianal complexa com abscesso.",
-              "enunciado": "Qual é a abordagem?",
+              "caso": "Jovem com condiloma anal único de 0,5 cm.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Drenar, sedenho e imunobiológico",
-                "Fistulotomia ampla",
-                "Antibiótico oral",
-                "Fistulotomia ampla imediata, cortando o esfíncter"
+                "Ácido acético",
+                "Só sorologias",
+                "Exames pré-operatórios",
+                "Ressecar sob anestesia local, biópsia e sorologias"
               ],
-              "resposta": "Drenar, sedenho e imunobiológico",
-              "explicacao": "Cortar o esfíncter em fístulas de Crohn tem alto risco de incontinência.",
-              "revisado": false
+              "resposta": "Ressecar sob anestesia local, biópsia e sorologias",
+              "explicacao": "Lesão pequena.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025"
             }
           ]
         },
@@ -9869,26 +9864,27 @@
             },
             {
               "id": "cir-d10-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com isquemia aguda e mioglobina alta após revascularização.",
-              "enunciado": "Qual é o risco?",
-              "opcoes": [
-                "Insuficiência renal e potássio alto",
-                "Hipoglicemia",
-                "Febre",
-                "Hipoglicemia grave e febre baixa nas primeiras horas"
-              ],
-              "resposta": "Insuficiência renal e potássio alto",
-              "explicacao": "Hidratar e monitorar.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Doppler negativo e dímero-D negativo afastam TVP, exceto em câncer e recorrência.",
+              "resposta": true,
+              "explicacao": "Estratégia segura.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025"
             },
             {
               "id": "cir-d10-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na suspeita de isquemia arterial aguda, a heparina deve esperar a angiotomografia confirmar.",
-              "resposta": false,
-              "explicacao": "Falso. A heparina é iniciada logo na suspeita, para evitar progressão do trombo.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são ramos viscerais da aorta abdominal?",
+              "opcoes": [
+                "Ilíacas",
+                "Lombares",
+                "Frênicas",
+                "Celíaco, mesentéricas, renais, suprarrenais e gonadais"
+              ],
+              "resposta": "Celíaco, mesentéricas, renais, suprarrenais e gonadais",
+              "explicacao": "Viscerais.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025"
             },
             {
               "id": "cir-d10-l1-q8",
