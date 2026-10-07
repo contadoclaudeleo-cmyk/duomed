@@ -1741,11 +1741,19 @@
             },
             {
               "id": "prev-u5-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na Parte I da declaração de óbito, a causa básica deve ser escrita na última linha preenchida.",
-              "resposta": true,
-              "explicacao": "As linhas de cima trazem as consequências até a causa terminal.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Morte por intoxicação por organofosforado no PS.",
+              "enunciado": "Quem faz a DO?",
+              "opcoes": [
+                "O plantonista",
+                "Sem DO",
+                "Suicídio na DO",
+                "Encaminhar ao IML"
+              ],
+              "resposta": "Encaminhar ao IML",
+              "explicacao": "Morte violenta.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-u5-l3-q4",
@@ -2569,11 +2577,18 @@
             },
             {
               "id": "prev-u7-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vacina da gripe protege por toda a vida após uma única dose.",
-              "resposta": false,
-              "explicacao": "Falso. É aplicada todo ano, em campanhas, para idosos, gestantes e crianças pequenas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que vacinas previnem câncer?",
+              "opcoes": [
+                "VIP e rotavírus",
+                "Tríplice viral",
+                "Pneumo e meningo",
+                "Hepatite B e HPV"
+              ],
+              "resposta": "Hepatite B e HPV",
+              "explicacao": "Fígado e colo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-u7-l3-q8",
@@ -2856,16 +2871,17 @@
             {
               "id": "prev-u8-l3-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a melhor estratégia contra a dengue?",
+              "enunciado": "Jeca Tatu deu nome a que doença?",
               "opcoes": [
-                "Eliminar criadouros do mosquito",
-                "Só fumacê",
-                "Antibióticos",
-                "Apenas fumacê nas ruas e antibióticos"
+                "Amebíase",
+                "Ascaridíase",
+                "Estrongiloidíase",
+                "Ancilostomíase"
               ],
-              "resposta": "Eliminar criadouros do mosquito",
-              "explicacao": "Ação contínua.",
-              "revisado": false
+              "resposta": "Ancilostomíase",
+              "explicacao": "Amarelão.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-u8-l3-q3",
@@ -4148,28 +4164,12 @@
           "questoes": [
             {
               "id": "prev-u12-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida à política de controle do tabaco.",
-              "pares": [
-                {
-                  "esquerda": "Proibição de propaganda",
-                  "direita": "Reduz iniciação"
-                },
-                {
-                  "esquerda": "Ambientes livres de fumo",
-                  "direita": "Protege não fumantes"
-                },
-                {
-                  "esquerda": "Impostos altos",
-                  "direita": "Reduz consumo"
-                },
-                {
-                  "esquerda": "Tratamento no SUS",
-                  "direita": "Ajuda a parar"
-                }
-              ],
-              "explicacao": "Convenção-Quadro.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A obesidade é fator de risco para as principais DCNT do Brasil.",
+              "resposta": true,
+              "explicacao": "Cardiovascular, DM e câncer.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-u12-l2-q2",
@@ -5885,58 +5885,49 @@
             },
             {
               "id": "prev-d3-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada conceito à definição.",
-              "pares": [
-                {
-                  "esquerda": "Surto",
-                  "direita": "Aumento de casos em local restrito"
-                },
-                {
-                  "esquerda": "Epidemia",
-                  "direita": "Aumento acima do esperado em uma região"
-                },
-                {
-                  "esquerda": "Pandemia",
-                  "direita": "Epidemia em vários continentes"
-                },
-                {
-                  "esquerda": "Endemia",
-                  "direita": "Presença constante e esperada"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Todas de notificação imediata:",
+              "opcoes": [
+                "Dengue e leptospirose",
+                "Tuberculose",
+                "Leishmaniose",
+                "Malária extra-amazônica, raiva e febre amarela"
               ],
-              "explicacao": "O diagrama de controle ajuda a identificar epidemias.",
-              "revisado": false
+              "resposta": "Malária extra-amazônica, raiva e febre amarela",
+              "explicacao": "Até 24 h.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-d3-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Médico atende homem mordido por morcego que agora tem agitação, medo de água e salivação.",
-              "enunciado": "Em quanto tempo notificar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre farmacovigilância:",
               "opcoes": [
-                "Imediatamente, em até 24 horas",
-                "Em até 7 dias",
-                "Só após a confirmação",
-                "Só no fim do mês, no relatório"
+                "Exclui uso não aprovado",
+                "VigiMed não aceita cidadãos",
+                "Vacinas não entram",
+                "Notificação voluntária é a base"
               ],
-              "resposta": "Imediatamente, em até 24 horas",
-              "explicacao": "Raiva humana é de notificação imediata; tuberculose e hanseníase são semanais.",
-              "revisado": false
+              "resposta": "Notificação voluntária é a base",
+              "explicacao": "Baixo custo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-d3-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Uma doença tem 50 casos por semana, quando o esperado é 20, e o limite superior do diagrama de controle é 35.",
-              "enunciado": "O que isso indica?",
+              "caso": "Adolescente com sarampo após viagem.",
+              "enunciado": "Quem são os contatos?",
               "opcoes": [
-                "Epidemia",
-                "Endemia",
-                "Situação normal",
-                "Erro"
+                "Repetir PCR",
+                "Não incluir o voo",
+                "Seguir 2 meses",
+                "Pessoas próximas 4 dias antes e depois do exantema"
               ],
-              "resposta": "Epidemia",
-              "explicacao": "Casos acima do limite superior indicam epidemia.",
-              "revisado": false
+              "resposta": "Pessoas próximas 4 dias antes e depois do exantema",
+              "explicacao": "Transmissibilidade.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-d3-l1-q5",
@@ -8600,18 +8591,12 @@
             },
             {
               "id": "prev-d10-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 50 anos, ex-usuário de drogas injetáveis, faz exames de rotina.",
-              "enunciado": "Qual hepatite está mais ligada a essa história?",
-              "opcoes": [
-                "Hepatite C",
-                "Hepatite A",
-                "Hepatite E",
-                "Hepatite pela água"
-              ],
-              "resposta": "Hepatite C",
-              "explicacao": "No Brasil, a hepatite C se transmite principalmente pelo sangue, como agulhas compartilhadas.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A maior concentração de casos de AIDS no Brasil é em homens de 25 a 39 anos.",
+              "resposta": true,
+              "explicacao": "1980 a 2023.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             },
             {
               "id": "prev-d10-l1-q4",
@@ -8811,17 +8796,18 @@
             {
               "id": "prev-d10-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com sífilis congênita confirmada.",
-              "enunciado": "Qual é o seguimento do VDRL?",
+              "caso": "Dengue com hematócrito 54% e plaquetas 43 mil, estável.",
+              "enunciado": "Onde tratar?",
               "opcoes": [
-                "Com 1, 3, 6, 12 e 18 meses",
-                "Só uma vez",
-                "Aos 5 anos",
-                "Só uma vez, ao completar cinco anos de idade"
+                "UTI",
+                "UBS diária",
+                "UBS em 48 h",
+                "Internar em enfermaria"
               ],
-              "resposta": "Com 1, 3, 6, 12 e 18 meses",
-              "explicacao": "Até negativar.",
-              "revisado": false
+              "resposta": "Internar em enfermaria",
+              "explicacao": "Grupo C.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025"
             }
           ]
         },
