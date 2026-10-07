@@ -358,40 +358,36 @@
             },
             {
               "id": "ped-u1-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 18 meses com coriza há 2 dias evolui com tosse ladrante e estridor em repouso, sem cianose e sem alteração da consciência.",
-              "enunciado": "Qual é o tratamento indicado?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na sepse, para que a procalcitonina é mais útil?",
               "opcoes": [
-                "Dexametasona e adrenalina inalatória",
-                "Amoxicilina por 10 dias",
-                "Salbutamol de horário",
-                "Intubação imediata na sala de emergência sem outra medida"
+                "Diagnóstico isolado",
+                "Prever morte",
+                "Escolher o antibiótico",
+                "Decidir parar o antibiótico"
               ],
-              "resposta": "Dexametasona e adrenalina inalatória",
-              "explicacao": "Estridor em repouso indica crupe moderado. A adrenalina age rápido e o corticoide reduz o edema por mais tempo. Observa-se por algumas horas após a adrenalina.",
-              "revisado": false
+              "resposta": "Decidir parar o antibiótico",
+              "explicacao": "Queda guia suspensão.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na diarreia aguda da criança, por quanto tempo se recomenda dar zinco?",
-              "opcoes": [
-                "10 a 14 dias",
-                "3 dias",
-                "1 dia",
-                "Trinta dias seguidos"
-              ],
-              "resposta": "10 a 14 dias",
-              "explicacao": "O zinco reduz a duração e a gravidade do episódio e diminui a chance de novos episódios nos meses seguintes.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No choque hemorrágico da criança, o soro cristaloide é igual aos outros choques.",
+              "resposta": false,
+              "explicacao": "Dar sangue cedo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u1-l3-q8",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Toda diarreia aguda com febre na infância deve ser tratada com antibiótico.",
-              "resposta": false,
-              "explicacao": "A maioria é viral. Antibiótico fica reservado a casos como disenteria (sangue nas fezes) com comprometimento do estado geral e suspeita de cólera.",
-              "revisado": false
+              "enunciado": "No choque séptico da criança, adrenalina e noradrenalina são as drogas de 1ª escolha.",
+              "resposta": true,
+              "explicacao": "Lactato alto e 1ª hora também valem.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             }
           ]
         }
@@ -649,17 +645,18 @@
             {
               "id": "ped-u2-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Bebê de 40 dias, ganhando peso bem, ainda tem icterícia, com fezes brancas e urina escura.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "RN de 7 dias com icterícia grave, anemia, Coombs negativo e corpúsculos de Heinz.",
+              "enunciado": "Qual a causa?",
               "opcoes": [
-                "Investigar atresia biliar com urgência",
-                "Tranquilizar",
-                "Fototerapia",
-                "Suspender a amamentação e fazer fototerapia em casa"
+                "ABO",
+                "Crigler-Najjar",
+                "Erro inato",
+                "Deficiência de G6PD"
               ],
-              "resposta": "Investigar atresia biliar com urgência",
-              "explicacao": "A icterícia colestática nunca é fisiológica.",
-              "revisado": false
+              "resposta": "Deficiência de G6PD",
+              "explicacao": "Heinz: hemólise oxidativa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             }
           ]
         },
@@ -919,17 +916,18 @@
             {
               "id": "ped-u3-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com varicela volta a ter febre depois de melhorar, e uma das lesões fica vermelha, quente e dolorida.",
-              "enunciado": "Qual é a complicação?",
+              "caso": "Criança de 7 anos com dengue, petéquias, dor abdominal leve e um vômito.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Infecção bacteriana da pele",
-                "Evolução normal da doença",
-                "Alergia",
-                "Sarampo associado"
+                "Observar 48 horas",
+                "Volta só quando a febre passar",
+                "Internar com soro venoso",
+                "Soro oral e hemograma já"
               ],
-              "resposta": "Infecção bacteriana da pele",
-              "explicacao": "Coçar as lesões favorece a entrada de estafilococos e estreptococos.",
-              "revisado": false
+              "resposta": "Soro oral e hemograma já",
+              "explicacao": "Avaliar o hemograma e reclassificar.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             }
           ]
         },
@@ -1050,18 +1048,18 @@
             },
             {
               "id": "ped-u3-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Bebê de 3 semanas tem tosse e respiração rápida, sem febre. Teve conjuntivite na primeira semana de vida.",
-              "enunciado": "Qual é o agente mais provável?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual agente causa pneumonia mais leve em maiores de 5 anos?",
               "opcoes": [
-                "Chlamydia trachomatis",
+                "S. aureus",
+                "Vírus",
                 "Pneumococo",
-                "Mycoplasma",
-                "Influenza tipo A com febre alta"
+                "Mycoplasma pneumoniae"
               ],
-              "resposta": "Chlamydia trachomatis",
-              "explicacao": "É a pneumonia afebril do lactente, tratada com azitromicina.",
-              "revisado": false
+              "resposta": "Mycoplasma pneumoniae",
+              "explicacao": "Pneumonia atípica.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
@@ -1274,18 +1272,12 @@
             },
             {
               "id": "ped-u4-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Menina de 6 anos tem broto mamário, pelos pubianos e idade óssea avançada.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Puberdade precoce",
-                "Telarca isolada, sempre benigna",
-                "Obesidade simples",
-                "Desenvolvimento normal"
-              ],
-              "resposta": "Puberdade precoce",
-              "explicacao": "Precisa de investigação, inclusive de causas no sistema nervoso central.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Se a criança não é baixa, a queda da velocidade de crescimento não importa.",
+              "resposta": false,
+              "explicacao": "Velocidade baixa é alerta.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u4-l1-q6",
@@ -1543,17 +1535,19 @@
             },
             {
               "id": "ped-u4-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Segundo o Ministério da Saúde, em que faixa de idade se faz a suplementação preventiva de ferro em lactentes a termo?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses, a termo, mamando no peito, Hb 10 e VCM 95.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Dos 6 aos 24 meses",
-                "Desde o nascimento, para todos",
-                "Após os 2 anos",
-                "Apenas em quem já tem anemia"
+                "Ferropriva",
+                "Falta de B12",
+                "Hemograma normal",
+                "Anemia fisiológica"
               ],
-              "resposta": "Dos 6 aos 24 meses",
-              "explicacao": "A Sociedade Brasileira de Pediatria recomenda começar mais cedo em algumas situações.",
-              "revisado": false
+              "resposta": "Anemia fisiológica",
+              "explicacao": "Nadir entre 2 e 3 meses.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u4-l3-q7",
@@ -2001,17 +1995,19 @@
             },
             {
               "id": "ped-u6-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são os quatro componentes da tetralogia de Fallot?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses e meio com chiado, sopro holossistólico na borda esternal esquerda e fígado a 2 cm.",
+              "enunciado": "Qual o diagnóstico mais provável?",
               "opcoes": [
-                "Comunicação interventricular, estenose pulmonar, aorta cavalgada e hipertrofia do ventrículo direito",
-                "Comunicação interatrial, estenose aórtica, coarctação e hipertrofia do ventrículo esquerdo",
-                "Canal arterial, comunicação interatrial, comunicação interventricular e estenose mitral",
-                "Transposição, comunicação interventricular, comunicação interatrial e estenose pulmonar"
+                "Forame oval",
+                "Canal arterial",
+                "Eisenmenger",
+                "Comunicação interventricular"
               ],
-              "resposta": "Comunicação interventricular, estenose pulmonar, aorta cavalgada e hipertrofia do ventrículo direito",
-              "explicacao": "A gravidade da estenose pulmonar define o grau de cianose.",
-              "revisado": false
+              "resposta": "Comunicação interventricular",
+              "explicacao": "CIV causa IC aos 2 meses.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u6-l1-q3",
@@ -2431,32 +2427,35 @@
             },
             {
               "id": "ped-u7-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quando usar antibiótico na diarreia aguda infantil?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 12 meses com diarreia há 7 dias, com sede, olhos um pouco fundos, diurese menor e boa consciência.",
+              "enunciado": "Qual a hidratação inicial?",
               "opcoes": [
-                "Disenteria com comprometimento ou cólera",
-                "Toda diarreia",
-                "Diarreia aquosa leve",
-                "Toda diarreia aquosa leve, mesmo sem febre"
+                "Soro fisiológico 20 mL/kg",
+                "Gastróclise",
+                "Soro venoso 50 mL/kg",
+                "Soro de reidratação oral"
               ],
-              "resposta": "Disenteria com comprometimento ou cólera",
-              "explicacao": "A maioria é viral.",
-              "revisado": false
+              "resposta": "Soro de reidratação oral",
+              "explicacao": "Desidratação sem choque: TRO.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u7-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com diarreia, olhos fundos, bebe com avidez e prega que volta devagar.",
-              "enunciado": "Qual é o plano?",
+              "caso": "Bebê de 12 meses com diarreia há 7 dias, fezes explosivas, barriga distendida e assadura forte.",
+              "enunciado": "Qual a medida mais indicada?",
               "opcoes": [
-                "Plano B: soro oral na unidade",
-                "Plano A",
-                "Plano C",
-                "Plano A em casa, sem observação nenhuma"
+                "Probiótico",
+                "Azitromicina",
+                "Hidrolisado proteico",
+                "Tirar a lactose por um tempo"
               ],
-              "resposta": "Plano B: soro oral na unidade",
-              "explicacao": "Desidratação moderada.",
-              "revisado": false
+              "resposta": "Tirar a lactose por um tempo",
+              "explicacao": "Sinais de intolerância secundária à lactose.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u7-l1-q7",
@@ -2585,24 +2584,26 @@
             {
               "id": "ped-u7-l2-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Medicamentos para refluxo não devem ser usados de rotina em lactentes que só regurgitam.",
-              "resposta": true,
-              "explicacao": "Sem benefício e com riscos.",
-              "revisado": false
+              "enunciado": "O RX contrastado (REED) é útil para diagnosticar doença do refluxo no bebê.",
+              "resposta": false,
+              "explicacao": "Avalia anatomia, não DRGE.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u7-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o escape de fezes involuntário por fecaloma.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal causa de dor abdominal crônica na criança?",
               "opcoes": [
-                "encoprese",
-                "diarreia",
-                "disenteria",
-                "tenesmo"
+                "Orgânica",
+                "Parasitária",
+                "Cirúrgica",
+                "Funcional"
               ],
-              "resposta": "encoprese",
-              "explicacao": "Comum na constipação crônica.",
-              "revisado": false
+              "resposta": "Funcional",
+              "explicacao": "Orgânica é minoria.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
@@ -3207,17 +3208,19 @@
             },
             {
               "id": "ped-u9-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o diagnóstico da anemia falciforme no recém-nascido?",
+              "tipo": "caso_clinico",
+              "caso": "Teste do pezinho com Hb FAS.",
+              "enunciado": "O que dizer aos pais?",
               "opcoes": [
-                "Teste do pezinho com eletroforese",
-                "Raio X",
-                "Biópsia",
-                "Biópsia de medula óssea com mielograma"
+                "Anemia falciforme",
+                "Forma leve da doença",
+                "Normal, sem nada a fazer",
+                "Traço falciforme"
               ],
-              "resposta": "Teste do pezinho com eletroforese",
-              "explicacao": "Triagem neonatal.",
-              "revisado": false
+              "resposta": "Traço falciforme",
+              "explicacao": "Portador: aconselhamento genético.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u9-l1-q6",
@@ -3616,17 +3619,19 @@
             },
             {
               "id": "ped-u10-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A bronquiolite costuma ser mais grave nos primeiros ___ meses de vida.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 3 meses com coriza, sibilos, crepitações e saturação de 89%.",
+              "enunciado": "Qual o tratamento?",
               "opcoes": [
-                "6",
-                "24",
-                "36",
-                "48"
+                "Broncodilatador",
+                "Adrenalina inalatória",
+                "Corticoide oral",
+                "Oxigênio e lavagem nasal"
               ],
-              "resposta": "6",
-              "explicacao": "Lactentes pequenos.",
-              "revisado": false
+              "resposta": "Oxigênio e lavagem nasal",
+              "explicacao": "Bronquiolite: só suporte.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             }
           ]
         },
@@ -3668,11 +3673,18 @@
             },
             {
               "id": "ped-u10-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Antes da vacinação, a principal causa de epiglotite era o vírus sincicial respiratório.",
-              "resposta": false,
-              "explicacao": "Falso. A causa clássica era o Haemophilus influenzae tipo b, que pode obstruir totalmente a via aérea.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Bebê de 11 meses com vacinas em dia. Quantas doses de pneumo 10 deveria ter?",
+              "opcoes": [
+                "Uma",
+                "Três",
+                "Quatro",
+                "Duas"
+              ],
+              "resposta": "Duas",
+              "explicacao": "Pneumo 10: 2 e 4 meses, reforço aos 12.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u10-l2-q4",
@@ -3895,10 +3907,11 @@
             {
               "id": "ped-u11-l1-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "O adolescente nunca pode ser atendido sem um responsável na sala.",
-              "resposta": false,
-              "explicacao": "Falso. Ele pode ser atendido sozinho em parte da consulta, o que respeita sua autonomia.",
-              "revisado": false
+              "enunciado": "O Programa Saúde na Escola integra escolas e equipes de saúde da família num território.",
+              "resposta": true,
+              "explicacao": "Atenção integral e intersetorial.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-u11-l1-q4",
@@ -4127,10 +4140,11 @@
             {
               "id": "ped-u11-l3-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Perguntar ao adolescente sobre ideias de suicídio aumenta o risco e deve ser evitado.",
-              "resposta": false,
-              "explicacao": "Falso. Perguntar diretamente não aumenta o risco e pode salvar vidas.",
-              "revisado": false
+              "enunciado": "Rotina, como ir à escola, ajuda a proteger crianças de ansiedade e depressão.",
+              "resposta": true,
+              "explicacao": "Fator protetor.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u11-l3-q4",
@@ -4323,17 +4337,19 @@
             },
             {
               "id": "ped-u12-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ tuberculínica positiva indica infecção, não doença.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 7 anos com fenitoína há 3 semanas, febre, linfonodos, rash, eosinofilia e transaminases altas.",
+              "enunciado": "Qual o tratamento?",
               "opcoes": [
-                "prova",
-                "biópsia",
-                "cultura",
-                "baciloscopia"
+                "Anti-histamínico",
+                "Ciclosporina",
+                "Imunoglobulina",
+                "Corticoide"
               ],
-              "resposta": "prova",
-              "explicacao": "Precisa de avaliação.",
-              "revisado": false
+              "resposta": "Corticoide",
+              "explicacao": "DRESS: corticoide.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             }
           ]
         },
@@ -4585,17 +4601,19 @@
             },
             {
               "id": "ped-u12-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ é usado no tratamento da estrongiloidíase.",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 30 meses com Ascaris e Entamoeba no exame de fezes.",
+              "enunciado": "Que remédio cobre os dois?",
               "opcoes": [
-                "ivermectina",
-                "metronidazol",
-                "penicilina",
-                "nistatina"
+                "Mebendazol",
+                "Albendazol",
+                "Metronidazol",
+                "Nitazoxanida"
               ],
-              "resposta": "ivermectina",
-              "explicacao": "Também albendazol.",
-              "revisado": false
+              "resposta": "Nitazoxanida",
+              "explicacao": "Amplo espectro.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             }
           ]
         }
@@ -4628,11 +4646,19 @@
             },
             {
               "id": "ped-u13-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No diabetes tipo 1 da criança, começa-se com remédio oral e só depois insulina.",
-              "resposta": false,
-              "explicacao": "Falso. O diabetes tipo 1 exige insulina desde o diagnóstico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina de 10 anos com sede, muita urina, perda de peso e glicemia 230.",
+              "enunciado": "O que fazer para o diagnóstico?",
+              "opcoes": [
+                "TOTG",
+                "Anticorpos antes",
+                "Jejum ≥ 126",
+                "Já é diabetes"
+              ],
+              "resposta": "Já é diabetes",
+              "explicacao": "Sintomas + glicemia ≥ 200.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-u13-l1-q3",
@@ -5072,25 +5098,33 @@
             },
             {
               "id": "ped-u14-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Janelas e varandas devem ter telas de proteção.",
-              "resposta": true,
-              "explicacao": "Evitam quedas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Na criança politraumatizada, o que se trata primeiro?",
+              "opcoes": [
+                "Pneumotórax",
+                "Baço",
+                "Convulsão",
+                "Via aérea"
+              ],
+              "resposta": "Via aérea",
+              "explicacao": "ABC: A primeiro.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-u14-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A criança deve usar ___ ao andar de bicicleta.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na crise adrenal com sódio baixo e potássio alto, qual a causa mais provável da PCR?",
               "opcoes": [
-                "capacete",
-                "luvas só",
-                "óculos",
-                "apenas tênis"
+                "Desidratação",
+                "Edema cerebral",
+                "Hipoxemia",
+                "Arritmia por potássio alto"
               ],
-              "resposta": "capacete",
-              "explicacao": "Previne trauma de crânio.",
-              "revisado": false
+              "resposta": "Arritmia por potássio alto",
+              "explicacao": "Hipercalemia causa FV.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             }
           ]
         },
@@ -5100,50 +5134,36 @@
           "questoes": [
             {
               "id": "ped-u14-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado aos maus-tratos.",
-              "pares": [
-                {
-                  "esquerda": "Hematomas em fases diferentes",
-                  "direita": "Agressões repetidas"
-                },
-                {
-                  "esquerda": "Fratura de costela em lactente",
-                  "direita": "Sacudir ou apertar"
-                },
-                {
-                  "esquerda": "Queimadura em luva",
-                  "direita": "Imersão proposital"
-                },
-                {
-                  "esquerda": "Hemorragia na retina",
-                  "direita": "Síndrome do bebê sacudido"
-                }
-              ],
-              "explicacao": "Sinais de alerta.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Afastar a criança vítima de abuso do convívio familiar é decisão do Conselho Tutelar e da polícia.",
+              "resposta": false,
+              "explicacao": "Afastar do lar é decisão da Justiça.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u14-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que fazer na suspeita de maus-tratos?",
-              "opcoes": [
-                "Proteger e notificar ao Conselho Tutelar",
-                "Esperar provas",
-                "Falar só com os pais",
-                "Falar só com os pais e esperar provas antes de notificar"
-              ],
-              "resposta": "Proteger e notificar ao Conselho Tutelar",
-              "explicacao": "Obrigatório pelo ECA.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O principal objetivo do SUS é a proteção integral dos direitos da criança contra maus-tratos.",
+              "resposta": false,
+              "explicacao": "O SUS cuida da saúde; a proteção é dever de todos.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-u14-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O abuso sexual é a forma mais comum de maus-tratos na infância.",
-              "resposta": false,
-              "explicacao": "Falso. A forma mais comum é a negligência, a falta de cuidados básicos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Em quanto tempo comunicar violência sexual contra criança à secretaria de saúde?",
+              "opcoes": [
+                "72 horas",
+                "7 dias",
+                "30 dias",
+                "24 horas"
+              ],
+              "resposta": "24 horas",
+              "explicacao": "Notificação imediata.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-u14-l2-q4",
@@ -5385,41 +5405,36 @@
             },
             {
               "id": "ped-d1-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Prematuro de 28 semanas nasce respirando e com FC de 120, mas com desconforto respiratório.",
-              "enunciado": "Qual suporte é preferido na sala de parto?",
+              "tipo": "multipla_escolha",
+              "enunciado": "RN de 37 semanas com boa vitalidade. Quanto esperar para clampear o cordão?",
               "opcoes": [
-                "CPAP",
-                "Intubação imediata de rotina",
-                "Apenas oxigênio em capacete",
-                "Observação sem suporte"
+                "10 segundos",
+                "30 segundos",
+                "Clampear já",
+                "No mínimo 60 segundos"
               ],
-              "resposta": "CPAP",
-              "explicacao": "O CPAP precoce reduz a necessidade de intubação.",
-              "revisado": false
+              "resposta": "No mínimo 60 segundos",
+              "explicacao": "Clampeamento tardio.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Prematuros com menos de 34 semanas devem ser colocados em saco plástico logo ao nascer, sem secar, para evitar hipotermia.",
+              "enunciado": "Contato pele a pele vale para RN a termo que respira e tem bom tônus, mesmo com mecônio.",
               "resposta": true,
-              "explicacao": "A hipotermia aumenta a mortalidade em prematuros.",
-              "revisado": false
+              "explicacao": "Mecônio não impede.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d1-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido em ventilação com máscara mantém FC de 80 e o tórax não expande.",
-              "enunciado": "Qual é a conduta?",
-              "opcoes": [
-                "Corrigir a técnica (MR SOPA) ou intubar",
-                "Massagem cardíaca",
-                "Adrenalina",
-                "Iniciar massagem cardíaca e adrenalina sem corrigir a ventilação"
-              ],
-              "resposta": "Corrigir a técnica (MR SOPA) ou intubar",
-              "explicacao": "Ventilação eficaz é a medida mais importante da reanimação.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A hipotermia terapêutica reduz morte ou sequela grave na encefalopatia hipóxico-isquêmica.",
+              "resposta": true,
+              "explicacao": "Melhor evidência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d1-l1-q7",
@@ -5594,17 +5609,18 @@
             {
               "id": "ped-d1-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Prematuro de 30 semanas, em início de dieta, tem distensão abdominal, sangue nas fezes e ar na parede intestinal na radiografia.",
-              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "caso": "RN bem, com vesicopústulas sem halo que rompem e deixam colarete e manchas escuras.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Enterocolite necrosante; jejum, sonda, antibiótico",
-                "Alergia; trocar fórmula",
-                "Gastroenterite; soro",
-                "Constipação; laxante oral e dieta normal com mais leite"
+                "Antibiótico",
+                "Aciclovir",
+                "Eritema tóxico",
+                "Observar: melanose pustulosa"
               ],
-              "resposta": "Enterocolite necrosante; jejum, sonda, antibiótico",
-              "explicacao": "O leite materno é um fator de proteção.",
-              "revisado": false
+              "resposta": "Observar: melanose pustulosa",
+              "explicacao": "Benigna e transitória.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d1-l3-q2",
@@ -5760,17 +5776,18 @@
             {
               "id": "ped-d2-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 4 meses com febre de 39 °C há 1 dia, sem foco no exame e em bom estado.",
-              "enunciado": "Qual infecção bacteriana grave é a mais provável?",
+              "caso": "Bebê de 10 meses com febre há 4 dias. Urina de saco coletor: 10 leucócitos, nitrito negativo, cultura 10.000 E. coli.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Infecção urinária",
-                "Meningite bacteriana",
-                "Pneumonia",
-                "Artrite séptica do quadril"
+                "Tratar 10 dias",
+                "Cefalexina 5 dias",
+                "Ultrassom",
+                "Repetir por sondagem"
               ],
-              "resposta": "Infecção urinária",
-              "explicacao": "Por isso o exame de urina, com coleta adequada, faz parte da avaliação.",
-              "revisado": false
+              "resposta": "Repetir por sondagem",
+              "explicacao": "Saco coletor não confirma.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d2-l1-q4",
@@ -5959,17 +5976,18 @@
             {
               "id": "ped-d2-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com varicela tem lesão de pele que ficou vermelha, quente e dolorosa, com febre alta no 5º dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menina de 12 anos com meningite, ceftriaxona desde ontem, líquor com glicose baixa e Gram negativo.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Infecção bacteriana secundária",
-                "Evolução normal",
-                "Alergia",
-                "Herpes-zóster com dor intensa na pele"
+                "Dexametasona agora",
+                "Nova punção",
+                "Suspender antibiótico",
+                "Manter antibiótico 10 dias"
               ],
-              "resposta": "Infecção bacteriana secundária",
-              "explicacao": "Pode evoluir para fasceíte necrosante.",
-              "revisado": false
+              "resposta": "Manter antibiótico 10 dias",
+              "explicacao": "Líquor bacteriano: completar.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             }
           ]
         },
@@ -6151,70 +6169,80 @@
             },
             {
               "id": "ped-d3-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com tosse de cachorro, febre baixa e estridor mesmo em repouso, com tiragem.",
-              "enunciado": "Qual é o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual bloqueador é contraindicado se há hipertermia maligna na família?",
               "opcoes": [
-                "Adrenalina inalatória e dexametasona",
-                "Antibiótico venoso",
-                "Broncodilatador inalatório",
-                "Umidificar o ar e liberar para casa"
+                "Rocurônio",
+                "Midazolam",
+                "Etomidato",
+                "Succinilcolina"
               ],
-              "resposta": "Adrenalina inalatória e dexametasona",
-              "explicacao": "É laringite viral moderada; após a adrenalina, observar por algumas horas.",
-              "revisado": false
+              "resposta": "Succinilcolina",
+              "explicacao": "Gatilho de hipertermia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d3-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos, engasgou enquanto comia amendoim e agora tem chiado só no lado direito.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual a melhor relação I:E para ventilar asma quase fatal?",
               "opcoes": [
-                "Broncoscopia rígida para retirar",
-                "Broncodilatador",
-                "Antibiótico",
-                "Broncodilatador e observação em casa"
+                "1:1",
+                "1:2",
+                "2:1",
+                "1:4"
               ],
-              "resposta": "Broncoscopia rígida para retirar",
-              "explicacao": "A radiografia pode ser normal, mas mostrar aprisionamento de ar.",
-              "revisado": false
+              "resposta": "1:4",
+              "explicacao": "Expiração longa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d3-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O palivizumabe é indicado para prevenir o vírus sincicial respiratório em prematuros extremos e em crianças com cardiopatia grave.",
-              "resposta": true,
-              "explicacao": "Ele é um anticorpo monoclonal dado mensalmente na estação do vírus.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Escolar de 40 kg, FC 300, QRS estreito e choque.",
+              "enunciado": "Qual a 1ª carga de cardioversão?",
+              "opcoes": [
+                "80 J",
+                "100 J",
+                "120 J",
+                "20 J"
+              ],
+              "resposta": "20 J",
+              "explicacao": "0,5 a 1 J/kg.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d3-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança de 5 anos tem pneumonia com derrame pleural grande e febre persistente após 3 dias de antibiótico.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Adolescente de 70 kg com anafilaxia e laringoespasmo.",
+              "enunciado": "Quanto de adrenalina IM?",
               "opcoes": [
-                "Drenagem do derrame",
-                "Trocar só o antibiótico",
-                "Observar",
-                "Apenas trocar o antibiótico e observar mais uma semana"
+                "0,1 mL",
+                "0,7 mL",
+                "1 mL",
+                "0,5 mL"
               ],
-              "resposta": "Drenagem do derrame",
-              "explicacao": "Derrames grandes ou com pus precisam de drenagem.",
-              "revisado": false
+              "resposta": "0,5 mL",
+              "explicacao": "Máximo 0,5 mg.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d3-l1-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A pneumonia por ___ é comum em escolares e adolescentes, com tosse seca e radiografia pior que o exame físico.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que reverte o rocurônio?",
               "opcoes": [
-                "Mycoplasma",
-                "pneumococo",
-                "estafilococo",
-                "Haemophilus"
+                "Naloxona",
+                "Flumazenil",
+                "Dantrolene",
+                "Sugammadex"
               ],
-              "resposta": "Mycoplasma",
-              "explicacao": "O tratamento é feito com macrolídeo.",
-              "revisado": false
+              "resposta": "Sugammadex",
+              "explicacao": "Reversor específico.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d3-l1-q8",
@@ -7358,11 +7386,19 @@
             },
             {
               "id": "ped-d6-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança de 3 anos com anemia falciforme deve tomar penicilina profilática até os 5 anos.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Também recebe vacinas especiais, pelo risco de infecção por pneumococo.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menino com abscessos repetidos, osteomielite e queda tardia do coto umbilical.",
+              "enunciado": "Que parte da imunidade falha?",
+              "opcoes": [
+                "Complemento",
+                "Linfócitos B",
+                "Linfócitos T e B",
+                "Neutrófilos"
+              ],
+              "resposta": "Neutrófilos",
+              "explicacao": "Defeito de fagócito.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d6-l1-q6",
@@ -7512,32 +7548,34 @@
             },
             {
               "id": "ped-d6-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O linfoma de ___ costuma surgir em adolescentes com linfonodos no pescoço indolores e febre, perda de peso e suor noturno.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual doença a linfadenopatia generalizada NÃO é comum?",
               "opcoes": [
-                "Hodgkin",
-                "Burkitt",
-                "MALT",
-                "do manto"
+                "Doença de Still",
+                "Leucemia",
+                "Sífilis congênita",
+                "Tuberculose"
               ],
-              "resposta": "Hodgkin",
-              "explicacao": "A célula de Reed-Sternberg é a marca desse linfoma.",
-              "revisado": false
+              "resposta": "Tuberculose",
+              "explicacao": "TB costuma ser localizada.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d6-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com linfoma tem massa no mediastino, falta de ar e inchaço no rosto.",
-              "enunciado": "Qual é a urgência?",
+              "caso": "Criança com neuroblastoma, quimio há 9 dias, febre 38,7, estável e sem foco.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Veia cava superior com compressão da via aérea",
-                "Asma",
-                "Alergia",
-                "Pneumonia bacteriana com derrame pleural e febre alta"
+                "Aguardar exames",
+                "Amoxicilina oral",
+                "Cefepima e vancomicina",
+                "Cefepima venosa já"
               ],
-              "resposta": "Veia cava superior com compressão da via aérea",
-              "explicacao": "A sedação pode piorar a compressão da via aérea.",
-              "revisado": false
+              "resposta": "Cefepima venosa já",
+              "explicacao": "Neutropenia febril estável.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
@@ -8154,18 +8192,18 @@
             },
             {
               "id": "ped-d8-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Lactente de 8 meses com primeira convulsão febril, curta e generalizada, bem após a crise.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na convulsão febril simples, qual é o risco de recorrência e de epilepsia?",
               "opcoes": [
-                "Tratar a febre e orientar, sem exames de rotina",
-                "Punção sempre",
-                "Ressonância",
-                "Punção lombar e ressonância em todos os casos"
+                "10% e 10%",
+                "50% e 5%",
+                "5% e 30%",
+                "30% e 1%"
               ],
-              "resposta": "Tratar a febre e orientar, sem exames de rotina",
-              "explicacao": "Convulsão febril simples.",
-              "revisado": false
+              "resposta": "30% e 1%",
+              "explicacao": "Benigna.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d8-l1-q6",
@@ -8277,56 +8315,45 @@
             },
             {
               "id": "ped-d8-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Lactente de 3 meses muito molinho, choro fraco e dificuldade para mamar, sem reflexos.",
-              "enunciado": "O que considerar?",
-              "opcoes": [
-                "Atrofia muscular espinhal",
-                "Normal",
-                "Refluxo",
-                "Cólica do lactente comum"
-              ],
-              "resposta": "Atrofia muscular espinhal",
-              "explicacao": "Há tratamento modificador.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na educação inclusiva, a meta é o aluno com deficiência se adaptar ao sistema escolar como ele é.",
+              "resposta": false,
+              "explicacao": "É a escola que se adapta ao aluno.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d8-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com perda da fala e de habilidades já adquiridas.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO é esperado na linguagem de uma criança de 3 anos e meio?",
               "opcoes": [
-                "Investigação neurológica e genética urgente",
-                "Aguardar",
-                "Fonoaudiologia só",
-                "Apenas fonoaudiologia e aguardar a fala voltar sozinha"
+                "Fazer perguntas simples",
+                "Usar grande e pequeno",
+                "Nomear objetos comuns",
+                "Falar só umas 20 palavras"
               ],
-              "resposta": "Investigação neurológica e genética urgente",
-              "explicacao": "Regressão é sinal de alarme.",
-              "revisado": false
+              "resposta": "Falar só umas 20 palavras",
+              "explicacao": "20 palavras é marco de 18 meses.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d8-l2-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A atrofia muscular espinhal não pode ser detectada antes de surgirem sintomas.",
-              "resposta": false,
-              "explicacao": "Falso. A triagem neonatal ampliada pode incluí-la, permitindo tratamento precoce.",
-              "revisado": false
+              "enunciado": "M-CHAT alterado pode indicar outros atrasos, como atraso de linguagem.",
+              "resposta": true,
+              "explicacao": "Não é exclusivo do autismo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d8-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Criança com atraso global, convulsões e manchas hipocrômicas na pele.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Esclerose tuberosa",
-                "Neurofibromatose",
-                "Normal",
-                "Síndrome de Down com convulsões"
-              ],
-              "resposta": "Esclerose tuberosa",
-              "explicacao": "Lâmpada de Wood ajuda.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O TDAH tem componente genético e pode atrapalhar o aprendizado.",
+              "resposta": true,
+              "explicacao": "Herdabilidade alta.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
@@ -8399,55 +8426,65 @@
             {
               "id": "ped-d8-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança com derivação ventrículo-peritoneal tem vômitos, sonolência e cefaleia.",
-              "enunciado": "O que suspeitar?",
+              "caso": "Bebê de 1 ano e 8 meses com olho vermelho, estrabismo e reflexo branco no olho.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Disfunção da válvula",
-                "Gastroenterite",
-                "Normal",
-                "Enxaqueca com vômitos"
+                "Colírio antibiótico",
+                "TORCHS",
+                "Erro inato",
+                "Oftalmologista com urgência"
               ],
-              "resposta": "Disfunção da válvula",
-              "explicacao": "Emergência neurocirúrgica.",
-              "revisado": false
+              "resposta": "Oftalmologista com urgência",
+              "explicacao": "Pensar em retinoblastoma.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d8-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente com baixa estatura, alteração visual e calcificação na região da sela.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que a lesão do nervo radial causa?",
               "opcoes": [
-                "Craniofaringioma",
-                "Prolactinoma",
-                "Normal",
-                "Meduloblastoma de cerebelo"
+                "Mão em garra",
+                "Sem oposição do polegar",
+                "Dupuytren",
+                "Mão caída"
               ],
-              "resposta": "Craniofaringioma",
-              "explicacao": "Comprime o quiasma.",
-              "revisado": false
+              "resposta": "Mão caída",
+              "explicacao": "Extensores do punho.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d8-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança com tumor cerebral tem pressão alta, frequência cardíaca baixa e respiração irregular: é a tríade de Cushing, sinal de hipertensão intracraniana grave.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Indica risco de herniação.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina de 8 anos com paralisia do VI e VII à esquerda e Babinski à direita.",
+              "enunciado": "Onde é a lesão?",
+              "opcoes": [
+                "Lobo frontal",
+                "Bell",
+                "Seio cavernoso",
+                "Tronco encefálico"
+              ],
+              "resposta": "Tronco encefálico",
+              "explicacao": "Síndrome cruzada.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d8-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com manchas café com leite numerosas e nódulos na íris.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Menina de 5 anos com cefaleia e hemianopsia bitemporal.",
+              "enunciado": "O que está comprimido?",
               "opcoes": [
-                "Neurofibromatose tipo 1",
-                "Esclerose tuberosa",
-                "McCune-Albright",
-                "Manchas normais da pele sem doença"
+                "Lobo occipital",
+                "Lobo temporal",
+                "Corpo geniculado",
+                "Quiasma óptico"
               ],
-              "resposta": "Neurofibromatose tipo 1",
-              "explicacao": "Nódulos de Lisch.",
-              "revisado": false
+              "resposta": "Quiasma óptico",
+              "explicacao": "Pensar em craniofaringioma.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             }
           ]
         }
@@ -9159,42 +9196,33 @@
             {
               "id": "ped-d10-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Adolescente com fibrose cística e mutação F508del pergunta sobre remédios novos.",
-              "enunciado": "Qual tratamento corrige a proteína defeituosa?",
+              "caso": "Asmático de 8 anos com cianose recebe oxigênio e salbutamol. Após 15 minutos a cianose sumiu, mas os sibilos aumentaram.",
+              "enunciado": "Como interpretar?",
               "opcoes": [
-                "Moduladores do CFTR",
-                "Antibiótico inalatório",
-                "Corticoide oral",
-                "Enzimas pancreáticas"
+                "Piorou: magnésio",
+                "Piorou: corticoide",
+                "Dobrar salbutamol",
+                "Está melhorando"
               ],
-              "resposta": "Moduladores do CFTR",
-              "explicacao": "Os moduladores mudaram o prognóstico da fibrose cística.",
-              "revisado": false
+              "resposta": "Está melhorando",
+              "explicacao": "Mais ar passando: mais sibilos.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d10-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fenótipo de sibilância à característica.",
-              "pares": [
-                {
-                  "esquerda": "Transitória precoce",
-                  "direita": "Melhora até 3 anos"
-                },
-                {
-                  "esquerda": "Persistente atópica",
-                  "direita": "Alergia e asma na família"
-                },
-                {
-                  "esquerda": "Induzida por vírus",
-                  "direita": "Só nos resfriados"
-                },
-                {
-                  "esquerda": "Persistente não atópica",
-                  "direita": "Sem alergia, melhora na escola"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fator faz a asma do lactente persistir até adulto?",
+              "opcoes": [
+                "Infecção por rinovírus",
+                "Antibiótico precoce",
+                "Teste genético",
+                "Sensibilização a alérgenos"
               ],
-              "explicacao": "Índice preditivo de asma.",
-              "revisado": false
+              "resposta": "Sensibilização a alérgenos",
+              "explicacao": "Atopia prediz persistência.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d10-l3-q5",
@@ -9312,28 +9340,19 @@
             },
             {
               "id": "ped-d11-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada cuidado à cetoacidose na criança.",
-              "pares": [
-                {
-                  "esquerda": "Potássio",
-                  "direita": "Repor junto com a insulina"
-                },
-                {
-                  "esquerda": "Bicarbonato",
-                  "direita": "Evitar"
-                },
-                {
-                  "esquerda": "Glicose abaixo de 250",
-                  "direita": "Acrescentar soro glicosado"
-                },
-                {
-                  "esquerda": "Sódio corrigido",
-                  "direita": "Deve subir com o tratamento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos com glicemia 450, acidose e Glasgow 10.",
+              "enunciado": "Além da insulina, o que fazer já?",
+              "opcoes": [
+                "TC de crânio",
+                "Ceftriaxona e aciclovir",
+                "Dosar lactato",
+                "Manitol"
               ],
-              "explicacao": "Protocolo.",
-              "revisado": false
+              "resposta": "Manitol",
+              "explicacao": "Edema cerebral na CAD.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d11-l1-q5",
@@ -9443,28 +9462,18 @@
             },
             {
               "id": "ped-d11-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao distúrbio da tireoide na criança.",
-              "pares": [
-                {
-                  "esquerda": "Exoftalmia e taquicardia",
-                  "direita": "Graves"
-                },
-                {
-                  "esquerda": "Crescimento lento e atraso ósseo",
-                  "direita": "Hipotireoidismo"
-                },
-                {
-                  "esquerda": "Nódulo duro com linfonodo",
-                  "direita": "Câncer"
-                },
-                {
-                  "esquerda": "Bócio indolor com anticorpo",
-                  "direita": "Hashimoto"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Na criança, o que a tireoidite de Hashimoto pode causar?",
+              "opcoes": [
+                "Puberdade precoce",
+                "Crescimento acelerado",
+                "Idade óssea avançada",
+                "Crescimento mais lento"
               ],
-              "explicacao": "Diagnóstico.",
-              "revisado": false
+              "resposta": "Crescimento mais lento",
+              "explicacao": "Hipotireoidismo atrasa crescimento, osso e puberdade.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d11-l2-q5",
@@ -9776,18 +9785,12 @@
             },
             {
               "id": "ped-d12-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Criança com sopro sistólico suave, que muda com a posição, sem sintomas.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Sopro inocente",
-                "Cardiopatia grave",
-                "CIV",
-                "Estenose"
-              ],
-              "resposta": "Sopro inocente",
-              "explicacao": "Comum.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No choque cardiogênico com hipotensão, a milrinona é a melhor escolha.",
+              "resposta": false,
+              "explicacao": "Milrinona dilata vasos: evitar na hipotensão.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             }
           ]
         },
@@ -9797,18 +9800,18 @@
           "questoes": [
             {
               "id": "ped-d12-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Lactente com frequência de 260, irritado, sem onda P visível e QRS estreito.",
-              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em pré-escolares e escolares, a taquicardia supraventricular costuma ter FC de:",
               "opcoes": [
-                "TSV; vagal com gelo e adenosina",
-                "Sinusal; observar",
-                "Ventricular; choque",
-                "Taquicardia sinusal por febre; antitérmico e observação em casa"
+                "≥ 160",
+                "≥ 140",
+                "≥ 220",
+                "≥ 180"
               ],
-              "resposta": "TSV; vagal com gelo e adenosina",
-              "explicacao": "Arritmia comum no lactente.",
-              "revisado": false
+              "resposta": "≥ 180",
+              "explicacao": "≥ 220 é para lactentes.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "ped-d12-l2-q2",
@@ -9926,18 +9929,18 @@
           "questoes": [
             {
               "id": "ped-d12-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 9 anos com artrite migratória, febre e sopro novo 3 semanas após dor de garganta.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que sopro sugere cardite reumática?",
               "opcoes": [
-                "Febre reumática aguda",
-                "Artrite séptica",
-                "Lúpus",
-                "Artrite reativa viral sem gravidade"
+                "Contínuo na inspiração",
+                "Diastólico baixo em pé",
+                "Sistólico que some ao mudar de posição",
+                "Holossistólico para a axila"
               ],
-              "resposta": "Febre reumática aguda",
-              "explicacao": "Critérios de Jones.",
-              "revisado": false
+              "resposta": "Holossistólico para a axila",
+              "explicacao": "Insuficiência mitral.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d12-l3-q2",
@@ -10095,43 +10098,34 @@
             },
             {
               "id": "ped-d13-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 30 semanas em trabalho de parto prematuro.",
-              "enunciado": "O que reduz a doença da membrana hialina no bebê?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quem recebe cafeína profilática no 1º dia?",
               "opcoes": [
-                "Corticoide antenatal",
-                "Antibiótico para a mãe",
-                "Surfactante na mãe",
-                "Sulfato de magnésio em dose alta"
+                "Todo prematuro",
+                "32 a 34 semanas",
+                "Só se tiver apneia",
+                "< 28 semanas ou < 1000 g"
               ],
-              "resposta": "Corticoide antenatal",
-              "explicacao": "O corticoide é indicado entre 24 e 34 semanas.",
-              "revisado": false
+              "resposta": "< 28 semanas ou < 1000 g",
+              "explicacao": "Previne apneia e DBP.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d13-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada distúrbio respiratório neonatal ao raio X.",
-              "pares": [
-                {
-                  "esquerda": "Membrana hialina",
-                  "direita": "Vidro moído e broncograma"
-                },
-                {
-                  "esquerda": "Taquipneia transitória",
-                  "direita": "Líquido nas cisuras"
-                },
-                {
-                  "esquerda": "Aspiração de mecônio",
-                  "direita": "Infiltrados grosseiros e hiperinsuflação"
-                },
-                {
-                  "esquerda": "Pneumotórax",
-                  "direita": "Ar sem trama"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Prematuro de 26 semanas vai ser intubado.",
+              "enunciado": "O que dar antes?",
+              "opcoes": [
+                "Nada",
+                "Paracetamol",
+                "Benzodiazepínico",
+                "Opioide"
               ],
-              "explicacao": "Imagens.",
-              "revisado": false
+              "resposta": "Opioide",
+              "explicacao": "Analgesia antes de intubar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d13-l1-q5",
@@ -10257,18 +10251,18 @@
             },
             {
               "id": "ped-d13-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido com sepse e líquor com celularidade alta.",
-              "enunciado": "Qual é o esquema?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como colher hemocultura no RN com cateter central?",
               "opcoes": [
-                "Ampicilina e cefotaxima",
-                "Ampicilina e gentamicina só",
-                "Fluconazol",
-                "Fluconazol e aciclovir venosos"
+                "Duas veias periféricas",
+                "Uma periférica, 2 vezes",
+                "Duas do cateter",
+                "Uma periférica e uma do cateter"
               ],
-              "resposta": "Ampicilina e cefotaxima",
-              "explicacao": "Meningite neonatal.",
-              "revisado": false
+              "resposta": "Uma periférica e uma do cateter",
+              "explicacao": "Compara origem.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "ped-d13-l2-q6",
@@ -10412,26 +10406,34 @@
             },
             {
               "id": "ped-d13-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Bebê com toxoplasmose congênita e sem sintomas ao nascer não precisa de tratamento.",
-              "resposta": false,
-              "explicacao": "Falso. Mesmo sem sintomas, pode ter lesão ocular depois; por isso se trata.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "RN de 8 dias com vômitos biliosos, prostração e barriga distendida.",
+              "enunciado": "Qual o diagnóstico mais provável?",
+              "opcoes": [
+                "Estenose de piloro",
+                "Pâncreas anular",
+                "Enterocolite",
+                "Má rotação intestinal"
+              ],
+              "resposta": "Má rotação intestinal",
+              "explicacao": "Vômito bilioso: risco de volvo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2025 R+"
             },
             {
               "id": "ped-d13-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido com rinite sanguinolenta, hepatomegalia e lesões descamativas nas plantas.",
-              "enunciado": "Qual é o tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO se faz no RN exposto ao HIV?",
               "opcoes": [
-                "Penicilina cristalina",
-                "Penicilina benzatina",
-                "Azitromicina",
-                "Azitromicina oral por cinco dias"
+                "Banho logo",
+                "Contraindicar peito",
+                "Clampear logo",
+                "Proibir pele a pele"
               ],
-              "resposta": "Penicilina cristalina",
-              "explicacao": "Sífilis congênita sintomática.",
-              "revisado": false
+              "resposta": "Proibir pele a pele",
+              "explicacao": "Pele a pele é permitido.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             }
           ]
         }
@@ -10496,28 +10498,18 @@
             },
             {
               "id": "ped-d14-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao transtorno na adolescência.",
-              "pares": [
-                {
-                  "esquerda": "Restrição e baixo peso",
-                  "direita": "Anorexia"
-                },
-                {
-                  "esquerda": "Compulsão com vômitos e peso normal",
-                  "direita": "Bulimia"
-                },
-                {
-                  "esquerda": "Compulsão sem compensação",
-                  "direita": "Transtorno de compulsão alimentar"
-                },
-                {
-                  "esquerda": "Tristeza persistente e isolamento",
-                  "direita": "Depressão"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando quebrar o sigilo do adolescente?",
+              "opcoes": [
+                "Sempre que pedir",
+                "Se o fato for público",
+                "Após morte",
+                "Gravidez, violência ou drogas"
               ],
-              "explicacao": "Saúde mental.",
-              "revisado": false
+              "resposta": "Gravidez, violência ou drogas",
+              "explicacao": "Risco justifica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d14-l1-q5",
@@ -10580,33 +10572,27 @@
           "questoes": [
             {
               "id": "ped-d14-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Lactente de 4 meses com irritabilidade, vômitos, hematoma subdural e hemorragias de retina.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "BRUE ocorre em menores de quanto tempo e dura quanto?",
               "opcoes": [
-                "Trauma craniano abusivo (bebê sacudido)",
-                "Meningite",
-                "Queda do berço",
-                "Queda acidental do berço com batida leve na cabeça"
+                "24 meses, 2 min",
+                "12 meses, 2 min",
+                "24 meses, 30 s",
+                "12 meses, < 1 min"
               ],
-              "resposta": "Trauma craniano abusivo (bebê sacudido)",
-              "explicacao": "Notificar.",
-              "revisado": false
+              "resposta": "12 meses, < 1 min",
+              "explicacao": "Já resolvido e sem causa.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d14-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Criança com queimaduras circulares de 1 cm em vários estágios.",
-              "enunciado": "O que suspeitar?",
-              "opcoes": [
-                "Queimaduras por cigarro (maus-tratos)",
-                "Impetigo",
-                "Normal",
-                "Picadas de inseto que infeccionaram"
-              ],
-              "resposta": "Queimaduras por cigarro (maus-tratos)",
-              "explicacao": "Notificar.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na Munchausen por procuração, o agressor costuma usar termos médicos.",
+              "resposta": true,
+              "explicacao": "Mesmo sem estudo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "ped-d14-l2-q3",
