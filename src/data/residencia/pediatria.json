@@ -327,31 +327,34 @@
             {
               "id": "ped-u1-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos com diarreia há 2 dias. Está irritada, com olhos fundos, bebe água com avidez e o sinal da prega desaparece lentamente.",
-              "enunciado": "Qual plano de hidratação deve ser usado?",
+              "caso": "Criança de 2 anos com dengue, dor abdominal intensa e vômitos.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Plano B",
-                "Plano A",
-                "Plano C",
-                "Nenhum, só observação"
+                "Prednisona",
+                "Sintomáticos",
+                "Antibiótico",
+                "Internar para hidratação venosa"
               ],
-              "resposta": "Plano B",
-              "explicacao": "Dois ou mais sinais como esses indicam desidratação sem gravidade. Letargia, incapacidade de beber e prega que desaparece muito lentamente indicariam o plano C.",
-              "revisado": false
+              "resposta": "Internar para hidratação venosa",
+              "explicacao": "Sinais de alarme.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u1-l3-q5",
-              "tipo": "completar_lacuna",
-              "enunciado": "No crupe viral, a tosse é ___ e costuma vir acompanhada de estridor inspiratório e rouquidão.",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 18 meses com febre há 2 dias, bem entre os picos e exame normal.",
+              "enunciado": "O que avaliar?",
               "opcoes": [
-                "ladrante",
-                "produtiva",
-                "em guincho",
-                "noturna e seca"
+                "Temperatura e leucograma",
+                "Exame e urocultura",
+                "Vacinas e leucograma",
+                "Estado geral, vacinas e urocultura"
               ],
-              "resposta": "ladrante",
-              "explicacao": "A tosse em guincho é típica da coqueluche. O crupe (laringotraqueíte) é causado principalmente pelo vírus parainfluenza.",
-              "revisado": false
+              "resposta": "Estado geral, vacinas e urocultura",
+              "explicacao": "Febre sem foco.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u1-l3-q6",
@@ -776,17 +779,18 @@
             {
               "id": "ped-u2-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "No teste do olhinho, o reflexo vermelho está ausente em um dos olhos do bebê.",
+              "caso": "Teste do coraçãozinho com saturação de 92% no braço direito e 91% na perna.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Oftalmologista com urgência",
-                "Repetir com 1 ano",
-                "Normal",
-                "Colírio e repetir o teste com um ano"
+                "Alta",
+                "Eco já",
+                "Eco após a alta",
+                "Repetir em 1 hora"
               ],
-              "resposta": "Oftalmologista com urgência",
-              "explicacao": "Pode ser catarata congênita ou retinoblastoma, que precisam de tratamento precoce.",
-              "revisado": false
+              "resposta": "Repetir em 1 hora",
+              "explicacao": "Entre 90 e 94%: repetir.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -834,62 +838,83 @@
             },
             {
               "id": "ped-u3-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na varicela, aparecem ao mesmo tempo lesões em fases diferentes: manchas, bolhas e crostas.",
-              "resposta": true,
-              "explicacao": "Esse polimorfismo ajuda a diferenciar a varicela de outras doenças com bolhas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com urticária durante amoxicilina para amigdalite.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Cefadroxil",
+                "Sulfametoxazol",
+                "Benzatina",
+                "Trocar por azitromicina"
+              ],
+              "resposta": "Trocar por azitromicina",
+              "explicacao": "Alergia a penicilina.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ B19 causa o eritema infeccioso e pode provocar crise aplásica em quem tem anemia falciforme.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 18 meses na creche com vesículas em mãos, pés e boca e febre.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "parvovírus",
-                "herpes-vírus",
-                "enterovírus",
-                "rotavírus"
+                "Impetigo",
+                "Herpes",
+                "Varicela",
+                "Coxsackievirose"
               ],
-              "resposta": "parvovírus",
-              "explicacao": "Ele infecta as células que produzem as hemácias.",
-              "revisado": false
+              "resposta": "Coxsackievirose",
+              "explicacao": "Mão-pé-boca.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança de 5 anos tem febre e dor de garganta e, no dia seguinte, manchas ásperas como lixa, mais fortes nas dobras, com palidez ao redor da boca.",
-              "enunciado": "Qual é o diagnóstico e o tratamento?",
+              "caso": "Adolescente com febre há 14 dias, placas nas amígdalas, linfonodos, baço grande e exantema após amoxicilina.",
+              "enunciado": "Qual é a etiologia?",
               "opcoes": [
-                "Escarlatina; amoxicilina ou penicilina",
-                "Sarampo",
-                "Rubéola",
-                "Sarampo; sem tratamento, só isolamento e vitamina A em dose alta"
+                "Dengue",
+                "Estreptococo",
+                "Parvovírus",
+                "Epstein-Barr"
               ],
-              "resposta": "Escarlatina; amoxicilina ou penicilina",
-              "explicacao": "É causada pelo estreptococo do grupo A. O tratamento previne a febre reumática.",
-              "revisado": false
+              "resposta": "Epstein-Barr",
+              "explicacao": "Mononucleose.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual doença tem febre alta, tosse, coriza, conjuntivite e manchas que começam atrás das orelhas?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com coriza, tosse e febre, depois conjuntivite e exantema que começa atrás das orelhas e desce.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Sarampo",
+                "Dengue",
                 "Rubéola",
-                "Varicela",
-                "Roséola"
+                "Escarlatina",
+                "Sarampo"
               ],
               "resposta": "Sarampo",
-              "explicacao": "É uma doença de notificação imediata e prevenível pela vacina tríplice viral.",
-              "revisado": false
+              "explicacao": "Descamação furfurácea.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vitamina A deve ser evitada em crianças com sarampo.",
-              "resposta": false,
-              "explicacao": "Falso. Toda criança com sarampo deve receber vitamina A, que reduz complicações e mortes.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com eczema crônico nas dobras agora úmido com crostas melicéricas.",
+              "enunciado": "Qual é o agente?",
+              "opcoes": [
+                "Herpes",
+                "Cândida",
+                "Estreptococo",
+                "Staphylococcus aureus"
+              ],
+              "resposta": "Staphylococcus aureus",
+              "explicacao": "Coloniza a dermatite atópica.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l1-q8",
@@ -995,24 +1020,33 @@
             {
               "id": "ped-u3-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual agente causa pneumonia atípica comum em escolares e adolescentes?",
+              "enunciado": "Na otite média aguda sem antibiótico recente nem conjuntivite purulenta, qual é a escolha?",
               "opcoes": [
-                "Mycoplasma pneumoniae",
-                "Streptococcus agalactiae",
-                "Haemophilus influenzae tipo b",
-                "Staphylococcus aureus"
+                "Cefuroxima",
+                "Cefaclor",
+                "Amoxicilina-clavulanato",
+                "Amoxicilina"
               ],
-              "resposta": "Mycoplasma pneumoniae",
-              "explicacao": "O tratamento é feito com macrolídeo, como a azitromicina.",
-              "revisado": false
+              "resposta": "Amoxicilina",
+              "explicacao": "Primeira linha.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Derrame pleural com piora clínica na pneumonia infantil sempre se resolve só com antibiótico.",
-              "resposta": false,
-              "explicacao": "Falso. Pode indicar empiema, que precisa de drenagem.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Escolar com coriza e tosse há 15 dias, agora com febre.",
+              "enunciado": "Qual medicação?",
+              "opcoes": [
+                "Claritromicina",
+                "Cefixima",
+                "Cefalexina",
+                "Amoxicilina"
+              ],
+              "resposta": "Amoxicilina",
+              "explicacao": "Sinusite bacteriana.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u3-l2-q8",
@@ -1409,17 +1443,18 @@
             {
               "id": "ped-u4-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 10 meses está muito magro, sem edema, com pele frouxa e aspecto envelhecido.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Menino de 8 anos com IMC acima do p95.",
+              "enunciado": "Qual orientação?",
               "opcoes": [
-                "Marasmo",
-                "Kwashiorkor",
-                "Obesidade",
-                "Crescimento normal"
+                "Sibutramina",
+                "Mais carboidrato",
+                "Menos atividade",
+                "Perder peso pelo risco de doença hepática gordurosa"
               ],
-              "resposta": "Marasmo",
-              "explicacao": "O corpo consome gordura e músculo para sobreviver.",
-              "revisado": false
+              "resposta": "Perder peso pelo risco de doença hepática gordurosa",
+              "explicacao": "Comorbidades da obesidade.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -1493,17 +1528,18 @@
             {
               "id": "ped-u4-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança de 18 meses toma muito leite de vaca, está pálida e tem hemoglobina de 8,5 g/dL com hemácias pequenas.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Criança de 18 meses que tomou leite de vaca desde os 3 meses tem anemia.",
+              "enunciado": "O que o hemograma mostra?",
               "opcoes": [
-                "Sulfato ferroso e menos leite na dieta",
-                "Transfusão",
-                "Vitamina B12",
-                "Transfusão de sangue imediata e mais leite de vaca na dieta"
+                "VCM normal",
+                "RDW normal",
+                "Tudo normal",
+                "VCM baixo, HCM baixo e RDW alto"
               ],
-              "resposta": "Sulfato ferroso e menos leite na dieta",
-              "explicacao": "O ferro deve ser mantido por alguns meses após normalizar a hemoglobina, para repor os estoques.",
-              "revisado": false
+              "resposta": "VCM baixo, HCM baixo e RDW alto",
+              "explicacao": "Ferropriva.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u4-l3-q6",
@@ -1800,17 +1836,18 @@
             {
               "id": "ped-u5-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança tem febre alta, prostração e manchas roxas que se espalham rapidamente pelo corpo.",
-              "enunciado": "Qual é a conduta imediata?",
+              "caso": "Colega de turma de um menino de 6 anos teve meningite meningocócica.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Antibiótico venoso já e suporte, sem esperar exames",
-                "Esperar o hemograma",
-                "Antitérmico e alta",
-                "Punção lombar antes de qualquer antibiótico, esperando o resultado"
+                "Rifampicina",
+                "Hemograma",
+                "Isolamento",
+                "Vacinar no posto"
               ],
-              "resposta": "Antibiótico venoso já e suporte, sem esperar exames",
-              "explicacao": "A meningococcemia pode matar em poucas horas. O antibiótico não pode atrasar.",
-              "revisado": false
+              "resposta": "Vacinar no posto",
+              "explicacao": "Colega de escola não é contato íntimo.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -2154,26 +2191,34 @@
             },
             {
               "id": "ped-u6-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No Brasil, a profilaxia secundária da febre reumática é feita com penicilina benzatina a cada 21 dias, por anos.",
-              "resposta": true,
-              "explicacao": "A duração depende de ter havido cardite e de sequelas nas valvas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando a vasculite por IgA pede corticoide sistêmico?",
+              "opcoes": [
+                "Artrite e hemorragia",
+                "Púrpura e intestino",
+                "Necrose e artrite",
+                "Orquite e envolvimento intestinal grave"
+              ],
+              "resposta": "Orquite e envolvimento intestinal grave",
+              "explicacao": "Casos graves.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u6-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Adolescente tem dor e inchaço que passam de uma grande articulação para outra, 3 semanas após uma faringite. A ASLO está elevada.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Criança com resfriado, dor nos tornozelos e abdome e púrpura palpável nas pernas.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Febre reumática",
-                "Artrite séptica",
-                "Artrite idiopática juvenil",
-                "Gota"
+                "Leucemia",
+                "Farmacodermia",
+                "PTI",
+                "Púrpura de Henoch-Schönlein"
               ],
-              "resposta": "Febre reumática",
-              "explicacao": "A artrite migratória responde muito bem a anti-inflamatórios.",
-              "revisado": false
+              "resposta": "Púrpura de Henoch-Schönlein",
+              "explicacao": "Vasculite por IgA.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -2263,40 +2308,50 @@
             },
             {
               "id": "ped-u6-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é uma complicação da síndrome nefrótica?",
+              "tipo": "caso_clinico",
+              "caso": "Escolar com PA entre p90 e p95, nunca medida antes.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Trombose e infecções, como peritonite",
-                "Hipertireoidismo",
-                "Anemia falciforme",
-                "Hipertireoidismo e asma de início súbito"
+                "Normotenso",
+                "Nefrologista",
+                "Tratar",
+                "Medir mais 2 vezes e tirar a média"
               ],
-              "resposta": "Trombose e infecções, como peritonite",
-              "explicacao": "A perda de proteínas da coagulação e de anticorpos pela urina explica esses riscos.",
-              "revisado": false
+              "resposta": "Medir mais 2 vezes e tirar a média",
+              "explicacao": "Diagnóstico exige várias medidas.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u6-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na glomerulonefrite pós-estreptocócica, o tratamento é principalmente de suporte, controlando a pressão e o volume.",
-              "resposta": true,
-              "explicacao": "Restrição de sal e diurético costumam bastar. A maioria das crianças se recupera bem.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com edema, urina escura, hipertensão e hematúria.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Alergia",
+                "Nefrótica",
+                "Intoxicação",
+                "Complicação de estreptococo"
+              ],
+              "resposta": "Complicação de estreptococo",
+              "explicacao": "Glomerulonefrite pós-estreptocócica.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u6-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 8 anos tem urina cor de coca-cola, inchaço e pressão alta 2 semanas após uma infecção de pele (impetigo).",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual proteinúria define síndrome nefrótica?",
               "opcoes": [
-                "Glomerulonefrite pós-estreptocócica",
-                "Síndrome nefrótica por lesões mínimas",
-                "Infecção urinária",
-                "Nefropatia por IgA"
+                "Acima de 40 mg/kg/dia",
+                "Acima de 30",
+                "Acima de 50 e 30",
+                "Acima de 50 mg/kg/dia ou 40 mg/m²/h"
               ],
-              "resposta": "Glomerulonefrite pós-estreptocócica",
-              "explicacao": "Na nefropatia por IgA, o sangue na urina aparece 1 a 2 dias após a infecção, e não semanas depois.",
-              "revisado": false
+              "resposta": "Acima de 50 mg/kg/dia ou 40 mg/m²/h",
+              "explicacao": "Nível nefrótico.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -3059,17 +3114,19 @@
             },
             {
               "id": "ped-u8-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A prematuridade e a ___ perinatal são causas de paralisia cerebral.",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 6 anos com dificuldade de aprender e hiperatividade.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "asfixia",
-                "febre",
-                "icterícia leve",
-                "vacina"
+                "Metilfenidato",
+                "Psiquiatra",
+                "Trocar de turma",
+                "Avaliar audição e visão"
               ],
-              "resposta": "asfixia",
-              "explicacao": "Lesão cerebral precoce.",
-              "revisado": false
+              "resposta": "Avaliar audição e visão",
+              "explicacao": "Afastar causas sensoriais.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -3102,39 +3159,51 @@
             },
             {
               "id": "ped-u9-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a profilaxia de infecção na criança falciforme?",
+              "tipo": "caso_clinico",
+              "caso": "Criança falciforme com priapismo há 24 h que não cedeu.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Penicilina até 5 anos e vacinas",
-                "Antifúngico",
+                "Compressas frias",
+                "Menos hidratação",
                 "Corticoide",
-                "Corticoide e antifúngico contínuos"
+                "Fenilefrina local"
               ],
-              "resposta": "Penicilina até 5 anos e vacinas",
-              "explicacao": "Pelo baço que não funciona.",
-              "revisado": false
+              "resposta": "Fenilefrina local",
+              "explicacao": "Aspiração e alfa-agonista.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u9-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A hidroxiureia aumenta as crises de dor na anemia falciforme.",
-              "resposta": false,
-              "explicacao": "Falso. Ela reduz crises e internações, pois aumenta a hemoglobina fetal.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança falciforme com febre, tosse, dor abdominal, saturação de 90% e infiltrado no raio X.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Antibiótico oral",
+                "Salbutamol",
+                "Corticoide",
+                "Internar, analgesia e antibiótico venoso"
+              ],
+              "resposta": "Internar, analgesia e antibiótico venoso",
+              "explicacao": "Síndrome torácica aguda.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u9-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ transcraniano rastreia risco de AVC na anemia falciforme.",
+              "tipo": "caso_clinico",
+              "caso": "Criança com anemia hemolítica e hemoglobinúria 4 h após sulfametoxazol.",
+              "enunciado": "Qual é o mecanismo?",
               "opcoes": [
-                "Doppler",
-                "raio X",
-                "eletroencefalograma",
-                "ultrassom de abdome"
+                "Antígeno-anticorpo",
+                "Endotélio",
+                "Microangiopatia",
+                "Dano à membrana da hemácia"
               ],
-              "resposta": "Doppler",
-              "explicacao": "Feito de 2 a 16 anos.",
-              "revisado": false
+              "resposta": "Dano à membrana da hemácia",
+              "explicacao": "Estresse oxidativo na G6PD.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u9-l1-q5",
@@ -3531,11 +3600,19 @@
             },
             {
               "id": "ped-u10-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Corticoide e broncodilatador não são recomendados de rotina na bronquiolite.",
-              "resposta": true,
-              "explicacao": "Sem benefício comprovado.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 15 meses com covid, crepitações e infiltrado intersticial.",
+              "enunciado": "Qual é o tratamento?",
+              "opcoes": [
+                "Corticoide e beta-2",
+                "Antibiótico",
+                "UTI",
+                "Internar na enfermaria e tratar sintomas"
+              ],
+              "resposta": "Internar na enfermaria e tratar sintomas",
+              "explicacao": "Sem sinais de gravidade.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u10-l1-q8",
@@ -3928,39 +4005,50 @@
             },
             {
               "id": "ped-u11-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A ginecomastia puberal sempre precisa de cirurgia.",
-              "resposta": false,
-              "explicacao": "Falso. Ela costuma regredir sozinha em até 2 anos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Como é a leucorreia fisiológica?",
+              "opcoes": [
+                "Com disúria",
+                "Com patógenos",
+                "Só após a menarca",
+                "Inodora, leitosa ou clara e sem prurido"
+              ],
+              "resposta": "Inodora, leitosa ou clara e sem prurido",
+              "explicacao": "Efeito estrogênico.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u11-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O volume testicular de ___ mL indica início da puberdade.",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 2 anos com aderência dos pequenos lábios, sem sintomas.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "4",
-                "1",
-                "10",
-                "20"
+                "Ginecologista",
+                "Cirurgia",
+                "Separar manualmente",
+                "Observar"
               ],
-              "resposta": "4",
-              "explicacao": "Medido com orquidômetro.",
-              "revisado": false
+              "resposta": "Observar",
+              "explicacao": "Resolve com a puberdade.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u11-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de puberdade atrasada no menino?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 14 anos e meio com telarca aos 10 anos e 4 meses, sem menarca.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Atraso constitucional",
-                "Tumor",
-                "Síndrome genética",
-                "Hipotireoidismo congênito"
+                "Exames",
+                "Endocrinologista",
+                "Ultrassom",
+                "Considerar normal"
               ],
-              "resposta": "Atraso constitucional",
-              "explicacao": "Histórico familiar.",
-              "revisado": false
+              "resposta": "Considerar normal",
+              "explicacao": "Menarca até 3 anos após a telarca.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u11-l2-q6",
@@ -4219,11 +4307,19 @@
             },
             {
               "id": "ped-u12-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A meningite tuberculosa é forma grave mais comum em crianças pequenas não vacinadas.",
-              "resposta": true,
-              "explicacao": "Prevenida pela BCG.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mãe bacilífera com 4 filhos assintomáticos: bebê de 8 dias sem BCG; 1 ano PT 6 mm; 3 anos PT 0; 12 anos PT 5.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Repetir PT em todos",
+                "BCG no bebê",
+                "Esperar 3 meses",
+                "Bebê: quimioprofilaxia primária; 1 ano e 12 anos: tratar latente; 3 anos: repetir PT em 8 semanas"
+              ],
+              "resposta": "Bebê: quimioprofilaxia primária; 1 ano e 12 anos: tratar latente; 3 anos: repetir PT em 8 semanas",
+              "explicacao": "PT 5 mm ou mais trata.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u12-l1-q8",
@@ -4458,25 +4554,34 @@
             {
               "id": "ped-u12-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança com coceira anal à noite e sono agitado.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menino com giardíase e só albendazol disponível.",
+              "enunciado": "Como prescrever?",
               "opcoes": [
-                "Oxiuríase",
-                "Giardíase",
-                "Ascaridíase",
-                "Normal"
+                "3 dias",
+                "7 dias e repetir",
+                "Dose única",
+                "Uma dose por dia por 5 dias"
               ],
-              "resposta": "Oxiuríase",
-              "explicacao": "Tratar a família.",
-              "revisado": false
+              "resposta": "Uma dose por dia por 5 dias",
+              "explicacao": "Esquema para giárdia.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u12-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A estrongiloidíase pode ser grave em imunossuprimidos.",
-              "resposta": true,
-              "explicacao": "Hiperinfecção.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina rural com anemia, eosinofilia e vesículas pruriginosas nos pés.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Tricuríase",
+                "Amebíase",
+                "Ascaridíase",
+                "Ancilostomíase"
+              ],
+              "resposta": "Ancilostomíase",
+              "explicacao": "Penetra pela pele.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u12-l3-q8",
@@ -4921,46 +5026,49 @@
             },
             {
               "id": "ped-u14-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ de banho deve ser testado para evitar queimaduras.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando operar a distopia testicular?",
               "opcoes": [
-                "calor da água",
-                "sabonete",
-                "xampu",
-                "horário do banho"
+                "No 2º ano",
+                "Após 1 ano",
+                "Após ultrassom",
+                "No 1º ano, após os 6 meses"
               ],
-              "resposta": "calor da água",
-              "explicacao": "Testar com o cotovelo.",
-              "revisado": false
+              "resposta": "No 1º ano, após os 6 meses",
+              "explicacao": "Até 18 meses.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u14-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a orientação sobre andadores?",
+              "enunciado": "O que indicam os cistos de esmegma na fimose?",
               "opcoes": [
-                "Não usar; causam quedas",
-                "Usar sempre",
-                "Ajudam a andar",
-                "Usar sempre, porque ajudam a andar mais cedo"
+                "Complicação cirúrgica",
+                "Infecção tópica",
+                "Infecção sistêmica",
+                "Que o prepúcio está descolando"
               ],
-              "resposta": "Não usar; causam quedas",
-              "explicacao": "Não recomendados.",
-              "revisado": false
+              "resposta": "Que o prepúcio está descolando",
+              "explicacao": "Resolução natural.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u14-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Pais perguntam como prevenir intoxicações em casa.",
-              "enunciado": "Qual é a orientação?",
+              "caso": "Menina de 6 anos tratando amigdalite com amoxicilina tem febre, dor e aumento no pescoço e limitação de movimento.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Remédios e produtos trancados, fora do alcance",
-                "Em garrafas de refrigerante",
-                "Na geladeira",
-                "Guardar em garrafas de refrigerante embaixo da pia"
+                "Meningite",
+                "Subluxação",
+                "Adenite reacional",
+                "Abscesso retrofaríngeo"
               ],
-              "resposta": "Remédios e produtos trancados, fora do alcance",
-              "explicacao": "Prevenção.",
-              "revisado": false
+              "resposta": "Abscesso retrofaríngeo",
+              "explicacao": "Complicação profunda.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-u14-l1-q7",
@@ -5787,54 +5895,66 @@
             {
               "id": "ped-d2-l2-q4",
               "tipo": "caso_clinico",
-              "caso": "Comunicante íntimo de criança com meningite meningocócica.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Menino de 7 anos com meningite bacteriana e petéquias.",
+              "enunciado": "Qual é o antibiótico?",
               "opcoes": [
-                "Quimioprofilaxia com rifampicina",
-                "Vacina apenas",
-                "Ceftriaxona 10 dias",
-                "Ceftriaxona venosa por dez dias em todos os contatos"
+                "Ceftriaxona só",
+                "Cefotaxima e ampicilina",
+                "Ceftriaxona 50",
+                "Ceftriaxona 100 mg/kg com vancomicina"
               ],
-              "resposta": "Quimioprofilaxia com rifampicina",
-              "explicacao": "A profilaxia deve ser feita de preferência em até 48 horas.",
-              "revisado": false
+              "resposta": "Ceftriaxona 100 mg/kg com vancomicina",
+              "explicacao": "Cobrir pneumococo resistente.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d2-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A dexametasona antes ou junto do antibiótico reduz a surdez na meningite por Haemophilus influenzae tipo b.",
-              "resposta": true,
-              "explicacao": "Ela deve ser dada antes ou junto da primeira dose do antibiótico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menino de 7 anos teve crise tônico-clônica que parou antes de chegar ao hospital.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Benzodiazepínico",
+                "Internar",
+                "Punção",
+                "Monitorar sinais vitais e via aérea"
+              ],
+              "resposta": "Monitorar sinais vitais e via aérea",
+              "explicacao": "Crise já cessou.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d2-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 8 meses com febre e choro intenso tem a fontanela abaulada.",
-              "enunciado": "O que isso sugere?",
+              "caso": "Bebê de 7 meses com espasmos em salvas, regressão e hipsarritmia.",
+              "enunciado": "Qual é a síndrome?",
               "opcoes": [
-                "Pressão alta no crânio (meningite)",
-                "Desidratação",
-                "Normal",
-                "Fome e choro comum de bebê com cólica"
+                "Dravet",
+                "Ausência",
+                "Lennox",
+                "Síndrome de West"
               ],
-              "resposta": "Pressão alta no crânio (meningite)",
-              "explicacao": "A fontanela deprimida sugere desidratação.",
-              "revisado": false
+              "resposta": "Síndrome de West",
+              "explicacao": "Espasmos infantis.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d2-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A complicação mais comum da meningite bacteriana a longo prazo em crianças é a perda da ___.",
+              "tipo": "caso_clinico",
+              "caso": "Menino com fraqueza ascendente e arreflexia após diarreia e líquor com proteína alta.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "audição",
-                "visão",
-                "fala",
-                "memória"
+                "Plasmaférese",
+                "Corticoide",
+                "AINE",
+                "Imunoglobulina"
               ],
-              "resposta": "audição",
-              "explicacao": "Toda criança que teve meningite deve fazer teste de audição.",
-              "revisado": false
+              "resposta": "Imunoglobulina",
+              "explicacao": "Guillain-Barré.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d2-l2-q8",
@@ -6510,58 +6630,50 @@
           "questoes": [
             {
               "id": "ped-d4-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Menina de 6 anos tem desenvolvimento de mamas e pelos pubianos, com idade óssea avançada e LH alto após estímulo.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Menino de 5 anos com linfonodos cervical e inguinal. Acima de quanto são aumentados?",
               "opcoes": [
-                "Puberdade precoce central",
-                "Telarca precoce isolada",
-                "Pubarca precoce",
-                "Normal"
+                "0,5 e 1 cm",
+                "1,5 e 2 cm",
+                "2 e 2,5 cm",
+                "1 cm cervical e 1,5 cm inguinal"
               ],
-              "resposta": "Puberdade precoce central",
-              "explicacao": "A ressonância de crânio é indicada, principalmente em meninos.",
-              "revisado": false
+              "resposta": "1 cm cervical e 1,5 cm inguinal",
+              "explicacao": "Limites por região.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à causa.",
-              "pares": [
-                {
-                  "esquerda": "Telarca isolada em menina de 2 anos",
-                  "direita": "Telarca precoce benigna"
-                },
-                {
-                  "esquerda": "Pelos pubianos isolados com cheiro de suor",
-                  "direita": "Adrenarca precoce"
-                },
-                {
-                  "esquerda": "Menino de 5 anos com puberdade e testículos pequenos",
-                  "direita": "Fonte de andrógeno fora dos testículos"
-                },
-                {
-                  "esquerda": "Mancha café com leite e puberdade precoce",
-                  "direita": "Síndrome de McCune-Albright"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos e meio resiste ao desfralde e retém fezes.",
+              "enunciado": "Qual é a orientação?",
+              "opcoes": [
+                "Insistir",
+                "Novas estratégias sem fralda",
+                "Terapia",
+                "Pausar o treino e voltar às fraldas"
               ],
-              "explicacao": "Na puberdade central do menino, os testículos crescem.",
-              "revisado": false
+              "resposta": "Pausar o treino e voltar às fraldas",
+              "explicacao": "Evitar constipação.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d4-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Menina de 13 anos e meio sem nenhum desenvolvimento das mamas.",
-              "enunciado": "Como classificar?",
+              "caso": "Menina de 8 anos com Crohn em recaída está cansada, desmotivada e desatenta.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Puberdade atrasada",
-                "Normal, pode esperar até os 16",
-                "Puberdade precoce",
-                "Atraso só se não menstruar até os 18"
+                "Não incapacita",
+                "Evitar antidepressivo",
+                "Evitar terapia",
+                "São sintomas comuns e atividade física ajuda"
               ],
-              "resposta": "Puberdade atrasada",
-              "explicacao": "Sem mamas aos 13 anos define puberdade atrasada em meninas; nos meninos, sem aumento testicular aos 14.",
-              "revisado": false
+              "resposta": "São sintomas comuns e atividade física ajuda",
+              "explicacao": "Saúde mental na doença crônica.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d4-l2-q4",
@@ -6749,17 +6861,18 @@
             {
               "id": "ped-d4-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos come terra e paredes.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Recém-nascido em aleitamento exclusivo com bom ganho de peso chora muito.",
+              "enunciado": "Qual é a orientação?",
               "opcoes": [
-                "Pica por anemia ferropriva ou chumbo",
-                "Normal",
-                "Autismo apenas",
-                "Comportamento normal da idade, sem investigação"
+                "Chupeta",
+                "Fórmula",
+                "Chá",
+                "Amamentar em livre demanda"
               ],
-              "resposta": "Pica por anemia ferropriva ou chumbo",
-              "explicacao": "A pica deve levar à pesquisa de ferro e chumbo.",
-              "revisado": false
+              "resposta": "Amamentar em livre demanda",
+              "explicacao": "Choro é comum.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -7135,32 +7248,35 @@
             },
             {
               "id": "ped-d5-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na gastrosquise, o intestino fica para fora sem membrana, ao lado do umbigo, enquanto na ___ há membrana cobrindo.",
+              "tipo": "caso_clinico",
+              "caso": "Lactente de 10 meses com melena e anemia, toque e clister normais.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "onfalocele",
-                "hérnia umbilical",
-                "hérnia inguinal",
-                "extrofia"
+                "Fezes",
+                "Colonoscopia",
+                "RM",
+                "Cintilografia com tecnécio"
               ],
-              "resposta": "onfalocele",
-              "explicacao": "A onfalocele se associa mais a outras malformações.",
-              "revisado": false
+              "resposta": "Cintilografia com tecnécio",
+              "explicacao": "Divertículo de Meckel.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d5-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Menino de 6 anos com fimose, sem infecções e sem dificuldade para urinar.",
+              "caso": "Bebê de 3 meses com testículo esquerdo não palpável, resto normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Pomada de corticoide e, se falhar, cirurgia",
-                "Cirurgia de urgência",
-                "Forçar a retração",
-                "Forçar a retração da pele todo dia no banho"
+                "Cirurgia já",
+                "Hormônio",
+                "Ultrassom",
+                "Aguardar até 6 meses"
               ],
-              "resposta": "Pomada de corticoide e, se falhar, cirurgia",
-              "explicacao": "A fimose fisiológica é normal nos primeiros anos.",
-              "revisado": false
+              "resposta": "Aguardar até 6 meses",
+              "explicacao": "Pode descer sozinho.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -7796,26 +7912,35 @@
             },
             {
               "id": "ped-d7-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Bebê com eczema grave deve evitar amendoim até os 3 anos para prevenir alergia.",
-              "resposta": false,
-              "explicacao": "Falso. A introdução precoce, sob orientação, reduz a alergia ao amendoim.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses em aleitamento exclusivo com proctocolite alérgica, bem.",
+              "enunciado": "Qual é a abordagem?",
+              "opcoes": [
+                "IgE e dieta",
+                "Hidrolisada",
+                "Aminoácidos",
+                "Dieta sem leite para a mãe, sem exames, reavaliar em 4 semanas"
+              ],
+              "resposta": "Dieta sem leite para a mãe, sem exames, reavaliar em 4 semanas",
+              "explicacao": "Depois reintroduzir.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d7-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança alérgica ao leite precisa de prescrição na saída.",
-              "enunciado": "O que deve receber?",
+              "caso": "Menina com anafilaxia após anti-inflamatório (edema de língua, broncoespasmo e vômitos).",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Plano de ação e adrenalina autoinjetável",
-                "Corticoide contínuo",
-                "Antibiótico",
-                "Corticoide oral contínuo e antibiótico preventivo todos os dias"
+                "Angioedema",
+                "Subcutânea",
+                "Diluição 1:10.000",
+                "Anafilaxia; adrenalina IM na coxa 0,01 mg/kg 1:1.000"
               ],
-              "resposta": "Plano de ação e adrenalina autoinjetável",
-              "explicacao": "Prevenção de reações graves.",
-              "revisado": false
+              "resposta": "Anafilaxia; adrenalina IM na coxa 0,01 mg/kg 1:1.000",
+              "explicacao": "Via intramuscular.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -8089,72 +8214,66 @@
             {
               "id": "ped-d8-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Menino de 3 anos com atraso de fala, comportamento repetitivo, orelhas grandes e mãe com menopausa precoce.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê de 8 meses não responde ao olhar ou sons e tem movimentos repetitivos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Síndrome do X frágil",
-                "Down",
-                "Rett",
-                "Desenvolvimento normal da idade"
+                "É normal",
+                "Hiperativo",
+                "Creche",
+                "Aplicar M-CHAT-R/F"
               ],
-              "resposta": "Síndrome do X frágil",
-              "explicacao": "Pesquisa molecular.",
-              "revisado": false
+              "resposta": "Aplicar M-CHAT-R/F",
+              "explicacao": "Triagem de autismo.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d8-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Menino de 4 anos que cai muito, levanta apoiando nas pernas e tem panturrilhas grossas.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Criança de 2 anos e 8 meses com regressão, sem contato visual, alinhando brinquedos e rígida com mudanças.",
+              "enunciado": "Qual associação é correta?",
               "opcoes": [
-                "Distrofia muscular de Duchenne",
-                "Paralisia cerebral",
-                "Normal",
-                "Raquitismo por falta de vitamina D"
+                "Estereotipia: mesmo objeto",
+                "Linguagem corporal: evitar pessoas",
+                "Interesse fixo: seletividade",
+                "Comportamento ritualizado: não aceitar mudanças"
               ],
-              "resposta": "Distrofia muscular de Duchenne",
-              "explicacao": "CPK muito alta.",
-              "revisado": false
+              "resposta": "Comportamento ritualizado: não aceitar mudanças",
+              "explicacao": "Critério do TEA.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d8-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Menino de 5 anos com panturrilhas grossas e quedas frequentes; para levantar do chão, apoia as mãos nas pernas.",
-              "enunciado": "Qual é o sinal e a hipótese?",
+              "caso": "Menino de 11 anos que andou tarde, com marcha anserina, panturrilhas grandes e sinal de Gowers.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "Gowers; distrofia de Duchenne",
-                "Babinski; paralisia cerebral",
-                "Brudzinski; meningite",
-                "Romberg; ataxia cerebelar"
+                "Amônia",
+                "Eletrólitos",
+                "PCR",
+                "CPK"
               ],
-              "resposta": "Gowers; distrofia de Duchenne",
-              "explicacao": "O sinal de Gowers indica fraqueza proximal; a CPK fica muito alta na Duchenne.",
-              "revisado": false
+              "resposta": "CPK",
+              "explicacao": "Distrofia muscular.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d8-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada síndrome genética vista no ambulatório de pediatria ao achado típico.",
-              "pares": [
-                {
-                  "esquerda": "Síndrome de Down",
-                  "direita": "Hipotonia e prega palmar única"
-                },
-                {
-                  "esquerda": "Síndrome de Rett",
-                  "direita": "Regressão em meninas e movimentos das mãos"
-                },
-                {
-                  "esquerda": "Síndrome de Angelman",
-                  "direita": "Riso fácil e ataxia"
-                },
-                {
-                  "esquerda": "Síndrome de Prader-Willi",
-                  "direita": "Fome excessiva e hipotonia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com dor de garganta há 15 dias e agora artrite no joelho com sinais inflamatórios.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Cefalexina",
+                "Imobilizar",
+                "Oxacilina",
+                "Hemograma e provas inflamatórias"
               ],
-              "explicacao": "Síndromes genéticas.",
-              "revisado": false
+              "resposta": "Hemograma e provas inflamatórias",
+              "explicacao": "Pensar em febre reumática ou artrite reativa.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d8-l2-q5",
@@ -8263,28 +8382,19 @@
             },
             {
               "id": "ped-d8-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor do sistema nervoso infantil à localização.",
-              "pares": [
-                {
-                  "esquerda": "Meduloblastoma",
-                  "direita": "Cerebelo, linha média"
-                },
-                {
-                  "esquerda": "Astrocitoma pilocítico",
-                  "direita": "Cerebelo, cístico e benigno"
-                },
-                {
-                  "esquerda": "Craniofaringioma",
-                  "direita": "Região selar com alteração visual"
-                },
-                {
-                  "esquerda": "Glioma de tronco",
-                  "direita": "Tronco cerebral"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menina de 2 anos caiu da cama (50 cm), vomitou uma vez, Glasgow 15.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Alta",
+                "TC",
+                "Observar 6 h",
+                "Observar 2 horas e dar alta se bem"
               ],
-              "explicacao": "Localizações típicas.",
-              "revisado": false
+              "resposta": "Observar 2 horas e dar alta se bem",
+              "explicacao": "Baixo risco.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d8-l3-q5",
@@ -8698,25 +8808,33 @@
             {
               "id": "ped-d9-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente com reflexo pupilar branco e estrabismo.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menino de 10 anos com cansaço, dor noturna nas pernas, palidez, hepatoesplenomegalia e petéquias.",
+              "enunciado": "Qual é a suspeita?",
               "opcoes": [
-                "Retinoblastoma",
-                "Catarata simples",
-                "Normal",
-                "Conjuntivite"
+                "Falciforme",
+                "Endocardite",
+                "Toxoplasmose",
+                "Leucemia"
               ],
-              "resposta": "Retinoblastoma",
-              "explicacao": "Encaminhar com urgência.",
-              "revisado": false
+              "resposta": "Leucemia",
+              "explicacao": "Infiltração medular.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d9-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A massa mediastinal anterior em criança com leucemia ou linfoma pode comprimir a via aérea na sedação.",
-              "resposta": true,
-              "explicacao": "Cuidado na anestesia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as leucemias na infância, o que é correto?",
+              "opcoes": [
+                "LLC é a mais comum",
+                "Não há blastos no sangue",
+                "LMC tem sintomas desde o início",
+                "Na LLA predominam astenia, dor óssea, febre, sangramentos e linfonodos"
+              ],
+              "resposta": "Na LLA predominam astenia, dor óssea, febre, sangramentos e linfonodos",
+              "explicacao": "Diagnóstico pela medula.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d9-l3-q8",
@@ -9010,32 +9128,33 @@
             {
               "id": "ped-d10-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Lactente com íleo meconial ao nascer.",
-              "enunciado": "O que investigar?",
+              "caso": "Escolar com sibilância, tiragem e taquidispneia moderada.",
+              "enunciado": "Qual medicação?",
               "opcoes": [
-                "Fibrose cística",
-                "Hirschsprung só",
-                "Normal",
-                "Constipação comum do recém-nascido"
+                "Dropropizina",
+                "Acetilcisteína",
+                "Ambroxol",
+                "Salbutamol spray com espaçador"
               ],
-              "resposta": "Fibrose cística",
-              "explicacao": "15% a 20% têm íleo meconial.",
-              "revisado": false
+              "resposta": "Salbutamol spray com espaçador",
+              "explicacao": "Broncodilatador de resgate.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d10-l3-q2",
-              "tipo": "caso_clinico",
-              "caso": "Criança com fibrose cística e Pseudomonas na cultura de escarro pela primeira vez.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal remédio entre as crises de asma?",
               "opcoes": [
-                "Erradicação com antibiótico",
-                "Esperar sintomas",
-                "Corticoide",
-                "Aguardar sintomas antes de qualquer antibiótico"
+                "Antileucotrieno",
+                "LABA",
+                "Corticoide sistêmico",
+                "Corticoide inalatório"
               ],
-              "resposta": "Erradicação com antibiótico",
-              "explicacao": "Evita colonização crônica.",
-              "revisado": false
+              "resposta": "Corticoide inalatório",
+              "explicacao": "Controla a inflamação.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d10-l3-q3",
@@ -9610,41 +9729,50 @@
             },
             {
               "id": "ped-d12-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Criança com Fallot em crise de cianose.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Após o teste do reflexo vermelho no recém-nascido, com que frequência repetir?",
               "opcoes": [
-                "Genupeitoral, oxigênio e morfina",
-                "Prostaglandina",
-                "Digoxina",
-                "Digoxina venosa e prostaglandina"
+                "4 vezes no 1º ano",
+                "3 vezes ao ano até 3 anos",
+                "1 vez ao ano até 4 anos",
+                "2 vezes ao ano até 2 anos"
               ],
-              "resposta": "Genupeitoral, oxigênio e morfina",
-              "explicacao": "Crise hipoxêmica.",
-              "revisado": false
+              "resposta": "2 vezes ao ano até 2 anos",
+              "explicacao": "Rastreia catarata e retinoblastoma.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d12-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com pulsos fracos nas pernas e choque no 7º dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê de 9 meses com face sindrômica e sopro sistólico suave que diminui sentado.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Coarctação crítica com fechamento do canal",
-                "Sepse só",
-                "Normal",
-                "Desidratação simples por pouca amamentação"
+                "Internar",
+                "Furosemida e captopril",
+                "Oximetria",
+                "Encaminhar ao cardiopediatra"
               ],
-              "resposta": "Coarctação crítica com fechamento do canal",
-              "explicacao": "Prostaglandina.",
-              "revisado": false
+              "resposta": "Encaminhar ao cardiopediatra",
+              "explicacao": "Síndrome aumenta risco de cardiopatia.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d12-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Persistência do canal arterial em prematuro não tem tratamento com remédio, só com cirurgia.",
-              "resposta": false,
-              "explicacao": "Falso. Pode ser fechada com ibuprofeno ou paracetamol.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 2 meses com crises de cianose e coração em tamanco holandês.",
+              "enunciado": "O que esse formato indica?",
+              "opcoes": [
+                "Cavidades esquerdas",
+                "Hipertensão pulmonar",
+                "Canal arterial",
+                "Hipertrofia do ventrículo direito"
+              ],
+              "resposta": "Hipertrofia do ventrículo direito",
+              "explicacao": "Tetralogia de Fallot.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d12-l1-q8",
@@ -10659,18 +10787,18 @@
             },
             {
               "id": "ped-d14-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Pais recusam vacinação da criança.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Residente fez reanimação sem sucesso e não registrou no prontuário. A conduta foi:",
               "opcoes": [
-                "Orientar riscos, registrar e, se preciso, Conselho Tutelar",
-                "Obrigar à força",
-                "Recusar atendimento",
-                "Vacinar à força com ajuda da segurança, sem conversar com os pais"
+                "Certa, por ser residente",
+                "Certa, pois morreu",
+                "Errada, não devia participar",
+                "Errada, todo atendimento deve ser registrado"
               ],
-              "resposta": "Orientar riscos, registrar e, se preciso, Conselho Tutelar",
-              "explicacao": "Direito à saúde da criança.",
-              "revisado": false
+              "resposta": "Errada, todo atendimento deve ser registrado",
+              "explicacao": "Obrigação ética.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "ped-d14-l3-q7",
