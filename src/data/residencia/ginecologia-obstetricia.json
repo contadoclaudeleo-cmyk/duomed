@@ -217,31 +217,33 @@
             {
               "id": "go-u1-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Puérpera em uso de sulfato de magnésio apresenta frequência respiratória de 10 irpm e reflexo patelar abolido.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Eclâmpsia que convulsiona de novo em manutenção de magnésio.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Suspender o magnésio e dar gluconato de cálcio",
-                "Aumentar o magnésio",
-                "Trocar por diazepam",
-                "Manter a infusão na mesma dose e reavaliar em quatro horas"
+                "Diazepam",
+                "Dobrar manutenção",
+                "Fenitoína",
+                "Mais 2 g de sulfato de magnésio IV"
               ],
-              "resposta": "Suspender o magnésio e dar gluconato de cálcio",
-              "explicacao": "Arreflexia e depressão respiratória indicam intoxicação. Antes de cada dose, confira reflexo patelar, frequência respiratória e diurese.",
-              "revisado": false
+              "resposta": "Mais 2 g de sulfato de magnésio IV",
+              "explicacao": "Metade do ataque.",
+              "revisado": false,
+              "fonte": "Unicamp 2026"
             },
             {
               "id": "go-u1-l2-q7",
               "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza a síndrome HELLP?",
+              "enunciado": "Como posicionar a gestante para medir a PA?",
               "opcoes": [
-                "Hemólise, enzimas hepáticas altas e plaquetas baixas",
-                "Hipertensão, edema e proteinúria",
-                "Hipoglicemia e plaquetose",
-                "Hemorragia, icterícia, insuficiência renal e convulsão materna"
+                "Deitada de costas",
+                "Em pé",
+                "Decúbito esquerdo",
+                "Sentada"
               ],
-              "resposta": "Hemólise, enzimas hepáticas altas e plaquetas baixas",
-              "explicacao": "É uma forma grave de pré-eclâmpsia. A dor em epigástrio ou hipocôndrio direito é um sintoma de alerta.",
-              "revisado": false
+              "resposta": "Sentada",
+              "explicacao": "Braço na altura do coração.",
+              "revisado": false,
+              "fonte": "Unicamp 2026"
             },
             {
               "id": "go-u1-l2-q8",
@@ -3656,11 +3658,19 @@
             },
             {
               "id": "go-u10-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vacina da rubéola é indicada para gestantes não imunes.",
-              "resposta": false,
-              "explicacao": "Falso. É contraindicada na gestação, pois tem vírus vivo; vacina-se após o parto.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 12 semanas com toxo IgM positiva e IgG negativa, em espiramicina.",
+              "enunciado": "Próximo passo?",
+              "opcoes": [
+                "Avidez",
+                "Amniocentese",
+                "Tratamento tríplice",
+                "Repetir a sorologia"
+              ],
+              "resposta": "Repetir a sorologia",
+              "explicacao": "Excluir falso IgM.",
+              "revisado": false,
+              "fonte": "Unicamp 2026"
             },
             {
               "id": "go-u10-l2-q8",
@@ -8666,17 +8676,18 @@
             {
               "id": "go-d9-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Após misoprostol, a gestante tem 7 contrações em 10 minutos e o feto tem desacelerações.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Gestante com 40 semanas e 4 dias, ILA 5,8 e Bishop 3.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Reanimação intraútero e tocolítico",
-                "Nova dose de misoprostol",
-                "Iniciar ocitocina",
-                "Romper a bolsa e aguardar a evolução"
+                "Cesárea",
+                "Esperar",
+                "Ocitocina direto",
+                "Induzir com preparo do colo"
               ],
-              "resposta": "Reanimação intraútero e tocolítico",
-              "explicacao": "É taquissistolia; reduz-se a contratilidade e melhora-se a oxigenação fetal.",
-              "revisado": false
+              "resposta": "Induzir com preparo do colo",
+              "explicacao": "Misoprostol ou balão.",
+              "revisado": false,
+              "fonte": "Unicamp 2026"
             },
             {
               "id": "go-d9-l3-q4",
@@ -9216,28 +9227,19 @@
             },
             {
               "id": "go-d11-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado da mamografia ao risco.",
-              "pares": [
-                {
-                  "esquerda": "Microcalcificações pleomórficas finas",
-                  "direita": "Suspeito"
-                },
-                {
-                  "esquerda": "Calcificações em pipoca",
-                  "direita": "Fibroadenoma calcificado"
-                },
-                {
-                  "esquerda": "Nódulo espiculado",
-                  "direita": "Muito suspeito"
-                },
-                {
-                  "esquerda": "Linfonodo intramamário com hilo gorduroso",
-                  "direita": "Benigno"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Nódulo de mama de 1,5 cm em jovem com BI-RADS 3.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Biópsia",
+                "Mamografia",
+                "Retirar",
+                "Ultrassom em 6 meses"
               ],
-              "explicacao": "Leitura da mamografia.",
-              "revisado": false
+              "resposta": "Ultrassom em 6 meses",
+              "explicacao": "Provavelmente benigno.",
+              "revisado": false,
+              "fonte": "Unicamp 2026"
             },
             {
               "id": "go-d11-l1-q5",
