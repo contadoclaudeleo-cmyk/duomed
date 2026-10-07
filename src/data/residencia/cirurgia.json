@@ -1177,17 +1177,19 @@
             },
             {
               "id": "cir-u4-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma o refluxo quando a endoscopia é normal e o diagnóstico é duvidoso?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com regurgitação de comida não digerida, mau hálito e tosse há 6 meses.",
+              "enunciado": "Qual exame pedir?",
               "opcoes": [
-                "pHmetria esofágica de 24 h",
-                "Tomografia",
-                "Radiografia simples",
-                "Colonoscopia com biópsias seriadas"
+                "Manometria",
+                "pHmetria",
+                "Endoscopia",
+                "Esofagograma"
               ],
-              "resposta": "pHmetria esofágica de 24 h",
-              "explicacao": "Ela mede quanto tempo o esôfago fica em contato com ácido.",
-              "revisado": false
+              "resposta": "Esofagograma",
+              "explicacao": "Suspeita de divertículo de Zenker.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-u4-l1-q7",
@@ -1512,17 +1514,19 @@
             },
             {
               "id": "cir-u5-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O marcador ___ é usado para acompanhar o câncer colorretal após o tratamento.",
+              "tipo": "caso_clinico",
+              "caso": "Colonoscopia de rastreio retirou seis pólipos serrilhados menores que 1 cm.",
+              "enunciado": "Quando repetir?",
               "opcoes": [
-                "CEA",
-                "PSA",
-                "CA-125",
-                "AFP"
+                "Seis meses",
+                "Cinco anos",
+                "Dez anos",
+                "Três anos"
               ],
-              "resposta": "CEA",
-              "explicacao": "Se ele volta a subir, pode indicar recidiva.",
-              "revisado": false
+              "resposta": "Três anos",
+              "explicacao": "Mais de quatro pólipos serrilhados.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-u5-l1-q5",
@@ -2535,17 +2539,19 @@
           "questoes": [
             {
               "id": "cir-u8-l1-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o sintoma clássico da doença arterial periférica?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com claudicação, endarterectomia prévia, LDL 48, em AAS e estatina.",
+              "enunciado": "O que acrescentar para reduzir risco cardiovascular?",
               "opcoes": [
-                "Claudicação intermitente",
-                "Dor ao repouso deitado sempre",
-                "Inchaço",
-                "Coceira"
+                "Ticagrelor",
+                "Cilostazol",
+                "Nada",
+                "Rivaroxabana em dose baixa"
               ],
-              "resposta": "Claudicação intermitente",
-              "explicacao": "Dor na panturrilha ao andar que melhora parando.",
-              "revisado": false
+              "resposta": "Rivaroxabana em dose baixa",
+              "explicacao": "Rivaroxabana 2,5 mg com AAS reduz eventos.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-u8-l1-q2",
@@ -2793,11 +2799,19 @@
             },
             {
               "id": "cir-u8-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A úlcera venosa costuma ficar na região do maléolo medial.",
-              "resposta": true,
-              "explicacao": "A arterial fica em pontas e locais de pressão.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idoso com úlcera rasa na face medial da perna, edema maior à direita e pulsos normais.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Papaína",
+                "Angiotomografia",
+                "AAS e estatina",
+                "Terapia compressiva"
+              ],
+              "resposta": "Terapia compressiva",
+              "explicacao": "Úlcera venosa.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-u8-l3-q4",
@@ -5540,17 +5554,19 @@
             },
             {
               "id": "cir-u16-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual teste sugere hérnia de disco lombar com compressão de raiz?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com dor lombar após crossfit irradiada para a panturrilha e planta, com Lasègue positivo e aquileu reduzido.",
+              "enunciado": "Qual raiz?",
               "opcoes": [
-                "Teste de Lasègue",
-                "Phalen",
-                "Lachman",
-                "Teste de Thomas no quadril"
+                "L1",
+                "L2",
+                "L4",
+                "S1"
               ],
-              "resposta": "Teste de Lasègue",
-              "explicacao": "Dor irradia abaixo do joelho.",
-              "revisado": false
+              "resposta": "S1",
+              "explicacao": "O aquileu é S1.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-u16-l2-q6",
@@ -7704,25 +7720,34 @@
             {
               "id": "cir-d6-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente com estenose aórtica grave e sintomas precisa de cirurgia de quadril eletiva.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher em prednisona 20 mg e varfarina (CHA2DS2-VASc 3) fará vitrectomia.",
+              "enunciado": "Como ajustar?",
               "opcoes": [
-                "Avaliar corrigir a valva antes da cirurgia eletiva",
-                "Operar sem avaliar",
-                "Contraindicar sempre",
-                "Operar o quadril primeiro e só depois avaliar a valva"
+                "Prednisona 40 e suspender varfarina",
+                "Prednisona 40 e ponte",
+                "Manter prednisona e ponte",
+                "Manter prednisona e suspender a varfarina"
               ],
-              "resposta": "Avaliar corrigir a valva antes da cirurgia eletiva",
-              "explicacao": "Estenose aórtica grave sintomática tem alto risco em anestesias.",
-              "revisado": false
+              "resposta": "Manter prednisona e suspender a varfarina",
+              "explicacao": "Risco de trombose baixo não exige ponte.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-d6-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes com stent farmacológico devem adiar cirurgias eletivas até completar o tempo mínimo de dupla antiagregação.",
-              "resposta": true,
-              "explicacao": "Na cirurgia de urgência, mantém-se o AAS sempre que possível.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Obeso com clearance de 37 recebe enoxaparina 60 mg a cada 12 h após colecistectomia; anti-Xa de 0,8.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Manter",
+                "Trocar por heparina",
+                "Suspender",
+                "Reduzir para 40 mg a cada 12 h"
+              ],
+              "resposta": "Reduzir para 40 mg a cada 12 h",
+              "explicacao": "Anti-Xa alto para profilaxia.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-d6-l1-q6",
@@ -9481,17 +9506,18 @@
             {
               "id": "cir-d10-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com AIT há 1 semana e estenose de carótida de 80% do mesmo lado.",
+              "caso": "Homem com doença arterial periférica tem angina estável há um ano e vai revascularizar a perna. Eco normal.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Endarterectomia em até 2 semanas",
-                "Só AAS",
-                "Esperar 6 meses",
-                "Só AAS e repetir o Doppler em seis meses"
+                "Cateterismo antes",
+                "Cintilografia antes",
+                "Clopidogrel",
+                "Betabloqueador"
               ],
-              "resposta": "Endarterectomia em até 2 semanas",
-              "explicacao": "Maior benefício quando precoce.",
-              "revisado": false
+              "resposta": "Betabloqueador",
+              "explicacao": "Angina estável: tratar clinicamente.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-d10-l3-q2",
@@ -10145,17 +10171,18 @@
             {
               "id": "cir-d12-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Fumante com hematúria macroscópica indolor.",
-              "enunciado": "Qual é a investigação?",
+              "caso": "Homem assintomático tem nódulo renal sólido de 0,9 cm sem gordura na TC.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cistoscopia e tomografia urinária",
-                "Ultrassom só",
-                "Antibiótico",
-                "Apenas ultrassom e antibiótico oral"
+                "PET",
+                "Cirurgia",
+                "Biópsia",
+                "Acompanhar"
               ],
-              "resposta": "Cistoscopia e tomografia urinária",
-              "explicacao": "Pensar em câncer de bexiga.",
-              "revisado": false
+              "resposta": "Acompanhar",
+              "explicacao": "Massas pequenas podem ser vigiadas.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "cir-d12-l2-q2",
