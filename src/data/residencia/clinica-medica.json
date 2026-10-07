@@ -184,26 +184,44 @@
             },
             {
               "id": "cm-u1-l2-q4",
-              "tipo": "caso_clinico",
-              "caso": "Jovem de 19 anos com poliúria, polidipsia e perda de peso há 3 semanas chega com vômitos, respiração rápida e profunda e hálito cetônico. Glicemia de 480 mg/dL, pH 7,10 e bicarbonato de 8 mEq/L.",
-              "enunciado": "Qual é a primeira medida no tratamento?",
-              "opcoes": [
-                "Soro fisiológico 0,9% na veia",
-                "Bicarbonato de sódio venoso",
-                "Insulina NPH subcutânea",
-                "Insulina NPH subcutânea e restrição de água"
+              "tipo": "associar_pares",
+              "enunciado": "Ligue o remédio do diabetes à sua classe.",
+              "pares": [
+                {
+                  "esquerda": "Sitagliptina",
+                  "direita": "inibidor da DPP-4"
+                },
+                {
+                  "esquerda": "Liraglutida",
+                  "direita": "análogo do GLP-1"
+                },
+                {
+                  "esquerda": "Pioglitazona",
+                  "direita": "agonista do PPAR-gama"
+                },
+                {
+                  "esquerda": "Dapagliflozina",
+                  "direita": "inibidor do SGLT2"
+                }
               ],
-              "resposta": "Soro fisiológico 0,9% na veia",
-              "explicacao": "Na cetoacidose diabética, a hidratação vem primeiro. A insulina regular venosa é iniciada em seguida, desde que o potássio esteja acima de 3,3 mEq/L.",
-              "revisado": false
+              "explicacao": "A pioglitazona é contraindicada na insuficiência cardíaca.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u1-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na cetoacidose diabética, a insulina deve ser iniciada logo, mesmo com potássio abaixo de 3,3 mEq/L.",
-              "resposta": false,
-              "explicacao": "Falso. Com potássio abaixo de 3,3, primeiro se repõe o potássio, porque a insulina o joga para dentro das células e pode causar arritmias.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Diabético internado na enfermaria por pneumonia, com HbA1c de 12. Qual é o melhor esquema?",
+              "opcoes": [
+                "Insulina só por escala",
+                "Manter metformina sempre",
+                "Meta de glicemia abaixo de 100",
+                "Insulina basal com insulina rápida nas refeições"
+              ],
+              "resposta": "Insulina basal com insulina rápida nas refeições",
+              "explicacao": "Meta usual no hospital: 140 a 180.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u1-l2-q6",
@@ -795,17 +813,18 @@
             },
             {
               "id": "cm-u11-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O pulso em ___ de água (Corrigan) é típico da insuficiência aórtica.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a febre reumática, o que é correto?",
               "opcoes": [
-                "martelo",
-                "fio",
-                "platô",
-                "bigeminismo"
+                "Nódulos subcutâneos são comuns e persistentes",
+                "Profilaxia por 5 anos em todos",
+                "PCR alta basta para o diagnóstico",
+                "Na fase aguda, a lesão mais comum é a insuficiência mitral"
               ],
-              "resposta": "martelo",
-              "explicacao": "Pulso amplo que cai rápido.",
-              "revisado": false
+              "resposta": "Na fase aguda, a lesão mais comum é a insuficiência mitral",
+              "explicacao": "A duração da profilaxia depende da cardite.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u11-l1-q5",
@@ -1063,18 +1082,18 @@
             },
             {
               "id": "cm-u11-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 55 anos, fumante e diabético, com LDL de 150.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre dislipidemia, o que é correto?",
               "opcoes": [
-                "Estatina e mudança de hábitos",
-                "Só dieta",
-                "Fibrato",
-                "Só dieta e repetir o exame em cinco anos"
+                "HDL alto é fator de risco",
+                "Estatina é contraindicada com transaminases até 3 vezes",
+                "Hiperlipidemia combinada familiar é a causa grave mais comum na criança",
+                "A apolipoproteína B pode estimar melhor o risco"
               ],
-              "resposta": "Estatina e mudança de hábitos",
-              "explicacao": "Risco cardiovascular alto.",
-              "revisado": false
+              "resposta": "A apolipoproteína B pode estimar melhor o risco",
+              "explicacao": "Na criança, a causa grave mais comum é a hipercolesterolemia familiar.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u11-l3-q7",
@@ -2109,31 +2128,33 @@
             },
             {
               "id": "cm-u20-l4-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na síncope reflexa duvidosa e recorrente, pode-se pedir o teste de ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO sugere síncope por arritmia?",
               "opcoes": [
-                "inclinação",
-                "esforço máximo",
-                "caminhada de seis minutos",
-                "broncoprovocação"
+                "Início súbito, sem pródromo",
+                "Síncope deitado",
+                "Náusea, palidez e suor antes",
+                "Dor no peito antes"
               ],
-              "resposta": "inclinação",
-              "explicacao": "Também chamado de tilt test.",
-              "revisado": false
+              "resposta": "Náusea, palidez e suor antes",
+              "explicacao": "Pródromo autonômico sugere síncope vasovagal.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u20-l4-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Como se define hipotensão ortostática?",
+              "enunciado": "Na investigação da síncope, o que é correto?",
               "opcoes": [
-                "Queda de 20 na sistólica ou 10 na diastólica em pé",
-                "Queda de 5 mmHg na sistólica ao deitar",
-                "Queda de 10 na sistólica ou 5 na diastólica após 10 minutos deitado",
-                "Queda da frequência cardíaca ao sentar"
+                "EEG em todos",
+                "Eco só se houver sopro",
+                "Holter não ajuda",
+                "Tilt-test ajuda na síncope vasovagal"
               ],
-              "resposta": "Queda de 20 na sistólica ou 10 na diastólica em pé",
-              "explicacao": "Medida em até 3 minutos em pé. Comum em idosos e com remédios.",
-              "revisado": false
+              "resposta": "Tilt-test ajuda na síncope vasovagal",
+              "explicacao": "O eco é pedido quando há suspeita de cardiopatia.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u20-l4-q6",
@@ -2605,28 +2626,19 @@
             },
             {
               "id": "cm-u3-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada intervenção ao seu benefício na DPOC.",
-              "pares": [
-                {
-                  "esquerda": "Oxigênio domiciliar mais de 15 horas por dia",
-                  "direita": "Aumenta a sobrevida na hipoxemia grave"
-                },
-                {
-                  "esquerda": "Broncodilatador de longa ação",
-                  "direita": "Reduz sintomas e exacerbações"
-                },
-                {
-                  "esquerda": "Reabilitação pulmonar",
-                  "direita": "Melhora a capacidade de exercício"
-                },
-                {
-                  "esquerda": "Vacina contra influenza",
-                  "direita": "Reduz exacerbações"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Fumante pesado tem, em uma semana, mais falta de ar, mais escarro e escarro purulento, sem febre.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Crise de asma",
+                "Insuficiência cardíaca",
+                "Síndrome da veia cava superior",
+                "Exacerbação da DPOC"
               ],
-              "explicacao": "Junto com parar de fumar, só o oxigênio nos casos indicados aumenta a sobrevida.",
-              "revisado": false
+              "resposta": "Exacerbação da DPOC",
+              "explicacao": "Os três critérios de Anthonisen.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u3-l2-q5",
@@ -3811,11 +3823,18 @@
             },
             {
               "id": "cm-u22-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Em quem tem baixa probabilidade clínica, um D-dímero normal praticamente afasta TEP.",
-              "resposta": true,
-              "explicacao": "O D-dímero tem alta sensibilidade e baixa especificidade.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO faz parte dos critérios PERC para afastar TEP?",
+              "opcoes": [
+                "Idade abaixo de 50",
+                "Frequência cardíaca acima de 100",
+                "Não usar estrogênio",
+                "Sem cirurgia em 4 semanas"
+              ],
+              "resposta": "Frequência cardíaca acima de 100",
+              "explicacao": "O critério é FC abaixo de 100.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-u22-l1-q3",
@@ -3931,28 +3950,18 @@
             },
             {
               "id": "cm-u22-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe o derrame ao tipo.",
-              "pares": [
-                {
-                  "esquerda": "Insuficiência cardíaca",
-                  "direita": "Transudato bilateral"
-                },
-                {
-                  "esquerda": "Cirrose com ascite",
-                  "direita": "Transudato à direita"
-                },
-                {
-                  "esquerda": "Pneumonia",
-                  "direita": "Exsudato com neutrófilos"
-                },
-                {
-                  "esquerda": "Tuberculose",
-                  "direita": "Exsudato com linfócitos e ADA alta"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO é critério de Light para exsudato?",
+              "opcoes": [
+                "Proteína pleural/sérica acima de 0,5",
+                "LDH pleural acima de 2/3 do limite do soro",
+                "Albumina pleural abaixo de 2",
+                "LDH pleural/sérica acima de 0,6"
               ],
-              "explicacao": "O transudato vem de pressão ou proteína baixa no sangue.",
-              "revisado": false
+              "resposta": "Albumina pleural abaixo de 2",
+              "explicacao": "O gradiente de albumina é usado à parte.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-u22-l2-q3",
@@ -4598,40 +4607,49 @@
             },
             {
               "id": "cm-u4-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual destas é indicação de diálise de urgência na lesão renal aguda?",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 63 anos teve um episódio de urina vermelha. Exame de urina e ultrassom sem alterações.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hipercalemia refratária com alteração no ECG",
-                "Creatinina de 2,0",
-                "Ureia 60 sem sintomas",
-                "Diurese de um litro por dia com creatinina de 2,0"
+                "Cistoscopia e urorressonância",
+                "Investigar glomerulopatia",
+                "Só tomografia",
+                "Tranquilizar"
               ],
-              "resposta": "Hipercalemia refratária com alteração no ECG",
-              "explicacao": "Outras indicações são acidose grave, congestão refratária e sintomas de uremia.",
-              "revisado": false
+              "resposta": "Cistoscopia e urorressonância",
+              "explicacao": "Hematúria macroscópica em fumante exige investigar câncer.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u4-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Contraste iodado e aminoglicosídeos não causam lesão renal aguda, pois não agem nos túbulos.",
-              "resposta": false,
-              "explicacao": "Falso. Ambos são tóxicos para os túbulos; hidratar e evitar associar nefrotóxicos reduz o risco.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Por que surge o hiperparatireoidismo secundário na DRC?",
+              "opcoes": [
+                "Cálcio e fósforo altos",
+                "FGF-23 baixo",
+                "Calcitriol alto",
+                "Menos receptores de vitamina D na paratireoide"
+              ],
+              "resposta": "Menos receptores de vitamina D na paratireoide",
+              "explicacao": "Também por fósforo alto, calcitriol baixo e FGF-23 alto.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u4-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Após exercício extenuante, jovem tem urina escura e CPK de 80.000 U/L.",
-              "enunciado": "Qual é a principal medida para proteger o rim?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO é critério KDIGO de lesão renal aguda?",
               "opcoes": [
-                "Hidratação venosa vigorosa",
-                "Restrição de líquidos",
-                "Anti-inflamatório",
-                "Furosemida sem repor volume"
+                "Diurese abaixo de 0,5 mL/kg/h por 6 horas",
+                "Creatinina sobe 50% em 7 dias",
+                "Ureia sobe 30% em 48 horas",
+                "Creatinina sobe 0,3 em 48 horas"
               ],
-              "resposta": "Hidratação venosa vigorosa",
-              "explicacao": "A mioglobina liberada pela rabdomiólise lesa os túbulos. Manter boa diurese ajuda a eliminá-la.",
-              "revisado": false
+              "resposta": "Ureia sobe 30% em 48 horas",
+              "explicacao": "A ureia não entra nos critérios.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             }
           ]
         },
@@ -4705,17 +4723,18 @@
             },
             {
               "id": "cm-u4-l2-q5",
-              "tipo": "completar_lacuna",
-              "enunciado": "Em idosos acamados, a hipernatremia costuma acontecer por falta de acesso à ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio previne e trata o diabetes insípido nefrogênico causado pelo lítio?",
               "opcoes": [
-                "água",
-                "comida",
-                "sal",
-                "glicose"
+                "Espironolactona",
+                "Amilorida",
+                "Furosemida",
+                "Prednisona"
               ],
-              "resposta": "água",
-              "explicacao": "Idosos têm menos sede e muitas vezes dependem de outras pessoas para beber.",
-              "revisado": false
+              "resposta": "Amilorida",
+              "explicacao": "Bloqueia a entrada do lítio no túbulo.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-u4-l2-q6",
@@ -5112,39 +5131,47 @@
             {
               "id": "cm-u5-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual escore avalia a gravidade da cirrose e ajuda a priorizar o transplante?",
+              "enunciado": "O que NÃO é fator de risco para peritonite bacteriana espontânea na cirrose?",
               "opcoes": [
-                "MELD",
-                "CHA2DS2-VASc",
-                "Glasgow",
-                "CURB-65"
+                "Constipação",
+                "Sangramento por varizes",
+                "Proteína baixa na ascite",
+                "Uso de inibidor de bomba"
               ],
-              "resposta": "MELD",
-              "explicacao": "O MELD usa bilirrubina, INR, creatinina e, nas versões atuais, sódio.",
-              "revisado": false
+              "resposta": "Constipação",
+              "explicacao": "A hemorragia digestiva é fator de risco forte.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u5-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Após um episódio de peritonite bacteriana espontânea, não é preciso profilaxia com antibiótico.",
-              "resposta": false,
-              "explicacao": "Falso. O risco de repetir é muito alto; indica-se profilaxia contínua.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a cirrose criptogênica, o que é correto?",
+              "opcoes": [
+                "A causa principal é hepatite autoimune oculta",
+                "A biópsia nunca é necessária",
+                "Progride mais devagar que a viral",
+                "Muitas vezes vem da esteato-hepatite metabólica"
+              ],
+              "resposta": "Muitas vezes vem da esteato-hepatite metabólica",
+              "explicacao": "A síndrome metabólica é a causa mais comum.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u5-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Cirrótico tem pouca urina e creatinina subindo, sem choque e sem remédios tóxicos ao rim, e não melhora após receber albumina.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença hepática esteatótica metabólica, o que é correto?",
               "opcoes": [
-                "Síndrome hepatorrenal",
-                "Necrose tubular aguda",
-                "Obstrução urinária",
-                "Glomerulonefrite"
+                "Transaminases predizem a fibrose",
+                "Não tem relação com história familiar",
+                "Qualquer consumo de álcool exclui o diagnóstico",
+                "Em asiáticos, IMC a partir de 23 já é risco"
               ],
-              "resposta": "Síndrome hepatorrenal",
-              "explicacao": "O tratamento é com terlipressina e albumina. O tratamento definitivo é o transplante de fígado.",
-              "revisado": false
+              "resposta": "Em asiáticos, IMC a partir de 23 já é risco",
+              "explicacao": "O ponto de corte do IMC é menor em asiáticos.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             }
           ]
         },
@@ -5456,28 +5483,18 @@
             },
             {
               "id": "cm-u18-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao quadro adrenal.",
-              "pares": [
-                {
-                  "esquerda": "Hiperpigmentação",
-                  "direita": "Addison primário"
-                },
-                {
-                  "esquerda": "Face em lua cheia",
-                  "direita": "Cushing"
-                },
-                {
-                  "esquerda": "Hipertensão e potássio baixo",
-                  "direita": "Hiperaldosteronismo"
-                },
-                {
-                  "esquerda": "Crises de pressão alta",
-                  "direita": "Feocromocitoma"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que ocorre na insuficiência adrenal primária e NÃO na secundária?",
+              "opcoes": [
+                "Hiponatremia e eosinofilia",
+                "Hipotensão e emagrecimento",
+                "Hiperpigmentação e hipercalemia",
+                "Dor abdominal"
               ],
-              "explicacao": "A adrenal produz vários hormônios.",
-              "revisado": false
+              "resposta": "Hiperpigmentação e hipercalemia",
+              "explicacao": "Na primária falta aldosterona e sobra ACTH.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u18-l2-q5",
@@ -5694,11 +5711,19 @@
             },
             {
               "id": "cm-u10-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A hepatite C pode ser curada com antivirais de ação direta.",
-              "resposta": true,
-              "explicacao": "Tratamento de cerca de 12 semanas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem assintomático, transaminases normais, HBsAg, anti-HBc e anti-HBe reagentes, HBeAg negativo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Tratar hepatite B",
+                "Dizer que é hepatite curada",
+                "Dizer que é vacina",
+                "Pedir carga viral do HBV"
+              ],
+              "resposta": "Pedir carga viral do HBV",
+              "explicacao": "A carga viral define se trata.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u10-l1-q4",
@@ -5818,17 +5843,18 @@
             },
             {
               "id": "cm-u10-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A inflamação ___ (toda a parede) é típica da doença de Crohn.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as doenças inflamatórias intestinais, o que é correto?",
               "opcoes": [
-                "transmural",
-                "superficial",
-                "mucosa",
-                "ausente"
+                "Retocolite pega da boca ao ânus",
+                "p-ANCA é mais do Crohn",
+                "Crohn se limita ao cólon",
+                "Anti-TNF serve para doença moderada a grave refratária"
               ],
-              "resposta": "transmural",
-              "explicacao": "Por isso surgem fístulas.",
-              "revisado": false
+              "resposta": "Anti-TNF serve para doença moderada a grave refratária",
+              "explicacao": "Granuloma é do Crohn.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u10-l2-q5",
@@ -6216,16 +6242,17 @@
             {
               "id": "cm-u6-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual exame avalia se o tratamento antirretroviral está funcionando?",
+              "enunciado": "Na neurocriptococose, o que NÃO indica pior prognóstico?",
               "opcoes": [
-                "Carga viral",
-                "Teste rápido",
-                "Western blot",
-                "Hemograma"
+                "Leveduras no líquor",
+                "Câncer hematológico",
+                "Uso de corticoide",
+                "Anticorpos contra a cápsula"
               ],
-              "resposta": "Carga viral",
-              "explicacao": "O objetivo é carga viral indetectável.",
-              "revisado": false
+              "resposta": "Anticorpos contra a cápsula",
+              "explicacao": "Os anticorpos indicam defesa melhor.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-u6-l2-q7",
@@ -6540,17 +6567,18 @@
             },
             {
               "id": "cm-u12-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O exame da gota ___ confirma a malária.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença de Chagas, o que é correto?",
               "opcoes": [
-                "espessa",
-                "fina",
-                "de urina",
-                "de fezes"
+                "Transfusão é a principal via",
+                "Tratamento funciona mais na fase crônica",
+                "A fase aguda é achada pelo ECG",
+                "O megacólon vem da lesão do plexo de Auerbach"
               ],
-              "resposta": "espessa",
-              "explicacao": "Mostra o parasita no sangue.",
-              "revisado": false
+              "resposta": "O megacólon vem da lesão do plexo de Auerbach",
+              "explicacao": "O tratamento é mais eficaz na fase aguda.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u12-l2-q5",
@@ -7039,17 +7067,18 @@
             },
             {
               "id": "cm-u7-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A espondilite anquilosante está muito associada ao ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a gota, o que é correto?",
               "opcoes": [
-                "HLA-B27",
-                "HLA-DR4",
-                "HLA-DQ2",
-                "HLA-B51"
+                "O joelho é o mais acometido",
+                "Duas articulações na crise fecham o diagnóstico",
+                "Pirofosfato no líquido confirma gota",
+                "Tiazídicos e diuréticos de alça reduzem a excreção de ácido úrico"
               ],
-              "resposta": "HLA-B27",
-              "explicacao": "Também às outras espondiloartrites.",
-              "revisado": false
+              "resposta": "Tiazídicos e diuréticos de alça reduzem a excreção de ácido úrico",
+              "explicacao": "A primeira metatarsofalangeana é a mais acometida.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u7-l3-q5",
@@ -7823,25 +7852,35 @@
             },
             {
               "id": "cm-u9-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Com queixa de memória no idoso, não é preciso dosar B12 nem TSH antes de diagnosticar demência.",
-              "resposta": false,
-              "explicacao": "Falso. Falta de B12 e hipotireoidismo são causas tratáveis e devem ser excluídas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "As pupilas reagem à luz, mas ao alternar a lanterna rapidamente ficam um pouco menores quando a luz está no olho direito.",
+              "enunciado": "Onde pode estar a lesão?",
+              "opcoes": [
+                "Lobo occipital direito",
+                "Oculomotor esquerdo",
+                "Nervo óptico esquerdo",
+                "Retina direita"
+              ],
+              "resposta": "Nervo óptico esquerdo",
+              "explicacao": "Defeito pupilar aferente no olho esquerdo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u9-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os inibidores da ___ são usados no Alzheimer leve a moderado.",
+              "tipo": "caso_clinico",
+              "caso": "Homem acorda com dor e formigamento nas mãos, que melhoram ao sacudi-las. O teste de Phalen é positivo.",
+              "enunciado": "Qual conduta inicial é INADEQUADA?",
               "opcoes": [
-                "acetilcolinesterase",
-                "dopamina",
-                "serotonina",
-                "monoamina oxidase do tipo B"
+                "Injeção de corticoide",
+                "Gabapentina ou pregabalina",
+                "Tala de punho noturna",
+                "Eletroneuromiografia"
               ],
-              "resposta": "acetilcolinesterase",
-              "explicacao": "Ex.: donepezila.",
-              "revisado": false
+              "resposta": "Gabapentina ou pregabalina",
+              "explicacao": "Síndrome do túnel do carpo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         }
@@ -8123,17 +8162,18 @@
             },
             {
               "id": "cm-u14-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A intoxicação por monóxido de carbono é tratada com ___ a 100%.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a intoxicação por chumbo, o que é correto?",
               "opcoes": [
-                "oxigênio",
-                "ar comprimido",
-                "nitrogênio",
-                "gás carbônico"
+                "Acima de 10 é seguro no adulto",
+                "EDTA é contraindicado na forma grave",
+                "A gasolina é a principal fonte hoje",
+                "Causa anemia microcítica por bloquear o heme"
               ],
-              "resposta": "oxigênio",
-              "explicacao": "Ou câmara hiperbárica.",
-              "revisado": false
+              "resposta": "Causa anemia microcítica por bloquear o heme",
+              "explicacao": "Pode ter pontilhado basófilo nas hemácias.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-u14-l3-q5",
@@ -8395,17 +8435,29 @@
             },
             {
               "id": "cm-u15-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medida reduz quedas em idosos da comunidade?",
-              "opcoes": [
-                "Exercícios de força e equilíbrio",
-                "Repouso na cama",
-                "Benzodiazepínico à noite",
-                "Usar chinelo largo dentro de casa"
+              "tipo": "associar_pares",
+              "enunciado": "Ligue o antipsicótico ao seu efeito colateral.",
+              "pares": [
+                {
+                  "esquerda": "Clozapina",
+                  "direita": "agranulocitose"
+                },
+                {
+                  "esquerda": "Haloperidol",
+                  "direita": "acatisia"
+                },
+                {
+                  "esquerda": "Olanzapina",
+                  "direita": "ganho de peso"
+                },
+                {
+                  "esquerda": "Quetiapina",
+                  "direita": "hipotensão"
+                }
               ],
-              "resposta": "Exercícios de força e equilíbrio",
-              "explicacao": "Também revisar remédios e o ambiente.",
-              "revisado": false
+              "explicacao": "A quetiapina baixa a pressão, não aumenta.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-u15-l2-q6",
@@ -8468,11 +8520,18 @@
             },
             {
               "id": "cm-u15-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A incontinência urinária não é parte normal do envelhecimento.",
-              "resposta": true,
-              "explicacao": "Deve ser investigada e tratada.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Em homens idosos, o alfabloqueador trata qual tipo de incontinência?",
+              "opcoes": [
+                "De esforço",
+                "Urgência",
+                "Esvaziamento incompleto",
+                "Funcional"
+              ],
+              "resposta": "Esvaziamento incompleto",
+              "explicacao": "Relaxa o colo vesical na hiperplasia prostática.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-u15-l3-q3",
@@ -9856,17 +9915,18 @@
             {
               "id": "cm-d10-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com prótese valvar há 1 mês, febre e hemoculturas com estafilococo coagulase-negativo.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Paciente em hemodiálise por cateter tem bacteremia por MSSA persistente após 72 h, osteomielite vertebral e eco transtorácico normal. Está em vancomicina.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Endocardite precoce de prótese",
-                "Contaminação sempre",
-                "Pneumonia",
-                "Contaminação da coleta em todos os casos"
+                "Manter vancomicina por 6 semanas",
+                "Tratar por 14 dias",
+                "Dispensar o eco transesofágico",
+                "Eco transesofágico, avaliar tirar o cateter e trocar para cefazolina"
               ],
-              "resposta": "Endocardite precoce de prótese",
-              "explicacao": "Grave, muitas vezes cirúrgica.",
-              "revisado": false
+              "resposta": "Eco transesofágico, avaliar tirar o cateter e trocar para cefazolina",
+              "explicacao": "Para MSSA, betalactâmico é melhor que vancomicina.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d10-l2-q2",
@@ -10515,18 +10575,18 @@
             },
             {
               "id": "cm-d19-l4-q2",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com pneumonia usando azitromicina e haloperidol, magnésio baixo, tem taquicardia polimórfica com QRS girando em torno da linha.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a síndrome de Brugada, o que é correto?",
               "opcoes": [
-                "Sulfato de magnésio IV e suspender os remédios",
-                "Amiodarona IV em dose alta",
-                "Adenosina IV rápida",
-                "Procainamida IV seguida de amiodarona por via oral"
+                "TV monomórfica é mais comum que FV",
+                "Sintomas vêm após exercício",
+                "Não causa morte súbita",
+                "As arritmias são mais comuns durante o sono"
               ],
-              "resposta": "Sulfato de magnésio IV e suspender os remédios",
-              "explicacao": "Amiodarona alonga ainda mais o QT.",
-              "revisado": false
+              "resposta": "As arritmias são mais comuns durante o sono",
+              "explicacao": "Ocorrem em repouso, por tônus vagal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-d19-l4-q3",
@@ -11668,28 +11728,19 @@
             },
             {
               "id": "cm-d2-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada derrame à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Transudato",
-                  "direita": "Insuficiência cardíaca, cirrose e síndrome nefrótica"
-                },
-                {
-                  "esquerda": "Exsudato com ADA alta e linfócitos",
-                  "direita": "Tuberculose pleural"
-                },
-                {
-                  "esquerda": "Exsudato com glicose muito baixa e fator reumatoide",
-                  "direita": "Artrite reumatoide"
-                },
-                {
-                  "esquerda": "Exsudato hemorrágico",
-                  "direita": "Câncer, embolia ou trauma"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem com pneumonia lobar e derrame que corre livre, com 1 cm no decúbito lateral.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Amoxicilina-clavulanato e acompanhar",
+                "Ceftriaxona, azitromicina e drenagem",
+                "Toracocentese e levofloxacino",
+                "Toracocentese antes do antibiótico"
               ],
-              "explicacao": "Os critérios de Light separam transudato de exsudato.",
-              "revisado": false
+              "resposta": "Amoxicilina-clavulanato e acompanhar",
+              "explicacao": "Derrame com menos de 1 cm não precisa ser puncionado.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d2-l3-q3",
@@ -11820,18 +11871,18 @@
             },
             {
               "id": "cm-d21-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Na crise grave, PaCO2 de 46 mmHg após uma hora de tratamento.",
-              "enunciado": "O que isso indica?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a asma grave, o que é correto?",
               "opcoes": [
-                "Fadiga e risco de parada respiratória",
-                "Melhora da crise, pode dar alta",
-                "Achado normal na crise de asma",
-                "Erro da gasometria, repetir amanhã"
+                "Antileucotrieno é primeira linha",
+                "Omalizumabe é para asma alérgica grave não controlada",
+                "Tiotrópio é contraindicado na asma",
+                "Termoplastia é a terapia inicial"
               ],
-              "resposta": "Fadiga e risco de parada respiratória",
-              "explicacao": "Na crise, o CO2 deveria estar baixo.",
-              "revisado": false
+              "resposta": "Omalizumabe é para asma alérgica grave não controlada",
+              "explicacao": "O tiotrópio pode ser associado na asma.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-d21-l1-q4",
@@ -12045,17 +12096,18 @@
             {
               "id": "cm-d21-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com DPOC estável. pH 7,36, PaCO2 60 e bicarbonato 33.",
-              "enunciado": "Qual é o distúrbio?",
+              "caso": "Homem com sobrepeso, apneia do sono moderada e sem alterações na boca ou faringe não quer usar CPAP.",
+              "enunciado": "O que NÃO é opção?",
               "opcoes": [
-                "Acidose respiratória crônica compensada",
-                "Acidose respiratória aguda sem compensação",
-                "Alcalose metabólica primária pura",
-                "Acidose metabólica com ânion gap alto"
+                "Aparelho intraoral",
+                "Terapia fonoaudiológica",
+                "Emagrecer",
+                "Uvulopalatoplastia"
               ],
-              "resposta": "Acidose respiratória crônica compensada",
-              "explicacao": "O rim reteve bicarbonato com o tempo.",
-              "revisado": false
+              "resposta": "Uvulopalatoplastia",
+              "explicacao": "Cirurgia exige alteração anatômica.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d21-l3-q2",
@@ -12558,32 +12610,34 @@
             {
               "id": "cm-d22-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com sepse em ventilação. PaO2 de 60 com FiO2 de 0,6 e PEEP de 10. Infiltrado bilateral e eco normal.",
-              "enunciado": "Qual é a gravidade?",
+              "caso": "Idoso com metástase cerebral e hipertensão intracraniana vai ser intubado. PA 190 x 116, FC 48.",
+              "enunciado": "Qual combinação é a melhor?",
               "opcoes": [
-                "SDRA grave",
-                "SDRA leve",
-                "SDRA moderada",
-                "Não é SDRA"
+                "Fentanil, etomidato e rocurônio",
+                "Fentanil, midazolam e succinilcolina",
+                "Cetamina e rocurônio",
+                "Lidocaína, cetamina e succinilcolina"
               ],
-              "resposta": "SDRA grave",
-              "explicacao": "PaO2/FiO2 de 100.",
-              "revisado": false
+              "resposta": "Fentanil, etomidato e rocurônio",
+              "explicacao": "Fentanil atenua a subida da PIC.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d22-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Homem de 1,70 m com SDRA. Peso predito de cerca de 66 kg.",
-              "enunciado": "Qual volume corrente usar?",
+              "caso": "Esse paciente com hipertensão intracraniana, 70 kg, ventila com volume de 280 mL e PCO2 de 39.",
+              "enunciado": "Qual ajuste é adequado?",
               "opcoes": [
-                "Cerca de 400 mL",
-                "Cerca de 800 mL",
-                "Cerca de 1.000 mL",
-                "Cerca de 150 mL"
+                "Aumentar a relação I:E",
+                "Reduzir a PEEP",
+                "Trocar para volume controlado",
+                "Aumentar a pressão inspiratória ou a FR"
               ],
-              "resposta": "Cerca de 400 mL",
-              "explicacao": "6 mL por kg de peso predito.",
-              "revisado": false
+              "resposta": "Aumentar a pressão inspiratória ou a FR",
+              "explicacao": "O volume está baixo; manter PCO2 na faixa baixa.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d22-l2-q3",
@@ -13103,17 +13157,18 @@
             {
               "id": "cm-d3-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Diabético de 70 anos com creatinina de 2,0 vai fazer tomografia com contraste iodado venoso.",
-              "enunciado": "Qual medida reduz o risco de lesão renal?",
+              "caso": "Mulher com lúpus em anticoagulação por TEP tem, em 5 dias, edema, oligúria, hipertensão, creatinina de 0,6 para 2,1, hematúria, proteinúria 4+ e cilindros hemáticos.",
+              "enunciado": "Qual é a causa e a conduta?",
               "opcoes": [
-                "Hidratação venosa com soro antes e depois",
-                "N-acetilcisteína oral isolada",
-                "Furosemida antes do exame",
-                "Suspender todos os remédios por uma semana sem hidratar"
+                "Nefropatia por contraste; hidratação",
+                "Infecção urinária; antibiótico",
+                "Glomerulonefrite rapidamente progressiva; pulso de corticoide e ciclofosfamida",
+                "Síndrome nefrótica; furosemida com albumina"
               ],
-              "resposta": "Hidratação venosa com soro antes e depois",
-              "explicacao": "Doença renal prévia, sobretudo com diabetes, é o principal fator de risco; a hidratação é a medida comprovada.",
-              "revisado": false
+              "resposta": "Glomerulonefrite rapidamente progressiva; pulso de corticoide e ciclofosfamida",
+              "explicacao": "Cilindros hemáticos indicam glomerulonefrite.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d3-l1-q4",
@@ -13514,11 +13569,19 @@
             },
             {
               "id": "cm-d4-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No estado hiperosmolar, a hidratação é a medida mais importante, e a glicose cai bastante só com o volume.",
-              "resposta": true,
-              "explicacao": "A insulina é iniciada quando a glicose para de cair com a hidratação.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Diabético em metformina e glibenclamida é internado em enfermaria com pielonefrite e glicemias de 180 a 240.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Manter a glibenclamida",
+                "Meta de 70 a 110",
+                "Suspender orais e usar insulina basal-bolus",
+                "Só insulina regular por escala"
+              ],
+              "resposta": "Suspender orais e usar insulina basal-bolus",
+              "explicacao": "A escala sozinha não é recomendada.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d4-l1-q6",
@@ -13572,43 +13635,34 @@
           "questoes": [
             {
               "id": "cm-d4-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com Graves não tratado tem febre de 40 °C, frequência de 170, delírio e diarreia após infecção.",
-              "enunciado": "Qual é a sequência de tratamento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o hipotireoidismo subclínico, o que é correto?",
               "opcoes": [
-                "Betabloqueador, tionamida, iodo 1 h depois e corticoide",
-                "Iodo antes da tionamida",
-                "Só antitérmico",
-                "Iodo antes da tionamida e antitérmico, sem betabloqueador"
+                "Todos devem receber levotiroxina",
+                "Tem TSH alto e T4 livre alto",
+                "Na gestação só se trata com sintomas graves",
+                "Com TSH acima de 10, considerar levotiroxina mesmo sem sintomas"
               ],
-              "resposta": "Betabloqueador, tionamida, iodo 1 h depois e corticoide",
-              "explicacao": "O iodo antes da tionamida pode fornecer matéria-prima para mais hormônio.",
-              "revisado": false
+              "resposta": "Com TSH acima de 10, considerar levotiroxina mesmo sem sintomas",
+              "explicacao": "Abaixo de 10, decide-se caso a caso.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-d4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fármaco ao seu papel na crise tireotóxica.",
-              "pares": [
-                {
-                  "esquerda": "Propranolol",
-                  "direita": "Controla sintomas e reduz a conversão de T4 em T3"
-                },
-                {
-                  "esquerda": "Propiltiouracil",
-                  "direita": "Bloqueia a síntese e a conversão periférica"
-                },
-                {
-                  "esquerda": "Solução de iodo",
-                  "direita": "Bloqueia a liberação de hormônio"
-                },
-                {
-                  "esquerda": "Hidrocortisona",
-                  "direita": "Reduz conversão e trata insuficiência adrenal relativa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com amenorreia, galactorreia, cefaleia, hemianopsia bitemporal e sinais de hipotireoidismo. TSH de 5,5 e T4 livre de 0,2.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Hipotireoidismo primário",
+                "Hipotireoidismo central",
+                "Hipotireoidismo subclínico",
+                "Tireoide normal"
               ],
-              "explicacao": "O escore de Burch-Wartofsky ajuda no diagnóstico.",
-              "revisado": false
+              "resposta": "Hipotireoidismo central",
+              "explicacao": "Com T4 tão baixo, o TSH deveria estar muito mais alto.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-d4-l2-q3",
@@ -13812,17 +13866,18 @@
             {
               "id": "cm-d4-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com hipercortisolismo tem ACTH baixo e nódulo de 4 cm na adrenal.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Ultrassom mostra nódulo de tireoide sólido, hipoecoico, com focos puntiformes brilhantes e contornos regulares.",
+              "enunciado": "O que NÃO sugere câncer?",
               "opcoes": [
-                "Adrenalectomia",
-                "Cirurgia de hipófise",
-                "Só cetoconazol",
-                "Apenas cetoconazol para sempre e observar"
+                "Microcalcificações",
+                "Hipoecogenicidade",
+                "Contornos regulares",
+                "Ser sólido"
               ],
-              "resposta": "Adrenalectomia",
-              "explicacao": "O ACTH baixo indica que o problema está na própria adrenal.",
-              "revisado": false
+              "resposta": "Contornos regulares",
+              "explicacao": "Contornos irregulares é que preocupam.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         }
@@ -14180,17 +14235,18 @@
             {
               "id": "cm-d13-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente usa prednisona 10 mg há 6 meses.",
-              "enunciado": "Qual é a prevenção?",
+              "caso": "Após a primeira dose de ácido zoledrônico, idosa tem febre, calafrios e dores no corpo por 3 dias.",
+              "enunciado": "O que é correto sobre essa reação?",
               "opcoes": [
-                "Cálcio, vitamina D e pensar em bisfosfonato",
-                "Parar o corticoide de uma vez",
-                "Mais corticoide",
-                "Parar o corticoide de uma vez, sem nenhuma reposição"
+                "Contraindica continuar o remédio",
+                "Mata até um terço dos pacientes",
+                "Previne-se com prednisona",
+                "É benigna e costuma sumir nas próximas doses"
               ],
-              "resposta": "Cálcio, vitamina D e pensar em bisfosfonato",
-              "explicacao": "Osteoporose por corticoide.",
-              "revisado": false
+              "resposta": "É benigna e costuma sumir nas próximas doses",
+              "explicacao": "Reação de fase aguda.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d13-l3-q7",
@@ -14280,17 +14336,18 @@
             {
               "id": "cm-d18-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Homem com mãos e pés grandes, sudorese, apneia do sono e IGF-1 alto.",
-              "enunciado": "Qual exame confirma?",
+              "caso": "Homem com aumento de mãos, pés e nariz, IGF-1 alto e GH que não suprime com glicose.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "GH após sobrecarga de glicose",
-                "Prolactina",
-                "Cortisol",
-                "Hormônio da tireoide e TSH em jejum"
+                "RM de sela e cirurgia transesfenoidal se houver adenoma",
+                "Repetir o teste e iniciar octreotide",
+                "Iniciar pegvisomanto",
+                "TC de crânio e, se normal, descartar"
               ],
-              "resposta": "GH após sobrecarga de glicose",
-              "explicacao": "GH não cai na acromegalia.",
-              "revisado": false
+              "resposta": "RM de sela e cirurgia transesfenoidal se houver adenoma",
+              "explicacao": "O diagnóstico já está feito; falta achar o tumor.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d18-l1-q5",
@@ -14380,17 +14437,18 @@
             {
               "id": "cm-d18-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com Cushing, cortisol alto e ACTH suprimido.",
-              "enunciado": "Onde está o problema?",
+              "caso": "Mulher com lúpus em remissão usa prednisona 10 mg há 7 meses.",
+              "enunciado": "Como retirar?",
               "opcoes": [
-                "Adrenal",
-                "Hipófise",
-                "Pulmão",
-                "Hipotálamo"
+                "Suspender de uma vez, pois a dose é menor que 20",
+                "Teste de ACTH antes, sempre",
+                "Velocidade não depende do tempo de uso",
+                "Reduzir aos poucos e mais devagar abaixo de 5 mg"
               ],
-              "resposta": "Adrenal",
-              "explicacao": "Pedir tomografia das adrenais.",
-              "revisado": false
+              "resposta": "Reduzir aos poucos e mais devagar abaixo de 5 mg",
+              "explicacao": "Abaixo de 5 mg pode-se avaliar o eixo adrenal.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d18-l2-q3",
@@ -14493,18 +14551,18 @@
           "questoes": [
             {
               "id": "cm-d18-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Tomografia mostra nódulo de 2 cm na adrenal, achado por acaso.",
-              "enunciado": "Quais exames pedir?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tumor neuroendócrino NÃO tem octreotide como primeira escolha?",
               "opcoes": [
-                "Cortisol, metanefrinas e aldosterona",
-                "Só observar",
-                "Cirurgia já",
-                "Biópsia por punção logo de início"
+                "Gastrinoma",
+                "Glucagonoma",
+                "Somatostatinoma",
+                "GRFoma"
               ],
-              "resposta": "Cortisol, metanefrinas e aldosterona",
-              "explicacao": "Avaliar se o nódulo produz hormônio.",
-              "revisado": false
+              "resposta": "Gastrinoma",
+              "explicacao": "No gastrinoma, usa-se inibidor de bomba de prótons em dose alta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d18-l3-q2",
@@ -15136,17 +15194,18 @@
             {
               "id": "cm-d11-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 50 anos com coceira, fosfatase alcalina alta e antimitocôndria positivo.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Idoso com prurido e dilatação do colédoco, das vias intra-hepáticas e do ducto pancreático, sem causa vista no ultrassom. Fez colecistectomia há 3 anos.",
+              "enunciado": "O que NÃO é sinal de alarme para obstrução?",
               "opcoes": [
-                "Ácido ursodesoxicólico",
-                "Corticoide",
-                "Cirurgia",
-                "Corticoide em dose alta e azatioprina"
+                "Dilatação intra-hepática",
+                "Dilatação do ducto pancreático",
+                "Colecistectomia prévia",
+                "Prurido"
               ],
-              "resposta": "Ácido ursodesoxicólico",
-              "explicacao": "Colangite biliar primária.",
-              "revisado": false
+              "resposta": "Colecistectomia prévia",
+              "explicacao": "Após colecistectomia o colédoco pode dilatar um pouco.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
@@ -15509,17 +15568,18 @@
             {
               "id": "cm-d6-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com celulite na perna tem dor desproporcional, bolhas escuras, crepitação e piora rápida, com choque.",
-              "enunciado": "Qual é a hipótese e a conduta?",
+              "caso": "Homem com bacteremia por S. aureus em vancomicina, eco transtorácico normal, passa a ter lombalgia.",
+              "enunciado": "Qual conduta é INADEQUADA?",
               "opcoes": [
-                "Fasciíte necrosante; cirurgia e antibiótico amplo",
-                "Celulite; cefalexina",
-                "Trombose; anticoagular",
-                "Erisipela simples; penicilina oral e retorno em uma semana"
+                "Dosar vancomicina todo dia",
+                "Eco transesofágico",
+                "Hemoculturas até negativar",
+                "RM da coluna"
               ],
-              "resposta": "Fasciíte necrosante; cirurgia e antibiótico amplo",
-              "explicacao": "A clindamicina é associada para reduzir a produção de toxinas.",
-              "revisado": false
+              "resposta": "Dosar vancomicina todo dia",
+              "explicacao": "Suspeita de osteomielite vertebral.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d6-l1-q7",
@@ -16252,17 +16312,18 @@
             {
               "id": "cm-d7-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Gestante com lúpus e anticorpo anti-Ro positivo.",
-              "enunciado": "Qual é o risco para o bebê?",
+              "caso": "Mulher com fraqueza proximal, CPK alta, artrite, pápulas roxas sobre os dedos e eritema que pega o sulco nasolabial.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Bloqueio cardíaco congênito",
-                "Microcefalia",
-                "Fenda palatina",
-                "Surdez congênita com catarata"
+                "Artrite reumatoide",
+                "Dermatomiosite",
+                "Doença mista do conjuntivo",
+                "Lúpus"
               ],
-              "resposta": "Bloqueio cardíaco congênito",
-              "explicacao": "Monitorar o coração fetal.",
-              "revisado": false
+              "resposta": "Dermatomiosite",
+              "explicacao": "As pápulas de Gottron são típicas.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d7-l1-q4",
@@ -16451,18 +16512,18 @@
             },
             {
               "id": "cm-d7-l2-q7",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 25 anos com claudicação nos braços, pressão diferente entre os braços e sopro na carótida.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual vasculite o corticoide NÃO é a primeira escolha?",
               "opcoes": [
-                "Arterite de Takayasu",
-                "Arterite temporal",
-                "Aterosclerose",
-                "Fenômeno de Raynaud primário"
+                "Púrpura de Henoch-Schönlein",
+                "Kawasaki",
+                "Behçet",
+                "Poliarterite nodosa"
               ],
-              "resposta": "Arterite de Takayasu",
-              "explicacao": "Vasculite de grandes vasos em jovens.",
-              "revisado": false
+              "resposta": "Kawasaki",
+              "explicacao": "Kawasaki se trata com imunoglobulina e AAS.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d7-l2-q8",
@@ -16660,28 +16721,19 @@
             },
             {
               "id": "cm-d8-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado no sangue periférico à doença.",
-              "pares": [
-                {
-                  "esquerda": "Esquizócitos",
-                  "direita": "Microangiopatia trombótica"
-                },
-                {
-                  "esquerda": "Esferócitos",
-                  "direita": "Esferocitose ou hemólise autoimune"
-                },
-                {
-                  "esquerda": "Hemácias em alvo",
-                  "direita": "Talassemia ou hepatopatia"
-                },
-                {
-                  "esquerda": "Corpúsculos de Howell-Jolly",
-                  "direita": "Ausência do baço"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com anemia ferropriva não melhora após 3 meses de sulfato ferroso bem tomado.",
+              "enunciado": "O que NÃO explica a falta de resposta?",
+              "opcoes": [
+                "Doença celíaca",
+                "Gastrite por H. pylori",
+                "Gastrite autoimune",
+                "Ressecção do íleo"
               ],
-              "explicacao": "O esfregaço orienta.",
-              "revisado": false
+              "resposta": "Ressecção do íleo",
+              "explicacao": "O ferro é absorvido no duodeno.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d8-l1-q4",
@@ -16825,32 +16877,34 @@
             {
               "id": "cm-d8-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Idoso com linfocitose de 30 mil, linfonodos aumentados e células em cesto (smudge).",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Idoso com perda de peso, anemia leve e 1.790 eosinófilos.",
+              "enunciado": "O que NÃO é diferencial para essa eosinofilia?",
               "opcoes": [
-                "Leucemia linfoide crônica",
-                "Leucemia aguda",
-                "Mononucleose",
-                "Linfoma de Hodgkin clássico"
+                "Insuficiência adrenal",
+                "Leucemia mieloide crônica",
+                "Mieloma múltiplo",
+                "Câncer do trato digestivo"
               ],
-              "resposta": "Leucemia linfoide crônica",
-              "explicacao": "Muitos só precisam de acompanhamento.",
-              "revisado": false
+              "resposta": "Mieloma múltiplo",
+              "explicacao": "Mieloma não causa eosinofilia.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d8-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com mieloma tem confusão e cálcio de 14.",
+              "caso": "Homem com dor lombar, anemia, cálcio alto, creatinina 2,1, pico IgG kappa, 18% de plasmócitos e lesões líticas.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hidratação venosa e bisfosfonato",
-                "Cálcio oral",
-                "Diurético tiazídico",
-                "Diurético tiazídico e cálcio oral"
+                "Tratar como MGUS por ter menos de 20%",
+                "Confirmar mieloma e tratar",
+                "Só radioterapia",
+                "Observar como mieloma assintomático"
               ],
-              "resposta": "Hidratação venosa e bisfosfonato",
-              "explicacao": "Hipercalcemia grave.",
-              "revisado": false
+              "resposta": "Confirmar mieloma e tratar",
+              "explicacao": "Plasmócitos de 10% ou mais com lesão de órgão definem mieloma.",
+              "revisado": false,
+              "fonte": "AMRIGS 2026 R+"
             },
             {
               "id": "cm-d8-l2-q7",
@@ -17842,32 +17896,33 @@
             {
               "id": "cm-d15-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Idosa de 80 anos, que mora sozinha, caiu duas vezes no ano. Exame com fraqueza nas pernas e equilíbrio ruim.",
-              "enunciado": "Qual intervenção tem melhor evidência para prevenir novas quedas?",
+              "caso": "Idoso com déficit cognitivo flutuante, alucinações, agitação no sono REM, parkinsonismo simétrico e hipotensão postural.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Exercícios de força e equilíbrio",
-                "Vitamina D para todos os idosos",
-                "Protetor de quadril",
-                "Repouso e uso de cadeira de rodas"
+                "Alzheimer",
+                "Atrofia de múltiplos sistemas",
+                "Parkinson",
+                "Demência com corpos de Lewy"
               ],
-              "resposta": "Exercícios de força e equilíbrio",
-              "explicacao": "Programas de exercício, como Otago, reduzem quedas na comunidade.",
-              "revisado": false
+              "resposta": "Demência com corpos de Lewy",
+              "explicacao": "A flutuação e o sono REM agitado apontam para Lewy.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             },
             {
               "id": "cm-d15-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Idosa caiu e fraturou o punho com trauma leve. Densitometria com T-score de -2,0.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a hidrocefalia de pressão normal, o que é correto?",
               "opcoes": [
-                "Osteoporose pela fratura de fragilidade",
-                "Osteopenia apenas",
-                "Normal",
-                "Osteomalácia por falta de vitamina D"
+                "Tríade: incontinência, cefaleia e visão",
+                "Trata-se com acetazolamida",
+                "RM fecha o diagnóstico",
+                "Punção de 30 a 50 mL pode melhorar a marcha e ajuda no diagnóstico"
               ],
-              "resposta": "Osteoporose pela fratura de fragilidade",
-              "explicacao": "Fratura por fragilidade define osteoporose.",
-              "revisado": false
+              "resposta": "Punção de 30 a 50 mL pode melhorar a marcha e ajuda no diagnóstico",
+              "explicacao": "Tríade: marcha, demência e incontinência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
             },
             {
               "id": "cm-d15-l1-q5",
@@ -18320,17 +18375,18 @@
             {
               "id": "cm-d16-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com leucemia e 200 mil leucócitos tem falta de ar e confusão.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Quatro dias após quimioterapia de seminoma volumoso, homem desidratado tem potássio 6,2, fósforo e ácido úrico altos, cálcio baixo e creatinina 1,8.",
+              "enunciado": "Qual conduta inicial é INADEQUADA?",
               "opcoes": [
-                "Leucostase",
-                "Pneumonia",
-                "AVC",
-                "Insuficiência cardíaca descompensada aguda"
+                "Salbutamol e furosemida",
+                "Gluconato de cálcio",
+                "Hidratação vigorosa",
+                "Rasburicase"
               ],
-              "resposta": "Leucostase",
-              "explicacao": "Tratar com citorredução urgente.",
-              "revisado": false
+              "resposta": "Salbutamol e furosemida",
+              "explicacao": "Síndrome de lise tumoral em paciente desidratado.",
+              "revisado": false,
+              "fonte": "PSU-MG 2024 R+"
             }
           ]
         },
