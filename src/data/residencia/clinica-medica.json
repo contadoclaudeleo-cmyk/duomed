@@ -880,18 +880,18 @@
             },
             {
               "id": "cm-u11-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Idoso com desmaio ao esforço e sopro sistólico rude que irradia para o pescoço.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Clique mesossistólico e sopro tardio que se aproxima de B1 no Valsalva.",
               "opcoes": [
-                "Estenose aórtica",
-                "Insuficiência mitral",
-                "Estenose mitral",
-                "Normal"
+                "CIA",
+                "CIV",
+                "Estenose subaórtica",
+                "Prolapso mitral"
               ],
-              "resposta": "Estenose aórtica",
-              "explicacao": "Pedir ecocardiograma.",
-              "revisado": false
+              "resposta": "Prolapso mitral",
+              "explicacao": "Valsalva antecipa.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             },
             {
               "id": "cm-u11-l1-q7",
@@ -8398,18 +8398,18 @@
             },
             {
               "id": "cm-u14-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente após comer camarão com falta de ar, inchaço nos lábios e pressão de 70/40.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Choque com extremidades quentes e pele avermelhada. O que esperar?",
               "opcoes": [
-                "Adrenalina intramuscular imediata",
-                "Anti-histamínico e aguardar",
-                "Corticoide só",
-                "Anti-histamínico oral e aguardar a melhora com corticoide"
+                "Pressão pulmonar alta",
+                "PVC alta",
+                "Resistência alta",
+                "Débito cardíaco alto"
               ],
-              "resposta": "Adrenalina intramuscular imediata",
-              "explicacao": "É anafilaxia.",
-              "revisado": false
+              "resposta": "Débito cardíaco alto",
+              "explicacao": "Choque distributivo.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             },
             {
               "id": "cm-u14-l2-q7",
@@ -12492,17 +12492,18 @@
             {
               "id": "cm-d21-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Exacerbação de DPOC com indicação de corticoide sistêmico.",
-              "enunciado": "Por quanto tempo?",
+              "caso": "Enfisematoso confuso com pH 7,23, PO2 42 e PCO2 75.",
+              "enunciado": "Melhor terapia?",
               "opcoes": [
-                "5 dias",
-                "30 dias",
-                "3 meses",
-                "Dose única"
+                "Dexametasona",
+                "Bicarbonato",
+                "O2 de alto fluxo",
+                "Intubação e ventilação"
               ],
-              "resposta": "5 dias",
-              "explicacao": "Prednisona 40 mg por 5 dias é suficiente.",
-              "revisado": false
+              "resposta": "Intubação e ventilação",
+              "explicacao": "Rebaixado.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             }
           ]
         },
@@ -14589,26 +14590,35 @@
             },
             {
               "id": "cm-d13-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Paciente com bypass gástrico tem tontura, palpitação e diarreia logo após comer doces: isso é síndrome de dumping.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Alimentos açucarados chegam rápido ao intestino e causam o dumping.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com glicemia de jejum 117 e HbA1c 6,7%.",
+              "enunciado": "Que exame confirma o DM2?",
+              "opcoes": [
+                "Repetir jejum",
+                "Insulina",
+                "TOTG com 50 g",
+                "A própria HbA1c (≥ 6,5%)"
+              ],
+              "resposta": "A própria HbA1c (≥ 6,5%)",
+              "explicacao": "Dois critérios na mesma amostra.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             },
             {
               "id": "cm-d13-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com obesidade e ronco quer emagrecer.",
-              "enunciado": "O que investigar?",
+              "caso": "Mesma paciente com risco cardiovascular de 8,3% e LDL 154.",
+              "enunciado": "Conduta inicial?",
               "opcoes": [
-                "Apneia do sono, diabetes e dislipidemia",
-                "Câncer",
-                "Infecção",
-                "Investigação nenhuma; apenas dieta e exercício"
+                "Ciprofibrato",
+                "Doppler",
+                "Escore de cálcio",
+                "Estatina de moderada potência"
               ],
-              "resposta": "Apneia do sono, diabetes e dislipidemia",
-              "explicacao": "Comorbidades da obesidade.",
-              "revisado": false
+              "resposta": "Estatina de moderada potência",
+              "explicacao": "Prevenção primária.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             }
           ]
         },
@@ -16593,18 +16603,12 @@
             },
             {
               "id": "cm-d12-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com cardiomiopatia dilatada, bloqueio de ramo direito e megaesôfago.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Doença de Chagas crônica",
-                "Alcoolismo",
-                "Viral",
-                "Isquemia por coronária obstruída"
-              ],
-              "resposta": "Doença de Chagas crônica",
-              "explicacao": "Sorologia para Trypanosoma cruzi.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na suspeita de febre maculosa, o antibiótico começa sem esperar confirmação.",
+              "resposta": true,
+              "explicacao": "Doxiciclina.",
+              "revisado": false,
+              "fonte": "PSU-MG 2026"
             },
             {
               "id": "cm-d12-l2-q7",
