@@ -3388,25 +3388,28 @@
             },
             {
               "id": "ped-u9-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na criança com PTI, evitar anti-inflamatórios e AAS.",
-              "resposta": true,
-              "explicacao": "Aumentam sangramento.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança sem sangramento com TTPA alongado no pré-operatório.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Pedir fibrinogênio",
+                "Fatores II e V",
+                "Contraindicar cirurgia",
+                "Teste da mistura e fatores VIII, IX, XI, XII"
+              ],
+              "resposta": "Teste da mistura e fatores VIII, IX, XI, XII",
+              "explicacao": "Correção indica falta de fator.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u9-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A doença de ___ é o distúrbio hereditário de coagulação mais comum.",
-              "opcoes": [
-                "von Willebrand",
-                "hemofilia",
-                "Glanzmann",
-                "Bernard-Soulier"
-              ],
-              "resposta": "von Willebrand",
-              "explicacao": "Sangramento de mucosas.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O filtro de leucócitos serve para evitar TRALI.",
+              "resposta": false,
+              "explicacao": "Reduz febre, CMV e aloimunização.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         },
@@ -3448,54 +3451,65 @@
             },
             {
               "id": "ped-u9-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No teste do olhinho, o reflexo branco é normal e o vermelho indica doença.",
-              "resposta": false,
-              "explicacao": "Falso. O normal é o reflexo vermelho; reflexo branco ou alterado pode indicar retinoblastoma ou catarata.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com linfoma de Burkitt vai iniciar quimioterapia.",
+              "enunciado": "Qual a complicação mais esperada?",
+              "opcoes": [
+                "CIVD",
+                "Hiponatremia",
+                "Veia cava",
+                "Lise tumoral"
+              ],
+              "resposta": "Lise tumoral",
+              "explicacao": "Tumor de crescimento rápido.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u9-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os tumores do sistema nervoso ___ são o tumor sólido mais comum da infância.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Adolescente curada de LLA com antraciclina. O que rastrear?",
               "opcoes": [
-                "central",
-                "periférico",
-                "autônomo",
-                "entérico"
+                "Diabetes",
+                "Rim",
+                "Tireoide",
+                "Cardiomiopatia dilatada"
               ],
-              "resposta": "central",
-              "explicacao": "Atenção à cefaleia com vômitos.",
-              "revisado": false
+              "resposta": "Cardiomiopatia dilatada",
+              "explicacao": "Cardiotoxicidade tardia.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u9-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a sobrevida da leucemia linfoide aguda infantil com tratamento?",
+              "tipo": "caso_clinico",
+              "caso": "Criança com LMA em quimio, febre e 500 neutrófilos, estável.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Cerca de 85% a 90%",
-                "10%",
-                "30%",
-                "Menos da metade das crianças"
+                "Observar",
+                "Esperar cultura",
+                "Antiviral",
+                "Antibiótico amplo já"
               ],
-              "resposta": "Cerca de 85% a 90%",
-              "explicacao": "Grande avanço.",
-              "revisado": false
+              "resposta": "Antibiótico amplo já",
+              "explicacao": "Neutropenia febril.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u9-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos com massa abdominal, hipertensão e hematúria.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de bom prognóstico na LLA?",
               "opcoes": [
-                "Tumor de Wilms",
-                "Neuroblastoma",
-                "Hepatoblastoma",
-                "Normal"
+                "Fenótipo T",
+                "Idade < 1 ano",
+                "Leucócitos < 50 mil",
+                "Resposta rápida ao corticoide"
               ],
-              "resposta": "Tumor de Wilms",
-              "explicacao": "Não palpar com força.",
-              "revisado": false
+              "resposta": "Resposta rápida ao corticoide",
+              "explicacao": "Resposta precoce.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u9-l3-q7",
@@ -4092,18 +4106,12 @@
             },
             {
               "id": "ped-u11-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Menino de 14 anos sem sinais puberais, baixo, pai também amadureceu tarde.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Atraso constitucional do crescimento e puberdade",
-                "Klinefelter",
-                "Tumor",
-                "Síndrome de Klinefelter com testículos pequenos"
-              ],
-              "resposta": "Atraso constitucional do crescimento e puberdade",
-              "explicacao": "Idade óssea atrasada.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No estirão puberal, o GH age junto com os esteroides sexuais via IGF-1.",
+              "resposta": true,
+              "explicacao": "Ação sinérgica.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-u11-l2-q7",
@@ -5468,18 +5476,18 @@
             },
             {
               "id": "ped-d1-l1-q7",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido segue com frequência abaixo de 60 após ventilação e compressões adequadas. A equipe vai dar adrenalina.",
-              "enunciado": "Qual é a via preferida?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que deve começar até o golden minute?",
               "opcoes": [
-                "Veia umbilical",
-                "Artéria umbilical",
-                "Via intramuscular",
-                "Via subcutânea na coxa"
+                "Intubação",
+                "Massagem",
+                "Oxigênio",
+                "Ventilação com pressão positiva"
               ],
-              "resposta": "Veia umbilical",
-              "explicacao": "A via traqueal pode ser usada enquanto se obtém o cateter na veia umbilical.",
-              "revisado": false
+              "resposta": "Ventilação com pressão positiva",
+              "explicacao": "Primeiro minuto.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d1-l1-q8",
@@ -5654,42 +5662,33 @@
             },
             {
               "id": "ped-d1-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada complicação da prematuridade à característica.",
-              "pares": [
-                {
-                  "esquerda": "Displasia broncopulmonar",
-                  "direita": "Dependência de oxigênio com 36 semanas corrigidas"
-                },
-                {
-                  "esquerda": "Retinopatia da prematuridade",
-                  "direita": "Crescimento anormal de vasos na retina"
-                },
-                {
-                  "esquerda": "Hemorragia peri-intraventricular",
-                  "direita": "Sangramento na matriz germinativa"
-                },
-                {
-                  "esquerda": "Persistência do canal arterial",
-                  "direita": "Sopro contínuo e pulsos amplos"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual peso mínimo para a 2ª etapa do Método Canguru?",
+              "opcoes": [
+                "1.500 g",
+                "1.800 g",
+                "2.000 g",
+                "1.250 g"
               ],
-              "explicacao": "O exame de fundo de olho é feito em prematuros de risco.",
-              "revisado": false
+              "resposta": "1.250 g",
+              "explicacao": "Estável e com dieta plena.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d1-l3-q3",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal medida que reduz a doença da membrana hialina quando o parto prematuro é iminente?",
+              "enunciado": "Qual a complicação mais provável no prematuro de 900 g filho de mãe com HELLP?",
               "opcoes": [
-                "Corticoide antenatal para a mãe",
-                "Surfactante na mãe",
-                "Antibiótico na mãe",
-                "Repouso absoluto da mãe até o parto"
+                "Apneia",
+                "Convulsão",
+                "Hipomagnesemia",
+                "Hipoglicemia"
               ],
-              "resposta": "Corticoide antenatal para a mãe",
-              "explicacao": "Ele acelera a maturação do pulmão do bebê.",
-              "revisado": false
+              "resposta": "Hipoglicemia",
+              "explicacao": "Primeiras horas.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d1-l3-q4",
@@ -7773,57 +7772,50 @@
             {
               "id": "ped-d7-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança com diarreia aquosa e distensão após episódio de gastroenterite há 3 semanas.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Criança com constipação, fezes que entopem o vaso e escape fecal, sem melhora com fibras.",
+              "enunciado": "Qual o próximo passo?",
               "opcoes": [
-                "Intolerância à lactose secundária",
-                "Doença celíaca",
-                "Fibrose cística",
-                "Doença de Crohn de início precoce"
+                "Probiótico",
+                "Investigar celíaca",
+                "Manometria",
+                "Esvaziar o reto e laxante osmótico"
               ],
-              "resposta": "Intolerância à lactose secundária",
-              "explicacao": "Lesão transitória da mucosa.",
-              "revisado": false
+              "resposta": "Esvaziar o reto e laxante osmótico",
+              "explicacao": "Desimpactar primeiro.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d7-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança com fibrose cística tem fezes gordurosas e não ganha peso.",
-              "enunciado": "Qual exame confirma insuficiência pancreática?",
+              "caso": "Bebê no peito que regurgita, sem desconforto e ganhando 50 g por dia.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Elastase fecal",
-                "Calprotectina fecal",
-                "Sangue oculto",
-                "Parasitológico de fezes"
+                "IBP 8 semanas",
+                "Exames",
+                "Procinético",
+                "Orientar e tranquilizar"
               ],
-              "resposta": "Elastase fecal",
-              "explicacao": "A elastase fica baixa na insuficiência pancreática.",
-              "revisado": false
+              "resposta": "Orientar e tranquilizar",
+              "explicacao": "RGE fisiológico.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d7-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de diarreia crônica ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Doença celíaca",
-                  "direita": "Atrofia de vilosidades"
-                },
-                {
-                  "esquerda": "Fibrose cística",
-                  "direita": "Teste do suor alterado"
-                },
-                {
-                  "esquerda": "Giardíase",
-                  "direita": "Trofozoítos nas fezes ou duodeno"
-                },
-                {
-                  "esquerda": "Doença de Crohn",
-                  "direita": "Fístula perianal e anemia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com diarreia com sangue, aftas, artralgia e perda de peso há 12 semanas.",
+              "enunciado": "Qual a hipótese?",
+              "opcoes": [
+                "Intestino irritável",
+                "Meckel",
+                "Só retocolite",
+                "Doença inflamatória intestinal"
               ],
-              "explicacao": "Investigação dirigida.",
-              "revisado": false
+              "resposta": "Doença inflamatória intestinal",
+              "explicacao": "Colonoscopia e afastar TB.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d7-l1-q5",
@@ -8132,17 +8124,18 @@
             {
               "id": "ped-d7-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança obesa com transaminases altas e fígado gorduroso.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Criança com hepatite A grave, TGO e TGP acima de 2000 e INR 2,8.",
+              "enunciado": "Que dado indica gravidade agora?",
               "opcoes": [
-                "Perda de peso e atividade física",
-                "Corticoide",
-                "Antiviral",
-                "Corticoide e antiviral oral por um ano"
+                "Hb 8",
+                "Leucócitos 18 mil",
+                "Transaminases",
+                "INR 2,8"
               ],
-              "resposta": "Perda de peso e atividade física",
-              "explicacao": "Doença hepática metabólica.",
-              "revisado": false
+              "resposta": "INR 2,8",
+              "explicacao": "Coagulopatia = falência hepática.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         }
@@ -8239,25 +8232,27 @@
             {
               "id": "ped-d8-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 6 meses com febre, convulsão e fontanela abaulada.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Após duas doses de diazepam, a crise para, mas a FR vai a 4 e saturação 80%.",
+              "enunciado": "O que fazer já?",
               "opcoes": [
-                "Punção lombar e antibiótico",
-                "Liberar",
-                "Antitérmico só",
-                "Antitérmico e liberar para casa com retorno"
+                "RCP",
+                "Atropina",
+                "Naloxona",
+                "Ventilar com bolsa e máscara"
               ],
-              "resposta": "Punção lombar e antibiótico",
-              "explicacao": "Suspeita de meningite.",
-              "revisado": false
+              "resposta": "Ventilar com bolsa e máscara",
+              "explicacao": "Depressão respiratória.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d8-l1-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Criança com uma convulsão febril simples tem risco muito alto de desenvolver epilepsia.",
-              "resposta": false,
-              "explicacao": "Falso. O risco é pequeno, só um pouco maior que o da população.",
-              "revisado": false
+              "enunciado": "A fenitoína pode causar arritmia e necrose no local da infusão.",
+              "resposta": true,
+              "explicacao": "Bloqueia canais de sódio.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d8-l1-q8",
@@ -9098,96 +9093,85 @@
             },
             {
               "id": "ped-d10-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos, vacinada, com febre, tosse e consolidação lobar no raio X, sem sinais de gravidade.",
-              "enunciado": "Qual é o agente mais provável e o tratamento?",
-              "opcoes": [
-                "Pneumococo; amoxicilina",
-                "Estafilococo; oxacilina",
-                "Mycoplasma; azitromicina",
-                "Haemophilus b; ceftriaxona"
-              ],
-              "resposta": "Pneumococo; amoxicilina",
-              "explicacao": "O pneumococo é o agente mais comum; a amoxicilina é a escolha.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na pneumonia comunitária da criança, a hemocultura acha o agente em menos de 10%.",
+              "resposta": true,
+              "explicacao": "Baixo rendimento.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d10-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada agente de pneumonia à pista.",
-              "pares": [
-                {
-                  "esquerda": "Mycoplasma",
-                  "direita": "Escolar com tosse arrastada"
-                },
-                {
-                  "esquerda": "Staphylococcus aureus",
-                  "direita": "Pneumatoceles"
-                },
-                {
-                  "esquerda": "Chlamydia trachomatis",
-                  "direita": "Lactente com conjuntivite e tosse"
-                },
-                {
-                  "esquerda": "Pneumococo",
-                  "direita": "Consolidação lobar"
-                }
-              ],
-              "explicacao": "Pistas de prova.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A bronquiolite obliterante pós-infecciosa é mais comum em ameríndios.",
+              "resposta": true,
+              "explicacao": "Ligada a adenovírus.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d10-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 6 semanas sem febre, com tosse em staccato e conjuntivite prévia.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "RN a termo com insuficiência respiratória grave, vidro fosco difuso e sem infecção ou cardiopatia.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Azitromicina",
-                "Amoxicilina",
-                "Ceftriaxona",
-                "Amoxicilina com clavulanato"
+                "Alfa-1 antitripsina",
+                "Discinesia ciliar",
+                "STAT5B",
+                "Deficiência de proteína B do surfactante"
               ],
-              "resposta": "Azitromicina",
-              "explicacao": "Pneumonia por clamídia.",
-              "revisado": false
+              "resposta": "Deficiência de proteína B do surfactante",
+              "explicacao": "Doença genética grave.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d10-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Escolar com febre baixa, tosse seca há 2 semanas e raio X pior que a clínica.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Criança com fibrose cística internada cresce Burkholderia cepacia no escarro.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Macrolídeo",
-                "Amoxicilina",
-                "Antifúngico",
-                "Amoxicilina em dose alta"
+                "Doxiciclina",
+                "Manter 5 dias",
+                "Alta com levofloxacina",
+                "Associar sulfametoxazol-trimetoprima"
               ],
-              "resposta": "Macrolídeo",
-              "explicacao": "Pneumonia atípica.",
-              "revisado": false
+              "resposta": "Associar sulfametoxazol-trimetoprima",
+              "explicacao": "Cobre B. cepacia.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d10-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança com pneumonia e tiragem subcostal pode ser tratada sempre em casa, pois é quadro leve.",
-              "resposta": false,
-              "explicacao": "Falso. Pela OMS, a tiragem subcostal indica pneumonia grave; avaliar internação.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança com SDRA ventilando 10 mL/kg.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Subir PEEP",
+                "Normalizar gasometria",
+                "Baixar FiO2",
+                "Reduzir o volume corrente"
+              ],
+              "resposta": "Reduzir o volume corrente",
+              "explicacao": "Ventilação protetora.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d10-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com pneumonia que piora com pneumatoceles e pneumotórax.",
-              "enunciado": "Qual é o agente provável?",
+              "caso": "SDRA com FiO2 entre 80 e 100%.",
+              "enunciado": "Que medida ajuda?",
               "opcoes": [
-                "Staphylococcus aureus",
-                "Pneumococo",
-                "Vírus",
-                "Mycoplasma pneumoniae"
+                "Corticoide",
+                "Broncodilatador",
+                "Transfusão",
+                "Posição prona"
               ],
-              "resposta": "Staphylococcus aureus",
-              "explicacao": "Cobrir com oxacilina ou vancomicina.",
-              "revisado": false
+              "resposta": "Posição prona",
+              "explicacao": "Recruta áreas posteriores.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         },
@@ -9401,17 +9385,18 @@
             {
               "id": "ped-d11-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança com cetoacidose e potássio de 3,0.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Criança em CAD, após 6 horas glicemia 230 e pH ainda 7,20.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Repor potássio antes da insulina",
-                "Insulina já",
+                "Parar insulina",
                 "Bicarbonato",
-                "Insulina imediata em bolus e bicarbonato"
+                "Reduzir insulina",
+                "Acrescentar soro glicosado"
               ],
-              "resposta": "Repor potássio antes da insulina",
-              "explicacao": "A insulina baixa o potássio.",
-              "revisado": false
+              "resposta": "Acrescentar soro glicosado",
+              "explicacao": "Manter insulina até corrigir acidose.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d11-l1-q6",
@@ -9537,17 +9522,18 @@
             {
               "id": "ped-d11-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança em uso de corticoide por 6 meses que parou de repente e tem vômitos e hipotensão.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê com genitália ambígua sem gônadas, sódio 124, potássio 6,8 e glicemia baixa.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Insuficiência adrenal",
-                "Gastroenterite",
-                "Normal",
-                "Diabetes tipo 1 com cetoacidose"
+                "11-beta-hidroxilase",
+                "Forma não clássica",
+                "Tumor adrenal",
+                "HAC perdedora de sal (21-hidroxilase)"
               ],
-              "resposta": "Insuficiência adrenal",
-              "explicacao": "Hidrocortisona.",
-              "revisado": false
+              "resposta": "HAC perdedora de sal (21-hidroxilase)",
+              "explicacao": "Crise adrenal.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d11-l2-q7",
@@ -10020,48 +10006,49 @@
             },
             {
               "id": "ped-d12-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Criança com coreia isolada sem outros achados e ASO normal.",
-              "enunciado": "Pode ser febre reumática?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na dermatomiosite juvenil, o que indica pior prognóstico?",
               "opcoes": [
-                "Sim; a coreia isolada basta",
-                "Não",
-                "Nunca",
-                "Somente se houver cardite junto com a coreia"
+                "Anti-Mi2 positivo",
+                "Início antes dos 7 anos",
+                "Capilaroscopia alterada",
+                "Vasculite com acometimento intestinal"
               ],
-              "resposta": "Sim; a coreia isolada basta",
-              "explicacao": "Manifestação tardia.",
-              "revisado": false
+              "resposta": "Vasculite com acometimento intestinal",
+              "explicacao": "Risco de perfuração.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d12-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Criança com virose seguida de cansaço, taquicardia desproporcional e troponina alta.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Menina com AIJ em remissão com metotrexato tem uveíte anterior no exame de rotina.",
+              "enunciado": "Qual o 1º tratamento?",
               "opcoes": [
-                "Miocardite viral",
-                "Normal",
-                "Asma",
-                "Anemia por falta de ferro"
+                "Anti-IL6",
+                "Ciclofosfamida",
+                "Antibiótico",
+                "Corticoide tópico e midriático"
               ],
-              "resposta": "Miocardite viral",
-              "explicacao": "Ecocardiograma e ressonância.",
-              "revisado": false
+              "resposta": "Corticoide tópico e midriático",
+              "explicacao": "Primeira linha.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d12-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança com Kawasaki tratado tardiamente no 15º dia.",
-              "enunciado": "Qual é o risco?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde costumam aparecer as lesões da osteomielite crônica não bacteriana?",
               "opcoes": [
-                "Aneurismas coronarianos",
-                "Artrite",
-                "Diabetes",
-                "Risco nenhum depois da febre passar"
+                "Diáfises e crânio",
+                "Mãos",
+                "Coluna só",
+                "Metáfises, clavícula e mandíbula"
               ],
-              "resposta": "Aneurismas coronarianos",
-              "explicacao": "Por isso tratar até o 10º dia.",
-              "revisado": false
+              "resposta": "Metáfises, clavícula e mandíbula",
+              "explicacao": "Doença autoinflamatória.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d12-l3-q7",
@@ -10180,41 +10167,43 @@
             },
             {
               "id": "ped-d13-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Prematuro extremo com necessidade de oxigênio com 36 semanas corrigidas.",
-              "enunciado": "Qual é o diagnóstico?",
-              "opcoes": [
-                "Displasia broncopulmonar",
-                "Asma",
-                "Normal",
-                "Pneumonia de aspiração crônica"
-              ],
-              "resposta": "Displasia broncopulmonar",
-              "explicacao": "Doença pulmonar crônica.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O recém-nascido pode sentir tanta dor quanto o adulto, ou mais.",
+              "resposta": true,
+              "explicacao": "Sistema inibitório imaturo.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d13-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Prematuro de 29 semanas com pausas respiratórias e queda da saturação pode ser tratado com cafeína.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. A cafeína estimula o centro respiratório na apneia da prematuridade.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que a dor não tratada e repetida na UTI neonatal pode causar?",
+              "opcoes": [
+                "Tolerância a opioide",
+                "Reação vagal",
+                "Falta de conexões talâmicas",
+                "Mudança duradoura da dor"
+              ],
+              "resposta": "Mudança duradoura da dor",
+              "explicacao": "Altera limiar e comportamento.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d13-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com desconforto, abdome escavado e desvio do coração para a direita.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Prematuro de 31 semanas, 1.400 g, estável com 48 horas.",
+              "enunciado": "Como alimentar?",
               "opcoes": [
-                "Hérnia diafragmática congênita",
-                "Pneumotórax",
-                "Normal",
-                "Pneumonia congênita grave por estreptococo"
+                "Peito",
+                "Sucção",
+                "Fórmula por sonda",
+                "Leite da mãe por sonda"
               ],
-              "resposta": "Hérnia diafragmática congênita",
-              "explicacao": "Intubar sem máscara.",
-              "revisado": false
+              "resposta": "Leite da mãe por sonda",
+              "explicacao": "Ainda não suga.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         },
@@ -10558,18 +10547,18 @@
             },
             {
               "id": "ped-d14-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente com acne grave nodular que não melhora com antibiótico oral.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando indicar DTPa acelular no CRIE?",
               "opcoes": [
-                "Isotretinoína com contracepção e exames",
-                "Mais antibiótico",
-                "Corticoide",
-                "Mais antibiótico oral por um ano e corticoide"
+                "Imunodeprimido apenas",
+                "Pneumopatia só",
+                "Sem indicação",
+                "Convulsão após vacina e cardiopatia"
               ],
-              "resposta": "Isotretinoína com contracepção e exames",
-              "explicacao": "Teratogênica.",
-              "revisado": false
+              "resposta": "Convulsão após vacina e cardiopatia",
+              "explicacao": "Também doença convulsiva crônica.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d14-l1-q7",
@@ -10818,26 +10807,27 @@
             },
             {
               "id": "ped-d14-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Pelo ECA, a criança internada tem direito a acompanhante em tempo integral.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. O acompanhante é garantido pelo Estatuto.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "No modelo SPIKES de comunicação, qual é a base da conversa?",
+              "opcoes": [
+                "Dar toda a informação primeiro",
+                "Plano fixo",
+                "Falar só com a família",
+                "Percepção e desejo do paciente"
+              ],
+              "resposta": "Percepção e desejo do paciente",
+              "explicacao": "Perguntar antes de contar.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "ped-d14-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente com doença grave quer participar das decisões sobre seu tratamento.",
-              "enunciado": "Qual é a orientação?",
-              "opcoes": [
-                "Ouvir e considerar conforme a maturidade",
-                "Ignorar",
-                "Só os pais decidem",
-                "Só os pais decidem tudo, sem ouvir o adolescente"
-              ],
-              "resposta": "Ouvir e considerar conforme a maturidade",
-              "explicacao": "Autonomia progressiva.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Pequenas doses de opioide forte podem aliviar tanto quanto grandes doses de opioide fraco.",
+              "resposta": true,
+              "explicacao": "Codeína e tramadol têm limites.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             }
           ]
         }
