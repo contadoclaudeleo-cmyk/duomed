@@ -62,11 +62,19 @@
             },
             {
               "id": "cir-u1-l1-q4",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O pneumotórax hipertensivo deve ser confirmado com radiografia antes da descompressão.",
-              "resposta": false,
-              "explicacao": "Esperar a radiografia pode ser fatal. O diagnóstico é clínico e a descompressão é imediata.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Após colisão, homem sonolento, Glasgow 10, FR 34, pH 7,28 e PaCO2 60.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Máscara",
+                "VNI",
+                "TC antes",
+                "Intubação"
+              ],
+              "resposta": "Intubação",
+              "explicacao": "Rebaixamento com hipercapnia.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u1-l1-q5",
@@ -227,24 +235,33 @@
             {
               "id": "cir-u1-l2-q7",
               "tipo": "multipla_escolha",
-              "enunciado": "Junto com a dor típica, qual achado laboratorial faz o diagnóstico de pancreatite aguda?",
+              "enunciado": "A dor some quando o paciente contrai a parede abdominal. Que sinal é esse?",
               "opcoes": [
-                "Amilase ou lipase acima de 3 vezes o normal",
-                "PCR acima de 150 mg/L",
-                "Leucocitose acima de 15.000",
-                "Glicemia acima de 200 mg/dL com cálcio baixo no primeiro dia"
+                "Blumberg",
+                "Rovsing",
+                "Fothergill",
+                "Carnett"
               ],
-              "resposta": "Amilase ou lipase acima de 3 vezes o normal",
-              "explicacao": "São necessários 2 de 3 critérios: dor típica, enzimas acima de 3 vezes o normal e imagem compatível.",
-              "revisado": false
+              "resposta": "Carnett",
+              "explicacao": "Indica dor de origem visceral.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u1-l2-q8",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na gestante, a dor da apendicite fica sempre no ponto de McBurney, como fora da gravidez.",
-              "resposta": false,
-              "explicacao": "Falso. O útero desloca o apêndice para cima; no terceiro trimestre a dor pode ser no flanco ou no hipocôndrio direito.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com dor migratória para a fossa ilíaca direita, náuseas, anorexia, febre, defesa e descompressão dolorosa; leucócitos normais.",
+              "enunciado": "O que diz o Alvarado?",
+              "opcoes": [
+                "Não tem apendicite",
+                "Baixa",
+                "Precisa de TC",
+                "Probabilidade alta"
+              ],
+              "resposta": "Probabilidade alta",
+              "explicacao": "Escore de 7.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         },
@@ -285,43 +302,35 @@
             },
             {
               "id": "cir-u1-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada hérnia à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Inguinal indireta",
-                  "direita": "Lateral aos vasos epigástricos inferiores"
-                },
-                {
-                  "esquerda": "Inguinal direta",
-                  "direita": "No triângulo de Hesselbach, medial aos vasos epigástricos"
-                },
-                {
-                  "esquerda": "Femoral",
-                  "direita": "Abaixo do ligamento inguinal, mais comum em mulheres"
-                },
-                {
-                  "esquerda": "Umbilical",
-                  "direita": "Frequente em cirróticos com ascite"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idosa com obstrução de delgado, pneumobilia e cálculo de 3 cm no íleo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "CPRE",
+                "Conservador",
+                "Colecistectomia e explorar colédoco",
+                "Enterolitotomia"
               ],
-              "explicacao": "A hérnia femoral tem alto risco de encarceramento e deve ser operada mesmo sem sintomas.",
-              "revisado": false
+              "resposta": "Enterolitotomia",
+              "explicacao": "Íleo biliar.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u1-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Idoso acamado com constipação crônica apresenta distensão abdominal importante e parada de eliminação de gases. A radiografia mostra uma alça muito dilatada em forma de U invertido, como um grão de café.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher com laparotomia prévia tem obstrução de delgado sem sinais de isquemia e ainda elimina flatos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Volvo de sigmoide",
-                "Volvo de ceco",
-                "Íleo paralítico",
-                "Diverticulite"
+                "Laparotomia já",
+                "Colonoscopia",
+                "Parenteral",
+                "Hidratação, sonda nasogástrica e observar"
               ],
-              "resposta": "Volvo de sigmoide",
-              "explicacao": "Sem sinais de isquemia, a conduta inicial é a descompressão por retossigmoidoscopia. Como recidiva com frequência, costuma-se programar sigmoidectomia.",
-              "revisado": false
+              "resposta": "Hidratação, sonda nasogástrica e observar",
+              "explicacao": "Brida sem complicação.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u1-l3-q5",
@@ -436,17 +445,19 @@
             },
             {
               "id": "cir-u2-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "No pneumotórax aberto, o curativo de ___ pontas funciona como válvula e evita o pneumotórax hipertensivo.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem baleado no tórax, estável, com hemotórax e dreno com 300 mL; pulmão ainda colapsado em 30%.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "três",
-                "quatro",
-                "duas",
-                "cinco"
+                "Retirar o dreno",
+                "TC e aguardar",
+                "Toracotomia",
+                "Reposicionar o dreno e aumentar a aspiração"
               ],
-              "resposta": "três",
-              "explicacao": "Depois do curativo, coloca-se um dreno de tórax longe da ferida.",
-              "revisado": false
+              "resposta": "Reposicionar o dreno e aumentar a aspiração",
+              "explicacao": "Volume ainda não indica toracotomia.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u2-l1-q5",
@@ -601,26 +612,35 @@
             },
             {
               "id": "cir-u2-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A tríade letal do trauma é hipertermia, alcalose e trombose.",
-              "resposta": false,
-              "explicacao": "Falso. A tríade letal é hipotermia, acidose e coagulopatia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem esfaqueado no flanco, estável, sem peritonite e FAST negativo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Laparotomia",
+                "Sutura e alta",
+                "Lavado",
+                "TC com contraste e observação"
+              ],
+              "resposta": "TC com contraste e observação",
+              "explicacao": "Manejo seletivo.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u2-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Vítima de trauma tem fratura de pelve e está hipotensa, com FAST negativo.",
-              "enunciado": "Qual é a conduta inicial para conter o sangramento?",
+              "caso": "Jovem baleado no abdome segue em choque após 2 L de cristaloide.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cinta pélvica e hemoderivados",
-                "Laparotomia imediata",
-                "Tomografia antes de tudo",
-                "Tomografia antes de qualquer medida e só analgesia"
+                "TC",
+                "Mais volume",
+                "Laparoscopia",
+                "Laparotomia imediata com controle de danos"
               ],
-              "resposta": "Cinta pélvica e hemoderivados",
-              "explicacao": "Se continuar instável, segue-se com embolização ou tamponamento pélvico.",
-              "revisado": false
+              "resposta": "Laparotomia imediata com controle de danos",
+              "explicacao": "Não responde a volume.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         },
@@ -709,25 +729,35 @@
             },
             {
               "id": "cir-u2-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual achado sugere lesão por inalação em um queimado?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com TCE grave, anisocoria e PA 100 x 60.",
+              "enunciado": "Qual solução usar?",
               "opcoes": [
-                "Rouquidão, escarro com fuligem e rosto queimado",
-                "Queimadura em uma perna",
-                "Dor no braço",
-                "Bolhas nas costas e dor intensa em um braço queimado"
+                "Ringer",
+                "Soro glicosado",
+                "Coloide",
+                "Salina hipertônica 3%"
               ],
-              "resposta": "Rouquidão, escarro com fuligem e rosto queimado",
-              "explicacao": "Nesses casos, a via aérea pode inchar rapidamente, e a intubação precoce pode ser necessária.",
-              "revisado": false
+              "resposta": "Salina hipertônica 3%",
+              "explicacao": "Expande e reduz a pressão intracraniana.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u2-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A queimadura de 3º grau é a mais dolorosa, porque expõe as terminações nervosas.",
-              "resposta": false,
-              "explicacao": "Falso. Ela destrói as terminações nervosas e costuma ser indolor no centro; a de 2º grau é a mais dolorosa.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 80 kg com bolhas e pele desvitalizada no tronco, braços e pernas após explosão.",
+              "enunciado": "Qual é a classificação e a conduta?",
+              "opcoes": [
+                "Superficial; hidratação oral",
+                "Total; RL 2 L",
+                "1º grau",
+                "Parcial profunda; morfina, Parkland e diurese"
+              ],
+              "resposta": "Parcial profunda; morfina, Parkland e diurese",
+              "explicacao": "Monitorar diurese guia a reposição.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u2-l3-q8",
@@ -952,31 +982,34 @@
             {
               "id": "cir-u3-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Na terceira semana de uma pancreatite grave, o paciente tem febre e a tomografia mostra gás na necrose do pâncreas.",
+              "caso": "Homem com pancreatite leve, colelitíase e colédoco de 8 mm.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Antibiótico e drenagem pouco invasiva",
-                "Antibiótico desde o 1º dia",
-                "Cirurgia aberta no 1º dia",
-                "Antibiótico profilático desde o primeiro dia, mesmo sem infecção, e observar"
+                "CPRE urgente",
+                "Colecistectomia em 3 meses",
+                "Parenteral",
+                "Colecistectomia na mesma internação"
               ],
-              "resposta": "Antibiótico e drenagem pouco invasiva",
-              "explicacao": "Começa-se com drenagem percutânea ou endoscópica e só se parte para cirurgia se necessário.",
-              "revisado": false
+              "resposta": "Colecistectomia na mesma internação",
+              "explicacao": "Evita novo episódio.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u3-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na pancreatite leve com diagnóstico claro pela clínica e pelos exames de sangue, qual exame não é necessário de rotina no primeiro dia?",
+              "tipo": "caso_clinico",
+              "caso": "Três meses após pancreatite, coleção homogênea de 12 cm atrás do estômago, com plenitude.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tomografia de abdome",
-                "Ultrassonografia para procurar cálculos",
-                "Exames de sangue",
-                "Avaliação clínica"
+                "Pig-tail percutâneo",
+                "Cistojejunostomia",
+                "Observar",
+                "Drenagem endoscópica transgástrica"
               ],
-              "resposta": "Tomografia de abdome",
-              "explicacao": "A tomografia é útil após 72 horas se houver piora ou dúvida.",
-              "revisado": false
+              "resposta": "Drenagem endoscópica transgástrica",
+              "explicacao": "Pseudocisto sintomático.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u3-l2-q7",
@@ -1056,32 +1089,34 @@
             },
             {
               "id": "cir-u3-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O marcador mais usado no câncer de pâncreas é o CA ___.",
+              "tipo": "caso_clinico",
+              "caso": "Homem com icterícia e adenocarcinoma de papila de 2,5 cm, sem metástases.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "19-9",
-                "125",
-                "15-3",
-                "72-4"
+                "Stent",
+                "Radioterapia",
+                "Pancreatectomia total",
+                "Duodenopancreatectomia"
               ],
-              "resposta": "19-9",
-              "explicacao": "Ele também sobe em obstruções benignas da via biliar.",
-              "revisado": false
+              "resposta": "Duodenopancreatectomia",
+              "explicacao": "Tumor ressecável.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u3-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Idoso tem icterícia que piora aos poucos, urina escura, fezes claras, coceira e perda de peso, sem dor.",
-              "enunciado": "Qual é a principal hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "A artéria pancreatoduodenal superior é ramo de qual artéria?",
               "opcoes": [
-                "Tumor periampular",
-                "Hepatite viral aguda",
-                "Cólica biliar",
-                "Síndrome de Gilbert"
+                "Tronco celíaco",
+                "Hepática comum",
+                "Hepática própria",
+                "Gastroduodenal"
               ],
-              "resposta": "Tumor periampular",
-              "explicacao": "Icterícia indolor e progressiva em idoso é câncer até prova em contrário.",
-              "revisado": false
+              "resposta": "Gastroduodenal",
+              "explicacao": "A inferior vem da mesentérica superior.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u3-l3-q6",
@@ -1445,32 +1480,35 @@
             },
             {
               "id": "cir-u4-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tumor de ___ é a metástase de câncer de estômago para o ovário.",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com câncer gástrico e carcinomatose confirmada na laparoscopia.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Krukenberg",
-                "Klatskin",
-                "Wilms",
-                "Pancoast do ápice pulmonar"
+                "Gastrectomia D2",
+                "Radioterapia",
+                "Derivação profilática",
+                "Quimioterapia paliativa"
               ],
-              "resposta": "Krukenberg",
-              "explicacao": "É um sinal de doença avançada.",
-              "revisado": false
+              "resposta": "Quimioterapia paliativa",
+              "explicacao": "Doença incurável.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u4-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Homem de 60 anos tem dificuldade para engolir que começou com sólidos e passou para líquidos, e perdeu 10 kg.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Fumante com carcinoma escamoso do esôfago médio T3N1M0.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
-                "Câncer de esôfago",
-                "Acalasia",
-                "Refluxo leve",
-                "Divertículo de Zenker"
+                "Radioterapia só",
+                "Gastrostomia",
+                "Esofagectomia já",
+                "Quimiorradioterapia neoadjuvante"
               ],
-              "resposta": "Câncer de esôfago",
-              "explicacao": "A disfagia progressiva com emagrecimento exige endoscopia com biópsia.",
-              "revisado": false
+              "resposta": "Quimiorradioterapia neoadjuvante",
+              "explicacao": "Melhora a sobrevida.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u4-l3-q6",
@@ -1654,16 +1692,17 @@
             {
               "id": "cir-u5-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o quadro típico da fissura anal aguda?",
+              "enunciado": "Quanto mede o canal anal cirúrgico?",
               "opcoes": [
-                "Dor forte ao evacuar e pouco sangue vivo",
-                "Caroço sem dor",
-                "Febre e calafrios",
-                "Caroço indolor perto do ânus com febre e calafrios"
+                "1 cm",
+                "2 cm",
+                "6 cm",
+                "4 cm"
               ],
-              "resposta": "Dor forte ao evacuar e pouco sangue vivo",
-              "explicacao": "A dor pode durar horas após evacuar, pelo espasmo do esfíncter.",
-              "revisado": false
+              "resposta": "4 cm",
+              "explicacao": "Vai até o anel anorretal.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u5-l2-q2",
@@ -2108,39 +2147,47 @@
             {
               "id": "cir-u6-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Quais protocolos propõem jejum mais curto, menos sondas e alimentação precoce após a cirurgia?",
+              "enunciado": "Pela resolução do CFM de 2025, quando a bariátrica é permitida em adolescentes?",
               "opcoes": [
-                "ACERTO e ERAS",
-                "ATLS",
-                "ACLS",
-                "PALS e ATLS juntos"
+                "Acima de 14 anos",
+                "Acima de 16 só com IMC 40",
+                "Acima de 14 com IMC 35",
+                "Acima de 16, com os mesmos critérios dos adultos"
               ],
-              "resposta": "ACERTO e ERAS",
-              "explicacao": "Esses protocolos reduzem o tempo de internação e as complicações.",
-              "revisado": false
+              "resposta": "Acima de 16, com os mesmos critérios dos adultos",
+              "explicacao": "Regra recente.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u6-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A nutrição parenteral tem menos risco de infecção que a enteral.",
-              "resposta": false,
-              "explicacao": "Falso. A parenteral exige cateter central e tem mais risco de infecção.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hormônio da fome é produzido no fundo gástrico?",
+              "opcoes": [
+                "Colecistocinina",
+                "GLP-1",
+                "Leptina",
+                "Grelina"
+              ],
+              "resposta": "Grelina",
+              "explicacao": "Cai após a gastrectomia vertical.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u6-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente operado do cólon sem complicações pergunta quando pode voltar a comer.",
-              "enunciado": "Qual é a orientação atual?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a técnica mais segura para puncionar a jugular interna?",
               "opcoes": [
-                "Voltar a comer cedo, nas primeiras 24 h",
-                "Só após gases por 5 dias",
-                "Só após 1 semana",
-                "Só depois de eliminar gases por cinco dias e com nutrição pela veia antes"
+                "Sentado",
+                "Agulha perpendicular",
+                "Veia medial à carótida",
+                "Cabeça um pouco rodada e Trendelenburg"
               ],
-              "resposta": "Voltar a comer cedo, nas primeiras 24 h",
-              "explicacao": "A alimentação precoce é segura e acelera a recuperação.",
-              "revisado": false
+              "resposta": "Cabeça um pouco rodada e Trendelenburg",
+              "explicacao": "A veia fica lateral à carótida.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         },
@@ -2263,17 +2310,18 @@
             {
               "id": "cir-u6-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Idoso no 2º dia após a cirurgia fica confuso e agitado à noite, desorientado, com períodos de melhora durante o dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "No 3º dia após colectomia, dispneia súbita, taquicardia e PaO2 de 64 sem alteração na ausculta.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Delirium pós-operatório",
-                "Demência",
-                "Esquizofrenia",
-                "AVC, sem necessidade de investigar"
+                "Atelectasia",
+                "Pneumotórax",
+                "Pneumonia",
+                "TEP; angiotomografia e anticoagular"
               ],
-              "resposta": "Delirium pós-operatório",
-              "explicacao": "O delirium tem início agudo e flutua. É preciso procurar causas como dor, infecção, remédios e retenção urinária.",
-              "revisado": false
+              "resposta": "TEP; angiotomografia e anticoagular",
+              "explicacao": "Pós-operatório de câncer.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         }
@@ -2321,25 +2369,35 @@
             },
             {
               "id": "cir-u7-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A hérnia femoral tem maior risco de estrangulamento do que a inguinal.",
-              "resposta": true,
-              "explicacao": "Por isso deve ser operada logo.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com hérnia inguinoescrotal redutível há 2 anos, sem complicações.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Observar",
+                "TC antes",
+                "Operar de urgência",
+                "Hernioplastia eletiva anterior com tela"
+              ],
+              "resposta": "Hernioplastia eletiva anterior com tela",
+              "explicacao": "Hérnia sintomática se opera.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u7-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A técnica de ___ usa tela sem tensão para corrigir a hérnia inguinal.",
+              "tipo": "caso_clinico",
+              "caso": "Após Lichtenstein, homem tem parestesia na face lateral do escroto.",
+              "enunciado": "Qual nervo foi lesado?",
               "opcoes": [
-                "Lichtenstein",
-                "Bassini",
-                "Shouldice",
-                "McVay com incisão relaxadora"
+                "Ilioinguinal",
+                "Ilio-hipogástrico",
+                "Ramo femoral",
+                "Ramo genital do genitofemoral"
               ],
-              "resposta": "Lichtenstein",
-              "explicacao": "É a mais usada.",
-              "revisado": false
+              "resposta": "Ramo genital do genitofemoral",
+              "explicacao": "Inerva o escroto lateral.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u7-l1-q5",
@@ -2446,17 +2504,19 @@
             },
             {
               "id": "cir-u7-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A hérnia de ___ pode estrangular sem causar obstrução completa.",
+              "tipo": "caso_clinico",
+              "caso": "Obstrução intestinal com dor na face medial da coxa que alivia ao fletir, sem hérnia palpável.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "Richter",
-                "Amyand",
-                "Spiegel",
-                "Petit"
+                "Perineal",
+                "Ciática",
+                "Petit",
+                "Hérnia obturadora"
               ],
-              "resposta": "Richter",
-              "explicacao": "Só parte da alça entra.",
-              "revisado": false
+              "resposta": "Hérnia obturadora",
+              "explicacao": "Sinal de Howship-Romberg.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u7-l2-q5",
@@ -2549,11 +2609,19 @@
             },
             {
               "id": "cir-u7-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Não se deve tentar reduzir à força uma hérnia com sinais de estrangulamento.",
-              "resposta": true,
-              "explicacao": "Pode reduzir intestino necrosado.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idosa com hérnia crural pouco redutível, dor, leucocitose e alça espessada na TC.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Observar",
+                "Reduzir manualmente",
+                "Antibiótico e jejum",
+                "Cirurgia de urgência e avaliar a alça"
+              ],
+              "resposta": "Cirurgia de urgência e avaliar a alça",
+              "explicacao": "Encarceramento com sofrimento.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u7-l3-q4",
@@ -3017,11 +3085,19 @@
             },
             {
               "id": "cir-u9-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Antes de qualquer cirurgia, qual é a primeira avaliação de um nódulo de tireoide palpável?",
-              "resposta": true,
-              "explicacao": "Cerca de 90% a 95%.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Nódulo de tireoide de 2,8 cm com PAAF Bethesda IV e TSH normal.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Repetir PAAF",
+                "Tireoidectomia com esvaziamento",
+                "Iodo",
+                "Lobectomia diagnóstica"
+              ],
+              "resposta": "Lobectomia diagnóstica",
+              "explicacao": "Só a histologia mostra invasão.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u9-l1-q3",
@@ -3182,17 +3258,19 @@
             },
             {
               "id": "cir-u9-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a complicação da tireoidectomia que causa rouquidão?",
+              "tipo": "caso_clinico",
+              "caso": "Câncer papilífero com linfonodo na borda anterior do esternocleidomastoideo, entre o hioide e a cricoide.",
+              "enunciado": "Qual é o nível?",
               "opcoes": [
-                "Lesão do nervo laríngeo recorrente",
-                "Hipocalcemia",
-                "Sangramento",
-                "Infecção leve da ferida com secreção clara"
+                "II",
+                "IV",
+                "VI",
+                "III"
               ],
-              "resposta": "Lesão do nervo laríngeo recorrente",
-              "explicacao": "Lesão bilateral pode obstruir a via aérea.",
-              "revisado": false
+              "resposta": "III",
+              "explicacao": "II fica acima do hioide.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u9-l2-q6",
@@ -3270,11 +3348,19 @@
             },
             {
               "id": "cir-u9-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O tumor mais comum da parótida é o adenoma pleomórfico.",
-              "resposta": true,
-              "explicacao": "É benigno.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com nódulo parotídeo móvel de 3 cm, PAAF de adenoma pleomórfico.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Observar",
+                "Radioterapia",
+                "Parotidectomia total com esvaziamento",
+                "Parotidectomia superficial preservando o facial"
+              ],
+              "resposta": "Parotidectomia superficial preservando o facial",
+              "explicacao": "Enucleação aumenta a recidiva.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u9-l3-q4",
@@ -3916,26 +4002,33 @@
             },
             {
               "id": "cir-u11-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 30 anos em uso de anticoncepcional há 10 anos com nódulo hepático de 6 cm.",
-              "enunciado": "Qual é a hipótese e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "A artéria hepática média costuma ser ramo de qual artéria e irrigar o quê?",
               "opcoes": [
-                "Adenoma; suspender a pílula e pensar em ressecção",
-                "Hemangioma; observar",
-                "Câncer; quimioterapia",
-                "Cisto simples; punção e manter o anticoncepcional"
+                "Hepática direita; segmento IV",
+                "Hepática própria",
+                "Hepática direita; segmento I",
+                "Hepática esquerda; segmento IV"
               ],
-              "resposta": "Adenoma; suspender a pílula e pensar em ressecção",
-              "explicacao": "Maior que 5 cm tem risco de sangrar.",
-              "revisado": false
+              "resposta": "Hepática esquerda; segmento IV",
+              "explicacao": "Variações são comuns.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u11-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O CEA elevado é o marcador típico do carcinoma hepatocelular.",
-              "resposta": false,
-              "explicacao": "Falso. O marcador do carcinoma hepatocelular é a alfafetoproteína.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual tumor benigno do fígado mais sangra?",
+              "opcoes": [
+                "Hiperplasia nodular focal",
+                "Hemangioma",
+                "Hamartoma",
+                "Adenoma"
+              ],
+              "resposta": "Adenoma",
+              "explicacao": "Também pode malignizar.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u11-l2-q8",
@@ -4005,46 +4098,48 @@
             },
             {
               "id": "cir-u11-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ esplênica é preferida em trauma estável para preservar o baço.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é contraindicação relativa ao TIPS?",
               "opcoes": [
-                "embolização",
-                "retirada",
-                "ligadura",
-                "biópsia por agulha"
+                "MELD acima de 10",
+                "Child acima de 7",
+                "Ascite refratária",
+                "Carcinoma hepatocelular"
               ],
-              "resposta": "embolização",
-              "explicacao": "Preservar quando possível.",
-              "revisado": false
+              "resposta": "Carcinoma hepatocelular",
+              "explicacao": "Hepatorrenal e ascite refratária são indicações.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u11-l3-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de hipertensão portal no Brasil?",
+              "enunciado": "Qual é a principal indicação hematológica de esplenectomia?",
               "opcoes": [
-                "Cirrose",
-                "Esquistossomose sempre",
-                "Trombose",
-                "Tumor"
+                "Falciforme",
+                "Esferocitose",
+                "Talassemia",
+                "Púrpura trombocitopênica imune"
               ],
-              "resposta": "Cirrose",
-              "explicacao": "A esquistossomose é importante em áreas endêmicas.",
-              "revisado": false
+              "resposta": "Púrpura trombocitopênica imune",
+              "explicacao": "Refratária ao tratamento clínico.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u11-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente após esplenectomia tem febre alta e queda da pressão.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Corpúsculos de Howell-Jolly no sangue indicam o quê?",
               "opcoes": [
-                "Antibiótico amplo imediato",
-                "Esperar exames",
-                "Antitérmico",
-                "Esperar o resultado da hemocultura para iniciar antibiótico"
+                "Esferocitose",
+                "Talassemia",
+                "Hodgkin",
+                "Asplenia"
               ],
-              "resposta": "Antibiótico amplo imediato",
-              "explicacao": "Pode ser infecção fulminante.",
-              "revisado": false
+              "resposta": "Asplenia",
+              "explicacao": "O baço remove esses restos de núcleo.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u11-l3-q7",
@@ -4735,17 +4830,19 @@
             },
             {
               "id": "cir-u13-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a malformação da atresia de esôfago mais comum?",
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 1 mês com colestase e atresia de vias biliares tipo 3.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Com fístula traqueoesofágica distal",
-                "Sem fístula",
-                "Fístula isolada",
-                "Fístula isolada em H, sem atresia"
+                "Madden",
+                "Ursodesoxicólico",
+                "Drenagem externa",
+                "Cirurgia de Kasai"
               ],
-              "resposta": "Com fístula traqueoesofágica distal",
-              "explicacao": "Ar no estômago no raio X.",
-              "revisado": false
+              "resposta": "Cirurgia de Kasai",
+              "explicacao": "Quanto antes melhor.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u13-l3-q6",
@@ -4876,26 +4973,34 @@
             },
             {
               "id": "cir-u14-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com corte limpo de 4 horas na mão.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como o estudo STITCH fechou a parede para reduzir hérnia incisional?",
               "opcoes": [
-                "Limpeza e sutura primária",
-                "Deixar aberta",
-                "Antibiótico só",
-                "Deixar a ferida aberta e dar antibiótico oral por 14 dias"
+                "1 cm da borda e fio multifilamentar",
+                "1 cm e 1 cm",
+                "0,5 cm e 1 cm",
+                "Pontos a 0,5 cm da borda, a cada 0,5 cm, com monofilamentar"
               ],
-              "resposta": "Limpeza e sutura primária",
-              "explicacao": "Ferida limpa e recente.",
-              "revisado": false
+              "resposta": "Pontos a 0,5 cm da borda, a cada 0,5 cm, com monofilamentar",
+              "explicacao": "Técnica de pequenos pontos.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vitamina K é a mais importante para a formação do colágeno.",
-              "resposta": false,
-              "explicacao": "Falso. A vitamina C é essencial para o colágeno; a falta causa escorbuto.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Retirada de lipoma cervical de 30 minutos com anestesia local.",
+              "enunciado": "Qual anestésico?",
+              "opcoes": [
+                "Lidocaína sem vasoconstritor",
+                "Bupivacaína",
+                "Procaína",
+                "Lidocaína 2% com adrenalina"
+              ],
+              "resposta": "Lidocaína 2% com adrenalina",
+              "explicacao": "Início rápido e duração maior.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l1-q8",
@@ -4981,31 +5086,32 @@
             {
               "id": "cir-u14-l2-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a infecção cirúrgica mais comum?",
+              "enunciado": "Sem prótese, até quando uma infecção conta como de sítio cirúrgico?",
               "opcoes": [
-                "Infecção superficial da ferida",
-                "Abscesso cerebral",
-                "Endocardite",
-                "Meningite bacteriana pós-operatória"
+                "5 dias",
+                "7 dias",
+                "15 dias",
+                "30 dias"
               ],
-              "resposta": "Infecção superficial da ferida",
-              "explicacao": "Tratar abrindo a ferida.",
-              "revisado": false
+              "resposta": "30 dias",
+              "explicacao": "Com prótese, até 90 dias.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente no 5º dia após laparotomia com ferida vermelha, quente e saída de pus.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual antibiótico profilático na histerectomia abdominal?",
               "opcoes": [
-                "Abrir a ferida e drenar",
-                "Só antibiótico",
-                "Fechar mais",
-                "Dar mais pontos e antibiótico oral"
+                "Ceftriaxona",
+                "Clindamicina",
+                "Ciprofloxacino",
+                "Cefazolina"
               ],
-              "resposta": "Abrir a ferida e drenar",
-              "explicacao": "Infecção de sítio cirúrgico.",
-              "revisado": false
+              "resposta": "Cefazolina",
+              "explicacao": "Dose antes da incisão.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-u14-l2-q7",
@@ -6322,17 +6428,18 @@
             {
               "id": "cir-d2-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Jovem com dor que migrou para a fossa ilíaca direita, anorexia, febre de 37,8 °C, Blumberg positivo e leucocitose com desvio.",
-              "enunciado": "Qual escore ajuda a estimar a chance de apendicite?",
+              "caso": "Homem com 5 dias de dor, massa e abscesso periapendicular de 4,5 cm.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Escore de Alvarado",
-                "Escore de Ranson",
-                "Escala de coma de Glasgow",
-                "Classificação de Child-Pugh"
+                "Drenar e operar de urgência",
+                "Laparoscopia já",
+                "Antibiótico oral",
+                "Antibiótico venoso, drenagem percutânea e apendicectomia depois"
               ],
-              "resposta": "Escore de Alvarado",
-              "explicacao": "Alvarado alto sugere cirurgia; intermediário pede exame de imagem.",
-              "revisado": false
+              "resposta": "Antibiótico venoso, drenagem percutânea e apendicectomia depois",
+              "explicacao": "Abscesso maior que 3 cm se drena.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d2-l1-q4",
@@ -6822,43 +6929,35 @@
             },
             {
               "id": "cir-d3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classificação ao câncer gástrico.",
-              "pares": [
-                {
-                  "esquerda": "Lauren intestinal",
-                  "direita": "Associado a gastrite atrófica e metaplasia, em idosos"
-                },
-                {
-                  "esquerda": "Lauren difuso",
-                  "direita": "Células em anel de sinete, em jovens, com pior prognóstico"
-                },
-                {
-                  "esquerda": "Borrmann IV",
-                  "direita": "Linite plástica, com estômago rígido"
-                },
-                {
-                  "esquerda": "Câncer gástrico precoce",
-                  "direita": "Restrito à mucosa e submucosa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem em AINE com melena e choque; endoscopia mostra úlcera duodenal com vaso visível.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Alta com IBP",
+                "Só observar",
+                "Cirurgia",
+                "Adrenalina e termocoagulação"
               ],
-              "explicacao": "O câncer gástrico difuso hereditário se associa ao gene CDH1.",
-              "revisado": false
+              "resposta": "Adrenalina e termocoagulação",
+              "explicacao": "Forrest IIa tem alto risco.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d3-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Endoscopia mostra câncer gástrico de 1,5 cm, restrito à mucosa, bem diferenciado e sem úlcera.",
-              "enunciado": "Qual é a melhor conduta?",
+              "caso": "Homem com abdome em tábua e ar livre, estável após volume.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ressecção endoscópica",
-                "Gastrectomia total com esvaziamento",
-                "Quimioterapia antes de tudo",
-                "Gastrectomia subtotal e radioterapia"
+                "IBP e observar",
+                "Endoscopia",
+                "Laparotomia só com dreno",
+                "Laparotomia, fechar a perfuração e biopsiar a borda"
               ],
-              "resposta": "Ressecção endoscópica",
-              "explicacao": "Câncer precoce dentro desses critérios tem baixo risco de linfonodo e pode ser retirado por endoscopia.",
-              "revisado": false
+              "resposta": "Laparotomia, fechar a perfuração e biopsiar a borda",
+              "explicacao": "Úlcera perfurada.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d3-l2-q4",
@@ -7107,17 +7206,19 @@
             },
             {
               "id": "cir-d4-l1-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a margem mínima habitual na ressecção de câncer de reto distal, além da excisão total do mesorreto?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com obstrução por tumor do cólon descendente, sem perfuração.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Cerca de 1 cm de margem distal",
-                "10 cm",
-                "Sem margem",
-                "Pelo menos cinco centímetros obrigatórios em todos os casos"
+                "Colonoscopia",
+                "Colectomia com anastomose",
+                "Lavagem",
+                "Colectomia com colostomia (Hartmann)"
               ],
-              "resposta": "Cerca de 1 cm de margem distal",
-              "explicacao": "A excisão total do mesorreto reduz muito a recidiva local.",
-              "revisado": false
+              "resposta": "Colectomia com colostomia (Hartmann)",
+              "explicacao": "Obstrução com cólon cheio.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d4-l1-q4",
@@ -7308,28 +7409,19 @@
           "questoes": [
             {
               "id": "cir-d4-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada classificação ou técnica de hérnia à sua característica.",
-              "pares": [
-                {
-                  "esquerda": "Técnica de Lichtenstein",
-                  "direita": "Tela colocada por via anterior sem tensão"
-                },
-                {
-                  "esquerda": "Técnica TEP ou TAPP",
-                  "direita": "Tela por videolaparoscopia"
-                },
-                {
-                  "esquerda": "Hérnia de Richter",
-                  "direita": "Apenas parte da parede da alça presa"
-                },
-                {
-                  "esquerda": "Hérnia de Littré",
-                  "direita": "Contém o divertículo de Meckel"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idoso com hérnia inguinal recidivada duas vezes por via anterior.",
+              "enunciado": "Qual é a melhor abordagem?",
+              "opcoes": [
+                "Lichtenstein de novo",
+                "Plugue anterior",
+                "Observar",
+                "Via posterior, de preferência laparoscópica"
               ],
-              "explicacao": "Na hérnia de Richter, pode haver necrose sem obstrução completa.",
-              "revisado": false
+              "resposta": "Via posterior, de preferência laparoscópica",
+              "explicacao": "Operar por plano não manipulado.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d4-l3-q2",
@@ -8027,56 +8119,67 @@
             },
             {
               "id": "cir-d6-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Paciente operado há 6 dias tem vermelhidão e pus na ferida: infecção superficial do sítio cirúrgico, que se trata abrindo e drenando.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Costuma surgir entre o 5º e o 7º dia; o principal tratamento é abrir e drenar.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idoso com hiperplasia de próstata tem bexiga palpável 4 h após herniorrafia com raqui.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ultrassom e observar",
+                "Tansulosina",
+                "Punção suprapúbica",
+                "Sondagem vesical"
+              ],
+              "resposta": "Sondagem vesical",
+              "explicacao": "Retenção urinária.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d6-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Idoso operado tem dor na panturrilha e inchaço no 8º dia.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "No 5º dia após hemicolectomia, febre, dor difusa, distensão e leucocitose.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "Doppler e anticoagular se confirmar",
-                "Antibiótico",
-                "Repouso absoluto",
-                "Antibiótico oral e repouso absoluto na cama"
+                "Íleo",
+                "Infecção urinária",
+                "Infecção de ferida",
+                "Deiscência; TC com contraste"
               ],
-              "resposta": "Doppler e anticoagular se confirmar",
-              "explicacao": "A trombose venosa profunda é causa comum de febre tardia.",
-              "revisado": false
+              "resposta": "Deiscência; TC com contraste",
+              "explicacao": "Complicação grave a afastar.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d6-l2-q7",
               "tipo": "caso_clinico",
-              "caso": "Paciente no 6º dia após colectomia, sem eliminar gases, em uso de morfina, com potássio de 2,9. Tomografia sem obstrução mecânica.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "No 1º dia após esofagectomia, 350 mL de líquido leitoso pelo dreno. Já em parenteral.",
+              "enunciado": "O que mais fazer?",
               "opcoes": [
-                "Íleo paralítico prolongado",
-                "Obstrução por bridas",
-                "Íleo biliar",
-                "Volvo de sigmoide com torção"
+                "Ligadura do ducto",
+                "Pleurodese",
+                "Enxerto",
+                "Octreotide"
               ],
-              "resposta": "Íleo paralítico prolongado",
-              "explicacao": "Opioides e distúrbios de eletrólitos prolongam o íleo; corrigir o potássio e reduzir opioide.",
-              "revisado": false
+              "resposta": "Octreotide",
+              "explicacao": "Débito baixo: conservador.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d6-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Após cirurgia de tireoide, paciente tem voz fraca e rouca.",
-              "enunciado": "Qual estrutura avaliar e como?",
+              "caso": "Paciente com PTI que usava prednisona alta tem choque após esplenectomia, com Hb normal e sódio baixo e potássio alto.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Laríngeo recorrente, por laringoscopia",
-                "Hipoglosso, por ressonância",
-                "Facial, por eletromiografia",
-                "Nervo facial, por eletromiografia e tomografia de crânio"
+                "Plaquetas e plasma",
+                "Ácido tranexâmico",
+                "Reoperar",
+                "Hidrocortisona e soro"
               ],
-              "resposta": "Laríngeo recorrente, por laringoscopia",
-              "explicacao": "A maioria das lesões é temporária.",
-              "revisado": false
+              "resposta": "Hidrocortisona e soro",
+              "explicacao": "Insuficiência adrenal aguda.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         },
@@ -8843,26 +8946,34 @@
             },
             {
               "id": "cir-d8-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Mulher com icterícia e cálculo grande no colo da vesícula comprimindo o ducto hepático tem síndrome de Mirizzi.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. O cálculo comprime o ducto hepático e pode causar icterícia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com icterícia, bilirrubina de 3,5 e colédoco de 10 mm com cálculos na vesícula.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Colecistectomia direto",
+                "Antibiótico",
+                "Drenar a vesícula",
+                "CPRE seguida de colecistectomia"
+              ],
+              "resposta": "CPRE seguida de colecistectomia",
+              "explicacao": "Alto risco de coledocolitíase.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d8-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com obstrução intestinal, ar na via biliar e cálculo no íleo.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a pancreatite após CPRE, o que é correto?",
               "opcoes": [
-                "Íleo biliar",
-                "Volvo",
-                "Hérnia",
-                "Tumor de intestino delgado"
+                "Ocorre em menos de 1%",
+                "É mais comum em homens idosos",
+                "É mais comum na terapêutica",
+                "Pode ser prevenida"
               ],
-              "resposta": "Íleo biliar",
-              "explicacao": "Tríade de Rigler.",
-              "revisado": false
+              "resposta": "Pode ser prevenida",
+              "explicacao": "Hidratação e AINE retal ajudam.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             }
           ]
         },
@@ -8952,18 +9063,18 @@
             },
             {
               "id": "cir-d8-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Lesão cística do pâncreas com ducto principal dilatado acima de 10 mm.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Onde ficam mais os gastrinomas pancreáticos?",
               "opcoes": [
-                "Ressecar pela suspeita de IPMN de ducto principal",
-                "Observar",
-                "Drenar",
-                "Drenar por endoscopia e observar por cinco anos"
+                "Corpo e cauda",
+                "Colo",
+                "Só cauda",
+                "Cabeça e processo uncinado"
               ],
-              "resposta": "Ressecar pela suspeita de IPMN de ducto principal",
-              "explicacao": "Alto risco de câncer.",
-              "revisado": false
+              "resposta": "Cabeça e processo uncinado",
+              "explicacao": "Dentro do triângulo dos gastrinomas.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d8-l3-q7",
@@ -9329,17 +9440,18 @@
             {
               "id": "cir-d9-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 20 semanas com dor no flanco direito e febre.",
-              "enunciado": "Qual é a hipótese e o exame?",
+              "caso": "Dois dias após amoxicilina-clavulanato, diarreia com sangue, febre e choque, sem peritonite.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Apendicite; ultrassom ou ressonância",
-                "Cólica; observar",
-                "Gastrite; endoscopia",
-                "Infecção urinária; antibiótico oral e liberar sem exame de imagem"
+                "Trocar por ceftriaxona",
+                "Esperar cultura",
+                "Colectomia",
+                "Suspender e iniciar vancomicina"
               ],
-              "resposta": "Apendicite; ultrassom ou ressonância",
-              "explicacao": "O apêndice sobe na gestação.",
-              "revisado": false
+              "resposta": "Suspender e iniciar vancomicina",
+              "explicacao": "Colite por C. difficile grave.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d9-l3-q7",
@@ -10757,17 +10869,18 @@
             {
               "id": "cir-d13-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com falta de ar, abdome escavado e ruídos intestinais no tórax.",
-              "enunciado": "Qual é o diagnóstico e o cuidado?",
+              "caso": "Lactente com Down tem vômitos biliosos e dupla bolha.",
+              "enunciado": "Qual cirurgia?",
               "opcoes": [
-                "Hérnia diafragmática; intubar e evitar máscara",
-                "Pneumonia; antibiótico",
-                "Normal",
-                "Pneumotórax; drenagem imediata do tórax e máscara"
+                "Cortar o pâncreas anular",
+                "Piloromiotomia",
+                "Gastrojejunostomia",
+                "Duodenojejunostomia laterolateral"
               ],
-              "resposta": "Hérnia diafragmática; intubar e evitar máscara",
-              "explicacao": "Máscara enche o intestino no tórax.",
-              "revisado": false
+              "resposta": "Duodenojejunostomia laterolateral",
+              "explicacao": "Derivação, sem seccionar o pâncreas.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d13-l2-q6",
@@ -11016,18 +11129,18 @@
             },
             {
               "id": "cir-d14-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "GIST gástrico de 8 cm ressecado com alto índice mitótico.",
-              "enunciado": "Qual é o tratamento após cirurgia?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o linfoma gástrico mais comum?",
               "opcoes": [
-                "Imatinibe adjuvante",
-                "Radioterapia",
-                "Quimioterapia clássica",
-                "Quimioterapia clássica com cisplatina"
+                "MALT",
+                "Folicular",
+                "Manto",
+                "Grandes células B difuso"
               ],
-              "resposta": "Imatinibe adjuvante",
-              "explicacao": "Reduz recorrência.",
-              "revisado": false
+              "resposta": "Grandes células B difuso",
+              "explicacao": "O MALT é o segundo.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d14-l1-q6",
@@ -11107,57 +11220,48 @@
             {
               "id": "cir-d14-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Biópsia de lesão pigmentada mostra melanoma de 2,5 mm de espessura, sem ulceração.",
-              "enunciado": "Qual é o principal fator prognóstico?",
+              "caso": "Homem com massa retroperitoneal grande, heterogênea e necrótica, sem metástases.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Espessura de Breslow",
-                "Cor da lesão",
-                "Local do corpo",
-                "Idade no diagnóstico"
+                "Biópsia e quimioterapia",
+                "Radioterapia",
+                "Ressecção só do tumor visível",
+                "Ressecção ampla com margens, sem biópsia prévia"
               ],
-              "resposta": "Espessura de Breslow",
-              "explicacao": "A espessura de Breslow, junto com a ulceração, define o prognóstico.",
-              "revisado": false
+              "resposta": "Ressecção ampla com margens, sem biópsia prévia",
+              "explicacao": "Provável sarcoma ressecável.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d14-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada espessura do melanoma à margem cirúrgica.",
-              "pares": [
-                {
-                  "esquerda": "In situ",
-                  "direita": "0,5 a 1 cm"
-                },
-                {
-                  "esquerda": "Até 1 mm",
-                  "direita": "1 cm"
-                },
-                {
-                  "esquerda": "1 a 2 mm",
-                  "direita": "1 a 2 cm"
-                },
-                {
-                  "esquerda": "Acima de 2 mm",
-                  "direita": "2 cm"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o tumor desmoide da parede abdominal, o que é correto?",
+              "opcoes": [
+                "Costuma ser doloroso",
+                "Associa-se a Peutz-Jeghers",
+                "Core biopsy é proibida",
+                "Nos casos esporádicos é duas vezes mais comum em mulheres"
               ],
-              "explicacao": "Margens recomendadas.",
-              "revisado": false
+              "resposta": "Nos casos esporádicos é duas vezes mais comum em mulheres",
+              "explicacao": "Recidiva local é frequente.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d14-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Massa de partes moles na coxa, profunda, de 8 cm, crescendo.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual câncer é o mais frequente em transplantados?",
               "opcoes": [
-                "Ressonância e biópsia com agulha grossa planejada",
-                "Retirar sem exames",
-                "Punção fina só",
-                "Retirada imediata sem nenhum exame de imagem antes"
+                "Leucemia linfoide",
+                "Linfoma",
+                "Colorretal",
+                "Pele não melanoma"
               ],
-              "resposta": "Ressonância e biópsia com agulha grossa planejada",
-              "explicacao": "Suspeita de sarcoma.",
-              "revisado": false
+              "resposta": "Pele não melanoma",
+              "explicacao": "Ligado à imunossupressão e ao sol.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d14-l2-q6",
@@ -11222,17 +11326,18 @@
             {
               "id": "cir-d14-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com febre no 1º dia após cirurgia, sem outros achados.",
-              "enunciado": "Qual é a causa mais comum?",
+              "caso": "Após enterectomia extensa, íleo persistente e jejum há 6 dias, albumina de 2,6.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Resposta inflamatória ou atelectasia",
-                "Infecção da ferida",
-                "Trombose",
-                "Infecção urinária pela sonda vesical"
+                "Aguardar o trânsito",
+                "Sonda mesmo com íleo",
+                "Só glicose",
+                "Nutrição parenteral total"
               ],
-              "resposta": "Resposta inflamatória ou atelectasia",
-              "explicacao": "Febre precoce raramente é infecção.",
-              "revisado": false
+              "resposta": "Nutrição parenteral total",
+              "explicacao": "Sem perspectiva de via enteral.",
+              "revisado": false,
+              "fonte": "ENARE 2026 R+"
             },
             {
               "id": "cir-d14-l3-q3",
