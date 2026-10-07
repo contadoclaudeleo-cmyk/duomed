@@ -431,17 +431,12 @@
             },
             {
               "id": "go-u2-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ venosa é usada para corrigir contrações fracas durante o trabalho de parto.",
-              "opcoes": [
-                "ocitocina",
-                "nifedipino",
-                "progesterona",
-                "terbutalina"
-              ],
-              "resposta": "ocitocina",
-              "explicacao": "O nifedipino e a terbutalina fazem o contrário: inibem as contrações.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Cesárea planejada sem indicação aumenta a mortalidade neonatal.",
+              "resposta": true,
+              "explicacao": "Comparado ao parto normal.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u2-l1-q5",
@@ -733,18 +728,18 @@
             },
             {
               "id": "go-u2-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Puérpera de 3 semanas está confusa, tem alucinações e fala em machucar o bebê.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Paralisia de Erb no RN causa:",
               "opcoes": [
-                "Emergência psiquiátrica, com avaliação imediata",
-                "Esperar passar",
-                "Só repouso",
-                "Suspender a amamentação e liberar com retorno em um mês"
+                "Fratura de clavícula",
+                "Cefalo-hematoma",
+                "Paralisia facial",
+                "Moro assimétrico"
               ],
-              "resposta": "Emergência psiquiátrica, com avaliação imediata",
-              "explicacao": "A psicose puerperal tem risco de suicídio e de agressão ao bebê.",
-              "revisado": false
+              "resposta": "Moro assimétrico",
+              "explicacao": "Plexo braquial alto.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -863,18 +858,18 @@
             },
             {
               "id": "go-u3-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com hipotireoidismo, em uso de levotiroxina, descobre que está grávida.",
-              "enunciado": "Qual é o ajuste?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Jejum de 96 e 95 com 15 semanas indica:",
               "opcoes": [
-                "Aumentar a dose em 25 a 30% e seguir o TSH",
-                "Suspender",
-                "Manter sem exames",
-                "Trocar a levotiroxina por metimazol durante a gestação"
+                "Normal",
+                "DM1",
+                "DM2",
+                "Diabetes gestacional"
               ],
-              "resposta": "Aumentar a dose em 25 a 30% e seguir o TSH",
-              "explicacao": "Os hormônios da mãe são essenciais para o desenvolvimento do cérebro do bebê no início da gestação.",
-              "revisado": false
+              "resposta": "Diabetes gestacional",
+              "explicacao": "Entre 92 e 125.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -947,40 +942,49 @@
             },
             {
               "id": "go-u3-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 30 semanas perde líquido claro há 6 horas, sem contrações e sem febre, com bebê bem.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que confirma rotura de membranas?",
               "opcoes": [
-                "Internar, corticoide, antibiótico e vigiar infecção",
-                "Induzir já",
-                "Liberar",
-                "Fazer cerclagem do colo e liberar para casa com repouso absoluto"
+                "Sludge",
+                "pH 4,5",
+                "Leucocitose",
+                "Cristalização em samambaia"
               ],
-              "resposta": "Internar, corticoide, antibiótico e vigiar infecção",
-              "explicacao": "Antes de 34 semanas, sem infecção, a conduta costuma ser expectante.",
-              "revisado": false
+              "resposta": "Cristalização em samambaia",
+              "explicacao": "Líquido cristaliza.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u3-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual quadro sugere corioamnionite?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante com polidrâmnio e feto pélvico perde líquido e o feto fica bradicárdico.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Febre e taquicardia materna e fetal, útero dolorido",
-                "Contrações indolores",
-                "Líquido claro",
-                "Líquido claro e sem cheiro, com movimentos fetais normais"
+                "Cardiopatia",
+                "Trabalho de parto",
+                "Cetoacidose",
+                "Prolapso de cordão"
               ],
-              "resposta": "Febre e taquicardia materna e fetal, útero dolorido",
-              "explicacao": "É uma infecção das membranas e do líquido amniótico.",
-              "revisado": false
+              "resposta": "Prolapso de cordão",
+              "explicacao": "Risco com pélvico e polidrâmnio.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u3-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na corioamnionite antes de 34 semanas, deve-se manter a gestação com antibiótico para ganhar maturidade.",
-              "resposta": false,
-              "explicacao": "Falso. Na corioamnionite, dá-se antibiótico e interrompe-se a gestação, em qualquer idade gestacional.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é o atosibano?",
+              "opcoes": [
+                "Bloqueador de cálcio",
+                "Para pré-eclâmpsia",
+                "Gonadotrofina",
+                "Antagonista da ocitocina"
+              ],
+              "resposta": "Antagonista da ocitocina",
+              "explicacao": "Tocolítico.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u3-l2-q8",
@@ -1085,25 +1089,35 @@
             },
             {
               "id": "go-u3-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Após o esvaziamento de uma mola, qual achado indica neoplasia trofoblástica?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com dois colos, septo vaginal e dois cornos uterinos separados.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Beta-hCG que sobe ou para de cair",
-                "Beta-hCG negativo",
-                "Menstruação normal",
-                "Útero pequeno com menstruação normal"
+                "Unicorno",
+                "Bicorno",
+                "Septado",
+                "Didelfo, sem prejuízo à fertilidade"
               ],
-              "resposta": "Beta-hCG que sobe ou para de cair",
-              "explicacao": "Ela responde muito bem à quimioterapia.",
-              "revisado": false
+              "resposta": "Didelfo, sem prejuízo à fertilidade",
+              "explicacao": "Duplicação completa.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u3-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Após uma mola, a mulher deve engravidar logo, para confirmar a cura.",
-              "resposta": false,
-              "explicacao": "Falso. Deve evitar engravidar durante o acompanhamento, pois a gravidez atrapalha a leitura do beta-hCG.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 10 semanas com vômitos apesar de gengibre e acupuntura.",
+              "enunciado": "Qual o próximo passo?",
+              "opcoes": [
+                "Dimenidrato e meclizina",
+                "Prometazina",
+                "Corticoide",
+                "Vitamina B6 com doxilamina"
+              ],
+              "resposta": "Vitamina B6 com doxilamina",
+              "explicacao": "Escalonamento.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u3-l3-q8",
@@ -1299,40 +1313,43 @@
             },
             {
               "id": "go-u4-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome dos ovários policísticos aumenta o risco de diabetes tipo 2 e de hiperplasia do endométrio.",
-              "resposta": true,
-              "explicacao": "Por isso o acompanhamento metabólico faz parte do tratamento.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com SOP sem vida sexual incomodada com ciclos imprevisíveis.",
+              "enunciado": "O que prescrever?",
+              "opcoes": [
+                "Só exercício",
+                "Nada",
+                "Estrogênio isolado",
+                "Progestagênio 10 a 14 dias por mês"
+              ],
+              "resposta": "Progestagênio 10 a 14 dias por mês",
+              "explicacao": "Regula o sangramento.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u4-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O excesso de pelos com padrão masculino em mulheres se chama ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é verdade na fisiopatologia da SOP?",
               "opcoes": [
-                "hirsutismo",
-                "hipertricose",
-                "alopecia",
-                "virilização"
+                "AMH baixo",
+                "Pulsos de GnRH lentos",
+                "Poucos genes",
+                "Androgênios alteram os pulsos de GnRH"
               ],
-              "resposta": "hirsutismo",
-              "explicacao": "É avaliado pela escala de Ferriman-Gallwey.",
-              "revisado": false
+              "resposta": "Androgênios alteram os pulsos de GnRH",
+              "explicacao": "Pulsos rápidos.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u4-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 24 anos com ciclos irregulares, acne e excesso de pelos quer engravidar.",
-              "enunciado": "Qual é a primeira escolha para induzir a ovulação?",
-              "opcoes": [
-                "Letrozol",
-                "Anticoncepcional",
-                "Espironolactona",
-                "Histerectomia"
-              ],
-              "resposta": "Letrozol",
-              "explicacao": "O letrozol tem mais nascidos vivos que o clomifeno nessas mulheres.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "A idade e o número de óvulos maduros congelados definem a chance de nascido vivo.",
+              "resposta": true,
+              "explicacao": "Vitrificação é a técnica.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u4-l2-q6",
@@ -1719,17 +1736,19 @@
             },
             {
               "id": "go-u5-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tratamento é indicado em tumores com receptor hormonal positivo?",
+              "tipo": "caso_clinico",
+              "caso": "Carcinoma lobular de 2 cm, axila negativa, boa relação tumor/mama.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Hormonioterapia (tamoxifeno ou inibidor da aromatase)",
-                "Só antibiótico",
-                "Insulina",
-                "Nenhuma terapia hormonal, só quimioterapia em todos os casos"
+                "Quimio e rádio",
+                "Mastectomia",
+                "Esvaziamento axilar",
+                "Setorectomia e linfonodo sentinela"
               ],
-              "resposta": "Hormonioterapia (tamoxifeno ou inibidor da aromatase)",
-              "explicacao": "A hormonioterapia costuma durar de 5 a 10 anos.",
-              "revisado": false
+              "resposta": "Setorectomia e linfonodo sentinela",
+              "explicacao": "Conservadora.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u5-l2-q7",
@@ -1855,26 +1874,35 @@
             },
             {
               "id": "go-u5-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Todo cisto simples e pequeno no ovário de uma mulher jovem deve ser operado.",
-              "resposta": false,
-              "explicacao": "Falso. Em geral é funcional e some; repetir a ultrassonografia após alguns ciclos costuma bastar.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com citologia normal recente e sangramento intermenstrual e pós-coito.",
+              "enunciado": "Qual exame e hipótese?",
+              "opcoes": [
+                "Citologia; alto grau",
+                "RM; endometriose",
+                "Histeroscopia; atrofia",
+                "Ultrassom; pólipo endometrial"
+              ],
+              "resposta": "Ultrassom; pólipo endometrial",
+              "explicacao": "Causa estrutural.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u5-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 30 anos tem dor súbita e intensa no baixo ventre após exercício, com náuseas e massa no ovário. O doppler mostra fluxo reduzido.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Hiperplasia endometrial com atipia, primeiro momento.",
+              "enunciado": "Qual tratamento?",
               "opcoes": [
-                "Torção anexial",
-                "Apendicite",
-                "Cólica renal",
-                "Gravidez ectópica, necessariamente"
+                "Estradiol",
+                "Histerectomia vaginal",
+                "Ooforectomia",
+                "Progestagênio ou DIU hormonal"
               ],
-              "resposta": "Torção anexial",
-              "explicacao": "É uma emergência: a cirurgia rápida pode salvar o ovário.",
-              "revisado": false
+              "resposta": "Progestagênio ou DIU hormonal",
+              "explicacao": "Se quer preservar.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -1939,46 +1967,51 @@
             },
             {
               "id": "go-u6-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é uma infecção sexualmente transmissível, e o parceiro deve ser tratado.",
+              "tipo": "caso_clinico",
+              "caso": "Corrimento branco com pH 3,5, muitos lactobacilos e sem hifas, sem melhora com antifúngico.",
+              "enunciado": "Qual o tratamento?",
               "opcoes": [
-                "tricomoníase",
-                "vaginose bacteriana",
-                "candidíase",
-                "atrofia vaginal"
+                "Metronidazol",
+                "Ácido bórico",
+                "Clindamicina",
+                "Ducha de bicarbonato"
               ],
-              "resposta": "tricomoníase",
-              "explicacao": "O tratamento também é feito com metronidazol.",
-              "revisado": false
+              "resposta": "Ducha de bicarbonato",
+              "explicacao": "Vaginose citolítica.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u6-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Mulher tem corrimento branco em grumos, coceira intensa e ardor, com pH vaginal normal.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Úlcera vulvar única, indolor e endurecida com linfonodos indolores.",
+              "enunciado": "Qual o tratamento?",
               "opcoes": [
-                "Fluconazol oral ou antifúngico vaginal",
-                "Metronidazol",
-                "Ceftriaxona",
-                "Penicilina benzatina e metronidazol"
+                "Aciclovir",
+                "Azitromicina",
+                "Prednisona",
+                "Penicilina benzatina 2,4 milhões dose única"
               ],
-              "resposta": "Fluconazol oral ou antifúngico vaginal",
-              "explicacao": "A candidíase não é considerada infecção sexualmente transmissível.",
-              "revisado": false
+              "resposta": "Penicilina benzatina 2,4 milhões dose única",
+              "explicacao": "Sífilis primária.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u6-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais critérios são usados para diagnosticar vaginose bacteriana na prática clínica?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com dor pélvica e anexos dolorosos, sem febre, ultrassom normal.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Critérios de Amsel",
-                "Critérios de Jones",
-                "Critérios de Rotterdam",
-                "Critérios de Duke"
+                "Apendicite",
+                "Torção",
+                "ITU",
+                "DIP"
               ],
-              "resposta": "Critérios de Amsel",
-              "explicacao": "São 3 de 4: corrimento típico, pH acima de 4,5, teste das aminas positivo e células-guia.",
-              "revisado": false
+              "resposta": "DIP",
+              "explicacao": "Critérios mínimos.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u6-l1-q7",
@@ -2475,40 +2508,49 @@
             },
             {
               "id": "go-u7-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Gestante na fase ativa com contrações fracas e dilatação lenta, sem desproporção.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Dor contínua com sinal de Bandl e bradicardia fetal indicam:",
               "opcoes": [
-                "Ocitocina e amniotomia",
-                "Cesárea imediata",
-                "Sedação",
-                "Cesárea imediata sem tentar corrigir as contrações"
+                "DPP",
+                "Hemólise",
+                "Rotura de bolsa",
+                "Iminência de rotura uterina"
               ],
-              "resposta": "Ocitocina e amniotomia",
-              "explicacao": "Corrigir a distocia funcional.",
-              "revisado": false
+              "resposta": "Iminência de rotura uterina",
+              "explicacao": "Anel de Bandl.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u7-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Bebês pequenos têm mais risco de distocia de ombro que bebês grandes.",
-              "resposta": false,
-              "explicacao": "Falso. A macrossomia e o diabetes aumentam o risco de distocia de ombro.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Para que serve o índice de Bishop?",
+              "opcoes": [
+                "Peso fetal",
+                "Asfixia",
+                "Aneuploidia",
+                "Prever sucesso da indução"
+              ],
+              "resposta": "Prever sucesso da indução",
+              "explicacao": "Avalia o colo.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u7-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A lesão do plexo ___ é complicação da distocia de ombro.",
+              "tipo": "caso_clinico",
+              "caso": "Expulsivo prolongado com cabeça encravada em transversa em +2.",
+              "enunciado": "Qual fórcipe?",
               "opcoes": [
-                "braquial",
-                "lombar",
-                "sacral",
-                "cervical"
+                "Simpson",
+                "Piper",
+                "Tarnier",
+                "Kielland"
               ],
-              "resposta": "braquial",
-              "explicacao": "Paralisia de Erb.",
-              "revisado": false
+              "resposta": "Kielland",
+              "explicacao": "Rotação.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -2927,17 +2969,19 @@
             },
             {
               "id": "go-u8-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O pico de velocidade na artéria cerebral ___ alto sugere anemia fetal.",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 28 semanas com anti-D 1:128 e ACM 1,8 MoM.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "média",
-                "anterior",
-                "posterior",
-                "basilar"
+                "Repetir Coombs",
+                "Anti-D",
+                "Repetir em 2 semanas",
+                "Cordocentese e transfusão"
               ],
-              "resposta": "média",
-              "explicacao": "Exame não invasivo.",
-              "revisado": false
+              "resposta": "Cordocentese e transfusão",
+              "explicacao": "Anemia grave.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u8-l3-q5",
@@ -3094,11 +3138,18 @@
             },
             {
               "id": "go-u9-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Gêmeos dizigóticos podem dividir a mesma placenta e serem monocoriônicos.",
-              "resposta": false,
-              "explicacao": "Falso. Gêmeos dizigóticos vêm de dois óvulos e são sempre dicoriônicos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sinal do lambda indica gêmeos:",
+              "opcoes": [
+                "Mono-di",
+                "Mono-mono",
+                "Acolados",
+                "Dicoriônicos"
+              ],
+              "resposta": "Dicoriônicos",
+              "explicacao": "Monocoriônicos têm sinal do T.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u9-l1-q8",
@@ -3153,25 +3204,34 @@
             },
             {
               "id": "go-u9-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O polidrâmnio aumenta o risco de prolapso de cordão.",
-              "resposta": true,
-              "explicacao": "E de parto prematuro.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que se associa a polidrâmnio?",
+              "opcoes": [
+                "Tabagismo",
+                "Turner",
+                "Obstrução urinária",
+                "Atresia de esôfago e diabetes"
+              ],
+              "resposta": "Atresia de esôfago e diabetes",
+              "explicacao": "Feto não engole ou poliúria.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u9-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A sequência de ___ ocorre no oligoidrâmnio grave, com hipoplasia pulmonar.",
+              "tipo": "caso_clinico",
+              "caso": "Feto de 18 semanas sem líquido e com bexiga muito distendida.",
+              "enunciado": "Qual a causa?",
               "opcoes": [
-                "Potter",
-                "Pierre Robin",
-                "DiGeorge",
-                "Turner"
+                "Extrofia",
+                "Adenomatoide",
+                "Displasia multicística",
+                "Válvula de uretra posterior"
               ],
-              "resposta": "Potter",
-              "explicacao": "Por agenesia renal.",
-              "revisado": false
+              "resposta": "Válvula de uretra posterior",
+              "explicacao": "Obstrução baixa.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u9-l2-q5",
@@ -3399,11 +3459,19 @@
             },
             {
               "id": "go-u10-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na sífilis gestacional, só a penicilina trata adequadamente o bebê.",
-              "resposta": true,
-              "explicacao": "Alérgicas fazem dessensibilização.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 32 semanas com dengue, vômitos persistentes e sangramento de mucosa.",
+              "enunciado": "Qual o grupo?",
+              "opcoes": [
+                "A",
+                "B",
+                "D",
+                "C"
+              ],
+              "resposta": "C",
+              "explicacao": "Sinais de alarme.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u10-l1-q4",
@@ -3526,17 +3594,19 @@
             },
             {
               "id": "go-u10-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O teste de ___ da IgG ajuda a saber se a toxoplasmose é recente.",
+              "tipo": "caso_clinico",
+              "caso": "Toxoplasmose com PCR positivo no líquido amniótico com 19 semanas.",
+              "enunciado": "Qual o tratamento?",
               "opcoes": [
-                "avidez",
-                "Coombs",
-                "Kleihauer",
-                "Bishop"
+                "Espiramicina",
+                "Sulfassalazina",
+                "Pirazinamida",
+                "Sulfadiazina, pirimetamina e ácido folínico"
               ],
-              "resposta": "avidez",
-              "explicacao": "Avidez alta indica infecção antiga.",
-              "revisado": false
+              "resposta": "Sulfadiazina, pirimetamina e ácido folínico",
+              "explicacao": "Feto infectado.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u10-l2-q5",
@@ -3613,11 +3683,18 @@
             },
             {
               "id": "go-u10-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A gestante colonizada por estreptococo B recebe antibiótico durante o trabalho de parto.",
-              "resposta": true,
-              "explicacao": "Penicilina ou ampicilina.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sem cultura para GBS, quando fazer profilaxia intraparto?",
+              "opcoes": [
+                "Colonização anterior",
+                "37,3 °C",
+                "Mais de 38 semanas",
+                "Bolsa rota > 18 h"
+              ],
+              "resposta": "Bolsa rota > 18 h",
+              "explicacao": "Fator de risco.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u10-l3-q3",
@@ -4067,17 +4144,19 @@
             },
             {
               "id": "go-u11-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os 3 D da endometriose são dismenorreia, dispareunia e dor ___ crônica.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com fluxo aumentado, cólica e útero com cistos miometriais e sombras.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "pélvica",
-                "lombar",
-                "abdominal alta",
-                "torácica"
+                "Disfuncional",
+                "Mioma",
+                "Endometriose",
+                "Adenomiose"
               ],
-              "resposta": "pélvica",
-              "explicacao": "Também disquezia.",
-              "revisado": false
+              "resposta": "Adenomiose",
+              "explicacao": "Paredes assimétricas.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         }
@@ -4499,61 +4578,74 @@
             {
               "id": "go-u13-l1-q3",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A puberdade precoce central é causada pela ativação precoce do eixo hipotálamo-hipófise.",
+              "enunciado": "Na 1ª consulta da adolescente virgem e ansiosa, não se faz especular nem toque vaginal.",
               "resposta": true,
-              "explicacao": "Tratada com análogo de GnRH.",
-              "revisado": false
+              "explicacao": "Acolher primeiro.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A puberdade ___ é a ausência de mamas aos 13 anos.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a vacina de HPV, qual a verdade?",
               "opcoes": [
-                "tardia",
-                "precoce",
-                "normal",
-                "central"
+                "Pedir HPV antes",
+                "Proibida após infecção",
+                "Proibida após iniciar sexo",
+                "Mais eficaz antes da vida sexual"
               ],
-              "resposta": "tardia",
-              "explicacao": "Investigar causas.",
-              "revisado": false
+              "resposta": "Mais eficaz antes da vida sexual",
+              "explicacao": "Pode dar depois também.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a primeira manifestação da puberdade na menina?",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 8 anos com corrimento na calcinha, sem coceira nem vermelhidão.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Telarca",
-                "Menarca",
-                "Pubarca",
-                "Estirão"
+                "Corpo estranho",
+                "Vaginose",
+                "Candidíase",
+                "Higiene inadequada"
               ],
-              "resposta": "Telarca",
-              "explicacao": "Mamas começam primeiro.",
-              "revisado": false
+              "resposta": "Higiene inadequada",
+              "explicacao": "Causa mais comum.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Menina de 6 anos com mamas e pelos pubianos e idade óssea avançada.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Jovem com Turner em mosaico e puberdade espontânea pergunta sobre fertilidade.",
+              "enunciado": "O que orientar?",
               "opcoes": [
-                "Puberdade precoce",
-                "Normal",
-                "Obesidade",
-                "Desenvolvimento normal para a idade"
+                "Sem impacto",
+                "Todas são férteis",
+                "Impossível",
+                "Congelar oócitos pode ser possível"
               ],
-              "resposta": "Puberdade precoce",
-              "explicacao": "Investigar e tratar.",
-              "revisado": false
+              "resposta": "Congelar oócitos pode ser possível",
+              "explicacao": "Mosaico e AMH normal ajudam.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Turner causa puberdade precoce.",
-              "resposta": false,
-              "explicacao": "Falso. Causa puberdade tardia, por falência ovariana.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com mamas M4, pelos P2, sem útero e testosterona alta.",
+              "enunciado": "Qual o cariótipo?",
+              "opcoes": [
+                "46,XX",
+                "45,X",
+                "47,XXX",
+                "46,XY"
+              ],
+              "resposta": "46,XY",
+              "explicacao": "Insensibilidade a andrógenos.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l1-q8",
@@ -4775,18 +4867,12 @@
             },
             {
               "id": "go-u13-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Menina de 12 anos com gestação de 10 semanas.",
-              "enunciado": "Qual é a obrigação?",
-              "opcoes": [
-                "Notificar e avisar o Conselho Tutelar",
-                "Pré-natal sem notificar",
-                "Aguardar",
-                "Pré-natal comum, sem notificar ninguém, porque a família já sabe da gravidez"
-              ],
-              "resposta": "Notificar e avisar o Conselho Tutelar",
-              "explicacao": "Menor de 14 anos.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na vítima de violência sexual, a saúde mental merece atenção especial.",
+              "resposta": true,
+              "explicacao": "Acolhimento integral.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u13-l3-q7",
@@ -4871,17 +4957,19 @@
             },
             {
               "id": "go-u14-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A mutação do gene ___ aumenta o risco de câncer de ovário e mama.",
+              "tipo": "caso_clinico",
+              "caso": "Massa ovariana com células em anel de sinete na biópsia.",
+              "enunciado": "Qual o diagnóstico e conduta?",
               "opcoes": [
-                "BRCA",
-                "HER2",
-                "KRAS",
-                "p53 só"
+                "Disgerminoma",
+                "Granulosa",
+                "Seroso",
+                "Metástase: buscar o primário"
               ],
-              "resposta": "BRCA",
-              "explicacao": "Rastreio genético.",
-              "revisado": false
+              "resposta": "Metástase: buscar o primário",
+              "explicacao": "Tumor de Krukenberg.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-u14-l1-q5",
@@ -5249,10 +5337,11 @@
             {
               "id": "go-d1-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na gestante com hepatite B e carga viral alta, o tenofovir no terceiro trimestre reduz a transmissão para o bebê.",
+              "enunciado": "Vacina tomada é vacina contada: completa-se o esquema, nunca se reinicia.",
               "resposta": true,
-              "explicacao": "O bebê também recebe vacina e imunoglobulina nas primeiras 12 horas.",
-              "revisado": false
+              "explicacao": "Vale para todas.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d1-l1-q6",
@@ -5384,18 +5473,18 @@
             },
             {
               "id": "go-d1-l2-q7",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 10 semanas vomita tudo há 1 semana, perdeu 6% do peso e tem cetonúria.",
-              "enunciado": "Qual cuidado é essencial antes de dar soro com glicose?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Gestante de 36 anos, usuária de maconha e com baixa escolaridade. Qual o risco?",
               "opcoes": [
-                "Repor tiamina",
-                "Dar potássio em bolus",
-                "Iniciar insulina",
-                "Suspender todo líquido por 24 horas"
+                "Habitual",
+                "Baixo",
+                "Alto",
+                "Intermediário"
               ],
-              "resposta": "Repor tiamina",
-              "explicacao": "Na hiperêmese gravídica, repõe-se tiamina antes da glicose para evitar Wernicke.",
-              "revisado": false
+              "resposta": "Intermediário",
+              "explicacao": "Fatores sociais.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d1-l2-q8",
@@ -5618,26 +5707,34 @@
             },
             {
               "id": "go-d2-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O AAS em dose baixa, iniciado antes de 16 semanas, reduz a pré-eclâmpsia em gestantes de alto risco.",
-              "resposta": true,
-              "explicacao": "O cálcio também é recomendado se a dieta for pobre nesse mineral.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Gestante com PA alta sem resposta a hidralazina, plaquetas 60 mil e transaminases altas, sem proteinúria.",
+              "enunciado": "Qual o diagnóstico e conduta?",
+              "opcoes": [
+                "Insuficiência hepática",
+                "Esteatose",
+                "Hipertensão gestacional",
+                "Pré-eclâmpsia: sulfato de magnésio"
+              ],
+              "resposta": "Pré-eclâmpsia: sulfato de magnésio",
+              "explicacao": "Lesão de órgão basta.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d2-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 30 semanas com pré-eclâmpsia grave está estável, com feto bem.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais marcadores rastreiam pré-eclâmpsia?",
               "opcoes": [
-                "Corticoide e parto conforme a evolução",
-                "Parto já sem corticoide",
-                "Liberar",
-                "Esperar até 40 semanas com consultas mensais"
+                "NIPT e PAPP-A",
+                "hCG e PlGF",
+                "Alfafetoproteína",
+                "PAPP-A e PlGF"
               ],
-              "resposta": "Corticoide e parto conforme a evolução",
-              "explicacao": "Abaixo de 34 semanas, tenta-se ganhar tempo com segurança.",
-              "revisado": false
+              "resposta": "PAPP-A e PlGF",
+              "explicacao": "Com Doppler das uterinas.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d2-l1-q7",
@@ -5755,47 +5852,43 @@
             },
             {
               "id": "go-d2-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com atraso menstrual, beta-HCG de 3.000 e útero vazio na ultrassonografia transvaginal tem dor e massa ao lado do útero.",
-              "enunciado": "Qual é a hipótese?",
-              "opcoes": [
-                "Gravidez ectópica",
-                "Aborto completo",
-                "Gravidez normal inicial",
-                "Mola"
-              ],
-              "resposta": "Gravidez ectópica",
-              "explicacao": "Acima do valor de corte do beta-HCG, o saco gestacional deveria ser visto no útero.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No DPP, o diagnóstico é clínico na maioria dos casos.",
+              "resposta": true,
+              "explicacao": "Ultrassom não exclui.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d2-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O metotrexato pode tratar gravidez ectópica em mulher estável, sem rotura, com massa pequena e beta-HCG abaixo de ___ mUI/mL.",
+              "tipo": "caso_clinico",
+              "caso": "Gestante sem pré-natal com sangramento grande indolor e sem contrações.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "5.000",
-                "500",
-                "50.000",
-                "100"
+                "Toque",
+                "Ocitocina",
+                "Tocolítico",
+                "Ultrassom para ver a placenta"
               ],
-              "resposta": "5.000",
-              "explicacao": "A queda do beta-HCG é acompanhada após o tratamento.",
-              "revisado": false
+              "resposta": "Ultrassom para ver a placenta",
+              "explicacao": "Pensar em prévia: sem toque.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d2-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher tem sangramento no primeiro trimestre, útero maior que o esperado, beta-HCG muito alto e imagem em flocos de neve.",
-              "enunciado": "Qual é o diagnóstico e o seguimento?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que condição aumenta risco de hemorragia pós-parto?",
               "opcoes": [
-                "Mola hidatiforme; aspiração e seguir o beta-hCG",
-                "Gêmeos; pré-natal",
-                "Aborto; curetagem e alta",
-                "Gravidez ectópica; metotrexato e alta sem acompanhamento"
+                "DPP prévio",
+                "Relaxante",
+                "Laceração",
+                "Uso de anticoagulante"
               ],
-              "resposta": "Mola hidatiforme; aspiração e seguir o beta-hCG",
-              "explicacao": "A contracepção é necessária durante o seguimento.",
-              "revisado": false
+              "resposta": "Uso de anticoagulante",
+              "explicacao": "Coagulação.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             }
           ]
         },
@@ -5900,17 +5993,18 @@
             },
             {
               "id": "go-d2-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O índice de ___ é a frequência cardíaca dividida pela pressão sistólica e ajuda a detectar choque na hemorragia pós-parto.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como é a embolia de líquido amniótico?",
               "opcoes": [
-                "choque",
-                "massa corporal",
-                "Apgar",
-                "Bishop"
+                "Lenta",
+                "Com febre",
+                "Sem relação com cesárea",
+                "Hipóxia, hipotensão e coagulopatia"
               ],
-              "resposta": "choque",
-              "explicacao": "Valores acima de 0,9 sugerem perda importante de sangue.",
-              "revisado": false
+              "resposta": "Hipóxia, hipotensão e coagulopatia",
+              "explicacao": "Súbita.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d2-l3-q8",
@@ -6232,41 +6326,48 @@
             },
             {
               "id": "go-d3-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Puérpera pergunta se pode amamentar.",
-              "enunciado": "Em qual destas situações a amamentação é contraindicada no Brasil?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Expressão do fundo para tirar a placenta retida é a manobra de:",
               "opcoes": [
-                "Mãe com HIV",
-                "Mãe com hepatite B",
-                "Mãe com gripe",
-                "Mãe com mastite tratada"
+                "Taxe",
+                "Haultain",
+                "Brandt-Andrews",
+                "Credé"
               ],
-              "resposta": "Mãe com HIV",
-              "explicacao": "HIV e HTLV contraindicam a amamentação no Brasil.",
-              "revisado": false
+              "resposta": "Credé",
+              "explicacao": "Secundamento.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d3-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Puérpera de 2 semanas tem tristeza intensa, sem prazer, pensamentos de não querer viver e dificuldade de cuidar do bebê.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que febre define morbidade febril puerperal?",
               "opcoes": [
-                "Depressão pós-parto",
-                "Melancolia da maternidade (baby blues)",
-                "Normal",
-                "Ansiedade"
+                "37,5 por 24 h",
+                "39 no 15º dia",
+                "38 só 1 dia",
+                "38 ou mais por 2 dias após 24 h"
               ],
-              "resposta": "Depressão pós-parto",
-              "explicacao": "O baby blues dura menos de 2 semanas e é leve.",
-              "revisado": false
+              "resposta": "38 ou mais por 2 dias após 24 h",
+              "explicacao": "Até o 10º dia.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d3-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Puérpera de 5 dias, confusa e com delírios sobre o bebê, pode ser acompanhada em casa sem urgência.",
-              "resposta": false,
-              "explicacao": "Falso. A psicose pós-parto é emergência psiquiátrica, com risco para mãe e bebê.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Como inibir a lactação na puérpera com HIV?",
+              "opcoes": [
+                "0,25 mg por 2 dias",
+                "0,5 mg por 3 dias",
+                "2 mg",
+                "Cabergolina 1 mg dose única"
+              ],
+              "resposta": "Cabergolina 1 mg dose única",
+              "explicacao": "Logo após o parto.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d3-l3-q6",
@@ -6598,32 +6699,33 @@
             {
               "id": "go-d4-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 52 anos com fogachos intensos quer terapia hormonal, mas tem sangramento vaginal sem diagnóstico.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher na menopausa com sintomas, varizes e endométrio de 4 mm.",
+              "enunciado": "Qual a terapia?",
               "opcoes": [
-                "Investigar o sangramento antes",
-                "Iniciar a terapia hormonal hoje",
-                "Iniciar só estrogênio sem progesterona",
-                "Usar terapia hormonal para parar o sangramento"
+                "Estradiol oral isolado",
+                "Nada",
+                "Oral com noretisterona",
+                "Estradiol gel com didrogesterona"
               ],
-              "resposta": "Investigar o sangramento antes",
-              "explicacao": "Sangramento sem diagnóstico contraindica a terapia hormonal até ser esclarecido.",
-              "revisado": false
+              "resposta": "Estradiol gel com didrogesterona",
+              "explicacao": "Via transdérmica e com útero.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d4-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 30 anos tem cólica intensa que piora, dor na relação e infertilidade.",
-              "enunciado": "Qual é a hipótese e o exame?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Mulher com fogachos e amenorreia aos 38 anos. Exames esperados?",
               "opcoes": [
-                "Endometriose; ultrassom com preparo ou ressonância",
-                "SOP; hormônios",
-                "Mioma",
-                "Normal; cólica comum que não precisa de nenhum exame de imagem"
+                "FSH baixo",
+                "AMH alto",
+                "CFA alta",
+                "FSH alto, AMH baixo e poucos folículos"
               ],
-              "resposta": "Endometriose; ultrassom com preparo ou ressonância",
-              "explicacao": "A confirmação definitiva é por laparoscopia com biópsia.",
-              "revisado": false
+              "resposta": "FSH alto, AMH baixo e poucos folículos",
+              "explicacao": "Insuficiência ovariana.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d4-l3-q5",
@@ -6709,96 +6811,91 @@
             },
             {
               "id": "go-d5-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada resultado da citologia à conduta no Brasil.",
-              "pares": [
-                {
-                  "esquerda": "ASC-US em mulher de 30 anos ou mais",
-                  "direita": "Repetir a citologia em 6 meses"
-                },
-                {
-                  "esquerda": "LSIL em mulher de até 24 anos",
-                  "direita": "Repetir a citologia em 3 anos"
-                },
-                {
-                  "esquerda": "HSIL",
-                  "direita": "Colposcopia imediata"
-                },
-                {
-                  "esquerda": "Células glandulares atípicas",
-                  "direita": "Colposcopia e avaliação do canal e do endométrio"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos com ASC-US repetido e DNA-HPV negativo.",
+              "enunciado": "Qual a conduta?",
+              "opcoes": [
+                "Colposcopia",
+                "Citologia em 6 meses",
+                "Citologia em 1 ano",
+                "Citologia em 3 anos"
               ],
-              "explicacao": "As diretrizes estão migrando para o teste de DNA do HPV.",
-              "revisado": false
+              "resposta": "Citologia em 3 anos",
+              "explicacao": "Sem HPV de alto risco.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 45 anos com câncer de colo que invade o paramétrio, sem chegar à parede pélvica (estádio IIB).",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Mulher com colo normal fez histerectomia por prolapso e usa só estradiol.",
+              "enunciado": "O que mudar?",
               "opcoes": [
-                "Quimiorradioterapia",
-                "Histerectomia simples",
-                "Conização",
-                "Apenas quimioterapia oral"
+                "Manter rastreio",
+                "Aumentar dose",
+                "Parar TH",
+                "Parar o rastreio e manter só estrogênio"
               ],
-              "resposta": "Quimiorradioterapia",
-              "explicacao": "A cirurgia é para estádios iniciais; no IIB, quimiorradioterapia.",
-              "revisado": false
+              "resposta": "Parar o rastreio e manter só estrogênio",
+              "explicacao": "Sem útero, sem progestagênio.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 20 semanas tem citologia com lesão de alto grau.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Colposcopia com área digitiforme sobrelevada na JEC. O que sugere?",
               "opcoes": [
-                "Colposcopia, biópsia se suspeita, tratar após o parto",
-                "Conização já",
-                "Interromper",
-                "Conização imediata durante a gestação, mesmo sem suspeita de invasão"
+                "Achado menor",
+                "Benigno",
+                "Lesão dentro de lesão",
+                "Sinal da crista: alto grau"
               ],
-              "resposta": "Colposcopia, biópsia se suspeita, tratar após o parto",
-              "explicacao": "A biópsia é segura na gestação, mas a excisão é evitada.",
-              "revisado": false
+              "resposta": "Sinal da crista: alto grau",
+              "explicacao": "Alta chance de NIC 2+.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q5",
               "tipo": "verdadeiro_falso",
-              "enunciado": "No Brasil, a vacina contra HPV na rotina é oferecida só para meninas de 11 a 13 anos.",
-              "resposta": false,
-              "explicacao": "Falso. É oferecida a meninas e meninos dos 9 aos 14 anos, e a grupos especiais até idades maiores.",
-              "revisado": false
+              "enunciado": "A amostra em meio líquido permite citologia e pesquisa de HPV, clamídia e gonococo.",
+              "resposta": true,
+              "explicacao": "Uma coleta, vários testes.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 40 anos tem câncer de colo com tumor de 3 cm restrito ao colo.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Gestante com NIC 2 na biópsia com 16 semanas.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Histerectomia radical com linfadenectomia",
-                "Conização simples",
-                "Só radioterapia",
-                "Apenas conização simples, sem retirar linfonodos nem útero"
+                "Conização",
+                "Citologia trimestral",
+                "Falso positivo",
+                "Reavaliar 90 dias após o parto"
               ],
-              "resposta": "Histerectomia radical com linfadenectomia",
-              "explicacao": "Em tumores maiores, a quimiorradioterapia é preferida.",
-              "revisado": false
+              "resposta": "Reavaliar 90 dias após o parto",
+              "explicacao": "Excluir invasão basta.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 22 anos, com vida sexual desde os 16, pede o preventivo de rotina.",
-              "enunciado": "Qual é a orientação pelo Ministério da Saúde?",
+              "caso": "Idosa com mucosa atrófica e coleta endocervical difícil.",
+              "enunciado": "Como melhorar o exame?",
               "opcoes": [
-                "Iniciar o rastreamento aos 25 anos",
-                "Iniciar já, pois tem vida sexual",
-                "Fazer todo ano desde os 18",
-                "Só fazer se tiver sintoma"
+                "Compressa",
+                "Ácido hialurônico",
+                "Fisioterapia",
+                "Estradiol por 15 a 20 dias antes"
               ],
-              "resposta": "Iniciar o rastreamento aos 25 anos",
-              "explicacao": "A citologia é feita dos 25 aos 64 anos; após dois normais, a cada 3 anos.",
-              "revisado": false
+              "resposta": "Estradiol por 15 a 20 dias antes",
+              "explicacao": "Estrogenizar o epitélio.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l1-q8",
@@ -6984,17 +7081,18 @@
             {
               "id": "go-d5-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 35 anos pergunta o que reduz o risco de câncer de ovário.",
-              "enunciado": "Qual fator é protetor?",
+              "caso": "Carcinoma seroso do endométrio confinado ao útero.",
+              "enunciado": "Qual a cirurgia?",
               "opcoes": [
-                "Uso de pílula anticoncepcional",
-                "Infertilidade",
-                "Obesidade",
-                "Menopausa depois dos 55 anos"
+                "Histerectomia simples",
+                "Só quimio",
+                "Sem linfonodos",
+                "Histerectomia, anexos e linfonodos pélvicos e para-aórticos"
               ],
-              "resposta": "Uso de pílula anticoncepcional",
-              "explicacao": "Pílula, gestações e amamentação reduzem o número de ovulações e protegem.",
-              "revisado": false
+              "resposta": "Histerectomia, anexos e linfonodos pélvicos e para-aórticos",
+              "explicacao": "Tipo agressivo.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d5-l3-q4",
@@ -7422,17 +7520,12 @@
             },
             {
               "id": "go-d6-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O índice de ___ mede a eficácia de um método anticoncepcional pelo número de gestações em 100 mulheres por ano.",
-              "opcoes": [
-                "Pearl",
-                "Bishop",
-                "Apgar",
-                "Manning"
-              ],
-              "resposta": "Pearl",
-              "explicacao": "Quanto menor, mais eficaz.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Mãe com trombose não contraindica DIU hormonal na filha.",
+              "resposta": true,
+              "explicacao": "Nuliparidade também não.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d6-l3-q8",
@@ -7481,18 +7574,18 @@
             },
             {
               "id": "go-d7-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Primigesta com dilatação total há 4 horas sem analgesia, cabeça em +1 e bebê bem.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que manobra o terceiro tempo de Leopold avalia?",
               "opcoes": [
-                "Período expulsivo prolongado",
-                "Normal",
-                "Fase latente",
-                "Parada secundária da dilatação"
+                "Fundo",
+                "Dorso",
+                "Escavação",
+                "Mobilidade do polo sobre o estreito superior"
               ],
-              "resposta": "Período expulsivo prolongado",
-              "explicacao": "Avaliar parto instrumental.",
-              "revisado": false
+              "resposta": "Mobilidade do polo sobre o estreito superior",
+              "explicacao": "Leopold-Pawlick.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d7-l1-q3",
@@ -7928,17 +8021,18 @@
             {
               "id": "go-d8-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Bebê com peso no percentil 7 com Doppler e crescimento normais.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Feto de 29 semanas no percentil 2 com Doppler e líquido normais.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Pequeno constitucional",
-                "Restrição grave",
-                "Malformação",
-                "Restrição grave de crescimento que exige parto imediato"
+                "Cesárea",
+                "Doppler diário",
+                "Comer mais",
+                "Ultrassom e Doppler semanais"
               ],
-              "resposta": "Pequeno constitucional",
-              "explicacao": "Parto a termo.",
-              "revisado": false
+              "resposta": "Ultrassom e Doppler semanais",
+              "explicacao": "PIG sem alteração.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d8-l1-q6",
@@ -8160,43 +8254,33 @@
             },
             {
               "id": "go-d8-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado do ultrassom à síndrome.",
-              "pares": [
-                {
-                  "esquerda": "Atresia duodenal e cardiopatia",
-                  "direita": "Trissomia 21"
-                },
-                {
-                  "esquerda": "Mãos fechadas e pés em mata-borrão",
-                  "direita": "Trissomia 18"
-                },
-                {
-                  "esquerda": "Holoprosencefalia e fenda facial",
-                  "direita": "Trissomia 13"
-                },
-                {
-                  "esquerda": "Higroma cístico e hidropisia",
-                  "direita": "Síndrome de Turner"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Gestante de 12 semanas com rastreio alterado quer cariótipo. O que oferecer?",
+              "opcoes": [
+                "Amniocentese após 15 sem",
+                "Cordocentese",
+                "Amniocentese com 26",
+                "Biópsia de vilo até 14 semanas"
               ],
-              "explicacao": "Marcadores clássicos.",
-              "revisado": false
+              "resposta": "Biópsia de vilo até 14 semanas",
+              "explicacao": "Mais precoce.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d8-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 38 anos com DNA fetal com alto risco para trissomia 21.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual causa hidropisia fetal não imune?",
               "opcoes": [
-                "Confirmar com teste invasivo antes",
-                "Decidir só pelo rastreio",
-                "Repetir o DNA",
-                "Interromper com base só no rastreio, sem confirmar"
+                "Pré-eclâmpsia",
+                "Obesidade",
+                "Chiari",
+                "Anomalia de Ebstein"
               ],
-              "resposta": "Confirmar com teste invasivo antes",
-              "explicacao": "O DNA fetal é rastreio.",
-              "revisado": false
+              "resposta": "Anomalia de Ebstein",
+              "explicacao": "Cardíaca.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d8-l3-q6",
@@ -9573,32 +9657,34 @@
             {
               "id": "go-d12-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 28 anos com dismenorreia grave sem melhora com anticoncepcional e anti-inflamatório.",
-              "enunciado": "Qual é a próxima etapa?",
+              "caso": "Útero globoso em bala de canhão e zona juncional de 23 mm na RM.",
+              "enunciado": "Qual o diagnóstico?",
               "opcoes": [
-                "Investigar endometriose com imagem dirigida",
-                "Histerectomia",
-                "Antibiótico",
-                "Histerectomia total aos 28 anos, sem investigar"
+                "Endometriose",
+                "Pólipo",
+                "Mioma",
+                "Adenomiose"
               ],
-              "resposta": "Investigar endometriose com imagem dirigida",
-              "explicacao": "Mapear lesões.",
-              "revisado": false
+              "resposta": "Adenomiose",
+              "explicacao": "Zona juncional > 12 mm.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d12-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Endometrioma de 5 cm em mulher que quer engravidar.",
-              "enunciado": "O que considerar?",
+              "caso": "Endometrioma de 4 cm em mulher com dor.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Avaliar a reserva ovariana antes de operar",
-                "Retirar o ovário",
-                "Punção",
-                "Retirar o ovário inteiro logo, sem avaliar a reserva"
+                "Ooforoplastia",
+                "Ooforectomia",
+                "Drenagem",
+                "Progestagênio contínuo"
               ],
-              "resposta": "Avaliar a reserva ovariana antes de operar",
-              "explicacao": "A cirurgia pode reduzir a reserva.",
-              "revisado": false
+              "resposta": "Progestagênio contínuo",
+              "explicacao": "Tratamento clínico.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d12-l2-q3",
@@ -9766,17 +9852,18 @@
             {
               "id": "go-d12-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Jovem com dor pélvica, febre, corrimento e massa complexa anexial.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Mulher com pouco interesse espontâneo por sexo, mas com prazer quando acontece, e sofrimento.",
+              "enunciado": "Qual a hipótese?",
               "opcoes": [
-                "Abscesso tubo-ovariano",
-                "Torção",
-                "Gravidez",
-                "Cisto simples funcional"
+                "Vaginismo",
+                "Excitação",
+                "Dispareunia",
+                "Desejo sexual hipoativo"
               ],
-              "resposta": "Abscesso tubo-ovariano",
-              "explicacao": "Antibiótico venoso e drenagem se não melhorar.",
-              "revisado": false
+              "resposta": "Desejo sexual hipoativo",
+              "explicacao": "Mais prevalente.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d12-l3-q6",
@@ -9878,43 +9965,34 @@
             },
             {
               "id": "go-d13-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado urodinâmico ao diagnóstico.",
-              "pares": [
-                {
-                  "esquerda": "Perda com esforço sem contração do detrusor",
-                  "direita": "Incontinência de esforço"
-                },
-                {
-                  "esquerda": "Contração involuntária do detrusor",
-                  "direita": "Hiperatividade"
-                },
-                {
-                  "esquerda": "Resíduo alto e fluxo baixo",
-                  "direita": "Obstrução ou bexiga hipoativa"
-                },
-                {
-                  "esquerda": "Pressão de perda baixa",
-                  "direita": "Deficiência esfincteriana"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Urodinâmica com contrações involuntárias e pressão de perda de 48 cmH2O.",
+              "enunciado": "Que incontinência?",
+              "opcoes": [
+                "Só urgência",
+                "Só esforço",
+                "Mista com hipermobilidade",
+                "Mista: hiperatividade e defeito esfincteriano"
               ],
-              "explicacao": "Estudo urodinâmico.",
-              "revisado": false
+              "resposta": "Mista: hiperatividade e defeito esfincteriano",
+              "explicacao": "Pressão < 60 = defeito.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d13-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com perda contínua de urina após histerectomia.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "POP-Q com Ba +2, Bp -2 e C -3. Como classificar?",
               "opcoes": [
-                "Fístula vesicovaginal",
-                "Incontinência de esforço",
-                "Bexiga hiperativa",
-                "Infecção"
+                "Anterior II",
+                "Anterior III e posterior II",
+                "Alongamento do colo",
+                "Anterior estágio III"
               ],
-              "resposta": "Fístula vesicovaginal",
-              "explicacao": "Teste do azul de metileno.",
-              "revisado": false
+              "resposta": "Anterior estágio III",
+              "explicacao": "Só a anterior > +1.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d13-l1-q6",
@@ -10484,18 +10562,18 @@
             },
             {
               "id": "go-d14-l3-q2",
-              "tipo": "caso_clinico",
-              "caso": "Após esvaziamento de mola, o beta-hCG fica estável por 3 semanas.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o esquema da neoplasia trofoblástica de alto risco (dia 1)?",
               "opcoes": [
-                "Neoplasia trofoblástica gestacional",
-                "Normal",
-                "Gravidez nova",
-                "Erro do laboratório sem significado"
+                "Ciclofosfamida",
+                "Cisplatina",
+                "Vincristina",
+                "Etoposídeo, metotrexato e actinomicina"
               ],
-              "resposta": "Neoplasia trofoblástica gestacional",
-              "explicacao": "Iniciar tratamento.",
-              "revisado": false
+              "resposta": "Etoposídeo, metotrexato e actinomicina",
+              "explicacao": "EMA-CO.",
+              "revisado": false,
+              "fonte": "ENARE 2025 R+"
             },
             {
               "id": "go-d14-l3-q3",
