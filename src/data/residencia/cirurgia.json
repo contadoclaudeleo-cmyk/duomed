@@ -1162,17 +1162,18 @@
             {
               "id": "cir-u4-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente com refluxo controlado com omeprazol tem hérnia de hiato grande e muita regurgitação, e não quer tomar remédio para sempre.",
-              "enunciado": "Qual é uma opção?",
+              "caso": "Paciente com esofagite erosiva grau C de Los Angeles completou 8 semanas de IBP.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Fundoplicatura videolaparoscópica",
-                "Gastrectomia",
-                "Esofagectomia",
-                "Gastrectomia total com reconstrução em Y de Roux"
+                "Suspender se sem sintomas",
+                "Trocar por bloqueador H2",
+                "IBP só se houver sintomas",
+                "Manter IBP e repetir a endoscopia"
               ],
-              "resposta": "Fundoplicatura videolaparoscópica",
-              "explicacao": "A cirurgia reforça a barreira contra o refluxo e corrige a hérnia.",
-              "revisado": false
+              "resposta": "Manter IBP e repetir a endoscopia",
+              "explicacao": "Esofagite grave pode esconder Barrett.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u4-l1-q6",
@@ -1892,39 +1893,50 @@
             {
               "id": "cir-u6-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente usa AAS só para prevenção primária, sem stent nem evento cardiovascular, e vai fazer colecistectomia eletiva.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Asmática com obesidade grave vai fazer bypass gástrico. Acorda uma vez por semana com falta de ar.",
+              "enunciado": "Qual é a conduta para a asma?",
               "opcoes": [
-                "Suspender o AAS uns 7 dias antes",
-                "Manter AAS e somar clopidogrel",
-                "Iniciar heparina",
-                "Manter o AAS e iniciar clopidogrel e heparina para proteger o coração"
+                "Prednisona antes e depois",
+                "MART e operar já",
+                "Adiar para espirometria e polissonografia",
+                "Passar para MART e reavaliar em 30 dias"
               ],
-              "resposta": "Suspender o AAS uns 7 dias antes",
-              "explicacao": "Quem usa AAS por doença cardiovascular estabelecida costuma mantê-lo na maioria das cirurgias.",
-              "revisado": false
+              "resposta": "Passar para MART e reavaliar em 30 dias",
+              "explicacao": "Asma não controlada deve ser ajustada antes.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u6-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medicamento costuma ser suspenso alguns dias antes de cirurgia eletiva?",
+              "tipo": "caso_clinico",
+              "caso": "Essa paciente com ronco e sonolência fará a cirurgia.",
+              "enunciado": "Além de mobilizar cedo, o que previne complicações pulmonares?",
               "opcoes": [
-                "Anticoagulante oral direto (rivaroxabana)",
-                "Betabloqueador crônico",
-                "Estatina",
-                "Betabloqueador de uso crônico e estatina, por segurança"
+                "Fisioterapia motora",
+                "Anestesia geral",
+                "Raquianestesia",
+                "CPAP"
               ],
-              "resposta": "Anticoagulante oral direto (rivaroxabana)",
-              "explicacao": "O tempo de suspensão depende da função renal e do risco de sangramento da cirurgia.",
-              "revisado": false
+              "resposta": "CPAP",
+              "explicacao": "Provável apneia do sono.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u6-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Pacientes que usam betabloqueador devem suspendê-lo no dia anterior à cirurgia.",
-              "resposta": false,
-              "explicacao": "Falso. Deve-se manter, pois a suspensão brusca pode causar taquicardia e isquemia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Paciente com IMC de 42 fará cirurgia bariátrica.",
+              "enunciado": "Qual profilaxia de trombose?",
+              "opcoes": [
+                "Rivaroxabana por 35 dias",
+                "Fondaparinux por 28 dias",
+                "Heparina 5.000 a cada 8 h",
+                "Enoxaparina 40 mg a cada 12 h"
+              ],
+              "resposta": "Enoxaparina 40 mg a cada 12 h",
+              "explicacao": "Obesos graves precisam de dose maior.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u6-l1-q8",
@@ -5507,28 +5519,19 @@
             },
             {
               "id": "cir-u16-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada raiz à alteração.",
-              "pares": [
-                {
-                  "esquerda": "L4",
-                  "direita": "Reflexo patelar"
-                },
-                {
-                  "esquerda": "L5",
-                  "direita": "Fraqueza para levantar o dedão"
-                },
-                {
-                  "esquerda": "S1",
-                  "direita": "Reflexo do tornozelo"
-                },
-                {
-                  "esquerda": "L3",
-                  "direita": "Fraqueza na extensão do joelho"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idosa com lombalgia crônica e dor nas nádegas e pernas ao andar 2 quarteirões, que alivia no repouso e piora ao estender a coluna.",
+              "enunciado": "Qual é o tratamento inicial?",
+              "opcoes": [
+                "Exercício e analgesia",
+                "Repouso e anti-inflamatório",
+                "Infiltração",
+                "Cirurgia"
               ],
-              "explicacao": "Exame neurológico localiza.",
-              "revisado": false
+              "resposta": "Exercício e analgesia",
+              "explicacao": "Estenose do canal lombar: começar conservador.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-u16-l2-q5",
@@ -11066,17 +11069,18 @@
             {
               "id": "cir-d14-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente no 5º dia após colectomia com febre, dor abdominal difusa e taquicardia.",
-              "enunciado": "O que suspeitar?",
+              "caso": "Idosa no 5º dia após glossectomia, esvaziamento cervical e traqueostomia está sonolenta, gemente, taquicárdica, hipotensa e com saturação de 90%.",
+              "enunciado": "Além de hidratar e pedir raio X, o que fazer?",
               "opcoes": [
-                "Deiscência da anastomose",
-                "Atelectasia",
-                "Normal",
-                "Infecção urinária pela sonda"
+                "Cálcio e antibiótico",
+                "Discutir limitar suporte",
+                "Aspirar a traqueostomia e dosar cálcio",
+                "Analgesia, culturas e antibiótico"
               ],
-              "resposta": "Deiscência da anastomose",
-              "explicacao": "Tomografia urgente.",
-              "revisado": false
+              "resposta": "Analgesia, culturas e antibiótico",
+              "explicacao": "Suspeita de sepse.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "cir-d14-l3-q2",

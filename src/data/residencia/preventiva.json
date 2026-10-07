@@ -5291,18 +5291,18 @@
           "questoes": [
             {
               "id": "prev-d1-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Num estudo, 20% dos fumantes e 5% dos não fumantes tiveram infarto.",
-              "enunciado": "Qual é o risco relativo?",
+              "tipo": "multipla_escolha",
+              "enunciado": "AVC em 4,7% com o novo anticoagulante e 8% com varfarina. Qual é o NNT?",
               "opcoes": [
-                "4",
-                "15",
-                "0,25",
-                "1,5"
+                "7",
+                "25",
+                "30",
+                "58"
               ],
-              "resposta": "4",
-              "explicacao": "RR = 20% / 5% = 4.",
-              "revisado": false
+              "resposta": "30",
+              "explicacao": "NNT = 1 / 0,033.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "prev-d1-l3-q2",
@@ -7524,43 +7524,33 @@
             },
             {
               "id": "prev-d7-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Um antibiótico oral mais barato é testado contra o venoso padrão, para mostrar que não é pior além de uma margem.",
-              "enunciado": "Qual é o tipo de ensaio?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Ensaio de não inferioridade com margem de 0,80: análise por intenção de tratar com IC de 0,82 a 1,07 e por protocolo com IC de 0,76 a 1,02. O que concluir?",
               "opcoes": [
-                "Não inferioridade",
-                "Superioridade",
-                "Equivalência por placebo",
-                "Estudo ecológico"
+                "O ITT basta para provar não inferioridade",
+                "Por protocolo sempre superestima",
+                "Houve superioridade",
+                "Como o IC por protocolo cruza 0,80, não se confirma"
               ],
-              "resposta": "Não inferioridade",
-              "explicacao": "O ensaio de não inferioridade usa uma margem definida antes.",
-              "revisado": false
+              "resposta": "Como o IC por protocolo cruza 0,80, não se confirma",
+              "explicacao": "Na não inferioridade, as duas análises devem concordar.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "prev-d7-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada conceito do ensaio clínico ao significado.",
-              "pares": [
-                {
-                  "esquerda": "Desfecho substituto",
-                  "direita": "Exame que representa o desfecho clínico"
-                },
-                {
-                  "esquerda": "Desfecho composto",
-                  "direita": "Soma de eventos"
-                },
-                {
-                  "esquerda": "Análise por protocolo",
-                  "direita": "Só quem seguiu o tratamento"
-                },
-                {
-                  "esquerda": "Poder",
-                  "direita": "Chance de detectar diferença real"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Ensaio com 889 pacientes: sobrevida livre de doença de 80,3% com exercício e 73,9% sem, HR 0,72 (IC 0,55 a 0,94). O que é correto?",
+              "opcoes": [
+                "Tem viés de seleção",
+                "O seguimento é curto",
+                "Não dá para medir o ganho",
+                "A diferença de 6,4% é clínica e estatisticamente significativa"
               ],
-              "explicacao": "Leitura crítica.",
-              "revisado": false
+              "resposta": "A diferença de 6,4% é clínica e estatisticamente significativa",
+              "explicacao": "O IC não cruza 1.",
+              "revisado": false,
+              "fonte": "USP 2026 R+"
             },
             {
               "id": "prev-d7-l2-q5",
