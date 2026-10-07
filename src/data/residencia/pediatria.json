@@ -3257,40 +3257,48 @@
             },
             {
               "id": "ped-u9-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança falciforme com febre de 38,5 °C.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que quadro mostra anemia por perda crônica de sangue?",
               "opcoes": [
-                "Avaliação urgente e antibiótico",
-                "Antitérmico em casa",
-                "Aguardar",
-                "Antitérmico em casa e retorno se não melhorar"
+                "SHU",
+                "Down com plaquetas baixas",
+                "Falciforme com icterícia",
+                "Crohn com anemia microcítica"
               ],
-              "resposta": "Avaliação urgente e antibiótico",
-              "explicacao": "Risco de sepse.",
-              "revisado": false
+              "resposta": "Crohn com anemia microcítica",
+              "explicacao": "Perde ferro.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-u9-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O sequestro esplênico é mais comum em crianças pequenas.",
-              "resposta": true,
-              "explicacao": "Antes da autoesplenectomia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que quadro mostra anemia hemolítica microangiopática?",
+              "opcoes": [
+                "Crohn",
+                "Down com hematomas",
+                "Falciforme",
+                "Anemia, plaquetas baixas e IRA após disenteria"
+              ],
+              "resposta": "Anemia, plaquetas baixas e IRA após disenteria",
+              "explicacao": "SHU.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-u9-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A síndrome ___ aguda é a principal causa de morte na anemia falciforme.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que quadro sugere infiltração medular?",
               "opcoes": [
-                "torácica",
-                "renal",
-                "hepática",
-                "cerebral"
+                "Crohn",
+                "SHU",
+                "Falciforme com icterícia",
+                "Down com hematomas e plaquetas 29 mil"
               ],
-              "resposta": "torácica",
-              "explicacao": "Tratar com oxigênio, antibiótico e transfusão.",
-              "revisado": false
+              "resposta": "Down com hematomas e plaquetas 29 mil",
+              "explicacao": "Pensar em leucemia.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             }
           ]
         },
@@ -5491,18 +5499,18 @@
             },
             {
               "id": "ped-d1-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido com hérnia diafragmática congênita diagnosticada no pré-natal nasce com desconforto.",
-              "enunciado": "Qual cuidado evitar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual NÃO é indicação definitiva de intubar o RN?",
               "opcoes": [
-                "Máscara e balão, que enchem o intestino no tórax",
-                "Intubação",
-                "Sonda gástrica",
-                "Intubação imediata e sonda gástrica para descomprimir"
+                "VPP sem sucesso",
+                "Hérnia diafragmática",
+                "Massagem cardíaca",
+                "Apgar < 3 no 1º minuto"
               ],
-              "resposta": "Máscara e balão, que enchem o intestino no tórax",
-              "explicacao": "O correto é intubar logo e colocar sonda para descomprimir o estômago.",
-              "revisado": false
+              "resposta": "Apgar < 3 no 1º minuto",
+              "explicacao": "Apgar não guia reanimação.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             }
           ]
         },
@@ -6559,18 +6567,18 @@
           "questoes": [
             {
               "id": "ped-d4-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Menino de 12 anos está abaixo do percentil 3 de altura, mas cresce 5 cm por ano, tem idade óssea atrasada e o pai teve puberdade tardia.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No catch-up do prematuro, que medida se iguala primeiro?",
               "opcoes": [
-                "Atraso constitucional do crescimento e puberdade",
-                "Falta de GH",
-                "Baixa estatura familiar",
-                "Hipotireoidismo congênito não tratado com bócio"
+                "Peso",
+                "Comprimento",
+                "Peso para comprimento",
+                "Perímetro cefálico"
               ],
-              "resposta": "Atraso constitucional do crescimento e puberdade",
-              "explicacao": "Ele terá estirão mais tarde e altura final normal.",
-              "revisado": false
+              "resposta": "Perímetro cefálico",
+              "explicacao": "Cérebro é prioridade.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d4-l1-q2",
@@ -6948,124 +6956,118 @@
             {
               "id": "ped-d5-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Lactente com diarreia está letárgico, olhos muito fundos, não consegue beber e o sinal da prega some muito lentamente.",
-              "enunciado": "Qual é o plano?",
+              "caso": "RN de 25 dias com fibrose cística, desidratado e sódio 124.",
+              "enunciado": "Como corrigir?",
               "opcoes": [
-                "Plano C: hidratação venosa rápida",
-                "Plano A: soro em casa",
-                "Plano B na unidade",
-                "Apenas zinco e soro oral em casa"
+                "NaCl 3% rápido",
+                "Água livre",
+                "Corticoide",
+                "Sódio venoso lento"
               ],
-              "resposta": "Plano C: hidratação venosa rápida",
-              "explicacao": "Na desidratação grave, a hidratação venosa é urgente.",
-              "revisado": false
+              "resposta": "Sódio venoso lento",
+              "explicacao": "Perde sal no suor.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada plano de hidratação à indicação.",
-              "pares": [
-                {
-                  "esquerda": "Plano A",
-                  "direita": "Sem desidratação"
-                },
-                {
-                  "esquerda": "Plano B",
-                  "direita": "Com desidratação, mas pode beber"
-                },
-                {
-                  "esquerda": "Plano C",
-                  "direita": "Desidratação grave"
-                },
-                {
-                  "esquerda": "Sonda nasogástrica",
-                  "direita": "Desidratação sem conseguir beber, sem acesso venoso"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança com paralisia cerebral, febre e pouca água, sódio 162.",
+              "enunciado": "Como corrigir?",
+              "opcoes": [
+                "Sódio lento",
+                "NaCl 3%",
+                "Corticoide",
+                "Repor água livre devagar"
               ],
-              "explicacao": "O zinco por 10 a 14 dias reduz a duração da diarreia.",
-              "revisado": false
+              "resposta": "Repor água livre devagar",
+              "explicacao": "Hipernatremia: corrigir lento.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos com diarreia com sangue, febre alta e prostração.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio ácido-base na acidose tubular renal?",
               "opcoes": [
-                "Antibiótico, como ceftriaxona",
-                "Antidiarreico",
-                "Jejum até a diarreia parar",
-                "Antidiarreico e jejum prolongado em casa"
+                "Alcalose hiperclorêmica",
+                "Alcalose hipoclorêmica",
+                "Acidose com AG alto",
+                "Acidose com AG normal"
               ],
-              "resposta": "Antibiótico, como ceftriaxona",
-              "explicacao": "É disenteria, comum por Shigella; usa-se ceftriaxona ou azitromicina; antidiarreico é contraindicado.",
-              "revisado": false
+              "resposta": "Acidose com AG normal",
+              "explicacao": "Perde bicarbonato.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Criança com diarreia por E. coli produtora de toxina tem palidez, urina pouca e plaquetas baixas.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio ácido-base na estenose de piloro?",
               "opcoes": [
-                "Síndrome hemolítico-urêmica",
-                "Desidratação simples",
-                "Leucemia",
-                "Púrpura trombocitopênica imune"
+                "Acidose AG alto",
+                "Acidose AG normal",
+                "Alcalose hiperclorêmica",
+                "Alcalose hipoclorêmica"
               ],
-              "resposta": "Síndrome hemolítico-urêmica",
-              "explicacao": "Antibiótico pode piorar essa síndrome.",
-              "revisado": false
+              "resposta": "Alcalose hipoclorêmica",
+              "explicacao": "Vômito perde ácido.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na desidratação com sódio alto, a correção deve ser lenta, pois a queda rápida pode causar edema cerebral.",
-              "resposta": true,
-              "explicacao": "A queda ideal de sódio é de até 10 a 12 mEq/L por dia.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio ácido-base na diarreia aguda?",
+              "opcoes": [
+                "Alcalose hipoclorêmica",
+                "Acidose AG alto",
+                "Alcalose hiperclorêmica",
+                "Acidose com AG normal"
+              ],
+              "resposta": "Acidose com AG normal",
+              "explicacao": "Perde bicarbonato nas fezes.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 anos tem diarreia crônica, barriga grande, pernas finas e irritação após introdução do trigo.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio ácido-base com furosemida em dose alta?",
               "opcoes": [
-                "Doença celíaca",
-                "Intolerância à lactose",
-                "Giardíase",
-                "Fibrose cística"
+                "Acidose AG alto",
+                "Acidose AG normal",
+                "Alcalose hiperclorêmica",
+                "Alcalose hipoclorêmica"
               ],
-              "resposta": "Doença celíaca",
-              "explicacao": "A biópsia do duodeno confirma o diagnóstico.",
-              "revisado": false
+              "resposta": "Alcalose hipoclorêmica",
+              "explicacao": "Contração de volume.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na diarreia persistente, que dura mais de ___ dias, deve-se pesquisar causas e cuidar da nutrição.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual distúrbio ácido-base na cetoacidose?",
               "opcoes": [
-                "14",
-                "3",
-                "7",
-                "30"
+                "Acidose AG normal",
+                "Alcalose hipoclorêmica",
+                "Alcalose hiperclorêmica",
+                "Acidose com AG alto"
               ],
-              "resposta": "14",
-              "explicacao": "A diarreia crônica dura mais de 30 dias.",
-              "revisado": false
+              "resposta": "Acidose com AG alto",
+              "explicacao": "Cetoácidos.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d5-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Criança com fibrose cística tem diarreia gordurosa, tosse crônica e ganho de peso ruim.",
-              "enunciado": "Qual exame confirma?",
-              "opcoes": [
-                "Teste do suor",
-                "Biópsia intestinal",
-                "Exame de fezes",
-                "Raio X de tórax"
-              ],
-              "resposta": "Teste do suor",
-              "explicacao": "O teste do pezinho rastreia com a tripsina imunorreativa.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na desidratação grave, soluções balanceadas como Ringer causam menos acidose que o soro fisiológico.",
+              "resposta": true,
+              "explicacao": "Menos cloreto.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             }
           ]
         },
@@ -8963,17 +8965,18 @@
             {
               "id": "ped-d10-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Mãe de bebê prematuro de 28 semanas pergunta sobre a injeção contra o vírus sincicial respiratório.",
-              "enunciado": "Quem tem indicação de palivizumabe?",
+              "caso": "Bebê pequeno com tosse, FR 64, sibilos, sem febre e RX com hiperinsuflação.",
+              "enunciado": "Qual o agente provável?",
               "opcoes": [
-                "Prematuros extremos e cardiopatas",
-                "Todos os bebês no primeiro ano",
-                "Só crianças acima de 2 anos",
-                "Bebês nascidos a termo com resfriado comum"
+                "Coqueluche",
+                "Clamídia",
+                "Micoplasma",
+                "Vírus sincicial respiratório"
               ],
-              "resposta": "Prematuros extremos e cardiopatas",
-              "explicacao": "Seguem-se os critérios do Ministério da Saúde, que incluem cardiopatas e pneumopatas graves.",
-              "revisado": false
+              "resposta": "Vírus sincicial respiratório",
+              "explicacao": "Bronquiolite.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d10-l1-q4",
@@ -9537,11 +9540,19 @@
             },
             {
               "id": "ped-d11-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança que ganha peso e cresce mais que os colegas tem quadro típico de síndrome de Cushing.",
-              "resposta": false,
-              "explicacao": "Falso. No Cushing infantil há ganho de peso com parada do crescimento; obesidade comum costuma crescer bem.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "RN de 25 dias com 17-OH-progesterona alta confirmada, desidratado e sódio 129.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Sódio lento só",
+                "NaCl 3%",
+                "Água livre",
+                "Hidrocortisona venosa"
+              ],
+              "resposta": "Hidrocortisona venosa",
+              "explicacao": "Crise adrenal da HAC.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "ped-d11-l2-q8",
