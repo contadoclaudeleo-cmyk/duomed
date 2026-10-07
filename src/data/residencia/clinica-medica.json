@@ -460,17 +460,19 @@
             },
             {
               "id": "cm-u2-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual valor de fração de ejeção define insuficiência cardíaca com fração reduzida?",
+              "tipo": "caso_clinico",
+              "caso": "IC com classe III apesar de tudo, FC 60 e QRS largo.",
+              "enunciado": "Próximo passo?",
               "opcoes": [
-                "40% ou menos",
-                "Menos de 60%",
-                "Menos de 20%",
-                "Entre 45% e 50%"
+                "Ivabradina",
+                "Digoxina",
+                "Clipagem mitral",
+                "Ressincronização"
               ],
-              "resposta": "40% ou menos",
-              "explicacao": "Entre 41% e 49% é levemente reduzida, e a partir de 50% é preservada.",
-              "revisado": false
+              "resposta": "Ressincronização",
+              "explicacao": "Dissincronia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-u2-l1-q5",
@@ -1877,11 +1879,19 @@
             },
             {
               "id": "cm-u20-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na cardiomiopatia hipertrófica obstrutiva, o sopro aumenta com Valsalva e diminui ao agachar.",
-              "resposta": true,
-              "explicacao": "Menos volume no ventrículo piora a obstrução.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Hipertrofia septal de 20 mm com SAM e gradiente de 70.",
+              "enunciado": "O que melhora os sintomas?",
+              "opcoes": [
+                "Furosemida",
+                "Nitrato",
+                "Ressincronização",
+                "Betabloqueador"
+              ],
+              "resposta": "Betabloqueador",
+              "explicacao": "CMH obstrutiva.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-u20-l2-q3",
@@ -3068,11 +3078,19 @@
             },
             {
               "id": "cm-u13-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na fibrose pulmonar idiopática, o tratamento principal é corticoide em dose alta.",
-              "resposta": false,
-              "explicacao": "Falso. Usam-se antifibróticos, como nintedanibe e pirfenidona; corticoide em dose alta piora o desfecho.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Fibrose com favo de mel basal sem vidro fosco.",
+              "enunciado": "Tratamento?",
+              "opcoes": [
+                "Micofenolato",
+                "Pulso",
+                "Prednisona",
+                "Nintedanibe"
+              ],
+              "resposta": "Nintedanibe",
+              "explicacao": "Antifibrótico.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-u13-l2-q8",
@@ -5666,11 +5684,19 @@
             },
             {
               "id": "cm-u18-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O rastreio do hiperaldosteronismo usa a relação aldosterona/renina.",
-              "resposta": true,
-              "explicacao": "Relação alta sugere o diagnóstico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Aldosterona alta, renina baixa e sem queda após soro.",
+              "enunciado": "Diagnóstico?",
+              "opcoes": [
+                "Tiazídico",
+                "Cushing",
+                "Liddle",
+                "Hiperaldosteronismo primário"
+              ],
+              "resposta": "Hiperaldosteronismo primário",
+              "explicacao": "Teste confirmatório positivo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-u18-l3-q3",
@@ -6501,17 +6527,18 @@
             {
               "id": "cm-u6-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Homem de 35 anos tem tosse há 4 semanas, febre no fim da tarde, suor à noite e perda de peso.",
-              "enunciado": "Qual é o primeiro exame?",
+              "caso": "Líquor com 300 linfócitos, proteína 450 e glicose 35.",
+              "enunciado": "Qual a etiologia?",
               "opcoes": [
-                "Teste rápido molecular ou baciloscopia",
-                "Tomografia de tórax",
-                "Broncoscopia obrigatória",
-                "Broncoscopia obrigatória com lavado antes de qualquer teste no escarro"
+                "Meningocócica",
+                "Pneumocócica",
+                "Viral",
+                "Tuberculose"
               ],
-              "resposta": "Teste rápido molecular ou baciloscopia",
-              "explicacao": "O exame do escarro confirma a doença e permite iniciar o tratamento.",
-              "revisado": false
+              "resposta": "Tuberculose",
+              "explicacao": "Proteína muito alta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-u6-l3-q6",
@@ -7287,17 +7314,19 @@
             },
             {
               "id": "cm-u7-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a inflamação da inserção do tendão no osso, típica das espondiloartrites.",
+              "tipo": "caso_clinico",
+              "caso": "Homem jovem com lombalgia inflamatória, entesite e expansão torácica reduzida.",
+              "enunciado": "Que exame será positivo?",
               "opcoes": [
-                "entesite",
-                "sinovite",
-                "bursite",
-                "tendinose"
+                "FAN",
+                "FR",
+                "Anti-CCP",
+                "HLA-B27"
               ],
-              "resposta": "entesite",
-              "explicacao": "Ex.: tendão de Aquiles.",
-              "revisado": false
+              "resposta": "HLA-B27",
+              "explicacao": "Espondilite anquilosante.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             }
           ]
         }
@@ -9924,18 +9953,18 @@
             },
             {
               "id": "cm-d1-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com insuficiência cardíaca descompensada recebe furosemida venosa, mas o débito urinário continua baixo após 6 horas.",
-              "enunciado": "Qual é a estratégia?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sinal de intoxicação por nitroprussiato?",
               "opcoes": [
-                "Subir a dose ou somar outro diurético",
-                "Suspender o diurético",
-                "Dar soro",
-                "Suspender o diurético e dar soro para melhorar o rim"
+                "Bradicardia",
+                "Cianose",
+                "Hipercalemia",
+                "Acidose lática"
               ],
-              "resposta": "Subir a dose ou somar outro diurético",
-              "explicacao": "É o bloqueio sequencial do néfron para vencer a resistência ao diurético.",
-              "revisado": false
+              "resposta": "Acidose lática",
+              "explicacao": "Cianeto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             }
           ]
         },
@@ -11982,17 +12011,19 @@
             },
             {
               "id": "cm-d2-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "No teste de respiração ___, o paciente respira com pouco suporte por 30 a 120 minutos para avaliar se pode ser extubado.",
+              "tipo": "caso_clinico",
+              "caso": "SDRA: ao subir PEEP e bloquear, a PAM cai de 70 para 60.",
+              "enunciado": "Por quê?",
               "opcoes": [
-                "espontânea",
-                "assistida",
-                "controlada",
-                "forçada"
+                "Vasodilatação do bloqueador",
+                "Citocinas",
+                "Espaço morto",
+                "Queda do débito cardíaco"
               ],
-              "resposta": "espontânea",
-              "explicacao": "A tolerância ao teste prevê o sucesso da extubação.",
-              "revisado": false
+              "resposta": "Queda do débito cardíaco",
+              "explicacao": "Menor retorno venoso.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-d2-l2-q8",
@@ -12371,17 +12402,18 @@
             {
               "id": "cm-d21-l2-q7",
               "tipo": "caso_clinico",
-              "caso": "Homem de 38 anos, nunca fumou, com enfisema nas bases dos pulmões e alteração do fígado.",
-              "enunciado": "Qual é a principal hipótese?",
+              "caso": "DPOC com VEF1 60% e 1 internação por exacerbação.",
+              "enunciado": "Terapia ideal?",
               "opcoes": [
-                "Deficiência de alfa-1 antitripsina",
-                "DPOC por fumaça de lenha",
-                "Asma grave não controlada",
-                "Fibrose pulmonar idiopática"
+                "LABA+CI na crise",
+                "Só salmeterol",
+                "Só tiotrópio",
+                "LAMA+LABA diário"
               ],
-              "resposta": "Deficiência de alfa-1 antitripsina",
-              "explicacao": "Enfisema panacinar precoce.",
-              "revisado": false
+              "resposta": "LAMA+LABA diário",
+              "explicacao": "Dupla broncodilatação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-d21-l2-q8",
@@ -12452,18 +12484,18 @@
             },
             {
               "id": "cm-d21-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Espirometria e volumes normais, mas DLCO muito reduzida.",
-              "enunciado": "Qual é a principal suspeita?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Guillain-Barré com fraqueza respiratória. Que gasometria esperar?",
               "opcoes": [
-                "Doença vascular pulmonar",
-                "Asma brônquica controlada",
-                "Obesidade sem outras doenças",
-                "Paralisia do diafragma"
+                "PaO2 55 e CO2 28",
+                "PaO2 80 e CO2 30",
+                "Normal",
+                "PaO2 55 e CO2 55"
               ],
-              "resposta": "Doença vascular pulmonar",
-              "explicacao": "Pensar em hipertensão pulmonar ou TEP crônico.",
-              "revisado": false
+              "resposta": "PaO2 55 e CO2 55",
+              "explicacao": "Hipoventilação.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-d21-l3-q5",
@@ -14452,17 +14484,18 @@
             {
               "id": "cm-d13-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente obeso com transaminases altas e fígado gorduroso no ultrassom, sem álcool.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Obeso de alto risco com metformina, glimepirida e empagliflozina, HbA1c acima da meta.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Perder peso e controlar o metabolismo",
-                "Antiviral",
-                "Corticoide",
-                "Corticoide em dose alta e antiviral"
+                "Esperar 12 meses",
+                "Trocar por pioglitazona",
+                "Só insulina",
+                "Associar liraglutida"
               ],
-              "resposta": "Perder peso e controlar o metabolismo",
-              "explicacao": "Doença hepática metabólica.",
-              "revisado": false
+              "resposta": "Associar liraglutida",
+              "explicacao": "GLP-1 reduz peso e risco.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-d13-l2-q6",
@@ -14855,17 +14888,18 @@
             {
               "id": "cm-d18-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente com Addison em reposição vai fazer cirurgia de grande porte.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Usuária crônica de prednisona com hipotensão refratária, hipoglicemia e sódio baixo no pós-operatório.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Aumentar a dose de corticoide",
-                "Suspender o corticoide",
-                "Manter igual",
-                "Trocar por fludrocortisona sozinha"
+                "Adrenal primária",
+                "Esperar ACTH",
+                "Potássio normal afasta",
+                "Hidrocortisona IV"
               ],
-              "resposta": "Aumentar a dose de corticoide",
-              "explicacao": "Dose de estresse.",
-              "revisado": false
+              "resposta": "Hidrocortisona IV",
+              "explicacao": "Insuficiência secundária.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "cm-d18-l2-q6",

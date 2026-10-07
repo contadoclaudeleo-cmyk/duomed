@@ -2115,17 +2115,18 @@
             {
               "id": "ped-u6-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Lactente com comunicação interventricular grande se cansa ao mamar, sua muito, ganha pouco peso e respira rápido.",
-              "enunciado": "O que está acontecendo?",
+              "caso": "Menino desmaia no esforço, sopro sistólico para a fúrcula.",
+              "enunciado": "Diagnóstico e remédio?",
               "opcoes": [
-                "IC por hiperfluxo pulmonar",
-                "Crise de cianose",
-                "Asma",
-                "Refluxo gastroesofágico com engasgos"
+                "CIV",
+                "CIA",
+                "Estenose pulmonar",
+                "Estenose aórtica; propranolol"
               ],
-              "resposta": "IC por hiperfluxo pulmonar",
-              "explicacao": "O tratamento inclui diurético, nutrição reforçada e, muitas vezes, cirurgia.",
-              "revisado": false
+              "resposta": "Estenose aórtica; propranolol",
+              "explicacao": "Síncope de esforço.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             }
           ]
         },
@@ -2503,11 +2504,19 @@
             },
             {
               "id": "ped-u7-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Refrigerantes e sucos industrializados não devem ser usados para reidratar.",
-              "resposta": true,
-              "explicacao": "Têm açúcar demais.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança após diarreia com anemia, esquizócitos, plaquetas baixas e creatinina 2.",
+              "enunciado": "Diagnóstico e conduta?",
+              "opcoes": [
+                "Shigella: ceftriaxona",
+                "Campylobacter",
+                "Salmonela",
+                "SHU por E. coli: suporte"
+              ],
+              "resposta": "SHU por E. coli: suporte",
+              "explicacao": "Sem antibiótico.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "ped-u7-l1-q8",
@@ -6529,17 +6538,18 @@
             {
               "id": "ped-d3-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Criança ingeriu soda cáustica e tem salivação, dor ao engolir e queimaduras na boca.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Criança com opistótono e espasmos após antiemético no PS.",
+              "enunciado": "Qual remédio?",
               "opcoes": [
-                "Jejum, analgesia e endoscopia em 12 a 24 h",
-                "Provocar vômito",
-                "Leite e alta",
-                "Provocar vômito e dar leite para neutralizar"
+                "Dimenidrato",
+                "Ondansetrona",
+                "Loperamida",
+                "Metoclopramida"
               ],
-              "resposta": "Jejum, analgesia e endoscopia em 12 a 24 h",
-              "explicacao": "Provocar vômito expõe o esôfago de novo ao cáustico.",
-              "revisado": false
+              "resposta": "Metoclopramida",
+              "explicacao": "Reação extrapiramidal.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "ped-d3-l3-q5",
@@ -6625,28 +6635,18 @@
             },
             {
               "id": "ped-d4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada causa de baixa estatura ao padrão.",
-              "pares": [
-                {
-                  "esquerda": "Baixa estatura familiar",
-                  "direita": "Idade óssea igual à cronológica e pais baixos"
-                },
-                {
-                  "esquerda": "Atraso constitucional",
-                  "direita": "Idade óssea atrasada e história familiar"
-                },
-                {
-                  "esquerda": "Deficiência de GH",
-                  "direita": "Velocidade de crescimento baixa e idade óssea atrasada"
-                },
-                {
-                  "esquerda": "Síndrome de Turner",
-                  "direita": "Menina baixa com pescoço alado"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Que índice mostra melhor o efeito cumulativo de adversidades?",
+              "opcoes": [
+                "P/I",
+                "P/E",
+                "IMC",
+                "Estatura para idade"
               ],
-              "explicacao": "Toda menina com baixa estatura sem causa deve fazer cariótipo.",
-              "revisado": false
+              "resposta": "Estatura para idade",
+              "explicacao": "Desnutrição crônica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "ped-d4-l1-q3",
@@ -9442,18 +9442,18 @@
             },
             {
               "id": "ped-d11-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente com diabetes tipo 1 e cetoacidoses de repetição.",
-              "enunciado": "O que avaliar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na CAD pediátrica, o que iniciar logo após coletar exames?",
               "opcoes": [
-                "Adesão, questões psicossociais e uso da insulina",
-                "Trocar para oral",
-                "Só dieta",
-                "Trocar a insulina por remédio oral e só dieta"
+                "Insulina",
+                "SF com glicose",
+                "Dois acessos",
+                "Expansão com SF ou Ringer"
               ],
-              "resposta": "Adesão, questões psicossociais e uso da insulina",
-              "explicacao": "Causa comum.",
-              "revisado": false
+              "resposta": "Expansão com SF ou Ringer",
+              "explicacao": "Antes da insulina.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "ped-d11-l1-q7",

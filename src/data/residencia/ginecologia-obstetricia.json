@@ -191,28 +191,12 @@
             },
             {
               "id": "go-u1-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medicamento ao seu uso nas síndromes hipertensivas da gestação.",
-              "pares": [
-                {
-                  "esquerda": "Sulfato de magnésio",
-                  "direita": "Prevenção da eclâmpsia"
-                },
-                {
-                  "esquerda": "Gluconato de cálcio",
-                  "direita": "Antídoto da intoxicação por magnésio"
-                },
-                {
-                  "esquerda": "Hidralazina venosa",
-                  "direita": "Crise hipertensiva na gestação"
-                },
-                {
-                  "esquerda": "AAS em baixa dose",
-                  "direita": "Prevenção da pré-eclâmpsia em gestantes de alto risco"
-                }
-              ],
-              "explicacao": "O AAS deve começar antes de 16 semanas, de preferência a partir de 12. O nifedipino oral é outra opção na crise hipertensiva.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Proteína/creatinina urinária ≥ 0,3 indica pré-eclâmpsia.",
+              "resposta": true,
+              "explicacao": "Proteinúria não é obrigatória.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-u1-l2-q5",
@@ -330,26 +314,35 @@
             },
             {
               "id": "go-u1-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na suspeita de placenta prévia, o toque vaginal deve ser evitado.",
-              "resposta": true,
-              "explicacao": "O toque pode descolar a placenta e causar hemorragia grave. O diagnóstico é feito por ultrassonografia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com dor, sangue no fundo de saco, descompressão dolorosa e PA 80x50.",
+              "enunciado": "Diagnóstico?",
+              "opcoes": [
+                "Mola",
+                "Aborto retido",
+                "Torção",
+                "Ectópica rota"
+              ],
+              "resposta": "Ectópica rota",
+              "explicacao": "Choque.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-u1-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Puérpera de 30 minutos após parto vaginal tem sangramento intenso. O útero está amolecido e palpável acima da cicatriz umbilical.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Gestante de 36 semanas com sangramento vermelho vivo indolor e feto bem.",
+              "enunciado": "Diagnóstico?",
               "opcoes": [
-                "Massagem uterina bimanual e uterotônicos",
-                "Histerectomia imediata",
-                "Curetagem",
-                "Observar por uma hora antes de qualquer medida"
+                "DPP",
+                "Vasa prévia",
+                "Rotura uterina",
+                "Placenta prévia"
               ],
-              "resposta": "Massagem uterina bimanual e uterotônicos",
-              "explicacao": "É atonia uterina. Associa-se ácido tranexâmico, acesso venoso calibroso e reposição volêmica. A cirurgia fica para quando o tratamento clínico falha.",
-              "revisado": false
+              "resposta": "Placenta prévia",
+              "explicacao": "Sem dor.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-u1-l3-q7",
@@ -982,18 +975,12 @@
             },
             {
               "id": "go-u3-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 26 semanas tem contrações regulares e colo com 3 cm de dilatação.",
-              "enunciado": "Quais medidas tomar?",
-              "opcoes": [
-                "Corticoide, tocólise, magnésio e transferir",
-                "Repouso em casa",
-                "Só analgesia",
-                "Cesárea imediata, sem corticoide e sem transferir para outro hospital"
-              ],
-              "resposta": "Corticoide, tocólise, magnésio e transferir",
-              "explicacao": "O melhor transporte para o prematuro é dentro do útero da mãe.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Colo < 25 mm e parto prévio antes de 34 semanas indicam cerclagem.",
+              "resposta": true,
+              "explicacao": "Prevenção.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             }
           ]
         },
@@ -3189,17 +3176,12 @@
             },
             {
               "id": "go-u9-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na gemelar dicoriônica sem complicações, o parto é programado por volta de ___ semanas.",
-              "opcoes": [
-                "37",
-                "32",
-                "41",
-                "28"
-              ],
-              "resposta": "37",
-              "explicacao": "Reduz riscos.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "O melhor momento para ver a corionicidade é o ultrassom inicial.",
+              "resposta": true,
+              "explicacao": "1º trimestre.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             }
           ]
         },
@@ -8359,18 +8341,12 @@
             },
             {
               "id": "go-d8-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Ultrassom com anencefalia.",
-              "enunciado": "O que diz a lei brasileira?",
-              "opcoes": [
-                "A interrupção é permitida",
-                "Proibida",
-                "Só com ordem judicial",
-                "Somente com ordem judicial e laudo de três médicos"
-              ],
-              "resposta": "A interrupção é permitida",
-              "explicacao": "Decisão do STF de 2012.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "No morfológico do 1º trimestre, o Doppler das uterinas ajuda no risco de pré-eclâmpsia.",
+              "resposta": true,
+              "explicacao": "Rastreio combinado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-d8-l3-q7",
@@ -9222,17 +9198,18 @@
             {
               "id": "go-d11-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Mamografia BI-RADS 3 em nódulo oval circunscrito.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mamografia com calcificações em pipoca.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "Controle em 6 meses",
-                "Biópsia imediata",
-                "Cirurgia",
-                "Cirurgia com retirada imediata do nódulo"
+                "PAAF",
+                "Mamotomia",
+                "Ultrassom",
+                "Seguir rotina"
               ],
-              "resposta": "Controle em 6 meses",
-              "explicacao": "Provavelmente benigno.",
-              "revisado": false
+              "resposta": "Seguir rotina",
+              "explicacao": "Fibroadenoma calcificado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-d11-l1-q3",
@@ -10291,26 +10268,34 @@
             },
             {
               "id": "go-d13-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente com dor pélvica cíclica, sem menstruação e abaulamento azulado no introito.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o tratamento da puberdade precoce central?",
               "opcoes": [
-                "Hímen imperfurado",
-                "Gravidez",
-                "Mioma",
-                "Mioma uterino na adolescência"
+                "Estrogênio",
+                "Progesterona",
+                "Hidrocortisona",
+                "Análogo de GnRH"
               ],
-              "resposta": "Hímen imperfurado",
-              "explicacao": "Abertura cirúrgica.",
-              "revisado": false
+              "resposta": "Análogo de GnRH",
+              "explicacao": "Bloqueia o eixo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-d13-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Menina de 5 anos com corrimento e ardência sem outros sinais tem, na maioria das vezes, vulvovaginite inespecífica por higiene.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Orientam-se cuidados de higiene; abuso deve ser considerado se houver sinais.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Menina de 9 anos com M2P2 há 12 meses e muco vaginal.",
+              "enunciado": "Diagnóstico?",
+              "opcoes": [
+                "Precoce central",
+                "Periférica",
+                "Telarca isolada",
+                "Puberdade fisiológica"
+              ],
+              "resposta": "Puberdade fisiológica",
+              "explicacao": "Idade normal.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-d13-l3-q8",
@@ -10620,17 +10605,18 @@
             {
               "id": "go-d14-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Após mola, o beta-hCG sobe em 3 dosagens; não há metástases e o escore é de baixo risco.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Gestante com útero maior, sangramento escuro, vômitos e PA 170x90 sem BCF.",
+              "enunciado": "Diagnóstico e complicação?",
               "opcoes": [
-                "Metotrexato",
-                "Histerectomia radical",
-                "Radioterapia pélvica",
-                "Quimioterapia com vários remédios"
+                "Ectópica",
+                "Aborto",
+                "Hipertireoidismo só",
+                "Mola completa e pré-eclâmpsia precoce"
               ],
-              "resposta": "Metotrexato",
-              "explicacao": "A neoplasia trofoblástica de baixo risco tem alta taxa de cura com metotrexato.",
-              "revisado": false
+              "resposta": "Mola completa e pré-eclâmpsia precoce",
+              "explicacao": "hCG alto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026"
             },
             {
               "id": "go-d14-l3-q4",
