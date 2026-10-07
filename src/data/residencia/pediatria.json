@@ -1572,17 +1572,18 @@
             {
               "id": "ped-u4-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com anemia ferropriva não melhora após 1 mês tomando ferro corretamente.",
-              "enunciado": "O que deve ser considerado?",
+              "caso": "Criança com anemia em investigação, achados de hemólise.",
+              "enunciado": "Que exames colher?",
               "opcoes": [
-                "Sangramento oculto, má absorção ou talassemia",
-                "Dose tóxica",
-                "Suspender sem investigar",
-                "Aumentar o ferro até dose tóxica e transfundir sempre"
+                "Ferro e repetir",
+                "Parvovírus e tireoide",
+                "Mielograma",
+                "Haptoglobina, DHL, bilirrubinas e sangue oculto"
               ],
-              "resposta": "Sangramento oculto, má absorção ou talassemia",
-              "explicacao": "Doença celíaca e verminoses também estão entre as causas.",
-              "revisado": false
+              "resposta": "Haptoglobina, DHL, bilirrubinas e sangue oculto",
+              "explicacao": "Hemólise ou perda.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -3022,24 +3023,27 @@
             {
               "id": "ped-u8-l2-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "A esclerose tuberosa é causa comum de síndrome de West.",
-              "resposta": true,
-              "explicacao": "Pesquisar manchas hipocrômicas.",
-              "revisado": false
+              "enunciado": "Na síndrome de West, o valproato é a 1ª escolha.",
+              "resposta": false,
+              "explicacao": "ACTH, corticoide ou vigabatrina.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-u8-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O eletroencefalograma da síndrome de West mostra ___.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com abalos ao acordar e desastrado de manhã.",
+              "enunciado": "Qual o diagnóstico e tratamento?",
               "opcoes": [
-                "hipsarritmia",
-                "ponta-onda 3 Hz",
-                "normal",
-                "ritmo alfa"
+                "West",
+                "Carbamazepina",
+                "Ausência",
+                "Mioclônica juvenil; valproato ou levetiracetam"
               ],
-              "resposta": "hipsarritmia",
-              "explicacao": "Desorganizado.",
-              "revisado": false
+              "resposta": "Mioclônica juvenil; valproato ou levetiracetam",
+              "explicacao": "Evitar bloqueador de sódio.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -3756,17 +3760,18 @@
             },
             {
               "id": "ped-u10-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O agente clássico da epiglotite é o Haemophilus influenzae tipo ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Bebê de 2 meses com estridor que piora ao chorar e mamar.",
               "opcoes": [
-                "b",
-                "a",
-                "c",
-                "d"
+                "Estenose subglótica",
+                "Papilomatose",
+                "Paralisia de corda",
+                "Laringomalácia"
               ],
-              "resposta": "b",
-              "explicacao": "Rara após a vacina.",
-              "revisado": false
+              "resposta": "Laringomalácia",
+              "explicacao": "Causa mais comum.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-u10-l2-q5",
@@ -3983,31 +3988,34 @@
             },
             {
               "id": "ped-u11-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A vacina do ___ é indicada para meninas e meninos de 9 a 14 anos.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente sem vacinas desde os 5 anos. O que dar?",
+              "enunciado": "HPV 3 doses",
               "opcoes": [
-                "HPV",
-                "BCG",
-                "rotavírus",
-                "sarampo"
+                "Meningo C",
+                "HPV e Meningo C",
+                "HPV e Meningo ACWY"
               ],
-              "resposta": "HPV",
-              "explicacao": "Previne câncer.",
-              "revisado": false
+              "resposta": "HPV e Meningo ACWY",
+              "explicacao": "Calendário do adolescente.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-u11-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de morte em adolescentes no Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Mãe diz que a vacina da gripe deu gripe; a criança só tomou 1 dose aos 8 meses.",
+              "enunciado": "O que orientar?",
               "opcoes": [
-                "Causas externas: violência e acidentes",
-                "Câncer",
-                "Infecção",
-                "Doença cardíaca congênita não operada"
+                "É vírus vivo",
+                "Dose única",
+                "Contraindicar",
+                "Inativada; dar 2 doses com 30 dias"
               ],
-              "resposta": "Causas externas: violência e acidentes",
-              "explicacao": "Prevenção é essencial.",
-              "revisado": false
+              "resposta": "Inativada; dar 2 doses com 30 dias",
+              "explicacao": "1ª vez abaixo de 9 anos.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-u11-l1-q6",
@@ -4266,17 +4274,19 @@
             },
             {
               "id": "ped-u11-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ nervosa causa episódios de comer muito seguidos de vômitos.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente fuma 20 cigarros por dia e acende 10 min após acordar.",
+              "enunciado": "Qual a terapia?",
               "opcoes": [
-                "bulimia",
-                "anorexia",
-                "obesidade",
-                "pica"
+                "Adesivo 14 mg",
+                "Adesivo 7 mg",
+                "Proibido na idade",
+                "Adesivo 21 mg e goma"
               ],
-              "resposta": "bulimia",
-              "explicacao": "Risco de distúrbios de potássio.",
-              "revisado": false
+              "resposta": "Adesivo 21 mg e goma",
+              "explicacao": "Alta dependência.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -4952,11 +4962,19 @@
             },
             {
               "id": "ped-u13-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na hiperplasia adrenal congênita, são os meninos que nascem com genitália ambígua.",
-              "resposta": false,
-              "explicacao": "Falso. São as meninas, pelo excesso de androgênios.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "RN com genitália ambígua, sem gônadas, desidratado, sódio baixo e potássio alto.",
+              "enunciado": "Qual a hipótese?",
+              "opcoes": [
+                "Insensibilidade a andrógenos",
+                "11-hidroxilase",
+                "17-hidroxilase",
+                "HAC 21-hidroxilase perdedora de sal"
+              ],
+              "resposta": "HAC 21-hidroxilase perdedora de sal",
+              "explicacao": "Crise de sal.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-u13-l3-q3",
@@ -5723,55 +5741,65 @@
             },
             {
               "id": "ped-d1-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Recém-nascido com 3 dias tem cianose que não melhora com oxigênio, sem desconforto importante.",
-              "enunciado": "Qual é a hipótese e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como manter o prematuro < 34 semanas aquecido?",
               "opcoes": [
-                "Cardiopatia canal-dependente; prostaglandina E1",
-                "Pneumonia; antibiótico",
-                "Policitemia; hidratar",
-                "Achado normal do recém-nascido; alta com retorno em uma semana"
+                "Secar sempre",
+                "Calor sem limite",
+                "Sala fria",
+                "Saco plástico e touca dupla"
               ],
-              "resposta": "Cardiopatia canal-dependente; prostaglandina E1",
-              "explicacao": "O teste do coraçãozinho ajuda a detectar essas cardiopatias.",
-              "revisado": false
+              "resposta": "Saco plástico e touca dupla",
+              "explicacao": "Sem secar o corpo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d1-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na sepse neonatal precoce, os germes mais comuns são o estreptococo do grupo B e a Escherichia coli.",
-              "resposta": true,
-              "explicacao": "O esquema empírico inicial é ampicilina com gentamicina.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "RN de 28 semanas ventilado com PAM 36.",
+              "enunciado": "Quais condutas?",
+              "opcoes": [
+                "Surfactante e adrenalina",
+                "Cafeína de manutenção",
+                "Cafeína de ataque e surfactante",
+                "Ventilação a volume e antibiótico"
+              ],
+              "resposta": "Ventilação a volume e antibiótico",
+              "explicacao": "Parto prematuro: risco infeccioso.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d1-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido filho de mãe usuária de opioide tem irritabilidade, choro agudo, tremores, diarreia e sucção desordenada com 2 dias.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "RN em hipotermia terapêutica com abalos, mastigação e desvio ocular.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Síndrome de abstinência neonatal",
-                "Sepse",
-                "Hipoglicemia",
-                "Comportamento normal do recém-nascido"
+                "Parar hipotermia",
+                "Midazolam",
+                "Diazepam",
+                "EEG e fenobarbital"
               ],
-              "resposta": "Síndrome de abstinência neonatal",
-              "explicacao": "Escalas como a de Finnegan orientam o tratamento.",
-              "revisado": false
+              "resposta": "EEG e fenobarbital",
+              "explicacao": "1ª escolha no RN.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d1-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na doença da membrana hialina, falta ___ nos alvéolos do prematuro, e a radiografia mostra aspecto de vidro moído.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o padrão-ouro da sepse neonatal precoce?",
               "opcoes": [
-                "surfactante",
-                "muco",
-                "sangue",
-                "líquido amniótico"
+                "PCR",
+                "Procalcitonina",
+                "Índice neutrofílico",
+                "Hemocultura"
               ],
-              "resposta": "surfactante",
-              "explicacao": "O surfactante pode ser dado pela cânula traqueal.",
-              "revisado": false
+              "resposta": "Hemocultura",
+              "explicacao": "Confirma o agente.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d1-l3-q8",
@@ -7837,40 +7865,42 @@
             {
               "id": "ped-d7-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Lactente com diarreia crônica, infecções de repetição e baixo ganho de peso desde o nascimento.",
-              "enunciado": "O que investigar?",
+              "caso": "Adolescente com diarreia com sangue, aftas, artralgia e perda de peso.",
+              "enunciado": "Que exame é desnecessário?",
               "opcoes": [
-                "Fibrose cística e imunodeficiências",
-                "Alergia só",
-                "Constipação",
-                "Apenas alergia ao leite, sem outra investigação"
+                "Hemograma",
+                "EDA",
+                "Colonoscopia",
+                "Alfafetoproteína"
               ],
-              "resposta": "Fibrose cística e imunodeficiências",
-              "explicacao": "Doenças sistêmicas.",
-              "revisado": false
+              "resposta": "Alfafetoproteína",
+              "explicacao": "Não ajuda na DII.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d7-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Criança com doença celíaca confirmada, que fez dieta mas os anticorpos não caem.",
-              "enunciado": "Qual é a causa mais provável?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual NÃO explica diarreia, emagrecimento e distensão há 4 meses?",
               "opcoes": [
-                "Ingestão inadvertida de glúten",
-                "Diagnóstico errado",
-                "Linfoma",
-                "Linfoma intestinal em todos os casos"
+                "DII",
+                "Celíaca",
+                "Parasitose",
+                "Hirschsprung"
               ],
-              "resposta": "Ingestão inadvertida de glúten",
-              "explicacao": "Revisar a dieta com nutricionista.",
-              "revisado": false
+              "resposta": "Hirschsprung",
+              "explicacao": "Causa constipação.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d7-l1-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Criança de 2 anos com fezes moles várias vezes ao dia, crescendo bem e tomando muito suco, tem diarreia do pré-escolar, que melhora ao reduzir os sucos.",
+              "enunciado": "Constipação sem resposta a laxantes deve investigar hipotireoidismo, celíaca e fibrose cística.",
               "resposta": true,
-              "explicacao": "Verdadeiro. O excesso de frutose dos sucos contribui.",
-              "revisado": false
+              "explicacao": "Causas orgânicas.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d7-l1-q8",
@@ -9028,25 +9058,27 @@
             {
               "id": "ped-d10-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente prematuro de 6 semanas com apneia e coriza leve.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Bebê com adenovírus, sat 90% e piora ao mamar.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Bronquiolite com apneia",
-                "Refluxo",
-                "Normal",
-                "Convulsão por febre alta"
+                "Beta-2",
+                "UTI",
+                "Antibiótico",
+                "Oxigênio e sonda para dieta"
               ],
-              "resposta": "Bronquiolite com apneia",
-              "explicacao": "A apneia pode vir antes dos sintomas.",
-              "revisado": false
+              "resposta": "Oxigênio e sonda para dieta",
+              "explicacao": "Desconforto ao mamar.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d10-l1-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "No bebê internado com bronquiolite, o corticoide sistêmico é o tratamento de escolha.",
-              "resposta": false,
-              "explicacao": "Falso. O tratamento é de suporte; a salina hipertônica tem benefício modesto, e corticoide não é indicado.",
-              "revisado": false
+              "enunciado": "Chiado que persiste após infecção viral pode ser hiperresponsividade brônquica.",
+              "resposta": true,
+              "explicacao": "Pós-viral.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d10-l1-q8",
@@ -9563,18 +9595,18 @@
             },
             {
               "id": "ped-d11-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Criança obesa e alta para a idade.",
-              "enunciado": "O que isso sugere?",
+              "tipo": "multipla_escolha",
+              "enunciado": "RN com genitália masculina sem gônadas palpáveis. O que fazer?",
               "opcoes": [
-                "Obesidade exógena (não endócrina)",
-                "Cushing",
-                "Hipotireoidismo",
-                "Deficiência de hormônio do crescimento"
+                "Registrar menino",
+                "Só sódio e potássio",
+                "Cariótipo e registrar",
+                "Ultrassom e esperar pezinho"
               ],
-              "resposta": "Obesidade exógena (não endócrina)",
-              "explicacao": "Doenças endócrinas param o crescimento.",
-              "revisado": false
+              "resposta": "Ultrassom e esperar pezinho",
+              "explicacao": "Pensar em HAC.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -9616,73 +9648,59 @@
             },
             {
               "id": "ped-d11-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Menino de 7 anos com aumento dos testículos e pelos pubianos; LH sobe no teste com GnRH.",
-              "enunciado": "O que investigar primeiro?",
-              "opcoes": [
-                "Lesão do sistema nervoso central",
-                "Nada, pois é sempre idiopática",
-                "Função da tireoide só",
-                "Tumor de testículo"
-              ],
-              "resposta": "Lesão do sistema nervoso central",
-              "explicacao": "Em meninos, a causa central costuma ser lesão do SNC; em meninas, é idiopática.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Menina com M2 e crescimento estável no escore Z 0 só precisa de seguimento.",
+              "resposta": true,
+              "explicacao": "Telarca isolada.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d11-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à causa de puberdade.",
-              "pares": [
-                {
-                  "esquerda": "Telarca isolada em menina de 1 ano",
-                  "direita": "Telarca precoce benigna"
-                },
-                {
-                  "esquerda": "Pubarca isolada com DHEA-S alto",
-                  "direita": "Adrenarca precoce"
-                },
-                {
-                  "esquerda": "Testículo aumentado de um lado",
-                  "direita": "Tumor testicular"
-                },
-                {
-                  "esquerda": "Menstruação em menina de 3 anos com cisto ovariano",
-                  "direita": "Puberdade periférica"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 6 meses no peito com mamas M3 e bom crescimento.",
+              "enunciado": "O que é?",
+              "opcoes": [
+                "Puberdade central",
+                "Hormônio materno",
+                "Periférica",
+                "Minipuberdade"
               ],
-              "explicacao": "Diferenciar.",
-              "revisado": false
+              "resposta": "Minipuberdade",
+              "explicacao": "Tranquilizar.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d11-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Menina de 13 anos sem mamas, baixa estatura e pescoço alado.",
-              "enunciado": "Qual é o exame?",
+              "caso": "Adolescente alto, com ginecomastia e testículos de 6 mL em P4.",
+              "enunciado": "Qual o diagnóstico e exame?",
               "opcoes": [
-                "Cariótipo",
-                "Ultrassom",
-                "Raio X",
-                "Raio X de mão e ultrassom"
+                "Puberdade precoce",
+                "Atrasada",
+                "Avanço constitucional",
+                "Klinefelter; cariótipo"
               ],
-              "resposta": "Cariótipo",
-              "explicacao": "Turner.",
-              "revisado": false
+              "resposta": "Klinefelter; cariótipo",
+              "explicacao": "Testículo pequeno.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d11-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Menino de 15 anos sem puberdade e sem olfato.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual NÃO sugere obesidade de causa endócrina ou genética?",
               "opcoes": [
-                "Síndrome de Kallmann",
-                "Atraso constitucional",
-                "Klinefelter",
-                "Normal"
+                "Obesidade grave < 5 anos",
+                "Baixa estatura",
+                "Hiperfagia intensa",
+                "Acantose nigricans"
               ],
-              "resposta": "Síndrome de Kallmann",
-              "explicacao": "Hipogonadismo hipogonadotrófico.",
-              "revisado": false
+              "resposta": "Acantose nigricans",
+              "explicacao": "Comum na exógena.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d11-l3-q7",
@@ -10070,26 +10088,34 @@
             },
             {
               "id": "ped-d12-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança com febre, choque e sinais de Kawasaki semanas após covid pode ter síndrome inflamatória multissistêmica pediátrica.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. A SIM-P lembra Kawasaki com choque.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Púrpura nas pernas com febre baixa há 2 semanas. Que hipóteses?",
+              "opcoes": [
+                "Takayasu",
+                "Dermatomiosite",
+                "Células gigantes",
+                "Henoch-Schönlein, GPA e lúpus"
+              ],
+              "resposta": "Henoch-Schönlein, GPA e lúpus",
+              "explicacao": "Vasculites e lúpus.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d12-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Criança com febre há 6 dias, conjuntivite sem secreção, lábios rachados e mãos inchadas.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Adolescente com artrite recorrente, febre, perda de peso e hematúria.",
+              "enunciado": "Que exames pedir?",
               "opcoes": [
-                "Imunoglobulina e AAS",
-                "Antibiótico",
-                "Corticoide só",
-                "Antibiótico venoso e corticoide oral"
+                "ASLO e eco",
+                "Coagulograma",
+                "Ácido úrico",
+                "FAN, anti-DNA e complemento"
               ],
-              "resposta": "Imunoglobulina e AAS",
-              "explicacao": "Doença de Kawasaki.",
-              "revisado": false
+              "resposta": "FAN, anti-DNA e complemento",
+              "explicacao": "Pensar em lúpus.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         }
@@ -10310,40 +10336,43 @@
             {
               "id": "ped-d13-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido de mãe com infecção urinária não tratada, com icterícia e hipotermia.",
-              "enunciado": "O que investigar?",
+              "caso": "Prematuro com dieta plena tem distensão, vômito, sangue nas fezes e pneumatose, estável.",
+              "enunciado": "O que fazer além do jejum?",
               "opcoes": [
-                "Sepse",
-                "Normal",
-                "Leite materno",
-                "Fisiológica"
+                "Laparotomia",
+                "Drenagem",
+                "Trânsito",
+                "Sonda aberta e antibiótico"
               ],
-              "resposta": "Sepse",
-              "explicacao": "Sinais inespecíficos.",
-              "revisado": false
+              "resposta": "Sonda aberta e antibiótico",
+              "explicacao": "Enterocolite sem perfuração.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d13-l2-q7",
               "tipo": "verdadeiro_falso",
-              "enunciado": "Na suspeita de sepse neonatal com hemocultura negativa, PCR seriada normal não ajuda a decidir a suspensão do antibiótico.",
-              "resposta": false,
-              "explicacao": "Falso. PCR seriada normal com cultura negativa ajuda a suspender o antibiótico.",
-              "revisado": false
+              "enunciado": "Trabalho de parto prematuro é risco de sepse precoce por si só.",
+              "resposta": true,
+              "explicacao": "Mesmo com GBS negativo.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d13-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com vesículas na pele, convulsões e febre no 10º dia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "RN com piora respiratória, apneias e hipoatividade com 8 h de vida.",
+              "enunciado": "O que fazer após a hemocultura?",
               "opcoes": [
-                "Herpes neonatal",
-                "Varicela",
-                "Sífilis",
-                "Impetigo bolhoso comum"
+                "Esperar PCR",
+                "Esperar líquor",
+                "Só ampicilina",
+                "Ampicilina e gentamicina já"
               ],
-              "resposta": "Herpes neonatal",
-              "explicacao": "Aciclovir.",
-              "revisado": false
+              "resposta": "Ampicilina e gentamicina já",
+              "explicacao": "Sepse precoce.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -10580,26 +10609,34 @@
             },
             {
               "id": "ped-d14-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Gravidez na adolescência tem risco igual de prematuridade ao das adultas.",
-              "resposta": false,
-              "explicacao": "Falso. Tem mais risco de prematuridade e baixo peso; o pré-natal deve começar cedo.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é critério de bulimia no DSM-5?",
+              "opcoes": [
+                "Amenorreia",
+                "Peso baixo",
+                "Evitar texturas",
+                "Compulsão alimentar recorrente"
+              ],
+              "resposta": "Compulsão alimentar recorrente",
+              "explicacao": "Com compensação.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d14-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Adolescente com dor no joelho na tuberosidade da tíbia, que piora com esporte.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Adolescente provoca vômitos e depois bebe muita água.",
+              "enunciado": "Que exames esperar?",
               "opcoes": [
-                "Doença de Osgood-Schlatter",
-                "Osteossarcoma",
-                "Artrite",
-                "Fratura de patela por estresse"
+                "Sódio alto e acidose",
+                "Cloro alto",
+                "Acidose",
+                "Sódio e cloro baixos com alcalose"
               ],
-              "resposta": "Doença de Osgood-Schlatter",
-              "explicacao": "Tratamento conservador.",
-              "revisado": false
+              "resposta": "Sódio e cloro baixos com alcalose",
+              "explicacao": "Vômito e água.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             }
           ]
         },
@@ -10633,43 +10670,34 @@
             },
             {
               "id": "ped-d14-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Bebê de 4 meses com radiografia que mostra fratura metafisária em alça de balde; os pais não sabem explicar.",
-              "enunciado": "O que esse achado sugere?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como transportar um bebê de 6 meses no carro?",
               "opcoes": [
-                "Maus-tratos",
-                "Fratura do parto",
-                "Raquitismo leve",
-                "Queda comum do berço"
+                "Cadeira de frente",
+                "Qualquer de costas",
+                "Bebê-conforto de frente",
+                "Bebê-conforto de costas no banco de trás"
               ],
-              "resposta": "Maus-tratos",
-              "explicacao": "Fraturas metafisárias e de costelas posteriores são muito suspeitas de abuso.",
-              "revisado": false
+              "resposta": "Bebê-conforto de costas no banco de trás",
+              "explicacao": "Até 13 kg.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d14-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à hipótese diferencial de maus-tratos.",
-              "pares": [
-                {
-                  "esquerda": "Fraturas múltiplas e escleras azuis",
-                  "direita": "Osteogênese imperfeita"
-                },
-                {
-                  "esquerda": "Manchas azuladas sacrais desde o nascimento",
-                  "direita": "Mancha mongólica"
-                },
-                {
-                  "esquerda": "Hematomas com plaquetas baixas",
-                  "direita": "PTI"
-                },
-                {
-                  "esquerda": "Lesões em fases diferentes sem explicação",
-                  "direita": "Maus-tratos"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Bebê de 1 ano com fratura de fêmur cuidado pelos irmãos pequenos.",
+              "enunciado": "O que fazer após tratar?",
+              "opcoes": [
+                "Boletim e prender a mãe",
+                "Fatalidade",
+                "Notificar só na alta",
+                "RX de corpo inteiro e serviço social"
               ],
-              "explicacao": "Excluir diferenciais.",
-              "revisado": false
+              "resposta": "RX de corpo inteiro e serviço social",
+              "explicacao": "Avaliar maus-tratos.",
+              "revisado": false,
+              "fonte": "USP 2023 R+"
             },
             {
               "id": "ped-d14-l2-q5",
