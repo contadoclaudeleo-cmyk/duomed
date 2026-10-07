@@ -6788,69 +6788,82 @@
             {
               "id": "cir-d2-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com pancreatite aguda grave, sem febre e sem sinais de infecção, tem necrose de 30% na tomografia do 3º dia.",
-              "enunciado": "Qual é a conduta quanto ao antibiótico?",
+              "caso": "Pancreatite com via biliar intra-hepática dilatada sem ponto de obstrução no ultrassom.",
+              "enunciado": "Melhor exame?",
               "opcoes": [
-                "Não usar de rotina; só se houver infecção",
-                "Carbapenêmico profilático para todos",
-                "Antibiótico só nos casos leves",
-                "Cefalosporina por 14 dias desde a internação"
+                "CPRE",
+                "TC",
+                "ECG",
+                "Colangiorressonância"
               ],
-              "resposta": "Não usar de rotina; só se houver infecção",
-              "explicacao": "Antibiótico profilático não é indicado nem na necrose estéril; usa-se se houver infecção confirmada ou muito suspeita.",
-              "revisado": false
+              "resposta": "Colangiorressonância",
+              "explicacao": "Não invasiva.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d2-l2-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente com pancreatite há 6 semanas tem coleção encapsulada de 10 cm com restos sólidos que causa dor e saciedade precoce.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Idosa com colecistite, choque e saturação 85%.",
+              "enunciado": "Conduta inicial?",
               "opcoes": [
-                "Drenagem endoscópica guiada por ultrassom",
-                "Cirurgia aberta precoce",
-                "Punções com agulha fina",
-                "Punções repetidas com agulha fina pela pele a cada semana"
+                "Intubar em sequência rápida",
+                "Ambu e propofol",
+                "Só soro e antibiótico",
+                "O2, volume, noradrenalina, intubar e antibiótico"
               ],
-              "resposta": "Drenagem endoscópica guiada por ultrassom",
-              "explicacao": "É a necrose encapsulada (walled-off), drenada pelo estômago.",
-              "revisado": false
+              "resposta": "O2, volume, noradrenalina, intubar e antibiótico",
+              "explicacao": "Estabilizar antes.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d2-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na pancreatite aguda, a hidratação agressiva demais pode aumentar complicações; prefere-se hidratação moderada guiada por metas.",
-              "resposta": true,
-              "explicacao": "O ringer lactato é preferido ao soro fisiológico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Colelitíase sintomática em paciente estável.",
+              "enunciado": "O que fazer?",
+              "opcoes": [
+                "Urgência",
+                "Colecistostomia",
+                "CPRE antes",
+                "Colecistectomia programada"
+              ],
+              "resposta": "Colecistectomia programada",
+              "explicacao": "Eletiva.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d2-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem icterícia, cálculo no colédoco de 2,5 cm que não sai pela CPRE.",
-              "enunciado": "Qual é a alternativa?",
+              "caso": "Adenocarcinoma de vesícula restrito à lâmina própria após colecistectomia.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Exploração cirúrgica do colédoco ou litotripsia",
-                "Apenas observar",
-                "Só retirar a vesícula",
-                "Retirar só a vesícula e deixar o cálculo no colédoco"
+                "Quimioterapia",
+                "Ampliar leito",
+                "Ressecar via biliar",
+                "Seguimento"
               ],
-              "resposta": "Exploração cirúrgica do colédoco ou litotripsia",
-              "explicacao": "Cálculos grandes podem precisar de técnicas especiais.",
-              "revisado": false
+              "resposta": "Seguimento",
+              "explicacao": "T1a: colecistectomia basta.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d2-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na síndrome de ___, um cálculo preso no infundíbulo da vesícula comprime o ducto hepático comum, causando icterícia.",
+              "tipo": "caso_clinico",
+              "caso": "Fístula biliar de 240 mL/dia no 8º PO após rafia do cístico.",
+              "enunciado": "Qual a conduta?",
               "opcoes": [
-                "Mirizzi",
-                "Boerhaave",
-                "Wilkie",
-                "Ogilvie"
+                "Laparoscopia",
+                "Biliodigestiva",
+                "Drenagem percutânea",
+                "CPRE com prótese"
               ],
-              "resposta": "Mirizzi",
-              "explicacao": "Pode formar fístula entre a vesícula e o colédoco.",
-              "revisado": false
+              "resposta": "CPRE com prótese",
+              "explicacao": "Reduz pressão.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d2-l2-q8",
@@ -8782,43 +8795,35 @@
             },
             {
               "id": "cir-d7-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada zona do pescoço ao limite.",
-              "pares": [
-                {
-                  "esquerda": "Zona I",
-                  "direita": "Da clavícula à cartilagem cricoide"
-                },
-                {
-                  "esquerda": "Zona II",
-                  "direita": "Da cricoide ao ângulo da mandíbula"
-                },
-                {
-                  "esquerda": "Zona III",
-                  "direita": "Acima do ângulo da mandíbula"
-                },
-                {
-                  "esquerda": "Platisma",
-                  "direita": "Violação define lesão penetrante"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Fratura no joelho, perna inchada, pé frio e sem pulso; transferência em 6 h.",
+              "enunciado": "Como salvar o membro?",
+              "opcoes": [
+                "Fixador externo",
+                "Vasodilatador",
+                "Só transferir",
+                "Fasciotomia dos quatro compartimentos"
               ],
-              "explicacao": "As zonas orientam a abordagem.",
-              "revisado": false
+              "resposta": "Fasciotomia dos quatro compartimentos",
+              "explicacao": "Síndrome compartimental.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d7-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente estável com ferimento cervical que atravessa o platisma e sem sinais duros.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Ferida cervical com secção da traqueia.",
+              "enunciado": "Como garantir a via aérea e tratar?",
               "opcoes": [
-                "Angiotomografia do pescoço",
-                "Exploração obrigatória",
-                "Liberar",
-                "Exploração cirúrgica obrigatória em todos os casos"
+                "Sequência rápida e traqueostomia",
+                "Cricotireoidostomia",
+                "Traqueostomia",
+                "Intubação por fibroscopia e sutura"
               ],
-              "resposta": "Angiotomografia do pescoço",
-              "explicacao": "Abordagem seletiva.",
-              "revisado": false
+              "resposta": "Intubação por fibroscopia e sutura",
+              "explicacao": "Sem traqueostomia.",
+              "revisado": false,
+              "fonte": "USP 2025 R+"
             },
             {
               "id": "cir-d7-l2-q6",
