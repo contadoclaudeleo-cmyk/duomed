@@ -1725,28 +1725,19 @@
             },
             {
               "id": "prev-u5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação ao responsável pela declaração de óbito.",
-              "pares": [
-                {
-                  "esquerda": "Morte natural com assistência",
-                  "direita": "Médico assistente"
-                },
-                {
-                  "esquerda": "Morte violenta (acidente, homicídio, suicídio)",
-                  "direita": "Instituto Médico Legal"
-                },
-                {
-                  "esquerda": "Morte natural sem assistência em local com SVO",
-                  "direita": "Serviço de Verificação de Óbito"
-                },
-                {
-                  "esquerda": "Morte natural sem assistência e sem SVO",
-                  "direita": "Médico do serviço público mais próximo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Hipertenso com AVC prévio morre de pneumonia após gripe, acompanhado na UBS.",
+              "enunciado": "Quem preenche a DO?",
+              "opcoes": [
+                "IML",
+                "SAMU",
+                "SVO",
+                "A médica, com a sequência da gripe à insuficiência respiratória"
               ],
-              "explicacao": "Mortes violentas ou suspeitas sempre vão para o IML.",
-              "revisado": false
+              "resposta": "A médica, com a sequência da gripe à insuficiência respiratória",
+              "explicacao": "Morte natural com assistência.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u5-l3-q3",
@@ -2187,11 +2178,18 @@
             },
             {
               "id": "prev-u6-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os CAPS fazem parte da rede de urgência, e não da Rede de Atenção Psicossocial.",
-              "resposta": false,
-              "explicacao": "Falso. Os CAPS são pontos centrais da Rede de Atenção Psicossocial.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Cardiologista atende pós-IAM com alergia a antiagregantes. Nível e prevenção?",
+              "opcoes": [
+                "Primário; secundária",
+                "Terciário",
+                "Quaternário",
+                "Secundário; secundária"
+              ],
+              "resposta": "Secundário; secundária",
+              "explicacao": "Prevenir novo evento.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u6-l3-q8",
@@ -2459,17 +2457,19 @@
             },
             {
               "id": "prev-u7-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O período de ___ é o tempo entre a exposição e o início dos sintomas.",
+              "tipo": "caso_clinico",
+              "caso": "Surto de escabiose em presídio superlotado.",
+              "enunciado": "Ações prioritárias?",
               "opcoes": [
-                "incubação",
-                "latência",
-                "transmissibilidade",
-                "convalescença"
+                "Isolar casos",
+                "Só tópico",
+                "Transferir",
+                "Tratamento coletivo, notificar e reorganizar"
               ],
-              "resposta": "incubação",
-              "explicacao": "Ajuda a achar a fonte.",
-              "revisado": false
+              "resposta": "Tratamento coletivo, notificar e reorganizar",
+              "explicacao": "Bloqueio.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -2619,11 +2619,19 @@
             },
             {
               "id": "prev-u8-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O sintomático respiratório é quem tem tosse por 3 semanas ou mais.",
-              "resposta": true,
-              "explicacao": "Em populações vulneráveis, qualquer tempo de tosse.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Preso com tosse há 2 semanas.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Internar",
+                "Internação social",
+                "Esperar",
+                "RX, pesquisa de BK e tratar se positivo"
+              ],
+              "resposta": "RX, pesquisa de BK e tratar se positivo",
+              "explicacao": "População de risco.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u8-l1-q3",
@@ -2841,28 +2849,18 @@
           "questoes": [
             {
               "id": "prev-u8-l3-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida ao controle do Aedes.",
-              "pares": [
-                {
-                  "esquerda": "Eliminar criadouros",
-                  "direita": "Água parada"
-                },
-                {
-                  "esquerda": "Larvicida",
-                  "direita": "Recipientes que não podem ser eliminados"
-                },
-                {
-                  "esquerda": "Fumacê",
-                  "direita": "Surtos para mosquitos adultos"
-                },
-                {
-                  "esquerda": "Educação em saúde",
-                  "direita": "Participação da comunidade"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O manejo integrado de vetores do Aedes envolve:",
+              "opcoes": [
+                "Muito inseticida",
+                "Notificar vetores",
+                "Só vigilância viral",
+                "Análise, planejamento, execução e avaliação"
               ],
-              "explicacao": "Controle integrado.",
-              "revisado": false
+              "resposta": "Análise, planejamento, execução e avaliação",
+              "explicacao": "Ciclo.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u8-l3-q2",
@@ -3228,11 +3226,18 @@
             },
             {
               "id": "prev-u9-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A análise por intenção de tratar mantém os pacientes no grupo em que foram sorteados.",
-              "resposta": true,
-              "explicacao": "Mesmo que não sigam o tratamento.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que desenho avalia uma intervenção coletiva na UBS sem sorteio?",
+              "opcoes": [
+                "Caso-controle",
+                "Coorte retrospectiva",
+                "ECR",
+                "Ensaio não randomizado"
+              ],
+              "resposta": "Ensaio não randomizado",
+              "explicacao": "Intervenção sem randomização.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u9-l3-q4",
@@ -4333,17 +4338,19 @@
             },
             {
               "id": "prev-u12-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual grupo de doenças mais mata no Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Lombalgia mecânica sem sinais de alerta.",
+              "enunciado": "Próximo passo?",
               "opcoes": [
-                "Doenças cardiovasculares",
-                "Infecções",
-                "Acidentes",
-                "Câncer de pele não melanoma"
+                "RM",
+                "RX e corticoide",
+                "Repouso e atestado",
+                "Tranquilizar, analgesia e atividade leve"
               ],
-              "resposta": "Doenças cardiovasculares",
-              "explicacao": "Em especial infarto e AVC.",
-              "revisado": false
+              "resposta": "Tranquilizar, analgesia e atividade leve",
+              "explicacao": "Benigna.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-u12-l3-q6",
@@ -8118,18 +8125,12 @@
             },
             {
               "id": "prev-d8-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Tabela com A=90, B=10, C=10, D=890.",
-              "enunciado": "Qual é o valor preditivo positivo?",
-              "opcoes": [
-                "90%",
-                "10%",
-                "99%",
-                "50%"
-              ],
-              "resposta": "90%",
-              "explicacao": "A dividido por A mais B.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Teste com baixa especificidade em baixa prevalência gera muitos falsos positivos.",
+              "resposta": true,
+              "explicacao": "VPP baixo.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-d8-l3-q6",
@@ -8478,17 +8479,18 @@
             {
               "id": "prev-d9-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Técnica de enfermagem se fura com agulha usada em paciente com HIV e carga viral alta.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mordida de gato de rua que fugiu, em cidade com raiva felina.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Antirretroviral por 28 dias, até 72 h",
-                "Vacina contra HIV",
-                "Antibiótico por 7 dias",
-                "Aguardar exames do paciente por 6 meses"
+                "Suturar e soro só",
+                "Esperar o animal",
+                "Antisséptico e 1 dose",
+                "Lavar, vacina em 4 doses e imunoglobulina"
               ],
-              "resposta": "Antirretroviral por 28 dias, até 72 h",
-              "explicacao": "Quanto antes começar, melhor; o limite é 72 horas.",
-              "revisado": false
+              "resposta": "Lavar, vacina em 4 doses e imunoglobulina",
+              "explicacao": "Exposição grave.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-d9-l3-q4",
@@ -10304,58 +10306,50 @@
             },
             {
               "id": "prev-d14-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Família com bebê recém-nascido e pai desempregado.",
-              "enunciado": "Qual é a fase do ciclo de vida?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Indígena quer o pajé na consulta. Abordagem?",
               "opcoes": [
-                "Família com filhos pequenos",
-                "Ninho vazio",
-                "Família com filhos adolescentes",
-                "Aposentadoria"
+                "Padronizar rotinas",
+                "Autonomia do médico",
+                "Mesma rotina para todos",
+                "Formar a equipe reconhecendo os saberes locais"
               ],
-              "resposta": "Família com filhos pequenos",
-              "explicacao": "Crise previsível com estressor.",
-              "revisado": false
+              "resposta": "Formar a equipe reconhecendo os saberes locais",
+              "explicacao": "Competência cultural.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-d14-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Médica quer avaliar como uma mulher se sente sobre o apoio e o afeto da família.",
-              "enunciado": "Qual instrumento usar?",
+              "caso": "Pessoa trans sem sofrimento psíquico quer informação.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "APGAR familiar",
-                "Escala de Apgar do bebê",
-                "Escala de Morse",
-                "Miniexame do estado mental"
+                "Psiquiatra antes",
+                "Hormônio já na UBS",
+                "Só especialista",
+                "Não é transtorno: acompanhar na UBS"
               ],
-              "resposta": "APGAR familiar",
-              "explicacao": "Avalia adaptação, participação, crescimento, afeto e resolução.",
-              "revisado": false
+              "resposta": "Não é transtorno: acompanhar na UBS",
+              "explicacao": "Cuidado integral.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-d14-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada ferramenta à abordagem.",
-              "pares": [
-                {
-                  "esquerda": "Genograma",
-                  "direita": "Estrutura familiar"
-                },
-                {
-                  "esquerda": "Ecomapa",
-                  "direita": "Relações com a comunidade"
-                },
-                {
-                  "esquerda": "FIRO",
-                  "direita": "Inclusão, controle e intimidade"
-                },
-                {
-                  "esquerda": "PRACTICE",
-                  "direita": "Plano de abordagem familiar"
-                }
+              "tipo": "caso_clinico",
+              "caso": "ILPI com idosos isolados, agredidos e contidos.",
+              "enunciado": "Conduta da equipe?",
+              "opcoes": [
+                "Só denunciar",
+                "Só tratar lesões",
+                "Só capacitar",
+                "Ação intersetorial, notificar e plano conjunto"
               ],
-              "explicacao": "Medicina de família.",
-              "revisado": false
+              "resposta": "Ação intersetorial, notificar e plano conjunto",
+              "explicacao": "Violência institucional.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "prev-d14-l2-q5",

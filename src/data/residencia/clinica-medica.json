@@ -126,11 +126,19 @@
             },
             {
               "id": "cm-u1-l1-q8",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O efeito do avental branco ocorre quando a PA é normal no consultório e elevada fora dele.",
-              "resposta": false,
-              "explicacao": "Isso é a hipertensão mascarada. No efeito do avental branco é o contrário: PA elevada no consultório e normal na MAPA ou MRPA.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "PA de 146x86, 144x88 e 148x88 em três ocasiões, sem sintomas.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Cardiologista",
+                "Holter e eco",
+                "Só observar",
+                "Losartana e monitorar"
+              ],
+              "resposta": "Losartana e monitorar",
+              "explicacao": "Hipertensão estágio 1.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -526,17 +534,18 @@
             {
               "id": "cm-u2-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente estável usa sacubitril-valsartana e o colega sugere acrescentar enalapril.",
-              "enunciado": "Qual é a orientação correta?",
+              "caso": "Hipertensa com IC de fração reduzida em IECA.",
+              "enunciado": "Que remédio associar para sobrevida?",
               "opcoes": [
-                "Não associar, pelo risco de angioedema",
-                "Associar sem problema",
-                "Dobrar as duas doses",
-                "Associar e dobrar as duas doses, porque somam o efeito"
+                "Clortalidona",
+                "Hidralazina",
+                "Clonidina",
+                "Espironolactona"
               ],
-              "resposta": "Não associar, pelo risco de angioedema",
-              "explicacao": "Ao trocar IECA por sacubitril-valsartana, é preciso esperar 36 horas sem IECA.",
-              "revisado": false
+              "resposta": "Espironolactona",
+              "explicacao": "Antagonista mineralocorticoide.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -6553,17 +6562,19 @@
             },
             {
               "id": "cm-u6-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na população geral, a partir de quanto tempo de tosse se investiga tuberculose?",
+              "tipo": "caso_clinico",
+              "caso": "Retorno após abandono de TB: TRM negativo e baciloscopia positiva.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "3 semanas ou mais",
-                "2 dias",
-                "Qualquer febre",
-                "Apenas se houver sangue no escarro"
+                "Esquema sem cultura",
+                "Esperar",
+                "Tratar MDR",
+                "Cultura com teste de sensibilidade e reiniciar básico"
               ],
-              "resposta": "3 semanas ou mais",
-              "explicacao": "Em populações vulneráveis, como pessoas presas ou em situação de rua, investiga-se com qualquer tempo de tosse.",
-              "revisado": false
+              "resposta": "Cultura com teste de sensibilidade e reiniciar básico",
+              "explicacao": "Retratamento.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "cm-u6-l3-q7",
@@ -6821,17 +6832,18 @@
             },
             {
               "id": "cm-u12-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O tratamento da leptospirose grave é feito com ___ ou ceftriaxona.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Médica vai trabalhar com Yanomamis em área de malária. Profilaxia?",
               "opcoes": [
-                "penicilina cristalina",
-                "fluconazol",
-                "aciclovir",
-                "metronidazol venoso em dose alta"
+                "Artesunato",
+                "Primaquina",
+                "Cloroquina",
+                "Doxiciclina"
               ],
-              "resposta": "penicilina cristalina",
-              "explicacao": "Iniciar cedo.",
-              "revisado": false
+              "resposta": "Doxiciclina",
+              "explicacao": "Quimioprofilaxia.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -7091,17 +7103,19 @@
             },
             {
               "id": "cm-u7-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "Antes de iniciar um biológico anti-TNF, deve-se rastrear ___ latente.",
+              "tipo": "caso_clinico",
+              "caso": "Poliartrite de mãos, punhos e grandes articulações com rigidez > 2 h.",
+              "enunciado": "Hipótese, exame e tratamento?",
               "opcoes": [
-                "tuberculose",
-                "hepatite A",
-                "sífilis",
-                "toxoplasmose"
+                "Esclerose",
+                "Lúpus",
+                "Doença mista",
+                "AR; FR; metotrexato"
               ],
-              "resposta": "tuberculose",
-              "explicacao": "O anti-TNF reativa a tuberculose.",
-              "revisado": false
+              "resposta": "AR; FR; metotrexato",
+              "explicacao": "Primeira linha.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -8536,17 +8550,19 @@
             },
             {
               "id": "cm-u14-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A intoxicação por ___ exige N-acetilcisteína conforme o nomograma de Rumack-Matthew.",
+              "tipo": "caso_clinico",
+              "caso": "Alvejante no olho com córnea opaca.",
+              "enunciado": "Manejo?",
               "opcoes": [
-                "paracetamol",
-                "dipirona",
-                "ibuprofeno",
-                "AAS"
+                "Colírio lubrificante",
+                "Água boricada e oclusão",
+                "Corticoide",
+                "Lavar com soro e oftalmologista já"
               ],
-              "resposta": "paracetamol",
-              "explicacao": "Protege o fígado.",
-              "revisado": false
+              "resposta": "Lavar com soro e oftalmologista já",
+              "explicacao": "Queimadura química.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         }
@@ -9537,17 +9553,19 @@
             },
             {
               "id": "cm-u17-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "A micose de unha é chamada de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Lesões ulceradas em trajeto linfático após arranhadura de gato, corpos asteroides.",
+              "enunciado": "Diagnóstico e tratamento?",
               "opcoes": [
-                "onicomicose",
-                "paroníquia",
-                "pitiríase",
-                "ptiríase versicolor"
+                "Furunculose",
+                "Zoster",
+                "Paracoco",
+                "Esporotricose: itraconazol"
               ],
-              "resposta": "onicomicose",
-              "explicacao": "Tratamento longo com terbinafina.",
-              "revisado": false
+              "resposta": "Esporotricose: itraconazol",
+              "explicacao": "Fungo.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "cm-u17-l2-q4",
@@ -9874,17 +9892,19 @@
             },
             {
               "id": "cm-d1-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "Após síndrome coronariana aguda com stent, a dupla antiagregação costuma ser mantida por ___ meses, se não houver alto risco de sangramento.",
+              "tipo": "caso_clinico",
+              "caso": "IAM sem supra com GRACE 152.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "12",
-                "1",
-                "3",
-                "36"
+                "Angio-TC",
+                "Cateterismo em 3 dias",
+                "Eco de estresse",
+                "Cateterismo em 24 h"
               ],
-              "resposta": "12",
-              "explicacao": "Em alto risco de sangramento, o tempo pode ser encurtado.",
-              "revisado": false
+              "resposta": "Cateterismo em 24 h",
+              "explicacao": "Alto risco.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             }
           ]
         },
@@ -14554,17 +14574,18 @@
             {
               "id": "cm-d13-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente após cirurgia bariátrica com formigamento e anemia.",
-              "enunciado": "O que pode estar faltando?",
+              "caso": "Diabético em metformina e gliclazida com HbA1c 9,5.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Vitamina B12, ferro e cobre",
-                "Vitamina C",
-                "Sódio",
-                "Vitamina C, sódio e potássio do soro"
+                "Trocar por insulina",
+                "Só subir orais",
+                "Glibenclamida",
+                "NPH à noite e ajustar"
               ],
-              "resposta": "Vitamina B12, ferro e cobre",
-              "explicacao": "Reposição para sempre.",
-              "revisado": false
+              "resposta": "NPH à noite e ajustar",
+              "explicacao": "Insulina basal.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "cm-d13-l2-q7",
@@ -16557,17 +16578,18 @@
             {
               "id": "cm-d12-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente com malária por falciparum, confusão e hipoglicemia.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Úlcera mole e rasa no pênis com linfonodo inflamado.",
+              "enunciado": "Investigação e tratamento?",
               "opcoes": [
-                "Artesunato venoso",
-                "Cloroquina oral",
-                "Primaquina só",
-                "Primaquina isolada por sete dias"
+                "Clamídia",
+                "BAAR",
+                "VDRL",
+                "Gram com cadeias; azitromicina"
               ],
-              "resposta": "Artesunato venoso",
-              "explicacao": "Malária grave.",
-              "revisado": false
+              "resposta": "Gram com cadeias; azitromicina",
+              "explicacao": "Cancro mole.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "cm-d12-l2-q6",

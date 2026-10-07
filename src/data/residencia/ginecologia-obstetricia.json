@@ -201,17 +201,18 @@
             {
               "id": "go-u1-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 35 semanas chega com PA de 170/115 mmHg, cefaleia intensa e escotomas visuais. Tem proteinúria e plaquetas normais.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Hipertensa crônica em enalapril, 15 semanas, com pré-eclâmpsia prévia.",
+              "enunciado": "Medicação?",
               "opcoes": [
-                "Magnésio, anti-hipertensivo rápido e planejar o parto",
-                "Enalapril oral e retorno",
-                "Furosemida e observar",
-                "Cesárea imediata, antes de qualquer remédio para pressão ou convulsão"
+                "Captopril e varfarina",
+                "Furosemida",
+                "Losartana",
+                "Metildopa, AAS e cálcio"
               ],
-              "resposta": "Magnésio, anti-hipertensivo rápido e planejar o parto",
-              "explicacao": "É pré-eclâmpsia com sinais de gravidade (iminência de eclâmpsia). Estabiliza-se a mãe primeiro; com 34 semanas ou mais, indica-se o parto.",
-              "revisado": false
+              "resposta": "Metildopa, AAS e cálcio",
+              "explicacao": "Sem IECA na gestação.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-u1-l2-q6",
@@ -346,17 +347,19 @@
             },
             {
               "id": "go-u1-l3-q7",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na hemorragia pós-parto, o ácido tranexâmico deve ser dado em até quanto tempo após o parto?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante após cocaína com sangramento, útero hipertônico e FCF 90.",
+              "enunciado": "Diagnóstico, conduta e complicação?",
               "opcoes": [
-                "3 horas",
-                "24 horas",
-                "12 horas",
-                "6 horas"
+                "Vasa prévia",
+                "Trabalho de parto",
+                "Pré-eclâmpsia",
+                "DPP; cesárea; útero de Couvelaire"
               ],
-              "resposta": "3 horas",
-              "explicacao": "O benefício na redução de mortes por sangramento é maior quanto mais cedo ele é dado, e se perde após 3 horas.",
-              "revisado": false
+              "resposta": "DPP; cesárea; útero de Couvelaire",
+              "explicacao": "Cocaína.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-u1-l3-q8",
@@ -3527,18 +3530,12 @@
             },
             {
               "id": "go-u10-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Gestante com VDRL de 1:16 e teste treponêmico positivo, sem tratamento anterior.",
-              "enunciado": "Qual é a conduta?",
-              "opcoes": [
-                "Benzatina em 3 doses e tratar o parceiro",
-                "Uma dose",
-                "Esperar o parto",
-                "Esperar o parto para tratar a mãe e o bebê juntos"
-              ],
-              "resposta": "Benzatina em 3 doses e tratar o parceiro",
-              "explicacao": "Sífilis latente tardia ou de duração ignorada.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Na sífilis tratada na gestação, queda de 2 diluições do VDRL indica resposta.",
+              "resposta": true,
+              "explicacao": "Seguimento mensal.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-u10-l1-q7",
@@ -6117,18 +6114,18 @@
             },
             {
               "id": "go-d3-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de baixo risco, com 41 semanas completas, sem trabalho de parto e com feto bem.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Placenta não saiu 10 minutos após o parto, estável.",
               "opcoes": [
-                "Indicar a indução do parto",
-                "Esperar até 43 semanas",
-                "Cesárea eletiva imediata",
-                "Repetir ultrassom em 2 semanas"
+                "Esperar",
+                "Curagem",
+                "Uterotônico extra",
+                "Tração controlada do cordão com contrapressão"
               ],
-              "resposta": "Indicar a indução do parto",
-              "explicacao": "O risco fetal aumenta após 41 semanas, quando se indica a indução.",
-              "revisado": false
+              "resposta": "Tração controlada do cordão com contrapressão",
+              "explicacao": "Manejo ativo.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-d3-l1-q4",
@@ -6207,42 +6204,34 @@
             {
               "id": "go-d3-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 30 semanas tem rotura da bolsa sem contrações e sem sinais de infecção.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Gestante com perda com 16 e parto com 28 semanas, colo de 1,5 cm com 24 semanas.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Internar, corticoide, antibiótico e esperar 34 semanas",
-                "Parto imediato",
-                "Liberar",
-                "Ocitocina para induzir o parto no mesmo dia, sem corticoide"
+                "GBS com 28",
+                "Atosibano",
+                "Nifedipina",
+                "Progesterona vaginal até 36 semanas"
               ],
-              "resposta": "Internar, corticoide, antibiótico e esperar 34 semanas",
-              "explicacao": "O antibiótico aumenta o tempo até o parto.",
-              "revisado": false
+              "resposta": "Progesterona vaginal até 36 semanas",
+              "explicacao": "Colo curto.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-d3-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida ao objetivo no parto prematuro.",
-              "pares": [
-                {
-                  "esquerda": "Corticoide",
-                  "direita": "Maturação pulmonar fetal"
-                },
-                {
-                  "esquerda": "Sulfato de magnésio antes de 32 semanas",
-                  "direita": "Proteção do cérebro fetal"
-                },
-                {
-                  "esquerda": "Nifedipina",
-                  "direita": "Inibir contrações por pouco tempo"
-                },
-                {
-                  "esquerda": "Progesterona",
-                  "direita": "Prevenção em colo curto"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Rotura prematura de membranas pré-termo estável após antibiótico e corticoide.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Induzir já",
+                "Alta com repouso",
+                "Seguimento semanal",
+                "Internar e monitorar diariamente"
               ],
-              "explicacao": "A inibição serve para dar tempo ao corticoide.",
-              "revisado": false
+              "resposta": "Internar e monitorar diariamente",
+              "explicacao": "Conduta expectante.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-d3-l2-q3",
@@ -8661,17 +8650,18 @@
             {
               "id": "go-d9-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Gestante com cesárea anterior e 41 semanas com colo desfavorável.",
-              "enunciado": "Qual é o método de indução?",
+              "caso": "Gestante de 41 semanas com perfil biofísico normal.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Sonda de Foley",
-                "Misoprostol",
-                "Fórcipe",
-                "Misoprostol em dose alta no fundo da vagina"
+                "Esperar 42",
+                "Doppler",
+                "Amnioscopia",
+                "Vigiar a cada 2 a 3 dias e induzir até 41s6d"
               ],
-              "resposta": "Sonda de Foley",
-              "explicacao": "Misoprostol aumenta ruptura uterina.",
-              "revisado": false
+              "resposta": "Vigiar a cada 2 a 3 dias e induzir até 41s6d",
+              "explicacao": "Pós-datismo.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
             },
             {
               "id": "go-d9-l3-q3",
