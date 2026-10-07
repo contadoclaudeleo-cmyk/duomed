@@ -15,3 +15,13 @@ Os PDFs das provas NÃO ficam no projeto (direitos das bancas); só o texto já 
 
 Obs.: depois de colocadas, algumas alternativas foram reequilibradas direto no JSON;
 os arquivos em `adaptadas/` podem estar um pouco diferentes do app.
+
+## Depois (outubro de 2026)
+
+7. Questões que não couberam nas lições (cada uma tem no máximo 10) vão para `sobras.txt`.
+   `python extras.py` transforma as sobras nas unidades "Mais questões de prova N"
+   (ids `cir-qN`, `cm-qN`, `ped-qN`, `go-qN`). Pode rodar de novo: ele refaz as unidades.
+8. Equilibrar o tamanho das alternativas: escrever linhas
+   `id | opção | *certa | opção | opção` e rodar `python equilibrar.py arquivo.txt`.
+   Meta: a certa não deve ser a mais longa em muito mais que 25% das questões.
+9. `extrair-unicamp.py` lê o formato das provas da Unicamp ("N. texto a) b) c) d)").
