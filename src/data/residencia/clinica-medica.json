@@ -9908,17 +9908,19 @@
             },
             {
               "id": "cm-d1-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "Paciente com fração de ejeção de 30% após 3 meses de tratamento otimizado tem indicação de cardiodesfibrilador implantável para prevenção primária de morte ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 49 anos com doença coronariana difusa grave, FE 19% e disfunção dos dois ventrículos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "súbita",
-                "por AVC",
-                "por infecção",
-                "renal"
+                "Revascularizar e trocar valva",
+                "Revascularizar e plastia",
+                "Assistência ventricular definitiva",
+                "Transplante cardíaco"
               ],
-              "resposta": "súbita",
-              "explicacao": "O critério usual é fração de ejeção de 35% ou menos com tratamento otimizado.",
-              "revisado": false
+              "resposta": "Transplante cardíaco",
+              "explicacao": "Doença difusa sem alvo.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cm-d1-l2-q8",
@@ -10127,43 +10129,34 @@
             },
             {
               "id": "cm-d10-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada manobra ao efeito no sopro.",
-              "pares": [
-                {
-                  "esquerda": "Valsalva",
-                  "direita": "Aumenta o sopro da cardiomiopatia hipertrófica"
-                },
-                {
-                  "esquerda": "Agachamento",
-                  "direita": "Diminui o sopro da cardiomiopatia hipertrófica"
-                },
-                {
-                  "esquerda": "Inspiração",
-                  "direita": "Aumenta sopros do lado direito"
-                },
-                {
-                  "esquerda": "Preensão das mãos",
-                  "direita": "Aumenta insuficiência mitral"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem assintomático com insuficiência mitral importante por prolapso de P2, FE 45% e VE dilatado.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Troca valvar",
+                "Observar",
+                "Eco de estresse",
+                "Plastia mitral"
               ],
-              "explicacao": "Ajudam no diagnóstico.",
-              "revisado": false
+              "resposta": "Plastia mitral",
+              "explicacao": "FE abaixo de 60% já indica cirurgia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cm-d10-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Jovem atleta com síncope ao esforço e sopro que aumenta com Valsalva.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual situação a plastia mitral tem maior chance de sucesso?",
               "opcoes": [
-                "Cardiomiopatia hipertrófica",
-                "Estenose aórtica",
-                "Prolapso mitral",
-                "Achado normal de coração de atleta"
+                "Prolapso de A2",
+                "Dilatação do anel",
+                "Folhetos espessados",
+                "Ruptura de cordoalha de P2"
               ],
-              "resposta": "Cardiomiopatia hipertrófica",
-              "explicacao": "Causa de morte súbita em atletas.",
-              "revisado": false
+              "resposta": "Ruptura de cordoalha de P2",
+              "explicacao": "O folheto posterior é mais fácil de reparar.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cm-d10-l1-q6",
@@ -10259,28 +10252,19 @@
             },
             {
               "id": "cm-d10-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada agente à situação da endocardite.",
-              "pares": [
-                {
-                  "esquerda": "Streptococcus gallolyticus",
-                  "direita": "Câncer de cólon"
-                },
-                {
-                  "esquerda": "Enterococo",
-                  "direita": "Procedimentos urológicos"
-                },
-                {
-                  "esquerda": "Estafilococo áureo",
-                  "direita": "Usuário de drogas"
-                },
-                {
-                  "esquerda": "Grupo HACEK",
-                  "direita": "Hemoculturas demoradas"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com AVC hemorrágico prévio tem endocardite mitral por S. viridans, vegetação de 8 mm e insuficiência moderada.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Plastia",
+                "Prótese biológica",
+                "Prótese mecânica",
+                "Tratamento clínico"
               ],
-              "explicacao": "Achar a origem.",
-              "revisado": false
+              "resposta": "Tratamento clínico",
+              "explicacao": "Sem indicação cirúrgica.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cm-d10-l2-q5",
@@ -11201,17 +11185,18 @@
             {
               "id": "cm-d20-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Fumante de 40 anos tem dor no peito de madrugada, em repouso, com supra de ST que some. Coronárias sem obstrução.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Homem com angina estável, ponte mamária pérvia e duas safenas ocluídas, sem tratamento otimizado.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Bloqueador de canal de cálcio e nitrato",
-                "Betabloqueador isolado",
-                "Angioplastia com stent farmacológico urgente",
-                "Trombólise"
+                "Cintilografia",
+                "Nova cirurgia",
+                "RM",
+                "Otimizar o tratamento clínico"
               ],
-              "resposta": "Bloqueador de canal de cálcio e nitrato",
-              "explicacao": "Angina vasoespástica; betabloqueador isolado pode piorar.",
-              "revisado": false
+              "resposta": "Otimizar o tratamento clínico",
+              "explicacao": "A artéria mais importante está protegida.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cm-d20-l1-q7",

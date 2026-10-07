@@ -211,17 +211,18 @@
             {
               "id": "cir-u1-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Homem de 70 anos com dor em fossa ilíaca esquerda há 3 dias, febre e alteração do hábito intestinal. A tomografia mostra espessamento do sigmoide com abscesso pericólico de 2 cm.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher no 2º dia após apendicectomia por apendicite com abscesso localizado vai ter alta.",
+              "enunciado": "Qual antibiótico?",
               "opcoes": [
-                "Diverticulite aguda complicada",
-                "Apendicite aguda",
-                "Volvo de sigmoide",
-                "Colite isquêmica do cólon esquerdo"
+                "Cipro e metronidazol 7 dias",
+                "Amoxi-clavulanato 7 dias",
+                "Cipro e metronidazol 3 dias",
+                "Amoxicilina-clavulanato por mais 3 dias"
               ],
-              "resposta": "Diverticulite aguda complicada",
-              "explicacao": "Abscesso pericólico pequeno é Hinchey I, tratado em geral com antibiótico. Abscessos maiores costumam ser drenados por punção guiada.",
-              "revisado": false
+              "resposta": "Amoxicilina-clavulanato por mais 3 dias",
+              "explicacao": "Ciclo curto basta.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u1-l2-q7",
@@ -867,18 +868,18 @@
             },
             {
               "id": "cir-u3-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Idoso instável com colangite grave não tem condições de fazer CPRE imediatamente.",
-              "enunciado": "Qual é a alternativa?",
+              "tipo": "multipla_escolha",
+              "enunciado": "\"Disseque acima do sulco de Rouvière (linha R4U)\". Qual é a cirurgia?",
               "opcoes": [
-                "Drenagem biliar percutânea",
-                "Esperar 1 semana",
-                "Antibiótico oral",
-                "Cirurgia aberta eletiva depois de uma semana"
+                "Nefroureterectomia",
+                "Hernioplastia femoral",
+                "Adrenalectomia",
+                "Colecistectomia"
               ],
-              "resposta": "Drenagem biliar percutânea",
-              "explicacao": "O importante é drenar a bile infectada o quanto antes.",
-              "revisado": false
+              "resposta": "Colecistectomia",
+              "explicacao": "Abaixo dele fica a via biliar.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             }
           ]
         },
@@ -1631,18 +1632,18 @@
             },
             {
               "id": "cir-u5-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente tem câncer de reto baixo localmente avançado.",
-              "enunciado": "Qual é a abordagem atual?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual remédio tem evidência na prevenção do câncer colorretal?",
               "opcoes": [
-                "Quimiorradioterapia antes da cirurgia",
-                "Cirurgia imediata",
-                "Só quimioterapia oral",
-                "Cirurgia imediata sem nenhum estadiamento ou tratamento antes"
+                "Azatioprina",
+                "Metotrexato",
+                "Indometacina",
+                "AAS"
               ],
-              "resposta": "Quimiorradioterapia antes da cirurgia",
-              "explicacao": "O tratamento prévio reduz o tumor e o risco de recidiva local.",
-              "revisado": false
+              "resposta": "AAS",
+              "explicacao": "Reduz pólipos e câncer.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             }
           ]
         },
@@ -2650,36 +2651,35 @@
             },
             {
               "id": "cir-u8-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O índice tornozelo-braquial abaixo de 0,9 indica doença arterial periférica.",
-              "resposta": true,
-              "explicacao": "Exame simples e barato.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Paciente com DRC terminal, sem cateter e com boas veias no antebraço.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Cateter tunelizado",
+                "Prótese de PTFE",
+                "Cateter temporário",
+                "Fístula rádio-cefálica"
+              ],
+              "resposta": "Fístula rádio-cefálica",
+              "explicacao": "Primeira escolha.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u8-l1-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada estágio da isquemia crônica ao quadro.",
-              "pares": [
-                {
-                  "esquerda": "Claudicação",
-                  "direita": "Dor ao andar"
-                },
-                {
-                  "esquerda": "Dor de repouso",
-                  "direita": "Dor à noite que melhora com a perna pendente"
-                },
-                {
-                  "esquerda": "Úlcera isquêmica",
-                  "direita": "Ferida que não cicatriza"
-                },
-                {
-                  "esquerda": "Gangrena",
-                  "direita": "Tecido morto"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Fístula braquiocefálica com estenose venosa pós-anastomótica, dor e edema no braço.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ligar a fístula",
+                "Explorar",
+                "Anticoagular",
+                "Angioplastia percutânea"
               ],
-              "explicacao": "A isquemia crítica exige revascularização.",
-              "revisado": false
+              "resposta": "Angioplastia percutânea",
+              "explicacao": "Preserva o acesso.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u8-l1-q4",
@@ -2934,32 +2934,35 @@
             },
             {
               "id": "cir-u8-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o exame de escolha para trombose venosa profunda?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher com perna inchada há 3 anos, pele endurecida, erisipelas e sinal de Stemmer.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ultrassom com Doppler",
-                "Flebografia",
-                "Raio X",
-                "Raio X simples da perna"
+                "Antibiótico contínuo",
+                "Derivação linfática",
+                "Excisão",
+                "Compressão e fisioterapia descongestiva"
               ],
-              "resposta": "Ultrassom com Doppler",
-              "explicacao": "Mostra veia que não comprime.",
-              "revisado": false
+              "resposta": "Compressão e fisioterapia descongestiva",
+              "explicacao": "Linfedema.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u8-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com varizes e dor nas pernas no fim do dia, sem feridas.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Mulher com varizes, dermatite e úlcera no maléolo medial com granulação; refluxo de safena parva.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Meias de compressão e orientações",
-                "Cirurgia imediata",
-                "Anticoagulação",
-                "Anticoagulação plena por seis meses e cirurgia logo"
+                "Espuma",
+                "Exérese com fleboextrator",
+                "Antibiótico e bota de Unna",
+                "Termoablação da parva, retirar tributárias e compressão"
               ],
-              "resposta": "Meias de compressão e orientações",
-              "explicacao": "Cirurgia se sintomas ou complicações.",
-              "revisado": false
+              "resposta": "Termoablação da parva, retirar tributárias e compressão",
+              "explicacao": "Corrigir o refluxo ajuda a cicatrizar.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u8-l3-q7",
@@ -3353,28 +3356,19 @@
           "questoes": [
             {
               "id": "cir-u10-l1-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tipo de pneumotórax à causa.",
-              "pares": [
-                {
-                  "esquerda": "Espontâneo primário",
-                  "direita": "Jovem alto e magro com bolhas"
-                },
-                {
-                  "esquerda": "Espontâneo secundário",
-                  "direita": "Doença pulmonar como DPOC"
-                },
-                {
-                  "esquerda": "Traumático",
-                  "direita": "Trauma de tórax"
-                },
-                {
-                  "esquerda": "Hipertensivo",
-                  "direita": "Ar entra e não sai"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher com pneumomediastino espontâneo, sem queixas.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Drenar o mediastino",
+                "Toracoscopia",
+                "Drenagem pleural",
+                "Observação"
               ],
-              "explicacao": "Cada tipo tem conduta.",
-              "revisado": false
+              "resposta": "Observação",
+              "explicacao": "É benigno.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u10-l1-q2",
@@ -3487,25 +3481,35 @@
             },
             {
               "id": "cir-u10-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de transudato pleural?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com empiema drenado não melhora; TC com cavidades no lobo inferior e leucócitos de 40 mil.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Insuficiência cardíaca",
-                "Pneumonia",
-                "Câncer",
-                "Tuberculose pleural com febre"
+                "Abscesso",
+                "Tuberculose",
+                "Bronquiectasias",
+                "Pneumonia necrotizante"
               ],
-              "resposta": "Insuficiência cardíaca",
-              "explicacao": "Derrame dos dois lados.",
-              "revisado": false
+              "resposta": "Pneumonia necrotizante",
+              "explicacao": "Várias cavidades pequenas.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u10-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O empiema exige drenagem do tórax.",
-              "resposta": true,
-              "explicacao": "Junto com antibiótico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher cirrótica com ascite e derrame pleural direito dispneica.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Drenar o tórax",
+                "Pleurodese",
+                "Diurético e dreno",
+                "Toracocentese e paracentese"
+              ],
+              "resposta": "Toracocentese e paracentese",
+              "explicacao": "Hidrotórax não se drena.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u10-l2-q4",
@@ -3596,11 +3600,19 @@
             },
             {
               "id": "cir-u10-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A espirometria avalia se o paciente aguenta a retirada de parte do pulmão.",
-              "resposta": true,
-              "explicacao": "VEF1 e difusão previstos após cirurgia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem com hemoptise e carcinoide na saída do brônquio do lobo superior direito, invadindo o intermédio.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Pneumonectomia",
+                "Bilobectomia",
+                "Quimioterapia",
+                "Lobectomia em manga"
+              ],
+              "resposta": "Lobectomia em manga",
+              "explicacao": "Preserva parênquima.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u10-l3-q3",
@@ -4239,31 +4251,35 @@
             },
             {
               "id": "cir-u12-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O escore de ___ classifica o câncer de próstata na biópsia.",
+              "tipo": "caso_clinico",
+              "caso": "Homem sem filhos há 2 anos tem azoospermia em 2 amostras e exame normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Gleason",
-                "Breslow",
-                "Bethesda",
-                "Clark"
+                "Biópsia",
+                "Clomifeno",
+                "Testosterona",
+                "FSH, LH e testosterona"
               ],
-              "resposta": "Gleason",
-              "explicacao": "Quanto maior, mais agressivo.",
-              "revisado": false
+              "resposta": "FSH, LH e testosterona",
+              "explicacao": "Diferencia causa obstrutiva e testicular.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u12-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se chama a ressecção endoscópica da próstata?",
+              "tipo": "caso_clinico",
+              "caso": "Idoso com sintomas urinários, próstata de 60 mL, PSA normal e em varfarina.",
+              "enunciado": "Qual exame e conduta?",
               "opcoes": [
-                "RTU de próstata",
-                "Prostatectomia radical",
-                "Cistectomia",
-                "Nefrectomia"
+                "Urodinâmica e finasterida",
+                "Ultrassom e RTU",
+                "Urodinâmica e enucleação",
+                "Fluxometria e alfabloqueador"
               ],
-              "resposta": "RTU de próstata",
-              "explicacao": "Para hiperplasia benigna.",
-              "revisado": false
+              "resposta": "Fluxometria e alfabloqueador",
+              "explicacao": "Começar pelo tratamento clínico.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u12-l2-q6",
@@ -4687,25 +4703,35 @@
             },
             {
               "id": "cir-u13-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na onfalocele, as vísceras ficam cobertas por membrana.",
-              "resposta": true,
-              "explicacao": "Associada a outras malformações.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido sem mecônio, distendido, com vômitos biliosos e raio X em vidro moído, sem pneumoperitônio.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Anorretomiectomia",
+                "Antibiótico",
+                "Colostomia",
+                "Enema com mucolítico"
+              ],
+              "resposta": "Enema com mucolítico",
+              "explicacao": "Íleo meconial não complicado.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u13-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A doença de Hirschsprung é a falta de células ___ no intestino.",
+              "tipo": "caso_clinico",
+              "caso": "Recém-nascido cianótico logo ao nascer, sem murmúrio à esquerda e abdome escavado.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "ganglionares",
-                "musculares",
-                "epiteliais",
-                "sanguíneas"
+                "Máscara",
+                "Drenagem",
+                "Punção",
+                "Intubar"
               ],
-              "resposta": "ganglionares",
-              "explicacao": "Biópsia retal confirma.",
-              "revisado": false
+              "resposta": "Intubar",
+              "explicacao": "Hérnia diafragmática: não ventilar com máscara.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-u13-l3-q5",
@@ -4834,17 +4860,19 @@
             },
             {
               "id": "cir-u14-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual fator atrapalha a cicatrização?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher operada de úlcera perfurada, sem intercorrências.",
+              "enunciado": "Qual é o melhor fechamento da parede?",
               "opcoes": [
-                "Diabetes, fumo e desnutrição",
-                "Exercício leve",
-                "Boa nutrição",
-                "Exercício leve e boa hidratação"
+                "Poliglactina 4:1",
+                "Polipropileno 4:1",
+                "Poliéster 5:1",
+                "PDS 2-0 contínuo, relação 5:1"
               ],
-              "resposta": "Diabetes, fumo e desnutrição",
-              "explicacao": "Também corticoide.",
-              "revisado": false
+              "resposta": "PDS 2-0 contínuo, relação 5:1",
+              "explicacao": "Técnica de pequenos pontos.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-u14-l1-q6",
@@ -6382,17 +6410,18 @@
             {
               "id": "cir-d2-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com colecistite tem dor há 10 dias, é idoso com doenças graves e instável para cirurgia.",
+              "caso": "Homem com pancreatite necrosante há 5 dias, taquicárdico e hipotenso, com coleções.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Colecistostomia percutânea e antibiótico",
-                "Colecistectomia aberta de urgência",
-                "Só analgesia",
-                "Colecistectomia aberta de urgência, mesmo com o paciente instável"
+                "Antibiótico",
+                "Antibiótico e drenagem endoscópica",
+                "Drenagem percutânea",
+                "Sem antibiótico por ora"
               ],
-              "resposta": "Colecistostomia percutânea e antibiótico",
-              "explicacao": "A drenagem da vesícula é uma ponte até melhorar.",
-              "revisado": false
+              "resposta": "Sem antibiótico por ora",
+              "explicacao": "Infecção da necrose é mais tardia.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d2-l2-q2",
@@ -6573,11 +6602,19 @@
             },
             {
               "id": "cir-d2-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No volvo de ceco, a descompressão por colonoscopia raramente funciona, e o tratamento é cirúrgico.",
-              "resposta": true,
-              "explicacao": "No volvo de sigmoide, ao contrário, a descompressão endoscópica costuma ser a primeira medida.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Jovem após bypass gástrico tem dor epigástrica recorrente que piora ao comer, com líquido livre na TC.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "opcoes": [
+                "Cólica biliar",
+                "Pancreatite",
+                "Úlcera marginal",
+                "Hérnia interna; laparoscopia"
+              ],
+              "resposta": "Hérnia interna; laparoscopia",
+              "explicacao": "Grande perda de peso abre espaços.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d2-l3-q6",
@@ -6770,17 +6807,18 @@
             {
               "id": "cir-d3-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com câncer gástrico distal, sem metástases, tem tumor que invade a submucosa e linfonodos suspeitos.",
-              "enunciado": "Qual é a cirurgia?",
+              "caso": "Cirrótico com hematêmese volumosa vai fazer endoscopia.",
+              "enunciado": "Qual remédio dar 30 minutos antes?",
               "opcoes": [
-                "Gastrectomia subtotal com linfadenectomia D2",
-                "Ressecção endoscópica",
-                "Gastrectomia total sem linfonodos",
-                "Apenas quimioterapia paliativa, sem nenhuma cirurgia"
+                "Omeprazol",
+                "Neostigmina",
+                "Domperidona",
+                "Eritromicina"
               ],
-              "resposta": "Gastrectomia subtotal com linfadenectomia D2",
-              "explicacao": "Em tumores proximais, a gastrectomia é total.",
-              "revisado": false
+              "resposta": "Eritromicina",
+              "explicacao": "Esvazia o estômago e melhora a visão.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d3-l2-q2",
@@ -7038,42 +7076,34 @@
             {
               "id": "cir-d4-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem câncer de cólon sigmoide obstruindo a luz, com distensão e vômitos, sem metástases.",
-              "enunciado": "Quais são as opções de tratamento de urgência?",
+              "caso": "Idoso com câncer de reto baixo de 3 cm, fixo e sem metástases.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Hartmann ou prótese como ponte para cirurgia",
-                "Quimioterapia de urgência",
-                "Sonda e liberar",
-                "Apenas sonda nasogástrica e liberar para casa com laxante"
+                "Cirurgia de Miles",
+                "Colostomia",
+                "Laser",
+                "Terapia neoadjuvante total"
               ],
-              "resposta": "Hartmann ou prótese como ponte para cirurgia",
-              "explicacao": "A prótese permite preparar o paciente para uma cirurgia eletiva.",
-              "revisado": false
+              "resposta": "Terapia neoadjuvante total",
+              "explicacao": "Quimio e rádio antes.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d4-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada estádio do câncer de cólon à conduta após a cirurgia.",
-              "pares": [
-                {
-                  "esquerda": "Estádio I",
-                  "direita": "Apenas seguimento"
-                },
-                {
-                  "esquerda": "Estádio II sem alto risco",
-                  "direita": "Seguimento, em geral sem quimioterapia"
-                },
-                {
-                  "esquerda": "Estádio III (linfonodos positivos)",
-                  "direita": "Quimioterapia adjuvante"
-                },
-                {
-                  "esquerda": "Estádio IV com metástases hepáticas ressecáveis",
-                  "direita": "Quimioterapia e ressecção das metástases"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adenocarcinoma de reto a 7 cm da borda anal, 3 cm, sem linfonodos ou metástases.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Amputação",
+                "Neoadjuvância",
+                "Linfadenectomia da mesentérica",
+                "Retossigmoidectomia com excisão total do mesorreto"
               ],
-              "explicacao": "O seguimento inclui CEA, tomografia e colonoscopia.",
-              "revisado": false
+              "resposta": "Retossigmoidectomia com excisão total do mesorreto",
+              "explicacao": "Tumor inicial do reto médio.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d4-l1-q3",
@@ -7165,42 +7195,34 @@
             {
               "id": "cir-d4-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem dor anal intensa há 2 dias e um nódulo arroxeado e muito doloroso na borda do ânus.",
+              "caso": "Homem com carcinoma espinocelular de canal anal de 3 cm, sem linfonodos.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Retirar o trombo com anestesia local",
-                "Ligadura elástica",
-                "Esfincterotomia",
-                "Esfincterotomia lateral e antibiótico oral"
+                "Amputação do reto",
+                "Retossigmoidectomia",
+                "Colostomia",
+                "Radioterapia e quimioterapia"
               ],
-              "resposta": "Retirar o trombo com anestesia local",
-              "explicacao": "Após 72 horas, a dor começa a melhorar e o tratamento pode ser clínico.",
-              "revisado": false
+              "resposta": "Radioterapia e quimioterapia",
+              "explicacao": "Esquema de Nigro.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado a doença anorretal.",
-              "pares": [
-                {
-                  "esquerda": "Dor ao evacuar com sangue vivo no papel",
-                  "direita": "Fissura anal"
-                },
-                {
-                  "esquerda": "Orifício na pele com secreção crônica",
-                  "direita": "Fístula anal"
-                },
-                {
-                  "esquerda": "Orifícios na linha média sacral com secreção",
-                  "direita": "Doença pilonidal"
-                },
-                {
-                  "esquerda": "Prolapso de toda a parede do reto",
-                  "direita": "Prolapso retal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idosa com prolapso retal encarcerado há 2 dias, com edema e necrose.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Delorme",
+                "Retopexia",
+                "Thiersch",
+                "Altemeier"
               ],
-              "explicacao": "A doença pilonidal é mais comum em homens jovens e peludos.",
-              "revisado": false
+              "resposta": "Altemeier",
+              "explicacao": "Retossigmoidectomia perineal.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d4-l2-q3",
@@ -7679,72 +7701,66 @@
             {
               "id": "cir-d5-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Fumante de 65 anos tem nódulo pulmonar de 2,5 cm, espiculado, com captação no PET-CT, sem linfonodos ou metástases.",
+              "caso": "Mulher com schwannoma de mediastino posterior que entra no canal medular pelo forame.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lobectomia com linfonodos, se tiver condição",
-                "Seguir em 1 ano",
-                "Só radioterapia",
-                "Seguimento com tomografia em um ano, sem biópsia nem cirurgia"
+                "Toracotomia direto",
+                "Radioterapia",
+                "Quimioterapia",
+                "Descomprimir a medula e ressecar"
               ],
-              "resposta": "Lobectomia com linfonodos, se tiver condição",
-              "explicacao": "Em pacientes que não podem operar, a radioterapia estereotáxica é alternativa.",
-              "revisado": false
+              "resposta": "Descomprimir a medula e ressecar",
+              "explicacao": "Tumor em ampulheta.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado do nódulo pulmonar ao risco.",
-              "pares": [
-                {
-                  "esquerda": "Calcificação em pipoca",
-                  "direita": "Hamartoma benigno"
-                },
-                {
-                  "esquerda": "Borda espiculada",
-                  "direita": "Maior risco de câncer"
-                },
-                {
-                  "esquerda": "Nódulo estável por 2 anos",
-                  "direita": "Provavelmente benigno, se sólido"
-                },
-                {
-                  "esquerda": "Nódulo em vidro fosco que persiste",
-                  "direita": "Pode ser adenocarcinoma de crescimento lento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Jovem com tosse e lesão cística bem definida na região subcarinal.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Teratoma",
+                "Tumor neurogênico",
+                "Duplicação esofágica",
+                "Cisto broncogênico"
               ],
-              "explicacao": "O tamanho e o tabagismo também pesam muito no risco.",
-              "revisado": false
+              "resposta": "Cisto broncogênico",
+              "explicacao": "Local típico.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d5-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Fumante de 65 anos com câncer de pulmão operável vai fazer lobectomia.",
-              "enunciado": "Quais exames estimam se ele tolera a cirurgia?",
+              "caso": "Ao abrir o dreno após pneumonectomia intrapericárdica, o paciente tem hipotensão grave e parada.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "VEF1 e DLCO previstos após a cirurgia",
-                "Só a radiografia de tórax",
-                "Só a gasometria arterial",
-                "Hemograma e radiografia, sem prova de função"
+                "Pneumotórax",
+                "TEP",
+                "Sangramento",
+                "Hérnia cardíaca"
               ],
-              "resposta": "VEF1 e DLCO previstos após a cirurgia",
-              "explicacao": "Valores previstos baixos indicam teste de esforço antes de decidir.",
-              "revisado": false
+              "resposta": "Hérnia cardíaca",
+              "explicacao": "O coração gira pelo defeito do pericárdio.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d5-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem pneumotórax espontâneo recorrente no mesmo lado.",
+              "caso": "Adenocarcinoma de 3,5 cm com linfonodo mediastinal aumentado e EBUS negativo.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Videotoracoscopia com retirada de bolhas e pleurodese",
-                "Dreno a cada episódio",
-                "Observação",
-                "Apenas dreno de tórax a cada novo episódio, sem cirurgia"
+                "Lobectomia",
+                "Segmentectomia",
+                "Terapia alvo",
+                "Mediastinoscopia"
               ],
-              "resposta": "Videotoracoscopia com retirada de bolhas e pleurodese",
-              "explicacao": "A cirurgia reduz muito a chance de novas recorrências.",
-              "revisado": false
+              "resposta": "Mediastinoscopia",
+              "explicacao": "EBUS negativo não exclui.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d5-l3-q5",
@@ -7948,72 +7964,66 @@
             {
               "id": "cir-d6-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem fístula enterocutânea de alto débito, mais de 500 mL por dia, no pós-operatório.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Após esofagectomia, quilotórax segue drenando 600 mL por dia.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Controlar sepse, líquidos, eletrólitos, nutrição e pele",
-                "Cirurgia imediata",
-                "Só antibiótico",
-                "Cirurgia imediata para fechar a fístula, sem preparo"
+                "Dieta com TCM",
+                "Parenteral",
+                "Embolização",
+                "Reparo cirúrgico do ducto torácico"
               ],
-              "resposta": "Controlar sepse, líquidos, eletrólitos, nutrição e pele",
-              "explicacao": "Muitas fístulas fecham com tratamento clínico; a cirurgia é feita após meses.",
-              "revisado": false
+              "resposta": "Reparo cirúrgico do ducto torácico",
+              "explicacao": "Débito alto persistente.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d6-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fator ao não fechamento de fístula.",
-              "pares": [
-                {
-                  "esquerda": "Obstrução distal",
-                  "direita": "Impede o fechamento"
-                },
-                {
-                  "esquerda": "Corpo estranho",
-                  "direita": "Mantém a fístula aberta"
-                },
-                {
-                  "esquerda": "Epitelização do trajeto",
-                  "direita": "Trajeto coberto por pele"
-                },
-                {
-                  "esquerda": "Desnutrição",
-                  "direita": "Reduz a cicatrização"
-                }
+              "tipo": "caso_clinico",
+              "caso": "No 6º dia após lobectomia, tosse com secreção sero-hemorrágica que piora deitado e hidropneumotórax.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Derrame neoplásico",
+                "Quilotórax",
+                "Sangramento",
+                "Fístula do coto brônquico"
               ],
-              "explicacao": "O mnemônico em inglês FRIENDS reúne esses fatores.",
-              "revisado": false
+              "resposta": "Fístula do coto brônquico",
+              "explicacao": "O líquido pleural sai pelo brônquio.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d6-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "No 7º dia após laparotomia, o paciente tosse e saem alças intestinais pela ferida.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "No 5º dia após bypass gástrico, suor frio, FC 110 e PCR de 170, estável.",
+              "enunciado": "Qual é a conduta mais adequada para o provável vazamento?",
               "opcoes": [
-                "Compressas úmidas e cirurgia",
-                "Empurrar as alças e fazer curativo",
-                "Observar e dar antibiótico",
-                "Empurrar as alças e colocar faixa apertada"
+                "Lavagem laparoscópica",
+                "Drenagem percutânea",
+                "Septotomia",
+                "Terapia endoscópica com pressão negativa"
               ],
-              "resposta": "Compressas úmidas e cirurgia",
-              "explicacao": "A evisceração é urgência cirúrgica.",
-              "revisado": false
+              "resposta": "Terapia endoscópica com pressão negativa",
+              "explicacao": "Fístula contida em paciente estável.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d6-l2-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente tem febre no 3º dia após cirurgia, com tosse, sem achados na ferida.",
-              "enunciado": "Qual é a causa mais provável?",
+              "caso": "Um mês após pneumonectomia, tosse com sangue que piora deitado e nível hidroaéreo persistente.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Atelectasia ou pneumonia",
-                "Fístula",
-                "Infecção da ferida",
-                "Trombose venosa profunda da perna"
+                "Empiema",
+                "Síndrome pós-pneumonectomia",
+                "Normal",
+                "Fístula do coto brônquico"
               ],
-              "resposta": "Atelectasia ou pneumonia",
-              "explicacao": "Fisioterapia respiratória e mobilização precoce previnem.",
-              "revisado": false
+              "resposta": "Fístula do coto brônquico",
+              "explicacao": "O líquido passa para o brônquio.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d6-l2-q5",
@@ -8502,17 +8512,18 @@
             {
               "id": "cir-d7-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Gestante Rh negativo com trauma abdominal.",
-              "enunciado": "Qual é o cuidado adicional?",
+              "caso": "Gestante de 30 semanas em FV refratária durante cirurgia; o cirurgião faz cesárea imediata.",
+              "enunciado": "Por quê?",
               "opcoes": [
-                "Imunoglobulina anti-D",
-                "Antibiótico",
-                "Cesárea",
-                "Cesárea de urgência em todas as gestantes"
+                "Melhorar a compressão",
+                "Reduzir a pós-carga",
+                "Facilitar a desfibrilação",
+                "Melhorar a pré-carga"
               ],
-              "resposta": "Imunoglobulina anti-D",
-              "explicacao": "Pode ter passagem de sangue fetal.",
-              "revisado": false
+              "resposta": "Melhorar a pré-carga",
+              "explicacao": "Tira a compressão da cava.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d7-l3-q4",
@@ -8625,17 +8636,18 @@
             {
               "id": "cir-d8-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Cirrótico Child A com carcinoma hepatocelular único de 3 cm e boa função.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Cirrótico compensado com dois nódulos LI-RADS 5 de 2,5 cm.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ressecção, ablação ou transplante",
-                "Só quimioterapia",
-                "Radioterapia só",
-                "Apenas quimioterapia sistêmica, sem tratamento local"
+                "Hepatectomia em 2 tempos",
+                "Laparoscopia",
+                "Biópsia",
+                "Transplante"
               ],
-              "resposta": "Ressecção, ablação ou transplante",
-              "explicacao": "Tratamento com intenção de cura.",
-              "revisado": false
+              "resposta": "Transplante",
+              "explicacao": "Dentro de Milão.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d8-l1-q3",
@@ -8801,33 +8813,33 @@
             },
             {
               "id": "cir-d8-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com coledocolitíase e vesícula com cálculos.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que o escudo de McElmoyle protege?",
               "opcoes": [
-                "CPRE para o cálculo e colecistectomia",
-                "Só colecistectomia",
-                "Só observar",
-                "Apenas colecistectomia, deixando o cálculo no colédoco"
+                "Ureter",
+                "Esôfago",
+                "Laríngeo recorrente",
+                "Via biliar principal"
               ],
-              "resposta": "CPRE para o cálculo e colecistectomia",
-              "explicacao": "Tratar os dois.",
-              "revisado": false
+              "resposta": "Via biliar principal",
+              "explicacao": "Deixar parte da vesícula na colecistectomia difícil.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d8-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Idoso muito grave com colecistite aguda e alto risco cirúrgico.",
-              "enunciado": "Qual é a opção?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que previne pancreatite após CPRE?",
               "opcoes": [
-                "Colecistostomia percutânea",
-                "Colecistectomia aberta já",
-                "Analgésico só",
-                "Colecistectomia aberta imediata, mesmo com risco muito alto"
+                "AINE venoso",
+                "Stent em médio risco",
+                "Contraste",
+                "Hidratação antes e depois"
               ],
-              "resposta": "Colecistostomia percutânea",
-              "explicacao": "Ponte para cirurgia futura.",
-              "revisado": false
+              "resposta": "Hidratação antes e depois",
+              "explicacao": "O AINE é retal.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d8-l2-q7",
@@ -8925,17 +8937,18 @@
             {
               "id": "cir-d8-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Paciente com úlceras pépticas múltiplas e recorrentes e diarreia.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Idoso com cistos na cabeça do pâncreas comunicando com ducto de 1,2 cm, diabetes recente e CA 19-9 alto.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Zollinger-Ellison (gastrinoma)",
-                "Úlcera comum",
-                "Doença de Crohn",
-                "Câncer gástrico difuso com linite plástica"
+                "CPRE",
+                "Ecoendoscopia",
+                "RM em 1 ano",
+                "Duodenopancreatectomia"
               ],
-              "resposta": "Zollinger-Ellison (gastrinoma)",
-              "explicacao": "Dosar gastrina.",
-              "revisado": false
+              "resposta": "Duodenopancreatectomia",
+              "explicacao": "IPMN de ducto principal com sinais de alto risco.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d8-l3-q6",
@@ -9070,18 +9083,18 @@
             },
             {
               "id": "cir-d9-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com volvo de sigmoide e sinais de necrose.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Para que serve o teste da semente de papoula?",
               "opcoes": [
-                "Cirurgia de urgência com ressecção",
-                "Colonoscopia",
-                "Observar",
-                "Colonoscopia para destorcer e liberar no dia seguinte"
+                "Fístula esôfago-traqueal",
+                "Lesão de ureter",
+                "Úlcera perfurada",
+                "Fístula da diverticulite"
               ],
-              "resposta": "Cirurgia de urgência com ressecção",
-              "explicacao": "Não descomprimir alça necrosada.",
-              "revisado": false
+              "resposta": "Fístula da diverticulite",
+              "explicacao": "As sementes aparecem na urina na fístula colovesical.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d9-l1-q7",
@@ -9124,17 +9137,18 @@
             {
               "id": "cir-d9-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com sangramento retal maciço e instável.",
-              "enunciado": "O que excluir primeiro?",
+              "caso": "Homem estável com sangramento hemorroidário, índice de choque 0,6.",
+              "enunciado": "Qual o escore e a conduta?",
               "opcoes": [
-                "Sangramento alto, por endoscopia",
-                "Hemorroida",
-                "Fissura",
-                "Hemorroida interna por anuscopia"
+                "7; internar",
+                "7; ambulatorial",
+                "0; internar",
+                "Zero; colonoscopia ambulatorial"
               ],
-              "resposta": "Sangramento alto, por endoscopia",
-              "explicacao": "10% a 15% vêm do trato alto.",
-              "revisado": false
+              "resposta": "Zero; colonoscopia ambulatorial",
+              "explicacao": "Baixo risco.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d9-l2-q3",
@@ -9284,32 +9298,33 @@
             {
               "id": "cir-d9-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente com apendicite há 5 dias e plastrão (massa) palpável sem peritonite difusa.",
+              "caso": "Jovem com diarreia, perda de peso e estenose do íleo terminal com dilatação acima e outros segmentos acometidos.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Antibiótico, drenar se abscesso e operar depois",
-                "Cirurgia imediata",
-                "Liberar",
-                "Cirurgia imediata com laparotomia ampla e ressecção do ceco"
+                "Infliximabe",
+                "Enterectomia e imatinibe",
+                "Ileostomia",
+                "Corticoide venoso e antibiótico"
               ],
-              "resposta": "Antibiótico, drenar se abscesso e operar depois",
-              "explicacao": "Abordagem conservadora inicial.",
-              "revisado": false
+              "resposta": "Corticoide venoso e antibiótico",
+              "explicacao": "Tratar a inflamação antes de operar.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d9-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Achado de tumor carcinoide de 1 cm na ponta do apêndice após apendicectomia.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "A anastomose de Kono-S foi criada para qual doença?",
               "opcoes": [
-                "A apendicectomia basta",
-                "Hemicolectomia direita",
-                "Quimioterapia",
-                "Hemicolectomia direita e quimioterapia"
+                "Retocolite",
+                "Meckel",
+                "Hirschsprung",
+                "Crohn"
               ],
-              "resposta": "A apendicectomia basta",
-              "explicacao": "Tumores maiores de 2 cm exigem hemicolectomia.",
-              "revisado": false
+              "resposta": "Crohn",
+              "explicacao": "Reduz a recidiva na anastomose.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d9-l3-q6",
@@ -9495,32 +9510,34 @@
             {
               "id": "cir-d10-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem de 70 anos com dor lombar súbita, massa pulsátil e pressão de 80/50.",
+              "caso": "Gestante de 30 semanas com aneurisma de artéria esplênica de 2,8 cm.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Centro cirúrgico sem atrasar com exames",
-                "Tomografia demorada",
-                "Analgésico",
-                "Tomografia completa e ecocardiograma antes de operar"
+                "Operar após o parto",
+                "Anticoagular",
+                "Só controlar PA",
+                "Embolização ou cirurgia"
               ],
-              "resposta": "Centro cirúrgico sem atrasar com exames",
-              "explicacao": "Aneurisma roto instável.",
-              "revisado": false
+              "resposta": "Embolização ou cirurgia",
+              "explicacao": "Na gestação o risco de ruptura é alto.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d10-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com aneurisma de aorta abdominal de 4,5 cm sem sintomas.",
+              "caso": "Uma semana após endoprótese por dissecção tipo B, dor intensa e dissecção retrógrada até a aorta ascendente.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ultrassom periódico e controlar fatores de risco",
-                "Cirurgia imediata",
-                "Liberar",
-                "Cirurgia imediata, aberta, mesmo sem sintomas"
+                "Expectante",
+                "Endoprótese na ascendente",
+                "Debranching",
+                "Cirurgia de urgência na ascendente e hemiarco"
               ],
-              "resposta": "Ultrassom periódico e controlar fatores de risco",
-              "explicacao": "Abaixo de 5,5 cm, observar.",
-              "revisado": false
+              "resposta": "Cirurgia de urgência na ascendente e hemiarco",
+              "explicacao": "Virou tipo A.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d10-l2-q3",
@@ -10021,17 +10038,18 @@
             {
               "id": "cir-d11-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com trauma de face grave, sem conseguir intubar nem ventilar.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Após traqueostomia percutânea, pneumotórax hipertensivo que não expande com dreno e grande escape de ar.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Cricotireoidostomia",
-                "Traqueostomia eletiva",
-                "Aguardar",
-                "Máscara facial com bolsa por mais tempo"
+                "Barotrauma",
+                "Dreno fino",
+                "Aspiração ruim",
+                "Perfuração da traqueia"
               ],
-              "resposta": "Cricotireoidostomia",
-              "explicacao": "Via aérea de emergência.",
-              "revisado": false
+              "resposta": "Perfuração da traqueia",
+              "explicacao": "Lesão de via aérea.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d11-l3-q2",
@@ -10190,17 +10208,18 @@
             {
               "id": "cir-d12-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Homem com gota tem cálculo renal radiotransparente na radiografia e pH urinário de 5,0.",
-              "enunciado": "Qual tratamento pode dissolver o cálculo?",
+              "caso": "Obesa com cálculo de 15 mm no polo inferior, 1.200 UH e pele-cálculo de 10 cm.",
+              "enunciado": "Qual cirurgia livra o cálculo de uma vez?",
               "opcoes": [
-                "Alcalinizar a urina com citrato",
-                "Acidificar a urina com vitamina C",
-                "Restringir cálcio da dieta",
-                "Antibiótico por 6 semanas e muita água"
+                "Ureteroscopia flexível",
+                "Robótica",
+                "Litotripsia extracorpórea",
+                "Mini-nefrolitotripsia percutânea"
               ],
-              "resposta": "Alcalinizar a urina com citrato",
-              "explicacao": "Cálculo de ácido úrico é radiotransparente e pode ser dissolvido alcalinizando a urina.",
-              "revisado": false
+              "resposta": "Mini-nefrolitotripsia percutânea",
+              "explicacao": "Cálculo duro e de polo inferior.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d12-l1-q4",
@@ -10305,57 +10324,50 @@
             {
               "id": "cir-d12-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Tumor de bexiga sem invasão muscular, de alto grau.",
-              "enunciado": "Qual é o tratamento após a ressecção?",
+              "caso": "Mulher com câncer de bexiga invadindo o músculo fez quimioterapia neoadjuvante e não há mais lesão visível.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "BCG intravesical",
-                "Cistectomia sempre",
-                "Quimioterapia sistêmica",
-                "Cistectomia radical em todos os casos"
+                "Seguimento",
+                "Nova RTU",
+                "Avelumabe",
+                "Cistectomia radical"
               ],
-              "resposta": "BCG intravesical",
-              "explicacao": "Reduz recorrência.",
-              "revisado": false
+              "resposta": "Cistectomia radical",
+              "explicacao": "Resposta completa não dispensa a cirurgia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d12-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Homem de 60 anos, fumante, tem sangue na urina, dor lombar e massa palpável no flanco.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Jovem com seminoma operado e massa retroperitoneal de 3 cm.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Câncer de rim",
-                "Cálculo renal simples",
-                "Pielonefrite aguda",
-                "Cisto renal simples"
+                "Linfadenectomia",
+                "Radioterapia",
+                "Biópsia",
+                "Quimioterapia"
               ],
-              "resposta": "Câncer de rim",
-              "explicacao": "Hematúria, dor lombar e massa formam a tríade clássica, rara de aparecer completa.",
-              "revisado": false
+              "resposta": "Quimioterapia",
+              "explicacao": "Doença estádio II com massa acima de 2 cm.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d12-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor ao marcador.",
-              "pares": [
-                {
-                  "esquerda": "Seminoma",
-                  "direita": "Pode ter beta-hCG, sem alfafetoproteína"
-                },
-                {
-                  "esquerda": "Tumor de saco vitelino",
-                  "direita": "Alfafetoproteína"
-                },
-                {
-                  "esquerda": "Coriocarcinoma",
-                  "direita": "Beta-hCG muito alto"
-                },
-                {
-                  "esquerda": "Câncer de próstata",
-                  "direita": "PSA"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem assintomático com massa renal de 7,5 cm que capta contraste, sem metástases.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Biópsia",
+                "Pembrolizumabe",
+                "Everolimus",
+                "Nefrectomia radical"
               ],
-              "explicacao": "Marcadores tumorais.",
-              "revisado": false
+              "resposta": "Nefrectomia radical",
+              "explicacao": "Tratamento curativo.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d12-l2-q5",
@@ -10435,17 +10447,18 @@
             {
               "id": "cir-d12-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com trauma abdominal e hematúria com lesão renal grau III, estável.",
+              "caso": "Homem com jato fraco após politrauma com sondagens, próstata normal e fluxo máximo de 7.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Tratamento não operatório",
-                "Nefrectomia",
-                "Liberar",
-                "Nefrectomia total de urgência"
+                "Alfabloqueador",
+                "Uretrotomia",
+                "RTU",
+                "Uretrocistografia"
               ],
-              "resposta": "Tratamento não operatório",
-              "explicacao": "A maioria não precisa de cirurgia.",
-              "revisado": false
+              "resposta": "Uretrocistografia",
+              "explicacao": "Suspeita de estenose de uretra.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d12-l3-q3",
@@ -10557,72 +10570,66 @@
             {
               "id": "cir-d13-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 6 semanas com vômitos em jato não biliosos, desidratado, com potássio baixo e alcalose.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Menino de 2 anos com dor súbita, choque, distensão e sinal de Joubert.",
+              "enunciado": "Após estabilizar, qual é a conduta?",
               "opcoes": [
-                "Corrigir os distúrbios e depois piloromiotomia",
-                "Cirurgia imediata",
-                "Antibiótico",
-                "Cirurgia imediata, antes de corrigir o potássio e a alcalose"
+                "TC",
+                "Reavaliar em 4 h",
+                "Laparotomia direta",
+                "Radiografia de abdome"
               ],
-              "resposta": "Corrigir os distúrbios e depois piloromiotomia",
-              "explicacao": "Não é emergência cirúrgica.",
-              "revisado": false
+              "resposta": "Radiografia de abdome",
+              "explicacao": "Confirmar pneumoperitônio.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d13-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança com invaginação há 3 dias, peritonite e ar livre.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Recém-nascido de 15 dias com vômitos não biliosos, desidratação e gônadas não palpáveis.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Cirurgia",
-                "Enema",
-                "Observar",
-                "Enema com ar sob pressão"
+                "Obstrução duodenal",
+                "Torção",
+                "Refluxo",
+                "Hiperplasia adrenal congênita"
               ],
-              "resposta": "Cirurgia",
-              "explicacao": "Contraindica redução por enema.",
-              "revisado": false
+              "resposta": "Hiperplasia adrenal congênita",
+              "explicacao": "Pode ser menina virilizada com perda de sal.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d13-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 7 anos tem invaginação intestinal no ultrassom.",
-              "enunciado": "O que se deve procurar nessa idade?",
+              "caso": "Menino operado por suspeita de apendicite tem massa envolvendo as alças.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Um ponto patológico, como linfoma",
-                "Nada, pois é sempre idiopática",
-                "Apenas infecção viral recente",
-                "Alergia alimentar como causa"
+                "Ressecar e anastomosar",
+                "Ressecar e estomizar",
+                "Fechar",
+                "Biopsiar a massa"
               ],
-              "resposta": "Um ponto patológico, como linfoma",
-              "explicacao": "Acima de 3 anos, pensar em causa orgânica, como divertículo de Meckel ou linfoma.",
-              "revisado": false
+              "resposta": "Biopsiar a massa",
+              "explicacao": "Pode ser linfoma.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d13-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado ao diagnóstico na criança.",
-              "pares": [
-                {
-                  "esquerda": "Dupla bolha",
-                  "direita": "Atresia duodenal"
-                },
-                {
-                  "esquerda": "Bolha única",
-                  "direita": "Estenose de piloro"
-                },
-                {
-                  "esquerda": "Grão de café",
-                  "direita": "Volvo"
-                },
-                {
-                  "esquerda": "Pneumatose",
-                  "direita": "Enterocolite necrosante"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino com volvo de intestino médio e alças que melhoram só em parte após distorcer.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Ressecar e anastomosar",
+                "Ileostomia",
+                "Ressecar e estomizar",
+                "Fechar e reabordar em 48 h"
               ],
-              "explicacao": "Imagens clássicas.",
-              "revisado": false
+              "resposta": "Fechar e reabordar em 48 h",
+              "explicacao": "Second look preserva intestino.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d13-l1-q5",
@@ -10702,57 +10709,50 @@
             {
               "id": "cir-d13-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com atresia de esôfago tem também ânus imperfurado e alteração de vértebras.",
-              "enunciado": "O que investigar?",
+              "caso": "Menina de 2 anos com secreção vaginal contínua desde 1 ano e meio e duplicidade pieloureteral com polo superior dilatado.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Outras anomalias da VACTERL",
-                "Nada mais, é síndrome única",
-                "Infecção congênita apenas",
-                "Doença genética dominante com causa única"
+                "Megaureter",
+                "Ureterocele",
+                "Refluxo",
+                "Ureter ectópico"
               ],
-              "resposta": "Outras anomalias da VACTERL",
-              "explicacao": "Na associação VACTERL, pesquisam-se coração, rins e membros.",
-              "revisado": false
+              "resposta": "Ureter ectópico",
+              "explicacao": "Desemboca fora da bexiga, abaixo do esfíncter.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d13-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com intestino exposto à direita do umbigo, sem membrana.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "Lactente operado de Hirschsprung (Soave) tem distensão, vômitos, febre e fezes explosivas ao toque.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Cobrir com plástico estéril, sonda e cirurgia",
-                "Deixar exposto",
-                "Liberar",
-                "Deixar o intestino exposto ao ar e esperar secar"
+                "Estenose da anastomose",
+                "Zona aganglionar residual",
+                "Aderências",
+                "Enterocolite"
               ],
-              "resposta": "Cobrir com plástico estéril, sonda e cirurgia",
-              "explicacao": "Gastrosquise.",
-              "revisado": false
+              "resposta": "Enterocolite",
+              "explicacao": "Complicação grave, mesmo após a cirurgia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d13-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada malformação à característica.",
-              "pares": [
-                {
-                  "esquerda": "Onfalocele",
-                  "direita": "Coberta por membrana, outras anomalias"
-                },
-                {
-                  "esquerda": "Gastrosquise",
-                  "direita": "Sem membrana, poucas anomalias"
-                },
-                {
-                  "esquerda": "Hérnia diafragmática",
-                  "direita": "Hipoplasia pulmonar"
-                },
-                {
-                  "esquerda": "Atresia anal",
-                  "direita": "Ausência de ânus normal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Lactente com atresia de vias biliares não operada.",
+              "enunciado": "Quando indicar transplante?",
+              "opcoes": [
+                "Após 2 sangramentos",
+                "Com ascite",
+                "Com piora da bilirrubina",
+                "Quando o crescimento desacelerar"
               ],
-              "explicacao": "Diferenças importantes.",
-              "revisado": false
+              "resposta": "Quando o crescimento desacelerar",
+              "explicacao": "Sinal de falência hepática na criança.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d13-l2-q5",
@@ -10969,57 +10969,50 @@
             {
               "id": "cir-d14-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com câncer gástrico e linfonodo supraclavicular esquerdo aumentado.",
-              "enunciado": "Qual é o nome do sinal?",
+              "caso": "Mulher com GIST gástrico de 6 cm, c-KIT positivo e poucas mitoses, sem metástases.",
+              "enunciado": "Qual é o tratamento?",
               "opcoes": [
-                "Linfonodo de Virchow",
-                "Irmã Maria José",
-                "Blumer",
-                "Krukenberg ovariano"
+                "Gastrectomia com linfadenectomia",
+                "Gastrectomia sem linfadenectomia",
+                "Imatinibe antes",
+                "Ressecção em cunha"
               ],
-              "resposta": "Linfonodo de Virchow",
-              "explicacao": "Indica metástase.",
-              "revisado": false
+              "resposta": "Ressecção em cunha",
+              "explicacao": "GIST não exige linfadenectomia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026 R+"
             },
             {
               "id": "cir-d14-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 40 anos com massas nos dois ovários; a biópsia mostra células em anel de sinete.",
-              "enunciado": "Qual é a origem mais provável?",
+              "caso": "Mulher com adenocarcinoma gástrico difuso de 2,5 cm invadindo a submucosa, sem linfonodos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Metástase de câncer gástrico",
-                "Tumor primário do ovário",
-                "Câncer de rim",
-                "Tumor de fígado com metástase"
+                "Dissecção endoscópica",
+                "Gastrectomia parcial",
+                "FLOT",
+                "Gastrectomia total com linfadenectomia"
               ],
-              "resposta": "Metástase de câncer gástrico",
-              "explicacao": "O tumor de Krukenberg é metástase, geralmente gástrica, para o ovário.",
-              "revisado": false
+              "resposta": "Gastrectomia total com linfadenectomia",
+              "explicacao": "Tipo difuso não serve para endoscopia.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d14-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sinal à metástase do câncer gástrico.",
-              "pares": [
-                {
-                  "esquerda": "Linfonodo de Virchow",
-                  "direita": "Supraclavicular esquerdo"
-                },
-                {
-                  "esquerda": "Nódulo da Irmã Maria José",
-                  "direita": "Umbigo"
-                },
-                {
-                  "esquerda": "Prateleira de Blumer",
-                  "direita": "Fundo de saco ao toque retal"
-                },
-                {
-                  "esquerda": "Tumor de Krukenberg",
-                  "direita": "Ovário"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem com câncer gástrico em anel de sinete e linfonodos perigástricos e no tronco celíaco.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Gastrectomia subtotal",
+                "Gastrectomia total",
+                "Bipartição",
+                "Quimioterapia neoadjuvante"
               ],
-              "explicacao": "Sinais de doença avançada.",
-              "revisado": false
+              "resposta": "Quimioterapia neoadjuvante",
+              "explicacao": "Doença localmente avançada.",
+              "revisado": false,
+              "fonte": "Unifesp 2025 R+"
             },
             {
               "id": "cir-d14-l1-q5",
