@@ -111,17 +111,18 @@
             {
               "id": "cm-u1-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 32 anos com hipertensão de difícil controle apesar de três drogas. Exames mostram hipocalemia espontânea e alcalose metabólica.",
-              "enunciado": "Qual é a hipótese mais provável?",
+              "caso": "Diabética com TFG 28 e proteinúria de 1,9 g.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Hiperaldosteronismo primário",
-                "Feocromocitoma",
-                "Síndrome de Cushing",
-                "Hipotireoidismo com hipertensão diastólica"
+                "Evitar IECA",
+                "Nada",
+                "Bloqueador de cálcio",
+                "IECA ou BRA"
               ],
-              "resposta": "Hiperaldosteronismo primário",
-              "explicacao": "É a causa endócrina mais comum de hipertensão secundária. O rastreio é feito pela relação aldosterona/renina.",
-              "revisado": false
+              "resposta": "IECA ou BRA",
+              "explicacao": "Reduz proteinúria.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u1-l1-q8",
@@ -493,25 +494,34 @@
             {
               "id": "cm-u2-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com insuficiência cardíaca chega com falta de ar intensa, saturação de 85%, PA 180/110 mmHg e estertores até o ápice dos pulmões.",
-              "enunciado": "Qual é a conduta inicial?",
+              "caso": "IC com hipotensão, má perfusão, B3 e congestão.",
+              "enunciado": "Perfil e conduta?",
               "opcoes": [
-                "O2 ou VNI, nitrato e furosemida venosa",
-                "Soro em grande volume",
-                "Betabloqueador em dose alta",
-                "Soro em grande volume e betabloqueador venoso em dose alta"
+                "C; captopril",
+                "B; captopril",
+                "B; nitroprussiato",
+                "C; furosemida e dobutamina"
               ],
-              "resposta": "O2 ou VNI, nitrato e furosemida venosa",
-              "explicacao": "É edema agudo de pulmão hipertensivo. O nitrato reduz a pré e a pós-carga rapidamente.",
-              "revisado": false
+              "resposta": "C; furosemida e dobutamina",
+              "explicacao": "Frio e úmido.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u2-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na insuficiência cardíaca descompensada com pressão baixa e má perfusão, podem ser necessários inotrópicos como a dobutamina.",
-              "resposta": true,
-              "explicacao": "É o perfil frio e úmido, de pior prognóstico.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Choque cardiogênico pós-IAM com PA 95/60.",
+              "enunciado": "Inotrópico?",
+              "opcoes": [
+                "Dopamina",
+                "Noradrenalina",
+                "Adrenalina",
+                "Dobutamina"
+              ],
+              "resposta": "Dobutamina",
+              "explicacao": "PA ainda permite.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u2-l1-q8",
@@ -1646,17 +1656,19 @@
             },
             {
               "id": "cm-u19-l5-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Como se usa a adrenalina na parada?",
+              "tipo": "caso_clinico",
+              "caso": "RCP com ETCO2 de 8 e diastólica de 15.",
+              "enunciado": "O que fazer?",
               "opcoes": [
-                "1 mg IV a cada 3 a 5 minutos",
-                "10 mg em dose única no início",
-                "1 mg a cada 30 minutos",
-                "0,1 mg somente ao final"
+                "Ventilar mais",
+                "Comprimir menos",
+                "Mais adrenalina",
+                "Melhorar profundidade e frequência"
               ],
-              "resposta": "1 mg IV a cada 3 a 5 minutos",
-              "explicacao": "Nos não chocáveis, o mais cedo possível.",
-              "revisado": false
+              "resposta": "Melhorar profundidade e frequência",
+              "explicacao": "Metas: ETCO2 > 10, PAD > 25.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u19-l5-q4",
@@ -2248,18 +2260,18 @@
           "questoes": [
             {
               "id": "cm-u20-l5-q1",
-              "tipo": "caso_clinico",
-              "caso": "Hipertenso de 60 anos tem dor torácica súbita, lancinante, que vai para as costas. Pulsos diferentes entre os braços.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Alto, luxação de cristalino e aorta dilatada, mãe e irmã com achados. Herança?",
               "opcoes": [
-                "Dissecção aguda de aorta",
-                "Infarto agudo do miocárdio",
-                "Tromboembolismo pulmonar",
-                "Pericardite aguda"
+                "Recessiva",
+                "Mitocondrial",
+                "Ligada ao X",
+                "Autossômica dominante"
               ],
-              "resposta": "Dissecção aguda de aorta",
-              "explicacao": "A assimetria de pulsos é um sinal forte.",
-              "revisado": false
+              "resposta": "Autossômica dominante",
+              "explicacao": "Marfan.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u20-l5-q2",
@@ -3941,17 +3953,19 @@
             },
             {
               "id": "cm-u22-l1-q4",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a gasometria típica no TEP?",
+              "tipo": "caso_clinico",
+              "caso": "Pós-operatória com síncope, hipotensão e suspeita de TEP.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Hipoxemia com alcalose respiratória",
-                "Hipercapnia com acidose respiratória grave",
-                "Acidose metabólica com ânion gap alto",
-                "PaO2 alta com bicarbonato elevado"
+                "Angio-TC e heparina",
+                "Dímero-D",
+                "HBPM plena",
+                "Ecocardiograma e trombólise"
               ],
-              "resposta": "Hipoxemia com alcalose respiratória",
-              "explicacao": "Hiperventilação baixa o CO2.",
-              "revisado": false
+              "resposta": "Ecocardiograma e trombólise",
+              "explicacao": "TEP de alto risco.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u22-l1-q5",
@@ -5472,28 +5486,19 @@
             },
             {
               "id": "cm-u18-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor ao quadro.",
-              "pares": [
-                {
-                  "esquerda": "Prolactinoma",
-                  "direita": "Leite nas mamas e amenorreia"
-                },
-                {
-                  "esquerda": "Somatotropinoma",
-                  "direita": "Acromegalia"
-                },
-                {
-                  "esquerda": "Corticotropinoma",
-                  "direita": "Doença de Cushing"
-                },
-                {
-                  "esquerda": "Macroadenoma não funcionante",
-                  "direita": "Falta de hormônios"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Macroadenoma com T4 baixo, cortisol limítrofe, IGF-1 baixo e prolactina 80.",
+              "enunciado": "Interpretação?",
+              "opcoes": [
+                "Exclui hipotireoidismo",
+                "Precisa GH basal",
+                "Prolactina descarta",
+                "Pan-hipopituitarismo"
               ],
-              "explicacao": "Hormônio produzido define o quadro.",
-              "revisado": false
+              "resposta": "Pan-hipopituitarismo",
+              "explicacao": "Vários eixos.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u18-l1-q5",
@@ -6800,11 +6805,19 @@
             },
             {
               "id": "cm-u12-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A malária por Plasmodium vivax é a forma mais grave e a principal causa de malária cerebral.",
-              "resposta": false,
-              "explicacao": "Falso. A mais grave é a por Plasmodium falciparum, que causa malária cerebral.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Hanseníase em PQT com nódulos dolorosos, febre e neurite.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Suspender PQT",
+                "Claritromicina",
+                "Metotrexato",
+                "Manter PQT, prednisona e talidomida"
+              ],
+              "resposta": "Manter PQT, prednisona e talidomida",
+              "explicacao": "Eritema nodoso hansênico.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u12-l2-q8",
@@ -7063,11 +7076,18 @@
             },
             {
               "id": "cm-u7-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A artrite reumatoide poupa a coluna cervical, então não há risco na intubação.",
-              "resposta": false,
-              "explicacao": "Falso. A articulação atlantoaxial pode ficar instável, o que exige cuidado na intubação.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Poliartrite de mãos e punhos há 6 meses. Exame de melhor VPP?",
+              "opcoes": [
+                "FR",
+                "FAN",
+                "PCR",
+                "Anti-CCP"
+              ],
+              "resposta": "Anti-CCP",
+              "explicacao": "Alta especificidade.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u7-l1-q8",
@@ -7848,25 +7868,35 @@
             },
             {
               "id": "cm-u9-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O escore ABCD2 estima o risco de sangramento ao usar trombolítico no AVC.",
-              "resposta": false,
-              "explicacao": "Falso. O ABCD2 estima o risco de AVC após ataque isquêmico transitório.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Hematoma intracerebral de 40 mL sem herniação, em 3 h.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Manitol",
+                "Só cabeceira",
+                "Craniotomia",
+                "Controle intensivo da PA e da temperatura"
+              ],
+              "resposta": "Controle intensivo da PA e da temperatura",
+              "explicacao": "Evita expansão.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u9-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ das carótidas acima de 70% em paciente com sintomas tem indicação de cirurgia.",
+              "tipo": "caso_clinico",
+              "caso": "Cefaleia súbita, rebaixamento e hemorragia sub-hialoide no fundo de olho.",
+              "enunciado": "Diagnóstico?",
               "opcoes": [
-                "estenose",
-                "dilatação",
-                "dissecção",
-                "trombose"
+                "Status",
+                "Tumor",
+                "Coma hiperglicêmico",
+                "Hemorragia subaracnóidea"
               ],
-              "resposta": "estenose",
-              "explicacao": "Endarterectomia.",
-              "revisado": false
+              "resposta": "Hemorragia subaracnóidea",
+              "explicacao": "Síndrome de Terson.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             }
           ]
         },
@@ -9651,28 +9681,19 @@
             },
             {
               "id": "cm-u17-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada letra do ABCDE à descrição.",
-              "pares": [
-                {
-                  "esquerda": "A",
-                  "direita": "Assimetria"
-                },
-                {
-                  "esquerda": "B",
-                  "direita": "Bordas irregulares"
-                },
-                {
-                  "esquerda": "C",
-                  "direita": "Várias cores"
-                },
-                {
-                  "esquerda": "D",
-                  "direita": "Diâmetro maior que 6 mm"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Carbamazepina com bolhas, mucosas e 10% de pele descolada.",
+              "enunciado": "Diagnóstico?",
+              "opcoes": [
+                "Pênfigo",
+                "Eritema minor",
+                "NET",
+                "Stevens-Johnson"
               ],
-              "explicacao": "E é evolução.",
-              "revisado": false
+              "resposta": "Stevens-Johnson",
+              "explicacao": "Menos de 10%.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-u17-l3-q5",
@@ -9838,17 +9859,18 @@
             {
               "id": "cm-d1-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Paciente diabético, com doença das três artérias coronárias e fração de ejeção de 35%.",
-              "enunciado": "Qual é o tratamento de revascularização preferido?",
+              "caso": "IAM inferior que após 48 h tem sopro mitral novo e choque.",
+              "enunciado": "Explicação?",
               "opcoes": [
-                "Cirurgia de revascularização miocárdica",
-                "Angioplastia de uma artéria",
-                "Só clínico",
-                "Apenas tratamento clínico com remédios, sem nenhuma revascularização"
+                "Parede livre",
+                "CIV",
+                "Aórtica",
+                "Rotura do papilar posterior"
               ],
-              "resposta": "Cirurgia de revascularização miocárdica",
-              "explicacao": "Em diabéticos multiarteriais, a cirurgia reduz mortalidade em relação à angioplastia.",
-              "revisado": false
+              "resposta": "Rotura do papilar posterior",
+              "explicacao": "Insuficiência mitral aguda.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "cm-d1-l1-q8",

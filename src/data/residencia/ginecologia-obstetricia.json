@@ -3008,17 +3008,19 @@
             },
             {
               "id": "go-u8-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento da anemia fetal grave antes de 34 semanas?",
+              "tipo": "caso_clinico",
+              "caso": "Rh negativo com Coombs subindo de 1:32 para 1:128 com 21 semanas.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Transfusão intrauterina",
-                "Parto imediato sempre",
-                "Corticoide",
-                "Parto imediato em todos os casos, mesmo muito prematuro"
+                "Repetir",
+                "Cordocentese já",
+                "Transfusão já",
+                "Doppler da ACM"
               ],
-              "resposta": "Transfusão intrauterina",
-              "explicacao": "Feita por cordocentese.",
-              "revisado": false
+              "resposta": "Doppler da ACM",
+              "explicacao": "Acima do título crítico.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "go-u8-l3-q6",
@@ -7843,17 +7845,18 @@
             {
               "id": "go-d7-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Após cesárea, paciente tem febre, útero doloroso e lóquios fétidos no 3º dia.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Exausta no expulsivo em OP +3 com CTG normal.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Clindamicina e gentamicina",
-                "Amoxicilina oral",
-                "Antifúngico",
-                "Amoxicilina oral e antitérmico em casa"
+                "Esperar",
+                "Cesárea",
+                "Tocólise",
+                "Vácuo ou fórcipe"
               ],
-              "resposta": "Clindamicina e gentamicina",
-              "explicacao": "Endometrite pós-parto.",
-              "revisado": false
+              "resposta": "Vácuo ou fórcipe",
+              "explicacao": "Condições de aplicação.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             }
           ]
         },
@@ -10617,28 +10620,19 @@
             },
             {
               "id": "go-d14-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à mola.",
-              "pares": [
-                {
-                  "esquerda": "Mola completa",
-                  "direita": "Cariótipo 46,XX paterno e sem feto"
-                },
-                {
-                  "esquerda": "Mola parcial",
-                  "direita": "Triploide com feto"
-                },
-                {
-                  "esquerda": "Coriocarcinoma",
-                  "direita": "Metástase para pulmão"
-                },
-                {
-                  "esquerda": "Tumor do sítio placentário",
-                  "direita": "Beta-hCG baixo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mola completa com hCG subindo e nódulo arroxeado na vagina.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Biopsiar",
+                "Nova curetagem",
+                "Esperar",
+                "Estadiar e quimioterapia"
               ],
-              "explicacao": "Diferenças.",
-              "revisado": false
+              "resposta": "Estadiar e quimioterapia",
+              "explicacao": "Metástase vaginal: não biopsiar.",
+              "revisado": false,
+              "fonte": "Unifesp 2025"
             },
             {
               "id": "go-d14-l3-q5",
