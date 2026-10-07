@@ -1115,18 +1115,18 @@
             },
             {
               "id": "go-u3-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher teve 3 abortos espontâneos seguidos no primeiro trimestre.",
-              "enunciado": "O que investigar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que malformação se trata por histeroscopia cirúrgica?",
               "opcoes": [
-                "Antifosfolípide, cariótipo do casal e útero",
-                "Só repouso na próxima",
-                "Cerclagem preventiva",
-                "Apenas repouso absoluto na próxima gestação, sem exames"
+                "Didelfo",
+                "Bicorno",
+                "Arqueado",
+                "Septado"
               ],
-              "resposta": "Antifosfolípide, cariótipo do casal e útero",
-              "explicacao": "É o abortamento de repetição, que tem várias causas tratáveis.",
-              "revisado": false
+              "resposta": "Septado",
+              "explicacao": "Ressecar o septo.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             }
           ]
         }
@@ -4057,25 +4057,34 @@
             },
             {
               "id": "go-u11-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Os análogos de GnRH eliminam o mioma de forma definitiva.",
-              "resposta": false,
-              "explicacao": "Falso. Reduzem o mioma só temporariamente; são usados antes da cirurgia.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Miomectomia histeroscópica com monopolar; a paciente tosse e dessatura.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Anticoagular",
+                "Volume",
+                "VPP",
+                "Diurético"
+              ],
+              "resposta": "Diurético",
+              "explicacao": "Sobrecarga de glicina.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-u11-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ das artérias uterinas é alternativa para miomas em quem não quer cirurgia.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na miomectomia laparoscópica, como abrir o miométrio?",
               "opcoes": [
-                "embolização",
-                "ligadura",
-                "dilatação",
-                "punção com agulha"
+                "Longitudinal coagulação",
+                "Transversa coagulação",
+                "Longitudinal corte",
+                "Transversa com corte puro"
               ],
-              "resposta": "embolização",
-              "explicacao": "Feita por radiologia.",
-              "revisado": false
+              "resposta": "Transversa com corte puro",
+              "explicacao": "Menos dano.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             }
           ]
         },
@@ -5048,25 +5057,33 @@
             {
               "id": "go-u14-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 60 anos com inchaço abdominal, ascite e massa ovariana complexa.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Massas sólido-císticas nos dois ovários, pouca ascite pélvica, sem outros achados.",
+              "enunciado": "Estadiamento clínico?",
               "opcoes": [
-                "Câncer de ovário",
-                "Mioma",
-                "Cisto simples",
-                "Cirrose com ascite"
+                "IIA",
+                "IIIB",
+                "IVA",
+                "IB"
               ],
-              "resposta": "Câncer de ovário",
-              "explicacao": "CA-125 alto.",
-              "revisado": false
+              "resposta": "IB",
+              "explicacao": "Dois ovários.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-u14-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A anticoncepção hormonal aumenta o risco de câncer de ovário.",
-              "resposta": false,
-              "explicacao": "Falso. Reduz o risco, porque diminui o número de ovulações.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "No câncer de ovário, para que serve o CA-125?",
+              "opcoes": [
+                "Diagnóstico",
+                "Estadiamento",
+                "Tipo histológico",
+                "Seguimento do tratamento"
+              ],
+              "resposta": "Seguimento do tratamento",
+              "explicacao": "Monitorar resposta.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-u14-l1-q8",
@@ -5249,31 +5266,34 @@
             },
             {
               "id": "go-u14-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é a área do colo onde surgem as lesões, entre os dois tipos de epitélio.",
+              "tipo": "multipla_escolha",
+              "enunciado": "No câncer de colo inicial, o que mais prediz linfonodo comprometido?",
               "opcoes": [
-                "zona de transformação",
-                "junção uterina",
-                "cavidade",
-                "istmo uterino interno"
+                "Tamanho",
+                "HPV",
+                "Canal cervical",
+                "Invasão linfovascular"
               ],
-              "resposta": "zona de transformação",
-              "explicacao": "Alvo da coleta.",
-              "revisado": false
+              "resposta": "Invasão linfovascular",
+              "explicacao": "Fator de risco.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-u14-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o teste de rastreio que está substituindo o preventivo?",
+              "tipo": "caso_clinico",
+              "caso": "Adenocarcinoma de colo suspeito de microinvasão na biópsia.",
+              "enunciado": "Próximo passo?",
               "opcoes": [
-                "Teste de DNA-HPV",
-                "Ultrassom",
-                "Exame de sangue",
-                "Exame de sangue com marcador tumoral"
+                "Histerectomia intrafascial",
+                "Extrafascial",
+                "Radical",
+                "Conização"
               ],
-              "resposta": "Teste de DNA-HPV",
-              "explicacao": "Mais sensível.",
-              "revisado": false
+              "resposta": "Conização",
+              "explicacao": "Estadiar a invasão.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-u14-l3-q6",
@@ -7198,47 +7218,48 @@
             {
               "id": "go-d5-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Jovem tem massa no ovário com cabelo, dentes e gordura na imagem.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher obesa na pós-menopausa com sangramento e útero aumentado.",
+              "enunciado": "Tipo histológico mais provável?",
               "opcoes": [
-                "Teratoma maduro (cisto dermoide)",
-                "Câncer epitelial",
-                "Endometrioma",
-                "Cisto simples funcional que some sozinho"
+                "Carcinossarcoma",
+                "Seroso",
+                "Células claras",
+                "Endometrioide"
               ],
-              "resposta": "Teratoma maduro (cisto dermoide)",
-              "explicacao": "É o tumor de ovário mais comum em jovens e pode torcer.",
-              "revisado": false
+              "resposta": "Endometrioide",
+              "explicacao": "Tipo 1.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-d5-l3-q7",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 42 anos com câncer de endométrio tem pai e irmão com câncer de cólon antes dos 50 anos.",
-              "enunciado": "Qual síndrome suspeitar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No câncer de endométrio, onde fica o linfonodo sentinela mais provável?",
               "opcoes": [
-                "Síndrome de Lynch",
-                "Síndrome de Turner",
-                "Síndrome de Meigs",
-                "Síndrome de Down"
+                "Paramétrio",
+                "Pré-aórtico",
+                "Para-aórtico",
+                "Pélvico"
               ],
-              "resposta": "Síndrome de Lynch",
-              "explicacao": "Lynch aumenta o risco de câncer de cólon e endométrio, por falha nos genes de reparo do DNA.",
-              "revisado": false
+              "resposta": "Pélvico",
+              "explicacao": "Drenagem principal.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-d5-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 50 anos tem massa de ovário benigna, ascite e derrame pleural.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Que gene se associa ao carcinoma endometrioide?",
               "opcoes": [
-                "Síndrome de Meigs",
-                "Câncer de ovário avançado",
-                "Tuberculose",
-                "Cirrose"
+                "p53",
+                "KRAS",
+                "RB",
+                "PTEN"
               ],
-              "resposta": "Síndrome de Meigs",
-              "explicacao": "A ascite e o derrame desaparecem após a retirada do tumor.",
-              "revisado": false
+              "resposta": "PTEN",
+              "explicacao": "Tipo 1.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             }
           ]
         }
@@ -10255,18 +10276,18 @@
             },
             {
               "id": "go-d13-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente de 16 anos com mamas normais, sem pelos pubianos, vagina curta e cariótipo 46,XY.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual o papel da leptina na puberdade?",
               "opcoes": [
-                "Insensibilidade completa aos androgênios",
-                "Turner",
-                "Rokitansky",
-                "Síndrome de Turner com cariótipo 45,X"
+                "Bloqueia LH",
+                "Bloqueia adrenal",
+                "Aumenta amplitude",
+                "Acelera os pulsos de GnRH"
               ],
-              "resposta": "Insensibilidade completa aos androgênios",
-              "explicacao": "Retirar as gônadas após a puberdade.",
-              "revisado": false
+              "resposta": "Acelera os pulsos de GnRH",
+              "explicacao": "Sinal de reserva energética.",
+              "revisado": false,
+              "fonte": "USP 2024 R+"
             },
             {
               "id": "go-d13-l3-q6",
