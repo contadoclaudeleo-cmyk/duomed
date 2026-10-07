@@ -31,47 +31,34 @@
             },
             {
               "id": "cir-u1-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada letra do ABCDE ao que é avaliado.",
-              "pares": [
-                {
-                  "esquerda": "A",
-                  "direita": "Via aérea com proteção da coluna cervical"
-                },
-                {
-                  "esquerda": "B",
-                  "direita": "Respiração e ventilação"
-                },
-                {
-                  "esquerda": "C",
-                  "direita": "Circulação e controle de hemorragia"
-                },
-                {
-                  "esquerda": "D",
-                  "direita": "Avaliação neurológica"
-                },
-                {
-                  "esquerda": "E",
-                  "direita": "Exposição e prevenção de hipotermia"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 kg esfaqueado, PA 90 x 60, FC 130, perda estimada de 1.600 mL.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Não transfundir pela Hb de 11",
+                "Classe II; transfundir sempre",
+                "Classe IV; O negativo maciço",
+                "Classe III; provável transfusão e reservar sangue"
               ],
-              "explicacao": "Cada problema encontrado é tratado na hora, antes de seguir para a próxima letra.",
-              "revisado": false
+              "resposta": "Classe III; provável transfusão e reservar sangue",
+              "explicacao": "A Hb inicial ainda não caiu.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u1-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Motociclista após colisão chega com dispneia intensa, desvio da traqueia para a esquerda, murmúrio vesicular abolido e hipertimpanismo à direita, hipotensão e turgência jugular.",
-              "enunciado": "Qual é a conduta imediata?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre radiografias na sala de trauma, o que é correto?",
               "opcoes": [
-                "Descompressão torácica imediata à direita",
-                "Radiografia de tórax antes de qualquer conduta",
-                "Pericardiocentese",
-                "Intubação e ventilação com pressão positiva"
+                "Raio X de pelve em todos",
+                "Raio X de tórax deitado só no trauma fechado",
+                "Raio X não estuda projétil",
+                "No trauma penetrante instável, raio X de abdome não é necessário"
               ],
-              "resposta": "Descompressão torácica imediata à direita",
-              "explicacao": "É um pneumotórax hipertensivo, diagnóstico clínico. Faz-se punção ou toracostomia digital e depois drenagem torácica em selo d'água.",
-              "revisado": false
+              "resposta": "No trauma penetrante instável, raio X de abdome não é necessário",
+              "explicacao": "Vai direto para a cirurgia.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u1-l1-q4",
@@ -178,39 +165,48 @@
             {
               "id": "cir-u1-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 45 anos, obesa, com dor no hipocôndrio direito há 24 horas, febre e sinal de Murphy positivo. O hemograma mostra leucocitose.",
-              "enunciado": "Qual é o exame de imagem inicial de escolha?",
+              "caso": "Obeso de 178 kg com febre, taquicardia, dor epigástrica e soluços; não cabe na TC.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ultrassonografia de abdome",
-                "Tomografia de abdome",
-                "Colangiopancreatografia endoscópica (CPRE)",
-                "Radiografia simples de abdome"
+                "Antibiótico",
+                "Ultrassom seriado",
+                "Mais radiografias",
+                "Laparoscopia diagnóstica"
               ],
-              "resposta": "Ultrassonografia de abdome",
-              "explicacao": "A ultrassonografia mostra cálculos, espessamento da parede e líquido pericolecístico. O tratamento é a colecistectomia, de preferência precoce.",
-              "revisado": false
+              "resposta": "Laparoscopia diagnóstica",
+              "explicacao": "O exame físico é pouco confiável no obeso.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u1-l2-q4",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A tríade de Charcot da colangite aguda é febre, icterícia e dor no hipocôndrio direito.",
-              "resposta": true,
-              "explicacao": "Somando hipotensão e confusão mental, forma-se a pêntade de Reynolds, que indica colangite grave e drenagem biliar urgente.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Na incisão de McBurney, que músculos se abrem, do mais superficial ao mais profundo?",
+              "opcoes": [
+                "Transverso, oblíquos",
+                "Oblíquo externo, reto e transverso",
+                "Reto e transverso",
+                "Oblíquo externo, oblíquo interno e transverso"
+              ],
+              "resposta": "Oblíquo externo, oblíquo interno e transverso",
+              "explicacao": "Separa as fibras sem cortar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u1-l2-q5",
-              "tipo": "completar_lacuna",
-              "enunciado": "As causas mais comuns de pancreatite aguda são a litíase biliar e o ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual técnica de apendicectomia tem menos complicações, com a mesma gravidade?",
               "opcoes": [
-                "álcool",
-                "tabagismo",
-                "trauma",
-                "uso de corticoide"
+                "McBurney com ligadura",
+                "Sepultar o coto",
+                "Laparoscopia com grampeador",
+                "São equivalentes"
               ],
-              "resposta": "álcool",
-              "explicacao": "Juntas, as duas respondem pela maioria dos casos. Hipertrigliceridemia e pós-CPRE são outras causas importantes.",
-              "revisado": false
+              "resposta": "São equivalentes",
+              "explicacao": "A técnica do coto não muda o desfecho.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u1-l2-q6",
@@ -408,25 +404,34 @@
             },
             {
               "id": "cir-u2-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual volume de sangue drenado logo após colocar o dreno indica toracotomia no hemotórax?",
+              "tipo": "caso_clinico",
+              "caso": "Jovem esfaqueado no tórax tem ferida de 3 cm que borbulha ar, numa UBS sem cirurgião.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "1.500 mL ou mais",
-                "200 mL",
-                "500 mL",
-                "Qualquer volume acima de 50 mL"
+                "Gaze oclusiva",
+                "Explorar com o dedo",
+                "Dreno improvisado",
+                "Curativo de três pontas e transferir"
               ],
-              "resposta": "1.500 mL ou mais",
-              "explicacao": "Drenagem contínua acima de 200 mL por hora por 2 a 4 horas também indica cirurgia.",
-              "revisado": false
+              "resposta": "Curativo de três pontas e transferir",
+              "explicacao": "Pneumotórax aberto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O tórax instável acontece quando duas ou mais costelas seguidas fraturam em dois ou mais pontos, gerando movimento paradoxal.",
-              "resposta": true,
-              "explicacao": "O maior problema costuma ser a contusão do pulmão que está embaixo.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a lesão do diafragma no trauma, o que é correto?",
+              "opcoes": [
+                "É mais comum à direita",
+                "A TC é ótima para as pequenas",
+                "Só suturar à esquerda",
+                "Raio X após passar sonda nasogástrica pode mostrar o estômago no tórax"
+              ],
+              "resposta": "Raio X após passar sonda nasogástrica pode mostrar o estômago no tórax",
+              "explicacao": "O lado esquerdo é mais afetado.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u2-l1-q4",
@@ -517,79 +522,81 @@
             },
             {
               "id": "cir-u2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à conduta no trauma abdominal.",
-              "pares": [
-                {
-                  "esquerda": "Instável com FAST positivo",
-                  "direita": "Laparotomia de urgência"
-                },
-                {
-                  "esquerda": "Estável com trauma fechado",
-                  "direita": "Tomografia com contraste"
-                },
-                {
-                  "esquerda": "Lesão isolada de baço em paciente estável",
-                  "direita": "Tratamento sem cirurgia, com observação"
-                },
-                {
-                  "esquerda": "Peritonite após ferimento por arma de fogo",
-                  "direita": "Exploração cirúrgica"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Motorista alcoolizado, hipotenso, com abdome distendido e sem peritonite.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Pelve estável exclui fratura",
+                "Exame basta",
+                "Adiar até ficar sóbrio",
+                "Alta chance de sangue no abdome ou pelve; FAST ou lavado"
               ],
-              "explicacao": "A estabilidade do paciente é o que mais orienta a decisão.",
-              "revisado": false
+              "resposta": "Alta chance de sangue no abdome ou pelve; FAST ou lavado",
+              "explicacao": "Choque sem causa aparente.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O baço está entre os órgãos mais lesados no trauma abdominal fechado.",
-              "resposta": true,
-              "explicacao": "O fígado também é muito atingido. Ambos sangram bastante.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Ciclista bateu no guidão; TC com líquido livre sem lesão de fígado ou baço.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Repetir TC",
+                "FAST",
+                "Observar",
+                "Laparotomia"
+              ],
+              "resposta": "Laparotomia",
+              "explicacao": "Suspeita de lesão de víscera oca.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Dor referida no ombro ___ (sinal de Kehr) sugere ruptura do baço.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher estável esfaqueada no flanco posterior, observada 24 h com exames seriados normais.",
+              "enunciado": "O manejo foi adequado?",
               "opcoes": [
-                "esquerdo",
-                "direito",
-                "lombar",
-                "inguinal"
+                "Não; explorar sempre",
+                "Não; TC obrigatória",
+                "Não; alta em 6 h",
+                "Sim; exames seriados detectam bem as lesões"
               ],
-              "resposta": "esquerdo",
-              "explicacao": "O sangue irrita o diafragma, que tem a mesma inervação da pele do ombro.",
-              "revisado": false
+              "resposta": "Sim; exames seriados detectam bem as lesões",
+              "explicacao": "Observação é segura no estável.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Criança cai de bicicleta e bate o abdome no guidão. Um dia depois, a dor piora e a amilase está alta.",
-              "enunciado": "Qual lesão deve ser suspeitada?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual manobra expõe a 3ª e 4ª porções do duodeno?",
               "opcoes": [
-                "Lesão do pâncreas ou do duodeno",
-                "Fratura de costela",
-                "Ruptura da bexiga",
-                "Lesão do rim com sangue na urina"
+                "Pringle",
+                "Mattox",
+                "Kocher",
+                "Cattell-Braasch"
               ],
-              "resposta": "Lesão do pâncreas ou do duodeno",
-              "explicacao": "Essas lesões ficam atrás do peritônio e podem demorar a dar sinais.",
-              "revisado": false
+              "resposta": "Cattell-Braasch",
+              "explicacao": "Rotação medial do cólon direito.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l2-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o princípio da cirurgia de controle de danos?",
+              "enunciado": "Sobre o trauma de baço, o que é correto?",
               "opcoes": [
-                "Controlar sangramento e contaminação já e reparar depois",
-                "Reparo definitivo de uma vez",
-                "Evitar operar",
-                "Fazer todo o reparo definitivo de uma vez, mesmo com o paciente em choque"
+                "Esplenorrafia é o padrão nos graus IV e V",
+                "Embolização serve no trauma penetrante",
+                "Vacinar mesmo no tratamento conservador",
+                "A cirurgia pode ser aberta ou laparoscópica"
               ],
-              "resposta": "Controlar sangramento e contaminação já e reparar depois",
-              "explicacao": "Ela é usada em pacientes com hipotermia, acidose e coagulopatia.",
-              "revisado": false
+              "resposta": "A cirurgia pode ser aberta ou laparoscópica",
+              "explicacao": "Vacinas são para quem perde o baço.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u2-l2-q7",
@@ -670,32 +677,34 @@
             },
             {
               "id": "cir-u2-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A fórmula de ___ estima a reposição de líquidos do grande queimado nas primeiras 24 horas.",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente com queimadura de 2º grau em 15% do tronco, sem lesão inalatória.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Parkland",
-                "Glasgow",
-                "Wells",
-                "Child-Pugh"
+                "Tratar no local",
+                "Observar 72 h",
+                "Plástica eletiva",
+                "Transferir para centro de queimados por mais de 10% de espessura parcial"
               ],
-              "resposta": "Parkland",
-              "explicacao": "A reposição é ajustada pela diurese, que deve ficar em torno de 0,5 mL/kg/h no adulto.",
-              "revisado": false
+              "resposta": "Transferir para centro de queimados por mais de 10% de espessura parcial",
+              "explicacao": "Critério de transferência.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u2-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Adulto de 70 kg tem queimaduras de 2º e 3º graus em 40% do corpo.",
-              "enunciado": "Pela fórmula de Parkland com 4 mL, qual é o volume em 24 horas?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre queimaduras, o que é correto?",
               "opcoes": [
-                "11.200 mL, metade nas primeiras 8 h",
-                "2.800 mL em 24 h",
-                "28.000 mL em 8 h",
-                "5.600 mL nas primeiras duas horas e o resto em 22 horas"
+                "Falta de pulso é o primeiro sinal compartimental",
+                "Resfriar com soro gelado acima de 10%",
+                "Neutralizar ácidos",
+                "Na queimadura elétrica com rabdomiólise, diurese de 100 mL/h"
               ],
-              "resposta": "11.200 mL, metade nas primeiras 8 h",
-              "explicacao": "4 × 70 × 40 = 11.200 mL. Versões recentes do ATLS sugerem começar com 2 mL e ajustar pela diurese.",
-              "revisado": false
+              "resposta": "Na queimadura elétrica com rabdomiólise, diurese de 100 mL/h",
+              "explicacao": "A palma com dedos é cerca de 1%.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u2-l3-q6",
@@ -828,24 +837,33 @@
             {
               "id": "cir-u3-l1-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual achado da colangite indica drenagem biliar de urgência?",
+              "enunciado": "Sobre a colecistite aguda, o que é correto?",
               "opcoes": [
-                "Pêntade de Reynolds, com hipotensão e confusão",
-                "Apenas cólica",
-                "Vesícula normal",
-                "Cólica leve com vesícula normal e amilase dentro do normal"
+                "Os achados do ultrassom são patognomônicos",
+                "Precisa de antibiótico com excreção biliar",
+                "Murphy é dor à descompressão",
+                "A forma acalculosa ocorre em doentes graves"
               ],
-              "resposta": "Pêntade de Reynolds, com hipotensão e confusão",
-              "explicacao": "É a colangite grave, com risco alto de morte.",
-              "revisado": false
+              "resposta": "A forma acalculosa ocorre em doentes graves",
+              "explicacao": "Também em queimados e em nutrição parenteral.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u3-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na colecistite aguda, o ideal é esperar 3 meses para operar, mesmo em quem tem condições.",
-              "resposta": false,
-              "explicacao": "Falso. A colecistectomia precoce, nos primeiros dias, reduz internação e novas crises.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Após colecistectomia laparoscópica eletiva sem intercorrências.",
+              "enunciado": "Qual prescrição?",
+              "opcoes": [
+                "Jejum e antibiótico 24 h",
+                "Dieta, protetor gástrico e antibiótico",
+                "Jejum, opioide e soro",
+                "Dieta leve, analgésico simples e antiemético; alta no dia seguinte"
+              ],
+              "resposta": "Dieta leve, analgésico simples e antiemético; alta no dia seguinte",
+              "explicacao": "Antibiótico não é mantido.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u3-l1-q8",
@@ -916,17 +934,19 @@
             },
             {
               "id": "cir-u3-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "Na pancreatite leve causada por cálculo, a ___ deve ser feita na mesma internação, para evitar novas crises.",
+              "tipo": "caso_clinico",
+              "caso": "Etilista com pancreatite necrosante grave na UTI.",
+              "enunciado": "Qual é a estratégia nutricional?",
               "opcoes": [
-                "colecistectomia",
-                "gastrectomia",
-                "esplenectomia",
-                "apendicectomia"
+                "Jejum até resolver",
+                "Parenteral precoce",
+                "Esperar a amilase normalizar",
+                "Enteral precoce"
               ],
-              "resposta": "colecistectomia",
-              "explicacao": "Esperar meses aumenta muito o risco de outra pancreatite.",
-              "revisado": false
+              "resposta": "Enteral precoce",
+              "explicacao": "Reduz infecção e mortalidade.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u3-l2-q5",
@@ -1019,11 +1039,19 @@
             },
             {
               "id": "cir-u3-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A gastroduodenopancreatectomia (cirurgia de Whipple) trata os tumores ressecáveis da cabeça do pâncreas.",
-              "resposta": true,
-              "explicacao": "É uma cirurgia grande, feita em centros especializados.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem com icterícia indolor, perda de peso e vesícula palpável.",
+              "enunciado": "Qual é a hipótese?",
+              "opcoes": [
+                "Colecistite",
+                "Coledocolitíase",
+                "Colangiocarcinoma intra-hepático",
+                "Tumor periampular"
+              ],
+              "resposta": "Tumor periampular",
+              "explicacao": "Sinal de Courvoisier.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u3-l3-q4",
@@ -1193,26 +1221,35 @@
             },
             {
               "id": "cir-u4-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No refluxo noturno, deitar logo após o jantar ajuda a esvaziar o estômago.",
-              "resposta": false,
-              "explicacao": "Falso. O certo é evitar comer antes de deitar e elevar a cabeceira.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Baiano com disfagia, esôfago cheio de resíduos e manometria sem peristalse e sem pressurização.",
+              "enunciado": "Qual é a classificação?",
+              "opcoes": [
+                "Tipo II",
+                "Tipo III",
+                "Obstrução funcional",
+                "Acalásia tipo I"
+              ],
+              "resposta": "Acalásia tipo I",
+              "explicacao": "Clássica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u4-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com refluxo antigo tem esôfago de Barrett sem displasia.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Asmático com refluxo que melhora pouco com IBP segue piorando.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "IBP e endoscopias de vigilância",
-                "Retirar o esôfago",
-                "Sem acompanhamento",
-                "Retirar o esôfago logo, mesmo sem displasia"
+                "IBP basta",
+                "Fundoplicatura é contraindicada",
+                "Cirurgia piora a asma",
+                "O refluxo agrava a asma"
               ],
-              "resposta": "IBP e endoscopias de vigilância",
-              "explicacao": "A vigilância busca displasia, que pode ser tratada por endoscopia.",
-              "revisado": false
+              "resposta": "O refluxo agrava a asma",
+              "explicacao": "Também se associa a fibrose pulmonar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             }
           ]
         },
@@ -1283,55 +1320,75 @@
             },
             {
               "id": "cir-u4-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 50 anos tem dor súbita e intensa no epigástrio, abdome duro como tábua e ar livre embaixo do diafragma.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o H. pylori, o que é correto?",
               "opcoes": [
-                "Cirurgia de urgência para fechar a úlcera",
-                "Endoscopia",
-                "Omeprazol e liberar",
-                "Omeprazol oral e liberar para casa com retorno em uma semana"
+                "Quase todos têm sintomas logo",
+                "Sozinho basta para o câncer gástrico",
+                "Úlcera gástrica tem menos relação com ele",
+                "Quem tem úlcera duodenal tem menos risco de câncer gástrico"
               ],
-              "resposta": "Cirurgia de urgência para fechar a úlcera",
-              "explicacao": "Endoscopia está contraindicada na suspeita de perfuração.",
-              "revisado": false
+              "resposta": "Quem tem úlcera duodenal tem menos risco de câncer gástrico",
+              "explicacao": "O padrão de gastrite é diferente.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u4-l2-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual exame confirma que o H. pylori foi eliminado?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com hemorragia alta, endoscopia sem ver a lesão, volta a sangrar com PA 40 x 20.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Teste respiratório ou antígeno fecal após tratar",
-                "Sorologia",
-                "Hemograma",
-                "Sorologia para H. pylori repetida logo no fim do tratamento"
+                "Colonoscopia",
+                "Nova endoscopia",
+                "Cintilografia",
+                "Angiografia com embolização"
               ],
-              "resposta": "Teste respiratório ou antígeno fecal após tratar",
-              "explicacao": "A sorologia continua positiva por muito tempo e não serve para controle.",
-              "revisado": false
+              "resposta": "Angiografia com embolização",
+              "explicacao": "Sangramento maciço sem foco visto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u4-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O inibidor da bomba de prótons pode ser mantido até o dia do teste de controle do H. pylori.",
-              "resposta": false,
-              "explicacao": "Falso. Ele deve ser suspenso cerca de 2 semanas antes, pois dá falso negativo.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que artéria sangra na úlcera duodenal de parede posterior?",
+              "opcoes": [
+                "Gastroduodenal, ramo da gástrica direita",
+                "Hepática comum",
+                "Pancreatoduodenal superior",
+                "Gastroduodenal, ramo da hepática comum"
+              ],
+              "resposta": "Gastroduodenal, ramo da hepática comum",
+              "explicacao": "Passa atrás do bulbo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u4-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente tem úlcera de duodeno com pesquisa de H. pylori positiva.",
-              "enunciado": "Qual é o tratamento?",
-              "opcoes": [
-                "IBP com amoxicilina e claritromicina",
-                "Apenas omeprazol",
-                "Cirurgia",
-                "Apenas omeprazol em dose dobrada por seis meses, sem antibiótico"
+              "tipo": "associar_pares",
+              "enunciado": "Ligue a classificação ao achado.",
+              "pares": [
+                {
+                  "esquerda": "Forrest IIb",
+                  "direita": "coágulo aderido"
+                },
+                {
+                  "esquerda": "Forrest Ia",
+                  "direita": "sangramento em jato"
+                },
+                {
+                  "esquerda": "Forrest IIa",
+                  "direita": "vaso visível"
+                },
+                {
+                  "esquerda": "Forrest III",
+                  "direita": "base limpa"
+                }
               ],
-              "resposta": "IBP com amoxicilina e claritromicina",
-              "explicacao": "Eliminar a bactéria reduz muito a chance de a úlcera voltar.",
-              "revisado": false
+              "explicacao": "Ia e IIa têm maior risco de ressangrar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             }
           ]
         },
@@ -1356,36 +1413,34 @@
             },
             {
               "id": "cir-u4-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada termo ao seu significado.",
-              "pares": [
-                {
-                  "esquerda": "Carcinoma epidermoide de esôfago",
-                  "direita": "Ligado a cigarro, álcool e bebidas muito quentes"
-                },
-                {
-                  "esquerda": "Adenocarcinoma de esôfago",
-                  "direita": "Ligado a refluxo e esôfago de Barrett"
-                },
-                {
-                  "esquerda": "Linfonodo de Virchow",
-                  "direita": "Metástase na fossa supraclavicular esquerda"
-                },
-                {
-                  "esquerda": "Nódulo da irmã Maria José",
-                  "direita": "Metástase no umbigo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Etilista fumante com disfagia progressiva e estreitamento ulcerado no terço médio do esôfago.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Mais comum em mulheres e refluxo",
+                "Causado pelo T. cruzi",
+                "Cresce em países ricos",
+                "Raça negra, anemia ferropriva e HPV são fatores de risco"
               ],
-              "explicacao": "O consumo de chimarrão muito quente é fator de risco importante no Sul do Brasil.",
-              "revisado": false
+              "resposta": "Raça negra, anemia ferropriva e HPV são fatores de risco",
+              "explicacao": "Carcinoma epidermoide.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u4-l3-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O H. pylori é fator de risco para adenocarcinoma de estômago e para linfoma MALT.",
-              "resposta": true,
-              "explicacao": "O linfoma MALT inicial pode regredir só com a eliminação da bactéria.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "No câncer de esôfago avançado, o que é correto?",
+              "opcoes": [
+                "Cirurgia é a principal paliação",
+                "Esofagectomia para disfagia intratável",
+                "Parenteral é melhor",
+                "A paliação é individualizada, inclusive com stent"
+              ],
+              "resposta": "A paliação é individualizada, inclusive com stent",
+              "explicacao": "Radioterapia também paliativa.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u4-l3-q4",
@@ -1547,24 +1602,32 @@
             {
               "id": "cir-u5-l1-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual síndrome hereditária causa centenas a milhares de pólipos no cólon?",
+              "enunciado": "Quais pólipos aparecem na síndrome de Peutz-Jeghers?",
               "opcoes": [
-                "Polipose adenomatosa familiar",
-                "Síndrome de Lynch",
-                "Peutz-Jeghers",
-                "Doença de Crohn com pseudopólipos"
+                "Adenomas",
+                "Serrilhados",
+                "Hiperplásicos",
+                "Hamartomas"
               ],
-              "resposta": "Polipose adenomatosa familiar",
-              "explicacao": "Sem retirar o cólon, quase todos os portadores terão câncer.",
-              "revisado": false
+              "resposta": "Hamartomas",
+              "explicacao": "Também há manchas escuras nos lábios.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u5-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A síndrome de Lynch aumenta só o risco de câncer de cólon, sem relação com outros órgãos.",
-              "resposta": false,
-              "explicacao": "Falso. Ela também aumenta o risco de câncer de endométrio, entre outros.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a circulação do cólon, o que é correto?",
+              "opcoes": [
+                "Riolan fica junto à parede do cólon",
+                "Sudeck fica na flexura esplênica",
+                "Griffith fica no retossigmoide",
+                "A mesentérica inferior vira retal superior ao cruzar a ilíaca comum esquerda"
+              ],
+              "resposta": "A mesentérica inferior vira retal superior ao cruzar a ilíaca comum esquerda",
+              "explicacao": "Griffith é na flexura esplênica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u5-l1-q8",
@@ -1709,16 +1772,17 @@
             {
               "id": "cir-u5-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do abscesso perto do ânus?",
+              "enunciado": "Para que serve o sedenho na fístula perianal do Crohn?",
               "opcoes": [
-                "Drenagem cirúrgica",
-                "Apenas antibiótico",
-                "Pomada",
-                "Observação"
+                "Controlar a doença",
+                "Evitar novas fístulas",
+                "Evitar estenose",
+                "Garantir drenagem"
               ],
-              "resposta": "Drenagem cirúrgica",
-              "explicacao": "Esperar o abscesso \"amadurecer\" pode deixar a infecção se espalhar.",
-              "revisado": false
+              "resposta": "Garantir drenagem",
+              "explicacao": "Também protege o esfíncter.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u5-l3-q2",
@@ -1997,40 +2061,48 @@
             },
             {
               "id": "cir-u6-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Após o trauma, o corpo retém sódio e água e elimina mais potássio.",
-              "resposta": true,
-              "explicacao": "Por isso o paciente urina menos nos primeiros dias, mesmo recebendo soro.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Atropelado em choque segue sem urina. Sobre a resposta ao choque, o que é correto?",
+              "opcoes": [
+                "Barorreceptores reduzem o simpático",
+                "Catecolaminas contraem todos os vasos igualmente",
+                "A aldosterona ativa a renina",
+                "O ADH retém água nos túbulos coletores"
+              ],
+              "resposta": "O ADH retém água nos túbulos coletores",
+              "explicacao": "O estímulo vem de barorreceptores e do hipotálamo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u6-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A via ___ é a preferida para nutrir o paciente sempre que o intestino funciona.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela classificação de Blalock, o que é correto?",
               "opcoes": [
-                "enteral",
-                "parenteral",
-                "intramuscular",
-                "subcutânea"
+                "Vasogênico: resistência vascular alta",
+                "Neurogênico: perda de líquido",
+                "Cardiogênico: vasodilatação",
+                "Hematogênico: perda de sangue"
               ],
-              "resposta": "enteral",
-              "explicacao": "Ela mantém a barreira do intestino e tem menos complicações.",
-              "revisado": false
+              "resposta": "Hematogênico: perda de sangue",
+              "explicacao": "A sepse é um choque vasogênico.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u6-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Paciente muito desnutrido vai fazer uma grande cirurgia eletiva por câncer de estômago.",
-              "enunciado": "Qual é a conduta nutricional?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No acesso central pelo triângulo do esternocleidomastoideo e clavícula, qual veia é puncionada e para onde drena?",
               "opcoes": [
-                "Nutrição por 7 a 14 dias antes de operar",
-                "Operar sem suporte",
-                "Jejum de 3 dias",
-                "Apenas soro glicosado por três dias e operar"
+                "Jugular externa para subclávia",
+                "Jugular interna direto na cava",
+                "Jugular externa para braquiocefálica",
+                "Jugular interna, que se une à subclávia formando a braquiocefálica"
               ],
-              "resposta": "Nutrição por 7 a 14 dias antes de operar",
-              "explicacao": "Pacientes desnutridos têm mais complicações e mais mortalidade após cirurgias grandes.",
-              "revisado": false
+              "resposta": "Jugular interna, que se une à subclávia formando a braquiocefálica",
+              "explicacao": "As braquiocefálicas formam a cava superior.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u6-l2-q6",
@@ -2142,39 +2214,50 @@
             {
               "id": "cir-u6-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "No 6º dia após cirurgia de cólon, o paciente tem febre, dor abdominal, taquicardia e saída de fezes pelo dreno.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "No 6º dia após colectomia com anastomose, febre persistente sem foco.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Fístula ou deiscência da anastomose",
-                "Atelectasia",
-                "Infecção urinária",
-                "Reação a remédio com febre baixa"
+                "Atelectasia; observar",
+                "Antibiótico antes de exames",
+                "Hemocultura só com foco",
+                "TC para procurar infecção abdominal"
               ],
-              "resposta": "Fístula ou deiscência da anastomose",
-              "explicacao": "O tratamento depende da gravidade e pode exigir nova cirurgia.",
-              "revisado": false
+              "resposta": "TC para procurar infecção abdominal",
+              "explicacao": "Pensar em fístula.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u6-l3-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medida previne trombose venosa após cirurgia de grande porte?",
+              "tipo": "caso_clinico",
+              "caso": "Seis horas após hemorroidectomia com muito soro, dor e macicez suprapúbica.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Heparina profilática e caminhar cedo",
-                "Repouso absoluto",
-                "Diurético",
-                "Repouso absoluto no leito com as pernas para baixo"
+                "Retenção é rara",
+                "Mais soro",
+                "Antiespasmódico antes",
+                "Sondagem de alívio"
               ],
-              "resposta": "Heparina profilática e caminhar cedo",
-              "explicacao": "Meias e compressão pneumática ajudam quando há risco de sangramento.",
-              "revisado": false
+              "resposta": "Sondagem de alívio",
+              "explicacao": "Preferida à sonda de demora.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u6-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Retenção urinária após anestesia raquidiana é rara e nunca precisa de sonda.",
-              "resposta": false,
-              "explicacao": "Falso. É comum, principalmente em idosos e homens com próstata grande, e pode exigir sondagem de alívio.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idoso que usava bengala piorou muito da marcha após uma semana internado por colecistite.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Só ocorre após 15 dias",
+                "Repouso previne",
+                "É irreversível",
+                "Limitação prévia aumenta o risco de descondicionamento"
+              ],
+              "resposta": "Limitação prévia aumenta o risco de descondicionamento",
+              "explicacao": "Mobilizar cedo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u6-l3-q8",
@@ -2221,17 +2304,19 @@
             },
             {
               "id": "cir-u7-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tipo de hérnia mais comum em homens e mulheres?",
+              "tipo": "caso_clinico",
+              "caso": "Seis meses após Lichtenstein, dor em queimação na virilha que piora ao estender o quadril.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Inguinal indireta",
-                "Femoral",
-                "Umbilical",
-                "Inguinal direta em idosos"
+                "Recidiva",
+                "Nervo femoral",
+                "Infecção da tela",
+                "Lesão do nervo ilioinguinal"
               ],
-              "resposta": "Inguinal indireta",
-              "explicacao": "A femoral é mais comum em mulheres do que em homens, mas ainda menos que a inguinal.",
-              "revisado": false
+              "resposta": "Lesão do nervo ilioinguinal",
+              "explicacao": "Neuralgia crônica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u7-l1-q3",
@@ -2329,25 +2414,34 @@
             },
             {
               "id": "cir-u7-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal fator de risco para hérnia incisional?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher obesa tem saliência fusiforme entre xifoide e umbigo ao levantar a cabeça, sem anel.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Infecção da ferida operatória",
-                "Idade jovem",
-                "Cirurgia por vídeo",
-                "Dieta rica em fibras e água depois da cirurgia"
+                "Hérnia epigástrica",
+                "Hérnia umbilical",
+                "Lipoma",
+                "Diástase dos retos"
               ],
-              "resposta": "Infecção da ferida operatória",
-              "explicacao": "Também obesidade e tabagismo.",
-              "revisado": false
+              "resposta": "Diástase dos retos",
+              "explicacao": "Não há defeito na aponeurose.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u7-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A hérnia umbilical de criança costuma fechar sozinha até 4 a 5 anos.",
-              "resposta": true,
-              "explicacao": "No adulto, não fecha.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual hérnia ocorre entre a linha semilunar e a borda lateral do reto, perto da linha arqueada?",
+              "opcoes": [
+                "Amyand",
+                "Richter",
+                "Littré",
+                "Spiegel"
+              ],
+              "resposta": "Spiegel",
+              "explicacao": "Rara e difícil de palpar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u7-l2-q4",
@@ -2676,25 +2770,34 @@
             },
             {
               "id": "cir-u8-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Com qual diâmetro se indica cirurgia no aneurisma de aorta abdominal?",
+              "tipo": "caso_clinico",
+              "caso": "Idosa com aneurisma de aorta de 6,5 cm, assintomática, com crescimento rápido do trombo.",
+              "enunciado": "Qual é o risco de ruptura em 12 meses?",
               "opcoes": [
-                "A partir de 5,5 cm em homens",
-                "3 cm",
-                "10 cm",
-                "Só a partir de 10 cm ou quando romper"
+                "1 a 10%",
+                "10 a 20%",
+                "50%",
+                "30 a 50%"
               ],
-              "resposta": "A partir de 5,5 cm em homens",
-              "explicacao": "Ou crescimento rápido.",
-              "revisado": false
+              "resposta": "30 a 50%",
+              "explicacao": "Acima de 6 cm o risco é alto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u8-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O aneurisma de aorta abdominal roto causa dor, massa pulsátil e choque.",
-              "resposta": true,
-              "explicacao": "Emergência com alta mortalidade.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a ordem dos ramos da aorta abdominal, de cima para baixo?",
+              "opcoes": [
+                "Celíaco, renais, mesentérica superior",
+                "Mesentérica superior, celíaco",
+                "Renais, celíaco",
+                "Celíaco, mesentérica superior, renais, mesentérica inferior"
+              ],
+              "resposta": "Celíaco, mesentérica superior, renais, mesentérica inferior",
+              "explicacao": "A mesentérica superior sai logo abaixo do celíaco.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u8-l2-q4",
@@ -2816,17 +2919,18 @@
             },
             {
               "id": "cir-u8-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A tríade de ___ inclui estase, lesão do vaso e hipercoagulabilidade.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o tratamento da TVP, o que é correto?",
               "opcoes": [
-                "Virchow",
-                "Beck",
-                "Charcot",
-                "Cushing"
+                "Heparina é totalmente segura",
+                "Trombólise é rotina na TVP proximal",
+                "Filtro para todo alto risco",
+                "Com alta suspeita, anticoagular enquanto se confirma"
               ],
-              "resposta": "Virchow",
-              "explicacao": "Explica a trombose.",
-              "revisado": false
+              "resposta": "Com alta suspeita, anticoagular enquanto se confirma",
+              "explicacao": "Filtro só se não puder anticoagular.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u8-l3-q5",
@@ -3045,25 +3149,33 @@
             },
             {
               "id": "cir-u9-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O iodo radioativo é usado após tireoidectomia em alguns cânceres papilíferos.",
-              "resposta": true,
-              "explicacao": "Para destruir restos de tireoide.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o carcinoma folicular de tireoide, o que é correto?",
+              "opcoes": [
+                "A PAAF diferencia de adenoma",
+                "Espalha por linfa cedo",
+                "É pior que o anaplásico",
+                "O diagnóstico exige invasão capsular ou vascular"
+              ],
+              "resposta": "O diagnóstico exige invasão capsular ou vascular",
+              "explicacao": "Espalha por via sanguínea.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u9-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o marcador do câncer de tireoide diferenciado após tireoidectomia total.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre complicações da tireoidectomia, o que é correto?",
               "opcoes": [
-                "tireoglobulina",
-                "calcitonina",
-                "TSH",
-                "CEA e CA 19-9"
+                "Preservar uma paratireoide evita hipoparatireoidismo",
+                "Autotransplante previne sempre",
+                "Pinçamento é a causa principal",
+                "Esvaziar os linfonodos aumenta a lesão do laríngeo recorrente"
               ],
-              "resposta": "tireoglobulina",
-              "explicacao": "Deve ficar baixa.",
-              "revisado": false
+              "resposta": "Esvaziar os linfonodos aumenta a lesão do laríngeo recorrente",
+              "explicacao": "A dissecção maior expõe o nervo.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u9-l2-q5",
@@ -3139,17 +3251,19 @@
             },
             {
               "id": "cir-u9-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a causa mais comum de massa cervical lateral em adulto fumante acima de 40 anos?",
+              "tipo": "caso_clinico",
+              "caso": "Fumante com câncer de assoalho de boca tem linfonodo palpável no nível IB.",
+              "enunciado": "Quais linfonodos?",
               "opcoes": [
-                "Metástase de câncer de cabeça e pescoço",
-                "Cisto branquial",
-                "Lipoma",
-                "Cisto branquial infectado em adulto jovem não fumante"
+                "Submentonianos",
+                "Jugulares superiores",
+                "Jugulares inferiores",
+                "Submandibulares"
               ],
-              "resposta": "Metástase de câncer de cabeça e pescoço",
-              "explicacao": "Investigar boca, faringe e laringe.",
-              "revisado": false
+              "resposta": "Submandibulares",
+              "explicacao": "IA é submentoniano.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u9-l3-q3",
@@ -3466,17 +3580,19 @@
           "questoes": [
             {
               "id": "cir-u10-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento de escolha do câncer de pulmão não pequenas células inicial?",
+              "tipo": "caso_clinico",
+              "caso": "Fumante de 51 anos tem nódulo sólido de 7 mm no pulmão.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Lobectomia com linfadenectomia",
-                "Quimioterapia só",
-                "Radioterapia só",
-                "Quimioterapia isolada em dose alta, sem cirurgia"
+                "TC em 1 ano",
+                "PET",
+                "Biópsia",
+                "Repetir TC em 6 meses"
               ],
-              "resposta": "Lobectomia com linfadenectomia",
-              "explicacao": "Se o paciente tolerar.",
-              "revisado": false
+              "resposta": "Repetir TC em 6 meses",
+              "explicacao": "Fleischner para alto risco.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-u10-l3-q2",
@@ -3774,16 +3890,17 @@
             {
               "id": "cir-u11-l2-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual câncer mais comum dá metástase para o fígado?",
+              "enunciado": "Qual é a principal indicação de transplante de fígado em adultos?",
               "opcoes": [
-                "Colorretal",
-                "Pulmão",
-                "Mama",
-                "Próstata avançado"
+                "Colangite esclerosante",
+                "Metástase intestinal",
+                "Hepatite em crianças",
+                "Cirrose não colestática"
               ],
-              "resposta": "Colorretal",
-              "explicacao": "Muitas são operáveis.",
-              "revisado": false
+              "resposta": "Cirrose não colestática",
+              "explicacao": "Na criança, a atresia biliar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u11-l2-q6",
@@ -3845,36 +3962,34 @@
             },
             {
               "id": "cir-u11-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A infecção fulminante após esplenectomia é grave e rápida.",
-              "resposta": true,
-              "explicacao": "Por germes encapsulados.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a fisiopatologia da cirrose, o que é correto?",
+              "opcoes": [
+                "Há vasoconstrição esplâncnica",
+                "A encefalopatia depende só da amônia",
+                "A permeabilidade intestinal não muda",
+                "A lesão renal envolve citocinas inflamatórias na microcirculação"
+              ],
+              "resposta": "A lesão renal envolve citocinas inflamatórias na microcirculação",
+              "explicacao": "Há vasodilatação esplâncnica.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u11-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada indicação à esplenectomia.",
-              "pares": [
-                {
-                  "esquerda": "Trauma com sangramento instável",
-                  "direita": "Urgência"
-                },
-                {
-                  "esquerda": "PTI refratária",
-                  "direita": "Eletiva"
-                },
-                {
-                  "esquerda": "Esferocitose hereditária",
-                  "direita": "Eletiva em casos graves"
-                },
-                {
-                  "esquerda": "Abscesso esplênico",
-                  "direita": "Por infecção"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Cirrótico com varizes sangrando, tratado com ligadura e octreotide.",
+              "enunciado": "Qual é o próximo passo?",
+              "opcoes": [
+                "TIPS já",
+                "Suspender octreotide",
+                "Sonda nasogástrica",
+                "Antibiótico profilático por 7 dias"
               ],
-              "explicacao": "O baço tem funções imunes.",
-              "revisado": false
+              "resposta": "Antibiótico profilático por 7 dias",
+              "explicacao": "Reduz infecção e ressangramento.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u11-l3-q4",
@@ -4018,17 +4133,19 @@
             },
             {
               "id": "cir-u12-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a indicação de desobstrução urgente na cólica renal?",
+              "tipo": "caso_clinico",
+              "caso": "Diabético com febre, dor no flanco e dor ao estender a coxa contra resistência.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Cálculo com infecção (obstrução infectada)",
-                "Dor leve",
-                "Cálculo de 3 mm",
-                "Dor leve com cálculo de 3 mm, sem febre e com urina limpa"
+                "Tumor",
+                "Hematoma",
+                "Tuberculose",
+                "Abscesso retroperitoneal por pielonefrite"
               ],
-              "resposta": "Cálculo com infecção (obstrução infectada)",
-              "explicacao": "Pode evoluir para sepse.",
-              "revisado": false
+              "resposta": "Abscesso retroperitoneal por pielonefrite",
+              "explicacao": "Sinal do psoas.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u12-l1-q6",
@@ -4686,25 +4803,34 @@
             },
             {
               "id": "cir-u14-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O queloide ultrapassa os limites da cicatriz original.",
-              "resposta": true,
-              "explicacao": "A cicatriz hipertrófica não ultrapassa.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher com cicatriz hipertrófica prévia operou um cisto no esterno.",
+              "enunciado": "Como prevenir cicatriz ruim?",
+              "opcoes": [
+                "Roupa de pressão já",
+                "Tensão não importa",
+                "Sem protetor solar",
+                "Gel de silicone após a cicatrização inicial"
+              ],
+              "resposta": "Gel de silicone após a cicatrização inicial",
+              "explicacao": "Hidrata e reduz a espessura.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u14-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A cicatrização por ___ intenção deixa a ferida aberta para fechar sozinha.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual fio absorvível é o melhor para fechar a aponeurose?",
               "opcoes": [
-                "segunda",
-                "primeira",
-                "terceira",
-                "quarta"
+                "Categute",
+                "Monocryl",
+                "Vicryl",
+                "PDS"
               ],
-              "resposta": "segunda",
-              "explicacao": "Usada em feridas contaminadas.",
-              "revisado": false
+              "resposta": "PDS",
+              "explicacao": "Força tênsil prolongada.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u14-l1-q5",
@@ -4810,17 +4936,19 @@
             },
             {
               "id": "cir-u14-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o antibiótico profilático mais usado em cirurgia.",
+              "tipo": "caso_clinico",
+              "caso": "Homem com hérnia encarcerada e obstrução de delgado vai operar.",
+              "enunciado": "Qual profilaxia?",
               "opcoes": [
-                "cefazolina",
-                "vancomicina",
-                "meropenem",
-                "ciprofloxacino"
+                "Nenhuma",
+                "Cefazolina única",
+                "Cefazolina por 48 h",
+                "Cefazolina, podendo associar metronidazol"
               ],
-              "resposta": "cefazolina",
-              "explicacao": "Cobre germes da pele.",
-              "revisado": false
+              "resposta": "Cefazolina, podendo associar metronidazol",
+              "explicacao": "Possível abertura de alça.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u14-l2-q5",
@@ -4961,39 +5089,49 @@
             {
               "id": "cir-u14-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Paciente com fístula de alto débito e desnutrição grave sem poder usar o intestino.",
-              "enunciado": "Qual é a nutrição?",
+              "caso": "Paciente com fístula de alto débito em nutrição parenteral tem febre, pus no cateter, icterícia e dificuldade de desmame.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Nutrição parenteral",
-                "Dieta oral",
-                "Jejum",
-                "Dieta oral livre e jejum alternado"
+                "A NPT não infecta",
+                "Translocação não ocorre",
+                "A lesão hepática é só pela glicose",
+                "Excesso de carboidrato aumenta o CO2"
               ],
-              "resposta": "Nutrição parenteral",
-              "explicacao": "Intestino indisponível.",
-              "revisado": false
+              "resposta": "Excesso de carboidrato aumenta o CO2",
+              "explicacao": "Atrapalha o desmame.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u14-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na síndrome de realimentação, fósforo, potássio e magnésio sobem muito.",
-              "resposta": false,
-              "explicacao": "Falso. Esses eletrólitos caem; por isso a dieta é iniciada devagar em desnutridos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idoso acamado com disfagia, pneumonias de repetição, DVP e laparotomia antiga.",
+              "enunciado": "Sobre a gastrostomia endoscópica, o que é correto?",
+              "opcoes": [
+                "DVP contraindica de forma absoluta",
+                "Laparotomia prévia contraindica",
+                "Não muda o prognóstico, então não fazer",
+                "Está indicada, com transiluminação e antibiótico profilático"
+              ],
+              "resposta": "Está indicada, com transiluminação e antibiótico profilático",
+              "explicacao": "Avalia-se o local pela luz e pela pressão.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-u14-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O projeto ___ propõe jejum abreviado e alimentação precoce no Brasil.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a cirurgia bariátrica, o que é correto?",
               "opcoes": [
-                "ACERTO",
-                "ATLS",
-                "ACLS",
-                "SAMU 192"
+                "A gastrectomia vertical causa má absorção",
+                "A banda só pode ficar 6 meses",
+                "O balão dá perda duradoura",
+                "É tratamento eficaz para diabetes tipo 2 com IMC a partir de 35"
               ],
-              "resposta": "ACERTO",
-              "explicacao": "Baseado no ERAS.",
-              "revisado": false
+              "resposta": "É tratamento eficaz para diabetes tipo 2 com IMC a partir de 35",
+              "explicacao": "A perda de peso melhora o diabetes.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             }
           ]
         }
@@ -6404,32 +6542,34 @@
             {
               "id": "cir-d2-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher com trombofilia tem dor abdominal difusa há 3 dias. Tomografia mostra trombose da veia mesentérica superior, sem sinais de necrose de alça.",
-              "enunciado": "Qual é o tratamento inicial?",
+              "caso": "Idosa com FA tem dor e diarreia com sangue; colonoscopia com úlceras serpiginosas na transição retossigmoide.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Anticoagulação plena",
-                "Laparotomia imediata",
-                "Trombólise de rotina",
-                "Apenas antibiótico venoso e jejum"
+                "Ressecção",
+                "Trombólise",
+                "Embolização",
+                "Antibiótico e suporte"
               ],
-              "resposta": "Anticoagulação plena",
-              "explicacao": "A cirurgia fica para sinais de necrose ou peritonite.",
-              "revisado": false
+              "resposta": "Antibiótico e suporte",
+              "explicacao": "Colite isquêmica sem necrose.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d2-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Idoso internado após cirurgia ortopédica tem distensão importante do cólon, sem obstrução mecânica, com ceco de 13 cm.",
-              "enunciado": "Qual é o diagnóstico e a conduta?",
+              "caso": "Idoso em choque séptico com 20 cm de íleo isquêmico, sem perfuração.",
+              "enunciado": "Após a enterectomia, o que fazer?",
               "opcoes": [
-                "Pseudo-obstrução (Ogilvie); neostigmina se não melhorar",
-                "Volvo; cirurgia imediata",
-                "Câncer; colectomia",
-                "Constipação simples; laxante oral e alta para casa no mesmo dia"
+                "Anastomose",
+                "Anastomose e dreno",
+                "Ileostomia e sepultar o distal",
+                "Ileostomia em duas bocas"
               ],
-              "resposta": "Pseudo-obstrução (Ogilvie); neostigmina se não melhorar",
-              "explicacao": "Ceco acima de 12 cm tem risco de perfuração.",
-              "revisado": false
+              "resposta": "Ileostomia em duas bocas",
+              "explicacao": "Instável: não anastomosar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d2-l3-q5",
@@ -6608,17 +6748,18 @@
             {
               "id": "cir-d3-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Idoso tem disfagia alta, regurgitação de comida não digerida horas depois e mau hálito.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Dez dias após fundoplicatura de Nissen, disfagia para sólidos, aceitando pastosos.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Divertículo de Zenker",
-                "Acalasia",
-                "Câncer de estômago",
-                "Refluxo gastroesofágico grave"
+                "Esofagograma",
+                "Dilatação",
+                "Reoperar",
+                "Dieta pastosa e observar"
               ],
-              "resposta": "Divertículo de Zenker",
-              "explicacao": "Ele surge acima do músculo cricofaríngeo. A endoscopia deve ser feita com cuidado pelo risco de perfuração.",
-              "revisado": false
+              "resposta": "Dieta pastosa e observar",
+              "explicacao": "O edema melhora em semanas.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             }
           ]
         },
@@ -8072,17 +8213,18 @@
             {
               "id": "cir-d7-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Motociclista instável com fratura de pelve em livro aberto e FAST negativo.",
-              "enunciado": "Qual é a primeira medida?",
+              "caso": "Motorista com fratura pélvica e instabilidade, ainda na rodovia.",
+              "enunciado": "Qual é a fratura mais comum e a conduta?",
               "opcoes": [
-                "Cinta pélvica e sangue",
-                "Laparotomia",
-                "Tomografia",
-                "Tomografia de pelve antes de qualquer medida"
+                "Livro aberto; rotação externa",
+                "Cisalhamento vertical",
+                "Livro aberto; rotação interna",
+                "Compressão lateral; estabilização externa"
               ],
-              "resposta": "Cinta pélvica e sangue",
-              "explicacao": "O sangramento é retroperitoneal da pelve.",
-              "revisado": false
+              "resposta": "Compressão lateral; estabilização externa",
+              "explicacao": "É o tipo mais comum.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d7-l1-q2",
@@ -8200,18 +8342,18 @@
           "questoes": [
             {
               "id": "cir-d7-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com ferimento por faca no pescoço, zona II, com hematoma expansivo e estridor.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No trauma cervical penetrante, o que é correto?",
               "opcoes": [
-                "Via aérea definitiva e exploração cirúrgica",
-                "Tomografia antes",
-                "Observar",
-                "Tomografia de pescoço antes de mexer na via aérea"
+                "Zona 3 vai da clavícula à cricoide",
+                "Zona 1 vai da mandíbula ao mastoide",
+                "Zona 1 tem carótidas distais",
+                "Zona 3, do ângulo da mandíbula à base do crânio, tem carótidas distais e salivares"
               ],
-              "resposta": "Via aérea definitiva e exploração cirúrgica",
-              "explicacao": "Sinal de alarme.",
-              "revisado": false
+              "resposta": "Zona 3, do ângulo da mandíbula à base do crânio, tem carótidas distais e salivares",
+              "explicacao": "Zona 1 é a mais baixa.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d7-l2-q2",
@@ -8344,18 +8486,18 @@
             },
             {
               "id": "cir-d7-l3-q2",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 32 semanas vítima de batida de carro está deitada de costas na prancha, com pressão caindo.",
-              "enunciado": "Qual medida simples ajuda a pressão?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No trauma da gestante, o que é correto?",
               "opcoes": [
-                "Desviar o útero para a esquerda",
-                "Elevar a cabeça a 45 graus",
-                "Virar de bruços",
-                "Manter reta e dar mais soro venoso"
+                "Deslocar o útero para a direita",
+                "Cuidar primeiro do feto",
+                "Pensar em eclâmpsia no 1º trimestre",
+                "Pode haver muita perda antes de taquicardia e hipotensão"
               ],
-              "resposta": "Desviar o útero para a esquerda",
-              "explicacao": "O útero comprime a veia cava; inclinar ou desviar à esquerda melhora o retorno.",
-              "revisado": false
+              "resposta": "Pode haver muita perda antes de taquicardia e hipotensão",
+              "explicacao": "A volemia materna aumenta.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d7-l3-q3",
@@ -8644,28 +8786,18 @@
             },
             {
               "id": "cir-d8-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada procedimento à indicação.",
-              "pares": [
-                {
-                  "esquerda": "CPRE",
-                  "direita": "Retirar cálculo do colédoco"
-                },
-                {
-                  "esquerda": "Colecistostomia percutânea",
-                  "direita": "Colecistite em paciente muito grave"
-                },
-                {
-                  "esquerda": "Hepaticojejunostomia",
-                  "direita": "Lesão grave da via biliar"
-                },
-                {
-                  "esquerda": "Colecistectomia por vídeo",
-                  "direita": "Colelitíase com sintomas"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a síndrome de Mirizzi, o que é correto?",
+              "opcoes": [
+                "A icterícia é de bilirrubina indireta",
+                "Os tipos I e II já têm fístula",
+                "A laparoscopia nunca é segura",
+                "No tipo III, a colecistectomia parcial é o padrão"
               ],
-              "explicacao": "Escolha conforme o caso.",
-              "revisado": false
+              "resposta": "No tipo III, a colecistectomia parcial é o padrão",
+              "explicacao": "O resto da vesícula repara a erosão do ducto.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d8-l2-q5",
@@ -8776,28 +8908,19 @@
             },
             {
               "id": "cir-d8-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor neuroendócrino do pâncreas ao achado.",
-              "pares": [
-                {
-                  "esquerda": "Insulinoma",
-                  "direita": "Hipoglicemia de jejum"
-                },
-                {
-                  "esquerda": "Gastrinoma",
-                  "direita": "Úlceras múltiplas e diarreia"
-                },
-                {
-                  "esquerda": "Glucagonoma",
-                  "direita": "Eritema necrolítico migratório"
-                },
-                {
-                  "esquerda": "VIPoma",
-                  "direita": "Diarreia aquosa e potássio baixo"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem com diarreia aquosa de 4 litros mesmo em jejum, potássio baixo, acidose e tumor no pâncreas com metástases.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Carcinoide",
+                "Gastrinoma",
+                "Pancreatite crônica",
+                "VIPoma"
               ],
-              "explicacao": "Síndromes clássicas.",
-              "revisado": false
+              "resposta": "VIPoma",
+              "explicacao": "Síndrome WDHA.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d8-l3-q5",
@@ -8932,18 +9055,18 @@
             },
             {
               "id": "cir-d9-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Idoso acamado com distensão e imagem em grão de café, sem peritonite.",
-              "enunciado": "Qual é a conduta inicial?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando o enema opaco ainda é útil?",
               "opcoes": [
-                "Descompressão por colonoscopia e cirurgia eletiva",
-                "Cirurgia imediata sempre",
-                "Enema só",
-                "Cirurgia imediata em todos os casos, mesmo sem peritonite"
+                "Nunca mais",
+                "Melhor que a TC para fístula",
+                "Seguimento do Crohn",
+                "No megacólon e para medir o coto retal após Hartmann"
               ],
-              "resposta": "Descompressão por colonoscopia e cirurgia eletiva",
-              "explicacao": "Volvo de sigmoide.",
-              "revisado": false
+              "resposta": "No megacólon e para medir o coto retal após Hartmann",
+              "explicacao": "A TC substituiu muitos usos.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d9-l1-q6",
@@ -9144,28 +9267,19 @@
             },
             {
               "id": "cir-d9-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à fístula que não fecha.",
-              "pares": [
-                {
-                  "esquerda": "Corpo estranho",
-                  "direita": "Tela ou fio"
-                },
-                {
-                  "esquerda": "Radiação",
-                  "direita": "Tecido irradiado"
-                },
-                {
-                  "esquerda": "Doença inflamatória",
-                  "direita": "Crohn ativa"
-                },
-                {
-                  "esquerda": "Obstrução distal",
-                  "direita": "Saída bloqueada"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idoso tratado com ciprofloxacino tem febre, confusão, diarreia e cólon distendido sem obstrução.",
+              "enunciado": "Qual é a hipótese, o exame e o tratamento?",
+              "opcoes": [
+                "Megacólon tóxico; colonoscopia; metronidazol",
+                "Tumor de reto",
+                "Colonoscopia com biópsias",
+                "Colite por C. difficile; TC e fezes; vancomicina oral"
               ],
-              "explicacao": "Fatores que mantêm a fístula.",
-              "revisado": false
+              "resposta": "Colite por C. difficile; TC e fezes; vancomicina oral",
+              "explicacao": "Colonoscopia tem risco de perfurar.",
+              "revisado": false,
+              "fonte": "SUS-SP 2025 R+"
             },
             {
               "id": "cir-d9-l3-q4",
@@ -10305,17 +10419,18 @@
             {
               "id": "cir-d12-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente com fratura de pelve, sangue no meato e bexiga palpável.",
+              "caso": "Motociclista com dor pélvica, hematoma perineal e sangue no meato uretral.",
               "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Uretrografia e cistostomia se lesão",
-                "Sonda à força",
-                "Cirurgia aberta",
-                "Passar a sonda vesical à força até entrar na bexiga"
+                "Sonda e coloide",
+                "TC e sonda com contraste",
+                "Sonda com irrigação",
+                "TC e uretrografia retrógrada"
               ],
-              "resposta": "Uretrografia e cistostomia se lesão",
-              "explicacao": "Lesão de uretra posterior.",
-              "revisado": false
+              "resposta": "TC e uretrografia retrógrada",
+              "explicacao": "Não sondar antes de ver a uretra.",
+              "revisado": false,
+              "fonte": "SUS-SP 2026 R+"
             },
             {
               "id": "cir-d12-l3-q2",
