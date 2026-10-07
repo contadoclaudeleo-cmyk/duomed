@@ -3653,25 +3653,34 @@
             {
               "id": "cir-u10-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Jovem alto e magro com dor súbita no tórax e falta de ar, murmúrio diminuído à direita.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Jovem com 2º pneumotórax espontâneo, agora do outro lado.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Pneumotórax espontâneo primário",
-                "Infarto",
-                "Pneumonia",
-                "Asma aguda grave com chiado difuso"
+                "Esperar",
+                "Drenar e pleurodese só à esquerda",
+                "Pleurodese à direita",
+                "Bulectomia e pleurodese bilateral"
               ],
-              "resposta": "Pneumotórax espontâneo primário",
-              "explicacao": "Fazer raio X.",
-              "revisado": false
+              "resposta": "Bulectomia e pleurodese bilateral",
+              "explicacao": "Bilateral sequencial.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u10-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O dreno de tórax é colocado no 2º espaço intercostal, na linha hemiclavicular.",
-              "resposta": false,
-              "explicacao": "Falso. O dreno vai no 5º espaço, na linha axilar média; o 2º espaço é para punção de alívio.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "CEC de pulmão com linfonodo mediastinal no estádio, EBUS negativo.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Lobectomia",
+                "Quimio",
+                "Radio",
+                "Mediastinoscopia"
+              ],
+              "resposta": "Mediastinoscopia",
+              "explicacao": "Confirmar N2.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u10-l1-q8",
@@ -4417,18 +4426,18 @@
             },
             {
               "id": "cir-u12-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com dor lombar intensa em cólica, hematúria e cálculo de 4 mm no ureter distal.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Cálculo renal de 2 cm no polo inferior.",
               "opcoes": [
-                "Analgesia e terapia expulsiva",
-                "Cirurgia aberta",
-                "Antibiótico só",
-                "Cirurgia aberta imediata para retirar o cálculo"
+                "LECO",
+                "Ureteroscopia",
+                "Alcalinizar",
+                "Nefrolitotripsia percutânea"
               ],
-              "resposta": "Analgesia e terapia expulsiva",
-              "explicacao": "Grande chance de sair.",
-              "revisado": false
+              "resposta": "Nefrolitotripsia percutânea",
+              "explicacao": "Grande e no polo inferior.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u12-l1-q7",
@@ -4796,17 +4805,18 @@
             {
               "id": "cir-u13-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Lactente de 8 meses com choro em crises, encolhendo as pernas, e fezes com sangue e muco.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Criança de 1 ano com cólica, vômitos e sangue no toque retal.",
+              "enunciado": "Exame?",
               "opcoes": [
-                "Invaginação intestinal",
-                "Gastroenterite",
-                "Cólica",
-                "Cólica do lactente comum"
+                "RX contrastado",
+                "TC",
+                "Colonoscopia",
+                "Ultrassom"
               ],
-              "resposta": "Invaginação intestinal",
-              "explicacao": "Ultrassom mostra sinal do alvo.",
-              "revisado": false
+              "resposta": "Ultrassom",
+              "explicacao": "Invaginação.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u13-l1-q7",
@@ -5514,56 +5524,51 @@
             },
             {
               "id": "cir-u15-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "A fratura exposta exige antibiótico, vacina antitetânica e ___ cirúrgica em até 24 horas.",
+              "tipo": "caso_clinico",
+              "caso": "Politrauma com TCE, hemotórax e várias fraturas de membros.",
+              "enunciado": "Conduta ortopédica?",
               "opcoes": [
-                "limpeza",
-                "amputação",
-                "fixação definitiva tardia",
-                "imobilização gessada"
+                "Gesso",
+                "Fixação interna",
+                "Ilizarov",
+                "Fixadores externos"
               ],
-              "resposta": "limpeza",
-              "explicacao": "Desbridamento e lavagem.",
-              "revisado": false
+              "resposta": "Fixadores externos",
+              "explicacao": "Controle de danos.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u15-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fratura ao mecanismo típico.",
-              "pares": [
-                {
-                  "esquerda": "Colles",
-                  "direita": "Queda com a mão estendida"
-                },
-                {
-                  "esquerda": "Fêmur proximal",
-                  "direita": "Queda de idoso"
-                },
-                {
-                  "esquerda": "Escafoide",
-                  "direita": "Queda sobre o punho"
-                },
-                {
-                  "esquerda": "Clavícula",
-                  "direita": "Queda sobre o ombro"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idosa dependente com fratura desviada do colo do fêmur.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Parafusos",
+                "Artroplastia total",
+                "Haste",
+                "Artroplastia parcial"
               ],
-              "explicacao": "Mecanismo ajuda no diagnóstico.",
-              "revisado": false
+              "resposta": "Artroplastia parcial",
+              "explicacao": "Baixa demanda.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u15-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Na emergência, qual tipo de luxação do ombro aparece com mais frequência?",
+              "tipo": "caso_clinico",
+              "caso": "Dor no ombro e perda de força na rotação lateral após queda.",
+              "enunciado": "Lesão?",
               "opcoes": [
-                "Anterior",
-                "Posterior",
-                "Inferior",
-                "Superior com fratura do acrômio"
+                "Subescapular",
+                "Peitoral",
+                "Bíceps",
+                "Infraespinhal"
               ],
-              "resposta": "Anterior",
-              "explicacao": "Braço em rotação externa.",
-              "revisado": false
+              "resposta": "Infraespinhal",
+              "explicacao": "Rotador lateral.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-u15-l1-q6",
@@ -8828,17 +8833,18 @@
             {
               "id": "cir-d7-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Vítima de trauma fechado com fratura de coluna cervical e AVC posterior horas depois.",
-              "enunciado": "O que suspeitar?",
+              "caso": "Facada na coxa com sangramento, sem pulso e pé frio.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Lesão traumática da artéria vertebral",
-                "Enxaqueca",
-                "Hipoglicemia",
-                "AVC hemorrágico por pressão alta descontrolada"
+                "Angio-TC",
+                "Repor vitamina K",
+                "Arteriografia",
+                "Comprimir e ir ao centro cirúrgico"
               ],
-              "resposta": "Lesão traumática da artéria vertebral",
-              "explicacao": "Fazer angiotomografia.",
-              "revisado": false
+              "resposta": "Comprimir e ir ao centro cirúrgico",
+              "explicacao": "Sinais duros.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "cir-d7-l2-q7",
@@ -9889,17 +9895,18 @@
             {
               "id": "cir-d10-l1-q8",
               "tipo": "caso_clinico",
-              "caso": "Paciente com isquemia mesentérica aguda por embolia.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Claudicação aos 100 m, ITB 0,6, sem lesão.",
+              "enunciado": "Conduta inicial?",
               "opcoes": [
-                "Revascularizar e ressecar o intestino morto",
-                "Antibiótico só",
-                "Observar",
-                "Antibiótico venoso e observação por 48 horas"
+                "Endovascular",
+                "Cirurgia",
+                "Amputação",
+                "Tratamento clínico"
               ],
-              "resposta": "Revascularizar e ressecar o intestino morto",
-              "explicacao": "Mortalidade alta.",
-              "revisado": false
+              "resposta": "Tratamento clínico",
+              "explicacao": "Exercício e parar de fumar.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             }
           ]
         },

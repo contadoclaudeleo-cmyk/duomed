@@ -3509,17 +3509,19 @@
             },
             {
               "id": "go-u10-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a via de parto na gestante com HIV e carga viral indetectável?",
+              "tipo": "caso_clinico",
+              "caso": "Gestante HIV negativa com parceiro preso que não usa preservativo.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Indicação obstétrica; parto normal é possível",
-                "Cesárea sempre",
-                "Fórcipe",
-                "Cesárea obrigatória em todos os casos, mesmo com carga indetectável"
+                "PrEP sob demanda",
+                "PEP",
+                "TARV",
+                "PrEP contínua"
               ],
-              "resposta": "Indicação obstétrica; parto normal é possível",
-              "explicacao": "Carga viral baixa permite parto normal.",
-              "revisado": false
+              "resposta": "PrEP contínua",
+              "explicacao": "Exposição frequente.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "go-u10-l1-q6",
@@ -3714,28 +3716,19 @@
             },
             {
               "id": "go-u10-l3-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação à profilaxia do estreptococo B.",
-              "pares": [
-                {
-                  "esquerda": "Cultura positiva",
-                  "direita": "Profilaxia no parto"
-                },
-                {
-                  "esquerda": "Bebê anterior com doença",
-                  "direita": "Profilaxia sempre"
-                },
-                {
-                  "esquerda": "Bacteriúria por estreptococo B",
-                  "direita": "Profilaxia no parto sem precisar de nova cultura"
-                },
-                {
-                  "esquerda": "Cesárea eletiva sem trabalho de parto e bolsa íntegra",
-                  "direita": "Não precisa"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante com ITU por estreptococo B no 2º trimestre e cultura negativa com 35 semanas.",
+              "enunciado": "Conduta no parto?",
+              "opcoes": [
+                "Nada",
+                "Ampicilina 4 g",
+                "Cefazolina após 18 h",
+                "Penicilina cristalina"
               ],
-              "explicacao": "Previne sepse neonatal.",
-              "revisado": false
+              "resposta": "Penicilina cristalina",
+              "explicacao": "Bacteriúria por GBS indica profilaxia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "go-u10-l3-q4",
@@ -4934,17 +4927,19 @@
             },
             {
               "id": "go-u13-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de emergência é mais eficaz quanto antes for usada.",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 13 anos grávida de 23 semanas do namorado de 15 quer interromper.",
+              "enunciado": "O que a lei diz?",
               "opcoes": [
-                "contracepção",
-                "vacina",
-                "profilaxia de HIV",
-                "antibiótico"
+                "Proibido sem violência",
+                "Precisa laudo",
+                "Limite de 22 semanas",
+                "Permitido em qualquer idade gestacional"
               ],
-              "resposta": "contracepção",
-              "explicacao": "Levonorgestrel.",
-              "revisado": false
+              "resposta": "Permitido em qualquer idade gestacional",
+              "explicacao": "Estupro de vulnerável.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             }
           ]
         }
@@ -6111,28 +6106,12 @@
             },
             {
               "id": "go-d3-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado do partograma à distocia.",
-              "pares": [
-                {
-                  "esquerda": "Dilatação lenta",
-                  "direita": "Fase ativa prolongada"
-                },
-                {
-                  "esquerda": "Dilatação para por 2 horas ou mais",
-                  "direita": "Parada secundária da dilatação"
-                },
-                {
-                  "esquerda": "Período expulsivo muito longo",
-                  "direita": "Período pélvico prolongado"
-                },
-                {
-                  "esquerda": "Parto em menos de 4 horas",
-                  "direita": "Parto precipitado"
-                }
-              ],
-              "explicacao": "O parto precipitado aumenta lacerações.",
-              "revisado": false
+              "tipo": "verdadeiro_falso",
+              "enunciado": "Respeitar a recusa informada da episiotomia e registrar é conduta ética, mesmo com laceração depois.",
+              "resposta": true,
+              "explicacao": "Autonomia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "go-d3-l1-q3",
@@ -8358,11 +8337,19 @@
             },
             {
               "id": "go-d8-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A biópsia de vilo corial é feita a partir de 20 semanas de gestação.",
-              "resposta": false,
-              "explicacao": "Falso. É feita entre 10 e 13 semanas; a amniocentese, após 15 semanas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Onfalocele com 13 semanas e TN de 2 mm.",
+              "enunciado": "Conduta?",
+              "opcoes": [
+                "Amniocentese",
+                "Microarray não invasivo",
+                "NIPT",
+                "Biópsia de vilo corial"
+              ],
+              "resposta": "Biópsia de vilo corial",
+              "explicacao": "Risco de aneuploidia.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "go-d8-l3-q8",
@@ -10308,17 +10295,18 @@
             {
               "id": "go-d13-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Menina de 5 anos com corrimento com sangue e mau cheiro.",
-              "enunciado": "O que suspeitar além de infecção?",
+              "caso": "Adolescente com dismenorreia sem resposta a AINE e pílula, ultrassom normal.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Corpo estranho vaginal e abuso",
-                "Normal",
-                "Menstruação",
-                "Primeira menstruação normal precoce"
+                "RM",
+                "TC",
+                "Laparoscopia",
+                "Progestagênio contínuo"
               ],
-              "resposta": "Corpo estranho vaginal e abuso",
-              "explicacao": "Investigar com cuidado.",
-              "revisado": false
+              "resposta": "Progestagênio contínuo",
+              "explicacao": "Suprimir.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             }
           ]
         }
@@ -10523,17 +10511,18 @@
             {
               "id": "go-d14-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Mulher com líquen escleroso tratado com corticoide e área que não melhora.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "CEC de vulva de 3 cm lateral, p16 negativo.",
+              "enunciado": "Conduta?",
               "opcoes": [
-                "Biópsia",
-                "Mais corticoide",
-                "Antifúngico",
-                "Corticoide mais forte por mais seis meses"
+                "Vulvectomia radical",
+                "Skinning",
+                "Quimiorradio",
+                "Hemivulvectomia e linfonodo sentinela"
               ],
-              "resposta": "Biópsia",
-              "explicacao": "Excluir câncer.",
-              "revisado": false
+              "resposta": "Hemivulvectomia e linfonodo sentinela",
+              "explicacao": "Lateral < 4 cm.",
+              "revisado": false,
+              "fonte": "Unifesp 2026"
             },
             {
               "id": "go-d14-l2-q6",
