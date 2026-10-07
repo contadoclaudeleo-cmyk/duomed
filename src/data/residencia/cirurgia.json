@@ -125,16 +125,17 @@
             {
               "id": "cir-u1-l1-q8",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é a reposição volêmica inicial recomendada para o adulto politraumatizado em choque?",
+              "enunciado": "Sobre o trauma torácico contuso, o que é correto?",
               "opcoes": [
-                "1 L de cristaloide aquecido e sangue cedo",
-                "3 L de soro fisiológico frio",
-                "Albumina 20% em bolus",
-                "Apenas vasopressor em dose alta, sem nenhum volume ou hemoderivado"
+                "Contusão pulmonar não se liga ao trauma fechado",
+                "Precórdio sem risco de arritmia",
+                "Pneumotórax hipertensivo não precisa de dreno",
+                "Cerca de 65% têm fratura de costela, a lesão mais comum"
               ],
-              "resposta": "1 L de cristaloide aquecido e sangue cedo",
-              "explicacao": "Excesso de cristaloide piora a coagulopatia e a hipotermia. Em sangramento importante, inicia-se transfusão cedo e busca-se o controle cirúrgico da hemorragia.",
-              "revisado": false
+              "resposta": "Cerca de 65% têm fratura de costela, a lesão mais comum",
+              "explicacao": "Contusão cardíaca causa arritmias.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             }
           ]
         },
@@ -3400,32 +3401,34 @@
             },
             {
               "id": "cir-u9-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual nervo pode ser lesado na cirurgia da parótida?",
+              "tipo": "caso_clinico",
+              "caso": "Homem com tumor pulsátil de crescimento lento no pescoço.",
+              "enunciado": "Quais exames?",
               "opcoes": [
-                "Facial",
-                "Vago",
-                "Hipoglosso",
-                "Acessório"
+                "PET e TC",
+                "PAAF e PET",
+                "TC e PAAF",
+                "Angiotomografia, ultrassom e angiorressonância"
               ],
-              "resposta": "Facial",
-              "explicacao": "Causa paralisia da face.",
-              "revisado": false
+              "resposta": "Angiotomografia, ultrassom e angiorressonância",
+              "explicacao": "Suspeita de paraganglioma: não puncionar.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-u9-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Fumante de 60 anos com linfonodo cervical endurecido há 2 meses e rouquidão.",
-              "enunciado": "Qual é a hipótese?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como diferenciar hiperparatireoidismo primário de secundário?",
               "opcoes": [
-                "Câncer de laringe com metástase",
-                "Infecção viral",
-                "Cisto",
-                "Infecção viral com linfonodo reativo"
+                "No primário cálcio e fósforo baixos",
+                "No secundário PTH normal",
+                "No secundário PTH baixo",
+                "No primário PTH e cálcio altos e fósforo baixo"
               ],
-              "resposta": "Câncer de laringe com metástase",
-              "explicacao": "Fazer laringoscopia.",
-              "revisado": false
+              "resposta": "No primário PTH e cálcio altos e fósforo baixo",
+              "explicacao": "No secundário o cálcio é baixo ou normal.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-u9-l3-q7",
@@ -4037,17 +4040,19 @@
             },
             {
               "id": "cir-u11-l2-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ por radiofrequência destrói tumores pequenos do fígado.",
+              "tipo": "caso_clinico",
+              "caso": "Jovem com tumor hepático de 23 cm com cicatriz central, em fígado sem cirrose, invadindo veias.",
+              "enunciado": "Qual é a hipótese e a conduta?",
               "opcoes": [
-                "ablação",
-                "quimioterapia",
-                "radioterapia",
-                "biópsia"
+                "HNF; transplante",
+                "Fibrolamelar; paliativo",
+                "HNF; quimioembolização",
+                "Fibrolamelar; hepatectomia direita"
               ],
-              "resposta": "ablação",
-              "explicacao": "Opção a cirurgia.",
-              "revisado": false
+              "resposta": "Fibrolamelar; hepatectomia direita",
+              "explicacao": "Jovem sem cirrose tolera ressecção.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             }
           ]
         },
@@ -4148,11 +4153,18 @@
             },
             {
               "id": "cir-u11-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O TIPS reduz a pressão portal e também diminui a encefalopatia hepática.",
-              "resposta": false,
-              "explicacao": "Falso. Ele reduz a pressão portal, mas pode piorar a encefalopatia, porque desvia sangue do fígado.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o baço, o que está ERRADO?",
+              "opcoes": [
+                "A esplênica vem do celíaco",
+                "A veia esplênica fica atrás do pâncreas",
+                "As gástricas curtas vêm da esplênica",
+                "A mesentérica superior drena direto na veia esplênica"
+              ],
+              "resposta": "A mesentérica superior drena direto na veia esplênica",
+              "explicacao": "Ela se une à esplênica para formar a porta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-u11-l3-q8",
@@ -5925,50 +5937,50 @@
             },
             {
               "id": "cir-u16-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A metástase óssea é mais comum que o tumor ósseo primário em adultos.",
-              "resposta": true,
-              "explicacao": "Mama, próstata, pulmão, rim e tireoide.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Lesão suspeita de melanoma no braço.",
+              "enunciado": "Como deve ser a biópsia excisional?",
+              "opcoes": [
+                "Transversal com margem ampla",
+                "Transversal com margem exígua",
+                "Longitudinal com margem ampla",
+                "Longitudinal com margem exígua"
+              ],
+              "resposta": "Longitudinal com margem exígua",
+              "explicacao": "Facilita a ampliação depois.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-u16-l3-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O sarcoma de ___ tem imagem em casca de cebola na diáfise.",
+              "tipo": "caso_clinico",
+              "caso": "Melanoma de 1,5 mm no braço retirado com margem exígua.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Ewing",
-                "Kaposi",
-                "Burkitt",
-                "Hodgkin"
+                "Só ampliar 2 cm",
+                "Só linfonodo sentinela",
+                "Nada",
+                "Ampliar 1 a 2 cm e pesquisar linfonodo sentinela"
               ],
-              "resposta": "Ewing",
-              "explicacao": "Comum em crianças e adolescentes.",
-              "revisado": false
+              "resposta": "Ampliar 1 a 2 cm e pesquisar linfonodo sentinela",
+              "explicacao": "Acima de 0,8 mm.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-u16-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada tumor à imagem típica.",
-              "pares": [
-                {
-                  "esquerda": "Osteossarcoma",
-                  "direita": "Raios de sol"
-                },
-                {
-                  "esquerda": "Ewing",
-                  "direita": "Casca de cebola"
-                },
-                {
-                  "esquerda": "Osteoma osteoide",
-                  "direita": "Nicho com esclerose"
-                },
-                {
-                  "esquerda": "Tumor de células gigantes",
-                  "direita": "Bolhas de sabão"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre câncer de pele não melanoma, o que é correto?",
+              "opcoes": [
+                "O espinocelular é o mais comum",
+                "O basocelular dá muita metástase",
+                "Imunoterapia para todos",
+                "A maioria ocorre na face"
               ],
-              "explicacao": "Imagem sugere o diagnóstico.",
-              "revisado": false
+              "resposta": "A maioria ocorre na face",
+              "explicacao": "Exposição solar.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-u16-l3-q5",
@@ -6147,18 +6159,18 @@
             },
             {
               "id": "cir-d1-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com trauma está em choque após 1 litro de cristaloide e ácido tranexâmico, com FAST positivo.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a tríade letal do choque?",
               "opcoes": [
-                "Laparotomia de urgência",
-                "Tomografia de abdome",
-                "Mais 3 litros de soro",
-                "Observação"
+                "Hipertermia, alcalose e coagulopatia",
+                "Hipotermia, alcalose e coagulopatia",
+                "Hipertermia, acidose e TEP",
+                "Hipotermia, acidose e coagulopatia"
               ],
-              "resposta": "Laparotomia de urgência",
-              "explicacao": "O paciente instável com FAST positivo vai direto para o centro cirúrgico.",
-              "revisado": false
+              "resposta": "Hipotermia, acidose e coagulopatia",
+              "explicacao": "Uma piora a outra.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             }
           ]
         },
@@ -6300,43 +6312,34 @@
           "questoes": [
             {
               "id": "cir-d1-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com TCE tem Glasgow de 6, pupila esquerda dilatada e postura em extensão.",
-              "enunciado": "Qual é a conduta imediata, enquanto aguarda a cirurgia?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a regra dos nove, o que é correto?",
               "opcoes": [
-                "Intubar, cabeceira alta, manitol ou salina e hiperventilar breve",
-                "Cabeça baixa",
-                "Soro glicosado",
-                "Deixar a cabeça baixa, dar soro glicosado e esperar seis horas"
+                "É igual em adultos e crianças",
+                "A cabeça da criança é o triplo",
+                "Face e períneo não pesam",
+                "Tronco anterior, posterior e pescoço somam 37% no adulto"
               ],
-              "resposta": "Intubar, cabeceira alta, manitol ou salina e hiperventilar breve",
-              "explicacao": "São sinais de herniação cerebral.",
-              "revisado": false
+              "resposta": "Tronco anterior, posterior e pescoço somam 37% no adulto",
+              "explicacao": "Na criança a cabeça é proporcionalmente maior.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-d1-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada lesão à sua característica na tomografia.",
-              "pares": [
-                {
-                  "esquerda": "Hematoma epidural",
-                  "direita": "Lente biconvexa que não cruza suturas"
-                },
-                {
-                  "esquerda": "Hematoma subdural",
-                  "direita": "Crescente que cruza suturas"
-                },
-                {
-                  "esquerda": "Lesão axonal difusa",
-                  "direita": "Tomografia quase normal com coma"
-                },
-                {
-                  "esquerda": "Contusão",
-                  "direita": "Lesão no lobo frontal ou temporal"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Queimada em 27% tem CK de 6.570 e potássio de 6,7.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Sangria",
+                "Diálise",
+                "Alcalinizar a urina",
+                "Gluconato de cálcio"
               ],
-              "explicacao": "A lesão axonal difusa é melhor vista na ressonância.",
-              "revisado": false
+              "resposta": "Gluconato de cálcio",
+              "explicacao": "Proteger o coração da hipercalemia.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d1-l3-q3",
@@ -6582,28 +6585,18 @@
             },
             {
               "id": "cir-d2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada situação biliar à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Leve",
-                  "direita": "Antibiótico e drenagem se não melhorar"
-                },
-                {
-                  "esquerda": "Moderada",
-                  "direita": "Drenagem biliar precoce"
-                },
-                {
-                  "esquerda": "Grave com falência de órgão",
-                  "direita": "Drenagem urgente e suporte"
-                },
-                {
-                  "esquerda": "Coledocolitíase sem colangite",
-                  "direita": "CPRE eletiva antes ou durante a cirurgia"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Pancreatite aguda estável e sem disfunção. Qual é o manejo?",
+              "opcoes": [
+                "Internar e antibiótico amplo",
+                "Internar e carbapenêmico",
+                "UTI",
+                "Internar, hidratar e analgesia, sem antibiótico"
               ],
-              "explicacao": "A CPRE é a via de drenagem preferida.",
-              "revisado": false
+              "resposta": "Internar, hidratar e analgesia, sem antibiótico",
+              "explicacao": "Antibiótico só com infecção.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-d2-l2-q3",
@@ -7348,18 +7341,18 @@
             },
             {
               "id": "cir-d4-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente tem câncer de cólon direito com metástase única de 3 cm no fígado.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que está ERRADO sobre a irrigação do reto?",
               "opcoes": [
-                "Intenção curativa: ressecar tumor e metástase com quimio",
-                "Só paliativo",
-                "Só quimioterapia oral",
-                "Apenas cuidados paliativos, porque metástase no fígado nunca tem cura"
+                "Retal média vem da ilíaca interna",
+                "Retal inferior vem da pudenda interna",
+                "Epigástrica inferior vem da ilíaca externa",
+                "Retal superior vem da ilíaca interna"
               ],
-              "resposta": "Intenção curativa: ressecar tumor e metástase com quimio",
-              "explicacao": "Metástases hepáticas ressecáveis podem ser curadas em parte dos casos.",
-              "revisado": false
+              "resposta": "Retal superior vem da ilíaca interna",
+              "explicacao": "Ela vem da mesentérica inferior.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             }
           ]
         },
@@ -8348,47 +8341,48 @@
             },
             {
               "id": "cir-d6-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com trauma de pelve tem sangue no meato uretral e não consegue urinar.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre anafilaxia na cirurgia, o que está ERRADO?",
               "opcoes": [
-                "Não sondar; uretrografia e cistostomia se preciso",
-                "Sondagem forçada",
-                "Observação",
-                "Sondagem forçada pela uretra até conseguir entrar na bexiga"
+                "Ocorre em 1 a cada 4.500",
+                "Mortalidade de 3 a 6%",
+                "Relaxantes e látex causam",
+                "O tratamento inicial é corticoide"
               ],
-              "resposta": "Não sondar; uretrografia e cistostomia se preciso",
-              "explicacao": "A sondagem pode transformar uma lesão parcial em total.",
-              "revisado": false
+              "resposta": "O tratamento inicial é corticoide",
+              "explicacao": "É adrenalina.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-d6-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "O câncer de ___ é o tumor sólido mais comum em homens de 15 a 35 anos e costuma se apresentar como nódulo indolor.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a hipoalbuminemia, o que é correto?",
               "opcoes": [
-                "testículo",
-                "próstata",
-                "bexiga",
-                "rim com sangue na urina"
+                "Não importa nas anastomoses",
+                "Abaixo de 4 já é baixa",
+                "Porte da cirurgia não importa",
+                "Perda acima de 5 a 10% e albumina abaixo de 2,5 pedem nutrição complementar"
               ],
-              "resposta": "testículo",
-              "explicacao": "O tratamento inicial é a retirada do testículo por via inguinal.",
-              "revisado": false
+              "resposta": "Perda acima de 5 a 10% e albumina abaixo de 2,5 pedem nutrição complementar",
+              "explicacao": "Risco de deiscência.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-d6-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com PSA de 9 ng/mL e toque retal com nódulo endurecido.",
-              "enunciado": "Qual é o próximo passo?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a classificação ASA, o que é correto?",
               "opcoes": [
-                "Ressonância da próstata e biópsia",
-                "Repetir PSA em 5 anos",
-                "Radioterapia sem biópsia",
-                "Repetir o PSA em cinco anos e só investigar se subir mais"
+                "Ignora urgência",
+                "ASA V é doador",
+                "ASA IV não opera nem em urgência",
+                "ASA II tem doença sistêmica leve"
               ],
-              "resposta": "Ressonância da próstata e biópsia",
-              "explicacao": "O escore de Gleason da biópsia orienta o tratamento.",
-              "revisado": false
+              "resposta": "ASA II tem doença sistêmica leve",
+              "explicacao": "Urgência recebe a letra E.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             }
           ]
         }
@@ -8711,28 +8705,19 @@
             },
             {
               "id": "cir-d7-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada grupo à particularidade no trauma.",
-              "pares": [
-                {
-                  "esquerda": "Criança",
-                  "direita": "Hipotensão é sinal tardio"
-                },
-                {
-                  "esquerda": "Idoso",
-                  "direita": "Uso de anticoagulante e betabloqueador mascara sinais"
-                },
-                {
-                  "esquerda": "Gestante",
-                  "direita": "Volume de sangue maior esconde perdas"
-                },
-                {
-                  "esquerda": "Obeso",
-                  "direita": "Via aérea e acesso difíceis"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Gestante no 3º trimestre, imobilizada em prancha, hipotensa.",
+              "enunciado": "Onde colocar o coxim?",
+              "opcoes": [
+                "Lado esquerdo, entre a paciente e a prancha",
+                "Esquerdo, sob a prancha",
+                "Direito, entre paciente e prancha",
+                "Lado direito, debaixo da prancha"
               ],
-              "explicacao": "Adaptar o atendimento.",
-              "revisado": false
+              "resposta": "Lado direito, debaixo da prancha",
+              "explicacao": "Inclina o corpo para a esquerda.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d7-l3-q5",
@@ -8895,26 +8880,33 @@
             },
             {
               "id": "cir-d8-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Paciente com colangite esclerosante primária não tem risco aumentado de colangiocarcinoma.",
-              "resposta": false,
-              "explicacao": "Falso. O risco é maior e há necessidade de vigilância.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que NÃO é indicação de transplante de fígado?",
+              "opcoes": [
+                "Cirrose viral ou alcoólica",
+                "Cirrose colestática",
+                "Atresia biliar",
+                "Câncer hepático com metástase"
+              ],
+              "resposta": "Câncer hepático com metástase",
+              "explicacao": "Doença disseminada contraindica.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             },
             {
               "id": "cir-d8-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com cirrose descompensada e carcinoma hepatocelular dentro dos critérios de Milão.",
-              "enunciado": "Qual é a melhor opção?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual segmento pertence ao lobo direito?",
               "opcoes": [
-                "Transplante hepático",
-                "Ressecção",
-                "Quimioterapia",
-                "Ressecção ampla do lobo direito"
+                "II",
+                "V no esquerdo",
+                "VIII no esquerdo",
+                "VII"
               ],
-              "resposta": "Transplante hepático",
-              "explicacao": "Trata o tumor e a cirrose.",
-              "revisado": false
+              "resposta": "VII",
+              "explicacao": "V a VIII são do lado direito.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
             }
           ]
         },
@@ -9605,48 +9597,50 @@
             },
             {
               "id": "cir-d10-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com perna fria há 4 horas, sem pulso, com perda de sensibilidade nos dedos e força preservada.",
-              "enunciado": "Qual é a classe e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Isquemia de 8 dias no pé. Qual achado do Doppler indica membro inviável?",
               "opcoes": [
-                "IIa; heparina e revascularização",
-                "I; observar",
-                "III; amputação",
-                "Classe III; amputação primária imediata sem tentar revascularizar"
+                "Sem som arterial no tornozelo",
+                "Fluxo monofásico",
+                "Pouca resposta venosa poplítea",
+                "Sem som venoso no tornozelo à compressão do pé"
               ],
-              "resposta": "IIa; heparina e revascularização",
-              "explicacao": "Membro ameaçado.",
-              "revisado": false
+              "resposta": "Sem som venoso no tornozelo à compressão do pé",
+              "explicacao": "Trombose venosa da microcirculação.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d10-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente com perna fria há 2 dias, rígida, sem sensibilidade e sem movimento.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Idoso fumante com isquemia aguda da perna e pulsos femoral e poplíteo amplos do outro lado.",
+              "enunciado": "Qual é a etiologia?",
               "opcoes": [
-                "Amputação primária",
-                "Embolectomia",
-                "Trombólise",
-                "Trombólise intra-arterial por 48 horas"
+                "Mönckeberg",
+                "Aprisionamento",
+                "Embolia da aorta",
+                "Trombose de aneurisma de poplítea"
               ],
-              "resposta": "Amputação primária",
-              "explicacao": "Membro inviável.",
-              "revisado": false
+              "resposta": "Trombose de aneurisma de poplítea",
+              "explicacao": "Costuma ser bilateral.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d10-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 70 anos com fibrilação atrial, sem doença arterial prévia, tem dor súbita e perna fria; a outra perna tem pulsos normais.",
-              "enunciado": "Qual é a causa mais provável?",
+              "caso": "Após cateterismo, massa pulsátil na virilha com frêmito e sopro contínuo.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Embolia de origem cardíaca",
-                "Trombose em artéria já doente",
-                "Trombose venosa profunda",
-                "Vasculite de grandes vasos"
+                "Aneurisma",
+                "Estenose",
+                "Hematoma",
+                "Pseudoaneurisma com fístula arteriovenosa"
               ],
-              "resposta": "Embolia de origem cardíaca",
-              "explicacao": "Embolia é súbita, com fonte; trombose ocorre em artéria já doente, com história de claudicação.",
-              "revisado": false
+              "resposta": "Pseudoaneurisma com fístula arteriovenosa",
+              "explicacao": "Sopro contínuo indica fístula.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d10-l1-q5",
@@ -9741,18 +9735,18 @@
             },
             {
               "id": "cir-d10-l2-q3",
-              "tipo": "caso_clinico",
-              "caso": "Paciente operado de aneurisma de aorta com endoprótese faz tomografia de controle e o aneurisma cresceu, com contraste fora da prótese.",
-              "enunciado": "Qual é a complicação?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na suspeita de dissecção de aorta, o que é correto?",
               "opcoes": [
-                "Vazamento (endoleak)",
-                "Hérnia incisional",
-                "Infecção urinária",
-                "Dissecção de aorta torácica"
+                "ECG confirma",
+                "Distais são piores",
+                "Cateterismo é o exame",
+                "Tamponamento, insuficiência aórtica e AVC são complicações letais das proximais"
               ],
-              "resposta": "Vazamento (endoleak)",
-              "explicacao": "O endoleak é típico do reparo endovascular e exige imagens de seguimento.",
-              "revisado": false
+              "resposta": "Tamponamento, insuficiência aórtica e AVC são complicações letais das proximais",
+              "explicacao": "Angiotomografia é a escolha.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d10-l2-q4",
@@ -9857,17 +9851,18 @@
             {
               "id": "cir-d10-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente sem sintomas com estenose carotídea de 60%.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Idosa com estenose de carótida de 80%, bifurcação alta em C2, pescoço curto e cirurgia cervical prévia.",
+              "enunciado": "Qual é a melhor opção?",
               "opcoes": [
-                "Clínico intensivo; cirurgia em casos selecionados",
-                "Cirurgia sempre",
-                "Stent imediato",
-                "Stent imediato em todos os casos, mesmo sem sintomas"
+                "Endarterectomia",
+                "Clínico",
+                "Stent por acesso cervical",
+                "Angioplastia com stent por via femoral"
               ],
-              "resposta": "Clínico intensivo; cirurgia em casos selecionados",
-              "explicacao": "Benefício pequeno da cirurgia.",
-              "revisado": false
+              "resposta": "Angioplastia com stent por via femoral",
+              "explicacao": "Anatomia hostil à cirurgia.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d10-l3-q3",
@@ -10203,26 +10198,34 @@
             },
             {
               "id": "cir-d11-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A biópsia excisional de linfonodo cervical em fumante deve ser evitada antes da investigação da cabeça e pescoço.",
-              "resposta": true,
-              "explicacao": "Prefere-se punção.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 57 anos com ginecomastia bilateral há 5 anos e tratamento para próstata.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Ultrassom é essencial",
+                "Biopsiar",
+                "Não dosar hormônios",
+                "Revisar os remédios, provável causa"
+              ],
+              "resposta": "Revisar os remédios, provável causa",
+              "explicacao": "Como finasterida ou espironolactona.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d11-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Paciente após paratireoidectomia com cálcio muito baixo e osso faminto.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais exames avaliam um fumante e etilista com suspeita de câncer de cabeça e pescoço?",
               "opcoes": [
-                "Cálcio na veia e vitamina D",
-                "Diurético",
-                "Bisfosfonato",
-                "Bisfosfonato venoso e diurético de alça"
+                "Boca, raio X, ultrassom e tireoide",
+                "Endoscopia, ultrassom e abdome",
+                "Endoscopia, laringoscopia e tireoide",
+                "Boca, nasofaringolaringoscopia, endoscopia e raio X"
               ],
-              "resposta": "Cálcio na veia e vitamina D",
-              "explicacao": "Síndrome do osso faminto.",
-              "revisado": false
+              "resposta": "Boca, nasofaringolaringoscopia, endoscopia e raio X",
+              "explicacao": "Buscar segundo tumor.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             }
           ]
         },
@@ -10597,11 +10600,19 @@
             },
             {
               "id": "cir-d12-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Homem de 55 anos com varicocele nova, só à direita e que não some deitado, deve ser investigado para tumor renal.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Pode indicar compressão da veia por massa, como tumor de rim.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Tumor de bexiga de 6 cm em divertículo, T1 de alto grau com CIS.",
+              "enunciado": "Qual é o manejo?",
+              "opcoes": [
+                "BCG",
+                "Cistectomia parcial",
+                "Quimiorradioterapia",
+                "Cistectomia radical"
+              ],
+              "resposta": "Cistectomia radical",
+              "explicacao": "Divertículo sem músculo: alto risco.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d12-l2-q8",
@@ -10658,43 +10669,33 @@
             },
             {
               "id": "cir-d12-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com trauma abdominal faz cistografia: o contraste sai da bexiga e se espalha entre as alças intestinais.",
-              "enunciado": "Qual é a lesão e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal fator de risco para retenção urinária aguda?",
               "opcoes": [
-                "Ruptura intraperitoneal; cirurgia",
-                "Ruptura extraperitoneal; só sonda",
-                "Contusão da bexiga; observar",
-                "Lesão de uretra; cateter suprapúbico"
+                "PSA",
+                "Fluxo urinário",
+                "Volume da próstata",
+                "Idade"
               ],
-              "resposta": "Ruptura intraperitoneal; cirurgia",
-              "explicacao": "A ruptura intraperitoneal exige reparo cirúrgico; a extraperitoneal costuma ser tratada com sonda.",
-              "revisado": false
+              "resposta": "Idade",
+              "explicacao": "Em estudos populacionais.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d12-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada lesão à conduta.",
-              "pares": [
-                {
-                  "esquerda": "Ruptura intraperitoneal da bexiga",
-                  "direita": "Reparo cirúrgico"
-                },
-                {
-                  "esquerda": "Ruptura extraperitoneal",
-                  "direita": "Sonda vesical por 2 semanas"
-                },
-                {
-                  "esquerda": "Fratura de pênis",
-                  "direita": "Cirurgia urgente"
-                },
-                {
-                  "esquerda": "Lesão de uretra bulbar em queda a cavaleiro",
-                  "direita": "Cistostomia"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é indicação absoluta de ressecção endoscópica da próstata?",
+              "opcoes": [
+                "Resíduo de 250 mL",
+                "Escore acima de 20",
+                "Pressão detrusora alta",
+                "Infecções urinárias de repetição"
               ],
-              "explicacao": "Conduta por lesão.",
-              "revisado": false
+              "resposta": "Infecções urinárias de repetição",
+              "explicacao": "Também retenção refratária.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d12-l3-q5",
@@ -10969,40 +10970,49 @@
             {
               "id": "cir-d13-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Criança com constipação grave desde o nascimento e ampola retal vazia.",
-              "enunciado": "Qual é o exame?",
+              "caso": "Recém-nascido com Down, polidrâmnio e vômitos biliosos sem mecônio.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Biópsia retal",
-                "Ultrassom",
-                "Laxante só",
-                "Laxante oral e observação por meses"
+                "Refluxo",
+                "Estenose de piloro",
+                "Atresia de íleo",
+                "Obstrução duodenal congênita"
               ],
-              "resposta": "Biópsia retal",
-              "explicacao": "Hirschsprung.",
-              "revisado": false
+              "resposta": "Obstrução duodenal congênita",
+              "explicacao": "Dupla bolha.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d13-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Criança com Hirschsprung, febre, distensão e diarreia explosiva pode ter enterocolite, a complicação mais grave.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. A enterocolite pode ser fatal e exige tratamento rápido.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a doença de Hirschsprung, o que é correto?",
+              "opcoes": [
+                "Não se liga a Down",
+                "A biópsia por sucção vale pouco",
+                "Laparotomia para derivar",
+                "Mais de 75% afetam reto e sigmoide"
+              ],
+              "resposta": "Mais de 75% afetam reto e sigmoide",
+              "explicacao": "Biópsia por sucção é o padrão.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d13-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Recém-nascido com icterícia prolongada, fezes claras e cintilografia sem excreção.",
-              "enunciado": "Qual é a cirurgia?",
+              "caso": "Lactente com hidronefrose, sem refluxo e rim direito com 32% de função.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Portoenterostomia de Kasai",
-                "Colecistectomia",
-                "Transplante imediato",
-                "Transplante hepático imediato como primeira escolha"
+                "Válvula de uretra",
+                "Urografia",
+                "Não operar",
+                "Obstrução da junção pieloureteral; pieloplastia"
               ],
-              "resposta": "Portoenterostomia de Kasai",
-              "explicacao": "Atresia de vias biliares.",
-              "revisado": false
+              "resposta": "Obstrução da junção pieloureteral; pieloplastia",
+              "explicacao": "Função abaixo de 40%.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             }
           ]
         },
@@ -11029,17 +11039,18 @@
             {
               "id": "cir-d13-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança com hérnia inguinal encarcerada há 2 horas, sem sinais de sofrimento.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Menino de 3 anos com massa fixa no quadrante superior esquerdo e varicocele esquerda.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Reduzir manualmente e operar em 24 a 48 h",
-                "Cirurgia de urgência sempre",
-                "Liberar",
-                "Cirurgia de urgência imediata em todos os casos"
+                "Suprarrenal",
+                "Neuroblastoma",
+                "Rabdomiossarcoma",
+                "Tumor de Wilms"
               ],
-              "resposta": "Reduzir manualmente e operar em 24 a 48 h",
-              "explicacao": "Reduz o edema antes de operar.",
-              "revisado": false
+              "resposta": "Tumor de Wilms",
+              "explicacao": "Trombo na veia renal esquerda.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
             },
             {
               "id": "cir-d13-l3-q3",
