@@ -176,11 +176,18 @@
             },
             {
               "id": "prev-u1-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O valor preditivo positivo de um teste aumenta quando a prevalência da doença aumenta.",
-              "resposta": true,
-              "explicacao": "Com mais doentes na população, um resultado positivo tem mais chance de ser verdadeiro. O valor preditivo negativo faz o contrário.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Um teste com sensibilidade e especificidade de 90% foi aplicado em 1.000 pessoas de uma população com prevalência de 20% e em outras 1.000 de uma população com prevalência de 2%. Quais são os valores preditivos positivos, respectivamente?",
+              "opcoes": [
+                "6,9% e 9,7%",
+                "6,9% e 1,6%",
+                "69,2% e 15,5%",
+                "69,2% e 97,2%"
+              ],
+              "resposta": "69,2% e 15,5%",
+              "explicacao": "Com 20%: 180 verdadeiros positivos e 80 falsos positivos, VPP = 180/260, cerca de 69%. Com 2%: 18 verdadeiros e 98 falsos positivos, VPP = 18/116, cerca de 15,5%. O valor preditivo positivo cai muito quando a doença é rara, mesmo com teste bom.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-u1-l2-q4",
@@ -420,25 +427,35 @@
             },
             {
               "id": "prev-u2-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A razão de mortalidade materna usa como denominador o número de nascidos vivos.",
-              "resposta": true,
-              "explicacao": "Ela é expressa por 100.000 nascidos vivos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que representa a esperança de vida ao nascer?",
+              "opcoes": [
+                "Probabilidade de viver até 65 anos",
+                "Idade mínima esperada de morte dos recém-nascidos",
+                "Número médio de anos que um grupo de recém-nascidos viveria, se mantidas as taxas de mortalidade do ano de nascimento",
+                "Tempo médio de vida sem doenças incapacitantes",
+                "Soma das idades ao morrer dividida pelo número de habitantes"
+              ],
+              "resposta": "Número médio de anos que um grupo de recém-nascidos viveria, se mantidas as taxas de mortalidade do ano de nascimento",
+              "explicacao": "A esperança de vida é calculada pela tábua de vida e supõe que as taxas de mortalidade por idade atuais se mantenham. Ela cai muito quando a mortalidade infantil é alta. Anos de vida saudável são outro indicador.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-u2-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "O índice de ___ é a proporção de óbitos de pessoas com 50 anos ou mais em relação ao total de óbitos.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual indicador combina mortalidade e morbidade numa só medida da carga de doença?",
               "opcoes": [
-                "Swaroop-Uemura",
-                "Gini",
-                "Apgar",
-                "Quetelet de massa corporal"
+                "Incidência",
+                "Letalidade",
+                "Prevalência",
+                "Mortalidade geral",
+                "DALY (anos de vida perdidos ajustados por incapacidade)"
               ],
-              "resposta": "Swaroop-Uemura",
-              "explicacao": "Quanto maior, melhores as condições de saúde da população.",
-              "revisado": false
+              "resposta": "DALY (anos de vida perdidos ajustados por incapacidade)",
+              "explicacao": "O DALY soma os anos perdidos por morte precoce e os anos vividos com incapacidade. Assim compara doenças que matam com doenças que incapacitam, como depressão, e orienta prioridades. Incidência, prevalência e letalidade medem só um aspecto.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "prev-u2-l1-q5",
@@ -500,17 +517,20 @@
           "questoes": [
             {
               "id": "prev-u2-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza uma epidemia?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos começou um remédio para emagrecer e, semanas depois, teve palpitações, insônia e ansiedade. O médico suspeitou de reação adversa.",
+              "enunciado": "Qual é a ação mais adequada?",
               "opcoes": [
-                "Casos acima do esperado para o local e período",
-                "Casos sempre presentes",
-                "Vários continentes",
-                "Casos presentes sempre na mesma região, com número estável ao longo dos anos"
+                "Retirar o remédio de toda a população",
+                "Acompanhar a paciente e notificar às autoridades, ajudando a investigar",
+                "Trocar o remédio e esperar outros casos antes de notificar",
+                "Manter o remédio, pois esses efeitos são comuns, sem notificar",
+                "Discutir em congressos e com a indústria antes de notificar"
               ],
-              "resposta": "Casos acima do esperado para o local e período",
-              "explicacao": "A endemia é a presença constante, dentro do esperado.",
-              "revisado": false
+              "resposta": "Acompanhar a paciente e notificar às autoridades, ajudando a investigar",
+              "explicacao": "A farmacovigilância depende da notificação de suspeitas pelos profissionais, mesmo sem certeza da causa. A notificação vai ao sistema da Anvisa e ajuda a detectar riscos. Retirar o remédio de todos exige análise de muitos casos.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-u2-l2-q2",
@@ -620,16 +640,18 @@
             {
               "id": "prev-u2-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza a transição demográfica?",
+              "enunciado": "Qual ideia é central na obra de Thomas McKeown sobre determinantes da saúde?",
               "opcoes": [
-                "Cai a mortalidade, depois a natalidade, e a população envelhece",
-                "Sobem natalidade e mortalidade",
-                "Mais crianças",
-                "Aumento da natalidade e da mortalidade, com menos idosos na população"
+                "A assistência médica explica a queda da morbidade",
+                "Fatores socioeconômicos, como nutrição, moradia e trabalho, determinam a saúde",
+                "Fatores genéticos predominam",
+                "O ambiente e os comportamentos de risco",
+                "A estrutura social e as relações de poder"
               ],
-              "resposta": "Cai a mortalidade, depois a natalidade, e a população envelhece",
-              "explicacao": "O Brasil passou por essa transição de forma muito rápida.",
-              "revisado": false
+              "resposta": "Fatores socioeconômicos, como nutrição, moradia e trabalho, determinam a saúde",
+              "explicacao": "McKeown mostrou que a mortalidade por doenças infecciosas na Inglaterra caiu antes da chegada de antibióticos e vacinas, sobretudo por melhora da nutrição e das condições de vida. Isso reforçou a importância dos determinantes sociais.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "prev-u2-l3-q2",
@@ -1141,46 +1163,52 @@
             },
             {
               "id": "prev-u4-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A prevenção ___ busca evitar danos causados por excesso de exames, diagnósticos e tratamentos.",
+              "tipo": "caso_clinico",
+              "caso": "Uma adolescente de 16 anos é atendida na UBS com suspeita de dengue, e a equipe planeja ações no território.",
+              "enunciado": "Qual opção traz, respectivamente, um exemplo de promoção da saúde e um de prevenção da dengue?",
               "opcoes": [
-                "quaternária",
-                "primária",
-                "secundária",
-                "terciária"
+                "Campanhas comunitárias sobre eliminar criadouros; tampar bem caixas d'água e recipientes",
+                "Repelente para gestantes; mais exames sorológicos",
+                "Grupos de hábitos saudáveis para adolescentes; internar casos graves",
+                "Palestras sobre alimentação; mutirão para recolher pneus",
+                "Atividade física comunitária; analgésicos para casos confirmados"
               ],
-              "resposta": "quaternária",
-              "explicacao": "O conceito foi proposto por Marc Jamoulle.",
-              "revisado": false
+              "resposta": "Campanhas comunitárias sobre eliminar criadouros; tampar bem caixas d'água e recipientes",
+              "explicacao": "Promoção da saúde age em capacidades e condições de vida da comunidade, como educação e mobilização sobre criadouros. Prevenção é uma barreira específica contra a doença, como tampar a caixa d'água. Tratar casos confirmados já é assistência, e não prevenção primária.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-u4-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Idoso saudável pede uma bateria anual de exames de imagem de corpo inteiro, sem sintomas.",
-              "enunciado": "Qual é a conduta mais adequada?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No modelo de Leavell e Clark, qual nível de prevenção inclui detectar doença cedo e limitar sua progressão?",
               "opcoes": [
-                "Explicar os riscos e oferecer só o rastreio indicado",
-                "Pedir todos os exames",
-                "Tomografia anual",
-                "Pedir tomografia de corpo inteiro todo ano e encaminhar a especialistas"
+                "Prevenção secundária",
+                "Prevenção primária",
+                "Prevenção terciária",
+                "Prevenção quaternária",
+                "Promoção da saúde"
               ],
-              "resposta": "Explicar os riscos e oferecer só o rastreio indicado",
-              "explicacao": "Achados casuais levam a procedimentos e ansiedade sem benefício.",
-              "revisado": false
+              "resposta": "Prevenção secundária",
+              "explicacao": "A prevenção secundária atua na doença já iniciada, com diagnóstico precoce (como rastreamento) e tratamento imediato. A primária evita que a doença surja (promoção e proteção específica), e a terciária reduz sequelas e reabilita.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "prev-u4-l1-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "A fisioterapia para recuperar movimentos após um AVC é qual nível de prevenção?",
+              "enunciado": "Qual é o princípio da estratégia populacional de prevenção de Geoffrey Rose?",
               "opcoes": [
-                "Terciária",
-                "Primária",
-                "Secundária",
-                "Quaternária"
+                "Tratar os indivíduos de maior risco",
+                "Focar em grupos com certas características socioeconômicas",
+                "Focar em promoção e proteção para evitar a doença",
+                "Reduzir a exposição de toda a população ao fator de risco, deslocando a curva de distribuição para a esquerda",
+                "Reabilitar quem já adoeceu"
               ],
-              "resposta": "Terciária",
-              "explicacao": "Ela reduz incapacidades e sequelas da doença já instalada.",
-              "revisado": false
+              "resposta": "Reduzir a exposição de toda a população ao fator de risco, deslocando a curva de distribuição para a esquerda",
+              "explicacao": "Rose mostrou que muitos casos vêm de pessoas com risco moderado, que são a maioria. Pequenas reduções do fator de risco em toda a população, como menos sal na comida industrializada, evitam mais casos que tratar só os de alto risco. É o paradoxo da prevenção.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "prev-u4-l1-q7",
@@ -2011,6 +2039,86 @@
               "explicacao": "Coordenação do cuidado é a APS organizar e integrar a atenção que a pessoa recebe em outros pontos da rede, mantendo a informação e a continuidade. A equidade é princípio do SUS, não atributo da APS.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u6-l1-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual marco internacional defendeu pela primeira vez a atenção primária como estratégia para \"Saúde para Todos no Ano 2000\"?",
+              "opcoes": [
+                "Declaração de Alma-Ata, de 1978",
+                "Relatório Flexner, dos Estados Unidos",
+                "Relatório Lalonde, do Canadá",
+                "Relatório Black, do Reino Unido",
+                "Criação da OMS, em 1948"
+              ],
+              "resposta": "Declaração de Alma-Ata, de 1978",
+              "explicacao": "A Conferência de Alma-Ata, em 1978, definiu a atenção primária como porta de entrada e base dos sistemas de saúde. O Relatório Flexner moldou o ensino médico centrado no hospital e na especialidade. O Lalonde e o Black trataram de determinantes e desigualdades em saúde.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
+            },
+            {
+              "id": "prev-u6-l1-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na Política Nacional de Atenção Básica, o território é central para organizar o cuidado. O que é correto sobre esse conceito?",
+              "opcoes": [
+                "É definido só por limites geográficos e administrativos",
+                "É só a área física da unidade, sem relação com as condições de vida",
+                "É definido só pelo número de famílias cadastradas",
+                "É um espaço dinâmico, com dimensões geográficas, sociais, econômicas, culturais e de saúde",
+                "Inclui só as famílias que usam a unidade"
+              ],
+              "resposta": "É um espaço dinâmico, com dimensões geográficas, sociais, econômicas, culturais e de saúde",
+              "explicacao": "Território vivo é onde as pessoas moram, trabalham e se relacionam, com seus riscos e recursos. A equipe é responsável por todas as famílias da área, inclusive as que não procuram a unidade. Conhecer o território permite planejar ações de acordo com as necessidades locais.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
+            },
+            {
+              "id": "prev-u6-l1-n4",
+              "tipo": "caso_clinico",
+              "caso": "Um novo morador soube pelo agente comunitário que a unidade funciona das 7h30 às 17h. Ele sai às 7h e só volta às 20h e diz que não vai conseguir usar o serviço.",
+              "enunciado": "Qual dimensão do acesso está prejudicada?",
+              "opcoes": [
+                "Econômica",
+                "Comodidade (conveniência de horários)",
+                "Disponibilidade",
+                "Aceitabilidade"
+              ],
+              "resposta": "Comodidade (conveniência de horários)",
+              "explicacao": "A comodidade, ou acomodação, trata de horários e forma de funcionamento compatíveis com a vida das pessoas. Disponibilidade é ter o serviço e profissionais suficientes, e aceitabilidade é a adequação cultural. Horário estendido ou terceiro turno resolveria esse problema.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
+            },
+            {
+              "id": "prev-u6-l1-n5",
+              "tipo": "caso_clinico",
+              "caso": "No conselho local de saúde, moradores relatam muitos acidentes de trânsito na avenida principal e dificuldade dos idosos para atravessar. Os conselheiros decidem convidar o departamento de trânsito para discutir soluções.",
+              "enunciado": "Essa decisão se relaciona principalmente com qual atributo da atenção primária?",
+              "opcoes": [
+                "Competência cultural",
+                "Longitudinalidade",
+                "Integralidade",
+                "Orientação comunitária"
+              ],
+              "resposta": "Orientação comunitária",
+              "explicacao": "Orientação comunitária é reconhecer as necessidades de saúde da comunidade no seu contexto e agir sobre elas, inclusive com outros setores. Longitudinalidade é o vínculo ao longo do tempo, e integralidade é oferecer todos os cuidados de que a pessoa precisa.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
+            },
+            {
+              "id": "prev-u6-l1-n6",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é a longitudinalidade na Estratégia Saúde da Família?",
+              "opcoes": [
+                "A coordenação entre os níveis de atenção",
+                "A abordagem centrada na família",
+                "A responsabilidade da equipe pelo acompanhamento da pessoa ao longo do tempo",
+                "O atendimento às demandas agudas",
+                "A ênfase em promoção e prevenção"
+              ],
+              "resposta": "A responsabilidade da equipe pelo acompanhamento da pessoa ao longo do tempo",
+              "explicacao": "Longitudinalidade é o vínculo contínuo entre a pessoa e a equipe, que a acompanha ao longo da vida, independentemente de haver doença. Coordenação, orientação familiar e acesso de primeiro contato são outros atributos da atenção primária.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         },
@@ -2297,6 +2405,71 @@
               "explicacao": "O genograma usa símbolos padronizados, com pelo menos três gerações, legenda e data. O homem fica à esquerda, os filhos do mais velho para o mais novo, e abortos e quem mora junto devem ser registrados.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u6-l2-n10",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 63 anos com hipertensão há 3 anos teve complicações por não tomar os remédios nem seguir a dieta, como o agente comunitário viu em visita domiciliar.",
+              "enunciado": "Pelo princípio da orientação às necessidades de saúde, qual é a conduta?",
+              "opcoes": [
+                "Reforçar que siga a prescrição à risca",
+                "Entender as concepções de saúde dela e suas dúvidas e preocupações sobre os remédios",
+                "Só intensificar consultas médicas, sem envolver a equipe",
+                "Trocar os remédios por terapias naturais",
+                "Exigir que siga a dieta à risca mesmo insegura"
+              ],
+              "resposta": "Entender as concepções de saúde dela e suas dúvidas e preocupações sobre os remédios",
+              "explicacao": "O cuidado centrado na pessoa começa por entender o que ela pensa sobre a doença e o tratamento, suas crenças e medos. Só repetir ordens não resolve a falta de adesão. A partir disso, a equipe constrói um plano junto com a paciente.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
+            },
+            {
+              "id": "prev-u6-l2-n11",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 47 anos, com laqueadura e ciclos regulares, tem há 3 meses fadiga, fraqueza e tonturas. Não usa remédios e o exame físico é normal.",
+              "enunciado": "Qual pergunta é mais importante para completar a anamnese?",
+              "opcoes": [
+                "Perda de peso não intencional",
+                "Padrão do fluxo menstrual",
+                "Consumo de alimentos com vitamina B12",
+                "Uso excessivo de álcool"
+              ],
+              "resposta": "Padrão do fluxo menstrual",
+              "explicacao": "Na mulher em idade reprodutiva com fadiga e tontura, a causa mais comum é anemia ferropriva por sangramento menstrual aumentado, frequente perto dos 40 anos com miomas e adenomiose. Ciclos regulares não excluem fluxo excessivo. Por isso, perguntar sobre volume e duração da menstruação vem primeiro.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
+            },
+            {
+              "id": "prev-u6-l2-n12",
+              "tipo": "caso_clinico",
+              "caso": "Diarista de 45 anos tem há 3 semanas cansaço diurno, dificuldade para começar a dormir e acorda cansada. Teme perder o emprego. A companheira acha que é preocupação com a biópsia de mama da mãe. Hipertensa controlada.",
+              "enunciado": "Qual é a melhor abordagem?",
+              "opcoes": [
+                "Orientar higiene do sono",
+                "Pedir polissonografia",
+                "Encaminhar ao neurologista",
+                "Prescrever zolpidem"
+              ],
+              "resposta": "Orientar higiene do sono",
+              "explicacao": "É insônia de curta duração ligada a um estressor claro. A primeira medida é higiene do sono e acolhimento da preocupação, sem exames. Polissonografia fica para suspeita de apneia ou outros distúrbios, e hipnótico não é a primeira escolha.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
+            },
+            {
+              "id": "prev-u6-l2-n13",
+              "tipo": "multipla_escolha",
+              "enunciado": "O que significa o acrônimo PRACTICE na abordagem familiar?",
+              "opcoes": [
+                "Problema, Relações, Afeto, Comunicação, Tempo de vida, Intervenção, Coping e Ecologia",
+                "Problema, Papéis, Afeto, Comunicação, Tempo de vida, Intervenção, Conflitos e Ecologia",
+                "Problema apresentado, Papéis e estrutura, Afeto, Comunicação, Tempo no ciclo de vida, Doença na família, Coping com estresse e Ecologia",
+                "Problema, Relações, Afeto, Conflitos, Tempo de vida, Intervenção, Coping e Ecologia",
+                "Problema, Papéis, Afeto, Comunicação, Tempo de vida, Doença crônica e Ecologia"
+              ],
+              "resposta": "Problema apresentado, Papéis e estrutura, Afeto, Comunicação, Tempo no ciclo de vida, Doença na família, Coping com estresse e Ecologia",
+              "explicacao": "O PRACTICE organiza a avaliação da família diante de um problema: o que trouxe a família, quem faz o quê, como lidam com afetos e comunicação, em que fase do ciclo de vida estão, que doenças existem, como enfrentam o estresse e que rede de apoio têm.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         },
@@ -2424,6 +2597,39 @@
               "explicacao": "Modelo proativo.",
               "revisado": false,
               "fonte": "PSU-MG 2026"
+            },
+            {
+              "id": "prev-u6-l3-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 65 anos com fibrilação atrial de alta resposta foi encaminhado ao cardiologista, que disse não precisar de exames nem remédios. No retorno à UBS está assintomático, mas com pulso irregular e FC 110.",
+              "enunciado": "Pela coordenação do cuidado, qual é a conduta?",
+              "opcoes": [
+                "Repetir os exames para confirmar a arritmia",
+                "Seguir só na UBS com consultas mais frequentes",
+                "Internar imediatamente",
+                "Encaminhar direto a um serviço terciário de arritmias",
+                "Pedir nova consulta com cardiologista para segunda opinião pela regulação"
+              ],
+              "resposta": "Pedir nova consulta com cardiologista para segunda opinião pela regulação",
+              "explicacao": "A atenção primária coordena o cuidado e deve garantir que o paciente receba o manejo correto, mesmo quando a resposta do especialista parece inadequada. A fibrilação atrial com FC alta precisa de controle da frequência e avaliação de anticoagulação. O caminho é a regulação, sem pular níveis da rede.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
+            },
+            {
+              "id": "prev-u6-l3-n2",
+              "tipo": "caso_clinico",
+              "caso": "O médico de família encaminhou um homem de 50 anos com hipertensão difícil ao cardiologista, que ajustou os remédios e controlou a pressão, mas não devolveu o paciente à unidade por achar que o melhor manejo é com o especialista.",
+              "enunciado": "Como se chama essa prática do cardiologista?",
+              "opcoes": [
+                "Apoio matricial",
+                "Classificação de risco",
+                "Efeito velcro",
+                "Gestão de caso"
+              ],
+              "resposta": "Efeito velcro",
+              "explicacao": "O efeito velcro ocorre quando o especialista retém o paciente que já poderia voltar à atenção primária, sobrecarregando a agenda especializada e fragmentando o cuidado. O ideal é a contrarreferência com cuidado compartilhado. O apoio matricial é o especialista dando suporte à equipe da atenção primária.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             }
           ]
         }
@@ -2954,28 +3160,19 @@
           "questoes": [
             {
               "id": "prev-u8-l2-q1",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada forma de hanseníase à classificação operacional.",
-              "pares": [
-                {
-                  "esquerda": "Até 5 lesões de pele",
-                  "direita": "Paucibacilar, 6 doses"
-                },
-                {
-                  "esquerda": "Mais de 5 lesões de pele",
-                  "direita": "Multibacilar, 12 doses"
-                },
-                {
-                  "esquerda": "Baciloscopia positiva",
-                  "direita": "Multibacilar mesmo com poucas lesões"
-                },
-                {
-                  "esquerda": "Reação tipo 2",
-                  "direita": "Eritema nodoso hansênico"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "No tratamento da hanseníase multibacilar em adultos, quais são as três drogas usadas?",
+              "opcoes": [
+                "Rifampicina, etambutol e isoniazida",
+                "Dapsona, etambutol e rifampicina",
+                "Rifampicina, dapsona e clofazimina",
+                "Pirazinamida, rifampicina e dapsona",
+                "Isoniazida, pirazinamida e clofazimina"
               ],
-              "explicacao": "Define o tratamento.",
-              "revisado": false
+              "resposta": "Rifampicina, dapsona e clofazimina",
+              "explicacao": "A poliquimioterapia única usa rifampicina e clofazimina em dose mensal supervisionada, mais dapsona e clofazimina diárias. Na multibacilar dura 12 meses. Etambutol, isoniazida e pirazinamida são do esquema da tuberculose.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-u8-l2-q2",
@@ -3184,6 +3381,22 @@
               "explicacao": "A APS deve combinar o cuidado clínico (classificar o risco, tratar e encaminhar os graves) com a vigilância no território, mapeando casos e focos do mosquito para orientar o controle. Não existe antiviral específico para dengue.",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-u8-l3-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "No controle da dengue, qual é o papel estratégico da UBS?",
+              "opcoes": [
+                "Detectar e eliminar larvas em casas e comércios",
+                "Tornar a prevenção obrigatória e vacinar todos",
+                "Dar suporte avançado de vida aos casos graves",
+                "Vigilância em saúde, com monitoramento e acompanhamento dos casos leves",
+                "Gestão ambiental dos riscos que espalham a doença"
+              ],
+              "resposta": "Vigilância em saúde, com monitoramento e acompanhamento dos casos leves",
+              "explicacao": "A UBS identifica casos, notifica, classifica o risco e acompanha os pacientes leves, evitando que evoluam mal. Eliminar criadouros cabe sobretudo aos agentes de endemias e à população. Casos graves vão para unidades de maior complexidade.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             }
           ]
         }
@@ -3309,17 +3522,19 @@
             },
             {
               "id": "prev-u9-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A redução ___ de risco é a diferença entre os riscos dos grupos.",
+              "tipo": "multipla_escolha",
+              "enunciado": "No estudo caso-controle, a principal medida de associação é a odds ratio. O que ela estima?",
               "opcoes": [
-                "absoluta",
-                "relativa",
-                "atribuível populacional",
-                "proporcional de óbitos"
+                "A força da associação em estudos transversais",
+                "A razão entre as chances de exposição dos casos e dos controles",
+                "A prevalência da exposição na população",
+                "O risco atribuível populacional",
+                "A razão de incidência entre expostos e não expostos"
               ],
-              "resposta": "absoluta",
-              "explicacao": "Base do NNT.",
-              "revisado": false
+              "resposta": "A razão entre as chances de exposição dos casos e dos controles",
+              "explicacao": "No caso-controle, parte-se dos doentes e não doentes e compara-se a chance de terem sido expostos. Como não se mede incidência, não dá para calcular risco relativo, mas, em doenças raras, a odds ratio se aproxima dele.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             }
           ]
         },
@@ -3665,17 +3880,35 @@
             },
             {
               "id": "prev-u10-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ Municipal de Saúde deve aprovar as contas da saúde.",
+              "tipo": "multipla_escolha",
+              "enunciado": "A judicialização da saúde consome parte grande do orçamento de muitos estados e municípios, muitas vezes por remédios aprovados pela Anvisa e ainda não avaliados pela Conitec. Qual é uma consequência disso para a gestão?",
               "opcoes": [
-                "Conselho",
-                "Prefeito",
-                "Juiz",
-                "Hospital"
+                "Promove equidade, dando acesso imediato a todos",
+                "A maioria das ações pede tratamentos já avaliados pela Conitec",
+                "Desvia recursos e desequilibra o investimento em outras prioridades",
+                "Obriga a priorizar inovações, beneficiando toda a coletividade",
+                "Dispensa avaliações técnicas"
               ],
-              "resposta": "Conselho",
-              "explicacao": "Controle social.",
-              "revisado": false
+              "resposta": "Desvia recursos e desequilibra o investimento em outras prioridades",
+              "explicacao": "Decisões judiciais beneficiam quem entra na justiça e retiram recursos de ações coletivas já planejadas, o que pode piorar a equidade. A Conitec existe justamente para avaliar custo e efetividade antes de incorporar uma tecnologia.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
+            },
+            {
+              "id": "prev-u10-l1-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Os modelos clássicos de sistema de saúde Beveridge, Bismarck e de mercado entendem a saúde, respectivamente, como:",
+              "opcoes": [
+                "Bem de consumo, direito universal e seguro social",
+                "Seguro social, bem de consumo e direito universal",
+                "Seguro social, direito universal e bem de consumo",
+                "Direito universal, bem de consumo e seguro social",
+                "Direito universal, seguro social e bem de consumo"
+              ],
+              "resposta": "Direito universal, seguro social e bem de consumo",
+              "explicacao": "O modelo Beveridge, do Reino Unido e inspiração do SUS, é universal e financiado por impostos. O Bismarck, da Alemanha, é um seguro ligado ao trabalho. No modelo de mercado, como nos EUA, a saúde é comprada como um produto.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             }
           ]
         },
@@ -3896,17 +4129,20 @@
             },
             {
               "id": "prev-u10-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ é o canal para o cidadão registrar reclamações e sugestões sobre o SUS.",
+              "tipo": "caso_clinico",
+              "caso": "Um médico recém-formado vê falta de quimioterápicos no ambulatório de oncologia do município e quer levar o problema à instância de participação social que formula estratégias e fiscaliza a política de saúde, inclusive financeiramente.",
+              "enunciado": "A qual instância deve recorrer?",
               "opcoes": [
-                "ouvidoria",
-                "prefeitura",
-                "delegacia",
-                "câmara"
+                "Conselho Municipal de Saúde",
+                "Conferência Municipal de Saúde",
+                "Conselho Estadual de Saúde",
+                "Conselho Gestor da unidade",
+                "Comissão Intergestores Tripartite"
               ],
-              "resposta": "ouvidoria",
-              "explicacao": "Disque Saúde 136.",
-              "revisado": false
+              "resposta": "Conselho Municipal de Saúde",
+              "explicacao": "Pela Lei 8.142, o conselho de saúde é permanente e deliberativo, formula estratégias e fiscaliza a execução da política, inclusive gastos. A conferência ocorre a cada 4 anos para avaliar a situação e propor diretrizes. A CIT reúne gestores, e não a sociedade.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             }
           ]
         }
@@ -3968,68 +4204,83 @@
             },
             {
               "id": "prev-u11-l1-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A Rede ___ organiza a atenção à gestante e à criança no SUS.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 28 anos teve sífilis diagnosticada no pré-natal da primeira gravidez.",
+              "enunciado": "Qual é a conduta mais adequada?",
               "opcoes": [
-                "Cegonha",
-                "Bebê",
-                "Família",
-                "Vida"
+                "Doxiciclina para ela e o parceiro, com monitorização",
+                "Penicilina benzatina imediata para ela e o parceiro, com seguimento rigoroso",
+                "Só monitorar, pois a transmissão ao bebê ocorre só em fases tardias",
+                "Exames mensais e tratar mãe e bebê só após o parto",
+                "Tratar o parceiro e esperar o segundo trimestre para tratar a mãe"
               ],
-              "resposta": "Cegonha",
-              "explicacao": "Hoje Rede Alyne.",
-              "revisado": false
+              "resposta": "Penicilina benzatina imediata para ela e o parceiro, com seguimento rigoroso",
+              "explicacao": "Penicilina benzatina é o único tratamento que trata o feto e previne a sífilis congênita, e deve começar logo. O parceiro também é tratado para evitar reinfecção, e o VDRL é repetido mensalmente. A doxiciclina é contraindicada na gestação.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-u11-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a principal causa de morte materna no Brasil?",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos e 3 meses passou a ter cheiro forte nas axilas há 2 meses. Tem poucos pelos grossos na base do pênis, testículos de 2 mL, pênis sem crescimento, altura e peso no percentil 50 estáveis e sem acne.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Hipertensão na gestação",
-                "Câncer",
-                "Acidente",
-                "Infecção urinária simples"
+                "Adrenarca precoce",
+                "Puberdade fisiológica",
+                "Puberdade precoce",
+                "Hipertricose"
               ],
-              "resposta": "Hipertensão na gestação",
-              "explicacao": "Junto com hemorragia.",
-              "revisado": false
+              "resposta": "Adrenarca precoce",
+              "explicacao": "Pelos pubianos e odor axilar sem aumento dos testículos (abaixo de 4 mL) e sem aceleração do crescimento indicam ativação só da adrenal, a adrenarca precoce. Na puberdade verdadeira, o primeiro sinal no menino é o aumento testicular. Basta acompanhar, e investigar se surgirem sinais de virilização.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-u11-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Município com mortalidade neonatal precoce alta.",
-              "enunciado": "Onde intervir?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um comitê municipal de mortalidade materna decidiu focar na terceira demora do modelo das três demoras. Qual medida atua sobre ela?",
               "opcoes": [
-                "Pré-natal, parto e cuidado ao recém-nascido",
-                "Saneamento só",
-                "Vacinas na adolescência",
-                "Apenas saneamento e vacinas da adolescência"
+                "Reduzir a espera por aconselhamento genético",
+                "Criar protocolo específico de atendimento na unidade de saúde",
+                "Ampliar o transporte sanitário de gestantes",
+                "Fazer campanhas sobre sinais de gravidade na gestação"
               ],
-              "resposta": "Pré-natal, parto e cuidado ao recém-nascido",
-              "explicacao": "Causas perinatais.",
-              "revisado": false
+              "resposta": "Criar protocolo específico de atendimento na unidade de saúde",
+              "explicacao": "A primeira demora é a decisão de buscar ajuda (reconhecer sinais de gravidade), a segunda é chegar ao serviço (transporte) e a terceira é receber cuidado adequado ao chegar. Protocolos de atendimento qualificam esse cuidado e atuam na terceira demora.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-u11-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A mortalidade pós-neonatal depende principalmente de problemas do parto.",
-              "resposta": false,
-              "explicacao": "Falso. Ela é mais ligada a condições socioeconômicas e infecções, e caiu com saneamento e vacinas.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 28 anos com 12 semanas, sem fatores de risco, come pouco laticínio e verduras escuras. Já toma sulfato ferroso.",
+              "enunciado": "Pela nota técnica do Ministério da Saúde de 2024, qual é a conduta para prevenir pré-eclâmpsia?",
+              "opcoes": [
+                "Carbonato de cálcio 1.250 mg, 2 comprimidos uma vez ao dia, à noite, com intervalo de pelo menos 2 horas do ferro",
+                "Carbonato de cálcio 1.250 mg duas vezes ao dia junto com o ferro",
+                "Carbonato de cálcio duas vezes ao dia com feijão para absorver melhor",
+                "Nada, pois não tem fatores de risco"
+              ],
+              "resposta": "Carbonato de cálcio 1.250 mg, 2 comprimidos uma vez ao dia, à noite, com intervalo de pelo menos 2 horas do ferro",
+              "explicacao": "O Ministério da Saúde passou a recomendar cálcio para todas as gestantes, pois a ingestão no Brasil é baixa e a suplementação reduz pré-eclâmpsia. O cálcio atrapalha a absorção do ferro, por isso devem ser tomados em horários separados. Fitatos do feijão também reduzem a absorção.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-u11-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ___ de nascidos vivos (SINASC) registra os nascimentos.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela OMS, qual estratégia é das mais eficazes para reduzir a gravidez na adolescência?",
               "opcoes": [
-                "Sistema de Informações",
-                "Censo",
-                "Cartório",
-                "Hospital de referência"
+                "Acesso irrestrito a métodos de longa duração para todas",
+                "Ampliar o pré-natal e o puerpério",
+                "Educação sexual abrangente nas escolas, com envolvimento da família",
+                "Campanhas de abstinência como estratégia principal",
+                "Incentivar o aborto legal"
               ],
-              "resposta": "Sistema de Informações",
-              "explicacao": "Usa a Declaração de Nascido Vivo.",
-              "revisado": false
+              "resposta": "Educação sexual abrangente nas escolas, com envolvimento da família",
+              "explicacao": "A educação sexual abrangente aumenta o uso de métodos e adia o início da vida sexual. Campanhas só de abstinência não funcionam. O acesso a contraceptivos é importante, mas faz parte de um conjunto de ações.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         },
@@ -4352,6 +4603,38 @@
               "explicacao": "A violência contra a mulher é de notificação compulsória, feita pelo profissional mesmo sem o consentimento dela. O registro policial é decisão da mulher, e o atendimento não depende dele. A conduta é acolher, orientar a rede e respeitar a autonomia.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u11-l3-n5",
+              "tipo": "caso_clinico",
+              "caso": "No cadastro da unidade, uma pessoa diz que nasceu mulher, se reconhece como homem e sente desejo sexual por mulheres.",
+              "enunciado": "Como registrar identidade de gênero e orientação sexual?",
+              "opcoes": [
+                "Homem, transgênero, homossexual",
+                "Homem, cisgênero, homossexual",
+                "Homem, transgênero, heterossexual",
+                "Homem, cisgênero, heterossexual"
+              ],
+              "resposta": "Homem, transgênero, heterossexual",
+              "explicacao": "Identidade de gênero é como a pessoa se reconhece: homem trans, pois difere do sexo atribuído ao nascer. Orientação sexual refere-se a quem ela deseja: um homem que deseja mulheres é heterossexual. Respeitar a autodeclaração é parte do acesso equitativo.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
+            },
+            {
+              "id": "prev-u11-l3-n6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Do que é composto o Projeto Terapêutico Singular?",
+              "opcoes": [
+                "Diagnóstico clínico, plano terapêutico e acompanhamento",
+                "Avaliação biopsicossocial, plano de cuidado individualizado e rede de apoio",
+                "Anamnese, exame físico e prescrição",
+                "Diagnóstico diferencial, remédio e prevenção",
+                "Histórico, plano e avaliação de satisfação"
+              ],
+              "resposta": "Avaliação biopsicossocial, plano de cuidado individualizado e rede de apoio",
+              "explicacao": "O projeto terapêutico singular é construído pela equipe com a pessoa, para casos complexos. Ele inclui diagnóstico ampliado (biológico, psicológico e social), metas, divisão de responsabilidades e reavaliação. Vai além da prescrição médica.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         }
@@ -4487,6 +4770,22 @@
               "explicacao": "No modelo, renda e escolaridade são estruturais e condicionam as condições de vida, como moradia e ambiente, que agem mais diretamente. Por isso a doença não é só individual, e mudar esse quadro exige ações intersetoriais.",
               "revisado": false,
               "fonte": "Santa Casa SP 2026"
+            },
+            {
+              "id": "prev-u12-l1-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na aplicação da hierarquia de necessidades de Maslow à saúde pública, o que é correto?",
+              "opcoes": [
+                "A autoeficácia deve vir antes das necessidades fisiológicas",
+                "O pertencimento à comunidade supera as necessidades fisiológicas",
+                "A autorrealização deve ser o foco principal",
+                "O controle do estresse é mais importante que as necessidades básicas",
+                "Necessidades fisiológicas, como comida e abrigo, devem ser atendidas primeiro para permitir avançar a outros níveis"
+              ],
+              "resposta": "Necessidades fisiológicas, como comida e abrigo, devem ser atendidas primeiro para permitir avançar a outros níveis",
+              "explicacao": "Na pirâmide de Maslow, necessidades fisiológicas e de segurança estão na base. Sem elas resolvidas, ações de educação e autocuidado têm pouco efeito. Por isso alimentação, moradia e renda são prioridades em populações vulneráveis.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         },
@@ -4521,11 +4820,19 @@
             },
             {
               "id": "prev-u12-l2-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Segundo a OMS, o tabaco é a principal causa evitável de morte no mundo.",
-              "resposta": true,
-              "explicacao": "Segundo a OMS.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Uma mãe teme que o filho de 17 anos esteja usando drogas, pois o comportamento dele mudou. Na consulta, a médica de família vai fazer a triagem de uso, abuso e dependência de substâncias.",
+              "enunciado": "Qual instrumento é o mais adequado?",
+              "opcoes": [
+                "ASSIST",
+                "CAGE",
+                "SADD",
+                "AUDIT"
+              ],
+              "resposta": "ASSIST",
+              "explicacao": "O ASSIST, da OMS, rastreia álcool, tabaco e outras drogas ao mesmo tempo e orienta intervenção breve. CAGE, AUDIT e SADD avaliam só o álcool. Para adolescentes, também há instrumentos específicos, como o CRAFFT.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-u12-l2-q4",
@@ -4709,17 +5016,20 @@
             },
             {
               "id": "prev-u12-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ física regular reduz o risco de várias doenças crônicas.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 55 anos com PA 110 x 70, IMC 32, cintura 84 cm, LDL 70, HDL 55 e triglicerídeos 100 tem risco cardiovascular em 10 anos abaixo de 5%. O médico sugere estatina, e ela pergunta se é mesmo necessário.",
+              "enunciado": "Pela prevenção quaternária, qual é a conduta?",
               "opcoes": [
-                "atividade",
-                "inatividade",
-                "restrição",
-                "dieta zero"
+                "Iniciar estatina já",
+                "Pedir teste ergométrico e dosar resistência à insulina",
+                "Encaminhar ao endocrinologista para convencê-la",
+                "Priorizar dieta e atividade física",
+                "Encaminhar ao cardiologista para convencê-la"
               ],
-              "resposta": "atividade",
-              "explicacao": "150 minutos por semana.",
-              "revisado": false
+              "resposta": "Priorizar dieta e atividade física",
+              "explicacao": "Com risco baixo e LDL já baixo, a estatina traria pouco benefício e possíveis efeitos adversos. Prevenção quaternária é evitar intervenções desnecessárias. Pedir exames sem indicação também gera dano.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             }
           ]
         }
@@ -5386,17 +5696,20 @@
             },
             {
               "id": "prev-u14-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tempo de afastamento a partir do qual o INSS paga o benefício?",
+              "tipo": "caso_clinico",
+              "caso": "Operador de máquinas pesadas de 52 anos teve lesão na coluna no trabalho, operou e ficou afastado. Na avaliação de retorno ainda tem limitações físicas.",
+              "enunciado": "Qual é a conduta mais adequada do médico do trabalho?",
               "opcoes": [
-                "A partir do 16º dia",
-                "Do 1º dia",
-                "Após 60 dias",
-                "Somente depois de seis meses"
+                "Liberar para a função habitual se ele assinar termo assumindo os riscos",
+                "Encaminhar direto para aposentadoria por invalidez",
+                "Avaliar os riscos do posto e recomendar adaptar a função às limitações dele",
+                "Mantê-lo na mesma função com supervisão médica constante",
+                "Colocar em home office e aguardar 6 meses para aposentar"
               ],
-              "resposta": "A partir do 16º dia",
-              "explicacao": "Os 15 primeiros dias são da empresa.",
-              "revisado": false
+              "resposta": "Avaliar os riscos do posto e recomendar adaptar a função às limitações dele",
+              "explicacao": "O médico do trabalho deve proteger a saúde do trabalhador, adequando a função à sua capacidade atual. Um termo assinado não transfere o risco nem a responsabilidade. Aposentadoria só se não houver possibilidade de readaptação ou reabilitação.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-u14-l3-q6",
@@ -5891,55 +6204,69 @@
             },
             {
               "id": "prev-d2-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Para saber se um remédio novo reduz infarto, o melhor desenho é o estudo de caso-controle.",
-              "resposta": false,
-              "explicacao": "Falso. O ensaio clínico randomizado é o melhor para eficácia, pois a randomização equilibra os fatores de confusão.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Um estudo acompanhou 3 mil participantes da coorte de nascidos em Pelotas em 1993. O consumo de leite e cálcio foi estimado aos 18 anos e a densidade óssea medida aos 22. Não houve associação. Os autores apontam como limitação a estimativa retrospectiva da dieta, sujeita a erro de memória.",
+              "enunciado": "Como se caracterizam o desenho e a limitação?",
+              "opcoes": [
+                "Caso-controle com viés de memória nos grupos controle e intervenção",
+                "Ensaio clínico com viés de memória no grupo controle",
+                "Coorte com viés de memória em expostos e não expostos",
+                "Transversal com viés de memória nos não expostos",
+                "Ecológico com viés de memória no grupo de intervenção"
+              ],
+              "resposta": "Coorte com viés de memória em expostos e não expostos",
+              "explicacao": "Acompanhar pessoas ao longo do tempo, da exposição ao desfecho, define uma coorte. O erro ao lembrar a dieta atinge todos os participantes, expostos ou não, e tende a diluir a associação. Não há grupo de intervenção, pois os pesquisadores não deram nada a ninguém.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d2-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Um ensaio compara um novo remédio ao padrão e quer mostrar que ele não é muito pior.",
-              "enunciado": "Qual é o tipo de ensaio?",
+              "caso": "A vigilância de um município notou aumento da hipertensão em adultos acima de 40 anos e quer descrever a magnitude do problema, as características dos afetados e gerar hipóteses.",
+              "enunciado": "Qual é o estudo mais adequado?",
               "opcoes": [
-                "De não inferioridade",
-                "De superioridade",
-                "De equivalência estrita",
-                "Observacional"
+                "Ensaio clínico",
+                "Longitudinal retrospectivo",
+                "Coorte prospectiva",
+                "Ecológico",
+                "Transversal"
               ],
-              "resposta": "De não inferioridade",
-              "explicacao": "Ele exige uma margem definida antes do estudo.",
-              "revisado": false
+              "resposta": "Transversal",
+              "explicacao": "O estudo transversal mede exposição e doença num mesmo momento, sendo ideal para estimar prevalência e descrever quem é afetado, gerando hipóteses. Coortes e ensaios testam hipóteses, mas são caros e demorados. O ecológico usa dados de grupos, e não de indivíduos.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d2-l1-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A análise por ___ de tratar mantém cada paciente no grupo para o qual foi sorteado, mesmo que não tenha seguido o tratamento.",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisadores usaram dados secundários de 74 municípios e encontraram correlação entre IDH e mortalidade infantil (coeficiente de 0,643) e entre renda per capita e mortalidade infantil (0,549), com significância.",
+              "enunciado": "Qual é o tipo de estudo?",
               "opcoes": [
-                "intenção",
-                "protocolo",
-                "adesão",
-                "escolha"
+                "Transversal",
+                "Ecológico",
+                "Coorte",
+                "Caso-controle"
               ],
-              "resposta": "intenção",
-              "explicacao": "Ela preserva os benefícios da randomização.",
-              "revisado": false
+              "resposta": "Ecológico",
+              "explicacao": "Quando a unidade de análise é um grupo (municípios), e não pessoas, o estudo é ecológico. Ele é barato e gera hipóteses, mas sofre de falácia ecológica: o que vale para o grupo pode não valer para o indivíduo.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-d2-l1-q8",
-              "tipo": "caso_clinico",
-              "caso": "Uma revisão junta resultados de vários ensaios clínicos com métodos estatísticos.",
-              "enunciado": "Qual é o nome?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estudo avalia exposição e desfecho num único momento, como uma fotografia da população?",
               "opcoes": [
-                "Metanálise",
                 "Coorte",
-                "Série de casos",
-                "Estudo ecológico"
+                "Caso-controle",
+                "Ensaio clínico randomizado",
+                "Transversal",
+                "Ecológico"
               ],
-              "resposta": "Metanálise",
-              "explicacao": "O gráfico de floresta (forest plot) mostra os resultados.",
-              "revisado": false
+              "resposta": "Transversal",
+              "explicacao": "O estudo transversal mede exposição e doença ao mesmo tempo e estima prevalência. Por isso não estabelece qual veio antes, o que limita conclusões sobre causa. Coorte e ensaio clínico acompanham as pessoas ao longo do tempo.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             }
           ]
         },
@@ -6154,32 +6481,36 @@
             },
             {
               "id": "prev-d2-l3-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A estratégia de alto ___ foca em pessoas com maior risco, enquanto a estratégia populacional busca reduzir um pouco o risco de todos.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos, no terceiro Papanicolau, teve lesão intraepitelial escamosa de baixo grau, sem infecção ou atrofia. Preocupada, procurou outro médico.",
+              "enunciado": "Pelas diretrizes do INCA, qual é a conduta?",
               "opcoes": [
-                "risco",
-                "valor",
-                "custo",
-                "grau"
+                "Encaminhar já para colposcopia",
+                "Parar o rastreamento e operar",
+                "Colposcopia e biópsias todo ano",
+                "Próximo Papanicolau em 3 anos",
+                "Repetir o Papanicolau em 6 meses"
               ],
-              "resposta": "risco",
-              "explicacao": "Esse conceito foi descrito por Geoffrey Rose.",
-              "revisado": false
+              "resposta": "Repetir o Papanicolau em 6 meses",
+              "explicacao": "Em mulheres com 25 anos ou mais, a lesão de baixo grau costuma regredir sozinha, e a conduta do INCA é repetir a citologia em 6 meses. A colposcopia é indicada se a alteração persistir ou piorar. Tratar já seria excesso de intervenção.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d2-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Programa de rastreamento de câncer de mama no Brasil.",
-              "enunciado": "Qual é a recomendação do Ministério da Saúde?",
+              "caso": "Mulher de 46 anos, sem queixas, tem nódulo firme de 2 cm na mama esquerda e linfonodo endurecido de 3 cm na axila. A mamografia veio BI-RADS 0, e o ultrassom BI-RADS 3.",
+              "enunciado": "Qual é a conduta mais adequada?",
               "opcoes": [
-                "Mamografia bienal dos 50 aos 69 anos",
-                "Anual a partir dos 30",
-                "Ultrassom anual",
-                "Mamografia anual a partir dos 30 anos e ultrassom para todas"
+                "Ressonância de mamas imediata",
+                "Nova mamografia em 6 meses",
+                "Encaminhar ao mastologista com prioridade para biópsia",
+                "Novo ultrassom em 6 meses"
               ],
-              "resposta": "Mamografia bienal dos 50 aos 69 anos",
-              "explicacao": "Outras sociedades recomendam começar aos 40 anos.",
-              "revisado": false
+              "resposta": "Encaminhar ao mastologista com prioridade para biópsia",
+              "explicacao": "Nódulo palpável com linfonodo axilar aumentado e endurecido é suspeito pelo exame clínico, mesmo com imagem pouco alarmante. Quando a clínica e a imagem não batem, vale a suspeita maior, e a lesão deve ser biopsiada. Seguimento de 6 meses atrasaria um possível câncer.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             }
           ]
         }
@@ -6258,11 +6589,19 @@
             },
             {
               "id": "prev-d3-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A vigilância sentinela usa unidades selecionadas para monitorar doenças, como a síndrome gripal.",
-              "resposta": true,
-              "explicacao": "Ela é mais rápida e detalhada que a notificação de todos os casos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que é notificação compulsória?",
+              "opcoes": [
+                "Comunicação voluntária entre médicos",
+                "Vigilância só por técnicas laboratoriais",
+                "Relatos espontâneos de leigos",
+                "Coleta anônima só de doenças crônicas",
+                "Obrigação legal de comunicar certas doenças e agravos às autoridades de saúde, permitindo ações de controle"
+              ],
+              "resposta": "Obrigação legal de comunicar certas doenças e agravos às autoridades de saúde, permitindo ações de controle",
+              "explicacao": "A notificação é obrigatória para médicos, outros profissionais e responsáveis por serviços de saúde, conforme a lista nacional. Ela permite investigar casos e adotar medidas de controle. Algumas doenças exigem notificação imediata, em até 24 horas.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "prev-d3-l1-q6",
@@ -6318,17 +6657,19 @@
             {
               "id": "prev-d3-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Trabalhador de mineração com 20 anos de exposição tem falta de ar e radiografia com nódulos no alto do pulmão.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Criança de 6 anos, filha de imigrantes sem documentos, tem tosse crônica e chiado. Passa o dia com os pais numa confecção úmida e com muita poeira de tecido.",
+              "enunciado": "Qual é a conduta da equipe da UBS?",
               "opcoes": [
-                "Silicose",
-                "Asbestose",
-                "Asma ocupacional",
-                "Tuberculose"
+                "Tratar os sintomas e mandar a família procurar uma ONG",
+                "Só atender a urgência até regularizarem os documentos",
+                "Garantir atendimento integral pelo SUS, independentemente da situação migratória, e acionar Conselho Tutelar e Vigilância em Saúde do Trabalhador",
+                "Oferecer só vacinas e prevenção até a regularização",
+                "Tratar e não notificar nada, para manter o vínculo"
               ],
-              "resposta": "Silicose",
-              "explicacao": "A silicose aumenta o risco de tuberculose.",
-              "revisado": false
+              "resposta": "Garantir atendimento integral pelo SUS, independentemente da situação migratória, e acionar Conselho Tutelar e Vigilância em Saúde do Trabalhador",
+              "explicacao": "O SUS é universal e atende qualquer pessoa no território, com ou sem documentos. A criança exposta a ambiente de trabalho insalubre é caso de proteção (Conselho Tutelar), e as condições da fábrica devem ser comunicadas à vigilância do trabalhador.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d3-l2-q2",
@@ -6872,26 +7213,36 @@
             },
             {
               "id": "prev-d4-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Adolescente de 15 anos pede anticoncepcional e não quer que os pais saibam.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na pandemia de Covid-19, faltaram vacinas e leitos de UTI. Qual conduta melhor reflete uma priorização ética?",
               "opcoes": [
-                "Manter sigilo se não houver risco, e orientar",
-                "Contar aos pais",
-                "Negar atendimento",
-                "Contar aos pais e chamar o Conselho Tutelar"
+                "Vacinar primeiro quem tem mais renda, para recuperar a economia",
+                "Sortear as doses entre todos",
+                "Permitir pagar por doses extras, pela autonomia",
+                "Priorizar os mais vulneráveis, como idosos, pessoas com comorbidades e em risco social, pela equidade",
+                "Vacinar por ordem de chegada"
               ],
-              "resposta": "Manter sigilo se não houver risco, e orientar",
-              "explicacao": "O sigilo pode ser quebrado se houver risco à vida ou abuso.",
-              "revisado": false
+              "resposta": "Priorizar os mais vulneráveis, como idosos, pessoas com comorbidades e em risco social, pela equidade",
+              "explicacao": "Equidade é dar mais a quem tem mais necessidade, protegendo quem tem maior risco de morte. O sorteio trata todos igualmente, mas ignora diferenças de risco. Vender doses privilegia quem pode pagar.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d4-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Homem morre após ser baleado; a declaração de óbito deve ser feita pelo médico do pronto-socorro que o atendeu.",
-              "resposta": false,
-              "explicacao": "Falso. Em morte violenta, a declaração é feita pelo Instituto Médico Legal.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 35 anos vem à consulta de rotina com a esposa. A médica diz que a acompanhante não pode ficar por não ter sido agendada, mas a paciente insiste.",
+              "enunciado": "O que a médica deve fazer?",
+              "opcoes": [
+                "Insistir na saída, pois a regra da unidade exige autorização da chefia",
+                "Adiar o atendimento e pedir que agende a acompanhante",
+                "Aceitar só se julgar importante para o bem-estar",
+                "Permitir que a acompanhante fique, pois o direito a acompanhante é garantido por lei",
+                "Pedir que a esposa espere, para não constranger a equipe"
+              ],
+              "resposta": "Permitir que a acompanhante fique, pois o direito a acompanhante é garantido por lei",
+              "explicacao": "A lei garante às pacientes o direito a acompanhante de sua escolha em consultas, exames e procedimentos, sem exigência de aviso prévio. Normas internas não podem restringir esse direito. A presença é decisão da paciente, e não da médica.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d4-l3-q6",
@@ -7106,17 +7457,18 @@
             {
               "id": "prev-d5-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Jovem com dengue no 5º dia, a febre baixou, mas agora tem dor abdominal forte, vômitos repetidos e sangramento de gengiva.",
-              "enunciado": "Como classificar e o que fazer?",
+              "caso": "Mulher de 68 anos com febre há 4 dias, cefaleia, dor muscular e articular, náuseas e diarreia. Marido e filho têm dengue. Está bem, hidratada, PA 136 x 79, FC 96, sem dor abdominal. Prova do laço positiva e hematócrito de 49%.",
+              "enunciado": "Qual é a melhor conduta inicial?",
               "opcoes": [
-                "Sinais de alarme; internar e hidratar na veia",
-                "Dengue sem alarme; tratar em casa",
-                "Melhora, pois a febre baixou; dar alta",
-                "Dengue grave; só observar por 1 semana"
+                "Soro fisiológico 20 mL/kg em 20 minutos na unidade",
+                "Hidratação oral na unidade, 60 mL/kg/dia",
+                "Hidratação oral em casa, 60 mL/kg/dia",
+                "Soro fisiológico 10 mL/kg em 1 hora na unidade"
               ],
-              "resposta": "Sinais de alarme; internar e hidratar na veia",
-              "explicacao": "Os sinais de alarme indicam risco de choque, mesmo com a queda da febre.",
-              "revisado": false
+              "resposta": "Soro fisiológico 10 mL/kg em 1 hora na unidade",
+              "explicacao": "Idade acima de 65 e prova do laço positiva já classificam como grupo B, e o hematócrito de 49% indica hemoconcentração, que é sinal de alarme. Com sinal de alarme e sem choque, trata-se como grupo C: 10 mL/kg de soro na primeira hora, com reavaliação. Os 20 mL/kg em 20 minutos são para o choque (grupo D).",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-d5-l2-q4",
@@ -7209,58 +7561,51 @@
             },
             {
               "id": "prev-d5-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada zoonose ao transmissor.",
-              "pares": [
-                {
-                  "esquerda": "Leptospirose",
-                  "direita": "Urina de rato"
-                },
-                {
-                  "esquerda": "Raiva",
-                  "direita": "Mordedura de mamífero"
-                },
-                {
-                  "esquerda": "Leishmaniose",
-                  "direita": "Mosquito-palha"
-                },
-                {
-                  "esquerda": "Doença de Chagas",
-                  "direita": "Barbeiro"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 6 anos foi picado por escorpião no pé há 40 minutos. Tem dor forte, náuseas, 2 vômitos, sudorese, palidez, salivação, tremores e FC 139, com PA no limite superior. A unidade rural tem soro antiescorpiônico.",
+              "enunciado": "Qual é a melhor conduta, além do bloqueio anestésico?",
+              "opcoes": [
+                "Aplicar soro e observar 6 horas na unidade",
+                "Só observar por 6 horas",
+                "Aplicar soro antiescorpiônico antes de transferir para hospital",
+                "Transferir imediatamente sem soro"
               ],
-              "explicacao": "A leishmaniose visceral tem o cão como reservatório urbano.",
-              "revisado": false
+              "resposta": "Aplicar soro antiescorpiônico antes de transferir para hospital",
+              "explicacao": "Vômitos, sudorese, salivação e taquicardia indicam acidente moderado, em criança, que tem maior risco de evoluir mal. O soro deve ser dado o quanto antes, ainda na unidade, e a criança precisa ir para hospital com monitorização. Esperar o transporte atrasaria o soro.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d5-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 20 semanas tem leishmaniose visceral confirmada.",
-              "enunciado": "Qual é o tratamento?",
+              "caso": "Homem de 44 anos, da zona rural, foi mordido profundamente na mão pelo próprio cão quando mexeu na vasilha de comida. O cão é domiciliado e sem mudança de comportamento. Lavou o ferimento e veio 5 horas depois.",
+              "enunciado": "Qual é a conduta inicial, pelo Ministério da Saúde?",
               "opcoes": [
-                "Anfotericina B lipossomal",
-                "Antimoniato de meglumina",
-                "Miltefosina oral",
-                "Antimoniato e miltefosina juntos"
+                "Observar o cão por 10 dias e indicar vacina e soro só se ele apresentar sinais de raiva",
+                "Observar o cão e dar soro já, acrescentando vacina se adoecer",
+                "Observar o cão e vacinar já, acrescentando soro se adoecer",
+                "Vacinar e dar soro independentemente do cão"
               ],
-              "resposta": "Anfotericina B lipossomal",
-              "explicacao": "Antimoniato e miltefosina são contraindicados na gestação.",
-              "revisado": false
+              "resposta": "Observar o cão por 10 dias e indicar vacina e soro só se ele apresentar sinais de raiva",
+              "explicacao": "Mordida provocada por cão saudável e que pode ser observado não exige profilaxia imediata, mesmo se o ferimento for grave: observa-se o animal por 10 dias. Se ele adoecer, morrer ou sumir, inicia-se o esquema completo. A lavagem com água e sabão é a medida local mais importante.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d5-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente picado por cobra tem dor e inchaço local, sangramento na gengiva e sangue que não coagula.",
-              "enunciado": "Qual é o gênero e o tratamento?",
+              "caso": "Homem de 32 anos, dias depois de limpar um jardim abandonado com tijolos, sentiu queimação e coceira na perna à noite. No dia seguinte havia vermelhidão com bolhas e, 3 dias depois, uma lesão com centro escurecido e borda avermelhada. Sem outros sintomas.",
+              "enunciado": "Qual animal provavelmente causou a lesão?",
               "opcoes": [
-                "Bothrops; soro antibotrópico",
-                "Crotalus; anticrotálico",
-                "Micrurus; antielapídico",
-                "Cobra não peçonhenta; apenas curativo e alta"
+                "Escorpião Tityus bahiensis",
+                "Escorpião Tityus serrulatus",
+                "Aranha-marrom (Loxosceles)",
+                "Armadeira (Phoneutria)"
               ],
-              "resposta": "Bothrops; soro antibotrópico",
-              "explicacao": "O tempo de coagulação ajuda a avaliar a gravidade.",
-              "revisado": false
+              "resposta": "Aranha-marrom (Loxosceles)",
+              "explicacao": "A picada da aranha-marrom quase não dói no momento, e a lesão evolui em horas a dias para necrose com placa marmórea. Ela vive escondida em entulhos e tijolos. Escorpião e armadeira causam dor imediata e intensa, sem necrose.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d5-l3-q5",
@@ -7594,43 +7939,36 @@
             },
             {
               "id": "prev-d6-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada objetivo de saúde global à meta.",
-              "pares": [
-                {
-                  "esquerda": "Mortalidade materna",
-                  "direita": "Reduzir a menos de 70 por 100 mil nascidos vivos"
-                },
-                {
-                  "esquerda": "Mortalidade neonatal",
-                  "direita": "Reduzir a 12 por mil ou menos"
-                },
-                {
-                  "esquerda": "Mortalidade em menores de 5 anos",
-                  "direita": "Reduzir a 25 por mil ou menos"
-                },
-                {
-                  "esquerda": "Epidemias de AIDS, tuberculose e malária",
-                  "direita": "Acabar até 2030"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Doenças negligenciadas, como Chagas, leishmaniose e filariose, matam em regiões pobres do Brasil, da África e da Ásia. Pelas metas da OMS para 2030, quais ações são mais efetivas?",
+              "opcoes": [
+                "Financiar pesquisa só nos países ricos",
+                "Focar só em tratamento curativo",
+                "Centralizar todas as decisões na OMS",
+                "Depender de recursos próprios dos países afetados com liderança dos países centrais",
+                "Ampliar a cooperação entre países afetados e desenvolvidos, considerando clima e migração"
               ],
-              "explicacao": "Fazem parte dos Objetivos de Desenvolvimento Sustentável.",
-              "revisado": false
+              "resposta": "Ampliar a cooperação entre países afetados e desenvolvidos, considerando clima e migração",
+              "explicacao": "Essas doenças dependem de pobreza, saneamento e vetores, que atravessam fronteiras e mudam com o clima e a migração. Por isso a OMS defende cooperação internacional e ações integradas de prevenção, controle de vetores e tratamento. Só curar quem adoece não elimina a transmissão.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d6-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Surge um vírus novo que se espalha entre países. A OMS declara emergência de importância internacional.",
-              "enunciado": "Qual norma define essa declaração?",
+              "caso": "Criança de 5 anos tem pneumonias de repetição. A família vive numa ocupação, em casa de um cômodo sem janelas, com mofo e fogão a lenha. A médica entende que a doença resulta da interação entre a bactéria, a criança possivelmente desnutrida e o ambiente.",
+              "enunciado": "Que modelo de saúde-doença ela usou?",
               "opcoes": [
-                "Regulamento Sanitário Internacional",
-                "Lei 8.080",
-                "Declaração de Alma-Ata",
-                "Carta de Ottawa sobre promoção da saúde"
+                "Biomédico",
+                "Social",
+                "Ecológico",
+                "Histórico-cultural",
+                "Mágico-religioso"
               ],
-              "resposta": "Regulamento Sanitário Internacional",
-              "explicacao": "O regulamento orienta a prevenção e a resposta à propagação internacional.",
-              "revisado": false
+              "resposta": "Ecológico",
+              "explicacao": "O modelo ecológico (tríade agente, hospedeiro e ambiente) explica a doença pelo equilíbrio entre esses três elementos. O modelo biomédico olha só para o agente e a lesão. O modelo social enfatiza a estrutura da sociedade como causa principal.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d6-l3-q4",
@@ -8453,17 +8791,18 @@
             {
               "id": "prev-d8-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Pesquisador calcula acurácia do teste: A=40, B=10, C=10, D=40.",
-              "enunciado": "Qual é a acurácia?",
+              "caso": "Um estudo avaliou um teste urinário para tuberculose em 280 pessoas com HIV e sintomas; 72 (25,7%) tinham a doença. A sensibilidade foi 75% e a especificidade 76%. O VPP foi 51,9% e o VPN 89,8%.",
+              "enunciado": "Qual comentário é correto?",
               "opcoes": [
-                "80%",
-                "50%",
-                "40%",
-                "100%"
+                "O VPN alto indica muitos falsos negativos",
+                "O VPP baixo indica muitos falsos negativos",
+                "O VPN alto indica poucos falsos positivos",
+                "O VPP baixo indica muitos falsos positivos"
               ],
-              "resposta": "80%",
-              "explicacao": "(A+D) dividido pelo total.",
-              "revisado": false
+              "resposta": "O VPP baixo indica muitos falsos positivos",
+              "explicacao": "VPP é a proporção de positivos que realmente têm a doença; se é cerca de 52%, quase metade dos positivos são falsos positivos. O VPN alto indica poucos falsos negativos entre os negativos. Os valores preditivos dependem da prevalência.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             }
           ]
         }
@@ -8513,57 +8852,50 @@
             {
               "id": "prev-d9-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança tomou tríplice viral ontem e a febre amarela não foi aplicada no mesmo dia.",
-              "enunciado": "Quando aplicar a febre amarela?",
+              "caso": "Bebê de 4 meses com vacinas em dia mora com a avó, que teve herpes-zóster recentemente. A mãe pergunta se há vacina para proteger a criança.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Após 30 dias",
-                "Após 7 dias",
-                "Após 1 ano",
-                "Amanhã, sem intervalo"
+                "Dar já a vacina de varicela, mesmo fora da idade",
+                "Dar vacina da gripe, pois o zóster complica a influenza",
+                "Explicar que ela está com as vacinas adequadas e que não há vacina adicional indicada nessa idade",
+                "Dar meningocócica ACWY, que protege contra herpes",
+                "Adiar as vacinas dos 6 meses e dar varicela no lugar"
               ],
-              "resposta": "Após 30 dias",
-              "explicacao": "Vacinas vivas injetáveis não aplicadas juntas exigem 30 dias de intervalo.",
-              "revisado": false
+              "resposta": "Explicar que ela está com as vacinas adequadas e que não há vacina adicional indicada nessa idade",
+              "explicacao": "A vacina de varicela só pode ser dada a partir de 9 a 12 meses, conforme a situação, e na rotina aos 15 meses. O risco de transmissão do zóster é baixo se as lesões ficarem cobertas e houver higiene das mãos. Nenhuma vacina oferece proteção cruzada contra herpes.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d9-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada vacina do PNI à idade em que é aplicada.",
-              "pares": [
-                {
-                  "esquerda": "Rotavírus",
-                  "direita": "2 e 4 meses"
-                },
-                {
-                  "esquerda": "Pneumocócica 10-valente",
-                  "direita": "2, 4 e reforço aos 12 meses"
-                },
-                {
-                  "esquerda": "Meningocócica C",
-                  "direita": "3, 5 e reforço aos 12 meses"
-                },
-                {
-                  "esquerda": "HPV",
-                  "direita": "9 a 14 anos"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais vacinas devem ser orientadas a uma gestante no terceiro trimestre?",
+              "opcoes": [
+                "Febre amarela, tétano, Covid-19 e influenza",
+                "Dengue, Covid-19, febre amarela e dTpa",
+                "Tríplice viral, influenza, tétano e Covid-19",
+                "dTpa, hepatite B, influenza e Covid-19"
               ],
-              "explicacao": "Calendário do PNI.",
-              "revisado": false
+              "resposta": "dTpa, hepatite B, influenza e Covid-19",
+              "explicacao": "Na gestação, usam-se vacinas inativadas: dTpa (a partir de 20 semanas, para proteger o bebê da coqueluche), hepatite B, influenza e Covid-19. Vacinas de vírus vivo, como tríplice viral, febre amarela e dengue, são contraindicadas na gestação.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d9-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Adolescente de 13 anos nunca vacinada contra HPV.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Criança de 15 meses tem registro de BCG, hepatite B, pentavalente, VIP, pneumocócica e rotavírus aos 2 e 4 meses, meningocócica C aos 3 e 5, febre amarela aos 9 e tríplice viral aos 12.",
+              "enunciado": "Pelo calendário de 2025, quais vacinas estão indicadas agora?",
               "opcoes": [
-                "Aplicar a vacina",
-                "Não pode mais",
-                "Aguardar os 18 anos",
-                "Só depois da primeira relação"
+                "Reforço de DTP, VIP, tetraviral e hepatite A",
+                "Reforço de DTP, VOP, tetraviral e hepatite A",
+                "DTPa, VIP, segunda tríplice viral e hepatite A",
+                "DTPa, VOP, segunda tríplice viral e hepatite A"
               ],
-              "resposta": "Aplicar a vacina",
-              "explicacao": "Faixa de 9 a 14 anos.",
-              "revisado": false
+              "resposta": "Reforço de DTP, VIP, tetraviral e hepatite A",
+              "explicacao": "Aos 15 meses, o calendário prevê reforço de DTP, reforço da pólio, tetraviral (segunda dose de sarampo, caxumba e rubéola, mais varicela) e hepatite A. Desde 2024 a VOP foi substituída pela VIP também no reforço. A DTPa acelular é reservada a situações especiais.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d9-l1-q6",
@@ -9121,6 +9453,39 @@
               "explicacao": "Lesões de pele com palmas acometidas é sífilis secundária, que é recente (menos de 1 ano). O tratamento é dose única de 2,4 milhões. Fora da gestação, o VDRL é repetido a cada 3 meses no primeiro ano.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-d10-l2-n2",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 23 anos, que faz sexo com homens, tem corrimento uretral purulento e ardor ao urinar há 3 dias. Tem múltiplos parceiros e não usa preservativo com regularidade.",
+              "enunciado": "Qual é a conduta mais adequada?",
+              "opcoes": [
+                "Prescrever antibiótico e evitar falar de estigma e sexualidade",
+                "Investigar e notificar os parceiros antes de tratar",
+                "Tratar já a uretrite pela abordagem sindrômica, pedir exames indicados, oferecer prevenção e aconselhamento, acolhendo sem discriminação",
+                "Envolver a família como principal apoio emocional",
+                "Tratar e mandar o tema da sexualidade para o serviço social"
+              ],
+              "resposta": "Tratar já a uretrite pela abordagem sindrômica, pedir exames indicados, oferecer prevenção e aconselhamento, acolhendo sem discriminação",
+              "explicacao": "Na uretrite, trata-se na hora para gonococo e clamídia (ceftriaxona e azitromicina), sem esperar exames. A consulta é oportunidade de testar HIV e sífilis, oferecer PrEP e preservativo e convocar parcerias, sempre com acolhimento. Atrasar o tratamento mantém a transmissão.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
+            },
+            {
+              "id": "prev-d10-l2-n3",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 29 anos teve teste rápido reagente para sífilis numa campanha. Sem sintomas nem tratamento prévio, com vários parceiros nos últimos 3 anos. ELISA treponêmico reagente, VDRL 1:2, anti-HIV negativo.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Penicilina benzatina 2,4 milhões em dose única e VDRL em 3, 6 e 12 meses",
+                "Encaminhar para punção lombar sem tratar",
+                "Penicilina benzatina 2,4 milhões por semana durante 3 semanas e VDRL em 3, 6 e 12 meses",
+                "Considerar cicatriz e não tratar"
+              ],
+              "resposta": "Penicilina benzatina 2,4 milhões por semana durante 3 semanas e VDRL em 3, 6 e 12 meses",
+              "explicacao": "Sem tratamento prévio e sem saber quando se infectou, é sífilis latente de duração indeterminada, tratada como tardia com 3 doses semanais. Título baixo não significa cicatriz em quem nunca foi tratado. Punção lombar só com sinais neurológicos ou oculares.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             }
           ]
         },
@@ -9156,42 +9521,34 @@
             {
               "id": "prev-d10-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Criança de 3 anos na creche tem meningite por Haemophilus influenzae tipo b. Há outra criança não vacinada na sala.",
-              "enunciado": "Qual é a quimioprofilaxia?",
+              "caso": "Adolescente de 14 anos, com vacinas em dia, tem há 15 dias resfriado que melhorou, mas há 2 dias tem tosse em acessos, com várias tossidas curtas numa só expiração e vômitos após a tosse. Mora com os pais e um irmão de 10 meses, todos vacinados e sem sintomas. Já foi colhido exame e iniciado o tratamento.",
+              "enunciado": "Qual é a conduta para os contatos?",
               "opcoes": [
-                "Rifampicina",
-                "Penicilina benzatina",
-                "Azitromicina",
-                "Amoxicilina oral"
+                "Quimioprofilaxia para os três familiares",
+                "Nenhuma quimioprofilaxia",
+                "Reforço vacinal para todos",
+                "Quimioprofilaxia só para o bebê"
               ],
-              "resposta": "Rifampicina",
-              "explicacao": "A rifampicina é usada para contatos em situações específicas.",
-              "revisado": false
+              "resposta": "Quimioprofilaxia para os três familiares",
+              "explicacao": "É suspeita de coqueluche. Contatos menores de 1 ano recebem quimioprofilaxia sempre, e todos os que moram com um bebê também recebem, para não transmitir a ele. O remédio é azitromicina, e a vacinação dos contatos deve ser atualizada.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-d10-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada agravo à medida para contatos.",
-              "pares": [
-                {
-                  "esquerda": "Sarampo",
-                  "direita": "Vacina em até 72 horas"
-                },
-                {
-                  "esquerda": "Meningite meningocócica",
-                  "direita": "Rifampicina"
-                },
-                {
-                  "esquerda": "Coqueluche",
-                  "direita": "Azitromicina"
-                },
-                {
-                  "esquerda": "Varicela em imunodeprimido",
-                  "direita": "Imunoglobulina"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Criança de 18 meses de área vulnerável e com dieta pobre em vegetais teve febre, coriza, tosse e conjuntivite; depois, manchas brancas na boca e exantema que começou no rosto e desceu para o corpo. Está febril e apática, aceitando líquidos.",
+              "enunciado": "Qual é a conduta além dos sintomáticos?",
+              "opcoes": [
+                "Penicilina benzatina",
+                "Vitamina A",
+                "Cefalexina",
+                "Hidratação intensiva"
               ],
-              "explicacao": "Bloqueio.",
-              "revisado": false
+              "resposta": "Vitamina A",
+              "explicacao": "O quadro é de sarampo: pródromo com tosse, coriza e conjuntivite, manchas de Koplik e exantema craniocaudal. A OMS indica vitamina A em todos os casos em crianças, pois reduz gravidade e mortalidade, sobretudo em desnutridas. O caso deve ser notificado imediatamente.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d10-l3-q5",
@@ -9293,57 +9650,50 @@
             {
               "id": "prev-d11-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Gestores querem organizar o SUS em regiões de saúde, com contratos entre municípios e estado.",
-              "enunciado": "Qual norma trata disso?",
+              "caso": "João, 45 anos, tem plano de saúde empresarial há 5 anos. A operadora negou uma cirurgia eletiva dizendo que está fora da cobertura contratada.",
+              "enunciado": "Pela regulamentação da ANS, a recusa é:",
               "opcoes": [
-                "Decreto 7.508 de 2011",
-                "Lei 8.142 de 1990",
-                "Lei Complementar 141",
-                "Norma Operacional Básica de 1996"
+                "Ilegítima, pois o plano deve cobrir tudo, mesmo fora do rol",
+                "Legítima, pois o rol da ANS é a cobertura mínima, e o contrato pode ou não incluir mais",
+                "Legítima, pois planos não cobrem urgências, mesmo após a carência",
+                "Ilegítima, pois tudo deve ser autorizado após análise",
+                "Legítima, pois a cobertura depende só do contrato, sem regras da ANS"
               ],
-              "resposta": "Decreto 7.508 de 2011",
-              "explicacao": "O decreto define as regiões de saúde e o contrato organizativo (COAP).",
-              "revisado": false
+              "resposta": "Legítima, pois o rol da ANS é a cobertura mínima, e o contrato pode ou não incluir mais",
+              "explicacao": "O rol da ANS define o mínimo que todo plano deve cobrir, e o contrato pode acrescentar mais. Urgência e emergência têm cobertura obrigatória após 24 horas de carência. Os contratos precisam respeitar as regras da ANS.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d11-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada norma à contribuição.",
-              "pares": [
-                {
-                  "esquerda": "Lei 8.080",
-                  "direita": "Organização e funcionamento do SUS"
-                },
-                {
-                  "esquerda": "Lei 8.142",
-                  "direita": "Participação social e repasses"
-                },
-                {
-                  "esquerda": "Decreto 7.508",
-                  "direita": "Regiões de saúde e RENASES"
-                },
-                {
-                  "esquerda": "Lei Complementar 141",
-                  "direita": "Gastos mínimos"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "A Lei 8.080 diz que a iniciativa privada pode participar do SUS em caráter complementar. O que isso significa?",
+              "opcoes": [
+                "A gestão do SUS pode passar a empresas que cobram dos usuários",
+                "Serviços privados podem ser contratados pelo SUS quando os recursos públicos forem insuficientes",
+                "O setor privado pode cobrar do usuário do SUS com autorização do ministério",
+                "O privado participa por ser mais eficiente que o público",
+                "O privado é obrigado a integrar o SUS sempre que chamado"
               ],
-              "explicacao": "Legislação básica.",
-              "revisado": false
+              "resposta": "Serviços privados podem ser contratados pelo SUS quando os recursos públicos forem insuficientes",
+              "explicacao": "Complementar quer dizer que o SUS só contrata o setor privado quando a rede pública não basta, por contrato ou convênio, com preferência para entidades filantrópicas. O atendimento continua gratuito para o usuário, e as regras são do SUS.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d11-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com câncer espera há 90 dias para iniciar tratamento.",
-              "enunciado": "O que diz a lei?",
+              "tipo": "multipla_escolha",
+              "enunciado": "O Cartão Nacional de Saúde identifica cada usuário de forma única. Qual é sua principal finalidade atual na relação entre o SUS e a saúde suplementar?",
               "opcoes": [
-                "Iniciar em até 60 dias do diagnóstico",
-                "Não há prazo",
-                "1 ano",
-                "Até um ano depois do diagnóstico, conforme a fila do hospital"
+                "Auditar contas hospitalares das operadoras",
+                "Ressarcir o SUS pelo sistema da atenção básica",
+                "Ressarcir o SUS a partir do Aviso de Beneficiário Identificado",
+                "Autorizar internações na saúde suplementar"
               ],
-              "resposta": "Iniciar em até 60 dias do diagnóstico",
-              "explicacao": "Lei 12.732.",
-              "revisado": false
+              "resposta": "Ressarcir o SUS a partir do Aviso de Beneficiário Identificado",
+              "explicacao": "Quando um beneficiário de plano de saúde é atendido no SUS, a ANS cruza os dados pelo Cartão Nacional de Saúde e emite o Aviso de Beneficiário Identificado. A operadora então deve ressarcir o SUS pelo atendimento que deveria ter coberto.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d11-l1-q6",
@@ -9520,18 +9870,19 @@
           "questoes": [
             {
               "id": "prev-d11-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Município com 50 mil habitantes quer saber quantas equipes de Saúde da Família para 100% de cobertura.",
-              "enunciado": "Qual é o cálculo aproximado?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Uma cidade do interior teve aumento da mortalidade materna e infantil e muitos casos de diabetes e hipertensão. Qual é a estratégia mais eficaz?",
               "opcoes": [
-                "Cerca de 15 a 20 equipes",
-                "1 equipe",
-                "100 equipes",
-                "500 equipes, uma para cada 100 pessoas"
+                "Ampliar hospitais e urgências materno-infantis",
+                "Fortalecer a atenção básica com promoção, prevenção e assistência",
+                "Só monitorar os indicadores e fazer ações em escolas",
+                "Só reforçar a vigilância de doenças crônicas",
+                "Planejamento centrado em ações especializadas"
               ],
-              "resposta": "Cerca de 15 a 20 equipes",
-              "explicacao": "Depende da vulnerabilidade.",
-              "revisado": false
+              "resposta": "Fortalecer a atenção básica com promoção, prevenção e assistência",
+              "explicacao": "Doenças crônicas e saúde materno-infantil dependem de pré-natal, puericultura e acompanhamento contínuo, que são funções da atenção primária. Ampliar hospitais trata complicações, mas não as evita. Vigilância sozinha mede o problema sem resolvê-lo.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "prev-d11-l3-q2",
@@ -10183,17 +10534,19 @@
             {
               "id": "prev-d13-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Trabalhador sofre acidente no trajeto para o trabalho.",
-              "enunciado": "É acidente de trabalho?",
+              "caso": "Trabalhador sem carteira assinada cortou a mão ao cair sobre cacos de vidro a caminho do trabalho. O ferimento foi suturado.",
+              "enunciado": "Qual é a conduta sobre a notificação?",
               "opcoes": [
-                "Sim",
-                "Não",
-                "Só em carro da empresa",
-                "Não, só dentro da empresa"
+                "Não notificar, pois ocorreu fora do trabalho",
+                "Notificar no SINAN como acidente de trabalho, mesmo sendo de trajeto, leve e sem vínculo formal",
+                "Só registrar em prontuário, pois informais não entram na vigilância",
+                "Comunicar só à empresa e pedir regularização",
+                "Notificar só acidentes graves, fatais ou com menores"
               ],
-              "resposta": "Sim",
-              "explicacao": "Acidente de trajeto.",
-              "revisado": false
+              "resposta": "Notificar no SINAN como acidente de trabalho, mesmo sendo de trajeto, leve e sem vínculo formal",
+              "explicacao": "O acidente de trajeto é equiparado ao acidente de trabalho, e a vigilância do SUS inclui todos os trabalhadores, formais ou não. A notificação no SINAN é feita pelo serviço de saúde. A CAT é outro documento, voltado à Previdência para quem tem vínculo formal.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "prev-d13-l2-q2",
@@ -10619,6 +10972,23 @@
               "explicacao": "Prevenção quaternária é evitar ou desfazer intervenções que causam mais dano que benefício. Retirar benzodiazepínicos de idosos reduz quedas e confusão. As outras opções são exemplos de excesso de intervenção.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-d14-l1-n4",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos, saudável, pede check-up com vitamina D e ultrassom de tireoide, porque um colega teve câncer de tireoide e ele leu sobre isso em aplicativos de inteligência artificial.",
+              "enunciado": "Qual é a conduta mais adequada?",
+              "opcoes": [
+                "Pedir tudo para manter a confiança",
+                "Pedir só o ultrassom pela ansiedade",
+                "Pedir só a vitamina D por ser deficiência comum",
+                "Explicar que não há indicação, discutir os riscos do rastreamento sem evidência e fazer uma avaliação clínica dirigida",
+                "Explicar a evidência e, se continuar inseguro, encaminhar ao endocrinologista"
+              ],
+              "resposta": "Explicar que não há indicação, discutir os riscos do rastreamento sem evidência e fazer uma avaliação clínica dirigida",
+              "explicacao": "O ultrassom de tireoide em assintomáticos acha muitos nódulos pequenos e leva a punções e cirurgias desnecessárias, o sobrediagnóstico. Prevenção quaternária é evitar esse dano, explicando com empatia. Encaminhar sem indicação apenas transfere o problema.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             }
           ]
         },
@@ -10747,6 +11117,23 @@
               "explicacao": "Atributo da APS.",
               "revisado": false,
               "fonte": "Unicamp 2026"
+            },
+            {
+              "id": "prev-d14-l2-n1",
+              "tipo": "caso_clinico",
+              "caso": "Mãe de um bebê de 8 meses internado há 5 dias por bronquiolite diz, exausta, que se sente \"invisível\" para a equipe, que só examina a criança e dá orientações rápidas.",
+              "enunciado": "Qual ação está alinhada à Política Nacional de Humanização?",
+              "opcoes": [
+                "Explicar de novo a fisiopatologia da bronquiolite",
+                "Mandá-la descansar longe do leito",
+                "Pedir sedativo para a criança dormir",
+                "Dizer que o protocolo é eficiente e a criança é a prioridade",
+                "Escutar suas preocupações, validar seus sentimentos e, com consentimento, compartilhar com a equipe"
+              ],
+              "resposta": "Escutar suas preocupações, validar seus sentimentos e, com consentimento, compartilhar com a equipe",
+              "explicacao": "Acolhimento com escuta qualificada é diretriz central da Política Nacional de Humanização, assim como a valorização do acompanhante. Repetir explicações técnicas não atende a queixa de não ser ouvida. Levar a demanda à equipe permite mudar a forma de cuidar.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             }
           ]
         },
@@ -10803,66 +11190,67 @@
             },
             {
               "id": "prev-d14-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada programa do SUS ao seu objetivo principal.",
-              "pares": [
-                {
-                  "esquerda": "Programa Nacional de Controle do Tabagismo",
-                  "direita": "Ajudar a parar de fumar"
-                },
-                {
-                  "esquerda": "Programa Nacional de Imunizações",
-                  "direita": "Vacinar a população"
-                },
-                {
-                  "esquerda": "Saúde na Escola",
-                  "direita": "Ações em escolas"
-                },
-                {
-                  "esquerda": "Melhor em Casa",
-                  "direita": "Atenção domiciliar"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos com asma, em uso diário de corticoide inalatório em dose baixa e broncodilatador de curta ação se necessário, está sem sintomas há 3 meses, sem usar o resgate e sem crises no último ano.",
+              "enunciado": "Qual é a conduta mais adequada?",
+              "opcoes": [
+                "Corticoide em dose baixa com beta-2 de longa ação para manutenção e alívio",
+                "Só beta-2 de curta ação se necessário",
+                "Corticoide em dose baixa com beta-2 de longa ação só como manutenção",
+                "Corticoide em dose baixa com formoterol apenas para alívio, quando necessário"
               ],
-              "explicacao": "Programas do SUS.",
-              "revisado": false
+              "resposta": "Corticoide em dose baixa com formoterol apenas para alívio, quando necessário",
+              "explicacao": "Com asma controlada por 3 meses, pode-se reduzir o tratamento. Pela GINA, a opção preferida em dose baixa é usar corticoide com formoterol só quando houver sintomas, o que mantém o corticoide em cada crise. Tratar só com broncodilatador de curta ação aumenta o risco de crise grave.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-d14-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Diabético com hemoglobina glicada de 9% na unidade.",
-              "enunciado": "Qual é a ação?",
+              "caso": "Mulher de 43 anos vai colher Papanicolau, e a enfermeira nota a unha do hálux \"oca\". Há 3 meses a manicure cortou essa unha descolada, mas ela continua se soltando cada vez mais.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Intensificar tratamento e educação",
-                "Só encaminhar",
-                "Repetir em 2 anos",
-                "Só encaminhar e repetir o exame em dois anos"
+                "Onicólise",
+                "Onicodistrofia",
+                "Onicosquizia",
+                "Onicocriptose"
               ],
-              "resposta": "Intensificar tratamento e educação",
-              "explicacao": "Cuidado longitudinal.",
-              "revisado": false
+              "resposta": "Onicólise",
+              "explicacao": "Onicólise é o descolamento da unha do leito, deixando espaço \"oco\" embaixo. Pode ser causada por trauma, fungos, psoríase ou tireoide. Onicosquizia é a unha que descasca em camadas, e onicocriptose é a unha encravada.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "prev-d14-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Gestor quer melhorar o rastreio de câncer de mama.",
-              "enunciado": "Qual é a faixa etária prioritária no SUS?",
+              "caso": "Mulher de 62 anos, hipertensa, diabética e com sobrepeso, usa enalapril, hidroclorotiazida e metformina 2 g. Exames: creatinina 1,15, filtração glomerular 54, glicemia 222 e hemoglobina glicada 9,2%. Sem queixas.",
+              "enunciado": "Qual é a melhor opção para acrescentar?",
               "opcoes": [
-                "50 a 69 anos, a cada 2 anos",
-                "20 a 30 anos",
-                "Todas as idades anualmente",
-                "Acima de 80"
+                "Insulina NPH ao deitar",
+                "Gliclazida",
+                "Glibenclamida",
+                "Dapagliflozina"
               ],
-              "resposta": "50 a 69 anos, a cada 2 anos",
-              "explicacao": "Diretriz do INCA, com ampliação em discussão.",
-              "revisado": false
+              "resposta": "Dapagliflozina",
+              "explicacao": "Com doença renal crônica, o inibidor de SGLT2 reduz progressão renal e eventos cardiovasculares, além de baixar a glicemia, e está disponível no SUS. A glibenclamida tem risco alto de hipoglicemia na função renal reduzida. Insulina seria considerada se houvesse sintomas ou glicemias muito altas.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d14-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O Programa Mais Médicos, criado em 2013, levou médicos a áreas vulneráveis.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. O objetivo foi ampliar médicos em áreas com falta deles.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 66 anos, hipertensa e obesa, tem há 2 dias vertigem contínua, cefaleia leve, náuseas e vômitos. No HINTS, tem nistagmo bidirecional, teste do impulso cefálico normal e desvio skew positivo. Romberg com queda para trás.",
+              "enunciado": "Qual é a conduta imediata?",
+              "opcoes": [
+                "Encaminhar à urgência para avaliação neurológica",
+                "Fazer as manobras de Dix-Hallpike e Epley",
+                "Dar benzodiazepínico ou antiemético na unidade",
+                "Repouso e remédios para vertigem em casa"
+              ],
+              "resposta": "Encaminhar à urgência para avaliação neurológica",
+              "explicacao": "Na síndrome vestibular aguda, impulso cefálico normal, nistagmo que muda de direção e skew positivo indicam causa central, como AVC de fossa posterior, até prova em contrário. Ela precisa de urgência e ressonância. Dix-Hallpike e Epley são para vertigem posicional breve.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "prev-d14-l3-q8",
