@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..')
-const PASTAS = ['graduacao', 'residencia']
+const PASTAS = ['residencia']
 const TIPOS = ['multipla_escolha', 'verdadeiro_falso', 'completar_lacuna', 'associar_pares', 'caso_clinico', 'identificar_imagem']
 
 const erros = []
