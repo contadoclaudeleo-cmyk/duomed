@@ -108,25 +108,34 @@
             },
             {
               "id": "prev-u1-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na Estratégia Saúde da Família, a equipe atende quem chegar, sem população nem território definidos.",
-              "resposta": false,
-              "explicacao": "Falso. Cada equipe é responsável por uma população adscrita, num território definido, o que permite criar vínculo e planejar ações.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um princípio doutrinário do SUS pela Lei 8.080/1990?",
+              "opcoes": [
+                "Longitudinalidade",
+                "Integralidade",
+                "Coordenação do cuidado",
+                "Acesso de primeiro contato"
+              ],
+              "resposta": "Integralidade",
+              "explicacao": "Os princípios doutrinários do SUS são universalidade, integralidade e equidade. Longitudinalidade, coordenação e acesso de primeiro contato são atributos da atenção primária, descritos por Starfield.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u1-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais são os atributos essenciais da Atenção Primária, segundo Starfield?",
+              "tipo": "caso_clinico",
+              "caso": "A esposa de um homem que perdeu o plano de saúde pede ajuda na UBS. Ele tem hipertensão, diabetes e está perdendo peso e ficando fraco. A recepção faz o cadastro na hora, e o enfermeiro explica que a visita domiciliar será marcada logo, pois cada caso é avaliado conforme a necessidade.",
+              "enunciado": "Quais princípios do SUS aparecem?",
               "opcoes": [
-                "Primeiro contato, longitudinalidade, integralidade e coordenação",
-                "Universalidade, equidade, integralidade e participação",
-                "Orientação familiar, comunitária e competência cultural",
-                "Prevenção, diagnóstico, tratamento e reabilitação"
+                "Universalidade e autonomia",
+                "Equidade e autonomia",
+                "Integralidade e equidade",
+                "Universalidade e equidade"
               ],
-              "resposta": "Primeiro contato, longitudinalidade, integralidade e coordenação",
-              "explicacao": "Orientação familiar, orientação comunitária e competência cultural são os atributos derivados.",
-              "revisado": false
+              "resposta": "Universalidade e equidade",
+              "explicacao": "O cadastro imediato, sem exigência, mostra a universalidade (acesso de todos). Dar prioridade conforme a necessidade de cada um, e não pela ordem, mostra a equidade.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         },
@@ -396,28 +405,18 @@
             },
             {
               "id": "prev-u2-l1-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada componente da mortalidade infantil ao seu período.",
-              "pares": [
-                {
-                  "esquerda": "Neonatal precoce",
-                  "direita": "De 0 a 6 dias de vida"
-                },
-                {
-                  "esquerda": "Neonatal tardia",
-                  "direita": "De 7 a 27 dias de vida"
-                },
-                {
-                  "esquerda": "Pós-neonatal",
-                  "direita": "De 28 dias até menos de 1 ano"
-                },
-                {
-                  "esquerda": "Perinatal",
-                  "direita": "Óbitos fetais a partir de 22 semanas e neonatais precoces"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se calcula o coeficiente de mortalidade infantil?",
+              "opcoes": [
+                "Óbitos de menores de 5 anos por nascidos vivos, vezes 1.000",
+                "Óbitos de menores de 1 ano pela população total, vezes 100.000",
+                "Óbitos de menores de 1 ano por nascidos vivos, vezes 1.000",
+                "Óbitos de menores de 1 ano por nascidos vivos, vezes 100.000"
               ],
-              "explicacao": "No Brasil, a maior parte das mortes infantis hoje é neonatal.",
-              "revisado": false
+              "resposta": "Óbitos de menores de 1 ano por nascidos vivos, vezes 1.000",
+              "explicacao": "A mortalidade infantil conta os óbitos antes de completar 1 ano, divididos pelos nascidos vivos no mesmo local e ano, por mil. A razão de mortalidade materna é que usa 100 mil nascidos vivos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u2-l1-q3",
@@ -1127,11 +1126,18 @@
             },
             {
               "id": "prev-u4-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O rastreamento de câncer em pessoas sem sintomas é uma ação de prevenção secundária.",
-              "resposta": true,
-              "explicacao": "Ele busca diagnosticar a doença cedo, antes dos sintomas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Pelos níveis de prevenção de Leavell e Clark, o que é correto?",
+              "opcoes": [
+                "A coleta de lixo é promoção da saúde, dentro da prevenção primária",
+                "A mamografia em mulheres acima de 50 é prevenção primária",
+                "A psicoterapia é reabilitação, prevenção primária",
+                "A vacina de HPV é prevenção secundária"
+              ],
+              "resposta": "A coleta de lixo é promoção da saúde, dentro da prevenção primária",
+              "explicacao": "Promoção da saúde e proteção específica são prevenção primária (como saneamento e vacinas). Diagnóstico precoce, como a mamografia, é secundária, e reabilitação é terciária.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-u4-l1-q4",
@@ -1345,6 +1351,22 @@
               "explicacao": "Pelos critérios de Wilson e Jungner, o rastreio exige doença importante, fase sem sintomas detectável, teste aceitável, tratamento que funcione melhor se iniciado cedo e uma população que adira ao processo. Tratar só na fase sintomática não justifica rastrear.",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-u4-l2-n2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 55 anos, sem sintomas, faz mamografia de rastreamento e volta ansiosa com laudo BI-RADS 1 e mamas adiposas.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Ultrassom de mamas complementar",
+                "Tranquilizar e manter a rotina de rastreamento",
+                "Repetir a mamografia em 6 meses",
+                "Encaminhar ao mastologista"
+              ],
+              "resposta": "Tranquilizar e manter a rotina de rastreamento",
+              "explicacao": "BI-RADS 1 é exame normal, e mamas adiposas facilitam a leitura. Basta manter o rastreio a cada 2 anos. Exames extras só aumentariam ansiedade e falsos positivos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             }
           ]
         },
@@ -1456,17 +1478,18 @@
             {
               "id": "prev-u4-l3-q8",
               "tipo": "caso_clinico",
-              "caso": "Um município quer começar um rastreamento de uma doença rara com um teste de especificidade baixa.",
-              "enunciado": "Qual é o problema esperado?",
+              "caso": "Homem de 80 anos, obeso, hipertenso e diabético, muito ativo e independente, quer repetir o PSA como faz todo ano.",
+              "enunciado": "O que é preciso avaliar para decidir, pela prevenção quaternária?",
               "opcoes": [
-                "Muitos falsos positivos, com exames e ansiedade",
-                "Poucos falsos positivos",
-                "Problema nenhum",
-                "Muitos falsos negativos apenas, sem nenhum falso positivo"
+                "A idade e a relação médico-paciente, decidindo juntos",
+                "Os antecedentes pessoais e familiares bastam",
+                "Expectativa de vida, comorbidades e antecedentes familiares, para oferecer ou não o exame",
+                "O PSA deve ser pedido pela boa expectativa de vida"
               ],
-              "resposta": "Muitos falsos positivos, com exames e ansiedade",
-              "explicacao": "Em doenças raras, até testes bons geram mais falsos positivos que verdadeiros.",
-              "revisado": false
+              "resposta": "Expectativa de vida, comorbidades e antecedentes familiares, para oferecer ou não o exame",
+              "explicacao": "Rastrear câncer de próstata só faz sentido em quem tem expectativa de vida acima de 10 a 15 anos. Aos 80 anos, os danos (biópsias, cirurgias e sobretratamento) costumam superar os benefícios, e a decisão deve ser compartilhada.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             }
           ]
         }
@@ -1514,11 +1537,19 @@
             },
             {
               "id": "prev-u5-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O acidente no caminho entre a casa e o trabalho pode ser considerado acidente de trabalho (de trajeto).",
-              "resposta": true,
-              "explicacao": "Ele também deve ser comunicado.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Auxiliar de limpeza de 42 anos escorregou no piso molhado do supermercado onde trabalha e tem dor e edema no joelho. Recebe sintomáticos e raio X para afastar fratura.",
+              "enunciado": "O que mais fazer?",
+              "opcoes": [
+                "Emitir a CAT e notificar no SINAN",
+                "Emitir a CAT",
+                "Encaminhar ao CEREST para avaliar a CAT",
+                "Mandar para a UPA emitir a CAT"
+              ],
+              "resposta": "Emitir a CAT",
+              "explicacao": "Acidente no trabalho gera a Comunicação de Acidente de Trabalho, que qualquer médico pode emitir. A notificação no SINAN é para acidentes graves, fatais, com crianças ou com material biológico, o que não é o caso.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u5-l1-q4",
@@ -1964,6 +1995,22 @@
               "explicacao": "A atenção domiciliar tipo 1, feita pela equipe de APS, é para pessoas com condições controladas e dificuldade de se locomover. Quem precisa de cuidado mais intenso e frequente fica com as equipes de atenção domiciliar (Melhor em Casa).",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-u6-l1-n1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher trans que iniciou hormônios por conta própria quer ser encaminhada ao ambulatório especializado. A médica de família explica que, mesmo com o seguimento em outro serviço, cabe à APS articular os serviços da rede.",
+              "enunciado": "Qual atributo da APS é esse?",
+              "opcoes": [
+                "Equidade",
+                "Coordenação do cuidado",
+                "Integralidade",
+                "Longitudinalidade"
+              ],
+              "resposta": "Coordenação do cuidado",
+              "explicacao": "Coordenação do cuidado é a APS organizar e integrar a atenção que a pessoa recebe em outros pontos da rede, mantendo a informação e a continuidade. A equidade é princípio do SUS, não atributo da APS.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         },
@@ -2156,6 +2203,100 @@
               "explicacao": "A abordagem integral inclui a dimensão espiritual. O certo é acolher, explorar o significado que ela dá à doença e ver com quem ela pode contar, sem julgar nem negar a crença.",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-u6-l2-n4",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 74 anos, sozinha, com fibromialgia, tristeza, isolamento e insônia, pede \"um remédio mais forte\" e diz que exercícios nunca funcionaram. O paracetamol não ajudou.",
+              "enunciado": "Qual é a prioridade?",
+              "opcoes": [
+                "Tricíclico em dose baixa para dor e sono",
+                "Gabapentina ou pregabalina com seguimento próximo",
+                "Plano multiprofissional com exercício supervisionado, psicoterapia e educação, podendo somar remédio",
+                "Aumentar o paracetamol até a dose máxima"
+              ],
+              "resposta": "Plano multiprofissional com exercício supervisionado, psicoterapia e educação, podendo somar remédio",
+              "explicacao": "Na fibromialgia, o que mais funciona é exercício, educação e terapia cognitivo-comportamental. Remédios são coadjuvantes. Tricíclicos são inadequados em idosos pelo efeito anticolinérgico, e a tristeza com isolamento também precisa ser cuidada.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
+            },
+            {
+              "id": "prev-u6-l2-n5",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 45 anos tem dor no corpo todo, cansaço e sono ruim há 8 meses. Já passou por vários especialistas, com exames normais, e chora dizendo que não a levam a sério.",
+              "enunciado": "Pelo método clínico centrado na pessoa, qual é a primeira abordagem?",
+              "opcoes": [
+                "Dizer que é fibromialgia e iniciar tricíclico",
+                "Pedir novos autoanticorpos para tranquilizá-la",
+                "Investigar como ela vive os sintomas, seus medos, expectativas e impacto, para então planejar juntas",
+                "Encaminhar ao reumatologista"
+              ],
+              "resposta": "Investigar como ela vive os sintomas, seus medos, expectativas e impacto, para então planejar juntas",
+              "explicacao": "O método começa explorando a experiência da doença: sentimentos, ideias, efeitos no dia a dia e expectativas. Isso valida o sofrimento e permite construir um plano em comum. Novos exames só aumentariam a angústia.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
+            },
+            {
+              "id": "prev-u6-l2-n6",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 63 anos, hipertensa, tem PA alta e insônia desde que passou a cuidar do marido com Alzheimer. Chora ao falar da rotina. O genograma mostra um filho que pouco ajuda, e o APGAR familiar é baixo em participação e apoio.",
+              "enunciado": "Qual é a melhor conduta?",
+              "opcoes": [
+                "Focar só na pressão e ajustar os remédios",
+                "Usar essas informações para montar um plano de cuidado envolvendo toda a família",
+                "Encaminhar ao psiquiatra pelo sofrimento",
+                "Iniciar antidepressivo e reforçar a adesão"
+              ],
+              "resposta": "Usar essas informações para montar um plano de cuidado envolvendo toda a família",
+              "explicacao": "Os instrumentos de abordagem familiar mostram a sobrecarga da cuidadora e a falta de apoio. O plano deve redistribuir o cuidado, envolver a família e apoiar quem cuida, e não só tratar a pressão.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
+            },
+            {
+              "id": "prev-u6-l2-n7",
+              "tipo": "caso_clinico",
+              "caso": "Paciente inquieto, mexendo as pernas e a chave de casa, vem para mostrar exames. A médica percebe a tensão, pergunta \"como estão as coisas em casa?\" e marca outra consulta para fazer genograma e ecomapa.",
+              "enunciado": "Qual componente do método clínico centrado na pessoa ela usou?",
+              "opcoes": [
+                "Entender a pessoa como um todo",
+                "Explorar a doença e a experiência da doença",
+                "Elaborar um plano conjunto",
+                "Fortalecer a relação médico-pessoa"
+              ],
+              "resposta": "Entender a pessoa como um todo",
+              "explicacao": "Genograma e ecomapa servem para entender o contexto da pessoa: família, rede de apoio e ambiente. Isso é o componente \"entender a pessoa como um todo\", que olha além da queixa.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u6-l2-n8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os princípios da Medicina de Família e Comunidade, o que é correto?",
+              "opcoes": [
+                "Atende todos, exceto saúde mental e HIV, que vão para o especialista",
+                "Uma boa relação médico-pessoa se mede pela adesão ao tratamento",
+                "O conhecimento da comunidade e o diagnóstico comunitário orientam o cuidado",
+                "Ser bom clínico depende só do tempo na mesma equipe"
+              ],
+              "resposta": "O conhecimento da comunidade e o diagnóstico comunitário orientam o cuidado",
+              "explicacao": "O MFC conhece o território e seus problemas mais frequentes, o que permite agir no momento certo. Ele cuida de saúde mental e de HIV na APS, e considera o contexto biológico, psicológico e social, não só o histórico de doenças.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u6-l2-n9",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o genograma, o que é correto?",
+              "opcoes": [
+                "Não precisa legenda nem data, mas precisa de quem fez",
+                "São necessárias pelo menos quatro gerações",
+                "No casal heterossexual, o homem (quadrado) fica à esquerda da mulher (círculo), ligados pela linha da união",
+                "Abortos não precisam ser registrados"
+              ],
+              "resposta": "No casal heterossexual, o homem (quadrado) fica à esquerda da mulher (círculo), ligados pela linha da união",
+              "explicacao": "O genograma usa símbolos padronizados, com pelo menos três gerações, legenda e data. O homem fica à esquerda, os filhos do mais velho para o mais novo, e abortos e quem mora junto devem ser registrados.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         },
@@ -2662,17 +2803,18 @@
             },
             {
               "id": "prev-u7-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de vacinas atrasadas permite aplicar várias vacinas no mesmo dia.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Numa ação de vacinação: adolescente de 13 anos sem HPV; idoso de 70 anos com doença pulmonar quer a vacina da gripe; criança de 15 meses teve febre leve 24 horas após a tríplice viral. Qual é a conduta correta, segundo a banca?",
               "opcoes": [
-                "coadministração",
-                "proibição",
-                "separação",
-                "suspensão temporária"
+                "Uma dose de HPV, adiar a gripe e notificar a febre como evento grave",
+                "Vacinar contra HPV, aplicar a vacina da gripe e orientar que a febre leve é esperada",
+                "Três doses de HPV, avaliar o idoso antes e suspender a tríplice viral",
+                "Esperar a próxima campanha para todos"
               ],
-              "resposta": "coadministração",
-              "explicacao": "Não há intervalo entre inativadas.",
-              "revisado": false
+              "resposta": "Vacinar contra HPV, aplicar a vacina da gripe e orientar que a febre leve é esperada",
+              "explicacao": "A adolescente está na faixa da vacina de HPV (hoje em dose única pelo PNI; a banca citou duas doses). A doença pulmonar é indicação, e não contraindicação, da vacina da gripe. Febre leve após a tríplice viral é evento esperado e não contraindica as próximas doses.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             }
           ]
         }
@@ -2752,32 +2894,35 @@
             },
             {
               "id": "prev-u8-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais contatos devem ser avaliados?",
+              "tipo": "caso_clinico",
+              "caso": "Imigrante de 35 anos, sem HIV e sem sintomas, mora com outros 10 trabalhadores e é contato de um caso de tuberculose pulmonar bacilífera. PPD de 5 mm e raio X normal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Quem convive com o caso",
-                "Ninguém",
-                "Só parentes distantes",
-                "Somente os familiares distantes que não moram junto"
+                "PPD de 5 mm é negativo; não tratar",
+                "Infecção latente (contato com PPD ≥ 5 mm); rifapentina e isoniazida semanais por 12 semanas",
+                "Repetir o PPD em 8 semanas antes de decidir",
+                "Isoniazida por 6 meses em todo contato, qualquer que seja o PPD"
               ],
-              "resposta": "Quem convive com o caso",
-              "explicacao": "Procurar doença e infecção latente.",
-              "revisado": false
+              "resposta": "Infecção latente (contato com PPD ≥ 5 mm); rifapentina e isoniazida semanais por 12 semanas",
+              "explicacao": "Desde 2022, o Ministério da Saúde considera PPD de 5 mm ou mais como positivo em qualquer pessoa. Com raio X normal e sem sintomas, é infecção latente, e o esquema curto com rifapentina e isoniazida (3HP) é uma opção preferida.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "prev-u8-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Morador de rua com tosse há 1 semana e perda de peso.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Homem de 55 anos, que saiu da prisão há 2 meses, tem dor no corpo, cansaço, falta de apetite e emagrecimento, sem tosse.",
+              "enunciado": "Além de hemograma, glicemia e colesterol, o que pedir?",
               "opcoes": [
-                "Investigar TB mesmo com < 3 semanas",
-                "Esperar 3 semanas",
-                "Antibiótico comum",
-                "Esperar completar três semanas de tosse e dar antibiótico comum"
+                "Só PPD, por não ter tosse",
+                "Só testes rápidos de IST",
+                "Testes de IST, espirometria e ecocardiograma",
+                "Testes rápidos de IST, escarro, raio X de tórax e PPD"
               ],
-              "resposta": "Investigar TB mesmo com < 3 semanas",
-              "explicacao": "População vulnerável.",
-              "revisado": false
+              "resposta": "Testes rápidos de IST, escarro, raio X de tórax e PPD",
+              "explicacao": "Pessoas privadas de liberdade têm risco muito alto de tuberculose, e emagrecimento com cansaço pede investigação mesmo sem tosse. Também têm mais risco de HIV, sífilis e hepatites, por isso os testes rápidos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-u8-l1-q7",
@@ -3355,39 +3500,48 @@
             {
               "id": "prev-u9-l3-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual fase de ensaio clínico avalia a eficácia em grande número de pacientes?",
+              "enunciado": "O que indica que um ensaio clínico randomizado foi bem conduzido?",
               "opcoes": [
-                "Fase 3",
-                "Fase 1",
-                "Fase 2",
-                "Fase 4"
+                "Os grupos eram parecidos nas características iniciais",
+                "Os participantes vieram de um único centro",
+                "A análise usou só quem aderiu até o fim",
+                "O estudo saiu numa revista de alto impacto"
               ],
-              "resposta": "Fase 3",
-              "explicacao": "Antes do registro.",
-              "revisado": false
+              "resposta": "Os grupos eram parecidos nas características iniciais",
+              "explicacao": "Uma boa randomização deixa os grupos semelhantes no início, o que controla os fatores de confusão. A análise deve ser por intenção de tratar, com todos os randomizados. Estudo de um só centro tem menos validade externa.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-u9-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Pesquisador escolhe os pacientes mais graves para o tratamento novo.",
-              "enunciado": "Qual viés ocorre?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Num ensaio clínico com desenho cruzado (crossover), o que deve ser considerado?",
               "opcoes": [
-                "Viés de seleção",
-                "Viés de memória",
-                "Viés de publicação",
-                "Viés de memória dos pacientes graves"
+                "Ele dispensa a randomização",
+                "Ele exige randomização estratificada",
+                "O efeito residual da primeira intervenção",
+                "Ele aumenta a validade externa"
               ],
-              "resposta": "Viés de seleção",
-              "explicacao": "Falta de randomização.",
-              "revisado": false
+              "resposta": "O efeito residual da primeira intervenção",
+              "explicacao": "No crossover, cada participante recebe as duas intervenções em sequência. Por isso é preciso um período de washout, para que o efeito da primeira não contamine a segunda (efeito carryover). A ordem continua sendo sorteada.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-u9-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A fase 4 dos estudos de remédios é o primeiro teste em seres humanos.",
-              "resposta": false,
-              "explicacao": "Falso. A fase 4 é a farmacovigilância após o remédio estar no mercado; a fase 1 é o primeiro teste em humanos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Uma mulher hipertensa é convidada para um estudo: ela assina o termo de consentimento, e, por sorteio, alguns participantes vão tomar um remédio novo e outros uma substância inativa, por 3 meses.",
+              "enunciado": "Que tipo de estudo é esse?",
+              "opcoes": [
+                "Estudo ecológico",
+                "Caso-controle",
+                "Coorte",
+                "Ensaio clínico randomizado"
+              ],
+              "resposta": "Ensaio clínico randomizado",
+              "explicacao": "O pesquisador aplica a intervenção e sorteia quem recebe o remédio ou o placebo. Isso caracteriza um ensaio clínico randomizado, o melhor desenho para avaliar eficácia de tratamentos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-u9-l3-q8",
@@ -3576,17 +3730,19 @@
             },
             {
               "id": "prev-u10-l2-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ pactuada e integrada organiza o fluxo de atendimento entre municípios.",
+              "tipo": "caso_clinico",
+              "caso": "A equipe nota muitas internações evitáveis por problemas de pré-natal e parto num território rural, de difícil acesso, vulnerável e com muitas faltas às consultas.",
+              "enunciado": "Qual é a melhor estratégia de planejamento local?",
               "opcoes": [
-                "programação",
-                "constituição",
-                "regulamentação",
-                "lei"
+                "Reforçar nas consultas a importância do pré-natal",
+                "Ir ao território entender as barreiras de acesso e depois montar estratégias",
+                "Dizer à gestão que é preciso outra UBS",
+                "Encaminhar todas as gestantes de risco ao especialista"
               ],
-              "resposta": "programação",
-              "explicacao": "PPI.",
-              "revisado": false
+              "resposta": "Ir ao território entender as barreiras de acesso e depois montar estratégias",
+              "explicacao": "O planejamento local começa pelo diagnóstico do território: entender por que as gestantes não chegam ao serviço. Só então se constroem ações que funcionem, como visitas, transporte ou consultas em outros horários.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u10-l2-q5",
@@ -3783,24 +3939,32 @@
             {
               "id": "prev-u11-l1-q2",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal componente da mortalidade infantil no Brasil hoje?",
+              "enunciado": "Qual é o calendário de consultas de pré-natal de baixo risco pelo Ministério da Saúde e pela Caderneta da Gestante?",
               "opcoes": [
-                "Neonatal precoce",
-                "Pós-neonatal",
-                "Escolar",
-                "Adolescente e adulto jovem"
+                "Mensal até 36 semanas e semanal depois",
+                "Mensal até 32, quinzenal até 38 e semanal depois",
+                "Mensal até 28, quinzenal de 28 a 36 e semanal a partir de 36 semanas",
+                "Mensal até 32 e quinzenal depois"
               ],
-              "resposta": "Neonatal precoce",
-              "explicacao": "Ligada ao pré-natal e parto.",
-              "revisado": false
+              "resposta": "Mensal até 28, quinzenal de 28 a 36 e semanal a partir de 36 semanas",
+              "explicacao": "O MS recomenda consultas mensais até 28 semanas, quinzenais entre 28 e 36 e semanais a partir de 36 semanas até o parto. Não existe alta do pré-natal antes do nascimento.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u11-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A mortalidade materna é calculada por 100 mil nascidos vivos.",
-              "resposta": true,
-              "explicacao": "Indicador de qualidade da atenção.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a criança na APS:\nI. A puericultura acompanha crescimento, desenvolvimento, vacinas e nutrição.\nII. Na diarreia sem desidratação, manter a alimentação e o soro oral.\nIII. No resfriado leve, pedir painel viral para decidir o oseltamivir.\nIV. A pneumonia é suspeitada por taquipneia e esforço respiratório, com diagnóstico clínico.\nV. O desenvolvimento inclui comportamento, linguagem e interação social.\nQuais estão corretas?",
+              "opcoes": [
+                "I, II, IV e V",
+                "I, II e IV",
+                "II, III e IV",
+                "I, III e V"
+              ],
+              "resposta": "I, II, IV e V",
+              "explicacao": "No resfriado comum não se pede painel viral nem se dá oseltamivir. As demais afirmações descrevem a puericultura e o manejo de diarreia e pneumonia pela estratégia AIDPI, que usa a frequência respiratória para suspeitar de pneumonia.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-u11-l1-q4",
@@ -4155,6 +4319,39 @@
               "explicacao": "Violência psicológica inclui humilhar, ameaçar, rejeitar ou isolar. Na Münchausen por procuração, os sintomas costumam sumir quando a cuidadora se afasta, e a negligência acontece em todas as classes sociais.",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-u11-l3-n3",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 40 anos conta ao médico, meio sem graça, que o marido controla o salário dela para \"manter as contas em ordem\" e não deixa que tenha cartão. Sente-se impotente, depende dele e não quer que os filhos saibam.",
+              "enunciado": "Qual deve ser a conduta?",
+              "opcoes": [
+                "Explicar que é violência patrimonial, orientar sobre direitos e apoio e montar com ela um plano de segurança",
+                "Encaminhá-la só para a assistente social discutir com a equipe",
+                "Sugerir conta secreta ou advogado sem envolver a equipe",
+                "Dizer que dinheiro é comum no casamento e sugerir aconselhamento do casal"
+              ],
+              "resposta": "Explicar que é violência patrimonial, orientar sobre direitos e apoio e montar com ela um plano de segurança",
+              "explicacao": "Controlar ou reter os bens e o dinheiro da mulher é violência patrimonial, prevista na Lei Maria da Penha. O médico deve nomear a violência, respeitar a autonomia dela e construir o plano junto. Terapia de casal não é indicada em situação de violência.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
+            },
+            {
+              "id": "prev-u11-l3-n4",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 30 anos, que só vai à UPA com queixas de dor, chega à UBS com dor no rosto e hematomas na pálpebra e na face. Conta que apanhou do marido há 2 dias.",
+              "enunciado": "O que o médico deve fazer?",
+              "opcoes": [
+                "Mandá-la ao serviço social, que decide se precisa de psicologia",
+                "Notificar no SINAN só se ela concordar",
+                "Acionar a defensoria para investigar outras violências",
+                "Orientar boletim de ocorrência e chamar a polícia se ela recusar",
+                "Explicar que ela pode denunciar e ser atendida sem precisar de boletim de ocorrência"
+              ],
+              "resposta": "Explicar que ela pode denunciar e ser atendida sem precisar de boletim de ocorrência",
+              "explicacao": "A violência contra a mulher é de notificação compulsória, feita pelo profissional mesmo sem o consentimento dela. O registro policial é decisão da mulher, e o atendimento não depende dele. A conduta é acolher, orientar a rede e respeitar a autonomia.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         }
@@ -4262,25 +4459,34 @@
             },
             {
               "id": "prev-u12-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A Carta de Ottawa, marco da promoção da saúde, é de 1948.",
-              "resposta": false,
-              "explicacao": "Falso. Ela é de 1986.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 36 anos, mãe solo de três filhos, diarista e beneficiária do Bolsa Família no semiárido, tem insegurança alimentar, come ultraprocessados por serem baratos, IMC 34 e PA limítrofe. Quer emagrecer.",
+              "enunciado": "Qual deve ser a prioridade da equipe?",
+              "opcoes": [
+                "Mudanças graduais na alimentação e articulação com programas sociais",
+                "Remédio para emagrecer pelas falhas anteriores",
+                "Grupos de atividade física no território como ponto de partida",
+                "Encaminhar ao nível secundário"
+              ],
+              "resposta": "Mudanças graduais na alimentação e articulação com programas sociais",
+              "explicacao": "Os determinantes sociais (renda, acesso a alimentos) explicam boa parte do quadro. O plano precisa ser realista, com mudanças possíveis no dia a dia e apoio de programas de segurança alimentar, e não só recomendações individuais.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "prev-u12-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "As ___ em saúde são diferenças injustas e evitáveis.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Crianças de uma comunidade com casas pouco ventiladas, perto de um lixão, com pais de baixa renda e escolaridade, têm muitas doenças respiratórias. Pelo modelo de Dahlgren e Whitehead, quais afirmações estão certas?\nI. Moradia e ambiente são determinantes intermediários.\nII. Baixa escolaridade e renda são determinantes estruturais.\nIII. As doenças se explicam só por fatores individuais.\nIV. Ações intersetoriais são essenciais.",
               "opcoes": [
-                "iniquidades",
-                "igualdades",
-                "doenças",
-                "prevenções"
+                "I, III e IV",
+                "II e IV",
+                "I, II e IV",
+                "I, II, III e IV"
               ],
-              "resposta": "iniquidades",
-              "explicacao": "Ligadas a desigualdades sociais.",
-              "revisado": false
+              "resposta": "I, II e IV",
+              "explicacao": "No modelo, renda e escolaridade são estruturais e condicionam as condições de vida, como moradia e ambiente, que agem mais diretamente. Por isso a doença não é só individual, e mudar esse quadro exige ações intersetoriais.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             }
           ]
         },
@@ -4299,17 +4505,19 @@
             },
             {
               "id": "prev-u12-l2-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento do tabagismo oferecido no SUS?",
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 16 anos fuma desde os 12 e procura sozinho a UBS para parar, assustado com a doença do tio. Está na fase de ação.",
+              "enunciado": "Qual é a conduta correta?",
               "opcoes": [
-                "Abordagem cognitiva com adesivo e bupropiona",
-                "Só força de vontade",
-                "Cigarro eletrônico",
-                "Trocar pelo cigarro eletrônico, sem outro acompanhamento"
+                "Aconselhamento breve basta, pois adolescentes ficam menos dependentes",
+                "Grupo e adesivo de nicotina em todos na fase de ação",
+                "Avaliar o grau de dependência e convidá-lo para grupo de cessação",
+                "Abordagem individual com bupropiona é sempre superior"
               ],
-              "resposta": "Abordagem cognitiva com adesivo e bupropiona",
-              "explicacao": "Programa nacional.",
-              "revisado": false
+              "resposta": "Avaliar o grau de dependência e convidá-lo para grupo de cessação",
+              "explicacao": "Adolescentes ficam dependentes rápido, e a motivação deve ser aproveitada. O primeiro passo é medir a dependência (Fagerström) e oferecer abordagem cognitivo-comportamental, em grupo ou individual. Remédios em menores de 18 anos são usados com cautela.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "prev-u12-l2-q3",
@@ -4486,11 +4694,18 @@
             },
             {
               "id": "prev-u12-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No Brasil, a maioria das mortes é por doenças infecciosas.",
-              "resposta": false,
-              "explicacao": "Falso. As doenças crônicas respondem por cerca de 70% das mortes.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes pacientes tem risco cardiovascular intermediário?",
+              "opcoes": [
+                "Mulher de 52 anos, sem fumar, com diabetes diagnosticado há dois meses",
+                "Homem de 52 anos com aneurisma de aorta abdominal",
+                "Mulher de 52 anos com placas na angiotomografia coronária",
+                "Mulher de 52 anos com diabetes há 5 anos e hipertensão há 8"
+              ],
+              "resposta": "Mulher de 52 anos, sem fumar, com diabetes diagnosticado há dois meses",
+              "explicacao": "Doença aterosclerótica (aneurisma, placas) é muito alto ou alto risco. Diabetes há mais de 10 anos ou com outros fatores é alto risco. O diabetes recém-diagnosticado, sem estratificadores, é considerado risco intermediário.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-u12-l3-q8",
@@ -5155,17 +5370,19 @@
             },
             {
               "id": "prev-u14-l3-q4",
-              "tipo": "completar_lacuna",
-              "enunciado": "A perda auditiva induzida por ___ é irreversível e bilateral.",
+              "tipo": "caso_clinico",
+              "caso": "Operador de britadeira há 38 anos, com EPIs antigos e quebrados, tem perda auditiva neurossensorial bilateral e simétrica, pior em 3, 4 e 6 kHz, com melhora em 8 kHz.",
+              "enunciado": "Qual é o diagnóstico e a conduta?",
               "opcoes": [
-                "ruído",
-                "idade",
-                "infecção",
-                "trauma"
+                "Perda não ligada a ruído; pedir exame de imagem",
+                "Presbiacusia; repouso acústico e mais EPI",
+                "Perda induzida por ruído ocupacional; notificar no SINAN e encaminhar ao CEREST e à empresa para a CAT",
+                "Perda induzida por ruído; fazer CAT e registrar boletim de ocorrência"
               ],
-              "resposta": "ruído",
-              "explicacao": "Prevenção com protetor.",
-              "revisado": false
+              "resposta": "Perda induzida por ruído ocupacional; notificar no SINAN e encaminhar ao CEREST e à empresa para a CAT",
+              "explicacao": "A queda nas frequências de 3 a 6 kHz com recuperação em 8 kHz é típica da perda por ruído. Sendo do trabalho, deve ser notificada no SINAN e documentada para a emissão da CAT, além de orientar a proteção.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-u14-l3-q5",
@@ -5659,18 +5876,18 @@
             },
             {
               "id": "prev-d2-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Um estudo usa registros de 1990 para acompanhar trabalhadores expostos e não expostos até hoje.",
-              "enunciado": "Qual é o desenho?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Dados de peso e altura de calouros de 1970, guardados desde então, foram analisados em 2022 para ver se se associavam a doença cardiovascular. Que estudo é esse?",
               "opcoes": [
-                "Coorte histórica",
+                "Coorte retrospectiva",
+                "Estudo transversal",
                 "Caso-controle",
-                "Ensaio clínico",
-                "Transversal de prevalência"
+                "Estudo adaptativo"
               ],
-              "resposta": "Coorte histórica",
-              "explicacao": "A direção é da exposição para a doença, mesmo usando dados do passado.",
-              "revisado": false
+              "resposta": "Coorte retrospectiva",
+              "explicacao": "Parte-se da exposição medida no passado (peso e altura) e se acompanha o aparecimento da doença até hoje, usando registros já existentes. Isso é uma coorte histórica, ou retrospectiva.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d2-l1-q5",
@@ -5921,18 +6138,19 @@
             },
             {
               "id": "prev-d2-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Os tumores de crescimento lento são mais detectados em rastreamentos do que os agressivos.",
-              "enunciado": "Qual é o viés?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual situação a citologia do colo do útero deve ser feita anualmente?",
               "opcoes": [
-                "Viés de duração",
-                "Viés de memória",
-                "Viés de antecipação",
-                "Confusão pela idade dos pacientes"
+                "Mulher de 35 anos em quimioterapia, sem exame há 5 anos",
+                "Mulher de 65 anos com dois exames anuais negativos",
+                "Mulher de 25 anos com dois exames anuais negativos",
+                "Homem trans de 25 anos com dois exames anuais negativos",
+                "Mulher lésbica de 29 anos cujo primeiro exame, há um ano, foi negativo"
               ],
-              "resposta": "Viés de duração",
-              "explicacao": "Ele faz o rastreamento parecer melhor do que é.",
-              "revisado": false
+              "resposta": "Mulher lésbica de 29 anos cujo primeiro exame, há um ano, foi negativo",
+              "explicacao": "O rastreio começa com dois exames anuais; se ambos forem negativos, passa a ser a cada 3 anos, o que vale também para mulheres lésbicas e homens trans com colo. A mulher de 29 anos só fez o primeiro, então precisa do segundo anual. Imunodeprimidas seguem esquema próprio, semestral no primeiro ano.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-d2-l3-q7",
@@ -6410,18 +6628,18 @@
             },
             {
               "id": "prev-d4-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Conselho de saúde tem 20 membros.",
-              "enunciado": "Quantos devem ser usuários?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como seria o acesso à saúde pública de trabalhadores formais e informais antes do SUS?",
               "opcoes": [
-                "10, ou 50%",
-                "5",
-                "15",
-                "Todos os 20 membros"
+                "Igual ao de hoje, pois a saúde sempre foi direito de todo trabalhador",
+                "Os informais teriam muita dificuldade, pois o sistema público atendia sobretudo quem tinha carteira assinada",
+                "Igual ao de hoje, pois o SUS sempre organizou a saúde",
+                "Os informais seriam atendidos pelo INAMPS e os formais teriam planos das empresas"
               ],
-              "resposta": "10, ou 50%",
-              "explicacao": "Os outros 50% se dividem entre trabalhadores (25%) e gestores e prestadores (25%).",
-              "revisado": false
+              "resposta": "Os informais teriam muita dificuldade, pois o sistema público atendia sobretudo quem tinha carteira assinada",
+              "explicacao": "Antes de 1988, a assistência médica pública (INAMPS) era ligada à Previdência e cobria quem contribuía, isto é, os trabalhadores formais. Os demais dependiam de filantropia ou de serviços pagos. O SUS tornou a saúde um direito universal.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d4-l1-q5",
@@ -6498,110 +6716,112 @@
             },
             {
               "id": "prev-d4-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada atributo da atenção primária ao significado.",
-              "pares": [
-                {
-                  "esquerda": "Acesso de primeiro contato",
-                  "direita": "Porta de entrada do sistema"
-                },
-                {
-                  "esquerda": "Longitudinalidade",
-                  "direita": "Vínculo ao longo do tempo"
-                },
-                {
-                  "esquerda": "Integralidade",
-                  "direita": "Atender a maioria das necessidades"
-                },
-                {
-                  "esquerda": "Coordenação",
-                  "direita": "Organizar o cuidado em outros serviços"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Trabalhadora de 44 anos procura a UBS numa sexta-feira por dor lombar há 3 meses e pede encaminhamento ao ortopedista. No acolhimento, a enfermeira pesquisa sinais de alerta (ausentes) e agenda consulta médica para a semana seguinte.",
+              "enunciado": "Qual interpretação está correta?",
+              "opcoes": [
+                "O acolhimento garantiu o acesso de primeiro contato, mesmo sem consulta médica na hora",
+                "O agendamento mostra longitudinalidade",
+                "A integralidade falhou porque não houve consulta médica imediata",
+                "A coordenação falhou porque não houve encaminhamento ao especialista"
               ],
-              "explicacao": "Também há atributos derivados: orientação familiar e comunitária e competência cultural.",
-              "revisado": false
+              "resposta": "O acolhimento garantiu o acesso de primeiro contato, mesmo sem consulta médica na hora",
+              "explicacao": "Acesso de primeiro contato é a pessoa conseguir ser recebida e avaliada no serviço quando precisa. Com sinais de alerta afastados, a consulta agendada é adequada. Longitudinalidade é o vínculo ao longo do tempo, não um retorno marcado.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "prev-d4-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Município de 28 mil habitantes quer cobertura total da Estratégia Saúde da Família.",
-              "enunciado": "Quantas equipes são necessárias, no mínimo?",
+              "caso": "Na reunião de equipe da APS, discute-se um diabético descompensado que vive voltando ao pronto-socorro com complicações.",
+              "enunciado": "Qual estratégia de rede mais evita novas internações?",
               "opcoes": [
-                "Cerca de 8 equipes",
-                "1 equipe",
-                "28 equipes",
-                "Cerca de 56 equipes"
+                "Cuidado centralizado só na APS, com consultas frequentes",
+                "Encaminhar ao endocrinologista para ajustar os remédios",
+                "Criar uma linha de cuidado que coordene o acompanhamento da APS até os especialistas",
+                "Protocolo que facilite o acesso a todos os níveis para quem interna muito"
               ],
-              "resposta": "Cerca de 8 equipes",
-              "explicacao": "Cada equipe cuida de 2.000 a 3.500 pessoas; 28 mil dividido por 3.500 dá 8.",
-              "revisado": false
+              "resposta": "Criar uma linha de cuidado que coordene o acompanhamento da APS até os especialistas",
+              "explicacao": "A linha de cuidado organiza o percurso da pessoa pela rede, com a APS coordenando e chamando o especialista quando necessário. Isso dá continuidade e evita a fragmentação que leva às idas ao pronto-socorro.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d4-l2-q4",
-              "tipo": "caso_clinico",
-              "caso": "Uma equipe percebe que muitos casos de diarreia vêm de uma rua sem saneamento.",
-              "enunciado": "Qual atributo usa?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela PNAB 2017, qual é a população recomendada para cada equipe de Saúde da Família?",
               "opcoes": [
-                "Orientação comunitária",
-                "Longitudinalidade",
-                "Primeiro contato",
-                "Coordenação do cuidado"
+                "2.000 a 3.500 pessoas",
+                "3.500 a 5.000 pessoas",
+                "5.000 a 6.000 pessoas",
+                "1.000 a 2.000 pessoas"
               ],
-              "resposta": "Orientação comunitária",
-              "explicacao": "Ela olha para a comunidade e não só para o indivíduo.",
-              "revisado": false
+              "resposta": "2.000 a 3.500 pessoas",
+              "explicacao": "A PNAB de 2017 recomenda de 2.000 a 3.500 pessoas por equipe, ajustando conforme a vulnerabilidade do território: quanto mais vulnerável, menos pessoas por equipe.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-d4-l2-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A Política Nacional de Atenção Básica de 2017 permitiu equipes de atenção básica sem agentes comunitários fixos em quantidade definida.",
-              "resposta": true,
-              "explicacao": "Essa mudança foi criticada por enfraquecer a estratégia de saúde da família.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela classificação de Barbara Starfield, quais são atributos derivados da APS?",
+              "opcoes": [
+                "Acesso de primeiro contato e longitudinalidade",
+                "Integralidade e coordenação do cuidado",
+                "Acessibilidade e equidade",
+                "Orientação familiar e competência cultural"
+              ],
+              "resposta": "Orientação familiar e competência cultural",
+              "explicacao": "Os atributos essenciais são acesso de primeiro contato, longitudinalidade, integralidade e coordenação. Os derivados são orientação familiar, orientação comunitária e competência cultural.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-d4-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com transtorno mental grave precisa de cuidado intensivo na comunidade.",
-              "enunciado": "Qual é o serviço indicado?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela PNAB 2017, qual é a melhor definição de longitudinalidade?",
               "opcoes": [
-                "Centro de Atenção Psicossocial (CAPS)",
-                "Hospital psiquiátrico",
-                "Pronto-socorro",
-                "Hospital psiquiátrico fechado por tempo indeterminado"
+                "Capacidade de resolver a maioria dos problemas da população",
+                "Continuidade da relação de cuidado, com responsabilização entre profissionais e usuários ao longo do tempo",
+                "Definição da população do território para planejar as ações",
+                "Cuidado singular que ajude a pessoa a decidir sobre sua saúde"
               ],
-              "resposta": "Centro de Atenção Psicossocial (CAPS)",
-              "explicacao": "O CAPS faz parte da Rede de Atenção Psicossocial.",
-              "revisado": false
+              "resposta": "Continuidade da relação de cuidado, com responsabilização entre profissionais e usuários ao longo do tempo",
+              "explicacao": "Longitudinalidade é o vínculo duradouro entre a equipe e a pessoa, independente da presença de doença. A primeira opção descreve a resolutividade, e a terceira, a adscrição de clientela.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-d4-l2-q7",
-              "tipo": "completar_lacuna",
-              "enunciado": "A ___ de atenção à saúde organiza os serviços de forma integrada, com a atenção primária como centro de comunicação.",
+              "tipo": "caso_clinico",
+              "caso": "Numa USF, uma mulher espera com dor abdominal leve há 3 dias, sem sinais de alarme, quando chega um homem com dor torácica súbita e muita sudorese.",
+              "enunciado": "O que o enfermeiro do acolhimento deve fazer?",
               "opcoes": [
-                "rede",
-                "pirâmide",
-                "fila",
-                "central"
+                "Atender por ordem de chegada",
+                "Mandar os dois para a UPA",
+                "Pedir que os dois aguardem a triagem médica",
+                "Levar logo o homem com dor torácica para avaliação médica"
               ],
-              "resposta": "rede",
-              "explicacao": "As redes foram propostas por Eugênio Vilaça Mendes.",
-              "revisado": false
+              "resposta": "Levar logo o homem com dor torácica para avaliação médica",
+              "explicacao": "O acolhimento com classificação de risco atende primeiro quem tem mais gravidade, não quem chegou antes. Dor torácica com sudorese é emergência e precisa de atendimento imediato, com transferência depois, se necessário.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-d4-l2-q8",
               "tipo": "caso_clinico",
-              "caso": "Um município cria uma central para organizar o acesso a consultas especializadas.",
-              "enunciado": "Como se chama?",
+              "caso": "Mulher de 69 anos, hipertensa e diabética, tem doença renal crônica estágio 3b e é encaminhada ao nefrologista.",
+              "enunciado": "Como deve ser o acompanhamento pela Rede de Atenção à Saúde?",
               "opcoes": [
-                "Regulação",
-                "Vigilância",
-                "Auditoria",
-                "Controle social"
+                "Só no serviço de referência, sem voltar à APS",
+                "Promoção na UBS e seguimento clínico com o especialista",
+                "Coordenado pelo serviço secundário",
+                "Coordenado pela APS, com apoio do especialista"
               ],
-              "resposta": "Regulação",
-              "explicacao": "A regulação ordena o acesso conforme prioridade.",
-              "revisado": false
+              "resposta": "Coordenado pela APS, com apoio do especialista",
+              "explicacao": "Na rede de atenção, a APS é a coordenadora do cuidado e mantém o vínculo, enquanto o especialista dá apoio e compartilha o manejo. A pessoa não deixa de ser acompanhada pela sua equipe.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             }
           ]
         },
@@ -6637,17 +6857,18 @@
             {
               "id": "prev-d4-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Patrão liga para o médico pedindo o diagnóstico de um funcionário que está de atestado.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Num pronto-socorro do interior, o plantonista chama por telemedicina um cardiologista da capital por suspeita de síndrome coronariana. Algumas condutas são feitas sem registrar as orientações. O paciente tem complicações e a família entra na Justiça.",
+              "enunciado": "Quem responde pelo atendimento?",
               "opcoes": [
-                "Não informar sem autorização",
-                "Informar, pois o patrão paga",
-                "Informar só o CID",
-                "Enviar cópia do prontuário completo"
+                "Só o médico local, que executou e não registrou",
+                "Só o especialista, que decidiu a conduta",
+                "Os dois, cada um dentro de sua atuação e decisão",
+                "Ninguém do lado remoto, pois a teleconsultoria é só consultiva"
               ],
-              "resposta": "Não informar sem autorização",
-              "explicacao": "O sigilo só cai por dever legal, justa causa ou autorização do paciente.",
-              "revisado": false
+              "resposta": "Os dois, cada um dentro de sua atuação e decisão",
+              "explicacao": "Pelas normas do CFM, na teleinterconsulta os médicos envolvidos respondem de forma solidária, cada um pelo que decidiu e fez. Registrar no prontuário as orientações recebidas é obrigação de quem atende presencialmente.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "prev-d4-l3-q4",
@@ -6868,28 +7089,19 @@
             },
             {
               "id": "prev-d5-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada reação hansênica ao tratamento.",
-              "pares": [
-                {
-                  "esquerda": "Reação tipo 1 (reversa)",
-                  "direita": "Corticoide"
-                },
-                {
-                  "esquerda": "Reação tipo 2 (eritema nodoso)",
-                  "direita": "Talidomida"
-                },
-                {
-                  "esquerda": "Reação tipo 2 em mulher em idade fértil",
-                  "direita": "Corticoide, pois a talidomida causa malformações"
-                },
-                {
-                  "esquerda": "Pessoa que convive com o doente",
-                  "direita": "Exame da pele e dos nervos e BCG"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 34 anos tem há 2 dias febre, dor de cabeça, dor atrás dos olhos, náuseas e sangramento na gengiva ao escovar os dentes. Está estável, hidratada e com PA 110 x 80.",
+              "enunciado": "Como classificar e conduzir?",
+              "opcoes": [
+                "Grupo C; observar e hidratar até o hemograma",
+                "Grupo B; se hematócrito alto, soro venoso e reavaliar em 1 hora",
+                "Grupo A; tratar em casa, com retorno após a febre",
+                "Grupo B; hemograma, soro oral e observação, e se normal, seguir em casa com reavaliação diária"
               ],
-              "explicacao": "As reações não são motivo para suspender o tratamento.",
-              "revisado": false
+              "resposta": "Grupo B; hemograma, soro oral e observação, e se normal, seguir em casa com reavaliação diária",
+              "explicacao": "Sangramento espontâneo de mucosa sem sinais de alarme ou choque classifica como grupo B. Pede-se hemograma e hidrata-se por via oral até o resultado; se normal, o seguimento é ambulatorial, com retorno diário até 48 horas após a febre.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-d5-l2-q3",
@@ -7790,58 +8002,48 @@
             },
             {
               "id": "prev-d7-l3-q3",
-              "tipo": "caso_clinico",
-              "caso": "Uma metanálise mostra I² de 80%.",
-              "enunciado": "Como interpretar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre revisão sistemática e metanálise, o que é correto?",
               "opcoes": [
-                "Heterogeneidade alta",
-                "Amostra grande",
-                "Ausência de viés de publicação",
-                "Poder estatístico baixo"
+                "Revisão sistemática e metanálise são a mesma coisa",
+                "Estudos com vieses devem ser sempre excluídos",
+                "Na metanálise, cada estudo pesa conforme a precisão do seu resultado",
+                "Qualquer heterogeneidade invalida a metanálise"
               ],
-              "resposta": "Heterogeneidade alta",
-              "explicacao": "Acima de 50%, a heterogeneidade entre os estudos é moderada a alta.",
-              "revisado": false
+              "resposta": "Na metanálise, cada estudo pesa conforme a precisão do seu resultado",
+              "explicacao": "A metanálise é o cálculo estatístico que junta os resultados, dando mais peso aos estudos mais precisos (maiores). A revisão sistemática é o método de busca e seleção, que pode ou não ter metanálise. A heterogeneidade deve ser avaliada, mas não anula o cálculo.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d7-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada ferramenta à função.",
-              "pares": [
-                {
-                  "esquerda": "PRISMA",
-                  "direita": "Guia para relatar revisões"
-                },
-                {
-                  "esquerda": "GRADE",
-                  "direita": "Classificar a certeza da evidência"
-                },
-                {
-                  "esquerda": "Risco de viés da Cochrane",
-                  "direita": "Avaliar ensaios"
-                },
-                {
-                  "esquerda": "Funil",
-                  "direita": "Detectar viés de publicação"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "O que melhor descreve o uso da medicina baseada em evidências na APS?",
+              "opcoes": [
+                "Usar a probabilidade pré-teste para interpretar exames e decidir o diagnóstico",
+                "Decidir só pelos estudos, sem a experiência clínica e as preferências da pessoa",
+                "As melhores evidências de tratamento vêm de estudos ecológicos",
+                "A observação não sistemática do médico é evidência de alta qualidade"
               ],
-              "explicacao": "Medicina baseada em evidências.",
-              "revisado": false
+              "resposta": "Usar a probabilidade pré-teste para interpretar exames e decidir o diagnóstico",
+              "explicacao": "A MBE junta a melhor evidência, a experiência clínica e os valores da pessoa. Pensar na probabilidade antes do teste é central para interpretar resultados. Estudos ecológicos e observações isoladas são evidências fracas.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "prev-d7-l3-q5",
-              "tipo": "caso_clinico",
-              "caso": "Metanálise com alta heterogeneidade.",
-              "enunciado": "Qual modelo usar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pelo sistema GRADE (certeza alta, moderada, baixa e muito baixa), o que é correto?",
               "opcoes": [
-                "Efeitos aleatórios",
-                "Efeitos fixos",
-                "Só o maior estudo",
-                "Usar apenas o maior estudo e ignorar os outros"
+                "Caso-controle costuma ter certeza maior que ensaios randomizados",
+                "Estudos observacionais podem chegar a certeza alta, apesar das limitações",
+                "Revisões sistemáticas sempre têm certeza moderada ou alta",
+                "Relatos de caso de instituições famosas têm certeza moderada"
               ],
-              "resposta": "Efeitos aleatórios",
-              "explicacao": "Considera variação entre estudos.",
-              "revisado": false
+              "resposta": "Estudos observacionais podem chegar a certeza alta, apesar das limitações",
+              "explicacao": "No GRADE, ensaios randomizados começam com certeza alta e estudos observacionais com baixa. Mas a certeza pode subir (efeito muito grande, dose-resposta) ou cair (vieses, imprecisão), então observacionais podem chegar a alta e ensaios podem cair.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-d7-l3-q6",
@@ -8234,11 +8436,19 @@
             },
             {
               "id": "prev-d8-l3-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Sensibilidade e especificidade mudam muito conforme a prevalência da doença na população.",
-              "resposta": false,
-              "explicacao": "Falso. São propriedades do teste e mudam pouco, exceto por viés de espectro.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Uma doença é bem mais comum acima dos 40 anos. Há três exames: A (sensibilidade 50%, especificidade 95%, barato), B (sensibilidade 45%, especificidade 79%, custo moderado) e C (padrão-ouro, caro e incômodo).",
+              "enunciado": "Qual estratégia de rastreio é mais custo-efetiva?",
+              "opcoes": [
+                "Rastrear todas as idades com B e confirmar com outro exame",
+                "Acima de 40 com A e B; abaixo de 40 com A",
+                "Acima de 40 anos com o exame A, confirmando com C se positivo",
+                "Acima de 40 com A e abaixo de 40 com C"
+              ],
+              "resposta": "Acima de 40 anos com o exame A, confirmando com C se positivo",
+              "explicacao": "Rastreia-se onde a prevalência é maior (acima de 40), o que aumenta o valor preditivo. O exame A é barato e muito específico, gerando poucos falsos positivos, e o padrão-ouro só é usado para confirmar.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-d8-l3-q8",
@@ -8287,18 +8497,18 @@
             },
             {
               "id": "prev-d9-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 9 meses chega à unidade em área com recomendação de febre amarela.",
-              "enunciado": "Qual vacina aplicar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Menino de 11 anos vem para consulta de rotina, e a mãe pergunta sobre vacinas. O que a enfermeira deve fazer?",
               "opcoes": [
-                "Febre amarela",
-                "Rotavírus",
-                "BCG se já tem cicatriz",
-                "Rotavírus oral"
+                "Dar dT se a última dose foi há 5 anos",
+                "Indicar a vacina de HPV em dose única, se ele ainda não recebeu",
+                "Dizer que a vacina de HPV é só para vítimas de violência",
+                "Recomeçar todos os esquemas atrasados"
               ],
-              "resposta": "Febre amarela",
-              "explicacao": "Aos 9 meses.",
-              "revisado": false
+              "resposta": "Indicar a vacina de HPV em dose única, se ele ainda não recebeu",
+              "explicacao": "O PNI oferece HPV para meninos e meninas de 9 a 14 anos, em dose única. Esquemas atrasados não são reiniciados, apenas completados, e o reforço da dT é a cada 10 anos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "prev-d9-l1-q3",
@@ -8696,28 +8906,19 @@
             },
             {
               "id": "prev-d10-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada estratégia à prevenção do HIV.",
-              "pares": [
-                {
-                  "esquerda": "PrEP",
-                  "direita": "Remédio antes da exposição"
-                },
-                {
-                  "esquerda": "PEP",
-                  "direita": "Remédio após exposição"
-                },
-                {
-                  "esquerda": "Indetectável",
-                  "direita": "Intransmissível"
-                },
-                {
-                  "esquerda": "Preservativo",
-                  "direita": "Barreira"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Adolescente de 16 anos, gay, sexualmente ativo com parceiros diferentes e sem usar sempre preservativo, quer se proteger do HIV.",
+              "enunciado": "Pelo Ministério da Saúde, o que recomendar?",
+              "opcoes": [
+                "PrEP, indicada a partir de 15 anos e 35 kg em quem tem vida sexual ativa",
+                "PEP pode ser iniciada até uma semana após a exposição",
+                "A PrEP só pode ser dada com autorização escrita dos pais",
+                "A PEP deve ser mantida por 6 meses após a exposição"
               ],
-              "explicacao": "Prevenção combinada.",
-              "revisado": false
+              "resposta": "PrEP, indicada a partir de 15 anos e 35 kg em quem tem vida sexual ativa",
+              "explicacao": "A PrEP é indicada para adolescentes a partir de 15 anos e 35 kg com risco de exposição, sem exigir autorização dos pais. A PEP deve começar em até 72 horas e dura 28 dias.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d10-l1-q5",
@@ -8904,6 +9105,22 @@
               "explicacao": "Grupo C.",
               "revisado": false,
               "fonte": "PSU-MG 2025"
+            },
+            {
+              "id": "prev-d10-l2-n1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 37 anos teve uma relação desprotegida há 9 meses e há 3 meses tem manchas que não coçam no corpo e nas palmas. Teste rápido e VDRL positivos.",
+              "enunciado": "Qual é o estadiamento, o tratamento e o seguimento?",
+              "opcoes": [
+                "Secundária; penicilina benzatina 3 semanas; VDRL mensal",
+                "Latente tardia; penicilina 3 semanas; VDRL trimestral",
+                "Primária; penicilina dose única; VDRL mensal",
+                "Secundária (recente); penicilina benzatina 2,4 milhões em dose única; VDRL trimestral"
+              ],
+              "resposta": "Secundária (recente); penicilina benzatina 2,4 milhões em dose única; VDRL trimestral",
+              "explicacao": "Lesões de pele com palmas acometidas é sífilis secundária, que é recente (menos de 1 ano). O tratamento é dose única de 2,4 milhões. Fora da gestação, o VDRL é repetido a cada 3 meses no primeiro ano.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         },
@@ -10371,6 +10588,37 @@
               "explicacao": "Uma medida de PA em situação de estresse, uma glicemia isolada sem sintomas clássicos e tristeza de uma semana não fecham diagnósticos. Rótulos dados assim geram tratamentos desnecessários. O certo é liberar e acompanhar na atenção primária.",
               "revisado": false,
               "fonte": "UERJ 2024"
+            },
+            {
+              "id": "prev-d14-l1-n2",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 83 anos com hipertensão e IC controlada: o filho marcou PSA, colonoscopia e TC de tórax particulares \"para garantir que não tem câncer\". O médico explica que os riscos superam os benefícios e não pede os exames.",
+              "enunciado": "Que tipo de prevenção é essa?",
+              "opcoes": [
+                "Primária",
+                "Secundária",
+                "Terciária",
+                "Quaternária"
+              ],
+              "resposta": "Quaternária",
+              "explicacao": "Prevenção quaternária é evitar intervenções desnecessárias e o dano que elas causam. Aos 83 anos e com IC, o rastreio de câncer não traz benefício e expõe a biópsias, complicações e ansiedade.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
+            },
+            {
+              "id": "prev-d14-l1-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes é um exemplo de prevenção quaternária?",
+              "opcoes": [
+                "Polivitamínicos para prevenir doença cardiovascular e câncer",
+                "Retirar benzodiazepínicos de idosos",
+                "Ultrassom de mamas de rotina em mulheres sem sintomas",
+                "Hemograma, fezes e urina de rotina em crianças"
+              ],
+              "resposta": "Retirar benzodiazepínicos de idosos",
+              "explicacao": "Prevenção quaternária é evitar ou desfazer intervenções que causam mais dano que benefício. Retirar benzodiazepínicos de idosos reduz quedas e confusão. As outras opções são exemplos de excesso de intervenção.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             }
           ]
         },
@@ -10539,17 +10787,19 @@
             },
             {
               "id": "prev-d14-l3-q3",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o programa que oferece remédios para hipertensão e diabetes gratuitamente em farmácias credenciadas?",
+              "tipo": "caso_clinico",
+              "caso": "Na rua, a equipe do Consultório na Rua atende uma jovem de 18 anos, grávida de cerca de 32 semanas, sem documentos, sem pré-natal, desnutrida e que relata violência ao tentar acessar os serviços.",
+              "enunciado": "Que estratégias intersetoriais garantem o cuidado contínuo?",
               "opcoes": [
-                "Farmácia Popular",
-                "Mais Médicos",
-                "PNI",
-                "Serviço de Atendimento Móvel"
+                "Internação compulsória em comunidade terapêutica",
+                "Rede com a sociedade civil sem envolver a UBS",
+                "Cadastrá-la na UBS de referência, acionar a assistência social e parcerias e o pré-natal de alto risco",
+                "Reforçar a importância do pré-natal e responsabilizá-la pela adesão"
               ],
-              "resposta": "Farmácia Popular",
-              "explicacao": "Aqui Tem Farmácia Popular.",
-              "revisado": false
+              "resposta": "Cadastrá-la na UBS de referência, acionar a assistência social e parcerias e o pré-natal de alto risco",
+              "explicacao": "Pessoas em situação de rua podem ser cadastradas sem endereço fixo e sem documentos. O cuidado exige articular saúde (UBS e pré-natal de alto risco) com assistência social e a rede local. Internação compulsória e culpabilização afastam a pessoa do cuidado.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "prev-d14-l3-q4",

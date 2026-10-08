@@ -1280,11 +1280,19 @@
             },
             {
               "id": "rpsiq-u4-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No transtorno de pânico, existe medo persistente de ter novas crises.",
-              "resposta": true,
-              "explicacao": "Chamado de ansiedade antecipatória.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 43 anos tem há um mês angústia, palpitações frequentes, tremores, tontura e medo de perder o controle, com prejuízo no trabalho. Está calmo na consulta e sem ideação suicida.",
+              "enunciado": "Qual é a melhor conduta na APS?",
+              "opcoes": [
+                "Internação via SAMU",
+                "Encaminhar ao CAPS para avaliação",
+                "Seguir na UBS com equipe multiprofissional e considerar um ISRS",
+                "Passar pela psicóloga para decidir se fica na APS"
+              ],
+              "resposta": "Seguir na UBS com equipe multiprofissional e considerar um ISRS",
+              "explicacao": "Transtornos de ansiedade sem gravidade são tratados na atenção primária, com psicoterapia e, se preciso, ISRS. O CAPS é para transtornos graves e persistentes ou com risco.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026"
             },
             {
               "id": "rpsiq-u4-l2-q3",
@@ -1662,11 +1670,19 @@
             },
             {
               "id": "rpsiq-u5-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O delirium tremens tem confusão, alucinações visuais e instabilidade autonômica.",
-              "resposta": true,
-              "explicacao": "É uma emergência com risco de morte.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 42 anos bebe todo dia desde os 35 e procura o CAPS para parar. Reduziu nos últimos 10 dias e está há 2 dias sem beber, com insônia, náusea e inquietação, sem tremor, febre ou psicose. AUDIT de 24.",
+              "enunciado": "Qual é a conduta do CAPS?",
+              "opcoes": [
+                "Aplicar o CAGE, iniciar ISRS com benzodiazepínico e encaminhar à UBS",
+                "Acolher e mandar para a APS, que deve ser a porta de entrada",
+                "Encaminhar à emergência para internação",
+                "Observar algumas horas, avaliar a rede de apoio, iniciar diazepam e tiamina e marcar retorno breve"
+              ],
+              "resposta": "Observar algumas horas, avaliar a rede de apoio, iniciar diazepam e tiamina e marcar retorno breve",
+              "explicacao": "Abstinência leve, sem sinais de gravidade, pode ser tratada no próprio CAPS com benzodiazepínico de ação longa e tiamina para prevenir Wernicke. O CAPS é porta aberta e não precisa de encaminhamento da APS.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-u5-l2-q3",
@@ -3432,17 +3448,19 @@
             },
             {
               "id": "rpsiq-u10-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tratamento principal do delirium?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 84 anos tem há 36 horas apatia alternando com agitação à noite, constipação há 5 dias e mucosas secas, com fecaloma. Usa amitriptilina iniciada há 10 dias, oxibutinina e difenidramina \"para dormir\". O teste 4AT deu 6.",
+              "enunciado": "Qual é o manejo inicial?",
               "opcoes": [
-                "Tratar a causa e medidas gerais",
-                "Benzodiazepínico para todos",
-                "Contenção mecânica",
-                "Antidepressivo diário por seis meses seguidos"
+                "Haloperidol em dose baixa e TC se não melhorar",
+                "Hidratar, tratar a constipação e dar benzodiazepínico",
+                "Reorientar, mobilizar e hidratar, suspender difenidramina e amitriptilina e rever a oxibutinina",
+                "Urocultura e TC, mantendo os remédios até estabilizar"
               ],
-              "resposta": "Tratar a causa e medidas gerais",
-              "explicacao": "Orientação, sono e óculos.",
-              "revisado": false
+              "resposta": "Reorientar, mobilizar e hidratar, suspender difenidramina e amitriptilina e rever a oxibutinina",
+              "explicacao": "É delirium, desencadeado por remédios anticolinérgicos, desidratação e constipação. O tratamento é tirar as causas e usar medidas não farmacológicas. Benzodiazepínico piora o delirium, e antipsicótico só se houver agitação com risco.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "rpsiq-u10-l1-q6",
@@ -4254,16 +4272,17 @@
             {
               "id": "rpsiq-u12-l2-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que caracteriza o transtorno de sintomas somáticos?",
+              "enunciado": "Na APS no Brasil, o que se sabe sobre os transtornos de somatização?",
               "opcoes": [
-                "Preocupação excessiva com sintomas físicos",
-                "Simular sintomas por dinheiro",
-                "Sintomas inventados para ser cuidado",
-                "Sintomas neurológicos sem nenhuma preocupação com eles"
+                "São mais comuns em pessoas com muita escolaridade e estresse no trabalho",
+                "São igualmente frequentes em homens e mulheres",
+                "São mais diagnosticados em quem usa muito os serviços, sem relação com renda",
+                "São frequentes em mulheres atendidas na APS, associados a transtornos mentais comuns"
               ],
-              "resposta": "Preocupação excessiva com sintomas físicos",
-              "explicacao": "Gera sofrimento e muita procura por serviços.",
-              "revisado": false
+              "resposta": "São frequentes em mulheres atendidas na APS, associados a transtornos mentais comuns",
+              "explicacao": "A somatização é muito comum na atenção primária, predomina em mulheres e em populações vulneráveis e costuma vir junto de ansiedade e depressão (transtornos mentais comuns). Reconhecê-la evita exames e encaminhamentos desnecessários.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-u12-l2-q2",
