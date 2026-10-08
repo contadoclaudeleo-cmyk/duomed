@@ -64,42 +64,37 @@
             },
             {
               "id": "rpsiq-u1-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sintoma ao grupo da depressão.",
-              "pares": [
-                {
-                  "esquerda": "Insônia terminal",
-                  "direita": "Sono"
-                },
-                {
-                  "esquerda": "Perda de peso",
-                  "direita": "Apetite"
-                },
-                {
-                  "esquerda": "Lentificação",
-                  "direita": "Psicomotor"
-                },
-                {
-                  "esquerda": "Ideia de morte",
-                  "direita": "Pensamento"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 75 anos, há 5 semanas da morte súbita da esposa, tem anedonia, fadiga, insônia intensa, perdeu 5 kg, chora e sente culpa por ter sobrevivido. Na última semana passou a acreditar que seu corpo está se decompondo e ouve a voz da esposa mandando que ele se mate.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Transtorno esquizoafetivo",
+                "Esquizofrenia",
+                "Psicose devida a condição médica",
+                "Depressão maior com sintomas psicóticos",
+                "Transtorno psicótico induzido por substância"
               ],
-              "explicacao": "São os sintomas do critério A.",
-              "revisado": false
+              "resposta": "Depressão maior com sintomas psicóticos",
+              "explicacao": "Há episódio depressivo grave com delírio niilista (corpo se decompondo) e alucinações congruentes com o humor, surgidos só durante a depressão. Isso é depressão psicótica, e não luto normal. O risco de suicídio é alto, e o tratamento é antidepressivo com antipsicótico ou eletroconvulsoterapia.",
+              "revisado": false,
+              "fonte": "IAMSPE 2024"
             },
             {
               "id": "rpsiq-u1-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quantos sintomas, no total, são exigidos para episódio depressivo maior?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos na UBS tem desânimo, fadiga, falta de concentração, perda de interesse, insônia e falta de apetite há 2 meses. No PHQ-9 fez 12 pontos.",
+              "enunciado": "Qual é a interpretação e a conduta?",
               "opcoes": [
-                "Pelo menos 5",
-                "Pelo menos 2",
-                "Apenas 1",
-                "Pelo menos 8 dos 9 sintomas"
+                "Depressão leve; antidepressivo em dose baixa",
+                "Depressão moderada; antidepressivo e encaminhamento para psicoterapia",
+                "Depressão grave; dose alta e avaliação psiquiátrica urgente",
+                "Ansiedade generalizada; benzodiazepínico",
+                "Transtorno bipolar; estabilizador de humor"
               ],
-              "resposta": "Pelo menos 5",
-              "explicacao": "Um deles deve ser humor deprimido ou anedonia.",
-              "revisado": false
+              "resposta": "Depressão moderada; antidepressivo e encaminhamento para psicoterapia",
+              "explicacao": "No PHQ-9, 5 a 9 é leve, 10 a 14 moderado, 15 a 19 moderadamente grave e 20 ou mais grave. Com 12 pontos há depressão moderada, que se trata com antidepressivo e psicoterapia. Não há sinais de mania que sugiram bipolaridade.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "rpsiq-u1-l1-q6",
@@ -200,28 +195,19 @@
             },
             {
               "id": "rpsiq-u1-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada antidepressivo à característica.",
-              "pares": [
-                {
-                  "esquerda": "Bupropiona",
-                  "direita": "Menos efeito sexual"
-                },
-                {
-                  "esquerda": "Mirtazapina",
-                  "direita": "Aumenta o apetite e o sono"
-                },
-                {
-                  "esquerda": "Amitriptilina",
-                  "direita": "Perigosa em superdosagem"
-                },
-                {
-                  "esquerda": "Venlafaxina",
-                  "direita": "Pode subir a pressão"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o principal mecanismo de ação da fluoxetina na depressão?",
+              "opcoes": [
+                "Inibir a recaptação de serotonina, aumentando sua disponibilidade na sinapse",
+                "Bloquear receptores dopaminérgicos D2",
+                "Aumentar a liberação de noradrenalina na sinapse",
+                "Inibir a enzima monoaminoxidase",
+                "Potencializar a ação do GABA"
               ],
-              "explicacao": "Escolher pelo perfil do paciente.",
-              "revisado": false
+              "resposta": "Inibir a recaptação de serotonina, aumentando sua disponibilidade na sinapse",
+              "explicacao": "A fluoxetina é um inibidor seletivo da recaptação de serotonina (ISRS). Bloquear D2 é ação dos antipsicóticos, inibir a MAO é dos IMAO, e potencializar o GABA é dos benzodiazepínicos.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "rpsiq-u1-l2-q5",
@@ -297,11 +283,19 @@
             },
             {
               "id": "rpsiq-u1-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "No idoso, a depressão pode se apresentar com queixas de memória e parecer demência.",
-              "resposta": true,
-              "explicacao": "Chamada de pseudodemência depressiva.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 66 anos, viúva há 1 ano, esquece onde guardou objetos e nomes de pessoas pouco próximas. Tem dificuldade de concentração, ganho de peso, insônia, fadiga e perdeu o interesse por atividades sociais e de lazer. Mantém as atividades instrumentais do dia a dia.",
+              "enunciado": "Qual é o remédio mais indicado agora?",
+              "opcoes": [
+                "Clonazepam",
+                "Quetiapina",
+                "Sertralina",
+                "Donepezila"
+              ],
+              "resposta": "Sertralina",
+              "explicacao": "Anedonia, insônia, fadiga e falta de concentração após a viuvez indicam depressão, que no idoso causa queixas de memória sem perda funcional. O tratamento é antidepressivo, como a sertralina. Anticolinesterásico só se houvesse demência.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-u1-l3-q3",
@@ -558,42 +552,33 @@
             },
             {
               "id": "rpsiq-u2-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O lítio pode causar ___ e por isso se dosa o TSH.",
+              "tipo": "multipla_escolha",
+              "enunciado": "O rastreio de doença da tireoide deve ser feito em quem usa quais remédios?",
               "opcoes": [
-                "hipotireoidismo",
-                "hipertireoidismo",
-                "diabetes tipo 1",
-                "anemia ferropriva"
+                "Propafenona ou dapagliflozina",
+                "Prednisona ou venlafaxina",
+                "Amiodarona ou lítio",
+                "Lítio ou venlafaxina"
               ],
-              "resposta": "hipotireoidismo",
-              "explicacao": "Também afeta o rim.",
-              "revisado": false
+              "resposta": "Amiodarona ou lítio",
+              "explicacao": "O lítio causa hipotireoidismo e bócio, e a amiodarona, rica em iodo, causa hipo ou hipertireoidismo. Quem usa esses remédios deve dosar TSH antes e periodicamente.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026 R+"
             },
             {
               "id": "rpsiq-u2-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada estabilizador ao efeito adverso.",
-              "pares": [
-                {
-                  "esquerda": "Lítio",
-                  "direita": "Tremor e diabetes insípido"
-                },
-                {
-                  "esquerda": "Valproato",
-                  "direita": "Toxicidade hepática"
-                },
-                {
-                  "esquerda": "Carbamazepina",
-                  "direita": "Agranulocitose"
-                },
-                {
-                  "esquerda": "Lamotrigina",
-                  "direita": "Síndrome de Stevens-Johnson"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Quem usa lítio por longo tempo precisa de dosagens periódicas. Qual é o efeito colateral renal mais comum do lítio?",
+              "opcoes": [
+                "Glomerulonefrite eosinofílica aguda",
+                "Nefrite intersticial alérgica",
+                "Diabetes insipidus nefrogênico",
+                "Necrose tubular aguda"
               ],
-              "explicacao": "Monitorar com exames.",
-              "revisado": false
+              "resposta": "Diabetes insipidus nefrogênico",
+              "explicacao": "O lítio reduz a resposta do túbulo coletor ao ADH, e o rim deixa de concentrar a urina, causando poliúria e sede. É o efeito renal mais frequente. Com anos de uso, também pode surgir nefrite intersticial crônica, por isso se acompanha a função renal.",
+              "revisado": false,
+              "fonte": "UERJ 2025"
             },
             {
               "id": "rpsiq-u2-l2-q5",
@@ -780,24 +765,32 @@
             {
               "id": "rpsiq-u3-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o tempo mínimo de sinais da doença para diagnosticar esquizofrenia?",
+              "enunciado": "Mulher em surto de esquizofrenia diz que o tempo parece encolhido, fragmentado, estranho, e que alguém de fora controla o passar do tempo. Como entender essa alteração?",
               "opcoes": [
-                "6 meses",
-                "1 semana",
-                "1 mês",
-                "2 anos com sintomas contínuos"
+                "Lentificação do tempo típica da depressão grave",
+                "Quebra da vivência natural do tempo, com fragmentação e vivências ligadas a delírios",
+                "Bloqueio ritualístico do TOC que altera o fluxo do tempo",
+                "Aceleração do tempo típica da mania"
               ],
-              "resposta": "6 meses",
-              "explicacao": "Com pelo menos 1 mês de sintomas ativos.",
-              "revisado": false
+              "resposta": "Quebra da vivência natural do tempo, com fragmentação e vivências ligadas a delírios",
+              "explicacao": "Na esquizofrenia, a experiência do tempo perde a continuidade natural e se fragmenta, muitas vezes junto com delírios de controle externo. Na depressão o tempo parece lento, e na mania, acelerado.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "rpsiq-u3-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Alucinações auditivas são as mais comuns na esquizofrenia.",
-              "resposta": true,
-              "explicacao": "Vozes que comentam ou conversam.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Um paciente com esquizofrenia crônica fica cada vez mais isolado, sem iniciativa, sem prazer e com fala pobre e monótona. Que sintomas são esses?",
+              "opcoes": [
+                "Sintomas negativos: abulia, alogia, anedonia e embotamento afetivo",
+                "Apatia isolada, com linguagem e prazer preservados",
+                "Sintomas positivos residuais com alucinações",
+                "Ausência de crítica com fala fluente"
+              ],
+              "resposta": "Sintomas negativos: abulia, alogia, anedonia e embotamento afetivo",
+              "explicacao": "Os sintomas negativos são a perda de funções normais: vontade (abulia), fala (alogia), prazer (anedonia) e expressão afetiva (embotamento), com isolamento. Respondem pouco aos antipsicóticos e pesam muito no prognóstico.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "rpsiq-u3-l1-q3",
@@ -1296,17 +1289,18 @@
             },
             {
               "id": "rpsiq-u4-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O medo de lugares de onde é difícil sair, como ônibus e multidões, se chama ___.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Uma pessoa tem medo intenso de agulhas e seringas, sabe que o medo é exagerado, mas evita sempre a situação. O que caracteriza a fobia específica?",
               "opcoes": [
-                "agorafobia",
-                "claustrofobia",
-                "fobia social",
-                "acrofobia de altura"
+                "Medo intenso, persistente e desproporcional a um objeto ou situação, com evitação",
+                "Medo racional de uma ameaça concreta, sem evitação",
+                "Medo de várias situações, constante há meses, sem foco",
+                "Medo ligado a ser avaliado negativamente pelos outros"
               ],
-              "resposta": "agorafobia",
-              "explicacao": "Frequentemente acompanha o pânico.",
-              "revisado": false
+              "resposta": "Medo intenso, persistente e desproporcional a um objeto ou situação, com evitação",
+              "explicacao": "A fobia específica é um medo circunscrito a um estímulo (agulhas, animais, altura), desproporcional ao perigo, com evitação e prejuízo. Medo difuso é ansiedade generalizada, e medo de avaliação é fobia social.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "rpsiq-u4-l2-q4",
@@ -1439,28 +1433,19 @@
             },
             {
               "id": "rpsiq-u4-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sintoma do TEPT ao grupo.",
-              "pares": [
-                {
-                  "esquerda": "Pesadelos com o trauma",
-                  "direita": "Revivência"
-                },
-                {
-                  "esquerda": "Evitar o local",
-                  "direita": "Evitação"
-                },
-                {
-                  "esquerda": "Sobressalto fácil",
-                  "direita": "Hiperexcitação"
-                },
-                {
-                  "esquerda": "Culpa e humor negativo",
-                  "direita": "Alteração do humor"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Motorista de aplicativo de 35 anos foi assaltado com violência há 4 meses. Há 3 meses tem crises de sudorese, taquicardia e sensação de morte, lembranças muito vivas do assalto, pesadelos, evita o local e se assusta com barulhos de tiro ou sirene. Está retraído e não consegue trabalhar.",
+              "enunciado": "Qual elemento da história permite o diagnóstico?",
+              "opcoes": [
+                "A revivescência do trauma (lembranças intrusivas e pesadelos)",
+                "A história familiar de depressão",
+                "Os sintomas físicos de ansiedade",
+                "A alteração do sono"
               ],
-              "explicacao": "Duram mais de 1 mês.",
-              "revisado": false
+              "resposta": "A revivescência do trauma (lembranças intrusivas e pesadelos)",
+              "explicacao": "É transtorno de estresse pós-traumático: exposição a evento traumático seguida de revivescências, evitação, alterações negativas do humor e hiperexcitação por mais de 1 mês. A revivescência é o sintoma que liga o quadro ao trauma. Crises de ansiedade e insônia aparecem em vários transtornos.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "rpsiq-u4-l3-q5",
@@ -1686,42 +1671,35 @@
             },
             {
               "id": "rpsiq-u5-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O remédio de escolha na abstinência alcoólica é o ___.",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 34 anos com alcoolismo grave está internado por politrauma e vai operar uma fratura. Dezoito horas após a internação, passa a ter alucinações visuais e grande agitação.",
+              "enunciado": "Qual é a droga de escolha?",
               "opcoes": [
-                "benzodiazepínico",
-                "haloperidol",
-                "antidepressivo",
-                "betabloqueador isolado"
+                "Propofol",
+                "Quetiapina",
+                "Benzodiazepínico",
+                "Morfina"
               ],
-              "resposta": "benzodiazepínico",
-              "explicacao": "Diazepam é o mais usado.",
-              "revisado": false
+              "resposta": "Benzodiazepínico",
+              "explicacao": "Agitação e alucinações visuais logo após a internação de um etilista grave indicam abstinência alcoólica, possivelmente evoluindo para delirium tremens. O tratamento é benzodiazepínico em doses suficientes, junto com tiamina. Antipsicóticos sozinhos baixam o limiar convulsivo.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "rpsiq-u5-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada quadro ao tempo após parar de beber.",
-              "pares": [
-                {
-                  "esquerda": "Tremor e ansiedade",
-                  "direita": "6 a 24 horas"
-                },
-                {
-                  "esquerda": "Alucinose e convulsão",
-                  "direita": "12 a 48 horas"
-                },
-                {
-                  "esquerda": "Delirium tremens",
-                  "direita": "48 a 96 horas"
-                },
-                {
-                  "esquerda": "Fim dos sintomas leves",
-                  "direita": "Cerca de 5 a 7 dias"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos com uso abusivo de álcool, internado há 48 horas por tremor, ansiedade e alucinações visuais, piorou da confusão, está agitado, com sudorese, PA 170 x 100, FC 132, febre de 38,2 °C e roncos pulmonares. Potássio 3,1 e magnésio 1,5.",
+              "enunciado": "Qual é a conduta adequada?",
+              "opcoes": [
+                "Prednisolona e suporte nutricional; antipsicótico primeiro e benzodiazepínico se refratário",
+                "Antibiótico para SNC, coleta de líquor e benzodiazepínico com cautela",
+                "Haloperidol para agitação e antibiótico amplo; evitar benzodiazepínico",
+                "Benzodiazepínico, UTI e correção de eletrólitos; antipsicótico ou gabapentinoide se agitação refratária"
               ],
-              "explicacao": "A escala CIWA ajuda a guiar.",
-              "revisado": false
+              "resposta": "Benzodiazepínico, UTI e correção de eletrólitos; antipsicótico ou gabapentinoide se agitação refratária",
+              "explicacao": "É delirium tremens: confusão, agitação e hiperatividade autonômica 2 a 3 dias após parar de beber. O tratamento central é benzodiazepínico em doses altas, em UTI, com correção de potássio e magnésio e tiamina. Antipsicótico sozinho baixa o limiar convulsivo e não trata a abstinência.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "rpsiq-u5-l2-q5",
@@ -2159,79 +2137,84 @@
             },
             {
               "id": "rpsiq-u6-l3-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O flumazenil é seguro em qualquer intoxicação por benzodiazepínico, inclusive em usuários crônicos.",
-              "resposta": false,
-              "explicacao": "Falso. Pode causar convulsão, principalmente em usuários crônicos.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos fuma 20 cigarros por dia e quer parar. Teve uma convulsão na adolescência e tem depressão em remissão com sertralina.",
+              "enunciado": "Qual é a primeira linha mais segura?",
+              "opcoes": [
+                "Bupropiona",
+                "Nortriptilina",
+                "Adesivo de nicotina sozinho",
+                "Terapia cognitiva sozinha",
+                "Vareniclina"
+              ],
+              "resposta": "Vareniclina",
+              "explicacao": "A vareniclina é o remédio mais eficaz para parar de fumar e pode ser usada com segurança em quem tem depressão estável. A bupropiona baixa o limiar convulsivo e deve ser evitada em quem já convulsionou.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026 R+"
             },
             {
               "id": "rpsiq-u6-l3-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "Os vômitos cíclicos que melhoram com banho quente em usuários crônicos de maconha formam a síndrome de ___ canabinoide.",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos fuma 20 cigarros por dia há 25 anos, tem epilepsia controlada e Fagerström de 7. Quer parar.",
+              "enunciado": "Pelo protocolo do Ministério da Saúde, qual é a conduta?",
               "opcoes": [
-                "hiperêmese",
-                "abstinência",
-                "serotonina",
-                "hipertermia maligna"
+                "Terapia de reposição de nicotina com abordagem cognitivo-comportamental e seguimento por 12 meses",
+                "Encaminhar ao pneumologista para avaliar DPOC antes",
+                "Só abordagem intensiva por 3 meses",
+                "Bupropiona com abordagem cognitivo-comportamental por 12 meses"
               ],
-              "resposta": "hiperêmese",
-              "explicacao": "Melhora ao parar o uso.",
-              "revisado": false
+              "resposta": "Terapia de reposição de nicotina com abordagem cognitivo-comportamental e seguimento por 12 meses",
+              "explicacao": "Com alta dependência, associam-se remédio e abordagem cognitivo-comportamental. A epilepsia contraindica a bupropiona, então a escolha é a reposição de nicotina. O seguimento dura 12 meses.",
+              "revisado": false,
+              "fonte": "USP-RP 2026"
             },
             {
               "id": "rpsiq-u6-l3-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada remédio à cessação do tabagismo.",
-              "pares": [
-                {
-                  "esquerda": "Adesivo de nicotina",
-                  "direita": "Reposição"
-                },
-                {
-                  "esquerda": "Bupropiona",
-                  "direita": "Antidepressivo"
-                },
-                {
-                  "esquerda": "Vareniclina",
-                  "direita": "Agonista parcial nicotínico"
-                },
-                {
-                  "esquerda": "Goma de nicotina",
-                  "direita": "Reposição de ação rápida"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 42 anos fuma 10 a 15 cigarros por dia, acende o primeiro nos 30 minutos após acordar e quer ajuda para parar. Numa internação recente ficou sem fumar, mas teve ansiedade, irritação e cefaleia, e voltou a fumar 5 dias após a alta. Pergunta sobre cigarro eletrônico.",
+              "enunciado": "Qual é o estágio motivacional e a conduta?",
+              "opcoes": [
+                "Ação; o cigarro eletrônico é estratégia validada e pode ser recomendado",
+                "Preparação; reforçar autoeficácia, oferecer terapia cognitivo-comportamental, combinar o \"Dia D\" e explicar que reposição de nicotina e/ou bupropiona aliviam a abstinência",
+                "Preparação; apenas reduzir o número de cigarros e reavaliar a motivação em retorno breve, trocando por cigarro eletrônico",
+                "Ação; sem critério para remédio, seguir só com medidas comportamentais"
               ],
-              "explicacao": "Junto com abordagem comportamental.",
-              "revisado": false
+              "resposta": "Preparação; reforçar autoeficácia, oferecer terapia cognitivo-comportamental, combinar o \"Dia D\" e explicar que reposição de nicotina e/ou bupropiona aliviam a abstinência",
+              "explicacao": "Ele quer parar e pede ajuda para agir em breve, o que caracteriza preparação. A conduta é marcar a data de parada, terapia comportamental e oferecer remédio, já que tem dependência e abstinência marcante. O cigarro eletrônico não é recomendado como método de cessação no Brasil.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-u6-l3-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é o risco da retirada abrupta de benzodiazepínico usado por muito tempo?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 52 anos fuma há 30 anos-maço, tem Fagerström 8, três recaídas em até 60 dias e forte fissura 12 horas após o último cigarro. Está em fase de ação e sem contraindicações.",
+              "enunciado": "Qual afirmativa é correta?",
               "opcoes": [
-                "Convulsão",
-                "Hipertensão leve",
-                "Diarreia",
-                "Melhora imediata do sono e da ansiedade"
+                "Adesivo de 21 mg com goma de 4 mg por 8 semanas e depois só adesivo por 4 semanas",
+                "Vareniclina deve começar já em 1 mg de 12/12 h, 7 dias antes da data, por 12 semanas",
+                "Bupropiona com adesivo de 14 mg supera a vareniclina sozinha nessa paciente",
+                "Adesivo com bupropiona é inferior à vareniclina na prevenção de recaída precoce",
+                "Vareniclina associada à bupropiona aumenta a abstinência em 24 semanas, comparada à vareniclina sozinha, em fumantes com alta dependência"
               ],
-              "resposta": "Convulsão",
-              "explicacao": "Retirar aos poucos.",
-              "revisado": false
+              "resposta": "Vareniclina associada à bupropiona aumenta a abstinência em 24 semanas, comparada à vareniclina sozinha, em fumantes com alta dependência",
+              "explicacao": "Em fumantes muito dependentes, a combinação vareniclina mais bupropiona mostrou mais abstinência em 12 e 24 semanas do que vareniclina isolada. A vareniclina começa em dose baixa e sobe até 1 mg de 12/12 h, não já na dose cheia.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "rpsiq-u6-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Idosa usa clonazepam há 10 anos para dormir e quer parar.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Nesse fumante de 52 anos, muito dependente, que acende o primeiro cigarro nos 5 minutos após acordar, qual é a melhor estratégia de reposição de nicotina?",
               "opcoes": [
-                "Reduzir a dose aos poucos",
-                "Suspender hoje",
-                "Trocar por haloperidol",
-                "Manter para sempre sem discutir"
+                "Pôr o adesivo à noite, antes de dormir, para evitar a fissura da manhã",
+                "Adesivo de 21 mg associado a uma forma de ação rápida (goma de 4 mg ou pastilha) ao acordar",
+                "Dois adesivos de 21 mg nas 2 primeiras semanas, reduzindo depois",
+                "Adesivo de 16 horas ao acordar e goma de 2 mg se necessário"
               ],
-              "resposta": "Reduzir a dose aos poucos",
-              "explicacao": "Retirada gradual em semanas a meses.",
-              "revisado": false
+              "resposta": "Adesivo de 21 mg associado a uma forma de ação rápida (goma de 4 mg ou pastilha) ao acordar",
+              "explicacao": "O adesivo dá um nível de base de nicotina, e a goma ou pastilha corta a fissura nos picos, como logo ao acordar. Essa combinação é mais eficaz que uma forma só. Adesivo à noite tende a causar insônia e sonhos vívidos.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "rpsiq-u6-l3-q7",
@@ -2803,17 +2786,19 @@
             },
             {
               "id": "rpsiq-u8-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O calo no dorso da mão por provocar vômito se chama sinal de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 29 anos tem fraqueza progressiva nos quatro membros. PA 100 x 70, creatinina 1,8, sódio 128, potássio 2,2, cloro 78, CPK 1.200, pH 7,55 e bicarbonato 34. Na urina, potássio alto e sódio e cloro baixos.",
+              "enunciado": "Qual é a causa mais provável do distúrbio?",
               "opcoes": [
-                "Russell",
-                "Murphy",
-                "Trousseau",
-                "Chvostek"
+                "Hiperaldosteronismo primário",
+                "Síndrome de Gitelman",
+                "Bulimia nervosa",
+                "Rabdomiólise"
               ],
-              "resposta": "Russell",
-              "explicacao": "Comum na bulimia.",
-              "revisado": false
+              "resposta": "Bulimia nervosa",
+              "explicacao": "Vômitos provocados causam perda de ácido e cloro, gerando alcalose metabólica com cloro urinário baixo, além de hipocalemia grave que leva a fraqueza e lesão muscular. No Gitelman e no uso de diuréticos o cloro urinário é alto, e no hiperaldosteronismo há hipertensão.",
+              "revisado": false,
+              "fonte": "UERJ 2024"
             },
             {
               "id": "rpsiq-u8-l2-q4",
@@ -2900,16 +2885,17 @@
             {
               "id": "rpsiq-u8-l3-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "O que é a síndrome de realimentação?",
+              "enunciado": "Pessoas com anorexia nervosa, alcoolismo crônico ou câncer têm risco de síndrome de realimentação. Qual é a alteração mais marcante?",
               "opcoes": [
-                "Queda de fósforo e potássio ao voltar a comer",
-                "Ganho de peso rápido e saudável",
-                "Diarreia por lactose",
-                "Melhora de todos os exames de sangue em poucos dias de dieta"
+                "Hipofosfatemia",
+                "Hipoglicemia",
+                "Hipercalemia",
+                "Hipermagnesemia"
               ],
-              "resposta": "Queda de fósforo e potássio ao voltar a comer",
-              "explicacao": "Pode causar arritmia e insuficiência cardíaca.",
-              "revisado": false
+              "resposta": "Hipofosfatemia",
+              "explicacao": "Ao voltar a comer, a insulina leva fósforo, potássio e magnésio para dentro das células, e o fósforo cai muito. Isso pode causar fraqueza, insuficiência respiratória e arritmia. Por isso a realimentação deve ser lenta, com reposição e tiamina.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026 R+"
             },
             {
               "id": "rpsiq-u8-l3-q2",
@@ -3465,39 +3451,50 @@
             {
               "id": "rpsiq-u10-l1-q6",
               "tipo": "caso_clinico",
-              "caso": "Idoso de 80 anos operado do fêmur fica confuso à noite, desatento e agitado, com melhora pela manhã.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Homem de 77 anos com Parkinson, na UTI após fratura de fêmur operada, fica sonolento de dia e à noite tenta sair da cama, arranca o soro e agride a equipe. Optou-se por remédio.",
+              "enunciado": "Qual é a melhor escolha?",
               "opcoes": [
-                "Delirium",
-                "Doença de Alzheimer",
-                "Esquizofrenia",
-                "Depressão com sintomas psicóticos"
+                "Haloperidol",
+                "Lorazepam",
+                "Quetiapina",
+                "Risperidona"
               ],
-              "resposta": "Delirium",
-              "explicacao": "Curso flutuante é típico.",
-              "revisado": false
+              "resposta": "Quetiapina",
+              "explicacao": "No delirium com agitação em paciente com Parkinson, antipsicóticos com forte bloqueio dopaminérgico (haloperidol, risperidona) pioram muito a rigidez. A quetiapina tem pouco efeito motor e é a preferida. Benzodiazepínico piora o delirium.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026 R+"
             },
             {
               "id": "rpsiq-u10-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Benzodiazepínicos podem piorar o delirium, exceto na abstinência alcoólica.",
-              "resposta": true,
-              "explicacao": "Preferir antipsicótico em dose baixa se necessário.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Idosa de 84 anos internada por infecção urinária melhora, mas fica apática, lenta, com fala monótona, sonolenta de dia e com períodos de desatenção alternando com lucidez. Sem agitação ou alucinações. O CAM mostra início agudo, flutuação e desatenção.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": [
+                "Doença de Alzheimer inicial",
+                "Transtorno cognitivo leve",
+                "Depressão melancólica",
+                "Delirium hipoativo pela doença aguda"
+              ],
+              "resposta": "Delirium hipoativo pela doença aguda",
+              "explicacao": "Início agudo, flutuação e desatenção fecham delirium pelo CAM. A forma hipoativa, com apatia e sonolência, é a mais comum em idosos e a mais confundida com depressão, o que atrasa o diagnóstico e piora o prognóstico.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "rpsiq-u10-l1-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual medida previne delirium em idosos internados?",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 84 anos, antes independente, há 2 dias ficou confusa e desorientada, com incontinência urinária.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Orientação, sono e mobilização precoce",
-                "Contenção no leito",
-                "Luz acesa a noite toda",
-                "Sedação contínua com benzodiazepínico"
+                "Demência por doença de Alzheimer",
+                "Apresentação atípica de infecção urinária no idoso",
+                "Síndrome da fragilidade pela idade",
+                "Pseudodemência por depressão"
               ],
-              "resposta": "Orientação, sono e mobilização precoce",
-              "explicacao": "Também óculos e aparelho auditivo.",
-              "revisado": false
+              "resposta": "Apresentação atípica de infecção urinária no idoso",
+              "explicacao": "Confusão de início agudo em idosa antes funcional é delirium, e a infecção urinária é uma das causas mais comuns, muitas vezes sem febre ou ardor. Demência e depressão têm instalação lenta, de meses.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             }
           ]
         },
@@ -3571,54 +3568,68 @@
             },
             {
               "id": "rpsiq-u10-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Quais exames pedir na investigação de demência?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 72 anos vê pessoas e animais no quarto há 2 meses. Há 6 meses tem sonolência de dia, fala desorganizada que oscila, agitação noturna com movimentos bruscos na cama e várias quedas.",
+              "enunciado": "Qual é a hipótese principal?",
               "opcoes": [
-                "Vitamina B12, TSH e imagem do crânio",
-                "Só eletrocardiograma",
-                "Biópsia cerebral",
-                "Apenas teste de gravidez e glicemia"
+                "Demência rapidamente progressiva",
+                "Doença de Alzheimer",
+                "Demência vascular",
+                "Demência frontotemporal",
+                "Demência com corpos de Lewy"
               ],
-              "resposta": "Vitamina B12, TSH e imagem do crânio",
-              "explicacao": "Afastar causas reversíveis.",
-              "revisado": false
+              "resposta": "Demência com corpos de Lewy",
+              "explicacao": "Alucinações visuais bem formadas, flutuação da cognição, transtorno comportamental do sono REM (movimentos durante o sono) e quedas por parkinsonismo são os critérios centrais da demência com corpos de Lewy.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "rpsiq-u10-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Homem de 58 anos ficou desinibido, faz piadas impróprias e gasta dinheiro sem controle. Memória pouco afetada.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Nesse homem de 72 anos com demência com corpos de Lewy, alucinações visuais e quedas, qual remédio deve ser evitado?",
+              "enunciado": "Duloxetina",
               "opcoes": [
-                "Demência frontotemporal",
-                "Alzheimer",
-                "Depressão",
-                "Demência vascular com piora em degraus"
+                "Sertralina",
+                "Haloperidol",
+                "Mirtazapina"
               ],
-              "resposta": "Demência frontotemporal",
-              "explicacao": "Começa mais cedo e muda o comportamento.",
-              "revisado": false
+              "resposta": "Haloperidol",
+              "explicacao": "Na demência com corpos de Lewy há hipersensibilidade aos antipsicóticos típicos, que podem causar rigidez grave, piora cognitiva e até a morte. Se for preciso, usa-se quetiapina ou clozapina em dose baixa, além dos anticolinesterásicos.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "rpsiq-u10-l2-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A memantina é usada na doença de Alzheimer moderada a grave.",
-              "resposta": true,
-              "explicacao": "Antagonista do receptor NMDA.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 74 anos tem perda de memória progressiva há 10 anos, causou pequenos incêndios ao esquecer o fogão, não lembra suas receitas, fica confusa à noite e chama objetos de \"aquela coisa\". Força e equilíbrio normais.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
+              "opcoes": [
+                "Demência senil",
+                "Demência com corpos de Lewy",
+                "Demência frontotemporal",
+                "Demência vascular",
+                "Doença de Alzheimer"
+              ],
+              "resposta": "Doença de Alzheimer",
+              "explicacao": "Perda de memória insidiosa e progressiva, com dificuldade de achar palavras (anomia) e piora funcional, sem sinais motores, é o quadro típico do Alzheimer. \"Demência senil\" não é um diagnóstico.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026 R+"
             },
             {
               "id": "rpsiq-u10-l2-q8",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual tríade sugere hidrocefalia de pressão normal?",
+              "tipo": "caso_clinico",
+              "caso": "Médico de 85 anos tem há 2 anos alteração da marcha, incontinência e piora da memória recente e da linguagem, já precisando de ajuda com os remédios. É hipertenso, diabético e coronariopata. A RM mostra atrofia temporal medial e microangiopatia moderada.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Marcha alterada, incontinência e demência",
-                "Febre, cefaleia, vômitos e rigidez de nuca",
-                "Tremor, rigidez e lentidão",
-                "Alucinação, delírio e insônia"
+                "Demência vascular",
+                "Demência mista",
+                "Hidrocefalia de pressão normal",
+                "Doença de Alzheimer"
               ],
-              "resposta": "Marcha alterada, incontinência e demência",
-              "explicacao": "Pode melhorar com derivação.",
-              "revisado": false
+              "resposta": "Demência mista",
+              "explicacao": "A atrofia do hipocampo e a memória recente afetada indicam Alzheimer, e a microangiopatia com fatores de risco vasculares indica componente vascular. A soma dos dois é a demência mista, muito comum em idosos.",
+              "revisado": false,
+              "fonte": "USP-RP 2026 R+"
             }
           ]
         },
@@ -3794,42 +3805,35 @@
             },
             {
               "id": "rpsiq-u11-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O remédio de primeira linha no TDAH é o ___.",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 8 anos tem notas baixas, não termina as tarefas, distrai-se olhando pela janela, interrompe os outros, levanta da cadeira o tempo todo e é agitado e impulsivo também em casa.",
+              "enunciado": "Qual é a hipótese?",
               "opcoes": [
-                "metilfenidato",
-                "haloperidol",
-                "lítio",
-                "carbonato de cálcio"
+                "Transtorno explosivo intermitente",
+                "Transtorno do espectro autista",
+                "Transtorno opositor desafiador",
+                "TDAH"
               ],
-              "resposta": "metilfenidato",
-              "explicacao": "É um psicoestimulante.",
-              "revisado": false
+              "resposta": "TDAH",
+              "explicacao": "Desatenção, hiperatividade e impulsividade em mais de um ambiente (escola e casa), com prejuízo, caracterizam o TDAH. No opositor desafiador o centro é a hostilidade e o desafio às regras, e no autismo, o prejuízo da comunicação social.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2025"
             },
             {
               "id": "rpsiq-u11-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sintoma ao grupo do TDAH.",
-              "pares": [
-                {
-                  "esquerda": "Perde objetos com frequência",
-                  "direita": "Desatenção"
-                },
-                {
-                  "esquerda": "Não para sentado",
-                  "direita": "Hiperatividade"
-                },
-                {
-                  "esquerda": "Interrompe os outros",
-                  "direita": "Impulsividade"
-                },
-                {
-                  "esquerda": "Não termina tarefas",
-                  "direita": "Desatenção persistente"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 24 anos que trabalha no mercado financeiro tem dificuldade de atenção com queda de rendimento no trabalho e pergunta sobre remédios.",
+              "enunciado": "Sobre o diagnóstico de TDAH no adulto, o que é correto?",
+              "opcoes": [
+                "Toda suspeita exige avaliação neuropsicológica formal para confirmar",
+                "Questionários como GAD-7 e PHQ-9 não têm papel no diagnóstico diferencial",
+                "Uma boa resposta ao psicoestimulante já confirma o diagnóstico",
+                "Escalas estruturadas de autoavaliação para TDAH no adulto podem apoiar a confirmação diagnóstica"
               ],
-              "explicacao": "Há apresentações combinadas.",
-              "revisado": false
+              "resposta": "Escalas estruturadas de autoavaliação para TDAH no adulto podem apoiar a confirmação diagnóstica",
+              "explicacao": "O diagnóstico de TDAH é clínico, apoiado por escalas como a ASRS e pela história de sintomas desde a infância. É preciso afastar ansiedade e depressão, para as quais GAD-7 e PHQ-9 ajudam. A melhora com estimulante não confirma nada, pois ele melhora a atenção de qualquer pessoa.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "rpsiq-u11-l1-q5",
@@ -3905,50 +3909,52 @@
             },
             {
               "id": "rpsiq-u11-l2-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O M-CHAT é um exame de sangue para confirmar o autismo.",
-              "resposta": false,
-              "explicacao": "Falso. É um questionário de rastreio respondido pelos pais, entre 16 e 30 meses.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Criança de 5 anos com suspeita de autismo fala frases de 2 a 3 palavras, ainda não escreve letras, nem sempre sustenta o olhar, mas responde a comandos, se veste sozinha e conta até 20. Usa telas 4 horas por dia desde bebê. Audição normal.",
+              "enunciado": "Além de orientar sobre as telas, qual é a conduta inicial?",
+              "opcoes": [
+                "Aplicar o M-CHAT",
+                "Encaminhar ao neurologista infantil",
+                "Pedir laudo completo da escola",
+                "Afastar o diagnóstico de autismo"
+              ],
+              "resposta": "Encaminhar ao neurologista infantil",
+              "explicacao": "O M-CHAT é para rastreio entre 16 e 30 meses. Aos 5 anos, com atraso de linguagem e sinais duvidosos, a criança deve ser avaliada por especialista para definir o diagnóstico, enquanto se iniciam estimulação e redução de telas.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "rpsiq-u11-l2-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "Andar na ponta dos pés, enfileirar objetos e repetir falas são comportamentos ___.",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 2 anos e meio ainda não fala, não dá tchau nem aponta, faz movimentos repetitivos e tem interesse fixo por brinquedos que fazem som, irritando-se quando são retirados.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "repetitivos",
-                "psicóticos",
-                "depressivos",
-                "ansiosos de separação"
+                "Exames laboratoriais são necessários para o diagnóstico",
+                "O transtorno é mais frequente em meninas",
+                "A escala M-CHAT-R/F não deve ser usada nessa idade",
+                "É transtorno do espectro autista com pelo menos nível 2 de suporte",
+                "Deve-se esperar a idade escolar para fechar o diagnóstico"
               ],
-              "resposta": "repetitivos",
-              "explicacao": "Fazem parte do critério B.",
-              "revisado": false
+              "resposta": "É transtorno do espectro autista com pelo menos nível 2 de suporte",
+              "explicacao": "Prejuízo da comunicação social com comportamentos repetitivos e interesses restritos define o autismo, que é diagnóstico clínico. Sem fala e com pouca comunicação não verbal, a necessidade de suporte é ao menos nível 2. O autismo é mais comum em meninos e o diagnóstico precoce melhora o prognóstico.",
+              "revisado": false,
+              "fonte": "IAMSPE 2024"
             },
             {
               "id": "rpsiq-u11-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada sinal ao grupo do autismo.",
-              "pares": [
-                {
-                  "esquerda": "Pouco contato visual",
-                  "direita": "Comunicação social"
-                },
-                {
-                  "esquerda": "Ecolalia",
-                  "direita": "Linguagem repetitiva"
-                },
-                {
-                  "esquerda": "Rigidez com rotinas",
-                  "direita": "Comportamento restrito"
-                },
-                {
-                  "esquerda": "Sensibilidade a barulho",
-                  "direita": "Alteração sensorial"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Menino de 2 anos e 6 meses tem atraso na fala, pouco contato visual e dificuldade de interagir com outras crianças.",
+              "enunciado": "Qual é o próximo passo mais adequado na avaliação?",
+              "opcoes": [
+                "Encaminhar para fonoaudiologia e psicologia",
+                "Encaminhar para neurologia pediátrica",
+                "Pedir exame de imagem do sistema nervoso",
+                "Aplicar escala de rastreio para transtorno do espectro autista"
               ],
-              "explicacao": "O quadro é muito variável.",
-              "revisado": false
+              "resposta": "Aplicar escala de rastreio para transtorno do espectro autista",
+              "explicacao": "Atraso de fala com prejuízo de contato visual e interação social sugere autismo, e o primeiro passo é aplicar um instrumento de rastreio como o M-CHAT-R/F. Se positivo, a criança segue para avaliação diagnóstica e intervenção precoce. Exames de imagem não fazem o diagnóstico.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-u11-l2-q5",
@@ -4175,56 +4181,50 @@
             },
             {
               "id": "rpsiq-u12-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "Ir para a cama só com sono e sair dela se não dormir em 20 minutos é a técnica de controle de ___.",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 48 anos tem há 5 meses dificuldade para adormecer e acorda várias vezes à noite, ficando cansada e com dificuldade de concentração de dia. Não tem doença psiquiátrica, não usa remédios e o exame físico é normal.",
+              "enunciado": "Pelas diretrizes da Associação Brasileira do Sono, o que basta para diagnosticar insônia?",
               "opcoes": [
-                "estímulos",
-                "respiração",
-                "peso",
-                "temperatura"
+                "Dosagem de melatonina",
+                "A história clínica",
+                "Exclusão obrigatória de hipertireoidismo antes do diagnóstico",
+                "Polissonografia"
               ],
-              "resposta": "estímulos",
-              "explicacao": "Associa a cama ao sono.",
-              "revisado": false
+              "resposta": "A história clínica",
+              "explicacao": "O transtorno de insônia é diagnosticado pela clínica: queixa de sono ruim pelo menos 3 noites por semana, por 3 meses ou mais, com prejuízo durante o dia. A polissonografia fica para suspeita de outros distúrbios, como apneia ou movimentos anormais no sono.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "rpsiq-u12-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada distúrbio do sono à descrição.",
-              "pares": [
-                {
-                  "esquerda": "Narcolepsia",
-                  "direita": "Ataques de sono e cataplexia"
-                },
-                {
-                  "esquerda": "Apneia obstrutiva",
-                  "direita": "Ronco e pausas na respiração"
-                },
-                {
-                  "esquerda": "Pernas inquietas",
-                  "direita": "Vontade de mexer as pernas à noite"
-                },
-                {
-                  "esquerda": "Sonambulismo",
-                  "direita": "Andar dormindo"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Nessa mulher de 48 anos com insônia crônica, sem outras doenças, qual tratamento não farmacológico tem mais evidência?",
+              "opcoes": [
+                "Terapia cognitivo-comportamental para insônia",
+                "Técnicas de relaxamento",
+                "Hipnose",
+                "Exercícios físicos"
               ],
-              "explicacao": "Investigar com história e polissonografia.",
-              "revisado": false
+              "resposta": "Terapia cognitivo-comportamental para insônia",
+              "explicacao": "A terapia cognitivo-comportamental para insônia é a primeira linha, com efeito mais duradouro que remédios. Ela reúne controle de estímulos, restrição de sono e correção de crenças sobre o sono. Relaxamento e exercício ajudam, mas com menos evidência isoladamente.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "rpsiq-u12-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a duração mínima para diagnosticar insônia crônica?",
+              "tipo": "caso_clinico",
+              "caso": "Esse homem de 48 anos com depressão em tratamento, melhora parcial, insônia, fadiga e ganho de peso, volta à UBS.",
+              "enunciado": "Qual é a conduta mais adequada para os sintomas atuais?",
               "opcoes": [
-                "3 meses",
-                "1 semana",
-                "1 ano",
-                "2 noites por mês, em qualquer período"
+                "Zolpidem para induzir o sono a curto prazo",
+                "Higiene do sono, exercício físico regular e perda de peso",
+                "Associar antipsicótico de segunda geração para a insônia",
+                "Melatonina e aumento da dose do antidepressivo"
               ],
-              "resposta": "3 meses",
-              "explicacao": "Pelo menos 3 noites por semana.",
-              "revisado": false
+              "resposta": "Higiene do sono, exercício físico regular e perda de peso",
+              "explicacao": "Higiene do sono e exercício melhoram insônia, humor e peso ao mesmo tempo, sem novos efeitos colaterais. Antipsicótico para dormir engorda e traz risco metabólico. Hipnótico pode até ser usado depois, mas não é a primeira medida.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             },
             {
               "id": "rpsiq-u12-l1-q6",
@@ -4562,42 +4562,34 @@
             },
             {
               "id": "rpsiq-u13-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada quadro ao tempo de início.",
-              "pares": [
-                {
-                  "esquerda": "Baby blues",
-                  "direita": "Primeiros dias"
-                },
-                {
-                  "esquerda": "Depressão pós-parto",
-                  "direita": "Até semanas ou meses"
-                },
-                {
-                  "esquerda": "Psicose puerperal",
-                  "direita": "Primeiras 2 semanas"
-                },
-                {
-                  "esquerda": "Depressão na gestação",
-                  "direita": "Antes do parto"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual sintoma cognitivo pode fazer parte do diagnóstico de depressão pós-parto?",
+              "opcoes": [
+                "Dificuldade de concentração e de tomar decisões",
+                "Choro incontrolável",
+                "Ansiedade e preocupação excessiva",
+                "Fadiga extrema"
               ],
-              "explicacao": "O tempo ajuda a diferenciar.",
-              "revisado": false
+              "resposta": "Dificuldade de concentração e de tomar decisões",
+              "explicacao": "Entre os sintomas da depressão, os cognitivos incluem dificuldade de concentração, indecisão e pensamentos de culpa. Choro e ansiedade são afetivos, e fadiga é física. Pensamentos de machucar o bebê pedem avaliação urgente.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "rpsiq-u13-l1-q5",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o principal fator de risco para depressão pós-parto?",
+              "enunciado": "Sobre os transtornos psiquiátricos do pós-parto, o que é correto?",
               "opcoes": [
-                "Depressão anterior",
-                "Parto normal",
-                "Primeiro filho menino",
-                "Amamentação exclusiva por seis meses"
+                "A disforia puerperal começa após 3 meses do parto e só pode ser diagnosticada até o 6º mês",
+                "A depressão pós-parto é o transtorno mais comum e começa de forma abrupta na primeira semana",
+                "O quadro mais grave é a neurose puerperal, com delírios e confusão",
+                "O baby blues afeta até metade das puérperas, surge entre o 3º e o 5º dia e se resolve sozinho",
+                "Puérperas com baby blues não podem amamentar por causa dos remédios"
               ],
-              "resposta": "Depressão anterior",
-              "explicacao": "Também falta de apoio e estresse.",
-              "revisado": false
+              "resposta": "O baby blues afeta até metade das puérperas, surge entre o 3º e o 5º dia e se resolve sozinho",
+              "explicacao": "O baby blues é comum, leve e passageiro, com choro e labilidade nos primeiros dias, sem necessidade de remédio. A depressão pós-parto é menos frequente e mais duradoura. O quadro mais grave é a psicose puerperal, e nenhum deles contraindica amamentar por si só.",
+              "revisado": false,
+              "fonte": "IAMSPE 2024"
             },
             {
               "id": "rpsiq-u13-l1-q6",
@@ -4919,42 +4911,35 @@
             },
             {
               "id": "rpsiq-u14-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "O CAPS ___ atende pessoas com problemas pelo uso de álcool e drogas.",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 35 anos é encaminhado pela ESF ao CAPS II após crise de ansiedade intensa, com conflitos na família e no trabalho, e uso nocivo de álcool sem dependência.",
+              "enunciado": "Pela política de saúde mental, qual é a conduta mais adequada?",
               "opcoes": [
-                "AD",
-                "i",
-                "I",
-                "III"
+                "Internar para estabilizar",
+                "Atender no CAPS com equipe multiprofissional e projeto terapêutico singular",
+                "Psicoterapia individual e ansiolítico para estabilizar rápido",
+                "Encaminhar para comunidade terapêutica"
               ],
-              "resposta": "AD",
-              "explicacao": "O CAPSi atende crianças e adolescentes.",
-              "revisado": false
+              "resposta": "Atender no CAPS com equipe multiprofissional e projeto terapêutico singular",
+              "explicacao": "O CAPS trabalha com projeto terapêutico singular, construído pela equipe com a pessoa, envolvendo o cuidado clínico, psicossocial e de reinserção. Internação e comunidade terapêutica não são indicadas nesse quadro.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "rpsiq-u14-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada serviço à função.",
-              "pares": [
-                {
-                  "esquerda": "CAPS III",
-                  "direita": "Funciona 24 horas"
-                },
-                {
-                  "esquerda": "CAPSi",
-                  "direita": "Crianças e adolescentes"
-                },
-                {
-                  "esquerda": "CAPS AD",
-                  "direita": "Álcool e drogas"
-                },
-                {
-                  "esquerda": "Residência terapêutica",
-                  "direita": "Moradia de egressos de internação longa"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Um estudo mostrou mais depressão e ansiedade em pessoas de baixa renda, pouca escolaridade e desempregadas. Qual é a principal conclusão?",
+              "opcoes": [
+                "Fatores genéticos explicam a maior prevalência nos grupos vulneráveis",
+                "Condições socioeconômicas ruins são fator de risco para transtornos mentais, o que pede ações intersetoriais de promoção da saúde mental",
+                "A diferença se deve só à falta de acesso a psiquiatras",
+                "A baixa escolaridade dificulta entender informações sobre saúde mental",
+                "O desemprego causa transtornos apenas por isolamento familiar"
               ],
-              "explicacao": "Fazem parte da RAPS.",
-              "revisado": false
+              "resposta": "Condições socioeconômicas ruins são fator de risco para transtornos mentais, o que pede ações intersetoriais de promoção da saúde mental",
+              "explicacao": "Renda, escolaridade e trabalho são determinantes sociais da saúde mental. Por isso a resposta passa por políticas intersetoriais (emprego, educação, assistência social), e não só pelo aumento de consultas especializadas.",
+              "revisado": false,
+              "fonte": "IAMSPE 2025"
             },
             {
               "id": "rpsiq-u14-l1-q5",
@@ -5385,32 +5370,34 @@
             {
               "id": "rpsiq-d1-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Homem de 50 anos deprimido reclama que os antidepressivos anteriores tiraram sua libido.",
-              "enunciado": "Qual opção tem menor efeito sexual?",
+              "caso": "Mulher de 72 anos tem dor em choque e queimação no local de um herpes-zóster de 3 meses atrás, sem melhora com codeína. Tem sonolência, perda de peso, falta de apetite, choro frequente e deixou de fazer o que gostava. A investigação de perda de peso foi normal.",
+              "enunciado": "Qual é a conduta inicial mais adequada?",
               "opcoes": [
-                "Bupropiona",
-                "Paroxetina",
-                "Sertralina",
-                "Venlafaxina em dose alta"
+                "Sertralina 100 mg e tramadol 100 mg de 6/6 horas",
+                "Fluoxetina 40 mg e aumento da codeína",
+                "Duloxetina 30 mg e pregabalina 75 mg de 12/12 horas",
+                "Mirtazapina 45 mg e metadona 10 mg de 8/8 horas"
               ],
-              "resposta": "Bupropiona",
-              "explicacao": "Age em dopamina e noradrenalina.",
-              "revisado": false
+              "resposta": "Duloxetina 30 mg e pregabalina 75 mg de 12/12 horas",
+              "explicacao": "Ela tem neuralgia pós-herpética e depressão. A duloxetina trata as duas, e a pregabalina é primeira linha para dor neuropática, permitindo tirar o opioide que só traz sonolência. Associar ISRS a tramadol aumenta o risco de síndrome serotoninérgica.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-d1-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Idosa deprimida, com insônia e perda de 6 kg.",
-              "enunciado": "Qual antidepressivo ajuda no sono e no apetite?",
+              "caso": "Homem de 48 anos, hipertenso e com sobrepeso, tem depressão maior e começou um antidepressivo. Após 2 meses melhorou em parte, mas segue com fadiga e insônia e ganhou peso sem mudar a alimentação.",
+              "enunciado": "Sobre os sintomas atuais, o que é correto?",
               "opcoes": [
-                "Mirtazapina",
-                "Bupropiona",
-                "Fluoxetina",
-                "Venlafaxina pela manhã"
+                "Todos podem ser efeito do remédio, se foi fluoxetina",
+                "Todos podem ser efeito do remédio, se foi bupropiona",
+                "O ganho de peso, mas não a insônia, pode ser efeito do remédio, se foi mirtazapina",
+                "O ganho de peso, mas não a insônia, pode ser efeito do remédio, se foi venlafaxina"
               ],
-              "resposta": "Mirtazapina",
-              "explicacao": "Efeito sedativo e orexígeno.",
-              "revisado": false
+              "resposta": "O ganho de peso, mas não a insônia, pode ser efeito do remédio, se foi mirtazapina",
+              "explicacao": "A mirtazapina engorda e dá sono, então explicaria o peso, mas não a insônia. Fluoxetina e bupropiona podem causar insônia, mas tendem a manter ou reduzir o peso. A venlafaxina também costuma não engordar.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             },
             {
               "id": "rpsiq-d1-l2-q3",
@@ -5514,32 +5501,34 @@
             {
               "id": "rpsiq-d1-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher tomou sertralina por 8 semanas e depois venlafaxina por 8 semanas, em doses adequadas e com boa adesão, sem melhora.",
-              "enunciado": "Como classificar?",
+              "caso": "Paciente de 39 anos com depressão maior já usou dois antidepressivos de classes diferentes com resposta parcial. Hoje usa duloxetina 120 mg e lítio 900 mg, melhorou cerca de 40%, mas mantém anedonia, fadiga e prejuízo no trabalho.",
+              "enunciado": "Qual é a conduta sobre a esketamina intranasal?",
               "opcoes": [
-                "Depressão resistente",
-                "Depressão leve",
-                "Falha por pouco tempo",
-                "Transtorno de personalidade"
+                "Não usar agora, pois é reservada à refratariedade absoluta",
+                "Considerar esketamina associada ao antidepressivo oral, aplicada em serviço de saúde com monitorização por pelo menos 2 horas",
+                "Preferir cetamina venosa, que dispensa monitorização",
+                "Suspender os antidepressivos e usar esketamina sozinha no hospital"
               ],
-              "resposta": "Depressão resistente",
-              "explicacao": "Falha de 2 antidepressivos bem usados define resistência; antes, conferir adesão e diagnóstico.",
-              "revisado": false
+              "resposta": "Considerar esketamina associada ao antidepressivo oral, aplicada em serviço de saúde com monitorização por pelo menos 2 horas",
+              "explicacao": "Falha de dois antidepressivos adequados define depressão resistente, indicação da esketamina. Ela é usada junto com um antidepressivo oral e aplicada no serviço, com observação de cerca de 2 horas por risco de dissociação, sedação e aumento da pressão.",
+              "revisado": false,
+              "fonte": "Einstein 2026"
             },
             {
               "id": "rpsiq-d1-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Mulher com depressão sem melhora após 2 antidepressivos por 8 semanas cada, em dose adequada e com boa adesão.",
-              "enunciado": "Qual é a estratégia válida?",
+              "caso": "Homem de 48 anos, hipertenso e com sobrepeso, tem depressão com resposta parcial ao antidepressivo, fadiga persistente, insônia e ganho de peso.",
+              "enunciado": "Qual comorbidade mais provavelmente explica a refratariedade da depressão?",
               "opcoes": [
-                "Potencializar com lítio ou atípico",
-                "Voltar ao primeiro remédio em dose baixa",
-                "Suspender tudo",
-                "Trocar por benzodiazepínico isolado"
+                "Hipotireoidismo",
+                "Doença arterial coronariana",
+                "Diabetes tipo 2",
+                "Apneia obstrutiva do sono"
               ],
-              "resposta": "Potencializar com lítio ou atípico",
-              "explicacao": "Outra opção é a eletroconvulsoterapia.",
-              "revisado": false
+              "resposta": "Apneia obstrutiva do sono",
+              "explicacao": "Sobrepeso, hipertensão, fadiga e sono ruim que não melhoram sugerem apneia obstrutiva do sono, que piora humor e cognição e torna a depressão resistente. Ela deve ser investigada com polissonografia. O ganho de peso do tratamento pode agravar a apneia.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             },
             {
               "id": "rpsiq-d1-l3-q3",
@@ -5780,17 +5769,19 @@
             {
               "id": "rpsiq-d2-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente em uso de lítio tem nível de 3,5 mEq/L, confusão, convulsão e piora da função renal.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 22 anos em uso de lítio chega à emergência 1 hora após tomar 8 comprimidos do remédio.",
+              "enunciado": "Qual medida NÃO funciona nesse caso?",
               "opcoes": [
+                "Carvão ativado",
+                "Lavagem gástrica",
                 "Hemodiálise",
-                "Só hidratação oral",
-                "Furosemida",
-                "Aumentar a dose e reavaliar"
+                "Hidratação com cristaloide",
+                "Alcalinização da urina"
               ],
-              "resposta": "Hemodiálise",
-              "explicacao": "Intoxicação grave.",
-              "revisado": false
+              "resposta": "Carvão ativado",
+              "explicacao": "O lítio é um íon pequeno que o carvão ativado não adsorve, por isso o carvão é inútil nessa intoxicação. Hidratação venosa ajuda a eliminar o lítio pelos rins, e a hemodiálise é o tratamento dos casos graves, já que o lítio é bem dialisável.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
             },
             {
               "id": "rpsiq-d2-l2-q2",
@@ -6571,18 +6562,18 @@
           "questoes": [
             {
               "id": "rpsiq-d4-l2-q1",
-              "tipo": "caso_clinico",
-              "caso": "Mulher lava as mãos 50 vezes por dia por medo de contaminação, sabe que é exagero e não consegue parar.",
-              "enunciado": "Qual é o tratamento inicial?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Nesse motorista de 35 anos com estresse pós-traumático após assalto, qual remédio disponível no SUS tem melhor evidência?",
               "opcoes": [
-                "ISRS em dose alta e exposição",
-                "Antipsicótico isolado",
-                "Benzodiazepínico",
-                "Psicanálise semanal, sem nenhum remédio"
+                "Clonazepam",
+                "Fluoxetina",
+                "Amitriptilina",
+                "Quetiapina"
               ],
-              "resposta": "ISRS em dose alta e exposição",
-              "explicacao": "O TOC exige doses maiores.",
-              "revisado": false
+              "resposta": "Fluoxetina",
+              "explicacao": "Os ISRS são a primeira linha de remédio no estresse pós-traumático, e a fluoxetina é o disponível na rede básica do SUS. Benzodiazepínicos não tratam o quadro e podem piorar a evolução. A psicoterapia focada no trauma também é primeira linha.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "rpsiq-d4-l2-q2",
@@ -6854,17 +6845,18 @@
             {
               "id": "rpsiq-d5-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Etilista com cirrose avançada e insuficiência hepática precisa tratar abstinência.",
-              "enunciado": "Qual benzodiazepínico é preferido?",
+              "caso": "Homem de 45 anos, etilista, parou de beber há 48 horas e chega com tremor, sudorese intensa e palpitações. FC 110, PA 150 x 90. A escala CIWA-Ar somou 25 pontos (náusea, tremor, sudorese, ansiedade, agitação e desorientação moderada).",
+              "enunciado": "Qual é a conduta inicial mais adequada?",
               "opcoes": [
-                "Lorazepam",
-                "Diazepam",
-                "Clordiazepóxido",
-                "Clonazepam em dose muito alta"
+                "Haloperidol 5 mg intramuscular",
+                "Diazepam 10 mg endovenoso",
+                "Lorazepam 4 mg via oral",
+                "Diazepam 10 mg via oral"
               ],
-              "resposta": "Lorazepam",
-              "explicacao": "Não depende da oxidação hepática.",
-              "revisado": false
+              "resposta": "Diazepam 10 mg endovenoso",
+              "explicacao": "CIWA-Ar acima de 20 indica abstinência alcoólica grave, com risco de convulsão e delirium tremens. O tratamento é benzodiazepínico por via venosa para controle rápido, repetido até a sedação leve. Haloperidol sozinho baixa o limiar convulsivo.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-d5-l1-q3",
@@ -7097,17 +7089,18 @@
             {
               "id": "rpsiq-d5-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Etilista quer parar de beber, mas tem cirrose avançada.",
-              "enunciado": "Qual remédio evitar?",
+              "caso": "Homem de 52 anos, fumante de 30 anos-maço, hipertenso, quer parar de fumar. Já tentou várias vezes, com abstinência intensa, fuma o primeiro cigarro nos 5 minutos após acordar e tem Fagerström 8. Não tem convulsões nem transtorno alimentar, mas refere humor deprimido.",
+              "enunciado": "Qual estratégia de remédio tem mais evidência para esse perfil?",
               "opcoes": [
-                "Naltrexona",
-                "Acamprosato",
-                "Baclofeno",
-                "Psicoterapia com grupo de apoio"
+                "Vareniclina 1 mg de 12/12 h começando só no dia da parada, com adesivo de 21 mg",
+                "Vareniclina em dose alta de 2 mg de 12/12 h, com reposição de nicotina após parar",
+                "Bupropiona iniciada cerca de 10 dias antes do dia da parada, associando adesivo de 21 mg nesse dia",
+                "Adesivo de 21 mg, goma de 4 mg e bupropiona começando juntos no dia da parada"
               ],
-              "resposta": "Naltrexona",
-              "explicacao": "A naltrexona é hepatotóxica.",
-              "revisado": false
+              "resposta": "Bupropiona iniciada cerca de 10 dias antes do dia da parada, associando adesivo de 21 mg nesse dia",
+              "explicacao": "A bupropiona precisa de cerca de 1 a 2 semanas para atingir efeito, por isso começa antes do dia da parada, e ainda ajuda o humor deprimido. Associar adesivo de nicotina aumenta a chance de sucesso em quem tem alta dependência. A vareniclina também começa 1 semana antes, em dose crescente, e não existe dose de 2 mg de 12/12 h.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "rpsiq-d5-l3-q2",
@@ -7493,17 +7486,18 @@
             {
               "id": "rpsiq-d6-l3-q1",
               "tipo": "caso_clinico",
-              "caso": "Jovem após uso de ecstasy em festa está confuso, com convulsão e sódio de 118.",
-              "enunciado": "Qual é a causa?",
+              "caso": "Rapaz de 17 anos tem dor abdominal periumbilical intensa, sudorese e 15 vômitos em 24 horas, com episódio parecido há 6 meses. Fuma maconha todo dia há 2 anos. Está desidratado, com abdome doloroso sem irritação peritoneal.",
+              "enunciado": "Qual é a hipótese e o tratamento?",
               "opcoes": [
-                "Hiponatremia pelo ecstasy",
-                "Desidratação",
-                "Abstinência",
-                "Overdose de opioide com miose"
+                "Síndrome do vômito cíclico; sumatriptano",
+                "Abstinência de cannabis; nabiximols",
+                "Hiperêmese por canabinoide; haloperidol",
+                "Porfiria aguda; hemina intravenosa"
               ],
-              "resposta": "Hiponatremia pelo ecstasy",
-              "explicacao": "O ecstasy aumenta o ADH.",
-              "revisado": false
+              "resposta": "Hiperêmese por canabinoide; haloperidol",
+              "explicacao": "Vômitos intensos e recorrentes em usuário diário de maconha sugerem hiperêmese por canabinoide, que costuma melhorar com banho quente. Antieméticos comuns funcionam pouco, e haloperidol ou capsaicina tópica são opções eficazes. A cura definitiva é parar o uso.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-d6-l3-q2",
@@ -7630,17 +7624,18 @@
             {
               "id": "rpsiq-d7-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 40 anos atendida após tentar suicídio com remédios. Agora diz que está bem e quer ir embora.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Mulher de 72 anos, deprimida desde a morte do marido há 3 meses, mora sozinha, brigou com a única filha e se afastou dos amigos. Diz que quer morrer, já tentou suicídio com remédios há 20 anos e planeja tomar todos os seus remédios de uma vez. Sente que as forças estão acabando.",
+              "enunciado": "Qual é a conduta mais adequada?",
               "opcoes": [
-                "Avaliação psiquiátrica antes da alta",
-                "Alta imediata",
-                "Orientar e liberar",
-                "Liberar com receita de mais remédios"
+                "Encaminhar para urgência apenas se houver acompanhante de confiança e consentimento",
+                "Encaminhar para urgência acompanhada por profissionais ou pessoa de confiança, mesmo sem o consentimento dela",
+                "Otimizar o antidepressivo, retornar em 1 a 2 dias e pedir avaliação da psicóloga",
+                "Encaminhar ao CAPS e marcar retornos curtos na unidade"
               ],
-              "resposta": "Avaliação psiquiátrica antes da alta",
-              "explicacao": "O risco é maior nas semanas após a tentativa.",
-              "revisado": false
+              "resposta": "Encaminhar para urgência acompanhada por profissionais ou pessoa de confiança, mesmo sem o consentimento dela",
+              "explicacao": "Ideação com plano, meio disponível, tentativa prévia, idade, viuvez e isolamento indicam risco alto de suicídio. Nesse caso ela precisa de avaliação na urgência no mesmo dia e não pode ir sozinha. O risco à vida justifica agir sem o consentimento dela.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-d7-l1-q2",
@@ -7905,47 +7900,50 @@
             {
               "id": "rpsiq-d7-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Paciente com sertralina e linezolida tem agitação, tremor, clônus nas pernas e febre.",
-              "enunciado": "Qual é a causa?",
+              "caso": "Mulher de 25 anos tomou 100 comprimidos de amitriptilina de 25 mg. Está intubada, com taquicardia, QRS de 160 ms e hipotensão. Já recebeu bicarbonato, e o pH agora é 7,46, mas o QRS segue largo.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Síndrome serotoninérgica",
-                "Sepse",
-                "Neuroléptica maligna",
-                "Abstinência de sertralina"
+                "Lidocaína em bolus",
+                "Novo bolus de bicarbonato de sódio a 8,4%",
+                "Salina hipertônica a 3%",
+                "Emulsão lipídica a 20%"
               ],
-              "resposta": "Síndrome serotoninérgica",
-              "explicacao": "A linezolida é um IMAO fraco.",
-              "revisado": false
+              "resposta": "Novo bolus de bicarbonato de sódio a 8,4%",
+              "explicacao": "Na intoxicação por tricíclico, o bicarbonato corrige o bloqueio dos canais de sódio e estreita o QRS. Mesmo com pH de 7,46, ainda há margem até cerca de 7,55, então se repete o bolus. Lidocaína e emulsão lipídica ficam para casos refratários.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026 R+"
             },
             {
               "id": "rpsiq-d7-l3-q3",
               "tipo": "caso_clinico",
-              "caso": "Paciente em sertralina e tramadol tem agitação, tremor e clônus induzível.",
-              "enunciado": "Quais critérios confirmam a síndrome serotoninérgica?",
+              "caso": "Homem de 72 anos em uso de haloperidol, sertralina e metoclopramida tem há 6 horas febre de 40 °C, rebaixamento da consciência, rigidez muscular e taquicardia.",
+              "enunciado": "O que é correto?",
               "opcoes": [
-                "Critérios de Hunter",
-                "Critérios de Jones",
-                "Critérios de Light",
-                "Escala de Glasgow"
+                "A principal causa é a sertralina",
+                "O bloqueio dos receptores dopaminérgicos D2 explica o quadro",
+                "A hipótese principal é abstinência de cocaína",
+                "A CPK costuma estar baixa"
               ],
-              "resposta": "Critérios de Hunter",
-              "explicacao": "O clônus é o achado principal.",
-              "revisado": false
+              "resposta": "O bloqueio dos receptores dopaminérgicos D2 explica o quadro",
+              "explicacao": "Febre alta, rigidez em \"cano de chumbo\" e confusão com antagonistas dopaminérgicos (haloperidol e metoclopramida) indicam síndrome neuroléptica maligna. A CPK fica muito alta, e o tratamento inclui suspender os remédios, suporte, benzodiazepínico, dantrolene ou bromocriptina.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "rpsiq-d7-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Paciente com IMAO comeu queijo curado e vinho e teve cefaleia intensa e pressão de 220 x 130.",
-              "enunciado": "Qual é a causa?",
+              "caso": "Homem de 30 anos, com epilepsia e bipolar, tomou 10 doses de uísque e uma quantidade desconhecida de clonazepam há 2 horas. Está confuso, mas abre os olhos, obedece comandos, respira 14 vezes por minuto e tem sinais vitais estáveis.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Crise hipertensiva por tiramina",
-                "AVC espontâneo",
-                "Enxaqueca",
-                "Ansiedade com pressão alta passageira"
+                "Lavagem gástrica e carvão ativado",
+                "Naloxona",
+                "Observação em leito monitorado",
+                "Flumazenil"
               ],
-              "resposta": "Crise hipertensiva por tiramina",
-              "explicacao": "Alimentos com tiramina são proibidos.",
-              "revisado": false
+              "resposta": "Observação em leito monitorado",
+              "explicacao": "Intoxicação por benzodiazepínico com álcool, sem depressão respiratória, pede só suporte e monitorização. O flumazenil é contraindicado em quem usa benzodiazepínico cronicamente e tem epilepsia, pelo risco de convulsões e abstinência. Lavagem não traz benefício após 2 horas.",
+              "revisado": false,
+              "fonte": "Einstein 2025 R+"
             },
             {
               "id": "rpsiq-d7-l3-q5",
@@ -8439,17 +8437,18 @@
             {
               "id": "rpsiq-d9-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Idosa com delirium agitado coloca a si mesma em risco, apesar das medidas gerais.",
-              "enunciado": "Qual remédio usar?",
+              "caso": "Mulher de 84 anos com demência moderada operou uma fratura de fêmur. Doze horas depois está confusa e muito agitada, sem melhora com medidas não farmacológicas.",
+              "enunciado": "Qual é o melhor remédio?",
               "opcoes": [
-                "Haloperidol em dose baixa",
-                "Diazepam em dose alta",
-                "Amitriptilina",
-                "Prometazina em dose alta"
+                "Clonazepam",
+                "Quetiapina",
+                "Donepezila",
+                "Sertralina"
               ],
-              "resposta": "Haloperidol em dose baixa",
-              "explicacao": "Pela menor dose e menor tempo.",
-              "revisado": false
+              "resposta": "Quetiapina",
+              "explicacao": "É delirium hiperativo em idosa com demência. Quando as medidas ambientais falham e há risco, usa-se antipsicótico em dose baixa por pouco tempo, como quetiapina. Benzodiazepínico piora o delirium, e donepezila e sertralina não tratam a agitação aguda.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-d9-l1-q3",
@@ -8569,62 +8568,66 @@
             {
               "id": "rpsiq-d9-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Homem com demência, alucinações visuais de crianças e flutuação da atenção. Piorou muito após haloperidol.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Mulher de 81 anos com Alzheimer recém-diagnosticado tem alterações de comportamento. FC de 58.",
+              "enunciado": "Qual remédio é o mais indicado agora?",
               "opcoes": [
-                "Demência com corpos de Lewy",
-                "Alzheimer",
-                "Vascular",
-                "Delirium por infecção urinária oculta"
+                "Donepezila",
+                "Quetiapina",
+                "Clonazepam",
+                "Sertralina"
               ],
-              "resposta": "Demência com corpos de Lewy",
-              "explicacao": "Grave sensibilidade a antipsicóticos.",
-              "revisado": false
+              "resposta": "Sertralina",
+              "explicacao": "Os sintomas de comportamento no Alzheimer (ansiedade, irritabilidade, humor deprimido) podem melhorar com ISRS, mais seguros que antipsicóticos e benzodiazepínicos. A bradicardia contraindica a donepezila, que lentifica ainda mais o coração.",
+              "revisado": false,
+              "fonte": "USP-RP 2026 R+"
             },
             {
               "id": "rpsiq-d9-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Idoso hipertenso e diabético com piora cognitiva em degraus após pequenos AVCs.",
-              "enunciado": "Qual é o diagnóstico?",
+              "caso": "Professora universitária de 83 anos tem perda de memória há 2 anos: esquece o fogão aceso, a senha do cartão e os remédios. Tem hipotireoidismo, hipertensão e déficit auditivo mal corrigido. Mini-exame do estado mental: 22/30.",
+              "enunciado": "Qual é a hipótese e a conduta inicial?",
               "opcoes": [
-                "Demência vascular",
-                "Alzheimer",
-                "Lewy",
-                "Hidrocefalia de pressão normal"
+                "Queixa cognitiva subjetiva; atividade física e uso do aparelho auditivo",
+                "Síndrome demencial; exames laboratoriais e ressonância de crânio",
+                "Transtorno neurocognitivo leve; anticolinesterásico e estímulo cognitivo",
+                "Depressão; sertralina, psicoterapia e teste neuropsicológico"
               ],
-              "resposta": "Demência vascular",
-              "explicacao": "Controlar fatores de risco.",
-              "revisado": false
+              "resposta": "Síndrome demencial; exames laboratoriais e ressonância de crânio",
+              "explicacao": "Há declínio cognitivo com perda de independência em atividades do dia a dia (remédios, finanças), o que define demência, e não comprometimento leve. O passo seguinte é buscar causas reversíveis com exames (B12, TSH, sífilis e outros) e imagem do crânio. O escore 22 em pessoa de alta escolaridade é claramente alterado.",
+              "revisado": false,
+              "fonte": "Einstein 2025"
             },
             {
               "id": "rpsiq-d9-l2-q4",
               "tipo": "caso_clinico",
-              "caso": "Idosa com Alzheimer começou donepezila e agora tem náusea e frequência cardíaca de 48.",
-              "enunciado": "Qual é a causa?",
+              "caso": "Homem de 72 anos, hipertenso e diabético, há 1 ano está disperso, apático, sem prazer em cozinhar ou ver futebol, com leve dificuldade de lembrar nomes e quedas. Piorou no último mês após infecção urinária. Tem marcha de base alargada, tônus levemente aumentado e reflexos simétricos, sem tremor.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Efeito da donepezila",
-                "Progressão da demência",
-                "Hipotireoidismo novo",
-                "Infarto silencioso com bloqueio"
+                "Demência vascular",
+                "Doença de Alzheimer",
+                "Demência frontotemporal",
+                "Demência com corpos de Lewy"
               ],
-              "resposta": "Efeito da donepezila",
-              "explicacao": "Inibidores da acetilcolinesterase causam náuseas e bradicardia.",
-              "revisado": false
+              "resposta": "Demência vascular",
+              "explicacao": "Fatores de risco vasculares, apatia, lentidão e dificuldade de atenção mais que de memória, alteração da marcha e piora em degraus sugerem demência vascular. No Alzheimer, a memória recente é o sintoma inicial e a marcha fica normal por muito tempo.",
+              "revisado": false,
+              "fonte": "UERJ 2026"
             },
             {
               "id": "rpsiq-d9-l2-q5",
               "tipo": "caso_clinico",
-              "caso": "Homem de 65 anos com demência que piora em semanas, mioclonias e EEG com ondas periódicas.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Engenheiro aposentado de 74 anos tem esquecimentos progressivos há 2 anos, já erra os remédios que usa há anos e se perdeu no caminho entre a casa do filho e a sua. Diabetes e hipertensão controlados. Mini-exame 28/30, fluência verbal 12 animais por minuto, escala de depressão geriátrica 3/15. Exame físico normal.",
+              "enunciado": "Qual é o diagnóstico mais provável?",
               "opcoes": [
-                "Doença de Creutzfeldt-Jakob",
-                "Alzheimer",
-                "Vascular",
-                "Demência por álcool sem outros achados"
+                "Pseudodemência depressiva",
+                "Comprometimento cognitivo leve",
+                "Demência da doença de Alzheimer",
+                "Demência vascular"
               ],
-              "resposta": "Doença de Creutzfeldt-Jakob",
-              "explicacao": "Doença priônica rapidamente progressiva.",
-              "revisado": false
+              "resposta": "Demência da doença de Alzheimer",
+              "explicacao": "Há declínio progressivo com perda de autonomia (remédios, se perder no caminho), o que define demência. O mini-exame quase normal se explica pela alta escolaridade, mas a fluência verbal baixa revela o déficit. Depressão foi afastada pela escala, e não há sinais focais de causa vascular.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-d9-l2-q6",
@@ -8729,65 +8732,65 @@
             {
               "id": "rpsiq-d9-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Homem de 65 anos com depressão nova, perda de peso e dor nas costas.",
-              "enunciado": "Qual tumor clássico pode começar assim?",
+              "caso": "Mulher de 57 anos com Hashimoto tem declínio cognitivo progressivo há 6 meses, vitiligo e reflexos aumentados em joelhos e tornozelos.",
+              "enunciado": "Qual deficiência é a causa mais provável?",
               "opcoes": [
-                "Câncer de pâncreas",
-                "Câncer de pele",
-                "Lipoma",
-                "Cisto de ovário simples"
+                "Cobalamina (B12)",
+                "Ferro",
+                "Folato",
+                "Niacina"
               ],
-              "resposta": "Câncer de pâncreas",
-              "explicacao": "A depressão pode preceder outros sintomas do câncer de pâncreas.",
-              "revisado": false
+              "resposta": "Cobalamina (B12)",
+              "explicacao": "A anemia perniciosa é autoimune e se associa a outras doenças autoimunes, como Hashimoto e vitiligo. A falta de B12 causa demência reversível e lesão da medula com sinais piramidais. Por isso B12 deve ser dosada em toda investigação de demência.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026 R+"
             },
             {
               "id": "rpsiq-d9-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Jovem com crises de pânico, pressão muito alta em picos, sudorese e cefaleia.",
-              "enunciado": "Qual exame pedir?",
+              "caso": "Mulher de 23 anos diz ter o poder de curar pessoas com as mãos e passa o dia na praça oferecendo ajuda. Está desorientada no tempo, com edema nas pernas, queda de cabelo, lesões em placa na face e no couro cabeludo, PA 170 x 110 e derrame pleural.",
+              "enunciado": "Qual mecanismo mais provavelmente explica o caso?",
               "opcoes": [
-                "Metanefrinas",
-                "TSH só",
-                "Cortisol salivar",
-                "Prolactina e testosterona"
+                "Espiroquetas",
+                "Heme",
+                "Autoanticorpos",
+                "Cocaína"
               ],
-              "resposta": "Metanefrinas",
-              "explicacao": "Afastar feocromocitoma.",
-              "revisado": false
+              "resposta": "Autoanticorpos",
+              "explicacao": "Psicose com lesões discoides, alopecia, serosite, edema e hipertensão (nefrite) sugerem lúpus com acometimento neuropsiquiátrico, causado por autoanticorpos. Diante de uma primeira psicose, sempre se buscam causas orgânicas.",
+              "revisado": false,
+              "fonte": "USP-RP 2026 R+"
             },
             {
               "id": "rpsiq-d9-l3-q6",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Jovem de 18 anos com psicose, tremor e transaminases altas deve ser investigado para doença de Wilson.",
-              "resposta": true,
-              "explicacao": "Verdadeiro. Pesquisam-se anel de Kayser-Fleischer e ceruloplasmina.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Dermatite em áreas expostas ao sol, diarreia, glossite, demência, psicose e delirium se ligam à falta de qual vitamina?",
+              "opcoes": [
+                "B2",
+                "B6",
+                "B1",
+                "B3 (niacina)"
+              ],
+              "resposta": "B3 (niacina)",
+              "explicacao": "A pelagra, por falta de niacina, é lembrada pelos \"3 Ds\": dermatite, diarreia e demência, podendo levar à morte. É vista em etilistas e desnutridos, e pode causar psicose e delirium.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2026 R+"
             },
             {
               "id": "rpsiq-d9-l3-q7",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada doença clínica ao sintoma psiquiátrico.",
-              "pares": [
-                {
-                  "esquerda": "Hipertireoidismo",
-                  "direita": "Ansiedade"
-                },
-                {
-                  "esquerda": "Cushing",
-                  "direita": "Depressão"
-                },
-                {
-                  "esquerda": "Falta de B12",
-                  "direita": "Demência"
-                },
-                {
-                  "esquerda": "Encefalopatia hepática",
-                  "direita": "Confusão"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 35 anos com lúpus começou prednisona 1 mg/kg há 10 dias. Desde o 7º dia tem insônia, fala acelerada e euforia, que evoluíram para irritabilidade, alucinações e comportamento desorganizado. Exames, RM e líquor normais, e o lúpus está em melhora.",
+              "enunciado": "Qual é a conduta?",
+              "opcoes": [
+                "Aumentar a prednisona",
+                "Reduzir aos poucos o corticoide e iniciar antipsicótico atípico",
+                "Pulso de ciclofosfamida por neurolúpus",
+                "Pulso de metilprednisolona"
               ],
-              "explicacao": "Investigar a causa orgânica.",
-              "revisado": false
+              "resposta": "Reduzir aos poucos o corticoide e iniciar antipsicótico atípico",
+              "explicacao": "O quadro começou com a dose alta de corticoide e o lúpus está em remissão, o que sugere psicose induzida por corticoide, e não neurolúpus. Reduz-se a dose de forma gradual e usa-se antipsicótico. Aumentar o corticoide pioraria.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "rpsiq-d9-l3-q8",
@@ -9230,18 +9233,18 @@
             },
             {
               "id": "rpsiq-d11-l1-q2",
-              "tipo": "caso_clinico",
-              "caso": "Homem obeso que ronca alto, acorda cansado e cochila dirigindo.",
-              "enunciado": "Qual exame pedir?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Se for preciso usar remédio para essa mulher de 48 anos com insônia crônica, qual é a escolha mais recomendada pelas diretrizes brasileiras?",
               "opcoes": [
-                "Polissonografia",
-                "Eletroencefalograma",
-                "Tomografia",
-                "Ressonância de coluna"
+                "Clonazepam quando necessário",
+                "Melatonina ou agomelatina à noite",
+                "Zolpidem em dose baixa",
+                "Dexclorfeniramina ou passiflora"
               ],
-              "resposta": "Polissonografia",
-              "explicacao": "Suspeita de apneia obstrutiva.",
-              "revisado": false
+              "resposta": "Zolpidem em dose baixa",
+              "explicacao": "Para insônia de início e de manutenção, os hipnóticos não benzodiazepínicos, como o zolpidem, têm evidência de eficácia, usados em dose baixa e por tempo curto. Benzodiazepínicos causam dependência e quedas, e anti-histamínicos e fitoterápicos têm pouca evidência.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "rpsiq-d11-l1-q3",
@@ -10400,17 +10403,18 @@
             {
               "id": "rpsiq-d14-l1-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente em fluoxetina começa tamoxifeno para câncer de mama.",
-              "enunciado": "Qual é o problema?",
+              "caso": "Mulher de 42 anos tem há 8 anos dispareunia, ardor urinário com exames normais, vulvodinia e dor pélvica quase diária sem causa estrutural, além de dor espalhada pelo corpo. Tem depressão grave com duas tentativas de suicídio, estável há 1 ano com tranilcipromina, um inibidor da MAO.",
+              "enunciado": "Qual é a melhor opção de tratamento adjuvante?",
               "opcoes": [
-                "Reduz o efeito do tamoxifeno",
-                "Interação nula",
-                "Aumenta muito o efeito",
-                "Causa mania pela combinação dos dois remédios"
+                "Venlafaxina",
+                "Gabapentina",
+                "Amitriptilina",
+                "Duloxetina"
               ],
-              "resposta": "Reduz o efeito do tamoxifeno",
-              "explicacao": "Inibe o CYP2D6 que ativa o tamoxifeno.",
-              "revisado": false
+              "resposta": "Gabapentina",
+              "explicacao": "O quadro é de dor crônica com sensibilização central. Venlafaxina, duloxetina e amitriptilina aumentam serotonina e, junto com um IMAO, podem causar síndrome serotoninérgica grave. A gabapentina age na dor neuropática sem essa interação.",
+              "revisado": false,
+              "fonte": "USP-RP 2025"
             },
             {
               "id": "rpsiq-d14-l1-q2",
@@ -10529,17 +10533,19 @@
             {
               "id": "rpsiq-d14-l2-q1",
               "tipo": "caso_clinico",
-              "caso": "Paciente iniciará olanzapina.",
-              "enunciado": "Quais exames pedir no início?",
+              "caso": "Mulher de 74 anos com depressão em uso de fluoxetina tem confusão e cefaleia. Sódio 112, sódio urinário 115, osmolalidade urinária 280, ácido úrico baixo, TSH e cortisol normais, euvolêmica.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Peso, glicemia, lipídios e pressão",
-                "Só hemograma",
-                "Só ECG",
-                "Tomografia de abdome e de tórax"
+                "Polidipsia primária",
+                "Dieta de chá com torradas",
+                "Insuficiência adrenal secundária",
+                "Perda cerebral de sal",
+                "Secreção inapropriada de ADH"
               ],
-              "resposta": "Peso, glicemia, lipídios e pressão",
-              "explicacao": "Monitorar síndrome metabólica.",
-              "revisado": false
+              "resposta": "Secreção inapropriada de ADH",
+              "explicacao": "Hiponatremia euvolêmica com urina concentrada e sódio urinário alto, com tireoide e adrenal normais, é SIADH. Os ISRS, sobretudo em idosas, são causa comum. Polidipsia e dieta pobre em solutos dariam urina muito diluída.",
+              "revisado": false,
+              "fonte": "Sírio-Libanês 2026"
             },
             {
               "id": "rpsiq-d14-l2-q2",
