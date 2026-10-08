@@ -136,6 +136,22 @@
               "explicacao": "O cadastro imediato, sem exigência, mostra a universalidade (acesso de todos). Dar prioridade conforme a necessidade de cada um, e não pela ordem, mostra a equidade.",
               "revisado": false,
               "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-u1-l1-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a diferença fundamental entre saúde pública e saúde coletiva, que inspirou a Reforma Sanitária?",
+              "opcoes": [
+                "A saúde pública tem visão biopsicossocial, e a coletiva, de campanhas",
+                "A coletiva está nos serviços do SUS, e a pública é alternativa ao biologismo",
+                "A pública veio da França, e a coletiva, da Inglaterra",
+                "A saúde pública parte da doença e da morte, e a saúde coletiva propõe estudar a saúde e a vida",
+                "A coletiva é o preventivismo acadêmico"
+              ],
+              "resposta": "A saúde pública parte da doença e da morte, e a saúde coletiva propõe estudar a saúde e a vida",
+              "explicacao": "A saúde coletiva, movimento latino-americano, critica a visão centrada na doença e incorpora as ciências sociais, entendendo a saúde como produção social. Ela fundamentou a Reforma Sanitária e a criação do SUS.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             }
           ]
         },
@@ -191,18 +207,19 @@
             },
             {
               "id": "prev-u1-l2-q4",
-              "tipo": "caso_clinico",
-              "caso": "Um novo teste foi aplicado em 100 pessoas doentes, com 90 resultados positivos, e em 200 pessoas sem a doença, com 180 resultados negativos.",
-              "enunciado": "Qual é a sensibilidade do teste?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em 300 febris, 90 tinham dengue confirmada, e 72 deles tinham artralgia. Entre 210 sem dengue, 147 não tinham artralgia. Qual é a sensibilidade da artralgia?",
               "opcoes": [
-                "90%",
+                "58%",
+                "70%",
                 "80%",
-                "10%",
-                "45%"
+                "85%",
+                "Nenhuma"
               ],
-              "resposta": "90%",
-              "explicacao": "Sensibilidade = verdadeiros positivos / total de doentes = 90/100. A especificidade também é de 90% (180/200).",
-              "revisado": false
+              "resposta": "80%",
+              "explicacao": "Sensibilidade é a proporção de doentes com o achado: 72/90 = 80%. A especificidade seria 147/210 = 70%. A sensibilidade mostra a capacidade de detectar quem tem a doença.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-u1-l2-q5",
@@ -459,32 +476,35 @@
             },
             {
               "id": "prev-u2-l1-q5",
-              "tipo": "caso_clinico",
-              "caso": "Em um município, a mortalidade infantil caiu muito, mas a maior parte das mortes que restaram ocorre na primeira semana de vida.",
-              "enunciado": "Onde concentrar esforços?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre incidência e prevalência, o que é correto?",
               "opcoes": [
-                "Pré-natal, parto e cuidado ao recém-nascido",
-                "Só saneamento",
-                "Vacinar adolescentes",
-                "Apenas saneamento básico e vacinação de adolescentes na escola"
+                "A incidência é a melhor para medir a carga de doenças crônicas",
+                "Se os casos novos persistem, viram casos prevalentes: prevalência = incidência x duração",
+                "Taxa de ataque substitui prevalência nas epidemias",
+                "Incidência é o número de casos num ponto do tempo",
+                "A prevalência expressa o risco de adoecer"
               ],
-              "resposta": "Pré-natal, parto e cuidado ao recém-nascido",
-              "explicacao": "As mortes neonatais precoces dependem muito da assistência à gestação e ao parto.",
-              "revisado": false
+              "resposta": "Se os casos novos persistem, viram casos prevalentes: prevalência = incidência x duração",
+              "explicacao": "Incidência mede casos novos num período e expressa risco; prevalência mede todos os casos existentes num momento e reflete a carga da doença. Doenças longas, como as crônicas, acumulam prevalência. Taxa de ataque é uma incidência em período curto.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-u2-l1-q6",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual indicador mede a desigualdade de renda de um país?",
+              "enunciado": "Qual é a principal finalidade do Sistema de Informações Hospitalares do SUS (SIH), cujo instrumento é a AIH?",
               "opcoes": [
-                "Índice de Gini",
-                "Esperança de vida",
-                "Taxa de natalidade",
-                "Índice de Swaroop-Uemura"
+                "Registrar atendimentos de urgência",
+                "Controlar e pagar as internações financiadas pelo SUS",
+                "Guardar o histórico médico de todos os usuários",
+                "Notificar doenças compulsórias",
+                "Nenhuma"
               ],
-              "resposta": "Índice de Gini",
-              "explicacao": "Varia de 0 (igualdade total) a 1 (desigualdade máxima).",
-              "revisado": false
+              "resposta": "Controlar e pagar as internações financiadas pelo SUS",
+              "explicacao": "O SIH foi criado para pagar os hospitais pelas internações, mas seus dados também servem para estudar morbidade hospitalar. As notificações vão para o SINAN, e os atendimentos ambulatoriais, para o SIA.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-u2-l1-q7",
@@ -534,28 +554,19 @@
             },
             {
               "id": "prev-u2-l2-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada termo epidemiológico à sua definição.",
-              "pares": [
-                {
-                  "esquerda": "Endemia",
-                  "direita": "Presença habitual de uma doença em uma região"
-                },
-                {
-                  "esquerda": "Epidemia",
-                  "direita": "Aumento de casos acima do esperado"
-                },
-                {
-                  "esquerda": "Pandemia",
-                  "direita": "Epidemia em vários continentes"
-                },
-                {
-                  "esquerda": "Surto",
-                  "direita": "Epidemia localizada, em área ou grupo restrito"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre tipos de vigilância:\nI. Na passiva, a notificação depende dos serviços, podendo haver subnotificação.\nII. Na ativa, a vigilância busca casos sistematicamente nos serviços.\nIII. A sentinela usa unidades selecionadas para monitorar eventos quando a vigilância universal é inviável.\nIV. A notificação compulsória de todos os casos de sarampo e dengue é exemplo de vigilância sentinela. Quantas estão corretas?",
+              "opcoes": [
+                "Todas",
+                "Apenas três",
+                "Apenas duas",
+                "Apenas uma",
+                "Nenhuma"
               ],
-              "explicacao": "O diagrama de controle ajuda a identificar quando os casos passam do esperado.",
-              "revisado": false
+              "resposta": "Apenas três",
+              "explicacao": "As três primeiras estão certas. Notificar todos os casos suspeitos é vigilância universal, e não sentinela. A sentinela é usada, por exemplo, na síndrome gripal, em que algumas unidades colhem amostras para saber quais vírus circulam.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-u2-l2-q3",
@@ -2119,6 +2130,22 @@
               "explicacao": "Longitudinalidade é o vínculo contínuo entre a pessoa e a equipe, que a acompanha ao longo da vida, independentemente de haver doença. Coordenação, orientação familiar e acesso de primeiro contato são outros atributos da atenção primária.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-u6-l1-n7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os atributos da atenção primária:\nI. Coordenação do cuidado é o vínculo duradouro da equipe com a população ao longo do tempo.\nII. Longitudinalidade é organizar o fluxo do usuário entre os pontos da rede.\nIII. A atenção primária é o primeiro contato para qualquer problema novo, e os encaminhamentos devem partir dela.\nQuais estão corretas?",
+              "opcoes": [
+                "I, II e III",
+                "I e II",
+                "I e III",
+                "II e III",
+                "III, apenas"
+              ],
+              "resposta": "III, apenas",
+              "explicacao": "As definições I e II estão trocadas: o vínculo ao longo do tempo é a longitudinalidade, e organizar o fluxo e integrar informações é a coordenação. O primeiro contato (acesso) está correto.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         },
@@ -2470,6 +2497,23 @@
               "explicacao": "O PRACTICE organiza a avaliação da família diante de um problema: o que trouxe a família, quem faz o quê, como lidam com afetos e comunicação, em que fase do ciclo de vida estão, que doenças existem, como enfrentam o estresse e que rede de apoio têm.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-u6-l2-n14",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 45 anos tem insônia e ansiedade sem melhora. Conta o peso de ser o único cuidador dos pais idosos e a distância dos filhos adolescentes. O médico quer ver a estrutura da família, as relações e os padrões de doença entre gerações.",
+              "enunciado": "Qual instrumento usar?",
+              "opcoes": [
+                "Diagnóstico de demanda",
+                "Ecomapa",
+                "Genograma",
+                "Escala de Coelho",
+                "Estimativa rápida participativa"
+              ],
+              "resposta": "Genograma",
+              "explicacao": "O genograma desenha a família em pelo menos três gerações, mostrando relações (próximas, conflituosas) e doenças que se repetem. O ecomapa mostra as ligações da família com a comunidade e recursos externos. A escala de Coelho avalia risco familiar.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             }
           ]
         },
@@ -3021,6 +3065,21 @@
               "explicacao": "A adolescente está na faixa da vacina de HPV (hoje em dose única pelo PNI; a banca citou duas doses). A doença pulmonar é indicação, e não contraindicação, da vacina da gripe. Febre leve após a tríplice viral é evento esperado e não contraindica as próximas doses.",
               "revisado": false,
               "fonte": "Santa Casa SP 2026"
+            },
+            {
+              "id": "prev-u7-l3-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Numa aldeia com barreiras geográficas e calendário cultural próprio, qual é a melhor estratégia para melhorar a cobertura vacinal?",
+              "opcoes": [
+                "Campanhas anuais por equipes externas",
+                "Vacinar só por demanda no polo-base",
+                "Microterritorialização planejada com a comunidade e os agentes indígenas",
+                "Calendário padronizado pelo município"
+              ],
+              "resposta": "Microterritorialização planejada com a comunidade e os agentes indígenas",
+              "explicacao": "Planejar com a comunidade, mapeando famílias e respeitando o calendário cultural, permite levar a vacina até as pessoas. Os agentes indígenas fazem a ponte com as famílias. Esperar demanda num local distante perpetua a baixa cobertura.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             }
           ]
         }
@@ -3132,25 +3191,33 @@
             },
             {
               "id": "prev-u8-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O teste de HIV só deve ser oferecido ao paciente com tuberculose que tiver fatores de risco.",
-              "resposta": false,
-              "explicacao": "Falso. Todo caso de tuberculose deve receber oferta do teste de HIV.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Os filhos pequenos de um paciente com tuberculose receberam BCG. Contra o que essa vacina protege?",
+              "opcoes": [
+                "Formas graves, como meningite tuberculosa e tuberculose miliar",
+                "A primoinfecção",
+                "A tuberculose pós-primária",
+                "Toda tuberculose extrapulmonar"
+              ],
+              "resposta": "Formas graves, como meningite tuberculosa e tuberculose miliar",
+              "explicacao": "A BCG não impede a infecção nem a tuberculose pulmonar do adulto, mas protege crianças das formas graves e disseminadas. Por isso é dada ao nascer. A proteção contra a forma pulmonar é baixa e variável.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             },
             {
               "id": "prev-u8-l1-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "A tuberculose ___ é aquela resistente a rifampicina e isoniazida.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um paciente teve tuberculose pulmonar confirmada. Qual é a conduta para os familiares contatos?",
               "opcoes": [
-                "multirresistente",
-                "sensível",
-                "latente",
-                "extrapulmonar ganglionar"
+                "Tratar infecção latente nos sem sintomas com PPD ou IGRA positivo, após afastar doença ativa",
+                "Vacinar todos com BCG",
+                "Rifampicina para todos por 4 meses",
+                "Isoniazida só para menores de 5 anos após PPD"
               ],
-              "resposta": "multirresistente",
-              "explicacao": "TB-MDR.",
-              "revisado": false
+              "resposta": "Tratar infecção latente nos sem sintomas com PPD ou IGRA positivo, após afastar doença ativa",
+              "explicacao": "Todo contato deve ser avaliado: quem tem sintomas investiga doença ativa; os sem sintomas fazem PPD ou IGRA, e, se positivos, tratam a infecção latente. Crianças pequenas assintomáticas sem BCG recente podem tratar mesmo sem teste. BCG não é dada a adultos contatos.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             }
           ]
         },
@@ -3760,17 +3827,19 @@
             },
             {
               "id": "prev-u9-l3-q8",
-              "tipo": "completar_lacuna",
-              "enunciado": "O ocultamento da ___ impede que se saiba o próximo grupo antes de incluir o paciente.",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a principal vantagem do ensaio clínico randomizado sobre estudos observacionais para avaliar uma intervenção?",
               "opcoes": [
-                "alocação",
-                "doença",
-                "dose",
-                "idade dos participantes"
+                "A randomização distribui igualmente os fatores de confusão, conhecidos ou não, entre os grupos",
+                "É eticamente mais simples",
+                "Tem maior validade externa",
+                "É mais barato e rápido",
+                "Nenhuma"
               ],
-              "resposta": "alocação",
-              "explicacao": "Protege a randomização.",
-              "revisado": false
+              "resposta": "A randomização distribui igualmente os fatores de confusão, conhecidos ou não, entre os grupos",
+              "explicacao": "Sorteando quem recebe a intervenção, as diferenças entre os grupos ficam por conta do acaso, inclusive as desconhecidas, o que permite inferir causa. Por outro lado, é caro, e os participantes selecionados podem não representar a população geral.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         }
@@ -4281,6 +4350,22 @@
               "explicacao": "A educação sexual abrangente aumenta o uso de métodos e adia o início da vida sexual. Campanhas só de abstinência não funcionam. O acesso a contraceptivos é importante, mas faz parte de um conjunto de ações.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-u11-l1-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "A Rede Alyne, do Ministério da Saúde, visa reduzir a mortalidade materna e neonatal. Qual é o número mínimo de consultas de pré-natal, começando no primeiro trimestre?",
+              "opcoes": [
+                "5",
+                "6",
+                "7",
+                "8",
+                "Nenhuma"
+              ],
+              "resposta": "7",
+              "explicacao": "A Rede Alyne, que substituiu a Rede Cegonha em 2024, ampliou o mínimo de consultas de pré-natal de 6 para 7, intercaladas entre médico e enfermeiro. O nome homenageia Alyne Pimentel, cuja morte materna evitável levou à condenação do Brasil na ONU.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         },
@@ -4321,28 +4406,19 @@
             },
             {
               "id": "prev-u11-l2-q3",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada instrumento à avaliação do idoso.",
-              "pares": [
-                {
-                  "esquerda": "Mini-mental",
-                  "direita": "Cognição"
-                },
-                {
-                  "esquerda": "Escala de Lawton",
-                  "direita": "Atividades instrumentais"
-                },
-                {
-                  "esquerda": "Escala de depressão geriátrica",
-                  "direita": "Humor"
-                },
-                {
-                  "esquerda": "Teste levante e ande",
-                  "direita": "Risco de quedas"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Idoso de 75 anos usa várias medicações e tem sangramento gengival e hematomas. A equipe decide revisar todas as medicações.",
+              "enunciado": "O que melhor define \"conciliação medicamentosa\"?",
+              "opcoes": [
+                "Processo formal que garante a segurança e a continuidade dos remédios, especialmente nas transições de cuidado",
+                "Revisão das receitas recentes para evitar interações",
+                "Revisão para reduzir ao máximo o número de remédios",
+                "Explicação da nova receita na alta hospitalar"
               ],
-              "explicacao": "Avaliação multidimensional.",
-              "revisado": false
+              "resposta": "Processo formal que garante a segurança e a continuidade dos remédios, especialmente nas transições de cuidado",
+              "explicacao": "Conciliar é comparar a lista completa do que o paciente realmente usa com o que foi prescrito em cada transição (internação, alta, troca de serviço), corrigindo omissões, duplicidades e interações. Reduzir remédios é a desprescrição, outro processo.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "prev-u11-l2-q4",
@@ -4635,6 +4711,84 @@
               "explicacao": "O projeto terapêutico singular é construído pela equipe com a pessoa, para casos complexos. Ele inclui diagnóstico ampliado (biológico, psicológico e social), metas, divisão de responsabilidades e reavaliação. Vai além da prescrição médica.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-u11-l3-n7",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as equipes de Consultório na Rua, o que é correto?",
+              "opcoes": [
+                "Há 4 modalidades",
+                "A modalidade I tem no mínimo 6 profissionais",
+                "A modalidade II tem no mínimo 8 profissionais",
+                "A modalidade III é a modalidade II (6 profissionais) acrescida de um médico",
+                "O agente social é obrigatório em todas"
+              ],
+              "resposta": "A modalidade III é a modalidade II (6 profissionais) acrescida de um médico",
+              "explicacao": "Há três modalidades: a I com 4 profissionais, a II com 6 e a III igual à II mais um médico. As equipes atendem a população em situação de rua no próprio território, articuladas com a UBS e a rede de saúde mental.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
+            },
+            {
+              "id": "prev-u11-l3-n8",
+              "tipo": "caso_clinico",
+              "caso": "Uma equipe de saúde indígena atua numa aldeia do semiárido, com lideranças, agentes indígenas, parteiras e rezadores. Na seca, faltam água e transporte ao polo-base.",
+              "enunciado": "Qual é o elemento central da organização territorial da saúde indígena?",
+              "opcoes": [
+                "Núcleo de apoio da cidade mais próxima",
+                "Distrito Sanitário Especial Indígena, com gestão própria e base territorial definida",
+                "Secretarias municipais com supervisão estadual",
+                "Hospitais gerais de referência"
+              ],
+              "resposta": "Distrito Sanitário Especial Indígena, com gestão própria e base territorial definida",
+              "explicacao": "O subsistema de saúde indígena é organizado em 34 Distritos Sanitários Especiais Indígenas (DSEI), sob gestão federal, com polos-base e equipes multidisciplinares. Os casos de maior complexidade são referenciados à rede do SUS.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
+            },
+            {
+              "id": "prev-u11-l3-n9",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na construção do cuidado com pajés e parteiras tradicionais, o que os profissionais de saúde devem privilegiar?",
+              "opcoes": [
+                "Integrar, com diálogo, as práticas tradicionais sem risco às práticas de eficácia comprovada",
+                "Substituir aos poucos as práticas tradicionais",
+                "Manter neutralidade e agir de forma independente",
+                "Restringir as práticas tradicionais às cerimônias"
+              ],
+              "resposta": "Integrar, com diálogo, as práticas tradicionais sem risco às práticas de eficácia comprovada",
+              "explicacao": "A Política Nacional de Atenção à Saúde dos Povos Indígenas prevê articular os saberes tradicionais e a medicina ocidental, respeitando a cultura. Isso fortalece o vínculo e a adesão. Só se intervém quando a prática traz risco.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
+            },
+            {
+              "id": "prev-u11-l3-n10",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 2 anos com síndrome de Down e cardiopatia já operada teve alta dos especialistas. A família vai pouco à unidade e se preocupa com atraso motor, pouca interação e falta de acesso a fono e fisioterapia.",
+              "enunciado": "Qual é a conduta central da atenção primária?",
+              "opcoes": [
+                "Encaminhar ao neuropediatra e aguardar",
+                "Agendar consultas e convocar pelo agente se faltar",
+                "Priorizar o cardiologista",
+                "Construir um projeto terapêutico singular com família, equipe multiprofissional e reabilitação"
+              ],
+              "resposta": "Construir um projeto terapêutico singular com família, equipe multiprofissional e reabilitação",
+              "explicacao": "O projeto terapêutico singular organiza o cuidado de casos complexos com metas, responsáveis e prazos, integrando família, equipe e rede de reabilitação. A atenção primária coordena o cuidado, sem só encaminhar e esperar.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
+            },
+            {
+              "id": "prev-u11-l3-n11",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na atenção primária, como acompanhar o desenvolvimento de uma criança de 2 anos com síndrome de Down e atraso motor?",
+              "opcoes": [
+                "Usar instrumentos estruturados e orientar estimulação contínua em casa e na comunidade",
+                "Considerar os atrasos esperados e só aguardar",
+                "Avaliação neurológica anual como principal monitoramento",
+                "Só consultas frequentes para ver os marcos"
+              ],
+              "resposta": "Usar instrumentos estruturados e orientar estimulação contínua em casa e na comunidade",
+              "explicacao": "Crianças com síndrome de Down têm desenvolvimento mais lento, mas a estimulação precoce melhora muito o resultado. O acompanhamento com instrumentos padronizados permite ajustar metas, e a família é peça central da estimulação.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             }
           ]
         }
@@ -4786,6 +4940,22 @@
               "explicacao": "Na pirâmide de Maslow, necessidades fisiológicas e de segurança estão na base. Sem elas resolvidas, ações de educação e autocuidado têm pouco efeito. Por isso alimentação, moradia e renda são prioridades em populações vulneráveis.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-u12-l1-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre conceitos de iniquidade racial em saúde:\nI. Pacto da branquitude é um acordo tácito entre brancos para manter privilégios, silenciando o debate racial.\nII. Racismo estrutural é a discriminação explícita de um indivíduo, como um profissional que recusa atender um paciente negro.\nIII. Racismo institucional ocorre quando regras e cultura de uma instituição geram desvantagens a grupos racializados, mesmo sem intenção.\nQuais estão corretas?",
+              "opcoes": [
+                "I, II e III",
+                "I e III, apenas",
+                "II e III, apenas",
+                "I, apenas",
+                "III, apenas"
+              ],
+              "resposta": "I e III, apenas",
+              "explicacao": "Racismo estrutural é o que está na própria organização da sociedade, na economia, na política e na cultura, e não um ato individual. A recusa de atendimento descrita é racismo individual. O racismo institucional explica, por exemplo, a pior assistência pré-natal a mulheres negras.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         },
@@ -5437,11 +5607,19 @@
             },
             {
               "id": "prev-u14-l1-q3",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A cloração da água reduz doenças de transmissão hídrica.",
-              "resposta": true,
-              "explicacao": "Medida simples.",
-              "revisado": false
+              "tipo": "caso_clinico",
+              "caso": "Numa visita domiciliar na periferia, uma mãe e seus filhos de 8 anos e 1 ano têm há 6 meses diarreia explosiva, aquosa, fétida, com restos de alimentos e distensão, que piora com leite, sem febre.",
+              "enunciado": "Considerando a giardíase como hipótese principal, que informação é importante obter na visita?",
+              "opcoes": [
+                "Consumo de glúten",
+                "Se há água encanada na casa",
+                "Se viram vermes nas fezes",
+                "Alergias alimentares na família"
+              ],
+              "resposta": "Se há água encanada na casa",
+              "explicacao": "A giardíase é transmitida por água e alimentos contaminados com cistos, e a falta de água tratada é o principal fator de risco. Ela causa diarreia por má absorção e intolerância à lactose. A solução passa pelo saneamento, além do tratamento da família.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "prev-u14-l1-q4",
@@ -6024,28 +6202,19 @@
             },
             {
               "id": "prev-d1-l3-q2",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada medida ao cálculo.",
-              "pares": [
-                {
-                  "esquerda": "Risco relativo",
-                  "direita": "Risco nos expostos dividido pelo risco nos não expostos"
-                },
-                {
-                  "esquerda": "Risco atribuível",
-                  "direita": "Risco nos expostos menos o risco nos não expostos"
-                },
-                {
-                  "esquerda": "Razão de chances",
-                  "direita": "Chance de exposição em casos sobre a chance em controles"
-                },
-                {
-                  "esquerda": "Número necessário para tratar",
-                  "direita": "Um dividido pela redução absoluta do risco"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Numa coorte de 5 anos, 60 de 400 fumantes e 20 de 800 não fumantes tiveram DPOC. Qual é o risco relativo?",
+              "opcoes": [
+                "0,5",
+                "1,5",
+                "3,0",
+                "6,0",
+                "Nenhuma"
               ],
-              "explicacao": "A razão de chances é a medida típica do estudo de caso-controle.",
-              "revisado": false
+              "resposta": "6,0",
+              "explicacao": "Risco nos fumantes: 60/400 = 15%. Risco nos não fumantes: 20/800 = 2,5%. Risco relativo = 15/2,5 = 6, ou seja, fumantes tiveram 6 vezes mais DPOC.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d1-l3-q3",
@@ -6267,6 +6436,23 @@
               "explicacao": "O estudo transversal mede exposição e doença ao mesmo tempo e estima prevalência. Por isso não estabelece qual veio antes, o que limita conclusões sobre causa. Coorte e ensaio clínico acompanham as pessoas ao longo do tempo.",
               "revisado": false,
               "fonte": "IAMSPE 2025"
+            },
+            {
+              "id": "prev-d2-l1-n1",
+              "tipo": "caso_clinico",
+              "caso": "Pesquisadores pegaram 500 pacientes com esclerose múltipla e 1.000 pacientes da mesma região, sexo e idade com outras doenças neurológicas, e compararam anticorpos contra Epstein-Barr em amostras guardadas de 5 anos antes.",
+              "enunciado": "Qual é o tipo de estudo?",
+              "opcoes": [
+                "Ecológico",
+                "Transversal",
+                "Ensaio clínico",
+                "Coorte",
+                "Caso-controle"
+              ],
+              "resposta": "Caso-controle",
+              "explicacao": "Partir de quem tem a doença (casos) e de quem não tem (controles) e olhar para trás em busca da exposição define o caso-controle. O fato de as amostras serem antigas não o torna coorte, pois os grupos foram formados pelo desfecho.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         },
@@ -6787,18 +6973,19 @@
           "questoes": [
             {
               "id": "prev-d3-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Criança de 2 meses vai tomar as vacinas do calendário.",
-              "enunciado": "Quais vacinas recebe aos 2 meses?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os marcos históricos da vacinação no Brasil, o que é correto?",
               "opcoes": [
-                "Pentavalente, VIP, pneumocócica e rotavírus",
-                "BCG e hepatite B",
-                "Febre amarela",
-                "Tríplice viral e febre amarela no mesmo dia"
+                "A vacina de febre amarela era obrigatória para crianças desde 1837",
+                "Uma lei de 1944 de Oswaldo Cruz obrigava a vacina de varíola",
+                "Em 1961 foi feita a primeira campanha de vacinação contra a poliomielite",
+                "Em 1973 foi criada a caderneta de vacinação",
+                "O PNI foi criado em 1977"
               ],
-              "resposta": "Pentavalente, VIP, pneumocócica e rotavírus",
-              "explicacao": "A BCG e a hepatite B são dadas ao nascer.",
-              "revisado": false
+              "resposta": "Em 1961 foi feita a primeira campanha de vacinação contra a poliomielite",
+              "explicacao": "A primeira campanha contra a pólio, com vacina oral, ocorreu em 1961. O PNI foi criado em 1973. A obrigatoriedade da vacina contra varíola, defendida por Oswaldo Cruz, levou à Revolta da Vacina, em 1904.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d3-l3-q2",
@@ -7247,17 +7434,19 @@
             {
               "id": "prev-d4-l3-q6",
               "tipo": "caso_clinico",
-              "caso": "Médico preenche a declaração de óbito de paciente que morreu de pneumonia após AVC.",
-              "enunciado": "Qual é a causa básica?",
+              "caso": "Homem de 88 anos com câncer de próstata recebeu proposta de prostatectomia radical. O médico explicou riscos, benefícios e alternativas em linguagem simples, e ele, após conversar com a família, recusou a cirurgia.",
+              "enunciado": "Qual princípio bioético fundamenta respeitar essa decisão?",
               "opcoes": [
-                "AVC",
-                "Pneumonia",
-                "Parada cardíaca",
-                "Insuficiência respiratória"
+                "Justiça",
+                "Beneficência",
+                "Autonomia",
+                "Não maleficência",
+                "Paternalismo"
               ],
-              "resposta": "AVC",
-              "explicacao": "A causa básica é a doença que iniciou a cadeia de eventos.",
-              "revisado": false
+              "resposta": "Autonomia",
+              "explicacao": "Autonomia é o direito da pessoa capaz e bem informada de decidir sobre o próprio corpo, inclusive recusar tratamento. Para isso, a informação deve ser clara e completa. Paternalismo seria impor a decisão da equipe.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d4-l3-q7",
@@ -7337,40 +7526,48 @@
             {
               "id": "prev-d5-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Filho de 8 anos de paciente com tuberculose pulmonar está sem sintomas, com raio X normal e prova tuberculínica de 12 mm.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Pedreiro de 35 anos tem tosse produtiva há 4 semanas, febre à tarde, sudorese noturna e perda de 5 kg. Um colega teve tuberculose. A radiografia mostra cavitação no lobo superior direito.",
+              "enunciado": "Qual é a conduta prioritária para confirmar o diagnóstico?",
               "opcoes": [
-                "Tratar a infecção latente",
-                "Tratar como tuberculose ativa",
-                "Repetir a prova em 1 ano",
-                "Vacinar com BCG de novo"
+                "PPD e esperar 72 horas",
+                "Colher escarro para baciloscopia e teste rápido molecular",
+                "Broncoscopia com lavado",
+                "Tratar e observar a resposta"
               ],
-              "resposta": "Tratar a infecção latente",
-              "explicacao": "Contato com teste positivo, sem doença ativa, tem indicação de tratar a infecção latente.",
-              "revisado": false
+              "resposta": "Colher escarro para baciloscopia e teste rápido molecular",
+              "explicacao": "O teste rápido molecular (TRM-TB) é o exame preferido, pois detecta o bacilo em cerca de 2 horas e mostra resistência à rifampicina. A baciloscopia segue útil e é usada no acompanhamento. O PPD não diagnostica doença ativa.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d5-l1-q4",
-              "tipo": "caso_clinico",
-              "caso": "Paciente em tratamento de tuberculose tem icterícia e enzimas do fígado 5 vezes acima do normal.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o esquema básico de tratamento da tuberculose pulmonar no adulto pelo Ministério da Saúde?",
               "opcoes": [
-                "Suspender e reintroduzir os remédios aos poucos",
-                "Manter tudo",
-                "Aumentar a dose",
-                "Trocar todo o esquema por antibiótico comum"
+                "RIP por 6 meses com etambutol nos 2 primeiros",
+                "RIPE por 2 meses, seguido de RI por 4 meses",
+                "RIPE por 4 meses e RI por 2 meses",
+                "IPE por 4 meses e IR por 2 meses"
               ],
-              "resposta": "Suspender e reintroduzir os remédios aos poucos",
-              "explicacao": "A pirazinamida e a isoniazida são as mais tóxicas ao fígado.",
-              "revisado": false
+              "resposta": "RIPE por 2 meses, seguido de RI por 4 meses",
+              "explicacao": "A fase intensiva usa rifampicina, isoniazida, pirazinamida e etambutol por 2 meses, e a de manutenção, rifampicina e isoniazida por mais 4. O tratamento é idealmente diretamente observado, para garantir adesão.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d5-l1-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na tuberculose pulmonar, só o paciente precisa ser acompanhado; os contatos não precisam de avaliação.",
-              "resposta": false,
-              "explicacao": "Falso. A tuberculose é de notificação compulsória, e todos os contatos devem ser avaliados.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é o critério de cura da tuberculose pulmonar com baciloscopia positiva no início?",
+              "opcoes": [
+                "Radiografia normal no 6º mês",
+                "Sem sintomas e sem cavitação no 6º mês",
+                "PPD negativo",
+                "Duas baciloscopias negativas, uma no acompanhamento e outra no fim do tratamento"
+              ],
+              "resposta": "Duas baciloscopias negativas, uma no acompanhamento e outra no fim do tratamento",
+              "explicacao": "Cura comprovada exige baciloscopias negativas durante o acompanhamento e ao final. Sequelas na radiografia são comuns e não indicam doença ativa. O PPD permanece positivo após a infecção.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d5-l1-q6",
@@ -7472,18 +7669,19 @@
             },
             {
               "id": "prev-d5-l2-q4",
-              "tipo": "caso_clinico",
-              "caso": "Paciente com dengue tem hematócrito subindo, plaquetas caindo e dor abdominal.",
-              "enunciado": "Qual é o grupo e a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na leishmaniose visceral, há hospedeiros vertebrados (humanos e cães) e um vetor invertebrado (flebotomíneo). Como se classifica essa zoonose pelo ciclo?",
               "opcoes": [
-                "Grupo C; internar e soro venoso",
-                "Grupo A; casa",
-                "Grupo B; observar",
-                "Grupo D; UTI direta sem nenhum soro antes"
+                "Zoonose direta",
+                "Ciclozoonose",
+                "Saprozoonose",
+                "Metazoonose",
+                "Anfixenose"
               ],
-              "resposta": "Grupo C; internar e soro venoso",
-              "explicacao": "O grupo D é o de choque.",
-              "revisado": false
+              "resposta": "Metazoonose",
+              "explicacao": "Metazoonose é a que precisa de um invertebrado para completar o ciclo do agente, como o flebotomíneo. Zoonose direta passa de um vertebrado a outro, e ciclozoonose exige mais de uma espécie de vertebrado. Saprozoonose depende de um reservatório inanimado, como o solo.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d5-l2-q5",
@@ -7609,11 +7807,19 @@
             },
             {
               "id": "prev-d5-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Homem picado por cobra tem pouca dor local, visão dupla, pálpebras caídas e urina escura: o quadro é típico de jararaca.",
-              "resposta": false,
-              "explicacao": "Falso. É típico de cascavel, cujo veneno causa paralisia e lesão muscular; a jararaca causa dor e edema local intensos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Como se chama a zoonose que circula de forma igual entre humanos e outros animais, como o estafilococo entre pessoas e gado leiteiro?",
+              "opcoes": [
+                "Antropozoonose",
+                "Zooantropozoonose",
+                "Metazoonose",
+                "Saprozoonose",
+                "Anfixenose"
+              ],
+              "resposta": "Anfixenose",
+              "explicacao": "Na anfixenose, o agente circula tanto em humanos quanto em animais, e ambos são hospedeiros. Antropozoonose é doença de animais que pode passar ao homem; zooantropozoonose, de humanos que passa a animais. Metazoonose precisa de um vetor invertebrado.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d5-l3-q6",
@@ -7972,41 +8178,51 @@
             },
             {
               "id": "prev-d6-l3-q4",
-              "tipo": "caso_clinico",
-              "caso": "Comunidade perto de mineradora tem crianças com tremores, alterações de comportamento e peixes contaminados.",
-              "enunciado": "Qual é o metal?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela abordagem de Saúde Única (One Health), qual é um pilar do problema global da resistência a antimicrobianos?",
               "opcoes": [
-                "Mercúrio",
-                "Chumbo",
-                "Ferro",
-                "Zinco de baterias"
+                "Genes de resistência não passam entre espécies",
+                "O uso massivo de antibióticos ocorre só em humanos",
+                "Falta de estudos que integrem humanos, animais e ambiente",
+                "A menor mobilidade humana isolou os genes de resistência",
+                "A erradicação de doenças emergentes"
               ],
-              "resposta": "Mercúrio",
-              "explicacao": "O mercúrio se acumula nos peixes.",
-              "revisado": false
+              "resposta": "Falta de estudos que integrem humanos, animais e ambiente",
+              "explicacao": "Antibióticos são usados em humanos, na criação de animais e acabam no ambiente, e bactérias trocam genes de resistência entre si. Por isso, enfrentar a resistência exige ações integradas entre saúde humana, animal e ambiental.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d6-l3-q5",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A poluição do ar afeta só os pulmões, sem relação com infarto ou AVC.",
-              "resposta": false,
-              "explicacao": "Falso. Ela se liga a doenças respiratórias e cardiovasculares; as partículas finas são as mais perigosas.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais fatores favorecem a emergência de zoonoses, alterando vetores e contato com reservatórios?",
+              "opcoes": [
+                "Programas de saúde veterinária e melhor higiene",
+                "Menos circulação de pessoas e produtos",
+                "Crescimento das populações humanas e animais, modificação dos ecossistemas e mudanças climáticas",
+                "Mudança do foco da medicina comparada",
+                "Menos antibióticos na produção animal e mais biodiversidade"
+              ],
+              "resposta": "Crescimento das populações humanas e animais, modificação dos ecossistemas e mudanças climáticas",
+              "explicacao": "Desmatamento e urbanização aproximam pessoas de animais silvestres e reservatórios, e o clima altera a área dos vetores. Foi assim com várias doenças emergentes, como febre amarela silvestre e arboviroses. Mais biodiversidade tende a diluir a transmissão.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d6-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Um país tem aumento de obesidade, diabetes e hipertensão com mudanças de alimentação.",
-              "enunciado": "Qual é o fenômeno?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o modelo de determinantes sociais de Dahlgren e Whitehead:\nI. No centro estão idade, sexo e fatores hereditários.\nII. Na terceira camada estão as redes sociais e comunitárias.\nIII. Na quarta, as condições de vida e trabalho.\nIV. Na mais externa, os macrodeterminantes socioeconômicos, culturais e ambientais. Quantas estão corretas?",
               "opcoes": [
-                "Transição nutricional",
-                "Transição demográfica",
-                "Desnutrição",
-                "Fome"
+                "Todas",
+                "Apenas três",
+                "Apenas duas",
+                "Apenas uma",
+                "Nenhuma"
               ],
-              "resposta": "Transição nutricional",
-              "explicacao": "O consumo de ultraprocessados é um fator importante.",
-              "revisado": false
+              "resposta": "Todas",
+              "explicacao": "Do centro para fora: fatores individuais não modificáveis, estilo de vida (segunda camada), redes sociais e comunitárias, condições de vida e trabalho (alimentação, educação, saneamento, serviços) e, por fim, os macrodeterminantes.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d6-l3-q7",
@@ -8385,18 +8601,19 @@
             },
             {
               "id": "prev-d7-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Revisão sistemática só com estudos observacionais e resultados inconsistentes.",
-              "enunciado": "Qual é a certeza pelo GRADE?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No acrônimo PICO, usado para estruturar perguntas de pesquisa, o que significa a letra O?",
               "opcoes": [
-                "Baixa ou muito baixa",
-                "Alta certeza",
-                "Moderada sempre",
-                "Alta, porque há muitos estudos"
+                "Observação",
+                "Organização",
+                "Outcome (desfecho)",
+                "Originalidade",
+                "Nenhuma"
               ],
-              "resposta": "Baixa ou muito baixa",
-              "explicacao": "Observacionais começam baixos.",
-              "revisado": false
+              "resposta": "Outcome (desfecho)",
+              "explicacao": "PICO é População (ou paciente), Intervenção, Comparação e Outcome, o desfecho de interesse. Ele ajuda a montar a busca de evidências e a pergunta de revisões sistemáticas.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d7-l3-q7",
@@ -8899,18 +9116,19 @@
             },
             {
               "id": "prev-d9-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Gestante de 25 semanas sem dTpa.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pelo calendário do Programa Nacional de Imunizações, quais vacinas o bebê recebe ao nascer?",
               "opcoes": [
-                "Aplicar dTpa",
-                "Aguardar o parto",
-                "Só dT",
-                "Aplicar só depois do parto"
+                "BCG e hepatite B",
+                "Hepatite B e VIP",
+                "BCG, hepatite B e rotavírus",
+                "Hepatite A, BCG e tríplice viral",
+                "Pneumocócica 10 e BCG"
               ],
-              "resposta": "Aplicar dTpa",
-              "explicacao": "Protege o bebê da coqueluche.",
-              "revisado": false
+              "resposta": "BCG e hepatite B",
+              "explicacao": "Ao nascer, aplicam-se BCG e a primeira dose da hepatite B, de preferência nas primeiras 12 a 24 horas, para evitar a transmissão vertical. VIP, rotavírus e pneumocócica começam aos 2 meses.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d9-l1-q7",
@@ -8960,17 +9178,18 @@
             {
               "id": "prev-d9-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Criança em quimioterapia precisa de tríplice viral.",
-              "enunciado": "Qual é a conduta?",
+              "caso": "Menina de 14 anos da zona rural só recebeu o esquema básico de vacinas, porque tem urticária ao comer ovo.",
+              "enunciado": "Qual vacina precisa de cuidado especial na aplicação?",
               "opcoes": [
-                "Adiar até recuperar a imunidade",
-                "Aplicar já",
-                "Dose dupla",
-                "Aplicar já, em dose dupla, durante a quimioterapia"
+                "Coronavac",
+                "HPV",
+                "Influenza",
+                "dT (dupla adulto)"
               ],
-              "resposta": "Adiar até recuperar a imunidade",
-              "explicacao": "Vacina viva.",
-              "revisado": false
+              "resposta": "Influenza",
+              "explicacao": "A vacina da gripe é produzida em ovos e pode ter traços de proteína do ovo. Quem tem alergia ao ovo pode ser vacinado, mas em serviço preparado para atender reação grave e com observação após a dose. Alergia ao ovo não contraindica a vacina.",
+              "revisado": false,
+              "fonte": "SUS-BA 2024"
             },
             {
               "id": "prev-d9-l2-q3",
@@ -9553,17 +9772,18 @@
             {
               "id": "prev-d10-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Surto de caxumba em universidade.",
-              "enunciado": "Qual é a ação?",
+              "caso": "Bebê de 10 meses tem febre, vômitos, prostração, petéquias e fontanela abaulada, com suspeita de doença meningocócica.",
+              "enunciado": "Qual é a conduta para os contatos íntimos?",
               "opcoes": [
-                "Atualizar tríplice viral e isolar",
-                "Antibiótico",
-                "Fechar o país",
-                "Antibiótico para todos os alunos e fechar a universidade"
+                "Quimioprofilaxia com rifampicina",
+                "Vacinar os contatos",
+                "Nenhuma profilaxia",
+                "Imunoglobulina para a família"
               ],
-              "resposta": "Atualizar tríplice viral e isolar",
-              "explicacao": "Vigilância.",
-              "revisado": false
+              "resposta": "Quimioprofilaxia com rifampicina",
+              "explicacao": "Na doença meningocócica, os contatos próximos (que moram junto, creche, quem teve contato com secreções) recebem rifampicina por 2 dias, de preferência nas primeiras 48 horas. A vacina é usada para controlar surtos, mas não substitui a quimioprofilaxia.",
+              "revisado": false,
+              "fonte": "SUS-BA 2025"
             },
             {
               "id": "prev-d10-l3-q6",
@@ -9697,26 +9917,35 @@
             },
             {
               "id": "prev-d11-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Município quer descentralizar ações para as unidades.",
-              "enunciado": "Qual princípio organizativo?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela Lei 8.080, para que serve o uso da epidemiologia, um dos princípios do SUS?",
               "opcoes": [
-                "Descentralização",
-                "Universalidade",
-                "Equidade",
-                "Integralidade do cuidado"
+                "Regionalizar e hierarquizar a rede",
+                "Evitar duplicidade de serviços",
+                "Conjugar recursos das três esferas",
+                "Divulgar o potencial dos serviços aos usuários",
+                "Estabelecer prioridades, alocar recursos e orientar programas"
               ],
-              "resposta": "Descentralização",
-              "explicacao": "Comando único em cada esfera.",
-              "revisado": false
+              "resposta": "Estabelecer prioridades, alocar recursos e orientar programas",
+              "explicacao": "A lei determina usar a epidemiologia para definir prioridades, distribuir recursos e orientar programas. Assim, as ações seguem as necessidades de saúde da população, e não só a demanda espontânea.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             },
             {
               "id": "prev-d11-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A RENAME é a lista de doenças de notificação compulsória.",
-              "resposta": false,
-              "explicacao": "Falso. A RENAME é a relação nacional de medicamentos essenciais.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os conselhos de saúde, o que é correto?",
+              "opcoes": [
+                "Têm um terço de usuários, um terço de trabalhadores e um terço de governo",
+                "São apenas consultivos",
+                "Os usuários são indicados pelo gestor",
+                "Num conselho de 24 membros, há 12 usuários, 6 trabalhadores de saúde e 6 representantes de governo e prestadores",
+                "As conferências servem para eleger os conselheiros"
+              ],
+              "resposta": "Num conselho de 24 membros, há 12 usuários, 6 trabalhadores de saúde e 6 representantes de governo e prestadores",
+              "explicacao": "A paridade significa que os usuários são metade do conselho, e a outra metade se divide entre trabalhadores (25%) e gestores e prestadores (25%). Os conselhos são deliberativos e permanentes, e os usuários são escolhidos por suas entidades.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d11-l1-q8",
@@ -9786,28 +10015,19 @@
             },
             {
               "id": "prev-d11-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada bloco ou programa ao objetivo.",
-              "pares": [
-                {
-                  "esquerda": "Atenção primária",
-                  "direita": "Financiar equipes e unidades"
-                },
-                {
-                  "esquerda": "Média e alta complexidade",
-                  "direita": "Hospitais e especialidades"
-                },
-                {
-                  "esquerda": "Vigilância em saúde",
-                  "direita": "Ações de controle de doenças"
-                },
-                {
-                  "esquerda": "Assistência farmacêutica",
-                  "direita": "Medicamentos"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre o novo financiamento federal da atenção primária (Portaria 3.493 de 2024), em relação ao Previne Brasil, o que é correto?",
+              "opcoes": [
+                "Manteve a mesma lógica de captação e indicadores",
+                "Criou o componente de vínculo e acompanhamento territorial, que usa as pessoas cadastradas e ponderação pela vulnerabilidade",
+                "Voltou a um valor fixo só pela população do IBGE",
+                "Extinguiu o componente de qualidade",
+                "Nenhuma"
               ],
-              "explicacao": "Financiamento por áreas.",
-              "revisado": false
+              "resposta": "Criou o componente de vínculo e acompanhamento territorial, que usa as pessoas cadastradas e ponderação pela vulnerabilidade",
+              "explicacao": "O novo modelo tem um componente fixo por equipe, um de vínculo e acompanhamento territorial (cadastro com peso para vulnerabilidade), um de qualidade com indicadores e componentes para ações específicas. Ele mistura base fixa, vínculo e desempenho.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d11-l2-q5",
@@ -10404,48 +10624,50 @@
           "questoes": [
             {
               "id": "prev-d13-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Trabalhador de posto de gasolina com anemia aplástica.",
-              "enunciado": "Qual é a exposição suspeita?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais destes estão na Lista Nacional de Notificação Compulsória: perda auditiva relacionada ao trabalho, síndrome de burnout, distúrbios osteomusculares relacionados ao trabalho e distúrbio de voz relacionado ao trabalho?",
               "opcoes": [
-                "Benzeno",
-                "Chumbo",
-                "Sílica",
-                "Ruído"
+                "Todos",
+                "Apenas três",
+                "Apenas dois",
+                "Apenas um",
+                "Nenhum"
               ],
-              "resposta": "Benzeno",
-              "explicacao": "Notificar.",
-              "revisado": false
+              "resposta": "Todos",
+              "explicacao": "A lista nacional inclui os agravos relacionados ao trabalho, como PAIR, LER/DORT, transtornos mentais relacionados ao trabalho (inclusive burnout), distúrbio de voz, pneumoconioses e câncer relacionado ao trabalho. A notificação permite conhecer e prevenir esses agravos.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d13-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Trabalhador de bateria com dor abdominal, anemia e linha azul na gengiva.",
-              "enunciado": "Qual é a hipótese?",
+              "caso": "Atendente de call center de 32 anos, há 5 anos em jornada longa e com metas, tem dor no pescoço e ombros, peso nos antebraços e formigamento nas mãos, além de tensão emocional e sono ruim. Teve afastamentos curtos com piora ao voltar.",
+              "enunciado": "Qual é a conduta inicial a enfatizar na UBS?",
               "opcoes": [
-                "Intoxicação por chumbo",
-                "Benzeno",
-                "Mercúrio",
-                "Silicose por exposição a sílica"
+                "Imobilizar por tempo prolongado",
+                "Avaliação funcional e controle da dor com orientação ativa",
+                "Ressonância e eletroneuromiografia",
+                "Encaminhar ao ortopedista e ao médico do trabalho"
               ],
-              "resposta": "Intoxicação por chumbo",
-              "explicacao": "Saturnismo.",
-              "revisado": false
+              "resposta": "Avaliação funcional e controle da dor com orientação ativa",
+              "explicacao": "É LER/DORT, ligada a tarefas repetitivas e organização do trabalho. A abordagem inicial é avaliar a função, controlar a dor, orientar exercícios e pausas e manter a pessoa ativa. Imobilização longa piora o quadro, e exames não mudam a conduta inicial.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d13-l1-q3",
-              "tipo": "caso_clinico",
-              "caso": "Metalúrgico há 15 anos em ambiente barulhento faz audiometria.",
-              "enunciado": "Qual achado é típico da perda por ruído?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Como o médico estabelece o nexo causal entre as queixas osteomusculares de um atendente de call center e o trabalho?",
               "opcoes": [
-                "Entalhe em 4 kHz bilateral",
-                "Perda em graves",
-                "Perda súbita de um ouvido",
-                "Audição totalmente normal nos dois lados"
+                "Considerando a história ocupacional, a ergonomia do posto e o impacto na função",
+                "Só pelo laudo do perito",
+                "Só pela percepção do paciente",
+                "Priorizando o exame musculoesquelético"
               ],
-              "resposta": "Entalhe em 4 kHz bilateral",
-              "explicacao": "A perda induzida por ruído é bilateral e simétrica, com entalhe em 4 kHz.",
-              "revisado": false
+              "resposta": "Considerando a história ocupacional, a ergonomia do posto e o impacto na função",
+              "explicacao": "O nexo é uma conclusão clínico-epidemiológica: junta a história de trabalho, as exigências do posto (repetição, postura, metas) e a relação temporal com os sintomas. Qualquer médico pode estabelecer o nexo e deve notificar o agravo.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d13-l1-q4",
@@ -10550,18 +10772,19 @@
             },
             {
               "id": "prev-d13-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Empresa se recusa a emitir CAT.",
-              "enunciado": "Quem pode emitir?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um médico se furou com agulha contaminada num procedimento. Sobre isso:\nI. É acidente de trabalho típico.\nII. Exige notificação compulsória como exposição a material biológico, além da CAT.\nIII. O hospital deve emitir a CAT até o primeiro dia útil seguinte.\nIV. Se o hospital não emitir, o próprio acidentado, dependentes, sindicato, médico assistente ou autoridade podem emitir. Quantas estão corretas?",
               "opcoes": [
-                "Trabalhador, sindicato ou médico",
-                "Ninguém",
-                "Só a empresa",
-                "Só o juiz do trabalho, após processo"
+                "Todas",
+                "Apenas três",
+                "Apenas duas",
+                "Apenas uma",
+                "Nenhuma"
               ],
-              "resposta": "Trabalhador, sindicato ou médico",
-              "explicacao": "Garante direitos.",
-              "revisado": false
+              "resposta": "Todas",
+              "explicacao": "A exposição a material biológico é notificada no SINAN, e a CAT vai para a Previdência. O empregador tem até o primeiro dia útil para emitir a CAT, mas, se não o fizer, outros podem emitir a qualquer tempo. O profissional deve ser avaliado logo para profilaxia de HIV e hepatite B.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             },
             {
               "id": "prev-d13-l2-q3",
@@ -10664,18 +10887,18 @@
           "questoes": [
             {
               "id": "prev-d13-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Trabalhador CLT precisa de 30 dias de afastamento por doença comum.",
-              "enunciado": "Quem paga?",
+              "tipo": "multipla_escolha",
+              "enunciado": "No caso de um trabalhador com LER/DORT e sofrimento mental ligado a metas, qual é a estratégia mais efetiva em relação ao trabalho?",
               "opcoes": [
-                "Empresa 15 dias e INSS a partir do 16º",
-                "Só a empresa",
-                "Só o INSS",
-                "Só o INSS, desde o primeiro dia de afastamento do trabalho"
+                "Afastamento prolongado até sumirem os sintomas",
+                "Suspender o atendimento telefônico",
+                "Retorno gradual, com adaptações no trabalho e apoio em saúde mental",
+                "Fisioterapia intensiva e reavaliar em 3 meses"
               ],
-              "resposta": "Empresa 15 dias e INSS a partir do 16º",
-              "explicacao": "Regra da Previdência.",
-              "revisado": false
+              "resposta": "Retorno gradual, com adaptações no trabalho e apoio em saúde mental",
+              "explicacao": "O retorno progressivo com mudanças no posto e na organização (pausas, metas) e apoio psicológico tem melhores resultados que o afastamento longo, que favorece cronificação. É preciso agir sobre as causas no ambiente de trabalho.",
+              "revisado": false,
+              "fonte": "SUS-BA 2026"
             },
             {
               "id": "prev-d13-l3-q2",
@@ -10989,6 +11212,23 @@
               "explicacao": "O ultrassom de tireoide em assintomáticos acha muitos nódulos pequenos e leva a punções e cirurgias desnecessárias, o sobrediagnóstico. Prevenção quaternária é evitar esse dano, explicando com empatia. Encaminhar sem indicação apenas transfere o problema.",
               "revisado": false,
               "fonte": "Sírio-Libanês 2026"
+            },
+            {
+              "id": "prev-d14-l1-n5",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 52 anos, sem sintomas e sem história familiar, pede todos os exames de check-up, incluindo PSA, por medo de câncer de próstata.",
+              "enunciado": "Qual competência está envolvida em analisar esse pedido para evitar intervenções desnecessárias?",
+              "opcoes": [
+                "Prevenção de fatores de risco cardiovascular",
+                "Analisar o sobrediagnóstico e o sobretratamento que o rastreamento pode causar",
+                "Exame musculoesquelético",
+                "Busca ativa de contatos em surtos",
+                "Fluxos da vigilância de doenças infecciosas"
+              ],
+              "resposta": "Analisar o sobrediagnóstico e o sobretratamento que o rastreamento pode causar",
+              "explicacao": "O PSA detecta muitos cânceres que nunca causariam sintomas, levando a biópsias e cirurgias com incontinência e impotência. Por isso, o Ministério da Saúde não recomenda rastreamento populacional, e a decisão deve ser compartilhada. É um exemplo de prevenção quaternária.",
+              "revisado": false,
+              "fonte": "IAMSPE 2026"
             }
           ]
         },
@@ -11254,18 +11494,19 @@
             },
             {
               "id": "prev-d14-l3-q8",
-              "tipo": "caso_clinico",
-              "caso": "Equipe quer avaliar se o cuidado aos hipertensos melhora.",
-              "enunciado": "Qual indicador de resultado usar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a pirâmide de riscos da Kaiser Permanente para condições crônicas, o que é correto?",
               "opcoes": [
-                "Hipertensos com pressão controlada",
-                "Número de consultas",
-                "Número de receitas",
-                "Número de consultas e de receitas emitidas por mês"
+                "90% das pessoas estão no nível 1, com condição simples",
+                "40% estão no nível 2, com condição complexa",
+                "De 1% a 5% estão no nível 3, com condição altamente complexa",
+                "No nível 1, o cuidado é feito sobretudo pela equipe com apoio de especialistas",
+                "O nível 4 tem os casos mais complexos"
               ],
-              "resposta": "Hipertensos com pressão controlada",
-              "explicacao": "Resultado, não processo.",
-              "revisado": false
+              "resposta": "De 1% a 5% estão no nível 3, com condição altamente complexa",
+              "explicacao": "Cerca de 70% a 80% estão no nível 1 (autocuidado apoiado), 20% a 30% no nível 2 (gestão da condição) e 1% a 5% no nível 3 (gestão de caso). Quanto mais alto o nível, mais cuidado profissional e menos autocuidado.",
+              "revisado": false,
+              "fonte": "SES-PE 2026"
             }
           ]
         }
