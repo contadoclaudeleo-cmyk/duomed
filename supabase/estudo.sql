@@ -54,12 +54,26 @@ create table if not exists public.questoes_vistas (
   primary key (user_id, questao_id)
 );
 
+-- Acertos de cada sessão (para o servidor calcular o XP no fim)
+alter table public.sessoes_estudo add column if not exists acertos integer not null default 0;
+alter table public.sessoes_estudo add column if not exists casos_certos integer not null default 0;
+
+-- XP de cada pessoa por dia (horário de Brasília). É daqui que sai o ranking,
+-- então ninguém sobe no ranking mexendo no aparelho.
+create table if not exists public.xp_dias (
+  user_id uuid not null references auth.users (id) on delete cascade,
+  dia date not null,
+  xp integer not null default 0,
+  primary key (user_id, dia)
+);
+
 -- Ninguém lê nem escreve nessas tabelas direto: só pelas funções abaixo
+alter table public.xp_dias enable row level security;
 alter table public.questoes enable row level security;
 alter table public.vidas enable row level security;
 alter table public.sessoes_estudo enable row level security;
 alter table public.questoes_vistas enable row level security;
-revoke all on public.questoes, public.vidas, public.sessoes_estudo, public.questoes_vistas from anon, authenticated;
+revoke all on public.questoes, public.vidas, public.sessoes_estudo, public.questoes_vistas, public.xp_dias from anon, authenticated;
 
 -- ---------- Funções internas (o app não chama estas) ----------
 
@@ -355,7 +369,24 @@ begin
 
   v_certo := _corrigir(v_dados, p_resposta);
 
-  update sessoes_estudo set respondidas = respondidas || p_questao where id = p_sessao;
+  update sessoes_estudo
+  set respondidas = respondidas || p_questao,
+      acertos = acertos + case when v_certo then 1 else 0 end,
+      casos_certos = casos_certos + case when v_certo and v_dados ->> 'tipo' = 'caso_clinico' then 1 else 0 end
+  where id = p_sessao
+  returning * into s;
+
+  -- Última questão de uma lição ou revisão: o servidor dá o XP (as mesmas regras de src/lib/xp.ts:
+  -- 10 por terminar, +5 se não errou nenhuma, +2 por caso clínico certo). O teste de nível não dá XP.
+  if s.tipo in ('licao', 'revisao') and cardinality(s.respondidas) = cardinality(s.questoes) then
+    insert into xp_dias (user_id, dia, xp)
+    values (
+      v_user,
+      (now() at time zone 'America/Sao_Paulo')::date,
+      10 + case when s.acertos = cardinality(s.questoes) then 5 else 0 end + 2 * s.casos_certos
+    )
+    on conflict (user_id, dia) do update set xp = xp_dias.xp + excluded.xp;
+  end if;
   insert into questoes_vistas (user_id, questao_id) values (v_user, p_questao) on conflict do nothing;
 
   -- Errou numa lição e não é Plus: perde 1 vida (se estava cheio, o relógio da recarga começa agora)
@@ -444,6 +475,59 @@ grant execute on function public.responder(uuid, text, jsonb) to authenticated;
 grant execute on function public.gabarito_licao(text) to authenticated;
 grant execute on function public.admin_questao(text) to authenticated;
 grant execute on function public.resgatar_vidas() to authenticated;
+
+-- ---------- Ranking semanal (substitui o de ranking.sql) ----------
+-- O XP vem da tabela xp_dias, que só o servidor preenche. Do progresso sai só o nome:
+-- primeiro nome + inicial do sobrenome. Nenhum outro dado sai.
+create or replace function public.ranking_semanal()
+returns table (posicao bigint, nome text, xp integer, eh_voce boolean, participantes bigint)
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  with semana as (
+    -- Segunda-feira da semana atual, no horário de Brasília
+    select date_trunc('week', now() at time zone 'America/Sao_Paulo')::date as inicio
+  ),
+  pontos as (
+    select
+      p.user_id,
+      coalesce(nullif(regexp_replace(trim(p.dados -> 'usuario' ->> 'nome'), '\s+', ' ', 'g'), ''), 'Estudante') as nome_completo,
+      coalesce((
+        select sum(x.xp)::integer from xp_dias x, semana s
+        where x.user_id = p.user_id and x.dia between s.inicio and s.inicio + 6
+      ), 0) as xp
+    from progresso p
+    where jsonb_typeof(p.dados -> 'usuario') = 'object'
+  ),
+  ordenado as (
+    select
+      user_id,
+      nome_completo,
+      xp,
+      rank() over (order by xp desc) as posicao,
+      count(*) filter (where xp > 0) over () as participantes
+    from pontos
+  )
+  select
+    o.posicao,
+    -- "Maria Clara Souza" vira "Maria S." (e no máximo 40 letras, para ninguém colocar um texto enorme)
+    left(split_part(o.nome_completo, ' ', 1), 40)
+      || case
+           when position(' ' in o.nome_completo) > 0
+           then ' ' || left(split_part(o.nome_completo, ' ', array_length(string_to_array(o.nome_completo, ' '), 1)), 1) || '.'
+           else ''
+         end as nome,
+    o.xp,
+    o.user_id = auth.uid() as eh_voce,
+    o.participantes
+  from ordenado o
+  where (o.posicao <= 50 and o.xp > 0) or o.user_id = auth.uid()
+  order by o.posicao, o.nome_completo;
+$$;
+revoke all on function public.ranking_semanal() from public, anon;
+grant execute on function public.ranking_semanal() to authenticated;
 
 -- Limpeza: sessões com mais de 7 dias não servem mais
 delete from public.sessoes_estudo where criada_em < now() - interval '7 days';

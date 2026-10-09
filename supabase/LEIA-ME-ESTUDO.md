@@ -1,6 +1,6 @@
-# Passo a passo: proteção das questões, das vidas e do Plus
+# Passo a passo: proteção das questões, das vidas, do Plus e do ranking
 
-Nesta versão, as questões, a correção, as vidas e o Plus moram no **servidor (Supabase)**.
+Nesta versão, as questões, a correção, as vidas, o Plus e o XP do ranking moram no **servidor (Supabase)**.
 O site só recebe a questão **sem a resposta**, e quem corrige e tira a vida é o servidor.
 Mexer no celular ou no navegador não dá vidas, não dá Plus e não mostra respostas.
 
@@ -28,8 +28,9 @@ Rode, **na ordem**, os arquivos da pasta `supabase/importar/`:
 
 ## 3. Trazer o que cada pessoa já tinha feito (só uma vez)
 
-Rode `supabase/estudo-migracao.sql`. Ele copia para o servidor as vidas de cada pessoa
-e as questões que ela já respondeu (para a revisão e o gabarito continuarem funcionando).
+Rode `supabase/estudo-migracao.sql`. Ele copia para o servidor as vidas de cada pessoa,
+as questões que ela já respondeu (para a revisão e o gabarito continuarem funcionando)
+e o XP desta semana (para o ranking não zerar no meio da semana).
 
 ## 4. Conferir a segurança das tabelas
 
