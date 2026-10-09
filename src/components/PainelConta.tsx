@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { criarConta, entrarComEmail, entrarComGoogle, useConta } from '../lib/nuvem'
 import { Botao } from './Botao'
 import { arquivoPublico } from '../lib/caminho'
+import { Captcha, CHAVE_CAPTCHA, type ControleCaptcha } from './Captcha'
 
 type Aba = 'entrar' | 'criar'
 
@@ -15,6 +16,9 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
   const [aviso, setAviso] = useState<string | null>(null)
   const erroGoogle = useConta((s) => s.erro)
   const googleAtivo = useConta((s) => s.googleAtivo)
+  // Resposta do CAPTCHA (quando ele está ligado). Cada resposta vale para uma tentativa só.
+  const [captcha, setCaptcha] = useState<string | null>(null)
+  const controleCaptcha = useRef<ControleCaptcha>(null)
 
   async function tentar(acao: () => Promise<unknown>) {
     setErro(null)
@@ -26,13 +30,19 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
       setErro(e instanceof Error ? e.message : 'Não deu certo. Tente de novo.')
     } finally {
       setEnviando(false)
+      controleCaptcha.current?.reiniciar()
     }
   }
 
   function enviarFormulario() {
-    if (aba === 'entrar') return tentar(() => entrarComEmail(email, senha))
+    if (CHAVE_CAPTCHA && !captcha) {
+      setErro('Confirme que você não é um robô.')
+      return
+    }
+    const token = captcha ?? undefined
+    if (aba === 'entrar') return tentar(() => entrarComEmail(email, senha, token))
     return tentar(async () => {
-      const entrou = await criarConta(email, senha)
+      const entrou = await criarConta(email, senha, token)
       if (!entrou) setAviso('Enviamos um link para o seu e-mail. Abra o link para ativar a conta.')
     })
   }
@@ -115,6 +125,7 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
           aria-label="Senha"
           className="w-full rounded-2xl border-2 border-borda bg-superficie px-4 py-3.5 font-semibold outline-none transition-colors placeholder:text-apagado-texto focus:border-agua"
         />
+        <Captcha ref={controleCaptcha} aoResolver={setCaptcha} />
         {(erro ?? erroGoogle) && (
           <p role="alert" className="text-sm font-bold text-erro-texto">
             {erro ?? erroGoogle}

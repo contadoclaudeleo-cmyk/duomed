@@ -1,5 +1,5 @@
 // ============================================================
-// Conteúdo (o que fica nos arquivos JSON de src/data/materias)
+// Conteúdo (conteudo/residencia/*.json; no app só entra a estrutura, ver src/data)
 // ============================================================
 
 export type TipoQuestao =
@@ -78,7 +78,8 @@ export type Questao =
 export interface Licao {
   id: string
   titulo: string
-  questoes: Questao[]
+  /** Ids das questões, na ordem. As questões completas vêm do servidor (lib/estudo.ts). */
+  questoes: string[]
 }
 
 /** Fácil (conceitos) ou Difícil (questões no estilo das provas) */

@@ -1,13 +1,13 @@
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
-import { supabase } from './supabase'
 import { LINKS_KIWIFY, type IdPlano } from './planos'
 
 // ============================================================
 // DuoMed Plus (vidas infinitas) e pacotes de vidas comprados.
 // Quem decide se a pessoa é Plus é o servidor (tabela "assinaturas",
-// preenchida pelo aviso de pagamento da Kiwify). O app só lê e guarda
-// uma cópia no aparelho para funcionar sem internet.
+// preenchida pelo aviso de pagamento da Kiwify). O app só guarda uma cópia
+// para MOSTRAR na tela (lib/estudo.ts, estadoVidas). Mudar essa cópia não
+// adianta: quem libera lição e tira vida é o servidor.
 // ============================================================
 
 interface EstadoPlus {
@@ -25,29 +25,10 @@ export const usePlus = create<EstadoPlus>()(
   }),
 )
 
-/** true se a pessoa é Plus agora */
+/** true se a pessoa é Plus agora (só para a tela; quem decide é o servidor) */
 export const ehPlus = (agora = Date.now()) => {
   const ate = usePlus.getState().validoAte
   return ate !== null && ate > agora
-}
-
-/** Busca na nuvem se a pessoa é Plus */
-export async function carregarPlus() {
-  const { data, error } = await supabase.from('assinaturas').select('valido_ate').maybeSingle()
-  if (error) return
-  usePlus.setState({ validoAte: data?.valido_ate ? Date.parse(data.valido_ate) : null })
-}
-
-/**
- * Pega as vidas compradas que ainda não chegaram no app (e zera o saldo na nuvem).
- * Devolve quantas são; quem chama soma nas vidas do jogo.
- */
-export async function resgatarVidas(): Promise<number> {
-  const { data, error } = await supabase.rpc('resgatar_vidas')
-  if (error) return 0
-  const quantas = Number(data ?? 0)
-  if (quantas > 0) usePlus.setState({ vidasRecebidas: quantas })
-  return quantas
 }
 
 /** Ao sair da conta, o Plus sai junto */

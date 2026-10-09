@@ -2,32 +2,20 @@ import type {
   Licao,
   Materia,
   MateriaJson,
-  ModoEstudo,
   NivelDificuldade,
-  Questao,
   Unidade,
 } from "../types";
+// Gerado por scripts/gerar-estrutura.mjs a partir de conteudo/residencia.
+// Só tem matérias, unidades, lições e os ids das questões: o enunciado, a
+// resposta e a explicação ficam no Supabase (ver lib/estudo.ts).
+import estrutura from "./estrutura.json";
 
-// Todo arquivo .json dentro de src/data/residencia entra no app automaticamente.
-// O app é só para a prova de residência (a parte de graduação saiu em out/2026).
-// Quando o conteúdo for para o Supabase, só este arquivo precisa mudar.
-const residencia = import.meta.glob<MateriaJson>("./residencia/*.json", {
-  eager: true,
-  import: "default",
-});
-
-const comModo = (
-  arquivos: Record<string, MateriaJson>,
-  modo: ModoEstudo,
-): Materia[] =>
-  Object.values(arquivos)
-    .map((m) => ({ ...m, modo }))
-    .sort((a, b) => a.ordem - b.ordem);
-
-export const MATERIAS: Materia[] = comModo(residencia, "residencia");
+export const MATERIAS: Materia[] = (estrutura as MateriaJson[])
+  .map((m) => ({ ...m, modo: "residencia" as const }))
+  .sort((a, b) => a.ordem - b.ordem);
 
 export interface LocalQuestao {
-  questao: Questao;
+  questaoId: string;
   materia: Materia;
   unidade: Unidade;
   licao: Licao;
@@ -49,8 +37,8 @@ for (const materia of MATERIAS) {
   for (const unidade of materia.unidades) {
     unidade.licoes.forEach((licao, indiceNaUnidade) => {
       licoesPorId.set(licao.id, { licao, materia, unidade, indiceNaUnidade });
-      for (const questao of licao.questoes) {
-        questoesPorId.set(questao.id, { questao, materia, unidade, licao });
+      for (const questaoId of licao.questoes) {
+        questoesPorId.set(questaoId, { questaoId, materia, unidade, licao });
       }
     });
   }
@@ -58,6 +46,7 @@ for (const materia of MATERIAS) {
 
 export const buscarMateria = (id: string) => MATERIAS.find((m) => m.id === id);
 export const buscarLicao = (id: string) => licoesPorId.get(id);
+/** Onde a questão fica (matéria, unidade e lição). O conteúdo vem do servidor. */
 export const buscarQuestao = (id: string) => questoesPorId.get(id);
 export const materiaDisponivel = (m: Materia) => m.unidades.length > 0;
 /** Primeira matéria com conteúdo */

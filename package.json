@@ -4,12 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/validar-conteudo.mjs",
+    "predev": "node scripts/validar-conteudo.mjs && node scripts/gerar-estrutura.mjs",
     "dev": "vite --host",
-    "prebuild": "node scripts/validar-conteudo.mjs",
+    "prebuild": "node scripts/validar-conteudo.mjs && node scripts/gerar-estrutura.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host",
-    "validar": "node scripts/validar-conteudo.mjs"
+    "validar": "node scripts/validar-conteudo.mjs",
+    "estrutura": "node scripts/gerar-estrutura.mjs"
   },
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",

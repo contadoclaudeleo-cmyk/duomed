@@ -11,7 +11,7 @@
 #   VF[AMRIGS 2025]: afirmação | V ou F | explicação
 import json, re, sys
 
-RAIZ = 'C:/Users/leogo/OneDrive/Área de Trabalho/claude/duomed/src/data'
+RAIZ = 'C:/Users/leogo/OneDrive/Área de Trabalho/claude/duomed/conteudo'
 
 
 def opcoes(campos, onde):

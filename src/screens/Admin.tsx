@@ -34,6 +34,8 @@ import {
 } from '../lib/admin'
 import { Abas } from '../components/Abas'
 import { buscarQuestao } from '../data'
+import { questaoParaAdmin } from '../lib/estudo'
+import type { Questao } from '../types'
 import { Lapio } from '../components/Lapio'
 
 type Aba = 'geral' | 'horarios' | 'feedbacks'
@@ -412,8 +414,21 @@ function ListaFeedbacks({ feedbacks }: { feedbacks: FeedbackAdmin[] }) {
 /** Mostra de qual questão é o "Reportar erro", com o enunciado e a resposta do app */
 function QuestaoReportada({ id }: { id: string }) {
   const local = buscarQuestao(id)
+  // O conteúdo da questão vem do servidor (só admin consegue ver)
+  const [questao, setQuestao] = useState<Questao | null>(null)
+  useEffect(() => {
+    let ativo = true
+    questaoParaAdmin(id).then(
+      (q) => ativo && setQuestao(q),
+      () => {},
+    )
+    return () => {
+      ativo = false
+    }
+  }, [id])
   if (!local) return <p className="mb-2 text-xs font-bold text-texto-suave">Questão {id} (não encontrada)</p>
-  const { questao, materia, unidade } = local
+  const { materia, unidade } = local
+  if (!questao) return <p className="mb-2 text-xs font-bold text-texto-suave">{materia.nome} · {id} (carregando...)</p>
   return (
     <div className="mb-2 rounded-xl bg-superficie-2 p-3 text-sm">
       <p className="text-xs font-extrabold uppercase tracking-wide text-texto-suave">

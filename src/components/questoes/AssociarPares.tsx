@@ -11,8 +11,9 @@ type Lado = 'esquerda' | 'direita'
  * Itens ligados ganham o mesmo número. Toque de novo para desfazer.
  */
 export function AssociarPares({ questao, resposta, aoResponder, verificada }: PropsQuestao<QuestaoAssociarPares>) {
-  const esquerdas = useMemo(() => embaralhar(questao.pares.map((p) => p.esquerda)), [questao])
-  const direitas = useMemo(() => embaralhar(questao.pares.map((p) => p.direita)), [questao])
+  // Embaralha uma vez por questão (depois de responder, a questão completa chega do servidor)
+  const esquerdas = useMemo(() => embaralhar(questao.pares.map((p) => p.esquerda)), [questao.id])
+  const direitas = useMemo(() => embaralhar(questao.pares.map((p) => p.direita)), [questao.id])
   const [selecionado, setSelecionado] = useState<{ lado: Lado; texto: string } | null>(null)
 
   // Mapa esquerda -> direita das ligações feitas

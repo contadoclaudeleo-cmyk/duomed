@@ -11,6 +11,7 @@ import {
   unidadesDoNivel,
 } from "../data";
 import { useJogo } from "../store/useJogo";
+import { ehPlus } from "../lib/plus";
 import { statusDasLicoes, type StatusLicao } from "../lib/progresso";
 import { questoesParaRevisar } from "../lib/revisao";
 import { chaveDia } from "../lib/datas";
@@ -86,7 +87,7 @@ export function Home() {
   function comecar(licaoId: string) {
     const jogo = useJogo.getState();
     jogo.sincronizarVidas();
-    if (useJogo.getState().vidas <= 0) {
+    if (useJogo.getState().vidas <= 0 && !ehPlus()) {
       setAberta(null);
       setSemVidas(true);
       return;

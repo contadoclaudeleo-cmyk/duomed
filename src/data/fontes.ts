@@ -60,10 +60,6 @@ export function fontesDaQuestao(questaoId: string): string[] {
   );
 }
 
-/** Prova de residência de onde a questão foi adaptada (quando houver) */
-export function provaDaQuestao(questaoId: string): string | undefined {
-  return buscarQuestao(questaoId)?.questao.fonte;
-}
 
 /** Lista para conferir se toda matéria tem bibliografia (usado no validador) */
 export const MATERIAS_COM_FONTES = Object.keys(FONTES);

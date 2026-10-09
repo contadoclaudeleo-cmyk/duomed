@@ -24,12 +24,10 @@ import {
 } from "../data";
 import { chaveDia } from "../lib/datas";
 import {
-  perderVida,
   recarregarVidas,
   VIDAS_INICIAIS,
   VIDAS_MAX,
 } from "../lib/vidas";
-import { ehPlus } from "../lib/plus";
 import { calcularXpSessao, nivelDoXp, type RespostaDada } from "../lib/xp";
 import { atualizarOfensiva } from "../lib/ofensiva";
 import {
@@ -93,10 +91,8 @@ interface AcoesJogo {
   atualizarUsuario: (dados: Partial<Usuario>) => void;
   definirTema: (tema: Tema) => void;
   definirSons: (sons: boolean) => void;
-  /** Volta para o máximo de vidas (recarga comprada) */
-  encherVidas: () => void;
-  /** Soma vidas compradas (pode passar de 5) */
-  ganharVidas: (quantas: number) => void;
+  /** Vidas que o servidor informou (quem conta as vidas é o servidor; aqui é só para a tela) */
+  definirVidas: (vidas: number, ultimaRecarga: number) => void;
   escolherMateria: (materiaId: string) => void;
   definirNivel: (nivel: NivelDificuldade) => void;
   sincronizarVidas: () => void;
@@ -176,14 +172,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
 
       definirNivel: (nivel) => set({ nivel, testeNivelPendente: false }),
 
-      encherVidas: () =>
-        set({ vidas: VIDAS_MAX, ultimaRecargaVida: Date.now() }),
-
-      ganharVidas: (quantas) =>
-        set((s) => ({
-          vidas: s.vidas + quantas,
-          ultimaRecargaVida: Date.now(),
-        })),
+      definirVidas: (vidas, ultimaRecargaVida) => set({ vidas, ultimaRecargaVida }),
 
       escolherMateria: (materiaAtual) =>
         set({ materiaAtual, modo: "residencia" }),
@@ -198,7 +187,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           set({ vidas: novo.vidas, ultimaRecargaVida: novo.ultimaRecarga });
       },
 
-      // Chamado a cada questão verificada
+      // Chamado a cada questão corrigida pelo servidor (as vidas já vêm do servidor)
       responder: ({ questao, materiaId, acertou, modo }) => {
         const s = get();
         const agora = Date.now();
@@ -222,12 +211,6 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         else if (modo === "licao")
           filaRevisao = registrarAcertoNaLicao(filaRevisao, questao.id, agora);
 
-        // Vidas: só se perde vida errando em lição. Revisão nunca gasta vida.
-        let vidas = { vidas: s.vidas, ultimaRecarga: s.ultimaRecargaVida };
-        // Quem é Plus tem vidas infinitas
-        if (!acertou && modo === "licao" && !ehPlus(agora))
-          vidas = perderVida(vidas, agora);
-
         set({
           questoesRespondidas: s.questoesRespondidas + 1,
           acertosTotais: s.acertosTotais + (acertou ? 1 : 0),
@@ -239,8 +222,6 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
             },
           },
           filaRevisao,
-          vidas: vidas.vidas,
-          ultimaRecargaVida: vidas.ultimaRecarga,
         });
       },
 
@@ -347,12 +328,12 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           const agora = Date.now();
           let fila = dados.filaRevisao ?? {};
           for (const licaoId of Object.keys(dados.licoesConcluidas ?? {})) {
-            for (const questao of buscarLicao(licaoId)?.licao.questoes ?? []) {
-              if (fila[questao.id]) continue;
-              const item = registrarAcertoNaLicao({}, questao.id, agora)[
-                questao.id
+            for (const questaoId of buscarLicao(licaoId)?.licao.questoes ?? []) {
+              if (fila[questaoId]) continue;
+              const item = registrarAcertoNaLicao({}, questaoId, agora)[
+                questaoId
               ];
-              fila = { ...fila, [questao.id]: { ...item, proximaEm: agora } };
+              fila = { ...fila, [questaoId]: { ...item, proximaEm: agora } };
             }
           }
           dados.filaRevisao = fila;

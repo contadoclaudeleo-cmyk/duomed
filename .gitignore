@@ -3,3 +3,12 @@ dist
 dev-dist
 *.local
 .DS_Store
+
+# Gerados a partir de conteudo/ (npm run estrutura)
+src/data/estrutura.json
+supabase/importar/
+
+# Configurações do computador (podem ter chaves)
+.env
+.env.*
+!.env.example

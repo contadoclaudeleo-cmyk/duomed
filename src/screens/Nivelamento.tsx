@@ -3,58 +3,30 @@ import { SignalHigh, SignalLow } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { NivelDificuldade } from "../types";
-import { MATERIAS, NOMES_NIVEL, unidadesDoNivel } from "../data";
+import { NOMES_NIVEL } from "../data";
 import { useJogo } from "../store/useJogo";
-import { embaralhar } from "../lib/embaralhar";
+import { iniciarNivelamento } from "../lib/estudo";
 import type { RespostaDada } from "../lib/xp";
 import { Botao } from "../components/Botao";
+import { CarregarSessao } from "../components/CarregarSessao";
 import { Lapio } from "../components/Lapio";
-import { Sessao, type ItemSessao } from "./Sessao";
+import { Sessao } from "./Sessao";
 
 // ============================================================
 // Teste de nível
-// 8 questões da trilha difícil, de matérias variadas.
+// 8 questões da trilha difícil, de matérias variadas (o servidor sorteia).
 // Quem acerta 6 ou mais começa no nível difícil.
 // ============================================================
 
 export const QUESTOES_NO_TESTE = 8;
 export const ACERTOS_PARA_DIFICIL = 6;
 
-/** Sorteia as questões do teste, alternando entre as matérias */
-function montarTeste(): ItemSessao[] {
-  const porMateria = MATERIAS.map((m) => {
-    // Usa a trilha difícil; se a matéria ainda não tiver, usa a fácil
-    const unidades = unidadesDoNivel(m, "dificil").length
-      ? unidadesDoNivel(m, "dificil")
-      : unidadesDoNivel(m, "facil");
-    const questoes = unidades.flatMap((u) =>
-      u.licoes.flatMap((l) => l.questoes),
-    );
-    return embaralhar(
-      questoes.map((questao) => ({ questao, materiaId: m.id })),
-    );
-  }).filter((lista) => lista.length > 0);
-
-  const itens: ItemSessao[] = [];
-  for (
-    let rodada = 0;
-    itens.length < QUESTOES_NO_TESTE && porMateria.some((l) => l[rodada]);
-    rodada++
-  ) {
-    for (const lista of embaralhar(porMateria)) {
-      if (lista[rodada] && itens.length < QUESTOES_NO_TESTE)
-        itens.push(lista[rodada]);
-    }
-  }
-  return itens;
-}
-
 export function Nivelamento() {
   const navegar = useNavigate();
   const definirNivel = useJogo((s) => s.definirNivel);
   const [fase, setFase] = useState<"inicio" | "teste" | "resultado">("inicio");
-  const [itens] = useState(() => montarTeste());
   const [acertos, setAcertos] = useState(0);
+  const [total, setTotal] = useState(QUESTOES_NO_TESTE);
 
   function escolher(nivel: NivelDificuldade) {
     definirNivel(nivel);
@@ -63,17 +35,23 @@ export function Nivelamento() {
 
   function terminar(respostas: RespostaDada[]) {
     setAcertos(respostas.filter((r) => r.acertou).length);
+    setTotal(respostas.length);
     setFase("resultado");
   }
 
   if (fase === "teste") {
     return (
-      <Sessao
-        modo="nivelamento"
-        titulo="Teste de nível"
-        itens={itens}
-        aoTerminar={terminar}
-      />
+      <CarregarSessao abrir={iniciarNivelamento} voltarPara="/nivelamento">
+        {(s) => (
+          <Sessao
+            modo="nivelamento"
+            titulo="Teste de nível"
+            sessaoId={s.sessao}
+            itens={s.questoes}
+            aoTerminar={terminar}
+          />
+        )}
+      </CarregarSessao>
     );
   }
 
@@ -94,7 +72,7 @@ export function Nivelamento() {
               Resultado do teste
             </p>
             <h1 className="mt-1 text-3xl font-extrabold">
-              {acertos} de {itens.length} acertos
+              {acertos} de {total} acertos
             </h1>
           </div>
           <motion.div
@@ -151,7 +129,7 @@ export function Nivelamento() {
         <Lapio altura={140} />
         <h1 className="text-2xl font-extrabold">Vamos descobrir seu nível?</h1>
         <p className="text-texto-suave">
-          São {itens.length} questões de provas de residência, de matérias
+          São {QUESTOES_NO_TESTE} questões de provas de residência, de matérias
           variadas. O teste não gasta vidas. Se acertar {ACERTOS_PARA_DIFICIL}{" "}
           ou mais, você começa no nível difícil.
         </p>
@@ -160,7 +138,6 @@ export function Nivelamento() {
         <Botao
           larguraTotal
           onClick={() => setFase("teste")}
-          disabled={itens.length === 0}
         >
           Fazer o teste
         </Botao>

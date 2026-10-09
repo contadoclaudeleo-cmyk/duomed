@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom'
 import type { ModoSessao, Questao as TQuestao, Resposta } from '../types'
 import { itemAntesDaResposta, useJogo } from '../store/useJogo'
 import { diasAteVoltar, textoDoPrazo } from '../lib/revisao'
-import { corrigir, respostaCompleta, textoRespostaCorreta } from '../lib/correcao'
+import { respostaCompleta, textoRespostaCorreta } from '../lib/correcao'
+import { FalhaEstudo, mensagemDoErro, responderNoServidor } from '../lib/estudo'
 import type { RespostaDada } from '../lib/xp'
 import { BarraProgresso } from '../components/BarraProgresso'
 import { Botao } from '../components/Botao'
@@ -15,6 +16,7 @@ import { PainelFeedback } from '../components/PainelFeedback'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { Questao } from '../components/questoes/Questao'
 import { tocarSom } from '../lib/sons'
+import { ehPlus } from '../lib/plus'
 
 export interface ItemSessao {
   questao: TQuestao
@@ -24,7 +26,10 @@ export interface ItemSessao {
 interface Props {
   modo: ModoSessao
   titulo: string
+  /** Questões como vieram do servidor (sem resposta até a pessoa responder) */
   itens: ItemSessao[]
+  /** Sessão aberta no servidor (iniciar_licao, iniciar_revisao ou iniciar_nivelamento) */
+  sessaoId: string
   licaoId?: string
   /** Só no teste de nível: recebe as respostas no fim, sem XP nem estatísticas */
   aoTerminar?: (respostas: RespostaDada[]) => void
@@ -34,14 +39,19 @@ interface Props {
  * Motor de uma sessão de questões. Serve tanto para lições da trilha
  * quanto para a revisão (no modo revisão, errar não gasta vida) e para o
  * teste de nível (não gasta vida, não dá XP e não entra nas estatísticas).
+ * Quem corrige e tira a vida é o servidor: o app só mostra o resultado.
  */
-export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
+export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, aoTerminar }: Props) {
   const navegar = useNavigate()
   const responder = useJogo((s) => s.responder)
   const concluirSessao = useJogo((s) => s.concluirSessao)
   const vidas = useJogo((s) => s.vidas)
 
+  // Cada questão é trocada pela versão completa (com resposta e explicação) depois de responder
+  const [itens, setItens] = useState(itensIniciais)
   const [indice, setIndice] = useState(0)
+  const [enviando, setEnviando] = useState(false)
+  const [erroEnvio, setErroEnvio] = useState<string | null>(null)
   const [resposta, setResposta] = useState<Resposta | null>(null)
   const [verificada, setVerificada] = useState(false)
   const [acertou, setAcertou] = useState(false)
@@ -54,22 +64,36 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
   const inicio = useRef(Date.now())
 
   const item = itens[indice]
-  const podeVerificar = !verificada && respostaCompleta(item.questao, resposta)
+  const podeVerificar = !verificada && !enviando && respostaCompleta(item.questao, resposta)
   const progresso = (indice + (verificada ? 1 : 0)) / itens.length
 
-  const verificar = useCallback(() => {
+  const verificar = useCallback(async () => {
     if (!podeVerificar) return
-    const certo = corrigir(item.questao, resposta)
+    setEnviando(true)
+    setErroEnvio(null)
+    let correcao
+    try {
+      correcao = await responderNoServidor(sessaoId, item.questao.id, resposta)
+    } catch (e) {
+      setEnviando(false)
+      if (e instanceof FalhaEstudo && e.codigo === 'sem_vidas') setSemVidas(true)
+      else setErroEnvio(mensagemDoErro(e))
+      return
+    }
+    setEnviando(false)
+    const certo = correcao.acertou
+    const completa = correcao.questao
+    setItens((lista) => lista.map((it, i) => (i === indice ? { ...it, questao: completa } : it)))
     setAcertou(certo)
     setVerificada(true)
     tocarSom(certo ? 'acerto' : 'erro')
     const novaSequencia = certo ? seguidas + 1 : 0
     setSeguidas(novaSequencia)
     if ([3, 5, 8].includes(novaSequencia)) setCombo(novaSequencia)
-    setRespostas((r) => [...r, { questao: item.questao, acertou: certo, resposta }])
-    // Salva na hora: estatísticas, fila de revisão e perda de vida
-    if (modo !== 'nivelamento') responder({ questao: item.questao, materiaId: item.materiaId, acertou: certo, modo })
-  }, [podeVerificar, item, resposta, responder, modo, seguidas])
+    setRespostas((r) => [...r, { questao: completa, acertou: certo, resposta }])
+    // Salva na hora: estatísticas e fila de revisão (as vidas já vieram do servidor)
+    if (modo !== 'nivelamento') responder({ questao: completa, materiaId: item.materiaId, acertou: certo, modo })
+  }, [podeVerificar, sessaoId, item, indice, resposta, responder, modo, seguidas])
 
   // O aviso de sequência toca um som logo depois do acerto e some sozinho
   useEffect(() => {
@@ -91,8 +115,8 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
   const continuar = useCallback(() => {
     if (!verificada) return
 
-    // Lição sem vidas: para por aqui, sem XP
-    if (modo === 'licao' && useJogo.getState().vidas <= 0) {
+    // Lição sem vidas: para por aqui, sem XP (o servidor também recusaria a próxima resposta)
+    if (modo === 'licao' && useJogo.getState().vidas <= 0 && !ehPlus()) {
       setSemVidas(true)
       return
     }
@@ -107,6 +131,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
     setIndice((i) => i + 1)
     setResposta(null)
     setVerificada(false)
+    setErroEnvio(null)
   }, [verificada, modo, indice, itens.length, concluirSessao, titulo, licaoId, respostas, navegar, aoTerminar])
 
   // Enter verifica ou continua (para quem usa teclado no computador)
@@ -214,6 +239,7 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
           <PainelFeedback
             key={item.questao.id}
             questaoId={item.questao.id}
+            prova={item.questao.fonte}
             acertou={acertou}
             explicacao={item.questao.explicacao}
             respostaCorreta={textoRespostaCorreta(item.questao, resposta)}
@@ -231,9 +257,14 @@ export function Sessao({ modo, titulo, itens, licaoId, aoTerminar }: Props) {
           />
         ) : (
           <div className="pb-seguro border-t-2 border-borda">
+            {erroEnvio && (
+              <p className="mx-auto max-w-2xl px-4 pt-4 text-center text-sm font-bold text-erro-texto" role="alert">
+                {erroEnvio}
+              </p>
+            )}
             <div className="mx-auto flex max-w-2xl justify-end px-4 py-5">
               <Botao onClick={verificar} disabled={!podeVerificar} className="w-full sm:w-44">
-                Verificar
+                {enviando ? 'Corrigindo...' : 'Verificar'}
               </Botao>
             </div>
           </div>

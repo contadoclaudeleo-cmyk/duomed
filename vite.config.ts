@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { defineConfig, type Plugin } from 'vite'
+import { defineConfig, loadEnv, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -25,9 +25,12 @@ function politicaDeSeguranca(): Plugin {
           ([, codigo]) => `'sha256-${createHash('sha256').update(codigo).digest('base64')}'`,
         )
         const supabase = 'https://dkdizfpywyvpxhfpiivr.supabase.co'
+        // CAPTCHA do Cloudflare: só é liberado quando a chave existe (ver components/Captcha.tsx)
+        const captcha = loadEnv('production', process.cwd(), 'VITE_').VITE_TURNSTILE_SITEKEY ? ' https://challenges.cloudflare.com' : ''
         const regras = [
           "default-src 'self'",
-          `script-src 'self' ${hashes.join(' ')}`,
+          `script-src 'self' ${hashes.join(' ')}${captcha}`,
+          ...(captcha ? [`frame-src${captcha}`] : []),
           "style-src 'self' 'unsafe-inline'",
           "img-src 'self' data: blob:",
           "font-src 'self' data:",
@@ -47,15 +50,9 @@ function politicaDeSeguranca(): Plugin {
 
 export default defineConfig({
   base,
-  build: {
-    // As questões (src/data) ficam num arquivo separado do código do app
-    chunkSizeWarningLimit: 5000,
-    rollupOptions: {
-      output: {
-        manualChunks: (id) => (id.includes('/src/data/') && id.endsWith('.json') ? 'conteudo' : undefined),
-      },
-    },
-  },
+  // As questões não entram no site: ficam no Supabase (ver src/lib/estudo.ts).
+  // Aqui só vai a estrutura (src/data/estrutura.json), com os ids.
+  build: { chunkSizeWarningLimit: 1500 },
   plugins: [
     react(),
     tailwindcss(),
@@ -66,7 +63,7 @@ export default defineConfig({
       // O conteúdo passa de 2 MB (limite padrão), por isso o limite maior
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2,mp3}'],
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       },
       manifest: {
         name: 'DuoMed',

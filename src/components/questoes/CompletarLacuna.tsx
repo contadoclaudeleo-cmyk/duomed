@@ -5,7 +5,7 @@ import { embaralhar } from '../../lib/embaralhar'
 import type { PropsQuestao } from './tipos'
 
 export function CompletarLacuna({ questao, resposta, aoResponder, verificada }: PropsQuestao<QuestaoCompletarLacuna>) {
-  const ordem = useMemo(() => embaralhar(questao.opcoes), [questao])
+  const ordem = useMemo(() => embaralhar(questao.opcoes), [questao.id])
   const escolhida = typeof resposta === 'string' ? resposta : null
   const [antes, depois] = questao.enunciado.split('___')
   const acertou = escolhida === questao.resposta

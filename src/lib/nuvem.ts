@@ -2,8 +2,9 @@ import type { Session } from '@supabase/supabase-js'
 import { create } from 'zustand'
 import { CHAVE_PUBLICA, supabase, URL_SUPABASE } from './supabase'
 import { mesclarProgresso } from './mesclar'
-import { VIDAS_MAX } from './vidas'
-import { carregarPlus, ehPlus, limparPlus, resgatarVidas } from './plus'
+import { limparPlus } from './plus'
+import { estadoVidas } from './estudo'
+import { limparErrosDeSenha, registrarErroDeSenha, tempoBloqueado } from './limiteSenha'
 import { dadosDoJogo, useJogo, type DadosJogo } from '../store/useJogo'
 
 // ============================================================
@@ -94,13 +95,13 @@ export async function sincronizar() {
   }
 }
 
-/** Confere o Plus e entrega as vidas compradas que ainda não chegaram */
+/** Pergunta ao servidor as vidas e o Plus (as vidas compradas entram lá mesmo) */
 export async function atualizarCompras() {
-  await carregarPlus()
-  // Plus tem vidas infinitas: enche o coração se estava vazio
-  if (ehPlus() && useJogo.getState().vidas < VIDAS_MAX) useJogo.getState().encherVidas()
-  const vidas = await resgatarVidas()
-  if (vidas > 0) useJogo.getState().ganharVidas(vidas)
+  try {
+    await estadoVidas()
+  } catch {
+    // Sem internet: fica o que já estava na tela
+  }
 }
 
 // ---------- Ações de conta ----------
@@ -116,17 +117,41 @@ export async function entrarComGoogle() {
   if (error) throw new Error(traduzirErro(error.message))
 }
 
-export async function entrarComEmail(email: string, senha: string) {
-  const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password: senha })
-  if (error) throw new Error(traduzirErro(error.message))
+/** Texto "15 minutos" / "1 minuto" para o aviso de bloqueio */
+const minutos = (ms: number) => {
+  const m = Math.max(1, Math.ceil(ms / 60_000))
+  return m === 1 ? '1 minuto' : `${m} minutos`
+}
+
+/**
+ * Entra com e-mail e senha. Depois de 5 senhas erradas, trava por 15 minutos (ver lib/limiteSenha.ts).
+ * captchaToken: resposta do CAPTCHA, quando ele está ligado (ver components/Captcha.tsx).
+ */
+export async function entrarComEmail(email: string, senha: string, captchaToken?: string) {
+  const travado = tempoBloqueado(email)
+  if (travado > 0) throw new Error(`Muitas senhas erradas. Tente de novo em ${minutos(travado)}.`)
+  const { error } = await supabase.auth.signInWithPassword({
+    email: email.trim(),
+    password: senha,
+    options: captchaToken ? { captchaToken } : undefined,
+  })
+  if (error) {
+    if (error.message.toLowerCase().includes('invalid login credentials')) {
+      const restam = registrarErroDeSenha(email)
+      if (restam === 0) throw new Error(`Muitas senhas erradas. Tente de novo em ${minutos(tempoBloqueado(email))}.`)
+      throw new Error(`E-mail ou senha incorretos. ${restam === 1 ? 'Resta 1 tentativa' : `Restam ${restam} tentativas`}.`)
+    }
+    throw new Error(traduzirErro(error.message))
+  }
+  limparErrosDeSenha(email)
 }
 
 /** Cria a conta. Devolve false se o Supabase pedir confirmação por e-mail antes de entrar. */
-export async function criarConta(email: string, senha: string): Promise<boolean> {
+export async function criarConta(email: string, senha: string, captchaToken?: string): Promise<boolean> {
   const { data, error } = await supabase.auth.signUp({
     email: email.trim(),
     password: senha,
-    options: { emailRedirectTo: urlDeRetorno() },
+    options: { emailRedirectTo: urlDeRetorno(), ...(captchaToken ? { captchaToken } : {}) },
   })
   if (error) throw new Error(traduzirErro(error.message))
   return !!data.session
@@ -172,6 +197,7 @@ function traduzirErro(mensagem: string): string {
     return 'Esse e-mail não parece válido.'
   if (m.includes('provider is not enabled') || m.includes('unsupported provider'))
     return 'Entrar com Google ainda não está ativado.'
+  if (m.includes('captcha')) return 'Confirme que você não é um robô e tente de novo.'
   if (m.includes('rate limit') || m.includes('too many')) return 'Muitas tentativas. Espere um pouco e tente de novo.'
   if (m.includes('fetch') || m.includes('network')) return 'Sem conexão com a internet.'
   return 'Não deu certo. Tente de novo em instantes.'

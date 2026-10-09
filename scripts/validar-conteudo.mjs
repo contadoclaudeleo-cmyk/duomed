@@ -1,4 +1,4 @@
-// Confere os arquivos de src/data/materias antes de rodar o app.
+// Confere os arquivos de conteudo/residencia antes de rodar o app.
 // Rode com: npm run validar  (também roda sozinho antes de "npm run dev" e "npm run build")
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
@@ -22,9 +22,9 @@ function usarId(id, onde) {
 }
 
 const arquivos = PASTAS.flatMap((p) =>
-  readdirSync(join(raiz, 'src', 'data', p))
+  readdirSync(join(raiz, 'conteudo', p))
     .filter((f) => f.endsWith('.json'))
-    .map((f) => ({ arquivo: `${p}/${f}`, caminho: join(raiz, 'src', 'data', p, f) })),
+    .map((f) => ({ arquivo: `${p}/${f}`, caminho: join(raiz, 'conteudo', p, f) })),
 )
 
 for (const { arquivo, caminho } of arquivos) {

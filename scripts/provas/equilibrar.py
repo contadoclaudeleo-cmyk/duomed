@@ -1,6 +1,6 @@
 # Aplica alternativas reescritas: cada linha "id | opção | *certa | opção | opção"
 import json, glob, sys
-RAIZ = 'C:/Users/leogo/OneDrive/Área de Trabalho/claude/duomed/src/data/residencia'
+RAIZ = 'C:/Users/leogo/OneDrive/Área de Trabalho/claude/duomed/conteudo/residencia'
 novo = {}
 for l in open(sys.argv[1], encoding='utf-8'):
     l = l.strip()

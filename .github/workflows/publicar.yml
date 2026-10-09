@@ -31,6 +31,9 @@ jobs:
       - run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
+          # Chave PÚBLICA do CAPTCHA (Settings > Secrets and variables > Actions > Variables).
+          # Sem ela, o CAPTCHA fica desligado. A chave secreta vai só no painel do Supabase.
+          VITE_TURNSTILE_SITEKEY: ${{ vars.TURNSTILE_SITEKEY }}
       # Faz links diretos (ex.: /duomed/perfil) funcionarem ao recarregar a página
       - run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5

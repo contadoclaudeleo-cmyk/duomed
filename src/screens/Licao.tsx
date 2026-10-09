@@ -1,22 +1,19 @@
-import { useState } from 'react'
-import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import { buscarLicao, nivelDaUnidade } from '../data'
 import { useJogo } from '../store/useJogo'
 import { statusDasLicoes } from '../lib/progresso'
-import { AvisoSemVidas } from '../components/AvisoSemVidas'
+import { iniciarLicao } from '../lib/estudo'
+import { CarregarSessao } from '../components/CarregarSessao'
 import { Sessao } from './Sessao'
 
-/** Tela de lição da trilha: busca a lição pelo id da URL e abre a sessão */
+/**
+ * Tela de lição da trilha: pede a lição ao servidor e abre a sessão.
+ * É o servidor que confere as vidas e o Plus (sem vidas, ele recusa).
+ */
 export function Licao() {
   const { licaoId = '' } = useParams()
-  const navegar = useNavigate()
   const local = buscarLicao(licaoId)
   const concluidas = useJogo((s) => s.licoesConcluidas)
-  // Vidas no momento em que a lição foi aberta
-  const [semVidasAoAbrir] = useState(() => {
-    useJogo.getState().sincronizarVidas()
-    return useJogo.getState().vidas <= 0
-  })
 
   if (!local) return <Navigate to="/" replace />
 
@@ -24,20 +21,9 @@ export function Licao() {
   const nivel = nivelDaUnidade(local.unidade)
   if (statusDasLicoes(local.materia, concluidas, nivel)[licaoId] === 'bloqueada') return <Navigate to="/" replace />
 
-  if (semVidasAoAbrir) {
-    return (
-      <div className="mx-auto flex min-h-dvh max-w-md items-center px-6">
-        <AvisoSemVidas aoVoltar={() => navegar('/', { replace: true })} />
-      </div>
-    )
-  }
-
   return (
-    <Sessao
-      modo="licao"
-      titulo={local.licao.titulo}
-      licaoId={local.licao.id}
-      itens={local.licao.questoes.map((questao) => ({ questao, materiaId: local.materia.id }))}
-    />
+    <CarregarSessao key={licaoId} abrir={() => iniciarLicao(licaoId)}>
+      {(s) => <Sessao modo="licao" titulo={local.licao.titulo} licaoId={local.licao.id} sessaoId={s.sessao} itens={s.questoes} />}
+    </CarregarSessao>
   )
 }

@@ -1,9 +1,10 @@
-import { ArrowLeft, Check, CircleCheck, CircleX, Lightbulb, ListChecks, X } from 'lucide-react'
-import { useState } from 'react'
+import { ArrowLeft, Check, CircleCheck, CircleX, Lightbulb, ListChecks, Loader2, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { buscarLicao } from '../data'
 import { useJogo } from '../store/useJogo'
 import { arquivoPublico } from '../lib/caminho'
+import { gabaritoLicao, mensagemDoErro } from '../lib/estudo'
 import type { Questao, Resposta, TipoQuestao } from '../types'
 import { Abas } from '../components/Abas'
 import { Botao } from '../components/Botao'
@@ -29,13 +30,28 @@ const NOMES_TIPO: Record<TipoQuestao, string> = {
 /**
  * Revisão comentada (gabarito): cada questão com a resposta certa e o comentário.
  * /comentada mostra a sessão que acabou de terminar, com o que a pessoa marcou.
- * /comentada/:licaoId mostra todas as questões de uma lição da trilha.
+ * /comentada/:licaoId mostra as questões de uma lição da trilha (o servidor
+ * só entrega as que a pessoa já respondeu).
  */
 export function RevisaoComentada() {
   const { licaoId } = useParams()
   const navegar = useNavigate()
   const resultado = useJogo((s) => s.ultimoResultado)
   const [filtro, setFiltro] = useState<Filtro>('todas')
+  const [daLicao, setDaLicao] = useState<ItemComentado[] | null>(null)
+  const [erro, setErro] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (!licaoId) return
+    let ativo = true
+    gabaritoLicao(licaoId).then(
+      (qs) => ativo && setDaLicao(qs.map((questao) => ({ questao }))),
+      (e) => ativo && setErro(mensagemDoErro(e)),
+    )
+    return () => {
+      ativo = false
+    }
+  }, [licaoId])
 
   let titulo: string
   let itens: ItemComentado[]
@@ -43,7 +59,23 @@ export function RevisaoComentada() {
     const local = buscarLicao(licaoId)
     if (!local) return <Navigate to="/" replace />
     titulo = local.licao.titulo
-    itens = local.licao.questoes.map((questao) => ({ questao }))
+    if (!daLicao) {
+      return (
+        <div className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-4 px-6 text-center">
+          {erro ? (
+            <>
+              <p className="font-bold">{erro}</p>
+              <Botao larguraTotal onClick={() => navegar(-1)}>
+                Voltar
+              </Botao>
+            </>
+          ) : (
+            <Loader2 className="h-10 w-10 animate-spin text-agua" strokeWidth={2.6} aria-label="Carregando" />
+          )}
+        </div>
+      )
+    }
+    itens = daLicao
   } else {
     if (!resultado) return <Navigate to="/" replace />
     titulo = resultado.titulo

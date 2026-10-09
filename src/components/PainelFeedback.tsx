@@ -4,11 +4,13 @@ import { useState } from 'react'
 import { Botao } from './Botao'
 import { Lapio } from './Lapio'
 import { Modal } from './Modal'
-import { fontesDaQuestao, provaDaQuestao } from '../data/fontes'
+import { fontesDaQuestao } from '../data/fontes'
 import { enviarFeedback } from '../lib/feedback'
 
 interface Props {
   questaoId: string
+  /** Prova de onde a questão foi adaptada (ex.: "AMRIGS 2025") */
+  prova?: string
   acertou: boolean
   explicacao: string
   respostaCorreta: string
@@ -32,6 +34,7 @@ const ELOGIOS = ['Muito bem!', 'Mandou bem!', 'Exato!', 'Isso mesmo!', 'Perfeito
 /** Faixa que sobe da parte de baixo depois de verificar a resposta */
 export function PainelFeedback({
   questaoId,
+  prova,
   acertou,
   explicacao,
   respostaCorreta,
@@ -45,7 +48,6 @@ export function PainelFeedback({
   const [mostrarResolucao, setMostrarResolucao] = useState(false)
   const [reportar, setReportar] = useState(false)
   const fontes = fontesDaQuestao(questaoId)
-  const prova = provaDaQuestao(questaoId)
 
   return (
     <>
