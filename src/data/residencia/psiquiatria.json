@@ -98,18 +98,18 @@
             },
             {
               "id": "rpsiq-u1-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher de 35 anos há 1 mês com tristeza, choro fácil, perda de interesse, insônia, cansaço e culpa excessiva. Nega uso de drogas e tem TSH normal.",
-              "enunciado": "Qual é o diagnóstico mais provável?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Para o diagnóstico de episódio depressivo maior, além de 2 semanas de duração, é preciso ao menos um dos dois sintomas principais. Um é humor deprimido, e o outro é:",
               "opcoes": [
-                "Episódio depressivo maior",
-                "Luto normal",
-                "Transtorno de ansiedade generalizada",
-                "Hipotireoidismo subclínico mascarado"
+                "Alteração de apetite ou peso",
+                "Culpa e desvalia",
+                "Perda de interesse ou prazer (anedonia)",
+                "Aumento da energia"
               ],
-              "resposta": "Episódio depressivo maior",
-              "explicacao": "Tem mais de 5 sintomas por mais de 2 semanas.",
-              "revisado": false
+              "resposta": "Perda de interesse ou prazer (anedonia)",
+              "explicacao": "São necessários 5 sintomas em 2 semanas, sendo pelo menos um humor deprimido ou anedonia. Os demais incluem sono, apetite, energia, concentração, culpa, lentidão ou agitação e ideias de morte. Aumento de energia sugere mania.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u1-l1-q7",
@@ -227,18 +227,18 @@
             },
             {
               "id": "rpsiq-u1-l2-q6",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 40 anos com depressão começou sertralina há 10 dias e diz que ainda não melhorou, mas tolera bem.",
-              "enunciado": "Qual é a conduta?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual classe de remédios é primeira linha no tratamento da depressão maior unipolar?",
               "opcoes": [
-                "Manter a dose e reavaliar",
-                "Trocar por outro ISRS hoje",
-                "Associar lítio já",
-                "Suspender e iniciar um tricíclico em dose alta"
+                "Antipsicóticos atípicos",
+                "Benzodiazepínicos",
+                "Estabilizadores de humor",
+                "Inibidores seletivos da recaptação de serotonina"
               ],
-              "resposta": "Manter a dose e reavaliar",
-              "explicacao": "O efeito leva semanas para aparecer.",
-              "revisado": false
+              "resposta": "Inibidores seletivos da recaptação de serotonina",
+              "explicacao": "Os ISRS têm boa eficácia, poucos efeitos colaterais e são seguros em superdosagem, sendo a primeira escolha, inclusive em pessoas com doenças clínicas. Benzodiazepínicos não tratam depressão.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u1-l2-q7",
@@ -1308,28 +1308,19 @@
             },
             {
               "id": "rpsiq-u4-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada fobia ao medo.",
-              "pares": [
-                {
-                  "esquerda": "Fobia social",
-                  "direita": "Ser avaliado pelos outros"
-                },
-                {
-                  "esquerda": "Agorafobia",
-                  "direita": "Lugares sem saída fácil"
-                },
-                {
-                  "esquerda": "Fobia específica",
-                  "direita": "Objeto ou situação definida"
-                },
-                {
-                  "esquerda": "Claustrofobia",
-                  "direita": "Lugares fechados"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Homem de 27 anos, sem doenças, estava num shopping bebendo cerveja quando teve de repente palpitação, falta de ar, sudorese, tremor e sensação de morte, que duraram 15 minutos. Costuma ser tenso em situações sociais. Exame normal.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Episódio conversivo",
+                "Transtorno de sintomas somáticos",
+                "Transtorno de ansiedade social",
+                "Ataque de pânico"
               ],
-              "explicacao": "O tratamento é exposição gradual.",
-              "revisado": false
+              "resposta": "Ataque de pânico",
+              "explicacao": "Ataque de pânico é medo intenso de início súbito, com pico em minutos e sintomas físicos como taquicardia, dispneia e medo de morrer. O transtorno de pânico exige ataques recorrentes e preocupação com novos ataques. Causas clínicas devem ser afastadas.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u4-l2-q5",
@@ -1893,24 +1884,32 @@
             {
               "id": "rpsiq-u6-l1-q1",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual é o mecanismo da cocaína?",
+              "enunciado": "Quais substâncias têm efeito estimulante no sistema nervoso central?",
               "opcoes": [
-                "Bloqueia a recaptação de dopamina",
-                "Bloqueio de receptor opioide",
-                "Ativação do GABA",
-                "Inibição da acetilcolinesterase em todo o cérebro"
+                "Álcool e benzodiazepínicos",
+                "Heroína e opiáceos",
+                "LSD e psilocibina",
+                "Cocaína, crack, metanfetamina e derivados"
               ],
-              "resposta": "Bloqueia a recaptação de dopamina",
-              "explicacao": "Causa euforia e efeito simpático intenso.",
-              "revisado": false
+              "resposta": "Cocaína, crack, metanfetamina e derivados",
+              "explicacao": "Cocaína, crack e anfetaminas são estimulantes, causando euforia, taquicardia e hipertensão. Álcool, benzodiazepínicos e opioides são depressores, e LSD e psilocibina são perturbadores (alucinógenos).",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u6-l1-q2",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A cocaína só causa infarto em pessoas com doença coronariana prévia.",
-              "resposta": false,
-              "explicacao": "Falso. Pode causar infarto mesmo em jovens sem doença coronariana, por vasoespasmo e trombose.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Que sinais apoiam a suspeita de intoxicação por cocaína na emergência?",
+              "opcoes": [
+                "Bradicardia e hipotensão",
+                "Midríase e irritabilidade",
+                "Mutismo e estereotipias",
+                "Tremor com roda denteada e alucinações com pequenos animais"
+              ],
+              "resposta": "Midríase e irritabilidade",
+              "explicacao": "A cocaína é simpaticomimética: midríase, taquicardia, hipertensão, hipertermia, agitação e paranoia. Bradicardia e hipotensão sugerem depressores, e alucinações com pequenos animais lembram abstinência alcoólica.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u6-l1-q3",
@@ -2010,17 +2009,19 @@
           "questoes": [
             {
               "id": "rpsiq-u6-l2-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é a tríade da intoxicação por opioide?",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 29 anos vai fazer cirurgia de septo nasal com anestesia geral e usa naltrexona há 6 semanas para controlar o uso de álcool.",
+              "enunciado": "Qual é a recomendação adequada?",
               "opcoes": [
-                "Miose, rebaixamento e depressão respiratória",
-                "Midríase, febre e agitação",
-                "Diarreia, suor e bocejos",
-                "Taquicardia, hipertensão e pupilas grandes"
+                "Aumentar a naltrexona para potencializar a analgesia",
+                "Manter a naltrexona e proibir álcool",
+                "Trocar por naloxona",
+                "Suspender a naltrexona 3 ou mais dias antes e proibir o álcool"
               ],
-              "resposta": "Miose, rebaixamento e depressão respiratória",
-              "explicacao": "A depressão respiratória mata.",
-              "revisado": false
+              "resposta": "Suspender a naltrexona 3 ou mais dias antes e proibir o álcool",
+              "explicacao": "A naltrexona bloqueia os receptores opioides e impede a analgesia com opioides na cirurgia. Por isso é suspensa alguns dias antes. A naloxona também é antagonista e não resolve o problema.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u6-l2-q2",
@@ -2292,42 +2293,34 @@
             },
             {
               "id": "rpsiq-u7-l1-q3",
-              "tipo": "completar_lacuna",
-              "enunciado": "Ter plano, acesso a meios e intenção indica risco ___ de suicídio.",
+              "tipo": "caso_clinico",
+              "caso": "Viúva de 79 anos, isolada dos filhos e vizinhos, em tratamento para depressão há 5 meses sem resposta, diz que não vê sentido em viver e não tira da cabeça a ideia de tomar veneno ou se enforcar.",
+              "enunciado": "Qual é a conduta apropriada?",
               "opcoes": [
-                "alto",
-                "baixo",
-                "ausente",
-                "moderado e sem urgência"
+                "Internação hospitalar imediata direta",
+                "Dispensar e mandar o agente comunitário acompanhar",
+                "Manter o tratamento e retornar ao especialista quando possível",
+                "Encaminhar para emergência psiquiátrica para avaliar internação"
               ],
-              "resposta": "alto",
-              "explicacao": "Pede proteção imediata.",
-              "revisado": false
+              "resposta": "Encaminhar para emergência psiquiátrica para avaliar internação",
+              "explicacao": "Ideação suicida com método definido, idade avançada, viuvez, isolamento e depressão refratária indicam risco alto. Ela precisa de avaliação psiquiátrica urgente no mesmo dia para decidir sobre internação, sem ir sozinha.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u7-l1-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada item ao tipo de fator.",
-              "pares": [
-                {
-                  "esquerda": "Tentativa anterior",
-                  "direita": "Fator de risco mais forte"
-                },
-                {
-                  "esquerda": "Desesperança",
-                  "direita": "Fator de risco psicológico"
-                },
-                {
-                  "esquerda": "Rede de apoio",
-                  "direita": "Fator de proteção social"
-                },
-                {
-                  "esquerda": "Arma em casa",
-                  "direita": "Acesso a meio letal"
-                }
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual estratégia comunitária tem eficácia na prevenção primária do suicídio?",
+              "opcoes": [
+                "Mais policiamento e proibir bebidas",
+                "Controlar o acesso a armas de fogo, psicotrópicos e venenos organofosforados",
+                "Distribuir antidepressivos à comunidade",
+                "Isolar pessoas que já tentaram suicídio"
               ],
-              "explicacao": "Avaliar os dois lados.",
-              "revisado": false
+              "resposta": "Controlar o acesso a armas de fogo, psicotrópicos e venenos organofosforados",
+              "explicacao": "Restringir o acesso aos meios letais é uma das medidas mais eficazes, pois muitas crises suicidas são breves e o método disponível define a letalidade. Isolar quem tentou aumenta o risco.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u7-l1-q5",
@@ -2809,42 +2802,35 @@
             },
             {
               "id": "rpsiq-u8-l2-q4",
-              "tipo": "associar_pares",
-              "enunciado": "Associe cada achado à bulimia.",
-              "pares": [
-                {
-                  "esquerda": "Parótidas aumentadas",
-                  "direita": "Glândulas"
-                },
-                {
-                  "esquerda": "Erosão do esmalte",
-                  "direita": "Dentes"
-                },
-                {
-                  "esquerda": "Potássio baixo",
-                  "direita": "Sangue"
-                },
-                {
-                  "esquerda": "Calo na mão",
-                  "direita": "Sinal de Russell"
-                }
+              "tipo": "caso_clinico",
+              "caso": "Moça de 21 anos, com IMC 19, muito preocupada com a forma do corpo, faz horas de exercício, come escondida muito e rápido, provoca vômitos e usa laxantes escondido há 3 meses. Agora tem fissura anal.",
+              "enunciado": "Qual é o diagnóstico provável?",
+              "opcoes": [
+                "Ruminação",
+                "Compulsão alimentar",
+                "Bulimia nervosa",
+                "Anorexia nervosa"
               ],
-              "explicacao": "Por vômitos repetidos.",
-              "revisado": false
+              "resposta": "Bulimia nervosa",
+              "explicacao": "Episódios de compulsão seguidos de compensação (vômitos, laxantes, exercício), com autoavaliação muito ligada ao peso e peso normal, caracterizam bulimia. Na anorexia o peso é muito baixo, e no transtorno de compulsão não há compensação.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u8-l2-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual antidepressivo tem evidência na bulimia?",
+              "tipo": "caso_clinico",
+              "caso": "Estudante de nutrição de 23 anos, com IMC 21, tem sangramento intestinal e Hb 6,9. Toma laxantes várias vezes ao dia escondido, tem compulsões alimentares 2 vezes por semana, alternadas com jejum e exercício intenso para não engordar.",
+              "enunciado": "Qual transtorno alimentar melhor descreve o quadro?",
               "opcoes": [
-                "Fluoxetina",
-                "Bupropiona",
-                "Amitriptilina",
-                "Lítio com antipsicótico"
+                "Anorexia nervosa",
+                "Bulimia nervosa",
+                "Compulsão alimentar",
+                "Transtorno alimentar restritivo/evitativo"
               ],
-              "resposta": "Fluoxetina",
-              "explicacao": "A bupropiona é contraindicada por risco de convulsão.",
-              "revisado": false
+              "resposta": "Bulimia nervosa",
+              "explicacao": "Compulsões com comportamentos compensatórios (laxantes, jejum, exercício) pelo menos uma vez por semana, com peso normal e medo de engordar, definem bulimia nervosa. Na anorexia há baixo peso.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u8-l2-q6",
@@ -3844,17 +3830,19 @@
             },
             {
               "id": "rpsiq-u11-l1-q5",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual é um efeito colateral comum do metilfenidato?",
+              "tipo": "caso_clinico",
+              "caso": "Menina de 5 anos, desde os 4, é desorganizada em casa e na escola, parece não ouvir quando falam com ela, esquece objetos, não espera a vez, interrompe os outros e não para quieta na consulta. Os sintomas duram mais de 10 meses e causam prejuízo. A avó querida morreu há 1 ano.",
+              "enunciado": "Qual é o diagnóstico?",
               "opcoes": [
-                "Perda de apetite e insônia",
-                "Ganho de peso",
-                "Sonolência excessiva",
-                "Queda grave da pressão e desmaios frequentes"
+                "Transtorno opositor desafiador",
+                "TDAH",
+                "Transtorno disruptivo da desregulação do humor",
+                "Autismo"
               ],
-              "resposta": "Perda de apetite e insônia",
-              "explicacao": "Acompanhar peso e altura.",
-              "revisado": false
+              "resposta": "TDAH",
+              "explicacao": "Desatenção, hiperatividade e impulsividade em dois ambientes, antes dos 12 anos, por mais de 6 meses e com prejuízo definem TDAH. No opositor desafiador predominam raiva e desafio, e no autismo, prejuízo da comunicação social.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u11-l1-q6",
@@ -4610,26 +4598,33 @@
             },
             {
               "id": "rpsiq-u13-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher no 3º dia após o parto chora fácil e se sente insegura, mas cuida bem do bebê e dorme quando pode.",
-              "enunciado": "Qual é o diagnóstico?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é a diferença entre tristeza puerperal (baby blues) e depressão pós-parto?",
               "opcoes": [
-                "Tristeza materna (baby blues)",
-                "Depressão pós-parto",
-                "Psicose puerperal",
-                "Transtorno bipolar com mania puerperal"
+                "A tristeza puerperal é breve e passageira, nas primeiras semanas, e a depressão causa sintomas persistentes que prejudicam a função por semanas ou meses",
+                "A tristeza é crônica, e a depressão, passageira",
+                "A tristeza é hormonal, e a depressão só psicossocial",
+                "A tristeza tem sintomas psicóticos"
               ],
-              "resposta": "Tristeza materna (baby blues)",
-              "explicacao": "Apoio e orientação.",
-              "revisado": false
+              "resposta": "A tristeza puerperal é breve e passageira, nas primeiras semanas, e a depressão causa sintomas persistentes que prejudicam a função por semanas ou meses",
+              "explicacao": "O baby blues aparece nos primeiros dias, com choro e labilidade, e some em até 2 semanas sem tratamento. A depressão pós-parto dura mais, prejudica o cuidado com o bebê e precisa de tratamento. Sintomas psicóticos indicam psicose puerperal.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u13-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "A depressão pós-parto não afeta o bebê, apenas a mãe.",
-              "resposta": false,
-              "explicacao": "Falso. Pode prejudicar o vínculo e o desenvolvimento do bebê; tratar é importante para os dois.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "O que distingue a depressão pós-parto de outros quadros depressivos?",
+              "opcoes": [
+                "Serotonina baixa no sangue da placenta",
+                "Alucinações com choro do bebê",
+                "Prejuízo da relação mãe-bebê, com sentimento de incapacidade e medo de machucar o bebê",
+                "História de tentativa de suicídio"
+              ],
+              "resposta": "Prejuízo da relação mãe-bebê, com sentimento de incapacidade e medo de machucar o bebê",
+              "explicacao": "Os sintomas são os da depressão, mas o conteúdo gira em torno do bebê: sensação de não ser boa mãe, pensamentos intrusivos de causar dano e dificuldade de vínculo. Alucinações indicam psicose puerperal.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-u13-l1-q8",
@@ -4976,40 +4971,48 @@
             },
             {
               "id": "rpsiq-u14-l1-q6",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 35 anos com esquizofrenia teve alta de internação longa e não tem família nem onde morar.",
-              "enunciado": "Qual serviço da RAPS indicar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é uma medida de prevenção primária de depressão na população?",
               "opcoes": [
-                "Residência terapêutica",
-                "Hospital psiquiátrico",
-                "Albergue sem acompanhamento",
-                "Internação de longa permanência de novo"
+                "Antidepressivo para quem já tem depressão",
+                "Fortalecer redes comunitárias, com programas de atividade física e incentivo ao convívio social",
+                "Espaços de convivência isolados para pacientes",
+                "Grupos de autoajuda para quem tem depressão"
               ],
-              "resposta": "Residência terapêutica",
-              "explicacao": "Moradia com apoio na comunidade.",
-              "revisado": false
+              "resposta": "Fortalecer redes comunitárias, com programas de atividade física e incentivo ao convívio social",
+              "explicacao": "Prevenção primária age antes de a doença surgir, reduzindo fatores de risco como isolamento e sedentarismo. Tratar e prevenir recaídas em quem já tem depressão é prevenção secundária e terciária.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u14-l1-q7",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "O programa De Volta para Casa paga internações longas em hospitais psiquiátricos.",
-              "resposta": false,
-              "explicacao": "Falso. Ele dá auxílio financeiro a egressos de internação longa, para ajudar na reinserção social.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual é um componente fundamental do matriciamento na Estratégia Saúde da Família?",
+              "opcoes": [
+                "Centralizar o atendimento em emergências",
+                "Atendimento especializado sem a equipe de saúde da família",
+                "Apoio técnico e troca de saberes entre equipe e especialistas, com capacitação contínua",
+                "Protocolos rígidos que limitam a autonomia"
+              ],
+              "resposta": "Apoio técnico e troca de saberes entre equipe e especialistas, com capacitação contínua",
+              "explicacao": "No matriciamento, especialistas (como da saúde mental) discutem casos, fazem atendimentos conjuntos e capacitam a equipe, que continua responsável pelo paciente. Isso amplia a resolutividade e reduz encaminhamentos.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-u14-l1-q8",
               "tipo": "multipla_escolha",
-              "enunciado": "Qual serviço atende crianças com transtornos mentais graves no SUS?",
+              "enunciado": "Qual serviço da comunidade promove a inclusão social de pessoas com transtornos mentais no Brasil?",
               "opcoes": [
-                "CAPSi",
-                "CAPS AD",
-                "UPA",
-                "Unidade de terapia intensiva neonatal"
+                "Hospital psiquiátrico de longa permanência",
+                "Clínica particular",
+                "Pronto atendimento",
+                "Centro de Atenção Psicossocial (CAPS)"
               ],
-              "resposta": "CAPSi",
-              "explicacao": "Equipe multiprofissional.",
-              "revisado": false
+              "resposta": "Centro de Atenção Psicossocial (CAPS)",
+              "explicacao": "O CAPS é serviço aberto e comunitário, com equipe multiprofissional, atividades e suporte social, substituindo o modelo manicomial. Faz parte da Rede de Atenção Psicossocial, junto com residências terapêuticas e leitos em hospital geral.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             }
           ]
         },
@@ -8473,32 +8476,34 @@
             {
               "id": "rpsiq-d9-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Idoso com doença de Parkinson está em delirium com alucinações e agitação.",
-              "enunciado": "Qual antipsicótico preferir?",
+              "caso": "Idosa de 79 anos, diabética, no 2º dia após cirurgia de coluna fica desorientada, com febre de 38,1 °C, e à noite agitada, vendo bichos na parede e gritando. De dia está calma, lúcida e orientada, mas à noite o quadro volta.",
+              "enunciado": "Qual é o diagnóstico provável?",
               "opcoes": [
-                "Quetiapina em dose baixa",
-                "Haloperidol",
-                "Risperidona",
-                "Clorpromazina em dose alta"
+                "Demência de Alzheimer",
+                "Delirium pós-operatório",
+                "Estresse pós-traumático",
+                "Esquizofrenia"
               ],
-              "resposta": "Quetiapina em dose baixa",
-              "explicacao": "Piora menos o parkinsonismo.",
-              "revisado": false
+              "resposta": "Delirium pós-operatório",
+              "explicacao": "Início agudo, flutuação ao longo do dia, piora noturna, desatenção e alucinações visuais em idosa operada e febril caracterizam delirium. É preciso buscar e tratar a causa, como infecção, dor ou remédios. A demência tem início lento e sem flutuação tão marcada.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
             },
             {
               "id": "rpsiq-d9-l1-q4",
               "tipo": "caso_clinico",
-              "caso": "Idoso internado ficou confuso após receber prometazina e escopolamina.",
-              "enunciado": "Qual classe de remédio está causando o delirium?",
+              "caso": "Menino de 4 anos internado por pneumonia com febre alta fica, no 2º dia, agitado, gritando, falando de forma desconexa, vendo monstros e com dificuldade de atenção, pior à noite. Tomografia e exames afastaram causa neurológica.",
+              "enunciado": "Como se descreve o quadro?",
               "opcoes": [
-                "Anticolinérgicos",
-                "Estatinas",
-                "Protetores gástricos",
-                "Vitaminas do complexo B"
+                "Delirium",
+                "Psicose infantil",
+                "Autismo",
+                "Transtorno opositor desafiador"
               ],
-              "resposta": "Anticolinérgicos",
-              "explicacao": "Também benzodiazepínicos e opioides causam delirium.",
-              "revisado": false
+              "resposta": "Delirium",
+              "explicacao": "Início agudo, desatenção, alucinações visuais e flutuação durante doença aguda caracterizam delirium, também em crianças. A causa é a doença de base (infecção, febre, hipóxia ou remédios), que deve ser tratada.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-d9-l1-q5",
@@ -8651,11 +8656,18 @@
             },
             {
               "id": "rpsiq-d9-l2-q6",
-              "tipo": "verdadeiro_falso",
-              "enunciado": "Na demência com agitação, o antipsicótico é a primeira escolha, antes de qualquer outra medida.",
-              "resposta": false,
-              "explicacao": "Falso. Medidas não farmacológicas vêm antes; antipsicóticos aumentam mortalidade nesses idosos.",
-              "revisado": false
+              "tipo": "multipla_escolha",
+              "enunciado": "Num adulto com alterações cognitivas, qual é a principal diferença entre demência e deficiência intelectual?",
+              "opcoes": [
+                "Ambas são do neurodesenvolvimento e afetam idosos",
+                "A deficiência intelectual é progressiva e a demência estável",
+                "A demência é congênita e a deficiência surge na idade adulta",
+                "A demência é perda de capacidades antes adquiridas, e a deficiência intelectual é limitação no desenvolvimento desde a infância"
+              ],
+              "resposta": "A demência é perda de capacidades antes adquiridas, e a deficiência intelectual é limitação no desenvolvimento desde a infância",
+              "explicacao": "A demência é um declínio a partir de um nível anterior de funcionamento. A deficiência intelectual começa no período do desenvolvimento e não é um declínio. Pessoas com deficiência intelectual também podem desenvolver demência, como na síndrome de Down.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-d9-l2-q7",
@@ -10027,18 +10039,18 @@
           "questoes": [
             {
               "id": "rpsiq-d13-l1-q1",
-              "tipo": "caso_clinico",
-              "caso": "Homem de 40 anos com dependência de crack e sem moradia pede ajuda.",
-              "enunciado": "Qual serviço da RAPS indicar?",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quais são os \"transtornos mentais comuns\", os mais prevalentes na atenção primária?",
               "opcoes": [
-                "CAPS AD",
-                "CAPSi",
-                "Hospital psiquiátrico por 1 ano",
-                "Comunidade terapêutica sem avaliação"
+                "Ansiedade, depressão e somatização",
+                "Bipolar e esquizofrenia",
+                "Personalidade e sintomas neurológicos funcionais",
+                "TDAH e TOC"
               ],
-              "resposta": "CAPS AD",
-              "explicacao": "Acolhimento e projeto terapêutico.",
-              "revisado": false
+              "resposta": "Ansiedade, depressão e somatização",
+              "explicacao": "Os transtornos mentais comuns (sintomas ansiosos, depressivos e queixas físicas sem explicação) atingem cerca de um terço dos usuários da atenção primária e devem ser manejados nela, com apoio matricial se necessário.",
+              "revisado": false,
+              "fonte": "FAMEMA 2026"
             },
             {
               "id": "rpsiq-d13-l1-q2",
