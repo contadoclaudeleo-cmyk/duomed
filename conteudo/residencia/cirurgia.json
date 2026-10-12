@@ -2428,6 +2428,22 @@
               "explicacao": "No carcinoma espinocelular de esôfago médio localmente avançado, o padrão é quimiorradioterapia neoadjuvante e depois esofagectomia. A desnutrição deve ser corrigida durante o preparo. Radioterapia isolada ou só paliação não são o padrão para quem pode ser curado.",
               "revisado": false,
               "fonte": "PSU-MG 2026 R+"
+            },
+            {
+              "id": "cir-u4-l3-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 65 anos tinha lesão gástrica precoce de 20 mm, ulcerada, no antro, sem linfonodos ou metástases nos exames, e fez dissecção endoscópica da submucosa. A patologia mostrou adenocarcinoma bem diferenciado, ulcerado, com invasão de 400 µm na submucosa, margens livres e sem invasão angiolinfática.",
+              "enunciado": "Qual é a classificação eCura e a conduta?",
+              "opcoes": [
+                "eCura A; seguimento",
+                "eCura B; gastrectomia com linfadenectomia",
+                "eCura B; seguimento",
+                "eCura C; gastrectomia com linfadenectomia"
+              ],
+              "resposta": "eCura B; seguimento",
+              "explicacao": "Adenocarcinoma diferenciado de até 30 mm com invasão da submucosa abaixo de 500 µm (SM1), ressecado em bloco com margens livres e sem invasão vascular, é eCura B. O risco de linfonodo é baixo e basta acompanhar com endoscopia e imagem; margem positiva ou invasão vascular (eCura C) indicariam gastrectomia.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -2527,6 +2543,37 @@
               "explicacao": "Álcalis, como a soda cáustica, causam necrose de liquefação, que penetra fundo nos tecidos. Ácidos causam necrose de coagulação, que forma uma crosta e limita a profundidade. Por isso as lesões por álcali no esôfago tendem a ser mais graves.",
               "revisado": false,
               "fonte": "Unicamp 2026 R+"
+            },
+            {
+              "id": "cir-u4-l3b-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela classificação de Siewert, onde fica o adenocarcinoma da junção esofagogástrica tipo II?",
+              "opcoes": [
+                "Entre 0 e 3 cm acima da junção",
+                "Entre 0 e 2 cm acima da junção",
+                "Entre 0 e 2 cm abaixo da junção",
+                "De 1 cm acima a 2 cm abaixo da junção"
+              ],
+              "resposta": "De 1 cm acima a 2 cm abaixo da junção",
+              "explicacao": "O Siewert I fica de 1 a 5 cm acima da junção (esôfago distal), o II é a cárdia, de 1 cm acima a 2 cm abaixo, e o III fica de 2 a 5 cm abaixo (subcárdico). O tipo ajuda a escolher entre esofagectomia e gastrectomia.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
+            },
+            {
+              "id": "cir-u4-l3b-n2",
+              "tipo": "caso_clinico",
+              "caso": "Paciente com adenocarcinoma gástrico cT4a cN1 M0 vai fazer quimioterapia antes da cirurgia com o esquema FLOT.",
+              "enunciado": "Pelo II Consenso Brasileiro de Câncer Gástrico, o que se recomenda antes de iniciar a quimioterapia?",
+              "opcoes": [
+                "Cintilografia gástrica",
+                "PET com gálio-68",
+                "Laparoscopia diagnóstica",
+                "Lavagem gástrica"
+              ],
+              "resposta": "Laparoscopia diagnóstica",
+              "explicacao": "Tumores avançados (T3-T4 ou com linfonodos) têm risco de metástases no peritônio que a tomografia não mostra. A laparoscopia com lavado peritoneal antes da quimioterapia pode achar essa doença e mudar o tratamento.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         }
@@ -4714,22 +4761,6 @@
               "fonte": "USP-SP 2022"
             },
             {
-              "id": "cir-u8-l2-q2",
-              "tipo": "caso_clinico",
-              "caso": "Idosa com aneurisma de aorta de 6,5 cm, assintomática, com crescimento rápido do trombo.",
-              "enunciado": "Qual é o risco de ruptura em 12 meses?",
-              "opcoes": [
-                "1 a 10%",
-                "10 a 20%",
-                "50%",
-                "30 a 50%"
-              ],
-              "resposta": "30 a 50%",
-              "explicacao": "Acima de 6 cm o risco é alto.",
-              "revisado": false,
-              "fonte": "SUS-SP 2025 R+"
-            },
-            {
               "id": "cir-u8-l2-q3",
               "tipo": "multipla_escolha",
               "enunciado": "Qual é a ordem dos ramos da aorta abdominal, de cima para baixo?",
@@ -4819,6 +4850,38 @@
               "explicacao": "A artéria torácica interna (mamária) para a descendente anterior tem a maior perviedade a longo prazo, acima de 90% em 10 anos. A safena tende a ocluir com o tempo. Por isso a mamária é o enxerto preferido.",
               "revisado": false,
               "fonte": "Unicamp 2026 R+"
+            },
+            {
+              "id": "cir-u8-l2-n1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 60 anos, após correção endovascular de aneurisma da aorta abdominal, faz angiotomografia que mostra fluxo persistente dentro do saco do aneurisma, vindo pelas artérias lombares.",
+              "enunciado": "Que tipo de endoleak é esse?",
+              "opcoes": [
+                "Tipo I",
+                "Tipo II",
+                "Tipo III",
+                "Tipo IV"
+              ],
+              "resposta": "Tipo II",
+              "explicacao": "O endoleak tipo II é o enchimento do saco por ramos da aorta, como lombares ou mesentérica inferior, e é o mais comum. O tipo I vem das pontas da prótese, o III de defeito ou separação entre módulos e o IV da porosidade do tecido. O tipo II costuma ser só acompanhado, a menos que o saco cresça.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
+            },
+            {
+              "id": "cir-u8-l2-n2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 70 anos chega com dor torácica súbita e intensa irradiada para as costas. A angiotomografia mostra dissecção que começa na aorta ascendente e vai até a aorta abdominal.",
+              "enunciado": "Pela classificação de DeBakey, qual é o tipo?",
+              "opcoes": [
+                "Tipo I",
+                "Tipo II",
+                "Tipo IIIa",
+                "Tipo IIIb"
+              ],
+              "resposta": "Tipo I",
+              "explicacao": "DeBakey I começa na ascendente e se estende além do arco; o II fica só na ascendente; o III começa após a subclávia esquerda (IIIa até o diafragma, IIIb abaixo dele). Os tipos I e II são Stanford A, de cirurgia de urgência.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -5343,21 +5406,6 @@
           "id": "cir-u9-l3",
           "titulo": "Massas cervicais e glândulas salivares",
           "questoes": [
-            {
-              "id": "cir-u9-l3-q1",
-              "tipo": "multipla_escolha",
-              "enunciado": "Linfonodo supraclavicular esquerdo endurecido de 3 cm. Para onde dirigir a investigação?",
-              "opcoes": [
-                "Pulmão, fígado e esôfago",
-                "Fígado, vesícula e esôfago",
-                "Estômago, fígado e pâncreas",
-                "Rins, gônadas e estômago"
-              ],
-              "resposta": "Rins, gônadas e estômago",
-              "explicacao": "Linfonodo de Virchow drena o abdome.",
-              "revisado": false,
-              "fonte": "USP 2023 R+"
-            },
             {
               "id": "cir-u9-l3-q2",
               "tipo": "caso_clinico",
@@ -6779,6 +6827,22 @@
               "explicacao": "Massa testicular complexa em jovem deve ser tratada como câncer, mesmo com marcadores normais. A orquiectomia radical por via inguinal faz o diagnóstico e o tratamento. A via escrotal é proibida.",
               "revisado": false,
               "fonte": "USP 2024 R+"
+            },
+            {
+              "id": "cir-u12-l2b-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 62 anos sem sintomas tem nódulo endurecido na próstata, PSA 13,4 e ressonância com nódulo PI-RADS 4 sem extensão para fora da próstata. A biópsia mostra adenocarcinoma ISUP 3 em 6 de 15 fragmentos, nos dois lados.",
+              "enunciado": "Qual é o papel do PET-PSMA nesse caso?",
+              "opcoes": [
+                "É recomendado como primeira escolha para estadiamento",
+                "Pode ser feito, mas não substitui tomografia e cintilografia óssea",
+                "Não está indicado nesse caso",
+                "Serve só para recidiva bioquímica"
+              ],
+              "resposta": "É recomendado como primeira escolha para estadiamento",
+              "explicacao": "PSA acima de 10 e ISUP 3 indicam risco intermediário desfavorável, em que se faz estadiamento a distância. O PET-PSMA acha linfonodos e metástases ósseas melhor que tomografia e cintilografia, e as diretrizes atuais o preferem quando disponível.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         }
@@ -9017,21 +9081,6 @@
               "fonte": "PSU-MG 2025 R+"
             },
             {
-              "id": "cir-d2-l1-q6",
-              "tipo": "multipla_escolha",
-              "enunciado": "Idosa obesa com apendicite sem perfuração. O que NÃO favorece a laparoscopia?",
-              "opcoes": [
-                "Apêndice não perfurado",
-                "Idade avançada da paciente",
-                "Obesidade da paciente",
-                "Ser do sexo feminino"
-              ],
-              "resposta": "Apêndice não perfurado",
-              "explicacao": "Os outros favorecem a via laparoscópica.",
-              "revisado": false,
-              "fonte": "PSU-MG 2024 R+"
-            },
-            {
               "id": "cir-d2-l1-q7",
               "tipo": "multipla_escolha",
               "enunciado": "Sobre o apêndice, o que é correto?",
@@ -9502,22 +9551,6 @@
               "fonte": "Unifesp 2026 R+"
             },
             {
-              "id": "cir-q8-l2-q8",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com Chagas e acalásia tipo I com esôfago de 12 cm.",
-              "enunciado": "Qual é a melhor cirurgia?",
-              "opcoes": [
-                "Esofagectomia",
-                "Serra-Dória",
-                "POEM",
-                "Heller-Dor"
-              ],
-              "resposta": "Heller-Dor",
-              "explicacao": "Mesmo no megaesôfago avançado.",
-              "revisado": false,
-              "fonte": "Unifesp 2025 R+"
-            },
-            {
               "id": "cir-q8-l2-q9",
               "tipo": "multipla_escolha",
               "enunciado": "O divertículo epifrênico se associa a qual condição?",
@@ -9607,6 +9640,22 @@
               "explicacao": "A cirurgia antirrefluxo controla os sintomas e pode estabilizar o epitélio, mas não elimina o risco de câncer. Por isso a vigilância endoscópica continua. A técnica depende da motilidade, e a pHmetria não é obrigatória em todos.",
               "revisado": false,
               "fonte": "USP 2026 R+"
+            },
+            {
+              "id": "cir-d3-l1b-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 30 anos, tabagista e usuário de drogas, tem vômitos incontroláveis há 24 horas e depois dor atrás do esterno, dificuldade para engolir e pequena hematêmese. Está com febre de 38,5 °C, taquicardia, taquipneia e sudorese.",
+              "enunciado": "Qual é o diagnóstico?",
+              "opcoes": [
+                "Laceração de Mallory-Weiss",
+                "Úlcera gástrica perfurada na junção esofagogástrica",
+                "Síndrome de Boerhaave",
+                "Infarto agudo do miocárdio em jovem"
+              ],
+              "resposta": "Síndrome de Boerhaave",
+              "explicacao": "Vômitos intensos seguidos de dor torácica, febre e sinais de sepse sugerem ruptura de toda a parede do esôfago (Boerhaave), com mediastinite. No Mallory-Weiss a laceração é só da mucosa, com sangramento e sem quadro infeccioso. Confirma-se com tomografia ou esofagograma com contraste hidrossolúvel.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -9908,21 +9957,6 @@
               "explicacao": "O GLP-1 retarda o esvaziamento do estômago, aumenta a insulina e dá saciedade. Após o bypass, GLP-1 e PYY aumentam muito, o que ajuda na perda de peso e no diabetes. A grelina é produzida sobretudo no fundo gástrico e estimula o NPY, aumentando a fome.",
               "revisado": false,
               "fonte": "AMRIGS 2025"
-            },
-            {
-              "id": "cir-d3-l3-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Sobre a obesidade grave, avalie:\nI. Associa-se a doença renal terminal.\nII. Associa-se a câncer de próstata.\nIII. Artrose é a alteração mais frequente.\nIV. Alterações epigenéticas participam do seu surgimento.\nQuais estão corretas?",
-              "opcoes": [
-                "Apenas I e IV",
-                "Apenas II e III",
-                "Apenas I, II e III",
-                "I, II, III e IV"
-              ],
-              "resposta": "I, II, III e IV",
-              "explicacao": "É uma doença de muitos órgãos.",
-              "revisado": false,
-              "fonte": "AMRIGS 2026"
             },
             {
               "id": "cir-d3-l3-q3",
@@ -11483,6 +11517,22 @@
               "explicacao": "Melena com síncope e taquicardia em quem usa AINE sugere hemorragia digestiva alta por úlcera. As medidas iniciais são oxigênio, acesso venoso, monitorização, exames e reposição cautelosa, seguidas de endoscopia. A síncope é explicada pela perda de sangue.",
               "revisado": false,
               "fonte": "USP 2025 R+"
+            },
+            {
+              "id": "cir-d6-l3b-n1",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos tem cólica lombar esquerda e febre. A tomografia mostra cálculo de 7 mm no ureter distal com dilatação acima dele. Leucócitos 23 mil com 8% de bastões e PCR elevada.",
+              "enunciado": "Qual é a recomendação?",
+              "opcoes": [
+                "Esperar o antibiograma para drenar",
+                "Desobstruir com urgência, por nefrostomia ou cateter ureteral, que têm eficácia parecida",
+                "Fazer nefrostomia, porque o cateter ureteral não funciona na sepse",
+                "Retirar o cálculo de vez durante a infecção para evitar recidiva"
+              ],
+              "resposta": "Desobstruir com urgência, por nefrostomia ou cateter ureteral, que têm eficácia parecida",
+              "explicacao": "Cálculo obstruindo um rim infectado é urgência: o rim precisa ser drenado logo, junto com antibiótico, por nefrostomia ou cateter ureteral, que funcionam de forma semelhante. A retirada definitiva do cálculo fica para depois que a infecção for tratada.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         }
@@ -13183,6 +13233,22 @@
               "explicacao": "Claudicação intermitente sem lesão trófica é tratada primeiro de forma clínica: parar de fumar, exercício supervisionado, estatina e antiagregante. Isso melhora a distância de marcha. A revascularização fica para claudicação limitante que não melhora.",
               "revisado": false,
               "fonte": "Unifesp 2026"
+            },
+            {
+              "id": "cir-d10-l1-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 60 anos tem dor e formigamento súbitos na perna direita e não tem pulsos distais.",
+              "enunciado": "Na classificação de Rutherford para isquemia aguda, qual categoria corresponde a ameaça marginal, sem déficit motor?",
+              "opcoes": [
+                "I",
+                "IIa",
+                "IIb",
+                "III"
+              ],
+              "resposta": "IIa",
+              "explicacao": "A categoria I é viável, sem perda de sensibilidade ou força. A IIa é ameaça marginal, com perda leve de sensibilidade nos dedos e força preservada, e permite revascularização sem extrema urgência. A IIb tem dor em repouso, perda sensitiva maior e fraqueza e exige revascularização imediata; a III é irreversível.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -13367,22 +13433,6 @@
           "titulo": "Carótidas e pé diabético em casos",
           "questoes": [
             {
-              "id": "cir-d10-l3-q1",
-              "tipo": "caso_clinico",
-              "caso": "Homem com doença arterial periférica tem angina estável há um ano e vai revascularizar a perna. Eco normal.",
-              "enunciado": "Qual é a conduta?",
-              "opcoes": [
-                "Cateterismo antes",
-                "Cintilografia antes",
-                "Clopidogrel",
-                "Betabloqueador"
-              ],
-              "resposta": "Betabloqueador",
-              "explicacao": "Angina estável: tratar clinicamente.",
-              "revisado": false,
-              "fonte": "USP 2024 R+"
-            },
-            {
               "id": "cir-d10-l3-q2",
               "tipo": "caso_clinico",
               "caso": "Idosa com estenose de carótida de 80%, bifurcação alta em C2, pescoço curto e cirurgia cervical prévia.",
@@ -13508,6 +13558,22 @@
               "explicacao": "Lesão do tronco da coronária esquerda e doença multiarterial com FE reduzida têm benefício de sobrevida com a revascularização cirúrgica (pontes). A angioplastia é alternativa em casos selecionados. Tratamento clínico isolado não é adequado com angina incapacitante.",
               "revisado": false,
               "fonte": "Unicamp 2026"
+            },
+            {
+              "id": "cir-d10-l3-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 58 anos, sem sintomas, faz dúplex em rastreio cardiovascular que mostra estenose de 60% da carótida interna esquerda (pico sistólico 210 cm/s, razão interna/comum 4,2), sem placa ulcerada.",
+              "enunciado": "Pelas diretrizes da Sociedade Brasileira de Angiologia e Cirurgia Vascular, qual é a conduta?",
+              "opcoes": [
+                "Endarterectomia de carótida",
+                "Angioplastia com stent",
+                "Tratamento clínico otimizado",
+                "Cateterismo coronário antes de decidir"
+              ],
+              "resposta": "Tratamento clínico otimizado",
+              "explicacao": "Na estenose carotídea sem sintomas, o tratamento clínico moderno (antiagregante, estatina, controle da pressão e parar de fumar) é a base, e o risco anual de AVC é baixo. A cirurgia fica para casos selecionados com placa de alto risco e baixo risco cirúrgico, o que não é o caso aqui.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         }
@@ -13700,22 +13766,6 @@
               ],
               "resposta": "Angina de Ludwig; obstrução respiratória",
               "explicacao": "Febre e aumento submandibular após extração de molar inferior sugerem angina de Ludwig, uma celulite do assoalho da boca. O principal risco é a obstrução da via aérea pelo deslocamento da língua. O tratamento é proteger a via aérea, antibiótico e drenagem.",
-              "revisado": false,
-              "fonte": "USP 2026 R+"
-            },
-            {
-              "id": "cir-q11-l3-q6",
-              "tipo": "caso_clinico",
-              "caso": "Mulher com tremor, palpitação, tireoide aumentada, TSH suprimido e T4 alto, sem exoftalmo.",
-              "enunciado": "O que é correto?",
-              "opcoes": [
-                "Tireotoxicose por tireoidite com hipocaptação",
-                "Hipertireoidismo verdadeiro com hipocaptação",
-                "Hipertireoidismo verdadeiro com hipercaptação",
-                "Tireotoxicose por tireoidite com hipercaptação"
-              ],
-              "resposta": "Tireotoxicose por tireoidite com hipocaptação",
-              "explicacao": "Tireoidite não é hipertireoidismo.",
               "revisado": false,
               "fonte": "USP 2026 R+"
             },
@@ -15227,19 +15277,20 @@
               "fonte": "AMRIGS 2026 R+"
             },
             {
-              "id": "cir-q13-l1-q2",
-              "tipo": "multipla_escolha",
-              "enunciado": "Qual cadeia NÃO entra na linfadenectomia D2 da gastrectomia total?",
+              "id": "cir-d14-l1-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 62 anos fez gastrectomia subtotal com linfadenectomia D2 por adenocarcinoma, sem doença a distância nos exames. A peça mostra invasão até a muscular própria, margens livres, sem invasão angiolinfática ou neural, e 2 de 35 linfonodos comprometidos.",
+              "enunciado": "Pela 8ª edição do TNM (UICC), qual é o estadiamento patológico?",
               "opcoes": [
-                "Hepatoduodenal posterior",
-                "Hepática comum anterior",
-                "Linfonodos do hilo esplênico",
-                "Linfonodos do tronco celíaco"
+                "pT1b pN1 M0",
+                "pT2 pN1 M0",
+                "pT1a pN0 M0",
+                "cT2 cN1 M0"
               ],
-              "resposta": "Hepatoduodenal posterior",
-              "explicacao": "Fica fora da D2.",
+              "resposta": "pT2 pN1 M0",
+              "explicacao": "Invadir a muscular própria é T2 (T1a é a mucosa e T1b, a submucosa), e 1 a 2 linfonodos é N1. Como vem da peça operada, usa-se o prefixo \"p\", e não \"c\" (clínico).",
               "revisado": false,
-              "fonte": "AMRIGS 2025 R+"
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -16089,6 +16140,22 @@
               "explicacao": "Para iniciar o protocolo de morte encefálica, o paciente deve estar estável: temperatura acima de 35 °C, saturação acima de 94% e PAM de 65 ou mais. A causa do coma deve ser conhecida e irreversível, sem distúrbio metabólico grave. O tempo mínimo de observação é de 6 horas, ou 24 horas na encefalopatia hipóxico-isquêmica.",
               "revisado": false,
               "fonte": "Unicamp 2026 R+"
+            },
+            {
+              "id": "cir-d14-l3b-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 71 anos, sem outras doenças, fez gastroduodenopancreatectomia por adenocarcinoma da cabeça do pâncreas.",
+              "enunciado": "Quais alterações são mais esperadas no pós-operatório imediato?",
+              "opcoes": [
+                "Poliúria, íleo adinâmico, hipoglicemia e febre",
+                "Oligúria funcional, íleo adinâmico, hipoglicemia e hipotermia",
+                "Poliúria, íleo adinâmico, hiperglicemia e hipotermia",
+                "Oligúria funcional, íleo adinâmico, hiperglicemia e elevação da temperatura"
+              ],
+              "resposta": "Oligúria funcional, íleo adinâmico, hiperglicemia e elevação da temperatura",
+              "explicacao": "A resposta ao trauma cirúrgico libera ADH, aldosterona, cortisol e catecolaminas: o rim retém água e sódio (menos urina), a glicose sobe e há febre leve pela inflamação. O íleo adinâmico é esperado nos primeiros dias após cirurgia abdominal.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         },
@@ -16124,22 +16191,6 @@
               ],
               "resposta": "Cristaloide a 400 mL/h e diurese de 1 a 3 mL/kg/h",
               "explicacao": "Na rabdomiólise, a base do tratamento é hidratação vigorosa com cristaloide, buscando diurese de cerca de 1 a 3 mL/kg/h. O diagnóstico é feito pela CPK alta. Pode ser causada por trauma, exercício intenso, drogas, remédios e infecções.",
-              "revisado": false,
-              "fonte": "Unicamp 2026 R+"
-            },
-            {
-              "id": "cir-q14-l2-q5",
-              "tipo": "caso_clinico",
-              "caso": "Creatinina de 0,9 para 3,1, acidose e lactato 5,8.",
-              "enunciado": "Classificação e conduta?",
-              "opcoes": [
-                "KDIGO 3; volume e bicarbonato",
-                "KDIGO 2; diálise de urgência",
-                "KDIGO 1; apenas observar",
-                "KDIGO 3; diálise imediata"
-              ],
-              "resposta": "KDIGO 3; volume e bicarbonato",
-              "explicacao": "Sem indicação urgente.",
               "revisado": false,
               "fonte": "Unicamp 2026 R+"
             },
@@ -16191,6 +16242,36 @@
               "explicacao": "Dor lombar que vai para nádegas e coxas, obrigando a parar a cada certa distância e piorando ao descer ladeiras (extensão da coluna), é claudicação neurogênica. Ela sugere estenose do canal lombar. Na doença arterial, a dor não depende da postura.",
               "revisado": false,
               "fonte": "USP 2025 R+"
+            },
+            {
+              "id": "cir-d14-l3c-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Pela definição global mais recente de SDRA, em paciente intubado (e com SpO2 até 97%, quando se usa a saturação), qual relação define o quadro moderado?",
+              "opcoes": [
+                "PaO2/FiO2 até 100, ou SpO2/FiO2 até 148",
+                "PaO2/FiO2 acima de 100 e até 200, ou SpO2/FiO2 acima de 148 e até 235",
+                "PaO2/FiO2 acima de 200 e até 300, ou SpO2/FiO2 acima de 235 e até 315",
+                "PaO2/FiO2 acima de 300, ou SpO2/FiO2 acima de 315"
+              ],
+              "resposta": "PaO2/FiO2 acima de 100 e até 200, ou SpO2/FiO2 acima de 148 e até 235",
+              "explicacao": "Nos intubados, a SDRA é leve com PaO2/FiO2 de 201 a 300, moderada de 101 a 200 e grave até 100. A definição global de 2023 aceita a SpO2/FiO2 quando a saturação é de até 97%, com cortes de 315, 235 e 148.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
+            },
+            {
+              "id": "cir-d14-l3c-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a reposição de líquidos em pacientes instáveis, qual afirmação está correta?",
+              "opcoes": [
+                "Fluido-responsividade é a pressão arterial média subir 10 a 15% após o volume",
+                "Fluido-tolerância é a capacidade de receber volume sem sobrecarga ou disfunção de órgãos",
+                "Quem é fluido-responsivo deve receber volume de imediato, guiado por pressão arterial e PVC",
+                "Quem é fluido-tolerante recebe pequenos volumes para manter a PVC normal"
+              ],
+              "resposta": "Fluido-tolerância é a capacidade de receber volume sem sobrecarga ou disfunção de órgãos",
+              "explicacao": "Fluido-responsividade é o débito cardíaco (ou volume sistólico) subir cerca de 10 a 15% com o volume, e não a pressão. Ser responsivo não obriga a dar volume: o paciente precisa dele e tem de tolerá-lo. A PVC é um mau guia para repor líquidos.",
+              "revisado": false,
+              "fonte": "PSU-GO 2026 R+"
             }
           ]
         }
