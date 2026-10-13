@@ -7149,6 +7149,137 @@
               "fonte": "SES-GO 2025"
             }
           ]
+        },
+        {
+          "id": "prev-d1-l4",
+          "titulo": "Leitura de estudos e medidas de efeito em casos",
+          "questoes": [
+            {
+              "id": "prev-d1-l4-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Vários estudos caso-controle avaliaram se o sedentarismo aumenta o risco de infarto. Qual resultado indica que o sedentarismo é fator de risco significativo?",
+              "opcoes": [
+                "OR 0,6 (IC95% 0,3 a 0,8)",
+                "OR 0,8 (IC95% 0,5 a 1,1)",
+                "OR 1,8 (IC95% 1,2 a 2,7)",
+                "OR 2,5 (IC95% 0,9 a 4,1)"
+              ],
+              "resposta": "OR 1,8 (IC95% 1,2 a 2,7)",
+              "explicacao": "Para ser fator de risco significativo, a odds ratio deve ser maior que 1 e o intervalo de confiança não pode incluir o 1. OR abaixo de 1 indica proteção, e intervalos que cruzam o 1 não são significativos, mesmo com OR alta.",
+              "revisado": false,
+              "fonte": "AMRIGS 2023"
+            },
+            {
+              "id": "prev-d1-l4-n2",
+              "tipo": "caso_clinico",
+              "caso": "Uma revisão sistemática com metanálise sobre ivermectina na COVID-19 encontrou risco relativo de 0,76 (IC95% 0,52 a 1,11) para mortalidade e de 0,74 (IC95% 0,48 a 1,16) para ventilação mecânica.",
+              "enunciado": "O que se pode afirmar?",
+              "opcoes": [
+                "Os desfechos não podem ser medidos de forma objetiva",
+                "Os intervalos incluem o 1, sem significância estatística",
+                "Houve redução de 76% na mortalidade e de 74% na ventilação",
+                "Houve aumento de 24% na mortalidade e de 26% na ventilação",
+                "A revisão sistemática não serve para avaliar remédios"
+              ],
+              "resposta": "Os intervalos incluem o 1, sem significância estatística",
+              "explicacao": "Os dois intervalos de confiança incluem o 1, então não se pode afirmar que a ivermectina mude esses desfechos. Um RR de 0,76 significaria redução de 24%, e não de 76%, se fosse significativo.",
+              "revisado": false,
+              "fonte": "AMP-PR 2023"
+            },
+            {
+              "id": "prev-d1-l4-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Uma revisão sistemática encontrou risco relativo de 1,31 (IC95% 1,15 a 1,50) para morte entre quem bebe mais de duas porções diárias de bebida adoçada. O que é correto?",
+              "opcoes": [
+                "Risco de morte 31% maior que no grupo de referência",
+                "O risco subiu com o consumo, variando de 15% a 50%",
+                "O risco de morte foi 50% maior nesse grupo",
+                "Não houve associação com a mortalidade geral"
+              ],
+              "resposta": "Risco de morte 31% maior que no grupo de referência",
+              "explicacao": "RR de 1,31 significa risco 31% maior nos expostos, e o intervalo de 1,15 a 1,50, sem incluir o 1, mostra significância. O intervalo indica a faixa provável do efeito, e não uma relação de dose e resposta.",
+              "revisado": false,
+              "fonte": "Unifesp 2024"
+            },
+            {
+              "id": "prev-d1-l4-n4",
+              "tipo": "multipla_escolha",
+              "enunciado": "Num ensaio clínico, 79 de 741 pacientes (11%) com fluvoxamina e 119 de 756 (16%) com placebo precisaram de atendimento prolongado ou transferência por COVID-19. Quais são o risco relativo, a redução absoluta do risco e a redução relativa do risco?",
+              "opcoes": [
+                "0,32; 11% e 0,45",
+                "0,66; 27% e 0,34",
+                "0,68; 5% e 0,32",
+                "1,45; 5% e 0,45",
+                "0,68; 11% e 1,45"
+              ],
+              "resposta": "0,68; 5% e 0,32",
+              "explicacao": "O risco relativo é 11% dividido por 16%, cerca de 0,68, e a redução absoluta é 16% menos 11%, ou seja, 5%. A redução relativa é 1 menos o RR, cerca de 0,32, e o número necessário para tratar seria 1 dividido por 0,05, ou 20.",
+              "revisado": false,
+              "fonte": "AMP-PR 2022"
+            },
+            {
+              "id": "prev-d1-l4-n5",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um estudo caso-controle encontrou 56 expostos em 100 casos e 40 expostos em 100 controles. Casos e controles foram bem identificados, mas o questionário de exposição tinha sensibilidade de 80% e especificidade de 100%. Qual é a odds ratio corrigida?",
+              "opcoes": [
+                "1,9",
+                "2,3",
+                "1,7",
+                "2,1"
+              ],
+              "resposta": "2,3",
+              "explicacao": "Com sensibilidade de 80% e nenhum falso-positivo, os expostos verdadeiros são 56/0,8 = 70 entre os casos e 40/0,8 = 50 entre os controles. A OR corrigida é (70 × 50) / (30 × 50), cerca de 2,3, maior que a OR observada de 1,9, porque o erro não diferencial puxa a OR para 1.",
+              "revisado": false,
+              "fonte": "Unifesp 2022"
+            },
+            {
+              "id": "prev-d1-l4-n6",
+              "tipo": "multipla_escolha",
+              "enunciado": "Um teste de farmácia para COVID-19 tem, para IgM, 99,1% de sensibilidade e 95,5% de especificidade e, para IgG, 88% de sensibilidade e 90% de especificidade. Qual interpretação está correta?",
+              "opcoes": [
+                "0,9% de falso-negativo para IgM e 88% de verdadeiro-positivo para IgG",
+                "0,9% de falso-positivo para IgM e 12% de falso-negativo para IgG",
+                "99,1% de falso-negativo para IgM e 88% de falso-negativo para IgG",
+                "0,9% de verdadeiro-negativo para IgM e 12% de falso-positivo para IgG"
+              ],
+              "resposta": "0,9% de falso-negativo para IgM e 88% de verdadeiro-positivo para IgG",
+              "explicacao": "Sensibilidade é a proporção de doentes com teste positivo (verdadeiros-positivos), e o restante dos doentes são falsos-negativos. Assim, a IgM com 99,1% de sensibilidade tem 0,9% de falsos-negativos, e a IgG detecta 88% dos doentes.",
+              "revisado": false,
+              "fonte": "Unifesp 2023"
+            },
+            {
+              "id": "prev-d1-l4-n7",
+              "tipo": "caso_clinico",
+              "caso": "Durante a pandemia, uma pesquisa online com adolescentes, com questionários de autorrelato, buscou associação entre sintomas de depressão, ansiedade, uso abusivo de álcool e tempo de tela. Os dados foram colhidos num único momento.",
+              "enunciado": "Qual é um achado possível desse estudo?",
+              "opcoes": [
+                "A densidade de incidência de depressão foi o dobro da de ansiedade",
+                "O risco relativo de uso de álcool foi 3 vezes maior nos meninos",
+                "O abuso de álcool causou os sintomas de depressão nos jovens",
+                "Prevalência de ansiedade de 40%, com razão de prevalência de 2,5"
+              ],
+              "resposta": "Prevalência de ansiedade de 40%, com razão de prevalência de 2,5",
+              "explicacao": "Um estudo transversal mede tudo ao mesmo tempo, então calcula prevalência e razão de prevalência. Incidência e risco relativo exigem seguimento no tempo, e o desenho não permite afirmar causa.",
+              "revisado": false,
+              "fonte": "Unifesp 2022"
+            },
+            {
+              "id": "prev-d1-l4-n8",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre os ensaios clínicos, o que é correto?",
+              "opcoes": [
+                "Partem de pessoas com e sem a doença",
+                "Uma odds ratio diferente de 0 afasta a hipótese nula",
+                "Testam se o risco difere entre expostos e não expostos a um fator",
+                "Descrevem a doença por pessoa, lugar e tempo",
+                "É comum perder o seguimento de alguns pacientes ao longo do estudo"
+              ],
+              "resposta": "É comum perder o seguimento de alguns pacientes ao longo do estudo",
+              "explicacao": "Nos ensaios clínicos, as perdas de seguimento são frequentes e podem gerar viés, por isso se usa a análise por intenção de tratar. Partir de doentes e não doentes é o caso-controle, e a hipótese nula da OR é o valor 1, e não 0.",
+              "revisado": false,
+              "fonte": "AMP-PR 2025"
+            }
+          ]
         }
       ]
     },
@@ -7724,6 +7855,239 @@
               "explicacao": "A cobertura vacinal pelo método administrativo usa as doses que completam o esquema aplicadas no período sobre a população estimada. Erros na estimativa de população podem levar a coberturas acima de 100%.",
               "revisado": false,
               "fonte": "SES-GO 2026"
+            }
+          ]
+        },
+        {
+          "id": "prev-d3-l2",
+          "titulo": "Notificação e vigilância em casos",
+          "questoes": [
+            {
+              "id": "prev-d3-l2-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a notificação compulsória, o que é correto?",
+              "opcoes": [
+                "Os dados são lançados no Sistema de Informação de Agravos de Notificação (SINAN)",
+                "Estados e municípios não podem incluir agravos sem pactuação tripartite",
+                "É um ato médico que outros profissionais podem fazer seguindo o SUS",
+                "É obrigatória para brasileiros e opcional para estrangeiros"
+              ],
+              "resposta": "Os dados são lançados no Sistema de Informação de Agravos de Notificação (SINAN)",
+              "explicacao": "As notificações alimentam o SINAN, base da vigilância epidemiológica. Qualquer profissional de saúde é obrigado a notificar, estados e municípios podem ampliar a lista, e a obrigação vale para qualquer pessoa atendida no país.",
+              "revisado": false,
+              "fonte": "Unifesp 2024"
+            },
+            {
+              "id": "prev-d3-l2-n2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 42 anos procura a UBS com febre, dores no corpo, dor de cabeça e dor atrás dos olhos há 2 dias, e conta que há vários casos parecidos na sua rua nesta semana. É feito o diagnóstico de dengue.",
+              "enunciado": "Qual é o papel da equipe da UBS?",
+              "opcoes": [
+                "Notificar o caso de imediato",
+                "Notificar semanalmente e propor grupos de prevenção",
+                "Tratar caso a caso e checar a vacinação",
+                "Notificar de imediato, só para informar",
+                "Notificar semanalmente, sem foco em prevenção"
+              ],
+              "resposta": "Notificar semanalmente e propor grupos de prevenção",
+              "explicacao": "Dengue sem sinais de alarme é de notificação semanal, enquanto óbitos e casos graves exigem notificação imediata. Diante de vários casos na região, a equipe deve também agir na prevenção, com orientação da comunidade e combate aos criadouros.",
+              "revisado": false,
+              "fonte": "ENARE 2023"
+            },
+            {
+              "id": "prev-d3-l2-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a notificação compulsória no Brasil, o que é correto?",
+              "opcoes": [
+                "A notificação imediata deve ser feita em até 48 horas do primeiro atendimento",
+                "Qualquer cidadão que saiba de um caso pode comunicá-lo à autoridade de saúde",
+                "Tentativa de suicídio, óbito infantil e óbito indígena são de notificação em todo o país",
+                "O município deve copiar na sua lista os agravos da lista da região de saúde"
+              ],
+              "resposta": "Qualquer cidadão que saiba de um caso pode comunicá-lo à autoridade de saúde",
+              "explicacao": "A notificação é obrigatória para profissionais e serviços de saúde, mas qualquer cidadão pode comunicar um caso. A notificação imediata deve ser feita em até 24 horas.",
+              "revisado": false,
+              "fonte": "Unifesp 2022"
+            },
+            {
+              "id": "prev-d3-l2-n4",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destes NÃO faz parte da lista nacional de notificação compulsória?",
+              "opcoes": [
+                "Bartonelose",
+                "Leptospirose",
+                "Febre amarela",
+                "Raiva humana"
+              ],
+              "resposta": "Bartonelose",
+              "explicacao": "Leptospirose, febre amarela e raiva humana estão na lista nacional, as duas últimas com notificação imediata. A bartonelose não consta da lista nacional.",
+              "revisado": false,
+              "fonte": "AMRIGS 2023"
+            },
+            {
+              "id": "prev-d3-l2-n5",
+              "tipo": "caso_clinico",
+              "caso": "Um pai decidiu não vacinar a família. Mora com a esposa e 3 filhos de 4 a 9 anos, e um dos filhos pega sarampo.",
+              "enunciado": "Qual é a chance aproximada de pessoas não vacinadas do mesmo domicílio adoecerem?",
+              "opcoes": [
+                "90%",
+                "50%",
+                "75%",
+                "10%",
+                "25%"
+              ],
+              "resposta": "90%",
+              "explicacao": "O sarampo é uma das doenças mais contagiosas, com taxa de ataque de cerca de 90% entre suscetíveis expostos. Por isso, a vacinação de bloqueio deve ser feita nos contatos em até 72 horas.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025 R+"
+            }
+          ]
+        },
+        {
+          "id": "prev-d3-l3",
+          "titulo": "Vacinação em casos",
+          "questoes": [
+            {
+              "id": "prev-d3-l3-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual destas vacinas deve ser evitada na gestação, segundo o Ministério da Saúde?",
+              "opcoes": [
+                "Difteria",
+                "Sarampo",
+                "Coqueluche",
+                "Tétano"
+              ],
+              "resposta": "Sarampo",
+              "explicacao": "Vacinas de vírus vivo, como a tríplice viral (sarampo, caxumba e rubéola), são contraindicadas na gestação. A dTpa, com difteria, tétano e coqueluche, é recomendada a cada gestação.",
+              "revisado": false,
+              "fonte": "AMRIGS 2022"
+            },
+            {
+              "id": "prev-d3-l3-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em qual situação a vacina contra rotavírus é contraindicada?",
+              "opcoes": [
+                "História familiar de invaginação intestinal",
+                "Imunodeficiência combinada grave",
+                "Prematuridade extrema",
+                "Contato em casa com grávida de 1º trimestre"
+              ],
+              "resposta": "Imunodeficiência combinada grave",
+              "explicacao": "A vacina de rotavírus é de vírus vivo e é contraindicada na imunodeficiência combinada grave e em quem já teve invaginação. Prematuros recebem pela idade cronológica, e contato com gestante não é contraindicação.",
+              "revisado": false,
+              "fonte": "Unifesp 2024"
+            },
+            {
+              "id": "prev-d3-l3-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre as vacinas, qual afirmação está ERRADA?",
+              "opcoes": [
+                "Crianças com alergia a ovo podem receber a tríplice viral",
+                "A cicatriz da BCG indica proteção contra a tuberculose",
+                "Em quem não teve dengue, a vacina pode piorar uma infecção futura",
+                "A VIP protege o vacinado, sem imunizar os contatos"
+              ],
+              "resposta": "A cicatriz da BCG indica proteção contra a tuberculose",
+              "explicacao": "A presença ou ausência de cicatriz da BCG não indica se a pessoa está protegida, e não se revacina por falta de cicatriz. A VIP, inativada, não gera imunidade nos contatos como a VOP, e a alergia a ovo não contraindica a tríplice viral.",
+              "revisado": false,
+              "fonte": "PSU-MG 2023"
+            },
+            {
+              "id": "prev-d3-l3-n4",
+              "tipo": "caso_clinico",
+              "caso": "Tercigesta de 24 semanas, saudável, recebeu dTpa nas duas gestações anteriores, a última há 1 ano e 3 meses.",
+              "enunciado": "Qual é a orientação sobre a dTpa nesta gestação?",
+              "opcoes": [
+                "Tomar depois de 32 semanas",
+                "Tomar agora",
+                "Não tomar, pois já está imune",
+                "Não tomar, pois não é grupo de risco"
+              ],
+              "resposta": "Tomar agora",
+              "explicacao": "A dTpa deve ser dada em toda gestação, a partir de 20 semanas, para que a mãe passe anticorpos contra a coqueluche ao bebê. Doses de gestações anteriores não protegem o novo recém-nascido.",
+              "revisado": false,
+              "fonte": "Unifesp 2024"
+            },
+            {
+              "id": "prev-d3-l3-n5",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 12 anos, com vacinas em dia, foi mordida no rosto por um macaco durante viagem a um hotel numa floresta tropical.",
+              "enunciado": "Além de cuidar da ferida, o que o médico deve recomendar?",
+              "opcoes": [
+                "Vacina antitetânica e antibiótico",
+                "Soro antitetânico e aciclovir oral",
+                "Vacina antitetânica e antirrábica",
+                "Soro antitetânico e antibiótico",
+                "Vacina antitetânica e aciclovir"
+              ],
+              "resposta": "Vacina antitetânica e antirrábica",
+              "explicacao": "Mordida de primata é acidente grave para raiva, sobretudo no rosto, e pede vacina antirrábica, com soro ou imunoglobulina antirrábica. Com vacinas em dia, o reforço antitetânico é feito se a última dose tiver mais de 5 anos.",
+              "revisado": false,
+              "fonte": "Santa Casa SP 2025"
+            },
+            {
+              "id": "prev-d3-l3-n6",
+              "tipo": "caso_clinico",
+              "caso": "Gestante de 8 semanas quer saber sobre vacinas, pois vai viajar nas férias para um lugar que exige vacina contra febre amarela.",
+              "enunciado": "O que o médico deve fazer?",
+              "opcoes": [
+                "Prescrever a vacina de imediato",
+                "Adiar a vacina e a viagem para o 2º trimestre",
+                "Não indicar a vacina na gestação",
+                "Indicar doxiciclina no lugar da vacina"
+              ],
+              "resposta": "Não indicar a vacina na gestação",
+              "explicacao": "A vacina de febre amarela é de vírus vivo e não é indicada na gestação, exceto quando o risco de exposição é inevitável e alto, o que não é o caso de uma viagem de férias. O ideal é adiar a viagem.",
+              "revisado": false,
+              "fonte": "AMRIGS 2024 R+"
+            },
+            {
+              "id": "prev-d3-l3-n7",
+              "tipo": "caso_clinico",
+              "caso": "Menino de 24 meses vem à puericultura sem queixas, com vacinas atualizadas pelo calendário antigo.",
+              "enunciado": "Segundo o Ministério da Saúde, desde novembro de 2024, qual é a conduta para a poliomielite?",
+              "opcoes": [
+                "VIP agora e VOP aos 4 anos",
+                "Uma VIP aos 4 anos",
+                "Considerar já imunizado",
+                "VIP agora, sem dose aos 4 anos"
+              ],
+              "resposta": "VIP agora, sem dose aos 4 anos",
+              "explicacao": "Desde novembro de 2024, a VOP foi substituída pela VIP, com reforço único aos 15 meses. Crianças que tomaram VOP no lugar desse reforço recebem uma dose de VIP, e não há mais dose aos 4 anos.",
+              "revisado": false,
+              "fonte": "Unicamp 2025 R+"
+            },
+            {
+              "id": "prev-d3-l3-n8",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 50 anos vem à consulta de promoção de saúde. Não sabe se foi vacinado contra hepatite B, mas teve hepatite na infância.",
+              "enunciado": "Qual combinação de resultados indica vacinar para hepatite B?",
+              "opcoes": [
+                "Anti-HBc negativo e anti-HBs negativo",
+                "Anti-HBc negativo e HBsAg negativo",
+                "Anti-HBc positivo e anti-HBs negativo",
+                "Anti-HBc positivo e HBsAg negativo"
+              ],
+              "resposta": "Anti-HBc negativo e anti-HBs negativo",
+              "explicacao": "Sem anti-HBc (nunca teve contato) e sem anti-HBs (não está imune), a pessoa é suscetível e deve ser vacinada. Anti-HBc positivo indica infecção prévia, que pede outra investigação, e não vacina.",
+              "revisado": false,
+              "fonte": "USP-SP 2025 R+"
+            },
+            {
+              "id": "prev-d3-l3-n9",
+              "tipo": "multipla_escolha",
+              "enunciado": "Qual perfil sorológico é esperado em quem tem imunidade contra hepatite B obtida só pela vacina?",
+              "opcoes": [
+                "HBsAg -, anti-HBs +, anti-HBc +",
+                "HBsAg +, anti-HBs -, anti-HBc +",
+                "HBsAg -, anti-HBs +, anti-HBc -",
+                "HBsAg -, anti-HBs -, anti-HBc +",
+                "HBsAg +, anti-HBs -, anti-HBc -"
+              ],
+              "resposta": "HBsAg -, anti-HBs +, anti-HBc -",
+              "explicacao": "A vacina contém só o antígeno de superfície, então gera anti-HBs, sem anti-HBc. O anti-HBc positivo indica contato com o vírus, e o HBsAg positivo indica infecção atual.",
+              "revisado": false,
+              "fonte": "AMP-PR 2026 R+"
             }
           ]
         }
@@ -10796,6 +11160,108 @@
               "fonte": "SES-GO 2025"
             }
           ]
+        },
+        {
+          "id": "prev-d12-l3",
+          "titulo": "Declaração de óbito e notificação em casos",
+          "questoes": [
+            {
+              "id": "prev-d12-l3-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a morte de criança ou adolescente por trauma, ou que chega morta ao serviço, avalie:\nI. O médico assistente não deve fornecer a declaração de óbito em morte violenta ou suspeita, seja acidente ou violência, EXCETO\nII. se não houver IML no município ou na região, sem necessidade de avisar a autoridade local.\nQual é a alternativa correta?",
+              "opcoes": [
+                "Ambas corretas, e a II justifica a I",
+                "Ambas corretas, mas a II não justifica a I",
+                "A I está correta e a II, incorreta",
+                "A I está incorreta e a II, correta",
+                "Ambas incorretas"
+              ],
+              "resposta": "A I está correta e a II, incorreta",
+              "explicacao": "Em morte violenta ou suspeita, a declaração de óbito é emitida pelo IML. Onde não há IML, um médico da localidade pode emiti-la como perito designado, mas sempre com comunicação à autoridade policial.",
+              "revisado": false,
+              "fonte": "AMP-PR 2026 R+"
+            },
+            {
+              "id": "prev-d12-l3-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Em quais situações de óbito fetal a declaração de óbito deve ser emitida?\nI. Gestação de 20 semanas ou mais.\nII. Feto com 500 g ou mais.\nIII. Feto com 25 cm ou mais.\nQuais estão corretas?",
+              "opcoes": [
+                "Só a I",
+                "Só I e II",
+                "Só I e III",
+                "As três"
+              ],
+              "resposta": "As três",
+              "explicacao": "A declaração de óbito fetal é obrigatória quando a gestação durou 20 semanas ou mais, ou o feto pesa 500 g ou mais, ou mede 25 cm ou mais. Abaixo desses limites, é considerado aborto, e a declaração é opcional.",
+              "revisado": false,
+              "fonte": "AMRIGS 2025 R+"
+            },
+            {
+              "id": "prev-d12-l3-n3",
+              "tipo": "caso_clinico",
+              "caso": "Médica de família é chamada para preencher a declaração de óbito de um paciente que acompanhava. Ele era hipertenso há 30 anos e teve AVC há 5 anos. Há 10 dias teve quadro gripal e, há 1 dia, piorou com falta de ar e cianose, morrendo em casa.",
+              "enunciado": "Quem preenche e como fica a declaração?",
+              "opcoes": [
+                "IML; Parte I: insuficiência respiratória, síndrome gripal e hipertensão; Parte II: AVC",
+                "A médica; Parte I: insuficiência respiratória, pneumonia e síndrome gripal; Parte II: AVC e hipertensão",
+                "SAMU; Parte I: síndrome gripal, pneumonia e insuficiência respiratória; Parte II: AVC e hipertensão",
+                "SVO; Parte I: insuficiência respiratória, AVC e hipertensão; Parte II: pneumonia e síndrome gripal"
+              ],
+              "resposta": "A médica; Parte I: insuficiência respiratória, pneumonia e síndrome gripal; Parte II: AVC e hipertensão",
+              "explicacao": "Morte natural de paciente acompanhado deve ter a declaração preenchida pelo médico assistente. Na Parte I, a sequência vai da causa terminal (linha a) à causa básica (última linha), e na Parte II ficam doenças que contribuíram sem fazer parte da cadeia, como AVC e hipertensão.",
+              "revisado": false,
+              "fonte": "ENAMED 2026"
+            },
+            {
+              "id": "prev-d12-l3-n4",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 32 anos, faxineira, caiu de 12 metros ao limpar a janela de um prédio e bateu o abdome num muro. No pronto-socorro teve laceração do fígado, sangramento no abdome, choque hemorrágico e morreu. A família conta que ela tinha anemia falciforme.",
+              "enunciado": "Qual é o preenchimento correto da declaração de óbito?",
+              "opcoes": [
+                "Parte I: choque hemorrágico, laceração do fígado, trauma abdominal e queda do prédio; Parte II: anemia falciforme",
+                "Parte I: queda do prédio, trauma abdominal, laceração do fígado e choque hemorrágico; Parte II vazia",
+                "Parte I: choque hemorrágico, laceração do fígado, anemia falciforme e queda do prédio; Parte II vazia",
+                "Parte I: choque hemorrágico, trauma do fígado, anemia falciforme e queda; Parte II vazia"
+              ],
+              "resposta": "Parte I: choque hemorrágico, laceração do fígado, trauma abdominal e queda do prédio; Parte II: anemia falciforme",
+              "explicacao": "Na Parte I, a linha a traz a causa terminal e a última linha traz a causa básica, que na morte violenta é a circunstância externa, a queda. A anemia falciforme não está na cadeia que levou à morte e vai para a Parte II.",
+              "revisado": false,
+              "fonte": "UNESP 2025"
+            },
+            {
+              "id": "prev-d12-l3-n5",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 70 anos internado por pneumonia evoluiu com insuficiência respiratória e choque séptico e morreu. Tinha câncer de pulmão avançado.",
+              "enunciado": "Qual deve ser a causa básica na declaração de óbito?",
+              "opcoes": [
+                "Insuficiência respiratória, o evento final",
+                "Choque séptico, a complicação imediata",
+                "Pneumonia, a causa intermediária",
+                "Câncer de pulmão, que iniciou a cadeia de eventos",
+                "Idade avançada, pela maior vulnerabilidade"
+              ],
+              "resposta": "Câncer de pulmão, que iniciou a cadeia de eventos",
+              "explicacao": "A causa básica é a doença que iniciou a sequência de eventos até a morte, aqui o câncer de pulmão. Ela é a informação mais importante para as estatísticas de mortalidade e fica na última linha preenchida da Parte I.",
+              "revisado": false,
+              "fonte": "SCM-RP 2026"
+            },
+            {
+              "id": "prev-d12-l3-n6",
+              "tipo": "caso_clinico",
+              "caso": "Criança de 3 anos e meio é levada à UBS pela avó, preocupada porque o pai costuma castigá-la com tapas e \"chacoalhões\", deixando marcas nas nádegas, e a mãe concorda com esse tipo de educação. Os pais são bons provedores e carinhosos na maior parte do tempo. No exame, só há um hematoma linear na coxa, de uma queda recente de patinete.",
+              "enunciado": "O que é correto?",
+              "opcoes": [
+                "Ouvir os pais antes de agir, pois a lei distingue maus-tratos de castigo físico educativo",
+                "Pedir avaliação do legista e decidir a conduta pelo laudo",
+                "Avaliar alienação parental, pois a avó pode estar acusando o genro",
+                "Notificar o Conselho Tutelar e a vigilância por ficha de violência"
+              ],
+              "resposta": "Notificar o Conselho Tutelar e a vigilância por ficha de violência",
+              "explicacao": "Pela Lei da Palmada e pelo ECA, castigo físico é uma forma de violência contra a criança, e a suspeita já obriga a notificar. A notificação é feita na ficha de violência do SINAN, com comunicação ao Conselho Tutelar, sem depender de prova ou laudo.",
+              "revisado": false,
+              "fonte": "FAMEMA 2025"
+            }
+          ]
         }
       ]
     },
@@ -11065,6 +11531,106 @@
               "explicacao": "O retorno progressivo com mudanças no posto e na organização (pausas, metas) e apoio psicológico tem melhores resultados que o afastamento longo, que favorece cronificação. É preciso agir sobre as causas no ambiente de trabalho.",
               "revisado": false,
               "fonte": "SUS-BA 2026"
+            },
+            {
+              "id": "prev-d13-l2-n1",
+              "tipo": "multipla_escolha",
+              "enunciado": "Quando um acidente de trabalho exige afastamento por mais de 15 dias, qual é um desdobramento administrativo da emissão da CAT?",
+              "opcoes": [
+                "Estabilidade por 24 meses após o fim do auxílio",
+                "Obrigação de seguir depositando o FGTS do trabalhador",
+                "Redução do Fator Acidentário Previdenciário",
+                "Ação regressiva do Ministério do Trabalho"
+              ],
+              "resposta": "Obrigação de seguir depositando o FGTS do trabalhador",
+              "explicacao": "No afastamento por acidente de trabalho, o empregador continua depositando o FGTS durante o auxílio, e o trabalhador ganha estabilidade de 12 meses após voltar. O acidente aumenta, e não reduz, o Fator Acidentário da empresa.",
+              "revisado": false,
+              "fonte": "PSU-MG 2022"
+            },
+            {
+              "id": "prev-d13-l2-n2",
+              "tipo": "multipla_escolha",
+              "enunciado": "Sobre a Comunicação de Acidente de Trabalho (CAT), o que é correto?",
+              "opcoes": [
+                "Deve ser emitida em 6 vias, para vários órgãos",
+                "Só é emitida se houver afastamento por mais de 24 horas",
+                "Vale para quem trabalha, com ou sem carteira",
+                "A CAT online facilita registrar acidentes sem benefício"
+              ],
+              "resposta": "A CAT online facilita registrar acidentes sem benefício",
+              "explicacao": "A CAT é emitida para trabalhadores segurados do INSS, mesmo sem afastamento, e o registro pela internet facilita notificar acidentes leves. Para quem não tem esse vínculo, a notificação é feita no SINAN.",
+              "revisado": false,
+              "fonte": "PSU-MG 2021"
+            },
+            {
+              "id": "prev-d13-l2-n3",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 35 anos, numa serralheria com 50 empregados, teve o olho direito perfurado por um estilhaço de metal há 6 horas e perdeu a visão desse olho. Os óculos de proteção estavam no bolso do uniforme.",
+              "enunciado": "Após a urgência, qual ação de atenção ao trabalhador e de prevenção coletiva é mais adequada?",
+              "opcoes": [
+                "Emitir a CAT e verificar se a CIPA funciona",
+                "Encaminhar ao oftalmologista e reorganizar o trabalho",
+                "Treinar para readaptação e comprar EPI melhor",
+                "Encaminhar ao CEREST para nexo e estudar ergonomia"
+              ],
+              "resposta": "Emitir a CAT e verificar se a CIPA funciona",
+              "explicacao": "O acidente típico exige a emissão da CAT, que garante direitos ao trabalhador. Como medida coletiva, verifica-se a Comissão Interna de Prevenção de Acidentes, que deve investigar o acidente e cobrar o uso de proteção.",
+              "revisado": false,
+              "fonte": "Unifesp 2023"
+            }
+          ]
+        },
+        {
+          "id": "prev-d13-l3",
+          "titulo": "Exposições ocupacionais e nexo em casos",
+          "questoes": [
+            {
+              "id": "prev-d13-l3-n1",
+              "tipo": "caso_clinico",
+              "caso": "Homem de 65 anos, fumante, fez tomografia de rastreamento de câncer de pulmão, que mostrou várias áreas de espessamento e calcificação da pleura parietal, mais nas bases, com pequenas opacidades lineares abaixo da pleura.",
+              "enunciado": "Qual atividade profissional está mais provavelmente ligada ao quadro?",
+              "opcoes": [
+                "Agricultura",
+                "Construção civil",
+                "Jateamento de areia",
+                "Mineração de carvão"
+              ],
+              "resposta": "Construção civil",
+              "explicacao": "Placas pleurais calcificadas e fibrose nas bases indicam exposição ao amianto (asbesto), comum na construção civil, em telhas e caixas d'água antigas. O jateamento de areia causa silicose, nos ápices, e o carvão causa pneumoconiose dos mineiros.",
+              "revisado": false,
+              "fonte": "UERJ 2024 R+"
+            },
+            {
+              "id": "prev-d13-l3-n2",
+              "tipo": "caso_clinico",
+              "caso": "Mulher de 53 anos trabalha há anos numa fábrica de lâmpadas fluorescentes e tem cansaço, perda de peso e de apetite, salivação excessiva, dentes amolecidos, irritabilidade e tremores.",
+              "enunciado": "Qual é a intoxicação mais provável?",
+              "opcoes": [
+                "Cromo",
+                "Chumbo",
+                "Benzeno",
+                "Solventes orgânicos",
+                "Mercúrio"
+              ],
+              "resposta": "Mercúrio",
+              "explicacao": "O mercúrio é usado em lâmpadas fluorescentes e causa salivação, gengivite com perda de dentes, tremor e alterações de comportamento (eretismo). O chumbo causa anemia, cólica e neuropatia, e o benzeno lesa a medula óssea.",
+              "revisado": false,
+              "fonte": "ENARE 2023"
+            },
+            {
+              "id": "prev-d13-l3-n3",
+              "tipo": "multipla_escolha",
+              "enunciado": "Na classificação de Schilling, em qual grupo estão as doenças comuns que são mais frequentes ou precoces em certos grupos de trabalhadores, com nexo causal sobretudo epidemiológico?",
+              "opcoes": [
+                "Trabalho como causa necessária",
+                "Trabalho como fator de risco contributivo, mas não necessário",
+                "Trabalho como agravante de doença preexistente",
+                "Trabalho como causa necessária agravada por doenças prévias"
+              ],
+              "resposta": "Trabalho como fator de risco contributivo, mas não necessário",
+              "explicacao": "O grupo II de Schilling reúne doenças comuns em que o trabalho aumenta o risco, como hipertensão em motoristas ou varizes em quem fica muito em pé. No grupo I, o trabalho é causa necessária (como silicose), e no grupo III, agrava doença já existente.",
+              "revisado": false,
+              "fonte": "PSU-MG 2022"
             }
           ]
         }
