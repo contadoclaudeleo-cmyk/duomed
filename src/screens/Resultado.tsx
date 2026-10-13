@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Award, Clock, Flame, MessageSquareText, Target, TrendingUp, Zap, type LucideIcon } from 'lucide-react'
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { formatarDuracao } from '../lib/datas'
@@ -9,6 +9,7 @@ import { Botao } from '../components/Botao'
 import { Lapio } from '../components/Lapio'
 import { Confete, NumeroAnimado } from '../components/Animacoes'
 import { tocarSom } from '../lib/sons'
+import { ehMarcoDeOfensiva, TelaOfensiva } from '../components/TelaOfensiva'
 
 interface CartaoProps {
   rotulo: string
@@ -53,6 +54,15 @@ function CartaoNumero({ rotulo, valor, Icone, cor, atraso }: CartaoProps) {
 export function Resultado() {
   const navegar = useNavigate()
   const r = useJogo((s) => s.ultimoResultado)
+  const nome = useJogo((s) => s.usuario?.nome.split(' ')[0] ?? '')
+  // Chegou a um marco do foguinho (3, 7, 30... dias): mostra a tela para compartilhar
+  const marco = !!r && r.bateuMetaAgora && ehMarcoDeOfensiva(r.ofensiva)
+  const [verFoguinho, setVerFoguinho] = useState(false)
+  useEffect(() => {
+    if (!marco) return
+    const id = setTimeout(() => setVerFoguinho(true), 1600)
+    return () => clearTimeout(id)
+  }, [marco])
   const temDestaque = !!r && (r.bateuMetaAgora || !!r.subiuParaNivel || r.conquistasNovas.length > 0)
 
   // Fanfarra ao chegar; brilho extra quando há conquista, nível novo ou meta batida
@@ -65,11 +75,19 @@ export function Resultado() {
 
   if (!r) return <Navigate to="/" replace />
 
-  const partesXp = [`${r.xp.base} da ${r.modo === 'licao' ? 'lição' : 'revisão'}`]
+  const nomeSessao = r.modo === 'licao' ? 'lição' : r.modo === 'treino' ? 'treino' : 'revisão'
+  const partesXp = [`${r.xp.base} ${r.modo === 'treino' ? 'do' : 'da'} ${nomeSessao}`]
   if (r.xp.perfeita) partesXp.push(`${r.xp.perfeita} sem erros`)
   if (r.xp.casos) partesXp.push(`${r.xp.casos} de casos clínicos`)
 
-  const titulo = r.precisao === 100 ? 'Perfeito!' : r.modo === 'licao' ? 'Lição concluída!' : 'Revisão concluída!'
+  const titulo =
+    r.precisao === 100
+      ? 'Perfeito!'
+      : r.modo === 'licao'
+        ? 'Lição concluída!'
+        : r.modo === 'treino'
+          ? 'Treino concluído!'
+          : 'Revisão concluída!'
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col px-5 pb-6 pt-10">
@@ -112,7 +130,14 @@ export function Resultado() {
         <div className="flex w-full flex-col gap-2">
           {r.bateuMetaAgora && (
             <Destaque Icone={Flame} cor="text-laranja" atraso={0.6}>
-              Meta do dia batida! Ofensiva de {r.ofensiva} {r.ofensiva === 1 ? 'dia' : 'dias'}.
+              Meta do dia batida! Ofensiva de {r.ofensiva} {r.ofensiva === 1 ? 'dia' : 'dias'}.{' '}
+              <button
+                type="button"
+                onClick={() => setVerFoguinho(true)}
+                className="font-extrabold text-laranja-escura underline underline-offset-2 dark:text-laranja"
+              >
+                Ver foguinho
+              </button>
             </Destaque>
           )}
           {r.subiuParaNivel && (
@@ -122,7 +147,7 @@ export function Resultado() {
           )}
           {r.conquistasNovas.map((id, i) => (
             <Destaque key={id} Icone={Award} cor="text-laranja" atraso={0.8 + i * 0.1}>
-              Conquista desbloqueada: <strong>{buscarConquista(id).titulo}</strong>
+              {buscarConquista(id).emoji} Conquista desbloqueada: <strong>{buscarConquista(id).titulo}</strong>
             </Destaque>
           ))}
         </div>
@@ -132,10 +157,17 @@ export function Resultado() {
         <Botao larguraTotal variante="contorno" onClick={() => navegar('/comentada')}>
           <MessageSquareText className="h-5 w-5" strokeWidth={2.6} aria-hidden /> Ver revisão comentada
         </Botao>
-        <Botao larguraTotal onClick={() => navegar(r.modo === 'revisao' ? '/revisao' : '/', { replace: true })}>
+        <Botao
+          larguraTotal
+          onClick={() =>
+            navegar(r.modo === 'revisao' ? '/revisao' : r.modo === 'treino' ? '/treino' : '/', { replace: true })
+          }
+        >
           Continuar
         </Botao>
       </div>
+
+      <TelaOfensiva aberta={verFoguinho} dias={r.ofensiva} nome={nome} aoFechar={() => setVerFoguinho(false)} />
     </div>
   )
 }

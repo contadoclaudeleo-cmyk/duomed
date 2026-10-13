@@ -3,24 +3,24 @@ import { chaveDia, somarDias } from './datas'
 
 // ============================================================
 // Ofensiva (streak)
-// Conta quantos dias seguidos o jogador bateu a meta diária de XP.
+// Conta quantos dias seguidos o jogador bateu a meta diária (minutos de estudo).
 // Se passar um dia inteiro sem bater a meta, a ofensiva zera.
 // ============================================================
 
 /**
- * Chamada sempre que o jogador ganha XP.
- * Se o XP de hoje acabou de alcançar a meta, a ofensiva sobe.
+ * Chamada sempre que o jogador estuda mais um pouco.
+ * Se o feito de hoje (tempo de estudo) acabou de alcançar a meta, a ofensiva sobe.
  */
 export function atualizarOfensiva(
   ofensiva: Ofensiva,
-  xpHoje: number,
+  feitoHoje: number,
   metaDiaria: number,
   agora = Date.now(),
 ): { ofensiva: Ofensiva; bateuMetaAgora: boolean } {
   const hoje = chaveDia(agora)
 
   // Meta ainda não batida, ou já contada hoje: nada muda
-  if (xpHoje < metaDiaria || ofensiva.ultimoDiaMeta === hoje) {
+  if (feitoHoje < metaDiaria || ofensiva.ultimoDiaMeta === hoje) {
     return { ofensiva, bateuMetaAgora: false }
   }
 

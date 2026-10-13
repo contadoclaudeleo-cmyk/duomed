@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
 import { buscarMateria } from '../data'
 import { ofensivaVigente } from '../lib/ofensiva'
-import { chaveDia } from '../lib/datas'
+import { minutosDoDia } from '../lib/metas'
 import { ContadorVidas } from './ContadorVidas'
 import { IconeMateria } from './IconeMateria'
 import { NumeroAnimado } from './Animacoes'
@@ -19,9 +19,9 @@ export function BarraStatus() {
   const materia = buscarMateria(useJogo((s) => s.materiaAtual))
   const ofensiva = ofensivaVigente(useJogo((s) => s.ofensiva))
   const xpTotal = useJogo((s) => s.xpTotal)
-  const meta = useJogo((s) => s.usuario?.metaDiaria ?? 20)
-  const xpHoje = useJogo((s) => s.xpPorDia[chaveDia()] ?? 0)
-  const metaBatida = xpHoje >= meta
+  const meta = useJogo((s) => s.usuario?.metaDiaria ?? 10)
+  const minutosHoje = useJogo((s) => minutosDoDia(s.tempoPorDia))
+  const metaBatida = minutosHoje >= meta
 
   return (
     <header className="sticky top-0 z-20 border-b-2 border-borda bg-fundo">

@@ -47,6 +47,7 @@ export type ErroEstudo =
   | 'limite_teste'
   | 'licao_inexistente'
   | 'sessao_expirada'
+  | 'sem_questoes'
   | 'offline'
   | 'desconhecido'
 
@@ -56,7 +57,15 @@ export class FalhaEstudo extends Error {
   }
 }
 
-const CONHECIDOS: ErroEstudo[] = ['sem_vidas', 'sem_login', 'nada_para_revisar', 'limite_teste', 'licao_inexistente', 'sessao_expirada']
+const CONHECIDOS: ErroEstudo[] = [
+  'sem_vidas',
+  'sem_login',
+  'nada_para_revisar',
+  'limite_teste',
+  'licao_inexistente',
+  'sessao_expirada',
+  'sem_questoes',
+]
 
 async function chamar<T>(funcao: string, parametros?: Record<string, unknown>): Promise<T> {
   let resposta
@@ -100,6 +109,24 @@ export async function iniciarLicao(licaoId: string): Promise<SessaoServidor> {
   return r
 }
 
+/** Treino por prova: 10 questões de uma matéria e/ou banca (null = misturado). Gasta vida como a lição. */
+export async function iniciarTreino(materiaId: string | null, banca: string | null): Promise<SessaoServidor> {
+  const r = await chamar<SessaoServidor & { situacao: Situacao }>('iniciar_treino', { p_materia: materiaId, p_banca: banca })
+  aplicarSituacao(r.situacao)
+  return r
+}
+
+/** Acertos da pessoa em uma matéria e banca (cada resposta conta, inclusive na revisão) */
+export interface LinhaEstatistica {
+  materia: string
+  banca: string | null
+  respondidas: number
+  acertos: number
+}
+
+/** Porcentagens de acerto por matéria e banca, contadas pelo servidor */
+export const minhasEstatisticas = () => chamar<LinhaEstatistica[]>('minhas_estatisticas')
+
 /** Abre a revisão com as questões da fila (só as que a pessoa já respondeu) */
 export const iniciarRevisao = (ids: string[]) => chamar<SessaoServidor>('iniciar_revisao', { p_ids: ids })
 
@@ -137,6 +164,8 @@ export function mensagemDoErro(e: unknown): string {
       return 'A lição ficou aberta tempo demais. Abra de novo para continuar.'
     case 'sem_vidas':
       return 'Suas vidas acabaram.'
+    case 'sem_questoes':
+      return 'Não há questões para esse filtro.'
     default:
       return 'Não deu certo. Tente de novo em instantes.'
   }

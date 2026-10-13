@@ -24,10 +24,22 @@ const materias = readdirSync(pasta)
 const estrutura = []
 const linhas = []
 
+// Banca da prova: a fonte sem o ano ("ENARE 2026 R+" vira "ENARE"). O servidor usa a mesma regra (estudo.sql).
+const bancaDa = (fonte) => (fonte ?? '').replace(/\s+(19|20)\d{2}.*$/, '') || null
+
 for (const m of materias) {
   const { unidades, ...resto } = m
+  // Quantas questões a matéria tem de cada banca (para o treino por prova)
+  const bancas = {}
+  for (const u of unidades)
+    for (const l of u.licoes)
+      for (const q of l.questoes) {
+        const b = bancaDa(q.fonte)
+        if (b) bancas[b] = (bancas[b] ?? 0) + 1
+      }
   estrutura.push({
     ...resto,
+    bancas,
     unidades: unidades.map(({ licoes, ...u }) => ({
       ...u,
       licoes: licoes.map((l) => {

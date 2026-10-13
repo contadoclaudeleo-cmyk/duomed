@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  Award,
   Check,
   Cloud,
   CloudOff,
@@ -42,6 +41,7 @@ import { Modal } from "../components/Modal";
 import { AbasNivel } from "../components/AbasModo";
 import { NumeroAnimado } from "../components/Animacoes";
 import { tocarSom } from "../lib/sons";
+import { TelaOfensiva } from "../components/TelaOfensiva";
 import {
   apagarConta,
   apagarProgressoNaNuvem,
@@ -53,6 +53,7 @@ export function Perfil() {
   const navegar = useNavigate();
   const jogo = useJogo();
   const [confirmarReset, setConfirmarReset] = useState(false);
+  const [verFoguinho, setVerFoguinho] = useState(false);
   const [apagando, setApagando] = useState(false);
   const [erroReset, setErroReset] = useState<string | null>(null);
   const logado = useConta((s) => !!s.sessao);
@@ -127,13 +128,20 @@ export function Perfil() {
           valor={jogo.questoesRespondidas}
           rotulo="Questões respondidas"
         />
-        <Numero
-          Icone={Flame}
-          cor="text-laranja"
-          valor={ofensiva}
-          rotulo="Ofensiva atual"
-          preencher
-        />
+        <button
+          type="button"
+          onClick={() => ofensiva > 0 && setVerFoguinho(true)}
+          className="rounded-2xl text-left"
+          aria-label="Ver e compartilhar sua ofensiva"
+        >
+          <Numero
+            Icone={Flame}
+            cor="text-laranja"
+            valor={ofensiva}
+            rotulo={ofensiva > 0 ? "Ofensiva atual · compartilhar" : "Ofensiva atual"}
+            preencher
+          />
+        </button>
         <Numero
           Icone={Medal}
           cor="text-agua"
@@ -142,8 +150,17 @@ export function Perfil() {
         />
       </div>
 
+      <TelaOfensiva
+        aberta={verFoguinho}
+        dias={ofensiva}
+        nome={usuario.nome.split(" ")[0]}
+        aoFechar={() => setVerFoguinho(false)}
+      />
+
       {/* Conquistas */}
-      <Titulo>Conquistas</Titulo>
+      <Titulo>
+        Conquistas ({CONQUISTAS.filter((c) => jogo.conquistas[c.id]).length} de {CONQUISTAS.length})
+      </Titulo>
       <div className="overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
         {CONQUISTAS.map((c, i) => {
           const quando = jogo.conquistas[c.id];
@@ -164,7 +181,9 @@ export function Perfil() {
                 }`}
               >
                 {quando ? (
-                  <Award className="h-6 w-6" strokeWidth={2.4} />
+                  <span className="text-2xl leading-none" aria-hidden>
+                    {c.emoji}
+                  </span>
                 ) : (
                   <Lock className="h-5 w-5" strokeWidth={2.4} />
                 )}
@@ -283,16 +302,14 @@ export function Perfil() {
         <Ajuste
           Icone={Target}
           titulo="Meta diária"
-          descricao="Quanto você quer estudar por dia"
+          descricao="Quantos minutos você quer estudar por dia"
         >
           <Opcoes<MetaDiaria>
             valor={usuario.metaDiaria}
             opcoes={METAS.map((m) => ({
               valor: m.valor,
               rotulo: m.nome,
-              detalhe: m.descricao
-                .replace("Cerca de ", "")
-                .replace(" por dia", "/dia"),
+              detalhe: `${m.valor} min/dia`,
               Icone: ICONES_META[m.valor],
             }))}
             aoMudar={(metaDiaria) => jogo.atualizarUsuario({ metaDiaria })}
@@ -549,9 +566,9 @@ function Numero({
 }
 
 const ICONES_META: Record<MetaDiaria, LucideIcon> = {
-  10: Feather,
-  20: Flame,
-  30: Rocket,
+  5: Feather,
+  10: Flame,
+  20: Rocket,
 };
 
 /** Um bloco das configurações: ícone, título, explicação curta e o controle embaixo */

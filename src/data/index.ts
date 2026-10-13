@@ -10,7 +10,7 @@ import type {
 // resposta e a explicação ficam no Supabase (ver lib/estudo.ts).
 import estrutura from "./estrutura.json";
 
-export const MATERIAS: Materia[] = (estrutura as MateriaJson[])
+export const MATERIAS: Materia[] = (estrutura as unknown as MateriaJson[])
   .map((m) => ({ ...m, modo: "residencia" as const }))
   .sort((a, b) => a.ordem - b.ordem);
 

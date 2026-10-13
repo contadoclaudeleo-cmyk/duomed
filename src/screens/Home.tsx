@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Flame, RotateCcw, Target } from "lucide-react";
+import { Check, ChevronRight, FileText, Flame, RotateCcw, Target } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -14,7 +14,7 @@ import { useJogo } from "../store/useJogo";
 import { ehPlus } from "../lib/plus";
 import { statusDasLicoes, type StatusLicao } from "../lib/progresso";
 import { questoesParaRevisar } from "../lib/revisao";
-import { chaveDia } from "../lib/datas";
+import { METAS, minutosDoDia } from "../lib/metas";
 import { BarraStatus } from "../components/BarraStatus";
 import { BarraProgresso } from "../components/BarraProgresso";
 import { NoLicao, type CorUnidade } from "../components/NoLicao";
@@ -55,8 +55,9 @@ export function Home() {
   const escolherMateria = useJogo((s) => s.escolherMateria);
   const concluidas = useJogo((s) => s.licoesConcluidas);
   const fila = useJogo((s) => s.filaRevisao);
-  const meta = useJogo((s) => s.usuario?.metaDiaria ?? 20);
-  const xpHoje = useJogo((s) => s.xpPorDia[chaveDia()] ?? 0);
+  const meta = useJogo((s) => s.usuario?.metaDiaria ?? 10);
+  const minutosHoje = useJogo((s) => minutosDoDia(s.tempoPorDia));
+  const avisoMeta = useJogo((s) => s.avisoMetaMinutos);
   const [aberta, setAberta] = useState<string | null>(null);
   const [semVidas, setSemVidas] = useState(false);
 
@@ -70,7 +71,7 @@ export function Home() {
     (n, u) => n + u.licoes.filter((l) => concluidas[l.id]).length,
     0,
   );
-  const metaBatida = xpHoje >= meta;
+  const metaBatida = minutosHoje >= meta;
   const atalhos = MATERIAS.filter(materiaDisponivel);
 
   // Na primeira abertura do app nada comemora; depois, só as lições novas
@@ -131,17 +132,34 @@ export function Home() {
                   {metaBatida ? "Meta do dia batida!" : "Meta do dia"}
                 </p>
                 <p className="text-sm font-bold text-texto-suave">
-                  {xpHoje} / {meta} XP
+                  {Math.min(minutosHoje, meta)} / {meta} min
                 </p>
               </div>
               <BarraProgresso
-                valor={xpHoje / meta}
+                valor={minutosHoje / meta}
                 cor="laranja"
                 altura="fina"
                 rotulo="Progresso da meta diária"
               />
             </div>
           </div>
+
+          {/* Treino por prova: escolhe a banca ou mistura tudo */}
+          <Link
+            to="/treino"
+            className="flex items-center gap-3 rounded-2xl border-2 border-agua/40 bg-agua/10 p-4 font-bold transition-colors hover:bg-agua/15"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-agua text-white shadow-[0_3px_0_0_var(--color-agua-escura)]">
+              <FileText className="h-6 w-6" strokeWidth={2.4} />
+            </span>
+            <span className="flex-1">
+              <span className="block font-extrabold">Treinar por prova</span>
+              <span className="text-sm font-semibold text-texto-suave">
+                Escolha a banca ou misture tudo
+              </span>
+            </span>
+            <ChevronRight className="h-6 w-6 text-agua-texto dark:text-menta" strokeWidth={2.6} />
+          </Link>
 
           {/* Atalho para a revisão */}
           {pendentes > 0 && (
@@ -397,6 +415,30 @@ export function Home() {
 
       <Modal aberto={semVidas} aoFechar={() => setSemVidas(false)}>
         <AvisoSemVidas aoVoltar={() => setSemVidas(false)} />
+      </Modal>
+      <Modal aberto={avisoMeta} aoFechar={() => useJogo.setState({ avisoMetaMinutos: false })}>
+        <div className="flex flex-col items-center gap-3 text-center">
+          <Lapio altura={100} />
+          <h2 className="text-xl font-extrabold">Agora a meta é em minutos!</h2>
+          <p className="text-texto-suave">
+            Sua ofensiva sobe quando você estuda o tempo da meta. Quanto você quer estudar por dia?
+          </p>
+          <div className="flex w-full flex-col gap-2">
+            {METAS.map((m) => (
+              <Botao
+                key={m.valor}
+                larguraTotal
+                variante={m.valor === meta ? undefined : "contorno"}
+                onClick={() => {
+                  useJogo.getState().atualizarUsuario({ metaDiaria: m.valor });
+                  useJogo.setState({ avisoMetaMinutos: false });
+                }}
+              >
+                {m.nome} · {m.valor} min por dia
+              </Botao>
+            ))}
+          </div>
+        </div>
       </Modal>
     </>
   );

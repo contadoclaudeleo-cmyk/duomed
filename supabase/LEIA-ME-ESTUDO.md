@@ -14,6 +14,10 @@ Abra o arquivo no Bloco de Notas, copie tudo (Ctrl+A, Ctrl+C), cole e clique em 
 
 Rode `supabase/estudo.sql`.
 
+Sempre que esse arquivo mudar, rode de novo (pode repetir sem problema).
+A versão de outubro de 2026 trouxe o **treino por prova** (`iniciar_treino`) e as
+**porcentagens de acerto** da aba Como melhorar (tabela `respostas` e `minhas_estatisticas`).
+
 ## 2. Mandar as questões para o servidor
 
 Rode, **na ordem**, os arquivos da pasta `supabase/importar/`:

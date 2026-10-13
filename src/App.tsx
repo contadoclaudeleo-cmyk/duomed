@@ -18,6 +18,9 @@ import { Admin } from './screens/Admin'
 import { Perfil } from './screens/Perfil'
 import { Nivelamento } from './screens/Nivelamento'
 import { RevisaoComentada } from './screens/RevisaoComentada'
+import { Treino } from './screens/Treino'
+import { TreinoSessao } from './screens/TreinoSessao'
+import { Melhorar } from './screens/Melhorar'
 
 /** Aplica claro/escuro no <html> conforme a escolha do usuário */
 function useTema() {
@@ -62,6 +65,8 @@ export function App() {
           <Route index element={<Home />} />
           <Route path="materias" element={<Materias />} />
           <Route path="revisao" element={<Revisao />} />
+          <Route path="treino" element={<Treino />} />
+          <Route path="melhorar" element={<Melhorar />} />
           <Route path="ranking" element={<Ranking />} />
           <Route path="perfil" element={<Perfil />} />
           <Route path="loja" element={<Loja />} />
@@ -71,6 +76,7 @@ export function App() {
         {/* Telas em tela cheia */}
         <Route path="licao/:licaoId" element={<Licao />} />
         <Route path="revisao/praticar" element={<RevisaoPratica />} />
+        <Route path="treino/jogar" element={<TreinoSessao />} />
         <Route path="resultado" element={<Resultado />} />
         <Route path="nivelamento" element={<Nivelamento />} />
         <Route path="comentada" element={<RevisaoComentada />} />

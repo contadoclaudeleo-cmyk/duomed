@@ -68,7 +68,28 @@ create table if not exists public.xp_dias (
 );
 
 -- Ninguém lê nem escreve nessas tabelas direto: só pelas funções abaixo
+-- Banca de cada questão: a fonte sem o ano ("ENARE 2026 R+" vira "ENARE").
+-- É a mesma regra de scripts/gerar-estrutura.mjs (o app mostra as bancas a partir de lá).
+alter table public.questoes add column if not exists banca text
+  generated always as (nullif(regexp_replace(coalesce(dados ->> 'fonte', ''), '\s+(19|20)[0-9]{2}.*$', ''), '')) stored;
+create index if not exists questoes_materia_banca on public.questoes (materia_id, banca);
+
+-- Cada resposta dada, para as porcentagens de acerto por matéria e por banca. Só o servidor escreve.
+create table if not exists public.respostas (
+  user_id uuid not null references auth.users (id) on delete cascade,
+  questao_id text not null,
+  acertou boolean not null,
+  respondida_em timestamptz not null default now()
+);
+create index if not exists respostas_user on public.respostas (user_id);
+
+-- O treino por prova também é um tipo de sessão
+alter table public.sessoes_estudo drop constraint if exists sessoes_estudo_tipo_check;
+alter table public.sessoes_estudo add constraint sessoes_estudo_tipo_check
+  check (tipo in ('licao', 'revisao', 'nivelamento', 'treino'));
+
 alter table public.xp_dias enable row level security;
+alter table public.respostas enable row level security;
 alter table public.questoes enable row level security;
 alter table public.vidas enable row level security;
 alter table public.sessoes_estudo enable row level security;
@@ -325,6 +346,64 @@ begin
 end;
 $$;
 
+-- Treino por prova: 10 questões de uma matéria e/ou de uma banca (null = misturado),
+-- primeiro as que a pessoa ainda não viu. Vale como lição: precisa de vida (ou Plus),
+-- errar tira vida e terminar dá XP.
+create or replace function public.iniciar_treino(p_materia text, p_banca text)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_user uuid := auth.uid();
+  v_ids text[];
+  v record;
+  v_resultado jsonb;
+begin
+  if v_user is null then
+    raise exception 'sem_login';
+  end if;
+  select * into v from _vidas_atualizar(v_user);
+  if v.o_vidas <= 0 and not _eh_plus(v_user) then
+    raise exception 'sem_vidas';
+  end if;
+
+  select array_agg(id) into v_ids from (
+    select q.id from questoes q
+    where q.banca is not null
+      and (p_materia is null or q.materia_id = p_materia)
+      and (p_banca is null or q.banca = p_banca)
+    order by exists (select 1 from questoes_vistas qv where qv.user_id = v_user and qv.questao_id = q.id), random()
+    limit 10
+  ) t;
+  if v_ids is null then
+    raise exception 'sem_questoes';
+  end if;
+
+  v_resultado := _abrir_sessao(v_user, 'treino', null, v_ids);
+  return v_resultado || jsonb_build_object('situacao', _situacao(v_user, v.o_recebidas));
+end;
+$$;
+
+-- Porcentagens de acerto da pessoa, por matéria e banca (o app soma o geral e cada matéria)
+create or replace function public.minhas_estatisticas()
+returns jsonb
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  select coalesce(jsonb_agg(jsonb_build_object('materia', materia_id, 'banca', banca, 'respondidas', n, 'acertos', a)), '[]'::jsonb)
+  from (
+    select q.materia_id, q.banca, count(*)::integer as n, (count(*) filter (where r.acertou))::integer as a
+    from respostas r
+    join questoes q on q.id = r.questao_id
+    where r.user_id = auth.uid()
+    group by q.materia_id, q.banca
+  ) t;
+$$;
+
 -- Responde uma questão. O servidor corrige, tira a vida se errou numa lição
 -- e devolve a questão completa (com resposta e explicação) para o feedback.
 create or replace function public.responder(p_sessao uuid, p_questao text, p_resposta jsonb)
@@ -362,8 +441,8 @@ begin
   v_plus := _eh_plus(v_user);
   select * into v from _vidas_atualizar(v_user);
 
-  -- Lição sem vidas não continua
-  if s.tipo = 'licao' and not v_plus and v.o_vidas <= 0 then
+  -- Lição (ou treino) sem vidas não continua
+  if s.tipo in ('licao', 'treino') and not v_plus and v.o_vidas <= 0 then
     raise exception 'sem_vidas';
   end if;
 
@@ -376,9 +455,9 @@ begin
   where id = p_sessao
   returning * into s;
 
-  -- Última questão de uma lição ou revisão: o servidor dá o XP (as mesmas regras de src/lib/xp.ts:
+  -- Última questão de uma lição, revisão ou treino: o servidor dá o XP (as mesmas regras de src/lib/xp.ts:
   -- 10 por terminar, +5 se não errou nenhuma, +2 por caso clínico certo). O teste de nível não dá XP.
-  if s.tipo in ('licao', 'revisao') and cardinality(s.respondidas) = cardinality(s.questoes) then
+  if s.tipo in ('licao', 'revisao', 'treino') and cardinality(s.respondidas) = cardinality(s.questoes) then
     insert into xp_dias (user_id, dia, xp)
     values (
       v_user,
@@ -388,9 +467,10 @@ begin
     on conflict (user_id, dia) do update set xp = xp_dias.xp + excluded.xp;
   end if;
   insert into questoes_vistas (user_id, questao_id) values (v_user, p_questao) on conflict do nothing;
+  insert into respostas (user_id, questao_id, acertou) values (v_user, p_questao, v_certo);
 
-  -- Errou numa lição e não é Plus: perde 1 vida (se estava cheio, o relógio da recarga começa agora)
-  if s.tipo = 'licao' and not v_plus and not v_certo then
+  -- Errou numa lição (ou treino) e não é Plus: perde 1 vida (se estava cheio, o relógio da recarga começa agora)
+  if s.tipo in ('licao', 'treino') and not v_plus and not v_certo then
     update vidas
     set vidas = greatest(0, v.o_vidas - 1),
         ultima_recarga = case when v.o_vidas >= 5 then now() else v.o_ultima end
@@ -462,6 +542,8 @@ revoke all on function public.estado_vidas() from public, anon;
 revoke all on function public.iniciar_licao(text) from public, anon;
 revoke all on function public.iniciar_revisao(text[]) from public, anon;
 revoke all on function public.iniciar_nivelamento() from public, anon;
+revoke all on function public.iniciar_treino(text, text) from public, anon;
+revoke all on function public.minhas_estatisticas() from public, anon;
 revoke all on function public.responder(uuid, text, jsonb) from public, anon;
 revoke all on function public.gabarito_licao(text) from public, anon;
 revoke all on function public.admin_questao(text) from public, anon;
@@ -471,6 +553,8 @@ grant execute on function public.estado_vidas() to authenticated;
 grant execute on function public.iniciar_licao(text) to authenticated;
 grant execute on function public.iniciar_revisao(text[]) to authenticated;
 grant execute on function public.iniciar_nivelamento() to authenticated;
+grant execute on function public.iniciar_treino(text, text) to authenticated;
+grant execute on function public.minhas_estatisticas() to authenticated;
 grant execute on function public.responder(uuid, text, jsonb) to authenticated;
 grant execute on function public.gabarito_licao(text) to authenticated;
 grant execute on function public.admin_questao(text) to authenticated;

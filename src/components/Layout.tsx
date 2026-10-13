@@ -1,4 +1,4 @@
-import { House, MessageSquareHeart, RotateCcw, Trophy, UserRound, type LucideIcon } from 'lucide-react'
+import { House, MessageSquareHeart, RotateCcw, TrendingUp, Trophy, UserRound, type LucideIcon } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useJogo } from '../store/useJogo'
@@ -19,6 +19,7 @@ interface ItemNav {
 const ITENS: ItemNav[] = [
   { para: '/', rotulo: 'Trilha', Icone: House },
   { para: '/revisao', rotulo: 'Revisão', Icone: RotateCcw },
+  { para: '/melhorar', rotulo: 'Melhorar', Icone: TrendingUp },
   { para: '/ranking', rotulo: 'Ranking', Icone: Trophy },
   { para: '/feedback', rotulo: 'Feedback', Icone: MessageSquareHeart },
   { para: '/perfil', rotulo: 'Perfil', Icone: UserRound },

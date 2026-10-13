@@ -179,8 +179,8 @@ export function BoasVindas() {
             {passo === "meta" && (
               <>
                 <Fala>
-                  Prazer, {nome.trim().split(" ")[0]}! Qual vai ser sua meta
-                  diária de estudo para a residência? Dá para mudar depois no
+                  Prazer, {nome.trim().split(" ")[0]}! Quantos minutos por dia
+                  você quer estudar para a residência? Dá para mudar depois no
                   perfil.
                 </Fala>
                 <div className="mt-8 flex flex-col gap-3">
@@ -200,7 +200,7 @@ export function BoasVindas() {
                           </span>
                         </span>
                         <span className="font-extrabold text-laranja-escura dark:text-laranja">
-                          {m.valor} XP
+                          {m.valor} min
                         </span>
                       </span>
                     </Escolha>

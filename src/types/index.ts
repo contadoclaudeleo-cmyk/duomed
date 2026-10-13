@@ -115,6 +115,8 @@ export interface MateriaJson {
   fontes?: string[]
   /** Matéria sem unidades aparece como "em breve" */
   unidades: Unidade[]
+  /** Quantas questões a matéria tem de cada banca, ex.: { "USP": 120 } (gerado pelo script) */
+  bancas?: Record<string, number>
 }
 
 /** Matéria já carregada no app. O modo vem da pasta onde está o arquivo. */
@@ -133,7 +135,8 @@ export type Resposta = string | boolean | Record<string, string>
 // Estado do jogador (o que é salvo no localStorage)
 // ============================================================
 
-export type MetaDiaria = 10 | 20 | 30
+/** Meta diária em minutos de estudo: leve, moderada ou intensa */
+export type MetaDiaria = 5 | 10 | 20
 export type Tema = 'claro' | 'escuro' | 'sistema'
 
 export interface Usuario {
@@ -147,7 +150,7 @@ export interface Usuario {
 export interface Ofensiva {
   atual: number
   recorde: number
-  /** Último dia (AAAA-MM-DD) em que a meta diária foi batida */
+  /** Último dia (AAAA-MM-DD) em que a meta diária (minutos de estudo) foi batida */
   ultimoDiaMeta: string | null
 }
 
@@ -187,9 +190,41 @@ export type IdConquista =
   | 'questoes_100'
   | 'licao_perfeita'
   | 'unidade_completa'
+  | 'ofensiva_3'
+  | 'ofensiva_30'
+  | 'ofensiva_100'
+  | 'ofensiva_365'
+  | 'questoes_500'
+  | 'questoes_1000'
+  | 'questoes_5000'
+  | 'perfeitas_10'
+  | 'combo_10'
+  | 'coruja'
+  | 'madrugador'
+  | 'raio_x'
+  | 'revisao_10'
+  | 'primeiro_treino'
+  | 'bancas_5'
+  | 'clinico_geral'
+  | 'volta_por_cima'
+  | 'sem_folga'
+  | 'nivel_10'
+  | 'meta_intensa'
 
-/** 'nivelamento' é o teste de nível: não gasta vidas nem dá XP */
-export type ModoSessao = 'licao' | 'revisao' | 'nivelamento'
+/** Contadores usados pelas conquistas */
+export interface Contadores {
+  licoesPerfeitas: number
+  revisoes: number
+  treinos: number
+  /** Bancas em que a pessoa já fez treino por prova */
+  bancasTreinadas: string[]
+}
+
+/**
+ * 'nivelamento' é o teste de nível: não gasta vidas nem dá XP.
+ * 'treino' é o treino por prova (questões de uma banca ou misturadas): vale como lição.
+ */
+export type ModoSessao = 'licao' | 'revisao' | 'nivelamento' | 'treino'
 
 /** Uma questão respondida numa sessão, com o que a pessoa marcou */
 export interface RespostaDada {

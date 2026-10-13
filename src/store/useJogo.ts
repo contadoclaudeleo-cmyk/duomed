@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import type {
+  Contadores,
   EstatisticaMateria,
   IdConquista,
   ItemRevisao,
@@ -38,6 +39,7 @@ import {
   type NotaRevisao,
 } from "../lib/revisao";
 import { verificarConquistas } from "../lib/conquistas";
+import { metaDeXpParaMinutos, TEMPO_MAX_POR_QUESTAO } from "../lib/metas";
 
 // ============================================================
 // Estado global do jogador.
@@ -53,12 +55,15 @@ export interface DadosJogo {
   ofensiva: Ofensiva;
   /** XP ganho em cada dia, ex.: { "2026-10-02": 25 } */
   xpPorDia: Record<string, number>;
+  /** Tempo de estudo de cada dia, em milissegundos (é o que conta para a meta diária) */
+  tempoPorDia: Record<string, number>;
   licoesConcluidas: Record<string, LicaoConcluida>;
   filaRevisao: Record<string, ItemRevisao>;
   questoesRespondidas: number;
   acertosTotais: number;
   estatisticasPorMateria: Record<string, EstatisticaMateria>;
   conquistas: Partial<Record<IdConquista, number>>;
+  contadores: Contadores;
   /** Sempre 'residencia' (a parte de graduação saiu do app; o campo ficou por compatibilidade) */
   modo: ModoEstudo;
   /** Trilha fácil ou difícil, escolhida pelo teste de nível ou pelo usuário */
@@ -69,12 +74,18 @@ export interface DadosJogo {
   tema: Tema;
   /** Efeitos sonoros ligados */
   sons: boolean;
+  /** A meta diária já está em minutos (antes era em XP) */
+  metaEmMinutos: boolean;
+  /** Quem já usava o app escolhe de novo a meta, agora em minutos */
+  avisoMetaMinutos: boolean;
 }
 
 interface ConclusaoSessao {
   modo: ModoSessao;
   titulo: string;
   licaoId?: string;
+  /** No treino por prova: a banca escolhida (null = misturado) */
+  banca?: string | null;
   respostas: RespostaDada[];
   tempoMs: number;
 }
@@ -101,6 +112,8 @@ interface AcoesJogo {
     materiaId: string;
     acertou: boolean;
     modo: ModoSessao;
+    /** Quanto tempo a pessoa levou nesta questão (conta para a meta do dia) */
+    tempoMs: number;
   }) => void;
   /** Troca a nota da última resposta de revisão (Difícil, Bom ou Fácil) */
   avaliarRevisao: (questaoId: string, nota: NotaRevisao) => void;
@@ -115,18 +128,22 @@ export const estadoInicial = (): DadosJogo => ({
   ultimaRecargaVida: Date.now(),
   ofensiva: { atual: 0, recorde: 0, ultimoDiaMeta: null },
   xpPorDia: {},
+  tempoPorDia: {},
   licoesConcluidas: {},
   filaRevisao: {},
   questoesRespondidas: 0,
   acertosTotais: 0,
   estatisticasPorMateria: {},
   conquistas: {},
+  contadores: { licoesPerfeitas: 0, revisoes: 0, treinos: 0, bancasTreinadas: [] },
   modo: "residencia",
   nivel: "facil",
   testeNivelPendente: false,
   materiaAtual: "clinica-medica",
   tema: "sistema",
   sons: true,
+  metaEmMinutos: true,
+  avisoMetaMinutos: false,
 });
 
 /**
@@ -138,6 +155,9 @@ const antesDaResposta = new Map<string, ItemRevisao | undefined>();
 /** Estado da questão na fila antes da última resposta (para mostrar os prazos nos botões) */
 export const itemAntesDaResposta = (questaoId: string) =>
   antesDaResposta.get(questaoId);
+
+// A meta do dia pode ser batida no meio da sessão; o resultado mostra isso no fim (não é salvo)
+let metaBatidaNaSessao = false;
 
 export const useJogo = create<DadosJogo & AcoesJogo>()(
   persist(
@@ -188,9 +208,23 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       },
 
       // Chamado a cada questão corrigida pelo servidor (as vidas já vêm do servidor)
-      responder: ({ questao, materiaId, acertou, modo }) => {
+      responder: ({ questao, materiaId, acertou, modo, tempoMs }) => {
         const s = get();
         const agora = Date.now();
+        const hoje = chaveDia(agora);
+
+        // Tempo de estudo do dia e ofensiva (a meta é em minutos)
+        const tempoHoje =
+          (s.tempoPorDia[hoje] ?? 0) +
+          Math.min(Math.max(tempoMs, 0), TEMPO_MAX_POR_QUESTAO);
+        const meta = s.usuario?.metaDiaria ?? 10;
+        const { ofensiva, bateuMetaAgora } = atualizarOfensiva(
+          s.ofensiva,
+          tempoHoje,
+          meta * 60 * 1000,
+          agora,
+        );
+        if (bateuMetaAgora) metaBatidaNaSessao = true;
         const statsMateria = s.estatisticasPorMateria[materiaId] ?? {
           respondidas: 0,
           acertos: 0,
@@ -208,7 +242,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
             questao.id,
             agora,
           );
-        else if (modo === "licao")
+        else if (modo === "licao" || modo === "treino")
           filaRevisao = registrarAcertoNaLicao(filaRevisao, questao.id, agora);
 
         set({
@@ -222,6 +256,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
             },
           },
           filaRevisao,
+          tempoPorDia: { ...s.tempoPorDia, [hoje]: tempoHoje },
+          ofensiva,
         });
       },
 
@@ -236,7 +272,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
       },
 
       // Chamado quando o jogador termina todas as questões de uma sessão
-      concluirSessao: ({ modo, titulo, licaoId, respostas, tempoMs }) => {
+      concluirSessao: ({ modo, titulo, licaoId, banca, respostas, tempoMs }) => {
         const s = get();
         const agora = Date.now();
         const hoje = chaveDia(agora);
@@ -251,15 +287,23 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         const nivelAntes = nivelDoXp(s.xpTotal);
         const nivelDepois = nivelDoXp(xpTotal);
 
-        // XP do dia e ofensiva
+        // XP do dia (a ofensiva já foi atualizada a cada resposta, pelo tempo de estudo)
         const xpHoje = (s.xpPorDia[hoje] ?? 0) + xp.total;
-        const meta = s.usuario?.metaDiaria ?? 20;
-        const { ofensiva, bateuMetaAgora } = atualizarOfensiva(
-          s.ofensiva,
-          xpHoje,
-          meta,
-          agora,
-        );
+        const ofensiva = s.ofensiva;
+        const bateuMetaAgora = metaBatidaNaSessao;
+        metaBatidaNaSessao = false;
+        const perfeita = (modo === "licao" || modo === "treino") && xp.perfeita > 0;
+
+        // Contadores das conquistas
+        const contadores: Contadores = {
+          licoesPerfeitas: s.contadores.licoesPerfeitas + (perfeita ? 1 : 0),
+          revisoes: s.contadores.revisoes + (modo === "revisao" ? 1 : 0),
+          treinos: s.contadores.treinos + (modo === "treino" ? 1 : 0),
+          bancasTreinadas:
+            modo === "treino" && banca && !s.contadores.bancasTreinadas.includes(banca)
+              ? [...s.contadores.bancasTreinadas, banca]
+              : s.contadores.bancasTreinadas,
+        };
 
         // Lição concluída (a revisão não conta como lição da trilha)
         let licoesConcluidas = s.licoesConcluidas;
@@ -281,7 +325,19 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
             licoesConcluidas,
             questoesRespondidas: s.questoesRespondidas,
             ofensivaAtual: ofensiva.atual,
-            sessaoPerfeita: modo === "licao" && xp.perfeita > 0,
+            sessaoPerfeita: perfeita,
+            contadores,
+            modo,
+            respostas,
+            tempoMs,
+            agora,
+            tempoPorDia: s.tempoPorDia,
+            materiasRespondidas: Object.keys(s.estatisticasPorMateria).filter(
+              (id) => s.estatisticasPorMateria[id].respondidas > 0,
+            ),
+            nivel: nivelDepois,
+            metaDiaria: s.usuario?.metaDiaria ?? 10,
+            metaBatidaHoje: ofensiva.ultimoDiaMeta === hoje,
           },
           s.conquistas,
         );
@@ -306,9 +362,9 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         set({
           xpTotal,
           xpPorDia: { ...s.xpPorDia, [hoje]: xpHoje },
-          ofensiva,
           licoesConcluidas,
           conquistas,
+          contadores,
           ultimoResultado: resultado,
         });
         return resultado;
@@ -318,7 +374,7 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
     }),
     {
       name: "duomed",
-      version: 3,
+      version: 4,
       storage: createJSONStorage(() => armazenamento),
       migrate: (salvo, versao) => {
         const dados = salvo as DadosJogo;
@@ -340,7 +396,8 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
         }
         // Versão 3: o app ficou só com residência e só com questões de prova.
         // Sai da fila de revisão o que não existe mais e a matéria aberta passa a ser da residência.
-        if (versao < 3) return limparDadosAntigos(dados);
+        // Versão 4: a meta diária passou de XP para minutos (limparDadosAntigos converte)
+        if (versao < 4) return limparDadosAntigos(dados);
         return dados;
       },
       // Salva só os dados do jogador (sem o resultado temporário e sem as funções)
@@ -362,7 +419,24 @@ export function limparDadosAntigos(dados: DadosJogo): DadosJogo {
   const materiaAtual = buscarMateria(dados.materiaAtual)
     ? dados.materiaAtual
     : primeiraMateria().id;
-  return { ...dados, modo: "residencia", materiaAtual, filaRevisao };
+  // Progresso de antes da meta em minutos (aparelho ou nuvem): converte e pede para escolher de novo
+  let { usuario, avisoMetaMinutos } = dados;
+  if (!dados.metaEmMinutos && usuario) {
+    usuario = { ...usuario, metaDiaria: metaDeXpParaMinutos(usuario.metaDiaria) };
+    avisoMetaMinutos = true;
+  }
+  return {
+    ...estadoInicial(),
+    ...dados,
+    usuario,
+    avisoMetaMinutos: avisoMetaMinutos ?? false,
+    metaEmMinutos: true,
+    contadores: { ...estadoInicial().contadores, ...dados.contadores },
+    tempoPorDia: dados.tempoPorDia ?? {},
+    modo: "residencia",
+    materiaAtual,
+    filaRevisao,
+  };
 }
 
 /** Só os dados do jogador, sem funções nem estado temporário (é o que vai para a nuvem) */

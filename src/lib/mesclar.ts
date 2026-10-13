@@ -12,9 +12,13 @@ export function mesclarProgresso(
   local: DadosJogo,
   nuvem: DadosJogo,
 ): DadosJogo {
+  // A nuvem pode ter sido salva por uma versão antiga do app: completa e converte antes de juntar
+  local = limparDadosAntigos({ ...local });
+  nuvem = limparDadosAntigos({ ...nuvem });
+
   // Aparelho novo, sem cadastro: usa tudo da nuvem
-  if (!local.usuario) return limparDadosAntigos({ ...nuvem });
-  if (!nuvem.usuario) return limparDadosAntigos({ ...local });
+  if (!local.usuario) return nuvem;
+  if (!nuvem.usuario) return local;
 
   const ofensivaMaisRecente =
     (local.ofensiva.ultimoDiaMeta ?? "") >= (nuvem.ofensiva.ultimoDiaMeta ?? "")
@@ -33,6 +37,14 @@ export function mesclarProgresso(
       recorde: Math.max(local.ofensiva.recorde, nuvem.ofensiva.recorde),
     },
     xpPorDia: juntar(local.xpPorDia, nuvem.xpPorDia, (a, b) => Math.max(a, b)),
+    tempoPorDia: juntar(local.tempoPorDia, nuvem.tempoPorDia, (a, b) => Math.max(a, b)),
+    contadores: {
+      licoesPerfeitas: Math.max(local.contadores.licoesPerfeitas, nuvem.contadores.licoesPerfeitas),
+      revisoes: Math.max(local.contadores.revisoes, nuvem.contadores.revisoes),
+      treinos: Math.max(local.contadores.treinos, nuvem.contadores.treinos),
+      bancasTreinadas: [...new Set([...local.contadores.bancasTreinadas, ...nuvem.contadores.bancasTreinadas])],
+    },
+    avisoMetaMinutos: local.avisoMetaMinutos && nuvem.avisoMetaMinutos,
     licoesConcluidas: juntar(
       local.licoesConcluidas,
       nuvem.licoesConcluidas,

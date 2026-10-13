@@ -31,17 +31,19 @@ interface Props {
   /** Sessão aberta no servidor (iniciar_licao, iniciar_revisao ou iniciar_nivelamento) */
   sessaoId: string
   licaoId?: string
+  /** Só no treino por prova: a banca escolhida (null = misturado) */
+  banca?: string | null
   /** Só no teste de nível: recebe as respostas no fim, sem XP nem estatísticas */
   aoTerminar?: (respostas: RespostaDada[]) => void
 }
 
 /**
- * Motor de uma sessão de questões. Serve tanto para lições da trilha
- * quanto para a revisão (no modo revisão, errar não gasta vida) e para o
+ * Motor de uma sessão de questões. Serve para lições da trilha, para o treino
+ * por prova (vale como lição), para a revisão (errar não gasta vida) e para o
  * teste de nível (não gasta vida, não dá XP e não entra nas estatísticas).
  * Quem corrige e tira a vida é o servidor: o app só mostra o resultado.
  */
-export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, aoTerminar }: Props) {
+export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, banca, aoTerminar }: Props) {
   const navegar = useNavigate()
   const responder = useJogo((s) => s.responder)
   const concluirSessao = useJogo((s) => s.concluirSessao)
@@ -62,6 +64,10 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
   const [seguidas, setSeguidas] = useState(0)
   const [combo, setCombo] = useState<number | null>(null)
   const inicio = useRef(Date.now())
+  // Quando a questão atual apareceu (o tempo de cada questão conta para a meta do dia)
+  const inicioQuestao = useRef(Date.now())
+  // Lição e treino gastam vidas; revisão e teste de nível, não
+  const gastaVidas = modo === 'licao' || modo === 'treino'
 
   const item = itens[indice]
   const podeVerificar = !verificada && !enviando && respostaCompleta(item.questao, resposta)
@@ -91,8 +97,9 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
     setSeguidas(novaSequencia)
     if ([3, 5, 8].includes(novaSequencia)) setCombo(novaSequencia)
     setRespostas((r) => [...r, { questao: completa, acertou: certo, resposta }])
-    // Salva na hora: estatísticas e fila de revisão (as vidas já vieram do servidor)
-    if (modo !== 'nivelamento') responder({ questao: completa, materiaId: item.materiaId, acertou: certo, modo })
+    // Salva na hora: estatísticas, tempo de estudo e fila de revisão (as vidas já vieram do servidor)
+    if (modo !== 'nivelamento')
+      responder({ questao: completa, materiaId: item.materiaId, acertou: certo, modo, tempoMs: Date.now() - inicioQuestao.current })
   }, [podeVerificar, sessaoId, item, indice, resposta, responder, modo, seguidas])
 
   // O aviso de sequência toca um som logo depois do acerto e some sozinho
@@ -115,24 +122,25 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
   const continuar = useCallback(() => {
     if (!verificada) return
 
-    // Lição sem vidas: para por aqui, sem XP (o servidor também recusaria a próxima resposta)
-    if (modo === 'licao' && useJogo.getState().vidas <= 0 && !ehPlus()) {
+    // Lição ou treino sem vidas: para por aqui, sem XP (o servidor também recusaria a próxima resposta)
+    if (gastaVidas && useJogo.getState().vidas <= 0 && !ehPlus()) {
       setSemVidas(true)
       return
     }
 
     if (indice + 1 >= itens.length) {
       if (modo === 'nivelamento') return aoTerminar?.(respostas)
-      concluirSessao({ modo, titulo, licaoId, respostas, tempoMs: Date.now() - inicio.current })
+      concluirSessao({ modo, titulo, licaoId, banca, respostas, tempoMs: Date.now() - inicio.current })
       navegar('/resultado', { replace: true })
       return
     }
 
     setIndice((i) => i + 1)
+    inicioQuestao.current = Date.now()
     setResposta(null)
     setVerificada(false)
     setErroEnvio(null)
-  }, [verificada, modo, indice, itens.length, concluirSessao, titulo, licaoId, respostas, navegar, aoTerminar])
+  }, [verificada, modo, gastaVidas, indice, itens.length, concluirSessao, titulo, licaoId, banca, respostas, navegar, aoTerminar])
 
   // Enter verifica ou continua (para quem usa teclado no computador)
   useEffect(() => {
@@ -149,7 +157,7 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
   const sair = () => {
     // Quem sai do teste de nível começa no fácil
     if (modo === 'nivelamento') useJogo.getState().definirNivel('facil')
-    navegar(modo === 'revisao' ? '/revisao' : '/', { replace: true })
+    navegar(modo === 'revisao' ? '/revisao' : modo === 'treino' ? '/treino' : '/', { replace: true })
   }
 
   return (
@@ -167,7 +175,7 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
         <div className="flex-1">
           <BarraProgresso valor={progresso} rotulo="Progresso da lição" />
         </div>
-        {modo === 'licao' ? (
+        {gastaVidas ? (
           <ContadorVidas />
         ) : (
           <span className="flex items-center gap-1 text-sm font-extrabold text-agua-texto dark:text-menta">
@@ -275,8 +283,8 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-xl font-extrabold">Sair agora?</h2>
           <p className="text-texto-suave">
-            {modo === 'licao'
-              ? 'Você vai perder o progresso desta lição. As vidas perdidas não voltam.'
+            {gastaVidas
+              ? `Você vai perder o progresso ${modo === 'treino' ? 'deste treino' : 'desta lição'}. As vidas perdidas não voltam.`
               : modo === 'revisao'
                 ? 'Você pode continuar a revisão depois.'
                 : 'Você começa no nível fácil e pode refazer o teste depois, pelo perfil.'}
@@ -296,7 +304,7 @@ export function Sessao({ modo, titulo, itens: itensIniciais, sessaoId, licaoId, 
 
       {/* Leitores de tela: anuncia quantas vidas restam */}
       <span className="sr-only" aria-live="polite">
-        {modo === 'licao' ? `${vidas} vidas restantes` : ''}
+        {gastaVidas ? `${vidas} vidas restantes` : ''}
       </span>
     </div>
   )
