@@ -16,6 +16,9 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Cirurgia pediátrica | Fácil | SUS-SP, Unicamp, PSU-MG, UERJ, Santa Casa SP, AMP-PR |
 | Ortopedia e traumatologia | Fácil | SUS-SP, AMRIGS, Unicamp, UERJ |
 | Ortopedia pediátrica e coluna | Fácil | SUS-SP, PSU-MG |
+| Otorrinolaringologia | Fácil | USP-SP, Unifesp, SUS-SP, PSU-MG, UERJ |
+| Oftalmologia | Fácil | USP-SP, SUS-SP, AMRIGS, Unicamp, PSU-MG, UERJ, Santa Casa SP |
+| Anestesiologia | Fácil | SUS-SP, Unicamp, Santa Casa SP |
 | Abdome agudo | Difícil | Unicamp, AMP-PR |
 | Coloproctologia e hérnias | Difícil | Unicamp, Santa Casa SP |
 | Vascular, cabeça e pescoço e tórax | Difícil | ENARE, SUS-SP, PSU-MG, UERJ |
@@ -26,6 +29,7 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Urologia II | Difícil | AMRIGS, AMP-PR |
 | Cirurgia pediátrica | Difícil | SUS-SP, AMRIGS, UERJ, Santa Casa SP |
 | Oncologia, pós-operatório e coluna | Difícil | AMP-PR |
+| Otorrinolaringologia | Difícil | Unifesp, SUS-SP, AMRIGS, Unicamp, PSU-MG, UERJ |
 
 ## Clínica médica
 
@@ -49,6 +53,7 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Geriatria | Fácil | Santa Casa SP, AMP-PR |
 | Oncologia clínica | Fácil | PSU-MG |
 | Dermatologia | Fácil | SUS-SP |
+| Terapia intensiva | Fácil | ENARE, SUS-SP, AMRIGS, Unicamp, PSU-MG |
 | Cardiologia | Difícil | PSU-MG, Santa Casa SP |
 | Cardiologia clínica | Difícil | Santa Casa SP |
 | Coronária, miocárdio e aorta | Difícil | AMRIGS, Santa Casa SP |
@@ -64,6 +69,7 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Emergências clínicas | Difícil | AMRIGS, UERJ, Santa Casa SP, AMP-PR |
 | Geriatria | Difícil | SUS-SP, Santa Casa SP, AMP-PR |
 | Oncologia clínica | Difícil | AMRIGS, UERJ, Santa Casa SP, AMP-PR |
+| Terapia intensiva | Difícil | ENARE, SUS-SP, Unicamp, PSU-MG |
 
 ## Ginecologia e obstetrícia
 
@@ -173,17 +179,17 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Neuropsiquiatria e idosos | Difícil | ENARE, SUS-SP, Unicamp, AMP-PR |
 | Infância, mulher e saúde mental no SUS | Difícil | SUS-SP, Unicamp |
 
-## Resumo por prova (temas sem nenhuma questão, de 170)
+## Resumo por prova (temas sem nenhuma questão, de 176)
 
-- USP-SP: 9
-- ENARE: 27
-- Unifesp: 20
-- SUS-SP: 46
-- AMRIGS: 29
-- Unicamp: 59
-- PSU-MG: 30
-- UERJ: 58
-- Santa Casa SP: 49
+- USP-SP: 11
+- ENARE: 29
+- Unifesp: 22
+- SUS-SP: 52
+- AMRIGS: 32
+- Unicamp: 64
+- PSU-MG: 35
+- UERJ: 61
+- Santa Casa SP: 51
 - AMP-PR: 51
 
-Temas com as 10 provas: 29 de 170.
+Temas com as 10 provas: 29 de 176.
