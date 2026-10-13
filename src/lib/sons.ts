@@ -5,7 +5,8 @@ import { arquivoPublico } from './caminho'
  * Efeitos sonoros do app. Os arquivos ficam em public/sons/:
  * - toque e conclusao: Mixkit (mixkit.co), licença gratuita da Mixkit
  * - sequencia e conquista: Kenney (kenney.nl), domínio público (CC0)
- * - acerto ("plim-plim") e erro (buzina): sintetizados para o DuoMed, no estilo de programa de perguntas
+ * - acerto e erro: arquivos gratuitos escolhidos pelo Leo (correct-right e incorrect-wrong),
+ *   cortados para começar sem silêncio
  *
  * Os sons são carregados uma vez na memória e tocados pela Web Audio API,
  * que responde na hora (a tag <audio> atrasa no celular).
