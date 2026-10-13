@@ -25,19 +25,20 @@ export function BarraStatus() {
 
   return (
     <header className="sticky top-0 z-20 border-b-2 border-borda bg-fundo">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-3">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-3 py-3 sm:px-4">
+        {/* A matéria encolhe (nome cortado com "...") para o resto caber em celulares estreitos */}
         <Link
           to="/materias"
-          className="flex items-center gap-2 rounded-xl border-2 border-borda px-2.5 py-1.5 font-bold transition-colors hover:bg-superficie-2"
+          className="flex min-w-0 items-center gap-2 rounded-xl border-2 border-borda px-2 py-1.5 font-bold transition-colors hover:bg-superficie-2 sm:px-2.5"
           aria-label={`Matéria atual: ${materia?.nome}. Trocar matéria`}
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-agua text-white">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-agua text-white">
             <IconeMateria nome={materia?.icone ?? ''} className="h-4 w-4" />
           </span>
-          <span className="max-w-32 truncate text-sm sm:max-w-none">{materia?.nome}</span>
+          <span className="min-w-0 truncate text-sm">{materia?.nome}</span>
         </Link>
 
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-2.5 sm:gap-4">
           <span
             className={`flex items-center gap-1 font-extrabold ${metaBatida ? 'text-laranja' : 'text-apagado-texto'}`}
             title="Ofensiva: dias seguidos batendo a meta"

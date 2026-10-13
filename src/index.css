@@ -80,6 +80,8 @@ body {
 }
 
 body {
+  /* Nada pode alargar a página para os lados no celular */
+  overflow-x: clip;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;

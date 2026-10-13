@@ -69,7 +69,7 @@ export function Layout() {
 
       {/* Barra inferior no celular */}
       <nav className="pb-seguro fixed inset-x-0 bottom-0 z-30 border-t-2 border-borda bg-fundo md:hidden">
-        <div className="mx-auto flex max-w-md justify-around px-2 py-1.5">
+        <div className="mx-auto flex max-w-md justify-around gap-0.5 px-1 py-1.5">
           {ITENS.map((item) => (
             <LinkNav key={item.para} item={item} contador={item.para === '/revisao' ? pendentes : 0} />
           ))}
@@ -87,7 +87,7 @@ function LinkNav({ item, contador, lateral }: { item: ItemNav; contador: number;
       end={para === '/'}
       className={({ isActive }) =>
         `relative flex items-center rounded-xl border-2 font-bold transition-colors ${
-          lateral ? 'gap-4 px-3 py-2.5 text-sm uppercase tracking-wide' : 'flex-col gap-0.5 px-2 py-1.5 text-[11px]'
+          lateral ? 'gap-4 px-3 py-2.5 text-sm uppercase tracking-wide' : 'min-w-0 flex-1 flex-col gap-0.5 px-0 py-1.5 text-[10px] tracking-tight'
         } ${
           isActive
             ? 'border-agua/40 bg-agua/10 text-agua-texto dark:text-menta'
@@ -116,7 +116,7 @@ function LinkNav({ item, contador, lateral }: { item: ItemNav; contador: number;
               </motion.span>
             )}
           </motion.span>
-          {rotulo}
+          <span className="max-w-full truncate">{rotulo}</span>
         </>
       )}
     </NavLink>
