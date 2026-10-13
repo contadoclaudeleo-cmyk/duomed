@@ -218,8 +218,9 @@ export function Home() {
           {/* Troca rápida de matéria: áreas da residência */}
           {atalhos.length > 0 && (
             <div className="mt-3">
+              {/* Grade: todos os botões com a mesma largura e altura */}
               <div
-                className="flex flex-wrap gap-2"
+                className="grid grid-cols-2 gap-2 sm:grid-cols-3"
                 role="radiogroup"
                 aria-label="Área de estudo"
               >
@@ -235,14 +236,14 @@ export function Home() {
                         setAberta(null);
                         escolherMateria(m.id);
                       }}
-                      className={`flex items-center gap-2 rounded-full border-2 px-3.5 py-1.5 text-sm font-bold transition-colors ${
+                      className={`flex h-12 min-w-0 items-center gap-2 rounded-2xl border-2 px-3 text-left text-sm font-bold leading-tight transition-colors ${
                         ativa
                           ? "border-agua bg-agua text-white"
                           : "border-borda bg-superficie text-texto-suave hover:bg-superficie-2"
                       }`}
                     >
-                      <IconeMateria nome={m.icone} className="h-4 w-4" />
-                      {m.nome}
+                      <IconeMateria nome={m.icone} className="h-5 w-5 shrink-0" />
+                      <span className="line-clamp-2 min-w-0">{m.nome}</span>
                     </button>
                   );
                 })}
