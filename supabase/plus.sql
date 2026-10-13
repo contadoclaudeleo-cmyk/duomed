@@ -30,6 +30,11 @@ create table if not exists public.pagamentos_processados (
 );
 
 alter table public.pagamentos_processados enable row level security;
+
+-- O Supabase não dá mais permissão automática em tabelas novas: sem isto o aviso da Kiwify não grava nada.
+grant select, insert, update, delete on public.assinaturas, public.pagamentos_processados to service_role;
+grant select on public.assinaturas to authenticated;
+revoke all on public.assinaturas, public.pagamentos_processados from anon;
 -- Sem regras: o app não lê nem escreve aqui, só o servidor
 
 -- Entrega as vidas compradas: devolve quantas eram e zera o saldo (o app soma nas vidas)

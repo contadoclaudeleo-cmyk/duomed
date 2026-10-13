@@ -78,7 +78,12 @@ Deno.serve(async (req) => {
   // O mesmo aviso pode chegar mais de uma vez: conta uma só
   const chave = `${evento}:${idPedido}`
   const { error: repetido } = await admin.from('pagamentos_processados').insert({ id: chave })
-  if (repetido) return texto('já processado')
+  // 23505 = chave repetida (aviso já contado). Qualquer outro erro devolve 500 para a Kiwify tentar de novo.
+  if (repetido?.code === '23505') return texto('já processado')
+  if (repetido) {
+    console.error('não deu para registrar o aviso', repetido.message)
+    return texto('erro ao registrar o aviso', 500)
+  }
 
   try {
     const { data: conta } = await admin.from('assinaturas').select('*').eq('user_id', userId).maybeSingle()
