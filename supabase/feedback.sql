@@ -19,6 +19,10 @@ create table if not exists public.feedbacks (
 
 alter table public.feedbacks enable row level security;
 
+-- O Supabase não dá mais permissão automática em tabelas novas: sem isto o envio falha.
+grant select, insert on public.feedbacks to authenticated;
+revoke all on public.feedbacks from anon;
+
 drop policy if exists "enviar o proprio feedback" on public.feedbacks;
 create policy "enviar o proprio feedback" on public.feedbacks
   for insert to authenticated with check (auth.uid() = user_id);
