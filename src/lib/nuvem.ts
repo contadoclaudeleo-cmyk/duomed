@@ -27,6 +27,10 @@ interface EstadoConta {
   googleAtivo: boolean
   /** true depois que o app descobriu se há alguém logado (lê a sessão guardada no aparelho) */
   verificada: boolean
+  /** Mensagem boa para mostrar no login (ex.: e-mail confirmado) */
+  aviso: string | null
+  /** true quando a pessoa abriu o link de "esqueci minha senha" e precisa criar a nova */
+  redefinindo: boolean
 }
 
 export const useConta = create<EstadoConta>(() => ({
@@ -36,6 +40,8 @@ export const useConta = create<EstadoConta>(() => ({
   carregado: false,
   googleAtivo: false,
   verificada: false,
+  aviso: null,
+  redefinindo: false,
 }))
 
 const ESPERA_ENVIO_MS = 2_000
@@ -106,7 +112,9 @@ export async function atualizarCompras() {
 
 // ---------- Ações de conta ----------
 
-const urlDeRetorno = () => window.location.origin + import.meta.env.BASE_URL
+/** Endereço do app para onde o Supabase manda de volta (com um marcador opcional, ex.: ?redefinir=1) */
+const urlDeRetorno = (marcador?: 'redefinir' | 'confirmado') =>
+  window.location.origin + import.meta.env.BASE_URL + (marcador ? `?${marcador}=1` : '')
 
 export async function entrarComGoogle() {
   useConta.setState({ erro: null })
@@ -151,10 +159,27 @@ export async function criarConta(email: string, senha: string, captchaToken?: st
   const { data, error } = await supabase.auth.signUp({
     email: email.trim(),
     password: senha,
-    options: { emailRedirectTo: urlDeRetorno(), ...(captchaToken ? { captchaToken } : {}) },
+    options: { emailRedirectTo: urlDeRetorno('confirmado'), ...(captchaToken ? { captchaToken } : {}) },
   })
   if (error) throw new Error(traduzirErro(error.message))
   return !!data.session
+}
+
+/** "Esqueci minha senha": manda um link para o e-mail. O link volta para o app com ?redefinir=1. */
+export async function pedirNovaSenha(email: string, captchaToken?: string) {
+  const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+    redirectTo: urlDeRetorno('redefinir'),
+    ...(captchaToken ? { captchaToken } : {}),
+  })
+  if (error) throw new Error(traduzirErro(error.message))
+}
+
+/** Grava a nova senha (a pessoa já entrou pelo link do e-mail) */
+export async function trocarSenha(novaSenha: string) {
+  const { error } = await supabase.auth.updateUser({ password: novaSenha })
+  if (error) throw new Error(traduzirErro(error.message))
+  limparErrosDeSenha(useConta.getState().sessao?.user.email ?? '')
+  useConta.setState({ redefinindo: false })
 }
 
 /** Sai da conta e limpa o aparelho (o progresso continua salvo na nuvem) */
@@ -191,7 +216,9 @@ function traduzirErro(mensagem: string): string {
   const m = mensagem.toLowerCase()
   if (m.includes('invalid login credentials')) return 'E-mail ou senha incorretos.'
   if (m.includes('already registered') || m.includes('already been registered')) return 'Já existe uma conta com esse e-mail. Tente entrar.'
+  if (m.includes('should be different')) return 'A nova senha precisa ser diferente da antiga.'
   if (m.includes('password should be') || m.includes('at least')) return 'A senha precisa ter pelo menos 8 caracteres.'
+  if (m.includes('security purposes')) return 'Espere um minuto antes de pedir de novo.'
   if (m.includes('email not confirmed')) return 'Confirme seu e-mail antes de entrar.'
   if (m.includes('unable to validate email') || m.includes('invalid format') || m.includes('email address') && m.includes('invalid'))
     return 'Esse e-mail não parece válido.'
@@ -217,21 +244,33 @@ export function iniciarNuvem() {
     .catch(() => {})
 
   // Volta do Google: a URL traz ?code=... (ou ?error=...). Lê e limpa antes do roteador mexer na URL.
+  // Os links do e-mail voltam igual, com ?redefinir=1 (nova senha) ou ?confirmado=1 (conta confirmada).
   const url = new URL(window.location.href)
   const codigo = url.searchParams.get('code')
   const erroOAuth = url.searchParams.get('error_description') ?? url.searchParams.get('error')
-  if (codigo || erroOAuth) {
-    for (const p of ['code', 'error', 'error_code', 'error_description', 'state']) url.searchParams.delete(p)
+  const redefinir = url.searchParams.has('redefinir')
+  const confirmado = url.searchParams.has('confirmado')
+  if (codigo || erroOAuth || redefinir || confirmado) {
+    for (const p of ['code', 'error', 'error_code', 'error_description', 'state', 'redefinir', 'confirmado'])
+      url.searchParams.delete(p)
     window.history.replaceState(null, '', url.pathname + url.search + url.hash)
   }
-  if (erroOAuth) useConta.setState({ erro: 'Não foi possível entrar com o Google. Tente de novo.' })
+  const falhou = () => {
+    if (redefinir)
+      useConta.setState({ erro: 'O link para criar a nova senha expirou ou foi aberto em outro aparelho. Peça outro.' })
+    else if (confirmado) useConta.setState({ aviso: 'E-mail confirmado! Agora é só entrar com seu e-mail e senha.' })
+    else useConta.setState({ erro: 'Não foi possível entrar com o Google. Tente de novo.' })
+  }
+  if (erroOAuth) falhou()
   if (codigo) {
     supabase.auth.exchangeCodeForSession(codigo).then(({ error }) => {
-      if (error) useConta.setState({ erro: 'Não foi possível entrar com o Google. Tente de novo.' })
+      if (error) falhou()
+      else if (redefinir) useConta.setState({ redefinindo: true })
     })
   }
 
   supabase.auth.onAuthStateChange((evento, sessao) => {
+    if (evento === 'PASSWORD_RECOVERY') useConta.setState({ redefinindo: true })
     const antes = useConta.getState().sessao
     const contaNova = !!sessao && antes?.user.id !== sessao.user.id
     useConta.setState({

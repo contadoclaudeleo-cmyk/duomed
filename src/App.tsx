@@ -21,6 +21,7 @@ import { RevisaoComentada } from './screens/RevisaoComentada'
 import { Treino } from './screens/Treino'
 import { TreinoSessao } from './screens/TreinoSessao'
 import { Melhorar } from './screens/Melhorar'
+import { TrocarSenha } from './components/TrocarSenha'
 
 /** Aplica claro/escuro no <html> conforme a escolha do usuário */
 function useTema() {
@@ -57,33 +58,36 @@ export function App() {
   useRecargaDeVidas()
 
   return (
-    <Routes>
-      <Route path="/boas-vindas" element={<SoSemUsuario />} />
-      <Route element={<ExigeUsuario />}>
-        {/* Telas com a barra de navegação */}
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="materias" element={<Materias />} />
-          <Route path="revisao" element={<Revisao />} />
-          <Route path="treino" element={<Treino />} />
-          <Route path="melhorar" element={<Melhorar />} />
-          <Route path="ranking" element={<Ranking />} />
-          <Route path="perfil" element={<Perfil />} />
-          <Route path="loja" element={<Loja />} />
-          <Route path="feedback" element={<Feedback />} />
-          <Route path="admin" element={<Admin />} />
+    <>
+      <TrocarSenha />
+      <Routes>
+        <Route path="/boas-vindas" element={<SoSemUsuario />} />
+        <Route element={<ExigeUsuario />}>
+          {/* Telas com a barra de navegação */}
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="materias" element={<Materias />} />
+            <Route path="revisao" element={<Revisao />} />
+            <Route path="treino" element={<Treino />} />
+            <Route path="melhorar" element={<Melhorar />} />
+            <Route path="ranking" element={<Ranking />} />
+            <Route path="perfil" element={<Perfil />} />
+            <Route path="loja" element={<Loja />} />
+            <Route path="feedback" element={<Feedback />} />
+            <Route path="admin" element={<Admin />} />
+          </Route>
+          {/* Telas em tela cheia */}
+          <Route path="licao/:licaoId" element={<Licao />} />
+          <Route path="revisao/praticar" element={<RevisaoPratica />} />
+          <Route path="treino/jogar" element={<TreinoSessao />} />
+          <Route path="resultado" element={<Resultado />} />
+          <Route path="nivelamento" element={<Nivelamento />} />
+          <Route path="comentada" element={<RevisaoComentada />} />
+          <Route path="comentada/:licaoId" element={<RevisaoComentada />} />
         </Route>
-        {/* Telas em tela cheia */}
-        <Route path="licao/:licaoId" element={<Licao />} />
-        <Route path="revisao/praticar" element={<RevisaoPratica />} />
-        <Route path="treino/jogar" element={<TreinoSessao />} />
-        <Route path="resultado" element={<Resultado />} />
-        <Route path="nivelamento" element={<Nivelamento />} />
-        <Route path="comentada" element={<RevisaoComentada />} />
-        <Route path="comentada/:licaoId" element={<RevisaoComentada />} />
-      </Route>
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { criarConta, entrarComEmail, entrarComGoogle, useConta } from '../lib/nuvem'
+import { criarConta, entrarComEmail, entrarComGoogle, pedirNovaSenha, useConta } from '../lib/nuvem'
 import { Botao } from './Botao'
 import { arquivoPublico } from '../lib/caminho'
 import { Captcha, CHAVE_CAPTCHA, type ControleCaptcha } from './Captcha'
@@ -15,6 +15,7 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
   const [erro, setErro] = useState<string | null>(null)
   const [aviso, setAviso] = useState<string | null>(null)
   const erroGoogle = useConta((s) => s.erro)
+  const avisoConta = useConta((s) => s.aviso)
   const googleAtivo = useConta((s) => s.googleAtivo)
   // Resposta do CAPTCHA (quando ele está ligado). Cada resposta vale para uma tentativa só.
   const [captcha, setCaptcha] = useState<string | null>(null)
@@ -32,6 +33,22 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
       setEnviando(false)
       controleCaptcha.current?.reiniciar()
     }
+  }
+
+  function esqueciSenha() {
+    if (!email.trim()) {
+      setErro('Digite seu e-mail acima e toque de novo em "Esqueci minha senha".')
+      return
+    }
+    if (CHAVE_CAPTCHA && !captcha) {
+      setErro('Confirme que você não é um robô.')
+      return
+    }
+    const token = captcha ?? undefined
+    return tentar(async () => {
+      await pedirNovaSenha(email, token)
+      setAviso('Se existir uma conta com esse e-mail, enviamos um link para criar uma nova senha. Abra o link neste aparelho.')
+    })
   }
 
   function enviarFormulario() {
@@ -131,10 +148,22 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
             {erro ?? erroGoogle}
           </p>
         )}
-        {aviso && <p className="text-sm font-bold text-agua-texto dark:text-menta">{aviso}</p>}
+        {(aviso ?? avisoConta) && (
+          <p className="text-sm font-bold text-agua-texto dark:text-menta">{aviso ?? avisoConta}</p>
+        )}
         <Botao type="submit" larguraTotal disabled={enviando}>
           {enviando ? 'Aguarde...' : aba === 'criar' ? 'Criar conta' : 'Entrar'}
         </Botao>
+        {aba === 'entrar' && (
+          <button
+            type="button"
+            disabled={enviando}
+            onClick={esqueciSenha}
+            className="mx-auto text-sm font-bold text-agua-texto underline underline-offset-2 disabled:opacity-60 dark:text-menta"
+          >
+            Esqueci minha senha
+          </button>
+        )}
       </form>
 
       <p className="text-center text-xs text-texto-suave">
