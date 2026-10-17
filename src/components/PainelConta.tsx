@@ -47,7 +47,7 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
     const token = captcha ?? undefined
     return tentar(async () => {
       await pedirNovaSenha(email, token)
-      setAviso('Se existir uma conta com esse e-mail, enviamos um link para criar uma nova senha. Abra o link neste aparelho.')
+      setAviso('Se existir uma conta com esse e-mail, enviamos um link para criar uma nova senha. Veja também o spam.')
     })
   }
 

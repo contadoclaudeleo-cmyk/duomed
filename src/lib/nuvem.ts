@@ -244,24 +244,32 @@ export function iniciarNuvem() {
     .catch(() => {})
 
   // Volta do Google: a URL traz ?code=... (ou ?error=...). Lê e limpa antes do roteador mexer na URL.
-  // Os links do e-mail voltam igual, com ?redefinir=1 (nova senha) ou ?confirmado=1 (conta confirmada).
+  // Os links do e-mail (ver supabase/emails) trazem ?token_hash=...&type=... e o marcador ?redefinir=1
+  // (nova senha) ou ?confirmado=1 (conta confirmada). Funcionam em qualquer aparelho ou navegador.
   const url = new URL(window.location.href)
   const codigo = url.searchParams.get('code')
   const erroOAuth = url.searchParams.get('error_description') ?? url.searchParams.get('error')
+  const tokenEmail = url.searchParams.get('token_hash')
+  const tipoEmail = url.searchParams.get('type') === 'recovery' ? 'recovery' : 'email'
   const redefinir = url.searchParams.has('redefinir')
   const confirmado = url.searchParams.has('confirmado')
-  if (codigo || erroOAuth || redefinir || confirmado) {
-    for (const p of ['code', 'error', 'error_code', 'error_description', 'state', 'redefinir', 'confirmado'])
+  if (codigo || erroOAuth || tokenEmail || redefinir || confirmado) {
+    for (const p of ['code', 'error', 'error_code', 'error_description', 'state', 'token_hash', 'type', 'redefinir', 'confirmado'])
       url.searchParams.delete(p)
     window.history.replaceState(null, '', url.pathname + url.search + url.hash)
   }
   const falhou = () => {
-    if (redefinir)
-      useConta.setState({ erro: 'O link para criar a nova senha expirou ou foi aberto em outro aparelho. Peça outro.' })
+    if (redefinir) useConta.setState({ erro: 'O link para criar a nova senha expirou ou já foi usado. Peça outro.' })
     else if (confirmado) useConta.setState({ aviso: 'E-mail confirmado! Agora é só entrar com seu e-mail e senha.' })
     else useConta.setState({ erro: 'Não foi possível entrar com o Google. Tente de novo.' })
   }
   if (erroOAuth) falhou()
+  if (tokenEmail) {
+    supabase.auth.verifyOtp({ token_hash: tokenEmail, type: tipoEmail }).then(({ error }) => {
+      if (error) falhou()
+      else if (tipoEmail === 'recovery') useConta.setState({ redefinindo: true })
+    })
+  }
   if (codigo) {
     supabase.auth.exchangeCodeForSession(codigo).then(({ error }) => {
       if (error) falhou()
