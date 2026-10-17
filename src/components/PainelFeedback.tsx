@@ -112,10 +112,12 @@ export function PainelFeedback({
             <button
               type="button"
               onClick={() => setReportar(true)}
-              className="ml-2 mt-2 inline-flex items-center gap-1 rounded-xl px-2 py-1.5 text-xs font-bold text-texto-suave hover:bg-black/5"
+              className={`ml-2 mt-2 inline-flex items-center gap-1.5 rounded-xl border-2 px-3 py-1.5 text-sm font-extrabold transition-colors ${
+                acertou ? 'border-agua/40 hover:bg-agua/10' : 'border-erro/40 hover:bg-erro/10'
+              }`}
             >
-              <Flag className="h-3.5 w-3.5" strokeWidth={2.6} aria-hidden />
-              Reportar erro
+              <Flag className="h-4 w-4" strokeWidth={2.6} aria-hidden />
+              Achou um erro?
             </button>
             {mostrarResolucao && (
               <motion.div
@@ -178,7 +180,10 @@ export function PainelFeedback({
 }
 
 /** Janela para avisar que a questão tem erro (vai para os feedbacks do Painel) */
-function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: () => void }) {
+const MOTIVOS = ['O gabarito está errado', 'A explicação está errada ou confusa', 'Está desatualizada', 'Erro de digitação']
+
+export function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: () => void }) {
+  const [motivo, setMotivo] = useState<string | null>(null)
   const [texto, setTexto] = useState('')
   const [estado, setEstado] = useState<'escrevendo' | 'enviando' | 'enviado'>('escrevendo')
   const [erro, setErro] = useState<string | null>(null)
@@ -187,7 +192,8 @@ function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: ()
     setErro(null)
     setEstado('enviando')
     try {
-      await enviarFeedback('conteudo', texto, null, questaoId)
+      const mensagem = [motivo, texto.trim()].filter(Boolean).join(': ')
+      await enviarFeedback('conteudo', mensagem, null, questaoId)
       setEstado('enviado')
     } catch (e) {
       setErro(e instanceof Error ? e.message : 'Não deu certo. Tente de novo.')
@@ -211,8 +217,24 @@ function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: ()
   return (
     <div className="flex flex-col gap-3" onKeyDown={(e) => e.stopPropagation()}>
       <h2 className="text-center text-xl font-extrabold">Reportar erro na questão</h2>
+      <p className="text-center text-sm text-texto-suave">O que está errado?</p>
+      <div className="flex flex-wrap justify-center gap-2">
+        {MOTIVOS.map((m) => (
+          <button
+            key={m}
+            type="button"
+            aria-pressed={motivo === m}
+            onClick={() => setMotivo(motivo === m ? null : m)}
+            className={`rounded-xl border-2 px-3 py-1.5 text-sm font-bold transition-colors ${
+              motivo === m ? 'border-agua bg-agua/10 text-agua-texto dark:text-menta' : 'border-borda hover:bg-superficie-2'
+            }`}
+          >
+            {m}
+          </button>
+        ))}
+      </div>
       <p className="text-center text-sm text-texto-suave">
-        O que está errado? Se souber, diga a resposta certa e de onde ela vem (livro, diretriz, prova).
+        Se puder, conte mais: a resposta certa e de onde ela vem (livro, diretriz, prova).
       </p>
       <textarea
         value={texto}
@@ -222,7 +244,7 @@ function ReportarErro({ questaoId, aoFechar }: { questaoId: string; aoFechar: ()
         className="w-full resize-none rounded-2xl border-2 border-borda bg-superficie p-3 text-sm font-semibold outline-none focus:border-agua"
       />
       {erro && <p className="text-center text-sm font-bold text-erro-texto">{erro}</p>}
-      <Botao larguraTotal disabled={texto.trim().length < 3 || estado === 'enviando'} onClick={enviar}>
+      <Botao larguraTotal disabled={(!motivo && texto.trim().length < 3) || estado === 'enviando'} onClick={enviar}>
         {estado === 'enviando' ? 'Enviando...' : 'Enviar'}
       </Botao>
       <Botao larguraTotal variante="contorno" onClick={aoFechar}>

@@ -63,6 +63,8 @@ export interface QuestaoIdentificarImagem extends QuestaoBase {
   imagem?: string
   /** Autor e licença da imagem, aparece embaixo dela (obrigatório em imagens CC BY-SA) */
   creditoImagem?: string
+  /** Frase acima da imagem (ex.: "Analise o eletrocardiograma"). Sem ela: "Identifique a estrutura" */
+  chamada?: string
   opcoes: string[]
   resposta: string
 }

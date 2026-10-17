@@ -1,4 +1,4 @@
-import { ArrowLeft, Check, CircleCheck, CircleX, Lightbulb, ListChecks, Loader2, X } from 'lucide-react'
+import { ArrowLeft, Check, CircleCheck, CircleX, Flag, Lightbulb, ListChecks, Loader2, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { buscarLicao } from '../data'
@@ -8,6 +8,8 @@ import { gabaritoLicao, mensagemDoErro } from '../lib/estudo'
 import type { Questao, Resposta, TipoQuestao } from '../types'
 import { Abas } from '../components/Abas'
 import { Botao } from '../components/Botao'
+import { Modal } from '../components/Modal'
+import { ReportarErro } from '../components/PainelFeedback'
 
 /** Questão do gabarito. Sem `acertou`, a pessoa não respondeu (gabarito aberto pela trilha). */
 interface ItemComentado {
@@ -144,12 +146,15 @@ export function RevisaoComentada() {
 
 function CartaoQuestao({ numero, item }: { numero: number; item: ItemComentado }) {
   const { questao, acertou } = item
+  const [reportar, setReportar] = useState(false)
 
   return (
     <article className="overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
       <div className="flex items-center gap-2 border-b-2 border-borda px-4 py-2.5">
         <span className="font-extrabold">Questão {numero}</span>
-        <span className="text-sm font-semibold text-texto-suave">· {NOMES_TIPO[questao.tipo]}</span>
+        <span className="text-sm font-semibold text-texto-suave">
+          · {questao.tipo === 'identificar_imagem' && questao.chamada ? questao.chamada : NOMES_TIPO[questao.tipo]}
+        </span>
         {acertou !== undefined && (
           <span
             className={`ml-auto flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-extrabold ${
@@ -172,7 +177,18 @@ function CartaoQuestao({ numero, item }: { numero: number; item: ItemComentado }
           </p>
           <p className="text-[15px] leading-relaxed">{questao.explicacao}</p>
         </div>
+        <button
+          type="button"
+          onClick={() => setReportar(true)}
+          className="inline-flex items-center gap-1.5 self-start rounded-xl border-2 border-borda px-3 py-1.5 text-sm font-extrabold transition-colors hover:bg-superficie-2"
+        >
+          <Flag className="h-4 w-4" strokeWidth={2.6} aria-hidden />
+          Achou um erro?
+        </button>
       </div>
+      <Modal aberto={reportar} aoFechar={() => setReportar(false)}>
+        <ReportarErro questaoId={questao.id} aoFechar={() => setReportar(false)} />
+      </Modal>
     </article>
   )
 }
