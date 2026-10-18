@@ -54,6 +54,7 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Oncologia clínica | Fácil | PSU-MG |
 | Dermatologia | Fácil | SUS-SP |
 | Terapia intensiva | Fácil | ENARE, SUS-SP, AMRIGS, Unicamp, PSU-MG |
+| Exames de imagem e ECG | Fácil | ENARE, Unifesp, SUS-SP, AMRIGS, Unicamp, PSU-MG, UERJ, Santa Casa SP, AMP-PR |
 | Cardiologia | Difícil | PSU-MG, Santa Casa SP |
 | Cardiologia clínica | Difícil | Santa Casa SP |
 | Coronária, miocárdio e aorta | Difícil | AMRIGS, Santa Casa SP |
@@ -70,6 +71,7 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Geriatria | Difícil | SUS-SP, Santa Casa SP, AMP-PR |
 | Oncologia clínica | Difícil | AMRIGS, UERJ, Santa Casa SP, AMP-PR |
 | Terapia intensiva | Difícil | ENARE, SUS-SP, Unicamp, PSU-MG |
+| Exames de imagem e ECG | Difícil | ENARE, Unifesp, SUS-SP, AMRIGS, Unicamp, PSU-MG, UERJ, Santa Casa SP, AMP-PR |
 
 ## Ginecologia e obstetrícia
 
@@ -179,17 +181,17 @@ Cada linha é um tema (unidade) e as provas que ainda **não têm nenhuma quest�
 | Neuropsiquiatria e idosos | Difícil | ENARE, SUS-SP, Unicamp, AMP-PR |
 | Infância, mulher e saúde mental no SUS | Difícil | SUS-SP, Unicamp |
 
-## Resumo por prova (temas sem nenhuma questão, de 176)
+## Resumo por prova (temas sem nenhuma questão, de 178)
 
 - USP-SP: 11
-- ENARE: 29
-- Unifesp: 22
-- SUS-SP: 52
-- AMRIGS: 32
-- Unicamp: 64
-- PSU-MG: 35
-- UERJ: 61
-- Santa Casa SP: 51
-- AMP-PR: 51
+- ENARE: 31
+- Unifesp: 24
+- SUS-SP: 54
+- AMRIGS: 34
+- Unicamp: 66
+- PSU-MG: 37
+- UERJ: 63
+- Santa Casa SP: 53
+- AMP-PR: 53
 
-Temas com as 10 provas: 29 de 176.
+Temas com as 10 provas: 29 de 178.
