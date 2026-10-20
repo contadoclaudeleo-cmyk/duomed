@@ -31,8 +31,8 @@ interface Props {
   /** Sessão aberta no servidor (iniciar_licao, iniciar_revisao ou iniciar_nivelamento) */
   sessaoId: string
   licaoId?: string
-  /** Só no treino por prova: a banca escolhida (null = misturado) */
-  banca?: string | null
+  /** Só no treino por prova: as bancas escolhidas (vazio ou null = misturado) */
+  banca?: string | string[] | null
   /** Só no teste de nível: recebe as respostas no fim, sem XP nem estatísticas */
   aoTerminar?: (respostas: RespostaDada[]) => void
 }

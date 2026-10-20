@@ -109,9 +109,12 @@ export async function iniciarLicao(licaoId: string): Promise<SessaoServidor> {
   return r
 }
 
-/** Treino por prova: 10 questões de uma matéria e/ou banca (null = misturado). Gasta vida como a lição. */
-export async function iniciarTreino(materiaId: string | null, banca: string | null): Promise<SessaoServidor> {
-  const r = await chamar<SessaoServidor & { situacao: Situacao }>('iniciar_treino', { p_materia: materiaId, p_banca: banca })
+/** Treino por prova: 10 questões de uma matéria e de uma ou mais bancas (lista vazia = misturado). Gasta vida como a lição. */
+export async function iniciarTreino(materiaId: string | null, bancas: string[]): Promise<SessaoServidor> {
+  const r =
+    bancas.length > 1
+      ? await chamar<SessaoServidor & { situacao: Situacao }>('iniciar_treino_bancas', { p_materia: materiaId, p_bancas: bancas })
+      : await chamar<SessaoServidor & { situacao: Situacao }>('iniciar_treino', { p_materia: materiaId, p_banca: bancas[0] ?? null })
   aplicarSituacao(r.situacao)
   return r
 }

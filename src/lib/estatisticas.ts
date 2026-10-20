@@ -135,11 +135,11 @@ export function recomendar(resumo: Resumo): Recomendacao[] {
   return lista
 }
 
-/** Endereço da sessão de treino */
-export function linkTreino(materiaId: string | null, banca: string | null) {
+/** Endereço da sessão de treino (uma ou mais bancas; nenhuma = misturado) */
+export function linkTreino(materiaId: string | null, banca: string | string[] | null) {
   const p = new URLSearchParams()
   if (materiaId) p.set('materia', materiaId)
-  if (banca) p.set('banca', banca)
+  for (const b of Array.isArray(banca) ? banca : banca ? [banca] : []) p.append('banca', b)
   const q = p.toString()
   return `/treino/jogar${q ? `?${q}` : ''}`
 }

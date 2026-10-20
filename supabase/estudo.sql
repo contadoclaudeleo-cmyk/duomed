@@ -386,6 +386,55 @@ begin
 end;
 $$;
 
+-- Treino com várias bancas ao mesmo tempo (ex.: USP-SP + AMRIGS + UFRJ). Lista vazia = todas.
+-- As questões são intercaladas entre as bancas escolhidas, para uma banca grande não dominar o treino.
+create or replace function public.iniciar_treino_bancas(p_materia text, p_bancas text[])
+returns jsonb
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_user uuid := auth.uid();
+  v_ids text[];
+  v record;
+  v_resultado jsonb;
+begin
+  if v_user is null then
+    raise exception 'sem_login';
+  end if;
+  if coalesce(cardinality(p_bancas), 0) > 50 then
+    raise exception 'bancas_demais';
+  end if;
+  select * into v from _vidas_atualizar(v_user);
+  if v.o_vidas <= 0 and not _eh_plus(v_user) then
+    raise exception 'sem_vidas';
+  end if;
+
+  select array_agg(id) into v_ids from (
+    select id from (
+      select q.id,
+        row_number() over (
+          partition by q.banca
+          order by exists (select 1 from questoes_vistas qv where qv.user_id = v_user and qv.questao_id = q.id), random()
+        ) as ordem
+      from questoes q
+      where q.banca is not null
+        and (p_materia is null or q.materia_id = p_materia)
+        and (coalesce(cardinality(p_bancas), 0) = 0 or q.banca = any (p_bancas))
+    ) x
+    order by ordem, random()
+    limit 10
+  ) t;
+  if v_ids is null then
+    raise exception 'sem_questoes';
+  end if;
+
+  v_resultado := _abrir_sessao(v_user, 'treino', null, v_ids);
+  return v_resultado || jsonb_build_object('situacao', _situacao(v_user, v.o_recebidas));
+end;
+$$;
+
 -- Porcentagens de acerto da pessoa, por matéria e banca (o app soma o geral e cada matéria)
 create or replace function public.minhas_estatisticas()
 returns jsonb
@@ -543,6 +592,7 @@ revoke all on function public.iniciar_licao(text) from public, anon;
 revoke all on function public.iniciar_revisao(text[]) from public, anon;
 revoke all on function public.iniciar_nivelamento() from public, anon;
 revoke all on function public.iniciar_treino(text, text) from public, anon;
+revoke all on function public.iniciar_treino_bancas(text, text[]) from public, anon;
 revoke all on function public.minhas_estatisticas() from public, anon;
 revoke all on function public.responder(uuid, text, jsonb) from public, anon;
 revoke all on function public.gabarito_licao(text) from public, anon;
@@ -554,6 +604,7 @@ grant execute on function public.iniciar_licao(text) to authenticated;
 grant execute on function public.iniciar_revisao(text[]) to authenticated;
 grant execute on function public.iniciar_nivelamento() to authenticated;
 grant execute on function public.iniciar_treino(text, text) to authenticated;
+grant execute on function public.iniciar_treino_bancas(text, text[]) to authenticated;
 grant execute on function public.minhas_estatisticas() to authenticated;
 grant execute on function public.responder(uuid, text, jsonb) to authenticated;
 grant execute on function public.gabarito_licao(text) to authenticated;

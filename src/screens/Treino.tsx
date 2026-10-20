@@ -11,7 +11,7 @@ import { Modal } from '../components/Modal'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
 import { IconeMateria } from '../components/IconeMateria'
 
-/** Treino por prova: escolhe a área e a banca (ou tudo misturado) e abre 10 questões */
+/** Treino por prova: escolhe a área e uma ou mais bancas (ou tudo misturado) e abre 10 questões */
 export function Treino() {
   const navegar = useNavigate()
   const [parametros] = useSearchParams()
@@ -19,14 +19,16 @@ export function Treino() {
     const m = parametros.get('materia')
     return m && buscarMateria(m) ? m : null
   })
-  const [banca, setBanca] = useState<string | null>(parametros.get('banca'))
+  const [escolhidas, setEscolhidas] = useState<string[]>(() => parametros.getAll('banca'))
   const [semVidas, setSemVidas] = useState(false)
   const { resumo } = useEstatisticas()
 
   const areas = MATERIAS.filter(materiaDisponivel)
   const bancas = bancasDisponiveis(materiaId)
-  // Se a banca escolhida não tem questões na área nova, volta para o misturado
-  const bancaValida = banca && bancas.some((b) => b.banca === banca) ? banca : null
+  // Bancas escolhidas que têm questões na área atual (as outras são ignoradas; nenhuma = misturado)
+  const validas = escolhidas.filter((e) => bancas.some((b) => b.banca === e))
+  const alternar = (b: string) =>
+    setEscolhidas((atual) => (atual.includes(b) ? atual.filter((x) => x !== b) : [...atual, b]))
 
   const placarDaBanca = (b: string): Placar | undefined =>
     materiaId ? resumo?.porMateriaBanca[materiaId]?.[b] : resumo?.porBanca[b]
@@ -34,7 +36,7 @@ export function Treino() {
   function comecar() {
     useJogo.getState().sincronizarVidas()
     if (useJogo.getState().vidas <= 0 && !ehPlus()) return setSemVidas(true)
-    navegar(linkTreino(materiaId, bancaValida))
+    navegar(linkTreino(materiaId, validas))
   }
 
   return (
@@ -66,8 +68,9 @@ export function Treino() {
       </div>
 
       {/* Banca */}
-      <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-texto-suave">2. Prova</h2>
-      <Chip ativo={bancaValida === null} aoEscolher={() => setBanca(null)} grande>
+      <h2 className="mb-1 text-sm font-extrabold uppercase tracking-wide text-texto-suave">2. Provas</h2>
+      <p className="mb-3 text-xs font-semibold text-texto-suave">Escolha uma ou mais. As questões vêm alternadas entre elas.</p>
+      <Chip ativo={validas.length === 0} aoEscolher={() => setEscolhidas([])} grande>
         <Shuffle className="h-6 w-6 shrink-0" strokeWidth={2.4} />
         <span className="flex-1">
           <span className="block font-extrabold">Geral (misturado)</span>
@@ -84,7 +87,7 @@ export function Treino() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: Math.min(i, 12) * 0.02 }}
             >
-              <Chip ativo={bancaValida === b} aoEscolher={() => setBanca(b)}>
+              <Chip ativo={validas.includes(b)} aoEscolher={() => alternar(b)} marcador>
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-extrabold">{b}</span>
                   <span className="text-xs font-semibold text-texto-suave">
@@ -102,7 +105,8 @@ export function Treino() {
       <div className="fixed inset-x-0 bottom-[calc(67px+env(safe-area-inset-bottom))] z-20 border-t-2 border-borda bg-fundo/95 px-4 py-3 backdrop-blur md:bottom-0 md:left-64">
         <div className="mx-auto max-w-2xl">
           <Botao larguraTotal onClick={comecar}>
-            Começar treino{bancaValida ? ` · ${bancaValida}` : ''}
+            Começar treino
+            {validas.length === 1 ? ` · ${validas[0]}` : validas.length > 1 ? ` · ${validas.length} provas` : ''}
           </Botao>
         </div>
       </div>
@@ -124,11 +128,14 @@ function Chip({
   ativo,
   aoEscolher,
   grande,
+  marcador,
   children,
 }: {
   ativo: boolean
   aoEscolher: () => void
   grande?: boolean
+  /** Mostra a caixinha de marcar (para escolher várias) */
+  marcador?: boolean
   children: ReactNode
 }) {
   return (
@@ -144,6 +151,15 @@ function Chip({
           : 'border-borda bg-superficie shadow-[0_3px_0_0_var(--borda)] hover:bg-superficie-2'
       }`}
     >
+      {marcador && (
+        <span
+          className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 ${
+            ativo ? 'border-agua bg-agua text-white' : 'border-borda bg-superficie'
+          }`}
+        >
+          {ativo && <Check className="h-3.5 w-3.5" strokeWidth={4} />}
+        </span>
+      )}
       {children}
       {ativo && grande && (
         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-agua text-white">

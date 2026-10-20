@@ -84,8 +84,8 @@ interface ConclusaoSessao {
   modo: ModoSessao;
   titulo: string;
   licaoId?: string;
-  /** No treino por prova: a banca escolhida (null = misturado) */
-  banca?: string | null;
+  /** No treino por prova: as bancas escolhidas (vazio ou null = misturado) */
+  banca?: string | string[] | null;
   respostas: RespostaDada[];
   tempoMs: number;
 }
@@ -300,8 +300,13 @@ export const useJogo = create<DadosJogo & AcoesJogo>()(
           revisoes: s.contadores.revisoes + (modo === "revisao" ? 1 : 0),
           treinos: s.contadores.treinos + (modo === "treino" ? 1 : 0),
           bancasTreinadas:
-            modo === "treino" && banca && !s.contadores.bancasTreinadas.includes(banca)
-              ? [...s.contadores.bancasTreinadas, banca]
+            modo === "treino"
+              ? [
+                  ...s.contadores.bancasTreinadas,
+                  ...(Array.isArray(banca) ? banca : banca ? [banca] : []).filter(
+                    (b, i, lista) => !s.contadores.bancasTreinadas.includes(b) && lista.indexOf(b) === i,
+                  ),
+                ]
               : s.contadores.bancasTreinadas,
         };
 
