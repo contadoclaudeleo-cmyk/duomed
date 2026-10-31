@@ -664,15 +664,15 @@
             {
               "id": "go-u1-l2-q3",
               "tipo": "caso_clinico",
-              "caso": "Gestante com dispneia, sat 87%, taquicardia e dímero-D alto.",
-              "enunciado": "Qual a conduta?",
+              "caso": "Gestante de 32 semanas tem dispneia súbita e dor torácica. Está com SpO2 de 87% em ar ambiente, FC 125 bpm e PA 110x70 mmHg. O dímero-D está alto e não há sinais de trombose nas pernas. Não tem contraindicação a anticoagulação.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
-                "Angio-TC antes de tratar",
-                "Doppler antes",
-                "Eco",
-                "HBPM e angio-TC"
+                "Fazer angiotomografia antes de tratar",
+                "Fazer Doppler das pernas antes de tratar",
+                "Pedir ecocardiograma e aguardar",
+                "Iniciar heparina de baixo peso e fazer angiotomografia"
               ],
-              "resposta": "HBPM e angio-TC",
+              "resposta": "Iniciar heparina de baixo peso e fazer angiotomografia",
               "explicacao": "Dispneia, hipoxemia, taquicardia e dímero-D alto na gestante levantam forte suspeita de tromboembolismo pulmonar. Com suspeita alta, a heparina de baixo peso molecular começa logo, sem esperar a angio-TC, que confirma o diagnóstico.",
               "revisado": false,
               "fonte": "ENARE 2026 R+"
@@ -705,8 +705,8 @@
             {
               "id": "go-u1-l2-q6",
               "tipo": "caso_clinico",
-              "caso": "Eclâmpsia que convulsiona de novo em manutenção de magnésio.",
-              "enunciado": "Conduta?",
+              "caso": "Gestante de 36 semanas teve eclâmpsia e recebeu dose de ataque de sulfato de magnésio, estando agora em manutenção a 1 g/h. Uma hora depois, tem nova crise convulsiva. Os reflexos patelares estão presentes e a diurese é adequada.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Mais 2 g de sulfato de magnésio IV",
                 "Diazepam venoso em bolus",
@@ -2193,8 +2193,8 @@
             {
               "id": "go-u3-l1-q5",
               "tipo": "caso_clinico",
-              "caso": "Gestante com cetoacidose, glicemia 260 e infecção urinária.",
-              "enunciado": "Qual a conduta?",
+              "caso": "Gestante de 28 semanas com diabetes tipo 1 chega com vômitos, dor abdominal e respiração rápida. Tem disúria há 3 dias. A glicemia é 260 mg/dL, o pH é 7,15, o bicarbonato é 10 mEq/L e há cetonemia. O exame de urina mostra infecção. O feto tem batimentos normais.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Soro, insulina venosa e tratar infecção",
                 "Bicarbonato venoso em bolus antes de tudo",
@@ -4041,12 +4041,12 @@
             {
               "id": "go-q1-l2-q7",
               "tipo": "caso_clinico",
-              "caso": "Jovem sem mamas, FSH 68, útero pequeno e ovários não vistos.",
-              "enunciado": "Exame que confirma?",
+              "caso": "Jovem de 17 anos nunca menstruou e não tem desenvolvimento das mamas. A estatura é normal. O FSH é 68 UI/L e o estradiol é baixo. A ultrassonografia mostra útero pequeno e ovários não visualizados.",
+              "enunciado": "Qual exame confirma o diagnóstico?",
               "opcoes": [
-                "RM",
-                "Laparoscopia",
-                "Prolactina",
+                "Ressonância de pelve",
+                "Videolaparoscopia",
+                "Dosagem de prolactina",
                 "Cariótipo"
               ],
               "resposta": "Cariótipo",
@@ -5491,8 +5491,8 @@
             {
               "id": "go-q2-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Obesa grau III com ciclos irregulares vai fazer bariátrica.",
-              "enunciado": "Contracepção?",
+              "caso": "Mulher de 30 anos, com obesidade grau III e ciclos menstruais irregulares, vai fazer cirurgia bariátrica (bypass gástrico) em 2 meses. Deseja contracepção eficaz e não quer engravidar nos próximos 2 anos.",
+              "enunciado": "Qual é a melhor opção contraceptiva?",
               "opcoes": [
                 "DIU hormonal antes da cirurgia",
                 "Hormônio proibido em obesas",
@@ -5918,15 +5918,15 @@
             {
               "id": "go-q2-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Citologia negativa com alterações reparativas/inflamatórias.",
-              "enunciado": "O que fazer?",
+              "caso": "Mulher de 35 anos, assintomática, fez citologia oncótica de rastreio, que veio negativa para lesão intraepitelial, com alterações reparativas e inflamatórias. As citologias anteriores eram normais.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Colposcopia",
-                "Antibiótico e repetir",
-                "Repetir em 6 meses",
-                "Seguir rotina"
+                "Antibiótico e repetir a citologia",
+                "Repetir a citologia em 6 meses",
+                "Seguir o rastreio de rotina"
               ],
-              "resposta": "Seguir rotina",
+              "resposta": "Seguir o rastreio de rotina",
               "explicacao": "Alterações reparativas ou inflamatórias na citologia não indicam lesão pré-maligna nem pedem antibiótico. A mulher segue o rastreio de rotina.",
               "revisado": false,
               "fonte": "PSU-MG 2025 R+"
@@ -6592,12 +6592,12 @@
             {
               "id": "go-q2-l3-q10",
               "tipo": "caso_clinico",
-              "caso": "Gestante de 20 e poucas semanas com triplo negativo de 7 cm.",
-              "enunciado": "Conduta inicial?",
+              "caso": "Gestante de 34 anos, com 22 semanas, tem nódulo de 7 cm na mama direita. A biópsia mostrou carcinoma invasor triplo negativo, com linfonodo axilar suspeito e sem metástases à distância. Ela deseja manter a gestação.",
+              "enunciado": "Qual é a conduta inicial?",
               "opcoes": [
-                "Cirurgia",
-                "Aborto",
-                "Esperar o parto",
+                "Cirurgia imediata",
+                "Interrupção da gestação",
+                "Esperar o parto para tratar",
                 "Quimioterapia"
               ],
               "resposta": "Quimioterapia",
@@ -12412,8 +12412,8 @@
             {
               "id": "go-q4-l1-q2",
               "tipo": "caso_clinico",
-              "caso": "Urgência miccional em mulher com glaucoma de ângulo fechado.",
-              "enunciado": "Qual remédio?",
+              "caso": "Mulher de 62 anos tem urgência miccional, aumento da frequência e perdas antes de chegar ao banheiro há 1 ano. O exame de urina é normal e o resíduo pós-miccional é baixo. Tem glaucoma de ângulo fechado.",
+              "enunciado": "Qual remédio é o mais adequado?",
               "opcoes": [
                 "Mirabegrona (agonista beta-3)",
                 "Antimuscarínico como oxibutinina",
@@ -12876,8 +12876,8 @@
             {
               "id": "go-u13-l1-q7",
               "tipo": "caso_clinico",
-              "caso": "Jovem com mamas M4, pelos P2, sem útero e testosterona alta.",
-              "enunciado": "Qual o cariótipo?",
+              "caso": "Jovem de 16 anos nunca menstruou. Tem mamas desenvolvidas (M4), poucos pelos pubianos e axilares (P2) e vagina curta em fundo cego. A ultrassonografia não mostra útero, e a testosterona está na faixa masculina.",
+              "enunciado": "Qual é o cariótipo esperado?",
               "opcoes": [
                 "46,XX",
                 "45,X",
@@ -13141,8 +13141,8 @@
             {
               "id": "go-u13-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Mulher estuprada há 6 horas com pequeno sangramento genital.",
-              "enunciado": "O que fazer?",
+              "caso": "Mulher de 25 anos chega ao pronto-atendimento 6 horas depois de sofrer estupro com penetração vaginal. Tem pequeno sangramento genital. Ainda não registrou boletim de ocorrência.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Examinar, tratar, profilaxias e contracepção",
                 "Mandar ao IML sem examinar",
@@ -13668,12 +13668,12 @@
             {
               "id": "go-u14-l3-q5",
               "tipo": "caso_clinico",
-              "caso": "Adenocarcinoma de colo suspeito de microinvasão na biópsia.",
-              "enunciado": "Próximo passo?",
+              "caso": "Mulher de 38 anos teve citologia com adenocarcinoma in situ. A colposcopia mostrou lesão na endocérvice, e a biópsia levantou suspeita de microinvasão, sem como medir a profundidade.",
+              "enunciado": "Qual é o próximo passo?",
               "opcoes": [
                 "Histerectomia intrafascial",
-                "Extrafascial",
-                "Radical",
+                "Histerectomia extrafascial",
+                "Histerectomia radical",
                 "Conização"
               ],
               "resposta": "Conização",
@@ -18485,13 +18485,13 @@
             {
               "id": "go-q4-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Nuligesta com adenomiose e útero de 300 cm³ quer engravidar.",
-              "enunciado": "Tratamento?",
+              "caso": "Mulher de 32 anos, nuligesta, tem dismenorreia intensa e fluxo aumentado. A ressonância mostra adenomiose difusa, com útero de 300 cm³. Ela deseja engravidar em breve.",
+              "enunciado": "Qual é o tratamento mais adequado?",
               "opcoes": [
                 "Progestagênio",
-                "Embolização uterina",
-                "HIFU",
-                "Ressecção da adenomiose"
+                "Embolização das artérias uterinas",
+                "Ablação por ultrassom focalizado (HIFU)",
+                "Ressecção cirúrgica da adenomiose"
               ],
               "resposta": "Progestagênio",
               "explicacao": "Em quem quer engravidar, a adenomiose é tratada com remédios que preservam o útero, como os progestagênios. Embolização e ressecção podem prejudicar a gestação futura.",
@@ -18663,8 +18663,8 @@
             {
               "id": "go-d6-l3-q2",
               "tipo": "caso_clinico",
-              "caso": "Puérpera amamentando com NIC III e HPV 16 pede DIU hormonal.",
-              "enunciado": "Qual a conduta?",
+              "caso": "Puérpera de 30 anos, com 8 semanas pós-parto e amamentando exclusivamente, tem diagnóstico de NIC III com HPV 16, ainda não tratada. Ela pede para colocar o DIU hormonal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Inserir DIU de levonorgestrel",
                 "Inserir DIU de cobre após 6 meses",
@@ -21140,8 +21140,8 @@
             {
               "id": "go-d11-l2-q2",
               "tipo": "caso_clinico",
-              "caso": "Fluxo sanguinolento uniductal com exames de imagem normais.",
-              "enunciado": "O que fazer?",
+              "caso": "Mulher de 50 anos tem saída espontânea de secreção com sangue pelo mamilo direito, por um único ducto, há 2 meses. O ponto-gatilho é localizado às 10 horas da aréola. A mamografia e a ultrassonografia são normais.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Biópsia cirúrgica do ponto-gatilho",
                 "Seguir com exames de imagem em 6 meses",
@@ -21581,7 +21581,7 @@
             {
               "id": "go-d12-l1-q3",
               "tipo": "caso_clinico",
-              "caso": "Mulher de 34 anos que quer engravidar tem mioma FIGO tipo 7.",
+              "caso": "Mulher de 34 anos deseja engravidar. A ultrassonografia mostra um mioma de 5 cm na parede externa do útero, preso por um pedículo, classificado como FIGO tipo 7. Tem dor pélvica intermitente.",
               "enunciado": "Que tipo de mioma é e qual tratamento é possível?",
               "opcoes": [
                 "Submucoso pediculado; miomectomia por histeroscopia",
@@ -23379,8 +23379,8 @@
             {
               "id": "go-d14-l3-q4",
               "tipo": "caso_clinico",
-              "caso": "Mola completa com hCG subindo e nódulo arroxeado na vagina.",
-              "enunciado": "Conduta?",
+              "caso": "Mulher de 25 anos fez esvaziamento uterino por mola hidatiforme completa há 6 semanas. O beta-hCG, que vinha caindo, voltou a subir em três dosagens seguidas. Ao exame especular, há um nódulo arroxeado de 1 cm na parede vaginal.",
+              "enunciado": "Qual é a conduta?",
               "opcoes": [
                 "Estadiar e quimioterapia",
                 "Biopsiar o nódulo",
