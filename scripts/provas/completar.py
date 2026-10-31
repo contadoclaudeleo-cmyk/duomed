@@ -82,6 +82,9 @@ def aplicar(arq):
             if ops.index(certas[0]) != q['opcoes'].index(q['resposta']):
                 print(id_, ': a certa mudou de posição (confira)'); erros += 1; continue
             q['opcoes'] = ops; q['resposta'] = certas[0]
+            maior = max(len(o) for o in ops if o != certas[0])
+            if len(certas[0]) / maior >= 1.2 and not re.fullmatch(r'[IV, e]+', certas[0]):
+                print(id_, ': AVISO certa longa demais', round(len(certas[0]) / maior, 2))
         if 'C' in campos:
             q['caso'] = campos['C']
             if q['tipo'] == 'multipla_escolha':
