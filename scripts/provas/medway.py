@@ -3,13 +3,13 @@
 import json, re, sys, os
 
 def respostas(txt):
-    toks = re.findall(r'\b(\d{1,3})\.|\b(ANULADA|NULADA|[A-E])\b', txt)
+    toks = re.findall(r'\b(\d{1,3})\.|\b(ANULADA|NULADA|ULADA|[A-E])\b', txt)
     pend, res = [], {}
     for num, let in toks:
         if num:
             pend.append(int(num))
         elif pend:
-            res[pend.pop(0)] = None if 'NULADA' in let else let
+            res[pend.pop(0)] = None if 'ULADA' in let else let
     return res
 
 def opcoes(t):
