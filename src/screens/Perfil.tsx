@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { mudarMarketing, useConsentimento } from "../lib/consentimento";
+import { arquivoPublico } from "../lib/caminho";
 import {
   Check,
   Cloud,
@@ -280,6 +282,9 @@ export function Perfil() {
       <Titulo>Conta</Titulo>
       <SecaoConta />
 
+      <Titulo>Privacidade</Titulo>
+      <SecaoPrivacidade />
+
       {/* Configurações */}
       <Titulo>Configurações</Titulo>
       <div className="divide-y-2 divide-borda overflow-hidden rounded-2xl border-2 border-borda bg-superficie">
@@ -420,6 +425,47 @@ export function Perfil() {
           </Botao>
         </div>
       </Modal>
+    </div>
+  );
+}
+
+/** E-mails de novidades (opcional), cookies e documentos legais */
+function SecaoPrivacidade() {
+  const marketing = useConsentimento((s) => s.marketing);
+  const cookies = useConsentimento((s) => s.cookies);
+  const link = "font-bold text-agua-texto underline-offset-4 hover:underline dark:text-menta";
+  return (
+    <div className="flex flex-col gap-3 rounded-2xl border-2 border-borda bg-superficie p-4">
+      <label className="flex cursor-pointer items-start gap-3">
+        <input
+          type="checkbox"
+          checked={marketing}
+          onChange={(e) => mudarMarketing(e.target.checked)}
+          className="mt-0.5 h-5 w-5 shrink-0"
+        />
+        <span className="text-sm">
+          <span className="font-extrabold">Receber novidades por e-mail</span>
+          <span className="block text-texto-suave">Dicas de estudo e avisos do DuoMed. Opcional.</span>
+        </span>
+      </label>
+      <p className="text-sm text-texto-suave">
+        Medição de uso: {cookies === "aceito" ? "permitida" : "recusada"}.
+      </p>
+      <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        <button
+          type="button"
+          onClick={() => useConsentimento.setState({ bannerAberto: true })}
+          className={link}
+        >
+          Preferências de cookies
+        </button>
+        <a href={arquivoPublico("termos.html")} target="_blank" rel="noreferrer" className={link}>
+          Termos de uso
+        </a>
+        <a href={arquivoPublico("privacidade.html")} target="_blank" rel="noreferrer" className={link}>
+          Política de privacidade
+        </a>
+      </div>
     </div>
   );
 }

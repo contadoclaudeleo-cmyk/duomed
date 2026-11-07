@@ -6,6 +6,7 @@ import { limparPlus } from './plus'
 import { estadoVidas } from './estudo'
 import { limparErrosDeSenha, registrarErroDeSenha, tempoBloqueado } from './limiteSenha'
 import { dadosDoJogo, useJogo, type DadosJogo } from '../store/useJogo'
+import { buscarDoServidor, enviarPendentes, podeMedirUso } from './consentimento'
 
 // ============================================================
 // Conta e sincronização do progresso com a nuvem.
@@ -289,7 +290,11 @@ export function iniciarNuvem() {
       carregado: sessao ? !contaNova && useConta.getState().carregado : true,
     })
     // Não chamar o Supabase dentro deste aviso: agenda para logo depois
-    if (contaNova && (evento === 'SIGNED_IN' || evento === 'INITIAL_SESSION')) setTimeout(sincronizar, 0)
+    if (contaNova && (evento === 'SIGNED_IN' || evento === 'INITIAL_SESSION')) {
+      setTimeout(sincronizar, 0)
+      // Registra o aceite dos termos feito antes de a conta existir e traz o que já foi aceito
+      setTimeout(() => void enviarPendentes().then(buscarDoServidor), 0)
+    }
   })
 
   // Cada mudança no progresso vai para a nuvem alguns segundos depois
@@ -318,7 +323,8 @@ const INTERVALO_PRESENCA_MS = 60_000
 
 /** Marca que a pessoa está usando o app agora (ver supabase/estatisticas.sql) */
 function registrarAcesso() {
-  if (!useConta.getState().sessao || document.visibilityState !== 'visible') return
+  // Medição de uso só com o "Aceitar" do banner de cookies (LGPD)
+  if (!podeMedirUso() || !useConta.getState().sessao || document.visibilityState !== 'visible') return
   supabase.rpc('registrar_acesso').then(
     () => {},
     () => {},

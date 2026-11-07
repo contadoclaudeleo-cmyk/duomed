@@ -22,6 +22,9 @@ import { Treino } from './screens/Treino'
 import { TreinoSessao } from './screens/TreinoSessao'
 import { Melhorar } from './screens/Melhorar'
 import { TrocarSenha } from './components/TrocarSenha'
+import { BannerCookies } from './components/BannerCookies'
+import { TermosAtualizados } from './screens/TermosAtualizados'
+import { useConsentimento, VERSAO_TERMOS } from './lib/consentimento'
 
 /** Aplica claro/escuro no <html> conforme a escolha do usuário */
 function useTema() {
@@ -60,6 +63,7 @@ export function App() {
   return (
     <>
       <TrocarSenha />
+      <BannerCookies />
       <Routes>
         <Route path="/boas-vindas" element={<SoSemUsuario />} />
         <Route element={<ExigeUsuario />}>
@@ -97,10 +101,13 @@ function ExigeUsuario() {
   const testePendente = useJogo((s) => s.testeNivelPendente)
   const logado = useConta((s) => !!s.sessao)
   const verificada = useConta((s) => s.verificada)
+  const termosEmDia = useConsentimento((c) => c.termosVersao === VERSAO_TERMOS)
   const { pathname } = useLocation()
   if (!temUsuario) return <Navigate to="/boas-vindas" replace />
   // Quem começou antes da conta ser obrigatória entra agora; o progresso do aparelho vai junto
   if (verificada && !logado) return <ContaObrigatoria />
+  // Conta sem aceite da versão atual dos termos (Google, conta antiga ou termos novos)
+  if (logado && !termosEmDia) return <TermosAtualizados />
   // Logo após o cadastro, a pessoa passa pelo teste de nível (pode pular)
   if (testePendente && pathname !== '/nivelamento') return <Navigate to="/nivelamento" replace />
   return <Outlet />

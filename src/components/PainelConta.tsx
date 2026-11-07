@@ -3,6 +3,8 @@ import { criarConta, entrarComEmail, entrarComGoogle, pedirNovaSenha, useConta }
 import { Botao } from './Botao'
 import { arquivoPublico } from '../lib/caminho'
 import { Captcha, CHAVE_CAPTCHA, type ControleCaptcha } from './Captcha'
+import { CaixasAceite, useCaixasAceite } from './AceiteTermos'
+import { aceitarTermos } from '../lib/consentimento'
 
 type Aba = 'entrar' | 'criar'
 
@@ -20,6 +22,9 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
   // Resposta do CAPTCHA (quando ele está ligado). Cada resposta vale para uma tentativa só.
   const [captcha, setCaptcha] = useState<string | null>(null)
   const controleCaptcha = useRef<ControleCaptcha>(null)
+  // Aceite obrigatório dos termos para criar conta; marketing é separado e opcional
+  const caixas = useCaixasAceite()
+  const precisaAceite = aba === 'criar'
 
   async function tentar(acao: () => Promise<unknown>) {
     setErro(null)
@@ -58,6 +63,12 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
     }
     const token = captcha ?? undefined
     if (aba === 'entrar') return tentar(() => entrarComEmail(email, senha, token))
+    if (!caixas.termos) {
+      setErro('Para criar a conta, aceite os Termos de uso e a Política de privacidade.')
+      return
+    }
+    // Guarda o aceite (data e versão); vai para o servidor assim que a conta existir
+    aceitarTermos(caixas.marketing)
     return tentar(async () => {
       const entrou = await criarConta(email, senha, token)
       if (!entrou) setAviso('Enviamos um link para o seu e-mail. Abra o link para ativar a conta.')
@@ -71,7 +82,14 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
           <button
             type="button"
             disabled={enviando}
-            onClick={() => tentar(entrarComGoogle)}
+            onClick={() => {
+              if (precisaAceite && !caixas.termos) {
+                setErro('Para criar a conta, aceite os Termos de uso e a Política de privacidade.')
+                return
+              }
+              if (precisaAceite) aceitarTermos(caixas.marketing)
+              return tentar(entrarComGoogle)
+            }}
             className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border-2 border-borda bg-superficie font-extrabold shadow-[0_4px_0_0_var(--borda)] transition-[transform,box-shadow] duration-75 hover:bg-superficie-2 active:translate-y-1 active:shadow-none disabled:opacity-60"
           >
             <LogoGoogle />
@@ -143,6 +161,14 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
           className="w-full rounded-2xl border-2 border-borda bg-superficie px-4 py-3.5 font-semibold outline-none transition-colors placeholder:text-apagado-texto focus:border-agua"
         />
         <Captcha ref={controleCaptcha} aoResolver={setCaptcha} />
+        {precisaAceite && (
+          <CaixasAceite
+            termos={caixas.termos}
+            aoMudarTermos={caixas.setTermos}
+            marketing={caixas.marketing}
+            aoMudarMarketing={caixas.setMarketing}
+          />
+        )}
         {(erro ?? erroGoogle) && (
           <p role="alert" className="text-sm font-bold text-erro-texto">
             {erro ?? erroGoogle}
@@ -169,6 +195,15 @@ export function PainelConta({ abaInicial = 'criar' }: { abaInicial?: Aba }) {
       <p className="text-center text-xs text-texto-suave">
         Guardamos só seu e-mail e seu progresso, para você continuar de qualquer aparelho. Você pode apagar a conta
         quando quiser, no perfil.{' '}
+        <a
+          href={arquivoPublico('termos.html')}
+          target="_blank"
+          rel="noreferrer"
+          className="font-bold text-agua-texto underline underline-offset-2 dark:text-menta"
+        >
+          Termos de uso
+        </a>
+        {' · '}
         <a
           href={arquivoPublico('privacidade.html')}
           target="_blank"

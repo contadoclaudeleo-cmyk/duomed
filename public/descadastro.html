@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descadastro · DuoMed</title>
+    <meta name="description" content="Parar de receber e-mails de novidades do DuoMed." />
+    <link rel="icon" type="image/png" href="brand/favicon-64.png" />
+    <style>
+      :root {
+        --agua: #0f766e;
+        --fundo: #fafaf9;
+        --superficie: #ffffff;
+        --borda: #e7e5e4;
+        --texto: #1f2937;
+        --suave: #57534e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --agua: #5eead4;
+          --fundo: #141817;
+          --superficie: #1c2120;
+          --borda: #2c3432;
+          --texto: #eef1f0;
+          --suave: #a8b3b0;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font: 16px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      }
+      main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+      .topo { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+      .topo img { height: 44px; width: auto; }
+      h1 { font-size: 1.8rem; line-height: 1.2; margin: 24px 0 4px; }
+      h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+      p, li { color: var(--texto); }
+      .data { color: var(--suave); margin: 0 0 24px; }
+      .caixa {
+        background: var(--superficie);
+        border: 2px solid var(--borda);
+        border-radius: 16px;
+        padding: 16px 20px;
+      }
+      a { color: var(--agua); font-weight: 600; }
+      ul { padding-left: 1.2rem; }
+      li { margin: 4px 0; }
+      .voltar { display: inline-block; margin-top: 40px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topo">
+        <img src="brand/icone-duomed.png" alt="" />
+        <strong style="font-size: 1.3rem">DuoMed</strong>
+      </div>
+
+      <h1>Parar de receber e-mails</h1>
+      <p class="data">Você deixa de receber novidades e dicas por e-mail. Os e-mails da conta (confirmação e troca de senha) continuam chegando quando você pedir.</p>
+
+      <form id="form" class="caixa">
+        <p><label for="email"><strong>Seu e-mail</strong></label></p>
+        <p><input id="email" type="email" required autocomplete="email" style="width:100%;padding:10px 12px;border:2px solid var(--borda);border-radius:12px;font:inherit;background:var(--fundo);color:var(--texto)" /></p>
+        <p><button type="submit" style="background:#14B8A6;color:#fff;border:0;padding:12px 20px;border-radius:12px;font:inherit;font-weight:700;cursor:pointer">Descadastrar</button></p>
+        <p id="msg" role="status"></p>
+      </form>
+
+      <p>Você também pode ligar ou desligar os e-mails em <em>Perfil → Privacidade</em>, no app.</p>
+
+      <a class="voltar" href="./">← Voltar para o DuoMed</a>
+    </main>
+    <script>
+      // A chave abaixo é a publishable (pública). A função só DESLIGA os e-mails e não informa se o e-mail existe.
+      const URL_SUPABASE = 'https://dkdizfpywyvpxhfpiivr.supabase.co'
+      const CHAVE = 'sb_publishable_c_9vKOgIV1Ks2bXY1ajHJg_io3htXyu'
+      const campo = document.getElementById('email')
+      const msg = document.getElementById('msg')
+      const doLink = new URLSearchParams(location.search).get('email')
+      if (doLink) campo.value = doLink
+      document.getElementById('form').addEventListener('submit', async (e) => {
+        e.preventDefault()
+        msg.textContent = 'Enviando...'
+        try {
+          const r = await fetch(URL_SUPABASE + '/rest/v1/rpc/descadastrar_marketing', {
+            method: 'POST',
+            headers: { apikey: CHAVE, Authorization: 'Bearer ' + CHAVE, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ p_email: campo.value }),
+          })
+          msg.textContent = r.ok
+            ? 'Pronto! Você não vai mais receber e-mails de novidades do DuoMed.'
+            : 'Não deu certo agora. Tente de novo ou escreva para contadoclaude.leo@gmail.com.'
+        } catch {
+          msg.textContent = 'Sem conexão. Tente de novo.'
+        }
+      })
+    </script>
+  </body>
+</html>
