@@ -30,8 +30,12 @@ const materias = readdirSync(pasta)
 const estrutura = []
 const linhas = []
 
-// Banca da prova: a fonte sem o ano ("ENARE 2026 R+" vira "ENARE"). O servidor usa a mesma regra (estudo.sql).
-const bancaDa = (fonte) => (fonte ?? '').replace(/\s+(19|20)\d{2}.*$/, '') || null
+// Banca da prova: a fonte sem o ano. Provas de R+ (pré-requisito) ficam separadas das de acesso direto:
+// "ENARE 2026" vira "ENARE" e "ENARE 2026 R+" vira "ENARE R+". O servidor usa a mesma regra (estudo.sql).
+const bancaDa = (fonte) => {
+  const base = (fonte ?? '').replace(/\s+(19|20)\d{2}.*$/, '')
+  return base ? (/\sR\+\s*$/.test(fonte) ? `${base} R+` : base) : null
+}
 
 for (const m of materias) {
   const { unidades, ...resto } = m

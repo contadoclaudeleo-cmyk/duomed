@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { MATERIAS, buscarMateria, materiaDisponivel } from '../data'
 import { useJogo } from '../store/useJogo'
 import { ehPlus } from '../lib/plus'
-import { bancasDisponiveis, linkTreino, porcentagem, useEstatisticas, type Placar } from '../lib/estatisticas'
+import { bancasDisponiveis, ehRMais, nomeSemRMais, linkTreino, porcentagem, useEstatisticas, type Placar } from '../lib/estatisticas'
 import { Botao } from '../components/Botao'
 import { Modal } from '../components/Modal'
 import { AvisoSemVidas } from '../components/AvisoSemVidas'
@@ -77,29 +77,21 @@ export function Treino() {
           <span className="text-xs font-semibold text-texto-suave">Questões de todas as bancas</span>
         </span>
       </Chip>
-      <div className="mt-2 mb-28 grid grid-cols-2 gap-2 sm:grid-cols-3">
-        {bancas.map(({ banca: b, questoes }, i) => {
-          const pct = porcentagem(placarDaBanca(b))
-          return (
-            <motion.div
-              key={b}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: Math.min(i, 12) * 0.02 }}
-            >
-              <Chip ativo={validas.includes(b)} aoEscolher={() => alternar(b)} marcador>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-extrabold">{b}</span>
-                  <span className="text-xs font-semibold text-texto-suave">
-                    {questoes} {questoes === 1 ? 'questão' : 'questões'}
-                  </span>
-                </span>
-                {pct !== null && <SeloPorcentagem pct={pct} />}
-              </Chip>
-            </motion.div>
-          )
-        })}
-      </div>
+      <GrupoBancas
+        titulo="Acesso direto (R1)"
+        bancas={bancas.filter((x) => !ehRMais(x.banca))}
+        validas={validas}
+        alternar={alternar}
+        placarDaBanca={placarDaBanca}
+      />
+      <GrupoBancas
+        titulo="R+ (pré-requisito)"
+        bancas={bancas.filter((x) => ehRMais(x.banca))}
+        validas={validas}
+        alternar={alternar}
+        placarDaBanca={placarDaBanca}
+      />
+      <div className="mb-28" />
 
       {/* Botão fixo embaixo, acima da barra de navegação */}
       <div className="fixed inset-x-0 bottom-[calc(67px+env(safe-area-inset-bottom))] z-20 border-t-2 border-borda bg-fundo/95 px-4 py-3 backdrop-blur md:bottom-0 md:left-64">
@@ -115,6 +107,51 @@ export function Treino() {
         <AvisoSemVidas aoVoltar={() => setSemVidas(false)} />
       </Modal>
     </div>
+  )
+}
+
+/** Lista de provas de um tipo (acesso direto ou R+), com a caixinha de marcar */
+function GrupoBancas({
+  titulo,
+  bancas,
+  validas,
+  alternar,
+  placarDaBanca,
+}: {
+  titulo: string
+  bancas: { banca: string; questoes: number }[]
+  validas: string[]
+  alternar: (b: string) => void
+  placarDaBanca: (b: string) => Placar | undefined
+}) {
+  if (bancas.length === 0) return null
+  return (
+    <section className="mt-5">
+      <h3 className="mb-2 text-xs font-extrabold uppercase tracking-wide text-texto-suave">{titulo}</h3>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+        {bancas.map(({ banca: b, questoes }, i) => {
+          const pct = porcentagem(placarDaBanca(b))
+          return (
+            <motion.div
+              key={b}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: Math.min(i, 12) * 0.02 }}
+            >
+              <Chip ativo={validas.includes(b)} aoEscolher={() => alternar(b)} marcador>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-extrabold">{nomeSemRMais(b)}</span>
+                  <span className="text-xs font-semibold text-texto-suave">
+                    {questoes} {questoes === 1 ? 'questão' : 'questões'}
+                  </span>
+                </span>
+                {pct !== null && <SeloPorcentagem pct={pct} />}
+              </Chip>
+            </motion.div>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 

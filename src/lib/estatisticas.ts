@@ -43,6 +43,10 @@ export function resumir(linhas: LinhaEstatistica[]): Resumo {
   return r
 }
 
+/** Banca de prova de R+ (pré-requisito): o nome termina em " R+". As outras são de acesso direto (R1). */
+export const ehRMais = (banca: string) => banca.endsWith(' R+')
+export const nomeSemRMais = (banca: string) => (ehRMais(banca) ? banca.slice(0, -3) : banca)
+
 /** Bancas que têm questões numa área (ou em todas, com null), da que tem mais para a que tem menos */
 export function bancasDisponiveis(materiaId: string | null): { banca: string; questoes: number }[] {
   const contagem: Record<string, number> = {}

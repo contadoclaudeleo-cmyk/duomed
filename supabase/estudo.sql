@@ -68,10 +68,15 @@ create table if not exists public.xp_dias (
 );
 
 -- Ninguém lê nem escreve nessas tabelas direto: só pelas funções abaixo
--- Banca de cada questão: a fonte sem o ano ("ENARE 2026 R+" vira "ENARE").
+-- Banca de cada questão: a fonte sem o ano; as de R+ ficam à parte ("ENARE 2026" vira "ENARE", "ENARE 2026 R+" vira "ENARE R+").
+-- Banco que já existia: rode supabase/banca-r-mais.sql uma vez.
 -- É a mesma regra de scripts/gerar-estrutura.mjs (o app mostra as bancas a partir de lá).
 alter table public.questoes add column if not exists banca text
-  generated always as (nullif(regexp_replace(coalesce(dados ->> 'fonte', ''), '\s+(19|20)[0-9]{2}.*$', ''), '')) stored;
+  generated always as (
+    nullif(regexp_replace(coalesce(dados ->> 'fonte', ''), '\s+(19|20)[0-9]{2}.*$', ''), '')
+    || case when nullif(regexp_replace(coalesce(dados ->> 'fonte', ''), '\s+(19|20)[0-9]{2}.*$', ''), '') is not null
+              and coalesce(dados ->> 'fonte', '') ~ '\sR\+\s*$' then ' R+' else '' end
+  ) stored;
 create index if not exists questoes_materia_banca on public.questoes (materia_id, banca);
 
 -- Cada resposta dada, para as porcentagens de acerto por matéria e por banca. Só o servidor escreve.
