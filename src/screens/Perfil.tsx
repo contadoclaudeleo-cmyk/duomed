@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { mudarMarketing, useConsentimento } from "../lib/consentimento";
 import { arquivoPublico } from "../lib/caminho";
 import {
+  Bell,
+  BellOff,
   Check,
   Cloud,
   CloudOff,
@@ -43,6 +45,7 @@ import { Modal } from "../components/Modal";
 import { AbasNivel } from "../components/AbasModo";
 import { NumeroAnimado } from "../components/Animacoes";
 import { tocarSom } from "../lib/sons";
+import { desligarLembretes, estadoDosLembretes, ligarLembretes, type EstadoLembretes } from "../lib/notificacoes";
 import { TelaOfensiva } from "../components/TelaOfensiva";
 import {
   apagarConta,
@@ -360,6 +363,8 @@ export function Perfil() {
           />
         </Ajuste>
 
+        <AjusteLembretes />
+
         <div className="flex items-center gap-3 bg-erro-fundo/40 p-4">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-erro-fundo text-erro-texto">
             <Trash2 className="h-5 w-5" strokeWidth={2.4} />
@@ -430,6 +435,51 @@ export function Perfil() {
 }
 
 /** E-mails de novidades (opcional), cookies e documentos legais */
+function AjusteLembretes() {
+  const [estado, setEstado] = useState<EstadoLembretes | null>(null);
+  const [erro, setErro] = useState(false);
+  useEffect(() => {
+    void estadoDosLembretes().then(setEstado);
+  }, []);
+  if (estado === null) return null;
+
+  const mudar = async (v: "sim" | "nao") => {
+    setErro(false);
+    try {
+      setEstado(v === "sim" ? await ligarLembretes() : await desligarLembretes());
+    } catch {
+      setErro(true);
+    }
+  };
+
+  return (
+    <Ajuste
+      Icone={Bell}
+      titulo="Lembretes"
+      descricao={
+        estado === "indisponivel"
+          ? "Este aparelho ou navegador não aceita notificações. No iPhone, instale o app na tela inicial."
+          : estado === "bloqueado"
+            ? "As notificações estão bloqueadas. Libere nas configurações do navegador ou do app."
+            : erro
+              ? "Não deu certo agora. Tente de novo em instantes."
+              : "Um aviso para você não perder a ofensiva"
+      }
+    >
+      {estado !== "indisponivel" && estado !== "bloqueado" && (
+        <Opcoes<"sim" | "nao">
+          valor={estado === "ligado" ? "sim" : "nao"}
+          opcoes={[
+            { valor: "sim", rotulo: "Ligados", Icone: Bell },
+            { valor: "nao", rotulo: "Desligados", Icone: BellOff },
+          ]}
+          aoMudar={(v) => void mudar(v)}
+        />
+      )}
+    </Ajuste>
+  );
+}
+
 function SecaoPrivacidade() {
   const marketing = useConsentimento((s) => s.marketing);
   const cookies = useConsentimento((s) => s.cookies);

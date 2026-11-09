@@ -64,6 +64,8 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,webp,woff2,mp3}'],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+        // Mostra os lembretes (notificações) enviados pelo servidor
+        importScripts: ['push.js'],
       },
       manifest: {
         name: 'DuoMed',
