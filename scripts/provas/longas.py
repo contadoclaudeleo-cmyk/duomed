@@ -22,6 +22,6 @@ if quantas == 10**9 and pular == 0:
 for m, q in L[pular:pular + quantas]:
     e = q['enunciado'].replace('\n', ' ')
     c = (q.get('caso') or '').replace('\n', ' ')
-    print(f"## {q['id']}  (x{m:.2f})  CASO: {c[:90]}\n   PERGUNTA: {e[-110:]}")
+    print(f"## {q['id']}  (x{m:.2f})  CASO: {c[:40]}\n   PERGUNTA: {e[-80:]}")
     for i, x in enumerate(q['opcoes'], 1):
         print(f"  {i}{'*' if x == q['resposta'] else ' '} [{len(x)}] {x}")
